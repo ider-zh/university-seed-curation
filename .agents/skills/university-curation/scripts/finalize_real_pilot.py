@@ -144,7 +144,7 @@ def finalize(root):
     (accepted / "QUALITY_REPORT.zh-CN.md").write_text("\n".join(chinese) + "\n", encoding="utf-8")
     schema_target = accepted / "schema.json"; shutil.copy2(ROOT / ("schemas/university.v" + PILOT_SCHEMA_VERSION + ".schema.json"), schema_target)
     files = [p for p in accepted.rglob("*") if p.is_file() and p.name not in ("manifest.json", "acceptance.zip")]
-    code_paths = [ROOT / "AGENTS.md", ROOT / "docs/review-policy-v2.md", *sorted((ROOT / "src/university_curation").glob("*.py")), *sorted(SCRIPTS.glob("*.py"))]
+    code_paths = [ROOT / "AGENTS.md", ROOT / "docs/review-policy-v2.md", *sorted((SCRIPTS / "lib/university_curation").glob("*.py")), *sorted(SCRIPTS.glob("*.py"))]
     manifest = {"code_git_commit": subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=ROOT, text=True).strip(),
         "code_file_sha256": {p.relative_to(ROOT).as_posix(): sha(p) for p in code_paths}, "dataset": "university-real-ten-private-pilot", "schema_version": PILOT_SCHEMA_VERSION,
         "human_acceptance": None, "publication_allowed": False,

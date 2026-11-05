@@ -126,7 +126,7 @@ def process(case, root):
                     record["curation"]["reviewed_groups"] = GROUPS; record["curation"]["refresh_profile"] = "core-v1"
                     if record["curation"]["identity_status"] in ("in_scope", "related", "excluded"): record["update_datetime"] = now
                     record["modified_datetime"] = now; validate(record)
-                    bucket = hashlib.sha256(case["qid"].encode()).hexdigest()[:3]
+                    bucket = hashlib.sha256(case["qid"].encode()).hexdigest()[:2]
                     relative = Path("acceptance/records") / bucket / (case["qid"] + ".json")
                     save(root / relative, record)
                     outcome = {"qid": case["qid"], "name": case["name"], "status": "approved", "schema_version": PILOT_SCHEMA_VERSION,
@@ -212,7 +212,7 @@ if __name__ == "__main__":
     if args.report_only:
         print(compact({k: v for k, v in report(root).items() if k != "per_case"})); raise SystemExit(0)
     selection = [c for c in CASES if not args.qids or c["qid"] in args.qids]
-    code_files = [Path(__file__), SCRIPTS / "_bootstrap.py", *[ROOT / "src/university_curation" / name for name in ("pilot_protocol.py", "pilot_sources.py", "codex_provider.py", "preferred.py", "schema_v02.py", "sources.py")]]
+    code_files = [Path(__file__), SCRIPTS / "_bootstrap.py", *[SCRIPTS / "lib/university_curation" / name for name in ("pilot_protocol.py", "pilot_sources.py", "codex_provider.py", "preferred.py", "schema_v02.py", "sources.py")]]
     code = {str(p.relative_to(ROOT)).replace("\\", "/"): sha(p) for p in code_files}
     stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%S%f")
     execution = root / "executions" / stamp; execution.mkdir(parents=True)

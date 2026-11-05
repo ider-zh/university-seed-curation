@@ -19,7 +19,7 @@ def fields(record):
             if "candidates" in node:
                 yield path, node, subject
                 return
-            if "id" in node and node.get("kind") in ("campus", "administrative_area", "office", "headquarters"):
+            if "id" in node and node.get("kind") in ("campus", "administrative_area", "office", "headquarters", "institution"):
                 subject = "location:" + node["id"]
             if "date" in node and "subject_ref" in node and "kind" in node:
                 subject = node["subject_ref"]
@@ -39,7 +39,11 @@ def period_year(candidate):
 
 
 def choose(field, sources, leadership=False):
-    candidates = [c for c in field["candidates"] if "value" in c and c["verification"] != "withdrawn"]
+    active = [c for c in field["candidates"] if c["verification"] != "withdrawn"]
+    # A preferred-rank unknown/no-value cannot be replaced by a normal-rank point.
+    if any(c.get("source_rank") == "preferred" for c in active):
+        active = [c for c in active if c.get("source_rank") == "preferred"]
+    candidates = [c for c in active if "value" in c]
     if not candidates: return None
     pool = candidates
     if leadership:
@@ -109,7 +113,7 @@ def recompute(record):
     return result
 
 
-@lru_cache(maxsize=2)
+@lru_cache(maxsize=3)
 def validator(version="0.2.0"):
     import jsonschema
     return jsonschema.Draft202012Validator(schema(version), format_checker=jsonschema.FormatChecker())
@@ -127,6 +131,9 @@ def validate(record):
     clean(record); validator(record.get("schema_version", "0.2.0")).validate(record)
     sources = record.get("sources", {}); subjects = {"institution"}
     location_ids = [loc["id"] for loc in record.get("locations", [])]
+    for loc in record.get("locations", []):
+        if loc["kind"] == "institution" and loc.get("qid") != record["qid"]:
+            raise ValueError("Institution location must identify the root Wikidata item")
     if len(location_ids) != len(set(location_ids)): raise ValueError("Duplicate location ID")
     subjects.update("location:" + s for s in location_ids)
     subjects.update("related:" + s for s in record.get("related_entities", {}))

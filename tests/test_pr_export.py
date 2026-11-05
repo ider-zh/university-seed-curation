@@ -6,7 +6,7 @@ import sys
 import tempfile
 import unittest
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / ".agents/skills/university-curation/scripts/lib"))
 from university_curation.attestations import init_key, policy, sign, verify, sha, load_json
 from university_curation.pr_export import record_relative, scope, verify_files, validate_pr, install
 from university_curation.records import encode, ROOT

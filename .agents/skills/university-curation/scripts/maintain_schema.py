@@ -85,9 +85,22 @@ def record_schema():
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("command", choices=("generate", "check", "propose-field"))
+    parser.add_argument("command", choices=("generate", "check", "propose-field", "register-coordinate-adapter"))
     parser.add_argument("--definition"); parser.add_argument("--output")
     args = parser.parse_args()
+    if args.command == "register-coordinate-adapter":
+        from university_curation.attestations import load_json, sha
+        from university_curation.records import encode
+        path = ROOT / ".curation/review-trust.json"
+        trust = load_json(path.read_bytes())
+        generated = ROOT / "schemas/university.v0.2.2.schema.json"
+        from university_curation.schema_v02 import schema
+        if load_json(generated.read_bytes()) != schema("0.2.2"): raise ValueError("Generate/check coordinate schema first")
+        trust["schemas"]["0.2.2"] = sha(encode(schema("0.2.2")))
+        adapters = trust.setdefault("field_update_adapters", [])
+        if "wikidata_coordinates" not in adapters: adapters.append("wikidata_coordinates")
+        path.write_bytes(encode(trust))
+        return
     fields_path = ROOT / "schemas" / "fields.v0.1.json"
     schema_path = ROOT / "schemas" / "university.v0.1.schema.json"
     if args.command == "propose-field":
@@ -102,7 +115,8 @@ def main():
     from university_curation.schema_v02 import schema as schema_v02
     payloads = {fields_path: initial_fields(), schema_path: record_schema(),
                 ROOT / "schemas" / "university.v0.2.schema.json": schema_v02(),
-                ROOT / "schemas" / "university.v0.2.1.schema.json": schema_v02("0.2.1")}
+                ROOT / "schemas" / "university.v0.2.1.schema.json": schema_v02("0.2.1"),
+                ROOT / "schemas" / "university.v0.2.2.schema.json": schema_v02("0.2.2")}
     for path, value in payloads.items():
         if "$schema" in value:
             import jsonschema

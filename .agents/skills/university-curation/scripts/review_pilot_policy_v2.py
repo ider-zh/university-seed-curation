@@ -121,7 +121,7 @@ def process(case, root):
         record["curation"].update({"reviewed_groups": GROUPS, "refresh_profile": "core-v1"})
         if record["curation"]["identity_status"] in ("in_scope", "related", "excluded"): record["update_datetime"] = now
         record["modified_datetime"] = now; validate(record)
-        bucket = hashlib.sha256(case["qid"].encode()).hexdigest()[:3]
+        bucket = hashlib.sha256(case["qid"].encode()).hexdigest()[:2]
         relative = Path("acceptance/records") / bucket / (case["qid"] + ".json"); save(root / relative, record)
         outcome.update({"status": "approved", "record_path": relative.as_posix(), "record_sha256": sha(root / relative),
             "approved_proposal_path": (task / "proposal.json").relative_to(root).as_posix(),

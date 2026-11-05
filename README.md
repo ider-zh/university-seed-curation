@@ -5,30 +5,31 @@ higher-education institutions. Research uses online Wikidata, revision-bound
 Wikipedia and supporting websites. Each university has one JSON record, edited
 through scripts and delivered in small GitHub PRs after independent review.
 
-**Status:** verified online source helpers, a real private Terra Research/Review
-pilot, and signed initial-import PR preparation with a base-trusted data validator.
-First public data import requires explicit operator acceptance and the integration
-workflow on main. Incremental v0.2 updates, production task dispatch and automatic
-merge are not enabled.
+**Status:** three reviewed university records are versioned in GitHub. Online
+source helpers, the private Terra Research/Review trial, signed initial export,
+and base-trusted data checks are verified. This branch adds 256-bucket storage
+and a bounded root-P625 update; arbitrary domain updates and automatic merge
+remain unavailable.
 
-- [Design and confirmed decisions](docs/design.md)
-- [Research / Review contract](docs/agent-workflow.md)
-- [Data and Schema contract](docs/data-contract.md)
-- [Preferred candidate Schema v0.2](docs/schema-v0.2.md)
-- [Complete synthetic university JSON](examples/university.complete.synthetic.json)
-- [Online Wikidata / Wikipedia tools](docs/source-tools.md)
-- [Batch and integration contract](docs/batch-workflows.md)
-- [Implementation boundaries and rollout](docs/rollout.md)
-- [Implemented offline commands](docs/commands.md)
-- [Reviewed data PR export](docs/reviewed-pr-export.md)
-- [Current handoff and next steps](docs/handoff.md)
+Read only what the task requires:
+
+- [Current state and handoff](docs/handoff.md)
+- [Research / Review workflow](docs/agent-workflow.md)
+- [Data, Schema and preferred contract](docs/data-contract.md)
+- [Commands](docs/commands.md) and [online sources](docs/source-tools.md)
+- [Review policy](docs/review-policy-v2.md) and [reviewed PR export](docs/reviewed-pr-export.md)
 - [Built-in skill](.agents/skills/university-curation/SKILL.md)
+- [Complete synthetic JSON](examples/university.complete.synthetic.json)
+
+Current docs describe current behavior. Previous designs and trial reports are
+available through Git history; immutable schemas and signed evidence remain in
+the repository. The documentation consolidation starts from commit `8535ab0`.
 
 The initial source contains 39,489 university candidates, with 64,667 legacy-only
 objects retained as a separate discovery queue. These are candidates, not an
 accepted census. Existing and historical institutions are equally in scope.
 
-Records use `data/universities/<sha256(QID)[:3]>/<QID>.json`; the hash is of the
+Records use `data/universities/<sha256(QID)[:2]>/<QID>.json`; the hash is of the
 canonical QID, not changing file contents. Missing business fields are omitted:
 no `null`, empty strings or invented zeroes. Sources, uncertainty and attempted
 coverage remain explicit.
@@ -46,3 +47,8 @@ ordinary field/batch changes update `modified_datetime` instead.
 Code and schemas belong here. Raw dumps, article caches, unreviewed proposals,
 private job logs, credentials and model prompts do not. Initial seed records
 are staged privately until a human accepts their public candidate-list version.
+
+All skill commands and implementation modules live under
+`.agents/skills/university-curation/scripts/` (`lib/` contains internal modules).
+There is no second implementation under root `src/`. Schemas, data, docs and
+offline tests are shared repository resources.
