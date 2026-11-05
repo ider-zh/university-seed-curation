@@ -20,6 +20,14 @@ def _eligible(pull, repository):
 
 
 def _signed_comment(repo, client, number, body):
+    from .native_protocol import PATTERN
+    native = PATTERN.findall(body or '')
+    if len(native) == 1:
+        try:
+            value = load_json(native[0].encode())
+            if value.get('repository') == client.repository and value.get('pr_number') == number and value.get('type') in ('university-native-review-v1','university-native-objection-v1'):
+                return True
+        except (ValueError, TypeError, AttributeError): pass
     matches = COMMENT.findall(body or "")
     if len(matches) != 1: return False
     try:
@@ -37,14 +45,14 @@ def process_pr(repo, client, number, mode="status", coordinator=None, now=None):
     if not _eligible(pull, client.repository): return {"status": "ignored"}
     if mode == "status": return distributed_gate.update_status(repo, client, number)
     result = distributed_gate.check(repo, client, number)
-    if result.get("status") != "awaiting_independent_signed_review": return {"status": "not_a_valid_draft"}
+    if result.get("status") not in ("awaiting_independent_signed_review", "awaiting_independent_review"): return {"status": "not_a_valid_draft"}
     current = client.pull(number)
     if not _eligible(current, client.repository) or current["head"]["sha"] != result["head_sha"]: return {"status": "superseded"}
     base = fetch_main(repo); trust = trust_at(repo, base)
     if trust["repository"] != client.repository: raise ValueError("Configured repository mismatch")
     # Check the current main and PR head again after obtaining the policy snapshot.
     verified = distributed_gate.check(repo, client, number)
-    if verified.get("status") != "awaiting_independent_signed_review" or verified.get("head_sha") != result["head_sha"]: return {"status": "superseded"}
+    if verified.get("status") not in ("awaiting_independent_signed_review", "awaiting_independent_review") or verified.get("head_sha") != result["head_sha"]: return {"status": "superseded"}
     if client.pull(number)["head"]["sha"] != result["head_sha"]: return {"status": "superseded"}
     if fetch_main(repo) != base: return {"status": "superseded"}
     coordinator = coordinator or GitCoordinator(repo)
@@ -69,6 +77,9 @@ def handle_event(repo, client, event, event_name, mode="status", coordinator=Non
         if type(number) is not int or number < 1: return {"status": "ignored"}
         comment = event.get("comment", {}); body = comment.get("body") or ""
         previous = event.get("changes", {}).get("body", {}).get("from") or ""
+        from .native_protocol import PATTERN
+        if (PATTERN.search(body) or PATTERN.search(previous)) and (comment.get('user') or {}).get('login','').lower() != client.repository.split('/')[0].lower():
+            return {'status':'ignored'}
         if not (_signed_comment(repo, client, number, body) or _signed_comment(repo, client, number, previous)): return {"status": "ignored"}
     else: return {"status": "ignored"}
     if type(number) is not int or number < 1: return {"status": "ignored"}

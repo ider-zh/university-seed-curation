@@ -1,37 +1,44 @@
 # Current state and handoff
 
-The active implementation is the **distributed GitHub-only workflow**.
+The active implementation is the **GitHub-coordinated workflow**, executed in
+the current workspace using the connected GitHub plugin and native subagents.
+Research and Review use independent sessions and separate private jobs/caches;
+they may share a checkout. No keys, shell tokens, gh or Codex CLI are required.
 The former shared-host queue is a historical offline prototype, not production
 authority. Original trials and source captures remain private and unchanged.
 
-Main at implementation start: `e219d7b` (PR #5). It contains three approved
-school records. PRs #6/#7 were merged into feature branches, not main; those
-merges do not prove main has the bucket migration or Q519556 coordinate fix.
+PR #9 (workflow) and PR #10 (seed/bucket bootstrap) are merged. At `2790342`,
+main contains the signed candidate catalog and three approved school records
+under the two-hex, 256-bucket layout. Their bytes were preserved during migration.
+Q519556's coordinate correction remains a separate reviewed change; earlier
+feature-branch merges did not apply that correction to main.
 
-Candidate import plus byte-preserving path bootstrap is on `codex/data/seed-bootstrap`
-(the earlier catalog-only branch is preserved):
+The candidate files are now versioned on main:
 `data/seeds/primary.json` has 39,489 rows (34,672 included / 4,817 needs_review);
 `discovery.json` has 64,667 legacy-only QIDs. A signed manifest records exact
 source hashes and operator authorization for **candidate import only**.
 This is not factual acceptance or an external dataset release.
 
-Merge order: distributed implementation code first, then the independent
-candidate import against main. The bootstrap data PR may include a byte-identical
-three-hex to two-hex path migration; it must not include school fact changes.
-Q519556 coordinates remain a separate reviewed change.
+The startup prompts reuse the current workspace checkout and preserve existing
+work. If absent, clone into a child directory of that workspace. Scripts isolate
+per-PR branches/trees. agent.py defaults to native mode: doctor checks local
+contracts, prepare/compile handle model JSON, and coord-plan emits pending plugin
+operations. The host executes and confirms those operations before taking work.
+GitHub remains the shared task/Review channel even on one host.
 
-Implemented: role key registration, compact seed import, GitHub CAS task/model/
-PR leases, bounded Research and independent Review, signed persistent objections,
+Implemented: compact seed import, GitHub CAS task/model/
+PR lease plans, bounded native Research and independent Review, persistent objections,
 two-round revision entry, approved-only PR materialization, stale-base checks,
 private incremental recency indexing, and deployable trusted-main event scripts.
 All skill implementation remains inside the skill folder.
 
-Not yet configured or demonstrated: independent role keys on their eventual
-hosts, a real distributed model run, enabled event queue dispatch, a continuously
+Not yet demonstrated: a complete live native-subagent Research/Review PR cycle.
+Not configured: enabled event queue dispatch, a continuously
 running Review worker, required statuses/branch protection, or automatic merge.
 No webhook/service is deployed. Event dispatch defaults off. Human merging
-remains explicit. Signatures attest role-held keys, not provider-signed model
-identity or two distinct GitHub users.
+remains explicit. Native account/session attribution is not cryptographic role
+identity. Actual model/session metadata is caller-reported; missing host metadata
+is not_reported. Historical signed CLI adapters remain available explicitly.
 
 Read README → AGENTS → role startup prompt / SKILL. Consult the data contract,
 commands, source tools and immutable review-policy-v2 only as needed.

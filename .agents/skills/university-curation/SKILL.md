@@ -1,101 +1,86 @@
 ---
 name: university-curation
-description: Research or independently review university records through GitHub-coordinated tasks, public Draft proposals, signed comments and script-validated JSON.
+description: Research or independently review university records in the current workspace using native subagents, a connected GitHub plugin and deterministic local validation.
 ---
 
 # University curation
 
-Read AGENTS.md and docs/handoff.md. Choose exactly one role: Research manager,
-one-QID Research subagent, or independent Review. Repository:
+Read AGENTS.md and docs/handoff.md. Choose Research manager, one-QID Research
+subagent, or independent Review. Repository:
 https://github.com/ider-zh/university-seed-curation.
 
-All helpers and implementation live in this skill's scripts/ and scripts/lib/.
-Schemas, tests and data are repository resources. Run commands from the checkout
-root, or pass --workspace to agent.py. The script returns JSON.
+Run in the current workspace, reusing its checkout. Clone into a child directory
+only if absent. Preserve existing work and use trusted main code. Separate hosts
+are optional. Both roles may share a checkout in independent sessions.
 
-## Bootstrap
+## Native execution (default)
 
-Use the matching startup prompt in references/research-agent.md or
-references/review-agent.md. Install trusted checkout dependencies. Each role
-registers its own local private key using agent.py --role ROLE register-key;
-only its public descriptor goes into a human-merged code PR. Never share keys.
-Run doctor after code, seed bootstrap and key registration reach main.
-Do not pretend an unconfigured worker/event service is operating.
+GitHub operations use the host's **connected GitHub plugin**. Model work uses
+the host's **built-in subagent tool**. No signing key, shell token, gh, Codex CLI
+or SSH is required. Never infer plugin authentication from environment variables.
+Local doctor checks repository, signed input catalog and contracts; the host
+Agent separately verifies plugin/subagent capabilities. Historical catalog
+signatures are checked with public keys, without generating a Research key.
+
+All executable helpers and implementation live in scripts/ and scripts/lib/.
+agent.py defaults to native mode. Run from the checkout root or pass --workspace.
+Do not use register-key, the legacy research/publish loop, or --runtime cli as a
+workaround for native execution. The old signed CLI runtime remains explicit
+compatibility only; historical artifacts remain verifiable.
 
 ## Research manager
 
-1. Run agent.py --role research sync; handle existing signed PR requests first.
-2. Run next --limit 3. Never-refreshed or six-month-old main records are eligible;
-   primary seeds precede discovery. Only the manager claims tasks.
-3. Assign each returned QID to one subagent running research --qid QID.
-   Do not pass private keys/caches/logs to another host or role.
-4. Run publish --batch-size 3 for prepared proposals. This creates an isolated
-   public Draft PR based on main. At most five schools/PR, three active PR permits.
-5. Loop sync. For a signed objection or changed school baseline, research
-   --qid QID --pr N, then publish --pr N. Use the same PR; two revisions maximum.
-6. sync materializes approved records and makes the PR ready. Human merge remains
-   required. Submission/waiting is not completion; confirm merged receipts.
-   Unresolved schools stay explicit and failed public heads remain archived.
+Read references/research-agent.md for the full startup instruction.
 
-Use references/research-agent.md for a complete autonomous-loop instruction.
-Do not create a second shared-local database queue.
-
-## Research subagent
-
-Use the single assigned QID and research command. Scripts gather bounded online
-Wikidata, necessary linked items and revision-bound Wikipedia, then call Terra
-medium with strict Schema. Emit compact new observations, not a rewritten record.
-Existing facts, candidate IDs and source lineage are script-managed. Root P625
-is owned by code; do not reinterpret its point as campus/headquarters/city.
-Retain missing periods, units, historical events, source language and conflicts.
-Reasonable inference is allowed under docs/review-policy-v2.md.
-Wrong subjects/numbers/units and unsupported legal independence still fail.
+1. Use the GitHub plugin to read main, open PRs/comments and complete coordination
+   state. next only proposes candidates, never claims them.
+2. coord-plan builds an **uncommitted plan**. Execute its plugin blob/tree/commit/
+   guarded ref operations, substitute returned SHAs, then confirm the ref.
+   On conflict reread/replan. Preserve old public Draft heads before replacement.
+3. Claim one QID per subagent. research-prepare writes a private prompt, strict
+   schema and source packet. Acquire a global model slot before native dispatch,
+   renew task/model leases, and cancel on loss. research-compile validates the
+   returned JSON and generates a compact unreviewed proposal.
+4. draft creates a bounded structured bundle and plugin publication plan.
+   Use an independent main-based branch, at most five schools per PR and three
+   active PR permits. Create Draft PRs with the plugin.
+5. Native owner-authored Review comments feed revisions back into the same PR.
+   Carry earlier question IDs, two revisions maximum, then unresolved.
+6. finalize requires exact independent Review decisions and no open objections.
+   Publish only its approved files and receipts, mark ready, and await human merge.
+   Confirm immutable receipts on actual main before marking tasks merged.
 
 ## Independent Review
 
-1. In the separate Review environment, enqueue current Drafts using
-   event_review.py --repository ider-zh/university-seed-curation --mode queue --scan.
-2. Run agent.py --role review next-review. It leases an exact PR head.
-   It independently fetches pinned revisions; no Research-private files are used.
-3. Verify every changed fact/context, earlier question and high-risk identity.
-   Post a signed decision. review --pr N is the manual single-PR entry.
-4. review-request can post a partial signed objection after prior approval.
-   Only a valid Review decision addressing its request ID can clear it.
-5. Loop with bounded waits. Never merge or act as the Research role.
-   references/review-agent.md gives the full startup instruction.
+Read references/review-agent.md.
 
-GitHub CAS refs enforce three total model calls and at most one Review, across
-hosts. Lease loss cancels/fences work. A local OS lock is not a global budget.
+Use review-prepare to independently retrieve cited revisions and enumerate every
+fact/context. Dispatch a fresh native subagent under the global Review lease,
+then review-compile and decision. Post the generated structured comment through
+the plugin after rechecking the head. Review cannot share the Research session.
+Keep role-local caches and private jobs separate even in one workspace.
 
-## Public and private boundaries
+Native comments are attributed to the actual configured repository-owner login
+and bound to PR, proposal digest, head, schema, policy and session. They are
+**not cryptographic role signatures**. The same account can represent both roles;
+independence is a workflow requirement and human merge remains explicit.
 
-Structured unreviewed candidates are allowed only in Draft PRs, clearly marked.
-Main contains approved canonical records and receipts. Short source evidence
-excerpts are allowed; full article text/HTML/wikitext, dumps, prompt/model traces,
-logs, caches and keys remain private. Role-local caches may be shared among that
-host's subagents, never required for cross-role communication.
+## Data and sources
 
-Only script-owned fields and registered Schema are allowed. Missing business
-values are omitted, not null/blank. Keep explicit source unknown/no-value.
-Sources use short record-local references; immutable revision and statement
-locators remain. Preferred is a presentation choice, not conflict resolution.
-Campus opening may count as valid_from; inauguration may inform term_start if
-the inference is disclosed. Do not invent dates/units/independence.
+Use sources.py for bounded online Wikidata, necessary linked items and
+revision-bound Wikipedia. Currency QIDs may be queried and retained with their
+revision. Each role uses its own private cache; raw sources never enter GitHub.
+Root P625 is script-owned and is not automatically a campus/headquarters point.
 
-School paths use SHA-256(QID)[:2] (256 buckets). Complete six-group accepted
-surveys advance update_datetime; partial/batch changes preserve it. A complete
-survey may retain missing/disputed observations. Unknown identity or failed
-source retrieval prevents complete freshness.
+Missing business fields are omitted; preserve explicit unknown/no-value,
+original language, subject, periods, units, historical events and conflicts.
+Preferred is a presentation choice, not proof a conflict is resolved.
+Follow immutable docs/review-policy-v2.md for reasonable disclosed inference.
+Wrong subjects/numbers/units and unsupported legal independence fail.
 
-## Sources and maintenance
+Full six-group Research + Review surveys alone advance update_datetime.
+Partial/batch changes preserve it. School paths use SHA-256(QID)[:2], 256 buckets.
+Schema major changes and official releases require human approval.
 
-Read docs/source-tools.md for sources.py wikidata-get/search and wikipedia-get.
-Necessary linked items, including currency P498, may be queried with bounded
-limits and retained revisions. Each host uses its own 30-day private cache.
-Review fetches cited revisions independently.
-
-Read docs/commands.md for executable commands, docs/data-contract.md for fields,
-docs/reviewed-pr-export.md for trusted validation. Schema major changes and
-official releases need human approval. No automatic merge or deployment is
-implied. Historical SQLite commands and initial-import/coordinate adapters
-remain compatible but do not schedule distributed agents.
+Read docs/commands.md for native commands, docs/data-contract.md for fields,
+docs/source-tools.md for sources, and docs/reviewed-pr-export.md for merge checks.

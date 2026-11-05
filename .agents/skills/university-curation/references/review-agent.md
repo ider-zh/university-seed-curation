@@ -1,49 +1,52 @@
 # Independent Review Agent startup prompt
 
-Copy this instruction into a separate Review environment.
+Copy this instruction into an independent Review session in the current workspace.
 
 ---
 
 Review university data for https://github.com/ider-zh/university-seed-curation.
 
-Clone if absent, otherwise fetch origin/main. Use trusted main code. Read
-AGENTS.md, docs/handoff.md and .agents/skills/university-curation/SKILL.md.
-You are only the independent Review role, not Research.
+Reuse the current workspace checkout, verifying origin; clone into a child
+directory only if absent. Fetch public main, preserve existing work, and use
+trusted main code. Read AGENTS.md, docs/handoff.md and the built-in
+.agents/skills/university-curation/SKILL.md.
 
-Install dependencies with python -m pip install -e . . Commands below use
-V = python .agents/skills/university-curation/scripts/agent.py --role review
-from the checkout root. Run V doctor. If needed, run V register-key here and
-wait for human merge of its public-key registration PR. Keep your independent
-.private/keys/review.pem private; do not reuse Research's key or caches.
-Use the same GitHub account if configured, but never describe your signed comment
-as a different GitHub account's formal APPROVE.
+Use the connected ChatGPT GitHub plugin and the host's native subagent tool.
+No signing key, GH_TOKEN, gh, Codex CLI, SSH or separate host is required.
+You are Review only. Research may use this workspace in another session.
+Use separate Review jobs/cache; never read Research-private traces as evidence.
 
-Continuously:
+Run agent.py --role review doctor. local_ready verifies local data/contracts;
+independently check the plugin and native subagent capabilities in this session.
+See docs/commands.md and agent.py --help.
 
-1. Run python .agents/skills/university-curation/scripts/event_review.py
-   --repository ider-zh/university-seed-curation --mode queue --scan .
-   This is a polling fallback until optional event dispatch is enabled.
-2. Run V next-review. It leases the current GitHub PR head, independently fetches
-   pinned source revisions, checks every changed fact/context and prior question,
-   and posts a compact signed decision.
-3. Run the status scan with event_review.py --repository
-   ider-zh/university-seed-curation --mode status --scan.
-4. If no task is available, wait 30–60 seconds and repeat. Lease cancellation or
-   head changes fence old work; never post an approval for a stale input. Retry
-   transient errors with bounded backoff. Preserve failures privately.
-5. If you later find a problem in an approved PR, use V review-request --pr N
-   --qid QID --field FIELD --category CATEGORY --reason REASON . It creates a
-   persistent signed objection. Do not quietly edit an old approval to hide it.
+Loop:
+1. Read current open university Drafts, their complete proposal files, comments,
+   current main and coordination state through the GitHub plugin. Claim a Review
+   task using coord-plan and execute/confirm its guarded plugin ref operation.
+   Ignore unsigned ordinary comments as authority unless they have the validated
+   native marker and actual repository-owner account attribution.
+2. Run review-prepare with the structured proposal and a fresh .private Review
+   job. It independently fetches cited revisions, builds every fact/context
+   check, and writes a prompt and strict output schema.
+3. Acquire the global Review model slot through coord-plan/plugin before
+   dispatching an independent native subagent. Prefer Terra medium if selectable;
+   record actual model/effort, or not_reported if unavailable. Use the real new
+   session ID; never reuse the Research session. Renew leases through the plugin,
+   cancel on lease loss, and release slots after completion.
+4. Run review-compile on its JSON, then decision with the actual PR number and
+   reviewed head SHA. Post the generated structured comment through the GitHub
+   plugin. Recheck the PR head before posting. Do not edit an old approval to
+   hide a new issue; a later native objection/decision must remain visible.
+5. Verify every changed fact/context and prior question from independently
+   retrieved exact source revisions. Supported single-source, undated or
+   reasonably inferred data is allowed by review-policy-v2. Wrong subjects,
+   values, units, fabricated identity links and unaddressed requests fail.
+6. Wait 30–60 seconds when idle and repeat. Retry transient failures with bounded
+   backoff; preserve failed attempts privately. Never merge, act as Research,
+   bypass leases, configure services/protections or invoke the legacy CLI.
 
-Terra medium data calls must use the scripts and global GitHub model budget:
-three total calls, at most one Review. No shared host/database is required.
-Review only source evidence and exact proposal bytes; do not trust Research's
-private explanation. Reasonable disclosed inference and single-source/undated
-values are allowed under review-policy-v2; wrong subjects, values, units or
-fabricated identity relationships fail.
-
-Never fetch/execute Python from a PR branch, become the Research role, share
-private source captures/keys/logs, or merge a PR. Human merges remain explicit.
-Do not configure/deploy event services or repository protections unless requested.
-Report operational status honestly; signed role keys are not provider-signed
-proof of the model's identity.
+There are three total concurrent data calls across both roles, at most one
+Review. Same-account native comments provide account/session workflow attribution,
+not independently authenticated or cryptographic role identity. Final merge is
+human-controlled. No private key registration is part of this native workflow.

@@ -35,7 +35,11 @@ def draft_snapshot(repo, head, trust):
     paths = command(repo, "ls-tree", "-r", "--name-only", head, "--", "data/proposals").decode().splitlines()
     manifests = [p for p in paths if p.endswith("/manifest.json")]
     if len(manifests) != 1: raise ValueError("One Draft manifest required")
-    payload = verify(load_json(blob(repo, head, manifests[0])), trust, role="research")
+    document = load_json(blob(repo, head, manifests[0]))
+    if document.get("type") == "university-native-draft-v1":
+        from .native_protocol import inspect_draft as inspect_native
+        return inspect_native(repo, document["base_commit"], head, trust)
+    payload = verify(document, trust, role="research")
     return inspect_draft(repo, payload["base_commit"], head, trust)
 
 

@@ -1,82 +1,84 @@
-# Distributed Research and Review
+# Native Research and Review workflow
 
-The repository is https://github.com/ider-zh/university-seed-curation.
-One Research manager and its one-QID subagents run independently of one Review
-role. They may authenticate as the same GitHub user. Each holds its own signing
-key and local cache. No shared disk, SQLite database or local model lock is used
-as cross-role authority.
+Repository: https://github.com/ider-zh/university-seed-curation.
+Run in the current workspace. Reuse the checkout and preserve existing work;
+clone into a child directory only if absent. Research and Review use independent
+sessions, optionally in the same checkout, with separate private jobs/caches.
 
-## Bootstrap
+## Execution boundary
 
-Merge implementation code, then the signed seed import / byte-preserving bucket
-bootstrap. Each role runs `agent.py --role ROLE register-key` from its own host.
-Only the public key descriptor enters a code-only registration PR. Human merge
-activates it. Role keys cannot sign legacy human seed acceptance or initial
-imports. Run doctor after registration merges. Do not exchange private keys.
+The host Agent owns the connected GitHub plugin and native subagent tool.
+Local Python prepares sources/tasks, validates strict JSON, generates records
+and emits GitHub operation plans. It does not inherit plugin credentials or
+launch Codex. No role signing keys, GH_TOKEN, gh or separate machine are required.
 
-## Research loop
+doctor returns local_ready after checking the repository, input catalog and
+contracts. The host verifies plugin/subagent availability in its session.
+Missing shell credentials are not evidence that the plugin is disconnected.
 
-The manager calls sync before claiming more work. It handles signed revision
-requests first, then claims up to three QIDs with next. Primary candidates precede
-the separate discovery queue; current approved update_datetime governs the
-six-calendar-month refresh threshold. A local derived index speeds selection,
-but main and GitHub task refs remain authoritative.
+## Tasks and model budget
 
-Dispatch each assigned QID to one subagent running the research command.
-The script acquires a global model lease and builds a bounded source packet,
-then emits a strict compact delta. It automatically preserves root Wikidata P625,
-without reinterpreting it as a campus, headquarters or city point.
+One Research manager selects primary candidates before discovery candidates,
+using never-refreshed/six-calendar-month-old approved records. next is advisory.
+The manager reads current coordination refs through the plugin and generates a
+coord-plan for claims. It executes the returned blob/tree/commit/ref operations
+with expected-head protection and confirms the resulting ref before assignment.
 
-Publish a small batch as a public Draft PR. Each batch gets a fresh branch and
-worktree based directly on main. No PR depends on another data PR. Maximum five
-schools per batch and three active PR permits prevent unlimited review backlog.
-Waiting at capacity is not task completion.
+The same process grants/renews/releases global model slots: at most three calls
+across both roles, at most one Review, reserving capacity for waiting Review.
+A native subagent starts only after its model lease is confirmed. Renew leases
+while it runs and cancel on loss. Coordination remains on GitHub, not local files.
+
+## Research and Draft PRs
+
+research-prepare creates a private revision-bound source packet, prompt and
+strict output Schema. The manager dispatches one native subagent per QID, then
+research-compile validates its returned JSON, root P625 and deterministic delta.
+Actual model/session metadata is caller-reported, not provider-authenticated.
+Prefer Terra medium when offered by the host; do not fabricate unavailable
+metadata or introduce a CLI requirement.
+
+draft builds raw structured native proposals under data/proposals/BATCH/, with
+an explicit native manifest. No Research signature is required. Execute the
+bundle's plugin operations and create a Draft PR. Each batch starts from main
+in an isolated worktree/tree, at most five schools and three active PR permits.
+Raw pages, caches, source corpora and model logs remain private.
 
 ## Independent Review and revisions
 
-Review can poll with event_review.py --mode queue --scan and agent.py next-review.
-A deployable Actions dispatcher can enqueue validated Draft heads on PR events;
-it defaults off until an execution environment is selected. The Review worker,
-not Actions, owns the model credentials and Review signing key.
+Review reads the public structured proposal through the plugin. review-prepare
+independently retrieves pinned revisions and enumerates every fact/context and
+earlier request. A fresh native subagent supplies strict checks; review-compile
+rejects missing checks, same Research session, unsupported facts and unaddressed
+requests. decision creates a PR/head/proposal-bound structured comment.
 
-Review independently retrieves pinned source revisions, validates every changed
-fact/context, then posts a structured signed decision. A partial objection can
-also be posted with review-request. Signatures bind repository, PR, QID, proposal,
-reviewed head, policy, schema and session; same-account comments are not formal
-second-account approvals.
+Comments use the university-native-review-v1 marker and actual repository-owner
+GitHub attribution. Same-account sessions are a workflow separation, not
+cryptographic independent identities. Only a later valid Review addressing a
+request can resolve it; a head change or Research response cannot.
 
-Research sync reads these comments. Failed schools are revised on the same PR
-using research --pr N, then publish --pr N. Questions survive branch/head changes.
-Only the exact valid independent approval carrying addressed request IDs resolves
-them. Two revisions maximum; further failures become unresolved. Research never
-closes a Review objection itself. Historical failed heads stay reachable through
-coordination refs before force-with-lease replacement.
+Research revises the same PR, maximum two rounds per school. Beyond that mark
+unresolved and preserve the failed public Draft head through coordination
+ancestry. Approved siblings can proceed independently after unresolved schools
+are explicitly removed from the final batch.
 
-When every remaining school is approved or explicitly unresolved, sync builds
-main + approved canonical records + dual-sign receipts. It removes unresolved
-schools from the mergeable batch while retaining their public Draft history.
-The PR becomes ready for **human merge**. A fully unresolved Draft remains visible.
+## Finalization and completion
 
-## Base changes, completion and recovery
+finalize uses current main, actual PR number and complete plugin comment history.
+It requires the latest owner-authored independent approval, no open questions,
+unchanged school baseline and exact deterministic record hash. It generates
+canonical records, native receipts and a final manifest. Publish via guarded
+plugin ref updates, mark ready, and await human merge.
 
-If main changes only for another school, sync rebinds the final batch mechanically
-without another model call. A changed same-QID baseline requires fresh Research
-and Review; schema/policy/catalog incompatibility never overwrites current data.
-Signed-data and live university-review checks must pass again.
+Unrelated main changes permit mechanical rebind; changed same-school data needs
+fresh Research/Review. Confirm immutable receipts actually reached main before
+marking tasks merged. Closed unmerged PRs are unresolved, not blindly resubmitted.
 
-Submission is not completion. Sync confirms immutable receipts actually reached
-main before marking tasks merged and releasing PR permits. A closed unmerged PR
-becomes unresolved; it is not blindly resubmitted. A partial survey has a seven-day
-queue backoff and preserves update_datetime. A complete six-group survey may
-retain disclosed missing/conflicting values; unknown identity or source retrieval
-failures prevent complete freshness.
+Only a complete six-group survey advances update_datetime. Missing/disputed
+values may remain disclosed; uncertain identity/source failures prevent complete
+freshness. Partial changes preserve that timestamp.
 
-Coordination refs: coord/tasks-00..ff for tasks, coord/runtime for global model
-slots, Review head queue and PR permits. Updates use compare-and-swap Git pushes.
-Leases expire and are fenced; failed workers stop. Coordination metadata and
-short diagnostic codes are public; never put sources, credentials or logs there.
-
-Human setup must make signed-data-validation and university-review required
-before treating CI as an enforced merge barrier. This implementation does not
-configure protections or auto-merge. Review comments/statuses are asynchronous;
-a human must not bypass a pending or newly failed check.
+Trusted CI checks use actual GitHub comment authors/history and exact blobs.
+Required-check/branch-protection setup and event deployment remain separate.
+No automatic merge is enabled. Native Review can poll via the plugin; queue-only
+Actions entry remains optional and disabled until configured.

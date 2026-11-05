@@ -1,6 +1,6 @@
 # Skill 的在线来源工具
 
-本项目的 Agent 可在其他环境运行。Wikidata 和 Wikipedia 均通过在线 API 查询，
+本项目的 Agent 默认在当前工作区运行。Wikidata 和 Wikipedia 均通过在线 API 查询，
 不需要 SSH、DuckDB、本地 dump 或 229。上游 wikidata-research 的 dump 约定不变。
 
 实现只用 Python 标准库；默认把原始响应写入当前环境 `.private/cache/sources`。
@@ -59,7 +59,7 @@ oldid 固定文章 revision，但模板渲染可能变化；实际观察的响�
 
 Research subagents on one host may use `UNIVERSITY_SOURCE_CACHE` or global
 `--cache ABSOLUTE_PATH` for that host's private cache. Independent Review uses
-its own host and cache; no cross-role cache sharing is required. Same-key
+its own role-scoped cache, including in the same workspace. Same-key
 requests on one host are serialized with an OS file lock and
 recheck the 30-day cache after acquiring the lock; different keys remain parallel.
 A failed process releases its OS lock automatically. This is a local-filesystem

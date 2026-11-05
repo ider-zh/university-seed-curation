@@ -192,6 +192,9 @@ def verify_files(repo, base, files, trust, require_acceptance=True):
     manifests = [p for p in files if re.fullmatch(r"data/batches/[a-z0-9][a-z0-9-]{0,79}\.json", p)]
     if len(manifests) != 1: raise ValueError("Exactly one new signed batch manifest required")
     raw_manifest = canonical_json(files[manifests[0]])
+    if raw_manifest.get("type") == "university-native-final-v1":
+        from .native_protocol import verify_final
+        return verify_final(repo, base, files, trust)
     if raw_manifest.get("payload", {}).get("type") == "university-final-batch-v1":
         from .distributed_protocol import verify_final
         return verify_final(repo, base, files, trust)
@@ -282,8 +285,12 @@ def validate_pr(repo, base_ref, head_ref, expected_head_sha=None):
                 "primary_count": len(rows["primary"]), "discovery_count": len(rows["discovery"]), "overlap_count": rows["overlap_count"], "records_moved": moved}
     if any(p.startswith("data/proposals/") for p in changed):
         from .distributed_protocol import inspect_draft
-        inspect_draft(repo, base, head, trust)
-        raise ValueError("Draft proposals are valid but unreviewed; independent signed Review is required before main")
+        manifests = [p for p in changed if p.endswith('/manifest.json') and p.startswith('data/proposals/')]
+        if len(manifests) == 1 and canonical_json(blob(repo, head, manifests[0])).get('type') == 'university-native-draft-v1':
+            from .native_protocol import inspect_draft as inspect_native
+            inspect_native(repo, base, head, trust)
+        else: inspect_draft(repo, base, head, trust)
+        raise ValueError("Draft proposals are valid but unreviewed; independent Review is required before main")
     for version, expected in trust["schemas"].items():
         raw = blob(repo, base, "schemas/university.v" + version + ".schema.json")
         if sha(encode(load_json(raw))) != expected: raise ValueError("Base schema trust mismatch")

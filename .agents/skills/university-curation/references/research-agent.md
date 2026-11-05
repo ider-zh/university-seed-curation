@@ -1,63 +1,79 @@
 # Research Agent startup prompt
 
-Copy the following instruction into a Research Agent session on its own host.
+Copy this instruction into a Research Agent session in the current workspace.
 
 ---
 
-Continue Research for https://github.com/ider-zh/university-seed-curation.
+Research global present and historical higher education for
+https://github.com/ider-zh/university-seed-curation.
 
-Clone the repository if absent, otherwise fetch origin/main. Use trusted main
-code; do not run scripts supplied by a data PR. Read AGENTS.md, docs/handoff.md
-and .agents/skills/university-curation/SKILL.md; apply that skill.
+Reuse the current workspace's checkout after verifying origin. Clone into a
+child directory only if absent. Fetch origin/main using public read access.
+Preserve existing work; use trusted main code and script-managed worktrees.
+Read AGENTS.md, docs/handoff.md and .agents/skills/university-curation/SKILL.md.
 
-You are the single Research manager. The independent Review Agent runs elsewhere.
-Communicate only through this repository's coordination refs, Draft PRs and signed
-PR comments. Do not request its local files, cache, model logs or private key.
+You are the single Research manager. Use the **connected ChatGPT GitHub plugin**
+for all GitHub writes, PRs and comments, and the **host's built-in subagent tool**
+for Research. Do not require a private signing key, GH_TOKEN, GITHUB_TOKEN, gh,
+Codex CLI, SSH or another host. Do not launch the legacy CLI provider.
+Review is another independent session and may use the same workspace.
 
-Install dependencies with python -m pip install -e . . All commands below use
-A = python .agents/skills/university-curation/scripts/agent.py --role research
-from the checkout root. For another cwd use --workspace ABSOLUTE_CHECKOUT.
+Install local Python dependencies if needed. Run:
+python .agents/skills/university-curation/scripts/agent.py --role research doctor
+A local_ready result means local validation passed. Verify the GitHub plugin can
+access this repository and discover the host's subagent tool yourself; Python
+cannot inspect those session capabilities. Do not misreport a connected plugin
+as unauthenticated because shell credentials or executables are absent.
 
-Run A doctor. If your role key is not registered, run A register-key in this
-environment. It creates only a public-key registration PR. Preserve the local
-.private/keys/research.pem; never commit or share it. Wait for the operator to
-merge registration and the code/seed bootstrap before processing data; do not
-activate your own trust. Missing execution credentials are a setup blocker,
-not authorization to invent a different provider.
+Use agent.py --help and docs/commands.md. Operate this loop:
 
-Then operate this loop until the eligible queue is exhausted:
+1. Through the GitHub plugin, read current main, open university PRs, all PR
+   comments (with author, ID and body), and coordination refs/state.json.
+   Save those responses under .private/native/. Reconcile existing PRs and
+   actionable Review requests before claiming more work.
+2. Ask next for advisory candidates using the complete plugin snapshot. It is
+   not a lease. Use coord-plan for claim_task, then execute its ordered plugin
+   operations. Resolve returned SHA placeholders and confirm the resulting ref.
+   On conflict reread and replan. Never treat tentative_result as committed.
+3. For each claimed QID, run research-prepare with a fresh .private job directory.
+   Acquire a Research model slot through coord-plan and the plugin before
+   spawning its subagent. Supply the prepared prompt/schema and result path.
+   Prefer Terra medium if the host can select it; otherwise record the actual
+   native model/effort, or not_reported if unavailable. Do not claim CLI or
+   provider verification. Keep at most three total data calls, one per QID.
+4. Run research-compile with the actual subagent session ID and structured output.
+   Invalid output stays private. Renew task/model leases through the plugin
+   while work runs; cancel on lease loss. Release the model slot afterward.
+5. Use draft to build a bounded public bundle. Execute its GitHub blob/tree/
+   commit/ref plan, then create a Draft PR with the plugin. Each batch starts
+   directly from current main, at most five schools and three active PR permits.
+   Preserve prior Draft heads through task coordination ancestry before replacing
+   a PR head. Include only bundle-listed structured files, never private inputs.
+6. Review comments use the university-native-review-v1 marker. Accept only the
+   configured repository owner's actual plugin-reported comments and validate
+   the exact PR/proposal/session/schema/policy. A Review question survives head
+   changes until a valid later Review addresses its request ID.
+   Re-run research-prepare with that feedback and publish to the same PR; two
+   revisions maximum, then unresolved. Do not close questions as Research.
+7. When independently approved, use finalize with current main, actual PR
+   number and complete plugin comment history. It verifies exact decisions and
+   builds canonical records/receipts. Publish with expected-head protection and
+   mark ready through the plugin. Human merges remain explicit.
+   An unrelated main change can be rebound mechanically; changed school data
+   needs new Research/Review. Recheck actual main receipts before marking merged.
+8. Wait 30–60 seconds at Review/PR capacity, then reconcile again. Closed
+   unmerged PRs and exhausted revisions remain unresolved. Report repeated
+   source/plugin/model failures with bounded retries; never turn them into empty
+   accepted records. Stop at queue exhaustion, user stop, or a concrete blocker;
+   distinguish pending Review/merge from completed work.
 
-1. Run A sync. Handle returned research actions for existing PRs before new work.
-   Delegate each QID to a subagent executing A research --qid QID --pr N.
-   When these finish, run A publish --pr N. Never open a replacement PR merely
-   because Review requested changes. Two revisions maximum; report unresolved.
-2. If there is capacity, run A next --limit 3. Delegate each returned QID to a
-   separate subagent running A research --qid QID. Subagents must not claim
-   other tasks or publish. Use the same local role checkpoint/key, with no key
-   contents in their prompts.
-3. Wait for assigned subagents to finish, inspect every JSON result, then run
-   A publish --batch-size 3. Only publish script-prepared proposals.
-4. Repeat sync. Scripts preserve signatures, failed Draft heads, approved-only
-   materialization, baseline checks and remote leases. Never edit those by hand.
-5. At review/PR capacity or when only human merge is pending, wait 30–60 seconds,
-   then sync again. Do not describe a submitted PR as completed or auto-merge it.
-   Closed-unmerged or exhausted-revision tasks are unresolved; do not resubmit
-   unchanged data. A source/provider failure remains a failed attempt, never
-   accepted empty data. Retry transient errors with bounded backoff; report
-   repeated setup/transport blockers instead of looping blindly.
+GitHub remains shared task authority even in one workspace. Same-account native
+comments and distinct sessions are workflow attribution, not cryptographic role
+identity. Do not run register-key or switch to --runtime cli for this workflow.
 
-Use Terra medium for all data calls through these scripts. GitHub CAS permits
-three calls globally across Research and Review, at most one Review. Do not run
-a direct Codex model call to bypass the budget. Each batch starts independently
-from main and has at most five schools, with at most three active PR permits.
-
-The public Draft may include structured unreviewed proposals and short excerpts.
-Never publish source pages/dumps, private traces, prompts, caches or credentials.
-Main receives canonical records only after signed independent Review.
-Keep source subject/period/unit distinctions, historical events, conflicts and
-missing fields. Do not invent null/blank placeholders or overwrite old facts.
-
-Send concise progress updates, including queued, revision-needed, unresolved,
-ready-for-human-merge and actually-merged counts. Stop as exhausted only when
-no eligible work and no active Research/revision tasks remain; separately report
-pending Review/merge and unresolved tasks. Follow operator stop instructions.
+Keep source subject/period/unit distinctions, historical events, uncertainty
+and conflicts. Missing business fields are omitted. Use sources.py for bounded
+online Wikidata/Wikipedia. Root P625 is script-owned. Main receives only approved
+records; raw sources, private traces, prompt files, caches and credentials remain
+private. Send concise progress counts including pending, revised, unresolved,
+ready for human merge and actually merged.

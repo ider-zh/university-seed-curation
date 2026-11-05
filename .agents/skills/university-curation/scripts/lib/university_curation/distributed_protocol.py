@@ -129,16 +129,26 @@ def read_reviews(comments, trust, pr_number, qid, proposal_hash):
 def check_decision(document, proposal_document, baseline, trust, pr_number=None):
     research = verify(proposal_document, trust, role="research"); value = verify(document, trust, role="review")
     if document["key_id"] == proposal_document["key_id"]: raise ValueError("Research and Review signing identities must differ")
+    if value.get("type") != "university-review-decision-v1": raise ValueError("Unexpected signed Review type")
+    return check_decision_payload(value, research, baseline, trust, pr_number)
+
+
+def check_decision_payload(value, research, baseline, trust, pr_number=None):
+    """Shared deterministic review gates; callers establish transport attribution."""
+    native = value.get("type") == "university-native-review-v1"
     required = {"type", "repository", "pr_number", "reviewed_head_sha", "policy", "schema_sha256", "decision", "qid", "reviewed_at", "proposal_sha256", "facts_checked", "contexts_checked", "source_revisions_checked", "requests", "request_responses", "coverage_checks", "model", "reasoning_effort", "review_session", "full_refresh", "inferences"}
     expected = required | ({"record_sha256"} if value.get("decision") == "approve" else set())
     if set(value) != expected: raise ValueError("Unexpected Review decision keys")
-    if value["type"] != "university-review-decision-v1" or value["repository"] != trust["repository"] or value["qid"] != research["qid"]: raise ValueError("Review identity mismatch")
+    if value["type"] not in ("university-review-decision-v1", "university-native-review-v1") or value["repository"] != trust["repository"] or value["qid"] != research["qid"]: raise ValueError("Review identity mismatch")
     if value["decision"] not in ("approve", "request_changes", "unresolved"): raise ValueError("Unknown Review decision")
     if pr_number is not None and value["pr_number"] != pr_number: raise ValueError("Review belongs to another PR")
     if type(value["pr_number"]) is not int or value["pr_number"] < 1 or not re.fullmatch("[0-9a-f]{40}", value["reviewed_head_sha"]): raise ValueError("Invalid Review PR/head")
     if value["policy"] != trust["review_policy"] or value["schema_sha256"] != trust["schemas"]["0.2.2"]: raise ValueError("Review policy/schema changed")
     if value["proposal_sha256"] != sha(encode(research)): raise ValueError("Review did not cover this exact proposal")
-    if value["model"] != trust["model"] or value["reasoning_effort"] != trust["reasoning_effort"] or not value["review_session"] or value["review_session"] == research["research"]["session"]:
+    configured = (isinstance(value["model"], str) and bool(value["model"].strip()) and
+                  value["reasoning_effort"] in ("low", "medium", "high", "xhigh", "max", "ultra", "not_reported")) if native else (
+                      value["model"] == trust["model"] and value["reasoning_effort"] == trust["reasoning_effort"])
+    if not configured or not value["review_session"] or value["review_session"] == research["research"]["session"]:
         raise ValueError("Independent configured Review session required")
     instant(value["reviewed_at"])
     if instant(value["reviewed_at"]) < instant(research["proposed_at"]): raise ValueError("Review predates Research")

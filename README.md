@@ -3,10 +3,11 @@
 Script-managed records for global present and historical higher education:
 online Wikidata/Wikipedia research, independent review, and small GitHub PRs.
 
-Research and Review can run on separate hosts with the same GitHub account.
-They share only GitHub task refs, Draft PRs and independently signed comments.
-Drafts contain structured candidates; main contains approved records and receipts.
-Raw sources, model traces and private keys stay in each role's local environment.
+Research and Review run in the current workspace using independent native
+subagent sessions and the connected ChatGPT GitHub plugin. No signing keys,
+shell tokens, gh or Codex CLI are needed. They share GitHub task refs, Draft PRs
+and structured owner-attributed comments. Drafts contain candidates; main contains
+approved records and receipts. Raw sources and model traces stay private.
 
 Start here:
 
@@ -31,4 +32,4 @@ omitted; sourced observations, conflicts and preferred references remain explici
 All executable skill code lives under `.agents/skills/university-curation/scripts/`.
 Offline checks: `python -m unittest discover -s tests`.
 Current docs describe one current workflow; previous designs remain in Git history.
-Read handoff for pending bootstrap PRs and deployment prerequisites.
+Read handoff for bootstrap status and execution prerequisites.

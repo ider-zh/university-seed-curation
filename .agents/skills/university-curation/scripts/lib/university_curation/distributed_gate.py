@@ -15,8 +15,21 @@ def check(repo, client, number):
     paths = [p for p in git(repo, "diff", "--no-renames", "--name-only", "-z", base, head).decode().split("\0") if p]
     if any(p.startswith("data/proposals/") for p in paths):
         manifest, proposals = draft_snapshot(repo, head, trust)
-        return {"state": "pending", "status": "awaiting_independent_signed_review", "head_sha": head, "qids": sorted(proposals)}
+        return {"state": "pending", "status": ("awaiting_independent_review" if manifest.get('type') == 'university-native-draft-v1' else "awaiting_independent_signed_review"), "head_sha": head, "qids": sorted(proposals)}
     result = validate_pr(repo, base, head)
+    if result.get('task_kind') == 'native_research':
+        if result['review_pr'] != number: raise ValueError('Native Review belongs to another PR')
+        from .native_protocol import read_reviews as native_reviews, read_requests
+        notes = comments(client, number)
+        for qid in result['qids']:
+            receipt = load_json(blob(repo, head, 'data/reviews/' + result['batch_id'] + '/' + qid + '.json'))
+            history = native_reviews(notes, trust, number, qid, sha(encode(receipt['research'])))
+            if not history or history[-1][0] != receipt['review']:
+                raise ValueError('Final native records require the latest owner-authored Review comment')
+            if read_requests(notes, trust, number, qid, resolved_by_validated_decision=receipt['review']):
+                raise ValueError('Unresolved native Review objections: ' + qid)
+        return {'state':'success','status':'native_independently_reviewed','head_sha':head,
+                'base_sha':base,'discussion_sha256':sha(encode(notes)),'qids':result['qids']}
     if result.get("task_kind") != "distributed_research":
         return {"state": "success", "status": result["status"], "head_sha": head}
     if result["review_pr"] != number: raise ValueError("Signed Review belongs to another PR")

@@ -9,24 +9,36 @@ Read `docs/handoff.md`, your role in `docs/agent-workflow.md`, and
 - This downstream project uses bounded online Wikidata and revision-bound
   Wikipedia, plus supporting websites. Use the source skill. The upstream
   wikidata-research local-dump contract remains unchanged.
-- Research and Review run in separate environments. **GitHub refs, PRs and
-  signed PR comments are their only shared state and communication.** Their
-  caches, local checkpoints, source captures, model logs and keys remain local.
+- Run in the current workspace, reusing its checkout; clone into a child directory
+  only if absent. Research and Review may use the same workspace in independent
+  sessions with separate private jobs, caches and checkpoints. **GitHub refs, PRs
+  and signed PR comments remain their shared task state and communication.**
+  Source captures and model logs remain private. Preserve existing work and
+  use script-managed worktrees for isolated PR branches.
 - Operator override, 2026-11-05: public **Draft PRs may hold explicitly
   unreviewed structured proposals**. No raw pages/dumps, bulk source text,
   private model outputs, traces, prompts, logs or credentials enter GitHub.
   Main receives approved canonical records and their signed receipts only.
-- Both roles may use the same GitHub account. Use independent Ed25519 role
-  keys, registered by separate code-only PRs. Never share private keys or
-  present signed comments as a second account's formal GitHub APPROVE.
+- Default runtime uses the connected ChatGPT GitHub plugin and the host's native
+  subagents. Research and Review need no private keys, shell tokens, gh, Codex CLI,
+  SSH or separate hosts. Local doctor cannot authenticate a host plugin; the
+  Agent checks plugin/subagent availability in its own session.
+- Both roles may use the same GitHub account. Native structured PR comments must
+  come from the configured repository-owner account and bind actual PR/proposal/
+  schema/policy/session. Independent sessions are a workflow requirement, not
+  cryptographic role identity or a second account's formal GitHub APPROVE.
+  Preserve historical signatures; --runtime cli is explicit compatibility only.
 - One Research manager assigns one QID to each subagent. Terra medium is
   fixed for data calls. GitHub CAS leases enforce three total Research/Review
-  calls, at most one Review, with capacity reserved when Review waits.
+  calls, at most one Review, with capacity reserved when Review waits. Generate
+  coord-plan operations locally, execute them through the plugin, and confirm
+  the guarded ref update before treating a tentative result as a lease.
 - Each batch has its own branch/worktree from main; no stacked data PRs.
   At most three active PR permits, at most five schools per PR. Lease loss
   cancels work. Never bypass the coordinator by directly starting model calls.
 - Use skill scripts for tasks, records, signatures and Schema. Never hand-edit
-  canonical JSON, revisions, receipts or coordination state.
+  canonical JSON, revisions, receipts or coordination state. Native subagents
+  return strict JSON to local prepare/compile scripts; scripts do not launch models.
 - Missing business values are omitted: no null/blank placeholders or invented
   zeros. Explicit source unknown/no-value and attempted coverage remain visible.
 - Every claim identifies its subject, meaning, period/unit and provenance.
@@ -37,7 +49,7 @@ Read `docs/handoff.md`, your role in `docs/agent-workflow.md`, and
   and disclosed reasonable inference. Wrong subjects, values, units, fabrication
   and unsupported legal independence fail. Missing optional fields alone do not.
 - Review independently retrieves cited revisions and verifies every changed fact
-  and context. A signed objection survives head changes. Only a valid independent
+  and context. An owner-attributed Review objection survives head changes. Only a valid independent
   Review decision addressing it can resolve it. Research revises the same PR.
   Maximum two revisions per school; then unresolved. Preserve failed public
   Draft heads through coordination ancestry before branch replacement.

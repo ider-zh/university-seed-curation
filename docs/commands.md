@@ -1,65 +1,93 @@
-# Current skill commands
+# Native Agent commands
 
-Run from the checkout root with Python 3.11+, Git, authenticated GitHub access,
-and a configured Codex CLI for model work.
+Run in the current workspace checkout with Python 3.11+ and Git. GitHub writes
+use the connected ChatGPT GitHub plugin; models use the host's native subagent
+tool. These local commands require no private signing key, token, gh or Codex CLI.
 
 ```text
 python -m pip install -e .
 python .agents/skills/university-curation/scripts/agent.py --help
-python .agents/skills/university-curation/scripts/agent.py --role research register-key
-python .agents/skills/university-curation/scripts/agent.py --role review register-key
 python .agents/skills/university-curation/scripts/agent.py --role research doctor
 python .agents/skills/university-curation/scripts/agent.py --role review doctor
 ```
 
-Register each role in its own environment; human-merge the public-key registration
-PR before doctor or model work. Default private keys are .private/keys/ROLE.pem.
-Use global --workspace ABSOLUTE_CHECKOUT and --key ABSOLUTE_PRIVATE_KEY when needed.
-Never pass key contents or GitHub tokens in arguments.
+local_ready confirms local contracts/catalog, not host capabilities. The Agent
+must discover and verify its GitHub plugin and subagent tool in the current
+session. It must not report missing shell credentials as missing plugin access.
 
-## Research manager and one-QID subagents
+## Research
 
 ```text
-python .agents/skills/university-curation/scripts/agent.py --role research sync
-python .agents/skills/university-curation/scripts/agent.py --role research next --limit 3
-python .agents/skills/university-curation/scripts/agent.py --role research research --qid Q13371
-python .agents/skills/university-curation/scripts/agent.py --role research publish --batch-size 3
-python .agents/skills/university-curation/scripts/agent.py --role research research --qid Q13371 --pr 12
-python .agents/skills/university-curation/scripts/agent.py --role research publish --pr 12
+python .agents/skills/university-curation/scripts/agent.py --role research next --limit 3 --snapshot .private/native/github-snapshot.json
+python .agents/skills/university-curation/scripts/agent.py --role research research-prepare --qid Q13371 --job .private/native/research/Q13371/attempt-001
+python .agents/skills/university-curation/scripts/agent.py --role research research-compile --job .private/native/research/Q13371/attempt-001 --result .private/native/research/Q13371/result.json --session ACTUAL_SESSION --model ACTUAL_MODEL --effort medium
+python .agents/skills/university-curation/scripts/agent.py --role research draft --proposal .private/native/proposal.json --batch-id native-001 --output .private/native/delivery-001
 ```
 
-Only the manager calls next/publish/sync. Assigned subagents call research for
-their QID; global CAS model leases apply across both roles. JSON results state
-whether to revise, wait for Review, rebind or wait for human merge.
+Preparation writes private prompt/schema paths. The host supplies these to its
+subagent and saves its JSON privately. Record actual session/model/effort.
+Prefer Terra medium when selectable; use not_reported when host metadata is
+unavailable, never invent it. Compile never launches or authenticates a model.
 
-## Independent Review
+## Review
 
 ```text
-python .agents/skills/university-curation/scripts/event_review.py --repository ider-zh/university-seed-curation --mode queue --scan
-python .agents/skills/university-curation/scripts/agent.py --role review next-review
-python .agents/skills/university-curation/scripts/agent.py --role review review --pr 12
-python .agents/skills/university-curation/scripts/agent.py --role review review-request --pr 12 --qid Q13371 --field geography --category scope_conflict --reason "Check whether the point belongs to the institution"
-python .agents/skills/university-curation/scripts/event_review.py --repository ider-zh/university-seed-curation --mode status --scan
+python .agents/skills/university-curation/scripts/agent.py --role review review-prepare --proposal .private/native/proposal.json --job .private/native/review/Q13371/attempt-001
+python .agents/skills/university-curation/scripts/agent.py --role review review-compile --job .private/native/review/Q13371/attempt-001 --result .private/native/review/Q13371/result.json --session NEW_REVIEW_SESSION --model ACTUAL_MODEL --effort medium
+python .agents/skills/university-curation/scripts/agent.py --role review decision --proposal .private/native/proposal.json --verdict .private/native/verdict.json --pr 12 --head-sha REVIEWED_HEAD_SHA --output .private/native/decision-001
 ```
 
-next-review consumes the GitHub head queue with a renewed lease. Direct review
-is a bounded manual entry and still obeys the global one-Review model slot.
-The queue-only Actions dispatcher is disabled unless repository variable
-UNIVERSITY_EVENT_REVIEW_ENABLED is true. It never runs models or holds role keys.
+The host posts the generated comment through the GitHub plugin; it is not a
+signature. It binds actual PR/head/proposal and independent session. Review
+preparation fetches exact sources independently, without Research-private logs.
+The proposal file must be downloaded from the public Draft, including its
+transport metadata; do not substitute a pre-publication Research artifact.
 
-## Validation and maintenance
+## Coordination and publication
 
 ```text
-python -m unittest discover -s tests
+python .agents/skills/university-curation/scripts/agent.py --role research coord-plan --snapshot .private/native/coord-snapshot.json --action claim_task --arguments .private/native/claim-arguments.json --output .private/native/claim-plan.json
+python .agents/skills/university-curation/scripts/agent.py --role research finalize --head-ref PR_HEAD_SHA --pr 12 --comments .private/native/pr12-comments.json --output .private/native/final-001
+```
+
+Use the plugin to read all relevant refs/state and complete PR comments, including
+author login/ID/body. coord-plan requires explicit known-present or known-absent
+ref snapshots. Arguments match GitCoordinator's task/model/PR lease operations;
+its output lists the exact plugin tools and expected-head guards.
+tentative_result is not a committed lease. Execute and confirm the plan first.
+Global limits remain three model calls, one Review, three active PR permits.
+
+Snapshot files are maps keyed by coordination branch name. Read each existing
+branch's SHA and state.json through the plugin. A ref is known absent only
+after a complete GitHub ref listing confirms absence, represented as:
+
+```json
+{"coord/runtime":{"sha":null,"state":{}}}
+```
+
+For a present ref use its actual 40-character commit SHA and parsed state object.
+Task shards are coord/tasks- plus SHA-256(QID)[:2]. For example acquire_model
+arguments use role, owner (native manager/session ID), job, and now (UTC ISO time).
+Renew/release arguments use the confirmed lease plus now. Match the chosen
+GitCoordinator method's argument names; do not copy a tentative lease into work.
+
+Publication bundles list only approved structured files and blob/tree/commit/ref
+operations. Use expected_sha and reread/replan on conflicts. Finalization rejects
+unapproved/stale proposals and unresolved questions; human merging stays explicit.
+For an existing Draft, pass draft --expected-head ACTUAL_PR_HEAD_SHA. Finalize
+also supports an existing native Final after an unrelated main update. To remove
+an exhausted school, use --exclude-unresolved QID --snapshot FILE; it requires a
+matching unresolved task, PR and exact proposal digest in that GitHub snapshot.
+When every school is unresolved it produces no publication change.
+
+## Validation and compatibility
+
+```text
 python .agents/skills/university-curation/scripts/maintain_schema.py check
-python .agents/skills/university-curation/scripts/curate.py validate examples/university.complete.synthetic.json
-python .agents/skills/university-curation/scripts/curate.py pr-validate --workspace . --base-ref BASE_SHA --head-ref HEAD_SHA
-python .agents/skills/university-curation/scripts/seeds.py --help
-python .agents/skills/university-curation/scripts/seed_delivery.py --help
-python .agents/skills/university-curation/scripts/buckets.py --help
+python .agents/skills/university-curation/scripts/seeds.py verify --repo .
+python -m unittest discover -s tests
 ```
 
-See source-tools for online queries. Historical curate.py SQLite task commands,
-initial-import and coordinates adapters remain for compatibility; they are not
-the distributed scheduler. Seed/bucket bootstrap scripts run against exact main
-and preserve old receipts. Data PRs cannot mix executable code or Schema edits.
+agent.py --runtime cli selects the historical signed CLI mode explicitly. Its
+key/token/Codex requirements do not apply to native mode. Historical receipts,
+catalog signatures, SQLite trials and source captures are retained.

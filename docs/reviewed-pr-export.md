@@ -1,68 +1,64 @@
-# Trusted PR data validation
+# PR validation and Review
 
-Two current public stages exist. Draft PRs contain explicitly unreviewed signed
-structured proposals under data/proposals/BATCH/. A ready data PR contains only
-approved canonical school JSON, dual-sign review receipts and a signed batch.
-Raw sources, model traces, private keys and logs never enter either stage.
+Default runtime uses native subagents and the connected ChatGPT GitHub plugin.
+No Research/Review private key, shell token, gh or Codex CLI is required.
 
-## Trust and separation
+## Public stages
 
-Trusted main provides the implementation, Schema/policy hashes, legacy approval
-keys and separate role descriptors under .curation/roles/research/ and review/.
-Research and Review keys cannot impersonate each other or legacy human acceptance.
-Registration is code-only and human-merged. The same GitHub login may post both
-roles' comments; signatures identify keys, not separate users or provider-signed
-model execution.
+Draft PRs contain explicitly unreviewed structured native proposals under
+data/proposals/BATCH/ plus a native manifest. A ready data PR contains approved
+canonical school JSON, native Review receipts and a final manifest. Raw source
+pages, source corpora, caches, prompts, model traces and credentials stay private.
 
-Every independent Review decision binds the exact proposal digest, repository,
-actual PR number, reviewed head, schema, policy and fresh model session. Scripts
-materialize the final record deterministically from its current main baseline.
-They preserve existing observations, remap source references, recompute preferred
-and check the resulting hash. Arbitrary withdrawal/overwrite is unsupported.
+Historical signed catalog, initial-import and coordinate receipts remain intact
+and verifiable. Explicit --runtime cli can still use the older signed protocol;
+those runtime requirements do not apply to native agents.
 
-## Merge gates
+## Native attribution and independent Review
 
-signed-data-validation runs trusted base code against proposed blobs as data.
-It rejects unreviewed Drafts, changed baselines, mixed code/data, untrusted keys,
-forged records and incomplete receipts. A valid Draft failing this final-data
-check is expected until independent Review has completed.
+The GitHub plugin supplies actual PR metadata, complete comments and their
+author login/ID/body. Native Review comments carry the university-native-review-v1
+marker. CI trusts only the configured repository owner's actual account
+attribution, exact PR/QID/proposal digest, reviewed head, schema/policy and distinct
+Research/Review sessions. Same-account roles are a workflow convention, not
+cryptographic independent identities. Model/session metadata is caller-reported;
+do not imply provider-signed model provenance.
 
-The separate university-review status also reads the actual PR and signed comment
-history. It rejects replay from a different PR, older approvals superseded by
-a later decision, and outstanding signed objections. Only the exact validated
-final decision can resolve an objection. Unsigned or malformed comments have no
-authority. PR events, signed comment changes and main updates trigger rechecks.
+Review prepares independent source captures and enumerates every changed fact,
+context and previous request. Strict compile checks reject missing source/fact
+coverage, unsupported facts, reused Research sessions or unaddressed questions.
+Only the exact valid later Review can resolve its request IDs. Questions survive
+head replacement; a Research response cannot clear them.
 
-These checks are enforceable merge barriers only after repository protection
-requires both signed-data-validation and university-review. Protection is not
-configured by this change; do not describe automatic merge as operational.
-Model Review dispatch is separate and defaults off. No service is deployed.
-Status scans are serialized and recheck discussion/main immediately before a
-successful status. GitHub comment delivery and human merge are asynchronous,
-not an atomic transaction; inspect the current discussion and wait for fresh
-checks before merging. No atomic automated merge guarantee is claimed.
+## Deterministic files and gates
 
-## PR independence and archival
+Local draft/finalize commands emit bounded bundles and pending plugin operations.
+They validate catalog membership, canonical paths, source revisions, current
+school baseline, schema, preferred projection, every approval and exact record
+hash. Finalization never executes a GitHub write or merges.
 
-Each batch starts from main in its own worktree, never another batch branch.
-After approval, Research rebuilds main + approved files; failed Draft commits do
-not become main ancestors. Before replacing a head, scripts preserve it through
-coordination ancestry. GitHub PR comments retain signed feedback. Missing local
-Research files do not prevent Review from fetching sources independently.
+The host creates blobs/trees/commits and updates refs with expected-head guards.
+A planned lease is not active until the ref update succeeds and is confirmed.
+Archive prior public Draft heads through coordination ancestry before replacing
+them. Every batch begins directly from main; same-school baseline changes require
+fresh Research/Review, while unrelated main changes permit mechanical rebind.
 
-Unrelated main changes permit a mechanical rebind using identical proposal and
-Review bytes. Same-school baseline changes require another model review.
-The actual final receipt must appear in main before task completion is recorded.
+signed-data-validation is the historical check name; it validates both native
+and signed formats and rejects unreviewed Drafts, mixed code/data, stale bases
+and changed receipt bytes. university-review also checks the actual PR number,
+complete live comment authors/history, latest matching approval and unresolved
+objections. A receipt alone cannot establish native Review provenance.
 
-## Bootstrap and legacy compatibility
+Status scans are serialized and recheck discussion/main before success.
+Comment delivery and human merge are asynchronous, not atomic. Require the
+appropriate checks in branch protection and await fresh results before merging.
+This change does not configure protections or automatic merge.
 
-The signed seed catalog is a candidate-list projection authorized by the operator;
-it does not accept individual university facts. Its three files are validated
-against exact source hashes/counts and a human acceptance reference. The one-time
-bootstrap may also move existing school paths byte-for-byte from three hex digits
-to two. No school facts may change in that structural PR.
+## Accepted bootstrap
 
-Legacy accepted initial imports and bounded P625 coordinate receipts remain
-verifiable with their original adapters and immutable policy. They do not grant
-new role keys permission to bypass the distributed workflow. Official dataset
-release still requires separate human acceptance and a versioned manifest.
+PR #10 imported 39,489 primary plus 64,667 discovery candidates and moved the
+three existing records byte-for-byte to 256 buckets. Its historical Ed25519
+manifest records candidate-list authorization only; agents verify it using
+public trust and do not need a private key. Candidate import does not accept each
+university identity. Official dataset releases still need human acceptance and
+a versioned manifest.
