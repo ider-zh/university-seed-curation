@@ -195,6 +195,9 @@ def verify_files(repo, base, files, trust, require_acceptance=True):
     if raw_manifest.get("type") == "university-native-final-v1":
         from .native_protocol import verify_final
         return verify_final(repo, base, files, trust)
+    if raw_manifest.get("type") == "university-unified-batch-v1":
+        from .unified_publish import verify_files as verify_unified
+        return verify_unified(repo, base, files, trust)
     if raw_manifest.get("payload", {}).get("type") == "university-final-batch-v1":
         from .distributed_protocol import verify_final
         return verify_final(repo, base, files, trust)

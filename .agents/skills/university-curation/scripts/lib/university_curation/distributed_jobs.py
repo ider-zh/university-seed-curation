@@ -230,16 +230,16 @@ def finalize_record(proposal, baseline, reviewed_at, full_refresh):
     return materialize(baseline,proposal['delta'],proposal['seed'],reviewed_at,full_refresh)
 
 
-def _replay(proposal, job):
-    cache=Cache(job/'review-source-cache',maxlag=30); entities={}; pages={}; properties=set()
+def _replay(proposal, job, cache_path=None, refresh=True):
+    cache=Cache(cache_path or job/'review-source-cache',maxlag=30); entities={}; pages={}; properties=set()
     sources=proposal['delta']['sources']; entity_id=proposal['qid']
     for ref, source in sources.items():
         if source['kind']=='wikidata':
-            item,_=cache.entity_revision(source['source_qid'],source['revision_id'],refresh=True)
+            item,_=cache.entity_revision(source['source_qid'],source['revision_id'],refresh=refresh)
             if item['id'] != source['source_qid'] or item['lastrevid'] != source['revision_id'] or source['url'] != 'https://www.wikidata.org/w/index.php?oldid='+str(source['revision_id']): raise ValueError('Wikidata identity/revision mismatch')
             entities[ref]=item; properties.update(item.get('claims',{}))
         elif source['kind']=='wikipedia':
-            page=cache.wikipedia_get(source['language'],oldid=source['revision_id'],refresh=True)
+            page=cache.wikipedia_get(source['language'],oldid=source['revision_id'],refresh=refresh)
             if page['page_id'] != source['page_id'] or page['source_url'] != source['url']: raise ValueError('Wikipedia identity/revision mismatch')
             pages[ref]=page
         else: raise ValueError('Unsupported source kind')

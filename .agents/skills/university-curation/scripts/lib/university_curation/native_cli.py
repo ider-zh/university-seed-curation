@@ -7,7 +7,7 @@ from pathlib import Path
 import re
 import uuid
 
-from . import native_research, native_review, native_protocol
+from . import native_research, native_review, native_protocol, unified_publish
 from .attestations import load_json, private_path, sha
 from .distributed_protocol import attach_transport, baseline_at
 from .plugin_coordination import plan
@@ -86,6 +86,34 @@ def _bundle(repo, output, files, base, repository, branch, expected_head=None, k
                 (['preserve the old head in the coordination shard ancestry before updating the branch'] if expected_head else [])}
     (target/'operations.json').write_bytes(encode(payload))
     return {'status':'bundle_prepared','output':str(target),'operations_path':str(target/'operations.json'),'base_commit':base,'branch':branch}
+
+
+def direct_main(repo, output, files, base, repository):
+    target=_private_output(output)
+    tree=git(repo,'rev-parse',base+'^{tree}').decode().strip()
+    operations=[]; elements=[]
+    for index,(path,raw) in enumerate(sorted(files.items())):
+        if not path.startswith('data/') or '..' in path.split('/'):
+            raise ValueError('Direct publication accepts only structured data files')
+        label='blob_'+str(index)
+        operations.append({'tool':'mcp__codex_apps__github_create_blob','arguments':{
+            'repository_full_name':repository,'content':raw.decode('utf-8'),'encoding':'utf-8'},'output':label})
+        elements.append({'path':path,'mode':'100644','type':'blob','sha':'$'+label})
+    operations.extend([
+        {'tool':'mcp__codex_apps__github_create_tree','arguments':{'repository_full_name':repository,'base_tree_sha':tree,'tree_elements':elements},'output':'tree_sha'},
+        {'tool':'mcp__codex_apps__github_create_commit','arguments':{'repository_full_name':repository,'message':'Apply main-Agent-reviewed university batch','tree_sha':'$tree_sha','parent_sha':base},'output':'commit_sha'},
+        {'tool':'mcp__codex_apps__github_update_ref','arguments':{'repository_full_name':repository,'branch_name':'main','sha':'$commit_sha','expected_sha':base,'force':False}}
+    ])
+    target.mkdir(parents=True)
+    for name,raw in files.items():
+        path=target/name; path.parent.mkdir(parents=True,exist_ok=True); path.write_bytes(raw)
+    payload={'status':'awaiting_plugin_commit','kind':'direct_main','repository':repository,'base_commit':base,
+        'files':{path:sha(raw) for path,raw in sorted(files.items())},'operations':operations,
+        'preflight':['Confirm actual GitHub main head equals base_commit','Run complete unified validation on exactly these files',
+                     'Never force or retry an expected-head conflict without a new Review'],
+        'after_commit':'Verify the exact commit and canonical data on main; no PR is created'}
+    (target/'operations.json').write_bytes(encode(payload))
+    return {'status':'direct_main_bundle_prepared','output':str(target),'operations_path':str(target/'operations.json'),'base_commit':base}
 
 
 def draft(repo, proposal_paths, batch, base_ref, output, expected_head=None):
@@ -177,17 +205,28 @@ def main(argv=None):
     for name in ('research-compile','review-compile'):
         p=sub.add_parser(name); p.add_argument('--job',required=True); p.add_argument('--result',required=True); p.add_argument('--session',required=True); p.add_argument('--model',required=True); p.add_argument('--effort',default='medium'); p.add_argument('--completed-at')
     r=sub.add_parser('review-prepare'); r.add_argument('--proposal',required=True); r.add_argument('--job',required=True); r.add_argument('--base-ref',default='origin/main')
+    r.add_argument('--research-job'); r.add_argument('--shared-cache',action='store_true')
+    p=sub.add_parser('unified-proposal'); p.add_argument('--proposal',required=True); p.add_argument('--output',required=True); p.add_argument('--base-ref',default='origin/main')
+    p=sub.add_parser('unified-publish'); p.add_argument('--proposal',action='append',required=True); p.add_argument('--review-job',action='append',required=True); p.add_argument('--review-attempt',action='append',required=True); p.add_argument('--batch-id',required=True); p.add_argument('--base-ref',default='origin/main'); p.add_argument('--output',required=True)
     p=sub.add_parser('coord-plan'); p.add_argument('--snapshot',required=True); p.add_argument('--action',required=True); p.add_argument('--arguments',required=True); p.add_argument('--output',required=True); p.add_argument('--bootstrap-parent-sha')
     p=sub.add_parser('draft'); p.add_argument('--proposal',action='append',required=True); p.add_argument('--batch-id',required=True); p.add_argument('--base-ref',default='origin/main'); p.add_argument('--expected-head'); p.add_argument('--output',required=True)
     p=sub.add_parser('decision'); p.add_argument('--proposal',required=True); p.add_argument('--verdict',required=True); p.add_argument('--pr',type=int,required=True); p.add_argument('--head-sha',required=True); p.add_argument('--base-ref',default='origin/main'); p.add_argument('--output',required=True)
     p=sub.add_parser('finalize'); p.add_argument('--head-ref',required=True); p.add_argument('--pr',type=int,required=True); p.add_argument('--comments',required=True); p.add_argument('--base-ref',default='origin/main'); p.add_argument('--output',required=True); p.add_argument('--exclude-unresolved',action='append',default=[]); p.add_argument('--snapshot')
     a=parser.parse_args(argv); repo=Path(a.workspace).resolve()
-    research={'next','research-prepare','research-compile','draft','finalize'}; review={'review-prepare','review-compile','decision'}
+    research={'next','research-prepare','research-compile','draft','finalize','unified-proposal','unified-publish'}; review={'review-prepare','review-compile','decision'}
     if (a.command in research and a.role!='research') or (a.command in review and a.role!='review'): parser.error('Command belongs to the other role')
     if a.command=='doctor': result=native_research.doctor(repo)
     elif a.command=='next': result=next_candidates(repo,a.base_ref,a.limit,_json(a.snapshot) if a.snapshot else None)
     elif a.command=='research-prepare': result=native_research.prepare(repo,a.qid,a.job,a.base_ref,_json(a.feedback) if a.feedback else None)
-    elif a.command=='review-prepare': result=native_review.prepare(repo,a.proposal,a.job,a.base_ref)
+    elif a.command=='review-prepare': result=native_review.prepare(repo,a.proposal,a.job,a.base_ref,a.shared_cache,a.research_job)
+    elif a.command=='unified-proposal':
+        path=_save(a.output,unified_publish.transport_proposal(repo,a.base_ref,a.proposal))
+        result={'status':'transport_prepared','proposal_path':str(path)}
+    elif a.command=='unified-publish':
+        if len(a.proposal)!=len(a.review_job) or len(a.proposal)!=len(a.review_attempt): raise ValueError('Proposal/Review job/attempt count mismatch')
+        base,trust,_,_=_base(repo,a.base_ref)
+        files=unified_publish.files(repo,base,a.batch_id,list(zip(a.proposal,a.review_job,a.review_attempt)))
+        result=direct_main(repo,a.output,files,base,trust['repository'])
     elif a.command in ('research-compile','review-compile'):
         module=native_research if a.command=='research-compile' else native_review
         result=module.compile(repo,a.job,a.result,a.session,a.model,a.effort,a.completed_at)

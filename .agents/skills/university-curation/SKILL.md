@@ -5,6 +5,26 @@ description: Research or independently review university records in the current 
 
 # University curation
 
+## Current operator workflow: one Agent, offline Review, direct main
+
+For NEW batches, one main Agent dispatches Research subagents, reviews their
+hash-checked snapshots offline, and directly commits reviewed canonical data
+to main with the GitHub plugin's expected-head guard. Do not create data PRs or
+spawn an independent Review session. Do not re-fetch research sources during
+Review. Use `unified-proposal`, `review-prepare --shared-cache --research-job`,
+`review-compile`, and `unified-publish`; see `docs/commands.md`.
+
+Research must first exhaust Wikidata + multilingual Wikipedia, then do bounded
+gap-directed external deep research: maximum 8 queries, 12 pages, 5 domains,
+2 hops and 15 minutes per QID. External material is private leads until a
+schema-verified external adapter is implemented. Keep captured records cached
+for 30 days, review all source-supported claims without a second retrieval,
+and mark unsupported gaps unresolved. Generate an evidenced neutral English
+`profile.summary` (180–260 words, 90–179 for sparse evidence) for university
+detail pages where sources permit. Read `docs/deep-research.md` and
+`docs/university-overview.md`. The older sections below document legacy PR
+compatibility and do not override these current instructions.
+
 Read AGENTS.md and docs/handoff.md. Choose Research manager, one-QID Research
 subagent, or independent Review. Repository:
 https://github.com/ider-zh/university-seed-curation.

@@ -1,5 +1,27 @@
 # Agent operating contract
 
+## Unified workflow override (2026-11-05)
+
+The operator has replaced the separate Research/Review PR workflow for **new**
+data batches. A single main Agent manages native Research subagents (one QID per
+subagent), audits their results itself using the exact private captured source
+snapshot, then uses `unified-publish` and the connected GitHub plugin to commit
+only approved canonical data and receipts directly to `main`, guarded by its
+expected SHA. No data PR, independent Review session, duplicated source fetch,
+or human merge is required for these routine approved records. This is a
+main-Agent review, **not independent cryptographic attestation**. Human approval
+still governs schema/policy changes and official dataset releases. Existing PRs
+and their Review objections remain historical unresolved work; never silently
+consider them merged. Previous role/PR rules below are legacy compatibility,
+not instructions for new unified batches.
+
+Research exhausts Wikidata/Wikipedia first, then conducts bounded external
+gap searches (maximum 8 queries, 12 pages, 5 domains, 2 hops, 15 minutes per
+QID). Keep external leads private until a validated external-source adapter
+exists; current schema only accepts revision-bound Wikimedia facts. Review must
+read Research's hash-verified immutable snapshot **offline** and never re-fetch
+source pages. See `docs/commands.md` and `docs/deep-research.md`.
+
 Read `docs/handoff.md`, your role in `docs/agent-workflow.md`, and
 `.agents/skills/university-curation/SKILL.md`.
 

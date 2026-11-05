@@ -1,0 +1,137 @@
+"""One-workspace Research -> main-Agent Review -> guarded direct-main publication.
+
+Review remains an explicit, coverage-checked decision; no PR or role signature is
+claimed. Published receipts make the provenance and reduced independence clear.
+"""
+from pathlib import Path
+import re
+
+from .attestations import load_json, private_path, sha
+from .distributed_protocol import attach_transport, baseline_at
+from .domain_refresh import materialize
+from .native_protocol import check_proposal
+from .native_research import _base
+from .pr_export import batch_slug, blob, canonical_json, no_legacy_duplicate, record_relative
+from .preferred import validate, recompute
+from .records import encode, instant
+
+
+def _verified(repo, base, proposal, review_job, attempt, trust, catalog, catalog_hash):
+    job=private_path(review_job); attempt=private_path(attempt)
+    if attempt.parent != job/'compile-attempts' or not attempt.is_dir():
+        raise ValueError('Review attempt must be generated inside the supplied Review job')
+    meta=load_json((job/'job.json').read_bytes())
+    if meta.get('type')!='native-review-job-v1' or not meta.get('shared_source_cache') or not meta.get('offline_research_snapshot'):
+        raise ValueError('An offline Research-snapshot main-Agent Review job is required')
+    if meta['base_commit'] != base or meta['catalog_sha256'] != catalog_hash:
+        raise ValueError('Review is stale relative to main/catalog')
+    if sha(encode(proposal)) != meta['proposal_sha256'] or (job/'public-proposal.json').read_bytes()!=encode(proposal):
+        raise ValueError('Review did not inspect the exact Research proposal')
+    if meta['schema_sha256']!=trust['schemas']['0.2.2'] or meta['review_policy_sha256']!=trust['review_policy']['sha256']:
+        raise ValueError('Review schema/policy mismatch')
+    entity=proposal['qid']; baseline,baseline_hash=baseline_at(repo,base,entity)
+    if baseline_hash!=meta['baseline_sha256']: raise ValueError('Record baseline changed')
+    check_proposal(proposal,baseline,catalog,catalog_hash,trust)
+    verdict=canonical_json((attempt/'public-verdict.json').read_bytes())
+    metadata=canonical_json((attempt/'result-metadata.json').read_bytes())
+    if verdict.get('decision')!='approve' or verdict.get('qid')!=entity or verdict.get('proposal_sha256')!=sha(encode(proposal)):
+        raise ValueError('Exact proposal lacks main-Agent approval')
+    if verdict.get('requests') or any(r['status']!='addressed' for r in verdict['request_responses']):
+        raise ValueError('Unresolved Review questions')
+    if metadata.get('session')!=verdict['review_session'] or metadata.get('model')!=verdict['model'] or metadata.get('reasoning_effort')!=verdict['reasoning_effort']:
+        raise ValueError('Review provenance mismatch')
+    if verdict['review_session']==proposal['research']['session']:
+        raise ValueError('Research subagent and main-Agent Review sessions must differ')
+    if instant(verdict['reviewed_at'])<instant(meta['prepared_at']): raise ValueError('Review predates source replay')
+    if not verdict.get('source_revisions_checked') == len(proposal['delta']['sources']): raise ValueError('Incomplete source coverage')
+    from .distributed_jobs import _fact_scope
+    from .pilot_protocol import GROUPS
+    facts,contexts=_fact_scope(proposal['delta'])
+    if verdict['facts_checked']!=len(facts) or verdict['contexts_checked']!=len(contexts) or {r['group'] for r in verdict['coverage_checks']}!=set(GROUPS):
+        raise ValueError('Incomplete Review coverage')
+    record=materialize(baseline,proposal['delta'],proposal['seed'],verdict['reviewed_at'],verdict['full_refresh'])
+    validate(record)
+    if recompute(record)!=record: raise ValueError('Preferred projection changed')
+    if (attempt/'final-record.json').read_bytes()!=encode(record) or verdict.get('record_sha256')!=sha(encode(record)):
+        raise ValueError('Canonical record differs from approved bytes')
+    return record, verdict
+
+
+def transport_proposal(repo, base_ref, raw_path):
+    base,trust,_,digest=_base(repo,base_ref)
+    proposal=load_json(private_path(raw_path).read_bytes())
+    if 'transport' in proposal: raise ValueError('Research proposal already has transport')
+    proposal=attach_transport(proposal,trust['repository'],base,digest,trust)
+    proposal['transport']['protocol']='native-subagent-v1'
+    return proposal
+
+
+def files(repo, base, batch, proposals_and_reviews):
+    repo=Path(repo).resolve(); batch=batch_slug(batch)
+    base_commit,trust,catalog,catalog_hash=_base(repo,base)
+    if not 1<=len(proposals_and_reviews)<=trust['max_schools_per_batch']:
+        raise ValueError('Invalid direct-main batch size')
+    output={}; rows=[]; seen=set()
+    for proposal_path,job_path,attempt_path in proposals_and_reviews:
+        proposal=load_json(private_path(proposal_path).read_bytes())
+        if 'transport' not in proposal:
+            raise ValueError('Use unified-proposal before main-Agent Review; reviewed bytes must match publication')
+        entity=proposal['qid']
+        if entity in seen: raise ValueError('Duplicate Research QID')
+        seen.add(entity)
+        record,verdict=_verified(repo,base_commit,proposal,job_path,attempt_path,trust,catalog,catalog_hash)
+        record_path=record_relative(entity); receipt_path='data/reviews/'+batch+'/'+entity+'.json'
+        no_legacy_duplicate(repo,base_commit,entity)
+        if blob(repo,base_commit,receipt_path,optional=True) is not None: raise ValueError('Immutable receipt exists')
+        receipt={'type':'university-unified-receipt-v1','research':proposal,'review':verdict,
+                 'attribution':'main_agent_review_of_native_research_subagent;not_independent_signature',
+                 'review_result_sha256':sha(private_path(attempt_path).joinpath('native-result.json').read_bytes())}
+        output[record_path]=encode(record); output[receipt_path]=encode(receipt)
+        rows.append({'qid':entity,'record_path':record_path,'record_sha256':sha(output[record_path]),
+                     'receipt_path':receipt_path,'receipt_sha256':sha(output[receipt_path])})
+    rows.sort(key=lambda r:int(r['qid'][1:]))
+    manifest={'type':'university-unified-batch-v1','repository':trust['repository'],'batch_id':batch,
+              'base_commit':base_commit,'seed_catalog_sha256':catalog_hash,'records':rows}
+    path='data/batches/'+batch+'.json'
+    if blob(repo,base_commit,path,optional=True) is not None: raise ValueError('Immutable batch exists')
+    output[path]=encode(manifest)
+    verify_files(repo,base_commit,output,trust)
+    return output
+
+
+def verify_files(repo, base, files, trust):
+    manifests=[p for p in files if re.fullmatch(r'data/batches/[a-z0-9][a-z0-9-]{0,79}\.json',p)]
+    if len(manifests)!=1: raise ValueError('Exactly one unified manifest required')
+    manifest=canonical_json(files[manifests[0]])
+    if set(manifest)!={'type','repository','batch_id','base_commit','seed_catalog_sha256','records'} or manifest['type']!='university-unified-batch-v1' or manifest['repository']!=trust['repository'] or manifest['base_commit']!=base:
+        raise ValueError('Invalid unified manifest')
+    batch=batch_slug(manifest['batch_id']); _,_,catalog,digest=_base(repo,base)
+    if manifests[0]!='data/batches/'+batch+'.json' or manifest['seed_catalog_sha256']!=digest or blob(repo,base,manifests[0],optional=True) is not None:
+        raise ValueError('Unified manifest baseline mismatch')
+    rows=manifest['records']; ids=[r['qid'] for r in rows]
+    if not 1<=len(rows)<=trust['max_schools_per_batch'] or ids!=sorted(set(ids),key=lambda q:int(q[1:])):
+        raise ValueError('Invalid unified batch membership')
+    expected={manifests[0]}
+    for row in rows:
+        entity=row['qid']; path=record_relative(entity); receipt_path='data/reviews/'+batch+'/'+entity+'.json'
+        if set(row)!={'qid','record_path','record_sha256','receipt_path','receipt_sha256'} or row['record_path']!=path or row['receipt_path']!=receipt_path:
+            raise ValueError('Invalid unified record path')
+        expected.update((path,receipt_path))
+        if sha(files[path])!=row['record_sha256'] or sha(files[receipt_path])!=row['receipt_sha256']: raise ValueError('Unified data digest mismatch')
+        if blob(repo,base,receipt_path,optional=True) is not None: raise ValueError('Immutable receipt exists')
+        no_legacy_duplicate(repo,base,entity)
+        receipt=canonical_json(files[receipt_path]); record=canonical_json(files[path])
+        if set(receipt)!={'type','research','review','attribution','review_result_sha256'} or receipt['type']!='university-unified-receipt-v1' or not receipt['attribution'].startswith('main_agent_review'):
+            raise ValueError('Invalid unified receipt')
+        proposal=receipt['research']; verdict=receipt['review']; baseline,_=baseline_at(repo,base,entity)
+        check_proposal(proposal,baseline,catalog,digest,trust)
+        if verdict['decision']!='approve' or verdict['qid']!=entity or verdict['proposal_sha256']!=sha(encode(proposal)) or verdict['record_sha256']!=sha(files[path]) or verdict['requests']:
+            raise ValueError('No approval for exact record')
+        if verdict['review_session']==proposal['research']['session'] or verdict['source_revisions_checked']!=len(proposal['delta']['sources']):
+            raise ValueError('Incomplete unified provenance')
+        if encode(materialize(baseline,proposal['delta'],proposal['seed'],verdict['reviewed_at'],verdict['full_refresh']))!=files[path]:
+            raise ValueError('Unified materialization mismatch')
+        validate(record)
+        if recompute(record)!=record: raise ValueError('Invalid preferred projection')
+    if set(files)!=expected: raise ValueError('Unexpected public files in unified batch')
+    return {'status':'validated','task_kind':'unified','batch_id':batch,'qids':ids,'base_commit':base}

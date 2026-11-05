@@ -37,10 +37,13 @@ def _verify_native(proposal, baseline, packet, root):
 
 def _prompt(value, policy):
     return (REVIEW_RULES+'\nREVIEW POLICY:\n'+policy+'\nReturn only one JSON object matching the supplied schema. '
-        'The source packet was independently retrieved for this Review.\nINPUT:\n'+encode(value).decode())
+        'The source packet is a revision-bound, hash-checked evidence snapshot. Review every fact, context, source locator, '
+        'subject, period and unit against this snapshot. Do not fetch sources again. '
+        'Independence means critical interpretation by the main Agent, not a second network retrieval or a signed second role.\nINPUT:\n'
+        +encode(value).decode())
 
 
-def prepare(repo, proposal_file, job, base_ref='origin/main'):
+def prepare(repo, proposal_file, job, base_ref='origin/main', shared_cache=False, research_job=None):
     repo=Path(repo).resolve(); proposal_file=private_path(proposal_file); job=private_path(job)
     if job.exists(): raise FileExistsError('Use a new private native Review attempt')
     proposal_raw=proposal_file.read_bytes(); proposal=load_json(proposal_raw); entity=valid_qid(proposal['qid'])
@@ -51,7 +54,25 @@ def prepare(repo, proposal_file, job, base_ref='origin/main'):
     policy=blob(repo,base,'docs/review-policy-v2.md').decode('utf-8').replace('\r\n','\n')
     if sha(policy.encode())!=trust['review_policy']['sha256']: raise ValueError('Review policy does not match repository trust')
     job.mkdir(parents=True); _write(job/'public-proposal.json',encode(proposal))
-    packet,root=_replay(proposal,job)
+    if research_job is not None:
+        if not shared_cache: raise ValueError('Offline replay requires unified shared-cache Review')
+        research_job=private_path(research_job)
+        research_meta=load_json((research_job/'job.json').read_bytes())
+        packet_bytes=(research_job/'cases'/entity/'research-packet.json').read_bytes()
+        root_bytes=(research_job/'root-entity.json').read_bytes()
+        if (research_meta.get('qid')!=entity or research_meta.get('base_commit')!=base or
+                sha(packet_bytes)!=research_meta.get('packet_sha256') or sha(root_bytes)!=research_meta.get('root_entity_sha256')):
+            raise ValueError('Research snapshot identity/hash/base mismatch')
+        packet=load_json(packet_bytes); root=load_json(root_bytes)
+        if proposal['delta']['sources']!=packet['sources']:
+            raise ValueError('Review source snapshots differ from published proposal')
+        from .distributed_jobs import _root
+        _,source=_root(packet)
+        if root.get('id')!=entity or root.get('lastrevid')!=source['revision_id']:
+            raise ValueError('Research root snapshot revision mismatch')
+    else:
+        cache_path=private_path(repo/'.private'/'native'/'research'/'source-cache') if shared_cache else None
+        packet,root=_replay(proposal,job,cache_path=cache_path,refresh=not shared_cache)
     point=_verify_native(proposal,baseline,packet,root); facts,contexts=_fact_scope(proposal['delta'])
     value={'proposal':proposal,'baseline':baseline,'facts':facts,'contexts':contexts,
         'source_corpus':packet['source_corpus'],'root_entity':root,'coordinate_projection':point}
@@ -62,7 +83,8 @@ def prepare(repo, proposal_file, job, base_ref='origin/main'):
         'schema_sha256':trust['schemas']['0.2.2'],'review_policy_sha256':trust['review_policy']['sha256'],
         'baseline_sha256':baseline_hash,'proposal_sha256':sha(encode(proposal)),'prepared_at':datetime.now(timezone.utc).isoformat(),
         'packet_sha256':sha(encode(packet)),'root_entity_sha256':sha(encode(root)),'review_input_sha256':sha(encode(value)),
-        'prompt_sha256':sha(prompt),'output_schema_sha256':sha(shape),'native_code_sha256':sha(Path(__file__).read_bytes())}
+        'prompt_sha256':sha(prompt),'output_schema_sha256':sha(shape),'native_code_sha256':sha(Path(__file__).read_bytes()),
+        'shared_source_cache':bool(shared_cache),'offline_research_snapshot':research_job is not None}
     _write(job/'job.json',encode(manifest))
     return {'status':'prepared','qid':entity,'job_dir':str(job),'base_commit':base,
         'prompt_path':str(job/'prompt.txt'),'schema_path':str(job/'output.schema.json'),
