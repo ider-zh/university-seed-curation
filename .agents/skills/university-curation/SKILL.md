@@ -10,7 +10,13 @@ Research manager, Research subagent or Review. Do not interchange those roles.
 The script manages state and data. This skill is not a provider, secret store,
 publication approval or proof that integrations are already configured.
 
-Use `python scripts/curate.py --help`. The default private queue is
+Here `<skill-dir>` is the directory containing this `SKILL.md` (in the checkout,
+`.agents/skills/university-curation`). All executable helpers live in its `scripts/`
+folder. Resolve it before running a command; do not assume the current directory
+is the skill folder. Repository documents and data paths refer to the checkout
+root. Shared library code remains in the repository `src/` package.
+
+Use `python <skill-dir>/scripts/curate.py --help`. The default private queue is
 `.private/state/queue.sqlite3`; separate worktrees must explicitly use the same
 private state path. Do not create an independent copy of the queue per subagent.
 
@@ -64,7 +70,7 @@ source merely to allow a usable Wikipedia value. v0.2 incremental domain mutatio
 operations to v0.2 records. The bounded initial-pilot import uses the export
 adapter below and cannot overwrite an existing university.
 
-`scripts/maintain_schema.py check` checks the generated contract. `propose-field`
+`<skill-dir>/scripts/maintain_schema.py check` checks the generated contract. `propose-field`
 stages a definition for a separate schema PR; it never activates a new field.
 Do not hand-edit generated schema or introduce arbitrary keys in school records.
 
@@ -89,11 +95,11 @@ before real data staging. Never bypass these gates by copying private files.
 Read `docs/source-tools.md`. No upstream dump host is required in this project.
 
 ```text
-python scripts/sources.py wikidata-get QID --properties P31 P17 P131 P571 P856 --resolve P17 P131 --linked-limit 8
-python scripts/sources.py wikidata-search "UNIVERSITY NAME" --language en --limit 5
-python scripts/sources.py wikipedia-get --language LANGUAGE --qid QID
-python scripts/sources.py wikipedia-get --language LANGUAGE --title "TITLE" --view infobox
-python scripts/sources.py wikipedia-get --language LANGUAGE --qid QID --view text --section SECTION_ID --max-chars 12000
+python <skill-dir>/scripts/sources.py wikidata-get QID --properties P31 P17 P131 P571 P856 --resolve P17 P131 --linked-limit 8
+python <skill-dir>/scripts/sources.py wikidata-search "UNIVERSITY NAME" --language en --limit 5
+python <skill-dir>/scripts/sources.py wikipedia-get --language LANGUAGE --qid QID
+python <skill-dir>/scripts/sources.py wikipedia-get --language LANGUAGE --title "TITLE" --view infobox
+python <skill-dir>/scripts/sources.py wikipedia-get --language LANGUAGE --qid QID --view text --section SECTION_ID --max-chars 12000
 ```
 
 Inspect sitelinks before choosing a language. Summary gives section IDs and the
@@ -111,7 +117,7 @@ ambiguous symbol. Resolve the item and retain its revision; request P498 for the
 ISO 4217 code where available:
 
 ```text
-python scripts/sources.py --cache ABSOLUTE_PRIVATE_CACHE wikidata-get Q4917 --properties P498 --languages en zh
+python <skill-dir>/scripts/sources.py --cache ABSOLUTE_PRIVATE_CACHE wikidata-get Q4917 --properties P498 --languages en zh
 ```
 
 All workspaces must use the same explicit absolute `--cache` path, or set

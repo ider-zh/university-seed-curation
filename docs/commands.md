@@ -4,18 +4,18 @@ Python 3.11+，安装 `jsonschema`。Parquet seed 输入额外安装 `pyarrow`�
 脚本在仓库根目录运行，无需先做 editable install。测试不访问网络。
 
 ```text
-python scripts/maintain_schema.py check
+python .agents/skills/university-curation/scripts/maintain_schema.py check
 python -m unittest discover -s tests -v
-python scripts/curate.py --help
+python .agents/skills/university-curation/scripts/curate.py --help
 ```
 
 ## 初始化与浏览
 
 ```text
-python scripts/curate.py seed-init --input /private/seed/institution_candidates.parquet --manifest /private/seed/delivery_manifest.json
-python scripts/curate.py seed-init --input /private/seed/institution_candidates.parquet --manifest /private/seed/delivery_manifest.json --write --limit 10
-python scripts/curate.py --state /private/shared/queue.sqlite3 snapshot --workspace .private/bootstrap --base-ref INPUT_GIT_OR_IMPORT_REF
-python scripts/curate.py --state /private/shared/queue.sqlite3 tasks --run RUN_ID --limit 10
+python .agents/skills/university-curation/scripts/curate.py seed-init --input /private/seed/institution_candidates.parquet --manifest /private/seed/delivery_manifest.json
+python .agents/skills/university-curation/scripts/curate.py seed-init --input /private/seed/institution_candidates.parquet --manifest /private/seed/delivery_manifest.json --write --limit 10
+python .agents/skills/university-curation/scripts/curate.py --state /private/shared/queue.sqlite3 snapshot --workspace .private/bootstrap --base-ref INPUT_GIT_OR_IMPORT_REF
+python .agents/skills/university-curation/scripts/curate.py --state /private/shared/queue.sqlite3 tasks --run RUN_ID --limit 10
 ```
 
 `seed-init` 默认仅预检；`--write` 默认写入 `.private/bootstrap`，不会自动放入公开
@@ -28,13 +28,13 @@ Git 路径。写入公开位置需要 `--acceptance` 绑定输入 manifest 的�
 ## 私有 Research / Review
 
 ```text
-python scripts/curate.py --state /private/shared/queue.sqlite3 claim --run RUN --role research --actor RESEARCH_WORKER --session SESSION
-python scripts/curate.py propose QID --workspace WORKTREE --changes .private/changes.json --output .private/proposals/ATTEMPT.json
-python scripts/curate.py --state /private/shared/queue.sqlite3 submit --task TASK --lease TOKEN --proposal .private/proposals/ATTEMPT.json
-python scripts/curate.py --state /private/shared/queue.sqlite3 claim --run RUN --role review --actor REVIEW_WORKER --session NEW_SESSION
-python scripts/curate.py --state /private/shared/queue.sqlite3 packet --task TASK
-python scripts/curate.py --state /private/shared/queue.sqlite3 review --task TASK --lease TOKEN --session NEW_SESSION --verdict .private/verdict.json
-python scripts/curate.py --state /private/shared/queue.sqlite3 apply --task TASK --workspace WORKTREE --kind university_refresh
+python .agents/skills/university-curation/scripts/curate.py --state /private/shared/queue.sqlite3 claim --run RUN --role research --actor RESEARCH_WORKER --session SESSION
+python .agents/skills/university-curation/scripts/curate.py propose QID --workspace WORKTREE --changes .private/changes.json --output .private/proposals/ATTEMPT.json
+python .agents/skills/university-curation/scripts/curate.py --state /private/shared/queue.sqlite3 submit --task TASK --lease TOKEN --proposal .private/proposals/ATTEMPT.json
+python .agents/skills/university-curation/scripts/curate.py --state /private/shared/queue.sqlite3 claim --run RUN --role review --actor REVIEW_WORKER --session NEW_SESSION
+python .agents/skills/university-curation/scripts/curate.py --state /private/shared/queue.sqlite3 packet --task TASK
+python .agents/skills/university-curation/scripts/curate.py --state /private/shared/queue.sqlite3 review --task TASK --lease TOKEN --session NEW_SESSION --verdict .private/verdict.json
+python .agents/skills/university-curation/scripts/curate.py --state /private/shared/queue.sqlite3 apply --task TASK --workspace WORKTREE --kind university_refresh
 ```
 
 全局 `--state` 和测试用 `--now` 选项放在子命令之前。所有工作区使用同一绝对

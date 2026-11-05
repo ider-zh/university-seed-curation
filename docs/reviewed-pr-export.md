@@ -12,8 +12,8 @@ the trusted coordinator, outside all public worktrees and model evidence packets
 The public key and accepted schemas/policy are reviewed in `.curation/review-trust.json`.
 
 ```text
-python scripts/curate.py pr-key-init --key .private/keys/review-export.pem
-python scripts/curate.py pr-build --pilot-root .private/pilots/RUN --qids Q13371 Q1075625 Q519556 --batch-id github-pilot-001 --base-ref origin/main --key .private/keys/review-export.pem --output .private/pr-pilot/PREVIEW
+python .agents/skills/university-curation/scripts/curate.py pr-key-init --key .private/keys/review-export.pem
+python .agents/skills/university-curation/scripts/curate.py pr-build --pilot-root .private/pilots/RUN --qids Q13371 Q1075625 Q519556 --batch-id github-pilot-001 --base-ref origin/main --key .private/keys/review-export.pem --output .private/pr-pilot/PREVIEW
 ```
 
 `pr-build` only prepares a private bundle. It audits actual Research output and
@@ -30,8 +30,8 @@ A code PR merge does not accept the school data. After the operator explicitly
 accepts the exact private content scope, record that instruction through the script:
 
 ```text
-python scripts/curate.py pr-record-acceptance --bundle .private/pr-pilot/PREVIEW --human-actor ider-zh --approval-ref OPERATOR_CONFIRMATION_REFERENCE --output .private/acceptances/github-pilot-001.json
-python scripts/curate.py pr-build --pilot-root .private/pilots/RUN --qids Q13371 Q1075625 Q519556 --batch-id github-pilot-001 --base-ref origin/main --key .private/keys/review-export.pem --acceptance .private/acceptances/github-pilot-001.json --output .private/pr-pilot/ACCEPTED
+python .agents/skills/university-curation/scripts/curate.py pr-record-acceptance --bundle .private/pr-pilot/PREVIEW --human-actor ider-zh --approval-ref OPERATOR_CONFIRMATION_REFERENCE --output .private/acceptances/github-pilot-001.json
+python .agents/skills/university-curation/scripts/curate.py pr-build --pilot-root .private/pilots/RUN --qids Q13371 Q1075625 Q519556 --batch-id github-pilot-001 --base-ref origin/main --key .private/keys/review-export.pem --acceptance .private/acceptances/github-pilot-001.json --output .private/pr-pilot/ACCEPTED
 ```
 
 Agents must not invent that instruction/reference or interpret a code merge as
@@ -45,8 +45,8 @@ Once the exporter/trust workflow is merged, create a clean data branch from the
 current `origin/main`, then stage the accepted bundle:
 
 ```text
-python scripts/curate.py pr-stage --workspace PATH_TO_DATA_WORKTREE --bundle ABSOLUTE_PRIVATE_ACCEPTED_BUNDLE
-python scripts/curate.py pr-validate --workspace PATH_TO_DATA_WORKTREE --base-ref BASE_SHA --head-ref HEAD_SHA
+python .agents/skills/university-curation/scripts/curate.py pr-stage --workspace PATH_TO_DATA_WORKTREE --bundle ABSOLUTE_PRIVATE_ACCEPTED_BUNDLE
+python .agents/skills/university-curation/scripts/curate.py pr-validate --workspace PATH_TO_DATA_WORKTREE --base-ref BASE_SHA --head-ref HEAD_SHA
 ```
 
 Staging checks the public trust policy from the base Git commit, the entire batch,

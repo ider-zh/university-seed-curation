@@ -4,7 +4,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 import sys
 
-ROOT = Path(__file__).resolve().parents[1]; sys.path.insert(0, str(ROOT / "src"))
+from _bootstrap import ROOT, SCRIPTS
 from university_curation.pilot_sources import CASES, prepare_case, save
 
 if __name__ == "__main__":

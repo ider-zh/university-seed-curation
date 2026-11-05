@@ -7,7 +7,7 @@ from copy import deepcopy
 from pathlib import Path
 import sys
 
-ROOT = Path(__file__).resolve().parents[1]; sys.path.insert(0, str(ROOT / "src")); sys.path.insert(0, str(ROOT / "scripts"))
+from _bootstrap import ROOT, SCRIPTS
 from run_real_pilot import read, compact, model, contexts, sha, report
 from university_curation.pilot_protocol import RULES, REVIEW_INSTRUCTIONS, REVIEW_SCHEMA, compile_record, review_gate, GROUPS, PILOT_SCHEMA_VERSION, RESEARCH_SCHEMA
 from university_curation.pilot_sources import CASES, replay_packet, save

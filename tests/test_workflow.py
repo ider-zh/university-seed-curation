@@ -107,7 +107,7 @@ class QueueTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp); state = root / ".private" / "queue.sqlite3"; create(root, seed("Q201"))
             def run(*args):
-                result = subprocess.run([sys.executable, str(repo / "scripts" / "curate.py"), "--state", str(state), "--now", NOW, *args],
+                result = subprocess.run([sys.executable, str(repo / ".agents" / "skills" / "university-curation" / "scripts" / "curate.py"), "--state", str(state), "--now", NOW, *args],
                                         text=True, capture_output=True)
                 self.assertEqual(result.returncode, 0, result.stderr)
                 return json.loads(result.stdout)

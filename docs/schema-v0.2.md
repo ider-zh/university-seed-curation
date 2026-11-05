@@ -5,7 +5,7 @@
 ## 完整 JSON 示例
 
 见 `examples/university.complete.synthetic.json`。文件由
-`scripts/build_schema_example.py` 生成，并经结构、来源引用、对象和 preferred 校验。
+`.agents/skills/university-curation/scripts/build_schema_example.py` 生成，并经结构、来源引用、对象和 preferred 校验。
 **所有学校、人物、数值、QID、页面版本和 URL 均为虚构，不是研究结果。**
 
 本稿采用领域分组，地点使用学校内稳定 ID，有独立 QID 时附加。这是本次示例的
@@ -74,9 +74,9 @@ retrieved_at，或 Wikipedia language/page_id/revision_id/retrieved_at/URL。旧
 ## 维护与实施边界
 
 ```text
-python scripts/maintain_schema.py generate
-python scripts/build_schema_example.py
-python scripts/curate.py validate examples/university.complete.synthetic.json
+python .agents/skills/university-curation/scripts/maintain_schema.py generate
+python .agents/skills/university-curation/scripts/build_schema_example.py
+python .agents/skills/university-curation/scripts/curate.py validate examples/university.complete.synthetic.json
 ```
 
 Schema/示例生成及 v0.2 校验已实现，示例不能通过 create 进入正式学校目录。
