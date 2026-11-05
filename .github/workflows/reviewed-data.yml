@@ -34,7 +34,7 @@ jobs:
           BASE_SHA: ${{ github.event.pull_request.base.sha }}
           HEAD_SHA: ${{ github.event.pull_request.head.sha }}
         run: >-
-          python trusted/scripts/curate.py pr-validate
+          python trusted/.agents/skills/university-curation/scripts/curate.py pr-validate
           --workspace proposed --base-ref "$BASE_SHA" --head-ref "$HEAD_SHA"
 
 # No secrets, candidate Python execution, model calls, publication or merge.

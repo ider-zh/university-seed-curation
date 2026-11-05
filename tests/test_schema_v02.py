@@ -6,7 +6,9 @@ import tempfile
 import unittest
 
 ROOT = Path(__file__).resolve().parents[1]; sys.path.insert(0, str(ROOT / "src"))
-spec = importlib.util.spec_from_file_location("schema_example", ROOT / "scripts" / "build_schema_example.py")
+SCRIPTS = ROOT / ".agents/skills/university-curation/scripts"
+sys.path.insert(0, str(SCRIPTS))
+spec = importlib.util.spec_from_file_location("schema_example", SCRIPTS / "build_schema_example.py")
 module = importlib.util.module_from_spec(spec); spec.loader.exec_module(module)
 from university_curation.preferred import validate, recompute
 from university_curation.records import create

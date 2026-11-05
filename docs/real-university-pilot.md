@@ -9,10 +9,10 @@ change the upstream wikidata-research local-dump boundary.
 Use Python 3.11+ with project dependencies and an authenticated Codex CLI.
 
 ```text
-python scripts/prepare_real_pilot.py --root .private/pilots/RUN
-python scripts/run_real_pilot.py --root .private/pilots/RUN
-python scripts/review_pilot_policy_v2.py --root .private/pilots/RUN
-python scripts/finalize_real_pilot.py --root .private/pilots/RUN
+python .agents/skills/university-curation/scripts/prepare_real_pilot.py --root .private/pilots/RUN
+python .agents/skills/university-curation/scripts/run_real_pilot.py --root .private/pilots/RUN
+python .agents/skills/university-curation/scripts/review_pilot_policy_v2.py --root .private/pilots/RUN
+python .agents/skills/university-curation/scripts/finalize_real_pilot.py --root .private/pilots/RUN
 ```
 
 Inspect `prepare_real_pilot.py --help` for the exact source preparation options.

@@ -11,7 +11,7 @@ import sys
 import threading
 import time
 
-ROOT = Path(__file__).resolve().parents[1]; sys.path.insert(0, str(ROOT / "src"))
+from _bootstrap import ROOT, SCRIPTS
 if hasattr(sys.stdout, "reconfigure"): sys.stdout.reconfigure(encoding="utf-8")
 from university_curation.codex_provider import run as call_codex
 from university_curation.pilot_sources import CASES, replay_packet, save
@@ -212,7 +212,7 @@ if __name__ == "__main__":
     if args.report_only:
         print(compact({k: v for k, v in report(root).items() if k != "per_case"})); raise SystemExit(0)
     selection = [c for c in CASES if not args.qids or c["qid"] in args.qids]
-    code_files = [Path(__file__), *[ROOT / "src/university_curation" / name for name in ("pilot_protocol.py", "pilot_sources.py", "codex_provider.py", "preferred.py", "schema_v02.py", "sources.py")]]
+    code_files = [Path(__file__), SCRIPTS / "_bootstrap.py", *[ROOT / "src/university_curation" / name for name in ("pilot_protocol.py", "pilot_sources.py", "codex_provider.py", "preferred.py", "schema_v02.py", "sources.py")]]
     code = {str(p.relative_to(ROOT)).replace("\\", "/"): sha(p) for p in code_files}
     stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%S%f")
     execution = root / "executions" / stamp; execution.mkdir(parents=True)
