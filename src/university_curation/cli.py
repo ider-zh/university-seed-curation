@@ -55,12 +55,14 @@ def main():
     p.add_argument("--session", required=True); p.add_argument("--verdict", required=True)
     p = sub.add_parser("apply"); p.add_argument("--task", type=int, required=True); p.add_argument("--workspace", default=".")
     p.add_argument("--kind", choices=("university_refresh", "field_update", "batch_import"), required=True)
-    sub.add_parser("pr-build")
+    from .export_cli import arguments as export_arguments
+    export_arguments(sub)
     args = parser.parse_args()
     if args.command == "path": emit({"path": str(record_path(args.workspace, args.qid))}); return
     if args.command == "validate": validate(read(args.path)); emit({"valid": True}); return
-    if args.command == "pr-build":
-        raise RuntimeError("GitHub export is disabled until trusted review attestations and branch checks are configured; never publish private proposals")
+    if args.command in ("pr-key-init", "pr-build", "pr-record-acceptance", "pr-stage", "pr-validate"):
+        from .export_cli import handle
+        emit(handle(args)); return
     if args.command == "seed-init":
         path = Path(args.input); manifest = read(args.manifest)
         expected = manifest.get("files", {}).get(path.name)

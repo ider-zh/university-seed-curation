@@ -29,3 +29,5 @@ Schema 是初始化草案；详细字段仍可通过独立 schema PR 评审和�
 - 17 项离线测试通过，覆盖 preferred 单来源/无年份可用、冲突保留、当前任职语境、
   引用/主体校验、私有缓存原始版本留档及既有任务/更新流程。
 - v0.1 保持兼容；v0.2 领域变更桥、真实 Agent 编排、签名/PR exporter 尚待实施。
+
+当前进度以 `docs/handoff.md` 和 `docs/reviewed-pr-export.md` 为准；以上保留初始化阶段的历史状态。

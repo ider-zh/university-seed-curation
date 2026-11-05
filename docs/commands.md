@@ -49,13 +49,16 @@ verdict 至少包含 decision、source_checks（每个变更事实一个支持�
 reviewed_groups。完整刷新必须审核整个 core-v1 profile；部分补充用 field_update，
 确定性外部源用 batch_import，均不得重置 update_datetime。
 
-## 当前未启用的边界
+## 已实现的 PR 准备与当前边界
 
-离线数据更新 receipt 校验只验证声明的 actor/session 与内容绑定。生产环境仍需
-执行桥绑定真实 Agent 会话、可信审核器签名和访问隔离；不应把这些离线检查当作
-对恶意本地操作者的认证。真实 Provider、源 adapter 与 GitHub exporter 都未配置。
+`pr-key-init` 初始化私有签名密钥和公开 trust policy；`pr-build` 从实际私有试跑
+凭据准备有签名的三校／小批预览，`pr-record-acceptance` 记录操作者明确的数据
+验收，`pr-stage` 只应用已验收且绑定当前 Git 基线的初始记录，`pr-validate` 读取
+提议的 Git blob 并使用 base 分支的信任配置校验。完整命令见
+[reviewed-pr-export.md](reviewed-pr-export.md)。
 
-`pr-build` 当前必定拒绝，避免未经可信核验便输出到公开 PR。上线时必须在独立
-集成阶段加入真实 review attestation、main 基线检查、受保护分支和实际 PR 合并回执。
-已经本地 applied 的学校会保持任务锁，直至该集成确认合并或取消，防止另一个 run
-重复处理同一学校。初始版本不自动标记“已合并”。
+这些命令不自动提交、开 PR 或合并；独立 Review 通过与人工数据发布验收分别记录。
+本地协调器签名不等于服务商对模型会话的认证，也不是独立验证的人类身份。
+生产访问隔离、通用领域 diff、其他源 adapters、受保护分支和合并回执仍待接入。
+旧 v0.1 队列中本地 applied 的学校保持任务锁，直至后续集成确认合并或取消，
+不会仅因为文件已应用就自动标记“已合并”。

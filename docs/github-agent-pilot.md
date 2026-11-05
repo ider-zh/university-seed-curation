@@ -52,3 +52,13 @@ integration remain unconfigured until that verification is actually performed.
 Keep a synthetic negative-control CI case for invalid schema/stale baseline/
 unverified receipt rejection. Do not publish failed real-school proposals just
 to demonstrate a red check.
+
+## Integration progress after PR #1 merge
+
+The next code PR implements signed initial-import receipts, private batch
+preparation, explicit data-acceptance gating, safe staging and a base-trusted data
+validator/workflow. See `docs/reviewed-pr-export.md` for executable commands and
+trust assumptions. The first private batch is Harvard (finance), Nottingham
+Ningbo (branch/multilingual), and Southwestern Associated University (historical).
+Actual data PR publication waits for the integration merge and explicit acceptance
+of that content scope; model trials are reused rather than rerun without need.
