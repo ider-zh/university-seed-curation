@@ -12,8 +12,5 @@ dependencies = ["jsonschema>=4.18,<5", "cryptography>=43,<51"]
 [project.optional-dependencies]
 seed-parquet = ["pyarrow>=15"]
 
-[project.scripts]
-unicurate = "university_curation.cli:main"
-
 [tool.setuptools.packages.find]
-where = ["src"]
+where = [".agents/skills/university-curation/scripts/lib"]

@@ -3,7 +3,7 @@ from pathlib import Path
 import sys
 import tempfile
 import unittest
-sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / ".agents/skills/university-curation/scripts/lib"))
 from university_curation.sources import Cache
 from university_curation.source_requests import augment_packet
 

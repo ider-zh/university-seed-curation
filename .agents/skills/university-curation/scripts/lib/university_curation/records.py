@@ -11,7 +11,8 @@ from pathlib import Path
 import re
 import tempfile
 
-ROOT = Path(__file__).resolve().parents[2]
+ROOT = next(parent for parent in Path(__file__).resolve().parents
+            if (parent / "pyproject.toml").is_file() and (parent / "schemas").is_dir())
 SCHEMA_VERSION = "0.1.0"
 GROUPS = ("identity", "geography", "history", "population", "finance", "profile")
 
@@ -24,7 +25,7 @@ def qid(value):
 
 def record_path(workspace, entity_id):
     entity_id = qid(entity_id)
-    bucket = hashlib.sha256(entity_id.encode("utf-8")).hexdigest()[:3]
+    bucket = hashlib.sha256(entity_id.encode("utf-8")).hexdigest()[:2]
     return Path(workspace).resolve() / "data" / "universities" / bucket / (entity_id + ".json")
 
 
@@ -58,7 +59,7 @@ def contracts():
 
 
 def validate(record):
-    if record.get("schema_version") in ("0.2.0", "0.2.1"):
+    if record.get("schema_version") in ("0.2.0", "0.2.1", "0.2.2"):
         from .preferred import validate as validate_v02
         return validate_v02(record)
     validator, fields, value_validators = contracts()

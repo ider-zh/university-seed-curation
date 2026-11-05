@@ -7,7 +7,7 @@ import tempfile
 import unittest
 import subprocess
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / ".agents/skills/university-curation/scripts/lib"))
 from university_curation.records import initial, create, record_path, validate, digest, proposal, finish_candidate, apply_reviewed, GROUPS
 from university_curation.tasks import Queue, cutoff
 
@@ -45,7 +45,7 @@ class RecordTests(unittest.TestCase):
     def test_canonical_bucket_and_no_overwrite(self):
         with tempfile.TemporaryDirectory() as tmp:
             record = seed("Q10924764")
-            self.assertEqual(record_path(tmp, record["qid"]).parent.name, "dfc")
+            self.assertEqual(record_path(tmp, record["qid"]).parent.name, "df")
             self.assertEqual(create(tmp, record), "created")
             self.assertEqual(create(tmp, record), "unchanged")
             changed = deepcopy(record); changed["curation"]["identity_status"] = "needs_review"

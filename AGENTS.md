@@ -1,6 +1,6 @@
 # Agent operating contract
 
-Read `docs/design.md`, your role in `docs/agent-workflow.md`, and the built-in
+Read the current `docs/handoff.md`, your role in `docs/agent-workflow.md`, and the built-in
 `.agents/skills/university-curation/SKILL.md` before taking work.
 
 - Scope is global present and historical higher education. A seed is not an

@@ -19,8 +19,12 @@ class BundledScriptTests(unittest.TestCase):
                 self.assertEqual(result.returncode, 0, result.stderr)
                 return result.stdout
             output = json.loads(run("curate.py", "path", "Q13371", "--workspace", tmp))
-            self.assertEqual(Path(output["path"]), Path(tmp) / "data/universities/daf/Q13371.json")
+            self.assertEqual(Path(output["path"]), Path(tmp) / "data/universities/da/Q13371.json")
             self.assertIn("wikidata-get", run("sources.py", "--help"))
+            self.assertIn("prepare", run("buckets.py", "--help"))
+            self.assertIn("review", run("coordinates.py", "--help"))
+            self.assertTrue((SCRIPTS / "lib/university_curation/records.py").is_file())
+            self.assertFalse(any((ROOT / "src").rglob("*.py")))
             # Resolving the wrong root would look for schemas below the skill
             # folder or temporary cwd instead of the real checkout.
             run("maintain_schema.py", "check")

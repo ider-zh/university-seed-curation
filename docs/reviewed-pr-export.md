@@ -57,7 +57,7 @@ observable GitHub operations after this gate.
 
 ## Public files
 
-- `data/universities/<sha256(QID)[:3]>/<QID>.json`: complete reviewed record.
+- `data/universities/<sha256(QID)[:2]>/<QID>.json`: complete reviewed record.
 - `data/reviews/<batch>/<QID>.json`: signed concise per-school approval and
   allowlisted inference explanations, source-check counts, model configuration,
   independent sessions and private-evidence digests. No raw pages or model logs.
@@ -113,3 +113,30 @@ or revocation is a reviewed trust-policy code PR, separate from data changes.
 
 References: [Ed25519 API](https://cryptography.io/en/latest/hazmat/primitives/asymmetric/ed25519/),
 [GitHub workflow event semantics](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#pull_request_target).
+
+## Bounded updates and path-only migration
+
+`pr-build` remains initial-import only and rejects both existing canonical records
+and existing three-hex legacy paths. It cannot overwrite a university. The separate
+`coordinates.py` adapter appends only root-item P625 facts at the existing source
+revision; an independent fresh Terra medium session re-fetches and checks that
+revision. The private coordinator audits the complete source/input/result chain
+before signing. The receipt explicitly says deterministic production, not a
+fictional Research session; its counts cover changed facts only. The signed
+manifest uses `independently_reviewed_field_update` authorization with the change
+request reference, never fabricated human initial-data acceptance. The complete
+record delta is reconstructed against the trusted Git baseline; full-refresh
+`update_datetime`, original facts, sources and original receipts cannot change.
+
+`buckets.py` is a deterministic storage migration. Its manifest is deliberately
+unsigned: trusted base code independently proves every added byte equals its
+removed baseline blob and every legacy school is moved exactly once. It cannot
+change facts, revisions, receipts, trust or code. Initial imports still require
+signed accepted batches, and fact updates still require signed independent
+review. This migration does not constitute a new dataset release.
+
+Both staging paths preflight the complete batch against the working tree AND
+Git index, reject unrelated staged edits/local deletions, and allow exact retries.
+A migration and a factual update use separate data PRs. The base-trusted workflow
+must already contain each adapter; stacked PRs are dependencies, not permission
+to bypass the normal merge order. Rebind receipts/manifests if the base SHA changes.

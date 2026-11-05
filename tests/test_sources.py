@@ -7,7 +7,7 @@ import subprocess
 from urllib.parse import parse_qs, urlparse
 import unittest
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / ".agents/skills/university-curation/scripts/lib"))
 from university_curation.sources import Cache
 
 
@@ -32,7 +32,7 @@ while not Path(sys.argv[4]).exists(): time.sleep(.01)
 entity,meta=Cache(sys.argv[2],fetch).entity("Q101")
 assert entity["lastrevid"]==7
 '''
-            args = [sys.executable, "-c", code, str(Path(__file__).resolve().parents[1] / "src"), str(private), str(calls), str(gate)]
+            args = [sys.executable, "-c", code, str(Path(__file__).resolve().parents[1] / ".agents/skills/university-curation/scripts/lib"), str(private), str(calls), str(gate)]
             workers = [subprocess.Popen(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE) for _ in range(3)]
             gate.touch()
             for worker in workers:

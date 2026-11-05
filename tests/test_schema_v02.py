@@ -5,7 +5,7 @@ import sys
 import tempfile
 import unittest
 
-ROOT = Path(__file__).resolve().parents[1]; sys.path.insert(0, str(ROOT / "src"))
+ROOT = Path(__file__).resolve().parents[1]; sys.path.insert(0, str(ROOT / ".agents/skills/university-curation/scripts/lib"))
 SCRIPTS = ROOT / ".agents/skills/university-curation/scripts"
 sys.path.insert(0, str(SCRIPTS))
 spec = importlib.util.spec_from_file_location("schema_example", SCRIPTS / "build_schema_example.py")

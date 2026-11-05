@@ -14,7 +14,9 @@ Here `<skill-dir>` is the directory containing this `SKILL.md` (in the checkout,
 `.agents/skills/university-curation`). All executable helpers live in its `scripts/`
 folder. Resolve it before running a command; do not assume the current directory
 is the skill folder. Repository documents and data paths refer to the checkout
-root. Shared library code remains in the repository `src/` package.
+root. All implementation modules live in `scripts/lib/university_curation/`;
+there is no separate root `src/` implementation. Schemas, data and tests remain
+repository resources. These are checkout-bound commands, not a standalone wheel CLI.
 
 Use `python <skill-dir>/scripts/curate.py --help`. The default private queue is
 `.private/state/queue.sqlite3`; separate worktrees must explicitly use the same
@@ -63,10 +65,10 @@ private state path. Do not create an independent copy of the queue per subagent.
 
 ## Schema and initialization
 
-For domain Schema v0.2 inspect `docs/schema-v0.2.md` and the full synthetic example.
+For domain Schema v0.2 inspect `docs/data-contract.md` and the full synthetic example.
 Keep candidates; use preferred even for single-source/undated facts, disclose
 missing period and unresolved conflicts. Do not invent years or require a second
-source merely to allow a usable Wikipedia value. v0.2 incremental domain mutation is not yet implemented; do not send v0.1 claims
+source merely to allow a usable Wikipedia value. General v0.2 domain mutation is not implemented; do not send v0.1 claims
 operations to v0.2 records. The bounded initial-pilot import uses the export
 adapter below and cannot overwrite an existing university.
 
@@ -89,6 +91,16 @@ protected auto-merge still require rollout verification. Read
 `docs/reviewed-pr-export.md`: `pr-build` prepares only a private preview; `pr-stage`
 and base-trusted CI reject unaccepted data. The trust/workflow code must be merged
 before real data staging. Never bypass these gates by copying private files.
+
+The bounded root-P625 update uses `scripts/coordinates.py` (prepare/review/build),
+not arbitrary v0.2 mutations. Check every active root P625, preserve ranks and
+explicit unknown/no-value, and do not substitute city/country coordinates or
+drop the item point because a Wikipedia site point differs. Item coordinates
+make no unsupported campus/headquarters/time attribution. Read `docs/commands.md`.
+
+School paths now use SHA-256(QID)[:2], at most 256 buckets. Migrate existing
+three-hex paths with `scripts/buckets.py` before importing/updating those QIDs;
+the migration must preserve every school byte and all historical receipts.
 
 ## Online sources: portable common commands
 
