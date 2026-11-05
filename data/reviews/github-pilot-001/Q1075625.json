@@ -1,0 +1,98 @@
+{
+  "key_id": "review-0c72bce8daed6e1e",
+  "payload": {
+    "base_commit": "a7b2495509f3dd4457e2979c2714aab4529f9c9f",
+    "baseline_sha256": "absent",
+    "qid": "Q1075625",
+    "record_path": "data/universities/b5f/Q1075625.json",
+    "record_sha256": "19554b4147b6ba2720f5671652001b4605daec4d506589b2432df2ab2b83eef9",
+    "repository": "ider-zh/university-seed-curation",
+    "review": {
+      "attestation_kind": "local_coordinator_verified_private_traces",
+      "contexts_checked": 12,
+      "decision": "approve",
+      "facts_checked": 49,
+      "inferences": [
+        {
+          "basis": "reasonable_inference",
+          "candidate_id": "c1",
+          "context": "location:ningbo_campus",
+          "field": "location.coordinates",
+          "kind": "fact",
+          "reason_en": "The institution-level Wikidata coordinate and English infobox give these Earth coordinates; encoding them as EPSG:4326 is a reasonable representation.",
+          "value": {
+            "crs": "EPSG:4326",
+            "latitude": 29.8022,
+            "longitude": 121.5592
+          }
+        },
+        {
+          "basis": "reasonable_inference",
+          "candidate_id": "c1",
+          "context": "location:headquarters",
+          "field": "location.coordinates",
+          "kind": "fact",
+          "reason_en": "The headquarters qualifier gives these Earth coordinates; EPSG:4326 is a reasonable representation. Its longitude differs slightly from f14.",
+          "value": {
+            "crs": "EPSG:4326",
+            "latitude": 29.8022,
+            "longitude": 121.559
+          }
+        },
+        {
+          "basis": "reasonable_inference",
+          "candidate_id": "c1",
+          "context": "institution",
+          "field": "population.students_intake",
+          "kind": "fact",
+          "reason_en": "The history reports a first cohort of 254 students in September 2004; counting students as headcount is reasonable.",
+          "value": {
+            "amount": 254,
+            "basis": "headcount",
+            "precision": "exact"
+          }
+        },
+        {
+          "basis": "reasonable_inference",
+          "candidate_id": "c1",
+          "context": "institution",
+          "field": "profile.degree_levels",
+          "kind": "fact",
+          "reason_en": "The source says the university recruits undergraduate, master's and doctoral students; representing these as the corresponding degree levels is a reasonable inference.",
+          "value": [
+            "bachelor's",
+            "master's",
+            "doctorate"
+          ]
+        },
+        {
+          "basis": "reasonable_inference",
+          "context_id": "milestone:operations_start",
+          "kind": "context",
+          "reason_en": "s3 says operations began with the first student cohort; representing this as teaching start is a reasonable inference."
+        }
+      ],
+      "model": "gpt-6.1-terra",
+      "output_schema_sha256": "b29ab19ceb825fd4d52dfc64986af5e1bc3e9efc6486a294179664c1f50b1245",
+      "private_evidence_sha256": "953b07be36c13f22db5ef9919a5b3231cd3f58853c7c2b36e9d11efe14db6949",
+      "prompt_sha256": "e3e6b52c5763330b44285f1e82bbf2f15e2c5820cc0648d1e26135ceb92565d2",
+      "reasoning_effort": "medium",
+      "research_sessions": [
+        "01a1a999-fc19-7211-a5c1-4d80a4071235"
+      ],
+      "review_output_sha256": "dec105593d8a61a4e7337fe1d73999b1a9b34ee74917cfb0882be31587d97bc2",
+      "review_session": "01a1a9a8-7259-7ae0-a67e-384274e0fe9a",
+      "reviewed_at": "2026-11-05T03:03:31.679358+00:00",
+      "runtime_model_reported": false,
+      "source_revisions_checked": 7
+    },
+    "review_policy": {
+      "id": "source-grounded-flexible-v2",
+      "sha256": "b8ed7d2897e4c31dbd81b1379aafdc1077a21d1a33949edbd2d896b0adf99db2"
+    },
+    "schema_sha256": "7a1a55b93b8ad5dadba221869f6c415d8d84e7132c25c2658e30032c8396afec",
+    "schema_version": "0.2.1",
+    "type": "university-review-v1"
+  },
+  "signature_hex": "9f091b8e07027cc4b5f81922c4504660202cac3fbace5840bac86f813435fbf5efa44c9310eeb02b716b7d26b76b115352a21b71de912411c412414e4ad48703"
+}

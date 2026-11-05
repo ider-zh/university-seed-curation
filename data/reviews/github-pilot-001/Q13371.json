@@ -1,0 +1,74 @@
+{
+  "key_id": "review-0c72bce8daed6e1e",
+  "payload": {
+    "base_commit": "a7b2495509f3dd4457e2979c2714aab4529f9c9f",
+    "baseline_sha256": "absent",
+    "qid": "Q13371",
+    "record_path": "data/universities/daf/Q13371.json",
+    "record_sha256": "c3842470dbff83ff2ba6c2f6711f572410fe87160edc6b158c88d4f9a7ac1bae",
+    "repository": "ider-zh/university-seed-curation",
+    "review": {
+      "attestation_kind": "local_coordinator_verified_private_traces",
+      "contexts_checked": 14,
+      "decision": "approve",
+      "facts_checked": 49,
+      "inferences": [
+        {
+          "basis": "reasonable_inference",
+          "candidate_id": "c1",
+          "context": "institution",
+          "field": "identity.operating_status",
+          "kind": "fact",
+          "reason_en": "The present-tense institutional description in s2 section:Teaching_and_learning supports operating status.",
+          "value": "operating"
+        },
+        {
+          "basis": "reasonable_inference",
+          "candidate_id": "c1",
+          "context": "milestone:modern_research_university",
+          "field": "milestone.date",
+          "kind": "fact",
+          "reason_en": "s2 section:lead dates Eliot's presidency to 1869–1909 and describes the transformation during that tenure; the interval is not a formal grant date.",
+          "value": {
+            "original_date": "1869 to 1909",
+            "precision": "interval"
+          }
+        },
+        {
+          "basis": "reasonable_inference",
+          "context_id": "milestone:modern_research_university",
+          "kind": "context",
+          "reason_en": "s2 section:lead describes development into a modern research university during Eliot's presidency. The broader status category represents a period of development, not a formal status grant."
+        },
+        {
+          "basis": "reasonable_inference",
+          "context_id": "related:aau",
+          "kind": "context",
+          "reason_en": "s2 section:20th_century identifies the Association of American Universities as a distinct organization of which Harvard was a founding member; the broad institution category is usable here."
+        }
+      ],
+      "model": "gpt-6.1-terra",
+      "output_schema_sha256": "b29ab19ceb825fd4d52dfc64986af5e1bc3e9efc6486a294179664c1f50b1245",
+      "private_evidence_sha256": "1fb8ccf74b5b2e7bdd896ec03a3cae1fc27aea121901f8a56c5a45ccde562090",
+      "prompt_sha256": "508babec781b703e06606f33eeaa0cb7235c7493d3dfa3636df60d146857608c",
+      "reasoning_effort": "medium",
+      "research_sessions": [
+        "01a1a988-4dbc-7c53-86c8-56ddfa548706",
+        "01a1a9a0-32f5-78d2-a447-25243e435144"
+      ],
+      "review_output_sha256": "6cb8f76f1b80931fcec35e4db3111db1095b06e6c272b1954a5bd6f4ca35a25c",
+      "review_session": "01a1a9a0-acab-7df2-8908-046759614872",
+      "reviewed_at": "2026-11-05T02:55:05.589117+00:00",
+      "runtime_model_reported": false,
+      "source_revisions_checked": 13
+    },
+    "review_policy": {
+      "id": "source-grounded-flexible-v2",
+      "sha256": "b8ed7d2897e4c31dbd81b1379aafdc1077a21d1a33949edbd2d896b0adf99db2"
+    },
+    "schema_sha256": "7a1a55b93b8ad5dadba221869f6c415d8d84e7132c25c2658e30032c8396afec",
+    "schema_version": "0.2.1",
+    "type": "university-review-v1"
+  },
+  "signature_hex": "d773320cb3e31461a2c624fa4aaae75e8a806f7f3b6a0fa303d0e5acff637c71d4346585b89d16133a17133f0a58e5ede49aede466ccd4d5c31f09cdb0fec207"
+}
