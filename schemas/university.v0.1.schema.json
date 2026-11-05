@@ -238,8 +238,19 @@
                 }
               },
               "then": {
+                "anyOf": [
+                  {
+                    "required": [
+                      "snapshot_id"
+                    ]
+                  },
+                  {
+                    "required": [
+                      "retrieved_at"
+                    ]
+                  }
+                ],
                 "required": [
-                  "snapshot_id",
                   "source_qid",
                   "revision_id"
                 ]

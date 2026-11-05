@@ -6,9 +6,14 @@ Read `docs/design.md`, your role in `docs/agent-workflow.md`, and the built-in
 - Scope is global present and historical higher education. A seed is not an
   accepted university identity. Distinguish institutions, systems, branches,
   campuses, colleges, faculties and buildings; retain QIDs and original facts.
-- Research starts with identity/scope, then a bounded field task. Use local
-  Wikidata and Wikipedia first, other websites for supporting evidence. Do not
-  substitute remote SPARQL/bulk dump downloads for the supplied local snapshot.
+- Research starts with identity/scope, then a bounded field task. Use online
+  Wikidata entity/search APIs and revision-bound Wikipedia first, other websites
+  for supporting evidence. Agents may work in other environments: no access to
+  the upstream dump host is required. This online policy is specific to this
+  downstream project; it does not change wikidata-research's local dump contract.
+- Use the source skill script for bounded entity lookup/search, necessary linked
+  items and page retrieval. Preserve revisions and keep the raw cache private.
+  Do not turn per-university research into an unbounded remote SPARQL sweep.
 - No raw dump, bulk article content, unreviewed proposal, prompt, private job
   log or credential may enter Git history, a PR or public Actions artifacts.
 - Each Research subagent works on one QID. Review is a fresh independent

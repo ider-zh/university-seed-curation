@@ -2,8 +2,10 @@
 import argparse
 import json
 from pathlib import Path
+import sys
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "src"))
 
 
 def obj(properties, required=()):
@@ -54,7 +56,8 @@ def record_schema():
         "dataset_version": TEXT, "source_record_id": TEXT}, ("kind", "url", "locator"))
     source["allOf"] = [
         {"if": {"properties": {"kind": {"const": "wikipedia"}}}, "then": {"required": ["language", "page_id", "revision_id", "retrieved_at"]}},
-        {"if": {"properties": {"kind": {"const": "wikidata"}}}, "then": {"required": ["snapshot_id", "source_qid", "revision_id"]}},
+        {"if": {"properties": {"kind": {"const": "wikidata"}}}, "then": {"required": ["source_qid", "revision_id"],
+            "anyOf": [{"required": ["snapshot_id"]}, {"required": ["retrieved_at"]}]}},
         {"if": {"properties": {"kind": {"const": "website"}}}, "then": {"required": ["retrieved_at"]}},
         {"if": {"properties": {"kind": {"const": "dataset"}}}, "then": {"required": ["dataset_version", "source_record_id"]}}]
     claim = obj({"id": {"type": "string", "pattern": "^c[1-9][0-9]*$"}, "field": TEXT, "subject_qid": QID,
@@ -97,8 +100,13 @@ def main():
         jsonschema.Draft202012Validator.check_schema(definition["value_schema"])
         Path(args.output).write_text(json.dumps({"status": "proposed_not_active", "definition": definition}, indent=2) + "\n")
         return
-    payloads = {fields_path: initial_fields(), schema_path: record_schema()}
+    from university_curation.schema_v02 import schema as schema_v02
+    payloads = {fields_path: initial_fields(), schema_path: record_schema(),
+                ROOT / "schemas" / "university.v0.2.schema.json": schema_v02()}
     for path, value in payloads.items():
+        if "$schema" in value:
+            import jsonschema
+            jsonschema.Draft202012Validator.check_schema(value)
         encoded = json.dumps(value, ensure_ascii=False, sort_keys=True, indent=2) + "\n"
         if args.command == "check":
             if path.read_text(encoding="utf-8") != encoded: raise ValueError("Generated schema/registry differs: " + str(path))

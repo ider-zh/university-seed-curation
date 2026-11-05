@@ -4,6 +4,7 @@ from datetime import datetime, timezone
 import hashlib
 import json
 from pathlib import Path
+import sys
 
 from .records import read, encode, validate, record_path, initial, create, digest, proposal, finish_candidate, apply_reviewed
 from .tasks import Queue
@@ -30,6 +31,7 @@ def seed_rows(path):
 
 
 def main():
+    if hasattr(sys.stdout, "reconfigure"): sys.stdout.reconfigure(encoding="utf-8")
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--state", default=".private/state/queue.sqlite3")
     parser.add_argument("--now", default=datetime.now(timezone.utc).isoformat())

@@ -58,6 +58,9 @@ def contracts():
 
 
 def validate(record):
+    if record.get("schema_version") == "0.2.0":
+        from .preferred import validate as validate_v02
+        return validate_v02(record)
     validator, fields, value_validators = contracts()
     def no_missing_placeholders(value, path="$"):
         if value is None:
@@ -122,7 +125,9 @@ def _replace(path, value):
 
 def create(workspace, record):
     """Create once; import policy/publication gate is owned by the calling script."""
-    validate(record); path = record_path(workspace, record["qid"])
+    validate(record)
+    if record.get("example", {}).get("synthetic"): raise ValueError("Synthetic examples cannot enter the university record tree")
+    path = record_path(workspace, record["qid"])
     with exclusive(path):
         if path.exists():
             if read(path) == record: return "unchanged"
@@ -134,6 +139,7 @@ def create(workspace, record):
 def apply_reviewed(workspace, candidate, expected_digest, receipt):
     """Local CAS primitive; public PR construction still requires trusted attestation."""
     validate(candidate)
+    if candidate.get("example", {}).get("synthetic"): raise ValueError("Synthetic examples cannot update university records")
     if receipt.get("decision") != "approve" or receipt.get("candidate_digest") != digest(candidate):
         raise ValueError("Approval is missing or binds another candidate")
     if receipt.get("base_digest") != expected_digest or receipt.get("qid") != candidate["qid"]:
@@ -166,6 +172,8 @@ def initial(seed, import_id):
 
 def proposal(current, changes, allowed_groups=GROUPS):
     """Apply a compact research diff privately; never overwrite the current record."""
+    if current.get("schema_version") != "0.1.0":
+        raise ValueError("Domain v0.2 diff/review bridge requires schema acceptance; validation and examples are available")
     allowed = {"identity_status", "new_sources", "new_claims", "withdraw_claim_ids", "coverage"}
     if not isinstance(changes, dict) or not set(changes) <= allowed: raise ValueError("Unknown proposal operation")
     result = deepcopy(current); fields = contracts()[1]

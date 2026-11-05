@@ -30,7 +30,7 @@ private state path. Do not create an independent copy of the queue per subagent.
 ## Research subagent
 
 1. Work on the claimed QID and task field groups. Check identity first.
-2. Use local Wikidata and cached/revision-bound Wikipedia, supporting sites as
+2. Use online Wikidata and cached/revision-bound Wikipedia, supporting sites as
    needed. Preserve subject, period, units, language and source locator.
 3. Produce compact change operations, not a rewritten school file. Script-owned
    revision numbers, hashes and fact IDs are not model output.
@@ -57,6 +57,12 @@ private state path. Do not create an independent copy of the queue per subagent.
 
 ## Schema and initialization
 
+For domain Schema v0.2 inspect `docs/schema-v0.2.md` and the full synthetic example.
+Keep candidates; use preferred even for single-source/undated facts, disclose
+missing period and unresolved conflicts. Do not invent years or require a second
+source merely to allow a usable Wikipedia value. v0.2 domain mutation is pending
+schema acceptance; do not send v0.1 claims operations to v0.2 records.
+
 `scripts/maintain_schema.py check` checks the generated contract. `propose-field`
 stages a definition for a separate schema PR; it never activates a new field.
 Do not hand-edit generated schema or introduce arbitrary keys in school records.
@@ -68,8 +74,27 @@ Never create/update a school file by hand or copy null placeholders into it.
 
 ## Current implementation boundary
 
-Offline lease/data primitives are implemented. Actual host subagent dispatch,
-source adapters, authenticated review-session provenance, signed public receipts,
+Offline lease/data primitives and online Wikidata/Wikipedia helpers are implemented.
+Actual host subagent dispatch, other source adapters, authenticated review-session provenance, signed public receipts,
 PR construction and protected auto-merge require the rollout verification.
 `pr-build` fails closed until trusted public export is configured. Do not claim
 production Research/Review or bypass this boundary by publishing private files.
+
+## Online sources: portable common commands
+
+Read `docs/source-tools.md`. No upstream dump host is required in this project.
+
+```text
+python scripts/sources.py wikidata-get QID --properties P31 P17 P131 P571 P856 --resolve P17 P131 --linked-limit 8
+python scripts/sources.py wikidata-search "UNIVERSITY NAME" --language en --limit 5
+python scripts/sources.py wikipedia-get --language LANGUAGE --qid QID
+python scripts/sources.py wikipedia-get --language LANGUAGE --title "TITLE" --view infobox
+python scripts/sources.py wikipedia-get --language LANGUAGE --qid QID --view text --section SECTION_ID --max-chars 12000
+```
+
+Inspect sitelinks before choosing a language. Summary gives section IDs and the
+original infobox rows; text supports offset windows. Use exact oldid when reviewing
+a cited article revision. Preserve returned page/revision IDs, observation time,
+URL and locator. Original statements/references and page HTML/wikitext stay in
+immutable private captures. Never commit raw cache files, put raw pages in a PR,
+or treat mechanical infobox parsing as independent fact verification.

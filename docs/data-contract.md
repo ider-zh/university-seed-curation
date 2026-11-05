@@ -1,5 +1,9 @@
 # 单校 JSON 与 Schema 管理
 
+新增的领域分组与 preferred 合同草案为 v0.2，见 `docs/schema-v0.2.md` 和完整
+synthetic 示例。以下通用规则继续适用；v0.1 claims 格式保留兼容，新领域格式
+目前支持校验与示例生成，不隐式迁移或调用旧 claims 变更桥。
+
 ## 路径与文件
 
 规范 QID 为 `Q` 加无前导零的正整数；桶为其 UTF-8 字符串的 SHA-256 前三个
@@ -27,7 +31,8 @@ QID 不得因去重或合并被物理改名；疑似重复以关系与状态表�
 
 每条事实包含：受控字段名、主体、精确/近似/范围值及单位、适用时期、原始表述、
 短来源引用与事实状态。来源类型决定必需的元数据：Wikipedia 需要语言/page/revision，
-Wikidata 需要 snapshot/item/statement 定位；没有 page ID 的来源不填一个假的 null。
+在线 Wikidata 需要 item/revision/观察时间和 statement 定位，历史 dump 可附 snapshot；
+没有 page ID 的来源不填一个假的 null。
 
 来源、事实、模型执行凭据不要混在每个值旁重复输出。脚本维护记录内短 ID 与
 批次级版本信息，Agent 使用紧凑任务包和 diff，避免大量低信息密度 hash。
