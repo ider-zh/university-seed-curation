@@ -2,11 +2,11 @@
 
 ## Operator decision, 2026-11-05 (supersedes workflow below)
 
-New university data batches use a single main Agent with native Research
-subagents. The main Agent performs explicit structured Review on Research's
-hash-verified, revision-bound **offline** snapshot. No duplicate web requests
-from Review, independent Review session or data PR. Approved batches are
-materialized and posted directly to main with a guarded expected-head update;
+New university data batches use one manager Agent with distinct native Research
+and Review subagents. Review verifies Research's hash-checked, revision-bound
+**offline** snapshot without duplicate HTTP requests or Research model traces.
+No data PR. The manager publishes approved batches directly to main with a
+guarded expected-head update;
 schema changes and official dataset release still need a human decision.
 External deep research is constrained to 8 searches/12 pages/5 domains/2 hops/
 15 minutes per QID, after fully inspecting Wikidata/Wikipedia. The existing

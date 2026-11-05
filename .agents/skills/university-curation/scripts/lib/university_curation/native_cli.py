@@ -101,7 +101,7 @@ def direct_main(repo, output, files, base, repository):
         elements.append({'path':path,'mode':'100644','type':'blob','sha':'$'+label})
     operations.extend([
         {'tool':'mcp__codex_apps__github_create_tree','arguments':{'repository_full_name':repository,'base_tree_sha':tree,'tree_elements':elements},'output':'tree_sha'},
-        {'tool':'mcp__codex_apps__github_create_commit','arguments':{'repository_full_name':repository,'message':'Apply main-Agent-reviewed university batch','tree_sha':'$tree_sha','parent_sha':base},'output':'commit_sha'},
+        {'tool':'mcp__codex_apps__github_create_commit','arguments':{'repository_full_name':repository,'message':'Apply Research-and-Review-subagent university batch','tree_sha':'$tree_sha','parent_sha':base},'output':'commit_sha'},
         {'tool':'mcp__codex_apps__github_update_ref','arguments':{'repository_full_name':repository,'branch_name':'main','sha':'$commit_sha','expected_sha':base,'force':False}}
     ])
     target.mkdir(parents=True)

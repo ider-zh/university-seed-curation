@@ -1,4 +1,4 @@
-"""One-workspace Research -> main-Agent Review -> guarded direct-main publication.
+"""One-workspace Research subagent -> Review subagent -> guarded direct-main publication.
 
 Review remains an explicit, coverage-checked decision; no PR or role signature is
 claimed. Published receipts make the provenance and reduced independence clear.
@@ -22,7 +22,7 @@ def _verified(repo, base, proposal, review_job, attempt, trust, catalog, catalog
         raise ValueError('Review attempt must be generated inside the supplied Review job')
     meta=load_json((job/'job.json').read_bytes())
     if meta.get('type')!='native-review-job-v1' or not meta.get('shared_source_cache') or not meta.get('offline_research_snapshot'):
-        raise ValueError('An offline Research-snapshot main-Agent Review job is required')
+        raise ValueError('An offline Research-snapshot Review job is required')
     if meta['base_commit'] != base or meta['catalog_sha256'] != catalog_hash:
         raise ValueError('Review is stale relative to main/catalog')
     if sha(encode(proposal)) != meta['proposal_sha256'] or (job/'public-proposal.json').read_bytes()!=encode(proposal):
@@ -35,13 +35,13 @@ def _verified(repo, base, proposal, review_job, attempt, trust, catalog, catalog
     verdict=canonical_json((attempt/'public-verdict.json').read_bytes())
     metadata=canonical_json((attempt/'result-metadata.json').read_bytes())
     if verdict.get('decision')!='approve' or verdict.get('qid')!=entity or verdict.get('proposal_sha256')!=sha(encode(proposal)):
-        raise ValueError('Exact proposal lacks main-Agent approval')
+        raise ValueError('Exact proposal lacks Review approval')
     if verdict.get('requests') or any(r['status']!='addressed' for r in verdict['request_responses']):
         raise ValueError('Unresolved Review questions')
     if metadata.get('session')!=verdict['review_session'] or metadata.get('model')!=verdict['model'] or metadata.get('reasoning_effort')!=verdict['reasoning_effort']:
         raise ValueError('Review provenance mismatch')
     if verdict['review_session']==proposal['research']['session']:
-        raise ValueError('Research subagent and main-Agent Review sessions must differ')
+        raise ValueError('Research and Review subagent sessions must differ')
     if instant(verdict['reviewed_at'])<instant(meta['prepared_at']): raise ValueError('Review predates source replay')
     if not verdict.get('source_revisions_checked') == len(proposal['delta']['sources']): raise ValueError('Incomplete source coverage')
     from .distributed_jobs import _fact_scope
@@ -75,7 +75,7 @@ def files(repo, base, batch, proposals_and_reviews):
     for proposal_path,job_path,attempt_path in proposals_and_reviews:
         proposal=load_json(private_path(proposal_path).read_bytes())
         if 'transport' not in proposal:
-            raise ValueError('Use unified-proposal before main-Agent Review; reviewed bytes must match publication')
+            raise ValueError('Use unified-proposal before Review; reviewed bytes must match publication')
         entity=proposal['qid']
         if entity in seen: raise ValueError('Duplicate Research QID')
         seen.add(entity)
@@ -84,7 +84,7 @@ def files(repo, base, batch, proposals_and_reviews):
         no_legacy_duplicate(repo,base_commit,entity)
         if blob(repo,base_commit,receipt_path,optional=True) is not None: raise ValueError('Immutable receipt exists')
         receipt={'type':'university-unified-receipt-v1','research':proposal,'review':verdict,
-                 'attribution':'main_agent_review_of_native_research_subagent;not_independent_signature',
+                 'attribution':'distinct_native_research_and_review_subagents;not_cryptographic_identity',
                  'review_result_sha256':sha(private_path(attempt_path).joinpath('native-result.json').read_bytes())}
         output[record_path]=encode(record); output[receipt_path]=encode(receipt)
         rows.append({'qid':entity,'record_path':record_path,'record_sha256':sha(output[record_path]),
@@ -121,7 +121,11 @@ def verify_files(repo, base, files, trust):
         if blob(repo,base,receipt_path,optional=True) is not None: raise ValueError('Immutable receipt exists')
         no_legacy_duplicate(repo,base,entity)
         receipt=canonical_json(files[receipt_path]); record=canonical_json(files[path])
-        if set(receipt)!={'type','research','review','attribution','review_result_sha256'} or receipt['type']!='university-unified-receipt-v1' or not receipt['attribution'].startswith('main_agent_review'):
+        attribution=receipt.get('attribution','')
+        if (set(receipt)!={'type','research','review','attribution','review_result_sha256'} or
+                receipt['type']!='university-unified-receipt-v1' or
+                attribution not in ('main_agent_review_of_native_research_subagent;not_independent_signature',
+                                    'distinct_native_research_and_review_subagents;not_cryptographic_identity')):
             raise ValueError('Invalid unified receipt')
         proposal=receipt['research']; verdict=receipt['review']; baseline,_=baseline_at(repo,base,entity)
         check_proposal(proposal,baseline,catalog,digest,trust)

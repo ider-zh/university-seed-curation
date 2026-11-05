@@ -1,8 +1,8 @@
-"""Prepare and compile an independent native Review subagent result.
+"""Prepare and compile an offline native Review subagent result.
 
-Only the structured public Research proposal crosses roles. Sources are fetched
-again into this Review job, and native session/model declarations are not treated
-as provider-signed proof.
+The current unified flow uses Research's hash-verified source snapshot and no
+network fetch. Old independent PR Review may still use the legacy replay path.
+Native session/model declarations are not treated as provider-signed proof.
 """
 from copy import deepcopy
 from datetime import datetime, timezone
@@ -40,7 +40,10 @@ def _prompt(value, policy):
     return (REVIEW_RULES+'\nREVIEW POLICY:\n'+policy+'\nReturn only one JSON object matching the supplied schema. '
         'The source packet is a revision-bound, hash-checked evidence snapshot. Review every fact, context, source locator, '
         'subject, period and unit against this snapshot. Do not fetch sources again. '
-        'Independence means critical interpretation by the main Agent, not a second network retrieval or a signed second role.\nINPUT:\n'
+        'You are the Review subagent in a session distinct from the Research subagent. '
+        'Independence means independently assessing the frozen evidence and exact proposal, '
+        'not fetching any site again or claiming a cryptographically signed identity. '
+        'Do not read Research model traces or outputs beyond this supplied review packet.\nINPUT:\n'
         +encode(value).decode())
 
 

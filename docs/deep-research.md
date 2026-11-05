@@ -1,8 +1,9 @@
 # Unified deep research: scope and cost limits
 
-For new records the main Agent owns task choice, Research subagent dispatch,
-critical Review, canonical validation and direct-main publication. Subagents
-never publish. Existing data PRs are reconciled separately; they cannot be
+For new records the manager Agent dispatches separate Research and Review
+subagents, validates their outputs and publishes directly to main. Research
+captures evidence; Review critically assesses it offline. Subagents never
+publish. Existing data PRs are reconciled separately; they cannot be
 assumed approved merely because this new pipeline exists.
 
 ## Search priority
@@ -40,8 +41,9 @@ The Research snapshot is the single network acquisition per source. It records
 the source identity, exact revision or capture timestamp, quote/locator,
 content digest and subject. The Review job reads the Research packet and root
 entity from the same workspace after checking the Research job's hashes and
-Git baseline. Review compares **all** facts, contexts and coverage against the
-frozen packet. It never makes another HTTP request; a missing or corrupt packet
+Git baseline. The distinct Review subagent compares **all** facts, contexts
+and coverage against the frozen packet without reading Research model traces.
+It never makes another HTTP request; a missing or corrupt packet
 returns to Research as a blocking failure.
 
 The trusted v0.2.2 schema already supports `website` sources. After Wikimedia
@@ -63,8 +65,8 @@ contains only bounded sourced facts, not raw page dumps or private captures.
 
 ## Publication
 
-Main Agent verifies every Research fact and complete six-group coverage, uses
-the structured `review-compile` gate, and compiles an immutable unified receipt
+The Review subagent verifies every Research fact and all six coverage groups.
+Manager Agent validates the strict `review-compile` gate and generates an immutable unified receipt
 describing workflow attribution honestly. `unified-publish` emits a bounded
 blob/tree/commit/ref operations plan for the connected GitHub plugin. Confirm
 the actual remote `main` SHA, then execute `update_ref` with `expected_sha` and

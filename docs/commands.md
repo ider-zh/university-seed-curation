@@ -2,9 +2,9 @@
 
 ## Current unified mode (new data batches)
 
-One main Agent dispatches a Research subagent for each QID, then reviews the
-same snapshot offline. No secondary Review subagent, repeated source HTTP
-requests or data PR. Up to five schools per batch; keep all source packets and
+One manager Agent dispatches one Research subagent per QID, then a distinct
+Review subagent to check the same hash-bound source snapshot offline. No
+repeated source HTTP requests or data PR. Up to five schools per batch; keep all source packets and
 prompts private. See [deep research](deep-research.md) for search budgets and
 the current external-source limitation.
 
@@ -13,12 +13,14 @@ python .agents/skills/university-curation/scripts/agent.py --role research resea
 python .agents/skills/university-curation/scripts/agent.py --role research research-compile --job .private/native/research/Q13371/run-1 --result .private/native/research/Q13371/result.json --session RESEARCH_SUBAGENT_SESSION --model ACTUAL_MODEL
 python .agents/skills/university-curation/scripts/agent.py --role research unified-proposal --proposal .private/native/research/Q13371/run-1/compile-attempts/ACTUAL_ATTEMPT/public-proposal.json --output .private/native/Q13371-transport.json
 python .agents/skills/university-curation/scripts/agent.py --role review review-prepare --proposal .private/native/Q13371-transport.json --job .private/native/review/Q13371/run-1 --research-job .private/native/research/Q13371/run-1 --shared-cache
-python .agents/skills/university-curation/scripts/agent.py --role review review-compile --job .private/native/review/Q13371/run-1 --result .private/native/review/Q13371/structured-main-review.json --session MAIN_AGENT_SESSION --model ACTUAL_MODEL
+python .agents/skills/university-curation/scripts/agent.py --role review review-compile --job .private/native/review/Q13371/run-1 --result .private/native/review/Q13371/structured-review-result.json --session DISTINCT_REVIEW_SUBAGENT_SESSION --model ACTUAL_MODEL
 python .agents/skills/university-curation/scripts/agent.py --role research unified-publish --proposal .private/native/Q13371-transport.json --review-job .private/native/review/Q13371/run-1 --review-attempt .private/native/review/Q13371/run-1/compile-attempts/ACTUAL_ATTEMPT --batch-id unified-001 --output .private/native/unified-delivery-001
 ```
 
-Main Agent writes the strict Review JSON after reading the offline Review
-prompt; approval is never automatic. Pass multiple aligned
+The Review subagent authors the strict Review JSON after reading only its
+prepared offline Review packet/prompt/schema, not Research model traces.
+The manager runs `review-compile`; approval is never automatic. Keep actual
+Research and Review session IDs distinct. Pass multiple aligned
 `--proposal`, `--review-job` and `--review-attempt` arguments for up to five
 schools. The output `operations.json` specifies plugin blob/tree/commit and
 **non-forced expected-head main update**; execute only after checking actual

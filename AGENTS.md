@@ -1,15 +1,16 @@
 # Agent operating contract
 
-## Unified workflow override (2026-11-05)
+## Unified workflow override (2026-11-05, revised)
 
 The operator has replaced the separate Research/Review PR workflow for **new**
-data batches. A single main Agent manages native Research subagents (one QID per
-subagent), audits their results itself using the exact private captured source
-snapshot, then uses `unified-publish` and the connected GitHub plugin to commit
-only approved canonical data and receipts directly to `main`, guarded by its
-expected SHA. No data PR, independent Review session, duplicated source fetch,
-or human merge is required for these routine approved records. This is a
-main-Agent review, **not independent cryptographic attestation**. Human approval
+data batches. One manager Agent dispatches separate native **Research and Review
+subagents**. Research produces a sourced proposal; Review independently checks
+every fact and context against the exact hash-verified, offline source snapshot.
+The manager validates the Review result and uses `unified-publish` with the
+GitHub plugin to commit approved canonical data directly to `main`, guarded by
+its expected SHA. No data PR, duplicated source fetch or human merge is required.
+Distinct subagent sessions are workflow separation, **not cryptographic role
+identity**. Human approval
 still governs schema/policy changes and official dataset releases. Existing PRs
 and their Review objections remain historical unresolved work; never silently
 consider them merged. Previous role/PR rules below are legacy compatibility,
@@ -19,8 +20,9 @@ Research exhausts Wikidata/Wikipedia first, then conducts bounded external
 gap searches (maximum 8 queries, 12 pages, 5 domains, 2 hops, 15 minutes per
 QID). The existing schema supports `website`; the bounded adapter captures
 HTML/text pages once, with paragraph locators and SHA-256 snapshots. Review must
-read Research's hash-verified immutable snapshot **offline** and never re-fetch
-source pages. See `docs/commands.md` and `docs/deep-research.md`.
+read Research's hash-verified immutable snapshot **offline**, never re-fetch
+source pages or read Research-private model traces, and never publish. Only the
+manager writes to GitHub. See `docs/commands.md` and `docs/deep-research.md`.
 
 Read `docs/handoff.md`, your role in `docs/agent-workflow.md`, and
 `.agents/skills/university-curation/SKILL.md`.

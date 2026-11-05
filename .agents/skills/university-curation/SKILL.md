@@ -5,14 +5,16 @@ description: Research or independently review university records in the current 
 
 # University curation
 
-## Current operator workflow: one Agent, offline Review, direct main
+## Current operator workflow: Research and Review subagents, direct main
 
-For NEW batches, one main Agent dispatches Research subagents, reviews their
-hash-checked snapshots offline, and directly commits reviewed canonical data
-to main with the GitHub plugin's expected-head guard. Do not create data PRs or
-spawn an independent Review session. Do not re-fetch research sources during
-Review. Use `unified-proposal`, `review-prepare --shared-cache --research-job`,
-`review-compile`, and `unified-publish`; see `docs/commands.md`.
+For NEW batches, one manager Agent dispatches Research subagents (one QID each)
+and a **distinct Review subagent** for critical offline assessment of the
+hash-checked source packet. Manager validates the structured Review result and
+commits approved records directly to main with an expected-head guard. No data
+PRs. Review never re-fetches sources, reads Research-private model traces, or
+publishes. Use `unified-proposal`, `review-prepare --shared-cache --research-job`,
+`review-compile`, and `unified-publish`; see `docs/commands.md`. Research and
+Review sessions must differ; no cryptographic role identity is implied.
 
 Research must first exhaust Wikidata + multilingual Wikipedia, then do bounded
 gap-directed external deep research: maximum 8 queries, 12 pages, 5 domains,
