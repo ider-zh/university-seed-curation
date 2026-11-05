@@ -100,12 +100,69 @@ class ExportTests(unittest.TestCase):
             with self.subTest(patch=patch), self.assertRaises(ValueError):
                 verify_files(self.repo, self.base, self.bundle(review=review), self.trust)
 
+    def test_pinned_source_revision_link_and_evidence_binding(self):
+        for source_patch in (
+            {"revision_id": 2},
+            {"url": "https://en.wikipedia.org/w/index.php?oldid=2"},
+            {"url": "http://en.wikipedia.org/w/index.php?oldid=1"},
+            {"url": "https://en.wikipedia.org/wiki/Example_University"},
+            {"url": "https://en.wikipedia.org.evil.invalid/w/index.php?oldid=1"},
+        ):
+            record = deepcopy(self.record)
+            record["sources"]["s1"].update(source_patch)
+            with self.subTest(source=source_patch), self.assertRaises(ValueError):
+                verify_files(self.repo, self.base, self.bundle(record=record), self.trust)
+        record = deepcopy(self.record)
+        record["sources"]["s2"] = {"kind": "wikidata", "source_qid": "Q101", "revision_id": 5,
+            "url": "https://www.wikidata.org/w/index.php?oldid=6", "retrieved_at": NOW,
+            "publisher_role": "knowledge_base", "family": "wikimedia"}
+        review = {**self.review, "source_revisions_checked": 2}
+        with self.assertRaises(ValueError): verify_files(self.repo, self.base, self.bundle(record=record, review=review), self.trust)
+
+    def test_invalid_schema_is_rejected_even_when_coordinator_signs(self):
+        for mutation in (
+            lambda record: record.update(schema_version="99.0"),
+            lambda record: record.update(unregistered_field="surprise"),
+            lambda record: record.update(record_revision="one"),
+        ):
+            record = deepcopy(self.record); mutation(record)
+            with self.subTest(record=record.get("schema_version")), self.assertRaises(Exception):
+                verify_files(self.repo, self.base, self.bundle(record=record), self.trust)
+
     def test_stale_base_and_missing_manifest_member_fail_closed(self):
         files = self.bundle(); self.put("README.md", b"new base"); self.commit("advance")
         newer = self.git("rev-parse", "HEAD").decode().strip()
         with self.assertRaises(ValueError): verify_files(self.repo, newer, files, self.trust)
         files.pop(record_relative("Q101"))
         with self.assertRaises(ValueError): verify_files(self.repo, self.base, files, self.trust)
+
+    def test_synthetic_research_review_to_exact_pr_head_and_stale_event(self):
+        # Separate local model session IDs are test inputs, not distinct GitHub
+        # accounts. The fixture uses no real school or claimed human acceptance.
+        files = self.bundle()
+        self.git("checkout", "-qb", "pilot/synthetic-review")
+        for path, data in files.items(): self.put(path, data)
+        self.commit("Research proposal verified by independent synthetic Review")
+        reviewed_head = self.git("rev-parse", "HEAD").decode().strip()
+        result = validate_pr(self.repo, self.base, "HEAD", reviewed_head)
+        self.assertEqual(result["head_commit"], reviewed_head)
+        self.assertEqual(result["qids"], ["Q101"])
+        with self.assertRaisesRegex(ValueError, "event SHA"):
+            validate_pr(self.repo, self.base, "HEAD", "0" * 40)
+        self.put("data/raw/hidden-page.html", b"private unreviewed content")
+        self.commit("Add material outside reviewed PR content scope")
+        with self.assertRaisesRegex(ValueError, "event SHA"):
+            validate_pr(self.repo, self.base, "HEAD", reviewed_head)
+        with self.assertRaises(ValueError): validate_pr(self.repo, self.base, "HEAD")
+
+    def test_data_pr_rejects_head_not_descended_from_base(self):
+        files = self.bundle()
+        self.git("checkout", "--orphan", "pilot/unrelated-history")
+        self.git("rm", "-qr", "--cached", ".")
+        for path, data in files.items(): self.put(path, data)
+        self.commit("Detached imported tree")
+        with self.assertRaisesRegex(ValueError, "Git baseline"):
+            validate_pr(self.repo, self.base, "HEAD")
 
     def test_code_and_trust_cannot_change_in_a_data_pr(self):
         for path, data in self.bundle().items(): self.put(path, data)

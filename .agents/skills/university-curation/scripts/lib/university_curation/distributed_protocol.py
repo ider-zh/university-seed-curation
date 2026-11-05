@@ -88,6 +88,8 @@ def check_proposal(proposal, baseline, catalog, catalog_hash, trust):
     if not re.fullmatch("[0-9a-f]{40}", transport["base_commit"]): raise ValueError("Invalid original Git base")
     if proposal["baseline_sha256"] != (sha(encode(baseline)) if baseline else "absent"): raise ValueError("University baseline changed")
     validate(delta); validate(proposal["candidate"]); instant(proposal["proposed_at"])
+    from .pr_export import check_source_revisions
+    check_source_revisions(delta)
     if proposal["candidate"] != materialize(baseline, delta, proposal["seed"], proposal["proposed_at"], False): raise ValueError("Research rewrote fields outside deterministic append delta")
     if proposal["candidate"] != recompute(proposal["candidate"]): raise ValueError("Noncanonical preferred projection")
     metadata = proposal["research"]
