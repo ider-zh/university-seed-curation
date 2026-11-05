@@ -9,8 +9,9 @@ from Review, independent Review session or data PR. Approved batches are
 materialized and posted directly to main with a guarded expected-head update;
 schema changes and official dataset release still need a human decision.
 External deep research is constrained to 8 searches/12 pages/5 domains/2 hops/
-15 minutes per QID, after fully inspecting Wikidata/Wikipedia. External finds
-remain private until the schema/source adapter supports them. Main-page
+15 minutes per QID, after fully inspecting Wikidata/Wikipedia. The existing
+schema supports website facts; a bounded HTTPS capture adapter now provides
+hash-bound website evidence and reuse across offline Review. Main-page
 `profile.summary` is a sourced 180–260-word English overview (90–179 if sparse).
 See docs/commands.md, docs/deep-research.md, docs/university-overview.md. The
 rest of this handoff is historical background about the previous two-session

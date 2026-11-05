@@ -44,12 +44,22 @@ Git baseline. Review compares **all** facts, contexts and coverage against the
 frozen packet. It never makes another HTTP request; a missing or corrupt packet
 returns to Research as a blocking failure.
 
-External-search results are **private discovery leads** for now. The trusted
-v0.2.2 schema and native replay accept only Wikidata/Wikipedia source kinds.
-Do not launder an external quote into a Wikimedia citation. Enabling external
-facts in canonical records requires a separately approved source adapter,
-capture format, schema revision and deterministic verifier. Until then,
-Research must accurately report the limitation.
+The trusted v0.2.2 schema already supports `website` sources. After Wikimedia
+coverage is examined, the host submits only targeted HTTPS URLs with explicit
+query/depth accounting to `research-prepare --external-leads`. The bounded
+adapter retrieves each HTML/plain-text page once (up to 1 MiB), extracts
+short paragraph-located excerpts, and saves the raw capture privately under
+the shared 30-day cache. The Research packet gets the `website` source role,
+origin URL, retrieved_at, and `snapshot_id=sha256:<digest>`, with the source
+corpus carrying identical immutable locator/text rows. The offline Review
+checks snapshot integrity and every citation against this same packet.
+
+The host performs *discovery*, not the subagent itself. The adapter never
+automatically follows links or broad-crawls. It refuses non-public hosts,
+non-HTTPS URLs, redirects, oversized/binary documents, unaccounted queries,
+and budget overruns. Unsupported PDFs and dynamic pages remain unresolved.
+Do not launder external snippets into Wikimedia evidence. The public record
+contains only bounded sourced facts, not raw page dumps or private captures.
 
 ## Publication
 

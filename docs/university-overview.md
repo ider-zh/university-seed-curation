@@ -24,9 +24,8 @@ precise founding dates. Do not copy large paragraphs from source websites.
 
 Every material proposition must map to the summary candidate's cited
 `source_ref`/`locator` with short verbatim evidence excerpts, using multiple
-citations as appropriate. The current trusted schema permits only pinned
-Wikimedia source kinds. Official-site discoveries remain private pending an
-approved external-source adapter. The Review gate checks source-supported
+citations as appropriate. Pinned Wikimedia and the new hash-bound `website`
+capture adapter can both supply evidence. The Review gate checks source-supported
 sentences, identity/subject, time scope and non-promotional language; a fluent
 paragraph alone is not enough.
 

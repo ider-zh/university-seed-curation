@@ -9,7 +9,7 @@ prompts private. See [deep research](deep-research.md) for search budgets and
 the current external-source limitation.
 
 ```text
-python .agents/skills/university-curation/scripts/agent.py --role research research-prepare --qid Q13371 --job .private/native/research/Q13371/run-1
+python .agents/skills/university-curation/scripts/agent.py --role research research-prepare --qid Q13371 --job .private/native/research/Q13371/run-1 --external-leads .private/native/Q13371-external-leads.json
 python .agents/skills/university-curation/scripts/agent.py --role research research-compile --job .private/native/research/Q13371/run-1 --result .private/native/research/Q13371/result.json --session RESEARCH_SUBAGENT_SESSION --model ACTUAL_MODEL
 python .agents/skills/university-curation/scripts/agent.py --role research unified-proposal --proposal .private/native/research/Q13371/run-1/compile-attempts/ACTUAL_ATTEMPT/public-proposal.json --output .private/native/Q13371-transport.json
 python .agents/skills/university-curation/scripts/agent.py --role review review-prepare --proposal .private/native/Q13371-transport.json --job .private/native/review/Q13371/run-1 --research-job .private/native/research/Q13371/run-1 --shared-cache
@@ -23,6 +23,22 @@ prompt; approval is never automatic. Pass multiple aligned
 schools. The output `operations.json` specifies plugin blob/tree/commit and
 **non-forced expected-head main update**; execute only after checking actual
 GitHub main head and local validation. Verify published files on actual main.
+
+Omit `--external-leads` when there are no confirmed gaps or host search is
+unavailable. To use external sources, first inspect Wikimedia, then create
+a private JSON search-budget manifest such as:
+
+```json
+{"search_queries":["example university history official"],"elapsed_seconds":30,
+ "pages":[{"url":"https://www.example.edu/history","publisher_role":"institution_official",
+           "query_index":0,"depth":0}]}
+```
+
+The host must count actual discovery queries, pages, domains, depth and elapsed
+time, including failed attempts. Only explicit URL pages are fetched; no
+automatic link traversal. The schema allows `institution_official`,
+`government`, `academic_publisher` and `other`. Each snapshot is hash-bound
+and Review reads its private packet without network requests.
 
 The older PR commands below remain available solely for historical batches.
 

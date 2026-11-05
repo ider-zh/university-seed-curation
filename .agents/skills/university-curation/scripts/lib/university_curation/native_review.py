@@ -21,6 +21,7 @@ from .native_research import _base, _origin, _write
 from .pilot_protocol import GROUPS
 from .pr_export import blob
 from .records import encode, instant, qid as valid_qid
+from .web_sources import verify_packet as verify_web_packet
 
 
 def _verify_native(proposal, baseline, packet, root):
@@ -64,6 +65,7 @@ def prepare(repo, proposal_file, job, base_ref='origin/main', shared_cache=False
                 sha(packet_bytes)!=research_meta.get('packet_sha256') or sha(root_bytes)!=research_meta.get('root_entity_sha256')):
             raise ValueError('Research snapshot identity/hash/base mismatch')
         packet=load_json(packet_bytes); root=load_json(root_bytes)
+        verify_web_packet(packet)
         if proposal['delta']['sources']!=packet['sources']:
             raise ValueError('Review source snapshots differ from published proposal')
         from .distributed_jobs import _root
@@ -112,6 +114,7 @@ def compile(repo, job, result_file, session, model, effort='medium', completed_a
     if sha(Path(__file__).read_bytes())!=manifest['native_code_sha256']: raise ValueError('Native Review compiler changed after preparation')
     if load_json((job/'output.schema.json').read_bytes())!=REVIEW_SCHEMA: raise ValueError('Native Review schema changed')
     proposal=load_json((job/'public-proposal.json').read_bytes()); packet=load_json((job/'review-packet.json').read_bytes())
+    verify_web_packet(packet)
     root=load_json((job/'root-entity.json').read_bytes()); value=load_json((job/'review-input.json').read_bytes())
     if proposal.get('qid')!=entity or proposal.get('seed')!=seed_metadata(catalog[entity],digest): raise ValueError('Review proposal identity or seed changed')
     point=_verify_native(proposal,baseline,packet,root); facts,contexts=_fact_scope(proposal['delta'])

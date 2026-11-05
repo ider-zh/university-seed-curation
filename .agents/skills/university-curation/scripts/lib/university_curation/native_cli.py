@@ -201,7 +201,7 @@ def main(argv=None):
     sub=parser.add_subparsers(dest='command',required=True)
     sub.add_parser('doctor')
     n=sub.add_parser('next'); n.add_argument('--limit',type=int,default=3); n.add_argument('--snapshot'); n.add_argument('--base-ref',default='origin/main')
-    r=sub.add_parser('research-prepare'); r.add_argument('--qid',required=True); r.add_argument('--job',required=True); r.add_argument('--base-ref',default='origin/main'); r.add_argument('--feedback')
+    r=sub.add_parser('research-prepare'); r.add_argument('--qid',required=True); r.add_argument('--job',required=True); r.add_argument('--base-ref',default='origin/main'); r.add_argument('--feedback'); r.add_argument('--external-leads')
     for name in ('research-compile','review-compile'):
         p=sub.add_parser(name); p.add_argument('--job',required=True); p.add_argument('--result',required=True); p.add_argument('--session',required=True); p.add_argument('--model',required=True); p.add_argument('--effort',default='medium'); p.add_argument('--completed-at')
     r=sub.add_parser('review-prepare'); r.add_argument('--proposal',required=True); r.add_argument('--job',required=True); r.add_argument('--base-ref',default='origin/main')
@@ -217,7 +217,7 @@ def main(argv=None):
     if (a.command in research and a.role!='research') or (a.command in review and a.role!='review'): parser.error('Command belongs to the other role')
     if a.command=='doctor': result=native_research.doctor(repo)
     elif a.command=='next': result=next_candidates(repo,a.base_ref,a.limit,_json(a.snapshot) if a.snapshot else None)
-    elif a.command=='research-prepare': result=native_research.prepare(repo,a.qid,a.job,a.base_ref,_json(a.feedback) if a.feedback else None)
+    elif a.command=='research-prepare': result=native_research.prepare(repo,a.qid,a.job,a.base_ref,_json(a.feedback) if a.feedback else None,_json(a.external_leads) if a.external_leads else None)
     elif a.command=='review-prepare': result=native_review.prepare(repo,a.proposal,a.job,a.base_ref,a.shared_cache,a.research_job)
     elif a.command=='unified-proposal':
         path=_save(a.output,unified_publish.transport_proposal(repo,a.base_ref,a.proposal))

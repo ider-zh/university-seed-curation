@@ -17,8 +17,8 @@ not instructions for new unified batches.
 
 Research exhausts Wikidata/Wikipedia first, then conducts bounded external
 gap searches (maximum 8 queries, 12 pages, 5 domains, 2 hops, 15 minutes per
-QID). Keep external leads private until a validated external-source adapter
-exists; current schema only accepts revision-bound Wikimedia facts. Review must
+QID). The existing schema supports `website`; the bounded adapter captures
+HTML/text pages once, with paragraph locators and SHA-256 snapshots. Review must
 read Research's hash-verified immutable snapshot **offline** and never re-fetch
 source pages. See `docs/commands.md` and `docs/deep-research.md`.
 
