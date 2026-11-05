@@ -1,100 +1,65 @@
-# 当前脚本命令
+# Current skill commands
 
-Python 3.11+，安装 `jsonschema` 和 `cryptography`。Parquet seed 输入额外安装 `pyarrow`。
-脚本在仓库根目录运行，无需先做 editable install。测试不访问网络。
+Run from the checkout root with Python 3.11+, Git, authenticated GitHub access,
+and a configured Codex CLI for model work.
 
 ```text
+python -m pip install -e .
+python .agents/skills/university-curation/scripts/agent.py --help
+python .agents/skills/university-curation/scripts/agent.py --role research register-key
+python .agents/skills/university-curation/scripts/agent.py --role review register-key
+python .agents/skills/university-curation/scripts/agent.py --role research doctor
+python .agents/skills/university-curation/scripts/agent.py --role review doctor
+```
+
+Register each role in its own environment; human-merge the public-key registration
+PR before doctor or model work. Default private keys are .private/keys/ROLE.pem.
+Use global --workspace ABSOLUTE_CHECKOUT and --key ABSOLUTE_PRIVATE_KEY when needed.
+Never pass key contents or GitHub tokens in arguments.
+
+## Research manager and one-QID subagents
+
+```text
+python .agents/skills/university-curation/scripts/agent.py --role research sync
+python .agents/skills/university-curation/scripts/agent.py --role research next --limit 3
+python .agents/skills/university-curation/scripts/agent.py --role research research --qid Q13371
+python .agents/skills/university-curation/scripts/agent.py --role research publish --batch-size 3
+python .agents/skills/university-curation/scripts/agent.py --role research research --qid Q13371 --pr 12
+python .agents/skills/university-curation/scripts/agent.py --role research publish --pr 12
+```
+
+Only the manager calls next/publish/sync. Assigned subagents call research for
+their QID; global CAS model leases apply across both roles. JSON results state
+whether to revise, wait for Review, rebind or wait for human merge.
+
+## Independent Review
+
+```text
+python .agents/skills/university-curation/scripts/event_review.py --repository ider-zh/university-seed-curation --mode queue --scan
+python .agents/skills/university-curation/scripts/agent.py --role review next-review
+python .agents/skills/university-curation/scripts/agent.py --role review review --pr 12
+python .agents/skills/university-curation/scripts/agent.py --role review review-request --pr 12 --qid Q13371 --field geography --category scope_conflict --reason "Check whether the point belongs to the institution"
+python .agents/skills/university-curation/scripts/event_review.py --repository ider-zh/university-seed-curation --mode status --scan
+```
+
+next-review consumes the GitHub head queue with a renewed lease. Direct review
+is a bounded manual entry and still obeys the global one-Review model slot.
+The queue-only Actions dispatcher is disabled unless repository variable
+UNIVERSITY_EVENT_REVIEW_ENABLED is true. It never runs models or holds role keys.
+
+## Validation and maintenance
+
+```text
+python -m unittest discover -s tests
 python .agents/skills/university-curation/scripts/maintain_schema.py check
-python -m unittest discover -s tests -v
-python .agents/skills/university-curation/scripts/curate.py --help
+python .agents/skills/university-curation/scripts/curate.py validate examples/university.complete.synthetic.json
+python .agents/skills/university-curation/scripts/curate.py pr-validate --workspace . --base-ref BASE_SHA --head-ref HEAD_SHA
+python .agents/skills/university-curation/scripts/seeds.py --help
+python .agents/skills/university-curation/scripts/seed_delivery.py --help
+python .agents/skills/university-curation/scripts/buckets.py --help
 ```
 
-## 初始化与浏览
-
-```text
-python .agents/skills/university-curation/scripts/curate.py seed-init --input /private/seed/institution_candidates.parquet --manifest /private/seed/delivery_manifest.json
-python .agents/skills/university-curation/scripts/curate.py seed-init --input /private/seed/institution_candidates.parquet --manifest /private/seed/delivery_manifest.json --write --limit 10
-python .agents/skills/university-curation/scripts/curate.py --state /private/shared/queue.sqlite3 snapshot --workspace .private/bootstrap --base-ref INPUT_GIT_OR_IMPORT_REF
-python .agents/skills/university-curation/scripts/curate.py --state /private/shared/queue.sqlite3 tasks --run RUN_ID --limit 10
-```
-
-`seed-init` 默认仅预检；`--write` 默认写入 `.private/bootstrap`，不会自动放入公开
-Git 路径。写入公开位置需要 `--acceptance` 绑定输入 manifest 的人工验收记录。
-`--limit` 是脚本 smoke test，不是分层质量抽样。初始 JSON 缺省没有 update_datetime。
-
-分页返回 `next_cursor`（还有下一页时才出现）。下次使用同一 run 和 cursor，
-游标不跨快照使用。`tasks` 只浏览；分配必须用 `claim`，不能自己挑一个已显示的 QID。
-
-## 私有 Research / Review（旧 v0.1 claims 格式）
-
-```text
-python .agents/skills/university-curation/scripts/curate.py --state /private/shared/queue.sqlite3 claim --run RUN --role research --actor RESEARCH_WORKER --session SESSION
-python .agents/skills/university-curation/scripts/curate.py propose QID --workspace WORKTREE --changes .private/changes.json --output .private/proposals/ATTEMPT.json
-python .agents/skills/university-curation/scripts/curate.py --state /private/shared/queue.sqlite3 submit --task TASK --lease TOKEN --proposal .private/proposals/ATTEMPT.json
-python .agents/skills/university-curation/scripts/curate.py --state /private/shared/queue.sqlite3 claim --run RUN --role review --actor REVIEW_WORKER --session NEW_SESSION
-python .agents/skills/university-curation/scripts/curate.py --state /private/shared/queue.sqlite3 packet --task TASK
-python .agents/skills/university-curation/scripts/curate.py --state /private/shared/queue.sqlite3 review --task TASK --lease TOKEN --session NEW_SESSION --verdict .private/verdict.json
-python .agents/skills/university-curation/scripts/curate.py --state /private/shared/queue.sqlite3 apply --task TASK --workspace WORKTREE --kind university_refresh
-```
-
-全局 `--state` 和测试用 `--now` 选项放在子命令之前。所有工作区使用同一绝对
-state 路径。租约有效期默认 30 分钟，长任务定期执行 `heartbeat`；不要把租约 token
-放进 Git、PR 或公开日志。
-
-`changes.json` 支持 identity_status、new_sources、new_claims、withdraw_claim_ids、
-coverage。new_claims 不带 ID；脚本分配。不能覆盖旧来源、删掉整个记录或篡改修订号。
-withdrawn 事实仍保留，不是物理删除。脚本保存私有候选，Review 校验每个 changed_claim_id。
-
-verdict 至少包含 decision、source_checks（每个变更事实一个支持结论）、
-reviewed_groups。完整刷新必须审核整个 core-v1 profile；部分补充用 field_update，
-确定性外部源用 batch_import，均不得重置 update_datetime。
-
-## 已实现的 PR 准备与当前边界
-
-`pr-key-init` 初始化私有签名密钥和公开 trust policy；`pr-build` 从实际私有试跑
-凭据准备有签名的三校／小批预览，`pr-record-acceptance` 记录操作者明确的数据
-验收，`pr-stage` 应用已验收的初始记录或独立审核的受限字段更新，均绑定当前 Git 基线，`pr-validate` 读取
-提议的 Git blob 并使用 base 分支的信任配置校验。完整命令见
-[reviewed-pr-export.md](reviewed-pr-export.md)。
-
-这些命令不自动提交、开 PR 或合并；独立 Review 通过与人工数据发布验收分别记录。
-本地协调器签名不等于服务商对模型会话的认证，也不是独立验证的人类身份。
-生产访问隔离、通用领域 diff、其他源 adapters、受保护分支和合并回执仍待接入。
-旧 v0.1 队列中本地 applied 的学校保持任务锁，直至后续集成确认合并或取消，
-不会仅因为文件已应用就自动标记“已合并”。
-
-## 256 桶迁移
-
-先合并代码合同，再创建独立数据 PR。迁移只允许文件路径变化，不改学校内容或旧凭据。
-
-```text
-python .agents/skills/university-curation/scripts/buckets.py prepare --base-ref BASE --batch-id buckets-v2 --output .private/buckets/preview
-python .agents/skills/university-curation/scripts/buckets.py stage --workspace WORKTREE --bundle ABSOLUTE_PRIVATE_BUNDLE
-```
-
-## 受限 Wikidata P625 字段补充
-
-仅支持向已存在的学校追加根词条位置；不是任意字段 mutation。prepare 使用现有 sources
-固定 revision，review 重新获取该版本并以新 Terra medium 会话核验完整增量，build 离线
-重放原始 capture/真实模型事件再签名。保留原失败/旧尝试，换新的 job 目录重新处理。
-
-```text
-python .agents/skills/university-curation/scripts/coordinates.py prepare --qid QID --base-ref BASE --output .private/coordinates/JOB --request-ref CHANGE_REQUEST
-python .agents/skills/university-curation/scripts/coordinates.py review --job .private/coordinates/JOB
-python .agents/skills/university-curation/scripts/coordinates.py build --job .private/coordinates/JOB --base-ref BASE --batch-id BATCH --key .private/keys/review-export.pem --output .private/coordinates/BUNDLE
-python .agents/skills/university-curation/scripts/curate.py pr-stage --workspace WORKTREE --bundle ABSOLUTE_PRIVATE_BUNDLE
-```
-
-## 代码布局与验证
-
-入口在 skill `scripts/`；全部实现位于 `scripts/lib/university_curation/`，根目录不再维护
-`src/` 的第二份实现。Schema、数据、测试、文档保留在项目根目录。脚本定位 checkout，
-可从其他工作目录运行；不提供脱离 checkout 的已安装 `unicurate` console command。
-
-```text
-python .agents/skills/university-curation/scripts/maintain_schema.py check
-python -m unittest discover -s tests -v
-```
-
-旧十校试跑的 prepare/run/review/finalize helper 为复现工具，原始过程仍留在 .private。
-没有变化的研究目标或来源需求时不重跑；历史验收报告通过 Git 查看。
+See source-tools for online queries. Historical curate.py SQLite task commands,
+initial-import and coordinates adapters remain for compatibility; they are not
+the distributed scheduler. Seed/bucket bootstrap scripts run against exact main
+and preserve old receipts. Data PRs cannot mix executable code or Schema edits.

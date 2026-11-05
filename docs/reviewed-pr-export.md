@@ -1,142 +1,68 @@
-# Reviewed data PR export, v1
+# Trusted PR data validation
 
-This adapter closes the initial-import path from the real private Terra pilot to
-a small signed data PR. It does not enable arbitrary v0.2 record updates, production
-model dispatch, automatic publication, formal GitHub reviewer identity, protected
-merge or an official dataset release.
+Two current public stages exist. Draft PRs contain explicitly unreviewed signed
+structured proposals under data/proposals/BATCH/. A ready data PR contains only
+approved canonical school JSON, dual-sign review receipts and a signed batch.
+Raw sources, model traces, private keys and logs never enter either stage.
 
-## Commands
+## Trust and separation
 
-Run from the repository with its dependencies installed. Keep the signing key on
-the trusted coordinator, outside all public worktrees and model evidence packets.
-The public key and accepted schemas/policy are reviewed in `.curation/review-trust.json`.
+Trusted main provides the implementation, Schema/policy hashes, legacy approval
+keys and separate role descriptors under .curation/roles/research/ and review/.
+Research and Review keys cannot impersonate each other or legacy human acceptance.
+Registration is code-only and human-merged. The same GitHub login may post both
+roles' comments; signatures identify keys, not separate users or provider-signed
+model execution.
 
-```text
-python .agents/skills/university-curation/scripts/curate.py pr-key-init --key .private/keys/review-export.pem
-python .agents/skills/university-curation/scripts/curate.py pr-build --pilot-root .private/pilots/RUN --qids Q13371 Q1075625 Q519556 --batch-id github-pilot-001 --base-ref origin/main --key .private/keys/review-export.pem --output .private/pr-pilot/PREVIEW
-```
+Every independent Review decision binds the exact proposal digest, repository,
+actual PR number, reviewed head, schema, policy and fresh model session. Scripts
+materialize the final record deterministically from its current main baseline.
+They preserve existing observations, remap source references, recompute preferred
+and check the resulting hash. Arbitrary withdrawal/overwrite is unsupported.
 
-`pr-build` only prepares a private bundle. It audits actual Research output and
-quantitative supplements, the complete Review input/policy/prompt and output
-schema, every fact/context check, independently captured source revisions,
-script-generated preferred values, inference annotations and record timestamps.
-Its offline source replay has no network fallback. All original attempts remain
-private. It refuses existing university records: incremental domain updates need
-a separate bounded diff task, not an overwrite through the pilot importer.
+## Merge gates
 
-Without explicit data acceptance, the preview is marked
-`awaiting_human_data_acceptance` and cannot pass public PR validation or staging.
-A code PR merge does not accept the school data. After the operator explicitly
-accepts the exact private content scope, record that instruction through the script:
+signed-data-validation runs trusted base code against proposed blobs as data.
+It rejects unreviewed Drafts, changed baselines, mixed code/data, untrusted keys,
+forged records and incomplete receipts. A valid Draft failing this final-data
+check is expected until independent Review has completed.
 
-```text
-python .agents/skills/university-curation/scripts/curate.py pr-record-acceptance --bundle .private/pr-pilot/PREVIEW --human-actor ider-zh --approval-ref OPERATOR_CONFIRMATION_REFERENCE --output .private/acceptances/github-pilot-001.json
-python .agents/skills/university-curation/scripts/curate.py pr-build --pilot-root .private/pilots/RUN --qids Q13371 Q1075625 Q519556 --batch-id github-pilot-001 --base-ref origin/main --key .private/keys/review-export.pem --acceptance .private/acceptances/github-pilot-001.json --output .private/pr-pilot/ACCEPTED
-```
+The separate university-review status also reads the actual PR and signed comment
+history. It rejects replay from a different PR, older approvals superseded by
+a later decision, and outstanding signed objections. Only the exact validated
+final decision can resolve an objection. Unsigned or malformed comments have no
+authority. PR events, signed comment changes and main updates trigger rechecks.
 
-Agents must not invent that instruction/reference or interpret a code merge as
-data acceptance. The reference is an operator assertion recorded by the trusted
-coordinator; it is not an independently authenticated GitHub approval event.
-Acceptance binds the exact record bytes, inference summaries and contract hashes.
-It survives a code-only rebase only while those approved contents remain unchanged.
-The batch itself separately binds the exact current base commit.
+These checks are enforceable merge barriers only after repository protection
+requires both signed-data-validation and university-review. Protection is not
+configured by this change; do not describe automatic merge as operational.
+Model Review dispatch is separate and defaults off. No service is deployed.
+Status scans are serialized and recheck discussion/main immediately before a
+successful status. GitHub comment delivery and human merge are asynchronous,
+not an atomic transaction; inspect the current discussion and wait for fresh
+checks before merging. No atomic automated merge guarantee is claimed.
 
-Once the exporter/trust workflow is merged, create a clean data branch from the
-current `origin/main`, then stage the accepted bundle:
+## PR independence and archival
 
-```text
-python .agents/skills/university-curation/scripts/curate.py pr-stage --workspace PATH_TO_DATA_WORKTREE --bundle ABSOLUTE_PRIVATE_ACCEPTED_BUNDLE
-python .agents/skills/university-curation/scripts/curate.py pr-validate --workspace PATH_TO_DATA_WORKTREE --base-ref BASE_SHA --head-ref HEAD_SHA
-```
+Each batch starts from main in its own worktree, never another batch branch.
+After approval, Research rebuilds main + approved files; failed Draft commits do
+not become main ancestors. Before replacing a head, scripts preserve it through
+coordination ancestry. GitHub PR comments retain signed feedback. Missing local
+Research files do not prevent Review from fetching sources independently.
 
-Staging checks the public trust policy from the base Git commit, the entire batch,
-human acceptance and every target before writing any file. Existing uncommitted
-work is never overwritten. Repeated identical staging is safe. The command does
-not create a commit, open a PR, send a message or merge; the manager performs those
-observable GitHub operations after this gate.
+Unrelated main changes permit a mechanical rebind using identical proposal and
+Review bytes. Same-school baseline changes require another model review.
+The actual final receipt must appear in main before task completion is recorded.
 
-## Public files
+## Bootstrap and legacy compatibility
 
-- `data/universities/<sha256(QID)[:2]>/<QID>.json`: complete reviewed record.
-- `data/reviews/<batch>/<QID>.json`: signed concise per-school approval and
-  allowlisted inference explanations, source-check counts, model configuration,
-  independent sessions and private-evidence digests. No raw pages or model logs.
-- `data/batches/<batch>.json`: signed membership, record/receipt hashes, base
-  commit, content acceptance and human reference.
+The signed seed catalog is a candidate-list projection authorized by the operator;
+it does not accept individual university facts. Its three files are validated
+against exact source hashes/counts and a human acceptance reference. The one-time
+bootstrap may also move existing school paths byte-for-byte from three hex digits
+to two. No school facts may change in that structural PR.
 
-All JSON is script-encoded as UTF-8/LF with sorted keys. Signing uses a domain-
-separated Ed25519 envelope. Schemas are hashed as canonical parsed JSON; policy
-text and prompt text normalize line endings. This avoids Windows CRLF vs Linux LF
-mismatches while preserving the actual model input and source values. Private
-annotation objects never pass through wholesale, and public evidence excerpts
-are limited to 1,000 characters. Free-form explanations still require the
-operator's privacy inspection; bounds are not an automatic redaction guarantee.
-
-## Trusted validation and rollout
-
-`pr-validate` reads proposed **Git blobs**, not Python/code from the proposed tree.
-Trust keys, schema hashes, review policy and validator come from the base branch.
-A data PR cannot also change code, workflows, trust configuration or previous batch
-receipts. Wrong buckets, executable/symlink blobs, deletions, unsigned/tampered
-payloads, missing members, stale baselines, session reuse and unaccepted imports
-fail. Code-only PRs remain valid; `.private` files are forbidden in all PRs.
-
-`.github/workflows/reviewed-data.yml` uses `pull_request_target`, read-only token
-permissions, pinned actions and separate base/proposed checkouts. It installs and
-runs only base code; proposed files are treated as data. No model credential,
-signing key, publication or merge operation is used in CI. This workflow activates
-only after this integration PR is merged. The existing PR CI tests the integration
-code before that merge.
-
-Required checks, strict up-to-date-base enforcement and protected merge are not
-configured by adding this workflow. Until those repository settings are verified,
-the operator retains the visible merge decision and should rerun validation
-against the current base immediately before merge. Do not claim an old green
-check proves the PR is current after `main` advances.
-
-## Explicit trust assumptions
-
-The signature authenticates the local coordinator's assertions and detects
-changes by a PR author without its key. It does **not** cryptographically prove
-that OpenAI executed a particular model: private provider logs are locally owned
-and mutable. The exporter checks their internal consistency, complete trusted
-prompt, actual event/result agreement and source capture chain. Backend model
-telemetry can be absent and is reported as such. Human approval references are
-also coordinator-recorded assertions. A compromised coordinator/key can forge
-these assertions; no stronger remote attestation is claimed.
-
-Research/Review workers must not receive the signing key. On POSIX it is created
-with mode 0600. On Windows the initializer sets a current-user-only DACL before
-writing private bytes; Windows permissions cannot be inferred from `0o600`.
-Machine administrators and the coordinator account remain trusted. Key rotation
-or revocation is a reviewed trust-policy code PR, separate from data changes.
-
-References: [Ed25519 API](https://cryptography.io/en/latest/hazmat/primitives/asymmetric/ed25519/),
-[GitHub workflow event semantics](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#pull_request_target).
-
-## Bounded updates and path-only migration
-
-`pr-build` remains initial-import only and rejects both existing canonical records
-and existing three-hex legacy paths. It cannot overwrite a university. The separate
-`coordinates.py` adapter appends only root-item P625 facts at the existing source
-revision; an independent fresh Terra medium session re-fetches and checks that
-revision. The private coordinator audits the complete source/input/result chain
-before signing. The receipt explicitly says deterministic production, not a
-fictional Research session; its counts cover changed facts only. The signed
-manifest uses `independently_reviewed_field_update` authorization with the change
-request reference, never fabricated human initial-data acceptance. The complete
-record delta is reconstructed against the trusted Git baseline; full-refresh
-`update_datetime`, original facts, sources and original receipts cannot change.
-
-`buckets.py` is a deterministic storage migration. Its manifest is deliberately
-unsigned: trusted base code independently proves every added byte equals its
-removed baseline blob and every legacy school is moved exactly once. It cannot
-change facts, revisions, receipts, trust or code. Initial imports still require
-signed accepted batches, and fact updates still require signed independent
-review. This migration does not constitute a new dataset release.
-
-Both staging paths preflight the complete batch against the working tree AND
-Git index, reject unrelated staged edits/local deletions, and allow exact retries.
-A migration and a factual update use separate data PRs. The base-trusted workflow
-must already contain each adapter; stacked PRs are dependencies, not permission
-to bypass the normal merge order. Rebind receipts/manifests if the base SHA changes.
+Legacy accepted initial imports and bounded P625 coordinate receipts remain
+verifiable with their original adapters and immutable policy. They do not grant
+new role keys permission to bypass the distributed workflow. Official dataset
+release still requires separate human acceptance and a versioned manifest.

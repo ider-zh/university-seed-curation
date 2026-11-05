@@ -6,6 +6,7 @@ import os
 from pathlib import Path
 import re
 import shutil
+import signal
 import subprocess
 import time
 
@@ -21,7 +22,20 @@ def command():
     return [path]
 
 
-def run(prompt, schema, directory, cwd, timeout=1200):
+def _terminate_tree(process):
+    if process.poll() is not None: return
+    if os.name == 'nt':
+        subprocess.run(['taskkill', '/PID', str(process.pid), '/T', '/F'], stdout=subprocess.DEVNULL,
+            stderr=subprocess.DEVNULL, check=False, creationflags=subprocess.CREATE_NO_WINDOW)
+    else:
+        try: os.killpg(process.pid, signal.SIGKILL)
+        except ProcessLookupError: pass
+    try: process.wait(timeout=10)
+    except subprocess.TimeoutExpired:
+        process.kill(); process.wait()
+
+
+def run(prompt, schema, directory, cwd, timeout=1200, cancel_event=None):
     directory = Path(directory).resolve(); directory.mkdir(parents=True, exist_ok=False)
     result = directory / "result.json"; shape = directory / "output.schema.json"
     shape.write_text(json.dumps(schema, ensure_ascii=False, indent=2), encoding="utf-8")
@@ -35,11 +49,29 @@ def run(prompt, schema, directory, cwd, timeout=1200):
         "--model", "gpt-6.1-terra", "-c", 'model_reasoning_effort="medium"', "--output-schema", str(shape),
         "--output-last-message", str(result), "--cd", str(Path(cwd).resolve()), "-"]
     started = datetime.now(timezone.utc).isoformat(); start = time.monotonic(); returncode = -1
+    interrupted = None
     try:
         with (directory / "events.jsonl").open("wb") as out, (directory / "stderr.log").open("wb") as err:
-            process = subprocess.run(argv, input=prompt.encode("utf-8"), stdout=out, stderr=err, timeout=timeout,
-                cwd=cwd, check=False, creationflags=subprocess.CREATE_NO_WINDOW if os.name == "nt" else 0)
-            returncode = process.returncode
+            process = subprocess.Popen(argv, stdin=subprocess.PIPE, stdout=out, stderr=err, cwd=cwd,
+                creationflags=subprocess.CREATE_NO_WINDOW if os.name == "nt" else 0,
+                start_new_session=(os.name != "nt"))
+            pending = prompt.encode('utf-8')
+            try:
+                while True:
+                    if cancel_event is not None and cancel_event.is_set():
+                        interrupted = 'Codex call cancelled'; _terminate_tree(process); break
+                    remaining = timeout - (time.monotonic() - start)
+                    if remaining <= 0:
+                        interrupted = 'Codex call timed out'; _terminate_tree(process); break
+                    try:
+                        process.communicate(input=pending, timeout=min(0.5, remaining)); break
+                    except subprocess.TimeoutExpired:
+                        pending = None
+                returncode = process.returncode if process.returncode is not None else -1
+            except BaseException:
+                _terminate_tree(process)
+                returncode = process.returncode if process.returncode is not None else -1
+                raise
     finally:
         meta = {"requested_model": "gpt-6.1-terra", "reasoning_effort": "medium", "fresh_session": True,
             "started_at": started, "ended_at": datetime.now(timezone.utc).isoformat(), "elapsed_seconds": time.monotonic() - start,
@@ -60,6 +92,7 @@ def run(prompt, schema, directory, cwd, timeout=1200):
         if header: models.add(header[1])
         meta["reported_models"] = sorted(models)
         (directory / "provider.json").write_text(json.dumps(meta, indent=2), encoding="utf-8")
+    if interrupted: raise RuntimeError(interrupted + "; original private trace retained: " + directory.name)
     if returncode: raise RuntimeError("Codex call failed; original private trace retained: " + directory.name)
     if models and models != {"gpt-6.1-terra"}: raise RuntimeError("Codex reported a different model")
     if meta["tool_events"]: raise RuntimeError("Sealed evidence role attempted unexpected tool use; trace retained")

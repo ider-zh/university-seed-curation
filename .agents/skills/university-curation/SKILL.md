@@ -1,166 +1,101 @@
 ---
 name: university-curation
-description: Obtain bounded university tasks, privately research or review sourced changes, and validate script-managed per-QID JSON records.
+description: Research or independently review university records through GitHub-coordinated tasks, public Draft proposals, signed comments and script-validated JSON.
 ---
 
 # University curation
 
-Read `AGENTS.md` and `docs/agent-workflow.md`. Determine whether this session is
-Research manager, Research subagent or Review. Do not interchange those roles.
-The script manages state and data. This skill is not a provider, secret store,
-publication approval or proof that integrations are already configured.
+Read AGENTS.md and docs/handoff.md. Choose exactly one role: Research manager,
+one-QID Research subagent, or independent Review. Repository:
+https://github.com/ider-zh/university-seed-curation.
 
-Here `<skill-dir>` is the directory containing this `SKILL.md` (in the checkout,
-`.agents/skills/university-curation`). All executable helpers live in its `scripts/`
-folder. Resolve it before running a command; do not assume the current directory
-is the skill folder. Repository documents and data paths refer to the checkout
-root. All implementation modules live in `scripts/lib/university_curation/`;
-there is no separate root `src/` implementation. Schemas, data and tests remain
-repository resources. These are checkout-bound commands, not a standalone wheel CLI.
+All helpers and implementation live in this skill's scripts/ and scripts/lib/.
+Schemas, tests and data are repository resources. Run commands from the checkout
+root, or pass --workspace to agent.py. The script returns JSON.
 
-Use `python <skill-dir>/scripts/curate.py --help`. The default private queue is
-`.private/state/queue.sqlite3`; separate worktrees must explicitly use the same
-private state path. Do not create an independent copy of the queue per subagent.
+## Bootstrap
+
+Use the matching startup prompt in references/research-agent.md or
+references/review-agent.md. Install trusted checkout dependencies. Each role
+registers its own local private key using agent.py --role ROLE register-key;
+only its public descriptor goes into a human-merged code PR. Never share keys.
+Run doctor after code, seed bootstrap and key registration reach main.
+Do not pretend an unconfigured worker/event service is operating.
 
 ## Research manager
 
-1. Build one snapshot from a known Git base with `snapshot --base-ref SHA`.
-   Default eligibility is never refreshed or last complete refresh at least six
-   calendar months old. Browse using `tasks --run ID --limit 10 --cursor TOKEN`.
-2. Cursor browsing is read-only. Actual assignment requires `claim --role research
-   --actor ACTOR --session SESSION --run ID`; pass just that QID to one subagent.
-3. Start at most the available three shared model slots. If Review is waiting,
-   reserve a slot; do not start three Research jobs in addition to Review.
-4. Let the single Review role consume `ready_for_review` tasks. Keep proposals,
-   source caches and full verdicts private. Make one small PR from passed schools
-   only after the trusted export integration has been configured.
+1. Run agent.py --role research sync; handle existing signed PR requests first.
+2. Run next --limit 3. Never-refreshed or six-month-old main records are eligible;
+   primary seeds precede discovery. Only the manager claims tasks.
+3. Assign each returned QID to one subagent running research --qid QID.
+   Do not pass private keys/caches/logs to another host or role.
+4. Run publish --batch-size 3 for prepared proposals. This creates an isolated
+   public Draft PR based on main. At most five schools/PR, three active PR permits.
+5. Loop sync. For a signed objection or changed school baseline, research
+   --qid QID --pr N, then publish --pr N. Use the same PR; two revisions maximum.
+6. sync materializes approved records and makes the PR ready. Human merge remains
+   required. Submission/waiting is not completion; confirm merged receipts.
+   Unresolved schools stay explicit and failed public heads remain archived.
+
+Use references/research-agent.md for a complete autonomous-loop instruction.
+Do not create a second shared-local database queue.
 
 ## Research subagent
 
-1. Work on the claimed QID and task field groups. Check identity first.
-2. Use online Wikidata and cached/revision-bound Wikipedia, supporting sites as
-   needed. Preserve subject, period, units, language and source locator.
-3. Produce compact change operations, not a rewritten school file. Script-owned
-   revision numbers, hashes and fact IDs are not model output.
-4. Use `propose QID --changes FILE --output .private/proposals/ID.json` then
-   `submit --task ID --lease TOKEN --proposal FILE`.
-5. Renew with `heartbeat`. An expired worker must stop; its old token is fenced
-   and cannot submit. Never work around a stale baseline by deleting a record.
+Use the single assigned QID and research command. Scripts gather bounded online
+Wikidata, necessary linked items and revision-bound Wikipedia, then call Terra
+medium with strict Schema. Emit compact new observations, not a rewritten record.
+Existing facts, candidate IDs and source lineage are script-managed. Root P625
+is owned by code; do not reinterpret its point as campus/headquarters/city.
+Retain missing periods, units, historical events, source language and conflicts.
+Reasonable inference is allowed under docs/review-policy-v2.md.
+Wrong subjects/numbers/units and unsupported legal independence still fail.
 
-## Review
+## Independent Review
 
-1. Claim as `--role review` with a fresh session and different actor.
-2. Obtain the private task packet. Verify every changed claim from the source,
-   independently of the Research explanation. Check all high-risk identity,
-   historical continuity and university/campus/faculty attributions.
-3. Submit `review --task ID --lease TOKEN --session SESSION --verdict FILE`.
-   Verdict: decision (`approve`, `request_changes`, `unresolved`), source_checks
-   covering every changed claim, and reviewed_groups. Never approve by Schema
-   validity alone. Record unavailable evidence as unresolved.
-4. Two revisions maximum, then unresolved. Keep every actual model attempt in
-   the private run archive; the offline queue is not a replacement for that log.
-5. Apply passed results using `apply --task ID --workspace PATH --kind KIND`.
-   Full `university_refresh` updates update_datetime only when the entire core
-   profile has passed. `field_update` / `batch_import` must preserve it.
+1. In the separate Review environment, enqueue current Drafts using
+   event_review.py --repository ider-zh/university-seed-curation --mode queue --scan.
+2. Run agent.py --role review next-review. It leases an exact PR head.
+   It independently fetches pinned revisions; no Research-private files are used.
+3. Verify every changed fact/context, earlier question and high-risk identity.
+   Post a signed decision. review --pr N is the manual single-PR entry.
+4. review-request can post a partial signed objection after prior approval.
+   Only a valid Review decision addressing its request ID can clear it.
+5. Loop with bounded waits. Never merge or act as the Research role.
+   references/review-agent.md gives the full startup instruction.
 
-## Schema and initialization
+GitHub CAS refs enforce three total model calls and at most one Review, across
+hosts. Lease loss cancels/fences work. A local OS lock is not a global budget.
 
-For domain Schema v0.2 inspect `docs/data-contract.md` and the full synthetic example.
-Keep candidates; use preferred even for single-source/undated facts, disclose
-missing period and unresolved conflicts. Do not invent years or require a second
-source merely to allow a usable Wikipedia value. General v0.2 domain mutation is not implemented; do not send v0.1 claims
-operations to v0.2 records. The bounded initial-pilot import uses the export
-adapter below and cannot overwrite an existing university.
+## Public and private boundaries
 
-`<skill-dir>/scripts/maintain_schema.py check` checks the generated contract. `propose-field`
-stages a definition for a separate schema PR; it never activates a new field.
-Do not hand-edit generated schema or introduce arbitrary keys in school records.
+Structured unreviewed candidates are allowed only in Draft PRs, clearly marked.
+Main contains approved canonical records and receipts. Short source evidence
+excerpts are allowed; full article text/HTML/wikitext, dumps, prompt/model traces,
+logs, caches and keys remain private. Role-local caches may be shared among that
+host's subagents, never required for cross-role communication.
 
-`seed-init --input FILE --manifest FILE` is a dry-run by default. Write initial
-candidate records only under `.private/bootstrap` until the candidate-list
-version has a human acceptance record. Initial candidates have no update_datetime.
-Never create/update a school file by hand or copy null placeholders into it.
+Only script-owned fields and registered Schema are allowed. Missing business
+values are omitted, not null/blank. Keep explicit source unknown/no-value.
+Sources use short record-local references; immutable revision and statement
+locators remain. Preferred is a presentation choice, not conflict resolution.
+Campus opening may count as valid_from; inauguration may inform term_start if
+the inference is disclosed. Do not invent dates/units/independence.
 
-## Current implementation boundary
+School paths use SHA-256(QID)[:2] (256 buckets). Complete six-group accepted
+surveys advance update_datetime; partial/batch changes preserve it. A complete
+survey may retain missing/disputed observations. Unknown identity or failed
+source retrieval prevents complete freshness.
 
-Offline lease/data primitives and online Wikidata/Wikipedia helpers are implemented.
-The private Terra pilot and signed initial-import export adapter are implemented.
-Production task dispatch, arbitrary domain updates, other source adapters,
-provider-authenticated model provenance, formal GitHub reviewer identity and
-protected auto-merge still require rollout verification. Read
-`docs/reviewed-pr-export.md`: `pr-build` prepares only a private preview; `pr-stage`
-and base-trusted CI reject unaccepted data. The trust/workflow code must be merged
-before real data staging. Never bypass these gates by copying private files.
+## Sources and maintenance
 
-The bounded root-P625 update uses `scripts/coordinates.py` (prepare/review/build),
-not arbitrary v0.2 mutations. Check every active root P625, preserve ranks and
-explicit unknown/no-value, and do not substitute city/country coordinates or
-drop the item point because a Wikipedia site point differs. Item coordinates
-make no unsupported campus/headquarters/time attribution. Read `docs/commands.md`.
+Read docs/source-tools.md for sources.py wikidata-get/search and wikipedia-get.
+Necessary linked items, including currency P498, may be queried with bounded
+limits and retained revisions. Each host uses its own 30-day private cache.
+Review fetches cited revisions independently.
 
-School paths now use SHA-256(QID)[:2], at most 256 buckets. Migrate existing
-three-hex paths with `scripts/buckets.py` before importing/updating those QIDs;
-the migration must preserve every school byte and all historical receipts.
-
-## Online sources: portable common commands
-
-Read `docs/source-tools.md`. No upstream dump host is required in this project.
-
-```text
-python <skill-dir>/scripts/sources.py wikidata-get QID --properties P31 P17 P131 P571 P856 --resolve P17 P131 --linked-limit 8
-python <skill-dir>/scripts/sources.py wikidata-search "UNIVERSITY NAME" --language en --limit 5
-python <skill-dir>/scripts/sources.py wikipedia-get --language LANGUAGE --qid QID
-python <skill-dir>/scripts/sources.py wikipedia-get --language LANGUAGE --title "TITLE" --view infobox
-python <skill-dir>/scripts/sources.py wikipedia-get --language LANGUAGE --qid QID --view text --section SECTION_ID --max-chars 12000
-```
-
-Inspect sitelinks before choosing a language. Summary gives section IDs and the
-original infobox rows; text supports offset windows. Use exact oldid when reviewing
-a cited article revision. Preserve returned page/revision IDs, observation time,
-URL and locator. Original statements/references and page HTML/wikitext stay in
-immutable private captures. Never commit raw cache files, put raw pages in a PR,
-or treat mechanical infobox parsing as independent fact verification.
-
-## Shared linked-item lookup and flexible Review (private pilot)
-
-Research agents may query necessary linked Wikidata items, including quantity-unit
-QIDs, using the same source script. Never guess a currency from its QID or an
-ambiguous symbol. Resolve the item and retain its revision; request P498 for the
-ISO 4217 code where available:
-
-```text
-python <skill-dir>/scripts/sources.py --cache ABSOLUTE_PRIVATE_CACHE wikidata-get Q4917 --properties P498 --languages en zh
-```
-
-All workspaces must use the same explicit absolute `--cache` path, or set
-`UNIVERSITY_SOURCE_CACHE` to that path. The path must contain a `.private` directory.
-The 30-day cache uses per-request cross-process OS locks and atomic captures: three
-workers requesting one missing item share one retrieval. Unrelated requests can
-proceed independently. Do not cache credentials or publish original captures.
-
-The sealed pilot transport also supports bounded `source_requests`; the manager
-executes the lookup through the same cache and returns source evidence, without
-letting a source request turn into arbitrary tool execution. Unit and linked-item
-lookup is on demand; do not recursively crawl the entity graph. Review retrieves
-cited entity revisions independently; a shared Research cache is not additional
-independent factual corroboration.
-
-Read `docs/review-policy-v2.md` for the operator-authorized private pilot policy.
-Allow grounded concept adaptation and reasonable inference, including campus
-opening as valid_from and leader inauguration year as term_start. Keep original
-wording and record the inference basis. Wrong subjects, values/units, fabricated
-facts and unsupported legal independence remain errors. Bounded coverage gaps
-are reported rather than demanding an exhaustive article transcription.
-
-## Observable reviewed-data PR preparation
-
-Use `pr-key-init`, `pr-build`, `pr-stage` and `pr-validate` as documented in
-`docs/reviewed-pr-export.md`. An initial data batch requires explicit human
-acceptance of its content scope. Do not treat a code PR merge as acceptance of
-school data. `pr-record-acceptance` is an operator procedure: an agent may invoke
-it only after an explicit operator instruction accepting that reviewed data.
-
-Keep keys and original traces out of subagent inputs. The signature proves the
-local coordinator's attestation, not provider-signed model provenance or an
-independently authenticated human identity. A same-account GitHub comment must
-not be presented as a second GitHub account's formal approval.
+Read docs/commands.md for executable commands, docs/data-contract.md for fields,
+docs/reviewed-pr-export.md for trusted validation. Schema major changes and
+official releases need human approval. No automatic merge or deployment is
+implied. Historical SQLite commands and initial-import/coordinate adapters
+remain compatible but do not schedule distributed agents.

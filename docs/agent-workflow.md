@@ -1,117 +1,82 @@
-# Research / Review 协作合同
+# Distributed Research and Review
 
-## Research
+The repository is https://github.com/ider-zh/university-seed-curation.
+One Research manager and its one-QID subagents run independently of one Review
+role. They may authenticate as the same GitHub user. Each holds its own signing
+key and local cache. No shared disk, SQLite database or local model lock is used
+as cross-role authority.
 
-输入为一个 QID 的任务包：任务类型、允许修改字段、当前业务事实、短来源引用、
-已知缺口、预算与脚本生成的基线凭据。模型无需重复输出长 hash、全部现有字段或完整原文。
+## Bootstrap
 
-身份任务确认：是否为高等教育机构、现存/历史对象、系统/校区/院系边界、不同 QID
-是否可能混同、前身/后继关系是否有证据。不能按名称、地址或 parent 关系推导法律独立性。
-身份未解决时允许提交 `needs_review` 或 `conflation_suspected`，隔离受影响的机构历史。
+Merge implementation code, then the signed seed import / byte-preserving bucket
+bootstrap. Each role runs `agent.py --role ROLE register-key` from its own host.
+Only the public key descriptor enters a code-only registration PR. Human merge
+activates it. Role keys cannot sign legacy human seed acceptance or initial
+imports. Run doctor after registration merges. Do not exchange private keys.
 
-字段任务在身份上下文内进行，允许逐项缺失。Wikidata 和 Wikipedia 使用在线脚本，
-不依赖原始 dump 主机。见 `docs/source-tools.md`。Wikidata、Wikipedia 及其转载是同一
-事实源家族，不能伪装成多份独立证据。Wikipedia 保存语言、page ID、revision ID、
-URL 和段落定位；原始页面保存在私有 30 天缓存中。其他网站保存访问时点、页面定位、
-可复核的短摘录或私有快照引用；优先原始发布者和学校官方资料。
+## Research loop
 
-Research 输出提案，而非最终学校 JSON：目标 QID、预期基线、任务范围、需要添加/
-撤回/纠正的事实、来源定位和明确的不确定性。原有事实不靠整文件重写来更新。
+The manager calls sync before claiming more work. It handles signed revision
+requests first, then claims up to three QIDs with next. Primary candidates precede
+the separate discovery queue; current approved update_datetime governs the
+six-calendar-month refresh threshold. A local derived index speeds selection,
+but main and GitHub task refs remain authoritative.
 
-## Review
+Dispatch each assigned QID to one subagent running the research command.
+The script acquires a global model lease and builds a bounded source packet,
+then emits a strict compact delta. It automatically preserves root Wikidata P625,
+without reinterpreting it as a campus, headquarters or city point.
 
-Review 采用独立任务与新会话；Research 的结论是待核验材料。每条变更都需要验证：
+Publish a small batch as a public Draft PR. Each batch gets a fresh branch and
+worktree based directly on main. No PR depends on another data PR. Maximum five
+schools per batch and three active PR permits prevent unlimited review backlog.
+Waiting at capacity is not task completion.
 
-- 原文/声明确实支持该事实，并且定位可重现。
-- 主体是目标机构，或字段明确允许且已经关联的校区/组成机构。
-- 指标、统计时期、单位、币种和历史口径一致，未把近似数或 FTE 当精确人数。
-- 未把一个名称改动误写为合并、把院系写为独立院校、把城市坐标当校址。
-- 修改没有移除仍有效的历史观测、来源或冲突候选。
+## Independent Review and revisions
 
-单一来源、未注明统计年份和约数不是拒用理由。来源实际支持该表述即可保留并
-按规则成为 preferred，同时披露缺失时期等限定条件。有冲突也可选择主展示值；
-源声明的核验与现实冲突的解决分别记录，不因为已选择 preferred 就删除其他候选。
+Review can poll with event_review.py --mode queue --scan and agent.py next-review.
+A deployable Actions dispatcher can enqueue validated Draft heads on PR events;
+it defaults off until an execution environment is selected. The Review worker,
+not Actions, owns the model credentials and Review signing key.
 
-逐项结论为 `approve`、`request_changes`、`unresolved`。一所学校允许接受一个
-明确的“身份未决”结论；这不等于批准其中未验证的业务事实。受影响事实必须隔离。
-默认每所学校是应用原子单位，不能把失败字段偷偷随通过字段一起写入。
+Review independently retrieves pinned source revisions, validates every changed
+fact/context, then posts a structured signed decision. A partial objection can
+also be posted with review-request. Signatures bind repository, PR, QID, proposal,
+reviewed head, policy, schema and session; same-account comments are not formal
+second-account approvals.
 
-初次提交后最多两次修订。每次提案和核验均保留；之后仍未解决则完成为未决任务，
-不再无限消耗模型预算。新来源出现时可以创建新的补证任务。
+Research sync reads these comments. Failed schools are revised on the same PR
+using research --pr N, then publish --pr N. Questions survive branch/head changes.
+Only the exact valid independent approval carrying addressed request IDs resolves
+them. Two revisions maximum; further failures become unresolved. Research never
+closes a Review objection itself. Historical failed heads stay reachable through
+coordination refs before force-with-lease replacement.
 
-## 脚本控制的更新
+When every remaining school is approved or explicitly unresolved, sync builds
+main + approved canonical records + dual-sign receipts. It removes unresolved
+schools from the mergeable batch while retaining their public Draft history.
+The PR becomes ready for **human merge**. A fully unresolved Draft remains visible.
 
-脚本生成稳定事实 ID、短来源 ID、记录修订号、内容 hash 和执行凭据。模型只输出
-事实层变更。更新必须同时检查：QID 租约、任务范围、当前文件 hash/修订号、Schema
-与策略版本、独立核验来源。旧基线提案不能直接覆盖新记录。
+## Base changes, completion and recovery
 
-优先追加有时期/主体的观测，纠正时显式撤回或替代具体事实。不得为了得到单值而
-删除旧年份或冲突来源。最新值视图属于可重算导出，不破坏原始观测。
+If main changes only for another school, sync rebinds the final batch mechanically
+without another model call. A changed same-QID baseline requires fresh Research
+and Review; schema/policy/catalog incompatibility never overwrites current data.
+Signed-data and live university-review checks must pass again.
 
-## PR 合同
+Submission is not completion. Sync confirms immutable receipts actually reached
+main before marking tasks merged and releasing PR permits. A closed unmerged PR
+becomes unresolved; it is not blindly resubmitted. A partial survey has a seven-day
+queue backoff and preserves update_datetime. A complete six-group survey may
+retain disclosed missing/conflicting values; unknown identity or source retrieval
+failures prevent complete freshness.
 
-PR 是一批学校的交付单位，不是全部 Agent 工作的原始日志。Review 完成前，
-候选和完整核验报告只在私有区域。通过后组装学校 JSON 与最小签名审核凭据。
+Coordination refs: coord/tasks-00..ff for tasks, coord/runtime for global model
+slots, Review head queue and PR permits. Updates use compare-and-swap Git pushes.
+Leases expire and are fenced; failed workers stop. Coordination metadata and
+short diagnostic codes are public; never put sources, credentials or logs there.
 
-GitHub 不支持合并一个 PR 的部分文件。脚本在开 PR 前退回失败学校；PR 后出现
-变化，则从批次移除受影响学校或重新审核。每所学校的审核绑定候选内容、基线和
-Schema/策略版本；汇总检查绑定最终 PR head。删除其他失败学校后，可复用仍完全
-一致的逐校审核，不重复整批研究。
-
-自动合并需要受保护 main、可信审核凭据与 CI。数据 PR 不允许夹带执行器、Schema、
-workflows 或 trusted reviewer 配置的变化。CI 应使用 main 上的可信验证器读取
-候选数据，不以可写 token 执行候选 PR 中的任意脚本。
-
-## 项目与任务范围
-
-全球现存和历史高等教育机构均在范围内；主候选 39,489 条、旧规则独有补漏队列
-64,667 条均不等于已确认学校。在线 Wikidata/Wikipedia 为主要来源，其他网站辅助。
-首批导入、确定性外部源规则与映射、正式发布仍各自需要对应验收，详见数据合同与 PR 规则。
-
-默认任务先选从未完整刷新的学校，再按完整刷新最早时间选择六个日历月未更新的记录；
-月末钳位，不以 180 天替代。快照绑定 Git base、as_of、截止日期与每校基线，游标只读；
-领取、续租和提交使用共享私有队列与 fencing token。失效租约不能继续提交。
-`update_datetime` 只在完整 core-v1 刷新（包括无事实变化的完整核验）通过时更新；
-部分字段与批处理只更新 `modified_datetime`。身份未决时不能伪造完整刷新时间。
-不同工作区必须指向同一私有状态；不复制独立队列、不把 SQLite 放在锁语义不可靠的共享盘。
-
-## Wikidata 坐标覆盖
-
-地理任务必须检查根项 P625，不只审核模型已提交的事实。用 `coordinates.py` 保留根项
-声明；关联城市/国家坐标不能当作根学校坐标。来源不同或旧址含义不同，不构成丢弃 P625
-的理由。未知、no-value 与多点冲突显式保留；不能安全映射的声明进入待核验任务。
-
-## 批处理与名单初始化
-
-### Seed 初始化
-
-输入必须是有 manifest 的固定快照。首批 39,489 条主候选中 34,672 为类型规则
-支持、4,817 待核验；二者都不自动变为本项目已核验机构。64,667 条旧规则独有
-对象进入补漏队列，不直接增加 64,667 个被确认的学校文件。
-
-初始化脚本负责去重、Schema/来源绑定、稳定分桶、原子创建和计数对账。先生成
-私有 bootstrap 记录与预览；公开候选基础名单前记录人工验收引用。它不等于批准
-后续业务事实。重复导入同快照应幂等；不同来源相同 QID 合并 seed 线索，不能
-用第二次初始化覆盖已研究的学校。校验失败保留原文件并报告，不静默跳过。
-
-### 外部源 adapter
-
-US campus 统计是一个独立的批处理入口，具体数据集/年份另行确定。每个 adapter
-登记：数据集版本、许可/公开边界、源记录 ID、字段语义、指标主体、单位、时期、
-匹配规则版本和目标 Schema 版本。下载/解析/校验/映射/提案/应用分别留 checkpoint。
-
-源中的学校、校区、系统和统计报告单位不一定与 QID 一一对应。确定映射必须是
-可追溯且已接受的映射表；名称相似不够。一个 campus 的人数/事件不能无条件加到
-大学机构总数，一个系统级观测也不能复制给每所成员院校。
-
-确定映射且通过规则的观测可用确定性 receipt 应用，无须逐条调用模型。冲突、
-单位异常、年份缺失、对象范围不明、模糊映射进入 Agent 任务；不会覆盖现有事实。
-同样走记录修订校验和小批数据 PR。报告导入/未匹配/冲突/待核验/应用数量。
-
-### 稳定规则
-
-- 幂等键包括 source/version/source record/metric/period/subject，重跑不复制事实。
-- 默认保存原币种、原统计口径和时期；不混合人数/FTE，不自行推算缺项。
-- 冲突是新增候选与状态，不是“最后写入者胜出”。
-- 确定性批处理不占模型额度；进入 Agent 的任务与 Research/Review 共享模型预算。
-- adapter 的 source/field/mapping 规则变更必须版本化；正式发布仍需人工验收。
+Human setup must make signed-data-validation and university-review required
+before treating CI as an enforced merge barrier. This implementation does not
+configure protections or auto-merge. Review comments/statuses are asynchronous;
+a human must not bypass a pending or newly failed check.
