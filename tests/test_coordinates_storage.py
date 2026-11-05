@@ -132,8 +132,12 @@ class CoordinateStorageTests(unittest.TestCase):
 
     def test_256_bucket_migration_preserves_bytes_and_historical_receipts(self):
         self.configure_base(legacy=True)
+        self.case.put(".gitattributes", (ROOT / ".gitattributes").read_bytes())
+        self.case.git("config", "core.autocrlf", "true")
         self.case.put("data/reviews/old/Q101.json", b"historical immutable receipt")
         self.case.commit("old receipt"); base = self.case.git("rev-parse", "HEAD").decode().strip()
+        self.case.git("checkout-index", "--force", "--", paths("Q101")[0])
+        self.assertNotIn(b"\r\n", (self.case.repo / paths("Q101")[0]).read_bytes())
         with self.assertRaises(ValueError): verify_files(self.case.repo, base, self.case.bundle(record=self.record), self.case.trust)
         output = self.case.root / ".private/migration"
         preview = prepare(self.case.repo, base, "bucket-fixture", output)
