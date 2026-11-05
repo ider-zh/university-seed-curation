@@ -12,6 +12,12 @@ LOCATION_ID = "wikidata-item-location"
 EARTH = "http://www.wikidata.org/entity/Q2"
 
 
+def _root_statement_id(statement, qid):
+    """Accept Wikidata's case-variant QID prefix without changing the source ID."""
+    return (isinstance(statement, str) and
+            re.fullmatch(re.escape(qid) + r"\$[A-Za-z0-9-]+", statement, re.IGNORECASE) is not None)
+
+
 def root_source(record):
     matches = [(ref, src) for ref, src in record.get("sources", {}).items()
                if src["kind"] == "wikidata" and src.get("source_qid") == record["qid"]]
@@ -30,7 +36,7 @@ def projection(record, entity):
         if rank == "deprecated": continue
         if claim.get("qualifiers"): raise ValueError("Qualified P625 needs a separate scoped geography task")
         statement = claim.get("id", "")
-        if not re.fullmatch(re.escape(record["qid"]) + r"\$[A-Za-z0-9-]+", statement):
+        if not _root_statement_id(statement, record["qid"]):
             raise ValueError("Missing or foreign Wikidata statement ID")
         snak = claim["mainsnak"]
         if snak.get("property") != "P625" or snak.get("datatype", "globe-coordinate") != "globe-coordinate":
@@ -70,7 +76,7 @@ def location(record, source):
     candidates = []; ids = []
     for row in rows:
         statement = row["statement_id"]; ids.append(statement)
-        if not re.fullmatch(re.escape(record["qid"]) + r"\$[A-Za-z0-9-]+", statement): raise ValueError("Foreign statement")
+        if not _root_statement_id(statement, record["qid"]): raise ValueError("Foreign statement")
         if row["rank"] not in ("normal", "preferred"): raise ValueError("Inactive coordinate statement")
         if row["snaktype"] not in ("value", "somevalue", "novalue"): raise ValueError("Invalid coordinate state")
         expected = {"statement_id", "rank", "snaktype"} | ({"value"} if row["snaktype"] == "value" else set())

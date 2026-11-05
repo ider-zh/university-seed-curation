@@ -75,6 +75,18 @@ class CoordinateStorageTests(unittest.TestCase):
         self.assertEqual(result["locations"][-1]["kind"], "institution")
         self.assertEqual(result["update_datetime"], self.record["update_datetime"])
 
+    def test_lowercase_wikidata_statement_prefix_keeps_original_locator(self):
+        self.entity["claims"]["P625"] = [self.claim("q101$abc-123", 52.16, 21.04)]
+        point = projection(self.record, self.entity)
+        self.assertEqual(point["statements"][0]["statement_id"], "q101$abc-123")
+        result = materialize(self.record, point, NOW)
+        evidence = result["locations"][-1]["coordinates"]["candidates"][0]["evidence"][0]
+        self.assertEqual(evidence["locator"], "statement:q101$abc-123")
+        for foreign in ("q102$abc-123", "q101abc-123", "Q101$", "Q101$abc_123"):
+            self.entity["claims"]["P625"] = [self.claim(foreign)]
+            with self.subTest(foreign=foreign), self.assertRaisesRegex(ValueError, "foreign Wikidata statement"):
+                projection(self.record, self.entity)
+
     def test_linked_item_wrong_revision_non_earth_and_qualified_points_fail_closed(self):
         for mutation in (lambda e: e.update(id="Q174091"), lambda e: e.update(lastrevid=6),
             lambda e: e["claims"]["P625"][0]["mainsnak"]["datavalue"]["value"].update(globe="http://www.wikidata.org/entity/Q111"),
