@@ -1,0 +1,1758 @@
+{
+  "baseline_sha256": "absent",
+  "candidate": {
+    "coverage": {
+      "finance": {
+        "checked_at": "2026-11-05T11:06:14.784457+00:00",
+        "status": "checked"
+      },
+      "geography": {
+        "checked_at": "2026-11-05T11:06:14.784457+00:00",
+        "status": "checked"
+      },
+      "history": {
+        "checked_at": "2026-11-05T11:06:14.784457+00:00",
+        "status": "checked"
+      },
+      "identity": {
+        "checked_at": "2026-11-05T11:06:14.784457+00:00",
+        "status": "checked"
+      },
+      "population": {
+        "checked_at": "2026-11-05T11:06:14.784457+00:00",
+        "status": "checked"
+      },
+      "profile": {
+        "checked_at": "2026-11-05T11:06:14.784457+00:00",
+        "status": "checked"
+      }
+    },
+    "curation": {
+      "identity_status": "in_scope"
+    },
+    "finance": {
+      "budget": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "infobox:7",
+                "original_text": "Budget: EUR 156 million",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "period_status": "not_stated",
+            "value": {
+              "amount": "156000000",
+              "currency": "EUR",
+              "precision": "exact"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "qualifications": [
+            "period_not_stated",
+            "single_source_family"
+          ],
+          "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    "history": {
+      "milestones": [
+        {
+          "date": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P571:0",
+                    "original_text": "+1978-05-22T00:00:00Z",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "day": 22,
+                  "month": 5,
+                  "precision": "day",
+                  "year": 1978
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "description": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "The university was founded in 1978",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "University was founded in 1978."
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "founded1978",
+          "kind": "institution_establishment",
+          "subject_ref": "institution"
+        },
+        {
+          "date": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "in 1982/83 lecturing followed",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "original_date": "1982/83",
+                  "precision": "interval",
+                  "year": 1982
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "teaching1982",
+          "kind": "teaching_start",
+          "subject_ref": "institution"
+        },
+        {
+          "date": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P1448:0",
+                    "original_text": "+2018-06-01T00:00:00Z",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "day": 1,
+                  "month": 6,
+                  "precision": "day",
+                  "year": 2018
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "description": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P1448:0",
+                    "original_text": "Technische Universität Hamburg",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "claim:P1448:1",
+                    "original_text": "Technische Universität Hamburg-Harburg",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Official German name Technische Universität Hamburg from 1 June 2018; earlier Technische Universität Hamburg-Harburg through 31 May 2018."
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "rename2018",
+          "kind": "rename",
+          "subject_ref": "institution"
+        }
+      ]
+    },
+    "identity": {
+      "aliases": [
+        {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:1",
+                  "original_text": "Other name: TUHH",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "TUHH"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      ],
+      "identifiers": {
+        "P5586": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P5586:0",
+                  "original_text": "hamburg-university-technology",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "hamburg-university-technology",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "kind": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "public research university in Germany",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": "university",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "names": {
+        "de": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "metadata",
+                  "original_text": "Technische Universität Hamburg",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "Technische Universität Hamburg",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "en": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "metadata",
+                  "original_text": "Hamburg University of Technology",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "Hamburg University of Technology",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "ownership": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "infobox:4",
+                "original_text": "Type: Public",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": "public",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    "leadership": {
+      "president": {
+        "candidates": [
+          {
+            "current_basis": "infobox_current",
+            "evidence": [
+              {
+                "locator": "infobox:8",
+                "original_text": "President: Prof. Dr. Andreas Timm-Giel",
+                "source_ref": "s2"
+              },
+              {
+                "locator": "metadata",
+                "original_text": "Andreas Timm-Giel",
+                "source_ref": "s10"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "person": {
+                "name": "Andreas Timm-Giel",
+                "qid": "Q58317484"
+              },
+              "title_original": {
+                "language": "en",
+                "text": "President"
+              }
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "qualifications": [
+            "single_source_family",
+            "reported_current"
+          ],
+          "reason": "The page reports this person in its current officeholder field; a term-end date is not required.",
+          "reason_code": "infobox_current"
+        }
+      }
+    },
+    "locations": [
+      {
+        "id": "harburg",
+        "kind": "administrative_area",
+        "name": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "Harburg, a district in the south of Hamburg",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "Harburg"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "qid": "Q1635"
+      },
+      {
+        "address": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:13",
+                  "original_text": "Am Schwarzenberg-Campus 1 (A), Hamburg, 21073, Germany",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "city_name": "Hamburg",
+                "country_name": "Germany",
+                "country_qid": "Q183",
+                "formatted": {
+                  "language": "en",
+                  "text": "Am Schwarzenberg-Campus 1 (A), Hamburg, 21073, Germany"
+                },
+                "postal_code": "21073",
+                "street": "Am Schwarzenberg-Campus 1 (A)"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "campus",
+        "kind": "campus",
+        "name": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Campus",
+                  "original_text": "Hamburg University of Technology is for the most part contained in a single campus",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "TUHH campus"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      {
+        "id": "hq",
+        "kind": "headquarters",
+        "name": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P159:0",
+                  "original_text": "headquarters location",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "Hamburg"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "qid": "Q1055"
+      },
+      {
+        "coordinates": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "statement:Q1060$e97e12e1-463f-982b-9246-2586c1cc4486",
+                  "original_text": "\"latitude\": 53.460958333333",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "source_rank": "normal",
+              "value": {
+                "crs": "EPSG:4326",
+                "globe_qid": "Q2",
+                "latitude": 53.460958333333,
+                "longitude": 9.9695055555556,
+                "source_precision_degrees": 2.7777777777778e-06
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "wikidata-item-location",
+        "kind": "institution",
+        "qid": "Q1060"
+      }
+    ],
+    "modified_datetime": "2026-11-05T11:10:10.410423+00:00",
+    "population": {
+      "academic_staff": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "infobox:10",
+                "original_text": "Academic staff: 802",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "period_status": "not_stated",
+            "value": {
+              "amount": 802,
+              "basis": "headcount",
+              "precision": "exact"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "qualifications": [
+            "period_not_stated",
+            "single_source_family"
+          ],
+          "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+          "reason_code": "only_available"
+        }
+      },
+      "employees_total": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "infobox:11",
+                "original_text": "Total staff: 1410",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "period_status": "not_stated",
+            "value": {
+              "amount": 1410,
+              "basis": "headcount",
+              "precision": "exact"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "qualifications": [
+            "period_not_stated",
+            "single_source_family"
+          ],
+          "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+          "reason_code": "only_available"
+        }
+      },
+      "students_total": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "infobox:12",
+                "original_text": "Students: 7,383",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "period_status": "not_stated",
+            "value": {
+              "amount": 7383,
+              "basis": "headcount",
+              "precision": "exact"
+            },
+            "verification": "supported"
+          },
+          {
+            "evidence": [
+              {
+                "locator": "claim:P2196:24",
+                "original_text": "+7223",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c2",
+            "period": {
+              "kind": "calendar_year",
+              "year": 2023
+            },
+            "period_status": "stated",
+            "value": {
+              "amount": 7223,
+              "basis": "headcount",
+              "precision": "exact"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "qualifications": [
+            "period_not_stated",
+            "single_source_family"
+          ],
+          "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+          "reason_code": "best_available"
+        }
+      }
+    },
+    "profile": {
+      "academic_focus": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Interdisciplinary_Studies",
+                "original_text": "Research is divided into six interdisciplinary research departments",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": [
+              {
+                "language": "en",
+                "text": "Systems Engineering"
+              },
+              {
+                "language": "en",
+                "text": "Civil Engineering and Marine Technology"
+              },
+              {
+                "language": "en",
+                "text": "Information and Communication Technology"
+              },
+              {
+                "language": "en",
+                "text": "Materials, Design, Manufacturing"
+              },
+              {
+                "language": "en",
+                "text": "Processing Technology and Energy Systems"
+              }
+            ],
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "motto": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "infobox:2",
+                "original_text": "Technik für die Menschen",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "de",
+              "text": "Technik für die Menschen"
+            },
+            "verification": "supported"
+          },
+          {
+            "evidence": [
+              {
+                "locator": "infobox:3",
+                "original_text": "Technology for Humanity",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c2",
+            "value": {
+              "language": "en",
+              "text": "Technology for Humanity"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+          "reason_code": "best_available"
+        }
+      },
+      "website": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P856:0",
+                "original_text": "https://www.tuhh.de/",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": "https://www.tuhh.de/",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    "qid": "Q1060",
+    "record_revision": 1,
+    "schema_version": "0.2.2",
+    "seed": {
+      "channels": [
+        "ranking_identifier",
+        "reviewed_institution_type"
+      ],
+      "import_id": "seed-84c3beb45367905f",
+      "screening_status": "included"
+    },
+    "selection_policy": "preferred-v1",
+    "sources": {
+      "s1": {
+        "family": "wikimedia",
+        "kind": "wikidata",
+        "publisher_role": "knowledge_base",
+        "retrieved_at": "2026-11-05T11:05:01.718395+00:00",
+        "revision_id": 2552803228,
+        "source_qid": "Q1060",
+        "url": "https://www.wikidata.org/w/index.php?oldid=2552803228"
+      },
+      "s10": {
+        "family": "wikimedia",
+        "kind": "wikidata",
+        "publisher_role": "knowledge_base",
+        "retrieved_at": "2026-11-05T11:06:14.776647+00:00",
+        "revision_id": 2495281480,
+        "source_qid": "Q58317484",
+        "url": "https://www.wikidata.org/w/index.php?oldid=2495281480"
+      },
+      "s2": {
+        "family": "wikimedia",
+        "kind": "wikipedia",
+        "language": "en",
+        "page_id": 3625803,
+        "publisher_role": "encyclopedia",
+        "retrieved_at": "2026-11-05T11:05:24.724195+00:00",
+        "revision_id": 1370204531,
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1370204531"
+      },
+      "s3": {
+        "family": "wikimedia",
+        "kind": "wikipedia",
+        "language": "de",
+        "page_id": 316239,
+        "publisher_role": "encyclopedia",
+        "retrieved_at": "2026-11-05T11:05:33.421164+00:00",
+        "revision_id": 271829217,
+        "url": "https://de.wikipedia.org/w/index.php?oldid=271829217"
+      },
+      "s4": {
+        "family": "wikimedia",
+        "kind": "wikidata",
+        "publisher_role": "knowledge_base",
+        "retrieved_at": "2026-11-05T11:05:39.160594+00:00",
+        "revision_id": 2553301690,
+        "source_qid": "Q1371037",
+        "url": "https://www.wikidata.org/w/index.php?oldid=2553301690"
+      },
+      "s5": {
+        "family": "wikimedia",
+        "kind": "wikidata",
+        "publisher_role": "knowledge_base",
+        "retrieved_at": "2026-11-05T10:53:44.088820+00:00",
+        "revision_id": 2559546120,
+        "source_qid": "Q875538",
+        "url": "https://www.wikidata.org/w/index.php?oldid=2559546120"
+      },
+      "s6": {
+        "family": "wikimedia",
+        "kind": "wikidata",
+        "publisher_role": "knowledge_base",
+        "retrieved_at": "2026-11-05T11:05:46.165421+00:00",
+        "revision_id": 2564285072,
+        "source_qid": "Q183",
+        "url": "https://www.wikidata.org/w/index.php?oldid=2564285072"
+      },
+      "s7": {
+        "family": "wikimedia",
+        "kind": "wikidata",
+        "publisher_role": "knowledge_base",
+        "retrieved_at": "2026-11-05T11:05:53.324648+00:00",
+        "revision_id": 2563917162,
+        "source_qid": "Q1635",
+        "url": "https://www.wikidata.org/w/index.php?oldid=2563917162"
+      },
+      "s8": {
+        "family": "wikimedia",
+        "kind": "wikidata",
+        "publisher_role": "knowledge_base",
+        "retrieved_at": "2026-11-05T11:05:59.721335+00:00",
+        "revision_id": 2564763313,
+        "source_qid": "Q1055",
+        "url": "https://www.wikidata.org/w/index.php?oldid=2564763313"
+      },
+      "s9": {
+        "family": "wikimedia",
+        "kind": "wikidata",
+        "publisher_role": "knowledge_base",
+        "retrieved_at": "2026-11-05T11:06:06.868654+00:00",
+        "revision_id": 2533490485,
+        "source_qid": "Q48185658",
+        "url": "https://www.wikidata.org/w/index.php?oldid=2533490485"
+      }
+    }
+  },
+  "coverage": [
+    {
+      "group": "identity",
+      "status": "checked"
+    },
+    {
+      "group": "geography",
+      "status": "checked"
+    },
+    {
+      "group": "history",
+      "status": "checked"
+    },
+    {
+      "group": "population",
+      "status": "checked"
+    },
+    {
+      "group": "finance",
+      "status": "checked"
+    },
+    {
+      "group": "profile",
+      "status": "checked"
+    }
+  ],
+  "delta": {
+    "coverage": {
+      "finance": {
+        "checked_at": "2026-11-05T11:06:14.784457+00:00",
+        "status": "checked"
+      },
+      "geography": {
+        "checked_at": "2026-11-05T11:06:14.784457+00:00",
+        "status": "checked"
+      },
+      "history": {
+        "checked_at": "2026-11-05T11:06:14.784457+00:00",
+        "status": "checked"
+      },
+      "identity": {
+        "checked_at": "2026-11-05T11:06:14.784457+00:00",
+        "status": "checked"
+      },
+      "population": {
+        "checked_at": "2026-11-05T11:06:14.784457+00:00",
+        "status": "checked"
+      },
+      "profile": {
+        "checked_at": "2026-11-05T11:06:14.784457+00:00",
+        "status": "checked"
+      }
+    },
+    "curation": {
+      "identity_status": "in_scope"
+    },
+    "finance": {
+      "budget": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "infobox:7",
+                "original_text": "Budget: EUR 156 million",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "period_status": "not_stated",
+            "value": {
+              "amount": "156000000",
+              "currency": "EUR",
+              "precision": "exact"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "qualifications": [
+            "period_not_stated",
+            "single_source_family"
+          ],
+          "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    "history": {
+      "milestones": [
+        {
+          "date": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P571:0",
+                    "original_text": "+1978-05-22T00:00:00Z",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "day": 22,
+                  "month": 5,
+                  "precision": "day",
+                  "year": 1978
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "description": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "The university was founded in 1978",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "University was founded in 1978."
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "founded1978",
+          "kind": "institution_establishment",
+          "subject_ref": "institution"
+        },
+        {
+          "date": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "in 1982/83 lecturing followed",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "original_date": "1982/83",
+                  "precision": "interval",
+                  "year": 1982
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "teaching1982",
+          "kind": "teaching_start",
+          "subject_ref": "institution"
+        },
+        {
+          "date": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P1448:0",
+                    "original_text": "+2018-06-01T00:00:00Z",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "day": 1,
+                  "month": 6,
+                  "precision": "day",
+                  "year": 2018
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "description": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P1448:0",
+                    "original_text": "Technische Universität Hamburg",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "claim:P1448:1",
+                    "original_text": "Technische Universität Hamburg-Harburg",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Official German name Technische Universität Hamburg from 1 June 2018; earlier Technische Universität Hamburg-Harburg through 31 May 2018."
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "rename2018",
+          "kind": "rename",
+          "subject_ref": "institution"
+        }
+      ]
+    },
+    "identity": {
+      "aliases": [
+        {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:1",
+                  "original_text": "Other name: TUHH",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "TUHH"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      ],
+      "identifiers": {
+        "P5586": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P5586:0",
+                  "original_text": "hamburg-university-technology",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "hamburg-university-technology",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "kind": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "public research university in Germany",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": "university",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "names": {
+        "de": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "metadata",
+                  "original_text": "Technische Universität Hamburg",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "Technische Universität Hamburg",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "en": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "metadata",
+                  "original_text": "Hamburg University of Technology",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "Hamburg University of Technology",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "ownership": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "infobox:4",
+                "original_text": "Type: Public",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": "public",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    "leadership": {
+      "president": {
+        "candidates": [
+          {
+            "current_basis": "infobox_current",
+            "evidence": [
+              {
+                "locator": "infobox:8",
+                "original_text": "President: Prof. Dr. Andreas Timm-Giel",
+                "source_ref": "s2"
+              },
+              {
+                "locator": "metadata",
+                "original_text": "Andreas Timm-Giel",
+                "source_ref": "s10"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "person": {
+                "name": "Andreas Timm-Giel",
+                "qid": "Q58317484"
+              },
+              "title_original": {
+                "language": "en",
+                "text": "President"
+              }
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "qualifications": [
+            "single_source_family",
+            "reported_current"
+          ],
+          "reason": "The page reports this person in its current officeholder field; a term-end date is not required.",
+          "reason_code": "infobox_current"
+        }
+      }
+    },
+    "locations": [
+      {
+        "id": "harburg",
+        "kind": "administrative_area",
+        "name": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "Harburg, a district in the south of Hamburg",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "Harburg"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "qid": "Q1635"
+      },
+      {
+        "address": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:13",
+                  "original_text": "Am Schwarzenberg-Campus 1 (A), Hamburg, 21073, Germany",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "city_name": "Hamburg",
+                "country_name": "Germany",
+                "country_qid": "Q183",
+                "formatted": {
+                  "language": "en",
+                  "text": "Am Schwarzenberg-Campus 1 (A), Hamburg, 21073, Germany"
+                },
+                "postal_code": "21073",
+                "street": "Am Schwarzenberg-Campus 1 (A)"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "campus",
+        "kind": "campus",
+        "name": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Campus",
+                  "original_text": "Hamburg University of Technology is for the most part contained in a single campus",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "TUHH campus"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      {
+        "id": "hq",
+        "kind": "headquarters",
+        "name": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P159:0",
+                  "original_text": "headquarters location",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "Hamburg"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "qid": "Q1055"
+      },
+      {
+        "coordinates": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "statement:Q1060$e97e12e1-463f-982b-9246-2586c1cc4486",
+                  "original_text": "\"latitude\": 53.460958333333",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "source_rank": "normal",
+              "value": {
+                "crs": "EPSG:4326",
+                "globe_qid": "Q2",
+                "latitude": 53.460958333333,
+                "longitude": 9.9695055555556,
+                "source_precision_degrees": 2.7777777777778e-06
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "wikidata-item-location",
+        "kind": "institution",
+        "qid": "Q1060"
+      }
+    ],
+    "population": {
+      "academic_staff": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "infobox:10",
+                "original_text": "Academic staff: 802",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "period_status": "not_stated",
+            "value": {
+              "amount": 802,
+              "basis": "headcount",
+              "precision": "exact"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "qualifications": [
+            "period_not_stated",
+            "single_source_family"
+          ],
+          "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+          "reason_code": "only_available"
+        }
+      },
+      "employees_total": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "infobox:11",
+                "original_text": "Total staff: 1410",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "period_status": "not_stated",
+            "value": {
+              "amount": 1410,
+              "basis": "headcount",
+              "precision": "exact"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "qualifications": [
+            "period_not_stated",
+            "single_source_family"
+          ],
+          "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+          "reason_code": "only_available"
+        }
+      },
+      "students_total": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "infobox:12",
+                "original_text": "Students: 7,383",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "period_status": "not_stated",
+            "value": {
+              "amount": 7383,
+              "basis": "headcount",
+              "precision": "exact"
+            },
+            "verification": "supported"
+          },
+          {
+            "evidence": [
+              {
+                "locator": "claim:P2196:24",
+                "original_text": "+7223",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c2",
+            "period": {
+              "kind": "calendar_year",
+              "year": 2023
+            },
+            "period_status": "stated",
+            "value": {
+              "amount": 7223,
+              "basis": "headcount",
+              "precision": "exact"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "qualifications": [
+            "period_not_stated",
+            "single_source_family"
+          ],
+          "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+          "reason_code": "best_available"
+        }
+      }
+    },
+    "profile": {
+      "academic_focus": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Interdisciplinary_Studies",
+                "original_text": "Research is divided into six interdisciplinary research departments",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": [
+              {
+                "language": "en",
+                "text": "Systems Engineering"
+              },
+              {
+                "language": "en",
+                "text": "Civil Engineering and Marine Technology"
+              },
+              {
+                "language": "en",
+                "text": "Information and Communication Technology"
+              },
+              {
+                "language": "en",
+                "text": "Materials, Design, Manufacturing"
+              },
+              {
+                "language": "en",
+                "text": "Processing Technology and Energy Systems"
+              }
+            ],
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "motto": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "infobox:2",
+                "original_text": "Technik für die Menschen",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "de",
+              "text": "Technik für die Menschen"
+            },
+            "verification": "supported"
+          },
+          {
+            "evidence": [
+              {
+                "locator": "infobox:3",
+                "original_text": "Technology for Humanity",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c2",
+            "value": {
+              "language": "en",
+              "text": "Technology for Humanity"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+          "reason_code": "best_available"
+        }
+      },
+      "website": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P856:0",
+                "original_text": "https://www.tuhh.de/",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": "https://www.tuhh.de/",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    "qid": "Q1060",
+    "record_revision": 1,
+    "schema_version": "0.2.2",
+    "seed": {
+      "channels": [
+        "ranking_identifier",
+        "reviewed_institution_type"
+      ],
+      "import_id": "seed-84c3beb45367905f",
+      "screening_status": "included"
+    },
+    "selection_policy": "preferred-v1",
+    "sources": {
+      "s1": {
+        "family": "wikimedia",
+        "kind": "wikidata",
+        "publisher_role": "knowledge_base",
+        "retrieved_at": "2026-11-05T11:05:01.718395+00:00",
+        "revision_id": 2552803228,
+        "source_qid": "Q1060",
+        "url": "https://www.wikidata.org/w/index.php?oldid=2552803228"
+      },
+      "s10": {
+        "family": "wikimedia",
+        "kind": "wikidata",
+        "publisher_role": "knowledge_base",
+        "retrieved_at": "2026-11-05T11:06:14.776647+00:00",
+        "revision_id": 2495281480,
+        "source_qid": "Q58317484",
+        "url": "https://www.wikidata.org/w/index.php?oldid=2495281480"
+      },
+      "s2": {
+        "family": "wikimedia",
+        "kind": "wikipedia",
+        "language": "en",
+        "page_id": 3625803,
+        "publisher_role": "encyclopedia",
+        "retrieved_at": "2026-11-05T11:05:24.724195+00:00",
+        "revision_id": 1370204531,
+        "url": "https://en.wikipedia.org/w/index.php?oldid=1370204531"
+      },
+      "s3": {
+        "family": "wikimedia",
+        "kind": "wikipedia",
+        "language": "de",
+        "page_id": 316239,
+        "publisher_role": "encyclopedia",
+        "retrieved_at": "2026-11-05T11:05:33.421164+00:00",
+        "revision_id": 271829217,
+        "url": "https://de.wikipedia.org/w/index.php?oldid=271829217"
+      },
+      "s4": {
+        "family": "wikimedia",
+        "kind": "wikidata",
+        "publisher_role": "knowledge_base",
+        "retrieved_at": "2026-11-05T11:05:39.160594+00:00",
+        "revision_id": 2553301690,
+        "source_qid": "Q1371037",
+        "url": "https://www.wikidata.org/w/index.php?oldid=2553301690"
+      },
+      "s5": {
+        "family": "wikimedia",
+        "kind": "wikidata",
+        "publisher_role": "knowledge_base",
+        "retrieved_at": "2026-11-05T10:53:44.088820+00:00",
+        "revision_id": 2559546120,
+        "source_qid": "Q875538",
+        "url": "https://www.wikidata.org/w/index.php?oldid=2559546120"
+      },
+      "s6": {
+        "family": "wikimedia",
+        "kind": "wikidata",
+        "publisher_role": "knowledge_base",
+        "retrieved_at": "2026-11-05T11:05:46.165421+00:00",
+        "revision_id": 2564285072,
+        "source_qid": "Q183",
+        "url": "https://www.wikidata.org/w/index.php?oldid=2564285072"
+      },
+      "s7": {
+        "family": "wikimedia",
+        "kind": "wikidata",
+        "publisher_role": "knowledge_base",
+        "retrieved_at": "2026-11-05T11:05:53.324648+00:00",
+        "revision_id": 2563917162,
+        "source_qid": "Q1635",
+        "url": "https://www.wikidata.org/w/index.php?oldid=2563917162"
+      },
+      "s8": {
+        "family": "wikimedia",
+        "kind": "wikidata",
+        "publisher_role": "knowledge_base",
+        "retrieved_at": "2026-11-05T11:05:59.721335+00:00",
+        "revision_id": 2564763313,
+        "source_qid": "Q1055",
+        "url": "https://www.wikidata.org/w/index.php?oldid=2564763313"
+      },
+      "s9": {
+        "family": "wikimedia",
+        "kind": "wikidata",
+        "publisher_role": "knowledge_base",
+        "retrieved_at": "2026-11-05T11:06:06.868654+00:00",
+        "revision_id": 2533490485,
+        "source_qid": "Q48185658",
+        "url": "https://www.wikidata.org/w/index.php?oldid=2533490485"
+      }
+    }
+  },
+  "open_requests": [],
+  "proposed_at": "2026-11-05T11:10:10.410423+00:00",
+  "qid": "Q1060",
+  "research": {
+    "model": "not_reported",
+    "prompt_sha256": "c22726a6444d8f696d5cd6bed24b927b582fa3cce7c22cd7d723616a1fd0e3ee",
+    "reasoning_effort": "not_reported",
+    "schema_sha256": "92e942f4fbf2ae28964462ea9ffa8312c5ee16a077a1e08b40aaaf741512422e",
+    "session": "research_q1060"
+  },
+  "retrieval_failures": [],
+  "review_status": "unreviewed",
+  "seed": {
+    "channels": [
+      "ranking_identifier",
+      "reviewed_institution_type"
+    ],
+    "import_id": "seed-84c3beb45367905f",
+    "screening_status": "included"
+  },
+  "transport": {
+    "base_commit": "6cee3b29e87d5d00146fd8c4c788035dcc84b2ae",
+    "protocol": "native-subagent-v1",
+    "repository": "ider-zh/university-seed-curation",
+    "review_policy": {
+      "id": "source-grounded-flexible-v2",
+      "sha256": "b8ed7d2897e4c31dbd81b1379aafdc1077a21d1a33949edbd2d896b0adf99db2"
+    },
+    "schema_sha256": "bfa496eafa9dffca56146214168db7f000b09161b8993129632e7202e1c88833",
+    "seed_catalog_sha256": "84c3beb45367905f513d650684283dd62a9c1b77962bdc34151a6ef05bfa03d4"
+  },
+  "type": "university-proposal-v1"
+}
