@@ -173,7 +173,7 @@ def initial(seed, import_id):
 def proposal(current, changes, allowed_groups=GROUPS):
     """Apply a compact research diff privately; never overwrite the current record."""
     if current.get("schema_version") != "0.1.0":
-        raise ValueError("Domain v0.2 diff/review bridge requires schema acceptance; validation and examples are available")
+        raise ValueError("Domain v0.2 incremental updates are not implemented; the initial-import export adapter cannot overwrite records")
     allowed = {"identity_status", "new_sources", "new_claims", "withdraw_claim_ids", "coverage"}
     if not isinstance(changes, dict) or not set(changes) <= allowed: raise ValueError("Unknown proposal operation")
     result = deepcopy(current); fields = contracts()[1]

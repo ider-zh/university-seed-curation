@@ -60,8 +60,9 @@ private state path. Do not create an independent copy of the queue per subagent.
 For domain Schema v0.2 inspect `docs/schema-v0.2.md` and the full synthetic example.
 Keep candidates; use preferred even for single-source/undated facts, disclose
 missing period and unresolved conflicts. Do not invent years or require a second
-source merely to allow a usable Wikipedia value. v0.2 domain mutation is pending
-schema acceptance; do not send v0.1 claims operations to v0.2 records.
+source merely to allow a usable Wikipedia value. v0.2 incremental domain mutation is not yet implemented; do not send v0.1 claims
+operations to v0.2 records. The bounded initial-pilot import uses the export
+adapter below and cannot overwrite an existing university.
 
 `scripts/maintain_schema.py check` checks the generated contract. `propose-field`
 stages a definition for a separate schema PR; it never activates a new field.
@@ -75,10 +76,13 @@ Never create/update a school file by hand or copy null placeholders into it.
 ## Current implementation boundary
 
 Offline lease/data primitives and online Wikidata/Wikipedia helpers are implemented.
-Actual host subagent dispatch, other source adapters, authenticated review-session provenance, signed public receipts,
-PR construction and protected auto-merge require the rollout verification.
-`pr-build` fails closed until trusted public export is configured. Do not claim
-production Research/Review or bypass this boundary by publishing private files.
+The private Terra pilot and signed initial-import export adapter are implemented.
+Production task dispatch, arbitrary domain updates, other source adapters,
+provider-authenticated model provenance, formal GitHub reviewer identity and
+protected auto-merge still require rollout verification. Read
+`docs/reviewed-pr-export.md`: `pr-build` prepares only a private preview; `pr-stage`
+and base-trusted CI reject unaccepted data. The trust/workflow code must be merged
+before real data staging. Never bypass these gates by copying private files.
 
 ## Online sources: portable common commands
 
@@ -129,3 +133,16 @@ opening as valid_from and leader inauguration year as term_start. Keep original
 wording and record the inference basis. Wrong subjects, values/units, fabricated
 facts and unsupported legal independence remain errors. Bounded coverage gaps
 are reported rather than demanding an exhaustive article transcription.
+
+## Observable reviewed-data PR preparation
+
+Use `pr-key-init`, `pr-build`, `pr-stage` and `pr-validate` as documented in
+`docs/reviewed-pr-export.md`. An initial data batch requires explicit human
+acceptance of its content scope. Do not treat a code PR merge as acceptance of
+school data. `pr-record-acceptance` is an operator procedure: an agent may invoke
+it only after an explicit operator instruction accepting that reviewed data.
+
+Keep keys and original traces out of subagent inputs. The signature proves the
+local coordinator's attestation, not provider-signed model provenance or an
+independently authenticated human identity. A same-account GitHub comment must
+not be presented as a second GitHub account's formal approval.

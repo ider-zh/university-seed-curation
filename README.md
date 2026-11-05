@@ -1,14 +1,15 @@
 # University Seed Curation
 
 Agent collaboration for a traceable list of global present and historical
-higher-education institutions. Research uses local Wikidata, revision-bound
+higher-education institutions. Research uses online Wikidata, revision-bound
 Wikipedia and supporting websites. Each university has one JSON record, edited
 through scripts and delivered in small GitHub PRs after independent review.
 
-**Status:** initialization design, offline workflow primitives, and verified
-online Wikidata/Wikipedia source helpers. Domain Schema v0.2 and its complete
-synthetic example are for review. Public seed import, production agent execution
-and automatic merge are not enabled.
+**Status:** verified online source helpers, a real private Terra Research/Review
+pilot, and signed initial-import PR preparation with a base-trusted data validator.
+First public data import requires explicit operator acceptance and the integration
+workflow on main. Incremental v0.2 updates, production task dispatch and automatic
+merge are not enabled.
 
 - [Design and confirmed decisions](docs/design.md)
 - [Research / Review contract](docs/agent-workflow.md)
@@ -19,6 +20,8 @@ and automatic merge are not enabled.
 - [Batch and integration contract](docs/batch-workflows.md)
 - [Implementation boundaries and rollout](docs/rollout.md)
 - [Implemented offline commands](docs/commands.md)
+- [Reviewed data PR export](docs/reviewed-pr-export.md)
+- [Current handoff and next steps](docs/handoff.md)
 - [Built-in skill](.agents/skills/university-curation/SKILL.md)
 
 The initial source contains 39,489 university candidates, with 64,667 legacy-only

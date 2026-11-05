@@ -80,5 +80,6 @@ python scripts/curate.py validate examples/university.complete.synthetic.json
 ```
 
 Schema/示例生成及 v0.2 校验已实现，示例不能通过 create 进入正式学校目录。
-v0.1 的数据更新与任务逻辑保持兼容。v0.2 领域 diff/逐项 Review 应用桥在 Schema
-验收后接入；目前会明确拒绝用 v0.1 claims 操作冒充领域更新，不隐式迁移旧数据。
+v0.1 的数据更新与任务逻辑保持兼容。v0.2 初始试跑导出已有独立签名与验收桥，
+见 `docs/reviewed-pr-export.md`；通用增量 diff 尚未实现，仍明确拒绝用 v0.1 claims
+操作冒充领域更新，不隐式迁移旧数据或覆盖现有学校。
