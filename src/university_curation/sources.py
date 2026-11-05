@@ -13,6 +13,7 @@ from urllib.parse import urlencode, urljoin
 from urllib.request import Request, urlopen
 
 from .records import qid, instant
+from .cache_lock import request_lock
 
 USER_AGENT = "UniversitySeedCuration/0.2 (https://github.com/ider-zh/university-seed-curation)"
 
@@ -39,8 +40,8 @@ def language(value):
 
 
 class Cache:
-    def __init__(self, directory=".private/cache/sources", fetch=download, now=lambda: datetime.now(timezone.utc), ttl_days=30, maxlag=5):
-        self.directory = Path(directory).resolve()
+    def __init__(self, directory=None, fetch=download, now=lambda: datetime.now(timezone.utc), ttl_days=30, maxlag=5):
+        self.directory = Path(directory or os.environ.get("UNIVERSITY_SOURCE_CACHE", ".private/cache/sources")).resolve()
         if ".private" not in self.directory.parts: raise ValueError("Raw source caches must be stored in a .private directory")
         if ttl_days <= 0: raise ValueError("Positive cache TTL required")
         if not 1 <= maxlag <= 60: raise ValueError("maxlag must be between 1 and 60 seconds")
@@ -65,23 +66,24 @@ class Cache:
         params = {**parameters, "format": "json", "formatversion": 2, "maxlag": self.maxlag}
         url = endpoint + "?" + urlencode(params)
         key = hashlib.sha256(url.encode()).hexdigest(); path = self.directory / key[:3] / (key + ".json")
-        if path.exists() and not refresh:
-            try:
-                cached = json.loads(path.read_text(encoding="utf-8")); age = self.now() - instant(cached["retrieved_at"])
-                encoded = json.dumps(cached["data"], ensure_ascii=False, sort_keys=True, separators=(",", ":")).encode()
-                if cached["request_url"] == url and timedelta(0) <= age < self.ttl and hashlib.sha256(encoded).hexdigest() == cached["body_sha256"]:
-                    capture = self._capture_path(cached)
-                    if capture.exists() and json.loads(capture.read_text(encoding="utf-8")) == cached:
-                        return cached["data"], {"retrieved_at": cached["retrieved_at"], "from_cache": True, "cache_path": str(capture)}
-            except (ValueError, KeyError, TypeError): pass
-        data = self.fetch(url)
-        if "error" in data: raise ValueError("MediaWiki API error: " + data["error"].get("code", "unknown") + ": " + data["error"].get("info", ""))
-        if not isinstance(data, dict): raise ValueError("API did not return an object")
-        payload = {"request_url": url, "retrieved_at": self.now().isoformat(), "data": data,
-            "body_sha256": hashlib.sha256(json.dumps(data, ensure_ascii=False, sort_keys=True, separators=(",", ":")).encode()).hexdigest()}
-        capture = self._capture_path(payload)
-        self._write(capture, payload); self._write(path, payload)
-        return data, {"retrieved_at": payload["retrieved_at"], "from_cache": False, "cache_path": str(capture)}
+        with request_lock(self.directory / "locks" / key[:3] / (key + ".lock")):
+            if path.exists() and not refresh:
+                try:
+                    cached = json.loads(path.read_text(encoding="utf-8")); age = self.now() - instant(cached["retrieved_at"])
+                    encoded = json.dumps(cached["data"], ensure_ascii=False, sort_keys=True, separators=(",", ":")).encode()
+                    if cached["request_url"] == url and timedelta(0) <= age < self.ttl and hashlib.sha256(encoded).hexdigest() == cached["body_sha256"]:
+                        capture = self._capture_path(cached)
+                        if capture.exists() and json.loads(capture.read_text(encoding="utf-8")) == cached:
+                            return cached["data"], {"retrieved_at": cached["retrieved_at"], "from_cache": True, "cache_path": str(capture)}
+                except (ValueError, KeyError, TypeError): pass
+            data = self.fetch(url)
+            if "error" in data: raise ValueError("MediaWiki API error: " + data["error"].get("code", "unknown") + ": " + data["error"].get("info", ""))
+            if not isinstance(data, dict): raise ValueError("API did not return an object")
+            payload = {"request_url": url, "retrieved_at": self.now().isoformat(), "data": data,
+                "body_sha256": hashlib.sha256(json.dumps(data, ensure_ascii=False, sort_keys=True, separators=(",", ":")).encode()).hexdigest()}
+            capture = self._capture_path(payload)
+            self._write(capture, payload); self._write(path, payload)
+            return data, {"retrieved_at": payload["retrieved_at"], "from_cache": False, "cache_path": str(capture)}
 
     def entity(self, entity_id, refresh=False):
         entity_id = qid(entity_id)
@@ -91,6 +93,23 @@ class Cache:
         if entity is None and len(items) == 1: entity = next(iter(items.values()))
         if not entity or "missing" in entity: raise ValueError("Wikidata entity not found")
         if type(entity.get("lastrevid")) is not int or entity["lastrevid"] <= 0: raise ValueError("Entity revision missing")
+        return entity, meta
+
+    def entity_revision(self, entity_id, revision_id, refresh=False):
+        """Independently re-fetch the exact entity JSON used by a cited revision."""
+        entity_id = qid(entity_id)
+        if type(revision_id) is not int or revision_id <= 0: raise ValueError("Positive entity revision required")
+        data, meta = self.request("https://www.wikidata.org/w/api.php", {
+            "action": "query", "prop": "revisions", "revids": revision_id, "rvprop": "ids|content", "rvslots": "main"}, refresh)
+        pages = data.get("query", {}).get("pages", [])
+        if isinstance(pages, dict): pages = list(pages.values())
+        if len(pages) != 1 or pages[0].get("title") != entity_id: raise ValueError("Entity revision belongs to another item")
+        revisions = pages[0].get("revisions", [])
+        if len(revisions) != 1 or revisions[0].get("revid") != revision_id: raise ValueError("Entity revision mismatch")
+        slot = revisions[0].get("slots", {}).get("main", {})
+        entity = json.loads(slot.get("content", slot.get("*", "")))
+        if entity.get("id") != entity_id: raise ValueError("Entity JSON identity mismatch")
+        entity["lastrevid"] = revision_id
         return entity, meta
 
     def wikidata_get(self, entity_id, properties=(), languages=("en", "zh"), resolve=(), limit=12, refresh=False):

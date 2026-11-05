@@ -102,7 +102,8 @@ def main():
         return
     from university_curation.schema_v02 import schema as schema_v02
     payloads = {fields_path: initial_fields(), schema_path: record_schema(),
-                ROOT / "schemas" / "university.v0.2.schema.json": schema_v02()}
+                ROOT / "schemas" / "university.v0.2.schema.json": schema_v02(),
+                ROOT / "schemas" / "university.v0.2.1.schema.json": schema_v02("0.2.1")}
     for path, value in payloads.items():
         if "$schema" in value:
             import jsonschema

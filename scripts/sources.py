@@ -1,6 +1,7 @@
 """Online Wikidata query and Wikipedia page-get entry point for the built-in skill."""
 import argparse
 import json
+import os
 from pathlib import Path
 import sys
 
@@ -10,7 +11,7 @@ from university_curation.sources import Cache
 
 def main():
     if hasattr(sys.stdout, "reconfigure"): sys.stdout.reconfigure(encoding="utf-8")
-    p = argparse.ArgumentParser(description=__doc__); p.add_argument("--cache", default=".private/cache/sources")
+    p = argparse.ArgumentParser(description=__doc__); p.add_argument("--cache", default=os.environ.get("UNIVERSITY_SOURCE_CACHE", ".private/cache/sources"))
     p.add_argument("--maxlag", type=int, default=5, help="API replication-lag tolerance in seconds, 1..60; default 5")
     commands = p.add_subparsers(dest="command", required=True)
     get = commands.add_parser("wikidata-get"); get.add_argument("qid"); get.add_argument("--properties", nargs="*", default=[])

@@ -29,6 +29,14 @@ Read `docs/design.md`, your role in `docs/agent-workflow.md`, and the built-in
   not attribute faculty/campus values to the whole institution or use retrieval
   time as a measurement year. Keep conflicting observations; do not silently
   replace them or collapse distinct historical events.
+- For the operator-authorized private trial, apply `docs/review-policy-v2.md`:
+  allow grounded concept adaptation and reasonable inference. Campus opening
+  may be valid_from; leader inauguration year may be term_start. Retain source
+  wording and explain inferred values. Bounded optional-field omissions are
+  coverage limits, not automatic rejection of supported records. Wrong subjects,
+  numbers, currencies, fabricated facts and unsupported legal independence still
+  fail. Agents may request necessary linked Wikidata items through the shared
+  source cache, including currency QIDs; never guess a missing unit.
 - Only independently approved record changes reach a data PR. Failed schools
   are removed from the batch and returned for revision. GitHub cannot partially
   merge a PR. Validate current base revisions immediately before merge.

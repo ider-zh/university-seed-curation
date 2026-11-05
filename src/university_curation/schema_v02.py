@@ -79,7 +79,8 @@ def field(value, quantitative=False):
     return obj({"subject_ref": TEXT, "candidates": array(candidate), "preferred": preferred, "conflicts": array(conflict)}, ("candidates",))
 
 
-def schema():
+def schema(version=VERSION):
+    if version not in ("0.2.0", "0.2.1"): raise ValueError("Unsupported domain schema version")
     local_text = obj({"text": TEXT, "language": TEXT}, ("text", "language"))
     count = obj({"amount": {"type": "number", "minimum": 0}, "minimum": {"type": "number", "minimum": 0},
         "maximum": {"type": "number", "minimum": 0}, "basis": {"enum": ["headcount", "fte", "unspecified"]},
@@ -97,6 +98,8 @@ def schema():
         "precision": {"enum": ["day", "month", "year", "decade", "century", "interval", "uncertain"]},
         "approximate": {"type": "boolean"}, "calendar": TEXT, "original_date": TEXT}, ("precision",))
     date["anyOf"] = [{"required": ["year"]}, {"required": ["date"]}, {"required": ["minimum_year", "maximum_year"]}, {"required": ["original_date"]}]
+    if version == "0.2.1":
+        date["properties"].update({"month": {"type": "integer", "minimum": 1, "maximum": 12}, "day": {"type": "integer", "minimum": 1, "maximum": 31}})
     source = obj({"kind": {"enum": ["wikidata", "wikipedia", "website", "dataset"]},
         "url": {"type": "string", "format": "uri", "pattern": "^https?://"},
         "publisher_role": {"enum": ["institution_official", "government", "academic_publisher", "encyclopedia", "knowledge_base", "other"]},
@@ -110,8 +113,10 @@ def schema():
             "anyOf": [{"required": ["snapshot_id"]}, {"required": ["retrieved_at"]}]}},
         {"if": {"properties": {"kind": {"const": "website"}}}, "then": {"required": ["retrieved_at"]}},
         {"if": {"properties": {"kind": {"const": "dataset"}}}, "then": {"required": ["dataset_version", "source_record_id"]}}]
-    population = obj({name: field(count, True) for name in ("students_total", "undergraduate_students", "postgraduate_students", "masters_students", "doctoral_students",
-        "international_students", "teaching_staff", "research_staff", "academic_staff", "administrative_staff", "employees_total")})
+    population_names = ["students_total", "undergraduate_students", "postgraduate_students", "masters_students", "doctoral_students",
+        "international_students", "teaching_staff", "research_staff", "academic_staff", "administrative_staff", "employees_total"]
+    if version == "0.2.1": population_names.append("students_intake")
+    population = obj({name: field(count, True) for name in population_names})
     finance = obj({name: field(money, True) for name in ("endowment", "budget", "revenue", "expenses", "assets", "research_funding")})
     names = {"type": "object", "patternProperties": {"^[a-z]{2,3}(?:-[a-z0-9]+)*$": field(TEXT)}, "additionalProperties": False}
     identity = obj({"names": names, "aliases": array(field(local_text)),
@@ -127,12 +132,17 @@ def schema():
     location = obj({"id": LOCAL, "kind": {"enum": ["campus", "administrative_area", "office"]}, "qid": QID,
         "name": field(local_text), "address": field(address), "coordinates": field(coordinates),
         "valid_from": field(date), "valid_to": field(date), "population": population}, ("id", "kind"))
-    milestone = obj({"id": LOCAL, "kind": {"enum": ["predecessor_establishment", "vocational_origin", "institution_establishment", "higher_education_status", "university_status",
-        "charter", "rename", "relocation", "merger", "split", "closure", "reopening", "jurisdiction_change"]},
+    if version == "0.2.1": location["properties"]["kind"]["enum"].append("headquarters")
+    milestone_kinds = ["predecessor_establishment", "vocational_origin", "institution_establishment", "higher_education_status", "university_status",
+        "charter", "rename", "relocation", "merger", "split", "closure", "reopening", "jurisdiction_change"]
+    if version == "0.2.1": milestone_kinds += ["campus_opening", "teaching_start", "cooperation_agreement", "construction_completion"]
+    milestone = obj({"id": LOCAL, "kind": {"enum": milestone_kinds},
         "subject_ref": TEXT, "date": field(date), "description": field(local_text)}, ("id", "kind", "subject_ref", "date"))
     appointment = obj({"person": obj({"name": TEXT, "qid": QID}, ("name",)), "title_original": local_text,
         "term_start": date, "term_end": date, "acting": {"type": "boolean"}}, ("person", "title_original"))
-    leadership = obj({role: field(appointment) for role in ("president", "rector", "vice_chancellor", "chancellor", "board_chair")})
+    roles = ["president", "rector", "vice_chancellor", "chancellor", "board_chair"]
+    if version == "0.2.1": roles += ["provost", "chair"]
+    leadership = obj({role: field(appointment) for role in roles})
     url = {"type": "string", "format": "uri", "pattern": "^https?://"}
     profile = obj({"website": field(url), "main_image_url": field(url), "logo_url": field(url),
         "summary": field(local_text), "motto": field(local_text), "teaching_languages": field(array(TEXT)), "degree_levels": field(array(TEXT)), "academic_focus": field(array(local_text))})
@@ -141,7 +151,7 @@ def schema():
     relationships = obj({kind: array(field(obj({"target_ref": TEXT, "valid_from": date, "valid_to": date,
         "independence": {"enum": ["explicit_legal", "explicit_administrative", "unresolved"]}}, ("target_ref",))))
         for kind in ("parent", "member_of", "predecessor", "successor", "legal_successor", "campus", "faculty", "possible_duplicate")})
-    result = obj({"schema_version": {"const": VERSION}, "qid": QID, "record_revision": {"type": "integer", "minimum": 1},
+    result = obj({"schema_version": {"const": version}, "qid": QID, "record_revision": {"type": "integer", "minimum": 1},
         "update_datetime": STAMP, "modified_datetime": STAMP, "selection_policy": {"const": "preferred-v1"},
         "example": obj({"synthetic": {"const": True}, "notice": TEXT}, ("synthetic", "notice")),
         "curation": obj({"identity_status": {"enum": ["pending", "in_scope", "related", "excluded", "needs_review", "conflation_suspected"]},
@@ -155,6 +165,16 @@ def schema():
         "coverage": {"type": "object", "additionalProperties": obj({"status": {"enum": ["checked", "not_found", "not_applicable", "disputed"]},
             "checked_at": STAMP}, ("status", "checked_at"))}},
         ("schema_version", "qid", "record_revision", "curation", "seed", "selection_policy"))
-    result.update({"$schema": "https://json-schema.org/draft/2020-12/schema", "$id": "urn:university-curation:record:0.2.0",
-                   "title": "University domain record with preferred candidates, draft 0.2.0"})
+    result.update({"$schema": "https://json-schema.org/draft/2020-12/schema", "$id": "urn:university-curation:record:" + version,
+                   "title": "University domain record with preferred candidates, draft " + version})
+    if version == "0.2.1":
+        def partial_period_dates(node):
+            if isinstance(node, dict):
+                properties = node.get("properties", {})
+                if "calendar_year" in properties.get("kind", {}).get("enum", []):
+                    properties.update({"month": {"type": "integer", "minimum": 1, "maximum": 12}, "day": {"type": "integer", "minimum": 1, "maximum": 31}})
+                for value in node.values(): partial_period_dates(value)
+            elif isinstance(node, list):
+                for value in node: partial_period_dates(value)
+        partial_period_dates(result)
     return factor_schema(result)

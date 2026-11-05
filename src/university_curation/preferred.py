@@ -19,7 +19,7 @@ def fields(record):
             if "candidates" in node:
                 yield path, node, subject
                 return
-            if "id" in node and node.get("kind") in ("campus", "administrative_area", "office"):
+            if "id" in node and node.get("kind") in ("campus", "administrative_area", "office", "headquarters"):
                 subject = "location:" + node["id"]
             if "date" in node and "subject_ref" in node and "kind" in node:
                 subject = node["subject_ref"]
@@ -109,10 +109,10 @@ def recompute(record):
     return result
 
 
-@lru_cache(maxsize=1)
-def validator():
+@lru_cache(maxsize=2)
+def validator(version="0.2.0"):
     import jsonschema
-    return jsonschema.Draft202012Validator(schema(), format_checker=jsonschema.FormatChecker())
+    return jsonschema.Draft202012Validator(schema(version), format_checker=jsonschema.FormatChecker())
 
 
 def validate(record):
@@ -124,7 +124,7 @@ def validate(record):
             for value in node.values(): clean(value)
         elif isinstance(node, list):
             for value in node: clean(value)
-    clean(record); validator().validate(record)
+    clean(record); validator(record.get("schema_version", "0.2.0")).validate(record)
     sources = record.get("sources", {}); subjects = {"institution"}
     location_ids = [loc["id"] for loc in record.get("locations", [])]
     if len(location_ids) != len(set(location_ids)): raise ValueError("Duplicate location ID")

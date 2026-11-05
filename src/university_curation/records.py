@@ -58,7 +58,7 @@ def contracts():
 
 
 def validate(record):
-    if record.get("schema_version") == "0.2.0":
+    if record.get("schema_version") in ("0.2.0", "0.2.1"):
         from .preferred import validate as validate_v02
         return validate_v02(record)
     validator, fields, value_validators = contracts()

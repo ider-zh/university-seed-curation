@@ -3,6 +3,7 @@ import json
 from pathlib import Path
 import sys
 import tempfile
+import subprocess
 from urllib.parse import parse_qs, urlparse
 import unittest
 
@@ -14,6 +15,47 @@ HTML = '<table class="infobox"><tr><th>President</th><td>Dr. Example</td></tr><t
 
 
 class SourceTests(unittest.TestCase):
+    def test_three_processes_share_one_cache_miss(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            private = Path(tmp) / ".private/cache"
+            calls = Path(tmp) / "calls.txt"
+            gate = Path(tmp) / "start"
+            code = '''import sys,time
+from pathlib import Path
+sys.path.insert(0,sys.argv[1])
+from university_curation.sources import Cache
+def fetch(url):
+    with Path(sys.argv[3]).open("a") as stream: stream.write("fetch\\n")
+    time.sleep(.15)
+    return {"entities":{"Q101":{"id":"Q101","lastrevid":7,"claims":{}}}}
+while not Path(sys.argv[4]).exists(): time.sleep(.01)
+entity,meta=Cache(sys.argv[2],fetch).entity("Q101")
+assert entity["lastrevid"]==7
+'''
+            args = [sys.executable, "-c", code, str(Path(__file__).resolve().parents[1] / "src"), str(private), str(calls), str(gate)]
+            workers = [subprocess.Popen(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE) for _ in range(3)]
+            gate.touch()
+            for worker in workers:
+                out, err = worker.communicate(timeout=20)
+                self.assertEqual(worker.returncode, 0, err.decode(errors="replace"))
+            self.assertEqual(calls.read_text().splitlines(), ["fetch"])
+
+    def test_review_entity_revision_rejects_wrong_qid_or_revision(self):
+        response = {"query": {"pages": [{"title": "Q101", "revisions": [{"revid": 7,
+            "slots": {"main": {"content": json.dumps({"id": "Q101", "claims": {}})}}}]}]}}
+        def fetch(url):
+            args = parse_qs(urlparse(url).query)
+            self.assertEqual(args["revids"], ["7"])
+            self.assertEqual(args["rvprop"], ["ids|content"])
+            return response
+        with tempfile.TemporaryDirectory() as tmp:
+            cache = Cache(Path(tmp) / ".private/review", fetch)
+            entity, _ = cache.entity_revision("Q101", 7)
+            self.assertEqual(entity["lastrevid"], 7)
+            with self.assertRaises(ValueError): cache.entity_revision("Q102", 7)
+            response["query"]["pages"][0]["revisions"][0]["revid"] = 8
+            with self.assertRaises(ValueError): cache.entity_revision("Q101", 7, refresh=True)
+
     def test_single_response_revision_cache_ttl_and_immutable_captures(self):
         now = [datetime(2026, 11, 5, tzinfo=timezone.utc)]; calls = []
         def fetch(url):

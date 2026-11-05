@@ -54,3 +54,16 @@ oldid 固定文章 revision，但模板渲染可能变化；实际观察的响�
 
 协议参考：[Wikidata wbgetentities](https://www.wikidata.org/w/api.php?action=help&modules=wbgetentities)、
 [MediaWiki parse](https://www.mediawiki.org/wiki/API:Parsing_wikitext)。
+
+## Shared cache across agent workspaces
+
+Use `UNIVERSITY_SOURCE_CACHE` or global `--cache ABSOLUTE_PATH` for the same private
+cache in every worker. Same-key requests are serialized with an OS file lock and
+recheck the 30-day cache after acquiring the lock; different keys remain parallel.
+A failed process releases its OS lock automatically. This is a local-filesystem
+sharing design, not a distributed lock for an arbitrary network filesystem.
+
+Money-unit QIDs may be looked up on demand: `wikidata-get Q4917 --properties P498`.
+Retain the resolved entity's revision and ISO-code claim when present; do not guess
+an ISO currency from the institution country. Review's revision-bound retrieval
+is tracked separately from Research's shared latest-entity lookup.

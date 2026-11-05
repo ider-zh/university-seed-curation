@@ -98,3 +98,34 @@ a cited article revision. Preserve returned page/revision IDs, observation time,
 URL and locator. Original statements/references and page HTML/wikitext stay in
 immutable private captures. Never commit raw cache files, put raw pages in a PR,
 or treat mechanical infobox parsing as independent fact verification.
+
+## Shared linked-item lookup and flexible Review (private pilot)
+
+Research agents may query necessary linked Wikidata items, including quantity-unit
+QIDs, using the same source script. Never guess a currency from its QID or an
+ambiguous symbol. Resolve the item and retain its revision; request P498 for the
+ISO 4217 code where available:
+
+```text
+python scripts/sources.py --cache ABSOLUTE_PRIVATE_CACHE wikidata-get Q4917 --properties P498 --languages en zh
+```
+
+All workspaces must use the same explicit absolute `--cache` path, or set
+`UNIVERSITY_SOURCE_CACHE` to that path. The path must contain a `.private` directory.
+The 30-day cache uses per-request cross-process OS locks and atomic captures: three
+workers requesting one missing item share one retrieval. Unrelated requests can
+proceed independently. Do not cache credentials or publish original captures.
+
+The sealed pilot transport also supports bounded `source_requests`; the manager
+executes the lookup through the same cache and returns source evidence, without
+letting a source request turn into arbitrary tool execution. Unit and linked-item
+lookup is on demand; do not recursively crawl the entity graph. Review retrieves
+cited entity revisions independently; a shared Research cache is not additional
+independent factual corroboration.
+
+Read `docs/review-policy-v2.md` for the operator-authorized private pilot policy.
+Allow grounded concept adaptation and reasonable inference, including campus
+opening as valid_from and leader inauguration year as term_start. Keep original
+wording and record the inference basis. Wrong subjects, values/units, fabricated
+facts and unsupported legal independence remain errors. Bounded coverage gaps
+are reported rather than demanding an exhaustive article transcription.
