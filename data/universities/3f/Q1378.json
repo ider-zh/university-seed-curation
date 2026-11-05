@@ -1,0 +1,718 @@
+{
+  "coverage": {
+    "finance": {
+      "checked_at": "2026-11-05T13:33:19.302361+00:00",
+      "status": "not_found"
+    },
+    "geography": {
+      "checked_at": "2026-11-05T13:33:19.302361+00:00",
+      "status": "checked"
+    },
+    "history": {
+      "checked_at": "2026-11-05T13:33:19.302361+00:00",
+      "status": "checked"
+    },
+    "identity": {
+      "checked_at": "2026-11-05T13:33:19.302361+00:00",
+      "status": "checked"
+    },
+    "population": {
+      "checked_at": "2026-11-05T13:33:19.302361+00:00",
+      "status": "checked"
+    },
+    "profile": {
+      "checked_at": "2026-11-05T13:33:19.302361+00:00",
+      "status": "checked"
+    }
+  },
+  "curation": {
+    "identity_status": "in_scope"
+  },
+  "history": {
+    "milestones": [
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:History",
+                  "original_text": "roots reach back to 1859",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Zgodovina",
+                  "original_text": "segajo v leto 1859",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "precision": "year",
+                "year": 1859
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:History",
+                  "original_text": "a theological seminary was established with the encouragement of Maribor bishop and patriot Anton Martin Slomšek",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "A theological seminary associated with Bishop Anton Martin Slomšek was established; it is described as an institutional precursor, not the foundation of the university itself."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "theological-origin-1859",
+        "kind": "predecessor_establishment",
+        "subject_ref": "institution"
+      },
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Zgodovina",
+                  "original_text": "1961 pa Pedagoška akademija",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "precision": "year",
+                "year": 1961
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Zgodovina",
+                  "original_text": "1961 pa Pedagoška akademija",
+                  "source_ref": "s3"
+                },
+                {
+                  "locator": "section:Zgodovina",
+                  "original_text": "Ustanovljena je bila leta 1975",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "A pedagogical academy was among the predecessor higher-education schools established in Maribor in 1961. This was not the formal establishment of the University of Maribor."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "pedagogical-academy-1961",
+        "kind": "predecessor_establishment",
+        "subject_ref": "related:pedagogical-academy"
+      },
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:History",
+                  "original_text": "opening ceremony occurred on 19 September 1975",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "day": 19,
+                "month": 9,
+                "precision": "day",
+                "year": 1975
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "established in 1975 in Maribor, Slovenia",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:History",
+                  "original_text": "opening ceremony occurred on 19 September 1975",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "The University of Maribor held its opening ceremony in Maribor, Slovenia."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "institution-opening-1975",
+        "kind": "institution_establishment",
+        "subject_ref": "institution"
+      }
+    ]
+  },
+  "identity": {
+    "aliases": [
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P1448:0",
+                "original_text": "Univerza v Mariboru",
+                "source_ref": "s1"
+              },
+              {
+                "locator": "section:lead",
+                "original_text": "Univêrza v Máriboru",
+                "source_ref": "s3"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "sl",
+              "text": "Univerza v Mariboru"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    ],
+    "identifiers": {
+      "P5584": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P5584:0",
+                "original_text": "university-maribor",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": "university-maribor",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "P5586": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P5586:0",
+                "original_text": "university-maribor",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": "university-maribor",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    "kind": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "Slovenia's second-largest university",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": "university",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "names": {
+      "en": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "metadata",
+                "original_text": "University of Maribor",
+                "source_ref": "s1"
+              },
+              {
+                "locator": "section:lead",
+                "original_text": "The University of Maribor",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": "University of Maribor",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    "operating_status": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:.C4.8Clanice_univerze",
+              "original_text": "danes 17 fakultet",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c1",
+          "value": "operating",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "ownership": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "metadata",
+              "original_text": "Slovene public university",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "value": "public",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "locations": [
+    {
+      "coordinates": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "statement:q1378$BE4EC7BF-741C-4D92-9E9F-46CA6F12BE1D",
+                "original_text": "\"latitude\": 46.559444444444",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "source_rank": "normal",
+            "value": {
+              "crs": "EPSG:4326",
+              "globe_qid": "Q2",
+              "latitude": 46.559444444444,
+              "longitude": 15.644444444444,
+              "source_precision_degrees": 0.00027777777777778
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "id": "wikidata-item-location",
+      "kind": "institution",
+      "qid": "Q1378"
+    }
+  ],
+  "modified_datetime": "2026-11-05T13:36:23.110962+00:00",
+  "population": {
+    "employees_total": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P1128:0",
+              "original_text": "+1900",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2020
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 1900,
+            "basis": "headcount",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "single_source_family"
+        ],
+        "reason_code": "only_available"
+      }
+    },
+    "students_total": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:0",
+              "original_text": "+13500",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2020
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 13500,
+            "basis": "headcount",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "single_source_family"
+        ],
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "profile": {
+    "academic_focus": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:Organization",
+              "original_text": "Faculty of Agriculture and Life Sciences",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Organization",
+              "original_text": "Faculty of Arts",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Organization",
+              "original_text": "Faculty of Electrical Engineering and Computer Science",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Organization",
+              "original_text": "Faculty of Economics and Business",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Organization",
+              "original_text": "Faculty of Education",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Organization",
+              "original_text": "Faculty of Law",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Organization",
+              "original_text": "Faculty of Medicine",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Organization",
+              "original_text": "Faculty of Natural Sciences and Mathematics",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Organization",
+              "original_text": "Faculty of Tourism",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": [
+            {
+              "language": "en",
+              "text": "Agriculture, arts, engineering, economics, education, law, medicine, mathematics, tourism and related disciplines"
+            }
+          ],
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "summary": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "established in 1975 in Maribor, Slovenia. It currently has 17 faculties",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:History",
+              "original_text": "roots reach back to 1859",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Organization",
+              "original_text": "The university is divided into 17 faculties",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:.C4.8Clanice_univerze",
+              "original_text": "ostalih 5 pa v drugih slovenskih mestih",
+              "source_ref": "s3"
+            },
+            {
+              "locator": "claim:P2196:0",
+              "original_text": "+13500",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "claim:P1128:0",
+              "original_text": "+1900",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "language": "en",
+            "text": "The University of Maribor (Univerza v Mariboru) is a public university based in Maribor, Slovenia. It is described as the country's second-largest university and comprises 17 faculties. Its academic organization includes faculties in engineering and technology, economics and business, agriculture, law, pedagogy, arts and other disciplines. Some of its faculties are based outside Maribor, reflecting an institutional presence in several Slovenian cities.\n\nThe university was established in 1975, with an opening ceremony held on 19 September of that year. Its history is connected to earlier higher-education initiatives in the region, including a theological seminary established in 1859 with the encouragement of Bishop Anton Martin Slomšek. Other faculties were formed in the late 1950s and early 1960s. These antecedents are part of its historical development, but should not be confused with the university's own establishment date.\n\nThe institution maintains a broad faculty-based teaching structure and a history of university leadership. Wikidata records approximately 13,500 students and 1,900 employees for 2020; these historical figures should not be read as current enrollment or staffing."
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "website": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P856:0",
+              "original_text": "http://www.um.si",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "value": "http://www.um.si",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "qid": "Q1378",
+  "record_revision": 1,
+  "related_entities": {
+    "pedagogical-academy": {
+      "kind": "institution",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Zgodovina",
+                "original_text": "Pedagoška akademija",
+                "source_ref": "s3"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "sl",
+              "text": "Pedagoška akademija"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    }
+  },
+  "schema_version": "0.2.2",
+  "seed": {
+    "channels": [
+      "ranking_identifier",
+      "reviewed_institution_type"
+    ],
+    "import_id": "seed-84c3beb45367905f",
+    "screening_status": "included"
+  },
+  "selection_policy": "preferred-v1",
+  "sources": {
+    "s1": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-05T13:26:14.632827+00:00",
+      "revision_id": 2521612129,
+      "source_qid": "Q1378",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2521612129"
+    },
+    "s2": {
+      "family": "wikimedia",
+      "kind": "wikipedia",
+      "language": "en",
+      "page_id": 167426,
+      "publisher_role": "encyclopedia",
+      "retrieved_at": "2026-11-05T13:26:26.468195+00:00",
+      "revision_id": 1378461479,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1378461479"
+    },
+    "s3": {
+      "family": "wikimedia",
+      "kind": "wikipedia",
+      "language": "sl",
+      "page_id": 27658,
+      "publisher_role": "encyclopedia",
+      "retrieved_at": "2026-11-05T13:26:29.852368+00:00",
+      "revision_id": 6743408,
+      "url": "https://sl.wikipedia.org/w/index.php?oldid=6743408"
+    },
+    "s4": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-05T13:26:32.692703+00:00",
+      "revision_id": 2559546120,
+      "source_qid": "Q875538",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2559546120"
+    },
+    "s5": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-05T13:26:35.568392+00:00",
+      "revision_id": 2523404231,
+      "source_qid": "Q45400320",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2523404231"
+    },
+    "s6": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-05T13:26:38.752232+00:00",
+      "revision_id": 2535466906,
+      "source_qid": "Q96888669",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2535466906"
+    },
+    "s7": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-05T13:26:41.572548+00:00",
+      "revision_id": 2560996195,
+      "source_qid": "Q215",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2560996195"
+    },
+    "s8": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-05T13:26:44.577503+00:00",
+      "revision_id": 2555835790,
+      "source_qid": "Q1010",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2555835790"
+    }
+  }
+}
