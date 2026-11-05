@@ -5,6 +5,7 @@ import hashlib
 import json
 from pathlib import Path
 import shutil
+import subprocess
 import sys
 import zipfile
 
@@ -53,13 +54,24 @@ def finalize(root):
         if not set(outcome["research_sessions"]).isdisjoint(outcome["review_sessions"]): raise ValueError("Self-review")
         audit.append({"qid": case["qid"], "schema_valid": True, "canonical_matches_reviewed_proposal": True,
             "facts_checked": len(mapping), "contexts_checked": len(context_ids), "source_revisions_replayed": len(replays),
-            "coverage": proposal["coverage"], "review_quality_notes": verdict["quality_notes"],
+            "research_declared_coverage": proposal["coverage"], "final_review_coverage": verdict["coverage_checks"], "review_quality_notes": verdict["quality_notes"],
             "source_text_reproduction_warnings": outcome["source_text_reproduction_warnings"], "review_policy": outcome.get("review_policy", "original-strict"), "inferred_facts": outcome.get("inferred_facts", [])})
     quality["review_policy"] = {"version": "source-grounded-flexible-v2", "source": "docs/review-policy-v2.md",
         "inauguration_year_as_term_start_allowed": True, "campus_opening_as_valid_from_allowed": True,
         "original_strict_verdicts_preserved": True, "changes_follow_operator_steering": True}
     interpretations = [{"qid": item["qid"], **fact} for item in quality["per_case"] for fact in item.get("inferred_facts", [])]
     quality["reasonable_inference_annotations"] = interpretations
+    query_logs = []
+    for case in CASES:
+        path = root / "cases" / case["qid"] / "policy-v2/shared-unit-query-log.json"
+        if path.exists():
+            query_logs += [{"qid": case["qid"], **{k: v for k, v in row.items() if k != "cache_path"}} for row in read(path)]
+    quality["shared_unit_lookups"] = query_logs
+    live_check = root / "shared-unit-cache-live-check.json"
+    if live_check.exists():
+        live = read(live_check)
+        quality["shared_cache_live_verification"] = {"first_from_cache": live["first"][0]["from_cache"], "second_from_cache": live["second"][0]["from_cache"], "same_capture": live["same_capture"]}
+    quality["quantitative_facts_recovered_after_unit_resolution"] = sum(row.get("unit_supplement_facts", 0) for row in quality["per_case"])
     quality["limitations"].append("Reasonable concept adaptation is allowed; source wording and inference annotations distinguish it from direct assertions. Some statistical scope qualifiers remain in evidence text rather than normalized fields.")
     save(accepted / "interpretations.json", interpretations)
     quality["deterministic_receipt_audit"] = audit
@@ -99,6 +111,7 @@ def finalize(root):
                     "warning": "Private inspection draft; source-derived values are proposals, not accepted facts. Not part of approved records."})
     save(accepted / "universities.inspection.json", inspection)
     quality["inspection_records"] = len(inspection)
+    quality["approval_checks_apply_to"] = "approved_records_only; unresolved inspection drafts are explicitly excluded"
     save(accepted / "quality_report.json", quality)
     save(accepted / "receipt-audit.json", audit)
     lines = ["# University acceptance pilot", "", f"Approved: {quality['approved_records']}/10. Schema: {PILOT_SCHEMA_VERSION}. Human acceptance pending; publication disabled.", "",
@@ -115,9 +128,25 @@ def finalize(root):
         "- Failed proposals and original sources remain private and are not bundled. Detailed failure reasons and source availability gaps are in quality_report.json."]
     (accepted / "QUALITY_REPORT.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
     shutil.copy2(ROOT / "docs/review-policy-v2.md", accepted / "review-policy-v2.md")
+    chinese = ["# 10 所真实大学试跑验收报告", "",
+        f"已完成结果：{quality['processed_outcomes']}/10；独立 Review 通过：{quality['approved_records']}；未决：{quality['unresolved_records']}。", "",
+        "模型配置为 Terra medium，Research 与 Review 共享最多 3 个模型调用；Review 角色串行、独立会话运行。CLI 接受了指定配置，但未提供后端运行模型名称的独立证明。", "",
+        f"最终通过记录共有 {quality['aggregate_totals']['facts_reviewed']} 条事实、{quality['aggregate_totals']['contexts_reviewed']} 个对象/事件上下文；观察到的峰值模型并发为 {quality['peak_model_concurrency']}。", "",
+        "## 文件", "", "- universities.inspection.json：全部学校的完整检查包，含状态、完整记录和合理推断说明；未通过项明确标为草案。",
+        "- universities.complete.json 与 records/：仅包含通过独立 Review 的正式候选记录。",
+        "- interpretations.json：合理推断的字段、值和理由。",
+        "- quality_report.json：逐校覆盖、失败原因、来源缺失、模型调用与复验明细。", "",
+        "## 核验标准", "", "允许合理概念适配和有来源依据的推理，例如校区正式投入使用年作为 valid_from、校长就职典礼年作为 term_start。保留原文与定位，推断单独标注。对象归属、数字、币种、统计范围和无依据的法律独立性仍需核验。", "",
+        "缺失业务字段省略，不写 null、空字符串或编造的零。保留多期数值、历史事件和全部冲突候选；preferred 由脚本生成，未知统计年份须明确标记。", "",
+        "## 当前限制", "", "这是目的性选择的 10 所学校和有限来源包，不代表全球准确率或召回率。部分统计范围仍保留在原文证据中，尚未全部归一为独立字段；直接用于排名前需要按口径筛选。", "",
+        "Research 与 Review 使用同一模型的不同会话，仍可能有相关错误。Wikidata 与 Wikipedia 不算两个独立事实来源家族。", "",
+        "旧失败提案、原始来源与完整模型日志保留在私有目录；未进入验收 ZIP 或 Git。尚未获得人工验收，禁止正式发布。"]
+    (accepted / "QUALITY_REPORT.zh-CN.md").write_text("\n".join(chinese) + "\n", encoding="utf-8")
     schema_target = accepted / "schema.json"; shutil.copy2(ROOT / ("schemas/university.v" + PILOT_SCHEMA_VERSION + ".schema.json"), schema_target)
     files = [p for p in accepted.rglob("*") if p.is_file() and p.name not in ("manifest.json", "acceptance.zip")]
-    manifest = {"dataset": "university-real-ten-private-pilot", "schema_version": PILOT_SCHEMA_VERSION,
+    code_paths = [ROOT / "AGENTS.md", ROOT / "docs/review-policy-v2.md", *sorted((ROOT / "src/university_curation").glob("*.py")), *sorted((ROOT / "scripts").glob("*.py"))]
+    manifest = {"code_git_commit": subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=ROOT, text=True).strip(),
+        "code_file_sha256": {p.relative_to(ROOT).as_posix(): sha(p) for p in code_paths}, "dataset": "university-real-ten-private-pilot", "schema_version": PILOT_SCHEMA_VERSION,
         "human_acceptance": None, "publication_allowed": False,
         "files": [{"path": p.relative_to(accepted).as_posix(), "sha256": sha(p), "bytes": p.stat().st_size} for p in sorted(files)]}
     save(accepted / "manifest.json", manifest)

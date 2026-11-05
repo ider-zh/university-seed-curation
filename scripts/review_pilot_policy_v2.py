@@ -92,7 +92,10 @@ def process(case, root):
     checks = review_schema["properties"]["checks"]["items"]
     checks["properties"]["support_basis"] = {"enum": ["direct", "reasonable_inference", "unsupported"]}
     checks["required"].append("support_basis")
-    verdict, review_meta = model(RULES + "\n" + REVIEW_INSTRUCTIONS + "\nLATEST OPERATOR REVIEW POLICY (takes precedence over exact-concept requirements):\n" + policy + "\nFor every fact return support_basis=direct or reasonable_inference (explain inference in reason_en); unsupported for failed checks.\nSOURCES AND UNTRUSTED PROPOSAL:\n" + compact(review_input), review_schema, task / "review")
+    context_shape = review_schema["properties"]["context_checks"]["items"]
+    context_shape["properties"]["support_basis"] = {"enum": ["direct", "reasonable_inference", "unsupported"]}
+    context_shape["required"].append("support_basis")
+    verdict, review_meta = model(RULES + "\n" + REVIEW_INSTRUCTIONS + "\nLATEST OPERATOR REVIEW POLICY (takes precedence over exact-concept requirements):\n" + policy + "\nFor every fact and context return support_basis=direct or reasonable_inference (explain inference in reason_en); unsupported for failed checks.\nSOURCES AND UNTRUSTED PROPOSAL:\n" + compact(review_input), review_schema, task / "review")
     save(task / "verdict.json", verdict)
     if not set(research_meta["session_ids"]).isdisjoint(review_meta["session_ids"]): raise ValueError("Self-review")
     approved = review_gate(verdict, proposal, context_ids)
@@ -102,6 +105,12 @@ def process(case, root):
         if check["verdict"] == "supported" and check["support_basis"] == "unsupported": raise ValueError("Contradictory support basis")
         if check["support_basis"] == "reasonable_inference":
             inference_rows.append({**byid[check["fact_id"]], "basis": "reasonable_inference", "value": json.loads(proposal["facts"][int(check["fact_id"][1:]) - 1]["value_json"]) if proposal["facts"][int(check["fact_id"][1:]) - 1]["value_json"] else {"value_state": "unknown"}, "reason_en": check["reason_en"]})
+    context_map = {c["context_id"]: c for c in review_input["contexts"]}
+    for check in verdict["context_checks"]:
+        if check["verdict"] == "supported" and check["support_basis"] == "unsupported": raise ValueError("Contradictory context support basis")
+        if check["support_basis"] == "reasonable_inference":
+            inference_rows.append({"context_id": check["context_id"], "basis": "reasonable_inference",
+                "representation": context_map[check["context_id"]], "reason_en": check["reason_en"]})
     save(task / "interpretations.json", inference_rows)
     outcome = {"qid": case["qid"], "name": case["name"], "status": "unresolved", "schema_version": PILOT_SCHEMA_VERSION,
         "review_policy": "source-grounded-flexible-v2", "prior_strict_status": old["status"], "policy_only_rereview": True,

@@ -11,6 +11,7 @@ Use Python 3.11+ with project dependencies and an authenticated Codex CLI.
 ```text
 python scripts/prepare_real_pilot.py --root .private/pilots/RUN
 python scripts/run_real_pilot.py --root .private/pilots/RUN
+python scripts/review_pilot_policy_v2.py --root .private/pilots/RUN
 python scripts/finalize_real_pilot.py --root .private/pilots/RUN
 ```
 
@@ -71,3 +72,16 @@ not a reason to invent a value.
 operator inspection artifacts. Failure counts and unresolved cases remain
 visible. An agent approval is not human dataset acceptance. No raw pages,
 provider prompts/logs or credentials enter this package or Git history.
+
+The operator-authorized flexible policy re-review retains each original outcome,
+allows reasonable source-grounded inference and records direct/inferred support
+for every fact and context. Quantity-unit QIDs are resolved through the shared
+cache; a bounded Research supplement adds missing numerical observations without
+rewriting the existing facts. The supplement can request another necessary QID
+and receive cached Wikidata evidence before its next model turn. Every resulting
+fact is independently reviewed before applying the record. Inference annotations
+are included in `interpretations.json` and the full inspection envelope.
+
+See `docs/github-agent-pilot.md` for the next observable real-PR milestone. The
+private pilot verifies model/source processing, not a configured production PR
+exporter or protected merge service.

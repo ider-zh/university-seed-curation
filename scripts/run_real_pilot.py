@@ -12,6 +12,7 @@ import threading
 import time
 
 ROOT = Path(__file__).resolve().parents[1]; sys.path.insert(0, str(ROOT / "src"))
+if hasattr(sys.stdout, "reconfigure"): sys.stdout.reconfigure(encoding="utf-8")
 from university_curation.codex_provider import run as call_codex
 from university_curation.pilot_sources import CASES, replay_packet, save
 from university_curation.pilot_protocol import (RULES, RESEARCH_INSTRUCTIONS, REVIEW_INSTRUCTIONS,
