@@ -1,0 +1,96 @@
+{
+  "key_id": "review-0c72bce8daed6e1e",
+  "payload": {
+    "base_commit": "a7b2495509f3dd4457e2979c2714aab4529f9c9f",
+    "baseline_sha256": "absent",
+    "qid": "Q519556",
+    "record_path": "data/universities/a82/Q519556.json",
+    "record_sha256": "d32f2a04768b82e55cf7255a0df084241e5c1729be41c4fdde1a39f8a7b1efbd",
+    "repository": "ider-zh/university-seed-curation",
+    "review": {
+      "attestation_kind": "local_coordinator_verified_private_traces",
+      "contexts_checked": 16,
+      "decision": "approve",
+      "facts_checked": 34,
+      "inferences": [
+        {
+          "basis": "reasonable_inference",
+          "candidate_id": "c1",
+          "context": "location:xuyong_branch",
+          "field": "location.valid_from",
+          "kind": "fact",
+          "reason_en": "The memorial states the branch was established in 1940. Using that year as valid_from is a reasonable inference for the represented branch phase; teaching began separately in 1941.",
+          "value": {
+            "precision": "year",
+            "year": 1940
+          }
+        },
+        {
+          "basis": "reasonable_inference",
+          "candidate_id": "c1",
+          "context": "institution",
+          "field": "leadership.chair",
+          "kind": "fact",
+          "reason_en": "The December 1938 committee decision names Mei as chair for that academic year. A 1938 term start is a reasonable year-precision inference from the decision.",
+          "value": {
+            "person": {
+              "name": "梅贻琦"
+            },
+            "term_start": {
+              "precision": "year",
+              "year": 1938
+            },
+            "title_original": {
+              "language": "zh",
+              "text": "常务委员会主席"
+            }
+          }
+        },
+        {
+          "basis": "reasonable_inference",
+          "candidate_id": "c1",
+          "context": "institution",
+          "field": "relationships.campus",
+          "kind": "fact",
+          "reason_en": "The memorial identifies the Xuyong branch; representing the branch under the broader campus relationship is reasonable.",
+          "value": {
+            "target_ref": "location:xuyong_branch"
+          }
+        },
+        {
+          "basis": "reasonable_inference",
+          "context_id": "location:xuyong_branch",
+          "kind": "context",
+          "reason_en": "The source identifies a branch at Xuyong; representing it as a campus is a reasonable broader classification."
+        },
+        {
+          "basis": "reasonable_inference",
+          "context_id": "milestone:xuyong_opening",
+          "kind": "context",
+          "reason_en": "The source says the branch was established in 1940; campus opening is an allowed broader representation of that event."
+        }
+      ],
+      "model": "gpt-6.1-terra",
+      "output_schema_sha256": "b29ab19ceb825fd4d52dfc64986af5e1bc3e9efc6486a294179664c1f50b1245",
+      "private_evidence_sha256": "4805a169781613737a28e98a65de3d09096488ecd96c0a890c34b640bd9e1f63",
+      "prompt_sha256": "b648ba473ab0c56cf7b5d42c902dd3f52cb048e9acdbd371e7aee557c7a34ed2",
+      "reasoning_effort": "medium",
+      "research_sessions": [
+        "01a1a99d-ff40-7070-b4f2-e233dfba633f"
+      ],
+      "review_output_sha256": "81df664ecd406219c4ed4bb97b8bcff69cde2318538e73762f2d25b722b44724",
+      "review_session": "01a1a9aa-5d9a-73c3-8c20-fea99a13a2bf",
+      "reviewed_at": "2026-11-05T03:05:41.070769+00:00",
+      "runtime_model_reported": false,
+      "source_revisions_checked": 6
+    },
+    "review_policy": {
+      "id": "source-grounded-flexible-v2",
+      "sha256": "b8ed7d2897e4c31dbd81b1379aafdc1077a21d1a33949edbd2d896b0adf99db2"
+    },
+    "schema_sha256": "7a1a55b93b8ad5dadba221869f6c415d8d84e7132c25c2658e30032c8396afec",
+    "schema_version": "0.2.1",
+    "type": "university-review-v1"
+  },
+  "signature_hex": "0dcb83c25ef8b4169dad104aec986873c315331392d5350e6c9e7e7709e58049c0d3289c464f5a9b363fd446077b1dc4d10834a578d39dd0f871440818d4e40b"
+}

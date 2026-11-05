@@ -1,0 +1,1031 @@
+{
+  "coverage": {
+    "finance": {
+      "checked_at": "2026-11-05T02:01:08.290871+00:00",
+      "status": "not_found"
+    },
+    "geography": {
+      "checked_at": "2026-11-05T02:01:08.290871+00:00",
+      "status": "checked"
+    },
+    "history": {
+      "checked_at": "2026-11-05T02:01:08.290871+00:00",
+      "status": "disputed"
+    },
+    "identity": {
+      "checked_at": "2026-11-05T02:01:08.290871+00:00",
+      "status": "checked"
+    },
+    "population": {
+      "checked_at": "2026-11-05T02:01:08.290871+00:00",
+      "status": "not_found"
+    },
+    "profile": {
+      "checked_at": "2026-11-05T02:01:08.290871+00:00",
+      "status": "checked"
+    }
+  },
+  "curation": {
+    "identity_status": "in_scope",
+    "refresh_profile": "core-v1",
+    "reviewed_groups": [
+      "identity",
+      "geography",
+      "history",
+      "population",
+      "finance",
+      "profile"
+    ]
+  },
+  "history": {
+    "milestones": [
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "1937年成立的国立长沙临时大学",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "precision": "year",
+                "year": 1937
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "changsha_origin",
+        "kind": "predecessor_establishment",
+        "subject_ref": "related:changsha_temporary"
+      },
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "1938年4月2日于昆明更名西南联大",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "claim:P571:0",
+                  "original_text": "+1938-04-02T00:00:00Z",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "day": 2,
+                "month": 4,
+                "precision": "day",
+                "year": 1938
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "于昆明更名西南联大",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "The predecessor was renamed National Southwestern Associated University in Kunming."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "rename_1938",
+        "kind": "rename",
+        "subject_ref": "institution"
+      },
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "5月4日正式开课",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "day": 4,
+                "month": 5,
+                "precision": "day",
+                "year": 1938
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "teaching_1938",
+        "kind": "teaching_start",
+        "subject_ref": "institution"
+      },
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:.E7.B4.80.E5.BF.B5",
+                  "original_text": "1940年于四川叙永设分校",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "precision": "year",
+                "year": 1940
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:.E7.B4.80.E5.BF.B5",
+                  "original_text": "1940年于四川叙永设分校",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "A branch was established in Xuyong, Sichuan."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "xuyong_opening",
+        "kind": "campus_opening",
+        "subject_ref": "location:xuyong_branch"
+      },
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:.E6.AD.B7.E5.8F.B2",
+                  "original_text": "1941年1月，敘永分校開始上課",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "month": 1,
+                "precision": "month",
+                "year": 1941
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:.E6.AD.B7.E5.8F.B2",
+                  "original_text": "敘永分校開始上課",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "Teaching began at the Xuyong branch."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "xuyong_teaching",
+        "kind": "teaching_start",
+        "subject_ref": "location:xuyong_branch"
+      },
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:6",
+                  "original_text": "1946年5月4日",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "infobox:4",
+                  "original_text": "May 4, 1946",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "day": 4,
+                "month": 5,
+                "precision": "day",
+                "year": 1946
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:.E6.AD.B7.E5.8F.B2",
+                  "original_text": "7月31日宣布结束",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c2",
+              "value": {
+                "day": 31,
+                "month": 7,
+                "precision": "day",
+                "year": 1946
+              },
+              "verification": "supported"
+            }
+          ],
+          "conflicts": [
+            {
+              "candidate_ids": [
+                "c1",
+                "c2"
+              ],
+              "kind": "time_disagreement",
+              "note": "The Chinese article gives May 4 as the ending date in its lead and infobox but also says July 31 was the date the ending was announced. The relationship between those statements is unresolved.",
+              "status": "unresolved"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "conflicting_candidates"
+            ],
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        },
+        "id": "closure_1946",
+        "kind": "closure",
+        "subject_ref": "institution"
+      },
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:.E6.AD.B7.E5.8F.B2",
+                  "original_text": "1946年5月，上述3校迁回原址复校后",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "month": 5,
+                "precision": "month",
+                "year": 1946
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "北大、清华、南开分别迁回原址复校",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:lead",
+                  "original_text": "师范学院留昆",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:lead",
+                  "original_text": "National Kunming Normal University",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "The three participating universities returned to their former locations; the teachers college remained in Kunming and became National Kunming Normal University."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "separation_1946",
+        "kind": "split",
+        "subject_ref": "institution"
+      }
+    ]
+  },
+  "identity": {
+    "aliases": [
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "简称西南联大",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "zh",
+              "text": "西南联大"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "infobox:1",
+                "original_text": "Lianda (聯大)",
+                "source_ref": "s3"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Lianda"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    ],
+    "kind": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:3",
+              "original_text": "National university",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c1",
+          "value": "university",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "names": {
+      "en": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "metadata",
+                "original_text": "National Southwestern Associated University",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": "National Southwestern Associated University",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "zh": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "metadata",
+                "original_text": "国立西南联合大学",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": "国立西南联合大学",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    "operating_status": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "西南联大解散",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": "closed",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "ownership": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "national public university",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c1",
+          "value": "public",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "leadership": {
+    "chair": {
+      "candidates": [
+        {
+          "current_basis": "historical",
+          "evidence": [
+            {
+              "locator": "section:.E6.AD.B7.E5.8F.B2",
+              "original_text": "1938年12月21日",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:.E6.AD.B7.E5.8F.B2",
+              "original_text": "本学年由清华校长梅贻琦担任",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "person": {
+              "name": "梅贻琦"
+            },
+            "term_start": {
+              "precision": "year",
+              "year": 1938
+            },
+            "title_original": {
+              "language": "zh",
+              "text": "常务委员会主席"
+            }
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "single_source_family",
+          "last_known_only",
+          "historical_only"
+        ],
+        "reason": "Use the best available last-known appointment without claiming an explicitly confirmed current term.",
+        "reason_code": "last_known"
+      }
+    }
+  },
+  "locations": [
+    {
+      "id": "kunming",
+      "kind": "administrative_area",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "infobox:6",
+                "original_text": "Kunming 1938–1946",
+                "source_ref": "s3"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Kunming"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    {
+      "id": "mengzi",
+      "kind": "administrative_area",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "Kunming and Mengzi",
+                "source_ref": "s3"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Mengzi"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    {
+      "id": "xuyong_branch",
+      "kind": "campus",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:.E6.AD.B7.E5.8F.B2",
+                "original_text": "四川敘永設立分校",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Xuyong branch"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "valid_from": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:.E7.B4.80.E5.BF.B5",
+                "original_text": "1940年于四川叙永设分校",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "precision": "year",
+              "year": 1940
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "valid_to": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:.E6.AD.B7.E5.8F.B2",
+                "original_text": "1941年1月，敘永分校開始上課",
+                "source_ref": "s2"
+              },
+              {
+                "locator": "section:.E6.AD.B7.E5.8F.B2",
+                "original_text": "8月，敘永分校結束運作",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "month": 8,
+              "precision": "month",
+              "year": 1941
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    }
+  ],
+  "modified_datetime": "2026-11-05T03:05:41.105545+00:00",
+  "profile": {
+    "motto": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:4",
+              "original_text": "刚毅坚卓",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "language": "zh",
+            "text": "刚毅坚卓"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "summary": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "from 1938 to 1946",
+              "source_ref": "s3"
+            },
+            {
+              "locator": "section:lead",
+              "original_text": "联合組成的大學",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "language": "en",
+            "text": "A wartime national university in Yunnan formed through the association of Peking, Tsinghua and Nankai universities. It operated under its Southwestern Associated University name from 1938 until 1946."
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "qid": "Q519556",
+  "record_revision": 1,
+  "related_entities": {
+    "changsha_temporary": {
+      "kind": "institution",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "前身为1937年成立的国立长沙临时大学",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "zh",
+              "text": "国立长沙临时大学"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    "kunming_normal": {
+      "kind": "institution",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "National Kunming Normal University",
+                "source_ref": "s3"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "National Kunming Normal University"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    "nankai": {
+      "kind": "institution",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "Nankai University",
+                "source_ref": "s3"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Nankai University"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    "peking": {
+      "kind": "institution",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "National Peking University",
+                "source_ref": "s3"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "National Peking University"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    "tsinghua": {
+      "kind": "institution",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "National Tsinghua University",
+                "source_ref": "s3"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "National Tsinghua University"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    }
+  },
+  "relationships": {
+    "campus": [
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:.E7.B4.80.E5.BF.B5",
+                "original_text": "1940年于四川叙永设分校",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "target_ref": "location:xuyong_branch"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    ],
+    "predecessor": [
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "前身为1937年成立的国立长沙临时大学",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "target_ref": "related:changsha_temporary"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    ]
+  },
+  "schema_version": "0.2.1",
+  "seed": {
+    "channels": [
+      "diagnostic_pilot_selection"
+    ],
+    "import_id": "real-online-pilot-20261105",
+    "screening_status": "needs_review"
+  },
+  "selection_policy": "preferred-v1",
+  "sources": {
+    "s1": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-05T02:01:02.533239+00:00",
+      "revision_id": 2559137070,
+      "source_qid": "Q519556",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2559137070"
+    },
+    "s2": {
+      "family": "wikimedia",
+      "kind": "wikipedia",
+      "language": "zh",
+      "page_id": 25344,
+      "publisher_role": "encyclopedia",
+      "retrieved_at": "2026-11-05T02:01:05.405449+00:00",
+      "revision_id": 95386951,
+      "url": "https://zh.wikipedia.org/w/index.php?oldid=95386951"
+    },
+    "s3": {
+      "family": "wikimedia",
+      "kind": "wikipedia",
+      "language": "en",
+      "page_id": 2999850,
+      "publisher_role": "encyclopedia",
+      "retrieved_at": "2026-11-05T02:01:06.812069+00:00",
+      "revision_id": 1379549666,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1379549666"
+    },
+    "s4": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-05T02:00:29.589276+00:00",
+      "revision_id": 2562156954,
+      "source_qid": "Q3918",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2562156954"
+    },
+    "s5": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-05T02:00:31.869463+00:00",
+      "revision_id": 2563722609,
+      "source_qid": "Q148",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2563722609"
+    },
+    "s6": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-05T02:01:08.235179+00:00",
+      "revision_id": 2561341244,
+      "source_qid": "Q174091",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2561341244"
+    }
+  },
+  "update_datetime": "2026-11-05T03:05:41.105545+00:00"
+}

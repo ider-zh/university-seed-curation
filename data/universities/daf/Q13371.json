@@ -1,0 +1,1544 @@
+{
+  "coverage": {
+    "finance": {
+      "checked_at": "2026-11-05T02:00:45.188044+00:00",
+      "status": "checked"
+    },
+    "geography": {
+      "checked_at": "2026-11-05T02:00:45.188044+00:00",
+      "status": "checked"
+    },
+    "history": {
+      "checked_at": "2026-11-05T02:00:45.188044+00:00",
+      "status": "checked"
+    },
+    "identity": {
+      "checked_at": "2026-11-05T02:00:45.188044+00:00",
+      "status": "checked"
+    },
+    "population": {
+      "checked_at": "2026-11-05T02:00:45.188044+00:00",
+      "status": "checked"
+    },
+    "profile": {
+      "checked_at": "2026-11-05T02:00:45.188044+00:00",
+      "status": "checked"
+    }
+  },
+  "curation": {
+    "identity_status": "in_scope",
+    "refresh_profile": "core-v1",
+    "reviewed_groups": [
+      "identity",
+      "geography",
+      "history",
+      "population",
+      "finance",
+      "profile"
+    ]
+  },
+  "finance": {
+    "assets": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2403:0",
+              "original_text": "\"amount\": \"+61462439000\", \"unit\": \"http://www.wikidata.org/entity/Q4917\"",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "claim:P2403:0",
+              "original_text": "+2020-06-30T00:00:00Z",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "claim:P498:0",
+              "original_text": "\"value\": \"USD\"",
+              "source_ref": "s13"
+            }
+          ],
+          "id": "c1",
+          "period": {
+            "day": 30,
+            "kind": "date",
+            "month": 6,
+            "year": 2020
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": "61462439000",
+            "currency": "USD",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "single_source_family"
+        ],
+        "reason_code": "only_available"
+      }
+    },
+    "endowment": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P6589:0",
+              "original_text": "\"amount\": \"+39200000000\", \"unit\": \"http://www.wikidata.org/entity/Q4917\"",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "claim:P6589:0",
+              "original_text": "+2018-06-30T00:00:00Z",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "claim:P498:0",
+              "original_text": "\"value\": \"USD\"",
+              "source_ref": "s13"
+            }
+          ],
+          "id": "c1",
+          "period": {
+            "day": 30,
+            "kind": "date",
+            "month": 6,
+            "year": 2018
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": "39200000000",
+            "currency": "USD",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P6589:1",
+              "original_text": "\"amount\": \"+49444494000\", \"unit\": \"http://www.wikidata.org/entity/Q4917\"",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "claim:P6589:1",
+              "original_text": "+2022-06-30T00:00:00Z",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "claim:P498:0",
+              "original_text": "\"value\": \"USD\"",
+              "source_ref": "s13"
+            }
+          ],
+          "id": "c2",
+          "period": {
+            "day": 30,
+            "kind": "date",
+            "month": 6,
+            "year": 2022
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": "49444494000",
+            "currency": "USD",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P6589:2",
+              "original_text": "\"amount\": \"+51900662000\", \"unit\": \"http://www.wikidata.org/entity/Q4917\"",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "claim:P6589:2",
+              "original_text": "+2021-06-30T00:00:00Z",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "claim:P498:0",
+              "original_text": "\"value\": \"USD\"",
+              "source_ref": "s13"
+            }
+          ],
+          "id": "c3",
+          "period": {
+            "day": 30,
+            "kind": "date",
+            "month": 6,
+            "year": 2021
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": "51900662000",
+            "currency": "USD",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c2",
+        "qualifications": [
+          "single_source_family"
+        ],
+        "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+        "reason_code": "best_available"
+      }
+    }
+  },
+  "history": {
+    "milestones": [
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P571:0",
+                  "original_text": "+1636-09-08T00:00:00Z",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "day": 8,
+                "month": 9,
+                "precision": "day",
+                "year": 1636
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:References",
+                  "original_text": "October 28, 1636 (OS)",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c2",
+              "value": {
+                "day": 28,
+                "month": 10,
+                "original_date": "October 28, 1636 (OS)",
+                "precision": "day",
+                "year": 1636
+              },
+              "verification": "supported"
+            }
+          ],
+          "conflicts": [
+            {
+              "candidate_ids": [
+                "c1",
+                "c2"
+              ],
+              "kind": "value_disagreement",
+              "note": "The sources give different founding dates. Wikipedia's reference explains that the court convened on September 8 and an appropriation was voted on October 28, 1636, Old Style; the dates reflect different events or conventions as well as potential calendar differences.",
+              "status": "unresolved"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c2",
+            "qualifications": [
+              "conflicting_candidates"
+            ],
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:17th_century",
+                  "original_text": "founded in 1636 by a vote of the Great and General Court of the Massachusetts Bay Colony",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "Founded by a vote of the Great and General Court of the Massachusetts Bay Colony."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "founding",
+        "kind": "institution_establishment",
+        "subject_ref": "institution"
+      },
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "named Harvard College in 1639",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "precision": "year",
+                "year": 1639
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "named Harvard College in 1639 in honor of its first benefactor",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "Named Harvard College in honor of John Harvard."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "college_name",
+        "kind": "rename",
+        "subject_ref": "institution"
+      },
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:18th_century",
+                  "original_text": "In 1780, the Constitution of Massachusetts recognized Harvard College as a university",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "precision": "year",
+                "year": 1780
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:18th_century",
+                  "original_text": "This was a renaming of the college, and not a re-founding.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "The Constitution of Massachusetts recognized Harvard College as a university; the source describes this as a renaming rather than a new foundation."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "university_recognition",
+        "kind": "university_status",
+        "subject_ref": "institution"
+      },
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "long tenure from 1869 to 1909",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "original_date": "1869 to 1909",
+                "precision": "interval"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "developed multiple professional schools, which transformed it into a modern research university",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "During Charles William Eliot's presidency from 1869 to 1909, Harvard developed multiple professional schools and became a modern research university."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "modern_research_university",
+        "kind": "higher_education_status",
+        "subject_ref": "institution"
+      },
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:20th_century",
+                  "original_text": "in 1999, Radcliffe was formally merged into Harvard University",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "precision": "year",
+                "year": 1999
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:20th_century",
+                  "original_text": "Radcliffe was formally merged into Harvard University",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "Radcliffe College formally merged into Harvard University."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "radcliffe_merger",
+        "kind": "merger",
+        "subject_ref": "institution"
+      }
+    ]
+  },
+  "identity": {
+    "aliases": [
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "infobox:2",
+                "original_text": "Former name: Harvard College",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Harvard College"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "infobox:1",
+                "original_text": "Latin: Universitas Harvardiana",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "la",
+              "text": "Universitas Harvardiana"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    ],
+    "identifiers": {
+      "P5242": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P5242:0",
+                "original_text": "Harvard-University",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": "Harvard-University",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "P5584": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P5584:0",
+                "original_text": "harvard-university",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": "harvard-university",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "P5586": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P5586:0",
+                "original_text": "harvard-university",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": "harvard-university",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    "kind": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:5",
+              "original_text": "Private research university",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": "university",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "names": {
+      "en": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P1448:0",
+                "original_text": "Harvard University",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": "Harvard University",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    "operating_status": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:Teaching_and_learning",
+              "original_text": "Harvard is a large, highly residential research university",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": "operating",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "ownership": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P31:3",
+              "original_text": "\"id\": \"Q23002054\"",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "metadata",
+              "original_text": "private not-for-profit educational institution",
+              "source_ref": "s6"
+            }
+          ],
+          "id": "c1",
+          "value": "private_nonprofit",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "leadership": {
+    "president": {
+      "candidates": [
+        {
+          "current_basis": "infobox_current",
+          "evidence": [
+            {
+              "locator": "infobox:13",
+              "original_text": "President: Alan Garber",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "person": {
+              "name": "Alan Garber"
+            },
+            "title_original": {
+              "language": "en",
+              "text": "President"
+            }
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "single_source_family",
+          "reported_current"
+        ],
+        "reason": "The page reports this person in its current officeholder field; a term-end date is not required.",
+        "reason_code": "infobox_current"
+      }
+    },
+    "provost": {
+      "candidates": [
+        {
+          "current_basis": "infobox_current",
+          "evidence": [
+            {
+              "locator": "infobox:14",
+              "original_text": "Provost: John F. Manning",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "person": {
+              "name": "John F. Manning"
+            },
+            "title_original": {
+              "language": "en",
+              "text": "Provost"
+            }
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "single_source_family",
+          "reported_current"
+        ],
+        "reason": "The page reports this person in its current officeholder field; a term-end date is not required.",
+        "reason_code": "infobox_current"
+      }
+    }
+  },
+  "locations": [
+    {
+      "id": "cambridge",
+      "kind": "administrative_area",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P131:0",
+                "original_text": "\"id\": \"Q49111\"",
+                "source_ref": "s1"
+              },
+              {
+                "locator": "metadata",
+                "original_text": "\"en\": \"Cambridge\"",
+                "source_ref": "s8"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Cambridge"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "qid": "Q49111"
+    },
+    {
+      "id": "boston",
+      "kind": "administrative_area",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P131:3",
+                "original_text": "\"id\": \"Q100\"",
+                "source_ref": "s1"
+              },
+              {
+                "locator": "metadata",
+                "original_text": "\"en\": \"Boston\"",
+                "source_ref": "s11"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Boston"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "qid": "Q100"
+    },
+    {
+      "address": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P159:0",
+                "original_text": "Massachusetts Hall",
+                "source_ref": "s1"
+              },
+              {
+                "locator": "claim:P159:0",
+                "original_text": "02138",
+                "source_ref": "s1"
+              },
+              {
+                "locator": "metadata",
+                "original_text": "\"en\": \"Cambridge\"",
+                "source_ref": "s8"
+              },
+              {
+                "locator": "metadata",
+                "original_text": "\"en\": \"United States\"",
+                "source_ref": "s7"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "city_name": "Cambridge",
+              "city_qid": "Q49111",
+              "country_name": "United States",
+              "country_qid": "Q30",
+              "formatted": {
+                "language": "en",
+                "text": "Massachusetts Hall"
+              },
+              "postal_code": "02138"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "coordinates": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P159:0",
+                "original_text": "\"latitude\": 42.376111, \"longitude\": -71.116389",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "crs": "EPSG:4326",
+              "latitude": 42.376111,
+              "longitude": -71.116389
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "id": "headquarters",
+      "kind": "headquarters"
+    },
+    {
+      "id": "cambridge_campus",
+      "kind": "campus",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Cambridge",
+                "original_text": "main Cambridge campus",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Cambridge campus"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    {
+      "id": "allston_campus",
+      "kind": "campus",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Allston",
+                "original_text": "Allston and Cambridge campuses",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Allston campus"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    {
+      "id": "longwood_campus",
+      "kind": "campus",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "the medical campus in Boston's Longwood Medical Area",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Longwood medical campus"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    }
+  ],
+  "modified_datetime": "2026-11-05T02:55:05.624323+00:00",
+  "population": {
+    "academic_staff": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:15",
+              "original_text": "~2,400 faculty members",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "period_status": "not_stated",
+          "value": {
+            "amount": 2400,
+            "basis": "unspecified",
+            "precision": "approximate"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "period_not_stated",
+          "single_source_family",
+          "approximate_value"
+        ],
+        "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+        "reason_code": "only_available"
+      }
+    },
+    "employees_total": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:Governance",
+              "original_text": "16,000 staff and faculty",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "period_status": "not_stated",
+          "value": {
+            "amount": 16000,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "period_not_stated",
+          "single_source_family"
+        ],
+        "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+        "reason_code": "only_available"
+      }
+    },
+    "postgraduate_students": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:18",
+              "original_text": "14,151 (fall 2024)",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2024
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 14151,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "single_source_family"
+        ],
+        "reason_code": "only_available"
+      }
+    },
+    "students_total": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:0",
+              "original_text": "\"amount\": \"+21189\"",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "infobox:16",
+              "original_text": "21,189 (fall 2024)",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2024
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 21189,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "single_source_family"
+        ],
+        "reason_code": "only_available"
+      }
+    },
+    "undergraduate_students": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:17",
+              "original_text": "7,038 (fall 2024)",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2024
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 7038,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "single_source_family"
+        ],
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "profile": {
+    "degree_levels": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:Teaching_and_learning",
+              "original_text": "baccalaureate degrees, 1,013 graduate degrees, and 5,695 professional degrees",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": [
+            "bachelor's",
+            "graduate",
+            "professional"
+          ],
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "motto": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P1451:0",
+              "original_text": "Veritas",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "language": "la",
+            "text": "Veritas"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "infobox:4",
+              "original_text": "Truth",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c2",
+          "value": {
+            "language": "en",
+            "text": "Truth"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c2",
+        "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+        "reason_code": "best_available"
+      }
+    },
+    "summary": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "private Ivy League research university in Cambridge, Massachusetts",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:lead",
+              "original_text": "Founded in 1636",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "language": "en",
+            "text": "Harvard University is a private research university in Cambridge, Massachusetts, founded in 1636."
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "website": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P856:1",
+              "original_text": "https://www.harvard.edu",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "value": "https://www.harvard.edu",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "qid": "Q13371",
+  "record_revision": 1,
+  "related_entities": {
+    "aau": {
+      "kind": "institution",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:20th_century",
+                "original_text": "founding member of the Association of American Universities",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Association of American Universities"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    "radcliffe": {
+      "kind": "institution",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:20th_century",
+                "original_text": "Radcliffe College emerged as the female counterpart of Harvard College",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Radcliffe College"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    }
+  },
+  "relationships": {
+    "campus": [
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Cambridge",
+                "original_text": "main campus of Harvard University",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "target_ref": "location:cambridge_campus"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Allston",
+                "original_text": "campus in the Allston section of Boston",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "target_ref": "location:allston_campus"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Longwood",
+                "original_text": "campus in the Longwood Medical and Academic Area",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "target_ref": "location:longwood_campus"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    ],
+    "member_of": [
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:20th_century",
+                "original_text": "In 1900, Harvard became a founding member of the Association of American Universities",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "target_ref": "related:aau",
+              "valid_from": {
+                "precision": "year",
+                "year": 1900
+              }
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    ]
+  },
+  "schema_version": "0.2.1",
+  "seed": {
+    "channels": [
+      "diagnostic_pilot_selection"
+    ],
+    "import_id": "real-online-pilot-20261105",
+    "screening_status": "needs_review"
+  },
+  "selection_policy": "preferred-v1",
+  "sources": {
+    "s1": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-05T02:00:23.956203+00:00",
+      "revision_id": 2560802993,
+      "source_qid": "Q13371",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2560802993"
+    },
+    "s10": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-05T02:00:41.858547+00:00",
+      "revision_id": 2545419289,
+      "source_qid": "Q54073",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2545419289"
+    },
+    "s11": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-05T02:00:43.778958+00:00",
+      "revision_id": 2563588366,
+      "source_qid": "Q100",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2563588366"
+    },
+    "s12": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-05T02:00:45.135929+00:00",
+      "revision_id": 2540139006,
+      "source_qid": "Q54072",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2540139006"
+    },
+    "s13": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-05T02:31:08.320593+00:00",
+      "revision_id": 2557623321,
+      "source_qid": "Q4917",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2557623321"
+    },
+    "s2": {
+      "family": "wikimedia",
+      "kind": "wikipedia",
+      "language": "en",
+      "page_id": 18426501,
+      "publisher_role": "encyclopedia",
+      "retrieved_at": "2026-11-05T02:00:30.704508+00:00",
+      "revision_id": 1383507785,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1383507785"
+    },
+    "s3": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-05T02:00:31.973555+00:00",
+      "revision_id": 2560982823,
+      "source_qid": "Q902104",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2560982823"
+    },
+    "s4": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-05T02:00:32.991473+00:00",
+      "revision_id": 2559741554,
+      "source_qid": "Q15936437",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2559741554"
+    },
+    "s5": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-05T02:00:33.713645+00:00",
+      "revision_id": 2561038389,
+      "source_qid": "Q1188663",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2561038389"
+    },
+    "s6": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-05T02:00:34.402707+00:00",
+      "revision_id": 2441014281,
+      "source_qid": "Q23002054",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2441014281"
+    },
+    "s7": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-05T02:00:36.857337+00:00",
+      "revision_id": 2564748787,
+      "source_qid": "Q30",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2564748787"
+    },
+    "s8": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-05T02:00:38.978800+00:00",
+      "revision_id": 2563636816,
+      "source_qid": "Q49111",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2563636816"
+    },
+    "s9": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-05T02:00:40.932387+00:00",
+      "revision_id": 2562956633,
+      "source_qid": "Q771",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2562956633"
+    }
+  },
+  "update_datetime": "2026-11-05T02:55:05.624323+00:00"
+}
