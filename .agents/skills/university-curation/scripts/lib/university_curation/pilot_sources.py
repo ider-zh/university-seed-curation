@@ -72,8 +72,8 @@ def wikipedia_corpus(page):
     return corpus
 
 
-def prepare_case(case, root):
-    root = Path(root); cache = Cache(root / "source-cache", maxlag=30)
+def prepare_case(case, root, source_cache=None):
+    root = Path(root); cache = Cache(source_cache or root / "source-cache", maxlag=30)
     directory = root / "cases" / case["qid"]; directory.mkdir(parents=True, exist_ok=True)
     entity, meta = cache.entity(case["qid"])
     if entity["id"] != case["qid"]: raise ValueError("Case redirects to a different identity")

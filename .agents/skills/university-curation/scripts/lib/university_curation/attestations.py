@@ -61,7 +61,7 @@ def restrict_key(path):
     else: path.chmod(0o600)
 
 
-def sign(payload, key_path, trust):
+def sign(payload, key_path, trust, role="legacy_coordinator"):
     key = serialization.load_pem_private_key(private_path(key_path).read_bytes(), password=None)
     if not isinstance(key, Ed25519PrivateKey): raise ValueError("Ed25519 key required")
     public = key.public_key().public_bytes(serialization.Encoding.Raw, serialization.PublicFormat.Raw).hex()
@@ -69,13 +69,15 @@ def sign(payload, key_path, trust):
     entry = trust["keys"].get(key_id, {})
     if entry.get("status") != "active" or entry.get("public_key_hex") != public:
         raise ValueError("Signing key not trusted")
+    if role not in entry.get("roles", ["legacy_coordinator"]): raise ValueError("Signing key is not authorized for this role")
     return {"payload": payload, "key_id": key_id, "signature_hex": key.sign(DOMAIN + encode(payload)).hex()}
 
 
-def verify(document, trust):
+def verify(document, trust, role="legacy_coordinator"):
     if set(document) != {"payload", "key_id", "signature_hex"}: raise ValueError("Invalid signed envelope")
     entry = trust["keys"].get(document["key_id"], {})
     if entry.get("status") != "active": raise ValueError("Unknown/revoked reviewer key")
+    if role not in entry.get("roles", ["legacy_coordinator"]): raise ValueError("Signature key is not authorized for this role")
     try:
         key = Ed25519PublicKey.from_public_bytes(bytes.fromhex(entry["public_key_hex"]))
         key.verify(bytes.fromhex(document["signature_hex"]), DOMAIN + encode(document["payload"]))

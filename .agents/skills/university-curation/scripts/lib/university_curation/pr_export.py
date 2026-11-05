@@ -24,7 +24,7 @@ def check_sha(value):
     if not isinstance(value, str) or not re.fullmatch(r"[0-9a-f]{64}", value): raise ValueError("SHA-256 digest required")
 
 
-def blob(repo, ref, path, optional=False):
+def blob(repo, ref, path, optional=False, max_bytes=2 * 1024**2):
     entry = git(repo, "ls-tree", "-z", ref, "--", path)
     if not entry:
         if optional: return None
@@ -33,7 +33,7 @@ def blob(repo, ref, path, optional=False):
     if found.decode() != path or info.split()[:2] != [b"100644", b"blob"]:
         raise ValueError("Data must be a regular non-executable Git blob")
     size = int(git(repo, "cat-file", "-s", info.split()[2].decode()))
-    if size > 2 * 1024**2: raise ValueError("Oversized data blob")
+    if size > max_bytes: raise ValueError("Oversized data blob")
     return git(repo, "cat-file", "blob", info.split()[2].decode())
 
 
@@ -162,6 +162,10 @@ def check_acceptance(acceptance, expected):
 def verify_files(repo, base, files, trust, require_acceptance=True):
     manifests = [p for p in files if re.fullmatch(r"data/batches/[a-z0-9][a-z0-9-]{0,79}\.json", p)]
     if len(manifests) != 1: raise ValueError("Exactly one new signed batch manifest required")
+    raw_manifest = canonical_json(files[manifests[0]])
+    if raw_manifest.get("payload", {}).get("type") == "university-final-batch-v1":
+        from .distributed_protocol import verify_final
+        return verify_final(repo, base, files, trust)
     if canonical_json(files[manifests[0]]).get("type") == "university-path-migration-v1":
         from .bucket_migration import verify_migration
         return verify_migration(repo, base, files, manifests[0])
@@ -226,7 +230,25 @@ def validate_pr(repo, base_ref, head_ref):
     changed = [p for p in changed if p]
     if any(".private" in p.split("/") for p in changed): raise ValueError("Private artifacts in proposed Git tree")
     if not any(p.startswith("data/") for p in changed): return {"status": "code_only", "base_commit": base, "head_commit": head}
-    trust_raw = blob(repo, base, TRUST_PATH); trust = load_json(trust_raw)
+    from .distributed_protocol import trust_at
+    trust = trust_at(repo, base)
+    if any(p.startswith("data/seeds/") for p in changed):
+        from .seed_catalog import NAMES, verify as verify_catalog
+        if not set(NAMES).issubset(changed): raise ValueError("Complete signed seed catalog required")
+        if any(blob(repo, base, p, optional=True, max_bytes=20_000_000) is not None for p in NAMES): raise ValueError("Initial seed catalog is immutable")
+        seed_files = {p: blob(repo, head, p, max_bytes=20_000_000) for p in NAMES}
+        rows = verify_catalog(seed_files, trust=trust); extra = set(changed) - set(NAMES); moved = 0
+        if extra:
+            from .bucket_migration import verify_migration
+            manifests = [p for p in extra if re.fullmatch(r"data/batches/[a-z0-9][a-z0-9-]{0,79}\.json", p)]
+            if len(manifests) != 1: raise ValueError("Seed bootstrap may include only a proven byte-preserving path migration")
+            moved = verify_migration(repo, base, {p: blob(repo, head, p, optional=True) for p in extra}, manifests[0])["records_moved"]
+        return {"status": "validated", "task_kind": "seed_catalog", "base_commit": base, "head_commit": head,
+                "primary_count": len(rows["primary"]), "discovery_count": len(rows["discovery"]), "overlap_count": rows["overlap_count"], "records_moved": moved}
+    if any(p.startswith("data/proposals/") for p in changed):
+        from .distributed_protocol import inspect_draft
+        inspect_draft(repo, base, head, trust)
+        raise ValueError("Draft proposals are valid but unreviewed; independent signed Review is required before main")
     for version, expected in trust["schemas"].items():
         raw = blob(repo, base, "schemas/university.v" + version + ".schema.json")
         if sha(encode(load_json(raw))) != expected: raise ValueError("Base schema trust mismatch")
