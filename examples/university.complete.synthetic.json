@@ -1,0 +1,1678 @@
+{
+  "schema_version": "0.2.0",
+  "qid": "Q999999999999999",
+  "record_revision": 3,
+  "example": {
+    "synthetic": true,
+    "notice": "SCHEMA EXAMPLE ONLY. All institutions, people, figures, identifiers, URLs and source revisions are fictional. This is not a researched university record."
+  },
+  "update_datetime": "2026-11-05T00:00:00Z",
+  "modified_datetime": "2026-11-05T00:00:00Z",
+  "selection_policy": "preferred-v1",
+  "curation": {
+    "identity_status": "in_scope",
+    "reviewed_groups": [
+      "identity",
+      "geography",
+      "history",
+      "population",
+      "finance",
+      "profile"
+    ],
+    "refresh_profile": "core-v1"
+  },
+  "seed": {
+    "import_id": "synthetic-example-only",
+    "screening_status": "included",
+    "channels": [
+      "synthetic_fixture"
+    ]
+  },
+  "identity": {
+    "names": {
+      "en": {
+        "candidates": [
+          {
+            "id": "c1",
+            "value": "Meridian Example University",
+            "evidence": [
+              {
+                "source_ref": "s3",
+                "locator": "Official name"
+              }
+            ],
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "zh": {
+        "candidates": [
+          {
+            "id": "c1",
+            "value": "示范大学",
+            "evidence": [
+              {
+                "source_ref": "s2",
+                "locator": "Lead",
+                "original_text": "示范大学"
+              }
+            ],
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    "kind": {
+      "candidates": [
+        {
+          "id": "c1",
+          "value": "university",
+          "evidence": [
+            {
+              "source_ref": "s3",
+              "locator": "Institution status"
+            }
+          ],
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "ownership": {
+      "candidates": [
+        {
+          "id": "c1",
+          "value": "public",
+          "evidence": [
+            {
+              "source_ref": "s3",
+              "locator": "Governance"
+            }
+          ],
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "operating_status": {
+      "candidates": [
+        {
+          "id": "c1",
+          "value": "operating",
+          "evidence": [
+            {
+              "source_ref": "s3",
+              "locator": "About"
+            }
+          ],
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "population": {
+    "students_total": {
+      "candidates": [
+        {
+          "id": "c1",
+          "value": {
+            "amount": 25000,
+            "basis": "headcount",
+            "precision": "approximate"
+          },
+          "evidence": [
+            {
+              "source_ref": "s1",
+              "locator": "infobox.students",
+              "original_text": "Approximately 25,000 students"
+            }
+          ],
+          "verification": "supported",
+          "period_status": "not_stated"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available",
+        "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+        "qualifications": [
+          "period_not_stated",
+          "single_source_family",
+          "approximate_value"
+        ]
+      }
+    },
+    "undergraduate_students": {
+      "candidates": [
+        {
+          "id": "c1",
+          "value": {
+            "amount": 17500,
+            "basis": "headcount",
+            "precision": "exact"
+          },
+          "evidence": [
+            {
+              "source_ref": "s4",
+              "locator": "Student statistics/Table 1"
+            }
+          ],
+          "verification": "supported",
+          "period_status": "stated",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2024
+          }
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available",
+        "qualifications": [
+          "single_source_family"
+        ]
+      }
+    },
+    "postgraduate_students": {
+      "candidates": [
+        {
+          "id": "c1",
+          "value": {
+            "amount": 6500,
+            "basis": "headcount",
+            "precision": "exact"
+          },
+          "evidence": [
+            {
+              "source_ref": "s4",
+              "locator": "Student statistics/Table 1"
+            }
+          ],
+          "verification": "supported",
+          "period_status": "stated",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2024
+          }
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available",
+        "qualifications": [
+          "single_source_family"
+        ]
+      }
+    },
+    "masters_students": {
+      "candidates": [
+        {
+          "id": "c1",
+          "value": {
+            "amount": 5200,
+            "basis": "headcount",
+            "precision": "exact"
+          },
+          "evidence": [
+            {
+              "source_ref": "s4",
+              "locator": "Student statistics/Table 1"
+            }
+          ],
+          "verification": "supported",
+          "period_status": "stated",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2024
+          }
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available",
+        "qualifications": [
+          "single_source_family"
+        ]
+      }
+    },
+    "doctoral_students": {
+      "candidates": [
+        {
+          "id": "c1",
+          "value": {
+            "amount": 1300,
+            "basis": "headcount",
+            "precision": "exact"
+          },
+          "evidence": [
+            {
+              "source_ref": "s4",
+              "locator": "Student statistics/Table 1"
+            }
+          ],
+          "verification": "supported",
+          "period_status": "stated",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2024
+          }
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available",
+        "qualifications": [
+          "single_source_family"
+        ]
+      }
+    },
+    "international_students": {
+      "candidates": [
+        {
+          "id": "c1",
+          "value": {
+            "amount": 2500,
+            "basis": "headcount",
+            "precision": "exact"
+          },
+          "evidence": [
+            {
+              "source_ref": "s4",
+              "locator": "Student statistics/Table 2"
+            }
+          ],
+          "verification": "supported",
+          "period_status": "stated",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2024
+          }
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available",
+        "qualifications": [
+          "single_source_family"
+        ]
+      }
+    },
+    "academic_staff": {
+      "candidates": [
+        {
+          "id": "c1",
+          "value": {
+            "amount": 1480,
+            "basis": "headcount",
+            "precision": "exact"
+          },
+          "evidence": [
+            {
+              "source_ref": "s4",
+              "locator": "Staff/Table 3",
+              "original_text": "1,480 academic staff (headcount), 2024"
+            }
+          ],
+          "verification": "supported",
+          "period_status": "stated",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2024
+          }
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available",
+        "qualifications": [
+          "single_source_family"
+        ]
+      }
+    },
+    "teaching_staff": {
+      "candidates": [
+        {
+          "id": "c1",
+          "value": {
+            "amount": 980,
+            "basis": "headcount",
+            "precision": "exact"
+          },
+          "evidence": [
+            {
+              "source_ref": "s4",
+              "locator": "Staff/Table 4",
+              "original_text": "980 teaching staff (headcount), 2024"
+            }
+          ],
+          "verification": "supported",
+          "period_status": "stated",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2024
+          }
+        },
+        {
+          "id": "c2",
+          "value": {
+            "amount": 1020,
+            "basis": "headcount",
+            "precision": "exact"
+          },
+          "evidence": [
+            {
+              "source_ref": "s1",
+              "locator": "infobox.teaching_staff",
+              "original_text": "1,020 teaching staff (2024)"
+            }
+          ],
+          "verification": "supported",
+          "period_status": "stated",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2024
+          }
+        }
+      ],
+      "conflicts": [
+        {
+          "candidate_ids": [
+            "c1",
+            "c2"
+          ],
+          "kind": "value_disagreement",
+          "status": "unresolved",
+          "note": "Both report institution-wide teaching headcount for 2024. Prefer the original annual report while retaining the Wikipedia value and unresolved conflict."
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "best_available",
+        "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+        "qualifications": [
+          "single_source_family",
+          "conflicting_candidates"
+        ]
+      }
+    },
+    "administrative_staff": {
+      "candidates": [
+        {
+          "id": "c1",
+          "value": {
+            "amount": 620,
+            "basis": "headcount",
+            "precision": "exact"
+          },
+          "evidence": [
+            {
+              "source_ref": "s4",
+              "locator": "Staff/Table 3"
+            }
+          ],
+          "verification": "supported",
+          "period_status": "stated",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2024
+          }
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available",
+        "qualifications": [
+          "single_source_family"
+        ]
+      }
+    },
+    "employees_total": {
+      "candidates": [
+        {
+          "id": "c1",
+          "value": {
+            "amount": 2300,
+            "basis": "headcount",
+            "precision": "exact"
+          },
+          "evidence": [
+            {
+              "source_ref": "s4",
+              "locator": "Staff/Table 3"
+            }
+          ],
+          "verification": "supported",
+          "period_status": "stated",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2024
+          }
+        },
+        {
+          "id": "c2",
+          "value": {
+            "amount": 2100,
+            "basis": "fte",
+            "precision": "exact"
+          },
+          "evidence": [
+            {
+              "source_ref": "s4",
+              "locator": "Staff/Table 3/FTE",
+              "original_text": "2,100 FTE employees in 2024"
+            }
+          ],
+          "verification": "supported",
+          "period_status": "stated",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2024
+          }
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "best_available",
+        "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+        "qualifications": [
+          "single_source_family",
+          "different_basis_available"
+        ]
+      }
+    }
+  },
+  "finance": {
+    "endowment": {
+      "candidates": [
+        {
+          "id": "c1",
+          "value": {
+            "amount": "850000000",
+            "currency": "USD",
+            "precision": "exact"
+          },
+          "evidence": [
+            {
+              "source_ref": "s4",
+              "locator": "Financial statements/Endowment",
+              "original_text": "$850 million, 2024"
+            }
+          ],
+          "verification": "supported",
+          "period_status": "stated",
+          "period": {
+            "kind": "fiscal_year",
+            "year": 2024,
+            "label": "FY2024",
+            "start_date": "2023-07-01",
+            "end_date": "2024-06-30"
+          }
+        },
+        {
+          "id": "c2",
+          "value": {
+            "amount": "800000000",
+            "currency": "USD",
+            "precision": "exact"
+          },
+          "evidence": [
+            {
+              "source_ref": "s7",
+              "locator": "Financial statements/Endowment",
+              "original_text": "$800 million, 2023"
+            }
+          ],
+          "verification": "supported",
+          "period_status": "stated",
+          "period": {
+            "kind": "fiscal_year",
+            "year": 2023,
+            "label": "FY2023",
+            "start_date": "2022-07-01",
+            "end_date": "2023-06-30"
+          }
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "best_available",
+        "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+        "qualifications": [
+          "single_source_family"
+        ]
+      }
+    },
+    "budget": {
+      "candidates": [
+        {
+          "id": "c1",
+          "value": {
+            "amount": "450000000",
+            "currency": "USD",
+            "precision": "exact"
+          },
+          "evidence": [
+            {
+              "source_ref": "s1",
+              "locator": "infobox.budget",
+              "original_text": "$450 million"
+            }
+          ],
+          "verification": "supported",
+          "period_status": "not_stated"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available",
+        "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+        "qualifications": [
+          "period_not_stated",
+          "single_source_family"
+        ]
+      }
+    },
+    "revenue": {
+      "candidates": [
+        {
+          "id": "c1",
+          "value": {
+            "amount": "470000000",
+            "currency": "USD",
+            "precision": "exact"
+          },
+          "evidence": [
+            {
+              "source_ref": "s4",
+              "locator": "Financial statements/Revenue"
+            }
+          ],
+          "verification": "supported",
+          "period_status": "stated",
+          "period": {
+            "kind": "fiscal_year",
+            "year": 2024,
+            "label": "FY2024",
+            "start_date": "2023-07-01",
+            "end_date": "2024-06-30"
+          }
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available",
+        "qualifications": [
+          "single_source_family"
+        ]
+      }
+    },
+    "expenses": {
+      "candidates": [
+        {
+          "id": "c1",
+          "value": {
+            "amount": "455000000",
+            "currency": "USD",
+            "precision": "exact"
+          },
+          "evidence": [
+            {
+              "source_ref": "s4",
+              "locator": "Financial statements/Expenses"
+            }
+          ],
+          "verification": "supported",
+          "period_status": "stated",
+          "period": {
+            "kind": "fiscal_year",
+            "year": 2024,
+            "label": "FY2024",
+            "start_date": "2023-07-01",
+            "end_date": "2024-06-30"
+          }
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available",
+        "qualifications": [
+          "single_source_family"
+        ]
+      }
+    },
+    "assets": {
+      "candidates": [
+        {
+          "id": "c1",
+          "value": {
+            "amount": "1700000000",
+            "currency": "USD",
+            "precision": "exact"
+          },
+          "evidence": [
+            {
+              "source_ref": "s4",
+              "locator": "Balance sheet/Assets"
+            }
+          ],
+          "verification": "supported",
+          "period_status": "stated",
+          "period": {
+            "kind": "fiscal_year",
+            "year": 2024,
+            "label": "FY2024",
+            "start_date": "2023-07-01",
+            "end_date": "2024-06-30"
+          }
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available",
+        "qualifications": [
+          "single_source_family"
+        ]
+      }
+    },
+    "research_funding": {
+      "candidates": [
+        {
+          "id": "c1",
+          "value": {
+            "minimum": "70000000",
+            "maximum": "75000000",
+            "currency": "USD",
+            "precision": "range"
+          },
+          "evidence": [
+            {
+              "source_ref": "s4",
+              "locator": "Research funding",
+              "original_text": "$70–75 million in 2024"
+            }
+          ],
+          "verification": "supported",
+          "period_status": "stated",
+          "period": {
+            "kind": "fiscal_year",
+            "year": 2024,
+            "label": "FY2024",
+            "start_date": "2023-07-01",
+            "end_date": "2024-06-30"
+          }
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available",
+        "qualifications": [
+          "single_source_family",
+          "range_value"
+        ]
+      }
+    }
+  },
+  "history": {
+    "milestones": [
+      {
+        "id": "origin",
+        "kind": "vocational_origin",
+        "subject_ref": "related:predecessor",
+        "date": {
+          "candidates": [
+            {
+              "id": "c1",
+              "value": {
+                "year": 1906,
+                "precision": "year"
+              },
+              "evidence": [
+                {
+                  "source_ref": "s5",
+                  "locator": "History/origin",
+                  "original_text": "A vocational school opened in 1906 as the institution's predecessor."
+                }
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "id": "c1",
+              "value": {
+                "text": "A vocational school opened in 1906 as the institution's predecessor.",
+                "language": "en"
+              },
+              "evidence": [
+                {
+                  "source_ref": "s5",
+                  "locator": "History/origin",
+                  "original_text": "A vocational school opened in 1906 as the institution's predecessor."
+                }
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      {
+        "id": "established",
+        "kind": "institution_establishment",
+        "subject_ref": "institution",
+        "date": {
+          "candidates": [
+            {
+              "id": "c1",
+              "value": {
+                "year": 1952,
+                "precision": "year"
+              },
+              "evidence": [
+                {
+                  "source_ref": "s5",
+                  "locator": "History/established",
+                  "original_text": "The present institution was established in 1952."
+                },
+                {
+                  "source_ref": "s10",
+                  "locator": "Q999999999999999/claims/P571/0"
+                }
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "id": "c1",
+              "value": {
+                "text": "The present institution was established in 1952.",
+                "language": "en"
+              },
+              "evidence": [
+                {
+                  "source_ref": "s5",
+                  "locator": "History/established",
+                  "original_text": "The present institution was established in 1952."
+                }
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      {
+        "id": "higher-education",
+        "kind": "higher_education_status",
+        "subject_ref": "institution",
+        "date": {
+          "candidates": [
+            {
+              "id": "c1",
+              "value": {
+                "year": 1954,
+                "precision": "year"
+              },
+              "evidence": [
+                {
+                  "source_ref": "s5",
+                  "locator": "History/higher-education",
+                  "original_text": "It began providing recognized higher education in 1954."
+                }
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "id": "c1",
+              "value": {
+                "text": "It began providing recognized higher education in 1954.",
+                "language": "en"
+              },
+              "evidence": [
+                {
+                  "source_ref": "s5",
+                  "locator": "History/higher-education",
+                  "original_text": "It began providing recognized higher education in 1954."
+                }
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      {
+        "id": "university-status",
+        "kind": "university_status",
+        "subject_ref": "institution",
+        "date": {
+          "candidates": [
+            {
+              "id": "c1",
+              "value": {
+                "year": 1986,
+                "precision": "year"
+              },
+              "evidence": [
+                {
+                  "source_ref": "s5",
+                  "locator": "History/university-status",
+                  "original_text": "University status was granted in 1986."
+                }
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "id": "c1",
+              "value": {
+                "text": "University status was granted in 1986.",
+                "language": "en"
+              },
+              "evidence": [
+                {
+                  "source_ref": "s5",
+                  "locator": "History/university-status",
+                  "original_text": "University status was granted in 1986."
+                }
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      {
+        "id": "charter",
+        "kind": "charter",
+        "subject_ref": "institution",
+        "date": {
+          "candidates": [
+            {
+              "id": "c1",
+              "value": {
+                "year": 1988,
+                "precision": "year"
+              },
+              "evidence": [
+                {
+                  "source_ref": "s5",
+                  "locator": "History/charter",
+                  "original_text": "The institution received its charter in 1988."
+                }
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "id": "c1",
+              "value": {
+                "text": "The institution received its charter in 1988.",
+                "language": "en"
+              },
+              "evidence": [
+                {
+                  "source_ref": "s5",
+                  "locator": "History/charter",
+                  "original_text": "The institution received its charter in 1988."
+                }
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      {
+        "id": "move",
+        "kind": "relocation",
+        "subject_ref": "institution",
+        "date": {
+          "candidates": [
+            {
+              "id": "c1",
+              "value": {
+                "year": 1998,
+                "precision": "year"
+              },
+              "evidence": [
+                {
+                  "source_ref": "s5",
+                  "locator": "History/move",
+                  "original_text": "Teaching moved to the present main campus in 1998."
+                }
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "id": "c1",
+              "value": {
+                "text": "Teaching moved to the present main campus in 1998.",
+                "language": "en"
+              },
+              "evidence": [
+                {
+                  "source_ref": "s5",
+                  "locator": "History/move",
+                  "original_text": "Teaching moved to the present main campus in 1998."
+                }
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      {
+        "id": "rename",
+        "kind": "rename",
+        "subject_ref": "institution",
+        "date": {
+          "candidates": [
+            {
+              "id": "c1",
+              "value": {
+                "year": 2005,
+                "precision": "year"
+              },
+              "evidence": [
+                {
+                  "source_ref": "s5",
+                  "locator": "History/rename",
+                  "original_text": "The name Meridian Example University was adopted in 2005."
+                }
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "id": "c1",
+              "value": {
+                "text": "The name Meridian Example University was adopted in 2005.",
+                "language": "en"
+              },
+              "evidence": [
+                {
+                  "source_ref": "s5",
+                  "locator": "History/rename",
+                  "original_text": "The name Meridian Example University was adopted in 2005."
+                }
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      }
+    ]
+  },
+  "leadership": {
+    "president": {
+      "candidates": [
+        {
+          "id": "c1",
+          "value": {
+            "person": {
+              "name": "Dr. Mira Chen"
+            },
+            "title_original": {
+              "text": "President",
+              "language": "en"
+            },
+            "term_start": {
+              "year": 2024,
+              "precision": "year"
+            }
+          },
+          "evidence": [
+            {
+              "source_ref": "s1",
+              "locator": "infobox.president",
+              "original_text": "President: Dr. Mira Chen"
+            }
+          ],
+          "verification": "supported",
+          "current_basis": "infobox_current"
+        },
+        {
+          "id": "c2",
+          "value": {
+            "person": {
+              "name": "Prof. Rowan Ellis"
+            },
+            "title_original": {
+              "text": "President",
+              "language": "en"
+            },
+            "term_start": {
+              "year": 2012,
+              "precision": "year"
+            },
+            "term_end": {
+              "year": 2023,
+              "precision": "year"
+            }
+          },
+          "evidence": [
+            {
+              "source_ref": "s5",
+              "locator": "Former presidents",
+              "original_text": "Rowan Ellis served as president from 2012 to 2023."
+            }
+          ],
+          "verification": "supported",
+          "current_basis": "historical"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "infobox_current",
+        "reason": "The page reports this person in its current officeholder field; a term-end date is not required.",
+        "qualifications": [
+          "single_source_family",
+          "reported_current"
+        ]
+      }
+    },
+    "chancellor": {
+      "candidates": [
+        {
+          "id": "c1",
+          "value": {
+            "person": {
+              "name": "Dr. Avery Stone"
+            },
+            "title_original": {
+              "text": "Chancellor",
+              "language": "en"
+            }
+          },
+          "evidence": [
+            {
+              "source_ref": "s6",
+              "locator": "Current leadership",
+              "original_text": "Current chancellor: Dr. Avery Stone"
+            }
+          ],
+          "verification": "supported",
+          "current_basis": "explicit_current"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "explicit_current",
+        "reason": "The source explicitly identifies the current officeholder.",
+        "qualifications": [
+          "single_source_family"
+        ]
+      }
+    }
+  },
+  "locations": [
+    {
+      "id": "main",
+      "kind": "campus",
+      "name": {
+        "candidates": [
+          {
+            "id": "c1",
+            "value": {
+              "text": "Main campus",
+              "language": "en"
+            },
+            "evidence": [
+              {
+                "source_ref": "s8",
+                "locator": "Main campus"
+              }
+            ],
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "address": {
+        "candidates": [
+          {
+            "id": "c1",
+            "value": {
+              "formatted": {
+                "text": "100 University Avenue, Example City, Example Country",
+                "language": "en"
+              },
+              "street": "100 University Avenue",
+              "city_name": "Example City",
+              "country_name": "Example Country",
+              "postal_code": "EX100"
+            },
+            "evidence": [
+              {
+                "source_ref": "s8",
+                "locator": "Contact/Main campus"
+              }
+            ],
+            "verification": "supported"
+          },
+          {
+            "id": "c2",
+            "value": {
+              "formatted": {
+                "text": "示例国示例市学府路100号",
+                "language": "zh"
+              }
+            },
+            "evidence": [
+              {
+                "source_ref": "s2",
+                "locator": "infobox.address",
+                "original_text": "示例国示例市学府路100号"
+              }
+            ],
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "best_available",
+          "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency."
+        }
+      },
+      "coordinates": {
+        "candidates": [
+          {
+            "id": "c1",
+            "value": {
+              "latitude": 35.12345,
+              "longitude": 120.12345,
+              "crs": "EPSG:4326",
+              "accuracy_metres": 15
+            },
+            "evidence": [
+              {
+                "source_ref": "s8",
+                "locator": "Campus map/University entrance"
+              }
+            ],
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "population": {
+        "students_total": {
+          "candidates": [
+            {
+              "id": "c1",
+              "value": {
+                "amount": 18000,
+                "basis": "headcount",
+                "precision": "exact"
+              },
+              "evidence": [
+                {
+                  "source_ref": "s4",
+                  "locator": "Campus breakdown/Main campus"
+                }
+              ],
+              "verification": "supported",
+              "period_status": "stated",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2024
+              }
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available",
+            "qualifications": [
+              "single_source_family"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "city",
+      "kind": "administrative_area",
+      "name": {
+        "candidates": [
+          {
+            "id": "c1",
+            "value": {
+              "text": "Example City",
+              "language": "en"
+            },
+            "evidence": [
+              {
+                "source_ref": "s9",
+                "locator": "City name"
+              }
+            ],
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "coordinates": {
+        "candidates": [
+          {
+            "id": "c1",
+            "value": {
+              "latitude": 35.15,
+              "longitude": 120.1,
+              "crs": "EPSG:4326",
+              "accuracy_metres": 1000
+            },
+            "evidence": [
+              {
+                "source_ref": "s9",
+                "locator": "City centroid"
+              }
+            ],
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    }
+  ],
+  "related_entities": {
+    "predecessor": {
+      "kind": "institution",
+      "qid": "Q999999999999998",
+      "name": {
+        "candidates": [
+          {
+            "id": "c1",
+            "value": {
+              "text": "Meridian Vocational School",
+              "language": "en"
+            },
+            "evidence": [
+              {
+                "source_ref": "s5",
+                "locator": "Early history"
+              }
+            ],
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    }
+  },
+  "relationships": {
+    "predecessor": [
+      {
+        "candidates": [
+          {
+            "id": "c1",
+            "value": {
+              "target_ref": "related:predecessor"
+            },
+            "evidence": [
+              {
+                "source_ref": "s5",
+                "locator": "Early history",
+                "original_text": "The vocational school is described as a predecessor; legal continuity is not stated."
+              }
+            ],
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    ]
+  },
+  "profile": {
+    "website": {
+      "candidates": [
+        {
+          "id": "c1",
+          "value": "https://example.org/university",
+          "evidence": [
+            {
+              "source_ref": "s3",
+              "locator": "Official website"
+            }
+          ],
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "summary": {
+      "candidates": [
+        {
+          "id": "c1",
+          "value": {
+            "text": "A fictional public university used to demonstrate this data contract.",
+            "language": "en"
+          },
+          "evidence": [
+            {
+              "source_ref": "s3",
+              "locator": "About"
+            }
+          ],
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "main_image_url": {
+      "candidates": [
+        {
+          "id": "c1",
+          "value": "https://example.org/images/main-campus.jpg",
+          "evidence": [
+            {
+              "source_ref": "s1",
+              "locator": "infobox.main_image"
+            }
+          ],
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "motto": {
+      "candidates": [
+        {
+          "id": "c1",
+          "value": {
+            "text": "Learning through inquiry",
+            "language": "en"
+          },
+          "evidence": [
+            {
+              "source_ref": "s3",
+              "locator": "Motto"
+            }
+          ],
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "teaching_languages": {
+      "candidates": [
+        {
+          "id": "c1",
+          "value": [
+            "en",
+            "zh"
+          ],
+          "evidence": [
+            {
+              "source_ref": "s3",
+              "locator": "Teaching languages"
+            }
+          ],
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "degree_levels": {
+      "candidates": [
+        {
+          "id": "c1",
+          "value": [
+            "bachelor",
+            "master",
+            "doctorate"
+          ],
+          "evidence": [
+            {
+              "source_ref": "s3",
+              "locator": "Degrees"
+            }
+          ],
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "sources": {
+    "s1": {
+      "kind": "wikipedia",
+      "url": "https://example.org/fictional-wikipedia/en/University?oldid=1",
+      "publisher_role": "encyclopedia",
+      "family": "wikimedia",
+      "language": "en",
+      "page_id": 101,
+      "revision_id": 1,
+      "retrieved_at": "2026-11-05T00:00:00Z"
+    },
+    "s2": {
+      "kind": "wikipedia",
+      "url": "https://example.org/fictional-wikipedia/zh/University?oldid=2",
+      "publisher_role": "encyclopedia",
+      "family": "wikimedia",
+      "language": "zh",
+      "page_id": 102,
+      "revision_id": 2,
+      "retrieved_at": "2026-11-05T00:00:00Z"
+    },
+    "s3": {
+      "kind": "website",
+      "url": "https://example.org/university/about",
+      "publisher_role": "institution_official",
+      "family": "example-university",
+      "language": "en",
+      "retrieved_at": "2026-11-05T00:00:00Z"
+    },
+    "s4": {
+      "kind": "website",
+      "url": "https://example.org/university/reports/2024",
+      "publisher_role": "institution_official",
+      "family": "example-university",
+      "language": "en",
+      "retrieved_at": "2026-11-05T00:00:00Z"
+    },
+    "s5": {
+      "kind": "website",
+      "url": "https://example.org/university/history",
+      "publisher_role": "institution_official",
+      "family": "example-university",
+      "language": "en",
+      "retrieved_at": "2026-11-05T00:00:00Z"
+    },
+    "s6": {
+      "kind": "website",
+      "url": "https://example.org/university/leadership",
+      "publisher_role": "institution_official",
+      "family": "example-university",
+      "language": "en",
+      "retrieved_at": "2026-11-05T00:00:00Z"
+    },
+    "s7": {
+      "kind": "website",
+      "url": "https://example.org/university/reports/2023",
+      "publisher_role": "institution_official",
+      "family": "example-university",
+      "language": "en",
+      "retrieved_at": "2026-11-05T00:00:00Z"
+    },
+    "s8": {
+      "kind": "website",
+      "url": "https://example.org/university/campus-map",
+      "publisher_role": "institution_official",
+      "family": "example-university",
+      "language": "en",
+      "retrieved_at": "2026-11-05T00:00:00Z"
+    },
+    "s9": {
+      "kind": "dataset",
+      "url": "https://example.org/government/city-data",
+      "publisher_role": "government",
+      "family": "example-government",
+      "dataset_version": "fictional-2024-v1",
+      "source_record_id": "CITY-DEMO-1",
+      "retrieved_at": "2026-11-05T00:00:00Z"
+    },
+    "s10": {
+      "kind": "wikidata",
+      "url": "https://example.org/fictional-wikidata/Q999999999999999?oldid=17",
+      "publisher_role": "knowledge_base",
+      "family": "wikimedia",
+      "source_qid": "Q999999999999999",
+      "revision_id": 17,
+      "retrieved_at": "2026-11-05T00:00:00Z"
+    }
+  },
+  "coverage": {
+    "identity": {
+      "status": "checked",
+      "checked_at": "2026-11-05T00:00:00Z"
+    },
+    "geography": {
+      "status": "checked",
+      "checked_at": "2026-11-05T00:00:00Z"
+    },
+    "history": {
+      "status": "checked",
+      "checked_at": "2026-11-05T00:00:00Z"
+    },
+    "population": {
+      "status": "checked",
+      "checked_at": "2026-11-05T00:00:00Z"
+    },
+    "finance": {
+      "status": "checked",
+      "checked_at": "2026-11-05T00:00:00Z"
+    },
+    "profile": {
+      "status": "checked",
+      "checked_at": "2026-11-05T00:00:00Z"
+    }
+  }
+}

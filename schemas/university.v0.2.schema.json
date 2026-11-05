@@ -1,0 +1,3289 @@
+{
+  "$defs": {
+    "shared1": {
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "else": {
+            "not": {
+              "anyOf": [
+                {
+                  "required": [
+                    "minimum"
+                  ]
+                },
+                {
+                  "required": [
+                    "maximum"
+                  ]
+                }
+              ]
+            },
+            "required": [
+              "amount"
+            ]
+          },
+          "if": {
+            "properties": {
+              "precision": {
+                "const": "range"
+              }
+            }
+          },
+          "then": {
+            "not": {
+              "required": [
+                "amount"
+              ]
+            },
+            "required": [
+              "minimum",
+              "maximum"
+            ]
+          }
+        }
+      ],
+      "properties": {
+        "amount": {
+          "minimum": 0,
+          "type": "number"
+        },
+        "basis": {
+          "enum": [
+            "headcount",
+            "fte",
+            "unspecified"
+          ]
+        },
+        "maximum": {
+          "minimum": 0,
+          "type": "number"
+        },
+        "minimum": {
+          "minimum": 0,
+          "type": "number"
+        },
+        "precision": {
+          "enum": [
+            "exact",
+            "approximate",
+            "range"
+          ]
+        }
+      },
+      "required": [
+        "basis",
+        "precision"
+      ],
+      "type": "object"
+    },
+    "shared10": {
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "else": {
+            "required": [
+              "value"
+            ]
+          },
+          "if": {
+            "properties": {
+              "value_state": {
+                "enum": [
+                  "unknown",
+                  "no_value",
+                  "not_applicable"
+                ]
+              }
+            },
+            "required": [
+              "value_state"
+            ]
+          },
+          "then": {
+            "not": {
+              "required": [
+                "value"
+              ]
+            }
+          }
+        }
+      ],
+      "properties": {
+        "current_basis": {
+          "enum": [
+            "explicit_current",
+            "infobox_current",
+            "term_present",
+            "undated_last_known",
+            "historical"
+          ]
+        },
+        "evidence": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "locator": {
+                "minLength": 1,
+                "type": "string"
+              },
+              "original_text": {
+                "minLength": 1,
+                "type": "string"
+              },
+              "source_ref": {
+                "pattern": "^s[1-9][0-9]*$",
+                "type": "string"
+              }
+            },
+            "required": [
+              "source_ref",
+              "locator"
+            ],
+            "type": "object"
+          },
+          "minItems": 1,
+          "type": "array"
+        },
+        "id": {
+          "pattern": "^c[1-9][0-9]*$",
+          "type": "string"
+        },
+        "period": {
+          "$ref": "#/$defs/shared13"
+        },
+        "period_status": {
+          "enum": [
+            "stated",
+            "not_stated"
+          ]
+        },
+        "value": {
+          "items": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "minItems": 1,
+          "type": "array"
+        },
+        "value_state": {
+          "enum": [
+            "known",
+            "unknown",
+            "no_value",
+            "not_applicable"
+          ]
+        },
+        "verification": {
+          "enum": [
+            "supported",
+            "disputed",
+            "insufficient_evidence",
+            "withdrawn"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "evidence",
+        "verification"
+      ],
+      "type": "object"
+    },
+    "shared11": {
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "else": {
+            "required": [
+              "value"
+            ]
+          },
+          "if": {
+            "properties": {
+              "value_state": {
+                "enum": [
+                  "unknown",
+                  "no_value",
+                  "not_applicable"
+                ]
+              }
+            },
+            "required": [
+              "value_state"
+            ]
+          },
+          "then": {
+            "not": {
+              "required": [
+                "value"
+              ]
+            }
+          }
+        }
+      ],
+      "properties": {
+        "current_basis": {
+          "enum": [
+            "explicit_current",
+            "infobox_current",
+            "term_present",
+            "undated_last_known",
+            "historical"
+          ]
+        },
+        "evidence": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "locator": {
+                "minLength": 1,
+                "type": "string"
+              },
+              "original_text": {
+                "minLength": 1,
+                "type": "string"
+              },
+              "source_ref": {
+                "pattern": "^s[1-9][0-9]*$",
+                "type": "string"
+              }
+            },
+            "required": [
+              "source_ref",
+              "locator"
+            ],
+            "type": "object"
+          },
+          "minItems": 1,
+          "type": "array"
+        },
+        "id": {
+          "pattern": "^c[1-9][0-9]*$",
+          "type": "string"
+        },
+        "period": {
+          "$ref": "#/$defs/shared13"
+        },
+        "period_status": {
+          "enum": [
+            "stated",
+            "not_stated"
+          ]
+        },
+        "value": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "value_state": {
+          "enum": [
+            "known",
+            "unknown",
+            "no_value",
+            "not_applicable"
+          ]
+        },
+        "verification": {
+          "enum": [
+            "supported",
+            "disputed",
+            "insufficient_evidence",
+            "withdrawn"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "evidence",
+        "verification"
+      ],
+      "type": "object"
+    },
+    "shared12": {
+      "additionalProperties": false,
+      "anyOf": [
+        {
+          "required": [
+            "year"
+          ]
+        },
+        {
+          "required": [
+            "date"
+          ]
+        },
+        {
+          "required": [
+            "minimum_year",
+            "maximum_year"
+          ]
+        },
+        {
+          "required": [
+            "original_date"
+          ]
+        }
+      ],
+      "properties": {
+        "approximate": {
+          "type": "boolean"
+        },
+        "calendar": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "date": {
+          "format": "date",
+          "type": "string"
+        },
+        "maximum_year": {
+          "type": "integer"
+        },
+        "minimum_year": {
+          "type": "integer"
+        },
+        "original_date": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "precision": {
+          "enum": [
+            "day",
+            "month",
+            "year",
+            "decade",
+            "century",
+            "interval",
+            "uncertain"
+          ]
+        },
+        "year": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "precision"
+      ],
+      "type": "object"
+    },
+    "shared13": {
+      "additionalProperties": false,
+      "anyOf": [
+        {
+          "required": [
+            "year"
+          ]
+        },
+        {
+          "required": [
+            "start_year",
+            "end_year"
+          ]
+        },
+        {
+          "required": [
+            "date"
+          ]
+        },
+        {
+          "required": [
+            "start_date",
+            "end_date"
+          ]
+        },
+        {
+          "required": [
+            "label"
+          ]
+        }
+      ],
+      "properties": {
+        "date": {
+          "format": "date",
+          "type": "string"
+        },
+        "end_date": {
+          "format": "date",
+          "type": "string"
+        },
+        "end_year": {
+          "type": "integer"
+        },
+        "kind": {
+          "enum": [
+            "calendar_year",
+            "academic_year",
+            "fiscal_year",
+            "date",
+            "interval"
+          ]
+        },
+        "label": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "start_date": {
+          "format": "date",
+          "type": "string"
+        },
+        "start_year": {
+          "type": "integer"
+        },
+        "year": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "kind"
+      ],
+      "type": "object"
+    },
+    "shared14": {
+      "additionalProperties": false,
+      "properties": {
+        "academic_staff": {
+          "$ref": "#/$defs/shared18"
+        },
+        "administrative_staff": {
+          "$ref": "#/$defs/shared18"
+        },
+        "doctoral_students": {
+          "$ref": "#/$defs/shared18"
+        },
+        "employees_total": {
+          "$ref": "#/$defs/shared18"
+        },
+        "international_students": {
+          "$ref": "#/$defs/shared18"
+        },
+        "masters_students": {
+          "$ref": "#/$defs/shared18"
+        },
+        "postgraduate_students": {
+          "$ref": "#/$defs/shared18"
+        },
+        "research_staff": {
+          "$ref": "#/$defs/shared18"
+        },
+        "students_total": {
+          "$ref": "#/$defs/shared18"
+        },
+        "teaching_staff": {
+          "$ref": "#/$defs/shared18"
+        },
+        "undergraduate_students": {
+          "$ref": "#/$defs/shared18"
+        }
+      },
+      "required": [],
+      "type": "object"
+    },
+    "shared15": {
+      "additionalProperties": false,
+      "properties": {
+        "acting": {
+          "type": "boolean"
+        },
+        "person": {
+          "additionalProperties": false,
+          "properties": {
+            "name": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "qid": {
+              "pattern": "^Q[1-9][0-9]*$",
+              "type": "string"
+            }
+          },
+          "required": [
+            "name"
+          ],
+          "type": "object"
+        },
+        "term_end": {
+          "$ref": "#/$defs/shared12"
+        },
+        "term_start": {
+          "$ref": "#/$defs/shared12"
+        },
+        "title_original": {
+          "additionalProperties": false,
+          "properties": {
+            "language": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "text": {
+              "minLength": 1,
+              "type": "string"
+            }
+          },
+          "required": [
+            "text",
+            "language"
+          ],
+          "type": "object"
+        }
+      },
+      "required": [
+        "person",
+        "title_original"
+      ],
+      "type": "object"
+    },
+    "shared16": {
+      "additionalProperties": false,
+      "properties": {
+        "candidate_id": {
+          "pattern": "^c[1-9][0-9]*$",
+          "type": "string"
+        },
+        "qualifications": {
+          "$ref": "#/$defs/shared39"
+        },
+        "reason": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "reason_code": {
+          "enum": [
+            "only_available",
+            "explicit_current",
+            "infobox_current",
+            "term_present",
+            "last_known",
+            "best_available"
+          ]
+        }
+      },
+      "required": [
+        "candidate_id",
+        "reason_code"
+      ],
+      "type": "object"
+    },
+    "shared17": {
+      "additionalProperties": false,
+      "properties": {
+        "candidate_ids": {
+          "items": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "minItems": 2,
+          "type": "array",
+          "uniqueItems": true
+        },
+        "kind": {
+          "enum": [
+            "value_disagreement",
+            "scope_disagreement",
+            "time_disagreement"
+          ]
+        },
+        "note": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "unresolved",
+            "resolved_by_evidence"
+          ]
+        }
+      },
+      "required": [
+        "candidate_ids",
+        "kind",
+        "status",
+        "note"
+      ],
+      "type": "object"
+    },
+    "shared18": {
+      "additionalProperties": false,
+      "properties": {
+        "candidates": {
+          "$ref": "#/$defs/shared28"
+        },
+        "conflicts": {
+          "$ref": "#/$defs/shared37"
+        },
+        "preferred": {
+          "$ref": "#/$defs/shared16"
+        },
+        "subject_ref": {
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "candidates"
+      ],
+      "type": "object"
+    },
+    "shared19": {
+      "additionalProperties": false,
+      "properties": {
+        "candidates": {
+          "$ref": "#/$defs/shared29"
+        },
+        "conflicts": {
+          "$ref": "#/$defs/shared37"
+        },
+        "preferred": {
+          "$ref": "#/$defs/shared16"
+        },
+        "subject_ref": {
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "candidates"
+      ],
+      "type": "object"
+    },
+    "shared2": {
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "else": {
+            "not": {
+              "anyOf": [
+                {
+                  "required": [
+                    "minimum"
+                  ]
+                },
+                {
+                  "required": [
+                    "maximum"
+                  ]
+                }
+              ]
+            },
+            "required": [
+              "amount"
+            ]
+          },
+          "if": {
+            "properties": {
+              "precision": {
+                "const": "range"
+              }
+            }
+          },
+          "then": {
+            "not": {
+              "required": [
+                "amount"
+              ]
+            },
+            "required": [
+              "minimum",
+              "maximum"
+            ]
+          }
+        }
+      ],
+      "properties": {
+        "amount": {
+          "pattern": "^-?[0-9]+(?:\\.[0-9]+)?$",
+          "type": "string"
+        },
+        "currency": {
+          "pattern": "^[A-Z]{3}$",
+          "type": "string"
+        },
+        "maximum": {
+          "pattern": "^-?[0-9]+(?:\\.[0-9]+)?$",
+          "type": "string"
+        },
+        "minimum": {
+          "pattern": "^-?[0-9]+(?:\\.[0-9]+)?$",
+          "type": "string"
+        },
+        "precision": {
+          "enum": [
+            "exact",
+            "approximate",
+            "range"
+          ]
+        }
+      },
+      "required": [
+        "currency",
+        "precision"
+      ],
+      "type": "object"
+    },
+    "shared20": {
+      "additionalProperties": false,
+      "properties": {
+        "candidates": {
+          "$ref": "#/$defs/shared30"
+        },
+        "conflicts": {
+          "$ref": "#/$defs/shared37"
+        },
+        "preferred": {
+          "$ref": "#/$defs/shared16"
+        },
+        "subject_ref": {
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "candidates"
+      ],
+      "type": "object"
+    },
+    "shared21": {
+      "additionalProperties": false,
+      "properties": {
+        "candidates": {
+          "$ref": "#/$defs/shared31"
+        },
+        "conflicts": {
+          "$ref": "#/$defs/shared37"
+        },
+        "preferred": {
+          "$ref": "#/$defs/shared16"
+        },
+        "subject_ref": {
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "candidates"
+      ],
+      "type": "object"
+    },
+    "shared22": {
+      "additionalProperties": false,
+      "properties": {
+        "candidates": {
+          "$ref": "#/$defs/shared32"
+        },
+        "conflicts": {
+          "$ref": "#/$defs/shared37"
+        },
+        "preferred": {
+          "$ref": "#/$defs/shared16"
+        },
+        "subject_ref": {
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "candidates"
+      ],
+      "type": "object"
+    },
+    "shared23": {
+      "additionalProperties": false,
+      "properties": {
+        "candidates": {
+          "$ref": "#/$defs/shared33"
+        },
+        "conflicts": {
+          "$ref": "#/$defs/shared37"
+        },
+        "preferred": {
+          "$ref": "#/$defs/shared16"
+        },
+        "subject_ref": {
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "candidates"
+      ],
+      "type": "object"
+    },
+    "shared24": {
+      "additionalProperties": false,
+      "properties": {
+        "candidates": {
+          "$ref": "#/$defs/shared34"
+        },
+        "conflicts": {
+          "$ref": "#/$defs/shared37"
+        },
+        "preferred": {
+          "$ref": "#/$defs/shared16"
+        },
+        "subject_ref": {
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "candidates"
+      ],
+      "type": "object"
+    },
+    "shared25": {
+      "additionalProperties": false,
+      "properties": {
+        "candidates": {
+          "$ref": "#/$defs/shared35"
+        },
+        "conflicts": {
+          "$ref": "#/$defs/shared37"
+        },
+        "preferred": {
+          "$ref": "#/$defs/shared16"
+        },
+        "subject_ref": {
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "candidates"
+      ],
+      "type": "object"
+    },
+    "shared26": {
+      "additionalProperties": false,
+      "properties": {
+        "candidates": {
+          "$ref": "#/$defs/shared36"
+        },
+        "conflicts": {
+          "$ref": "#/$defs/shared37"
+        },
+        "preferred": {
+          "$ref": "#/$defs/shared16"
+        },
+        "subject_ref": {
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "candidates"
+      ],
+      "type": "object"
+    },
+    "shared27": {
+      "additionalProperties": false,
+      "properties": {
+        "independence": {
+          "enum": [
+            "explicit_legal",
+            "explicit_administrative",
+            "unresolved"
+          ]
+        },
+        "target_ref": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "valid_from": {
+          "$ref": "#/$defs/shared12"
+        },
+        "valid_to": {
+          "$ref": "#/$defs/shared12"
+        }
+      },
+      "required": [
+        "target_ref"
+      ],
+      "type": "object"
+    },
+    "shared28": {
+      "items": {
+        "$ref": "#/$defs/shared3"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "shared29": {
+      "items": {
+        "$ref": "#/$defs/shared4"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "shared3": {
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "else": {
+            "required": [
+              "value"
+            ]
+          },
+          "if": {
+            "properties": {
+              "value_state": {
+                "enum": [
+                  "unknown",
+                  "no_value",
+                  "not_applicable"
+                ]
+              }
+            },
+            "required": [
+              "value_state"
+            ]
+          },
+          "then": {
+            "not": {
+              "required": [
+                "value"
+              ]
+            }
+          }
+        },
+        {
+          "else": {
+            "not": {
+              "required": [
+                "period"
+              ]
+            }
+          },
+          "if": {
+            "properties": {
+              "period_status": {
+                "const": "stated"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "period"
+            ]
+          }
+        }
+      ],
+      "properties": {
+        "current_basis": {
+          "enum": [
+            "explicit_current",
+            "infobox_current",
+            "term_present",
+            "undated_last_known",
+            "historical"
+          ]
+        },
+        "evidence": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "locator": {
+                "minLength": 1,
+                "type": "string"
+              },
+              "original_text": {
+                "minLength": 1,
+                "type": "string"
+              },
+              "source_ref": {
+                "pattern": "^s[1-9][0-9]*$",
+                "type": "string"
+              }
+            },
+            "required": [
+              "source_ref",
+              "locator"
+            ],
+            "type": "object"
+          },
+          "minItems": 1,
+          "type": "array"
+        },
+        "id": {
+          "pattern": "^c[1-9][0-9]*$",
+          "type": "string"
+        },
+        "period": {
+          "$ref": "#/$defs/shared13"
+        },
+        "period_status": {
+          "enum": [
+            "stated",
+            "not_stated"
+          ]
+        },
+        "value": {
+          "$ref": "#/$defs/shared1"
+        },
+        "value_state": {
+          "enum": [
+            "known",
+            "unknown",
+            "no_value",
+            "not_applicable"
+          ]
+        },
+        "verification": {
+          "enum": [
+            "supported",
+            "disputed",
+            "insufficient_evidence",
+            "withdrawn"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "evidence",
+        "verification",
+        "period_status"
+      ],
+      "type": "object"
+    },
+    "shared30": {
+      "items": {
+        "$ref": "#/$defs/shared5"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "shared31": {
+      "items": {
+        "$ref": "#/$defs/shared6"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "shared32": {
+      "items": {
+        "$ref": "#/$defs/shared7"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "shared33": {
+      "items": {
+        "$ref": "#/$defs/shared8"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "shared34": {
+      "items": {
+        "$ref": "#/$defs/shared9"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "shared35": {
+      "items": {
+        "$ref": "#/$defs/shared10"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "shared36": {
+      "items": {
+        "$ref": "#/$defs/shared11"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "shared37": {
+      "items": {
+        "$ref": "#/$defs/shared17"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "shared38": {
+      "items": {
+        "$ref": "#/$defs/shared22"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "shared39": {
+      "items": {
+        "enum": [
+          "period_not_stated",
+          "single_source_family",
+          "approximate_value",
+          "range_value",
+          "conflicting_candidates",
+          "reported_current",
+          "last_known_only",
+          "historical_only",
+          "disputed_claim",
+          "limited_support",
+          "different_basis_available",
+          "different_currency_available"
+        ]
+      },
+      "minItems": 1,
+      "type": "array",
+      "uniqueItems": true
+    },
+    "shared4": {
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "else": {
+            "required": [
+              "value"
+            ]
+          },
+          "if": {
+            "properties": {
+              "value_state": {
+                "enum": [
+                  "unknown",
+                  "no_value",
+                  "not_applicable"
+                ]
+              }
+            },
+            "required": [
+              "value_state"
+            ]
+          },
+          "then": {
+            "not": {
+              "required": [
+                "value"
+              ]
+            }
+          }
+        },
+        {
+          "else": {
+            "not": {
+              "required": [
+                "period"
+              ]
+            }
+          },
+          "if": {
+            "properties": {
+              "period_status": {
+                "const": "stated"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "period"
+            ]
+          }
+        }
+      ],
+      "properties": {
+        "current_basis": {
+          "enum": [
+            "explicit_current",
+            "infobox_current",
+            "term_present",
+            "undated_last_known",
+            "historical"
+          ]
+        },
+        "evidence": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "locator": {
+                "minLength": 1,
+                "type": "string"
+              },
+              "original_text": {
+                "minLength": 1,
+                "type": "string"
+              },
+              "source_ref": {
+                "pattern": "^s[1-9][0-9]*$",
+                "type": "string"
+              }
+            },
+            "required": [
+              "source_ref",
+              "locator"
+            ],
+            "type": "object"
+          },
+          "minItems": 1,
+          "type": "array"
+        },
+        "id": {
+          "pattern": "^c[1-9][0-9]*$",
+          "type": "string"
+        },
+        "period": {
+          "$ref": "#/$defs/shared13"
+        },
+        "period_status": {
+          "enum": [
+            "stated",
+            "not_stated"
+          ]
+        },
+        "value": {
+          "$ref": "#/$defs/shared2"
+        },
+        "value_state": {
+          "enum": [
+            "known",
+            "unknown",
+            "no_value",
+            "not_applicable"
+          ]
+        },
+        "verification": {
+          "enum": [
+            "supported",
+            "disputed",
+            "insufficient_evidence",
+            "withdrawn"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "evidence",
+        "verification",
+        "period_status"
+      ],
+      "type": "object"
+    },
+    "shared5": {
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "else": {
+            "required": [
+              "value"
+            ]
+          },
+          "if": {
+            "properties": {
+              "value_state": {
+                "enum": [
+                  "unknown",
+                  "no_value",
+                  "not_applicable"
+                ]
+              }
+            },
+            "required": [
+              "value_state"
+            ]
+          },
+          "then": {
+            "not": {
+              "required": [
+                "value"
+              ]
+            }
+          }
+        }
+      ],
+      "properties": {
+        "current_basis": {
+          "enum": [
+            "explicit_current",
+            "infobox_current",
+            "term_present",
+            "undated_last_known",
+            "historical"
+          ]
+        },
+        "evidence": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "locator": {
+                "minLength": 1,
+                "type": "string"
+              },
+              "original_text": {
+                "minLength": 1,
+                "type": "string"
+              },
+              "source_ref": {
+                "pattern": "^s[1-9][0-9]*$",
+                "type": "string"
+              }
+            },
+            "required": [
+              "source_ref",
+              "locator"
+            ],
+            "type": "object"
+          },
+          "minItems": 1,
+          "type": "array"
+        },
+        "id": {
+          "pattern": "^c[1-9][0-9]*$",
+          "type": "string"
+        },
+        "period": {
+          "$ref": "#/$defs/shared13"
+        },
+        "period_status": {
+          "enum": [
+            "stated",
+            "not_stated"
+          ]
+        },
+        "value": {
+          "$ref": "#/$defs/shared12"
+        },
+        "value_state": {
+          "enum": [
+            "known",
+            "unknown",
+            "no_value",
+            "not_applicable"
+          ]
+        },
+        "verification": {
+          "enum": [
+            "supported",
+            "disputed",
+            "insufficient_evidence",
+            "withdrawn"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "evidence",
+        "verification"
+      ],
+      "type": "object"
+    },
+    "shared6": {
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "else": {
+            "required": [
+              "value"
+            ]
+          },
+          "if": {
+            "properties": {
+              "value_state": {
+                "enum": [
+                  "unknown",
+                  "no_value",
+                  "not_applicable"
+                ]
+              }
+            },
+            "required": [
+              "value_state"
+            ]
+          },
+          "then": {
+            "not": {
+              "required": [
+                "value"
+              ]
+            }
+          }
+        }
+      ],
+      "properties": {
+        "current_basis": {
+          "enum": [
+            "explicit_current",
+            "infobox_current",
+            "term_present",
+            "undated_last_known",
+            "historical"
+          ]
+        },
+        "evidence": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "locator": {
+                "minLength": 1,
+                "type": "string"
+              },
+              "original_text": {
+                "minLength": 1,
+                "type": "string"
+              },
+              "source_ref": {
+                "pattern": "^s[1-9][0-9]*$",
+                "type": "string"
+              }
+            },
+            "required": [
+              "source_ref",
+              "locator"
+            ],
+            "type": "object"
+          },
+          "minItems": 1,
+          "type": "array"
+        },
+        "id": {
+          "pattern": "^c[1-9][0-9]*$",
+          "type": "string"
+        },
+        "period": {
+          "$ref": "#/$defs/shared13"
+        },
+        "period_status": {
+          "enum": [
+            "stated",
+            "not_stated"
+          ]
+        },
+        "value": {
+          "$ref": "#/$defs/shared15"
+        },
+        "value_state": {
+          "enum": [
+            "known",
+            "unknown",
+            "no_value",
+            "not_applicable"
+          ]
+        },
+        "verification": {
+          "enum": [
+            "supported",
+            "disputed",
+            "insufficient_evidence",
+            "withdrawn"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "evidence",
+        "verification"
+      ],
+      "type": "object"
+    },
+    "shared7": {
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "else": {
+            "required": [
+              "value"
+            ]
+          },
+          "if": {
+            "properties": {
+              "value_state": {
+                "enum": [
+                  "unknown",
+                  "no_value",
+                  "not_applicable"
+                ]
+              }
+            },
+            "required": [
+              "value_state"
+            ]
+          },
+          "then": {
+            "not": {
+              "required": [
+                "value"
+              ]
+            }
+          }
+        }
+      ],
+      "properties": {
+        "current_basis": {
+          "enum": [
+            "explicit_current",
+            "infobox_current",
+            "term_present",
+            "undated_last_known",
+            "historical"
+          ]
+        },
+        "evidence": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "locator": {
+                "minLength": 1,
+                "type": "string"
+              },
+              "original_text": {
+                "minLength": 1,
+                "type": "string"
+              },
+              "source_ref": {
+                "pattern": "^s[1-9][0-9]*$",
+                "type": "string"
+              }
+            },
+            "required": [
+              "source_ref",
+              "locator"
+            ],
+            "type": "object"
+          },
+          "minItems": 1,
+          "type": "array"
+        },
+        "id": {
+          "pattern": "^c[1-9][0-9]*$",
+          "type": "string"
+        },
+        "period": {
+          "$ref": "#/$defs/shared13"
+        },
+        "period_status": {
+          "enum": [
+            "stated",
+            "not_stated"
+          ]
+        },
+        "value": {
+          "$ref": "#/$defs/shared27"
+        },
+        "value_state": {
+          "enum": [
+            "known",
+            "unknown",
+            "no_value",
+            "not_applicable"
+          ]
+        },
+        "verification": {
+          "enum": [
+            "supported",
+            "disputed",
+            "insufficient_evidence",
+            "withdrawn"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "evidence",
+        "verification"
+      ],
+      "type": "object"
+    },
+    "shared8": {
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "else": {
+            "required": [
+              "value"
+            ]
+          },
+          "if": {
+            "properties": {
+              "value_state": {
+                "enum": [
+                  "unknown",
+                  "no_value",
+                  "not_applicable"
+                ]
+              }
+            },
+            "required": [
+              "value_state"
+            ]
+          },
+          "then": {
+            "not": {
+              "required": [
+                "value"
+              ]
+            }
+          }
+        }
+      ],
+      "properties": {
+        "current_basis": {
+          "enum": [
+            "explicit_current",
+            "infobox_current",
+            "term_present",
+            "undated_last_known",
+            "historical"
+          ]
+        },
+        "evidence": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "locator": {
+                "minLength": 1,
+                "type": "string"
+              },
+              "original_text": {
+                "minLength": 1,
+                "type": "string"
+              },
+              "source_ref": {
+                "pattern": "^s[1-9][0-9]*$",
+                "type": "string"
+              }
+            },
+            "required": [
+              "source_ref",
+              "locator"
+            ],
+            "type": "object"
+          },
+          "minItems": 1,
+          "type": "array"
+        },
+        "id": {
+          "pattern": "^c[1-9][0-9]*$",
+          "type": "string"
+        },
+        "period": {
+          "$ref": "#/$defs/shared13"
+        },
+        "period_status": {
+          "enum": [
+            "stated",
+            "not_stated"
+          ]
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "language": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "text": {
+              "minLength": 1,
+              "type": "string"
+            }
+          },
+          "required": [
+            "text",
+            "language"
+          ],
+          "type": "object"
+        },
+        "value_state": {
+          "enum": [
+            "known",
+            "unknown",
+            "no_value",
+            "not_applicable"
+          ]
+        },
+        "verification": {
+          "enum": [
+            "supported",
+            "disputed",
+            "insufficient_evidence",
+            "withdrawn"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "evidence",
+        "verification"
+      ],
+      "type": "object"
+    },
+    "shared9": {
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "else": {
+            "required": [
+              "value"
+            ]
+          },
+          "if": {
+            "properties": {
+              "value_state": {
+                "enum": [
+                  "unknown",
+                  "no_value",
+                  "not_applicable"
+                ]
+              }
+            },
+            "required": [
+              "value_state"
+            ]
+          },
+          "then": {
+            "not": {
+              "required": [
+                "value"
+              ]
+            }
+          }
+        }
+      ],
+      "properties": {
+        "current_basis": {
+          "enum": [
+            "explicit_current",
+            "infobox_current",
+            "term_present",
+            "undated_last_known",
+            "historical"
+          ]
+        },
+        "evidence": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "locator": {
+                "minLength": 1,
+                "type": "string"
+              },
+              "original_text": {
+                "minLength": 1,
+                "type": "string"
+              },
+              "source_ref": {
+                "pattern": "^s[1-9][0-9]*$",
+                "type": "string"
+              }
+            },
+            "required": [
+              "source_ref",
+              "locator"
+            ],
+            "type": "object"
+          },
+          "minItems": 1,
+          "type": "array"
+        },
+        "id": {
+          "pattern": "^c[1-9][0-9]*$",
+          "type": "string"
+        },
+        "period": {
+          "$ref": "#/$defs/shared13"
+        },
+        "period_status": {
+          "enum": [
+            "stated",
+            "not_stated"
+          ]
+        },
+        "value": {
+          "format": "uri",
+          "pattern": "^https?://",
+          "type": "string"
+        },
+        "value_state": {
+          "enum": [
+            "known",
+            "unknown",
+            "no_value",
+            "not_applicable"
+          ]
+        },
+        "verification": {
+          "enum": [
+            "supported",
+            "disputed",
+            "insufficient_evidence",
+            "withdrawn"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "evidence",
+        "verification"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "urn:university-curation:record:0.2.0",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "coverage": {
+      "additionalProperties": {
+        "additionalProperties": false,
+        "properties": {
+          "checked_at": {
+            "format": "date-time",
+            "type": "string"
+          },
+          "status": {
+            "enum": [
+              "checked",
+              "not_found",
+              "not_applicable",
+              "disputed"
+            ]
+          }
+        },
+        "required": [
+          "status",
+          "checked_at"
+        ],
+        "type": "object"
+      },
+      "type": "object"
+    },
+    "curation": {
+      "additionalProperties": false,
+      "properties": {
+        "identity_status": {
+          "enum": [
+            "pending",
+            "in_scope",
+            "related",
+            "excluded",
+            "needs_review",
+            "conflation_suspected"
+          ]
+        },
+        "refresh_profile": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "reviewed_groups": {
+          "items": {
+            "enum": [
+              "identity",
+              "geography",
+              "history",
+              "population",
+              "finance",
+              "profile"
+            ]
+          },
+          "minItems": 1,
+          "type": "array"
+        }
+      },
+      "required": [
+        "identity_status"
+      ],
+      "type": "object"
+    },
+    "example": {
+      "additionalProperties": false,
+      "properties": {
+        "notice": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "synthetic": {
+          "const": true
+        }
+      },
+      "required": [
+        "synthetic",
+        "notice"
+      ],
+      "type": "object"
+    },
+    "finance": {
+      "additionalProperties": false,
+      "properties": {
+        "assets": {
+          "$ref": "#/$defs/shared19"
+        },
+        "budget": {
+          "$ref": "#/$defs/shared19"
+        },
+        "endowment": {
+          "$ref": "#/$defs/shared19"
+        },
+        "expenses": {
+          "$ref": "#/$defs/shared19"
+        },
+        "research_funding": {
+          "$ref": "#/$defs/shared19"
+        },
+        "revenue": {
+          "$ref": "#/$defs/shared19"
+        }
+      },
+      "required": [],
+      "type": "object"
+    },
+    "history": {
+      "additionalProperties": false,
+      "properties": {
+        "milestones": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "date": {
+                "$ref": "#/$defs/shared20"
+              },
+              "description": {
+                "$ref": "#/$defs/shared23"
+              },
+              "id": {
+                "pattern": "^[a-z][a-z0-9_-]*$",
+                "type": "string"
+              },
+              "kind": {
+                "enum": [
+                  "predecessor_establishment",
+                  "vocational_origin",
+                  "institution_establishment",
+                  "higher_education_status",
+                  "university_status",
+                  "charter",
+                  "rename",
+                  "relocation",
+                  "merger",
+                  "split",
+                  "closure",
+                  "reopening",
+                  "jurisdiction_change"
+                ]
+              },
+              "subject_ref": {
+                "minLength": 1,
+                "type": "string"
+              }
+            },
+            "required": [
+              "id",
+              "kind",
+              "subject_ref",
+              "date"
+            ],
+            "type": "object"
+          },
+          "minItems": 1,
+          "type": "array"
+        }
+      },
+      "required": [],
+      "type": "object"
+    },
+    "identity": {
+      "additionalProperties": false,
+      "properties": {
+        "aliases": {
+          "items": {
+            "$ref": "#/$defs/shared23"
+          },
+          "minItems": 1,
+          "type": "array"
+        },
+        "identifiers": {
+          "additionalProperties": {
+            "$ref": "#/$defs/shared26"
+          },
+          "type": "object"
+        },
+        "kind": {
+          "additionalProperties": false,
+          "properties": {
+            "candidates": {
+              "items": {
+                "additionalProperties": false,
+                "allOf": [
+                  {
+                    "else": {
+                      "required": [
+                        "value"
+                      ]
+                    },
+                    "if": {
+                      "properties": {
+                        "value_state": {
+                          "enum": [
+                            "unknown",
+                            "no_value",
+                            "not_applicable"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "value_state"
+                      ]
+                    },
+                    "then": {
+                      "not": {
+                        "required": [
+                          "value"
+                        ]
+                      }
+                    }
+                  }
+                ],
+                "properties": {
+                  "current_basis": {
+                    "enum": [
+                      "explicit_current",
+                      "infobox_current",
+                      "term_present",
+                      "undated_last_known",
+                      "historical"
+                    ]
+                  },
+                  "evidence": {
+                    "items": {
+                      "additionalProperties": false,
+                      "properties": {
+                        "locator": {
+                          "minLength": 1,
+                          "type": "string"
+                        },
+                        "original_text": {
+                          "minLength": 1,
+                          "type": "string"
+                        },
+                        "source_ref": {
+                          "pattern": "^s[1-9][0-9]*$",
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "source_ref",
+                        "locator"
+                      ],
+                      "type": "object"
+                    },
+                    "minItems": 1,
+                    "type": "array"
+                  },
+                  "id": {
+                    "pattern": "^c[1-9][0-9]*$",
+                    "type": "string"
+                  },
+                  "period": {
+                    "$ref": "#/$defs/shared13"
+                  },
+                  "period_status": {
+                    "enum": [
+                      "stated",
+                      "not_stated"
+                    ]
+                  },
+                  "value": {
+                    "enum": [
+                      "university",
+                      "higher_education_college",
+                      "specialist_institution",
+                      "tertiary_vocational_institution",
+                      "historical_academy",
+                      "university_system",
+                      "campus",
+                      "faculty",
+                      "building",
+                      "other"
+                    ]
+                  },
+                  "value_state": {
+                    "enum": [
+                      "known",
+                      "unknown",
+                      "no_value",
+                      "not_applicable"
+                    ]
+                  },
+                  "verification": {
+                    "enum": [
+                      "supported",
+                      "disputed",
+                      "insufficient_evidence",
+                      "withdrawn"
+                    ]
+                  }
+                },
+                "required": [
+                  "id",
+                  "evidence",
+                  "verification"
+                ],
+                "type": "object"
+              },
+              "minItems": 1,
+              "type": "array"
+            },
+            "conflicts": {
+              "$ref": "#/$defs/shared37"
+            },
+            "preferred": {
+              "$ref": "#/$defs/shared16"
+            },
+            "subject_ref": {
+              "minLength": 1,
+              "type": "string"
+            }
+          },
+          "required": [
+            "candidates"
+          ],
+          "type": "object"
+        },
+        "names": {
+          "additionalProperties": false,
+          "patternProperties": {
+            "^[a-z]{2,3}(?:-[a-z0-9]+)*$": {
+              "$ref": "#/$defs/shared26"
+            }
+          },
+          "type": "object"
+        },
+        "operating_status": {
+          "additionalProperties": false,
+          "properties": {
+            "candidates": {
+              "items": {
+                "additionalProperties": false,
+                "allOf": [
+                  {
+                    "else": {
+                      "required": [
+                        "value"
+                      ]
+                    },
+                    "if": {
+                      "properties": {
+                        "value_state": {
+                          "enum": [
+                            "unknown",
+                            "no_value",
+                            "not_applicable"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "value_state"
+                      ]
+                    },
+                    "then": {
+                      "not": {
+                        "required": [
+                          "value"
+                        ]
+                      }
+                    }
+                  }
+                ],
+                "properties": {
+                  "current_basis": {
+                    "enum": [
+                      "explicit_current",
+                      "infobox_current",
+                      "term_present",
+                      "undated_last_known",
+                      "historical"
+                    ]
+                  },
+                  "evidence": {
+                    "items": {
+                      "additionalProperties": false,
+                      "properties": {
+                        "locator": {
+                          "minLength": 1,
+                          "type": "string"
+                        },
+                        "original_text": {
+                          "minLength": 1,
+                          "type": "string"
+                        },
+                        "source_ref": {
+                          "pattern": "^s[1-9][0-9]*$",
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "source_ref",
+                        "locator"
+                      ],
+                      "type": "object"
+                    },
+                    "minItems": 1,
+                    "type": "array"
+                  },
+                  "id": {
+                    "pattern": "^c[1-9][0-9]*$",
+                    "type": "string"
+                  },
+                  "period": {
+                    "$ref": "#/$defs/shared13"
+                  },
+                  "period_status": {
+                    "enum": [
+                      "stated",
+                      "not_stated"
+                    ]
+                  },
+                  "value": {
+                    "enum": [
+                      "operating",
+                      "closed",
+                      "merged",
+                      "historical"
+                    ]
+                  },
+                  "value_state": {
+                    "enum": [
+                      "known",
+                      "unknown",
+                      "no_value",
+                      "not_applicable"
+                    ]
+                  },
+                  "verification": {
+                    "enum": [
+                      "supported",
+                      "disputed",
+                      "insufficient_evidence",
+                      "withdrawn"
+                    ]
+                  }
+                },
+                "required": [
+                  "id",
+                  "evidence",
+                  "verification"
+                ],
+                "type": "object"
+              },
+              "minItems": 1,
+              "type": "array"
+            },
+            "conflicts": {
+              "$ref": "#/$defs/shared37"
+            },
+            "preferred": {
+              "$ref": "#/$defs/shared16"
+            },
+            "subject_ref": {
+              "minLength": 1,
+              "type": "string"
+            }
+          },
+          "required": [
+            "candidates"
+          ],
+          "type": "object"
+        },
+        "ownership": {
+          "additionalProperties": false,
+          "properties": {
+            "candidates": {
+              "items": {
+                "additionalProperties": false,
+                "allOf": [
+                  {
+                    "else": {
+                      "required": [
+                        "value"
+                      ]
+                    },
+                    "if": {
+                      "properties": {
+                        "value_state": {
+                          "enum": [
+                            "unknown",
+                            "no_value",
+                            "not_applicable"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "value_state"
+                      ]
+                    },
+                    "then": {
+                      "not": {
+                        "required": [
+                          "value"
+                        ]
+                      }
+                    }
+                  }
+                ],
+                "properties": {
+                  "current_basis": {
+                    "enum": [
+                      "explicit_current",
+                      "infobox_current",
+                      "term_present",
+                      "undated_last_known",
+                      "historical"
+                    ]
+                  },
+                  "evidence": {
+                    "items": {
+                      "additionalProperties": false,
+                      "properties": {
+                        "locator": {
+                          "minLength": 1,
+                          "type": "string"
+                        },
+                        "original_text": {
+                          "minLength": 1,
+                          "type": "string"
+                        },
+                        "source_ref": {
+                          "pattern": "^s[1-9][0-9]*$",
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "source_ref",
+                        "locator"
+                      ],
+                      "type": "object"
+                    },
+                    "minItems": 1,
+                    "type": "array"
+                  },
+                  "id": {
+                    "pattern": "^c[1-9][0-9]*$",
+                    "type": "string"
+                  },
+                  "period": {
+                    "$ref": "#/$defs/shared13"
+                  },
+                  "period_status": {
+                    "enum": [
+                      "stated",
+                      "not_stated"
+                    ]
+                  },
+                  "value": {
+                    "enum": [
+                      "public",
+                      "private_nonprofit",
+                      "private_for_profit",
+                      "mixed"
+                    ]
+                  },
+                  "value_state": {
+                    "enum": [
+                      "known",
+                      "unknown",
+                      "no_value",
+                      "not_applicable"
+                    ]
+                  },
+                  "verification": {
+                    "enum": [
+                      "supported",
+                      "disputed",
+                      "insufficient_evidence",
+                      "withdrawn"
+                    ]
+                  }
+                },
+                "required": [
+                  "id",
+                  "evidence",
+                  "verification"
+                ],
+                "type": "object"
+              },
+              "minItems": 1,
+              "type": "array"
+            },
+            "conflicts": {
+              "$ref": "#/$defs/shared37"
+            },
+            "preferred": {
+              "$ref": "#/$defs/shared16"
+            },
+            "subject_ref": {
+              "minLength": 1,
+              "type": "string"
+            }
+          },
+          "required": [
+            "candidates"
+          ],
+          "type": "object"
+        }
+      },
+      "required": [],
+      "type": "object"
+    },
+    "leadership": {
+      "additionalProperties": false,
+      "properties": {
+        "board_chair": {
+          "$ref": "#/$defs/shared21"
+        },
+        "chancellor": {
+          "$ref": "#/$defs/shared21"
+        },
+        "president": {
+          "$ref": "#/$defs/shared21"
+        },
+        "rector": {
+          "$ref": "#/$defs/shared21"
+        },
+        "vice_chancellor": {
+          "$ref": "#/$defs/shared21"
+        }
+      },
+      "required": [],
+      "type": "object"
+    },
+    "locations": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "address": {
+            "additionalProperties": false,
+            "properties": {
+              "candidates": {
+                "items": {
+                  "additionalProperties": false,
+                  "allOf": [
+                    {
+                      "else": {
+                        "required": [
+                          "value"
+                        ]
+                      },
+                      "if": {
+                        "properties": {
+                          "value_state": {
+                            "enum": [
+                              "unknown",
+                              "no_value",
+                              "not_applicable"
+                            ]
+                          }
+                        },
+                        "required": [
+                          "value_state"
+                        ]
+                      },
+                      "then": {
+                        "not": {
+                          "required": [
+                            "value"
+                          ]
+                        }
+                      }
+                    }
+                  ],
+                  "properties": {
+                    "current_basis": {
+                      "enum": [
+                        "explicit_current",
+                        "infobox_current",
+                        "term_present",
+                        "undated_last_known",
+                        "historical"
+                      ]
+                    },
+                    "evidence": {
+                      "items": {
+                        "additionalProperties": false,
+                        "properties": {
+                          "locator": {
+                            "minLength": 1,
+                            "type": "string"
+                          },
+                          "original_text": {
+                            "minLength": 1,
+                            "type": "string"
+                          },
+                          "source_ref": {
+                            "pattern": "^s[1-9][0-9]*$",
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "source_ref",
+                          "locator"
+                        ],
+                        "type": "object"
+                      },
+                      "minItems": 1,
+                      "type": "array"
+                    },
+                    "id": {
+                      "pattern": "^c[1-9][0-9]*$",
+                      "type": "string"
+                    },
+                    "period": {
+                      "$ref": "#/$defs/shared13"
+                    },
+                    "period_status": {
+                      "enum": [
+                        "stated",
+                        "not_stated"
+                      ]
+                    },
+                    "value": {
+                      "additionalProperties": false,
+                      "properties": {
+                        "city_name": {
+                          "minLength": 1,
+                          "type": "string"
+                        },
+                        "city_qid": {
+                          "pattern": "^Q[1-9][0-9]*$",
+                          "type": "string"
+                        },
+                        "country_name": {
+                          "minLength": 1,
+                          "type": "string"
+                        },
+                        "country_qid": {
+                          "pattern": "^Q[1-9][0-9]*$",
+                          "type": "string"
+                        },
+                        "formatted": {
+                          "additionalProperties": false,
+                          "properties": {
+                            "language": {
+                              "minLength": 1,
+                              "type": "string"
+                            },
+                            "text": {
+                              "minLength": 1,
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "text",
+                            "language"
+                          ],
+                          "type": "object"
+                        },
+                        "postal_code": {
+                          "minLength": 1,
+                          "type": "string"
+                        },
+                        "region_name": {
+                          "minLength": 1,
+                          "type": "string"
+                        },
+                        "region_qid": {
+                          "pattern": "^Q[1-9][0-9]*$",
+                          "type": "string"
+                        },
+                        "street": {
+                          "minLength": 1,
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "formatted"
+                      ],
+                      "type": "object"
+                    },
+                    "value_state": {
+                      "enum": [
+                        "known",
+                        "unknown",
+                        "no_value",
+                        "not_applicable"
+                      ]
+                    },
+                    "verification": {
+                      "enum": [
+                        "supported",
+                        "disputed",
+                        "insufficient_evidence",
+                        "withdrawn"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "evidence",
+                    "verification"
+                  ],
+                  "type": "object"
+                },
+                "minItems": 1,
+                "type": "array"
+              },
+              "conflicts": {
+                "$ref": "#/$defs/shared37"
+              },
+              "preferred": {
+                "$ref": "#/$defs/shared16"
+              },
+              "subject_ref": {
+                "minLength": 1,
+                "type": "string"
+              }
+            },
+            "required": [
+              "candidates"
+            ],
+            "type": "object"
+          },
+          "coordinates": {
+            "additionalProperties": false,
+            "properties": {
+              "candidates": {
+                "items": {
+                  "additionalProperties": false,
+                  "allOf": [
+                    {
+                      "else": {
+                        "required": [
+                          "value"
+                        ]
+                      },
+                      "if": {
+                        "properties": {
+                          "value_state": {
+                            "enum": [
+                              "unknown",
+                              "no_value",
+                              "not_applicable"
+                            ]
+                          }
+                        },
+                        "required": [
+                          "value_state"
+                        ]
+                      },
+                      "then": {
+                        "not": {
+                          "required": [
+                            "value"
+                          ]
+                        }
+                      }
+                    }
+                  ],
+                  "properties": {
+                    "current_basis": {
+                      "enum": [
+                        "explicit_current",
+                        "infobox_current",
+                        "term_present",
+                        "undated_last_known",
+                        "historical"
+                      ]
+                    },
+                    "evidence": {
+                      "items": {
+                        "additionalProperties": false,
+                        "properties": {
+                          "locator": {
+                            "minLength": 1,
+                            "type": "string"
+                          },
+                          "original_text": {
+                            "minLength": 1,
+                            "type": "string"
+                          },
+                          "source_ref": {
+                            "pattern": "^s[1-9][0-9]*$",
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "source_ref",
+                          "locator"
+                        ],
+                        "type": "object"
+                      },
+                      "minItems": 1,
+                      "type": "array"
+                    },
+                    "id": {
+                      "pattern": "^c[1-9][0-9]*$",
+                      "type": "string"
+                    },
+                    "period": {
+                      "$ref": "#/$defs/shared13"
+                    },
+                    "period_status": {
+                      "enum": [
+                        "stated",
+                        "not_stated"
+                      ]
+                    },
+                    "value": {
+                      "additionalProperties": false,
+                      "properties": {
+                        "accuracy_metres": {
+                          "exclusiveMinimum": 0,
+                          "type": "number"
+                        },
+                        "crs": {
+                          "const": "EPSG:4326"
+                        },
+                        "latitude": {
+                          "maximum": 90,
+                          "minimum": -90,
+                          "type": "number"
+                        },
+                        "longitude": {
+                          "maximum": 180,
+                          "minimum": -180,
+                          "type": "number"
+                        }
+                      },
+                      "required": [
+                        "latitude",
+                        "longitude",
+                        "crs"
+                      ],
+                      "type": "object"
+                    },
+                    "value_state": {
+                      "enum": [
+                        "known",
+                        "unknown",
+                        "no_value",
+                        "not_applicable"
+                      ]
+                    },
+                    "verification": {
+                      "enum": [
+                        "supported",
+                        "disputed",
+                        "insufficient_evidence",
+                        "withdrawn"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "evidence",
+                    "verification"
+                  ],
+                  "type": "object"
+                },
+                "minItems": 1,
+                "type": "array"
+              },
+              "conflicts": {
+                "$ref": "#/$defs/shared37"
+              },
+              "preferred": {
+                "$ref": "#/$defs/shared16"
+              },
+              "subject_ref": {
+                "minLength": 1,
+                "type": "string"
+              }
+            },
+            "required": [
+              "candidates"
+            ],
+            "type": "object"
+          },
+          "id": {
+            "pattern": "^[a-z][a-z0-9_-]*$",
+            "type": "string"
+          },
+          "kind": {
+            "enum": [
+              "campus",
+              "administrative_area",
+              "office"
+            ]
+          },
+          "name": {
+            "$ref": "#/$defs/shared23"
+          },
+          "population": {
+            "$ref": "#/$defs/shared14"
+          },
+          "qid": {
+            "pattern": "^Q[1-9][0-9]*$",
+            "type": "string"
+          },
+          "valid_from": {
+            "$ref": "#/$defs/shared20"
+          },
+          "valid_to": {
+            "$ref": "#/$defs/shared20"
+          }
+        },
+        "required": [
+          "id",
+          "kind"
+        ],
+        "type": "object"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "modified_datetime": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "population": {
+      "$ref": "#/$defs/shared14"
+    },
+    "profile": {
+      "additionalProperties": false,
+      "properties": {
+        "academic_focus": {
+          "additionalProperties": false,
+          "properties": {
+            "candidates": {
+              "items": {
+                "additionalProperties": false,
+                "allOf": [
+                  {
+                    "else": {
+                      "required": [
+                        "value"
+                      ]
+                    },
+                    "if": {
+                      "properties": {
+                        "value_state": {
+                          "enum": [
+                            "unknown",
+                            "no_value",
+                            "not_applicable"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "value_state"
+                      ]
+                    },
+                    "then": {
+                      "not": {
+                        "required": [
+                          "value"
+                        ]
+                      }
+                    }
+                  }
+                ],
+                "properties": {
+                  "current_basis": {
+                    "enum": [
+                      "explicit_current",
+                      "infobox_current",
+                      "term_present",
+                      "undated_last_known",
+                      "historical"
+                    ]
+                  },
+                  "evidence": {
+                    "items": {
+                      "additionalProperties": false,
+                      "properties": {
+                        "locator": {
+                          "minLength": 1,
+                          "type": "string"
+                        },
+                        "original_text": {
+                          "minLength": 1,
+                          "type": "string"
+                        },
+                        "source_ref": {
+                          "pattern": "^s[1-9][0-9]*$",
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "source_ref",
+                        "locator"
+                      ],
+                      "type": "object"
+                    },
+                    "minItems": 1,
+                    "type": "array"
+                  },
+                  "id": {
+                    "pattern": "^c[1-9][0-9]*$",
+                    "type": "string"
+                  },
+                  "period": {
+                    "$ref": "#/$defs/shared13"
+                  },
+                  "period_status": {
+                    "enum": [
+                      "stated",
+                      "not_stated"
+                    ]
+                  },
+                  "value": {
+                    "items": {
+                      "additionalProperties": false,
+                      "properties": {
+                        "language": {
+                          "minLength": 1,
+                          "type": "string"
+                        },
+                        "text": {
+                          "minLength": 1,
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "text",
+                        "language"
+                      ],
+                      "type": "object"
+                    },
+                    "minItems": 1,
+                    "type": "array"
+                  },
+                  "value_state": {
+                    "enum": [
+                      "known",
+                      "unknown",
+                      "no_value",
+                      "not_applicable"
+                    ]
+                  },
+                  "verification": {
+                    "enum": [
+                      "supported",
+                      "disputed",
+                      "insufficient_evidence",
+                      "withdrawn"
+                    ]
+                  }
+                },
+                "required": [
+                  "id",
+                  "evidence",
+                  "verification"
+                ],
+                "type": "object"
+              },
+              "minItems": 1,
+              "type": "array"
+            },
+            "conflicts": {
+              "$ref": "#/$defs/shared37"
+            },
+            "preferred": {
+              "$ref": "#/$defs/shared16"
+            },
+            "subject_ref": {
+              "minLength": 1,
+              "type": "string"
+            }
+          },
+          "required": [
+            "candidates"
+          ],
+          "type": "object"
+        },
+        "degree_levels": {
+          "$ref": "#/$defs/shared25"
+        },
+        "logo_url": {
+          "$ref": "#/$defs/shared24"
+        },
+        "main_image_url": {
+          "$ref": "#/$defs/shared24"
+        },
+        "motto": {
+          "$ref": "#/$defs/shared23"
+        },
+        "summary": {
+          "$ref": "#/$defs/shared23"
+        },
+        "teaching_languages": {
+          "$ref": "#/$defs/shared25"
+        },
+        "website": {
+          "$ref": "#/$defs/shared24"
+        }
+      },
+      "required": [],
+      "type": "object"
+    },
+    "qid": {
+      "pattern": "^Q[1-9][0-9]*$",
+      "type": "string"
+    },
+    "record_revision": {
+      "minimum": 1,
+      "type": "integer"
+    },
+    "related_entities": {
+      "additionalProperties": {
+        "additionalProperties": false,
+        "properties": {
+          "kind": {
+            "enum": [
+              "institution",
+              "university_system",
+              "faculty",
+              "campus",
+              "building"
+            ]
+          },
+          "name": {
+            "$ref": "#/$defs/shared23"
+          },
+          "qid": {
+            "pattern": "^Q[1-9][0-9]*$",
+            "type": "string"
+          }
+        },
+        "required": [
+          "kind",
+          "name"
+        ],
+        "type": "object"
+      },
+      "propertyNames": {
+        "pattern": "^[a-z][a-z0-9_-]*$",
+        "type": "string"
+      },
+      "type": "object"
+    },
+    "relationships": {
+      "additionalProperties": false,
+      "properties": {
+        "campus": {
+          "$ref": "#/$defs/shared38"
+        },
+        "faculty": {
+          "$ref": "#/$defs/shared38"
+        },
+        "legal_successor": {
+          "$ref": "#/$defs/shared38"
+        },
+        "member_of": {
+          "$ref": "#/$defs/shared38"
+        },
+        "parent": {
+          "$ref": "#/$defs/shared38"
+        },
+        "possible_duplicate": {
+          "$ref": "#/$defs/shared38"
+        },
+        "predecessor": {
+          "$ref": "#/$defs/shared38"
+        },
+        "successor": {
+          "$ref": "#/$defs/shared38"
+        }
+      },
+      "required": [],
+      "type": "object"
+    },
+    "schema_version": {
+      "const": "0.2.0"
+    },
+    "seed": {
+      "additionalProperties": false,
+      "properties": {
+        "channels": {
+          "items": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "minItems": 1,
+          "type": "array"
+        },
+        "import_id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "screening_status": {
+          "enum": [
+            "included",
+            "needs_review",
+            "related_only"
+          ]
+        }
+      },
+      "required": [
+        "import_id",
+        "screening_status",
+        "channels"
+      ],
+      "type": "object"
+    },
+    "selection_policy": {
+      "const": "preferred-v1"
+    },
+    "sources": {
+      "additionalProperties": false,
+      "patternProperties": {
+        "^s[1-9][0-9]*$": {
+          "additionalProperties": false,
+          "allOf": [
+            {
+              "if": {
+                "properties": {
+                  "kind": {
+                    "const": "wikipedia"
+                  }
+                }
+              },
+              "then": {
+                "required": [
+                  "language",
+                  "page_id",
+                  "revision_id",
+                  "retrieved_at"
+                ]
+              }
+            },
+            {
+              "if": {
+                "properties": {
+                  "kind": {
+                    "const": "wikidata"
+                  }
+                }
+              },
+              "then": {
+                "anyOf": [
+                  {
+                    "required": [
+                      "snapshot_id"
+                    ]
+                  },
+                  {
+                    "required": [
+                      "retrieved_at"
+                    ]
+                  }
+                ],
+                "required": [
+                  "source_qid",
+                  "revision_id"
+                ]
+              }
+            },
+            {
+              "if": {
+                "properties": {
+                  "kind": {
+                    "const": "website"
+                  }
+                }
+              },
+              "then": {
+                "required": [
+                  "retrieved_at"
+                ]
+              }
+            },
+            {
+              "if": {
+                "properties": {
+                  "kind": {
+                    "const": "dataset"
+                  }
+                }
+              },
+              "then": {
+                "required": [
+                  "dataset_version",
+                  "source_record_id"
+                ]
+              }
+            }
+          ],
+          "properties": {
+            "dataset_version": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "family": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "kind": {
+              "enum": [
+                "wikidata",
+                "wikipedia",
+                "website",
+                "dataset"
+              ]
+            },
+            "language": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "page_id": {
+              "minimum": 1,
+              "type": "integer"
+            },
+            "publisher_role": {
+              "enum": [
+                "institution_official",
+                "government",
+                "academic_publisher",
+                "encyclopedia",
+                "knowledge_base",
+                "other"
+              ]
+            },
+            "retrieved_at": {
+              "format": "date-time",
+              "type": "string"
+            },
+            "revision_id": {
+              "minimum": 1,
+              "type": "integer"
+            },
+            "snapshot_id": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "source_qid": {
+              "pattern": "^Q[1-9][0-9]*$",
+              "type": "string"
+            },
+            "source_record_id": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "url": {
+              "format": "uri",
+              "pattern": "^https?://",
+              "type": "string"
+            }
+          },
+          "required": [
+            "kind",
+            "url",
+            "publisher_role",
+            "family"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "object"
+    },
+    "update_datetime": {
+      "format": "date-time",
+      "type": "string"
+    }
+  },
+  "required": [
+    "schema_version",
+    "qid",
+    "record_revision",
+    "curation",
+    "seed",
+    "selection_policy"
+  ],
+  "title": "University domain record with preferred candidates, draft 0.2.0",
+  "type": "object"
+}

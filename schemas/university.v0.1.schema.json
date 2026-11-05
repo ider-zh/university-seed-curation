@@ -1,0 +1,368 @@
+{
+  "$id": "urn:university-curation:record:0.1.0",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "claims": {
+      "items": {
+        "additionalProperties": false,
+        "allOf": [
+          {
+            "else": {
+              "not": {
+                "required": [
+                  "value"
+                ]
+              }
+            },
+            "if": {
+              "properties": {
+                "value_state": {
+                  "const": "known"
+                }
+              }
+            },
+            "then": {
+              "required": [
+                "value"
+              ]
+            }
+          }
+        ],
+        "properties": {
+          "field": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "id": {
+            "pattern": "^c[1-9][0-9]*$",
+            "type": "string"
+          },
+          "original_text": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "period": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "source_refs": {
+            "items": {
+              "pattern": "^s[1-9][0-9]*$",
+              "type": "string"
+            },
+            "minItems": 1,
+            "type": "array",
+            "uniqueItems": true
+          },
+          "status": {
+            "enum": [
+              "supported",
+              "disputed",
+              "withdrawn"
+            ]
+          },
+          "subject_qid": {
+            "pattern": "^Q[1-9][0-9]*$",
+            "type": "string"
+          },
+          "value": {},
+          "value_state": {
+            "enum": [
+              "known",
+              "unknown",
+              "no_value",
+              "not_applicable"
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "field",
+          "value_state",
+          "source_refs",
+          "status"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "coverage": {
+      "additionalProperties": false,
+      "patternProperties": {
+        "^(identity|geography|history|population|finance|profile)$": {
+          "additionalProperties": false,
+          "properties": {
+            "checked_at": {
+              "format": "date-time",
+              "type": "string"
+            },
+            "status": {
+              "enum": [
+                "checked",
+                "not_found",
+                "not_applicable",
+                "disputed"
+              ]
+            }
+          },
+          "required": [
+            "status",
+            "checked_at"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "object"
+    },
+    "curation": {
+      "additionalProperties": false,
+      "properties": {
+        "identity_status": {
+          "enum": [
+            "pending",
+            "in_scope",
+            "related",
+            "excluded",
+            "needs_review",
+            "conflation_suspected"
+          ]
+        },
+        "refresh_profile": {
+          "const": "core-v1"
+        },
+        "reviewed_groups": {
+          "items": {
+            "enum": [
+              "identity",
+              "geography",
+              "history",
+              "population",
+              "finance",
+              "profile"
+            ]
+          },
+          "type": "array",
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "identity_status"
+      ],
+      "type": "object"
+    },
+    "modified_datetime": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "qid": {
+      "pattern": "^Q[1-9][0-9]*$",
+      "type": "string"
+    },
+    "record_revision": {
+      "minimum": 1,
+      "type": "integer"
+    },
+    "schema_version": {
+      "const": "0.1.0"
+    },
+    "seed": {
+      "additionalProperties": false,
+      "properties": {
+        "channels": {
+          "items": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "minItems": 1,
+          "type": "array"
+        },
+        "import_id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "labels": {
+          "additionalProperties": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "type": "object"
+        },
+        "screening_status": {
+          "enum": [
+            "included",
+            "needs_review"
+          ]
+        },
+        "source_revision": {
+          "minimum": 1,
+          "type": "integer"
+        }
+      },
+      "required": [
+        "import_id",
+        "screening_status",
+        "channels"
+      ],
+      "type": "object"
+    },
+    "sources": {
+      "additionalProperties": false,
+      "patternProperties": {
+        "^s[1-9][0-9]*$": {
+          "additionalProperties": false,
+          "allOf": [
+            {
+              "if": {
+                "properties": {
+                  "kind": {
+                    "const": "wikipedia"
+                  }
+                }
+              },
+              "then": {
+                "required": [
+                  "language",
+                  "page_id",
+                  "revision_id",
+                  "retrieved_at"
+                ]
+              }
+            },
+            {
+              "if": {
+                "properties": {
+                  "kind": {
+                    "const": "wikidata"
+                  }
+                }
+              },
+              "then": {
+                "anyOf": [
+                  {
+                    "required": [
+                      "snapshot_id"
+                    ]
+                  },
+                  {
+                    "required": [
+                      "retrieved_at"
+                    ]
+                  }
+                ],
+                "required": [
+                  "source_qid",
+                  "revision_id"
+                ]
+              }
+            },
+            {
+              "if": {
+                "properties": {
+                  "kind": {
+                    "const": "website"
+                  }
+                }
+              },
+              "then": {
+                "required": [
+                  "retrieved_at"
+                ]
+              }
+            },
+            {
+              "if": {
+                "properties": {
+                  "kind": {
+                    "const": "dataset"
+                  }
+                }
+              },
+              "then": {
+                "required": [
+                  "dataset_version",
+                  "source_record_id"
+                ]
+              }
+            }
+          ],
+          "properties": {
+            "dataset_version": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "kind": {
+              "enum": [
+                "wikidata",
+                "wikipedia",
+                "website",
+                "dataset"
+              ]
+            },
+            "language": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "locator": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "page_id": {
+              "minimum": 1,
+              "type": "integer"
+            },
+            "retrieved_at": {
+              "format": "date-time",
+              "type": "string"
+            },
+            "revision_id": {
+              "minimum": 1,
+              "type": "integer"
+            },
+            "snapshot_id": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "source_qid": {
+              "pattern": "^Q[1-9][0-9]*$",
+              "type": "string"
+            },
+            "source_record_id": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "statement_id": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "url": {
+              "format": "uri",
+              "pattern": "^https?://",
+              "type": "string"
+            }
+          },
+          "required": [
+            "kind",
+            "url",
+            "locator"
+          ],
+          "type": "object"
+        }
+      },
+      "type": "object"
+    },
+    "update_datetime": {
+      "format": "date-time",
+      "type": "string"
+    }
+  },
+  "required": [
+    "schema_version",
+    "qid",
+    "record_revision",
+    "curation",
+    "seed"
+  ],
+  "title": "University record draft 0.1.0",
+  "type": "object"
+}

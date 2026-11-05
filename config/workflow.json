@@ -1,0 +1,48 @@
+{
+  "version": "workflow-0.1.0-draft",
+  "geography": "global",
+  "institution_scope": "present_and_historical",
+  "research_managers": 1,
+  "review_agents": 1,
+  "max_model_calls_total": 3,
+  "max_revision_rounds": 2,
+  "unresolved_retry_days": 7,
+  "refresh_months": 6,
+  "refresh_profile": "core-v1",
+  "refresh_groups": [
+    "identity",
+    "geography",
+    "history",
+    "population",
+    "finance",
+    "profile"
+  ],
+  "timestamp_policy": {
+    "update_datetime": "last_successful_full_research_and_review_refresh",
+    "modified_datetime": "other_record_modifications",
+    "missing_refresh_timestamp": "priority_first_research"
+  },
+  "private_state": ".private/state/queue.sqlite3",
+  "github_pr_batch_size": 5,
+  "agent_execution": {
+    "configured_and_verified": false,
+    "model": "gpt-6.1-terra",
+    "reasoning_effort": "medium"
+  },
+  "source_adapters": {
+    "wikidata": "online_entity_search_and_bounded_link_resolution_verified",
+    "wikipedia": "online_parse_revision_bound_private_30_day_cache_verified",
+    "supporting_websites": "task_scoped_not_configured",
+    "us_campus_statistics": "dataset_and_mapping_contract_pending"
+  },
+  "public_export": {
+    "enabled": false,
+    "only_reviewed_records": true,
+    "trusted_attestation_required": true,
+    "initial_seed_acceptance_required": true,
+    "formal_release_human_acceptance_required": true
+  },
+  "source_helpers_verified_on": "2026-11-05",
+  "domain_schema_draft": "0.2.0",
+  "preferred_policy": "preferred-v1"
+}
