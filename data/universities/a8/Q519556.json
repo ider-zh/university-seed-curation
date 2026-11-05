@@ -720,9 +720,41 @@
           "reason_code": "only_available"
         }
       }
+    },
+    {
+      "coordinates": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "statement:Q519556$CAF3F752-BFF3-465E-961E-4C614710433B",
+                "original_text": "P625 latitude=25.05577; longitude=102.69757",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "source_rank": "normal",
+            "value": {
+              "crs": "EPSG:4326",
+              "globe_qid": "Q2",
+              "latitude": 25.05577,
+              "longitude": 102.69757,
+              "source_precision_degrees": 2.77777777778e-06
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "id": "wikidata-item-location",
+      "kind": "institution",
+      "qid": "Q519556"
     }
   ],
-  "modified_datetime": "2026-11-05T03:05:41.105545+00:00",
+  "modified_datetime": "2026-11-05T06:03:03.107856+00:00",
   "profile": {
     "motto": {
       "candidates": [
@@ -777,7 +809,7 @@
     }
   },
   "qid": "Q519556",
-  "record_revision": 1,
+  "record_revision": 2,
   "related_entities": {
     "changsha_temporary": {
       "kind": "institution",
@@ -960,7 +992,7 @@
       }
     ]
   },
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "seed": {
     "channels": [
       "diagnostic_pilot_selection"

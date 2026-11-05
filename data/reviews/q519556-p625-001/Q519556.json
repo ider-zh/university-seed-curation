@@ -1,0 +1,57 @@
+{
+  "key_id": "review-0c72bce8daed6e1e",
+  "payload": {
+    "base_commit": "ce2147cce5b8ef28b9924aa3ef85fdf57484f356",
+    "baseline_sha256": "d32f2a04768b82e55cf7255a0df084241e5c1729be41c4fdde1a39f8a7b1efbd",
+    "qid": "Q519556",
+    "record_path": "data/universities/a8/Q519556.json",
+    "record_sha256": "c7afe50c2e6021c0dbbcc4be5cc28d85fca455fb57d940b17550111b75292848",
+    "repository": "ider-zh/university-seed-curation",
+    "review": {
+      "attestation_kind": "local_coordinator_verified_private_traces",
+      "contexts_checked": 1,
+      "coordinate_projection": {
+        "revision_id": 2559137070,
+        "source_qid": "Q519556",
+        "source_ref": "s1",
+        "statements": [
+          {
+            "rank": "normal",
+            "snaktype": "value",
+            "statement_id": "Q519556$CAF3F752-BFF3-465E-961E-4C614710433B",
+            "value": {
+              "crs": "EPSG:4326",
+              "globe_qid": "Q2",
+              "latitude": 25.05577,
+              "longitude": 102.69757,
+              "source_precision_degrees": 2.77777777778e-06
+            }
+          }
+        ]
+      },
+      "decision": "approve",
+      "facts_checked": 1,
+      "inferences": [],
+      "model": "gpt-6.1-terra",
+      "private_evidence_sha256": "6914f03dacb679d7954b42638881cc0d4325b74e61f52d18e82bb7c55dc217d5",
+      "producer": "deterministic-root-p625-v1",
+      "reasoning_effort": "medium",
+      "request_ref": "operator:2026-11-05:Q519556-missing-Wikidata-coordinates",
+      "research_sessions": [],
+      "review_output_sha256": "ffd29e2d7f041c24d0ea51279f24a389b2d6ec9277cf73462f5a9b5819e3d60a",
+      "review_session": "01a1aa4d-7c0e-7271-a36a-73f2b7e8812f",
+      "reviewed_at": "2026-11-05T06:03:03.107856+00:00",
+      "runtime_model_reported": false,
+      "source_revisions_checked": 1,
+      "task_kind": "wikidata_coordinates"
+    },
+    "review_policy": {
+      "id": "source-grounded-flexible-v2",
+      "sha256": "b8ed7d2897e4c31dbd81b1379aafdc1077a21d1a33949edbd2d896b0adf99db2"
+    },
+    "schema_sha256": "bfa496eafa9dffca56146214168db7f000b09161b8993129632e7202e1c88833",
+    "schema_version": "0.2.2",
+    "type": "university-review-v1"
+  },
+  "signature_hex": "ae91cda23cf8e05f546868929f5cafaff250889d0d9d954544591e8b466e3716b01134f8ee68e275a491c6922661c7d55ba63200b32c0b3156d4bd22bd88d004"
+}
