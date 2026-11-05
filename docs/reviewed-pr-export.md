@@ -88,6 +88,24 @@ signing key, publication or merge operation is used in CI. This workflow activat
 only after this integration PR is merged. The existing PR CI tests the integration
 code before that merge.
 
+The proposed checkout is pinned to the immutable `pull_request.head.sha` from
+the workflow event. `pr-validate --head-ref HEAD --expected-head-sha SHA` rejects
+a checkout of another commit, and data PRs must descend from the exact checked
+base commit. Accepted record bytes and review receipts are transitively bound to
+that resulting head by the signed manifest and Git blob hashes; there is no
+self-referential signature inside the Git commit. A later push produces a new
+head and must pass a new check. A green historical check **does not** approve
+later commits or guarantee that GitHub's required-check settings enforce this.
+
+For public initial imports and bounded coordinates updates, the trusted
+validator also checks that Wikidata and Wikipedia `url` values resolve to the
+declared `revision_id` through the expected HTTPS `oldid` link and host.
+Schema validation checks source identifiers and candidate evidence references;
+the private coordinator's independent source replay establishes whether the
+original capture actually contained the claimed material. CI cannot obtain or
+repeat a private source replay and must not assert that a URL check proves the
+real-world truth of an assertion.
+
 Required checks, strict up-to-date-base enforcement and protected merge are not
 configured by adding this workflow. Until those repository settings are verified,
 the operator retains the visible merge decision and should rerun validation

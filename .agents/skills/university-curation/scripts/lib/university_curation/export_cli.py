@@ -22,6 +22,7 @@ def arguments(sub):
     p.add_argument("--workspace", default="."); p.add_argument("--bundle", required=True)
     p = sub.add_parser("pr-validate", help="Validate proposed Git blobs using base-branch trust")
     p.add_argument("--workspace", default="."); p.add_argument("--base-ref", required=True); p.add_argument("--head-ref", default="HEAD")
+    p.add_argument("--expected-head-sha", help="Require the checked-out HEAD to match the immutable PR event SHA")
 
 
 def handle(args):
@@ -37,7 +38,7 @@ def handle(args):
         approval = load_json(Path(args.acceptance).read_bytes()) if args.acceptance else None
         return prepare(args.workspace, args.pilot_root, args.qids, args.batch_id, args.base_ref, trust, args.key, args.output, approval)
     if args.command == "pr-stage": return install(args.workspace, args.bundle)
-    if args.command == "pr-validate": return validate_pr(args.workspace, args.base_ref, args.head_ref)
+    if args.command == "pr-validate": return validate_pr(args.workspace, args.base_ref, args.head_ref, args.expected_head_sha)
     if args.command == "pr-record-acceptance":
         preview = load_json((private_path(args.bundle) / "preview.json").read_bytes())
         value = {"status": "accepted", "content_scope_sha256": preview["content_scope_sha256"],

@@ -20,7 +20,7 @@ jobs:
       - name: Check out proposed tree as data only
         uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
         with:
-          ref: refs/pull/${{ github.event.number }}/head
+          ref: ${{ github.event.pull_request.head.sha }}
           fetch-depth: 0
           path: proposed
           persist-credentials: false
@@ -35,7 +35,8 @@ jobs:
           HEAD_SHA: ${{ github.event.pull_request.head.sha }}
         run: >-
           python trusted/.agents/skills/university-curation/scripts/curate.py pr-validate
-          --workspace proposed --base-ref "$BASE_SHA" --head-ref "$HEAD_SHA"
+          --workspace proposed --base-ref "$BASE_SHA" --head-ref HEAD
+          --expected-head-sha "$HEAD_SHA"
 
 # No secrets, candidate Python execution, model calls, publication or merge.
 # This workflow activates after its code PR is merged onto the base branch.

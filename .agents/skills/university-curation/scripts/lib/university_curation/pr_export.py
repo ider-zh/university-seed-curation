@@ -3,6 +3,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 import re
 import subprocess
+from urllib.parse import urlsplit
 
 from .attestations import load_json, sha, sign, verify, private_path
 from .records import encode, qid, record_path, instant, ROOT
@@ -67,6 +68,7 @@ def scope(rows, receipts, trust):
 def check_record(record, review, trust, baseline):
     validate(record)
     if record.get("example", {}).get("synthetic"): raise ValueError("Synthetic example cannot be exported")
+    check_source_revisions(record)
     version = record["schema_version"]
     if version not in trust["schemas"]: raise ValueError("Schema version not trusted for public export")
     if recompute(record) != record: raise ValueError("Preferred projection was modified")
@@ -98,6 +100,33 @@ def check_record(record, review, trust, baseline):
         # mutation engine. Existing records need a new explicit diff task.
         raise ValueError("Pilot import cannot overwrite existing university records")
     if review.get("attestation_kind") != "local_coordinator_verified_private_traces": raise ValueError("Unknown review attestation kind")
+
+
+def check_source_revisions(record):
+    """Fail closed on misleading public links to immutable Wikimedia revisions.
+
+    The private exporter additionally replays actual captures; this public check
+    validates the signed record's *claim* about the revision, not the live page.
+    """
+    for reference, source in record.get("sources", {}).items():
+        kind = source["kind"]
+        if kind not in ("wikidata", "wikipedia"):
+            continue
+        revision = source["revision_id"]
+        url = urlsplit(source["url"])
+        host = "www.wikidata.org" if kind == "wikidata" else source["language"] + ".wikipedia.org"
+        if (url.scheme != "https" or url.hostname != host or url.port is not None
+                or url.username is not None or url.password is not None
+                or url.path != "/w/index.php" or url.query != "oldid=" + str(revision)
+                or url.fragment):
+            raise ValueError("Source " + reference + " URL does not bind its pinned revision")
+        if kind == "wikidata" and not re.fullmatch(r"Q[1-9][0-9]*", source["source_qid"]):
+            raise ValueError("Source " + reference + " has invalid Wikidata subject")
+    for _, field, _ in fields(record):
+        for candidate in field["candidates"]:
+            for evidence in candidate["evidence"]:
+                if not evidence["locator"].strip():
+                    raise ValueError("Empty evidence locator")
 
 
 def prepare(repo, pilot, entity_ids, batch_id, base_ref, trust, key, output, acceptance=None):
@@ -220,12 +249,18 @@ def verify_files(repo, base, files, trust, require_acceptance=True):
         **({"task_kind": "wikidata_coordinates"} if all(updates) else {})}
 
 
-def validate_pr(repo, base_ref, head_ref):
+def validate_pr(repo, base_ref, head_ref, expected_head_sha=None):
     base = commit(repo, base_ref); head = commit(repo, head_ref)
+    if expected_head_sha is not None:
+        if not re.fullmatch(r"[0-9a-f]{40}", expected_head_sha) or head != expected_head_sha:
+            raise ValueError("Checked-out PR HEAD differs from the immutable GitHub event SHA")
     changed = git(repo, "diff", "--no-ext-diff", "--no-textconv", "--no-renames", "--name-only", "-z", base, head).decode().split("\0")
     changed = [p for p in changed if p]
     if any(".private" in p.split("/") for p in changed): raise ValueError("Private artifacts in proposed Git tree")
     if not any(p.startswith("data/") for p in changed): return {"status": "code_only", "base_commit": base, "head_commit": head}
+    if subprocess.run(["git", "-C", str(repo), "merge-base", "--is-ancestor", base, head],
+                      stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL).returncode != 0:
+        raise ValueError("Data PR is not based on the exact current Git baseline")
     trust_raw = blob(repo, base, TRUST_PATH); trust = load_json(trust_raw)
     for version, expected in trust["schemas"].items():
         raw = blob(repo, base, "schemas/university.v" + version + ".schema.json")
