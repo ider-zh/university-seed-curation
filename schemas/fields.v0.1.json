@@ -1,0 +1,1203 @@
+{
+  "fields": {
+    "finance.assets": {
+      "group": "finance",
+      "value_schema": {
+        "additionalProperties": false,
+        "properties": {
+          "amount": {
+            "pattern": "^-?[0-9]+(?:\\.[0-9]+)?$",
+            "type": "string"
+          },
+          "approximate": {
+            "type": "boolean"
+          },
+          "currency": {
+            "pattern": "^[A-Z]{3}$",
+            "type": "string"
+          }
+        },
+        "required": [
+          "amount",
+          "currency"
+        ],
+        "type": "object"
+      }
+    },
+    "finance.budget": {
+      "group": "finance",
+      "value_schema": {
+        "additionalProperties": false,
+        "properties": {
+          "amount": {
+            "pattern": "^-?[0-9]+(?:\\.[0-9]+)?$",
+            "type": "string"
+          },
+          "approximate": {
+            "type": "boolean"
+          },
+          "currency": {
+            "pattern": "^[A-Z]{3}$",
+            "type": "string"
+          }
+        },
+        "required": [
+          "amount",
+          "currency"
+        ],
+        "type": "object"
+      }
+    },
+    "finance.endowment": {
+      "group": "finance",
+      "value_schema": {
+        "additionalProperties": false,
+        "properties": {
+          "amount": {
+            "pattern": "^-?[0-9]+(?:\\.[0-9]+)?$",
+            "type": "string"
+          },
+          "approximate": {
+            "type": "boolean"
+          },
+          "currency": {
+            "pattern": "^[A-Z]{3}$",
+            "type": "string"
+          }
+        },
+        "required": [
+          "amount",
+          "currency"
+        ],
+        "type": "object"
+      }
+    },
+    "finance.expenses": {
+      "group": "finance",
+      "value_schema": {
+        "additionalProperties": false,
+        "properties": {
+          "amount": {
+            "pattern": "^-?[0-9]+(?:\\.[0-9]+)?$",
+            "type": "string"
+          },
+          "approximate": {
+            "type": "boolean"
+          },
+          "currency": {
+            "pattern": "^[A-Z]{3}$",
+            "type": "string"
+          }
+        },
+        "required": [
+          "amount",
+          "currency"
+        ],
+        "type": "object"
+      }
+    },
+    "finance.research_funding": {
+      "group": "finance",
+      "value_schema": {
+        "additionalProperties": false,
+        "properties": {
+          "amount": {
+            "pattern": "^-?[0-9]+(?:\\.[0-9]+)?$",
+            "type": "string"
+          },
+          "approximate": {
+            "type": "boolean"
+          },
+          "currency": {
+            "pattern": "^[A-Z]{3}$",
+            "type": "string"
+          }
+        },
+        "required": [
+          "amount",
+          "currency"
+        ],
+        "type": "object"
+      }
+    },
+    "finance.revenue": {
+      "group": "finance",
+      "value_schema": {
+        "additionalProperties": false,
+        "properties": {
+          "amount": {
+            "pattern": "^-?[0-9]+(?:\\.[0-9]+)?$",
+            "type": "string"
+          },
+          "approximate": {
+            "type": "boolean"
+          },
+          "currency": {
+            "pattern": "^[A-Z]{3}$",
+            "type": "string"
+          }
+        },
+        "required": [
+          "amount",
+          "currency"
+        ],
+        "type": "object"
+      }
+    },
+    "geography.coordinates": {
+      "group": "geography",
+      "value_schema": {
+        "additionalProperties": false,
+        "properties": {
+          "latitude": {
+            "maximum": 90,
+            "minimum": -90,
+            "type": "number"
+          },
+          "longitude": {
+            "maximum": 180,
+            "minimum": -180,
+            "type": "number"
+          },
+          "role": {
+            "enum": [
+              "institution",
+              "campus"
+            ]
+          }
+        },
+        "required": [
+          "latitude",
+          "longitude",
+          "role"
+        ],
+        "type": "object"
+      }
+    },
+    "geography.location": {
+      "group": "geography",
+      "value_schema": {
+        "additionalProperties": false,
+        "properties": {
+          "place_qid": {
+            "pattern": "^Q[1-9][0-9]*$",
+            "type": "string"
+          },
+          "role": {
+            "enum": [
+              "institution",
+              "campus",
+              "administrative_area"
+            ]
+          }
+        },
+        "required": [
+          "place_qid",
+          "role"
+        ],
+        "type": "object"
+      }
+    },
+    "history.event": {
+      "group": "history",
+      "value_schema": {
+        "additionalProperties": false,
+        "properties": {
+          "date_text": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "kind": {
+            "enum": [
+              "origin",
+              "higher_education_status",
+              "university_status",
+              "charter",
+              "rename",
+              "relocation",
+              "merger",
+              "split",
+              "closure",
+              "reopening",
+              "jurisdiction_change"
+            ]
+          },
+          "precision": {
+            "enum": [
+              "day",
+              "month",
+              "year",
+              "decade",
+              "century",
+              "interval",
+              "uncertain"
+            ]
+          }
+        },
+        "required": [
+          "kind",
+          "date_text",
+          "precision"
+        ],
+        "type": "object"
+      }
+    },
+    "history.relation": {
+      "group": "history",
+      "value_schema": {
+        "additionalProperties": false,
+        "properties": {
+          "independence": {
+            "enum": [
+              "explicit_legal",
+              "explicit_administrative",
+              "unresolved"
+            ]
+          },
+          "kind": {
+            "enum": [
+              "parent",
+              "member_of",
+              "campus",
+              "faculty",
+              "predecessor",
+              "successor",
+              "legal_successor",
+              "possible_duplicate"
+            ]
+          },
+          "target_qid": {
+            "pattern": "^Q[1-9][0-9]*$",
+            "type": "string"
+          }
+        },
+        "required": [
+          "kind",
+          "target_qid"
+        ],
+        "type": "object"
+      }
+    },
+    "identity.kind": {
+      "group": "identity",
+      "value_schema": {
+        "enum": [
+          "university",
+          "higher_education_college",
+          "specialist_institution",
+          "tertiary_vocational_institution",
+          "historical_academy",
+          "university_system",
+          "campus",
+          "faculty",
+          "building",
+          "other"
+        ]
+      }
+    },
+    "identity.operating_status": {
+      "group": "identity",
+      "value_schema": {
+        "enum": [
+          "operating",
+          "closed",
+          "merged",
+          "historical"
+        ]
+      }
+    },
+    "names.former": {
+      "group": "identity",
+      "value_schema": {
+        "additionalProperties": false,
+        "properties": {
+          "language": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "text": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "text",
+          "language"
+        ],
+        "type": "object"
+      }
+    },
+    "names.official": {
+      "group": "identity",
+      "value_schema": {
+        "additionalProperties": false,
+        "properties": {
+          "language": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "text": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "text",
+          "language"
+        ],
+        "type": "object"
+      }
+    },
+    "names.short": {
+      "group": "identity",
+      "value_schema": {
+        "additionalProperties": false,
+        "properties": {
+          "language": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "text": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "text",
+          "language"
+        ],
+        "type": "object"
+      }
+    },
+    "population.academic_staff": {
+      "group": "population",
+      "value_schema": {
+        "additionalProperties": false,
+        "allOf": [
+          {
+            "else": {
+              "not": {
+                "anyOf": [
+                  {
+                    "required": [
+                      "minimum"
+                    ]
+                  },
+                  {
+                    "required": [
+                      "maximum"
+                    ]
+                  }
+                ]
+              },
+              "required": [
+                "amount"
+              ]
+            },
+            "if": {
+              "properties": {
+                "precision": {
+                  "const": "range"
+                }
+              }
+            },
+            "then": {
+              "not": {
+                "required": [
+                  "amount"
+                ]
+              },
+              "required": [
+                "minimum",
+                "maximum"
+              ]
+            }
+          }
+        ],
+        "properties": {
+          "amount": {
+            "minimum": 0,
+            "type": "number"
+          },
+          "basis": {
+            "enum": [
+              "headcount",
+              "fte",
+              "unspecified"
+            ]
+          },
+          "maximum": {
+            "minimum": 0,
+            "type": "number"
+          },
+          "minimum": {
+            "minimum": 0,
+            "type": "number"
+          },
+          "precision": {
+            "enum": [
+              "exact",
+              "approximate",
+              "range"
+            ]
+          }
+        },
+        "required": [
+          "basis",
+          "precision"
+        ],
+        "type": "object"
+      }
+    },
+    "population.administrative_staff": {
+      "group": "population",
+      "value_schema": {
+        "additionalProperties": false,
+        "allOf": [
+          {
+            "else": {
+              "not": {
+                "anyOf": [
+                  {
+                    "required": [
+                      "minimum"
+                    ]
+                  },
+                  {
+                    "required": [
+                      "maximum"
+                    ]
+                  }
+                ]
+              },
+              "required": [
+                "amount"
+              ]
+            },
+            "if": {
+              "properties": {
+                "precision": {
+                  "const": "range"
+                }
+              }
+            },
+            "then": {
+              "not": {
+                "required": [
+                  "amount"
+                ]
+              },
+              "required": [
+                "minimum",
+                "maximum"
+              ]
+            }
+          }
+        ],
+        "properties": {
+          "amount": {
+            "minimum": 0,
+            "type": "number"
+          },
+          "basis": {
+            "enum": [
+              "headcount",
+              "fte",
+              "unspecified"
+            ]
+          },
+          "maximum": {
+            "minimum": 0,
+            "type": "number"
+          },
+          "minimum": {
+            "minimum": 0,
+            "type": "number"
+          },
+          "precision": {
+            "enum": [
+              "exact",
+              "approximate",
+              "range"
+            ]
+          }
+        },
+        "required": [
+          "basis",
+          "precision"
+        ],
+        "type": "object"
+      }
+    },
+    "population.doctoral_students": {
+      "group": "population",
+      "value_schema": {
+        "additionalProperties": false,
+        "allOf": [
+          {
+            "else": {
+              "not": {
+                "anyOf": [
+                  {
+                    "required": [
+                      "minimum"
+                    ]
+                  },
+                  {
+                    "required": [
+                      "maximum"
+                    ]
+                  }
+                ]
+              },
+              "required": [
+                "amount"
+              ]
+            },
+            "if": {
+              "properties": {
+                "precision": {
+                  "const": "range"
+                }
+              }
+            },
+            "then": {
+              "not": {
+                "required": [
+                  "amount"
+                ]
+              },
+              "required": [
+                "minimum",
+                "maximum"
+              ]
+            }
+          }
+        ],
+        "properties": {
+          "amount": {
+            "minimum": 0,
+            "type": "number"
+          },
+          "basis": {
+            "enum": [
+              "headcount",
+              "fte",
+              "unspecified"
+            ]
+          },
+          "maximum": {
+            "minimum": 0,
+            "type": "number"
+          },
+          "minimum": {
+            "minimum": 0,
+            "type": "number"
+          },
+          "precision": {
+            "enum": [
+              "exact",
+              "approximate",
+              "range"
+            ]
+          }
+        },
+        "required": [
+          "basis",
+          "precision"
+        ],
+        "type": "object"
+      }
+    },
+    "population.employees_total": {
+      "group": "population",
+      "value_schema": {
+        "additionalProperties": false,
+        "allOf": [
+          {
+            "else": {
+              "not": {
+                "anyOf": [
+                  {
+                    "required": [
+                      "minimum"
+                    ]
+                  },
+                  {
+                    "required": [
+                      "maximum"
+                    ]
+                  }
+                ]
+              },
+              "required": [
+                "amount"
+              ]
+            },
+            "if": {
+              "properties": {
+                "precision": {
+                  "const": "range"
+                }
+              }
+            },
+            "then": {
+              "not": {
+                "required": [
+                  "amount"
+                ]
+              },
+              "required": [
+                "minimum",
+                "maximum"
+              ]
+            }
+          }
+        ],
+        "properties": {
+          "amount": {
+            "minimum": 0,
+            "type": "number"
+          },
+          "basis": {
+            "enum": [
+              "headcount",
+              "fte",
+              "unspecified"
+            ]
+          },
+          "maximum": {
+            "minimum": 0,
+            "type": "number"
+          },
+          "minimum": {
+            "minimum": 0,
+            "type": "number"
+          },
+          "precision": {
+            "enum": [
+              "exact",
+              "approximate",
+              "range"
+            ]
+          }
+        },
+        "required": [
+          "basis",
+          "precision"
+        ],
+        "type": "object"
+      }
+    },
+    "population.international_students": {
+      "group": "population",
+      "value_schema": {
+        "additionalProperties": false,
+        "allOf": [
+          {
+            "else": {
+              "not": {
+                "anyOf": [
+                  {
+                    "required": [
+                      "minimum"
+                    ]
+                  },
+                  {
+                    "required": [
+                      "maximum"
+                    ]
+                  }
+                ]
+              },
+              "required": [
+                "amount"
+              ]
+            },
+            "if": {
+              "properties": {
+                "precision": {
+                  "const": "range"
+                }
+              }
+            },
+            "then": {
+              "not": {
+                "required": [
+                  "amount"
+                ]
+              },
+              "required": [
+                "minimum",
+                "maximum"
+              ]
+            }
+          }
+        ],
+        "properties": {
+          "amount": {
+            "minimum": 0,
+            "type": "number"
+          },
+          "basis": {
+            "enum": [
+              "headcount",
+              "fte",
+              "unspecified"
+            ]
+          },
+          "maximum": {
+            "minimum": 0,
+            "type": "number"
+          },
+          "minimum": {
+            "minimum": 0,
+            "type": "number"
+          },
+          "precision": {
+            "enum": [
+              "exact",
+              "approximate",
+              "range"
+            ]
+          }
+        },
+        "required": [
+          "basis",
+          "precision"
+        ],
+        "type": "object"
+      }
+    },
+    "population.masters_students": {
+      "group": "population",
+      "value_schema": {
+        "additionalProperties": false,
+        "allOf": [
+          {
+            "else": {
+              "not": {
+                "anyOf": [
+                  {
+                    "required": [
+                      "minimum"
+                    ]
+                  },
+                  {
+                    "required": [
+                      "maximum"
+                    ]
+                  }
+                ]
+              },
+              "required": [
+                "amount"
+              ]
+            },
+            "if": {
+              "properties": {
+                "precision": {
+                  "const": "range"
+                }
+              }
+            },
+            "then": {
+              "not": {
+                "required": [
+                  "amount"
+                ]
+              },
+              "required": [
+                "minimum",
+                "maximum"
+              ]
+            }
+          }
+        ],
+        "properties": {
+          "amount": {
+            "minimum": 0,
+            "type": "number"
+          },
+          "basis": {
+            "enum": [
+              "headcount",
+              "fte",
+              "unspecified"
+            ]
+          },
+          "maximum": {
+            "minimum": 0,
+            "type": "number"
+          },
+          "minimum": {
+            "minimum": 0,
+            "type": "number"
+          },
+          "precision": {
+            "enum": [
+              "exact",
+              "approximate",
+              "range"
+            ]
+          }
+        },
+        "required": [
+          "basis",
+          "precision"
+        ],
+        "type": "object"
+      }
+    },
+    "population.postgraduate_students": {
+      "group": "population",
+      "value_schema": {
+        "additionalProperties": false,
+        "allOf": [
+          {
+            "else": {
+              "not": {
+                "anyOf": [
+                  {
+                    "required": [
+                      "minimum"
+                    ]
+                  },
+                  {
+                    "required": [
+                      "maximum"
+                    ]
+                  }
+                ]
+              },
+              "required": [
+                "amount"
+              ]
+            },
+            "if": {
+              "properties": {
+                "precision": {
+                  "const": "range"
+                }
+              }
+            },
+            "then": {
+              "not": {
+                "required": [
+                  "amount"
+                ]
+              },
+              "required": [
+                "minimum",
+                "maximum"
+              ]
+            }
+          }
+        ],
+        "properties": {
+          "amount": {
+            "minimum": 0,
+            "type": "number"
+          },
+          "basis": {
+            "enum": [
+              "headcount",
+              "fte",
+              "unspecified"
+            ]
+          },
+          "maximum": {
+            "minimum": 0,
+            "type": "number"
+          },
+          "minimum": {
+            "minimum": 0,
+            "type": "number"
+          },
+          "precision": {
+            "enum": [
+              "exact",
+              "approximate",
+              "range"
+            ]
+          }
+        },
+        "required": [
+          "basis",
+          "precision"
+        ],
+        "type": "object"
+      }
+    },
+    "population.students_total": {
+      "group": "population",
+      "value_schema": {
+        "additionalProperties": false,
+        "allOf": [
+          {
+            "else": {
+              "not": {
+                "anyOf": [
+                  {
+                    "required": [
+                      "minimum"
+                    ]
+                  },
+                  {
+                    "required": [
+                      "maximum"
+                    ]
+                  }
+                ]
+              },
+              "required": [
+                "amount"
+              ]
+            },
+            "if": {
+              "properties": {
+                "precision": {
+                  "const": "range"
+                }
+              }
+            },
+            "then": {
+              "not": {
+                "required": [
+                  "amount"
+                ]
+              },
+              "required": [
+                "minimum",
+                "maximum"
+              ]
+            }
+          }
+        ],
+        "properties": {
+          "amount": {
+            "minimum": 0,
+            "type": "number"
+          },
+          "basis": {
+            "enum": [
+              "headcount",
+              "fte",
+              "unspecified"
+            ]
+          },
+          "maximum": {
+            "minimum": 0,
+            "type": "number"
+          },
+          "minimum": {
+            "minimum": 0,
+            "type": "number"
+          },
+          "precision": {
+            "enum": [
+              "exact",
+              "approximate",
+              "range"
+            ]
+          }
+        },
+        "required": [
+          "basis",
+          "precision"
+        ],
+        "type": "object"
+      }
+    },
+    "population.undergraduate_students": {
+      "group": "population",
+      "value_schema": {
+        "additionalProperties": false,
+        "allOf": [
+          {
+            "else": {
+              "not": {
+                "anyOf": [
+                  {
+                    "required": [
+                      "minimum"
+                    ]
+                  },
+                  {
+                    "required": [
+                      "maximum"
+                    ]
+                  }
+                ]
+              },
+              "required": [
+                "amount"
+              ]
+            },
+            "if": {
+              "properties": {
+                "precision": {
+                  "const": "range"
+                }
+              }
+            },
+            "then": {
+              "not": {
+                "required": [
+                  "amount"
+                ]
+              },
+              "required": [
+                "minimum",
+                "maximum"
+              ]
+            }
+          }
+        ],
+        "properties": {
+          "amount": {
+            "minimum": 0,
+            "type": "number"
+          },
+          "basis": {
+            "enum": [
+              "headcount",
+              "fte",
+              "unspecified"
+            ]
+          },
+          "maximum": {
+            "minimum": 0,
+            "type": "number"
+          },
+          "minimum": {
+            "minimum": 0,
+            "type": "number"
+          },
+          "precision": {
+            "enum": [
+              "exact",
+              "approximate",
+              "range"
+            ]
+          }
+        },
+        "required": [
+          "basis",
+          "precision"
+        ],
+        "type": "object"
+      }
+    },
+    "profile.academic_focus": {
+      "group": "profile",
+      "value_schema": {
+        "additionalProperties": false,
+        "properties": {
+          "language": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "text": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "text",
+          "language"
+        ],
+        "type": "object"
+      }
+    },
+    "profile.logo_url": {
+      "group": "profile",
+      "value_schema": {
+        "format": "uri",
+        "pattern": "^https?://",
+        "type": "string"
+      }
+    },
+    "profile.main_image_url": {
+      "group": "profile",
+      "value_schema": {
+        "format": "uri",
+        "pattern": "^https?://",
+        "type": "string"
+      }
+    },
+    "profile.motto": {
+      "group": "profile",
+      "value_schema": {
+        "additionalProperties": false,
+        "properties": {
+          "language": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "text": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "text",
+          "language"
+        ],
+        "type": "object"
+      }
+    },
+    "profile.summary": {
+      "group": "profile",
+      "value_schema": {
+        "additionalProperties": false,
+        "properties": {
+          "language": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "text": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "text",
+          "language"
+        ],
+        "type": "object"
+      }
+    },
+    "profile.teaching_language": {
+      "group": "profile",
+      "value_schema": {
+        "additionalProperties": false,
+        "properties": {
+          "language": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "text": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "text",
+          "language"
+        ],
+        "type": "object"
+      }
+    },
+    "profile.website": {
+      "group": "profile",
+      "value_schema": {
+        "format": "uri",
+        "pattern": "^https?://",
+        "type": "string"
+      }
+    }
+  },
+  "status": "draft",
+  "version": "0.1.0"
+}
