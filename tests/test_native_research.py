@@ -60,4 +60,16 @@ class NativeResearchTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError,'input changed'): native.compile(ROOT,job,result_path,'session','gpt-6.1-terra')
         self.assertEqual(len(list((job/'compile-attempts').glob('*/native-result.json'))),1)
 
+    def test_optional_external_failure_is_frozen_and_compiles_without_empty_success(self):
+        job=self.private/'external-job'; result=self.private/'result.json'
+        result.write_bytes(encode(self.transport))
+        failure={'kind':'website','url':'https://example.org/','reason':'unavailable','error':'TimeoutError'}
+        with patch.object(native,'capture_external',return_value={'captures':[], 'retrieval_failures':[failure]}):
+            native.prepare(ROOT,'Q101',job,external_leads={})
+        import json
+        packet=json.loads((job/'cases/Q101/research-packet.json').read_text())
+        self.assertEqual(packet['retrieval_failures'],[failure])
+        compiled=native.compile(ROOT,job,result,'external-session','not_reported',effort='not_reported')
+        self.assertEqual(compiled['public_proposal']['retrieval_failures'],[{'reason':'unavailable'}])
+
 if __name__=='__main__': unittest.main()

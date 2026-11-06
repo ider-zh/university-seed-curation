@@ -27,9 +27,13 @@ MAX_BYTES=1024*1024
 MAX_TEXT=18000
 
 
+class ExternalSourceUnavailable(ValueError):
+    """An optional page could not be acquired; not a contract/integrity error."""
+
+
 class _NoRedirect(HTTPRedirectHandler):
     def redirect_request(self,*args,**kwargs):
-        raise ValueError('Redirects require a new explicitly budgeted URL')
+        raise ExternalSourceUnavailable('Redirects require a new explicitly budgeted URL')
 
 
 class _Text(HTMLParser):
@@ -60,7 +64,7 @@ def _host(url):
         raise ValueError('Local network sources are forbidden')
     try:
         addresses=socket.getaddrinfo(name,443,type=socket.SOCK_STREAM)
-    except socket.gaierror as exc: raise ValueError('External source DNS resolution failed') from exc
+    except socket.gaierror as exc: raise ExternalSourceUnavailable('External source DNS resolution failed') from exc
     if not addresses or any(not ipaddress.ip_address(a[4][0]).is_global for a in addresses):
         raise ValueError('External source resolves to a non-public IP')
     return name
@@ -72,11 +76,14 @@ def _fetch(url):
     opener=build_opener(_NoRedirect())
     with opener.open(request,timeout=12) as response:
         mime=response.headers.get_content_type()
-        if mime not in ('text/html','text/plain'): raise ValueError('Unsupported external content type')
+        if mime not in ('text/html','text/plain'): raise ExternalSourceUnavailable('Unsupported external content type')
         raw=response.read(MAX_BYTES+1)
-        if len(raw)>MAX_BYTES: raise ValueError('Oversized external source')
+        if len(raw)>MAX_BYTES: raise ExternalSourceUnavailable('Oversized external source')
         charset=response.headers.get_content_charset() or 'utf-8'
-    decoded=raw.decode(charset,errors='replace')
+    try:
+        decoded=raw.decode(charset,errors='strict')
+    except (UnicodeError, LookupError) as exc:
+        raise ExternalSourceUnavailable('External page decoding failed') from exc
     if mime=='text/html':
         parser=_Text(); parser.feed(decoded); paragraphs=parser.finish()
     else: paragraphs=[v.strip() for v in decoded.splitlines() if len(v.strip())>=20]
@@ -86,7 +93,7 @@ def _fetch(url):
         if not remaining: break
         text=line[:remaining]; remaining-=len(text)
         if text: rows.append({'locator':'paragraph:'+str(index+1),'text':text})
-    if not rows: raise ValueError('External page contains no useful readable text')
+    if not rows: raise ExternalSourceUnavailable('External page contains no useful readable text')
     return rows
 
 
@@ -103,7 +110,7 @@ def collect(leads, source_map, source_corpus, capture_dir, fetch=_fetch, now=Non
             or type(elapsed) not in (float,int) or not 0<=elapsed<=MAX_SECONDS or
             not isinstance(pages,list) or len(pages)>MAX_PAGES):
         raise ValueError('External research budget exceeded')
-    hosts=set(); urls=set(); checked=[]
+    hosts=set(); urls=set(); checked=[]; failures=[]
     for page in pages:
         if not isinstance(page,dict) or set(page)!={'url','publisher_role','query_index','depth'}:
             raise ValueError('Invalid external page descriptor')
@@ -112,7 +119,13 @@ def collect(leads, source_map, source_corpus, capture_dir, fetch=_fetch, now=Non
             raise ValueError('Duplicate URL or unsupported source role')
         if type(q) is not int or not 0<=q<len(queries) or type(depth) is not int or not 0<=depth<=MAX_DEPTH:
             raise ValueError('External search query/depth not accounted for')
-        host=_host(url); hosts.add(host); urls.add(url); checked.append((page,host))
+        try:
+            host=_host(url)
+        except ExternalSourceUnavailable as exc:
+            hosts.add(urlsplit(url).hostname.lower().rstrip('.')); urls.add(url)
+            failures.append({'kind':'website','url':url,'reason':'unavailable','error':type(exc).__name__})
+            continue
+        hosts.add(host); urls.add(url); checked.append((page,host))
     if len(hosts)>MAX_DOMAINS: raise ValueError('External domain budget exceeded')
     cache=private_path(capture_dir); cache.mkdir(parents=True,exist_ok=True)
     at=now or datetime.now(timezone.utc).isoformat(); captures=[]
@@ -128,7 +141,11 @@ def collect(leads, source_map, source_corpus, capture_dir, fetch=_fetch, now=Non
                 if timedelta(0)<=instant(at)-instant(prior['retrieved_at'])<timedelta(days=30):
                     saved=prior
             if saved is None:
-                rows=fetch(url)
+                try:
+                    rows=fetch(url)
+                except (OSError, ExternalSourceUnavailable, UnicodeError) as exc:
+                    failures.append({'kind':'website','url':url,'reason':'unavailable','error':type(exc).__name__})
+                    continue
                 saved={'url':url,'rows':rows,'digest':sha(encode(rows)),'retrieved_at':at}
                 temporary=path.with_suffix('.part')
                 temporary.write_bytes(encode(saved)); temporary.replace(path)
@@ -137,7 +154,8 @@ def collect(leads, source_map, source_corpus, capture_dir, fetch=_fetch, now=Non
                          'family':host,'retrieved_at':saved['retrieved_at'],'snapshot_id':'sha256:'+saved['digest']}
         source_corpus[ref]=saved['rows']
         captures.append({'source_ref':ref,'url':url,'capture_path':str(path),'digest':saved['digest']})
-    return {'queries':len(queries),'pages':len(checked),'domains':len(hosts),'elapsed_seconds':elapsed,'captures':captures}
+    return {'queries':len(queries),'pages':len(pages),'domains':len(hosts),'elapsed_seconds':elapsed,
+            'captures':captures,'retrieval_failures':failures}
 
 
 def verify_packet(packet):
