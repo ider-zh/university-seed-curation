@@ -1,0 +1,3347 @@
+{
+  "attribution": "distinct_native_research_and_review_subagents;not_cryptographic_identity",
+  "research": {
+    "baseline_sha256": "absent",
+    "candidate": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-06T09:53:48.108364+00:00",
+          "status": "checked"
+        },
+        "geography": {
+          "checked_at": "2026-11-06T09:53:48.108364+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-06T09:53:48.108364+00:00",
+          "status": "checked"
+        },
+        "identity": {
+          "checked_at": "2026-11-06T09:53:48.108364+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-06T09:53:48.108364+00:00",
+          "status": "checked"
+        },
+        "profile": {
+          "checked_at": "2026-11-06T09:53:48.108364+00:00",
+          "status": "checked"
+        }
+      },
+      "curation": {
+        "identity_status": "in_scope"
+      },
+      "finance": {
+        "budget": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "154,8 M€ (en 2022)",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2022
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": "154800000",
+                "currency": "EUR",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason_code": "only_available"
+          }
+        },
+        "endowment": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:7",
+                  "original_text": "Endowment: €121 M",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period_status": "not_stated",
+              "value": {
+                "amount": "121000000",
+                "currency": "EUR",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "period_not_stated",
+              "single_source_family"
+            ],
+            "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:History",
+                      "original_text": "1896 : All these faculties were combined to form the University of Lyon.",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 1896
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:History",
+                      "original_text": "1896 : All these faculties were combined to form the University of Lyon.",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "Earlier faculties of science, humanities, medicine and law were combined into the historical University of Lyon in 1896."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "origin1896",
+            "kind": "institution_establishment",
+            "subject_ref": "related:formerlyon"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "claim:P571:0",
+                      "original_text": "\"+1969-12-00T00:00:00Z\"",
+                      "source_ref": "s1"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "month": 12,
+                    "precision": "month",
+                    "year": 1969
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:History",
+                      "original_text": "December 1969 : University Lyon 2 was created as a result of the Loi Faure of 1968",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "University Lyon 2 was created in December 1969 following the 1968 Loi Faure reforms."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "establishment",
+            "kind": "institution_establishment",
+            "subject_ref": "institution"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Scission_de_l.27universit.C3.A9_Lyon-II",
+                      "original_text": "décret ministériel du 26 juillet 1973",
+                      "source_ref": "s3"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 1973
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Scission_de_l.27universit.C3.A9_Lyon-II",
+                      "original_text": "une scission intervient",
+                      "source_ref": "s3"
+                    },
+                    {
+                      "locator": "section:Scission_de_l.27universit.C3.A9_Lyon-II",
+                      "original_text": "L'université Lyon 3 est alors créée.",
+                      "source_ref": "s3"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "A 1973 split of Lyon 2 led to the creation of Lyon 3; this is distinct from Lyon 2's 1969 establishment."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "split1973",
+            "kind": "split",
+            "subject_ref": "institution"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:History",
+                      "original_text": "1987 : University Lyon 2 was renamed University Lumière Lyon 2.",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 1987
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Lyon-II_aujourd.27hui",
+                      "original_text": "en 1987 la désignation d’« université Lumière-Lyon-II » en l'honneur des frères Lumière",
+                      "source_ref": "s3"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "The university adopted the Lumière name in 1987 in honour of the Lumière brothers."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "rename1987",
+            "kind": "rename",
+            "subject_ref": "institution"
+          }
+        ]
+      },
+      "identity": {
+        "aliases": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "infobox:0",
+                    "original_text": "Université Lumière Lyon 2",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "fr",
+                  "text": "Université Lumière Lyon 2"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ],
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "metadata",
+                  "original_text": "French public university in Lyon, France created in 1969",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "university",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "\"en\": \"Lumière University Lyon 2\"",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "Lumière University Lyon 2",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "fr": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "\"fr\": \"université Lumière-Lyon-II\"",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "université Lumière-Lyon-II",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        "operating_status": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Historique_des_pr.C3.A9sidents",
+                  "original_text": "La présidente actuelle est Isabelle von Bueltzingsloewen",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": "operating",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "ownership": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:4",
+                  "original_text": "Type: Public",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "public",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "leadership": {
+        "president": {
+          "candidates": [
+            {
+              "current_basis": "term_present",
+              "evidence": [
+                {
+                  "locator": "section:Historique_des_pr.C3.A9sidents",
+                  "original_text": "Isabelle von Bueltzingsloewen, historienne et sociologue de la santé, élue en 2024",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "person": {
+                  "name": "Isabelle von Bueltzingsloewen"
+                },
+                "term_start": {
+                  "precision": "year",
+                  "year": 2024
+                },
+                "title_original": {
+                  "language": "fr",
+                  "text": "présidente"
+                }
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason": "The source gives a term continuing to the present.",
+            "reason_code": "term_present"
+          }
+        }
+      },
+      "locations": [
+        {
+          "id": "lyon",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "\"en\": \"Lyon\"",
+                    "source_ref": "s7"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Lyon"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q456"
+        },
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P159:0",
+                    "original_text": "\"text\": \"18 quai Claude Bernard\"",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "infobox:13",
+                    "original_text": "18 quai Claude Bernard",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "city_name": "Lyon",
+                  "city_qid": "Q456",
+                  "country_name": "France",
+                  "country_qid": "Q142",
+                  "formatted": {
+                    "language": "fr",
+                    "text": "18 quai Claude Bernard, 69007 Lyon, France"
+                  },
+                  "postal_code": "69007",
+                  "street": "18 quai Claude Bernard"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "headquarters",
+          "kind": "headquarters",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P159:0",
+                    "original_text": "\"id\": \"Q456\"",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Lyon"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q456"
+        },
+        {
+          "id": "berges",
+          "kind": "campus",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Campuses",
+                    "original_text": "Berges du Rhône' campus",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "fr",
+                  "text": "Berges du Rhône"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        {
+          "id": "porte",
+          "kind": "campus",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Campuses",
+                    "original_text": "Porte des Alpes",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "fr",
+                  "text": "Porte des Alpes"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        {
+          "id": "rachais",
+          "kind": "campus",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Lyon-II_aujourd.27hui",
+                    "original_text": "le campus de Rachais/MuMo",
+                    "source_ref": "s3"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "fr",
+                  "text": "Rachais/MuMo"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        {
+          "id": "cfmi",
+          "kind": "campus",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Lyon-II_aujourd.27hui",
+                    "original_text": "le campus du CFMI",
+                    "source_ref": "s3"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "fr",
+                  "text": "CFMI"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        {
+          "coordinates": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "statement:Q4041$9329ef5b-4924-639d-38b0-28a90d6ed8d7",
+                    "original_text": "\"latitude\": 45.75083333333333",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "source_rank": "normal",
+                "value": {
+                  "crs": "EPSG:4326",
+                  "globe_qid": "Q2",
+                  "latitude": 45.75083333333333,
+                  "longitude": 4.8372222222222225,
+                  "source_precision_degrees": 0.0002777777777777778
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "wikidata-item-location",
+          "kind": "institution",
+          "qid": "Q4041"
+        }
+      ],
+      "modified_datetime": "2026-11-06T09:54:50.641489+00:00",
+      "population": {
+        "doctoral_students": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:12",
+                  "original_text": "Doctoral students: 1,355",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period_status": "not_stated",
+              "value": {
+                "amount": 1355,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "period_not_stated",
+              "single_source_family"
+            ],
+            "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+            "reason_code": "only_available"
+          }
+        },
+        "postgraduate_students": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:11",
+                  "original_text": "Postgraduates: 7,046",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period_status": "not_stated",
+              "value": {
+                "amount": 7046,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "period_not_stated",
+              "single_source_family"
+            ],
+            "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+            "reason_code": "only_available"
+          }
+        },
+        "students_total": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2196:8",
+                  "original_text": "\"amount\": \"+26452\"",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "kind": "date",
+                "year": 2007
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 26452,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2196:4",
+                  "original_text": "\"amount\": \"+25812\"",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c2",
+              "period": {
+                "kind": "date",
+                "year": 2008
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 25812,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2196:2",
+                  "original_text": "\"amount\": \"+27175\"",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c3",
+              "period": {
+                "kind": "date",
+                "year": 2014
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 27175,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2196:0",
+                  "original_text": "\"amount\": \"+29996\"",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c4",
+              "period": {
+                "kind": "date",
+                "year": 2018
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 29996,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2196:3",
+                  "original_text": "\"amount\": \"+28334\"",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c5",
+              "period": {
+                "kind": "date",
+                "year": 2019
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 28334,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2196:11",
+                  "original_text": "\"amount\": \"+27862\"",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c6",
+              "period": {
+                "kind": "date",
+                "year": 2020
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 27862,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2196:7",
+                  "original_text": "\"amount\": \"+27987\"",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c7",
+              "period": {
+                "kind": "date",
+                "year": 2021
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 27987,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2196:1",
+                  "original_text": "\"amount\": \"+27712\"",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c8",
+              "period": {
+                "kind": "date",
+                "month": 9,
+                "year": 2021
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 27712,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "26044 (2023)",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c9",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2023
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 26044,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:9",
+                  "original_text": "Students: 27,393",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c10",
+              "period_status": "not_stated",
+              "value": {
+                "amount": 27393,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c9",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        },
+        "teaching_staff": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "Enseignants\n909",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "period_status": "not_stated",
+              "value": {
+                "amount": 909,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "period_not_stated",
+              "single_source_family"
+            ],
+            "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+            "reason_code": "only_available"
+          }
+        },
+        "undergraduate_students": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:10",
+                  "original_text": "Undergraduates: 14,851",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period_status": "not_stated",
+              "value": {
+                "amount": 14851,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "period_not_stated",
+              "single_source_family"
+            ],
+            "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "profile": {
+        "academic_focus": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:4_grands_domaines_d.27enseignement",
+                  "original_text": "Arts, Lettres, Langues\nDroit, Économie, Gestion\nSciences humaines et sociales\nSciences, Technologies, Santé",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": [
+                {
+                  "language": "en",
+                  "text": "Arts, literature and languages"
+                },
+                {
+                  "language": "en",
+                  "text": "Law, economics and management"
+                },
+                {
+                  "language": "en",
+                  "text": "Humanities and social sciences"
+                },
+                {
+                  "language": "en",
+                  "text": "Science, technology and health"
+                }
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "motto": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:2",
+                  "original_text": "Inter Folia Fulget",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "la",
+                "text": "Inter Folia Fulget"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "summary": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "metadata",
+                  "original_text": "\"en\": \"Lumière University Lyon 2\"",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "section:Campuses",
+                  "original_text": "Berges du Rhône' campus",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Lyon-II_aujourd.27hui",
+                  "original_text": "le campus de Rachais/MuMo",
+                  "source_ref": "s3"
+                },
+                {
+                  "locator": "section:History",
+                  "original_text": "December 1969 : University Lyon 2 was created as a result of the Loi Faure of 1968",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Scission_de_l.27universit.C3.A9_Lyon-II",
+                  "original_text": "L'université Lyon 3 est alors créée.",
+                  "source_ref": "s3"
+                },
+                {
+                  "locator": "section:Lyon-II_aujourd.27hui",
+                  "original_text": "en 1987 la désignation d’« université Lumière-Lyon-II »",
+                  "source_ref": "s3"
+                },
+                {
+                  "locator": "section:4_grands_domaines_d.27enseignement",
+                  "original_text": "Arts, Lettres, Langues",
+                  "source_ref": "s3"
+                },
+                {
+                  "locator": "section:Unit.C3.A9s_de_formation_et_de_recherche",
+                  "original_text": "L'université compte 6 UFR",
+                  "source_ref": "s3"
+                },
+                {
+                  "locator": "section:Instituts",
+                  "original_text": "L'université compte 6 instituts",
+                  "source_ref": "s3"
+                },
+                {
+                  "locator": "section:Centre_international",
+                  "original_text": "centre international d'études françaises",
+                  "source_ref": "s3"
+                },
+                {
+                  "locator": "claim:P2196:0",
+                  "original_text": "\"amount\": \"+29996\"",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "section:lead",
+                  "original_text": "26044 (2023)",
+                  "source_ref": "s3"
+                },
+                {
+                  "locator": "section:lead",
+                  "original_text": "154,8 M€ (en 2022)",
+                  "source_ref": "s3"
+                },
+                {
+                  "locator": "claim:P159:0",
+                  "original_text": "\"text\": \"18 quai Claude Bernard\"",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "section:History",
+                  "original_text": "1896 : All these faculties were combined to form the University of Lyon.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "Lumière University Lyon 2 (Université Lumière-Lyon-II) is a public university in Lyon, France. Its head-office address is given as 18 quai Claude Bernard. The university's Berges du Rhône site occupies a historic area on the left bank of the river, while the Porte des Alpes campus extends into Bron and Saint-Priest. A French-language account also identifies the Rachais/MuMo and CFMI sites; these descriptions should not be conflated with a single precise campus coordinate.\n\nIts institutional history is distinct from the earlier University of Lyon. Faculties that emerged in the nineteenth century were united under that older university in 1896. University Lyon 2 was established in December 1969 following the higher-education reforms of 1968. A further split in 1973 led to the creation of Lyon 3. In 1987, Lyon 2 adopted the Lumière name, honouring the Lumière brothers. The historical University of Lyon and the later regional University of Lyon groupings are separate entities.\n\nThe university teaches across arts, literature, languages, law, economics, management and the social sciences, as well as other stated fields. The French-language account enumerates six teaching and research faculties and several institutes, while describing a centre for French-language and cultural studies. Wikidata reports 29,996 students for 2018, whereas the French article's infobox gives 26,044 for 2023; these figures refer to different observation periods and should not be treated as a current headcount. A budget figure of €154.8 million is explicitly associated with 2022."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "teaching_languages": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "Régime linguistique\nfrançais",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": [
+                "French"
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "website": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P856:0",
+                  "original_text": "https://www.univ-lyon2.fr/",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "https://www.univ-lyon2.fr/",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "qid": "Q4041",
+      "record_revision": 1,
+      "related_entities": {
+        "formerlyon": {
+          "kind": "institution",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "\"en\": \"University of Lyon\"",
+                    "source_ref": "s10"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "University of Lyon"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q2383462"
+        },
+        "lawfaculty": {
+          "kind": "faculty",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "\"en\": \"Faculty of Law and Economics of the University of Lyon\"",
+                    "source_ref": "s11"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Faculty of Law and Economics of the University of Lyon"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q96209609"
+        },
+        "lyonsystem2007": {
+          "kind": "university_system",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "\"en\": \"University of Lyon\"",
+                    "source_ref": "s9"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "University of Lyon"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q64223469"
+        },
+        "lyonsystem2015": {
+          "kind": "university_system",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "\"en\": \"University of Lyon\"",
+                    "source_ref": "s8"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "University of Lyon"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q10176"
+        }
+      },
+      "relationships": {
+        "parent": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P749:0",
+                    "original_text": "\"id\": \"Q10176\"",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "independence": "unresolved",
+                  "target_ref": "related:lyonsystem2015",
+                  "valid_from": {
+                    "precision": "year",
+                    "year": 2015
+                  }
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P749:1",
+                    "original_text": "\"id\": \"Q64223469\"",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "independence": "unresolved",
+                  "target_ref": "related:lyonsystem2007",
+                  "valid_from": {
+                    "precision": "year",
+                    "year": 2007
+                  },
+                  "valid_to": {
+                    "precision": "year",
+                    "year": 2015
+                  }
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ],
+        "predecessor": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P1365:0",
+                    "original_text": "\"id\": \"Q2383462\"",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "independence": "unresolved",
+                  "target_ref": "related:formerlyon"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P1365:1",
+                    "original_text": "\"id\": \"Q96209609\"",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "independence": "unresolved",
+                  "target_ref": "related:lawfaculty"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ]
+      },
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "ranking_identifier",
+          "reviewed_institution_type"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "included"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T09:41:04.081896+00:00",
+          "revision_id": 2513396297,
+          "source_qid": "Q4041",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2513396297"
+        },
+        "s10": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T09:16:32.304729+00:00",
+          "revision_id": 2511594324,
+          "source_qid": "Q2383462",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2511594324"
+        },
+        "s11": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T09:41:54.584754+00:00",
+          "revision_id": 2410450056,
+          "source_qid": "Q96209609",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2410450056"
+        },
+        "s12": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T09:42:01.248841+00:00",
+          "revision_id": 2521648436,
+          "source_qid": "Q33286239",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2521648436"
+        },
+        "s13": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T09:42:09.902909+00:00",
+          "revision_id": 2538453991,
+          "source_qid": "Q125531250",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2538453991"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikipedia",
+          "language": "en",
+          "page_id": 13409094,
+          "publisher_role": "encyclopedia",
+          "retrieved_at": "2026-11-06T09:41:26.953633+00:00",
+          "revision_id": 1359748867,
+          "url": "https://en.wikipedia.org/w/index.php?oldid=1359748867"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikipedia",
+          "language": "fr",
+          "page_id": 1372207,
+          "publisher_role": "encyclopedia",
+          "retrieved_at": "2026-11-06T09:41:33.641850+00:00",
+          "revision_id": 241072124,
+          "url": "https://fr.wikipedia.org/w/index.php?oldid=241072124"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T09:41:40.922187+00:00",
+          "revision_id": 2561641675,
+          "source_qid": "Q2385804",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2561641675"
+        },
+        "s5": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T09:15:59.048669+00:00",
+          "revision_id": 2468502188,
+          "source_qid": "Q3551775",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2468502188"
+        },
+        "s6": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T09:16:05.838184+00:00",
+          "revision_id": 2564285160,
+          "source_qid": "Q142",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2564285160"
+        },
+        "s7": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T09:41:47.781576+00:00",
+          "revision_id": 2564980633,
+          "source_qid": "Q456",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2564980633"
+        },
+        "s8": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T09:16:25.886028+00:00",
+          "revision_id": 2511220217,
+          "source_qid": "Q10176",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2511220217"
+        },
+        "s9": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T09:16:19.380811+00:00",
+          "revision_id": 2314127583,
+          "source_qid": "Q64223469",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2314127583"
+        }
+      }
+    },
+    "coverage": [
+      {
+        "group": "identity",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "status": "checked"
+      },
+      {
+        "group": "population",
+        "status": "checked"
+      },
+      {
+        "group": "finance",
+        "status": "checked"
+      },
+      {
+        "group": "profile",
+        "status": "checked"
+      }
+    ],
+    "delta": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-06T09:53:48.108364+00:00",
+          "status": "checked"
+        },
+        "geography": {
+          "checked_at": "2026-11-06T09:53:48.108364+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-06T09:53:48.108364+00:00",
+          "status": "checked"
+        },
+        "identity": {
+          "checked_at": "2026-11-06T09:53:48.108364+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-06T09:53:48.108364+00:00",
+          "status": "checked"
+        },
+        "profile": {
+          "checked_at": "2026-11-06T09:53:48.108364+00:00",
+          "status": "checked"
+        }
+      },
+      "curation": {
+        "identity_status": "in_scope"
+      },
+      "finance": {
+        "budget": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "154,8 M€ (en 2022)",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2022
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": "154800000",
+                "currency": "EUR",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason_code": "only_available"
+          }
+        },
+        "endowment": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:7",
+                  "original_text": "Endowment: €121 M",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period_status": "not_stated",
+              "value": {
+                "amount": "121000000",
+                "currency": "EUR",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "period_not_stated",
+              "single_source_family"
+            ],
+            "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:History",
+                      "original_text": "1896 : All these faculties were combined to form the University of Lyon.",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 1896
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:History",
+                      "original_text": "1896 : All these faculties were combined to form the University of Lyon.",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "Earlier faculties of science, humanities, medicine and law were combined into the historical University of Lyon in 1896."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "origin1896",
+            "kind": "institution_establishment",
+            "subject_ref": "related:formerlyon"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "claim:P571:0",
+                      "original_text": "\"+1969-12-00T00:00:00Z\"",
+                      "source_ref": "s1"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "month": 12,
+                    "precision": "month",
+                    "year": 1969
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:History",
+                      "original_text": "December 1969 : University Lyon 2 was created as a result of the Loi Faure of 1968",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "University Lyon 2 was created in December 1969 following the 1968 Loi Faure reforms."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "establishment",
+            "kind": "institution_establishment",
+            "subject_ref": "institution"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Scission_de_l.27universit.C3.A9_Lyon-II",
+                      "original_text": "décret ministériel du 26 juillet 1973",
+                      "source_ref": "s3"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 1973
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Scission_de_l.27universit.C3.A9_Lyon-II",
+                      "original_text": "une scission intervient",
+                      "source_ref": "s3"
+                    },
+                    {
+                      "locator": "section:Scission_de_l.27universit.C3.A9_Lyon-II",
+                      "original_text": "L'université Lyon 3 est alors créée.",
+                      "source_ref": "s3"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "A 1973 split of Lyon 2 led to the creation of Lyon 3; this is distinct from Lyon 2's 1969 establishment."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "split1973",
+            "kind": "split",
+            "subject_ref": "institution"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:History",
+                      "original_text": "1987 : University Lyon 2 was renamed University Lumière Lyon 2.",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 1987
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Lyon-II_aujourd.27hui",
+                      "original_text": "en 1987 la désignation d’« université Lumière-Lyon-II » en l'honneur des frères Lumière",
+                      "source_ref": "s3"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "The university adopted the Lumière name in 1987 in honour of the Lumière brothers."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "rename1987",
+            "kind": "rename",
+            "subject_ref": "institution"
+          }
+        ]
+      },
+      "identity": {
+        "aliases": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "infobox:0",
+                    "original_text": "Université Lumière Lyon 2",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "fr",
+                  "text": "Université Lumière Lyon 2"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ],
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "metadata",
+                  "original_text": "French public university in Lyon, France created in 1969",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "university",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "\"en\": \"Lumière University Lyon 2\"",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "Lumière University Lyon 2",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "fr": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "\"fr\": \"université Lumière-Lyon-II\"",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "université Lumière-Lyon-II",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        "operating_status": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Historique_des_pr.C3.A9sidents",
+                  "original_text": "La présidente actuelle est Isabelle von Bueltzingsloewen",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": "operating",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "ownership": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:4",
+                  "original_text": "Type: Public",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "public",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "leadership": {
+        "president": {
+          "candidates": [
+            {
+              "current_basis": "term_present",
+              "evidence": [
+                {
+                  "locator": "section:Historique_des_pr.C3.A9sidents",
+                  "original_text": "Isabelle von Bueltzingsloewen, historienne et sociologue de la santé, élue en 2024",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "person": {
+                  "name": "Isabelle von Bueltzingsloewen"
+                },
+                "term_start": {
+                  "precision": "year",
+                  "year": 2024
+                },
+                "title_original": {
+                  "language": "fr",
+                  "text": "présidente"
+                }
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason": "The source gives a term continuing to the present.",
+            "reason_code": "term_present"
+          }
+        }
+      },
+      "locations": [
+        {
+          "id": "lyon",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "\"en\": \"Lyon\"",
+                    "source_ref": "s7"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Lyon"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q456"
+        },
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P159:0",
+                    "original_text": "\"text\": \"18 quai Claude Bernard\"",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "infobox:13",
+                    "original_text": "18 quai Claude Bernard",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "city_name": "Lyon",
+                  "city_qid": "Q456",
+                  "country_name": "France",
+                  "country_qid": "Q142",
+                  "formatted": {
+                    "language": "fr",
+                    "text": "18 quai Claude Bernard, 69007 Lyon, France"
+                  },
+                  "postal_code": "69007",
+                  "street": "18 quai Claude Bernard"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "headquarters",
+          "kind": "headquarters",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P159:0",
+                    "original_text": "\"id\": \"Q456\"",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Lyon"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q456"
+        },
+        {
+          "id": "berges",
+          "kind": "campus",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Campuses",
+                    "original_text": "Berges du Rhône' campus",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "fr",
+                  "text": "Berges du Rhône"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        {
+          "id": "porte",
+          "kind": "campus",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Campuses",
+                    "original_text": "Porte des Alpes",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "fr",
+                  "text": "Porte des Alpes"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        {
+          "id": "rachais",
+          "kind": "campus",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Lyon-II_aujourd.27hui",
+                    "original_text": "le campus de Rachais/MuMo",
+                    "source_ref": "s3"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "fr",
+                  "text": "Rachais/MuMo"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        {
+          "id": "cfmi",
+          "kind": "campus",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Lyon-II_aujourd.27hui",
+                    "original_text": "le campus du CFMI",
+                    "source_ref": "s3"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "fr",
+                  "text": "CFMI"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        {
+          "coordinates": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "statement:Q4041$9329ef5b-4924-639d-38b0-28a90d6ed8d7",
+                    "original_text": "\"latitude\": 45.75083333333333",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "source_rank": "normal",
+                "value": {
+                  "crs": "EPSG:4326",
+                  "globe_qid": "Q2",
+                  "latitude": 45.75083333333333,
+                  "longitude": 4.8372222222222225,
+                  "source_precision_degrees": 0.0002777777777777778
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "wikidata-item-location",
+          "kind": "institution",
+          "qid": "Q4041"
+        }
+      ],
+      "population": {
+        "doctoral_students": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:12",
+                  "original_text": "Doctoral students: 1,355",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period_status": "not_stated",
+              "value": {
+                "amount": 1355,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "period_not_stated",
+              "single_source_family"
+            ],
+            "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+            "reason_code": "only_available"
+          }
+        },
+        "postgraduate_students": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:11",
+                  "original_text": "Postgraduates: 7,046",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period_status": "not_stated",
+              "value": {
+                "amount": 7046,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "period_not_stated",
+              "single_source_family"
+            ],
+            "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+            "reason_code": "only_available"
+          }
+        },
+        "students_total": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2196:8",
+                  "original_text": "\"amount\": \"+26452\"",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "kind": "date",
+                "year": 2007
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 26452,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2196:4",
+                  "original_text": "\"amount\": \"+25812\"",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c2",
+              "period": {
+                "kind": "date",
+                "year": 2008
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 25812,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2196:2",
+                  "original_text": "\"amount\": \"+27175\"",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c3",
+              "period": {
+                "kind": "date",
+                "year": 2014
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 27175,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2196:0",
+                  "original_text": "\"amount\": \"+29996\"",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c4",
+              "period": {
+                "kind": "date",
+                "year": 2018
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 29996,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2196:3",
+                  "original_text": "\"amount\": \"+28334\"",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c5",
+              "period": {
+                "kind": "date",
+                "year": 2019
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 28334,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2196:11",
+                  "original_text": "\"amount\": \"+27862\"",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c6",
+              "period": {
+                "kind": "date",
+                "year": 2020
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 27862,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2196:7",
+                  "original_text": "\"amount\": \"+27987\"",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c7",
+              "period": {
+                "kind": "date",
+                "year": 2021
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 27987,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2196:1",
+                  "original_text": "\"amount\": \"+27712\"",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c8",
+              "period": {
+                "kind": "date",
+                "month": 9,
+                "year": 2021
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 27712,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "26044 (2023)",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c9",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2023
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 26044,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:9",
+                  "original_text": "Students: 27,393",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c10",
+              "period_status": "not_stated",
+              "value": {
+                "amount": 27393,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c9",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        },
+        "teaching_staff": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "Enseignants\n909",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "period_status": "not_stated",
+              "value": {
+                "amount": 909,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "period_not_stated",
+              "single_source_family"
+            ],
+            "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+            "reason_code": "only_available"
+          }
+        },
+        "undergraduate_students": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:10",
+                  "original_text": "Undergraduates: 14,851",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period_status": "not_stated",
+              "value": {
+                "amount": 14851,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "period_not_stated",
+              "single_source_family"
+            ],
+            "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "profile": {
+        "academic_focus": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:4_grands_domaines_d.27enseignement",
+                  "original_text": "Arts, Lettres, Langues\nDroit, Économie, Gestion\nSciences humaines et sociales\nSciences, Technologies, Santé",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": [
+                {
+                  "language": "en",
+                  "text": "Arts, literature and languages"
+                },
+                {
+                  "language": "en",
+                  "text": "Law, economics and management"
+                },
+                {
+                  "language": "en",
+                  "text": "Humanities and social sciences"
+                },
+                {
+                  "language": "en",
+                  "text": "Science, technology and health"
+                }
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "motto": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:2",
+                  "original_text": "Inter Folia Fulget",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "la",
+                "text": "Inter Folia Fulget"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "summary": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "metadata",
+                  "original_text": "\"en\": \"Lumière University Lyon 2\"",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "section:Campuses",
+                  "original_text": "Berges du Rhône' campus",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Lyon-II_aujourd.27hui",
+                  "original_text": "le campus de Rachais/MuMo",
+                  "source_ref": "s3"
+                },
+                {
+                  "locator": "section:History",
+                  "original_text": "December 1969 : University Lyon 2 was created as a result of the Loi Faure of 1968",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Scission_de_l.27universit.C3.A9_Lyon-II",
+                  "original_text": "L'université Lyon 3 est alors créée.",
+                  "source_ref": "s3"
+                },
+                {
+                  "locator": "section:Lyon-II_aujourd.27hui",
+                  "original_text": "en 1987 la désignation d’« université Lumière-Lyon-II »",
+                  "source_ref": "s3"
+                },
+                {
+                  "locator": "section:4_grands_domaines_d.27enseignement",
+                  "original_text": "Arts, Lettres, Langues",
+                  "source_ref": "s3"
+                },
+                {
+                  "locator": "section:Unit.C3.A9s_de_formation_et_de_recherche",
+                  "original_text": "L'université compte 6 UFR",
+                  "source_ref": "s3"
+                },
+                {
+                  "locator": "section:Instituts",
+                  "original_text": "L'université compte 6 instituts",
+                  "source_ref": "s3"
+                },
+                {
+                  "locator": "section:Centre_international",
+                  "original_text": "centre international d'études françaises",
+                  "source_ref": "s3"
+                },
+                {
+                  "locator": "claim:P2196:0",
+                  "original_text": "\"amount\": \"+29996\"",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "section:lead",
+                  "original_text": "26044 (2023)",
+                  "source_ref": "s3"
+                },
+                {
+                  "locator": "section:lead",
+                  "original_text": "154,8 M€ (en 2022)",
+                  "source_ref": "s3"
+                },
+                {
+                  "locator": "claim:P159:0",
+                  "original_text": "\"text\": \"18 quai Claude Bernard\"",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "section:History",
+                  "original_text": "1896 : All these faculties were combined to form the University of Lyon.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "Lumière University Lyon 2 (Université Lumière-Lyon-II) is a public university in Lyon, France. Its head-office address is given as 18 quai Claude Bernard. The university's Berges du Rhône site occupies a historic area on the left bank of the river, while the Porte des Alpes campus extends into Bron and Saint-Priest. A French-language account also identifies the Rachais/MuMo and CFMI sites; these descriptions should not be conflated with a single precise campus coordinate.\n\nIts institutional history is distinct from the earlier University of Lyon. Faculties that emerged in the nineteenth century were united under that older university in 1896. University Lyon 2 was established in December 1969 following the higher-education reforms of 1968. A further split in 1973 led to the creation of Lyon 3. In 1987, Lyon 2 adopted the Lumière name, honouring the Lumière brothers. The historical University of Lyon and the later regional University of Lyon groupings are separate entities.\n\nThe university teaches across arts, literature, languages, law, economics, management and the social sciences, as well as other stated fields. The French-language account enumerates six teaching and research faculties and several institutes, while describing a centre for French-language and cultural studies. Wikidata reports 29,996 students for 2018, whereas the French article's infobox gives 26,044 for 2023; these figures refer to different observation periods and should not be treated as a current headcount. A budget figure of €154.8 million is explicitly associated with 2022."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "teaching_languages": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "Régime linguistique\nfrançais",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": [
+                "French"
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "website": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P856:0",
+                  "original_text": "https://www.univ-lyon2.fr/",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "https://www.univ-lyon2.fr/",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "qid": "Q4041",
+      "record_revision": 1,
+      "related_entities": {
+        "formerlyon": {
+          "kind": "institution",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "\"en\": \"University of Lyon\"",
+                    "source_ref": "s10"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "University of Lyon"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q2383462"
+        },
+        "lawfaculty": {
+          "kind": "faculty",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "\"en\": \"Faculty of Law and Economics of the University of Lyon\"",
+                    "source_ref": "s11"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Faculty of Law and Economics of the University of Lyon"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q96209609"
+        },
+        "lyonsystem2007": {
+          "kind": "university_system",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "\"en\": \"University of Lyon\"",
+                    "source_ref": "s9"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "University of Lyon"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q64223469"
+        },
+        "lyonsystem2015": {
+          "kind": "university_system",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "\"en\": \"University of Lyon\"",
+                    "source_ref": "s8"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "University of Lyon"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q10176"
+        }
+      },
+      "relationships": {
+        "parent": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P749:0",
+                    "original_text": "\"id\": \"Q10176\"",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "independence": "unresolved",
+                  "target_ref": "related:lyonsystem2015",
+                  "valid_from": {
+                    "precision": "year",
+                    "year": 2015
+                  }
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P749:1",
+                    "original_text": "\"id\": \"Q64223469\"",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "independence": "unresolved",
+                  "target_ref": "related:lyonsystem2007",
+                  "valid_from": {
+                    "precision": "year",
+                    "year": 2007
+                  },
+                  "valid_to": {
+                    "precision": "year",
+                    "year": 2015
+                  }
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ],
+        "predecessor": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P1365:0",
+                    "original_text": "\"id\": \"Q2383462\"",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "independence": "unresolved",
+                  "target_ref": "related:formerlyon"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P1365:1",
+                    "original_text": "\"id\": \"Q96209609\"",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "independence": "unresolved",
+                  "target_ref": "related:lawfaculty"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ]
+      },
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "ranking_identifier",
+          "reviewed_institution_type"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "included"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T09:41:04.081896+00:00",
+          "revision_id": 2513396297,
+          "source_qid": "Q4041",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2513396297"
+        },
+        "s10": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T09:16:32.304729+00:00",
+          "revision_id": 2511594324,
+          "source_qid": "Q2383462",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2511594324"
+        },
+        "s11": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T09:41:54.584754+00:00",
+          "revision_id": 2410450056,
+          "source_qid": "Q96209609",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2410450056"
+        },
+        "s12": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T09:42:01.248841+00:00",
+          "revision_id": 2521648436,
+          "source_qid": "Q33286239",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2521648436"
+        },
+        "s13": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T09:42:09.902909+00:00",
+          "revision_id": 2538453991,
+          "source_qid": "Q125531250",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2538453991"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikipedia",
+          "language": "en",
+          "page_id": 13409094,
+          "publisher_role": "encyclopedia",
+          "retrieved_at": "2026-11-06T09:41:26.953633+00:00",
+          "revision_id": 1359748867,
+          "url": "https://en.wikipedia.org/w/index.php?oldid=1359748867"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikipedia",
+          "language": "fr",
+          "page_id": 1372207,
+          "publisher_role": "encyclopedia",
+          "retrieved_at": "2026-11-06T09:41:33.641850+00:00",
+          "revision_id": 241072124,
+          "url": "https://fr.wikipedia.org/w/index.php?oldid=241072124"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T09:41:40.922187+00:00",
+          "revision_id": 2561641675,
+          "source_qid": "Q2385804",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2561641675"
+        },
+        "s5": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T09:15:59.048669+00:00",
+          "revision_id": 2468502188,
+          "source_qid": "Q3551775",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2468502188"
+        },
+        "s6": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T09:16:05.838184+00:00",
+          "revision_id": 2564285160,
+          "source_qid": "Q142",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2564285160"
+        },
+        "s7": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T09:41:47.781576+00:00",
+          "revision_id": 2564980633,
+          "source_qid": "Q456",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2564980633"
+        },
+        "s8": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T09:16:25.886028+00:00",
+          "revision_id": 2511220217,
+          "source_qid": "Q10176",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2511220217"
+        },
+        "s9": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T09:16:19.380811+00:00",
+          "revision_id": 2314127583,
+          "source_qid": "Q64223469",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2314127583"
+        }
+      }
+    },
+    "open_requests": [
+      {
+        "category": "scope_conflict",
+        "field": "population.teaching_staff",
+        "reason": "The 909 teachers count is sourced to the French article label 'Enseignants 909', which does not specify a headcount rather than an FTE or other personnel basis. Set basis=unspecified unless explicit revision-bound evidence defines headcount; preserve amount 909 and source context.",
+        "request_id": "ab324f08-1310-5ffe-850a-b2a3fcb4b3bf",
+        "reviewed_proposal_sha256": "044b17f8b021e9d01f37c7f83e0e5aa82bedbcbf6b3661757826e2838d2c5f9a"
+      }
+    ],
+    "proposed_at": "2026-11-06T09:54:50.641489+00:00",
+    "qid": "Q4041",
+    "research": {
+      "model": "not_reported",
+      "prompt_sha256": "a2ad7abe697647ac394f2f1156e7dfe4040a49203b9e401aacdf8fe14de6f435",
+      "reasoning_effort": "medium",
+      "schema_sha256": "92e942f4fbf2ae28964462ea9ffa8312c5ee16a077a1e08b40aaaf741512422e",
+      "session": "/root/research_q4041"
+    },
+    "retrieval_failures": [],
+    "review_status": "unreviewed",
+    "seed": {
+      "channels": [
+        "ranking_identifier",
+        "reviewed_institution_type"
+      ],
+      "import_id": "seed-84c3beb45367905f",
+      "screening_status": "included"
+    },
+    "transport": {
+      "base_commit": "40de84f29a9459bb2b4cd69389239bb15c1affa6",
+      "protocol": "native-subagent-v1",
+      "repository": "ider-zh/university-seed-curation",
+      "review_policy": {
+        "id": "source-grounded-flexible-v2",
+        "sha256": "b8ed7d2897e4c31dbd81b1379aafdc1077a21d1a33949edbd2d896b0adf99db2"
+      },
+      "schema_sha256": "bfa496eafa9dffca56146214168db7f000b09161b8993129632e7202e1c88833",
+      "seed_catalog_sha256": "84c3beb45367905f513d650684283dd62a9c1b77962bdc34151a6ef05bfa03d4"
+    },
+    "type": "university-proposal-v1"
+  },
+  "review": {
+    "contexts_checked": 16,
+    "coverage_checks": [
+      {
+        "group": "identity",
+        "reason": "Names, institutional status, leadership and predecessor distinctions reviewed against pinned sources.",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "reason": "Headquarters address, four named campuses and root P625 point reviewed without conflation.",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "reason": "1896 predecessor, 1969 formation, 1973 split, 1987 rename and 2007/2015 system links checked.",
+        "status": "checked"
+      },
+      {
+        "group": "population",
+        "reason": "All student and personnel counts and source periods checked; teaching_staff 909 now has unspecified basis, resolving the previous scope overstatement.",
+        "status": "checked"
+      },
+      {
+        "group": "finance",
+        "reason": "2022 budget and undated endowment independently checked.",
+        "status": "checked"
+      },
+      {
+        "group": "profile",
+        "reason": "Summary, academic domains, language, website and motto verified against frozen source excerpts.",
+        "status": "checked"
+      }
+    ],
+    "decision": "approve",
+    "facts_checked": 52,
+    "full_refresh": true,
+    "inferences": [
+      {
+        "id": "$.identity.operating_status:c1",
+        "reason": "Pinned source explicitly supports the recorded institutional identity, name, status or ownership."
+      },
+      {
+        "id": "$.profile.summary:c1",
+        "reason": "Original neutral synthesis is anchored to cited frozen sections and claim locators, distinguishing institutional history, campuses and dated metrics."
+      },
+      {
+        "id": "identity",
+        "reason": "Public currently operating university evidenced by current officeholder and live institutional presentation."
+      }
+    ],
+    "model": "not_reported",
+    "proposal_sha256": "b73ca56bf84a1da3778db91ad63cc18cdc0b37977cc10a589340074858874771",
+    "qid": "Q4041",
+    "reasoning_effort": "medium",
+    "record_sha256": "6ba26706ea85e1b6d33438be6ec80d741f58698b241ac09e06120943aa73f866",
+    "request_responses": [
+      {
+        "reason": "Revised 909 teaching_staff observation retains the cited Enseignants count and changes basis to unspecified, without unsupported headcount/FTE interpretation.",
+        "request_id": "ab324f08-1310-5ffe-850a-b2a3fcb4b3bf",
+        "status": "addressed"
+      }
+    ],
+    "requests": [],
+    "review_session": "/root/review_batch_2",
+    "reviewed_at": "2026-11-06T09:58:10.929880+00:00",
+    "source_revisions_checked": 13
+  },
+  "review_result_sha256": "71592d9ab50c714df4a7cc49e6cb80aa10a1540ad19b397e84f4d60c06a53ea4",
+  "type": "university-unified-receipt-v1"
+}
