@@ -1,0 +1,656 @@
+{
+  "coverage": {
+    "finance": {
+      "checked_at": "2026-11-06T23:25:12.200693+00:00",
+      "status": "not_found"
+    },
+    "geography": {
+      "checked_at": "2026-11-06T23:25:12.200693+00:00",
+      "status": "checked"
+    },
+    "history": {
+      "checked_at": "2026-11-06T23:25:12.200693+00:00",
+      "status": "checked"
+    },
+    "identity": {
+      "checked_at": "2026-11-06T23:25:12.200693+00:00",
+      "status": "checked"
+    },
+    "population": {
+      "checked_at": "2026-11-06T23:25:12.200693+00:00",
+      "status": "not_found"
+    },
+    "profile": {
+      "checked_at": "2026-11-06T23:25:12.200693+00:00",
+      "status": "checked"
+    }
+  },
+  "curation": {
+    "identity_status": "in_scope",
+    "refresh_profile": "core-v1",
+    "reviewed_groups": [
+      "identity",
+      "geography",
+      "history",
+      "population",
+      "finance",
+      "profile"
+    ]
+  },
+  "history": {
+    "milestones": [
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P571:0",
+                  "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q3656405$97f25191-4349-15b3-44a1-3da4b54dc615\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+1971-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "precision": "year",
+                "year": 1971
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P571:0",
+                  "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q3656405$97f25191-4349-15b3-44a1-3da4b54dc615\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+1971-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "infobox:0",
+                  "original_text": "Former names: Conner Vocational High School[1]Kalinga-Apayao School of Arts and Trades[2][1]Apayao Institute of Science and Technology[3][1]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "Wikidata inception year; the supplied evidence does not explain its relationship to the former vocational school names."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "inception",
+        "kind": "institution_establishment",
+        "subject_ref": "institution"
+      }
+    ]
+  },
+  "identity": {
+    "aliases": [
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "Public college in Apayao, Philippines\nApayao State College (ASC) is a public college in the Philippines. Its main campus is located in Conner, Apayao, with a satellite campus in Luna, Apayao",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "ASC"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "infobox:0",
+                "original_text": "Former names: Conner Vocational High School[1]Kalinga-Apayao School of Arts and Trades[2][1]Apayao Institute of Science and Technology[3][1]",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Conner Vocational High School"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "infobox:0",
+                "original_text": "Former names: Conner Vocational High School[1]Kalinga-Apayao School of Arts and Trades[2][1]Apayao Institute of Science and Technology[3][1]",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Kalinga-Apayao School of Arts and Trades"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "infobox:0",
+                "original_text": "Former names: Conner Vocational High School[1]Kalinga-Apayao School of Arts and Trades[2][1]Apayao Institute of Science and Technology[3][1]",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Apayao Institute of Science and Technology"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    ],
+    "kind": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:1",
+              "original_text": "Type: State college",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": "higher_education_college",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "names": {
+      "en": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "Public college in Apayao, Philippines\nApayao State College (ASC) is a public college in the Philippines. Its main campus is located in Conner, Apayao, with a satellite campus in Luna, Apayao",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": "Apayao State College",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    "ownership": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "Public college in Apayao, Philippines\nApayao State College (ASC) is a public college in the Philippines. Its main campus is located in Conner, Apayao, with a satellite campus in Luna, Apayao",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": "public",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "leadership": {
+    "president": {
+      "candidates": [
+        {
+          "current_basis": "infobox_current",
+          "evidence": [
+            {
+              "locator": "infobox:2",
+              "original_text": "President: Dr. John N. Cabansag",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "person": {
+              "name": "John N. Cabansag"
+            },
+            "title_original": {
+              "language": "en",
+              "text": "President"
+            }
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "single_source_family",
+          "reported_current"
+        ],
+        "reason": "The page reports this person in its current officeholder field; a term-end date is not required.",
+        "reason_code": "infobox_current"
+      }
+    }
+  },
+  "locations": [
+    {
+      "address": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "infobox:4",
+                "original_text": "Location: Conner, Apayao, Philippines17°49′03″N 121°16′55″E﻿ / ﻿17.81739°N 121.28204°E﻿ / 17.81739; 121.28204",
+                "source_ref": "s2"
+              },
+              {
+                "locator": "section:lead",
+                "original_text": "Public college in Apayao, Philippines\nApayao State College (ASC) is a public college in the Philippines. Its main campus is located in Conner, Apayao, with a satellite campus in Luna, Apayao",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "city_name": "Conner",
+              "city_qid": "Q30033",
+              "country_name": "Philippines",
+              "country_qid": "Q928",
+              "formatted": {
+                "language": "en",
+                "text": "Conner, Apayao, Philippines"
+              }
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "id": "conner_main",
+      "kind": "campus",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "Public college in Apayao, Philippines\nApayao State College (ASC) is a public college in the Philippines. Its main campus is located in Conner, Apayao, with a satellite campus in Luna, Apayao",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Main campus in Conner"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    {
+      "id": "luna_satellite",
+      "kind": "campus",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "Public college in Apayao, Philippines\nApayao State College (ASC) is a public college in the Philippines. Its main campus is located in Conner, Apayao, with a satellite campus in Luna, Apayao",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Satellite campus in Luna"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    {
+      "coordinates": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "statement:Q3656405$cd33cdac-3293-46b8-8a02-0f52eeff48cc",
+                "original_text": "\"latitude\": 17.81739",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "source_rank": "normal",
+            "value": {
+              "crs": "EPSG:4326",
+              "globe_qid": "Q2",
+              "latitude": 17.81739,
+              "longitude": 121.28204,
+              "source_precision_degrees": 0.00028307167469090284
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "id": "wikidata-item-location",
+      "kind": "institution",
+      "qid": "Q3656405"
+    }
+  ],
+  "modified_datetime": "2026-11-06T23:28:48.121267+00:00",
+  "profile": {
+    "academic_focus": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:Graduate_Programs",
+              "original_text": "[edit | edit source]\nPhD in Education, Major in Educational Leadership and Management\nMaster of Arts in Education (Major in: Educational Management, English & Mathematics)\nMaster of Public Administration, Major in Program Development and Administration\nMaster of Science (Major in Animal Science & Crop Science)",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": [
+            {
+              "language": "en",
+              "text": "Education"
+            },
+            {
+              "language": "en",
+              "text": "Public administration"
+            },
+            {
+              "language": "en",
+              "text": "Animal science"
+            },
+            {
+              "language": "en",
+              "text": "Crop science"
+            }
+          ],
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "degree_levels": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:Graduate_Programs",
+              "original_text": "[edit | edit source]\nPhD in Education, Major in Educational Leadership and Management\nMaster of Arts in Education (Major in: Educational Management, English & Mathematics)\nMaster of Public Administration, Major in Program Development and Administration\nMaster of Science (Major in Animal Science & Crop Science)",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Undergraduate_Programs",
+              "original_text": "Bachelor of Secondary Education",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": [
+            "bachelor",
+            "master",
+            "doctorate"
+          ],
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "summary": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "Public college in Apayao, Philippines\nApayao State College (ASC) is a public college in the Philippines. Its main campus is located in Conner, Apayao, with a satellite campus in Luna, Apayao",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "infobox:0",
+              "original_text": "Former names: Conner Vocational High School[1]Kalinga-Apayao School of Arts and Trades[2][1]Apayao Institute of Science and Technology[3][1]",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Graduate_Programs",
+              "original_text": "[edit | edit source]\nPhD in Education, Major in Educational Leadership and Management\nMaster of Arts in Education (Major in: Educational Management, English & Mathematics)\nMaster of Public Administration, Major in Program Development and Administration\nMaster of Science (Major in Animal Science & Crop Science)",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Undergraduate_Programs",
+              "original_text": "[edit | edit source]\nBachelor of Secondary Education (Major in: English, Filipino, Math, Social Science & Technology and Livelihood Education)\nBachelor of Elementary Education\nBachelor of Information Technology\nBachelor of Science in Industrial Technology (Major in Automotive Technology, Electronics Technology Garments Technology, Food Technology, Civil Technology & Drafting Technology)\nBachelor of Technical Teacher Education (Major in: Automotive Management, Foods Service Management & Electronics\nBachelor of Science in Civil Engineering\nBachelor of Science in Hotel & Restaurant Management\nBachelor of Science in Agriculture (Major in: Crop Science & Animal Science)\nBachelor of Science in Business Administration (Major in: Office Management, Entrepreneurial Management, Marketing)\nBachelor of Science in Tourism\nBachelor of Science in Criminology\nBachelor of Science in Forestry\nBachelor of Physical Education\nBachelor of Science in Agricultural Biosystems Engineering",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Undergraduate_Programs",
+              "original_text": "Bachelor of Physical Education\nBachelor of Science in Agricultural Biosystems Engineering",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "language": "en",
+            "text": "Apayao State College (ASC) is a public higher education college in Apayao, in the Philippines. Its main campus is in Conner, and it also has a satellite campus in Luna. The institution has previously been known as Conner Vocational High School, Kalinga-Apayao School of Arts and Trades, and Apayao Institute of Science and Technology.\n\nIts listed undergraduate programmes include secondary and elementary education, information technology, industrial technology, civil engineering, agriculture, business administration, tourism, criminology and forestry. Other listed bachelor’s programmes cover physical education and agricultural biosystems engineering. Graduate provision includes a doctorate in education with a major in educational leadership and management. Master’s programmes encompass education, public administration and science, with listed specialisations including educational management, English, mathematics, programme development and administration, animal science and crop science."
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "website": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P856:0",
+              "original_text": "{\"property\": \"P856\", \"property_label\": \"official website\", \"statement_id\": \"Q3656405$25b7c4bc-e6bb-497b-8f4c-ef94fd962745\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"http://asc.edu.ph\", \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "value": "http://asc.edu.ph",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "qid": "Q3656405",
+  "record_revision": 1,
+  "relationships": {
+    "campus": [
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "Public college in Apayao, Philippines\nApayao State College (ASC) is a public college in the Philippines. Its main campus is located in Conner, Apayao, with a satellite campus in Luna, Apayao",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "target_ref": "location:conner_main"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "Public college in Apayao, Philippines\nApayao State College (ASC) is a public college in the Philippines. Its main campus is located in Conner, Apayao, with a satellite campus in Luna, Apayao",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "target_ref": "location:luna_satellite"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    ]
+  },
+  "schema_version": "0.2.2",
+  "seed": {
+    "channels": [
+      "reviewed_institution_type"
+    ],
+    "import_id": "seed-84c3beb45367905f",
+    "screening_status": "included"
+  },
+  "selection_policy": "preferred-v1",
+  "sources": {
+    "s1": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T23:24:51.804144+00:00",
+      "revision_id": 2563775168,
+      "source_qid": "Q3656405",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2563775168"
+    },
+    "s2": {
+      "family": "wikimedia",
+      "kind": "wikipedia",
+      "language": "en",
+      "page_id": 25109745,
+      "publisher_role": "encyclopedia",
+      "retrieved_at": "2026-11-06T23:25:00.960648+00:00",
+      "revision_id": 1369467899,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1369467899"
+    },
+    "s3": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T23:25:04.829759+00:00",
+      "revision_id": 2562156954,
+      "source_qid": "Q3918",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2562156954"
+    },
+    "s4": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T23:25:08.525980+00:00",
+      "revision_id": 2564204921,
+      "source_qid": "Q928",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2564204921"
+    },
+    "s5": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T23:25:12.147780+00:00",
+      "revision_id": 2562488716,
+      "source_qid": "Q30033",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2562488716"
+    }
+  },
+  "update_datetime": "2026-11-06T23:28:48.121267+00:00"
+}
