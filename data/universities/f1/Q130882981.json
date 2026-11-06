@@ -1,0 +1,138 @@
+{
+  "coverage": {
+    "finance": {
+      "checked_at": "2026-11-06T22:55:12.904467+00:00",
+      "status": "not_found"
+    },
+    "geography": {
+      "checked_at": "2026-11-06T22:55:12.904467+00:00",
+      "status": "checked"
+    },
+    "history": {
+      "checked_at": "2026-11-06T22:55:12.904467+00:00",
+      "status": "disputed"
+    },
+    "identity": {
+      "checked_at": "2026-11-06T22:55:12.904467+00:00",
+      "status": "checked"
+    },
+    "population": {
+      "checked_at": "2026-11-06T22:55:12.904467+00:00",
+      "status": "not_found"
+    },
+    "profile": {
+      "checked_at": "2026-11-06T22:55:12.904467+00:00",
+      "status": "checked"
+    }
+  },
+  "curation": {
+    "identity_status": "related"
+  },
+  "identity": {
+    "kind": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "metadata",
+              "original_text": "{\"id\": \"Q130882981\", \"labels\": {\"en\": \"Universidad Tecmilenio - Campus Veracruz\"}, \"descriptions\": {\"en\": \"education organization in Veracruz, Mexico\"}}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "value": "campus",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "names": {
+      "en": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q130882981\", \"labels\": {\"en\": \"Universidad Tecmilenio - Campus Veracruz\"}, \"descriptions\": {\"en\": \"education organization in Veracruz, Mexico\"}}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": "Universidad Tecmilenio - Campus Veracruz",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    }
+  },
+  "modified_datetime": "2026-11-06T23:08:25.004086+00:00",
+  "profile": {
+    "website": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P856:0",
+              "original_text": "{\"property\": \"P856\", \"property_label\": \"official website\", \"statement_id\": \"Q130882981$1520F20D-1700-43BD-BDEF-5AB7D1B0FC9B\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"https://universidad.tecmilenio.mx/campus-veracruz-tecmilenio\", \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "value": "https://universidad.tecmilenio.mx/campus-veracruz-tecmilenio",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "qid": "Q130882981",
+  "record_revision": 1,
+  "schema_version": "0.2.2",
+  "seed": {
+    "channels": [
+      "legacy_discovery"
+    ],
+    "import_id": "seed-84c3beb45367905f",
+    "screening_status": "needs_review"
+  },
+  "selection_policy": "preferred-v1",
+  "sources": {
+    "s1": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T22:54:52.354422+00:00",
+      "revision_id": 2474462354,
+      "source_qid": "Q130882981",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2474462354"
+    },
+    "s2": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T22:55:02.797344+00:00",
+      "revision_id": 2561641675,
+      "source_qid": "Q2385804",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2561641675"
+    },
+    "s3": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T22:55:12.642363+00:00",
+      "revision_id": 2562983554,
+      "source_qid": "Q96",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2562983554"
+    }
+  }
+}
