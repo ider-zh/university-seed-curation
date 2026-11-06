@@ -1,0 +1,1067 @@
+{
+  "attribution": "distinct_native_research_and_review_subagents;not_cryptographic_identity",
+  "research": {
+    "baseline_sha256": "absent",
+    "candidate": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-06T22:50:54.045331+00:00",
+          "status": "disputed"
+        },
+        "geography": {
+          "checked_at": "2026-11-06T22:50:54.045331+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-06T22:50:54.045331+00:00",
+          "status": "disputed"
+        },
+        "identity": {
+          "checked_at": "2026-11-06T22:50:54.045331+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-06T22:50:54.045331+00:00",
+          "status": "disputed"
+        },
+        "profile": {
+          "checked_at": "2026-11-06T22:50:54.045331+00:00",
+          "status": "disputed"
+        }
+      },
+      "curation": {
+        "identity_status": "excluded"
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "claim:P571:0",
+                      "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q114808148$8df414db-4248-1275-69fd-c0523578eea7\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+1973-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}",
+                      "source_ref": "s1"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 1973
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "establishment-1973",
+            "kind": "institution_establishment",
+            "subject_ref": "institution"
+          }
+        ]
+      },
+      "identity": {
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P31:1",
+                  "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q114808148$467f4bb9-4378-4a96-9da1-b3b189ca9323\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 9826, \"id\": \"Q9826\"}}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "metadata",
+                  "original_text": "{\"id\": \"Q9826\", \"labels\": {\"en\": \"high school\"}, \"descriptions\": {\"en\": \"institution which provides final part of secondary education\"}}",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": "other",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "\"en\": \"Ejuraman Anglican Senior High School\"",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "Ejuraman Anglican Senior High School",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        "ownership": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P31:3",
+                  "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q114808148$4cf7c551-4085-1c66-dfae-97ee1d642e6c\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 1080794, \"id\": \"Q1080794\"}}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "metadata",
+                  "original_text": "{\"id\": \"Q1080794\", \"labels\": {\"en\": \"public school\"}, \"descriptions\": {\"en\": \"type of school funded in whole or in part by general taxation\"}}",
+                  "source_ref": "s5"
+                }
+              ],
+              "id": "c1",
+              "value": "public",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "locations": [
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q114808148$83d8f7f1-4a24-c392-da23-b811907efbe4\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 117, \"id\": \"Q117\"}}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "\"en\": \"Ghana\"",
+                    "source_ref": "s6"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "country_name": "Ghana",
+                  "country_qid": "Q117",
+                  "formatted": {
+                    "language": "en",
+                    "text": "Ghana"
+                  }
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "ghana",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q114808148$83d8f7f1-4a24-c392-da23-b811907efbe4\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 117, \"id\": \"Q117\"}}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "\"en\": \"Ghana\"",
+                    "source_ref": "s6"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Ghana"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q117"
+        },
+        {
+          "id": "ashanti-region",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q114808148$c97f8e56-4678-2694-d811-684ff96a6366\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 398417, \"id\": \"Q398417\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "\"en\": \"Ashanti Region\"",
+                    "source_ref": "s7"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Ashanti Region"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q398417"
+        },
+        {
+          "id": "ejura-sekyedumase-district",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P131:1",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q114808148$36bb0aa2-4eea-19a5-ae62-9a92cc711d52\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 688667, \"id\": \"Q688667\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "\"en\": \"Ejura/Sekyedumase Municipal District\"",
+                    "source_ref": "s8"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Ejura/Sekyedumase Municipal District"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q688667"
+        },
+        {
+          "id": "ejura-headquarters",
+          "kind": "headquarters",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P159:0",
+                    "original_text": "{\"property\": \"P159\", \"property_label\": \"headquarters location\", \"statement_id\": \"Q114808148$90a62f37-4cd0-c2ef-ae8b-4950c88a56a6\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 1322026, \"id\": \"Q1322026\"}}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "\"en\": \"Ejura\"",
+                    "source_ref": "s9"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Ejura"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q1322026"
+        },
+        {
+          "coordinates": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "statement:Q114808148$d4a6e8c2-4cb7-9375-83b7-9d06cb38df4b",
+                    "original_text": "\"latitude\": 7.36606",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "source_rank": "normal",
+                "value": {
+                  "crs": "EPSG:4326",
+                  "globe_qid": "Q2",
+                  "latitude": 7.36606,
+                  "longitude": -1.37357,
+                  "source_precision_degrees": 1e-05
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "wikidata-item-location",
+          "kind": "institution",
+          "qid": "Q114808148"
+        }
+      ],
+      "modified_datetime": "2026-11-06T22:52:36.261659+00:00",
+      "profile": {
+        "motto": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P1451:0",
+                  "original_text": "{\"property\": \"P1451\", \"property_label\": \"motto text\", \"statement_id\": \"Q114808148$2eeb40b2-4414-8e3d-5c34-fc552e7c3aae\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"Learn and Apply\", \"language\": \"en\"}}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "Learn and Apply"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "qid": "Q114808148",
+      "record_revision": 1,
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "legacy_discovery"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "needs_review"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:50:24.748499+00:00",
+          "revision_id": 2513418127,
+          "source_qid": "Q114808148",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2513418127"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:49:45.129631+00:00",
+          "revision_id": 2561641675,
+          "source_qid": "Q2385804",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2561641675"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:50:31.385514+00:00",
+          "revision_id": 2560194745,
+          "source_qid": "Q9826",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2560194745"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:50:35.089365+00:00",
+          "revision_id": 2556557044,
+          "source_qid": "Q269770",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2556557044"
+        },
+        "s5": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:50:39.325498+00:00",
+          "revision_id": 2515895528,
+          "source_qid": "Q1080794",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2515895528"
+        },
+        "s6": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:50:42.694271+00:00",
+          "revision_id": 2562960086,
+          "source_qid": "Q117",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2562960086"
+        },
+        "s7": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:50:47.316676+00:00",
+          "revision_id": 2523177886,
+          "source_qid": "Q398417",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2523177886"
+        },
+        "s8": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:50:50.772871+00:00",
+          "revision_id": 2451028933,
+          "source_qid": "Q688667",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2451028933"
+        },
+        "s9": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:50:54.036577+00:00",
+          "revision_id": 2520796511,
+          "source_qid": "Q1322026",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2520796511"
+        }
+      }
+    },
+    "coverage": [
+      {
+        "group": "identity",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "status": "disputed"
+      },
+      {
+        "group": "population",
+        "status": "disputed"
+      },
+      {
+        "group": "finance",
+        "status": "disputed"
+      },
+      {
+        "group": "profile",
+        "status": "disputed"
+      }
+    ],
+    "delta": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-06T22:50:54.045331+00:00",
+          "status": "disputed"
+        },
+        "geography": {
+          "checked_at": "2026-11-06T22:50:54.045331+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-06T22:50:54.045331+00:00",
+          "status": "disputed"
+        },
+        "identity": {
+          "checked_at": "2026-11-06T22:50:54.045331+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-06T22:50:54.045331+00:00",
+          "status": "disputed"
+        },
+        "profile": {
+          "checked_at": "2026-11-06T22:50:54.045331+00:00",
+          "status": "disputed"
+        }
+      },
+      "curation": {
+        "identity_status": "excluded"
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "claim:P571:0",
+                      "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q114808148$8df414db-4248-1275-69fd-c0523578eea7\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+1973-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}",
+                      "source_ref": "s1"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 1973
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "establishment-1973",
+            "kind": "institution_establishment",
+            "subject_ref": "institution"
+          }
+        ]
+      },
+      "identity": {
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P31:1",
+                  "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q114808148$467f4bb9-4378-4a96-9da1-b3b189ca9323\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 9826, \"id\": \"Q9826\"}}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "metadata",
+                  "original_text": "{\"id\": \"Q9826\", \"labels\": {\"en\": \"high school\"}, \"descriptions\": {\"en\": \"institution which provides final part of secondary education\"}}",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": "other",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "\"en\": \"Ejuraman Anglican Senior High School\"",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "Ejuraman Anglican Senior High School",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        "ownership": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P31:3",
+                  "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q114808148$4cf7c551-4085-1c66-dfae-97ee1d642e6c\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 1080794, \"id\": \"Q1080794\"}}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "metadata",
+                  "original_text": "{\"id\": \"Q1080794\", \"labels\": {\"en\": \"public school\"}, \"descriptions\": {\"en\": \"type of school funded in whole or in part by general taxation\"}}",
+                  "source_ref": "s5"
+                }
+              ],
+              "id": "c1",
+              "value": "public",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "locations": [
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q114808148$83d8f7f1-4a24-c392-da23-b811907efbe4\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 117, \"id\": \"Q117\"}}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "\"en\": \"Ghana\"",
+                    "source_ref": "s6"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "country_name": "Ghana",
+                  "country_qid": "Q117",
+                  "formatted": {
+                    "language": "en",
+                    "text": "Ghana"
+                  }
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "ghana",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q114808148$83d8f7f1-4a24-c392-da23-b811907efbe4\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 117, \"id\": \"Q117\"}}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "\"en\": \"Ghana\"",
+                    "source_ref": "s6"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Ghana"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q117"
+        },
+        {
+          "id": "ashanti-region",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q114808148$c97f8e56-4678-2694-d811-684ff96a6366\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 398417, \"id\": \"Q398417\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "\"en\": \"Ashanti Region\"",
+                    "source_ref": "s7"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Ashanti Region"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q398417"
+        },
+        {
+          "id": "ejura-sekyedumase-district",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P131:1",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q114808148$36bb0aa2-4eea-19a5-ae62-9a92cc711d52\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 688667, \"id\": \"Q688667\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "\"en\": \"Ejura/Sekyedumase Municipal District\"",
+                    "source_ref": "s8"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Ejura/Sekyedumase Municipal District"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q688667"
+        },
+        {
+          "id": "ejura-headquarters",
+          "kind": "headquarters",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P159:0",
+                    "original_text": "{\"property\": \"P159\", \"property_label\": \"headquarters location\", \"statement_id\": \"Q114808148$90a62f37-4cd0-c2ef-ae8b-4950c88a56a6\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 1322026, \"id\": \"Q1322026\"}}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "\"en\": \"Ejura\"",
+                    "source_ref": "s9"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Ejura"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q1322026"
+        },
+        {
+          "coordinates": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "statement:Q114808148$d4a6e8c2-4cb7-9375-83b7-9d06cb38df4b",
+                    "original_text": "\"latitude\": 7.36606",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "source_rank": "normal",
+                "value": {
+                  "crs": "EPSG:4326",
+                  "globe_qid": "Q2",
+                  "latitude": 7.36606,
+                  "longitude": -1.37357,
+                  "source_precision_degrees": 1e-05
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "wikidata-item-location",
+          "kind": "institution",
+          "qid": "Q114808148"
+        }
+      ],
+      "profile": {
+        "motto": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P1451:0",
+                  "original_text": "{\"property\": \"P1451\", \"property_label\": \"motto text\", \"statement_id\": \"Q114808148$2eeb40b2-4414-8e3d-5c34-fc552e7c3aae\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"Learn and Apply\", \"language\": \"en\"}}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "Learn and Apply"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "qid": "Q114808148",
+      "record_revision": 1,
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "legacy_discovery"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "needs_review"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:50:24.748499+00:00",
+          "revision_id": 2513418127,
+          "source_qid": "Q114808148",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2513418127"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:49:45.129631+00:00",
+          "revision_id": 2561641675,
+          "source_qid": "Q2385804",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2561641675"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:50:31.385514+00:00",
+          "revision_id": 2560194745,
+          "source_qid": "Q9826",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2560194745"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:50:35.089365+00:00",
+          "revision_id": 2556557044,
+          "source_qid": "Q269770",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2556557044"
+        },
+        "s5": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:50:39.325498+00:00",
+          "revision_id": 2515895528,
+          "source_qid": "Q1080794",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2515895528"
+        },
+        "s6": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:50:42.694271+00:00",
+          "revision_id": 2562960086,
+          "source_qid": "Q117",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2562960086"
+        },
+        "s7": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:50:47.316676+00:00",
+          "revision_id": 2523177886,
+          "source_qid": "Q398417",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2523177886"
+        },
+        "s8": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:50:50.772871+00:00",
+          "revision_id": 2451028933,
+          "source_qid": "Q688667",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2451028933"
+        },
+        "s9": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:50:54.036577+00:00",
+          "revision_id": 2520796511,
+          "source_qid": "Q1322026",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2520796511"
+        }
+      }
+    },
+    "open_requests": [],
+    "proposed_at": "2026-11-06T22:52:36.261659+00:00",
+    "qid": "Q114808148",
+    "research": {
+      "model": "not_reported",
+      "prompt_sha256": "5f23d30acf511cc4d01a44e98a277d0b695c0dbce85f3619a06193a8a6a5b7b6",
+      "reasoning_effort": "not_reported",
+      "schema_sha256": "92e942f4fbf2ae28964462ea9ffa8312c5ee16a077a1e08b40aaaf741512422e",
+      "session": "/root/batch2_research_q114808148"
+    },
+    "retrieval_failures": [],
+    "review_status": "unreviewed",
+    "seed": {
+      "channels": [
+        "legacy_discovery"
+      ],
+      "import_id": "seed-84c3beb45367905f",
+      "screening_status": "needs_review"
+    },
+    "transport": {
+      "base_commit": "f79f39f771ba262de260f5f10d9c7516d58b91bc",
+      "protocol": "native-subagent-v1",
+      "repository": "ider-zh/university-seed-curation",
+      "review_policy": {
+        "id": "source-grounded-flexible-v2",
+        "sha256": "b8ed7d2897e4c31dbd81b1379aafdc1077a21d1a33949edbd2d896b0adf99db2"
+      },
+      "schema_sha256": "bfa496eafa9dffca56146214168db7f000b09161b8993129632e7202e1c88833",
+      "seed_catalog_sha256": "84c3beb45367905f513d650684283dd62a9c1b77962bdc34151a6ef05bfa03d4"
+    },
+    "type": "university-proposal-v1"
+  },
+  "review": {
+    "contexts_checked": 4,
+    "coverage_checks": [
+      {
+        "group": "identity",
+        "reason": "The supplied root and linked type entities were examined. They establish a named public secondary school and support exclusion from higher education; missing live operating status is not invented.",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "reason": "The frozen root country, administrative and headquarters claims and institution P625 were examined with linked geography. Geography is a source-limited survey; linked city or district coordinates were not substituted for the institution point.",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "reason": "The frozen inception claim supports only a year-precision 1973 establishment. Broader chronology and independent external history remain unsearched and the limited survey is disclosed.",
+        "status": "disputed"
+      },
+      {
+        "group": "population",
+        "reason": "No supported population observations occur in the supplied snapshot. The partial survey status avoids treating absent snapshot figures as zero or as proof of comprehensive absence.",
+        "status": "disputed"
+      },
+      {
+        "group": "finance",
+        "reason": "No supported finance observations occur in the supplied snapshot; no currency, amount or comprehensive survey completion is claimed.",
+        "status": "disputed"
+      },
+      {
+        "group": "profile",
+        "reason": "Available source-limited profile material does not establish a complete profile survey. Supplementary fields are outside independent factual scope and no exhaustive profile review or full refresh is asserted.",
+        "status": "disputed"
+      }
+    ],
+    "decision": "approve",
+    "facts_checked": 5,
+    "full_refresh": true,
+    "inferences": [
+      {
+        "id": "identity",
+        "reason": "Frozen root s1 is named Ejuraman Anglican Senior High School and P31 Q9826 is resolved by s3 as an institution providing the final part of secondary education. Excluding this secondary school from higher-education eligibility is supported; no tertiary status is inferred."
+      },
+      {
+        "id": "milestone:establishment-1973",
+        "reason": "Root s1 claim:P571:0 records institution inception in 1973. Mapping inception to institution establishment is a reasonable broader event representation for the root school, with year precision preserved."
+      },
+      {
+        "id": "$.identity.kind:c1",
+        "reason": "Root P31 Q9826 and frozen s3 high-school definition establish final secondary education. The controlled fallback other accurately represents this school outside higher-education kinds, consistent with excluded screening."
+      },
+      {
+        "id": "$.identity.ownership:c1",
+        "reason": "Root s1 claim:P31:3 classifies the school as Q1080794. Frozen s5 resolves that class as public school funded wholly or partly by taxation. Public is a reasonable normalized representation without an unsupported private ownership subtype."
+      }
+    ],
+    "model": "not_reported",
+    "proposal_sha256": "08402a012b327b5b2658a2032654f7faea448ebe72ab1173295bddf8e619ed55",
+    "qid": "Q114808148",
+    "reasoning_effort": "not_reported",
+    "record_sha256": "c91f6370f0995d1a26ed8ad38bef6c7c5d0ad00bbb9fd83118fbe8d63054504e",
+    "request_responses": [],
+    "requests": [],
+    "review_scope": {
+      "not_independently_reviewed_ids": [
+        "$.locations[0].address:c1",
+        "$.locations[0].name:c1",
+        "$.locations[1].name:c1",
+        "$.locations[2].name:c1",
+        "$.locations[3].name:c1",
+        "$.profile.motto:c1",
+        "location:ashanti-region",
+        "location:ejura-headquarters",
+        "location:ejura-sekyedumase-district",
+        "location:ghana"
+      ],
+      "reviewed_ids": [
+        "$.history.milestones[0].date:c1",
+        "$.identity.kind:c1",
+        "$.identity.names.en:c1",
+        "$.identity.ownership:c1",
+        "$.locations[4].coordinates:c1",
+        "country:$.locations[0].address:c1",
+        "identity",
+        "location:wikidata-item-location",
+        "milestone:establishment-1973"
+      ],
+      "version": "core-review-v3"
+    },
+    "review_session": "/root/batch2_review_q114808148",
+    "reviewed_at": "2026-11-06T22:54:04.676655+00:00",
+    "source_revisions_checked": 9,
+    "waived_requests": []
+  },
+  "review_result_sha256": "7031533c6dd900231e7347432793954af6bc61a154a302758da0e37ee262dd52",
+  "type": "university-unified-receipt-v1"
+}
