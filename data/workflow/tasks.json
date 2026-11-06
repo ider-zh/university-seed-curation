@@ -85,11 +85,25 @@
           "reason": "Account for the unreadable government source s6 as a retrieval or decoding failure, or supply valid decoded evidence, and accurately mark the survey status. Retain the supported fixed-asset observation with its limited scope.",
           "request_id": "7933f718-91f6-5ea2-a934-46880e74244c",
           "reviewed_proposal_sha256": "8df8bd736b6d8c48b20cc9264b29538e922d9da7322a0f96dce3a6f3532d904a"
+        },
+        {
+          "category": "evidence_gap",
+          "field": "coverage.population",
+          "reason": "The s6 snapshot is unreadable and retrieval_failures remains empty. Record the decoding failure or provide a valid decoded capture; maintain disputed status until the source survey limitation is accounted for.",
+          "request_id": "383d9a9a-b5bc-5a62-be2a-b684c0298668",
+          "reviewed_proposal_sha256": "793b07c036ceb7244c5d5adb414aab30fc692634a10feed5b632f1780f3ccb80"
+        },
+        {
+          "category": "evidence_gap",
+          "field": "coverage.finance",
+          "reason": "The s6 snapshot is unreadable and retrieval_failures remains empty. Record the decoding failure or provide a valid decoded capture; retain the fixed-asset scope and disputed survey status.",
+          "request_id": "3d7c2f77-d1c6-5d88-b36c-956c43c054e2",
+          "reviewed_proposal_sha256": "793b07c036ceb7244c5d5adb414aab30fc692634a10feed5b632f1780f3ccb80"
         }
       ],
-      "phase": "revision_requested",
+      "phase": "unresolved",
       "reason": "resume_after_private_workspace_loss",
-      "revision": 1
+      "revision": 2
     },
     "Q13338": {
       "open_requests": [
