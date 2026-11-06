@@ -112,8 +112,15 @@ git fetch origin main
 python .agents/skills/university-curation/scripts/agent.py publication-confirm --bundle .private/native/delivery-001 --published-ref ACTUAL_REMOTE_COMMIT_SHA
 ```
 
-The confirmation checks ancestry, exact planned parent and every canonical,
-receipt, manifest and backlog hash. Run the same confirmation to recover an
+Unrelated changes to main do not require a new Review: exact approved bytes,
+affected school/task baselines and relevant schema/policy/catalog/compiler
+contracts must still match. Same-QID conflicts remain blocking.
+
+The confirmation checks main ancestry through the actual merge/squash first
+parent and every canonical, receipt and manifest hash. For PRs, the backlog is
+the validated original task delta applied to that parent, including unrelated
+concurrent rows. Historical direct-main plans retain exact parent/hash checks.
+Run the same confirmation to recover an
 interruption after publication. Keep the private bundle until confirmation.
 
 ## Checks

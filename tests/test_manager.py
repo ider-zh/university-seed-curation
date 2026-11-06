@@ -155,3 +155,18 @@ class ManagerTests(unittest.TestCase):
         self.assertEqual(config['review_assignment'],'dedicated_per_qid_after_research')
     def test_calendar_cutoff_handles_short_month(self):
         self.assertEqual(m.cutoff('2030-08-31T00:00:00Z').isoformat(),'2030-02-28T00:00:00+00:00')
+
+    def test_task_delta_rejects_overlap_and_preserves_unrelated_rows(self):
+        row={'phase':'research_pending','revision':0,'open_requests':[],'reason':'pending'}
+        previous={'type':m.BACKLOG_TYPE,'tasks':{'Q1':dict(row),'Q2':dict(row)}}
+        proposed=deepcopy(previous);proposed['tasks']['Q2']['reason']='our_edit'
+        current=deepcopy(previous);current['tasks']['Q3']=dict(row)
+        merged=m.merge_checkpoint(previous,proposed,current)
+        self.assertEqual(merged['tasks']['Q2']['reason'],'our_edit')
+        self.assertEqual(merged['tasks']['Q3'],row)
+        current['tasks']['Q2']['reason']='concurrent_edit'
+        with self.assertRaisesRegex(ValueError,'Concurrent task change: Q2'):
+            m.merge_checkpoint(previous,proposed,current)
+        current=deepcopy(previous);current['tasks']['Q3']=dict(row)
+        with self.assertRaisesRegex(ValueError,'Concurrent task change: Q3'):
+            m.merge_checkpoint(previous,previous,current,['Q3'])

@@ -9,7 +9,7 @@ import re
 from .integrity import load_json, private_path, sha
 from .workflow_contract import attach_transport, baseline_at
 from .domain_refresh import materialize
-from .workflow_contract import check_proposal
+from .workflow_contract import check_proposal, check_publication_base
 from .native_research import _base
 from .git_data import batch_slug, blob, canonical_json, no_legacy_duplicate, record_relative
 from .preferred import validate, recompute
@@ -39,8 +39,10 @@ def _verified(repo, base, proposal, review_job, attempt, trust, catalog, catalog
     meta=load_json((job/'job.json').read_bytes())
     if meta.get('type')!='native-review-job-v1' or not meta.get('offline_research_snapshot'):
         raise ValueError('An offline Research-snapshot Review job is required')
-    if meta['base_commit'] != base or meta['catalog_sha256'] != catalog_hash:
-        raise ValueError('Review is stale relative to main/catalog')
+    if meta['catalog_sha256'] != catalog_hash:
+        raise ValueError('Review is stale relative to catalog')
+    check_publication_base(repo,meta['base_commit'],base,[proposal['qid']])
+    check_publication_base(repo,proposal['transport']['base_commit'],meta['base_commit'])
     if sha(encode(proposal)) != meta['proposal_sha256'] or (job/'public-proposal.json').read_bytes()!=encode(proposal):
         raise ValueError('Review did not inspect the exact Research proposal')
     if meta['schema_sha256']!=trust['schemas']['0.2.2'] or meta['review_policy_sha256']!=trust['review_policy']['sha256']:
@@ -161,6 +163,7 @@ def verify_files(repo, base, files, trust):
                 attribution!='distinct_native_research_and_review_subagents;not_cryptographic_identity'):
             raise ValueError('Invalid unified receipt')
         proposal=receipt['research']; verdict=receipt['review']; baseline,_=baseline_at(repo,base,entity)
+        check_publication_base(repo,proposal['transport']['base_commit'],base)
         validate_receipt(proposal['delta'],verdict)
         reviewed.append((proposal,verdict))
         check_proposal(proposal,baseline,catalog,digest,trust)
