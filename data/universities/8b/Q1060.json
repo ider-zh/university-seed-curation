@@ -1,0 +1,1122 @@
+{
+  "coverage": {
+    "finance": {
+      "checked_at": "2026-11-06T09:36:27.820437+00:00",
+      "status": "checked"
+    },
+    "geography": {
+      "checked_at": "2026-11-06T09:36:27.820437+00:00",
+      "status": "checked"
+    },
+    "history": {
+      "checked_at": "2026-11-06T09:36:27.820437+00:00",
+      "status": "checked"
+    },
+    "identity": {
+      "checked_at": "2026-11-06T09:36:27.820437+00:00",
+      "status": "checked"
+    },
+    "population": {
+      "checked_at": "2026-11-06T09:36:27.820437+00:00",
+      "status": "checked"
+    },
+    "profile": {
+      "checked_at": "2026-11-06T09:36:27.820437+00:00",
+      "status": "checked"
+    }
+  },
+  "curation": {
+    "identity_status": "in_scope",
+    "refresh_profile": "core-v1",
+    "reviewed_groups": [
+      "identity",
+      "geography",
+      "history",
+      "population",
+      "finance",
+      "profile"
+    ]
+  },
+  "finance": {
+    "budget": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:11",
+              "original_text": "Jahresetat: 153,5 Millionen € (2021)[6]Drittmittel: 44 Mio. €",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c1",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2021
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": "153500000",
+            "currency": "EUR",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "infobox:7",
+              "original_text": "Budget: EUR 156 million[1]",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c2",
+          "period_status": "not_stated",
+          "value": {
+            "amount": "156000000",
+            "currency": "EUR",
+            "precision": "approximate"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "single_source_family"
+        ],
+        "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+        "reason_code": "best_available"
+      }
+    }
+  },
+  "history": {
+    "milestones": [
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P571:0",
+                  "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q1060$9935375F-891F-4B4D-A81D-1CDBF333A1CA\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+1978-05-22T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entit",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "day": 22,
+                "month": 5,
+                "precision": "day",
+                "year": 1978
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Geschichte",
+                  "original_text": "Sie wurde schließlich 1978 unter dem Namen Technische Universität Hamburg-Harburg mit dem ",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "Established in 1978 as Technische Universität Hamburg-Harburg."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "founding",
+        "kind": "institution_establishment",
+        "subject_ref": "institution"
+      },
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Geschichte",
+                  "original_text": "begann 1982/1983 der Lehrbetrieb. Zunächst wurden in den ersten Jahren noch Vorlesungen in",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "original_date": "1982/1983",
+                "precision": "interval",
+                "year": 1982
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Geschichte",
+                  "original_text": "begann 1982/1983 der Lehrbetrieb. Zunächst wurden in den ersten Jahren noch Vorlesungen in",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "Teaching began in 1982/83."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "teaching_start",
+        "kind": "teaching_start",
+        "subject_ref": "institution"
+      },
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P1448:0",
+                  "original_text": "{\"property\": \"P1448\", \"property_label\": \"official name\", \"statement_id\": \"Q1060$20badb31-4ddb-a13a-fca6-af9dae76dbc2\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"Technische Universität Hamburg\", \"language\": \"de\"}, \"qualifiers\": {\"P580\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2018-",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "day": 1,
+                "month": 6,
+                "precision": "day",
+                "year": 2018
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Geschichte",
+                  "original_text": "Mit dem „Gesetz zur Umbenennung der Technischen Universität Hamburg-Harburg“ vom 29. Mai 2",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "Renamed Technische Universität Hamburg, retaining TUHH."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "rename",
+        "kind": "rename",
+        "subject_ref": "institution"
+      }
+    ]
+  },
+  "identity": {
+    "aliases": [
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P1448:1",
+                "original_text": "{\"property\": \"P1448\", \"property_label\": \"official name\", \"statement_id\": \"Q1060$553c344c-43b9-9637-037f-de7b7755742d\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"Technische Universität Hamburg-Harburg\", \"language\": \"de\"}, \"qualifiers\": {\"P580\": [{\"snaktype\": \"value\", \"value\": {\"time\":",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "de",
+              "text": "Technische Universität Hamburg-Harburg"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P1813:0",
+                "original_text": "{\"property\": \"P1813\", \"property_label\": \"short name\", \"statement_id\": \"Q1060$8c408dc2-403b-0ace-062b-7547cfe3ca8a\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"TUHH\", \"language\": \"en\"}}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "TUHH"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    ],
+    "identifiers": {
+      "P5586": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P5586:0",
+                "original_text": "{\"property\": \"P5586\", \"property_label\": \"Times Higher Education World University ID\", \"statement_id\": \"Q1060$883203B1-D54F-42CD-AB72-440DFA4842BF\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"hamburg-university-technology\"}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": "hamburg-university-technology",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    "kind": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "staatliche Universität in Hamburg und gehört zu den jüngsten technischen Universitäten in ",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c1",
+          "value": "university",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "names": {
+      "de": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P1448:0",
+                "original_text": "{\"property\": \"P1448\", \"property_label\": \"official name\", \"statement_id\": \"Q1060$20badb31-4ddb-a13a-fca6-af9dae76dbc2\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"Technische Universität Hamburg\", \"language\": \"de\"}, \"qualifiers\": {\"P580\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2018-",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": "Technische Universität Hamburg",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "en": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q1060\", \"labels\": {\"de\": \"Technische Universität Hamburg\", \"en\": \"Hamburg University of Technology\"}, \"descriptions\": {\"de\": \"Universität in Deutschland\", \"en\": \"university in Germany\"}}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": "Hamburg University of Technology",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    "operating_status": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "Rund 100 Professoren unterrichten die 7.400 Studierenden in 35 Bachelor- und Masterstudien",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c1",
+          "value": "operating",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "ownership": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:4",
+              "original_text": "Type: Public",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": "public",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "leadership": {
+    "president": {
+      "candidates": [
+        {
+          "current_basis": "infobox_current",
+          "evidence": [
+            {
+              "locator": "section:Geschichte",
+              "original_text": "Der Akademische Senat der Technischen Universität Hamburg wählte im Januar 2021 Andreas Ti",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "person": {
+              "name": "Andreas Timm-Giel",
+              "qid": "Q58317484"
+            },
+            "term_start": {
+              "precision": "year",
+              "year": 2021
+            },
+            "title_original": {
+              "language": "de",
+              "text": "Präsident"
+            }
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "single_source_family",
+          "reported_current"
+        ],
+        "reason": "The page reports this person in its current officeholder field; a term-end date is not required.",
+        "reason_code": "infobox_current"
+      }
+    }
+  },
+  "locations": [
+    {
+      "address": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "infobox:13",
+                "original_text": "Location: Am Schwarzenberg-Campus 1 (A), Hamburg, 21073, Germany53°27′23.39″N 9°58′5.99″E﻿ / ﻿53.4564972°N 9.9683306°E﻿ / 53.4564972; 9.9683306",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "formatted": {
+                "language": "en",
+                "text": "Am Schwarzenberg-Campus 1 (A), Hamburg, 21073, Germany"
+              }
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "id": "hamburg",
+      "kind": "headquarters",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P159:0",
+                "original_text": "{\"property\": \"P159\", \"property_label\": \"headquarters location\", \"statement_id\": \"Q1060$B80F1C72-EBC4-4995-9B44-9DE935C1B7A4\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 1055, \"id\": \"Q1055\"}, \"qualifiers\": {\"P281\": [{\"snaktype\": \"value\", \"value\": \"21073\"}], ",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Hamburg"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "qid": "Q1055"
+    },
+    {
+      "id": "harburg",
+      "kind": "administrative_area",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P131:0",
+                "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q1060$6124B570-CBEE-4396-BAAD-90316DF95433\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 1635, \"id\": \"Q1635\"}, \"reference_count\": 1}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Harburg"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "qid": "Q1635"
+    },
+    {
+      "id": "campus",
+      "kind": "campus",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Campus",
+                "original_text": "Hamburg University of Technology is for the most part contained in a single campus. The bu",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "TU Hamburg campus"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    {
+      "coordinates": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "statement:Q1060$e97e12e1-463f-982b-9246-2586c1cc4486",
+                "original_text": "\"latitude\": 53.460958333333",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "source_rank": "normal",
+            "value": {
+              "crs": "EPSG:4326",
+              "globe_qid": "Q2",
+              "latitude": 53.460958333333,
+              "longitude": 9.9695055555556,
+              "source_precision_degrees": 2.7777777777778e-06
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "id": "wikidata-item-location",
+      "kind": "institution",
+      "qid": "Q1060"
+    }
+  ],
+  "modified_datetime": "2026-11-06T09:39:13.498920+00:00",
+  "population": {
+    "academic_staff": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:10",
+              "original_text": "Academic staff: 802[1]",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "period_status": "not_stated",
+          "value": {
+            "amount": 802,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "period_not_stated",
+          "single_source_family"
+        ],
+        "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+        "reason_code": "only_available"
+      }
+    },
+    "employees_total": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:11",
+              "original_text": "Total staff: 1410[1]",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "period_status": "not_stated",
+          "value": {
+            "amount": 1410,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "infobox:9",
+              "original_text": "Mitarbeiter: 3.150 (2024)[4]",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c2",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2024
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 3150,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c2",
+        "qualifications": [
+          "single_source_family"
+        ],
+        "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+        "reason_code": "best_available"
+      }
+    },
+    "students_total": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:2",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q1060$6D8AAD94-6588-4B7E-AD20-6F245A19E93F\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+3831\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+1998-00-00T00:00:00Z\", \"timez",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "period": {
+            "kind": "calendar_year",
+            "year": 1998
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 3831,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:0",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q1060$F1E86E4C-2AF4-46EE-9089-3C346A6E525F\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+6376\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2012-01-01T00:00:00Z\", \"timez",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c2",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2012
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 6376,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:1",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q1060$1cf25405-4203-8b88-8c70-313d205f7e45\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+7832\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2018-00-00T00:00:00Z\", \"timez",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c3",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2018
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 7832,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:22",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q1060$A4F68EBD-01B7-473D-9B50-A03AA76B828D\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+7180\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2020-00-00T00:00:00Z\", \"timez",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c4",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2020
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 7180,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:24",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q1060$91b1deb1-4ab0-d101-bf6f-580fc9689c00\", \"rank\": \"preferred\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+7223\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2023-00-00T00:00:00Z\", \"ti",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c5",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2023
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 7223,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "infobox:8",
+              "original_text": "Studierende: 7.400 (2023)[3]",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c6",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2023
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 7400,
+            "basis": "unspecified",
+            "precision": "approximate"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c6",
+        "qualifications": [
+          "single_source_family",
+          "approximate_value"
+        ],
+        "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+        "reason_code": "best_available"
+      }
+    }
+  },
+  "profile": {
+    "academic_focus": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:Schwerpunkte_in_der_Forschung",
+              "original_text": "Die Felder der Forschung gliedern sich in fünf Themen:[45]\nAdvanced Materials & (Bio-)Proc",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c1",
+          "value": [
+            {
+              "language": "en",
+              "text": "Advanced Materials & (Bio-)Processes"
+            },
+            {
+              "language": "en",
+              "text": "Aviation & Maritime Technologies"
+            },
+            {
+              "language": "en",
+              "text": "Cyber Physical & Medical Systems"
+            },
+            {
+              "language": "en",
+              "text": "Environmental & Energy Systems"
+            },
+            {
+              "language": "en",
+              "text": "Logistics, Mobility & Infrastructure"
+            }
+          ],
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "degree_levels": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "35 Bachelor- und Masterstudiengängen.[6] Eine Besonderheit der Hochschule ist die Untergli",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c1",
+          "value": [
+            "bachelor",
+            "master"
+          ],
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "motto": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P1451:0",
+              "original_text": "{\"property\": \"P1451\", \"property_label\": \"motto text\", \"statement_id\": \"Q1060$9070d1e5-4748-ec7a-02df-985250335410\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"Technik für die Menschen\", \"language\": \"de\"}}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "language": "de",
+            "text": "Technik für die Menschen"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "summary": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:Geschichte",
+              "original_text": "Pläne für eine Technische Hochschule im Niederelberaum reichen bis in das Jahr 1928 zurück",
+              "source_ref": "s3"
+            },
+            {
+              "locator": "section:lead",
+              "original_text": "Die Technische Universität Hamburg (kurz TUHH oder TU Hamburg, englisch: Hamburg Universit",
+              "source_ref": "s3"
+            },
+            {
+              "locator": "section:Campus",
+              "original_text": "Hamburg University of Technology is for the most part contained in a single campus. The bu",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Organisation_der_Lehre",
+              "original_text": "Die Lehre an der TU Hamburg ist in sechs Studiendekanaten und einen Studienbereich organis",
+              "source_ref": "s3"
+            },
+            {
+              "locator": "section:Schwerpunkte_in_der_Forschung",
+              "original_text": "Die Felder der Forschung gliedern sich in fünf Themen:[45]\nAdvanced Materials & (Bio-)Proc",
+              "source_ref": "s3"
+            },
+            {
+              "locator": "infobox:8",
+              "original_text": "Studierende: 7.400 (2023)[3]",
+              "source_ref": "s3"
+            },
+            {
+              "locator": "claim:P2196:24",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q1060$91b1deb1-4ab0-d101-bf6f-580fc9689c00\", \"rank\": \"preferred\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+7223\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2023-00-00T00:00:00Z\", \"ti",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "infobox:11",
+              "original_text": "Jahresetat: 153,5 Millionen € (2021)[6]Drittmittel: 44 Mio. €",
+              "source_ref": "s3"
+            },
+            {
+              "locator": "infobox:7",
+              "original_text": "Präsident: Andreas Timm-Giel[2]",
+              "source_ref": "s3"
+            },
+            {
+              "locator": "claim:P625:0",
+              "original_text": "{\"property\": \"P625\", \"property_label\": \"coordinate location\", \"statement_id\": \"Q1060$e97e12e1-463f-982b-9246-2586c1cc4486\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"latitude\": 53.460958333333, \"longitude\": 9.9695055555556, \"altitude\": null, \"precision\": 2.7777777777778e-06, \"globe\": \"http://www.wikidata.org/entity/Q2\"}}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "infobox:13",
+              "original_text": "Location: Am Schwarzenberg-Campus 1 (A), Hamburg, 21073, Germany53°27′23.39″N 9°58′5.99″E﻿ / ﻿53.4564972°N 9.9683306°E﻿ / 53.4564972; 9.9683306",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "language": "en",
+            "text": "Hamburg University of Technology (Technische Universität Hamburg, TUHH) is a public technical university in the Harburg district of Hamburg, Germany. It was established on 22 May 1978 as Technische Universität Hamburg-Harburg. In 2018 the institution changed its name to Technische Universität Hamburg while continuing to use the TUHH abbreviation. The university's buildings are concentrated around a campus between Eißendorfer Straße and Am Schwarzenberg-Campus, with additional facilities elsewhere in the city. Its Wikidata institution-level coordinate is 53.4609583° N, 9.9695056° E, whereas the English Wikipedia infobox gives 53.4564972° N, 9.9683306° E beside its institutional address. The two coordinates are not identical and neither is established by this evidence as a precise campus or headquarters point.\n\nResearch activities began in 1980, and teaching followed in 1982/83. The university organizes teaching through study divisions and research through interdisciplinary departments and fields rather than traditional faculties. The programmes described include civil and environmental engineering, electrical engineering, computer science, mathematics, mechanical engineering, chemical and process engineering, and management-oriented technology studies.\n\nThe research portfolio includes advanced materials and bioprocesses, aviation and maritime technology, cyber-physical and medical systems, environmental and energy systems, and logistics, mobility and infrastructure. The German Wikipedia profile reports approximately 7,400 students in 2023, while a separate Wikidata observation gives 7,223 for that year; those source measurements should remain distinct. The university also reports personnel and financial figures of varying scope and reference periods, including a EUR 153.5 million annual budget for 2021. Andreas Timm-Giel is identified as president."
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "website": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P856:0",
+              "original_text": "{\"property\": \"P856\", \"property_label\": \"official website\", \"statement_id\": \"Q1060$AB0846BA-B012-4D1B-93F2-A963C948D2D3\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"https://www.tuhh.de/\", \"qualifiers\": {\"P407\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 188, \"id\": \"Q1",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "value": "https://www.tuhh.de/",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "qid": "Q1060",
+  "record_revision": 1,
+  "schema_version": "0.2.2",
+  "seed": {
+    "channels": [
+      "ranking_identifier",
+      "reviewed_institution_type"
+    ],
+    "import_id": "seed-84c3beb45367905f",
+    "screening_status": "included"
+  },
+  "selection_policy": "preferred-v1",
+  "sources": {
+    "s1": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T08:48:48.897551+00:00",
+      "revision_id": 2552803228,
+      "source_qid": "Q1060",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2552803228"
+    },
+    "s10": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T08:49:56.205228+00:00",
+      "revision_id": 2495281480,
+      "source_qid": "Q58317484",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2495281480"
+    },
+    "s2": {
+      "family": "wikimedia",
+      "kind": "wikipedia",
+      "language": "en",
+      "page_id": 3625803,
+      "publisher_role": "encyclopedia",
+      "retrieved_at": "2026-11-06T08:49:06.380789+00:00",
+      "revision_id": 1370204531,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1370204531"
+    },
+    "s3": {
+      "family": "wikimedia",
+      "kind": "wikipedia",
+      "language": "de",
+      "page_id": 316239,
+      "publisher_role": "encyclopedia",
+      "retrieved_at": "2026-11-06T08:49:13.013551+00:00",
+      "revision_id": 271829217,
+      "url": "https://de.wikipedia.org/w/index.php?oldid=271829217"
+    },
+    "s4": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T08:49:19.612846+00:00",
+      "revision_id": 2553301690,
+      "source_qid": "Q1371037",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2553301690"
+    },
+    "s5": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T08:48:57.696840+00:00",
+      "revision_id": 2559546120,
+      "source_qid": "Q875538",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2559546120"
+    },
+    "s6": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T08:49:28.182204+00:00",
+      "revision_id": 2564285072,
+      "source_qid": "Q183",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2564285072"
+    },
+    "s7": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T08:49:36.633173+00:00",
+      "revision_id": 2563917162,
+      "source_qid": "Q1635",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2563917162"
+    },
+    "s8": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T08:49:43.169974+00:00",
+      "revision_id": 2564763313,
+      "source_qid": "Q1055",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2564763313"
+    },
+    "s9": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T08:49:49.785857+00:00",
+      "revision_id": 2533490485,
+      "source_qid": "Q48185658",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2533490485"
+    }
+  },
+  "update_datetime": "2026-11-06T09:39:13.498920+00:00"
+}
