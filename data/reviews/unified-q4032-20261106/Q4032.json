@@ -1,0 +1,3083 @@
+{
+  "attribution": "distinct_native_research_and_review_subagents;not_cryptographic_identity",
+  "research": {
+    "baseline_sha256": "absent",
+    "candidate": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-06T09:24:12.886420+00:00",
+          "status": "checked"
+        },
+        "geography": {
+          "checked_at": "2026-11-06T09:24:12.886420+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-06T09:24:12.886420+00:00",
+          "status": "checked"
+        },
+        "identity": {
+          "checked_at": "2026-11-06T09:24:12.886420+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-06T09:24:12.886420+00:00",
+          "status": "disputed"
+        },
+        "profile": {
+          "checked_at": "2026-11-06T09:24:12.886420+00:00",
+          "status": "checked"
+        }
+      },
+      "curation": {
+        "identity_status": "in_scope"
+      },
+      "finance": {
+        "budget": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:5",
+                  "original_text": "€420.5 M (2020)",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2020
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": "420500000",
+                "currency": "EUR",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "480 000 000 € (en 2023)",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c2",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2023
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": "480000000",
+                "currency": "EUR",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:Cr.C3.A9ation_de_l.27universit.C3.A9_Lyon_1",
+                  "original_text": "519 millions d'euros de budget",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c3",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2025
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": "519000000",
+                "currency": "EUR",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c3",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        }
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "claim:P571:0",
+                      "original_text": "+1970-00-00",
+                      "source_ref": "s1"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 1970
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Cr.C3.A9ation_de_l.27universit.C3.A9_Lyon_1",
+                      "original_text": "créée par décret le 8 décembre 1970",
+                      "source_ref": "s3"
+                    },
+                    {
+                      "locator": "section:History",
+                      "original_text": "merged with the Faculty of Science on 8 December 1970",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "The University was created by a decree dated 8 December 1970 through the consolidation of Lyon science and medicine faculties."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "established",
+            "kind": "institution_establishment",
+            "subject_ref": "institution"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Origines",
+                      "original_text": "17 mars 1808",
+                      "source_ref": "s3"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 1808
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Origines",
+                      "original_text": "Le décret du 17 mars 1808",
+                      "source_ref": "s3"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "The Lyon Faculty of Science originated in the decree of 17 March 1808; this was a predecessor faculty, not the establishment of Lyon 1 itself."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "science_origin",
+            "kind": "predecessor_establishment",
+            "subject_ref": "related:science_faculty"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Origines",
+                      "original_text": "8 novembre 1874",
+                      "source_ref": "s3"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 1874
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Origines",
+                      "original_text": "la faculté mixte de médecine et de pharmacie est créée par la loi du 8 novembre 1874",
+                      "source_ref": "s3"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "The combined Lyon faculty of medicine and pharmacy was created by law on 8 November 1874."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "medicine_origin",
+            "kind": "predecessor_establishment",
+            "subject_ref": "related:medicine_faculty"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:lead",
+                      "original_text": "12 janvier 2026",
+                      "source_ref": "s3"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 2026
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:lead",
+                      "original_text": "annonce, le 12 janvier 2026, adopter la marque « Lyon 1 Université Claude Bernard »",
+                      "source_ref": "s3"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "The institution announced the Lyon 1 Université Claude Bernard brand on 12 January 2026; the historic legal name must not be inferred abolished."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "brand",
+            "kind": "rename",
+            "subject_ref": "institution"
+          }
+        ]
+      },
+      "identity": {
+        "aliases": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P1813:0",
+                    "original_text": "UCBL",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "fr",
+                  "text": "UCBL"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "known as Lyon 1",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Lyon 1"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ],
+        "identifiers": {
+          "P5586": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P5586:0",
+                    "original_text": "claude-bernard-university-lyon-1",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "claude-bernard-university-lyon-1",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "one of the three public universities of Lyon",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "university",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "Claude Bernard University Lyon 1",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "Claude Bernard University Lyon 1",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "fr": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "université Claude-Bernard-Lyon-I",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "université Claude-Bernard-Lyon-I",
+                "verification": "supported"
+              },
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P1448:1",
+                    "original_text": "LYON 1 UNIVERSITÉ CLAUDE BERNARD",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "section:lead",
+                    "original_text": "adopter la marque « Lyon 1 Université Claude Bernard »",
+                    "source_ref": "s3"
+                  }
+                ],
+                "id": "c2",
+                "period": {
+                  "kind": "calendar_year",
+                  "year": 2026
+                },
+                "value": "LYON 1 UNIVERSITÉ CLAUDE BERNARD",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c2",
+              "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+              "reason_code": "best_available"
+            }
+          }
+        },
+        "operating_status": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "Lyon 1 Université Claude-Bernard est une université française",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": "operating",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "ownership": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:2",
+                  "original_text": "Type: Public",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "public",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "leadership": {
+        "president": {
+          "candidates": [
+            {
+              "current_basis": "infobox_current",
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "Président\nBruno Lina",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "person": {
+                  "name": "Bruno Lina"
+                },
+                "title_original": {
+                  "language": "fr",
+                  "text": "Président"
+                }
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family",
+              "reported_current"
+            ],
+            "reason": "The page reports this person in its current officeholder field; a term-end date is not required.",
+            "reason_code": "infobox_current"
+          }
+        }
+      },
+      "locations": [
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P159:0",
+                    "original_text": "43 boulevard du 11 novembre 1918",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "claim:P159:0",
+                    "original_text": "69100",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "city_name": "Villeurbanne",
+                  "city_qid": "Q582",
+                  "country_qid": "Q142",
+                  "formatted": {
+                    "language": "fr",
+                    "text": "43 boulevard du 11 novembre 1918"
+                  },
+                  "postal_code": "69100"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "villeurbanne",
+          "kind": "headquarters",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P159:0",
+                    "original_text": "\"id\": \"Q582\"",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "Villeurbanne",
+                    "source_ref": "s6"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Villeurbanne"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q582"
+        },
+        {
+          "id": "doua",
+          "kind": "campus",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Main_sites",
+                    "original_text": "The LyonTech-la Doua campus",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "LyonTech-la Doua campus"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        {
+          "id": "health_east",
+          "kind": "campus",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Main_sites",
+                    "original_text": "Lyon Health East Campus",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Lyon Health East Campus"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        {
+          "id": "lyon",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "public universities of Lyon, France",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Lyon"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        {
+          "coordinates": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "statement:Q4032$7FA1F3F5-5586-4234-8137-B7DEDEAECF6E",
+                    "original_text": "\"latitude\": 45.78155015",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "source_rank": "normal",
+                "value": {
+                  "crs": "EPSG:4326",
+                  "globe_qid": "Q2",
+                  "latitude": 45.78155015,
+                  "longitude": 4.868178177132702,
+                  "source_precision_degrees": 1e-05
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "wikidata-item-location",
+          "kind": "institution",
+          "qid": "Q4032"
+        }
+      ],
+      "modified_datetime": "2026-11-06T09:25:10.185620+00:00",
+      "population": {
+        "academic_staff": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Cr.C3.A9ation_de_l.27universit.C3.A9_Lyon_1",
+                  "original_text": "près de 3000 enseignants-chercheurs",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2025
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 3000,
+                "basis": "unspecified",
+                "precision": "approximate"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family",
+              "approximate_value"
+            ],
+            "reason_code": "only_available"
+          }
+        },
+        "administrative_staff": {
+          "candidates": [
+            {
+              "current_basis": "undated_last_known",
+              "evidence": [
+                {
+                  "locator": "infobox:8",
+                  "original_text": "Administrative staff: 1,766",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period_status": "not_stated",
+              "value": {
+                "amount": 1766,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "period_not_stated",
+              "single_source_family"
+            ],
+            "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+            "reason_code": "only_available"
+          }
+        },
+        "employees_total": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Cr.C3.A9ation_de_l.27universit.C3.A9_Lyon_1",
+                  "original_text": "En 2025, elle compte 4900 personnels",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2025
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 4900,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason_code": "only_available"
+          }
+        },
+        "students_total": {
+          "candidates": [
+            {
+              "current_basis": "undated_last_known",
+              "evidence": [
+                {
+                  "locator": "infobox:9",
+                  "original_text": "Students: 47,860",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period_status": "not_stated",
+              "value": {
+                "amount": 47860,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "46 000-47 000 (en 2023)",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c2",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2023
+              },
+              "period_status": "stated",
+              "value": {
+                "basis": "unspecified",
+                "maximum": 47000,
+                "minimum": 46000,
+                "precision": "range"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:.C3.89volution_d.C3.A9mographique",
+                  "original_text": "49 189[64]",
+                  "source_ref": "s3"
+                },
+                {
+                  "locator": "section:.C3.89volution_d.C3.A9mographique",
+                  "original_text": "Légende : 2013 = Année scolaire 2013-2014.",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c3",
+              "period": {
+                "end_year": 2025,
+                "kind": "academic_year",
+                "label": "2024/25",
+                "start_year": 2024
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 49189,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c3",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        },
+        "teaching_staff": {
+          "candidates": [
+            {
+              "current_basis": "undated_last_known",
+              "evidence": [
+                {
+                  "locator": "infobox:7",
+                  "original_text": "Faculty: 2,857",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period_status": "not_stated",
+              "value": {
+                "amount": 2857,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "2 840 enseignants et enseignants-chercheurs (en 2023)",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c2",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2023
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 2840,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c2",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        }
+      },
+      "profile": {
+        "academic_focus": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "specialises in science and technology, medicine, and sports science",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": [
+                {
+                  "language": "en",
+                  "text": "science and technology"
+                },
+                {
+                  "language": "en",
+                  "text": "medicine and health"
+                },
+                {
+                  "language": "en",
+                  "text": "sports science"
+                }
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "degree_levels": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Enseignement",
+                  "original_text": "licences professionnelles et masters professionnels",
+                  "source_ref": "s3"
+                },
+                {
+                  "locator": "section:Enseignement",
+                  "original_text": "système européen de l'enseignement supérieur appelé LMD",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": [
+                "bachelor",
+                "master"
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "summary": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "one of the three public universities of Lyon, France",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:lead",
+                  "original_text": "12 janvier 2026",
+                  "source_ref": "s3"
+                },
+                {
+                  "locator": "section:Main_sites",
+                  "original_text": "The university is not located on a single campus",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:History",
+                  "original_text": "Lyon Faculty of Medicine was founded on 8 November 1874",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Cr.C3.A9ation_de_l.27universit.C3.A9_Lyon_1",
+                  "original_text": "créée par décret le 8 décembre 1970",
+                  "source_ref": "s3"
+                },
+                {
+                  "locator": "section:Composantes",
+                  "original_text": "six unités de formation et de recherche",
+                  "source_ref": "s3"
+                },
+                {
+                  "locator": "section:Enseignement",
+                  "original_text": "actuariat, biochimie, biologie, chimie",
+                  "source_ref": "s3"
+                },
+                {
+                  "locator": "section:lead",
+                  "original_text": "46 000-47 000 (en 2023)",
+                  "source_ref": "s3"
+                },
+                {
+                  "locator": "section:Cr.C3.A9ation_de_l.27universit.C3.A9_Lyon_1",
+                  "original_text": "519 millions d'euros de budget",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "Claude Bernard University Lyon 1, also known as Lyon 1, is a public university in the Lyon area of France. The institution uses the French name Université Claude-Bernard-Lyon-I and announced the Lyon 1 Université Claude Bernard brand in January 2026. It concentrates on science and technology, health disciplines, and sports science. Its administrative and teaching facilities extend beyond a single site: the LyonTech-la Doua campus in Villeurbanne houses headquarters and science and sport faculties, while Lyon Health East Campus serves medical and dental education and research.\n\nLyon's Faculty of Science arose from an 1808 decree, and a medical and pharmacy faculty was founded in 1874. Those earlier faculties should be distinguished from the present university, formed through their consolidation under a decree dated 8 December 1970; some accounts describe the institutional establishment as 1971. The university subsequently developed an extensive set of facilities across the metropolitan area, including medical sites and an observatory. It has been associated with successive University of Lyon groupings, which are distinct from Lyon 1 itself.\n\nIts teaching covers biology, chemistry, mathematics, computing and engineering alongside medicine, pharmacy, dentistry, allied health and sport. The French-language article describes six teaching and research faculties, three institutes, four schools and three independent departments. Its 2023 information reports roughly 46,000–47,000 students and a budget of €480 million; a later narrative gives a €519 million budget for 2025. These dated figures should not be read as simultaneous or directly comparable current totals."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "website": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P856:0",
+                  "original_text": "https://www.univ-lyon1.fr/",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "https://www.univ-lyon1.fr/",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "qid": "Q4032",
+      "record_revision": 1,
+      "related_entities": {
+        "lyon_comue": {
+          "kind": "university_system",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "French university system",
+                    "source_ref": "s8"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "University of Lyon (ComUE)"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q10176"
+        },
+        "lyon_pres": {
+          "kind": "university_system",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "set of Lyon, France area colleges (2007-2015)",
+                    "source_ref": "s7"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "University of Lyon (2007–2015)"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q64223469"
+        },
+        "medicine_faculty": {
+          "kind": "faculty",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:History",
+                    "original_text": "Lyon Faculty of Medicine",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Lyon Faculty of Medicine"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        "old_lyon": {
+          "kind": "institution",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "former university in France (1896–1969)",
+                    "source_ref": "s9"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "University of Lyon (1896–1969)"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q2383462"
+        },
+        "science_faculty": {
+          "kind": "faculty",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:History",
+                    "original_text": "Lyon Faculty of Science",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Lyon Faculty of Science"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "relationships": {
+        "parent": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P749:0",
+                    "original_text": "\"id\": \"Q64223469\"",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "2007-2015",
+                    "source_ref": "s7"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "target_ref": "related:lyon_pres",
+                  "valid_from": {
+                    "precision": "year",
+                    "year": 2007
+                  }
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P749:1",
+                    "original_text": "\"id\": \"Q10176\"",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "créée en 2015",
+                    "source_ref": "s8"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "target_ref": "related:lyon_comue",
+                  "valid_from": {
+                    "precision": "year",
+                    "year": 2015
+                  }
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ],
+        "predecessor": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P1365:0",
+                    "original_text": "\"id\": \"Q2383462\"",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "target_ref": "related:old_lyon"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ]
+      },
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "ranking_identifier",
+          "reviewed_institution_type"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "included"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T09:15:20.358405+00:00",
+          "revision_id": 2564646032,
+          "source_qid": "Q4032",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2564646032"
+        },
+        "s10": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T09:16:38.804973+00:00",
+          "revision_id": 2523248062,
+          "source_qid": "Q15407594",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2523248062"
+        },
+        "s11": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T09:16:45.348882+00:00",
+          "revision_id": 2523529739,
+          "source_qid": "Q11984873",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2523529739"
+        },
+        "s12": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T09:16:53.669147+00:00",
+          "revision_id": 2563068811,
+          "source_qid": "Q15407590",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2563068811"
+        },
+        "s13": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T09:17:00.969209+00:00",
+          "revision_id": 2523520404,
+          "source_qid": "Q11984862",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2523520404"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikipedia",
+          "language": "en",
+          "page_id": 5124933,
+          "publisher_role": "encyclopedia",
+          "retrieved_at": "2026-11-06T09:15:42.613007+00:00",
+          "revision_id": 1371631116,
+          "url": "https://en.wikipedia.org/w/index.php?oldid=1371631116"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikipedia",
+          "language": "fr",
+          "page_id": 248303,
+          "publisher_role": "encyclopedia",
+          "retrieved_at": "2026-11-06T09:15:52.545543+00:00",
+          "revision_id": 240802542,
+          "url": "https://fr.wikipedia.org/w/index.php?oldid=240802542"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T09:15:59.048669+00:00",
+          "revision_id": 2468502188,
+          "source_qid": "Q3551775",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2468502188"
+        },
+        "s5": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T09:16:05.838184+00:00",
+          "revision_id": 2564285160,
+          "source_qid": "Q142",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2564285160"
+        },
+        "s6": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T09:16:12.743053+00:00",
+          "revision_id": 2563754608,
+          "source_qid": "Q582",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2563754608"
+        },
+        "s7": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T09:16:19.380811+00:00",
+          "revision_id": 2314127583,
+          "source_qid": "Q64223469",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2314127583"
+        },
+        "s8": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T09:16:25.886028+00:00",
+          "revision_id": 2511220217,
+          "source_qid": "Q10176",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2511220217"
+        },
+        "s9": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T09:16:32.304729+00:00",
+          "revision_id": 2511594324,
+          "source_qid": "Q2383462",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2511594324"
+        }
+      }
+    },
+    "coverage": [
+      {
+        "group": "identity",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "status": "checked"
+      },
+      {
+        "group": "population",
+        "status": "disputed"
+      },
+      {
+        "group": "finance",
+        "status": "checked"
+      },
+      {
+        "group": "profile",
+        "status": "checked"
+      }
+    ],
+    "delta": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-06T09:24:12.886420+00:00",
+          "status": "checked"
+        },
+        "geography": {
+          "checked_at": "2026-11-06T09:24:12.886420+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-06T09:24:12.886420+00:00",
+          "status": "checked"
+        },
+        "identity": {
+          "checked_at": "2026-11-06T09:24:12.886420+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-06T09:24:12.886420+00:00",
+          "status": "disputed"
+        },
+        "profile": {
+          "checked_at": "2026-11-06T09:24:12.886420+00:00",
+          "status": "checked"
+        }
+      },
+      "curation": {
+        "identity_status": "in_scope"
+      },
+      "finance": {
+        "budget": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:5",
+                  "original_text": "€420.5 M (2020)",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2020
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": "420500000",
+                "currency": "EUR",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "480 000 000 € (en 2023)",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c2",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2023
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": "480000000",
+                "currency": "EUR",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:Cr.C3.A9ation_de_l.27universit.C3.A9_Lyon_1",
+                  "original_text": "519 millions d'euros de budget",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c3",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2025
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": "519000000",
+                "currency": "EUR",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c3",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        }
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "claim:P571:0",
+                      "original_text": "+1970-00-00",
+                      "source_ref": "s1"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 1970
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Cr.C3.A9ation_de_l.27universit.C3.A9_Lyon_1",
+                      "original_text": "créée par décret le 8 décembre 1970",
+                      "source_ref": "s3"
+                    },
+                    {
+                      "locator": "section:History",
+                      "original_text": "merged with the Faculty of Science on 8 December 1970",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "The University was created by a decree dated 8 December 1970 through the consolidation of Lyon science and medicine faculties."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "established",
+            "kind": "institution_establishment",
+            "subject_ref": "institution"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Origines",
+                      "original_text": "17 mars 1808",
+                      "source_ref": "s3"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 1808
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Origines",
+                      "original_text": "Le décret du 17 mars 1808",
+                      "source_ref": "s3"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "The Lyon Faculty of Science originated in the decree of 17 March 1808; this was a predecessor faculty, not the establishment of Lyon 1 itself."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "science_origin",
+            "kind": "predecessor_establishment",
+            "subject_ref": "related:science_faculty"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Origines",
+                      "original_text": "8 novembre 1874",
+                      "source_ref": "s3"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 1874
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Origines",
+                      "original_text": "la faculté mixte de médecine et de pharmacie est créée par la loi du 8 novembre 1874",
+                      "source_ref": "s3"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "The combined Lyon faculty of medicine and pharmacy was created by law on 8 November 1874."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "medicine_origin",
+            "kind": "predecessor_establishment",
+            "subject_ref": "related:medicine_faculty"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:lead",
+                      "original_text": "12 janvier 2026",
+                      "source_ref": "s3"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 2026
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:lead",
+                      "original_text": "annonce, le 12 janvier 2026, adopter la marque « Lyon 1 Université Claude Bernard »",
+                      "source_ref": "s3"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "The institution announced the Lyon 1 Université Claude Bernard brand on 12 January 2026; the historic legal name must not be inferred abolished."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "brand",
+            "kind": "rename",
+            "subject_ref": "institution"
+          }
+        ]
+      },
+      "identity": {
+        "aliases": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P1813:0",
+                    "original_text": "UCBL",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "fr",
+                  "text": "UCBL"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "known as Lyon 1",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Lyon 1"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ],
+        "identifiers": {
+          "P5586": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P5586:0",
+                    "original_text": "claude-bernard-university-lyon-1",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "claude-bernard-university-lyon-1",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "one of the three public universities of Lyon",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "university",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "Claude Bernard University Lyon 1",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "Claude Bernard University Lyon 1",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "fr": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "université Claude-Bernard-Lyon-I",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "université Claude-Bernard-Lyon-I",
+                "verification": "supported"
+              },
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P1448:1",
+                    "original_text": "LYON 1 UNIVERSITÉ CLAUDE BERNARD",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "section:lead",
+                    "original_text": "adopter la marque « Lyon 1 Université Claude Bernard »",
+                    "source_ref": "s3"
+                  }
+                ],
+                "id": "c2",
+                "period": {
+                  "kind": "calendar_year",
+                  "year": 2026
+                },
+                "value": "LYON 1 UNIVERSITÉ CLAUDE BERNARD",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c2",
+              "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+              "reason_code": "best_available"
+            }
+          }
+        },
+        "operating_status": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "Lyon 1 Université Claude-Bernard est une université française",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": "operating",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "ownership": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:2",
+                  "original_text": "Type: Public",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "public",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "leadership": {
+        "president": {
+          "candidates": [
+            {
+              "current_basis": "infobox_current",
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "Président\nBruno Lina",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "person": {
+                  "name": "Bruno Lina"
+                },
+                "title_original": {
+                  "language": "fr",
+                  "text": "Président"
+                }
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family",
+              "reported_current"
+            ],
+            "reason": "The page reports this person in its current officeholder field; a term-end date is not required.",
+            "reason_code": "infobox_current"
+          }
+        }
+      },
+      "locations": [
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P159:0",
+                    "original_text": "43 boulevard du 11 novembre 1918",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "claim:P159:0",
+                    "original_text": "69100",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "city_name": "Villeurbanne",
+                  "city_qid": "Q582",
+                  "country_qid": "Q142",
+                  "formatted": {
+                    "language": "fr",
+                    "text": "43 boulevard du 11 novembre 1918"
+                  },
+                  "postal_code": "69100"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "villeurbanne",
+          "kind": "headquarters",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P159:0",
+                    "original_text": "\"id\": \"Q582\"",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "Villeurbanne",
+                    "source_ref": "s6"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Villeurbanne"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q582"
+        },
+        {
+          "id": "doua",
+          "kind": "campus",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Main_sites",
+                    "original_text": "The LyonTech-la Doua campus",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "LyonTech-la Doua campus"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        {
+          "id": "health_east",
+          "kind": "campus",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Main_sites",
+                    "original_text": "Lyon Health East Campus",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Lyon Health East Campus"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        {
+          "id": "lyon",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "public universities of Lyon, France",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Lyon"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        {
+          "coordinates": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "statement:Q4032$7FA1F3F5-5586-4234-8137-B7DEDEAECF6E",
+                    "original_text": "\"latitude\": 45.78155015",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "source_rank": "normal",
+                "value": {
+                  "crs": "EPSG:4326",
+                  "globe_qid": "Q2",
+                  "latitude": 45.78155015,
+                  "longitude": 4.868178177132702,
+                  "source_precision_degrees": 1e-05
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "wikidata-item-location",
+          "kind": "institution",
+          "qid": "Q4032"
+        }
+      ],
+      "population": {
+        "academic_staff": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Cr.C3.A9ation_de_l.27universit.C3.A9_Lyon_1",
+                  "original_text": "près de 3000 enseignants-chercheurs",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2025
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 3000,
+                "basis": "unspecified",
+                "precision": "approximate"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family",
+              "approximate_value"
+            ],
+            "reason_code": "only_available"
+          }
+        },
+        "administrative_staff": {
+          "candidates": [
+            {
+              "current_basis": "undated_last_known",
+              "evidence": [
+                {
+                  "locator": "infobox:8",
+                  "original_text": "Administrative staff: 1,766",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period_status": "not_stated",
+              "value": {
+                "amount": 1766,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "period_not_stated",
+              "single_source_family"
+            ],
+            "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+            "reason_code": "only_available"
+          }
+        },
+        "employees_total": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Cr.C3.A9ation_de_l.27universit.C3.A9_Lyon_1",
+                  "original_text": "En 2025, elle compte 4900 personnels",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2025
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 4900,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason_code": "only_available"
+          }
+        },
+        "students_total": {
+          "candidates": [
+            {
+              "current_basis": "undated_last_known",
+              "evidence": [
+                {
+                  "locator": "infobox:9",
+                  "original_text": "Students: 47,860",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period_status": "not_stated",
+              "value": {
+                "amount": 47860,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "46 000-47 000 (en 2023)",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c2",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2023
+              },
+              "period_status": "stated",
+              "value": {
+                "basis": "unspecified",
+                "maximum": 47000,
+                "minimum": 46000,
+                "precision": "range"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:.C3.89volution_d.C3.A9mographique",
+                  "original_text": "49 189[64]",
+                  "source_ref": "s3"
+                },
+                {
+                  "locator": "section:.C3.89volution_d.C3.A9mographique",
+                  "original_text": "Légende : 2013 = Année scolaire 2013-2014.",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c3",
+              "period": {
+                "end_year": 2025,
+                "kind": "academic_year",
+                "label": "2024/25",
+                "start_year": 2024
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 49189,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c3",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        },
+        "teaching_staff": {
+          "candidates": [
+            {
+              "current_basis": "undated_last_known",
+              "evidence": [
+                {
+                  "locator": "infobox:7",
+                  "original_text": "Faculty: 2,857",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period_status": "not_stated",
+              "value": {
+                "amount": 2857,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "2 840 enseignants et enseignants-chercheurs (en 2023)",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c2",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2023
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 2840,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c2",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        }
+      },
+      "profile": {
+        "academic_focus": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "specialises in science and technology, medicine, and sports science",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": [
+                {
+                  "language": "en",
+                  "text": "science and technology"
+                },
+                {
+                  "language": "en",
+                  "text": "medicine and health"
+                },
+                {
+                  "language": "en",
+                  "text": "sports science"
+                }
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "degree_levels": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Enseignement",
+                  "original_text": "licences professionnelles et masters professionnels",
+                  "source_ref": "s3"
+                },
+                {
+                  "locator": "section:Enseignement",
+                  "original_text": "système européen de l'enseignement supérieur appelé LMD",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": [
+                "bachelor",
+                "master"
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "summary": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "one of the three public universities of Lyon, France",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:lead",
+                  "original_text": "12 janvier 2026",
+                  "source_ref": "s3"
+                },
+                {
+                  "locator": "section:Main_sites",
+                  "original_text": "The university is not located on a single campus",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:History",
+                  "original_text": "Lyon Faculty of Medicine was founded on 8 November 1874",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Cr.C3.A9ation_de_l.27universit.C3.A9_Lyon_1",
+                  "original_text": "créée par décret le 8 décembre 1970",
+                  "source_ref": "s3"
+                },
+                {
+                  "locator": "section:Composantes",
+                  "original_text": "six unités de formation et de recherche",
+                  "source_ref": "s3"
+                },
+                {
+                  "locator": "section:Enseignement",
+                  "original_text": "actuariat, biochimie, biologie, chimie",
+                  "source_ref": "s3"
+                },
+                {
+                  "locator": "section:lead",
+                  "original_text": "46 000-47 000 (en 2023)",
+                  "source_ref": "s3"
+                },
+                {
+                  "locator": "section:Cr.C3.A9ation_de_l.27universit.C3.A9_Lyon_1",
+                  "original_text": "519 millions d'euros de budget",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "Claude Bernard University Lyon 1, also known as Lyon 1, is a public university in the Lyon area of France. The institution uses the French name Université Claude-Bernard-Lyon-I and announced the Lyon 1 Université Claude Bernard brand in January 2026. It concentrates on science and technology, health disciplines, and sports science. Its administrative and teaching facilities extend beyond a single site: the LyonTech-la Doua campus in Villeurbanne houses headquarters and science and sport faculties, while Lyon Health East Campus serves medical and dental education and research.\n\nLyon's Faculty of Science arose from an 1808 decree, and a medical and pharmacy faculty was founded in 1874. Those earlier faculties should be distinguished from the present university, formed through their consolidation under a decree dated 8 December 1970; some accounts describe the institutional establishment as 1971. The university subsequently developed an extensive set of facilities across the metropolitan area, including medical sites and an observatory. It has been associated with successive University of Lyon groupings, which are distinct from Lyon 1 itself.\n\nIts teaching covers biology, chemistry, mathematics, computing and engineering alongside medicine, pharmacy, dentistry, allied health and sport. The French-language article describes six teaching and research faculties, three institutes, four schools and three independent departments. Its 2023 information reports roughly 46,000–47,000 students and a budget of €480 million; a later narrative gives a €519 million budget for 2025. These dated figures should not be read as simultaneous or directly comparable current totals."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "website": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P856:0",
+                  "original_text": "https://www.univ-lyon1.fr/",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "https://www.univ-lyon1.fr/",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "qid": "Q4032",
+      "record_revision": 1,
+      "related_entities": {
+        "lyon_comue": {
+          "kind": "university_system",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "French university system",
+                    "source_ref": "s8"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "University of Lyon (ComUE)"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q10176"
+        },
+        "lyon_pres": {
+          "kind": "university_system",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "set of Lyon, France area colleges (2007-2015)",
+                    "source_ref": "s7"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "University of Lyon (2007–2015)"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q64223469"
+        },
+        "medicine_faculty": {
+          "kind": "faculty",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:History",
+                    "original_text": "Lyon Faculty of Medicine",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Lyon Faculty of Medicine"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        "old_lyon": {
+          "kind": "institution",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "former university in France (1896–1969)",
+                    "source_ref": "s9"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "University of Lyon (1896–1969)"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q2383462"
+        },
+        "science_faculty": {
+          "kind": "faculty",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:History",
+                    "original_text": "Lyon Faculty of Science",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Lyon Faculty of Science"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "relationships": {
+        "parent": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P749:0",
+                    "original_text": "\"id\": \"Q64223469\"",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "2007-2015",
+                    "source_ref": "s7"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "target_ref": "related:lyon_pres",
+                  "valid_from": {
+                    "precision": "year",
+                    "year": 2007
+                  }
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P749:1",
+                    "original_text": "\"id\": \"Q10176\"",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "créée en 2015",
+                    "source_ref": "s8"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "target_ref": "related:lyon_comue",
+                  "valid_from": {
+                    "precision": "year",
+                    "year": 2015
+                  }
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ],
+        "predecessor": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P1365:0",
+                    "original_text": "\"id\": \"Q2383462\"",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "target_ref": "related:old_lyon"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ]
+      },
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "ranking_identifier",
+          "reviewed_institution_type"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "included"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T09:15:20.358405+00:00",
+          "revision_id": 2564646032,
+          "source_qid": "Q4032",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2564646032"
+        },
+        "s10": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T09:16:38.804973+00:00",
+          "revision_id": 2523248062,
+          "source_qid": "Q15407594",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2523248062"
+        },
+        "s11": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T09:16:45.348882+00:00",
+          "revision_id": 2523529739,
+          "source_qid": "Q11984873",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2523529739"
+        },
+        "s12": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T09:16:53.669147+00:00",
+          "revision_id": 2563068811,
+          "source_qid": "Q15407590",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2563068811"
+        },
+        "s13": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T09:17:00.969209+00:00",
+          "revision_id": 2523520404,
+          "source_qid": "Q11984862",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2523520404"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikipedia",
+          "language": "en",
+          "page_id": 5124933,
+          "publisher_role": "encyclopedia",
+          "retrieved_at": "2026-11-06T09:15:42.613007+00:00",
+          "revision_id": 1371631116,
+          "url": "https://en.wikipedia.org/w/index.php?oldid=1371631116"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikipedia",
+          "language": "fr",
+          "page_id": 248303,
+          "publisher_role": "encyclopedia",
+          "retrieved_at": "2026-11-06T09:15:52.545543+00:00",
+          "revision_id": 240802542,
+          "url": "https://fr.wikipedia.org/w/index.php?oldid=240802542"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T09:15:59.048669+00:00",
+          "revision_id": 2468502188,
+          "source_qid": "Q3551775",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2468502188"
+        },
+        "s5": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T09:16:05.838184+00:00",
+          "revision_id": 2564285160,
+          "source_qid": "Q142",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2564285160"
+        },
+        "s6": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T09:16:12.743053+00:00",
+          "revision_id": 2563754608,
+          "source_qid": "Q582",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2563754608"
+        },
+        "s7": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T09:16:19.380811+00:00",
+          "revision_id": 2314127583,
+          "source_qid": "Q64223469",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2314127583"
+        },
+        "s8": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T09:16:25.886028+00:00",
+          "revision_id": 2511220217,
+          "source_qid": "Q10176",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2511220217"
+        },
+        "s9": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T09:16:32.304729+00:00",
+          "revision_id": 2511594324,
+          "source_qid": "Q2383462",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2511594324"
+        }
+      }
+    },
+    "open_requests": [
+      {
+        "category": "scope_conflict",
+        "field": "population.students_total.period",
+        "reason": "The French demographic table labels 2024 with 49 189 and states in its legend that a year denotes a school year (e.g. 2013 = 2013–2014). The 49,189 candidate currently asserts calendar_year 2024. Preserve academic-year scope (2024–2025) or explicitly flag period interpretation as unresolved, maintaining the table citation.",
+        "request_id": "56c2fbb0-825f-5beb-8199-c6fc1ee265d8",
+        "reviewed_proposal_sha256": "02cf74c0bd10d6b7bff6d39d8ddf6a3d536c21b64f8b108820e24eea0f13349d"
+      }
+    ],
+    "proposed_at": "2026-11-06T09:25:10.185620+00:00",
+    "qid": "Q4032",
+    "research": {
+      "model": "not_reported",
+      "prompt_sha256": "e7d189a5288ee5bd5d0b8216b9a8ebb6e18731ebbf8181d84a2f826a7154745f",
+      "reasoning_effort": "medium",
+      "schema_sha256": "92e942f4fbf2ae28964462ea9ffa8312c5ee16a077a1e08b40aaaf741512422e",
+      "session": "/root/research_q4032"
+    },
+    "retrieval_failures": [],
+    "review_status": "unreviewed",
+    "seed": {
+      "channels": [
+        "ranking_identifier",
+        "reviewed_institution_type"
+      ],
+      "import_id": "seed-84c3beb45367905f",
+      "screening_status": "included"
+    },
+    "transport": {
+      "base_commit": "af120c2ed71d1dc271da0171596551500c99c6f7",
+      "protocol": "native-subagent-v1",
+      "repository": "ider-zh/university-seed-curation",
+      "review_policy": {
+        "id": "source-grounded-flexible-v2",
+        "sha256": "b8ed7d2897e4c31dbd81b1379aafdc1077a21d1a33949edbd2d896b0adf99db2"
+      },
+      "schema_sha256": "bfa496eafa9dffca56146214168db7f000b09161b8993129632e7202e1c88833",
+      "seed_catalog_sha256": "84c3beb45367905f513d650684283dd62a9c1b77962bdc34151a6ef05bfa03d4"
+    },
+    "type": "university-proposal-v1"
+  },
+  "review": {
+    "contexts_checked": 15,
+    "coverage_checks": [
+      {
+        "group": "identity",
+        "reason": "Current legal institution, French names and 2026 brand differentiation checked.",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "reason": "City, headquarters, separate campuses and root coordinate roles checked.",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "reason": "1970 decree, predecessors and University of Lyon systems preserved.",
+        "status": "checked"
+      },
+      {
+        "group": "population",
+        "reason": "All observations retain distinct scopes; table 2024 figure now represented as 2024/25 academic year.",
+        "status": "disputed"
+      },
+      {
+        "group": "finance",
+        "reason": "2020, 2023 and 2025 EUR budget observations correctly distinguished and sourced.",
+        "status": "checked"
+      },
+      {
+        "group": "profile",
+        "reason": "Neutral overview, focus, degree levels and website supported.",
+        "status": "checked"
+      }
+    ],
+    "decision": "approve",
+    "facts_checked": 47,
+    "full_refresh": true,
+    "inferences": [
+      {
+        "id": "$.identity.operating_status:c1",
+        "reason": "Current article, leader and 2025 statistics support operating university."
+      },
+      {
+        "id": "$.population.students_total:c3",
+        "reason": "49,189 figure is correctly linked to 2024/25 academic year, with table legend and column value both cited; not misrepresented as a calendar-year total."
+      },
+      {
+        "id": "$.profile.summary:c1",
+        "reason": "Neutral sourced overview separates legal university, historical predecessor faculties and 2026 brand; dated budgets/student range are qualified."
+      },
+      {
+        "id": "milestone:brand",
+        "reason": "Broad rename event category is source-qualified as brand adoption, not legal dissolution."
+      }
+    ],
+    "model": "not_reported",
+    "proposal_sha256": "ad006d6c80ff8ceccb1b7aee0fafd4bdc28292f6b33aba2590534a4e63669d2e",
+    "qid": "Q4032",
+    "reasoning_effort": "medium",
+    "record_sha256": "ccf60191e63b0d66b5ec0a72955ea14ae1e28d525be9a743afb89d7a52af6e9f",
+    "request_responses": [
+      {
+        "reason": "2024 49,189 demographic count is now scoped to academic_year 2024/25 with direct school-year legend citation.",
+        "request_id": "56c2fbb0-825f-5beb-8199-c6fc1ee265d8",
+        "status": "addressed"
+      }
+    ],
+    "requests": [],
+    "review_session": "/root/review_batch_1",
+    "reviewed_at": "2026-11-06T09:29:08.562422+00:00",
+    "source_revisions_checked": 13
+  },
+  "review_result_sha256": "aa473f8dbc947a9ca47f2801033cc5b346f45b99db31b8ca164c60dbf412b994",
+  "type": "university-unified-receipt-v1"
+}
