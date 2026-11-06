@@ -1,0 +1,551 @@
+{
+  "coverage": {
+    "finance": {
+      "checked_at": "2026-11-06T14:48:39.285735+00:00",
+      "status": "not_found"
+    },
+    "geography": {
+      "checked_at": "2026-11-06T14:48:39.285735+00:00",
+      "status": "checked"
+    },
+    "history": {
+      "checked_at": "2026-11-06T14:48:39.285735+00:00",
+      "status": "checked"
+    },
+    "identity": {
+      "checked_at": "2026-11-06T14:48:39.285735+00:00",
+      "status": "checked"
+    },
+    "population": {
+      "checked_at": "2026-11-06T14:48:39.285735+00:00",
+      "status": "checked"
+    },
+    "profile": {
+      "checked_at": "2026-11-06T14:48:39.285735+00:00",
+      "status": "checked"
+    }
+  },
+  "curation": {
+    "identity_status": "in_scope",
+    "refresh_profile": "core-v1",
+    "reviewed_groups": [
+      "identity",
+      "geography",
+      "history",
+      "population",
+      "finance",
+      "profile"
+    ]
+  },
+  "history": {
+    "milestones": [
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P571:0",
+                  "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q687942$B08D1470-70FE-42E5-B643-2ED899E668CF\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+1973-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "infobox:3",
+                  "original_text": "Established: 1973",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "precision": "year",
+                "year": 1973
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "established",
+        "kind": "institution_establishment",
+        "subject_ref": "institution"
+      }
+    ]
+  },
+  "identity": {
+    "aliases": [
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "infobox:2",
+                "original_text": "Former name: Dokkyo University School of Medicine",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Dokkyo University School of Medicine"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    ],
+    "identifiers": {
+      "P5586": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P5586:0",
+                "original_text": "{\"property\": \"P5586\", \"property_label\": \"Times Higher Education World University ID\", \"statement_id\": \"Q687942$DE489609-263C-4137-AEC1-08F6B649408B\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"dokkyo-medical-university\", \"reference_count\": 1}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": "dokkyo-medical-university",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    "kind": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P31:0",
+              "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q687942$3850CB6E-C24E-4B3C-A2BD-A8392D32AF86\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 3918, \"id\": \"Q3918\"}}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "value": "university",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "names": {
+      "en": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q687942\", \"labels\": {\"en\": \"Dokkyo Medical University\"}, \"descriptions\": {\"en\": \"higher education institution in Tochigi Prefecture, Japan\"}}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": "Dokkyo Medical University",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "ja": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "infobox:0",
+                "original_text": ": 獨協医科大学",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": "獨協医科大学",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    }
+  },
+  "locations": [
+    {
+      "address": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "infobox:5",
+                "original_text": "Location: Mibu, Tochigi, Japan",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "city_name": "Mibu",
+              "city_qid": "Q1354910",
+              "country_name": "Japan",
+              "country_qid": "Q17",
+              "formatted": {
+                "language": "en",
+                "text": "Mibu, Tochigi, Japan"
+              },
+              "region_name": "Tochigi",
+              "region_qid": "Q44843"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "id": "mibu",
+      "kind": "administrative_area",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "infobox:5",
+                "original_text": "Location: Mibu, Tochigi, Japan",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Mibu"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "qid": "Q1354910"
+    },
+    {
+      "coordinates": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "statement:Q687942$637325CF-0CFC-4B74-8A64-D3ED7A452B7F",
+                "original_text": "\"latitude\": 36.47291667",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "source_rank": "normal",
+            "value": {
+              "crs": "EPSG:4326",
+              "globe_qid": "Q2",
+              "latitude": 36.47291667,
+              "longitude": 139.82344444,
+              "source_precision_degrees": 2.777777777778e-05
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "id": "wikidata-item-location",
+      "kind": "institution",
+      "qid": "Q687942"
+    }
+  ],
+  "modified_datetime": "2026-11-06T14:52:10.405609+00:00",
+  "population": {
+    "students_total": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:4",
+              "original_text": "Students: 631",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "period_status": "not_stated",
+          "value": {
+            "amount": 631,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "period_not_stated",
+          "single_source_family"
+        ],
+        "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "profile": {
+    "academic_focus": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:Undergraduate_programs",
+              "original_text": "[edit | edit source]\nSchool of Medicine (B.S.): Department of Medicine\nSchool of Nursing (B.S.): Department of Nursing",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Graduate_program",
+              "original_text": "[edit | edit source]\nGraduate School of Medicine (Ph.D. in Medicine)\nGraduate School of Nursing (Ph.D. in Nursing)\nGraduate Program of Midwifery",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": [
+            {
+              "language": "en",
+              "text": "Medicine"
+            },
+            {
+              "language": "en",
+              "text": "Nursing"
+            },
+            {
+              "language": "en",
+              "text": "Midwifery"
+            }
+          ],
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "summary": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "University in Tochigi Prefecture, Japan\nDokkyo Medical University (獨協医科大学, Dokkyō ika daigaku) is a private university in Mibu, Tochigi, Japan, established in 1973.\nDokkyo University is located in the town of Mibu, in Tochigi Prefecture, about 1.5 hours north of Tokyo by train.",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "infobox:2",
+              "original_text": "Former name: Dokkyo University School of Medicine",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:History",
+              "original_text": "[edit | edit source]\nDokkyo Medical University is a part of Dokkyo Group of Academic Institutions (Dokkyo Gakuen). Dokkyo Gakuen was established in Tokyo in 1883 as Doitsugaku Kyokai Gakko under the sponsorship of Nishi Amane, Yamagata Aritomo, and Katsura Taro. Doitsugaku Kyokai Gakko later became Dokkyo Gakuen, which was founded by Teiyu Amamo, and Minato Seki. Dokkyo Gakuen re-established junior and senior high schools in 1948. In 1964, Dokkyo Gakuen established Dokkyo University in Saitama for its 80-year anniversary. Subsequently, Dokkyo Gakuen established a medical school, Dokkyo Medical University in 1973 in Mibu, Tochigi. Its University Hospital, Saitama Medical Center, and Nikko Medical Center are now the biggest medical complex in northern area of Kanto.",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Undergraduate_programs",
+              "original_text": "[edit | edit source]\nSchool of Medicine (B.S.): Department of Medicine\nSchool of Nursing (B.S.): Department of Nursing",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Graduate_program",
+              "original_text": "[edit | edit source]\nGraduate School of Medicine (Ph.D. in Medicine)\nGraduate School of Nursing (Ph.D. in Nursing)\nGraduate Program of Midwifery",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Hospitals",
+              "original_text": "[edit | edit source]\nDokkyo University Hospital\nSaitama Medical Center (formerly Koshigaya Hospital)\nNikko Medical Center",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "infobox:4",
+              "original_text": "Students: 631",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "language": "en",
+            "text": "Dokkyo Medical University (獨協医科大学) is a private university in Mibu, Tochigi Prefecture, Japan. Established in 1973, it is part of the Dokkyo Group of Academic Institutions, known as Dokkyo Gakuen. The institution was formerly called Dokkyo University School of Medicine.\n\nThe group traces its history to Doitsugaku Kyokai Gakko, established in Tokyo in 1883; the medical university itself was established later, in Mibu. The university lists undergraduate programs in medicine and nursing, graduate programs in medicine and nursing, and a graduate program in midwifery. Its associated hospitals include Dokkyo University Hospital, Saitama Medical Center and Nikko Medical Center. The available student figures are undated and therefore cannot establish its current size."
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "website": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P856:0",
+              "original_text": "{\"property\": \"P856\", \"property_label\": \"official website\", \"statement_id\": \"Q687942$011F2D52-8B50-48FA-BAD1-77FFC6BB10C4\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"http://www.dokkyomed.ac.jp/index.html\", \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "value": "http://www.dokkyomed.ac.jp/index.html",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "qid": "Q687942",
+  "record_revision": 1,
+  "related_entities": {
+    "group": {
+      "kind": "institution",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:History",
+                "original_text": "[edit | edit source]\nDokkyo Medical University is a part of Dokkyo Group of Academic Institutions (Dokkyo Gakuen). Dokkyo Gakuen was established in Tokyo in 1883 as Doitsugaku Kyokai Gakko under the sponsorship of Nishi Amane, Yamagata Aritomo, and Katsura Taro. Doitsugaku Kyokai Gakko later became Dokkyo Gakuen, which was founded by Teiyu Amamo, and Minato Seki. Dokkyo Gakuen re-established junior and senior high schools in 1948. In 1964, Dokkyo Gakuen established Dokkyo University in Saitama for its 80-year anniversary. Subsequently, Dokkyo Gakuen established a medical school, Dokkyo Medical University in 1973 in Mibu, Tochigi. Its University Hospital, Saitama Medical Center, and Nikko Medical Center are now the biggest medical complex in northern area of Kanto.",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Dokkyo Group of Academic Institutions (Dokkyo Gakuen)"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    }
+  },
+  "relationships": {
+    "parent": [
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:History",
+                "original_text": "[edit | edit source]\nDokkyo Medical University is a part of Dokkyo Group of Academic Institutions (Dokkyo Gakuen). Dokkyo Gakuen was established in Tokyo in 1883 as Doitsugaku Kyokai Gakko under the sponsorship of Nishi Amane, Yamagata Aritomo, and Katsura Taro. Doitsugaku Kyokai Gakko later became Dokkyo Gakuen, which was founded by Teiyu Amamo, and Minato Seki. Dokkyo Gakuen re-established junior and senior high schools in 1948. In 1964, Dokkyo Gakuen established Dokkyo University in Saitama for its 80-year anniversary. Subsequently, Dokkyo Gakuen established a medical school, Dokkyo Medical University in 1973 in Mibu, Tochigi. Its University Hospital, Saitama Medical Center, and Nikko Medical Center are now the biggest medical complex in northern area of Kanto.",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "target_ref": "related:group"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    ]
+  },
+  "schema_version": "0.2.2",
+  "seed": {
+    "channels": [
+      "ranking_identifier",
+      "reviewed_institution_type"
+    ],
+    "import_id": "seed-84c3beb45367905f",
+    "screening_status": "included"
+  },
+  "selection_policy": "preferred-v1",
+  "sources": {
+    "s1": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T14:48:11.538163+00:00",
+      "revision_id": 2560363195,
+      "source_qid": "Q687942",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2560363195"
+    },
+    "s2": {
+      "family": "wikimedia",
+      "kind": "wikipedia",
+      "language": "en",
+      "page_id": 18237825,
+      "publisher_role": "encyclopedia",
+      "retrieved_at": "2026-11-06T14:48:21.564519+00:00",
+      "revision_id": 1359700817,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1359700817"
+    },
+    "s3": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T14:48:25.669686+00:00",
+      "revision_id": 2562156954,
+      "source_qid": "Q3918",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2562156954"
+    },
+    "s4": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T14:48:30.254602+00:00",
+      "revision_id": 2563565467,
+      "source_qid": "Q17",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2563565467"
+    },
+    "s5": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T14:48:34.632998+00:00",
+      "revision_id": 2550624601,
+      "source_qid": "Q1354910",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2550624601"
+    },
+    "s6": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T14:48:39.270892+00:00",
+      "revision_id": 2547610674,
+      "source_qid": "Q44843",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2547610674"
+    }
+  },
+  "update_datetime": "2026-11-06T14:52:10.405609+00:00"
+}

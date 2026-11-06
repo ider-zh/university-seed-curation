@@ -1,0 +1,841 @@
+{
+  "coverage": {
+    "finance": {
+      "checked_at": "2026-11-06T14:48:51.930044+00:00",
+      "status": "checked"
+    },
+    "geography": {
+      "checked_at": "2026-11-06T14:48:51.930044+00:00",
+      "status": "checked"
+    },
+    "history": {
+      "checked_at": "2026-11-06T14:48:51.930044+00:00",
+      "status": "checked"
+    },
+    "identity": {
+      "checked_at": "2026-11-06T14:48:51.930044+00:00",
+      "status": "checked"
+    },
+    "population": {
+      "checked_at": "2026-11-06T14:48:51.930044+00:00",
+      "status": "checked"
+    },
+    "profile": {
+      "checked_at": "2026-11-06T14:48:51.930044+00:00",
+      "status": "checked"
+    }
+  },
+  "curation": {
+    "identity_status": "in_scope",
+    "refresh_profile": "core-v1",
+    "reviewed_groups": [
+      "identity",
+      "geography",
+      "history",
+      "population",
+      "finance",
+      "profile"
+    ]
+  },
+  "finance": {
+    "assets": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2403:0",
+              "original_text": "{\"property\": \"P2403\", \"property_label\": \"total assets\", \"statement_id\": \"Q1055874$E8310FE8-A448-4E47-A9CC-90777E99343D\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+128444000\", \"unit\": \"http://www.wikidata.org/entity/Q4917\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2020-06-30T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "period": {
+            "day": 30,
+            "kind": "date",
+            "month": 6,
+            "year": 2020
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": "128444000",
+            "currency": "USD",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "single_source_family"
+        ],
+        "reason_code": "only_available"
+      }
+    },
+    "endowment": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P6589:0",
+              "original_text": "{\"property\": \"P6589\", \"property_label\": \"endowment\", \"statement_id\": \"Q1055874$E8665533-EF3E-4106-8B38-710CBD9EC252\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+19446000\", \"unit\": \"http://www.wikidata.org/entity/Q4917\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2020-06-30T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "period": {
+            "day": 30,
+            "kind": "date",
+            "month": 6,
+            "year": 2020
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": "19446000",
+            "currency": "USD",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "infobox:6",
+              "original_text": "Endowment: $34.133 million[1]",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c2",
+          "period_status": "not_stated",
+          "value": {
+            "amount": "34133000",
+            "currency": "USD",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c2",
+        "qualifications": [
+          "period_not_stated",
+          "single_source_family"
+        ],
+        "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+        "reason_code": "best_available"
+      }
+    }
+  },
+  "history": {
+    "milestones": [
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Origins",
+                  "original_text": "[edit | edit source]\nThe university began in 1927 as the first junior college in Connecticut. Founders E. Everett Cortright, Alfred Fones, and Sumner Simpson saw a need in Bridgeport, then one of only six American cities of more than 100,000 residents lacking a college or university. The school expanded significantly, adding dormitories and a school of business. The school purchased the former P. T. Barnum estate and neighboring property adjacent to Seaside Park and became a four-year institution in 1947, when it was renamed the University of Bridgeport.[6]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "precision": "year",
+                "year": 1927
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "origin",
+        "kind": "institution_establishment",
+        "subject_ref": "institution"
+      },
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Naming_and_development",
+                  "original_text": "On the twentieth anniversary of the Junior College of Connecticut in 1947, the governor of Connecticut chartered the institution as a four-year university with authority to grant the baccalaureate degree. By that time, the P.T. Barnum estate at Seaside Park had been purchased. The Junior College of Connecticut was retained and the College of Arts and Sciences and the Colleges of Business Administration were established at once. These were followed soon after by the Colleges of Nursing, Education and Engineering. The legislature of Connecticut acknowledged the school's growth by renaming the institution \"University of Bridgeport\" in 1947.\nThe university's merger with the Weylister Secretarial",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "precision": "year",
+                "year": 1947
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "university",
+        "kind": "university_status",
+        "subject_ref": "institution"
+      }
+    ]
+  },
+  "identity": {
+    "aliases": [
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "infobox:0",
+                "original_text": "Former name: Junior College of Connecticut (1927–1947)",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Junior College of Connecticut"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    ],
+    "identifiers": {
+      "P5586": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P5586:0",
+                "original_text": "{\"property\": \"P5586\", \"property_label\": \"Times Higher Education World University ID\", \"statement_id\": \"Q1055874$A8B82B90-C133-4A9D-9E66-4B2A6E43D4DC\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"university-bridgeport\"}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": "university-bridgeport",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    "kind": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:1",
+              "original_text": "Type: Private university",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": "university",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "names": {
+      "en": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q1055874\", \"labels\": {\"en\": \"University of Bridgeport\"}, \"descriptions\": {\"en\": \"private university in Bridgeport, Connecticut, United States\"}}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": "University of Bridgeport",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    }
+  },
+  "leadership": {
+    "president": {
+      "candidates": [
+        {
+          "current_basis": "infobox_current",
+          "evidence": [
+            {
+              "locator": "infobox:7",
+              "original_text": "President: Danielle Wilken",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "person": {
+              "name": "Danielle Wilken"
+            },
+            "title_original": {
+              "language": "en",
+              "text": "President"
+            }
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "single_source_family",
+          "reported_current"
+        ],
+        "reason": "The page reports this person in its current officeholder field; a term-end date is not required.",
+        "reason_code": "infobox_current"
+      }
+    }
+  },
+  "locations": [
+    {
+      "address": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P159:0",
+                "original_text": "{\"property\": \"P159\", \"property_label\": \"headquarters location\", \"statement_id\": \"Q1055874$36EC73A7-78AD-47F1-932C-D8304E5E13B9\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 49174, \"id\": \"Q49174\"}, \"qualifiers\": {\"P625\": [{\"snaktype\": \"value\", \"value\": {\"latitude\": 41.1646, \"longitude\": -73.1909, \"altitude\": null, \"precision\": 0.0001, \"globe\": \"http://www.wikidata.org/entity/Q2\"}}, {\"snaktype\": \"value\", \"value\": {\"latitude\": 41.1659, \"longitude\": -73.1911, \"altitude\": null, \"precision\": 0.0001, \"globe\": \"http://www.wikidata.org/entity/Q2\"}}], \"P281\": [{\"snaktype\": \"value\", \"value\": \"06604\"}], \"P17\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 30, \"id\": \"Q30\"}}], \"P6375\": [{\"snaktype\": \"value\", \"value\": {\"text\": \"126 Park Avenue\", \"language\": \"en\"}}]}}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "formatted": {
+                "language": "en",
+                "text": "126 Park Avenue, Bridgeport, Connecticut 06604, United States"
+              }
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "id": "headquarters",
+      "kind": "headquarters",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P159:0",
+                "original_text": "{\"property\": \"P159\", \"property_label\": \"headquarters location\", \"statement_id\": \"Q1055874$36EC73A7-78AD-47F1-932C-D8304E5E13B9\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 49174, \"id\": \"Q49174\"}, \"qualifiers\": {\"P625\": [{\"snaktype\": \"value\", \"value\": {\"latitude\": 41.1646, \"longitude\": -73.1909, \"altitude\": null, \"precision\": 0.0001, \"globe\": \"http://www.wikidata.org/entity/Q2\"}}, {\"snaktype\": \"value\", \"value\": {\"latitude\": 41.1659, \"longitude\": -73.1911, \"altitude\": null, \"precision\": 0.0001, \"globe\": \"http://www.wikidata.org/entity/Q2\"}}], \"P281\": [{\"snaktype\": \"value\", \"value\": \"06604\"}], \"P17\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 30, \"id\": \"Q30\"}}], \"P6375\": [{\"snaktype\": \"value\", \"value\": {\"text\": \"126 Park Avenue\", \"language\": \"en\"}}]}}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Bridgeport"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "qid": "Q49174"
+    },
+    {
+      "coordinates": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "statement:Q1055874$78766484-005B-4961-8751-7DBA467CD4F2",
+                "original_text": "\"latitude\": 41.1648",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "source_rank": "normal",
+            "value": {
+              "crs": "EPSG:4326",
+              "globe_qid": "Q2",
+              "latitude": 41.1648,
+              "longitude": -73.1907,
+              "source_precision_degrees": 0.0001
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "id": "wikidata-item-location",
+      "kind": "institution",
+      "qid": "Q1055874"
+    }
+  ],
+  "modified_datetime": "2026-11-06T14:52:32.859425+00:00",
+  "population": {
+    "academic_staff": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:8",
+              "original_text": "Faculty: 147 full-time",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "period_status": "not_stated",
+          "value": {
+            "amount": 147,
+            "basis": "headcount",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "period_not_stated",
+          "single_source_family"
+        ],
+        "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+        "reason_code": "only_available"
+      }
+    },
+    "employees_total": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P1128:0",
+              "original_text": "{\"property\": \"P1128\", \"property_label\": \"employees\", \"statement_id\": \"Q1055874$53850899-C2A5-47CC-8D08-052811420410\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+656\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2020-09-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 10, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "period": {
+            "kind": "date",
+            "month": 9,
+            "year": 2020
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 656,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "single_source_family"
+        ],
+        "reason_code": "only_available"
+      }
+    },
+    "postgraduate_students": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:10",
+              "original_text": "Postgraduates: 2,282",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "period_status": "not_stated",
+          "value": {
+            "amount": 2282,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "period_not_stated",
+          "single_source_family"
+        ],
+        "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+        "reason_code": "only_available"
+      }
+    },
+    "students_total": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:0",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q1055874$D5FBEF5A-E011-40EB-8466-AF33FF796B99\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+4155\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2020-09-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 10, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "period": {
+            "kind": "date",
+            "month": 9,
+            "year": 2020
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 4155,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "single_source_family"
+        ],
+        "reason_code": "only_available"
+      }
+    },
+    "undergraduate_students": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:9",
+              "original_text": "Undergraduates: 3,152[1]",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "period_status": "not_stated",
+          "value": {
+            "amount": 3152,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "period_not_stated",
+          "single_source_family"
+        ],
+        "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "profile": {
+    "academic_focus": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:Academics",
+              "original_text": "[edit | edit source]\nThe University of Bridgeport is accredited by the New England Association of Schools and Colleges. The university is also accredited by the board of governors of the Connecticut Department of Higher Education.[35]\nAcademic programs range from associate degrees in areas such as Business Administration and Dental Hygiene, to Bachelor of Arts, Bachelor of Fine Arts, Bachelor of Music, and Bachelor of Science degrees in areas such as Accounting, Psychology, Graphic Design, Computer Science, Mathematics, Biology, Music, Computer Engineering, and International Business. The school also offers master's and doctoral programs in areas such as business, counseling, engineering, and education. UB also has adult and continuing education/distance learning programs on their main campus, as well as their Waterbury branch campus, wit",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": [
+            {
+              "language": "en",
+              "text": "business"
+            },
+            {
+              "language": "en",
+              "text": "counseling"
+            },
+            {
+              "language": "en",
+              "text": "engineering"
+            },
+            {
+              "language": "en",
+              "text": "education"
+            }
+          ],
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "degree_levels": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:Academics",
+              "original_text": "[edit | edit source]\nThe University of Bridgeport is accredited by the New England Association of Schools and Colleges. The university is also accredited by the board of governors of the Connecticut Department of Higher Education.[35]\nAcademic programs range from associate degrees in areas such as Business Administration and Dental Hygiene, to Bachelor of Arts, Bachelor of Fine Arts, Bachelor of Music, and Bachelor of Science degrees in areas such as Accounting, Psychology, Graphic Design, Computer Science, Mathematics, Biology, Music, Computer Engineering, and International Business. The school also offers master's and doctoral programs in areas such as business, counseling, engineering, and education. UB also has adult and continuing education/distance learning programs on their main campus, as well as their Waterbury branch campus, wit",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": [
+            "associate",
+            "bachelor",
+            "master",
+            "doctorate"
+          ],
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "summary": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "Private university in Bridgeport, Connecticut, US\nThe University of Bridgeport (UB or UBPT) is a private university in Bridgeport, Connecticut, United States. The university is accredited by the New England Commission of Higher Education.[2] In 2021, the university was purchased by Goodwin University; it retained its own name, brand, and board of trustees.[3]\nFounded originally as the Junior College of Connecticut, it is the only university in Bridgeport. The university offers more than 60 degree programs to over 5,000 students at the bachelor's, master's, and doctoral levels. This includes the only Chinese medicine program in Connecticut and one of the few chiropractic schools on the East Coast.[4] The university hosted a program in naturopathic medicine until it was discontinued in 2019.[5]\nE. Everett Cortright, Alfred Fones, and former",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Naming_and_development",
+              "original_text": "On the twentieth anniversary of the Junior College of Connecticut in 1947, the governor of Connecticut chartered the institution as a four-year university with authority to grant the baccalaureate degree. By that time, the P.T. Barnum estate at Seaside Park had been purchased. The Junior College of Connecticut was retained and the College of Arts and Sciences and the Colleges of Business Administration were established at once. These were followed soon after by the Colleges of Nursing, Education and Engineering. The legislature of Connecticut acknowledged the school's growth by renaming the institution \"University of Bridgeport\" in 1947.\nThe university's merger with the Weylister Secretarial",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Present_day",
+              "original_text": "In January 2021, it was announced that the non-profit Goodwin University would be taking over the University of Bridgeport, and operating it as a subsidiary, although UB would retain its own name and brand.[3] Goodwin University's provost and dean of faculty, Danielle Wilken, was named as UB’s 12th president.[28]\nTwo months later, Paier College (formerly Paier College of Art) announced plans to move its campus to Bridgeport, into facilities formerly used by the University of ",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Academics",
+              "original_text": "[edit | edit source]\nThe University of Bridgeport is accredited by the New England Association of Schools and Colleges. The university is also accredited by the board of governors of the Connecticut Department of Higher Education.[35]\nAcademic programs range from associate degrees in areas such as Business Administration and Dental Hygiene, to Bachelor of Arts, Bachelor of Fine Arts, Bachelor of Music, and Bachelor of Science degrees in areas such as Accounting, Psychology, Graphic Design, Computer Science, Mathematics, Biology, Music, Computer Engineering, and International Business. The school also offers master's and doctoral programs in areas such as business, counseling, engineering, and education. UB also has adult and continuing education/distance learning programs on their main campus, as well as their Waterbury branch campus, wit",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "claim:P2196:0",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q1055874$D5FBEF5A-E011-40EB-8466-AF33FF796B99\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+4155\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2020-09-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 10, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "section:Naming_and_development",
+              "original_text": "The university had moved all of its operations from its Fairfield Avenue location to the campus at Seaside Park by 1950. There it occupied 22 acres of land that now has grown to 52 acres. An enrollment of almost 3,500 students included the first influx of international students. The university awarded its first master's degree in 1951 and its first doctoral program in Educational Leadership in 1979, and added a Ph.D. degree program in Computer Science and Engineering in 2006. Two terminal, professional, alternative medicine programs in Chiropractic and Naturopathic Medicine were established in 1991 and 1996 respectively.[7] The naturopathic medicine program was discontinued in 2019.[5]",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Present_day",
+              "original_text": "In 2018, the university reorganized these colleges and schools into three colleges (with constituent programs and schools), in order to encourage interdisciplinary collaboration, streamline administrative channels, and create clarity and identity for current and potential students:\nThe College of Arts & Sciences\nThe College of Business, Education, & Engineering\nThe College of Health Sciences\nIn 2019, the university announced that the College of Naturopathic Medicine would be discontinued.[5]\nOn July 25, 2019, the University of Bridgeport and Marlboro College announced plans to enter into a merger that would create an expanded university with deeper connections between professional programs a",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "language": "en",
+            "text": "The University of Bridgeport is a private university in Bridgeport, Connecticut, United States. It began in 1927 as the Junior College of Connecticut, founded by E. Everett Cortright, Alfred Fones and Sumner Simpson. In 1947 it became a four-year institution and adopted the University of Bridgeport name. It had moved its operations to the Seaside Park campus by 1950. The university awarded its first master’s degree in 1951 and began a doctoral program in educational leadership in 1979.\n\nIn 2021 Goodwin University purchased the university, which retained its name and board of trustees. Bridgeport offers associate, bachelor’s, master’s and doctoral programs across fields including business, engineering, education and health. Its naturopathic medicine program was discontinued in 2019. In 2018 the university reorganized its schools into colleges of Arts and Sciences, Business, Education and Engineering, and Health Sciences. Wikidata records 4,155 students in September 2020."
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "website": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P856:0",
+              "original_text": "{\"property\": \"P856\", \"property_label\": \"official website\", \"statement_id\": \"Q1055874$D4D2A160-9000-4C5F-A4AC-9D0DDDD6463E\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"https://www.bridgeport.edu/\", \"qualifiers\": {\"P407\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 1860, \"id\": \"Q1860\"}}]}}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "value": "https://www.bridgeport.edu/",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "qid": "Q1055874",
+  "record_revision": 1,
+  "related_entities": {
+    "goodwin": {
+      "kind": "institution",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "infobox:3",
+                "original_text": "Parent institution: Goodwin University",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Goodwin University"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    }
+  },
+  "relationships": {
+    "parent": [
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Present_day",
+                "original_text": "In January 2021, it was announced that the non-profit Goodwin University would be taking over the University of Bridgeport, and operating it as a subsidiary, although UB would retain its own name and brand.[3] Goodwin University's provost and dean of faculty, Danielle Wilken, was named as UB’s 12th president.[28]\nTwo months later, Paier College (formerly Paier College of Art) announced plans to move its campus to Bridgeport, into facilities formerly used by the University of ",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "target_ref": "related:goodwin"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    ]
+  },
+  "schema_version": "0.2.2",
+  "seed": {
+    "channels": [
+      "ranking_identifier",
+      "reviewed_institution_type"
+    ],
+    "import_id": "seed-84c3beb45367905f",
+    "screening_status": "included"
+  },
+  "selection_policy": "preferred-v1",
+  "sources": {
+    "s1": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T14:48:11.591526+00:00",
+      "revision_id": 2564372818,
+      "source_qid": "Q1055874",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2564372818"
+    },
+    "s2": {
+      "family": "wikimedia",
+      "kind": "wikipedia",
+      "language": "en",
+      "page_id": 496347,
+      "publisher_role": "encyclopedia",
+      "retrieved_at": "2026-11-06T14:48:25.853631+00:00",
+      "revision_id": 1375061237,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1375061237"
+    },
+    "s3": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T14:48:30.346556+00:00",
+      "revision_id": 2557623321,
+      "source_qid": "Q4917",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2557623321"
+    },
+    "s4": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T14:48:25.669686+00:00",
+      "revision_id": 2562156954,
+      "source_qid": "Q3918",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2562156954"
+    },
+    "s5": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T14:48:34.468386+00:00",
+      "revision_id": 2441014281,
+      "source_qid": "Q23002054",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2441014281"
+    },
+    "s6": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T14:48:39.226373+00:00",
+      "revision_id": 2565041516,
+      "source_qid": "Q30",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2565041516"
+    },
+    "s7": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T14:48:43.714259+00:00",
+      "revision_id": 2564433075,
+      "source_qid": "Q779",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2564433075"
+    },
+    "s8": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T14:48:51.913286+00:00",
+      "revision_id": 2530088330,
+      "source_qid": "Q49174",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2530088330"
+    }
+  },
+  "update_datetime": "2026-11-06T14:52:32.859425+00:00"
+}
