@@ -45,11 +45,25 @@ class ManagerTests(unittest.TestCase):
         m.set_phase(self.root,'Q1','researching',expires_at='2030-11-05T00:00:00Z')
         self.assertEqual(self.next()[0]['reason'],'interrupted_job')
     def test_capacity_reserves_review_and_caps_total_calls(self):
-        for q in ['Q1','Q2']:m.begin(self.root,BASE,q,'researching',self.job(q))
-        m.set_phase(self.root,'Q3','review_pending')
-        with self.assertRaisesRegex(ValueError,'reserved'):m.begin(self.root,BASE,'Q4','researching',self.job('Q4'))
-        m.begin(self.root,BASE,'Q3','reviewing',self.job('review-Q3'))
-        with self.assertRaisesRegex(ValueError,'capacity'):m.begin(self.root,BASE,'Q4','reviewing',self.job('review-Q4'))
+        for q in ['Q1','Q2','Q3','Q4']:m.begin(self.root,BASE,q,'researching',self.job(q))
+        m.set_phase(self.root,'Q5','review_pending')
+        with self.assertRaisesRegex(ValueError,'reserved'):m.begin(self.root,BASE,'Q6','researching',self.job('Q6'))
+        m.begin(self.root,BASE,'Q5','reviewing',self.job('review-Q5'))
+        for phase in ['researching','reviewing']:
+            with self.assertRaisesRegex(ValueError,'capacity'):m.begin(self.root,BASE,'Q6',phase,self.job('Q6-'+phase))
+    def test_five_independent_reviews_run_concurrently_and_release_capacity(self):
+        for q in ['Q1','Q2','Q3','Q4','Q5']:
+            m.begin(self.root,BASE,q,'reviewing',self.job('review-'+q))
+        with self.assertRaisesRegex(ValueError,'active'):
+            m.begin(self.root,BASE,'Q1','reviewing',self.job('duplicate-Q1'))
+        with self.assertRaisesRegex(ValueError,'capacity'):
+            m.begin(self.root,BASE,'Q6','reviewing',self.job('review-Q6'))
+        m.set_phase(self.root,'Q1','ready_to_publish')
+        m.begin(self.root,BASE,'Q6','reviewing',self.job('review-Q6-new'))
+        m.set_phase(self.root,'Q2','reviewing',expires_at='2030-11-05T00:00:00Z')
+        m.begin(self.root,BASE,'Q7','researching',self.job('research-Q7'))
+        with self.assertRaisesRegex(ValueError,'stale'):
+            m.require_job(self.root,'Q2','review',self.job('review-Q2'))
     def test_retry_wait_is_not_completion_and_other_tasks_continue(self):
         m.set_phase(self.root,'Q1','retry_wait',retry_after='2030-11-07T00:00:00Z',resume_phase='research_pending')
         self.assertNotIn('Q1',[r['qid'] for r in self.next()])

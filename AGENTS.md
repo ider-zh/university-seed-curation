@@ -18,8 +18,9 @@ Read docs/handoff.md, docs/agent-workflow.md and the bundled
 - Task Agent selects tasks, prepares/compiles jobs, tracks retries, manages
   revisions and publishes. It must not perform the subagents' primary university
   research or fabricate Review approval. Each Research subagent handles one QID in its own session.
-  Reuse one Review subagent session across that batch of up to five QIDs.
-- The batch Review subagent checks every fact, context, locator, period, unit,
+  Give each QID its own Review subagent session, distinct from every Research
+  session and every other QID's Review session. Review different QIDs in parallel.
+- Each QID's Review subagent checks every fact, context, locator, period, unit,
   all six coverage groups, summary and prior request against the exact prepared,
   hash-verified offline Research snapshot. Never re-fetch Review sources or give
   Review Research-private model traces. Only the manager publishes.
@@ -29,8 +30,9 @@ Read docs/handoff.md, docs/agent-workflow.md and the bundled
   Never infer publication from an old PR merge, task status or a local bundle.
 - Run next --limit 5; it returns actions and reasons from main plus local jobs.
   It does not claim tasks. Prepare reserves the QID locally. One manager only;
-  independent managers in other workspaces are unsupported. Maximum three
-  concurrent data calls total and one Review; reserve capacity for waiting Review.
+  independent managers in other workspaces are unsupported. Maximum five
+  concurrent data calls total, across Research and Review combined;
+  prioritize waiting Reviews and reserve capacity for them.
   Prefer Terra medium when offered; report actual metadata or not_reported.
   Heartbeat active jobs; discard results superseded by a newer job for the QID.
 - On request_changes, retain request IDs and exact proposal digests. Prepare a

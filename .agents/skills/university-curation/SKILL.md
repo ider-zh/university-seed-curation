@@ -22,9 +22,10 @@ requires a shell token, signing key, gh, Codex CLI, SSH or another host.
    prompt/schema to a native Research subagent. Record actual metadata, compile
    its JSON, then use unified-proposal before Review.
 3. Run review-prepare with --research-job into a fresh private Review directory.
-   Use one Review subagent for the batch, passing each prepared per-QID packet/
-   prompt/schema sequentially. Compile each result with that same actual Review
-   session ID, distinct from every Research session in the batch.
+   Create a dedicated Review subagent for each QID and pass only its prepared
+   packet/prompt/schema. Review different QIDs in parallel. Compile each result
+   with its actual Review session ID, distinct from every Research session and
+   every other QID's Review session.
    It must check the frozen hash-verified snapshot offline, not re-fetch sources
    or read Research-private model traces. Run review-compile on its actual JSON.
 4. On request_changes, retain request IDs/proposal hashes, start fresh Research
@@ -38,8 +39,11 @@ requires a shell token, signing key, gh, Codex CLI, SSH or another host.
    Refresh and re-review on conflict. Fetch the actual published main and run
    publication-confirm before reporting completion.
 
-Keep at most three active data calls including one Review; reserve waiting Review
-capacity and heartbeat active jobs. Use the same workspace for private recovery.
+Keep at most five active data calls across Research and Review combined, with
+one active subagent per QID. Prioritize waiting Reviews, reserve capacity for
+them and heartbeat active jobs. If one reviewer is lost, replace only that QID's
+Review in a fresh session while other approvals remain valid on the same main
+baseline. Use the same workspace for private recovery.
 After a cache/job loss, rebuild evidence; a public historical proposal is not a
 substitute for captured sources. Historical receipts remain audit artifacts.
 

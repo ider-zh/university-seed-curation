@@ -22,8 +22,10 @@ No coordination tokens or private caches were exported. Existing historical
 signatures and schema files are retained for audit, not as execution modes.
 
 Private .private/native/manager-state.json stores job progress, expiry and retries.
-An OS lock serializes checkpoint writes. The manager enforces three data calls,
-one Review, one active subagent per QID. This is deliberately a single-manager
+An OS lock serializes checkpoint writes. The manager enforces five concurrent
+data calls across Research and Review combined, one active subagent per QID.
+Each Research result receives its own independent Review subagent; multiple
+Reviews may run concurrently. This is deliberately a single-manager
 workflow, not a distributed worker service. Use the same checkout to retain
 captures; without private captures, rebuild Research evidence before Review.
 
@@ -48,5 +50,9 @@ standalone coordinate Review and duplicate Review formats. integrity.py verifies
 the existing signed seed catalog read-only. Current Research output and the
 example generator use schema v0.2.2; historical schema/data/receipt files remain
 unchanged audit artifacts. The only startup prompt is references/task-agent.md.
-A publication batch now requires a distinct Research session per QID and the
-same Review session for every approved result.
+A new publication batch requires a distinct Research session and a distinct
+Review session per QID, with no shared Review or cross-role sessions. Existing
+published receipts remain unchanged, including historical shared-reviewer batches.
+Any unpublished shared-reviewer approvals must be re-reviewed per QID before a
+new multi-QID publication. Loss of one Review session requires replacing only
+that QID's Review, provided the main baseline has not changed.

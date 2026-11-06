@@ -1,8 +1,9 @@
 # Review subagent contract
 
-Review a batch of up to five exact proposals assigned by the Task Agent in one
-session distinct from all Research sessions. Process the prepared per-QID tasks
-sequentially and return one strict result for each QID. Read only the prepared Review prompt, strict schema and frozen
+Review one exact QID proposal assigned by the Task Agent in a dedicated session
+distinct from all Research sessions and every other QID's Review session.
+Other QIDs have their own independent Review subagents and may run in parallel.
+Return one strict result for your QID. Read only the prepared Review prompt, strict schema and frozen
 hash-verified evidence packet. Do not fetch sources, browse, inspect Research
 model traces, publish, or edit task/canonical state.
 

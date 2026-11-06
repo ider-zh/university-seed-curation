@@ -69,6 +69,8 @@ class NativeLifecycleTests(unittest.TestCase):
     def review(self,job,proposal,name,decision="approve",session=None):
         review=self.private/name
         self.run_cli('review-prepare','--proposal',proposal,'--research-job',job,'--job',review)
+        return self.compile_review(review,name,decision,session)
+    def compile_review(self,review,name,decision="approve",session=None):
         value=load_json((review/'review-input.json').read_bytes())
         output={'qid':value['proposal']['qid'],'decision':decision,'checks':[{'id':r['id'],'supported':True,'support_basis':'direct','reason':'Fixture supported'} for r in value['facts']+value['contexts']],
             'coverage_checks':[{'group':g,'status':'checked','reason':'Fixture checked'} for g in ['identity','geography','history','population','finance','profile']],
@@ -151,23 +153,63 @@ class NativeLifecycleTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError,'changed after'):
             self.run_cli('unified-publish','--proposal',proposal,'--review-job',review,'--review-attempt',compiled['private_attempt'],'--batch-id','changed-result','--output',self.private/'changed-result')
 
-    def test_publication_batch_requires_one_reviewer_for_distinct_research_sessions(self):
+    def test_publication_batch_requires_independent_reviewers_per_qid(self):
         first_research,first_proposal=self.research('Q101')
         second_research,second_proposal=self.research('Q102')
         first_review,first_result=self.review(first_research,first_proposal,'first-review',session='batch-reviewer')
-        second_review,second_result=self.review(second_research,second_proposal,'second-review',session='another-reviewer')
+        second_review,second_result=self.review(second_research,second_proposal,'second-review',session='batch-reviewer')
         def arguments(review,result,output):
             return ['unified-publish','--proposal',first_proposal,'--proposal',second_proposal,
                 '--review-job',first_review,'--review-job',review,'--review-attempt',first_result['private_attempt'],
                 '--review-attempt',result['private_attempt'],'--batch-id','two-schools','--output',output]
-        with self.assertRaisesRegex(ValueError,'One Review subagent'):
-            self.run_cli(*arguments(second_review,second_result,self.private/'mixed-reviewers'))
-        second_review,second_result=self.review(second_research,second_proposal,'rechecked',session='batch-reviewer')
-        bundle=self.private/'same-reviewer'
+        with self.assertRaisesRegex(ValueError,'own Review subagent'):
+            self.run_cli(*arguments(second_review,second_result,self.private/'shared-reviewer'))
+        second_review,second_result=self.review(second_research,second_proposal,'rechecked',session='another-reviewer')
+        bundle=self.private/'independent-reviewers'
         self.run_cli(*arguments(second_review,second_result,bundle))
         manifest=load_json((bundle/'data/batches/two-schools.json').read_bytes())
         self.assertEqual([row['qid'] for row in manifest['records']],['Q101','Q102'])
+        plan=load_json((bundle/'operations.json').read_bytes())
+        # The remote-file verifier must reject shared reviewers as well as the
+        # local publication builder, even if receipt/manifest hashes are updated.
+        files={path:(bundle/path).read_bytes() for path in plan['files']}
+        receipt_path='data/reviews/two-schools/Q102.json'
+        receipt=load_json(files[receipt_path]);receipt['review']['review_session']='batch-reviewer'
+        files[receipt_path]=encode(receipt)
+        manifest['records'][1]['receipt_sha256']=sha(files[receipt_path])
+        files['data/batches/two-schools.json']=encode(manifest)
+        with self.assertRaisesRegex(ValueError,'own Review subagent'):
+            unified_publish.verify_files(self.root,plan['base_commit'],files,self.trust)
+        for path in plan['files']:
+            target=self.root/path;target.parent.mkdir(parents=True,exist_ok=True);target.write_bytes((bundle/path).read_bytes())
+        self.commit('independent Review publication')
+        verified=self.run_cli('publication-confirm','--bundle',bundle,'--published-ref',self.git('rev-parse','HEAD'))
+        self.assertEqual(verified['qids'],['Q101','Q102'])
         self.http.assert_not_called()
+
+    def test_parallel_review_jobs_compile_out_of_order(self):
+        first_research,first_proposal=self.research('Q101')
+        second_research,second_proposal=self.research('Q102')
+        first=self.private/'parallel-first';second=self.private/'parallel-second'
+        for research,proposal,job in [(first_research,first_proposal,first),(second_research,second_proposal,second)]:
+            self.run_cli('review-prepare','--proposal',proposal,'--research-job',research,'--job',job)
+        self.assertEqual([manager._read(self.root)['tasks'][q]['phase'] for q in ['Q101','Q102']],['reviewing','reviewing'])
+        with self.assertRaisesRegex(ValueError,'active'):
+            self.run_cli('review-prepare','--proposal',first_proposal,'--research-job',first_research,'--job',self.private/'duplicate')
+        self.compile_review(second,'parallel-second')
+        self.assertEqual(manager._read(self.root)['tasks']['Q101']['phase'],'reviewing')
+        self.compile_review(first,'parallel-first')
+        self.assertEqual([manager._read(self.root)['tasks'][q]['phase'] for q in ['Q101','Q102']],['ready_to_publish','ready_to_publish'])
+        self.http.assert_not_called()
+
+    def test_batch_sessions_reject_reused_research_and_cross_role_sessions(self):
+        def pair(research,review):return ({'research':{'session':research}},{'review_session':review})
+        with self.assertRaisesRegex(ValueError,'own Research'):
+            unified_publish.check_batch_sessions([pair('r1','v1'),pair('r1','v2')])
+        with self.assertRaisesRegex(ValueError,'also be a Research'):
+            unified_publish.check_batch_sessions([pair('r1','r2'),pair('r2','v2')])
+        with self.assertRaisesRegex(ValueError,'at least one'):
+            unified_publish.check_batch_sessions([])
 
     def test_new_publication_rejects_old_receipt_attribution(self):
         research,proposal=self.research()

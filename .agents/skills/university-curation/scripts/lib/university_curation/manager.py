@@ -18,6 +18,7 @@ BACKLOG_TYPE = 'university-manager-backlog-v1'
 PHASES = {'research_pending','researching','review_pending','reviewing','revision_requested',
           'ready_to_publish','publishing','completed','retry_wait','unresolved'}
 ACTIVE = {'researching','reviewing'}
+MAX_ACTIVE_CALLS = 5
 
 
 def now():
@@ -124,9 +125,9 @@ def begin(repo,base,entity,phase,job,at=None):
         live=[r for r in state['tasks'].values() if r.get('phase') in ACTIVE and instant(r['expires_at'])>instant(stamp)]
         if task.get('phase') in ACTIVE and instant(task['expires_at'])>instant(stamp):
             raise ValueError('QID already has an active subagent')
-        if len(live)>=3 or (phase=='reviewing' and any(r['phase']=='reviewing' for r in live)):
+        if len(live)>=MAX_ACTIVE_CALLS:
             raise ValueError('Native subagent capacity exhausted')
-        if phase=='researching' and len(live)>=2 and any(r.get('phase')=='review_pending' for r in state['tasks'].values()):
+        if phase=='researching' and len(live)>=MAX_ACTIVE_CALLS-1 and any(r.get('phase')=='review_pending' for r in state['tasks'].values()):
             raise ValueError('Capacity is reserved for waiting Review')
         revision=0 if task.get('phase')=='completed' else task.get('revision',0)
         if phase=='researching' and task.get('phase')=='revision_requested':

@@ -17,15 +17,18 @@ from .records import encode, instant
 
 
 def check_batch_sessions(proposals_and_verdicts):
+    """Require a dedicated Research/Review pair for every QID in a new batch."""
     research=[proposal['research']['session'] for proposal,_ in proposals_and_verdicts]
-    reviews={verdict['review_session'] for _,verdict in proposals_and_verdicts}
-    if len(reviews)!=1:
-        raise ValueError('One Review subagent session must review the publication batch')
+    reviews=[verdict['review_session'] for _,verdict in proposals_and_verdicts]
+    if not research:
+        raise ValueError('Publication requires at least one Research/Review pair')
+    if len(reviews)!=len(set(reviews)):
+        raise ValueError('Each QID requires its own Review subagent session')
     if len(research)!=len(set(research)):
         raise ValueError('Each QID requires its own Research subagent session')
-    if reviews.intersection(research):
+    if set(reviews).intersection(research):
         raise ValueError('Review session cannot also be a Research session in this batch')
-    return next(iter(reviews))
+    return tuple(reviews)
 
 
 def _verified(repo, base, proposal, review_job, attempt, trust, catalog, catalog_hash):

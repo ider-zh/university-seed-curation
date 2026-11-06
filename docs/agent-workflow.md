@@ -1,7 +1,8 @@
 # Single-manager Research and Review
 
-One Task Agent works from main, with one native Research subagent per QID and a
-single native Review subagent for each batch of up to five QIDs. Python does not launch models. The host owns
+One Task Agent works from main, with one native Research subagent and one
+independent native Review subagent per QID. Reviews for different QIDs run in
+parallel, within the shared five-call limit. Python does not launch models. The host owns
 native subagent tools and the GitHub plugin. No remote coordination branches,
 PRs, separate Review service or shell GitHub credentials are used.
 
@@ -14,8 +15,10 @@ verify interrupted publication, publish approved work, Review, Research revision
 then new/recovered Research, primary before discovery. next remains advisory.
 
 Prepare records an active local job under an OS-locked atomic checkpoint. It
-rejects duplicate active QIDs and exhausted capacity. There are at most three
-active data calls including at most one Review; waiting Review reserves capacity.
+rejects duplicate active QIDs and exhausted capacity. There are at most five
+active data calls across Research and Review combined, with no separate one-Review
+limit. Prioritize waiting Reviews; reserve the last free slot for them rather
+than starting more Research when four calls are active and Review is pending.
 Run job-heartbeat while a subagent is active. Job expiry permits recovery but
 keeps completed Research/Review progress. Compilation checks the current job
 identity so an obsolete job cannot replace newer work.
@@ -35,8 +38,11 @@ review-prepare requires --research-job. It verifies the Research packet/root
 hashes, copies the evidence into a separate Review job, and prepares every fact,
 context and prior request for Review. No HTTP retrieval fallback exists. Review
 reads only its packet/prompt/schema and returns strict JSON in a session distinct
-from every Research session. Send each QID packet to the same Review subagent
-sequentially; compile one result per QID using the same Review session ID.
+from every Research session and every other QID's Review session. Dispatch each
+QID packet to its own Review subagent as soon as Research is compiled, without
+waiting for other QIDs. Compile each result with that QID's actual Review session ID.
+If a Review session is lost, re-review only its QID in a fresh session; retain
+other valid approvals on the same main baseline.
 review-compile validates complete coverage and cannot turn an incomplete or
 contradictory assessment into approval.
 
@@ -53,8 +59,8 @@ checkpoint all other pending tasks using portable metadata.
 
 unified-publish revalidates exact proposals, offline Review jobs/attempts,
 source counts, six coverage groups, canonical hashes and current main baseline.
-A batch requires distinct Research sessions per QID and one common Review
-session; any cross-role session reuse is rejected. It produces only canonical records, receipts, a batch manifest and the updated
+A batch requires distinct Research sessions and distinct Review sessions per QID;
+any shared reviewer or cross-role session reuse is rejected. It produces only canonical records, receipts, a batch manifest and the updated
 main task backlog. Other pending backlog rows are preserved exactly.
 
 Execute its blob/tree/commit/ref operations through the GitHub plugin. The main
@@ -80,3 +86,7 @@ never read them as an approved proposal or re-enable their old PR protocol.
 Canonical observations and signed historical receipt bytes are not rewritten
 by this workflow migration. Dataset schema/policy and official release decisions
 remain operator controlled.
+
+Previously published batches with a shared Review session remain historical
+receipts. Before a new multi-QID publication, replace any unpublished shared-session
+approvals with fresh per-QID Reviews of the retained snapshots.

@@ -26,8 +26,10 @@ The signed candidate import contains 39,489 primary and 64,667 discovery QIDs.
 Candidate membership does not establish a university's identity. Source-backed
 observations retain original subjects, languages, periods, units and conflicts.
 
-At most three concurrent data calls, including at most one Review; five schools
-per publication batch; two Research revisions per school. A full six-group
+Each QID has a dedicated Research subagent and a separate, dedicated offline
+Review subagent. Reviews for different QIDs may run in parallel. At most five
+concurrent data calls total across both roles; five schools per publication
+batch; two Research revisions per school. A full six-group
 survey alone advances freshness. Publication is complete only after remote
 canonical bytes and receipts have been verified.
 

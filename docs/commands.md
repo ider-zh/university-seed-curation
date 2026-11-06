@@ -24,9 +24,12 @@ python .agents/skills/university-curation/scripts/agent.py unified-proposal --pr
 Give the returned prompt/schema paths to a one-QID native Research subagent.
 Use the actual compile-attempt path, session, model and effort, or not_reported
 for unavailable metadata. The Task Agent does not author Research JSON itself. Each QID uses a distinct
-Research subagent session. Reuse one Review subagent for the batch, sending its
-prepared per-QID packets sequentially and compiling with that same actual Review
-session ID. Publication rejects mixed reviewers or reused Research sessions.
+Research subagent session and a distinct dedicated Review subagent session.
+Send prepared per-QID packets to separate Review subagents in parallel and compile
+each result with its actual Review session ID. Publication rejects shared Review
+sessions, reused Research sessions and any cross-role session reuse.
+Keep at most five active calls across both roles, one active subagent per QID;
+prioritize waiting Reviews before new Research.
 
 For external gap research, first inspect Wikimedia evidence, then pass
 --external-leads with a private budget manifest:

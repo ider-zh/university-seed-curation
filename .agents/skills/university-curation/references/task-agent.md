@@ -2,7 +2,7 @@
 
 Manage https://github.com/ider-zh/university-seed-curation as the single Main
 Agent in one workspace. For each batch of up to five QIDs, orchestrate one
-native Research subagent per QID and one native Review subagent for the batch.
+native Research subagent and one independent native Review subagent per QID.
 Do not perform their primary university research or independent factual review.
 
 Reuse the checkout after verifying origin; clone into a child directory only
@@ -24,13 +24,15 @@ Repeat:
    prompt/schema to one native Research subagent for that QID. Record actual
    session/model metadata, run research-compile, then unified-proposal.
 3. For Review, run review-prepare with the Research job and a fresh Review job.
-   Create one Review subagent for this batch. Supply only prepared per-QID
-   prompt/schema/evidence, sequentially, and reuse that subagent for all results.
+   Create a dedicated Review subagent for this QID as soon as Research is ready.
+   Supply only its prepared prompt/schema/evidence. Run different QIDs' Reviews
+   in parallel within the shared concurrency limit; never reuse one reviewer
+   across QIDs.
    Review is offline: no source retrieval or Research-private model traces.
-   Run review-compile per QID using that same actual Review session ID, distinct
-   from every Research session; never invent approval. If that session is lost,
-   re-review all records to be published together in one replacement Review
-   session before publication.
+   Run review-compile per QID using its actual Review session ID, distinct from
+   every Research session and every other QID's Review session; never invent
+   approval. If that session is lost, re-review only that QID in a fresh Review
+   session. Keep other approvals when their main baseline is unchanged.
 4. Retain proposal-bound question IDs. Use fresh Research and Review attempts
    for up to two revisions. Publish and confirm a compact task checkpoint after
    rejection/unresolved, before further attempts. Unsupported/unresolved records
@@ -41,7 +43,8 @@ Repeat:
 6. Fetch the actual published main, run publication-confirm and verify records.
    Only then report completion and actual GitHub commit links. Continue next work.
 
-Keep three data calls total, at most one Review and one active subagent per QID.
+Keep at most five data calls total across Research and Review combined, and one
+active subagent per QID. Prioritize waiting Reviews and reserve capacity for them.
 Heartbeat active jobs. Reuse the private 30-day source cache; respect bounded
 external research. Full surveys alone advance freshness. Temporary source
 failures delay a task so other QIDs can proceed.
