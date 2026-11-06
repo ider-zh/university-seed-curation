@@ -1,0 +1,2073 @@
+{
+  "attribution": "distinct_native_research_and_review_subagents;not_cryptographic_identity",
+  "research": {
+    "baseline_sha256": "absent",
+    "candidate": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-06T23:02:44.589194+00:00",
+          "status": "checked"
+        },
+        "geography": {
+          "checked_at": "2026-11-06T23:02:44.589194+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-06T23:02:44.589194+00:00",
+          "status": "disputed"
+        },
+        "identity": {
+          "checked_at": "2026-11-06T23:02:44.589194+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-06T23:02:44.589194+00:00",
+          "status": "checked"
+        },
+        "profile": {
+          "checked_at": "2026-11-06T23:02:44.589194+00:00",
+          "status": "checked"
+        }
+      },
+      "curation": {
+        "identity_status": "in_scope"
+      },
+      "finance": {
+        "budget": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:9",
+                  "original_text": "Budget: €603 million (2024)[2]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2024
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": "603000000",
+                "currency": "EUR",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason_code": "only_available"
+          }
+        },
+        "revenue": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Budget",
+                  "original_text": "In 2010, income – excluding special accounting and clearing entries – amounted to €562 million",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2010
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": "562000000",
+                "currency": "EUR",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "infobox:7",
+                      "original_text": "Established: 1924",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 1924
+                  },
+                  "verification": "supported"
+                },
+                {
+                  "evidence": [
+                    {
+                      "locator": "claim:P571:0",
+                      "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q46210$EEAEE0DC-FD34-4212-BE8B-CA6DE1A99368\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+1923-09-30T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}, \"reference_count\": 1}",
+                      "source_ref": "s1"
+                    }
+                  ],
+                  "id": "c2",
+                  "value": {
+                    "day": 30,
+                    "month": 9,
+                    "precision": "day",
+                    "year": 1923
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "conflicts": [
+                {
+                  "candidate_ids": [
+                    "c1",
+                    "c2"
+                  ],
+                  "kind": "time_disagreement",
+                  "note": "Wikipedia foundation year 1924 differs from Wikidata inception 30 September 1923; no captured source resolves the distinction.",
+                  "status": "unresolved"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "qualifications": [
+                  "conflicting_candidates"
+                ],
+                "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+                "reason_code": "best_available"
+              }
+            },
+            "id": "establishment",
+            "kind": "institution_establishment",
+            "subject_ref": "institution"
+          }
+        ]
+      },
+      "identity": {
+        "aliases": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "UniMi",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "UniMi"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "La Statale",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "La Statale"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ],
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "public research university in Milan, Italy",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "university",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "University of Milan",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": "University of Milan",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "it": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "L'Università degli Studi di Milano",
+                    "source_ref": "s3"
+                  }
+                ],
+                "id": "c1",
+                "value": "Università degli Studi di Milano",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        "operating_status": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "The University of Milan has ten schools and offers 140 undergraduate and graduate degree programmes, 32 doctoral schools and 65+ specialization schools.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "operating",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "ownership": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:6",
+                  "original_text": "Type: Public",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "public",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "leadership": {
+        "rector": {
+          "candidates": [
+            {
+              "current_basis": "term_present",
+              "evidence": [
+                {
+                  "locator": "section:Rettori",
+                  "original_text": "Marina Brambilla (1º ottobre 2024 - presente)[29]",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "person": {
+                  "name": "Marina Brambilla"
+                },
+                "term_start": {
+                  "day": 1,
+                  "month": 10,
+                  "precision": "day",
+                  "year": 2024
+                },
+                "title_original": {
+                  "language": "it",
+                  "text": "Rettore"
+                }
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason": "The source gives a term continuing to the present.",
+            "reason_code": "term_present"
+          }
+        }
+      },
+      "locations": [
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "Milan, Italy",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "city_name": "Milan",
+                  "city_qid": "Q490",
+                  "country_name": "Italy",
+                  "country_qid": "Q38",
+                  "formatted": {
+                    "language": "en",
+                    "text": "Milan, Italy"
+                  }
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "milan",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "infobox:4",
+                    "original_text": "Città: Milano",
+                    "source_ref": "s3"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Milan"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q490"
+        },
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Sedi",
+                    "original_text": "La sede principale dell’Università degli Studi di Milano si trova nel centro di Milano in via Festa del Perdono, 7",
+                    "source_ref": "s3"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "city_name": "Milano",
+                  "country_qid": "Q38",
+                  "formatted": {
+                    "language": "it",
+                    "text": "via Festa del Perdono, 7, Milano"
+                  }
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "headquarters",
+          "kind": "headquarters",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Headquarters_.E2.80.93_City_Centre_Campus",
+                    "original_text": "Ca’ Granda",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Ca’ Granda"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        {
+          "coordinates": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "statement:Q46210$92c21b11-eae9-4443-8a85-528d274892cf",
+                    "original_text": "\"latitude\": 45.4600626",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "source_rank": "normal",
+                "value": {
+                  "crs": "EPSG:4326",
+                  "globe_qid": "Q2",
+                  "latitude": 45.4600626,
+                  "longitude": 9.194659978280598,
+                  "source_precision_degrees": 1e-05
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "wikidata-item-location",
+          "kind": "institution",
+          "qid": "Q46210"
+        }
+      ],
+      "modified_datetime": "2026-11-06T23:05:25.488859+00:00",
+      "population": {
+        "academic_staff": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:11",
+                  "original_text": "Academic staff: 2,566 (2025)[3]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2025
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 2566,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:16",
+                  "original_text": "Dipendenti: 2 579 docenti e ricercatori2 118 tecnici e amministrativi (2024)[3]",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c2",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2024
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 2579,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        },
+        "administrative_staff": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:12",
+                  "original_text": "Administrative staff: 2,189 (2024)[4]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2024
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 2189,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:16",
+                  "original_text": "Dipendenti: 2 579 docenti e ricercatori2 118 tecnici e amministrativi (2024)[3]",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c2",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2024
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 2118,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c2",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        },
+        "doctoral_students": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:16",
+                  "original_text": "Doctoral students: 1,420 (2025)[3]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2025
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 1420,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason_code": "only_available"
+          }
+        },
+        "postgraduate_students": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:15",
+                  "original_text": "Postgraduates: 14,578 (2025)[3]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2025
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 14578,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason_code": "only_available"
+          }
+        },
+        "students_total": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:13",
+                  "original_text": "Students: 64,878 (2025)[3]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2025
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 64878,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:15",
+                  "original_text": "Studenti: 59 177[2] (2025-26)",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c2",
+              "period": {
+                "end_year": 2026,
+                "kind": "academic_year",
+                "label": "2025-26",
+                "start_year": 2025
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 59177,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c2",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        },
+        "undergraduate_students": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:14",
+                  "original_text": "Undergraduates: 48,880 (2025)[3]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2025
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 48880,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "profile": {
+        "summary": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "public research university in Milan, Italy",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Headquarters_.E2.80.93_City_Centre_Campus",
+                  "original_text": "At present, the Ca' Granda is the seat of the Rectorate of the University of Milan and contains some of the main administrative offices; as well as the central library, lecture halls and auditoria of the School of Humanities and the School of Law.\nPlan of the University of Milan headquarters on Via Festa del Perdono, historically the Ca' Granda (Ospedale Maggiore) Hospital\nThe Ca' Granda during a Festa del Perdono celebration in the 17th century\nCortile centrale of the Ca' Granda during a Festa del Perdono celebration in the 17th century\nThe Festa del Perdono celebration at the Ca' Granda (Ospedale Maggiore) on 25 March 1851\nThe Ca' Granda in 2007, before the facade was cleaned and restored\nCortile centrale\nChiostro maggiore\nChiostro maggiore\nChiostro maggiore\nChiostro della Ghiacciaia\nChiostro dei Bagni\nChiostro della Legnaia\nChiostro del Settecento",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Citt.C3.A0_Studi_.E2.80.93_Scientific_Campus",
+                  "original_text": "[edit | edit source]\nSince the late 1960s, the exponential growth of the number of enrolled students forced the university to build other structures in the Città Studi neighbourhood, where the main buildings of all scientific schools and departments of the University of Milan are located, as well as the majority of the research facilities. The Polytechnic University of Milan is also located in this quarter.\nThe Città Studi Campus Sostenibile (CSCS, \"Città Studi Sustainable Campus\") is a joint project launched by the University of Milan and the Polytechnic University of Milan in 2011 to turn the Città Studi (the historic university quarter in the city, home to the main campuses of two of its largest universities) into a forum on issues of sustainable development, thereby creating a model for the city at large to follow.\nDevised as six roundtables on areas of intervention – People, Energy, Education, Mobility, City, and Food and Health – the project aims to implement ",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Research",
+                  "original_text": "There are 53 research centres. Research is organised in 33 different departments:\nLaw: Private Law and Legal History, Italian and Supranational Public Law, Law.\nMedicine: Medical Biotechnology and Translational Medicine, Pathophysiology and Transplantation, Oncology and Hematology-Oncology, Biomedical Sciences for Health, Biomedical and Clinical Sciences, Biomedical, Surgical and Dental Sciences, Clinical Sciences and Community Health, Health Sciences.\nHumanities: Cultural and Environmental Heritage, Philosophy, Foreign Languages and Literatures, Literary Studies, Philology and Linguistics, Historical Studies.\nVeterinary Medicine: Veterinary Medicine, Veterinary Science for Health, Animal Production and Food Safety.\nAgricultural and Food Sciences: Agricultural and Environmental Sciences – Production, Landscape, Agroenergy, Food, Environmental and Nutritional Sciences, Environmental Science and Policy\nPharmaceutical Sciences: Pharmacological and Biomolecular Sciences",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Struttura",
+                  "original_text": "[modifica | modifica wikitesto]\nL'università è organizzata in otto facoltà e due scuole[12].\nFacoltà\nGiurisprudenza\nMedicina e chirurgia\nMedicina veterinaria\nScienze agrarie e alimentari\nScienze del farmaco\nScienze politiche, economiche e sociali\nScienze e tecnologie\nStudi umanistici\nScuole\nScienze della mediazione linguistica e culturale\nScienze motorie",
+                  "source_ref": "s3"
+                },
+                {
+                  "locator": "section:Sedi",
+                  "original_text": "[modifica | modifica wikitesto]\nLa sede principale dell’Università degli Studi di Milano si trova nel centro di Milano in via Festa del Perdono, 7 nello storico edificio della Ca' Granda. Le sedi didattiche, gli uffici e le strutture sono distribuiti sul territorio milanese e lombardo[13].\nCampus Milano centro\nvia Festa del Perdono\nvia Conservatorio\nvia Noto\npiazza Sant'Alessandro\nvia Sant'Antonio\nvia Santa Sofia\nvia Francesco Sforza\nCampus Città studi\nvia Balzaretti\nvia Celoria\nvia Colombo\nvia Golgi\nvia Mangiagalli\nvia Saldini\nvia Vanvitelli\nvia Valvassori Penori\nSedi fuori Milano\nGargnano\nCernusco sul Naviglio\nCrema\nEdolo\nLodi\nSegrate\nRozzano\nPavia\nRho\nSan Donato Milanese\nSesto San Giovanni\nTorrazza Coste",
+                  "source_ref": "s3"
+                },
+                {
+                  "locator": "infobox:15",
+                  "original_text": "Studenti: 59 177[2] (2025-26)",
+                  "source_ref": "s3"
+                },
+                {
+                  "locator": "infobox:19",
+                  "original_text": "Language: Italian, English",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "The University of Milan, known in Italian as Università degli Studi di Milano and commonly called UniMi or La Statale, is a public research university in Milan, Italy. Its central headquarters occupy the Ca’ Granda, a Renaissance building originally designed as a hospital complex. The headquarters contain the rectorate, administrative offices, a central library and teaching spaces for humanities and law. Other university facilities are distributed across Milan and the wider Lombardy region. Scientific departments and research facilities are concentrated in the Città Studi neighbourhood.\n\nThe university provides teaching and research across law, medicine, veterinary medicine, agricultural and food sciences, pharmaceutical sciences, humanities, science and technology, political and social sciences, languages and sport sciences. Its structure includes eight faculties and two schools, described in the English article collectively as ten schools. Teaching is offered in Italian and English. The English-language article reports 64,878 students and 2,566 permanent teaching and research staff for 2025. The Italian-language article separately reports 59,177 students for the 2025–26 academic year; these figures refer to differently labelled reporting periods and are retained separately. The university also maintains research centres and specialised departmental facilities."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "teaching_languages": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:19",
+                  "original_text": "Language: Italian, English",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": [
+                "Italian",
+                "English"
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "website": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P856:0",
+                  "original_text": "{\"property\": \"P856\", \"property_label\": \"official website\", \"statement_id\": \"Q46210$007E90DE-CDF2-427C-8F72-3FBA83CBB8CB\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"https://www.unimi.it\", \"qualifiers\": {\"P407\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 652, \"id\": \"Q652\"}}, {\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 1860, \"id\": \"Q1860\"}}]}}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "https://www.unimi.it",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "qid": "Q46210",
+      "record_revision": 1,
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "ranking_identifier",
+          "reviewed_institution_type"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "included"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:53:52.925322+00:00",
+          "revision_id": 2558090876,
+          "source_qid": "Q46210",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2558090876"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikipedia",
+          "language": "en",
+          "page_id": 453576,
+          "publisher_role": "encyclopedia",
+          "retrieved_at": "2026-11-06T23:02:24.353873+00:00",
+          "revision_id": 1376631822,
+          "url": "https://en.wikipedia.org/w/index.php?oldid=1376631822"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikipedia",
+          "language": "it",
+          "page_id": 137622,
+          "publisher_role": "encyclopedia",
+          "retrieved_at": "2026-11-06T23:02:27.945139+00:00",
+          "revision_id": 152595038,
+          "url": "https://it.wikipedia.org/w/index.php?oldid=152595038"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T23:02:31.504615+00:00",
+          "revision_id": 2525151581,
+          "source_qid": "Q62078547",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2525151581"
+        },
+        "s5": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T23:02:35.210973+00:00",
+          "revision_id": 2564285091,
+          "source_qid": "Q38",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2564285091"
+        },
+        "s6": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T23:02:38.712101+00:00",
+          "revision_id": 2555087999,
+          "source_qid": "Q490",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2555087999"
+        },
+        "s7": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T23:02:41.664672+00:00",
+          "revision_id": 2369094505,
+          "source_qid": "Q63171242",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2369094505"
+        },
+        "s8": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T23:02:44.584438+00:00",
+          "revision_id": 2325110991,
+          "source_qid": "Q109496581",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2325110991"
+        }
+      }
+    },
+    "coverage": [
+      {
+        "group": "identity",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "status": "disputed"
+      },
+      {
+        "group": "population",
+        "status": "checked"
+      },
+      {
+        "group": "finance",
+        "status": "checked"
+      },
+      {
+        "group": "profile",
+        "status": "checked"
+      }
+    ],
+    "delta": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-06T23:02:44.589194+00:00",
+          "status": "checked"
+        },
+        "geography": {
+          "checked_at": "2026-11-06T23:02:44.589194+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-06T23:02:44.589194+00:00",
+          "status": "disputed"
+        },
+        "identity": {
+          "checked_at": "2026-11-06T23:02:44.589194+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-06T23:02:44.589194+00:00",
+          "status": "checked"
+        },
+        "profile": {
+          "checked_at": "2026-11-06T23:02:44.589194+00:00",
+          "status": "checked"
+        }
+      },
+      "curation": {
+        "identity_status": "in_scope"
+      },
+      "finance": {
+        "budget": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:9",
+                  "original_text": "Budget: €603 million (2024)[2]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2024
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": "603000000",
+                "currency": "EUR",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason_code": "only_available"
+          }
+        },
+        "revenue": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Budget",
+                  "original_text": "In 2010, income – excluding special accounting and clearing entries – amounted to €562 million",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2010
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": "562000000",
+                "currency": "EUR",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "infobox:7",
+                      "original_text": "Established: 1924",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 1924
+                  },
+                  "verification": "supported"
+                },
+                {
+                  "evidence": [
+                    {
+                      "locator": "claim:P571:0",
+                      "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q46210$EEAEE0DC-FD34-4212-BE8B-CA6DE1A99368\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+1923-09-30T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}, \"reference_count\": 1}",
+                      "source_ref": "s1"
+                    }
+                  ],
+                  "id": "c2",
+                  "value": {
+                    "day": 30,
+                    "month": 9,
+                    "precision": "day",
+                    "year": 1923
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "conflicts": [
+                {
+                  "candidate_ids": [
+                    "c1",
+                    "c2"
+                  ],
+                  "kind": "time_disagreement",
+                  "note": "Wikipedia foundation year 1924 differs from Wikidata inception 30 September 1923; no captured source resolves the distinction.",
+                  "status": "unresolved"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "qualifications": [
+                  "conflicting_candidates"
+                ],
+                "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+                "reason_code": "best_available"
+              }
+            },
+            "id": "establishment",
+            "kind": "institution_establishment",
+            "subject_ref": "institution"
+          }
+        ]
+      },
+      "identity": {
+        "aliases": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "UniMi",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "UniMi"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "La Statale",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "La Statale"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ],
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "public research university in Milan, Italy",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "university",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "University of Milan",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": "University of Milan",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "it": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "L'Università degli Studi di Milano",
+                    "source_ref": "s3"
+                  }
+                ],
+                "id": "c1",
+                "value": "Università degli Studi di Milano",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        "operating_status": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "The University of Milan has ten schools and offers 140 undergraduate and graduate degree programmes, 32 doctoral schools and 65+ specialization schools.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "operating",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "ownership": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:6",
+                  "original_text": "Type: Public",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "public",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "leadership": {
+        "rector": {
+          "candidates": [
+            {
+              "current_basis": "term_present",
+              "evidence": [
+                {
+                  "locator": "section:Rettori",
+                  "original_text": "Marina Brambilla (1º ottobre 2024 - presente)[29]",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "person": {
+                  "name": "Marina Brambilla"
+                },
+                "term_start": {
+                  "day": 1,
+                  "month": 10,
+                  "precision": "day",
+                  "year": 2024
+                },
+                "title_original": {
+                  "language": "it",
+                  "text": "Rettore"
+                }
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason": "The source gives a term continuing to the present.",
+            "reason_code": "term_present"
+          }
+        }
+      },
+      "locations": [
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "Milan, Italy",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "city_name": "Milan",
+                  "city_qid": "Q490",
+                  "country_name": "Italy",
+                  "country_qid": "Q38",
+                  "formatted": {
+                    "language": "en",
+                    "text": "Milan, Italy"
+                  }
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "milan",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "infobox:4",
+                    "original_text": "Città: Milano",
+                    "source_ref": "s3"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Milan"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q490"
+        },
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Sedi",
+                    "original_text": "La sede principale dell’Università degli Studi di Milano si trova nel centro di Milano in via Festa del Perdono, 7",
+                    "source_ref": "s3"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "city_name": "Milano",
+                  "country_qid": "Q38",
+                  "formatted": {
+                    "language": "it",
+                    "text": "via Festa del Perdono, 7, Milano"
+                  }
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "headquarters",
+          "kind": "headquarters",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Headquarters_.E2.80.93_City_Centre_Campus",
+                    "original_text": "Ca’ Granda",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Ca’ Granda"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        {
+          "coordinates": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "statement:Q46210$92c21b11-eae9-4443-8a85-528d274892cf",
+                    "original_text": "\"latitude\": 45.4600626",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "source_rank": "normal",
+                "value": {
+                  "crs": "EPSG:4326",
+                  "globe_qid": "Q2",
+                  "latitude": 45.4600626,
+                  "longitude": 9.194659978280598,
+                  "source_precision_degrees": 1e-05
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "wikidata-item-location",
+          "kind": "institution",
+          "qid": "Q46210"
+        }
+      ],
+      "population": {
+        "academic_staff": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:11",
+                  "original_text": "Academic staff: 2,566 (2025)[3]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2025
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 2566,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:16",
+                  "original_text": "Dipendenti: 2 579 docenti e ricercatori2 118 tecnici e amministrativi (2024)[3]",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c2",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2024
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 2579,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        },
+        "administrative_staff": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:12",
+                  "original_text": "Administrative staff: 2,189 (2024)[4]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2024
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 2189,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:16",
+                  "original_text": "Dipendenti: 2 579 docenti e ricercatori2 118 tecnici e amministrativi (2024)[3]",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c2",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2024
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 2118,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c2",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        },
+        "doctoral_students": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:16",
+                  "original_text": "Doctoral students: 1,420 (2025)[3]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2025
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 1420,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason_code": "only_available"
+          }
+        },
+        "postgraduate_students": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:15",
+                  "original_text": "Postgraduates: 14,578 (2025)[3]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2025
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 14578,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason_code": "only_available"
+          }
+        },
+        "students_total": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:13",
+                  "original_text": "Students: 64,878 (2025)[3]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2025
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 64878,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:15",
+                  "original_text": "Studenti: 59 177[2] (2025-26)",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c2",
+              "period": {
+                "end_year": 2026,
+                "kind": "academic_year",
+                "label": "2025-26",
+                "start_year": 2025
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 59177,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c2",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        },
+        "undergraduate_students": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:14",
+                  "original_text": "Undergraduates: 48,880 (2025)[3]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2025
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 48880,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "profile": {
+        "summary": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "public research university in Milan, Italy",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Headquarters_.E2.80.93_City_Centre_Campus",
+                  "original_text": "At present, the Ca' Granda is the seat of the Rectorate of the University of Milan and contains some of the main administrative offices; as well as the central library, lecture halls and auditoria of the School of Humanities and the School of Law.\nPlan of the University of Milan headquarters on Via Festa del Perdono, historically the Ca' Granda (Ospedale Maggiore) Hospital\nThe Ca' Granda during a Festa del Perdono celebration in the 17th century\nCortile centrale of the Ca' Granda during a Festa del Perdono celebration in the 17th century\nThe Festa del Perdono celebration at the Ca' Granda (Ospedale Maggiore) on 25 March 1851\nThe Ca' Granda in 2007, before the facade was cleaned and restored\nCortile centrale\nChiostro maggiore\nChiostro maggiore\nChiostro maggiore\nChiostro della Ghiacciaia\nChiostro dei Bagni\nChiostro della Legnaia\nChiostro del Settecento",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Citt.C3.A0_Studi_.E2.80.93_Scientific_Campus",
+                  "original_text": "[edit | edit source]\nSince the late 1960s, the exponential growth of the number of enrolled students forced the university to build other structures in the Città Studi neighbourhood, where the main buildings of all scientific schools and departments of the University of Milan are located, as well as the majority of the research facilities. The Polytechnic University of Milan is also located in this quarter.\nThe Città Studi Campus Sostenibile (CSCS, \"Città Studi Sustainable Campus\") is a joint project launched by the University of Milan and the Polytechnic University of Milan in 2011 to turn the Città Studi (the historic university quarter in the city, home to the main campuses of two of its largest universities) into a forum on issues of sustainable development, thereby creating a model for the city at large to follow.\nDevised as six roundtables on areas of intervention – People, Energy, Education, Mobility, City, and Food and Health – the project aims to implement ",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Research",
+                  "original_text": "There are 53 research centres. Research is organised in 33 different departments:\nLaw: Private Law and Legal History, Italian and Supranational Public Law, Law.\nMedicine: Medical Biotechnology and Translational Medicine, Pathophysiology and Transplantation, Oncology and Hematology-Oncology, Biomedical Sciences for Health, Biomedical and Clinical Sciences, Biomedical, Surgical and Dental Sciences, Clinical Sciences and Community Health, Health Sciences.\nHumanities: Cultural and Environmental Heritage, Philosophy, Foreign Languages and Literatures, Literary Studies, Philology and Linguistics, Historical Studies.\nVeterinary Medicine: Veterinary Medicine, Veterinary Science for Health, Animal Production and Food Safety.\nAgricultural and Food Sciences: Agricultural and Environmental Sciences – Production, Landscape, Agroenergy, Food, Environmental and Nutritional Sciences, Environmental Science and Policy\nPharmaceutical Sciences: Pharmacological and Biomolecular Sciences",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Struttura",
+                  "original_text": "[modifica | modifica wikitesto]\nL'università è organizzata in otto facoltà e due scuole[12].\nFacoltà\nGiurisprudenza\nMedicina e chirurgia\nMedicina veterinaria\nScienze agrarie e alimentari\nScienze del farmaco\nScienze politiche, economiche e sociali\nScienze e tecnologie\nStudi umanistici\nScuole\nScienze della mediazione linguistica e culturale\nScienze motorie",
+                  "source_ref": "s3"
+                },
+                {
+                  "locator": "section:Sedi",
+                  "original_text": "[modifica | modifica wikitesto]\nLa sede principale dell’Università degli Studi di Milano si trova nel centro di Milano in via Festa del Perdono, 7 nello storico edificio della Ca' Granda. Le sedi didattiche, gli uffici e le strutture sono distribuiti sul territorio milanese e lombardo[13].\nCampus Milano centro\nvia Festa del Perdono\nvia Conservatorio\nvia Noto\npiazza Sant'Alessandro\nvia Sant'Antonio\nvia Santa Sofia\nvia Francesco Sforza\nCampus Città studi\nvia Balzaretti\nvia Celoria\nvia Colombo\nvia Golgi\nvia Mangiagalli\nvia Saldini\nvia Vanvitelli\nvia Valvassori Penori\nSedi fuori Milano\nGargnano\nCernusco sul Naviglio\nCrema\nEdolo\nLodi\nSegrate\nRozzano\nPavia\nRho\nSan Donato Milanese\nSesto San Giovanni\nTorrazza Coste",
+                  "source_ref": "s3"
+                },
+                {
+                  "locator": "infobox:15",
+                  "original_text": "Studenti: 59 177[2] (2025-26)",
+                  "source_ref": "s3"
+                },
+                {
+                  "locator": "infobox:19",
+                  "original_text": "Language: Italian, English",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "The University of Milan, known in Italian as Università degli Studi di Milano and commonly called UniMi or La Statale, is a public research university in Milan, Italy. Its central headquarters occupy the Ca’ Granda, a Renaissance building originally designed as a hospital complex. The headquarters contain the rectorate, administrative offices, a central library and teaching spaces for humanities and law. Other university facilities are distributed across Milan and the wider Lombardy region. Scientific departments and research facilities are concentrated in the Città Studi neighbourhood.\n\nThe university provides teaching and research across law, medicine, veterinary medicine, agricultural and food sciences, pharmaceutical sciences, humanities, science and technology, political and social sciences, languages and sport sciences. Its structure includes eight faculties and two schools, described in the English article collectively as ten schools. Teaching is offered in Italian and English. The English-language article reports 64,878 students and 2,566 permanent teaching and research staff for 2025. The Italian-language article separately reports 59,177 students for the 2025–26 academic year; these figures refer to differently labelled reporting periods and are retained separately. The university also maintains research centres and specialised departmental facilities."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "teaching_languages": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:19",
+                  "original_text": "Language: Italian, English",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": [
+                "Italian",
+                "English"
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "website": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P856:0",
+                  "original_text": "{\"property\": \"P856\", \"property_label\": \"official website\", \"statement_id\": \"Q46210$007E90DE-CDF2-427C-8F72-3FBA83CBB8CB\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"https://www.unimi.it\", \"qualifiers\": {\"P407\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 652, \"id\": \"Q652\"}}, {\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 1860, \"id\": \"Q1860\"}}]}}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "https://www.unimi.it",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "qid": "Q46210",
+      "record_revision": 1,
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "ranking_identifier",
+          "reviewed_institution_type"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "included"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:53:52.925322+00:00",
+          "revision_id": 2558090876,
+          "source_qid": "Q46210",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2558090876"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikipedia",
+          "language": "en",
+          "page_id": 453576,
+          "publisher_role": "encyclopedia",
+          "retrieved_at": "2026-11-06T23:02:24.353873+00:00",
+          "revision_id": 1376631822,
+          "url": "https://en.wikipedia.org/w/index.php?oldid=1376631822"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikipedia",
+          "language": "it",
+          "page_id": 137622,
+          "publisher_role": "encyclopedia",
+          "retrieved_at": "2026-11-06T23:02:27.945139+00:00",
+          "revision_id": 152595038,
+          "url": "https://it.wikipedia.org/w/index.php?oldid=152595038"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T23:02:31.504615+00:00",
+          "revision_id": 2525151581,
+          "source_qid": "Q62078547",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2525151581"
+        },
+        "s5": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T23:02:35.210973+00:00",
+          "revision_id": 2564285091,
+          "source_qid": "Q38",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2564285091"
+        },
+        "s6": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T23:02:38.712101+00:00",
+          "revision_id": 2555087999,
+          "source_qid": "Q490",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2555087999"
+        },
+        "s7": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T23:02:41.664672+00:00",
+          "revision_id": 2369094505,
+          "source_qid": "Q63171242",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2369094505"
+        },
+        "s8": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T23:02:44.584438+00:00",
+          "revision_id": 2325110991,
+          "source_qid": "Q109496581",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2325110991"
+        }
+      }
+    },
+    "open_requests": [],
+    "proposed_at": "2026-11-06T23:05:25.488859+00:00",
+    "qid": "Q46210",
+    "research": {
+      "model": "not_reported",
+      "prompt_sha256": "87c9737f9bde9fa966949e5f0daf7bcb9058ebeb5ff8e8b70f556f63bff8f01c",
+      "reasoning_effort": "not_reported",
+      "schema_sha256": "92e942f4fbf2ae28964462ea9ffa8312c5ee16a077a1e08b40aaaf741512422e",
+      "session": "/root/research_q46210"
+    },
+    "retrieval_failures": [],
+    "review_status": "unreviewed",
+    "seed": {
+      "channels": [
+        "ranking_identifier",
+        "reviewed_institution_type"
+      ],
+      "import_id": "seed-84c3beb45367905f",
+      "screening_status": "included"
+    },
+    "transport": {
+      "base_commit": "003414c9d83f4df0e87e3571a4ed73ca8a435378",
+      "protocol": "native-subagent-v1",
+      "repository": "ider-zh/university-seed-curation",
+      "review_policy": {
+        "id": "source-grounded-flexible-v2",
+        "sha256": "b8ed7d2897e4c31dbd81b1379aafdc1077a21d1a33949edbd2d896b0adf99db2"
+      },
+      "schema_sha256": "bfa496eafa9dffca56146214168db7f000b09161b8993129632e7202e1c88833",
+      "seed_catalog_sha256": "84c3beb45367905f513d650684283dd62a9c1b77962bdc34151a6ef05bfa03d4"
+    },
+    "type": "university-proposal-v1"
+  },
+  "review": {
+    "contexts_checked": 5,
+    "coverage_checks": [
+      {
+        "group": "identity",
+        "reason": "Bilingual leads and root identity surveyed.",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "reason": "Institution coordinate and country/location source sections surveyed.",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "reason": "Establishment sources surveyed; 1924 versus 1923-09-30 remains disputed.",
+        "status": "disputed"
+      },
+      {
+        "group": "population",
+        "reason": "Bilingual infobox population observations surveyed with separate periods and conflicts retained.",
+        "status": "checked"
+      },
+      {
+        "group": "finance",
+        "reason": "Budget infobox and qualified income section surveyed.",
+        "status": "checked"
+      },
+      {
+        "group": "profile",
+        "reason": "Lead and profile sections present in frozen survey; supplementary facts not independently reviewed.",
+        "status": "checked"
+      }
+    ],
+    "decision": "approve",
+    "facts_checked": 21,
+    "full_refresh": false,
+    "inferences": [
+      {
+        "id": "$.identity.operating_status:c1",
+        "reason": "Present-tense degree programmes and schools in s2 lead support operating status."
+      },
+      {
+        "id": "country:$.locations[1].address:c1",
+        "reason": "s3 Sedi places headquarters in Milan; s2 lead and frozen Milan country statement anchor current Italy, without historical attribution."
+      }
+    ],
+    "model": "not_reported",
+    "proposal_sha256": "ce462424610219975c219ce7acf6afca1f76126fa1135c4a61b347bf5d74912f",
+    "qid": "Q46210",
+    "reasoning_effort": "not_reported",
+    "record_sha256": "6851620c0906a3374f24deb8a7017030a50bac62c750cc1d2c1259ca743a9178",
+    "request_responses": [],
+    "requests": [],
+    "review_scope": {
+      "not_independently_reviewed_ids": [
+        "$.leadership.rector:c1",
+        "$.locations[0].address:c1",
+        "$.locations[0].name:c1",
+        "$.locations[1].address:c1",
+        "$.locations[1].name:c1",
+        "$.profile.summary:c1",
+        "$.profile.teaching_languages:c1",
+        "$.profile.website:c1",
+        "location:headquarters",
+        "location:milan"
+      ],
+      "reviewed_ids": [
+        "$.finance.budget:c1",
+        "$.finance.revenue:c1",
+        "$.history.milestones[0].date:c1",
+        "$.history.milestones[0].date:c2",
+        "$.identity.aliases[0]:c1",
+        "$.identity.aliases[1]:c1",
+        "$.identity.kind:c1",
+        "$.identity.names.en:c1",
+        "$.identity.names.it:c1",
+        "$.identity.operating_status:c1",
+        "$.identity.ownership:c1",
+        "$.locations[2].coordinates:c1",
+        "$.population.academic_staff:c1",
+        "$.population.academic_staff:c2",
+        "$.population.administrative_staff:c1",
+        "$.population.administrative_staff:c2",
+        "$.population.doctoral_students:c1",
+        "$.population.postgraduate_students:c1",
+        "$.population.students_total:c1",
+        "$.population.students_total:c2",
+        "$.population.undergraduate_students:c1",
+        "country:$.locations[0].address:c1",
+        "country:$.locations[1].address:c1",
+        "identity",
+        "location:wikidata-item-location",
+        "milestone:establishment"
+      ],
+      "version": "core-review-v3"
+    },
+    "review_session": "/root/review_rebound_q46210",
+    "reviewed_at": "2026-11-06T23:11:29.608278+00:00",
+    "source_revisions_checked": 8,
+    "waived_requests": []
+  },
+  "review_result_sha256": "cc7ff857bb9e035b529dd64ef0cb130b8c2ee320502243206cac625774d7eb96",
+  "type": "university-unified-receipt-v1"
+}
