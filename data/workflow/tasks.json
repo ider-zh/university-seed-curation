@@ -375,11 +375,18 @@
           "reason": "Resolve higher-education eligibility with institution-specific evidence or a source-grounded explicit inference establishing tertiary status. General educational-institution classification is insufficient; retain needs_review until resolved.",
           "request_id": "939f32cb-5976-5adb-85c5-81f371fa290c",
           "reviewed_proposal_sha256": "9f313db3d649956d9c0842ae588b680b47c2abad961847a1db1487e90139f9b9"
+        },
+        {
+          "category": "evidence_gap",
+          "field": "curation.identity_status",
+          "reason": "Resolve institutional eligibility with institution-specific captured evidence establishing tertiary status or supported exclusion; retain needs_review until resolved.",
+          "request_id": "fd9367f5-2886-5f32-91e8-064f605f2a7f",
+          "reviewed_proposal_sha256": "138ed6f76804b35dde0118e9214cec7b293e72ccdaad49ec4031d2c0ed42f30e"
         }
       ],
-      "phase": "revision_requested",
-      "reason": "resume_after_private_workspace_loss",
-      "revision": 0
+      "phase": "unresolved",
+      "reason": "completed_review_stale_after_trusted_compiler_change",
+      "revision": 1
     },
     "Q137470920": {
       "open_requests": [
