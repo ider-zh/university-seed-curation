@@ -1,0 +1,1951 @@
+{
+  "coverage": {
+    "finance": {
+      "checked_at": "2026-11-06T13:40:28.963499+00:00",
+      "status": "checked"
+    },
+    "geography": {
+      "checked_at": "2026-11-06T13:40:28.963499+00:00",
+      "status": "checked"
+    },
+    "history": {
+      "checked_at": "2026-11-06T13:40:28.963499+00:00",
+      "status": "checked"
+    },
+    "identity": {
+      "checked_at": "2026-11-06T13:40:28.963499+00:00",
+      "status": "checked"
+    },
+    "population": {
+      "checked_at": "2026-11-06T13:40:28.963499+00:00",
+      "status": "checked"
+    },
+    "profile": {
+      "checked_at": "2026-11-06T13:40:28.963499+00:00",
+      "status": "checked"
+    }
+  },
+  "curation": {
+    "identity_status": "in_scope",
+    "refresh_profile": "core-v1",
+    "reviewed_groups": [
+      "identity",
+      "geography",
+      "history",
+      "population",
+      "finance",
+      "profile"
+    ]
+  },
+  "finance": {
+    "endowment": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P6589:0",
+              "original_text": "{\"property\": \"P6589\", \"property_label\": \"endowment\", \"statement_id\": \"Q1854488$31A7E1B7-C5DC-43DB-BBD4-4F1C630B5E47\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+372857803\", \"unit\": \"http://www.wikidata.org/entity/Q4917\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2022-06-30T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "metadata",
+              "original_text": "{\"id\": \"Q4917\", \"labels\": {\"en\": \"United States dollar\"}, \"descriptions\": {\"en\": \"official currency of the United States\"}}",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c1",
+          "period": {
+            "date": "2022-06-30",
+            "kind": "date"
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": "372857803",
+            "currency": "USD",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P6589:1",
+              "original_text": "{\"property\": \"P6589\", \"property_label\": \"endowment\", \"statement_id\": \"Q1854488$19908D93-D13B-419F-B21C-C3FB9131EB19\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+373800913\", \"unit\": \"http://www.wikidata.org/entity/Q4917\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2021-06-30T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "metadata",
+              "original_text": "{\"id\": \"Q4917\", \"labels\": {\"en\": \"United States dollar\"}, \"descriptions\": {\"en\": \"official currency of the United States\"}}",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c2",
+          "period": {
+            "date": "2021-06-30",
+            "kind": "date"
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": "373800913",
+            "currency": "USD",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "infobox:6",
+              "original_text": "Endowment: $474 million (2025)[2]",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "metadata",
+              "original_text": "{\"id\": \"Q4917\", \"labels\": {\"en\": \"United States dollar\"}, \"descriptions\": {\"en\": \"official currency of the United States\"}}",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c3",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2025
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": "474000000",
+            "currency": "USD",
+            "precision": "approximate"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c3",
+        "qualifications": [
+          "single_source_family",
+          "approximate_value"
+        ],
+        "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+        "reason_code": "best_available"
+      }
+    }
+  },
+  "history": {
+    "milestones": [
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:History",
+                  "original_text": "On January 30, 1889, Governor Edward Stevenson of the Idaho Territory signed the territorial legislature's Council Bill No. 20, which officially established the UI as the upcoming state's land-grant institution.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "day": 30,
+                "month": 1,
+                "precision": "day",
+                "year": 1889
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:History",
+                  "original_text": "On January 30, 1889, Governor Edward Stevenson of the Idaho Territory signed the territorial legislature's Council Bill No. 20, which officially established the UI as the upcoming state's land-grant institution.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "Established as the future state's land-grant institution by territorial Council Bill No. 20."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "establishment",
+        "kind": "institution_establishment",
+        "subject_ref": "institution"
+      },
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:History",
+                  "original_text": "Nearly four years later, the university opened for classes on October 3, 1892.[12]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "day": 3,
+                "month": 10,
+                "precision": "day",
+                "year": 1892
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:History",
+                  "original_text": "Nearly four years later, the university opened for classes on October 3, 1892.[12]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "University opened for classes."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "classes-open",
+        "kind": "teaching_start",
+        "subject_ref": "institution"
+      }
+    ]
+  },
+  "identity": {
+    "aliases": [
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "The University of Idaho (U of I, or UIdaho)[8] is a public land-grant research university in Moscow, Idaho, United States.",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "U of I"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "The University of Idaho (U of I, or UIdaho)[8] is a public land-grant research university in Moscow, Idaho, United States.",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "UIdaho"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    ],
+    "identifiers": {
+      "P5242": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P5242:0",
+                "original_text": "{\"property\": \"P5242\", \"property_label\": \"ARWU university ID\", \"statement_id\": \"Q1854488$8EC41DB5-7A29-48F8-9A04-8E0DCFCD3056\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"University-of-Idaho\"}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": "University-of-Idaho",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "P5586": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P5586:0",
+                "original_text": "{\"property\": \"P5586\", \"property_label\": \"Times Higher Education World University ID\", \"statement_id\": \"Q1854488$65171CFC-D84D-42CE-84D0-2657D46CA394\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"university-idaho\"}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": "university-idaho",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    "kind": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:1",
+              "original_text": "Type: Public land-grant research university",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": "university",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "names": {
+      "en": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P1705:0",
+                "original_text": "{\"property\": \"P1705\", \"property_label\": \"native label\", \"statement_id\": \"Q1854488$f67ea655-4235-3ea6-aea6-5f01fccc309d\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"University of Idaho\", \"language\": \"en\"}}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": "University of Idaho",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    "ownership": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:1",
+              "original_text": "Type: Public land-grant research university",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": "public",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "leadership": {
+    "president": {
+      "candidates": [
+        {
+          "current_basis": "infobox_current",
+          "evidence": [
+            {
+              "locator": "infobox:7",
+              "original_text": "President: C. Scott Green",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "person": {
+              "name": "C. Scott Green"
+            },
+            "title_original": {
+              "language": "en",
+              "text": "President"
+            }
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "single_source_family",
+          "reported_current"
+        ],
+        "reason": "The page reports this person in its current officeholder field; a term-end date is not required.",
+        "reason_code": "infobox_current"
+      }
+    }
+  },
+  "locations": [
+    {
+      "address": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "infobox:11",
+                "original_text": "Location: Moscow, Idaho, United States",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "city_name": "Moscow",
+              "city_qid": "Q499927",
+              "country_name": "United States",
+              "country_qid": "Q30",
+              "formatted": {
+                "language": "en",
+                "text": "Moscow, Idaho, United States"
+              },
+              "region_name": "Idaho"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "id": "moscow-city",
+      "kind": "administrative_area",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P131:0",
+                "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"q1854488$B2797048-D285-4A2E-8B74-6CA8D4A477BB\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 499927, \"id\": \"Q499927\"}, \"reference_count\": 1}",
+                "source_ref": "s1"
+              },
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q499927\", \"labels\": {\"en\": \"Moscow\"}, \"descriptions\": {\"en\": \"city in and the county seat of Latah County, Idaho, United States\"}}",
+                "source_ref": "s10"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Moscow"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "qid": "Q499927"
+    },
+    {
+      "id": "moscow-campus",
+      "kind": "campus",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Campus",
+                "original_text": "According to the U of I Facts Books, the Moscow campus, abutting the Washington state line, is 1,585 acres (2.5 mi2; 6.4 km2), including 253 buildings with a replacement value of $812 million.",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Moscow campus"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "population": {
+        "students_total": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "It enrolls approximately 12,000 students across its campuses, with 11,000 on the Moscow campus.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period_status": "not_stated",
+              "value": {
+                "amount": 11000,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "period_not_stated",
+              "single_source_family"
+            ],
+            "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+            "reason_code": "only_available"
+          }
+        }
+      }
+    },
+    {
+      "id": "boise-campus",
+      "kind": "campus",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "In addition to the main campus in Moscow, the U of I has branch campuses in Coeur d'Alene, Boise, and Idaho Falls; it also operates a research park in Post Falls, and dozens of extension offices statewide.[11]",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Boise campus"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    {
+      "id": "coeur-dalene-campus",
+      "kind": "campus",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "In addition to the main campus in Moscow, the U of I has branch campuses in Coeur d'Alene, Boise, and Idaho Falls; it also operates a research park in Post Falls, and dozens of extension offices statewide.[11]",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Coeur d'Alene campus"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    {
+      "id": "idaho-falls-campus",
+      "kind": "campus",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "In addition to the main campus in Moscow, the U of I has branch campuses in Coeur d'Alene, Boise, and Idaho Falls; it also operates a research park in Post Falls, and dozens of extension offices statewide.[11]",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Idaho Falls campus"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    {
+      "id": "twin-falls-campus",
+      "kind": "campus",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "infobox:13",
+                "original_text": "Other campuses[5]: BoiseCoeur d'AleneIdaho FallsPost FallsTwin Falls",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Twin Falls campus"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    {
+      "coordinates": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "statement:q1854488$B1FDDC76-95B9-4CC7-A113-4C4355C31B64",
+                "original_text": "\"latitude\": 46.725833333333",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "source_rank": "normal",
+            "value": {
+              "crs": "EPSG:4326",
+              "globe_qid": "Q2",
+              "latitude": 46.725833333333,
+              "longitude": -117.01055555556,
+              "source_precision_degrees": 0.00027777777777778
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "id": "wikidata-item-location",
+      "kind": "institution",
+      "qid": "Q1854488"
+    }
+  ],
+  "modified_datetime": "2026-11-06T13:46:24.935716+00:00",
+  "population": {
+    "employees_total": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P1128:0",
+              "original_text": "{\"property\": \"P1128\", \"property_label\": \"employees\", \"statement_id\": \"Q1854488$A41F0EA6-47AD-4C72-8A73-4ACBC2B9F588\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+2394\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2020-09-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 10, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "period": {
+            "kind": "date",
+            "month": 9,
+            "year": 2020
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 2394,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "single_source_family"
+        ],
+        "reason_code": "only_available"
+      }
+    },
+    "postgraduate_students": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:10",
+              "original_text": "Postgraduates: 2,021 (fall 2025)",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "period": {
+            "kind": "calendar_year",
+            "label": "fall 2025",
+            "year": 2025
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 2021,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "single_source_family"
+        ],
+        "reason_code": "only_available"
+      }
+    },
+    "students_total": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:0",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q1854488$7E58C251-EADE-4F80-A5EC-8A29E413DAE3\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+10791\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2020-09-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 10, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "period": {
+            "kind": "date",
+            "month": 9,
+            "year": 2020
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 10791,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "section:History",
+              "original_text": "Enrollment expanded sharply in the postwar decades, reaching 8,698 by the fall of 1979.[22]",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c2",
+          "period": {
+            "kind": "calendar_year",
+            "label": "fall 1979",
+            "year": 1979
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 8698,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "infobox:8",
+              "original_text": "Students: 12,275 (fall 2026)[3]",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c3",
+          "period": {
+            "kind": "calendar_year",
+            "label": "fall 2026",
+            "year": 2026
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 12275,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "It enrolls approximately 12,000 students across its campuses, with 11,000 on the Moscow campus.",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c4",
+          "period_status": "not_stated",
+          "value": {
+            "amount": 12000,
+            "basis": "unspecified",
+            "precision": "approximate"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c3",
+        "qualifications": [
+          "single_source_family"
+        ],
+        "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+        "reason_code": "best_available"
+      }
+    },
+    "undergraduate_students": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:9",
+              "original_text": "Undergraduates: 10,362 (fall 2025)",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "period": {
+            "kind": "calendar_year",
+            "label": "fall 2025",
+            "year": 2025
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 10362,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "single_source_family"
+        ],
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "profile": {
+    "academic_focus": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:Academics",
+              "original_text": "College of Agricultural and Life Sciences (CALS, renamed 2001, formerly Agriculture (1901))",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Academics",
+              "original_text": "College of Art and Architecture (1981)",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Academics",
+              "original_text": "College of Business and Economics (CBE, 1925)",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Academics",
+              "original_text": "College of Education, Health and Human Sciences (EHHS, 1920)",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Academics",
+              "original_text": "College of Engineering (1911)",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Academics",
+              "original_text": "College of Graduate Studies (COGS)",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Academics",
+              "original_text": "College of Law (1909)",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Academics",
+              "original_text": "College of Letters, Arts, and Social Sciences (CLASS, 2002, formed after split of Letters and Science (1900))",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Academics",
+              "original_text": "College of Natural Resources (CNR, renamed 2000, formerly Forestry, Wildlife, & Range Sciences, originally Forestry (1917))",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Academics",
+              "original_text": "College of Science (2002, formed after split of Letters and Science, and dissolution of Mines and Earth Resources)",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Academics",
+              "original_text": "School of Health and Medical Professions (SHAMP, 2024)[76]",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": [
+            {
+              "language": "en",
+              "text": "Agricultural and life sciences"
+            },
+            {
+              "language": "en",
+              "text": "Art and architecture"
+            },
+            {
+              "language": "en",
+              "text": "Business and economics"
+            },
+            {
+              "language": "en",
+              "text": "Education, health and human sciences"
+            },
+            {
+              "language": "en",
+              "text": "Engineering"
+            },
+            {
+              "language": "en",
+              "text": "Law"
+            },
+            {
+              "language": "en",
+              "text": "Letters, arts, and social sciences"
+            },
+            {
+              "language": "en",
+              "text": "Natural resources"
+            },
+            {
+              "language": "en",
+              "text": "Science"
+            },
+            {
+              "language": "en",
+              "text": "Health and medical professions"
+            }
+          ],
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "degree_levels": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:Academics",
+              "original_text": "From 1896 through May 2011, the University of Idaho granted 80,233 bachelor's degrees, 21,734 master's degrees, 2,694 doctoral degrees, 240 honorary degrees, 1,164 specialist degrees, and 3,654 law degrees.[75]",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": [
+            "bachelor's",
+            "master's",
+            "doctoral",
+            "specialist",
+            "law"
+          ],
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "motto": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:0",
+              "original_text": "Motto: \"A Legacy of Leading\"",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "language": "en",
+            "text": "A Legacy of Leading"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "summary": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "Public university in Moscow, Idaho, US\nThe University of Idaho (U of I, or UIdaho)[8] is a public land-grant research university in Moscow, Idaho, United States. Established 137 years ago in 1889 and opened three years later, it was the state's sole university for 71 years, until 1963.\nThe university comprises ten undergraduate, graduate, and professional schools. It enrolls approximately 12,000 students across its campuses, with 11,000 on the Moscow campus. The university is classified among \"R1: Very High Spending and Doctorate Production\".[9]\nLocated on the rural Palouse, the university is represented in intercollegiate athletics by the Idaho Vandals, who compete in NCAA Division I,[10] primarily in the Big Sky Conference. In addition to the main campus in Moscow, the U of I has branch campuses in Coeur d'Alene, Boise, and Idaho Falls; it also operates a research park in Post Falls, and dozens of extension offices statewide.[11]",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Campus",
+              "original_text": "[edit | edit source]\nAccording to the U of I Facts Books, the Moscow campus, abutting the Washington state line, is 1,585 acres (2.5 mi2; 6.4 km2), including 253 buildings with a replacement value of $812 million. It has 49 acres (20 ha) of parking lots, 1.2 miles (2 km) of bike paths, 22 computer labs, an 18-hole golf course on 150 acres (61 ha), 80 acres (32 ha) of arboreta, and 860 acres (1.3 mi2; 3.5 km2) of farms.",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:History",
+              "original_text": "On January 30, 1889, Governor Edward Stevenson of the Idaho Territory signed the territorial legislature's Council Bill No. 20, which officially established the UI as the upcoming state's land-grant institution. Nearly four years later, the university opened for classes on October 3, 1892.[12] The first four degrees were conferred in 1896, on Stella Maude Allen, Florence May Corbett, Charles Luther Kirtley, and Arthur Prentis Adair.[12]",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:History",
+              "original_text": "Professional programs were added in the same period: the College of Law was established in 1909,[16] the College of Engineering was formally created by the Board of Regents in 1911 after being organized with the College of Mines in 1907,[17] and forestry, first taught as a department in 1909, became a separate school in 1917.[18]",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Academics",
+              "original_text": "The university is organized into ten colleges and one school; two are exclusively for graduate students (Law & Graduate Studies):",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Academics",
+              "original_text": "School of Health and Medical Professions (SHAMP, 2024)[76]",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Academics",
+              "original_text": "The College of Law opened a second campus in Boise in 2010. Initially, the Boise campus only offered third-year classes. It expanded to offer second-year classes in 2014, and as of 2017–18, law students can take their entire three-year curriculum at either location.[77]",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Academics",
+              "original_text": "College of Agricultural and Life Sciences (CALS, renamed 2001, formerly Agriculture (1901))",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Academics",
+              "original_text": "College of Art and Architecture (1981)",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Academics",
+              "original_text": "College of Business and Economics (CBE, 1925)",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Academics",
+              "original_text": "College of Education, Health and Human Sciences (EHHS, 1920)",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Academics",
+              "original_text": "College of Engineering (1911)",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Academics",
+              "original_text": "College of Graduate Studies (COGS)",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Academics",
+              "original_text": "College of Law (1909)",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Academics",
+              "original_text": "College of Letters, Arts, and Social Sciences (CLASS, 2002, formed after split of Letters and Science (1900))",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Academics",
+              "original_text": "College of Natural Resources (CNR, renamed 2000, formerly Forestry, Wildlife, & Range Sciences, originally Forestry (1917))",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Academics",
+              "original_text": "College of Science (2002, formed after split of Letters and Science, and dissolution of Mines and Earth Resources)",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Academics",
+              "original_text": "School of Health and Medical Professions (SHAMP, 2024)[76]",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "infobox:8",
+              "original_text": "Students: 12,275 (fall 2026)[3]",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "infobox:9",
+              "original_text": "Undergraduates: 10,362 (fall 2025)",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "infobox:10",
+              "original_text": "Postgraduates: 2,021 (fall 2025)",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "language": "en",
+            "text": "The University of Idaho, also known as U of I or UIdaho, is a public land-grant research university in Moscow, Idaho, United States. Its main campus is on the Palouse, and the university also has branch campuses in Boise, Coeur d'Alene and Idaho Falls. Its wider presence includes a research park in Post Falls and extension offices across Idaho. The Moscow campus covers 1,585 acres, according to the university fact books cited in its institutional account.\n\nThe university was established on January 30, 1889, when Idaho's territorial governor signed legislation creating the future state's land-grant institution. Classes began on October 3, 1892, and the first four degrees were awarded in 1896. Professional education developed through the establishment of law in 1909, the formal creation of the College of Engineering in 1911, and a separate forestry school in 1917.\n\nIts academic organization comprises ten colleges and one school, spanning agriculture, architecture, business, education, engineering, law, natural resources, sciences, arts and health professions. The School of Health and Medical Professions dates to 2024. The College of Law offers its full three-year curriculum in both Moscow and Boise, an arrangement available from 2017–18. Total enrollment was 12,275 in fall 2026; the separately reported fall 2025 figures were 10,362 undergraduates and 2,021 postgraduates."
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "website": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P856:0",
+              "original_text": "{\"property\": \"P856\", \"property_label\": \"official website\", \"statement_id\": \"Q1854488$5E359A3A-744A-4FD0-B084-CC4A4F3D2262\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"https://www.uidaho.edu/\", \"qualifiers\": {\"P407\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 1860, \"id\": \"Q1860\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "value": "https://www.uidaho.edu/",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "qid": "Q1854488",
+  "record_revision": 1,
+  "related_entities": {
+    "agriculture": {
+      "kind": "faculty",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Academics",
+                "original_text": "College of Agricultural and Life Sciences (CALS, renamed 2001, formerly Agriculture (1901))",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "College of Agricultural and Life Sciences"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    "art-architecture": {
+      "kind": "faculty",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Academics",
+                "original_text": "College of Art and Architecture (1981)",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "College of Art and Architecture"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    "business": {
+      "kind": "faculty",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Academics",
+                "original_text": "College of Business and Economics (CBE, 1925)",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "College of Business and Economics"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    "education": {
+      "kind": "faculty",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Academics",
+                "original_text": "College of Education, Health and Human Sciences (EHHS, 1920)",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "College of Education, Health and Human Sciences"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    "engineering": {
+      "kind": "faculty",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Academics",
+                "original_text": "College of Engineering (1911)",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "College of Engineering"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    "graduate": {
+      "kind": "faculty",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Academics",
+                "original_text": "College of Graduate Studies (COGS)",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "College of Graduate Studies"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    "health-medical": {
+      "kind": "faculty",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Academics",
+                "original_text": "School of Health and Medical Professions (SHAMP, 2024)[76]",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "School of Health and Medical Professions"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    "law": {
+      "kind": "faculty",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Academics",
+                "original_text": "College of Law (1909)",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "College of Law"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    "letters-arts": {
+      "kind": "faculty",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Academics",
+                "original_text": "College of Letters, Arts, and Social Sciences (CLASS, 2002, formed after split of Letters and Science (1900))",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "College of Letters, Arts, and Social Sciences"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    "natural-resources": {
+      "kind": "faculty",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Academics",
+                "original_text": "College of Natural Resources (CNR, renamed 2000, formerly Forestry, Wildlife, & Range Sciences, originally Forestry (1917))",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "College of Natural Resources"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    "science": {
+      "kind": "faculty",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Academics",
+                "original_text": "College of Science (2002, formed after split of Letters and Science, and dissolution of Mines and Earth Resources)",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "College of Science"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    }
+  },
+  "relationships": {
+    "campus": [
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Campus",
+                "original_text": "According to the U of I Facts Books, the Moscow campus, abutting the Washington state line, is 1,585 acres (2.5 mi2; 6.4 km2), including 253 buildings with a replacement value of $812 million.",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "target_ref": "location:moscow-campus"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "In addition to the main campus in Moscow, the U of I has branch campuses in Coeur d'Alene, Boise, and Idaho Falls; it also operates a research park in Post Falls, and dozens of extension offices statewide.[11]",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "target_ref": "location:boise-campus"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "In addition to the main campus in Moscow, the U of I has branch campuses in Coeur d'Alene, Boise, and Idaho Falls; it also operates a research park in Post Falls, and dozens of extension offices statewide.[11]",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "target_ref": "location:coeur-dalene-campus"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "In addition to the main campus in Moscow, the U of I has branch campuses in Coeur d'Alene, Boise, and Idaho Falls; it also operates a research park in Post Falls, and dozens of extension offices statewide.[11]",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "target_ref": "location:idaho-falls-campus"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "infobox:13",
+                "original_text": "Other campuses[5]: BoiseCoeur d'AleneIdaho FallsPost FallsTwin Falls",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "target_ref": "location:twin-falls-campus"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    ],
+    "faculty": [
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Academics",
+                "original_text": "College of Agricultural and Life Sciences (CALS, renamed 2001, formerly Agriculture (1901))",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "target_ref": "related:agriculture"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Academics",
+                "original_text": "College of Art and Architecture (1981)",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "target_ref": "related:art-architecture"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Academics",
+                "original_text": "College of Business and Economics (CBE, 1925)",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "target_ref": "related:business"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Academics",
+                "original_text": "College of Education, Health and Human Sciences (EHHS, 1920)",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "target_ref": "related:education"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Academics",
+                "original_text": "College of Engineering (1911)",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "target_ref": "related:engineering"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Academics",
+                "original_text": "College of Graduate Studies (COGS)",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "target_ref": "related:graduate"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Academics",
+                "original_text": "College of Law (1909)",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "target_ref": "related:law"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Academics",
+                "original_text": "College of Letters, Arts, and Social Sciences (CLASS, 2002, formed after split of Letters and Science (1900))",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "target_ref": "related:letters-arts"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Academics",
+                "original_text": "College of Natural Resources (CNR, renamed 2000, formerly Forestry, Wildlife, & Range Sciences, originally Forestry (1917))",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "target_ref": "related:natural-resources"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Academics",
+                "original_text": "College of Science (2002, formed after split of Letters and Science, and dissolution of Mines and Earth Resources)",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "target_ref": "related:science"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Academics",
+                "original_text": "School of Health and Medical Professions (SHAMP, 2024)[76]",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "target_ref": "related:health-medical"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    ]
+  },
+  "schema_version": "0.2.2",
+  "seed": {
+    "channels": [
+      "ranking_identifier",
+      "reviewed_institution_type"
+    ],
+    "import_id": "seed-84c3beb45367905f",
+    "screening_status": "included"
+  },
+  "selection_policy": "preferred-v1",
+  "sources": {
+    "s1": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T13:40:02.669511+00:00",
+      "revision_id": 2550405201,
+      "source_qid": "Q1854488",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2550405201"
+    },
+    "s10": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T13:40:28.948156+00:00",
+      "revision_id": 2530918249,
+      "source_qid": "Q499927",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2530918249"
+    },
+    "s2": {
+      "family": "wikimedia",
+      "kind": "wikipedia",
+      "language": "en",
+      "page_id": 53545,
+      "publisher_role": "encyclopedia",
+      "retrieved_at": "2026-11-06T13:40:18.197761+00:00",
+      "revision_id": 1382530783,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1382530783"
+    },
+    "s3": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T09:50:17.552777+00:00",
+      "revision_id": 2557623321,
+      "source_qid": "Q4917",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2557623321"
+    },
+    "s4": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T08:48:57.696840+00:00",
+      "revision_id": 2559546120,
+      "source_qid": "Q875538",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2559546120"
+    },
+    "s5": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T09:50:36.584805+00:00",
+      "revision_id": 2559741554,
+      "source_qid": "Q15936437",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2559741554"
+    },
+    "s6": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T13:16:40.252649+00:00",
+      "revision_id": 2550572287,
+      "source_qid": "Q615150",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2550572287"
+    },
+    "s7": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T13:40:24.584278+00:00",
+      "revision_id": 2505248611,
+      "source_qid": "Q21032622",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2505248611"
+    },
+    "s8": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T11:09:52.720710+00:00",
+      "revision_id": 2554628329,
+      "source_qid": "Q23002039",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2554628329"
+    },
+    "s9": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T09:50:50.405563+00:00",
+      "revision_id": 2565041516,
+      "source_qid": "Q30",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2565041516"
+    }
+  },
+  "update_datetime": "2026-11-06T13:46:24.935716+00:00"
+}

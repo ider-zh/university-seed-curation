@@ -15,16 +15,37 @@
           "reason": "The inaccurate last_known selection and last_known_only qualification are gone, but the revision deletes leadership.chair entirely. The request explicitly also required retaining Auby as a supported historical observation with an honest rationale or selecting a later supported chair observation; neither is present. Dean Lewis in the separate undated president field does not preserve the requested dated P488 observation. Frozen s1 P488:0 and s12 support Auby (1971–1975), and P488:8 supports Q105337110 (2012–2013), without needing an invented name.",
           "request_id": "4b9ca1a2-9617-530c-81c7-15747c209e9e",
           "reviewed_proposal_sha256": "62cd32b68d08c970360014dd1c52450320b77575e256ee9acc924ebba86ee460"
+        },
+        {
+          "category": "scope_conflict",
+          "field": "leadership.chair.preferred",
+          "reason": "Retain the supported Auby historical observation but remove or correct reason_code last_known, qualification last_known_only and the claim that 1971–1975 is the best available last-known appointment. Use an honest historical-selection rationale, or select a later supported observation from prepared s1 P488:1–8 (P488:8 is preferred rank, Q105337110, 2012–2013), without inventing a name. This correction is required by both prior proposal-bound requests.",
+          "request_id": "82e5dc23-3918-5978-a2c0-8e0332ccf9f7",
+          "reviewed_proposal_sha256": "9e521ae9be6c807da8b9608adb9b5e0b40fa53c46f199d9a2bedc7bdbb4b86f3"
         }
       ],
-      "phase": "revision_requested",
+      "phase": "unresolved",
       "reason": "resume_after_private_workspace_loss",
-      "revision": 1
+      "revision": 2
     },
     "Q13344": {
       "open_requests": [],
       "phase": "unresolved",
       "reason": "technical_blocker_qualified_root_P625_requires_scoped_geography_task;research_result_retained_no_review_or_approval",
+      "revision": 0
+    },
+    "Q5141880": {
+      "open_requests": [
+        {
+          "category": "scope_conflict",
+          "field": "identity.scope",
+          "reason": "Resolve the pending institutional eligibility before publication: provide source-grounded support for a qualifying in-scope/related disposition, or a justified excluded disposition under the project scope. The supplied packet establishes a post-primary school with PLC/further-education provision and a conflicting university classification, but does not settle that eligibility. Preserve both classification observations, the honest needs_review state, and the separate establishment-date conflict while the record remains unpublished; do not invent higher-education or degree-awarding status.",
+          "request_id": "c3f9dc2b-48e7-5d8e-b7d9-731d06e74158",
+          "reviewed_proposal_sha256": "2bbcd069c7da918a3637abd51dd57517075497314563649eae1506c506d38b30"
+        }
+      ],
+      "phase": "unresolved",
+      "reason": "resume_after_private_workspace_loss",
       "revision": 0
     }
   },

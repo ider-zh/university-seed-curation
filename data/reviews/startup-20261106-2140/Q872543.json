@@ -1,0 +1,2513 @@
+{
+  "attribution": "distinct_native_research_and_review_subagents;not_cryptographic_identity",
+  "research": {
+    "baseline_sha256": "absent",
+    "candidate": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-06T13:40:27.159360+00:00",
+          "status": "checked"
+        },
+        "geography": {
+          "checked_at": "2026-11-06T13:40:27.159360+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-06T13:40:27.159360+00:00",
+          "status": "checked"
+        },
+        "identity": {
+          "checked_at": "2026-11-06T13:40:27.159360+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-06T13:40:27.159360+00:00",
+          "status": "disputed"
+        },
+        "profile": {
+          "checked_at": "2026-11-06T13:40:27.159360+00:00",
+          "status": "checked"
+        }
+      },
+      "curation": {
+        "identity_status": "in_scope"
+      },
+      "finance": {
+        "budget": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:4",
+                  "original_text": "Budget: 296.1 Mio. € (2022)[1]Third-party funds: 69.3 Mio. €",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2022
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": "296100000",
+                "currency": "EUR",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "infobox:3",
+                      "original_text": "Established: 1 January 2004 (Faculty since 1863)",
+                      "source_ref": "s2"
+                    },
+                    {
+                      "locator": "section:History",
+                      "original_text": "Since the enactment of the University Act of 2002 on 1 January 2004, the current Medical University of Graz (as well as the Medical University of Vienna and the Medical University of Innsbruck) has become an independent university.",
+                      "source_ref": "s2"
+                    },
+                    {
+                      "locator": "claim:P571:0",
+                      "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q872543$CD4B5F8C-2505-4D8B-B670-117DC93B970C\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+2004-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}",
+                      "source_ref": "s1"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "day": 1,
+                    "month": 1,
+                    "precision": "day",
+                    "year": 2004
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:History",
+                      "original_text": "Since the enactment of the University Act of 2002 on 1 January 2004, the current Medical University of Graz (as well as the Medical University of Vienna and the Medical University of Innsbruck) has become an independent university.",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "The Medical University of Graz became an independent university following enactment of the University Act of 2002."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "independent-university-2004",
+            "kind": "institution_establishment",
+            "subject_ref": "institution"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:History",
+                      "original_text": "The present Medical University of Graz traces its origins back to the former Medical Faculty of the Karl-Franzens University of Graz, which was founded in 1863 by Emperor Franz Joseph I.",
+                      "source_ref": "s2"
+                    },
+                    {
+                      "locator": "infobox:3",
+                      "original_text": "Established: 1 January 2004 (Faculty since 1863)",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 1863
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:History",
+                      "original_text": "The present Medical University of Graz traces its origins back to the former Medical Faculty of the Karl-Franzens University of Graz, which was founded in 1863 by Emperor Franz Joseph I.",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "The former Medical Faculty of the Karl-Franzens University of Graz was founded by Emperor Franz Joseph I."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "faculty-1863",
+            "kind": "predecessor_establishment",
+            "subject_ref": "related:medical-faculty"
+          }
+        ]
+      },
+      "identity": {
+        "aliases": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "The Medical University of Graz (Med Uni Graz)",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Med Uni Graz"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ],
+        "identifiers": {
+          "P5242": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P5242:0",
+                    "original_text": "{\"property\": \"P5242\", \"property_label\": \"ARWU university ID\", \"statement_id\": \"Q872543$7959ADB6-3C05-4A16-83DF-2741A33B7697\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"Medical-University-of-Graz\"}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "Medical-University-of-Graz",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "P5586": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P5586:0",
+                    "original_text": "{\"property\": \"P5586\", \"property_label\": \"Times Higher Education World University ID\", \"statement_id\": \"Q872543$E3EC9CD7-3637-44C7-A0A0-959B36D5B468\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"medical-university-graz\"}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "medical-university-graz",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P31:1",
+                  "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q872543$CBE1DD1C-F53C-4D43-9BDC-10F1A24B2535\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 3918, \"id\": \"Q3918\"}}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "metadata",
+                  "original_text": "{\"id\": \"Q3918\", \"labels\": {\"en\": \"university\"}, \"descriptions\": {\"en\": \"an institution of tertiary education and research which awards academic degrees in several academic disciplines\"}}",
+                  "source_ref": "s5"
+                },
+                {
+                  "locator": "section:lead",
+                  "original_text": "is a medical university in Austria",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "university",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "de": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "infobox:0",
+                    "original_text": ": Medizinische Universität Graz",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": "Medizinische Universität Graz",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q872543\", \"labels\": {\"en\": \"Medical University of Graz\"}, \"descriptions\": {\"en\": \"medical school\"}}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "page_metadata",
+                    "original_text": "{\"title\": \"Medical University of Graz\", \"language\": \"en\"}",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": "Medical University of Graz",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        "ownership": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:2",
+                  "original_text": "Type: Public",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "public",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "leadership": {
+        "rector": {
+          "candidates": [
+            {
+              "current_basis": "historical",
+              "evidence": [
+                {
+                  "locator": "claim:P1075:0",
+                  "original_text": "{\"property\": \"P1075\", \"property_label\": \"rector\", \"statement_id\": \"Q872543$f50c25da-4be3-1d47-70ee-4ae4979b5629\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 37649611, \"id\": \"Q37649611\"}, \"qualifiers\": {\"P580\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2008-02-15T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}], \"P582\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2016-02-15T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "section:Rectorate",
+                  "original_text": "Gerhard Franz Walter was the rector of the Med Uni Graz from 2004 to 2008, followed by Josef Smolle, who served as rector of the Medical University of Graz from 2008 to 2016.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "person": {
+                  "name": "Josef Smolle",
+                  "qid": "Q37649611"
+                },
+                "term_end": {
+                  "day": 15,
+                  "month": 2,
+                  "precision": "day",
+                  "year": 2016
+                },
+                "term_start": {
+                  "day": 15,
+                  "month": 2,
+                  "precision": "day",
+                  "year": 2008
+                },
+                "title_original": {
+                  "language": "en",
+                  "text": "rector"
+                }
+              },
+              "verification": "supported"
+            },
+            {
+              "current_basis": "historical",
+              "evidence": [
+                {
+                  "locator": "claim:P1075:1",
+                  "original_text": "{\"property\": \"P1075\", \"property_label\": \"rector\", \"statement_id\": \"Q872543$e89d6343-4bc3-81d7-df97-28e960f81d09\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 37672207, \"id\": \"Q37672207\"}, \"qualifiers\": {\"P580\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2016-02-15T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}], \"P582\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2024-02-15T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 2}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "section:Rectorate",
+                  "original_text": "The rector of the Medical University of Graz since 15 February 2016 is Hellmut Samonigg.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c2",
+              "value": {
+                "person": {
+                  "name": "Hellmut Samonigg",
+                  "qid": "Q37672207"
+                },
+                "term_end": {
+                  "day": 15,
+                  "month": 2,
+                  "precision": "day",
+                  "year": 2024
+                },
+                "term_start": {
+                  "day": 15,
+                  "month": 2,
+                  "precision": "day",
+                  "year": 2016
+                },
+                "title_original": {
+                  "language": "en",
+                  "text": "rector"
+                }
+              },
+              "verification": "supported"
+            },
+            {
+              "current_basis": "infobox_current",
+              "evidence": [
+                {
+                  "locator": "claim:P1075:2",
+                  "original_text": "{\"property\": \"P1075\", \"property_label\": \"rector\", \"statement_id\": \"Q872543$30cd4f54-4b3b-761a-ccf9-e8967a4e1b82\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 65665912, \"id\": \"Q65665912\"}, \"qualifiers\": {\"P580\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2024-02-15T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "section:Rectorate",
+                  "original_text": "Andrea Kurz was elected by the university council as Hellmut Samonigg's successor starting on 15 February 2024.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c3",
+              "value": {
+                "person": {
+                  "name": "Andrea Kurz",
+                  "qid": "Q65665912"
+                },
+                "term_start": {
+                  "day": 15,
+                  "month": 2,
+                  "precision": "day",
+                  "year": 2024
+                },
+                "title_original": {
+                  "language": "en",
+                  "text": "rector"
+                }
+              },
+              "verification": "supported"
+            },
+            {
+              "current_basis": "historical",
+              "evidence": [
+                {
+                  "locator": "section:Rectorate",
+                  "original_text": "Gerhard Franz Walter was the rector of the Med Uni Graz from 2004 to 2008",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c4",
+              "value": {
+                "person": {
+                  "name": "Gerhard Franz Walter"
+                },
+                "term_end": {
+                  "precision": "year",
+                  "year": 2008
+                },
+                "term_start": {
+                  "precision": "year",
+                  "year": 2004
+                },
+                "title_original": {
+                  "language": "en",
+                  "text": "rector"
+                }
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c3",
+            "qualifications": [
+              "single_source_family",
+              "reported_current"
+            ],
+            "reason": "The page reports this person in its current officeholder field; a term-end date is not required.",
+            "reason_code": "infobox_current"
+          }
+        }
+      },
+      "locations": [
+        {
+          "id": "graz",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "infobox:9",
+                    "original_text": "Location: Graz, Styria, Austria",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Graz"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        {
+          "id": "styria",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "infobox:9",
+                    "original_text": "Location: Graz, Styria, Austria",
+                    "source_ref": "s2"
+                  },
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q872543$A9C46CA7-AA1F-40C1-8AD0-5443C625F4E8\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 41358, \"id\": \"Q41358\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q41358\", \"labels\": {\"en\": \"Styria\"}, \"descriptions\": {\"en\": \"federal state in the south of Austria\"}}",
+                    "source_ref": "s7"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Styria"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q41358"
+        },
+        {
+          "id": "austria",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "infobox:9",
+                    "original_text": "Location: Graz, Styria, Austria",
+                    "source_ref": "s2"
+                  },
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"q872543$5A21938A-0C1A-41AE-9482-F4CB24356637\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 40, \"id\": \"Q40\"}}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q40\", \"labels\": {\"en\": \"Austria\"}, \"descriptions\": {\"en\": \"country in Central Europe\"}}",
+                    "source_ref": "s6"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Austria"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q40"
+        },
+        {
+          "coordinates": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "statement:Q872543$B7B4A687-D310-497E-B8C8-13A106ADAE4B",
+                    "original_text": "\"latitude\": 47.0775",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "source_rank": "normal",
+                "value": {
+                  "crs": "EPSG:4326",
+                  "globe_qid": "Q2",
+                  "latitude": 47.0775,
+                  "longitude": 15.4478,
+                  "source_precision_degrees": 0.0001
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "wikidata-item-location",
+          "kind": "institution",
+          "qid": "Q872543"
+        }
+      ],
+      "modified_datetime": "2026-11-06T13:44:08.495098+00:00",
+      "population": {
+        "academic_staff": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:6",
+                  "original_text": "Academic staff: 92 (2022)[3]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2022
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 92,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason_code": "only_available"
+          }
+        },
+        "employees_total": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P1128:0",
+                  "original_text": "{\"property\": \"P1128\", \"property_label\": \"employees\", \"statement_id\": \"Q872543$2350179b-490a-1d88-df45-1414e7cdccbd\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+2.735\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2022-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 2}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2022
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 2.735,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:7",
+                  "original_text": "Total staff: 2,735 (2022)[3]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c2",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2022
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 2735,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "conflicts": [
+            {
+              "candidate_ids": [
+                "c1",
+                "c2"
+              ],
+              "kind": "value_disagreement",
+              "note": "Wikidata encodes the literal numeric amount +2.735 employees for 2022; Wikipedia gives 2,735 for 2022. Preserve the source values rather than silently interpreting the decimal as a thousands separator.",
+              "status": "unresolved"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c2",
+            "qualifications": [
+              "single_source_family",
+              "conflicting_candidates"
+            ],
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        },
+        "students_total": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2196:0",
+                  "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q872543$C78E0B8B-68C9-41CC-92F3-F1DFD323942E\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+4346\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2017-02-28T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "day": 28,
+                "kind": "date",
+                "month": 2,
+                "year": 2017
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 4346,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:8",
+                  "original_text": "Students: 5,110 (WS 2022/23)[4]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c2",
+              "period": {
+                "end_year": 2023,
+                "kind": "academic_year",
+                "label": "WS 2022/23",
+                "start_year": 2022
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 5110,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c2",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        }
+      },
+      "profile": {
+        "academic_focus": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Austrian_National_Union_of_Students",
+                  "original_text": "It consists of the university representation and the study representations for human medicine, dentistry, health and nursing science, and doctoral studies.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": [
+                {
+                  "language": "en",
+                  "text": "Human medicine"
+                },
+                {
+                  "language": "en",
+                  "text": "Dentistry"
+                },
+                {
+                  "language": "en",
+                  "text": "Health and nursing science"
+                }
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "degree_levels": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Dean",
+                  "original_text": "Dean for doctoral studies is Christian Wadsack, Kathrin Eller serves as vice dean.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": [
+                "doctoral"
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "logo_url": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P154:1",
+                  "original_text": "{\"property\": \"P154\", \"property_label\": \"logo image\", \"statement_id\": \"Q872543$c0769b72-4961-1ed8-6337-11003a63bf5b\", \"rank\": \"preferred\", \"snaktype\": \"value\", \"value\": \"Med Uni Graz Logo.svg\"}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "https://commons.wikimedia.org/wiki/Special:FilePath/Med%20Uni%20Graz%20Logo.svg",
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P154:0",
+                  "original_text": "{\"property\": \"P154\", \"property_label\": \"logo image\", \"statement_id\": \"Q872543$cec9669d-4d6e-f94d-b890-2ffd70fd3c7e\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"Logo Med Uni Graz.png\"}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c2",
+              "value": "https://commons.wikimedia.org/wiki/Special:FilePath/Logo%20Med%20Uni%20Graz.png",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        },
+        "main_image_url": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P18:0",
+                  "original_text": "{\"property\": \"P18\", \"property_label\": \"image\", \"statement_id\": \"Q872543$d269524f-4152-078e-2867-018cc765f4c8\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"Neuer Med Campus.jpg\"}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "https://commons.wikimedia.org/wiki/Special:FilePath/Neuer%20Med%20Campus.jpg",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "motto": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:1",
+                  "original_text": "Motto: \"Pioneering Minds – Research and Education for Patients' Health and Well-being\"",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "Pioneering Minds – Research and Education for Patients' Health and Well-being"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "summary": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:0",
+                  "original_text": ": Medizinische Universität Graz",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "infobox:2",
+                  "original_text": "Type: Public",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "infobox:9",
+                  "original_text": "Location: Graz, Styria, Austria",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:lead",
+                  "original_text": "The Medical University of Graz (Med Uni Graz)",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:History",
+                  "original_text": "The present Medical University of Graz traces its origins back to the former Medical Faculty of the Karl-Franzens University of Graz, which was founded in 1863 by Emperor Franz Joseph I.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:History",
+                  "original_text": "Since the enactment of the University Act of 2002 on 1 January 2004, the current Medical University of Graz (as well as the Medical University of Vienna and the Medical University of Innsbruck) has become an independent university.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:History",
+                  "original_text": "Medical education had been provided here as part of a medical-surgical curriculum since 1782. In 1912, the University Hospital Graz, one of the largest hospitals in Europe at the time, was established.[5]",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:History",
+                  "original_text": "The university library of the Medical University of Graz was previously a part of the University Library Graz before the separation of the two universities.[5]",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Curriculum",
+                  "original_text": "On 8 October 2012, the Medical University of Graz became the first university in Austria to celebrate a White Coat Ceremony of its third-year students.[16]",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Austrian_National_Union_of_Students",
+                  "original_text": "It consists of the university representation and the study representations for human medicine, dentistry, health and nursing science, and doctoral studies.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Rectorate",
+                  "original_text": "Andrea Kurz was elected by the university council as Hellmut Samonigg's successor starting on 15 February 2024.[9]",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:University_Council",
+                  "original_text": "Since 1 March 2023 the University Council has included",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Senate",
+                  "original_text": "The Senate consists of 9 professors, 4 student members, 4 members of the middle class, and a representative of the general university staff.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "infobox:8",
+                  "original_text": "Students: 5,110 (WS 2022/23)[4]",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "infobox:6",
+                  "original_text": "Academic staff: 92 (2022)[3]",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "infobox:4",
+                  "original_text": "Budget: 296.1 Mio. € (2022)[1]Third-party funds: 69.3 Mio. €",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "The Medical University of Graz (Medizinische Universität Graz), also known as Med Uni Graz, is a public medical university in Graz, Styria, Austria. It became an independent university on 1 January 2004 under the University Act of 2002. Its history as a separate university is distinct from that of its predecessor, the Medical Faculty of the Karl-Franzens University of Graz, founded in 1863 by Emperor Franz Joseph I.\n\nMedical education in Graz had been provided through a medical-surgical curriculum since 1782. The university's historical account also records the establishment of University Hospital Graz in 1912. Before the separation of the universities, the medical university's library formed part of University Library Graz. In October 2012, the university held a White Coat Ceremony for its third-year students, described as the first such university ceremony in Austria.\n\nThe institution's student representation covers human medicine, dentistry, health and nursing science, and doctoral studies. Its governance includes a rectorate, University Council and Senate. The reported student population was 5,110 in the winter semester of 2022/23, while academic staff numbered 92 in 2022. Its reported budget for 2022 was €296.1 million."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "website": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P856:0",
+                  "original_text": "{\"property\": \"P856\", \"property_label\": \"official website\", \"statement_id\": \"Q872543$350F4BDB-2AC2-494C-818F-EB03981B0AB5\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"http://www.medunigraz.at\", \"reference_count\": 1}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "infobox:11",
+                  "original_text": "Website: www.medunigraz.at",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "http://www.medunigraz.at",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "qid": "Q872543",
+      "record_revision": 1,
+      "related_entities": {
+        "medical-faculty": {
+          "kind": "faculty",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:History",
+                    "original_text": "The present Medical University of Graz traces its origins back to the former Medical Faculty of the Karl-Franzens University of Graz, which was founded in 1863 by Emperor Franz Joseph I.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Medical Faculty of the Karl-Franzens University of Graz"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "relationships": {
+        "predecessor": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:History",
+                    "original_text": "The present Medical University of Graz traces its origins back to the former Medical Faculty of the Karl-Franzens University of Graz, which was founded in 1863 by Emperor Franz Joseph I.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "target_ref": "related:medical-faculty"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ]
+      },
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "ranking_identifier",
+          "reviewed_institution_type"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "included"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T13:40:02.121157+00:00",
+          "revision_id": 2510819998,
+          "source_qid": "Q872543",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2510819998"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikipedia",
+          "language": "en",
+          "page_id": 6643183,
+          "publisher_role": "encyclopedia",
+          "retrieved_at": "2026-11-06T13:40:12.604755+00:00",
+          "revision_id": 1368134562,
+          "url": "https://en.wikipedia.org/w/index.php?oldid=1368134562"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T11:11:50.558813+00:00",
+          "revision_id": 2562478881,
+          "source_qid": "Q4916",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2562478881"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T13:40:17.027345+00:00",
+          "revision_id": 2561583370,
+          "source_qid": "Q494230",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2561583370"
+        },
+        "s5": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T09:04:54.551367+00:00",
+          "revision_id": 2562156954,
+          "source_qid": "Q3918",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2562156954"
+        },
+        "s6": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T13:40:21.737754+00:00",
+          "revision_id": 2564498923,
+          "source_qid": "Q40",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2564498923"
+        },
+        "s7": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T13:40:27.130714+00:00",
+          "revision_id": 2563743554,
+          "source_qid": "Q41358",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2563743554"
+        }
+      }
+    },
+    "coverage": [
+      {
+        "group": "identity",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "status": "checked"
+      },
+      {
+        "group": "population",
+        "status": "disputed"
+      },
+      {
+        "group": "finance",
+        "status": "checked"
+      },
+      {
+        "group": "profile",
+        "status": "checked"
+      }
+    ],
+    "delta": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-06T13:40:27.159360+00:00",
+          "status": "checked"
+        },
+        "geography": {
+          "checked_at": "2026-11-06T13:40:27.159360+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-06T13:40:27.159360+00:00",
+          "status": "checked"
+        },
+        "identity": {
+          "checked_at": "2026-11-06T13:40:27.159360+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-06T13:40:27.159360+00:00",
+          "status": "disputed"
+        },
+        "profile": {
+          "checked_at": "2026-11-06T13:40:27.159360+00:00",
+          "status": "checked"
+        }
+      },
+      "curation": {
+        "identity_status": "in_scope"
+      },
+      "finance": {
+        "budget": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:4",
+                  "original_text": "Budget: 296.1 Mio. € (2022)[1]Third-party funds: 69.3 Mio. €",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2022
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": "296100000",
+                "currency": "EUR",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "infobox:3",
+                      "original_text": "Established: 1 January 2004 (Faculty since 1863)",
+                      "source_ref": "s2"
+                    },
+                    {
+                      "locator": "section:History",
+                      "original_text": "Since the enactment of the University Act of 2002 on 1 January 2004, the current Medical University of Graz (as well as the Medical University of Vienna and the Medical University of Innsbruck) has become an independent university.",
+                      "source_ref": "s2"
+                    },
+                    {
+                      "locator": "claim:P571:0",
+                      "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q872543$CD4B5F8C-2505-4D8B-B670-117DC93B970C\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+2004-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}",
+                      "source_ref": "s1"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "day": 1,
+                    "month": 1,
+                    "precision": "day",
+                    "year": 2004
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:History",
+                      "original_text": "Since the enactment of the University Act of 2002 on 1 January 2004, the current Medical University of Graz (as well as the Medical University of Vienna and the Medical University of Innsbruck) has become an independent university.",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "The Medical University of Graz became an independent university following enactment of the University Act of 2002."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "independent-university-2004",
+            "kind": "institution_establishment",
+            "subject_ref": "institution"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:History",
+                      "original_text": "The present Medical University of Graz traces its origins back to the former Medical Faculty of the Karl-Franzens University of Graz, which was founded in 1863 by Emperor Franz Joseph I.",
+                      "source_ref": "s2"
+                    },
+                    {
+                      "locator": "infobox:3",
+                      "original_text": "Established: 1 January 2004 (Faculty since 1863)",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 1863
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:History",
+                      "original_text": "The present Medical University of Graz traces its origins back to the former Medical Faculty of the Karl-Franzens University of Graz, which was founded in 1863 by Emperor Franz Joseph I.",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "The former Medical Faculty of the Karl-Franzens University of Graz was founded by Emperor Franz Joseph I."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "faculty-1863",
+            "kind": "predecessor_establishment",
+            "subject_ref": "related:medical-faculty"
+          }
+        ]
+      },
+      "identity": {
+        "aliases": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "The Medical University of Graz (Med Uni Graz)",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Med Uni Graz"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ],
+        "identifiers": {
+          "P5242": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P5242:0",
+                    "original_text": "{\"property\": \"P5242\", \"property_label\": \"ARWU university ID\", \"statement_id\": \"Q872543$7959ADB6-3C05-4A16-83DF-2741A33B7697\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"Medical-University-of-Graz\"}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "Medical-University-of-Graz",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "P5586": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P5586:0",
+                    "original_text": "{\"property\": \"P5586\", \"property_label\": \"Times Higher Education World University ID\", \"statement_id\": \"Q872543$E3EC9CD7-3637-44C7-A0A0-959B36D5B468\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"medical-university-graz\"}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "medical-university-graz",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P31:1",
+                  "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q872543$CBE1DD1C-F53C-4D43-9BDC-10F1A24B2535\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 3918, \"id\": \"Q3918\"}}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "metadata",
+                  "original_text": "{\"id\": \"Q3918\", \"labels\": {\"en\": \"university\"}, \"descriptions\": {\"en\": \"an institution of tertiary education and research which awards academic degrees in several academic disciplines\"}}",
+                  "source_ref": "s5"
+                },
+                {
+                  "locator": "section:lead",
+                  "original_text": "is a medical university in Austria",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "university",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "de": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "infobox:0",
+                    "original_text": ": Medizinische Universität Graz",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": "Medizinische Universität Graz",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q872543\", \"labels\": {\"en\": \"Medical University of Graz\"}, \"descriptions\": {\"en\": \"medical school\"}}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "page_metadata",
+                    "original_text": "{\"title\": \"Medical University of Graz\", \"language\": \"en\"}",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": "Medical University of Graz",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        "ownership": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:2",
+                  "original_text": "Type: Public",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "public",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "leadership": {
+        "rector": {
+          "candidates": [
+            {
+              "current_basis": "historical",
+              "evidence": [
+                {
+                  "locator": "claim:P1075:0",
+                  "original_text": "{\"property\": \"P1075\", \"property_label\": \"rector\", \"statement_id\": \"Q872543$f50c25da-4be3-1d47-70ee-4ae4979b5629\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 37649611, \"id\": \"Q37649611\"}, \"qualifiers\": {\"P580\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2008-02-15T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}], \"P582\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2016-02-15T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "section:Rectorate",
+                  "original_text": "Gerhard Franz Walter was the rector of the Med Uni Graz from 2004 to 2008, followed by Josef Smolle, who served as rector of the Medical University of Graz from 2008 to 2016.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "person": {
+                  "name": "Josef Smolle",
+                  "qid": "Q37649611"
+                },
+                "term_end": {
+                  "day": 15,
+                  "month": 2,
+                  "precision": "day",
+                  "year": 2016
+                },
+                "term_start": {
+                  "day": 15,
+                  "month": 2,
+                  "precision": "day",
+                  "year": 2008
+                },
+                "title_original": {
+                  "language": "en",
+                  "text": "rector"
+                }
+              },
+              "verification": "supported"
+            },
+            {
+              "current_basis": "historical",
+              "evidence": [
+                {
+                  "locator": "claim:P1075:1",
+                  "original_text": "{\"property\": \"P1075\", \"property_label\": \"rector\", \"statement_id\": \"Q872543$e89d6343-4bc3-81d7-df97-28e960f81d09\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 37672207, \"id\": \"Q37672207\"}, \"qualifiers\": {\"P580\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2016-02-15T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}], \"P582\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2024-02-15T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 2}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "section:Rectorate",
+                  "original_text": "The rector of the Medical University of Graz since 15 February 2016 is Hellmut Samonigg.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c2",
+              "value": {
+                "person": {
+                  "name": "Hellmut Samonigg",
+                  "qid": "Q37672207"
+                },
+                "term_end": {
+                  "day": 15,
+                  "month": 2,
+                  "precision": "day",
+                  "year": 2024
+                },
+                "term_start": {
+                  "day": 15,
+                  "month": 2,
+                  "precision": "day",
+                  "year": 2016
+                },
+                "title_original": {
+                  "language": "en",
+                  "text": "rector"
+                }
+              },
+              "verification": "supported"
+            },
+            {
+              "current_basis": "infobox_current",
+              "evidence": [
+                {
+                  "locator": "claim:P1075:2",
+                  "original_text": "{\"property\": \"P1075\", \"property_label\": \"rector\", \"statement_id\": \"Q872543$30cd4f54-4b3b-761a-ccf9-e8967a4e1b82\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 65665912, \"id\": \"Q65665912\"}, \"qualifiers\": {\"P580\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2024-02-15T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "section:Rectorate",
+                  "original_text": "Andrea Kurz was elected by the university council as Hellmut Samonigg's successor starting on 15 February 2024.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c3",
+              "value": {
+                "person": {
+                  "name": "Andrea Kurz",
+                  "qid": "Q65665912"
+                },
+                "term_start": {
+                  "day": 15,
+                  "month": 2,
+                  "precision": "day",
+                  "year": 2024
+                },
+                "title_original": {
+                  "language": "en",
+                  "text": "rector"
+                }
+              },
+              "verification": "supported"
+            },
+            {
+              "current_basis": "historical",
+              "evidence": [
+                {
+                  "locator": "section:Rectorate",
+                  "original_text": "Gerhard Franz Walter was the rector of the Med Uni Graz from 2004 to 2008",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c4",
+              "value": {
+                "person": {
+                  "name": "Gerhard Franz Walter"
+                },
+                "term_end": {
+                  "precision": "year",
+                  "year": 2008
+                },
+                "term_start": {
+                  "precision": "year",
+                  "year": 2004
+                },
+                "title_original": {
+                  "language": "en",
+                  "text": "rector"
+                }
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c3",
+            "qualifications": [
+              "single_source_family",
+              "reported_current"
+            ],
+            "reason": "The page reports this person in its current officeholder field; a term-end date is not required.",
+            "reason_code": "infobox_current"
+          }
+        }
+      },
+      "locations": [
+        {
+          "id": "graz",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "infobox:9",
+                    "original_text": "Location: Graz, Styria, Austria",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Graz"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        {
+          "id": "styria",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "infobox:9",
+                    "original_text": "Location: Graz, Styria, Austria",
+                    "source_ref": "s2"
+                  },
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q872543$A9C46CA7-AA1F-40C1-8AD0-5443C625F4E8\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 41358, \"id\": \"Q41358\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q41358\", \"labels\": {\"en\": \"Styria\"}, \"descriptions\": {\"en\": \"federal state in the south of Austria\"}}",
+                    "source_ref": "s7"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Styria"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q41358"
+        },
+        {
+          "id": "austria",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "infobox:9",
+                    "original_text": "Location: Graz, Styria, Austria",
+                    "source_ref": "s2"
+                  },
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"q872543$5A21938A-0C1A-41AE-9482-F4CB24356637\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 40, \"id\": \"Q40\"}}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q40\", \"labels\": {\"en\": \"Austria\"}, \"descriptions\": {\"en\": \"country in Central Europe\"}}",
+                    "source_ref": "s6"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Austria"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q40"
+        },
+        {
+          "coordinates": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "statement:Q872543$B7B4A687-D310-497E-B8C8-13A106ADAE4B",
+                    "original_text": "\"latitude\": 47.0775",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "source_rank": "normal",
+                "value": {
+                  "crs": "EPSG:4326",
+                  "globe_qid": "Q2",
+                  "latitude": 47.0775,
+                  "longitude": 15.4478,
+                  "source_precision_degrees": 0.0001
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "wikidata-item-location",
+          "kind": "institution",
+          "qid": "Q872543"
+        }
+      ],
+      "population": {
+        "academic_staff": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:6",
+                  "original_text": "Academic staff: 92 (2022)[3]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2022
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 92,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason_code": "only_available"
+          }
+        },
+        "employees_total": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P1128:0",
+                  "original_text": "{\"property\": \"P1128\", \"property_label\": \"employees\", \"statement_id\": \"Q872543$2350179b-490a-1d88-df45-1414e7cdccbd\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+2.735\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2022-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 2}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2022
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 2.735,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:7",
+                  "original_text": "Total staff: 2,735 (2022)[3]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c2",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2022
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 2735,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "conflicts": [
+            {
+              "candidate_ids": [
+                "c1",
+                "c2"
+              ],
+              "kind": "value_disagreement",
+              "note": "Wikidata encodes the literal numeric amount +2.735 employees for 2022; Wikipedia gives 2,735 for 2022. Preserve the source values rather than silently interpreting the decimal as a thousands separator.",
+              "status": "unresolved"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c2",
+            "qualifications": [
+              "single_source_family",
+              "conflicting_candidates"
+            ],
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        },
+        "students_total": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2196:0",
+                  "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q872543$C78E0B8B-68C9-41CC-92F3-F1DFD323942E\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+4346\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2017-02-28T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "day": 28,
+                "kind": "date",
+                "month": 2,
+                "year": 2017
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 4346,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:8",
+                  "original_text": "Students: 5,110 (WS 2022/23)[4]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c2",
+              "period": {
+                "end_year": 2023,
+                "kind": "academic_year",
+                "label": "WS 2022/23",
+                "start_year": 2022
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 5110,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c2",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        }
+      },
+      "profile": {
+        "academic_focus": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Austrian_National_Union_of_Students",
+                  "original_text": "It consists of the university representation and the study representations for human medicine, dentistry, health and nursing science, and doctoral studies.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": [
+                {
+                  "language": "en",
+                  "text": "Human medicine"
+                },
+                {
+                  "language": "en",
+                  "text": "Dentistry"
+                },
+                {
+                  "language": "en",
+                  "text": "Health and nursing science"
+                }
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "degree_levels": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Dean",
+                  "original_text": "Dean for doctoral studies is Christian Wadsack, Kathrin Eller serves as vice dean.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": [
+                "doctoral"
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "logo_url": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P154:1",
+                  "original_text": "{\"property\": \"P154\", \"property_label\": \"logo image\", \"statement_id\": \"Q872543$c0769b72-4961-1ed8-6337-11003a63bf5b\", \"rank\": \"preferred\", \"snaktype\": \"value\", \"value\": \"Med Uni Graz Logo.svg\"}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "https://commons.wikimedia.org/wiki/Special:FilePath/Med%20Uni%20Graz%20Logo.svg",
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P154:0",
+                  "original_text": "{\"property\": \"P154\", \"property_label\": \"logo image\", \"statement_id\": \"Q872543$cec9669d-4d6e-f94d-b890-2ffd70fd3c7e\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"Logo Med Uni Graz.png\"}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c2",
+              "value": "https://commons.wikimedia.org/wiki/Special:FilePath/Logo%20Med%20Uni%20Graz.png",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        },
+        "main_image_url": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P18:0",
+                  "original_text": "{\"property\": \"P18\", \"property_label\": \"image\", \"statement_id\": \"Q872543$d269524f-4152-078e-2867-018cc765f4c8\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"Neuer Med Campus.jpg\"}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "https://commons.wikimedia.org/wiki/Special:FilePath/Neuer%20Med%20Campus.jpg",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "motto": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:1",
+                  "original_text": "Motto: \"Pioneering Minds – Research and Education for Patients' Health and Well-being\"",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "Pioneering Minds – Research and Education for Patients' Health and Well-being"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "summary": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:0",
+                  "original_text": ": Medizinische Universität Graz",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "infobox:2",
+                  "original_text": "Type: Public",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "infobox:9",
+                  "original_text": "Location: Graz, Styria, Austria",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:lead",
+                  "original_text": "The Medical University of Graz (Med Uni Graz)",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:History",
+                  "original_text": "The present Medical University of Graz traces its origins back to the former Medical Faculty of the Karl-Franzens University of Graz, which was founded in 1863 by Emperor Franz Joseph I.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:History",
+                  "original_text": "Since the enactment of the University Act of 2002 on 1 January 2004, the current Medical University of Graz (as well as the Medical University of Vienna and the Medical University of Innsbruck) has become an independent university.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:History",
+                  "original_text": "Medical education had been provided here as part of a medical-surgical curriculum since 1782. In 1912, the University Hospital Graz, one of the largest hospitals in Europe at the time, was established.[5]",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:History",
+                  "original_text": "The university library of the Medical University of Graz was previously a part of the University Library Graz before the separation of the two universities.[5]",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Curriculum",
+                  "original_text": "On 8 October 2012, the Medical University of Graz became the first university in Austria to celebrate a White Coat Ceremony of its third-year students.[16]",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Austrian_National_Union_of_Students",
+                  "original_text": "It consists of the university representation and the study representations for human medicine, dentistry, health and nursing science, and doctoral studies.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Rectorate",
+                  "original_text": "Andrea Kurz was elected by the university council as Hellmut Samonigg's successor starting on 15 February 2024.[9]",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:University_Council",
+                  "original_text": "Since 1 March 2023 the University Council has included",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Senate",
+                  "original_text": "The Senate consists of 9 professors, 4 student members, 4 members of the middle class, and a representative of the general university staff.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "infobox:8",
+                  "original_text": "Students: 5,110 (WS 2022/23)[4]",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "infobox:6",
+                  "original_text": "Academic staff: 92 (2022)[3]",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "infobox:4",
+                  "original_text": "Budget: 296.1 Mio. € (2022)[1]Third-party funds: 69.3 Mio. €",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "The Medical University of Graz (Medizinische Universität Graz), also known as Med Uni Graz, is a public medical university in Graz, Styria, Austria. It became an independent university on 1 January 2004 under the University Act of 2002. Its history as a separate university is distinct from that of its predecessor, the Medical Faculty of the Karl-Franzens University of Graz, founded in 1863 by Emperor Franz Joseph I.\n\nMedical education in Graz had been provided through a medical-surgical curriculum since 1782. The university's historical account also records the establishment of University Hospital Graz in 1912. Before the separation of the universities, the medical university's library formed part of University Library Graz. In October 2012, the university held a White Coat Ceremony for its third-year students, described as the first such university ceremony in Austria.\n\nThe institution's student representation covers human medicine, dentistry, health and nursing science, and doctoral studies. Its governance includes a rectorate, University Council and Senate. The reported student population was 5,110 in the winter semester of 2022/23, while academic staff numbered 92 in 2022. Its reported budget for 2022 was €296.1 million."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "website": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P856:0",
+                  "original_text": "{\"property\": \"P856\", \"property_label\": \"official website\", \"statement_id\": \"Q872543$350F4BDB-2AC2-494C-818F-EB03981B0AB5\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"http://www.medunigraz.at\", \"reference_count\": 1}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "infobox:11",
+                  "original_text": "Website: www.medunigraz.at",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "http://www.medunigraz.at",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "qid": "Q872543",
+      "record_revision": 1,
+      "related_entities": {
+        "medical-faculty": {
+          "kind": "faculty",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:History",
+                    "original_text": "The present Medical University of Graz traces its origins back to the former Medical Faculty of the Karl-Franzens University of Graz, which was founded in 1863 by Emperor Franz Joseph I.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Medical Faculty of the Karl-Franzens University of Graz"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "relationships": {
+        "predecessor": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:History",
+                    "original_text": "The present Medical University of Graz traces its origins back to the former Medical Faculty of the Karl-Franzens University of Graz, which was founded in 1863 by Emperor Franz Joseph I.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "target_ref": "related:medical-faculty"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ]
+      },
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "ranking_identifier",
+          "reviewed_institution_type"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "included"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T13:40:02.121157+00:00",
+          "revision_id": 2510819998,
+          "source_qid": "Q872543",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2510819998"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikipedia",
+          "language": "en",
+          "page_id": 6643183,
+          "publisher_role": "encyclopedia",
+          "retrieved_at": "2026-11-06T13:40:12.604755+00:00",
+          "revision_id": 1368134562,
+          "url": "https://en.wikipedia.org/w/index.php?oldid=1368134562"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T11:11:50.558813+00:00",
+          "revision_id": 2562478881,
+          "source_qid": "Q4916",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2562478881"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T13:40:17.027345+00:00",
+          "revision_id": 2561583370,
+          "source_qid": "Q494230",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2561583370"
+        },
+        "s5": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T09:04:54.551367+00:00",
+          "revision_id": 2562156954,
+          "source_qid": "Q3918",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2562156954"
+        },
+        "s6": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T13:40:21.737754+00:00",
+          "revision_id": 2564498923,
+          "source_qid": "Q40",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2564498923"
+        },
+        "s7": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T13:40:27.130714+00:00",
+          "revision_id": 2563743554,
+          "source_qid": "Q41358",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2563743554"
+        }
+      }
+    },
+    "open_requests": [],
+    "proposed_at": "2026-11-06T13:44:08.495098+00:00",
+    "qid": "Q872543",
+    "research": {
+      "model": "not_reported",
+      "prompt_sha256": "8fcd352d3e173faecda8a1345df24bfc4ab2074203378632296a426c13e3d7c0",
+      "reasoning_effort": "not_reported",
+      "schema_sha256": "92e942f4fbf2ae28964462ea9ffa8312c5ee16a077a1e08b40aaaf741512422e",
+      "session": "/root/research_q872543"
+    },
+    "retrieval_failures": [],
+    "review_status": "unreviewed",
+    "seed": {
+      "channels": [
+        "ranking_identifier",
+        "reviewed_institution_type"
+      ],
+      "import_id": "seed-84c3beb45367905f",
+      "screening_status": "included"
+    },
+    "transport": {
+      "base_commit": "d2041eb621316211d063e60eb2a502a259759fb2",
+      "protocol": "native-subagent-v1",
+      "repository": "ider-zh/university-seed-curation",
+      "review_policy": {
+        "id": "source-grounded-flexible-v2",
+        "sha256": "b8ed7d2897e4c31dbd81b1379aafdc1077a21d1a33949edbd2d896b0adf99db2"
+      },
+      "schema_sha256": "bfa496eafa9dffca56146214168db7f000b09161b8993129632e7202e1c88833",
+      "seed_catalog_sha256": "84c3beb45367905f513d650684283dd62a9c1b77962bdc34151a6ef05bfa03d4"
+    },
+    "type": "university-proposal-v1"
+  },
+  "review": {
+    "contexts_checked": 8,
+    "coverage_checks": [
+      {
+        "group": "identity",
+        "reason": "Names, alias, public ownership, university classification and both ranking IDs checked against cited offline revisions; identity is in scope.",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "reason": "City, state, country and root institution P625 reviewed, including rank, globe and precision. Wikipedia separately prints a differing coordinate; root coordinate is explicitly source-bound and no campus is inferred.",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "reason": "Independent 2004 institution and 1863 faculty are separated. Predecessor relation is inferential but anchored. Earlier curriculum, hospital and library are carefully qualified in summary. Rectorate source has a broad Walter 2004–2008 range alongside a Tscheliessnigg interim leadership account, retained as a qualification in its check. Optional omitted milestones do not invalidate bounded coverage.",
+        "status": "checked"
+      },
+      {
+        "group": "population",
+        "reason": "All values and periods are accurately sourced. Literal Wikidata 2.735 versus Wikipedia 2735 employees for 2022 remains explicitly unresolved, with the latter preferred and qualified. Student observations concern different dates; WS label must remain available for scope parsing.",
+        "status": "disputed"
+      },
+      {
+        "group": "finance",
+        "reason": "2022 EUR 296.1 million budget is supported; separate third-party funds are not combined. Single source family is correctly disclosed; missing additional finance fields are not a failure.",
+        "status": "checked"
+      },
+      {
+        "group": "profile",
+        "reason": "Motto, website, image filenames/ranks, summary, doctoral level and represented study-area focus checked. Focus and degree level are explained inferences; media URLs are deterministic source-file addresses, not assertions of fetched availability. Single-family and nonexhaustive coverage are acceptable.",
+        "status": "checked"
+      }
+    ],
+    "decision": "approve",
+    "facts_checked": 35,
+    "full_refresh": true,
+    "inferences": [
+      {
+        "id": "$.profile.academic_focus:c1",
+        "reason": "s2 Austrian_National_Union_of_Students names study representations for human medicine, dentistry, and health and nursing science. Using these as broad institutional academic focus is a reasonable inference from represented study areas, not an exhaustive programme catalogue."
+      },
+      {
+        "id": "$.profile.degree_levels:c1",
+        "reason": "s2 Dean explicitly identifies a dean for doctoral studies, reasonably implying doctoral-level provision. s2 student representation also includes doctoral studies. No additional levels are asserted."
+      },
+      {
+        "id": "$.relationships.predecessor[0]:c1",
+        "reason": "s2 History explicitly traces the current university to the former medical faculty. Representing that faculty as predecessor is a reasonable relational inference, without assigning it university independence."
+      }
+    ],
+    "model": "not_reported",
+    "proposal_sha256": "eca4759eafd4db1fb111e8b4c603a209016400190f6d60b3f2e0e51dd79e6bb5",
+    "qid": "Q872543",
+    "reasoning_effort": "not_reported",
+    "record_sha256": "af3917fad09cd49256b000e8d8c3daa65e1437671b8784ae07d9478bee1a6b0f",
+    "request_responses": [],
+    "requests": [],
+    "review_session": "/root/review_q872543",
+    "reviewed_at": "2026-11-06T13:46:44.657868+00:00",
+    "source_revisions_checked": 7
+  },
+  "review_result_sha256": "c6728f6dca779d3df6047ec3696ae2da3c8a69aab0e407abfc5a276db9173205",
+  "type": "university-unified-receipt-v1"
+}
