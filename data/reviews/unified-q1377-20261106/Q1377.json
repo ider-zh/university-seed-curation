@@ -1,0 +1,2115 @@
+{
+  "attribution": "distinct_native_research_and_review_subagents;not_cryptographic_identity",
+  "research": {
+    "baseline_sha256": "absent",
+    "candidate": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-06T09:00:04.097720+00:00",
+          "status": "not_found"
+        },
+        "geography": {
+          "checked_at": "2026-11-06T09:00:04.097720+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-06T09:00:04.097720+00:00",
+          "status": "checked"
+        },
+        "identity": {
+          "checked_at": "2026-11-06T09:00:04.097720+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-06T09:00:04.097720+00:00",
+          "status": "checked"
+        },
+        "profile": {
+          "checked_at": "2026-11-06T09:00:04.097720+00:00",
+          "status": "checked"
+        }
+      },
+      "curation": {
+        "identity_status": "in_scope"
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "claim:P571:0",
+                      "original_text": "\"time\": \"+1919-01-01T00:00:00Z\"",
+                      "source_ref": "s1"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 1919
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Quest_for_a_national_university",
+                      "original_text": "The bill was passed on July 2, 1919; in late August, the first professors were appointed, and on September 18, the full professors established the University Council",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "Formal founding legislation passed on 2 July 1919, with the University Council established on 18 September 1919."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "founding",
+            "kind": "institution_establishment",
+            "subject_ref": "institution"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Quest_for_a_national_university",
+                      "original_text": "The first lectures started on December 3 of the same year.",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "day": 3,
+                    "month": 12,
+                    "precision": "day",
+                    "year": 1919
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "teaching",
+            "kind": "teaching_start",
+            "subject_ref": "institution"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Beginnings",
+                      "original_text": "the first university was founded in 1810 under the Écoles centrales of the French imperial administration of the Illyrian provinces.",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 1810
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Beginnings",
+                      "original_text": "the first university was founded in 1810 under the Écoles centrales of the French imperial administration of the Illyrian provinces.",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "A French-administered university existed in Ljubljana from 1810; it is treated here as a distinct historical institution, not as the 1919 university's founding date."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "earlier",
+            "kind": "institution_establishment",
+            "subject_ref": "related:early"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Beginnings",
+                      "original_text": "That university was disbanded in 1813",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 1813
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Beginnings",
+                      "original_text": "when Austria regained territorial control and reestablished the Imperial Royal Lyceum of Ljubljana as a higher-education institution.",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "The French-period university was disbanded when Austria regained control, and a lyceum was re-established."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "earlier_end",
+            "kind": "closure",
+            "subject_ref": "related:early"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:First_decades",
+                      "original_text": "In 1919, the university comprised five faculties: law, philosophy, technology, theology and medicine.",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 1919
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:First_decades",
+                      "original_text": "In 1919, the university comprised five faculties: law, philosophy, technology, theology and medicine.",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "The newly formed university initially comprised faculties of law, philosophy, technology, theology and medicine."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "first_faculties",
+            "kind": "university_status",
+            "subject_ref": "institution"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:1945_and_later",
+                      "original_text": "In 1979 it was renamed",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 1979
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:1945_and_later",
+                      "original_text": "In 1979 it was renamed \"Edvard Kardelj University in Ljubljana\" after the Communist leader.",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "Renamed Edvard Kardelj University in Ljubljana."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "rename_1979",
+            "kind": "rename",
+            "subject_ref": "institution"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:1945_and_later",
+                      "original_text": "In 1990, with the fall of Yugoslavia, it was regiven its original name.",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 1990
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:1945_and_later",
+                      "original_text": "In 1990, with the fall of Yugoslavia, it was regiven its original name.",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "Restored the University of Ljubljana name."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "rename_1990",
+            "kind": "rename",
+            "subject_ref": "institution"
+          }
+        ]
+      },
+      "identity": {
+        "aliases": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "infobox:1",
+                    "original_text": "Latin: Universitas Labacensis",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "la",
+                  "text": "Universitas Labacensis"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "abbreviated UL",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "UL"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ],
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "Public university in Slovenia",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "university",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "\"en\": \"University of Ljubljana\"",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "University of Ljubljana",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "sl": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "infobox:0",
+                    "original_text": "Univerza v Ljubljani",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": "Univerza v Ljubljani",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        "operating_status": {
+          "candidates": [
+            {
+              "current_basis": "explicit_current",
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "The University of Ljubljana offers programs in the humanities, sciences, and technology, as well as in medicine, dentistry, and veterinary science.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "operating",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "ownership": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:2",
+                  "original_text": "Type: Public",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "public",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "locations": [
+        {
+          "id": "ljubljana",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "The university was founded in the centre of Ljubljana",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Ljubljana"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q437"
+        },
+        {
+          "id": "portoroz",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "infobox:8",
+                    "original_text": "Location: Ljubljana and Portorož, Slovenia",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Portorož"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        {
+          "coordinates": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "statement:q1377$3E2CFCD9-C25A-4CA4-969E-3E510F9B38E7",
+                    "original_text": "\"latitude\": 46.048888888889",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "source_rank": "normal",
+                "value": {
+                  "crs": "EPSG:4326",
+                  "globe_qid": "Q2",
+                  "latitude": 46.048888888889,
+                  "longitude": 14.503888888889
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "wikidata-item-location",
+          "kind": "institution",
+          "qid": "Q1377"
+        }
+      ],
+      "modified_datetime": "2026-11-06T09:01:12.536345+00:00",
+      "population": {
+        "academic_staff": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "approximately 4,000 teaching and research staff",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period_status": "not_stated",
+              "value": {
+                "amount": 4000,
+                "basis": "unspecified",
+                "precision": "approximate"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "period_not_stated",
+              "single_source_family",
+              "approximate_value"
+            ],
+            "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+            "reason_code": "only_available"
+          }
+        },
+        "administrative_staff": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:6",
+                  "original_text": "Administrative staff: cca 3,500",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period_status": "not_stated",
+              "value": {
+                "amount": 3500,
+                "basis": "unspecified",
+                "precision": "approximate"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "approximately 2,000 technical and administrative staff",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c2",
+              "period_status": "not_stated",
+              "value": {
+                "amount": 2000,
+                "basis": "unspecified",
+                "precision": "approximate"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "period_not_stated",
+              "single_source_family",
+              "approximate_value"
+            ],
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        },
+        "students_total": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:7",
+                  "original_text": "Students: 37,615[2]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period_status": "not_stated",
+              "value": {
+                "amount": 37615,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "approximately 38,000 enrolled students",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c2",
+              "period_status": "not_stated",
+              "value": {
+                "amount": 38000,
+                "basis": "unspecified",
+                "precision": "approximate"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "period_not_stated",
+              "single_source_family"
+            ],
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        }
+      },
+      "profile": {
+        "academic_focus": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Academics",
+                  "original_text": "The University of Ljubljana practices research in science and the arts, such as the humanities, social sciences, linguistics, arts, medicine, natural sciences and technology.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": [
+                {
+                  "language": "en",
+                  "text": "humanities"
+                },
+                {
+                  "language": "en",
+                  "text": "social sciences"
+                },
+                {
+                  "language": "en",
+                  "text": "linguistics"
+                },
+                {
+                  "language": "en",
+                  "text": "arts"
+                },
+                {
+                  "language": "en",
+                  "text": "medicine"
+                },
+                {
+                  "language": "en",
+                  "text": "natural sciences"
+                },
+                {
+                  "language": "en",
+                  "text": "technology"
+                }
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "summary": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "The University of Ljubljana (Slovene: Univerza v Ljubljani",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Quest_for_a_national_university",
+                  "original_text": "The bill was passed on July 2, 1919",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Beginnings",
+                  "original_text": "the first university was founded in 1810",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:First_decades",
+                  "original_text": "In 1919, the university comprised five faculties",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:1945_and_later",
+                  "original_text": "In 1979 it was renamed",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Faculties_and_academies",
+                  "original_text": "As of 2018[update], the university has 23 faculties and three academies",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Academics",
+                  "original_text": "The University of Ljubljana practices research in science and the arts",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "The University of Ljubljana (Slovene: Univerza v Ljubljani; Latin: Universitas Labacensis) is a public university based in Ljubljana, Slovenia. Its teaching and research span the humanities, social sciences, natural sciences, technology, the arts and health-related fields. The university's central building is in Congress Square, while its faculties and other facilities extend across the city. The institution also lists Portorož among its locations.\n\nThe current university was established in 1919, following efforts to create a Slovene-language university. Its founding legislation passed in July that year, a university council was constituted in September, and lectures began in December. The initial institution had five faculties: law, philosophy, technology, theology and medicine. Ljubljana had previously hosted a French-administered university founded in 1810 and dissolved in 1813; that earlier institution should not be confused with the university founded in 1919. The present institution was renamed for Edvard Kardelj in 1979 and restored its original name in 1990.\n\nAn encyclopedia account describes 23 faculties and three art academies as of 2018, encompassing a range of disciplines, and reports approximately 38,000 enrolled students without a clear statistical year. These figures are indicative of the scale described by the source, rather than current audited counts."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "website": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P856:0",
+                  "original_text": "\"value\": \"https://www.uni-lj.si/\"",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "https://www.uni-lj.si/",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "qid": "Q1377",
+      "record_revision": 1,
+      "related_entities": {
+        "early": {
+          "kind": "institution",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Beginnings",
+                    "original_text": "the first university was founded in 1810 under the Écoles centrales of the French imperial administration of the Illyrian provinces.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "French-period university in Ljubljana"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "ranking_identifier",
+          "reviewed_institution_type"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "included"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T08:52:40.130136+00:00",
+          "revision_id": 2539036905,
+          "source_qid": "Q1377",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2539036905"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikipedia",
+          "language": "en",
+          "page_id": 167422,
+          "publisher_role": "encyclopedia",
+          "retrieved_at": "2026-11-06T08:53:00.239450+00:00",
+          "revision_id": 1383151887,
+          "url": "https://en.wikipedia.org/w/index.php?oldid=1383151887"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T08:48:57.696840+00:00",
+          "revision_id": 2559546120,
+          "source_qid": "Q875538",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2559546120"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T08:53:06.188828+00:00",
+          "revision_id": 2535466906,
+          "source_qid": "Q96888669",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2535466906"
+        },
+        "s5": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T08:53:12.783436+00:00",
+          "revision_id": 2560996195,
+          "source_qid": "Q215",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2560996195"
+        },
+        "s6": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T08:53:19.462823+00:00",
+          "revision_id": 2562593999,
+          "source_qid": "Q437",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2562593999"
+        },
+        "s7": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T08:53:25.912855+00:00",
+          "revision_id": 2125756297,
+          "source_qid": "Q12794274",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2125756297"
+        }
+      }
+    },
+    "coverage": [
+      {
+        "group": "identity",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "status": "checked"
+      },
+      {
+        "group": "population",
+        "status": "checked"
+      },
+      {
+        "group": "finance",
+        "status": "not_found"
+      },
+      {
+        "group": "profile",
+        "status": "checked"
+      }
+    ],
+    "delta": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-06T09:00:04.097720+00:00",
+          "status": "not_found"
+        },
+        "geography": {
+          "checked_at": "2026-11-06T09:00:04.097720+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-06T09:00:04.097720+00:00",
+          "status": "checked"
+        },
+        "identity": {
+          "checked_at": "2026-11-06T09:00:04.097720+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-06T09:00:04.097720+00:00",
+          "status": "checked"
+        },
+        "profile": {
+          "checked_at": "2026-11-06T09:00:04.097720+00:00",
+          "status": "checked"
+        }
+      },
+      "curation": {
+        "identity_status": "in_scope"
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "claim:P571:0",
+                      "original_text": "\"time\": \"+1919-01-01T00:00:00Z\"",
+                      "source_ref": "s1"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 1919
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Quest_for_a_national_university",
+                      "original_text": "The bill was passed on July 2, 1919; in late August, the first professors were appointed, and on September 18, the full professors established the University Council",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "Formal founding legislation passed on 2 July 1919, with the University Council established on 18 September 1919."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "founding",
+            "kind": "institution_establishment",
+            "subject_ref": "institution"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Quest_for_a_national_university",
+                      "original_text": "The first lectures started on December 3 of the same year.",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "day": 3,
+                    "month": 12,
+                    "precision": "day",
+                    "year": 1919
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "teaching",
+            "kind": "teaching_start",
+            "subject_ref": "institution"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Beginnings",
+                      "original_text": "the first university was founded in 1810 under the Écoles centrales of the French imperial administration of the Illyrian provinces.",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 1810
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Beginnings",
+                      "original_text": "the first university was founded in 1810 under the Écoles centrales of the French imperial administration of the Illyrian provinces.",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "A French-administered university existed in Ljubljana from 1810; it is treated here as a distinct historical institution, not as the 1919 university's founding date."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "earlier",
+            "kind": "institution_establishment",
+            "subject_ref": "related:early"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Beginnings",
+                      "original_text": "That university was disbanded in 1813",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 1813
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Beginnings",
+                      "original_text": "when Austria regained territorial control and reestablished the Imperial Royal Lyceum of Ljubljana as a higher-education institution.",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "The French-period university was disbanded when Austria regained control, and a lyceum was re-established."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "earlier_end",
+            "kind": "closure",
+            "subject_ref": "related:early"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:First_decades",
+                      "original_text": "In 1919, the university comprised five faculties: law, philosophy, technology, theology and medicine.",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 1919
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:First_decades",
+                      "original_text": "In 1919, the university comprised five faculties: law, philosophy, technology, theology and medicine.",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "The newly formed university initially comprised faculties of law, philosophy, technology, theology and medicine."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "first_faculties",
+            "kind": "university_status",
+            "subject_ref": "institution"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:1945_and_later",
+                      "original_text": "In 1979 it was renamed",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 1979
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:1945_and_later",
+                      "original_text": "In 1979 it was renamed \"Edvard Kardelj University in Ljubljana\" after the Communist leader.",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "Renamed Edvard Kardelj University in Ljubljana."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "rename_1979",
+            "kind": "rename",
+            "subject_ref": "institution"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:1945_and_later",
+                      "original_text": "In 1990, with the fall of Yugoslavia, it was regiven its original name.",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 1990
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:1945_and_later",
+                      "original_text": "In 1990, with the fall of Yugoslavia, it was regiven its original name.",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "Restored the University of Ljubljana name."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "rename_1990",
+            "kind": "rename",
+            "subject_ref": "institution"
+          }
+        ]
+      },
+      "identity": {
+        "aliases": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "infobox:1",
+                    "original_text": "Latin: Universitas Labacensis",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "la",
+                  "text": "Universitas Labacensis"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "abbreviated UL",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "UL"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ],
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "Public university in Slovenia",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "university",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "\"en\": \"University of Ljubljana\"",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "University of Ljubljana",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "sl": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "infobox:0",
+                    "original_text": "Univerza v Ljubljani",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": "Univerza v Ljubljani",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        "operating_status": {
+          "candidates": [
+            {
+              "current_basis": "explicit_current",
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "The University of Ljubljana offers programs in the humanities, sciences, and technology, as well as in medicine, dentistry, and veterinary science.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "operating",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "ownership": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:2",
+                  "original_text": "Type: Public",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "public",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "locations": [
+        {
+          "id": "ljubljana",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "The university was founded in the centre of Ljubljana",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Ljubljana"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q437"
+        },
+        {
+          "id": "portoroz",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "infobox:8",
+                    "original_text": "Location: Ljubljana and Portorož, Slovenia",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Portorož"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        {
+          "coordinates": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "statement:q1377$3E2CFCD9-C25A-4CA4-969E-3E510F9B38E7",
+                    "original_text": "\"latitude\": 46.048888888889",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "source_rank": "normal",
+                "value": {
+                  "crs": "EPSG:4326",
+                  "globe_qid": "Q2",
+                  "latitude": 46.048888888889,
+                  "longitude": 14.503888888889
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "wikidata-item-location",
+          "kind": "institution",
+          "qid": "Q1377"
+        }
+      ],
+      "population": {
+        "academic_staff": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "approximately 4,000 teaching and research staff",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period_status": "not_stated",
+              "value": {
+                "amount": 4000,
+                "basis": "unspecified",
+                "precision": "approximate"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "period_not_stated",
+              "single_source_family",
+              "approximate_value"
+            ],
+            "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+            "reason_code": "only_available"
+          }
+        },
+        "administrative_staff": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:6",
+                  "original_text": "Administrative staff: cca 3,500",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period_status": "not_stated",
+              "value": {
+                "amount": 3500,
+                "basis": "unspecified",
+                "precision": "approximate"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "approximately 2,000 technical and administrative staff",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c2",
+              "period_status": "not_stated",
+              "value": {
+                "amount": 2000,
+                "basis": "unspecified",
+                "precision": "approximate"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "period_not_stated",
+              "single_source_family",
+              "approximate_value"
+            ],
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        },
+        "students_total": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:7",
+                  "original_text": "Students: 37,615[2]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period_status": "not_stated",
+              "value": {
+                "amount": 37615,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "approximately 38,000 enrolled students",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c2",
+              "period_status": "not_stated",
+              "value": {
+                "amount": 38000,
+                "basis": "unspecified",
+                "precision": "approximate"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "period_not_stated",
+              "single_source_family"
+            ],
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        }
+      },
+      "profile": {
+        "academic_focus": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Academics",
+                  "original_text": "The University of Ljubljana practices research in science and the arts, such as the humanities, social sciences, linguistics, arts, medicine, natural sciences and technology.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": [
+                {
+                  "language": "en",
+                  "text": "humanities"
+                },
+                {
+                  "language": "en",
+                  "text": "social sciences"
+                },
+                {
+                  "language": "en",
+                  "text": "linguistics"
+                },
+                {
+                  "language": "en",
+                  "text": "arts"
+                },
+                {
+                  "language": "en",
+                  "text": "medicine"
+                },
+                {
+                  "language": "en",
+                  "text": "natural sciences"
+                },
+                {
+                  "language": "en",
+                  "text": "technology"
+                }
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "summary": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "The University of Ljubljana (Slovene: Univerza v Ljubljani",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Quest_for_a_national_university",
+                  "original_text": "The bill was passed on July 2, 1919",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Beginnings",
+                  "original_text": "the first university was founded in 1810",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:First_decades",
+                  "original_text": "In 1919, the university comprised five faculties",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:1945_and_later",
+                  "original_text": "In 1979 it was renamed",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Faculties_and_academies",
+                  "original_text": "As of 2018[update], the university has 23 faculties and three academies",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Academics",
+                  "original_text": "The University of Ljubljana practices research in science and the arts",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "The University of Ljubljana (Slovene: Univerza v Ljubljani; Latin: Universitas Labacensis) is a public university based in Ljubljana, Slovenia. Its teaching and research span the humanities, social sciences, natural sciences, technology, the arts and health-related fields. The university's central building is in Congress Square, while its faculties and other facilities extend across the city. The institution also lists Portorož among its locations.\n\nThe current university was established in 1919, following efforts to create a Slovene-language university. Its founding legislation passed in July that year, a university council was constituted in September, and lectures began in December. The initial institution had five faculties: law, philosophy, technology, theology and medicine. Ljubljana had previously hosted a French-administered university founded in 1810 and dissolved in 1813; that earlier institution should not be confused with the university founded in 1919. The present institution was renamed for Edvard Kardelj in 1979 and restored its original name in 1990.\n\nAn encyclopedia account describes 23 faculties and three art academies as of 2018, encompassing a range of disciplines, and reports approximately 38,000 enrolled students without a clear statistical year. These figures are indicative of the scale described by the source, rather than current audited counts."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "website": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P856:0",
+                  "original_text": "\"value\": \"https://www.uni-lj.si/\"",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "https://www.uni-lj.si/",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "qid": "Q1377",
+      "record_revision": 1,
+      "related_entities": {
+        "early": {
+          "kind": "institution",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Beginnings",
+                    "original_text": "the first university was founded in 1810 under the Écoles centrales of the French imperial administration of the Illyrian provinces.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "French-period university in Ljubljana"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "ranking_identifier",
+          "reviewed_institution_type"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "included"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T08:52:40.130136+00:00",
+          "revision_id": 2539036905,
+          "source_qid": "Q1377",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2539036905"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikipedia",
+          "language": "en",
+          "page_id": 167422,
+          "publisher_role": "encyclopedia",
+          "retrieved_at": "2026-11-06T08:53:00.239450+00:00",
+          "revision_id": 1383151887,
+          "url": "https://en.wikipedia.org/w/index.php?oldid=1383151887"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T08:48:57.696840+00:00",
+          "revision_id": 2559546120,
+          "source_qid": "Q875538",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2559546120"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T08:53:06.188828+00:00",
+          "revision_id": 2535466906,
+          "source_qid": "Q96888669",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2535466906"
+        },
+        "s5": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T08:53:12.783436+00:00",
+          "revision_id": 2560996195,
+          "source_qid": "Q215",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2560996195"
+        },
+        "s6": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T08:53:19.462823+00:00",
+          "revision_id": 2562593999,
+          "source_qid": "Q437",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2562593999"
+        },
+        "s7": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T08:53:25.912855+00:00",
+          "revision_id": 2125756297,
+          "source_qid": "Q12794274",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2125756297"
+        }
+      }
+    },
+    "open_requests": [
+      {
+        "category": "scope_conflict",
+        "field": "population.students_total",
+        "reason": "Both student-count observations assert basis=headcount, while the cited text only says Students/enrolled students. Use unspecified basis or supply a revision-bound source explicitly defining headcount.",
+        "request_id": "1e4b9161-3369-5d8f-a194-748c7da9cc1f",
+        "reviewed_proposal_sha256": "6255b9db4725b214cc23334b649bdc39dcd0f6b20ab451f048934a8b54690cdf"
+      },
+      {
+        "category": "evidence_gap",
+        "field": "locations.palace",
+        "reason": "Provide frozen evidence explicitly mapping University of Ljubljana Palace (Q12794274) to the cited main building at 5 Congress Square and validating headquarters, or remove the unsupported QID/headquarters attribution while retaining the supported building-level caption.",
+        "request_id": "6b973ea8-21e1-57f7-b2f6-0533d6b03d9c",
+        "reviewed_proposal_sha256": "6255b9db4725b214cc23334b649bdc39dcd0f6b20ab451f048934a8b54690cdf"
+      },
+      {
+        "category": "subject_mismatch",
+        "field": "history.milestones.earlier.kind",
+        "reason": "Do not classify the separate 1810 French-period university as predecessor_establishment unless an institutional lineage is substantiated. Use a neutral historical event kind and preserve the distinct related subject.",
+        "request_id": "5ef26d8a-48b2-57f9-9d6d-f22605d1cd24",
+        "reviewed_proposal_sha256": "6255b9db4725b214cc23334b649bdc39dcd0f6b20ab451f048934a8b54690cdf"
+      }
+    ],
+    "proposed_at": "2026-11-06T09:01:12.536345+00:00",
+    "qid": "Q1377",
+    "research": {
+      "model": "not_reported",
+      "prompt_sha256": "c32289c8c723178e9b2496ccb3fbe5be23cd15ad1f168509b9b3484df92a7855",
+      "reasoning_effort": "medium",
+      "schema_sha256": "92e942f4fbf2ae28964462ea9ffa8312c5ee16a077a1e08b40aaaf741512422e",
+      "session": "/root/research_q1377"
+    },
+    "retrieval_failures": [],
+    "review_status": "unreviewed",
+    "seed": {
+      "channels": [
+        "ranking_identifier",
+        "reviewed_institution_type"
+      ],
+      "import_id": "seed-84c3beb45367905f",
+      "screening_status": "included"
+    },
+    "transport": {
+      "base_commit": "d78ad0b2f9611a98e2d1fe37536785de621bbdc5",
+      "protocol": "native-subagent-v1",
+      "repository": "ider-zh/university-seed-curation",
+      "review_policy": {
+        "id": "source-grounded-flexible-v2",
+        "sha256": "b8ed7d2897e4c31dbd81b1379aafdc1077a21d1a33949edbd2d896b0adf99db2"
+      },
+      "schema_sha256": "bfa496eafa9dffca56146214168db7f000b09161b8993129632e7202e1c88833",
+      "seed_catalog_sha256": "84c3beb45367905f513d650684283dd62a9c1b77962bdc34151a6ef05bfa03d4"
+    },
+    "type": "university-proposal-v1"
+  },
+  "review": {
+    "contexts_checked": 12,
+    "coverage_checks": [
+      {
+        "group": "identity",
+        "reason": "Names, type, identity status and aliases independently checked.",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "reason": "Only supported city locations and script-owned institution-level coordinates retained; unsupported Palace/QID attribution removed.",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "reason": "All dates, renames, and separate 1810 institution verified; event kind corrected.",
+        "status": "checked"
+      },
+      {
+        "group": "population",
+        "reason": "Both student observations and staff variants retained with unspecified bases and faithful precision.",
+        "status": "checked"
+      },
+      {
+        "group": "finance",
+        "reason": "Frozen source packet has no trustworthy finance observation; no zero or estimate invented.",
+        "status": "not_found"
+      },
+      {
+        "group": "profile",
+        "reason": "Sourced original summary, research domains and official website reviewed.",
+        "status": "checked"
+      }
+    ],
+    "decision": "approve",
+    "facts_checked": 32,
+    "full_refresh": true,
+    "inferences": [
+      {
+        "id": "$.identity.operating_status:c1",
+        "reason": "Current-tense programmes and university presence indicate operating."
+      },
+      {
+        "id": "$.profile.summary:c1",
+        "reason": "Neutral 197-word synthesis follows seven pinned locators, separates earlier French-period university and preserves scale qualifiers."
+      },
+      {
+        "id": "$.related_entities.early.name:c1",
+        "reason": "A descriptive, not fabricated official, label for distinct French-period university."
+      },
+      {
+        "id": "location:ljubljana",
+        "reason": "City and administrative-area location match source."
+      },
+      {
+        "id": "milestone:first_faculties",
+        "reason": "Broad university-status label is qualified by explicit first five faculties description."
+      }
+    ],
+    "model": "not_reported",
+    "proposal_sha256": "f72c8095f88a081f5a3d77da583e697d8334cdbfc106545e6f0c9257d8da217f",
+    "qid": "Q1377",
+    "reasoning_effort": "medium",
+    "record_sha256": "ff33d8f474d54f207225c76af0e7042e753f01ec3cf3dedbd2e11603f7b7be77",
+    "request_responses": [
+      {
+        "reason": "Both student candidate values now have basis=unspecified, preserving counts and precision.",
+        "request_id": "1e4b9161-3369-5d8f-a194-748c7da9cc1f",
+        "status": "addressed"
+      },
+      {
+        "reason": "Unsubstantiated Palace QID/headquarters entity and its address were removed from structured locations; summary's central-building reference rests on direct article text only.",
+        "request_id": "6b973ea8-21e1-57f7-b2f6-0533d6b03d9c",
+        "status": "addressed"
+      },
+      {
+        "reason": "1810 event now has neutral institution_establishment kind explicitly scoped to separate related:early subject.",
+        "request_id": "5ef26d8a-48b2-57f9-9d6d-f22605d1cd24",
+        "status": "addressed"
+      }
+    ],
+    "requests": [],
+    "review_session": "/root/review_batch_1",
+    "reviewed_at": "2026-11-06T09:02:35.278646+00:00",
+    "source_revisions_checked": 7
+  },
+  "review_result_sha256": "bea375f04ba1626e340af868a0f876543c1c941ba01c474bdeab9364064ec2f7",
+  "type": "university-unified-receipt-v1"
+}
