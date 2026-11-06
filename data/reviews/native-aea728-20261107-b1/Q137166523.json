@@ -1,0 +1,624 @@
+{
+  "attribution": "distinct_native_research_and_review_subagents;not_cryptographic_identity",
+  "research": {
+    "baseline_sha256": "absent",
+    "candidate": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-06T22:50:47.499182+00:00",
+          "status": "not_found"
+        },
+        "geography": {
+          "checked_at": "2026-11-06T22:50:47.499182+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-06T22:50:47.499182+00:00",
+          "status": "not_found"
+        },
+        "identity": {
+          "checked_at": "2026-11-06T22:50:47.499182+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-06T22:50:47.499182+00:00",
+          "status": "not_found"
+        },
+        "profile": {
+          "checked_at": "2026-11-06T22:50:47.499182+00:00",
+          "status": "not_found"
+        }
+      },
+      "curation": {
+        "identity_status": "excluded"
+      },
+      "identity": {
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "metadata",
+                  "original_text": "public secondary school in Cameroon",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "claim:P31:0",
+                  "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q137166523$0ebb16af-4f4d-7627-ee71-408fa91634c0\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 3914, \"id\": \"Q3914\"}}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "metadata",
+                  "original_text": "school",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "other",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "Lyce de BEREM",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "Lyce de BEREM",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        "ownership": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "metadata",
+                  "original_text": "public secondary school in Cameroon",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "public",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "locations": [
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q137166523$7d54410d-465f-69fb-d4b0-22fbfd45867a\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 67431813, \"id\": \"Q67431813\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q137166523$98884469-4bec-9ce3-6ce6-71c81cd82727\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 1009, \"id\": \"Q1009\"}}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "Ngan-Ha",
+                    "source_ref": "s5"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "Cameroon",
+                    "source_ref": "s4"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "city_name": "Ngan-Ha",
+                  "city_qid": "Q67431813",
+                  "country_name": "Cameroon",
+                  "country_qid": "Q1009",
+                  "formatted": {
+                    "language": "en",
+                    "text": "Ngan-Ha, Cameroon"
+                  }
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "nganha",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q137166523$7d54410d-465f-69fb-d4b0-22fbfd45867a\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 67431813, \"id\": \"Q67431813\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "Ngan-Ha",
+                    "source_ref": "s5"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Ngan-Ha"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q67431813"
+        }
+      ],
+      "modified_datetime": "2026-11-06T22:52:09.265742+00:00",
+      "qid": "Q137166523",
+      "record_revision": 1,
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "legacy_discovery"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "needs_review"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:50:36.296489+00:00",
+          "revision_id": 2435997535,
+          "source_qid": "Q137166523",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2435997535"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:50:41.541453+00:00",
+          "revision_id": 2564928993,
+          "source_qid": "Q3914",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2564928993"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:50:36.637829+00:00",
+          "revision_id": 2556557061,
+          "source_qid": "Q189004",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2556557061"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:50:44.216943+00:00",
+          "revision_id": 2565433658,
+          "source_qid": "Q1009",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2565433658"
+        },
+        "s5": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:50:47.493033+00:00",
+          "revision_id": 2290713701,
+          "source_qid": "Q67431813",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2290713701"
+        }
+      }
+    },
+    "coverage": [
+      {
+        "group": "identity",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "status": "not_found"
+      },
+      {
+        "group": "population",
+        "status": "not_found"
+      },
+      {
+        "group": "finance",
+        "status": "not_found"
+      },
+      {
+        "group": "profile",
+        "status": "not_found"
+      }
+    ],
+    "delta": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-06T22:50:47.499182+00:00",
+          "status": "not_found"
+        },
+        "geography": {
+          "checked_at": "2026-11-06T22:50:47.499182+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-06T22:50:47.499182+00:00",
+          "status": "not_found"
+        },
+        "identity": {
+          "checked_at": "2026-11-06T22:50:47.499182+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-06T22:50:47.499182+00:00",
+          "status": "not_found"
+        },
+        "profile": {
+          "checked_at": "2026-11-06T22:50:47.499182+00:00",
+          "status": "not_found"
+        }
+      },
+      "curation": {
+        "identity_status": "excluded"
+      },
+      "identity": {
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "metadata",
+                  "original_text": "public secondary school in Cameroon",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "claim:P31:0",
+                  "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q137166523$0ebb16af-4f4d-7627-ee71-408fa91634c0\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 3914, \"id\": \"Q3914\"}}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "metadata",
+                  "original_text": "school",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "other",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "Lyce de BEREM",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "Lyce de BEREM",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        "ownership": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "metadata",
+                  "original_text": "public secondary school in Cameroon",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "public",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "locations": [
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q137166523$7d54410d-465f-69fb-d4b0-22fbfd45867a\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 67431813, \"id\": \"Q67431813\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q137166523$98884469-4bec-9ce3-6ce6-71c81cd82727\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 1009, \"id\": \"Q1009\"}}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "Ngan-Ha",
+                    "source_ref": "s5"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "Cameroon",
+                    "source_ref": "s4"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "city_name": "Ngan-Ha",
+                  "city_qid": "Q67431813",
+                  "country_name": "Cameroon",
+                  "country_qid": "Q1009",
+                  "formatted": {
+                    "language": "en",
+                    "text": "Ngan-Ha, Cameroon"
+                  }
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "nganha",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q137166523$7d54410d-465f-69fb-d4b0-22fbfd45867a\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 67431813, \"id\": \"Q67431813\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "Ngan-Ha",
+                    "source_ref": "s5"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Ngan-Ha"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q67431813"
+        }
+      ],
+      "qid": "Q137166523",
+      "record_revision": 1,
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "legacy_discovery"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "needs_review"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:50:36.296489+00:00",
+          "revision_id": 2435997535,
+          "source_qid": "Q137166523",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2435997535"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:50:41.541453+00:00",
+          "revision_id": 2564928993,
+          "source_qid": "Q3914",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2564928993"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:50:36.637829+00:00",
+          "revision_id": 2556557061,
+          "source_qid": "Q189004",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2556557061"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:50:44.216943+00:00",
+          "revision_id": 2565433658,
+          "source_qid": "Q1009",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2565433658"
+        },
+        "s5": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:50:47.493033+00:00",
+          "revision_id": 2290713701,
+          "source_qid": "Q67431813",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2290713701"
+        }
+      }
+    },
+    "open_requests": [],
+    "proposed_at": "2026-11-06T22:52:09.265742+00:00",
+    "qid": "Q137166523",
+    "research": {
+      "model": "not_reported",
+      "prompt_sha256": "748010de24824e1a0e1369e82ace6e0067d2e8f2f9fa707b6188f4e71ffa68e9",
+      "reasoning_effort": "not_reported",
+      "schema_sha256": "92e942f4fbf2ae28964462ea9ffa8312c5ee16a077a1e08b40aaaf741512422e",
+      "session": "/root/research_q137166523"
+    },
+    "retrieval_failures": [],
+    "review_status": "unreviewed",
+    "seed": {
+      "channels": [
+        "legacy_discovery"
+      ],
+      "import_id": "seed-84c3beb45367905f",
+      "screening_status": "needs_review"
+    },
+    "transport": {
+      "base_commit": "f79f39f771ba262de260f5f10d9c7516d58b91bc",
+      "protocol": "native-subagent-v1",
+      "repository": "ider-zh/university-seed-curation",
+      "review_policy": {
+        "id": "source-grounded-flexible-v2",
+        "sha256": "b8ed7d2897e4c31dbd81b1379aafdc1077a21d1a33949edbd2d896b0adf99db2"
+      },
+      "schema_sha256": "bfa496eafa9dffca56146214168db7f000b09161b8993129632e7202e1c88833",
+      "seed_catalog_sha256": "84c3beb45367905f513d650684283dd62a9c1b77962bdc34151a6ef05bfa03d4"
+    },
+    "type": "university-proposal-v1"
+  },
+  "review": {
+    "contexts_checked": 2,
+    "coverage_checks": [
+      {
+        "group": "identity",
+        "reason": "The root and linked school and college concept snapshots support the recorded identity, public ownership and secondary-school exclusion.",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "reason": "Root P17 and P131 were inspected with frozen country and location metadata; no root coordinates were supplied or invented.",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "reason": "No history observation occurs in the frozen Wikidata packet. No Wikipedia or external history survey is present, so this is a partial evidence limitation rather than a completed not-found survey.",
+        "status": "disputed"
+      },
+      {
+        "group": "population",
+        "reason": "The frozen packet supplies no institution population counts. Wider source acquisition is not represented, so absence here does not establish a complete population survey.",
+        "status": "disputed"
+      },
+      {
+        "group": "finance",
+        "reason": "No institution finance facts occur in the supplied packet; no external finance survey is recorded. This partial record should not advance full-refresh freshness.",
+        "status": "disputed"
+      },
+      {
+        "group": "profile",
+        "reason": "The packet has no Wikipedia or captured external profile material. Omission of unsupported supplementary profile facts is acceptable, with incomplete survey coverage retained.",
+        "status": "disputed"
+      }
+    ],
+    "decision": "approve",
+    "facts_checked": 3,
+    "full_refresh": false,
+    "inferences": [
+      {
+        "id": "$.identity.kind:c1",
+        "reason": "The root metadata explicitly describes a public secondary school, and root P31 includes school. Mapping this secondary institution to the available other kind preserves the source meaning; generic college P31 does not establish tertiary level."
+      },
+      {
+        "id": "identity",
+        "reason": "The frozen root identifies a secondary school. The linked college concept explicitly varies in level across countries, so it does not contradict secondary education or demonstrate higher-education eligibility; exclusion from this university dataset is supported."
+      }
+    ],
+    "model": "not_reported",
+    "proposal_sha256": "acb3a195228ee53d8999587f37aeb90234ba061db845b512e9e47ae86d8371cf",
+    "qid": "Q137166523",
+    "reasoning_effort": "not_reported",
+    "record_sha256": "9991be5b767510fb3acdccf60854ac8a1b9eb5e44efabbdc992a847440f7ddf5",
+    "request_responses": [],
+    "requests": [],
+    "review_scope": {
+      "not_independently_reviewed_ids": [
+        "$.locations[0].address:c1",
+        "$.locations[0].name:c1",
+        "location:nganha"
+      ],
+      "reviewed_ids": [
+        "$.identity.kind:c1",
+        "$.identity.names.en:c1",
+        "$.identity.ownership:c1",
+        "country:$.locations[0].address:c1",
+        "identity"
+      ],
+      "version": "core-review-v3"
+    },
+    "review_session": "/root/review_q137166523",
+    "reviewed_at": "2026-11-06T22:53:30.670852+00:00",
+    "source_revisions_checked": 5,
+    "waived_requests": []
+  },
+  "review_result_sha256": "5a6c344f641f269aa21e6739fb115b911607b9db7c64abecb7c8f128dc05ebc9",
+  "type": "university-unified-receipt-v1"
+}

@@ -1,0 +1,641 @@
+{
+  "attribution": "distinct_native_research_and_review_subagents;not_cryptographic_identity",
+  "research": {
+    "baseline_sha256": "absent",
+    "candidate": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-06T22:50:42.558377+00:00",
+          "status": "not_found"
+        },
+        "geography": {
+          "checked_at": "2026-11-06T22:50:42.558377+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-06T22:50:42.558377+00:00",
+          "status": "checked"
+        },
+        "identity": {
+          "checked_at": "2026-11-06T22:50:42.558377+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-06T22:50:42.558377+00:00",
+          "status": "not_found"
+        },
+        "profile": {
+          "checked_at": "2026-11-06T22:50:42.558377+00:00",
+          "status": "not_found"
+        }
+      },
+      "curation": {
+        "identity_status": "in_scope"
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "claim:P571:0",
+                      "original_text": "\"time\": \"+2016-01-01T00:00:00Z\"",
+                      "source_ref": "s1"
+                    },
+                    {
+                      "locator": "claim:P571:0",
+                      "original_text": "\"precision\": 9",
+                      "source_ref": "s1"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 2016
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "establishment",
+            "kind": "institution_establishment",
+            "subject_ref": "institution"
+          }
+        ]
+      },
+      "identity": {
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "metadata",
+                  "original_text": "college affiliated to the Acharya Nagarjuna University",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "claim:P31:0",
+                  "original_text": "\"id\": \"Q189004\"",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "metadata",
+                  "original_text": "college",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "higher_education_college",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "Shaida College of Education, Darsi",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "Shaida College of Education, Darsi",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "locations": [
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "\"id\": \"Q15390\"",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "Prakasam district",
+                    "source_ref": "s4"
+                  },
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "\"id\": \"Q668\"",
+                    "source_ref": "s4"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "India",
+                    "source_ref": "s3"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "country_name": "India",
+                  "country_qid": "Q668",
+                  "formatted": {
+                    "language": "en",
+                    "text": "Prakasam district"
+                  }
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "prakasam",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "\"id\": \"Q15390\"",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "Prakasam district",
+                    "source_ref": "s4"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Prakasam district"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q15390"
+        }
+      ],
+      "modified_datetime": "2026-11-06T22:52:38.878712+00:00",
+      "qid": "Q91770721",
+      "record_revision": 1,
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "legacy_discovery"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "needs_review"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:50:31.401346+00:00",
+          "revision_id": 1192340121,
+          "source_qid": "Q91770721",
+          "url": "https://www.wikidata.org/w/index.php?oldid=1192340121"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:50:36.637829+00:00",
+          "revision_id": 2556557061,
+          "source_qid": "Q189004",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2556557061"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:50:39.549376+00:00",
+          "revision_id": 2563722390,
+          "source_qid": "Q668",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2563722390"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:50:42.545394+00:00",
+          "revision_id": 2549947888,
+          "source_qid": "Q15390",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2549947888"
+        }
+      }
+    },
+    "coverage": [
+      {
+        "group": "identity",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "status": "checked"
+      },
+      {
+        "group": "population",
+        "status": "not_found"
+      },
+      {
+        "group": "finance",
+        "status": "not_found"
+      },
+      {
+        "group": "profile",
+        "status": "not_found"
+      }
+    ],
+    "delta": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-06T22:50:42.558377+00:00",
+          "status": "not_found"
+        },
+        "geography": {
+          "checked_at": "2026-11-06T22:50:42.558377+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-06T22:50:42.558377+00:00",
+          "status": "checked"
+        },
+        "identity": {
+          "checked_at": "2026-11-06T22:50:42.558377+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-06T22:50:42.558377+00:00",
+          "status": "not_found"
+        },
+        "profile": {
+          "checked_at": "2026-11-06T22:50:42.558377+00:00",
+          "status": "not_found"
+        }
+      },
+      "curation": {
+        "identity_status": "in_scope"
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "claim:P571:0",
+                      "original_text": "\"time\": \"+2016-01-01T00:00:00Z\"",
+                      "source_ref": "s1"
+                    },
+                    {
+                      "locator": "claim:P571:0",
+                      "original_text": "\"precision\": 9",
+                      "source_ref": "s1"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 2016
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "establishment",
+            "kind": "institution_establishment",
+            "subject_ref": "institution"
+          }
+        ]
+      },
+      "identity": {
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "metadata",
+                  "original_text": "college affiliated to the Acharya Nagarjuna University",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "claim:P31:0",
+                  "original_text": "\"id\": \"Q189004\"",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "metadata",
+                  "original_text": "college",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "higher_education_college",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "Shaida College of Education, Darsi",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "Shaida College of Education, Darsi",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "locations": [
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "\"id\": \"Q15390\"",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "Prakasam district",
+                    "source_ref": "s4"
+                  },
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "\"id\": \"Q668\"",
+                    "source_ref": "s4"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "India",
+                    "source_ref": "s3"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "country_name": "India",
+                  "country_qid": "Q668",
+                  "formatted": {
+                    "language": "en",
+                    "text": "Prakasam district"
+                  }
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "prakasam",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "\"id\": \"Q15390\"",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "Prakasam district",
+                    "source_ref": "s4"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Prakasam district"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q15390"
+        }
+      ],
+      "qid": "Q91770721",
+      "record_revision": 1,
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "legacy_discovery"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "needs_review"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:50:31.401346+00:00",
+          "revision_id": 1192340121,
+          "source_qid": "Q91770721",
+          "url": "https://www.wikidata.org/w/index.php?oldid=1192340121"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:50:36.637829+00:00",
+          "revision_id": 2556557061,
+          "source_qid": "Q189004",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2556557061"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:50:39.549376+00:00",
+          "revision_id": 2563722390,
+          "source_qid": "Q668",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2563722390"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:50:42.545394+00:00",
+          "revision_id": 2549947888,
+          "source_qid": "Q15390",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2549947888"
+        }
+      }
+    },
+    "open_requests": [],
+    "proposed_at": "2026-11-06T22:52:38.878712+00:00",
+    "qid": "Q91770721",
+    "research": {
+      "model": "not_reported",
+      "prompt_sha256": "36aab557ba9a0f99dabd9a3141703762aa96e3f86ddd1003e733087567541a8c",
+      "reasoning_effort": "not_reported",
+      "schema_sha256": "92e942f4fbf2ae28964462ea9ffa8312c5ee16a077a1e08b40aaaf741512422e",
+      "session": "/root/research_q91770721"
+    },
+    "retrieval_failures": [],
+    "review_status": "unreviewed",
+    "seed": {
+      "channels": [
+        "legacy_discovery"
+      ],
+      "import_id": "seed-84c3beb45367905f",
+      "screening_status": "needs_review"
+    },
+    "transport": {
+      "base_commit": "f79f39f771ba262de260f5f10d9c7516d58b91bc",
+      "protocol": "native-subagent-v1",
+      "repository": "ider-zh/university-seed-curation",
+      "review_policy": {
+        "id": "source-grounded-flexible-v2",
+        "sha256": "b8ed7d2897e4c31dbd81b1379aafdc1077a21d1a33949edbd2d896b0adf99db2"
+      },
+      "schema_sha256": "bfa496eafa9dffca56146214168db7f000b09161b8993129632e7202e1c88833",
+      "seed_catalog_sha256": "84c3beb45367905f513d650684283dd62a9c1b77962bdc34151a6ef05bfa03d4"
+    },
+    "type": "university-proposal-v1"
+  },
+  "review": {
+    "contexts_checked": 3,
+    "coverage_checks": [
+      {
+        "group": "identity",
+        "reason": "Available frozen root identity, college classification and university-affiliation description inspected. No operating status or ownership inferred.",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "reason": "Frozen root and district claims support administrative geography and India. Root contains no P625; linked district and country coordinates are not institution coordinates.",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "reason": "Root P571 supports 2016 inception only; no additional chronology is supplied.",
+        "status": "checked"
+      },
+      {
+        "group": "population",
+        "reason": "Survey completion is unconfirmed: no population facts occur in the frozen Wikidata packet, but no Wikipedia or targeted external population survey was supplied. The disputed status concerns survey completeness, not a numerical contradiction; supported partial facts remain approvable.",
+        "status": "disputed"
+      },
+      {
+        "group": "finance",
+        "reason": "Survey completion is unconfirmed: the frozen Wikidata packet supplies no financial facts and no targeted external finance survey was performed. Disputed marks incomplete survey coverage rather than evidence that financial values are absent; this does not block the supported partial record.",
+        "status": "disputed"
+      },
+      {
+        "group": "profile",
+        "reason": "Survey completion is unconfirmed: sparse frozen Wikidata metadata and absent Wikipedia sitelinks do not constitute a completed broader profile survey. No external profile survey was supplied. Disputed marks this coverage limitation; omitted optional summary does not block approval.",
+        "status": "disputed"
+      }
+    ],
+    "decision": "approve",
+    "facts_checked": 3,
+    "full_refresh": false,
+    "inferences": [
+      {
+        "id": "$.identity.kind:c1",
+        "reason": "The root is a College of Education explicitly described as affiliated to Acharya Nagarjuna University and classified as college. This combination supports higher_education_college; generic college P31 alone would not establish level."
+      },
+      {
+        "id": "identity",
+        "reason": "The same root identifies a college affiliated to a university; treating this teacher education institution as in-scope higher education is supported without asserting independent university status."
+      },
+      {
+        "id": "milestone:establishment",
+        "reason": "Root institution P571 inception reasonably maps to institution_establishment. No predecessor, charter or university-status claim is inferred."
+      }
+    ],
+    "model": "not_reported",
+    "proposal_sha256": "ea002d497179b07ebfef2b100e55b077f605bf0e92851ef8f494a05840f2f338",
+    "qid": "Q91770721",
+    "reasoning_effort": "not_reported",
+    "record_sha256": "e1c7bdd9218642c8146433d5e317a1fad9227e9fab23595e1b44b9d3791c610c",
+    "request_responses": [],
+    "requests": [],
+    "review_scope": {
+      "not_independently_reviewed_ids": [
+        "$.locations[0].address:c1",
+        "$.locations[0].name:c1",
+        "location:prakasam"
+      ],
+      "reviewed_ids": [
+        "$.history.milestones[0].date:c1",
+        "$.identity.kind:c1",
+        "$.identity.names.en:c1",
+        "country:$.locations[0].address:c1",
+        "identity",
+        "milestone:establishment"
+      ],
+      "version": "core-review-v3"
+    },
+    "review_session": "/root/review_q91770721",
+    "reviewed_at": "2026-11-06T22:54:34.074469+00:00",
+    "source_revisions_checked": 4,
+    "waived_requests": []
+  },
+  "review_result_sha256": "927ab30767306890fe1e2c24b9b3c934f2cb50706da89ff665cc10e4fb77ea89",
+  "type": "university-unified-receipt-v1"
+}
