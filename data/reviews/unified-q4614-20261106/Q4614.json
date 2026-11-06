@@ -1,0 +1,3121 @@
+{
+  "attribution": "distinct_native_research_and_review_subagents;not_cryptographic_identity",
+  "research": {
+    "baseline_sha256": "absent",
+    "candidate": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-06T09:51:17.738195+00:00",
+          "status": "checked"
+        },
+        "geography": {
+          "checked_at": "2026-11-06T09:51:17.738195+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-06T09:51:17.738195+00:00",
+          "status": "checked"
+        },
+        "identity": {
+          "checked_at": "2026-11-06T09:51:17.738195+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-06T09:51:17.738195+00:00",
+          "status": "checked"
+        },
+        "profile": {
+          "checked_at": "2026-11-06T09:51:17.738195+00:00",
+          "status": "checked"
+        }
+      },
+      "curation": {
+        "identity_status": "in_scope"
+      },
+      "finance": {
+        "assets": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2403:0",
+                  "original_text": "{\"property\": \"P2403\", \"property_label\": \"total assets\", \"statement_id\": \"Q4614$9AAA47AD-6E6E-46B1-8A54-77D9DE1ABD21\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+14495427000\", \"unit\": \"http://www.wikidata.org/entity/Q4917\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2020-06-30T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "claim:P498:0",
+                  "original_text": "{\"property\": \"P498\", \"property_label\": \"P498\", \"statement_id\": \"q4917$cbc725a1-4931-a1b7-0fbe-a08e1b9b7024\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"USD\", \"reference_count\": 1}",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "day": 30,
+                "kind": "date",
+                "month": 6,
+                "year": 2020
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": "14495427000",
+                "currency": "USD",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2403:1",
+                  "original_text": "{\"property\": \"P2403\", \"property_label\": \"total assets\", \"statement_id\": \"Q4614$41B6BAF7-26CA-42BF-B2A3-0B4ACB3AE16F\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+13791301785\", \"unit\": \"http://www.wikidata.org/entity/Q4917\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2022-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "claim:P498:0",
+                  "original_text": "{\"property\": \"P498\", \"property_label\": \"P498\", \"statement_id\": \"q4917$cbc725a1-4931-a1b7-0fbe-a08e1b9b7024\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"USD\", \"reference_count\": 1}",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c2",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2022
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": "13791301785",
+                "currency": "USD",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2403:3",
+                  "original_text": "{\"property\": \"P2403\", \"property_label\": \"total assets\", \"statement_id\": \"Q4614$2F30BD6C-572C-40A4-812C-4E3C148CC910\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+13778469076\", \"unit\": \"http://www.wikidata.org/entity/Q4917\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2023-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "claim:P498:0",
+                  "original_text": "{\"property\": \"P498\", \"property_label\": \"P498\", \"statement_id\": \"q4917$cbc725a1-4931-a1b7-0fbe-a08e1b9b7024\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"USD\", \"reference_count\": 1}",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c3",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2023
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": "13778469076",
+                "currency": "USD",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2403:13",
+                  "original_text": "{\"property\": \"P2403\", \"property_label\": \"total assets\", \"statement_id\": \"Q4614$385E23BF-9595-47C6-BE43-54654208EDC2\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+15054111883\", \"unit\": \"http://www.wikidata.org/entity/Q4917\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2024-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "claim:P498:0",
+                  "original_text": "{\"property\": \"P498\", \"property_label\": \"P498\", \"statement_id\": \"q4917$cbc725a1-4931-a1b7-0fbe-a08e1b9b7024\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"USD\", \"reference_count\": 1}",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c4",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2024
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": "15054111883",
+                "currency": "USD",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c4",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        },
+        "budget": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:8",
+                  "original_text": "Budget: US$7.4 billion (2023–24)[3]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "end_year": 2024,
+                "kind": "interval",
+                "start_year": 2023
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": "7400000000",
+                "currency": "USD",
+                "precision": "approximate"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family",
+              "approximate_value"
+            ],
+            "reason_code": "only_available"
+          }
+        },
+        "endowment": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:7",
+                  "original_text": "Endowment: US$8.8 billion (2025)[2]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2025
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": "8800000000",
+                "currency": "USD",
+                "precision": "approximate"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P6589:2",
+                  "original_text": "{\"property\": \"P6589\", \"property_label\": \"endowment\", \"statement_id\": \"Q4614$0417C2A1-5D58-41A2-9AA9-ADA259DE0F32\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+8009340321\", \"unit\": \"http://www.wikidata.org/entity/Q4917\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2021-06-30T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"afte",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "claim:P498:0",
+                  "original_text": "{\"property\": \"P498\", \"property_label\": \"P498\", \"statement_id\": \"q4917$cbc725a1-4931-a1b7-0fbe-a08e1b9b7024\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"USD\", \"reference_count\": 1}",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c2",
+              "period": {
+                "day": 30,
+                "kind": "date",
+                "month": 6,
+                "year": 2021
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": "8009340321",
+                "currency": "USD",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P6589:1",
+                  "original_text": "{\"property\": \"P6589\", \"property_label\": \"endowment\", \"statement_id\": \"Q4614$84C2C0C9-08E4-49CA-B511-7F27995ACCAC\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+7319123211\", \"unit\": \"http://www.wikidata.org/entity/Q4917\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2022-06-30T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"afte",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "claim:P498:0",
+                  "original_text": "{\"property\": \"P498\", \"property_label\": \"P498\", \"statement_id\": \"q4917$cbc725a1-4931-a1b7-0fbe-a08e1b9b7024\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"USD\", \"reference_count\": 1}",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c3",
+              "period": {
+                "day": 30,
+                "kind": "date",
+                "month": 6,
+                "year": 2022
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": "7319123211",
+                "currency": "USD",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family",
+              "approximate_value"
+            ],
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        },
+        "revenue": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2139:0",
+                  "original_text": "{\"property\": \"P2139\", \"property_label\": \"total revenue\", \"statement_id\": \"Q4614$783934FF-FDE6-469F-99D7-6ADB98919F8A\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+5566926612\", \"unit\": \"http://www.wikidata.org/entity/Q4917\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2022-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "claim:P498:0",
+                  "original_text": "{\"property\": \"P498\", \"property_label\": \"P498\", \"statement_id\": \"q4917$cbc725a1-4931-a1b7-0fbe-a08e1b9b7024\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"USD\", \"reference_count\": 1}",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2022
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": "5566926612",
+                "currency": "USD",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2139:2",
+                  "original_text": "{\"property\": \"P2139\", \"property_label\": \"total revenue\", \"statement_id\": \"Q4614$52CF8C68-7B8C-491A-B849-638AD1765912\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+5119320238\", \"unit\": \"http://www.wikidata.org/entity/Q4917\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2023-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "claim:P498:0",
+                  "original_text": "{\"property\": \"P498\", \"property_label\": \"P498\", \"statement_id\": \"q4917$cbc725a1-4931-a1b7-0fbe-a08e1b9b7024\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"USD\", \"reference_count\": 1}",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c2",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2023
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": "5119320238",
+                "currency": "USD",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2139:13",
+                  "original_text": "{\"property\": \"P2139\", \"property_label\": \"total revenue\", \"statement_id\": \"Q4614$6BF22D95-9A97-4713-A57C-1AFC499D808B\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+5575301015\", \"unit\": \"http://www.wikidata.org/entity/Q4917\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2024-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "claim:P498:0",
+                  "original_text": "{\"property\": \"P498\", \"property_label\": \"P498\", \"statement_id\": \"q4917$cbc725a1-4931-a1b7-0fbe-a08e1b9b7024\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"USD\", \"reference_count\": 1}",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c3",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2024
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": "5575301015",
+                "currency": "USD",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c3",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        }
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "claim:P571:0",
+                      "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q4614$38FB0ADA-2352-46DF-A0B0-E1C3E70DA557\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+1880-10-06T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}, \"reference_count\": 1}",
+                      "source_ref": "s1"
+                    },
+                    {
+                      "locator": "infobox:3",
+                      "original_text": "Established: October 6, 1880; 146 years ago (1880-10-06)",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "day": 6,
+                    "month": 10,
+                    "precision": "day",
+                    "year": 1880
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Founding_and_early_history",
+                      "original_text": "The University of Southern California was founded following the efforts of Judge Robert Maclay Widney",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "The university was founded in Los Angeles, with Robert Maclay Widney central to efforts to secure land and construction donations."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "founding",
+            "kind": "institution_establishment",
+            "subject_ref": "institution"
+          }
+        ]
+      },
+      "identity": {
+        "aliases": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "The University of Southern California (USC, SC, or Southern Cal[a])",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "USC"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "USC, SC, or Southern Cal",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Southern Cal"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ],
+        "identifiers": {
+          "P5584": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P5584:0",
+                    "original_text": "{\"property\": \"P5584\", \"property_label\": \"QS World University ID\", \"statement_id\": \"Q4614$F762C599-9287-437B-8FF6-D2E54647FA09\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"university-southern-california\"}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "university-southern-california",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "P5586": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P5586:0",
+                    "original_text": "{\"property\": \"P5586\", \"property_label\": \"Times Higher Education World University ID\", \"statement_id\": \"Q4614$DEACB2A1-8024-47D8-9B72-ACF0B679A96C\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"university-southern-california\"}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "university-southern-california",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:2",
+                  "original_text": "Type: Private research university",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "university",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P1448:0",
+                    "original_text": "{\"property\": \"P1448\", \"property_label\": \"official name\", \"statement_id\": \"Q4614$8c4c497e-4930-835a-9962-f81ec2adc73f\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"University of Southern California\", \"language\": \"en\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "University of Southern California",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        "operating_status": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Organization_and_administration",
+                  "original_text": "The current president is Beong-Soo Kim",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "operating",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "ownership": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Organization_and_administration",
+                  "original_text": "USC is a private public-benefit nonprofit corporation",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "private_nonprofit",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "leadership": {
+        "president": {
+          "candidates": [
+            {
+              "current_basis": "infobox_current",
+              "evidence": [
+                {
+                  "locator": "infobox:9",
+                  "original_text": "President: Beong-Soo Kim",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Organization_and_administration",
+                  "original_text": "The current president is Beong-Soo Kim who on July 1, 2025, succeeded Carol Folt",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "person": {
+                  "name": "Beong-Soo Kim"
+                },
+                "term_start": {
+                  "day": 1,
+                  "month": 7,
+                  "precision": "day",
+                  "year": 2025
+                },
+                "title_original": {
+                  "language": "en",
+                  "text": "President"
+                }
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family",
+              "reported_current"
+            ],
+            "reason": "The page reports this person in its current officeholder field; a term-end date is not required.",
+            "reason_code": "infobox_current"
+          }
+        },
+        "provost": {
+          "candidates": [
+            {
+              "current_basis": "infobox_current",
+              "evidence": [
+                {
+                  "locator": "infobox:10",
+                  "original_text": "Provost: Andrew T. Guzman",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "person": {
+                  "name": "Andrew T. Guzman"
+                },
+                "title_original": {
+                  "language": "en",
+                  "text": "Provost"
+                }
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family",
+              "reported_current"
+            ],
+            "reason": "The page reports this person in its current officeholder field; a term-end date is not required.",
+            "reason_code": "infobox_current"
+          }
+        }
+      },
+      "locations": [
+        {
+          "id": "la",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q4614$63a80dd4-4175-c140-b447-96543df4f91e\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 65, \"id\": \"Q65\"}}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q65\", \"labels\": {\"en\": \"Los Angeles\"}, \"descriptions\": {\"en\": \"seat of Los Angeles County, and largest city in California, United States\"}}",
+                    "source_ref": "s9"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Los Angeles"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q65"
+        },
+        {
+          "id": "university_park",
+          "kind": "campus",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Campus",
+                    "original_text": "The main campus is in the University Park neighborhood of Los Angeles",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "University Park campus"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        {
+          "id": "health_sciences",
+          "kind": "campus",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Campus",
+                    "original_text": "USC also operates the Health Sciences Campus",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Health Sciences campus"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        {
+          "id": "capital",
+          "kind": "campus",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Campus",
+                    "original_text": "USC announced the opening of a new Capital Campus in Washington, D.C.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "USC Capital Campus"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        {
+          "coordinates": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "statement:Q4614$c5d710f5-4cbf-aaf1-9efd-0a281be7a8f0",
+                    "original_text": "\"latitude\": 34.021667",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "source_rank": "normal",
+                "value": {
+                  "crs": "EPSG:4326",
+                  "globe_qid": "Q2",
+                  "latitude": 34.021667,
+                  "longitude": -118.285278,
+                  "source_precision_degrees": 1e-06
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "wikidata-item-location",
+          "kind": "institution",
+          "qid": "Q4614"
+        }
+      ],
+      "modified_datetime": "2026-11-06T09:56:57.273204+00:00",
+      "population": {
+        "academic_staff": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:11",
+                  "original_text": "Faculty: 4,767 (2023)[3]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2023
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 4767,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason_code": "only_available"
+          }
+        },
+        "administrative_staff": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:12",
+                  "original_text": "Administrative staff: 18,123 (2023)[3]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2023
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 18123,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason_code": "only_available"
+          }
+        },
+        "employees_total": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P1128:2",
+                  "original_text": "{\"property\": \"P1128\", \"property_label\": \"employees\", \"statement_id\": \"Q4614$8b70b04e-4c03-839c-c74d-621477dbb7fb\", \"rank\": \"preferred\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+28873\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2019-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2019
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 28873,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason_code": "only_available"
+          }
+        },
+        "postgraduate_students": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:15",
+                  "original_text": "Postgraduates: 26,124 (2024)[4]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2024
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 26124,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:Student_body",
+                  "original_text": "25,047 at the graduate and professional levels",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c2",
+              "period": {
+                "end_year": 2026,
+                "kind": "academic_year",
+                "label": "2025/26",
+                "start_year": 2025
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 25047,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c2",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        },
+        "students_total": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Founding_and_early_history",
+                  "original_text": "When USC opened in 1880, the school had an enrollment of 53 students",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "kind": "calendar_year",
+                "year": 1880
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 53,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2196:0",
+                  "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q4614$20a4464a-4fcb-be67-575f-c8c624702b73\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+48500\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2019-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendar",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c2",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2019
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 48500,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:13",
+                  "original_text": "Students: 47,147 (2024)[4]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c3",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2024
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 47147,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:Student_body",
+                  "original_text": "As of the 2025-2026 academic year, USC has a total enrollment of roughly 45,815 students",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c4",
+              "period": {
+                "end_year": 2026,
+                "kind": "academic_year",
+                "label": "2025/26",
+                "start_year": 2025
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 45815,
+                "basis": "unspecified",
+                "precision": "approximate"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c4",
+            "qualifications": [
+              "single_source_family",
+              "approximate_value"
+            ],
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        },
+        "undergraduate_students": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:14",
+                  "original_text": "Undergraduates: 21,023 (2024)[4]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2024
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 21023,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:Student_body",
+                  "original_text": "20,768 are at the undergraduate",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c2",
+              "period": {
+                "end_year": 2026,
+                "kind": "academic_year",
+                "label": "2025/26",
+                "start_year": 2025
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 20768,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c2",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        }
+      },
+      "profile": {
+        "academic_focus": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Academics",
+                  "original_text": "humanities, social sciences, and natural/physical sciences",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Organization_and_administration",
+                  "original_text": "USC Viterbi School of Engineering",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Organization_and_administration",
+                  "original_text": "Keck School of Medicine of USC",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Academics",
+                  "original_text": "The USC School of Cinematic Arts",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": [
+                {
+                  "language": "en",
+                  "text": "humanities"
+                },
+                {
+                  "language": "en",
+                  "text": "social sciences"
+                },
+                {
+                  "language": "en",
+                  "text": "natural and physical sciences"
+                },
+                {
+                  "language": "en",
+                  "text": "engineering"
+                },
+                {
+                  "language": "en",
+                  "text": "medicine"
+                },
+                {
+                  "language": "en",
+                  "text": "cinematic arts"
+                }
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "degree_levels": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Academics",
+                  "original_text": "The four-year, full-time undergraduate instructional program",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Academics",
+                  "original_text": "offers 134 master's, doctoral, and professional degrees",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": [
+                "undergraduate",
+                "masters",
+                "doctoral",
+                "professional"
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "motto": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:0",
+                  "original_text": "Motto: Latin: Palmam qui meruit ferat",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "la",
+                "text": "Palmam qui meruit ferat"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "summary": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "The University of Southern California (USC, SC, or Southern Cal[a]) is a private research university in Los Angeles",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Organization_and_administration",
+                  "original_text": "USC is a private public-benefit nonprofit corporation",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Campus",
+                  "original_text": "The main campus is in the University Park neighborhood of Los Angeles",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Campus",
+                  "original_text": "USC also operates the Health Sciences Campus",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Campus",
+                  "original_text": "USC announced the opening of a new Capital Campus in Washington, D.C.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Founding_and_early_history",
+                  "original_text": "The University of Southern California was founded following the efforts of Judge Robert Maclay Widney",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Founding_and_early_history",
+                  "original_text": "When USC opened in 1880, the school had an enrollment of 53 students and a faculty of 10",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Founding_and_early_history",
+                  "original_text": "The university is no longer affiliated with any church, having severed formal ties in 1952",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Organization_and_administration",
+                  "original_text": "The USC Dana and David Dornsife College of Letters, Arts, and Sciences, the Graduate School, and the twenty professional schools",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Academics",
+                  "original_text": "humanities, social sciences, and natural/physical sciences",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Health_Sciences_campus",
+                  "original_text": "basic and clinical biomedical research in the fields of cancer, gene therapy, the neurosciences, and transplantation biology",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "infobox:13",
+                  "original_text": "Students: 47,147 (2024)[4]",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "infobox:14",
+                  "original_text": "Undergraduates: 21,023 (2024)[4]",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "infobox:15",
+                  "original_text": "Postgraduates: 26,124 (2024)[4]",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Student_body",
+                  "original_text": "As of the 2025-2026 academic year, USC has a total enrollment of roughly 45,815 students",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "infobox:8",
+                  "original_text": "Budget: US$7.4 billion (2023–24)[3]",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "infobox:7",
+                  "original_text": "Endowment: US$8.8 billion (2025)[2]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "The University of Southern California (USC) is a private nonprofit research university in Los Angeles, California. Its main University Park campus is southwest of downtown Los Angeles, while a separate Health Sciences campus supports medical education and biomedical research. The institution also operates other sites, including a Capital Campus in Washington, D.C. Its roots date to 1880, when Robert Maclay Widney helped arrange land and financial support for its establishment. The university opened that year with 53 students and ten faculty members. Although initially associated with Methodism, it ended its formal church ties in 1952.\n\nUSC's organization includes the Dornsife College of Letters, Arts and Sciences, a graduate school, and professional schools spanning engineering, medicine, cinema, architecture, law, education and other fields. The university's teaching and research extend across the humanities, social sciences, natural sciences and professional disciplines. The Health Sciences campus hosts clinical and biomedical programs, including cancer and neuroscience research.\n\nIts published figures require date-specific interpretation. The English Wikipedia infobox records 47,147 students for 2024, including 21,023 undergraduates and 26,124 postgraduates, while a separately dated 2025–26 account reports roughly 45,815 enrolled students. The infobox gives a 2023–24 budget of approximately US$7.4 billion and a 2025 endowment of approximately US$8.8 billion. These are different financial measures, not interchangeable indicators of current spending or assets."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "website": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P856:0",
+                  "original_text": "{\"property\": \"P856\", \"property_label\": \"official website\", \"statement_id\": \"Q4614$51223B54-F294-4008-BBFF-16F210D9E75C\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"https://usc.edu\", \"qualifiers\": {\"P407\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 1860, \"id\": \"Q1860\"}}]}}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "https://usc.edu",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "qid": "Q4614",
+      "record_revision": 1,
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "ranking_identifier",
+          "reviewed_institution_type"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "included"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T09:49:38.424347+00:00",
+          "revision_id": 2548118826,
+          "source_qid": "Q4614",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2548118826"
+        },
+        "s10": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T09:51:04.160925+00:00",
+          "revision_id": 2513758822,
+          "source_qid": "Q5006646",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2513758822"
+        },
+        "s11": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T09:51:10.588992+00:00",
+          "revision_id": 2523443562,
+          "source_qid": "Q7967100",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2523443562"
+        },
+        "s12": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T09:51:17.729121+00:00",
+          "revision_id": 2509956181,
+          "source_qid": "Q11246486",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2509956181"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikipedia",
+          "language": "en",
+          "page_id": 32005,
+          "publisher_role": "encyclopedia",
+          "retrieved_at": "2026-11-06T09:50:10.709726+00:00",
+          "revision_id": 1382254406,
+          "url": "https://en.wikipedia.org/w/index.php?oldid=1382254406"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T09:50:17.552777+00:00",
+          "revision_id": 2557623321,
+          "source_qid": "Q4917",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2557623321"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T09:50:25.390294+00:00",
+          "revision_id": 2560982823,
+          "source_qid": "Q902104",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2560982823"
+        },
+        "s5": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T09:50:36.584805+00:00",
+          "revision_id": 2559741554,
+          "source_qid": "Q15936437",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2559741554"
+        },
+        "s6": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T09:50:42.932638+00:00",
+          "revision_id": 2441014281,
+          "source_qid": "Q23002054",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2441014281"
+        },
+        "s7": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T08:49:01.844922+00:00",
+          "revision_id": 2523404231,
+          "source_qid": "Q45400320",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2523404231"
+        },
+        "s8": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T09:50:50.405563+00:00",
+          "revision_id": 2565041516,
+          "source_qid": "Q30",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2565041516"
+        },
+        "s9": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T09:50:57.080820+00:00",
+          "revision_id": 2562462889,
+          "source_qid": "Q65",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2562462889"
+        }
+      }
+    },
+    "coverage": [
+      {
+        "group": "identity",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "status": "checked"
+      },
+      {
+        "group": "population",
+        "status": "checked"
+      },
+      {
+        "group": "finance",
+        "status": "checked"
+      },
+      {
+        "group": "profile",
+        "status": "checked"
+      }
+    ],
+    "delta": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-06T09:51:17.738195+00:00",
+          "status": "checked"
+        },
+        "geography": {
+          "checked_at": "2026-11-06T09:51:17.738195+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-06T09:51:17.738195+00:00",
+          "status": "checked"
+        },
+        "identity": {
+          "checked_at": "2026-11-06T09:51:17.738195+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-06T09:51:17.738195+00:00",
+          "status": "checked"
+        },
+        "profile": {
+          "checked_at": "2026-11-06T09:51:17.738195+00:00",
+          "status": "checked"
+        }
+      },
+      "curation": {
+        "identity_status": "in_scope"
+      },
+      "finance": {
+        "assets": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2403:0",
+                  "original_text": "{\"property\": \"P2403\", \"property_label\": \"total assets\", \"statement_id\": \"Q4614$9AAA47AD-6E6E-46B1-8A54-77D9DE1ABD21\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+14495427000\", \"unit\": \"http://www.wikidata.org/entity/Q4917\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2020-06-30T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "claim:P498:0",
+                  "original_text": "{\"property\": \"P498\", \"property_label\": \"P498\", \"statement_id\": \"q4917$cbc725a1-4931-a1b7-0fbe-a08e1b9b7024\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"USD\", \"reference_count\": 1}",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "day": 30,
+                "kind": "date",
+                "month": 6,
+                "year": 2020
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": "14495427000",
+                "currency": "USD",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2403:1",
+                  "original_text": "{\"property\": \"P2403\", \"property_label\": \"total assets\", \"statement_id\": \"Q4614$41B6BAF7-26CA-42BF-B2A3-0B4ACB3AE16F\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+13791301785\", \"unit\": \"http://www.wikidata.org/entity/Q4917\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2022-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "claim:P498:0",
+                  "original_text": "{\"property\": \"P498\", \"property_label\": \"P498\", \"statement_id\": \"q4917$cbc725a1-4931-a1b7-0fbe-a08e1b9b7024\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"USD\", \"reference_count\": 1}",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c2",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2022
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": "13791301785",
+                "currency": "USD",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2403:3",
+                  "original_text": "{\"property\": \"P2403\", \"property_label\": \"total assets\", \"statement_id\": \"Q4614$2F30BD6C-572C-40A4-812C-4E3C148CC910\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+13778469076\", \"unit\": \"http://www.wikidata.org/entity/Q4917\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2023-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "claim:P498:0",
+                  "original_text": "{\"property\": \"P498\", \"property_label\": \"P498\", \"statement_id\": \"q4917$cbc725a1-4931-a1b7-0fbe-a08e1b9b7024\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"USD\", \"reference_count\": 1}",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c3",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2023
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": "13778469076",
+                "currency": "USD",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2403:13",
+                  "original_text": "{\"property\": \"P2403\", \"property_label\": \"total assets\", \"statement_id\": \"Q4614$385E23BF-9595-47C6-BE43-54654208EDC2\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+15054111883\", \"unit\": \"http://www.wikidata.org/entity/Q4917\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2024-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "claim:P498:0",
+                  "original_text": "{\"property\": \"P498\", \"property_label\": \"P498\", \"statement_id\": \"q4917$cbc725a1-4931-a1b7-0fbe-a08e1b9b7024\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"USD\", \"reference_count\": 1}",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c4",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2024
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": "15054111883",
+                "currency": "USD",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c4",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        },
+        "budget": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:8",
+                  "original_text": "Budget: US$7.4 billion (2023–24)[3]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "end_year": 2024,
+                "kind": "interval",
+                "start_year": 2023
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": "7400000000",
+                "currency": "USD",
+                "precision": "approximate"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family",
+              "approximate_value"
+            ],
+            "reason_code": "only_available"
+          }
+        },
+        "endowment": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:7",
+                  "original_text": "Endowment: US$8.8 billion (2025)[2]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2025
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": "8800000000",
+                "currency": "USD",
+                "precision": "approximate"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P6589:2",
+                  "original_text": "{\"property\": \"P6589\", \"property_label\": \"endowment\", \"statement_id\": \"Q4614$0417C2A1-5D58-41A2-9AA9-ADA259DE0F32\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+8009340321\", \"unit\": \"http://www.wikidata.org/entity/Q4917\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2021-06-30T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"afte",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "claim:P498:0",
+                  "original_text": "{\"property\": \"P498\", \"property_label\": \"P498\", \"statement_id\": \"q4917$cbc725a1-4931-a1b7-0fbe-a08e1b9b7024\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"USD\", \"reference_count\": 1}",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c2",
+              "period": {
+                "day": 30,
+                "kind": "date",
+                "month": 6,
+                "year": 2021
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": "8009340321",
+                "currency": "USD",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P6589:1",
+                  "original_text": "{\"property\": \"P6589\", \"property_label\": \"endowment\", \"statement_id\": \"Q4614$84C2C0C9-08E4-49CA-B511-7F27995ACCAC\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+7319123211\", \"unit\": \"http://www.wikidata.org/entity/Q4917\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2022-06-30T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"afte",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "claim:P498:0",
+                  "original_text": "{\"property\": \"P498\", \"property_label\": \"P498\", \"statement_id\": \"q4917$cbc725a1-4931-a1b7-0fbe-a08e1b9b7024\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"USD\", \"reference_count\": 1}",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c3",
+              "period": {
+                "day": 30,
+                "kind": "date",
+                "month": 6,
+                "year": 2022
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": "7319123211",
+                "currency": "USD",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family",
+              "approximate_value"
+            ],
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        },
+        "revenue": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2139:0",
+                  "original_text": "{\"property\": \"P2139\", \"property_label\": \"total revenue\", \"statement_id\": \"Q4614$783934FF-FDE6-469F-99D7-6ADB98919F8A\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+5566926612\", \"unit\": \"http://www.wikidata.org/entity/Q4917\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2022-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "claim:P498:0",
+                  "original_text": "{\"property\": \"P498\", \"property_label\": \"P498\", \"statement_id\": \"q4917$cbc725a1-4931-a1b7-0fbe-a08e1b9b7024\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"USD\", \"reference_count\": 1}",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2022
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": "5566926612",
+                "currency": "USD",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2139:2",
+                  "original_text": "{\"property\": \"P2139\", \"property_label\": \"total revenue\", \"statement_id\": \"Q4614$52CF8C68-7B8C-491A-B849-638AD1765912\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+5119320238\", \"unit\": \"http://www.wikidata.org/entity/Q4917\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2023-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "claim:P498:0",
+                  "original_text": "{\"property\": \"P498\", \"property_label\": \"P498\", \"statement_id\": \"q4917$cbc725a1-4931-a1b7-0fbe-a08e1b9b7024\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"USD\", \"reference_count\": 1}",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c2",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2023
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": "5119320238",
+                "currency": "USD",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2139:13",
+                  "original_text": "{\"property\": \"P2139\", \"property_label\": \"total revenue\", \"statement_id\": \"Q4614$6BF22D95-9A97-4713-A57C-1AFC499D808B\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+5575301015\", \"unit\": \"http://www.wikidata.org/entity/Q4917\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2024-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "claim:P498:0",
+                  "original_text": "{\"property\": \"P498\", \"property_label\": \"P498\", \"statement_id\": \"q4917$cbc725a1-4931-a1b7-0fbe-a08e1b9b7024\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"USD\", \"reference_count\": 1}",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c3",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2024
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": "5575301015",
+                "currency": "USD",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c3",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        }
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "claim:P571:0",
+                      "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q4614$38FB0ADA-2352-46DF-A0B0-E1C3E70DA557\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+1880-10-06T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}, \"reference_count\": 1}",
+                      "source_ref": "s1"
+                    },
+                    {
+                      "locator": "infobox:3",
+                      "original_text": "Established: October 6, 1880; 146 years ago (1880-10-06)",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "day": 6,
+                    "month": 10,
+                    "precision": "day",
+                    "year": 1880
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Founding_and_early_history",
+                      "original_text": "The University of Southern California was founded following the efforts of Judge Robert Maclay Widney",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "The university was founded in Los Angeles, with Robert Maclay Widney central to efforts to secure land and construction donations."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "founding",
+            "kind": "institution_establishment",
+            "subject_ref": "institution"
+          }
+        ]
+      },
+      "identity": {
+        "aliases": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "The University of Southern California (USC, SC, or Southern Cal[a])",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "USC"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "USC, SC, or Southern Cal",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Southern Cal"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ],
+        "identifiers": {
+          "P5584": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P5584:0",
+                    "original_text": "{\"property\": \"P5584\", \"property_label\": \"QS World University ID\", \"statement_id\": \"Q4614$F762C599-9287-437B-8FF6-D2E54647FA09\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"university-southern-california\"}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "university-southern-california",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "P5586": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P5586:0",
+                    "original_text": "{\"property\": \"P5586\", \"property_label\": \"Times Higher Education World University ID\", \"statement_id\": \"Q4614$DEACB2A1-8024-47D8-9B72-ACF0B679A96C\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"university-southern-california\"}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "university-southern-california",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:2",
+                  "original_text": "Type: Private research university",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "university",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P1448:0",
+                    "original_text": "{\"property\": \"P1448\", \"property_label\": \"official name\", \"statement_id\": \"Q4614$8c4c497e-4930-835a-9962-f81ec2adc73f\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"University of Southern California\", \"language\": \"en\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "University of Southern California",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        "operating_status": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Organization_and_administration",
+                  "original_text": "The current president is Beong-Soo Kim",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "operating",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "ownership": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Organization_and_administration",
+                  "original_text": "USC is a private public-benefit nonprofit corporation",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "private_nonprofit",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "leadership": {
+        "president": {
+          "candidates": [
+            {
+              "current_basis": "infobox_current",
+              "evidence": [
+                {
+                  "locator": "infobox:9",
+                  "original_text": "President: Beong-Soo Kim",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Organization_and_administration",
+                  "original_text": "The current president is Beong-Soo Kim who on July 1, 2025, succeeded Carol Folt",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "person": {
+                  "name": "Beong-Soo Kim"
+                },
+                "term_start": {
+                  "day": 1,
+                  "month": 7,
+                  "precision": "day",
+                  "year": 2025
+                },
+                "title_original": {
+                  "language": "en",
+                  "text": "President"
+                }
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family",
+              "reported_current"
+            ],
+            "reason": "The page reports this person in its current officeholder field; a term-end date is not required.",
+            "reason_code": "infobox_current"
+          }
+        },
+        "provost": {
+          "candidates": [
+            {
+              "current_basis": "infobox_current",
+              "evidence": [
+                {
+                  "locator": "infobox:10",
+                  "original_text": "Provost: Andrew T. Guzman",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "person": {
+                  "name": "Andrew T. Guzman"
+                },
+                "title_original": {
+                  "language": "en",
+                  "text": "Provost"
+                }
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family",
+              "reported_current"
+            ],
+            "reason": "The page reports this person in its current officeholder field; a term-end date is not required.",
+            "reason_code": "infobox_current"
+          }
+        }
+      },
+      "locations": [
+        {
+          "id": "la",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q4614$63a80dd4-4175-c140-b447-96543df4f91e\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 65, \"id\": \"Q65\"}}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q65\", \"labels\": {\"en\": \"Los Angeles\"}, \"descriptions\": {\"en\": \"seat of Los Angeles County, and largest city in California, United States\"}}",
+                    "source_ref": "s9"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Los Angeles"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q65"
+        },
+        {
+          "id": "university_park",
+          "kind": "campus",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Campus",
+                    "original_text": "The main campus is in the University Park neighborhood of Los Angeles",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "University Park campus"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        {
+          "id": "health_sciences",
+          "kind": "campus",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Campus",
+                    "original_text": "USC also operates the Health Sciences Campus",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Health Sciences campus"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        {
+          "id": "capital",
+          "kind": "campus",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Campus",
+                    "original_text": "USC announced the opening of a new Capital Campus in Washington, D.C.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "USC Capital Campus"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        {
+          "coordinates": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "statement:Q4614$c5d710f5-4cbf-aaf1-9efd-0a281be7a8f0",
+                    "original_text": "\"latitude\": 34.021667",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "source_rank": "normal",
+                "value": {
+                  "crs": "EPSG:4326",
+                  "globe_qid": "Q2",
+                  "latitude": 34.021667,
+                  "longitude": -118.285278,
+                  "source_precision_degrees": 1e-06
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "wikidata-item-location",
+          "kind": "institution",
+          "qid": "Q4614"
+        }
+      ],
+      "population": {
+        "academic_staff": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:11",
+                  "original_text": "Faculty: 4,767 (2023)[3]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2023
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 4767,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason_code": "only_available"
+          }
+        },
+        "administrative_staff": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:12",
+                  "original_text": "Administrative staff: 18,123 (2023)[3]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2023
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 18123,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason_code": "only_available"
+          }
+        },
+        "employees_total": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P1128:2",
+                  "original_text": "{\"property\": \"P1128\", \"property_label\": \"employees\", \"statement_id\": \"Q4614$8b70b04e-4c03-839c-c74d-621477dbb7fb\", \"rank\": \"preferred\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+28873\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2019-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2019
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 28873,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason_code": "only_available"
+          }
+        },
+        "postgraduate_students": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:15",
+                  "original_text": "Postgraduates: 26,124 (2024)[4]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2024
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 26124,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:Student_body",
+                  "original_text": "25,047 at the graduate and professional levels",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c2",
+              "period": {
+                "end_year": 2026,
+                "kind": "academic_year",
+                "label": "2025/26",
+                "start_year": 2025
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 25047,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c2",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        },
+        "students_total": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Founding_and_early_history",
+                  "original_text": "When USC opened in 1880, the school had an enrollment of 53 students",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "kind": "calendar_year",
+                "year": 1880
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 53,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2196:0",
+                  "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q4614$20a4464a-4fcb-be67-575f-c8c624702b73\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+48500\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2019-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendar",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c2",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2019
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 48500,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:13",
+                  "original_text": "Students: 47,147 (2024)[4]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c3",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2024
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 47147,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:Student_body",
+                  "original_text": "As of the 2025-2026 academic year, USC has a total enrollment of roughly 45,815 students",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c4",
+              "period": {
+                "end_year": 2026,
+                "kind": "academic_year",
+                "label": "2025/26",
+                "start_year": 2025
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 45815,
+                "basis": "unspecified",
+                "precision": "approximate"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c4",
+            "qualifications": [
+              "single_source_family",
+              "approximate_value"
+            ],
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        },
+        "undergraduate_students": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:14",
+                  "original_text": "Undergraduates: 21,023 (2024)[4]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2024
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 21023,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:Student_body",
+                  "original_text": "20,768 are at the undergraduate",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c2",
+              "period": {
+                "end_year": 2026,
+                "kind": "academic_year",
+                "label": "2025/26",
+                "start_year": 2025
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 20768,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c2",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        }
+      },
+      "profile": {
+        "academic_focus": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Academics",
+                  "original_text": "humanities, social sciences, and natural/physical sciences",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Organization_and_administration",
+                  "original_text": "USC Viterbi School of Engineering",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Organization_and_administration",
+                  "original_text": "Keck School of Medicine of USC",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Academics",
+                  "original_text": "The USC School of Cinematic Arts",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": [
+                {
+                  "language": "en",
+                  "text": "humanities"
+                },
+                {
+                  "language": "en",
+                  "text": "social sciences"
+                },
+                {
+                  "language": "en",
+                  "text": "natural and physical sciences"
+                },
+                {
+                  "language": "en",
+                  "text": "engineering"
+                },
+                {
+                  "language": "en",
+                  "text": "medicine"
+                },
+                {
+                  "language": "en",
+                  "text": "cinematic arts"
+                }
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "degree_levels": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Academics",
+                  "original_text": "The four-year, full-time undergraduate instructional program",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Academics",
+                  "original_text": "offers 134 master's, doctoral, and professional degrees",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": [
+                "undergraduate",
+                "masters",
+                "doctoral",
+                "professional"
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "motto": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:0",
+                  "original_text": "Motto: Latin: Palmam qui meruit ferat",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "la",
+                "text": "Palmam qui meruit ferat"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "summary": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "The University of Southern California (USC, SC, or Southern Cal[a]) is a private research university in Los Angeles",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Organization_and_administration",
+                  "original_text": "USC is a private public-benefit nonprofit corporation",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Campus",
+                  "original_text": "The main campus is in the University Park neighborhood of Los Angeles",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Campus",
+                  "original_text": "USC also operates the Health Sciences Campus",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Campus",
+                  "original_text": "USC announced the opening of a new Capital Campus in Washington, D.C.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Founding_and_early_history",
+                  "original_text": "The University of Southern California was founded following the efforts of Judge Robert Maclay Widney",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Founding_and_early_history",
+                  "original_text": "When USC opened in 1880, the school had an enrollment of 53 students and a faculty of 10",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Founding_and_early_history",
+                  "original_text": "The university is no longer affiliated with any church, having severed formal ties in 1952",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Organization_and_administration",
+                  "original_text": "The USC Dana and David Dornsife College of Letters, Arts, and Sciences, the Graduate School, and the twenty professional schools",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Academics",
+                  "original_text": "humanities, social sciences, and natural/physical sciences",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Health_Sciences_campus",
+                  "original_text": "basic and clinical biomedical research in the fields of cancer, gene therapy, the neurosciences, and transplantation biology",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "infobox:13",
+                  "original_text": "Students: 47,147 (2024)[4]",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "infobox:14",
+                  "original_text": "Undergraduates: 21,023 (2024)[4]",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "infobox:15",
+                  "original_text": "Postgraduates: 26,124 (2024)[4]",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Student_body",
+                  "original_text": "As of the 2025-2026 academic year, USC has a total enrollment of roughly 45,815 students",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "infobox:8",
+                  "original_text": "Budget: US$7.4 billion (2023–24)[3]",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "infobox:7",
+                  "original_text": "Endowment: US$8.8 billion (2025)[2]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "The University of Southern California (USC) is a private nonprofit research university in Los Angeles, California. Its main University Park campus is southwest of downtown Los Angeles, while a separate Health Sciences campus supports medical education and biomedical research. The institution also operates other sites, including a Capital Campus in Washington, D.C. Its roots date to 1880, when Robert Maclay Widney helped arrange land and financial support for its establishment. The university opened that year with 53 students and ten faculty members. Although initially associated with Methodism, it ended its formal church ties in 1952.\n\nUSC's organization includes the Dornsife College of Letters, Arts and Sciences, a graduate school, and professional schools spanning engineering, medicine, cinema, architecture, law, education and other fields. The university's teaching and research extend across the humanities, social sciences, natural sciences and professional disciplines. The Health Sciences campus hosts clinical and biomedical programs, including cancer and neuroscience research.\n\nIts published figures require date-specific interpretation. The English Wikipedia infobox records 47,147 students for 2024, including 21,023 undergraduates and 26,124 postgraduates, while a separately dated 2025–26 account reports roughly 45,815 enrolled students. The infobox gives a 2023–24 budget of approximately US$7.4 billion and a 2025 endowment of approximately US$8.8 billion. These are different financial measures, not interchangeable indicators of current spending or assets."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "website": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P856:0",
+                  "original_text": "{\"property\": \"P856\", \"property_label\": \"official website\", \"statement_id\": \"Q4614$51223B54-F294-4008-BBFF-16F210D9E75C\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"https://usc.edu\", \"qualifiers\": {\"P407\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 1860, \"id\": \"Q1860\"}}]}}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "https://usc.edu",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "qid": "Q4614",
+      "record_revision": 1,
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "ranking_identifier",
+          "reviewed_institution_type"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "included"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T09:49:38.424347+00:00",
+          "revision_id": 2548118826,
+          "source_qid": "Q4614",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2548118826"
+        },
+        "s10": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T09:51:04.160925+00:00",
+          "revision_id": 2513758822,
+          "source_qid": "Q5006646",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2513758822"
+        },
+        "s11": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T09:51:10.588992+00:00",
+          "revision_id": 2523443562,
+          "source_qid": "Q7967100",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2523443562"
+        },
+        "s12": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T09:51:17.729121+00:00",
+          "revision_id": 2509956181,
+          "source_qid": "Q11246486",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2509956181"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikipedia",
+          "language": "en",
+          "page_id": 32005,
+          "publisher_role": "encyclopedia",
+          "retrieved_at": "2026-11-06T09:50:10.709726+00:00",
+          "revision_id": 1382254406,
+          "url": "https://en.wikipedia.org/w/index.php?oldid=1382254406"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T09:50:17.552777+00:00",
+          "revision_id": 2557623321,
+          "source_qid": "Q4917",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2557623321"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T09:50:25.390294+00:00",
+          "revision_id": 2560982823,
+          "source_qid": "Q902104",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2560982823"
+        },
+        "s5": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T09:50:36.584805+00:00",
+          "revision_id": 2559741554,
+          "source_qid": "Q15936437",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2559741554"
+        },
+        "s6": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T09:50:42.932638+00:00",
+          "revision_id": 2441014281,
+          "source_qid": "Q23002054",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2441014281"
+        },
+        "s7": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T08:49:01.844922+00:00",
+          "revision_id": 2523404231,
+          "source_qid": "Q45400320",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2523404231"
+        },
+        "s8": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T09:50:50.405563+00:00",
+          "revision_id": 2565041516,
+          "source_qid": "Q30",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2565041516"
+        },
+        "s9": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T09:50:57.080820+00:00",
+          "revision_id": 2562462889,
+          "source_qid": "Q65",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2562462889"
+        }
+      }
+    },
+    "open_requests": [],
+    "proposed_at": "2026-11-06T09:56:57.273204+00:00",
+    "qid": "Q4614",
+    "research": {
+      "model": "not_reported",
+      "prompt_sha256": "25495686b68532010cccc8d5e16912207c30f3000d95176a38aa1357921f0fdf",
+      "reasoning_effort": "medium",
+      "schema_sha256": "92e942f4fbf2ae28964462ea9ffa8312c5ee16a077a1e08b40aaaf741512422e",
+      "session": "/root/research_q4614"
+    },
+    "retrieval_failures": [],
+    "review_status": "unreviewed",
+    "seed": {
+      "channels": [
+        "ranking_identifier",
+        "reviewed_institution_type"
+      ],
+      "import_id": "seed-84c3beb45367905f",
+      "screening_status": "included"
+    },
+    "transport": {
+      "base_commit": "9238abb5d462250a10906e923d5cb4ba1f056c5e",
+      "protocol": "native-subagent-v1",
+      "repository": "ider-zh/university-seed-curation",
+      "review_policy": {
+        "id": "source-grounded-flexible-v2",
+        "sha256": "b8ed7d2897e4c31dbd81b1379aafdc1077a21d1a33949edbd2d896b0adf99db2"
+      },
+      "schema_sha256": "bfa496eafa9dffca56146214168db7f000b09161b8993129632e7202e1c88833",
+      "seed_catalog_sha256": "84c3beb45367905f513d650684283dd62a9c1b77962bdc34151a6ef05bfa03d4"
+    },
+    "type": "university-proposal-v1"
+  },
+  "review": {
+    "contexts_checked": 7,
+    "coverage_checks": [
+      {
+        "group": "identity",
+        "reason": "Official name, identifiers, governance, operating status, president and provost reviewed.",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "reason": "University Park, Health Sciences and Capital Campus are distinguished; Q4614 P625 remains institution-level.",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "reason": "6 October 1880 institutional inception and founding narrative supported by pinned sources.",
+        "status": "checked"
+      },
+      {
+        "group": "population",
+        "reason": "2024 infobox figures, 2025–26 academic-year figures, earlier 2019 and 1880 counts, and 2023 staff metrics reviewed without combining periods.",
+        "status": "checked"
+      },
+      {
+        "group": "finance",
+        "reason": "Assets/revenue Wikidata dates, USD ISO unit, 2023–24 budget and 2025 endowment separately validated.",
+        "status": "checked"
+      },
+      {
+        "group": "profile",
+        "reason": "Academic fields, degree levels, motto, website and sourced summary checked against frozen evidence.",
+        "status": "checked"
+      }
+    ],
+    "decision": "approve",
+    "facts_checked": 44,
+    "full_refresh": true,
+    "inferences": [
+      {
+        "id": "identity",
+        "reason": "Publicly identified operating private research university within university curation scope."
+      }
+    ],
+    "model": "not_reported",
+    "proposal_sha256": "7a5c5ea03471307670ada8bbd0f5aca88dd61071923a94bd58868e5dd27ef2ea",
+    "qid": "Q4614",
+    "reasoning_effort": "medium",
+    "record_sha256": "f8e15273f1bea9e28ce51037d8ce54bd9a26c1ee5e6aed9fe46753cdb078fb69",
+    "request_responses": [],
+    "requests": [],
+    "review_session": "/root/review_batch_2",
+    "reviewed_at": "2026-11-06T10:01:34.364335+00:00",
+    "source_revisions_checked": 12
+  },
+  "review_result_sha256": "28c01a4800000297890609a3a072d9c27ed34ac88ca4ab098e7b0f4908020ce0",
+  "type": "university-unified-receipt-v1"
+}
