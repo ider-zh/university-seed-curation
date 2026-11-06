@@ -1,0 +1,836 @@
+{
+  "attribution": "distinct_native_research_and_review_subagents;not_cryptographic_identity",
+  "research": {
+    "baseline_sha256": "absent",
+    "candidate": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-06T15:41:53.282153+00:00",
+          "status": "not_found"
+        },
+        "geography": {
+          "checked_at": "2026-11-06T15:41:53.282153+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-06T15:41:53.282153+00:00",
+          "status": "checked"
+        },
+        "identity": {
+          "checked_at": "2026-11-06T15:41:53.282153+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-06T15:41:53.282153+00:00",
+          "status": "not_found"
+        },
+        "profile": {
+          "checked_at": "2026-11-06T15:41:53.282153+00:00",
+          "status": "not_found"
+        }
+      },
+      "curation": {
+        "identity_status": "in_scope"
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "claim:P571:0",
+                      "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q19752735$2EB846E0-5337-4B22-A7F8-E6B31A4379AC\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+1993-02-27T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}, \"reference_count\": 1}",
+                      "source_ref": "s1"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "day": 27,
+                    "month": 2,
+                    "precision": "day",
+                    "year": 1993
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "claim:P571:0",
+                      "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q19752735$2EB846E0-5337-4B22-A7F8-E6B31A4379AC\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+1993-02-27T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}, \"reference_count\": 1}",
+                      "source_ref": "s1"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "Inception date recorded for the institution."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "inception",
+            "kind": "institution_establishment",
+            "subject_ref": "institution"
+          }
+        ]
+      },
+      "identity": {
+        "aliases": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P1813:0",
+                    "original_text": "{\"property\": \"P1813\", \"property_label\": \"short name\", \"statement_id\": \"Q19752735$4896032A-2593-48BA-A1A9-0BECE44CBA49\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"STPN\", \"language\": \"id\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "id",
+                  "text": "STPN"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ],
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P31:0",
+                  "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q19752735$C74D00EC-E500-4A5B-A52F-2E0C06A0239C\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 12513145, \"id\": \"Q12513145\"}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "metadata",
+                  "original_text": "{\"id\": \"Q12513145\", \"labels\": {\"en\": \"sekolah tinggi\"}, \"descriptions\": {\"en\": \"Indonesian type of higher education institution, similar to college but provides undergraduate programs\"}}",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "higher_education_college",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q19752735\", \"labels\": {\"en\": \"Politeknik Agraria STPN\"}, \"descriptions\": {\"en\": \"university in Indonesia\"}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "Politeknik Agraria STPN",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "locations": [
+        {
+          "id": "indonesia",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q19752735$7B41709C-D04F-4ABE-9E38-449E3BEBE3D3\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 252, \"id\": \"Q252\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q252\", \"labels\": {\"en\": \"Indonesia\"}, \"descriptions\": {\"en\": \"island country in Southeast Asia and Oceania\"}}",
+                    "source_ref": "s3"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Indonesia"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q252"
+        },
+        {
+          "id": "moyudan",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q19752735$5C1F5586-9E11-461B-93E4-83128D16B677\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 5030361, \"id\": \"Q5030361\"}, \"reference_count\": 3}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q5030361\", \"labels\": {\"en\": \"Moyudan\"}, \"descriptions\": {\"en\": \"district in Sleman Regency, Yogyakarta Province, Indonesia\"}}",
+                    "source_ref": "s4"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Moyudan"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q5030361"
+        }
+      ],
+      "modified_datetime": "2026-11-06T15:45:10.394632+00:00",
+      "qid": "Q19752735",
+      "record_revision": 1,
+      "related_entities": {
+        "ministry": {
+          "kind": "institution",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q19752193\", \"labels\": {\"en\": \"Ministry of Agrarian and Spatial Planning\"}, \"descriptions\": {\"en\": \"ministry in Indonesia\"}}",
+                    "source_ref": "s5"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Ministry of Agrarian and Spatial Planning"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q19752193"
+        }
+      },
+      "relationships": {
+        "parent": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P749:0",
+                    "original_text": "{\"property\": \"P749\", \"property_label\": \"parent organization or unit\", \"statement_id\": \"Q19752735$41798775-0ED4-4BE6-BD3B-4D2237D1799D\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 19752193, \"id\": \"Q19752193\"}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "target_ref": "related:ministry"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ]
+      },
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "reviewed_institution_type"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "included"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T15:41:22.768206+00:00",
+          "revision_id": 2547066979,
+          "source_qid": "Q19752735",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2547066979"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T15:41:31.289512+00:00",
+          "revision_id": 2427034730,
+          "source_qid": "Q12513145",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2427034730"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T15:41:17.191171+00:00",
+          "revision_id": 2562953677,
+          "source_qid": "Q252",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2562953677"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T15:41:37.027193+00:00",
+          "revision_id": 2486176836,
+          "source_qid": "Q5030361",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2486176836"
+        },
+        "s5": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T15:41:53.271255+00:00",
+          "revision_id": 2548099949,
+          "source_qid": "Q19752193",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2548099949"
+        }
+      }
+    },
+    "coverage": [
+      {
+        "group": "identity",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "status": "checked"
+      },
+      {
+        "group": "population",
+        "status": "not_found"
+      },
+      {
+        "group": "finance",
+        "status": "not_found"
+      },
+      {
+        "group": "profile",
+        "status": "not_found"
+      }
+    ],
+    "delta": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-06T15:41:53.282153+00:00",
+          "status": "not_found"
+        },
+        "geography": {
+          "checked_at": "2026-11-06T15:41:53.282153+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-06T15:41:53.282153+00:00",
+          "status": "checked"
+        },
+        "identity": {
+          "checked_at": "2026-11-06T15:41:53.282153+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-06T15:41:53.282153+00:00",
+          "status": "not_found"
+        },
+        "profile": {
+          "checked_at": "2026-11-06T15:41:53.282153+00:00",
+          "status": "not_found"
+        }
+      },
+      "curation": {
+        "identity_status": "in_scope"
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "claim:P571:0",
+                      "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q19752735$2EB846E0-5337-4B22-A7F8-E6B31A4379AC\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+1993-02-27T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}, \"reference_count\": 1}",
+                      "source_ref": "s1"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "day": 27,
+                    "month": 2,
+                    "precision": "day",
+                    "year": 1993
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "claim:P571:0",
+                      "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q19752735$2EB846E0-5337-4B22-A7F8-E6B31A4379AC\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+1993-02-27T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}, \"reference_count\": 1}",
+                      "source_ref": "s1"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "Inception date recorded for the institution."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "inception",
+            "kind": "institution_establishment",
+            "subject_ref": "institution"
+          }
+        ]
+      },
+      "identity": {
+        "aliases": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P1813:0",
+                    "original_text": "{\"property\": \"P1813\", \"property_label\": \"short name\", \"statement_id\": \"Q19752735$4896032A-2593-48BA-A1A9-0BECE44CBA49\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"STPN\", \"language\": \"id\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "id",
+                  "text": "STPN"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ],
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P31:0",
+                  "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q19752735$C74D00EC-E500-4A5B-A52F-2E0C06A0239C\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 12513145, \"id\": \"Q12513145\"}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "metadata",
+                  "original_text": "{\"id\": \"Q12513145\", \"labels\": {\"en\": \"sekolah tinggi\"}, \"descriptions\": {\"en\": \"Indonesian type of higher education institution, similar to college but provides undergraduate programs\"}}",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "higher_education_college",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q19752735\", \"labels\": {\"en\": \"Politeknik Agraria STPN\"}, \"descriptions\": {\"en\": \"university in Indonesia\"}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "Politeknik Agraria STPN",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "locations": [
+        {
+          "id": "indonesia",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q19752735$7B41709C-D04F-4ABE-9E38-449E3BEBE3D3\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 252, \"id\": \"Q252\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q252\", \"labels\": {\"en\": \"Indonesia\"}, \"descriptions\": {\"en\": \"island country in Southeast Asia and Oceania\"}}",
+                    "source_ref": "s3"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Indonesia"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q252"
+        },
+        {
+          "id": "moyudan",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q19752735$5C1F5586-9E11-461B-93E4-83128D16B677\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 5030361, \"id\": \"Q5030361\"}, \"reference_count\": 3}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q5030361\", \"labels\": {\"en\": \"Moyudan\"}, \"descriptions\": {\"en\": \"district in Sleman Regency, Yogyakarta Province, Indonesia\"}}",
+                    "source_ref": "s4"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Moyudan"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q5030361"
+        }
+      ],
+      "qid": "Q19752735",
+      "record_revision": 1,
+      "related_entities": {
+        "ministry": {
+          "kind": "institution",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q19752193\", \"labels\": {\"en\": \"Ministry of Agrarian and Spatial Planning\"}, \"descriptions\": {\"en\": \"ministry in Indonesia\"}}",
+                    "source_ref": "s5"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Ministry of Agrarian and Spatial Planning"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q19752193"
+        }
+      },
+      "relationships": {
+        "parent": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P749:0",
+                    "original_text": "{\"property\": \"P749\", \"property_label\": \"parent organization or unit\", \"statement_id\": \"Q19752735$41798775-0ED4-4BE6-BD3B-4D2237D1799D\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 19752193, \"id\": \"Q19752193\"}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "target_ref": "related:ministry"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ]
+      },
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "reviewed_institution_type"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "included"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T15:41:22.768206+00:00",
+          "revision_id": 2547066979,
+          "source_qid": "Q19752735",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2547066979"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T15:41:31.289512+00:00",
+          "revision_id": 2427034730,
+          "source_qid": "Q12513145",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2427034730"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T15:41:17.191171+00:00",
+          "revision_id": 2562953677,
+          "source_qid": "Q252",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2562953677"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T15:41:37.027193+00:00",
+          "revision_id": 2486176836,
+          "source_qid": "Q5030361",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2486176836"
+        },
+        "s5": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T15:41:53.271255+00:00",
+          "revision_id": 2548099949,
+          "source_qid": "Q19752193",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2548099949"
+        }
+      }
+    },
+    "open_requests": [],
+    "proposed_at": "2026-11-06T15:45:10.394632+00:00",
+    "qid": "Q19752735",
+    "research": {
+      "model": "not_reported",
+      "prompt_sha256": "27bd85abe271fd1bc564b0a7a1e1c6620eab71f0e8740232cba56c8bd2a865f3",
+      "reasoning_effort": "not_reported",
+      "schema_sha256": "92e942f4fbf2ae28964462ea9ffa8312c5ee16a077a1e08b40aaaf741512422e",
+      "session": "/root/run_university_curation/research_university_q19752735"
+    },
+    "retrieval_failures": [],
+    "review_status": "unreviewed",
+    "seed": {
+      "channels": [
+        "reviewed_institution_type"
+      ],
+      "import_id": "seed-84c3beb45367905f",
+      "screening_status": "included"
+    },
+    "transport": {
+      "base_commit": "93fa5b73e73b3205b65d1e4e331f649e0f231e2f",
+      "protocol": "native-subagent-v1",
+      "repository": "ider-zh/university-seed-curation",
+      "review_policy": {
+        "id": "source-grounded-flexible-v2",
+        "sha256": "b8ed7d2897e4c31dbd81b1379aafdc1077a21d1a33949edbd2d896b0adf99db2"
+      },
+      "schema_sha256": "bfa496eafa9dffca56146214168db7f000b09161b8993129632e7202e1c88833",
+      "seed_catalog_sha256": "84c3beb45367905f513d650684283dd62a9c1b77962bdc34151a6ef05bfa03d4"
+    },
+    "type": "university-proposal-v1"
+  },
+  "review": {
+    "contexts_checked": 3,
+    "coverage_checks": [
+      {
+        "group": "identity",
+        "reason": "The frozen survey supplies institution metadata, short name, P31 classification and parent relation. Mandatory identity facts and contexts were reviewed; supplementary fields were not independently reviewed.",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "reason": "The frozen survey supplies P17 and P131. The hash-verified root revision 2547066979 has no P625 statements, matching the empty projection. Coordinates of Indonesia, Moyudan and the ministry are not institution or campus coordinates. This is survey completion within the supplied packet only.",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "reason": "The frozen survey supplies the institutional P571 inception statement, checked with day precision. This is not an exhaustive historical survey beyond the packet.",
+        "status": "checked"
+      },
+      {
+        "group": "population",
+        "reason": "No institution population observation is supplied in the frozen source corpus or root claims. not_found is limited to this packet, not a claim of external source absence.",
+        "status": "not_found"
+      },
+      {
+        "group": "finance",
+        "reason": "No institution financial observation is supplied in the frozen source corpus or root claims. No currency, unit or reporting period is inferred; the survey result is packet-limited.",
+        "status": "not_found"
+      },
+      {
+        "group": "profile",
+        "reason": "No additional normalized profile fact is supplied in the bounded source corpus. This records the supplied survey outcome only, not absence of every possible profile attribute or exhaustive external research; optional supplementary omissions do not block core-review-v3.",
+        "status": "not_found"
+      }
+    ],
+    "decision": "approve",
+    "facts_checked": 5,
+    "full_refresh": true,
+    "inferences": [
+      {
+        "id": "$.identity.kind:c1",
+        "reason": "s1 claim:P31:0 identifies Q12513145; s2 metadata describes sekolah tinggi as an Indonesian higher education institution similar to a college providing undergraduate programs. higher_education_college is a supported broader controlled representation, not a claim of a different legal form or historical period."
+      },
+      {
+        "id": "identity",
+        "reason": "s1 P31 and s2 metadata establish an undergraduate higher education institution, supporting in_scope. Assessment is limited to the mandatory core-review-v3 arrays."
+      },
+      {
+        "id": "milestone:inception",
+        "reason": "The institutional P571 inception statement supports institution_establishment for subject institution. It does not establish a campus opening or an exhaustive predecessor history."
+      }
+    ],
+    "model": "not_reported",
+    "proposal_sha256": "dddee5539c72ea4b5491a81d9190666ef2678baa4c3c087ed4f5ff313c0a86a9",
+    "qid": "Q19752735",
+    "reasoning_effort": "not_reported",
+    "record_sha256": "feadadd789a895c3a18c33d440175fb6df76f6f83ed250c7a32153941809b93e",
+    "request_responses": [],
+    "requests": [],
+    "review_scope": {
+      "not_independently_reviewed_ids": [
+        "$.history.milestones[0].description:c1",
+        "$.locations[0].name:c1",
+        "$.locations[1].name:c1",
+        "$.related_entities.ministry.name:c1",
+        "location:indonesia",
+        "location:moyudan"
+      ],
+      "reviewed_ids": [
+        "$.history.milestones[0].date:c1",
+        "$.identity.aliases[0]:c1",
+        "$.identity.kind:c1",
+        "$.identity.names.en:c1",
+        "$.relationships.parent[0]:c1",
+        "identity",
+        "milestone:inception",
+        "related:ministry"
+      ],
+      "version": "core-review-v3"
+    },
+    "review_session": "/root/run_university_curation/review_final_q19752735",
+    "reviewed_at": "2026-11-06T16:35:39.713061+00:00",
+    "source_revisions_checked": 5,
+    "waived_requests": []
+  },
+  "review_result_sha256": "85f7ca024bf8893f5ff9f88b60c40da32801d9eaa10458fedaaf75ad74edc81d",
+  "type": "university-unified-receipt-v1"
+}
