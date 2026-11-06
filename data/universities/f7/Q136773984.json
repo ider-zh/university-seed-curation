@@ -1,0 +1,202 @@
+{
+  "coverage": {
+    "finance": {
+      "checked_at": "2026-11-06T23:25:30.085392+00:00",
+      "status": "not_found"
+    },
+    "geography": {
+      "checked_at": "2026-11-06T23:25:30.085392+00:00",
+      "status": "checked"
+    },
+    "history": {
+      "checked_at": "2026-11-06T23:25:30.085392+00:00",
+      "status": "not_found"
+    },
+    "identity": {
+      "checked_at": "2026-11-06T23:25:30.085392+00:00",
+      "status": "checked"
+    },
+    "population": {
+      "checked_at": "2026-11-06T23:25:30.085392+00:00",
+      "status": "not_found"
+    },
+    "profile": {
+      "checked_at": "2026-11-06T23:25:30.085392+00:00",
+      "status": "not_found"
+    }
+  },
+  "curation": {
+    "identity_status": "excluded",
+    "refresh_profile": "core-v1",
+    "reviewed_groups": [
+      "identity",
+      "geography",
+      "history",
+      "population",
+      "finance",
+      "profile"
+    ]
+  },
+  "identity": {
+    "kind": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "metadata",
+              "original_text": "{\"id\": \"Q136773984\", \"labels\": {\"en\": \"Kpasablo Methodist Primary\"}, \"descriptions\": {\"en\": \"A basic school in Karaga District. It is under the Methodist management unit.\"}}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "claim:P31:0",
+              "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q136773984$4ff8ff8f-4c13-4d60-0f34-b1c6dff8408f\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 2385804, \"id\": \"Q2385804\"}}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "metadata",
+              "original_text": "{\"id\": \"Q2385804\", \"labels\": {\"en\": \"educational institution\"}, \"descriptions\": {\"en\": \"institution that provides education\"}}",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": "other",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "names": {
+      "en": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q136773984\", \"labels\": {\"en\": \"Kpasablo Methodist Primary\"}, \"descriptions\": {\"en\": \"A basic school in Karaga District. It is under the Methodist management unit.\"}}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": "Kpasablo Methodist Primary",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    }
+  },
+  "locations": [
+    {
+      "address": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P17:0",
+                "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q136773984$bb5433c0-4f3f-963b-119e-fcfad2b86279\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 117, \"id\": \"Q117\"}}",
+                "source_ref": "s1"
+              },
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q117\", \"labels\": {\"en\": \"Ghana\"}, \"descriptions\": {\"en\": \"country in West Africa\"}}",
+                "source_ref": "s3"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "country_name": "Ghana",
+              "country_qid": "Q117",
+              "formatted": {
+                "language": "en",
+                "text": "Ghana"
+              }
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "id": "country",
+      "kind": "administrative_area",
+      "qid": "Q117"
+    },
+    {
+      "id": "karaga",
+      "kind": "administrative_area",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q136773984\", \"labels\": {\"en\": \"Kpasablo Methodist Primary\"}, \"descriptions\": {\"en\": \"A basic school in Karaga District. It is under the Methodist management unit.\"}}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Karaga District"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    }
+  ],
+  "modified_datetime": "2026-11-06T23:27:38.328805+00:00",
+  "qid": "Q136773984",
+  "record_revision": 1,
+  "schema_version": "0.2.2",
+  "seed": {
+    "channels": [
+      "legacy_discovery"
+    ],
+    "import_id": "seed-84c3beb45367905f",
+    "screening_status": "needs_review"
+  },
+  "selection_policy": "preferred-v1",
+  "sources": {
+    "s1": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T23:25:24.315344+00:00",
+      "revision_id": 2429115724,
+      "source_qid": "Q136773984",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2429115724"
+    },
+    "s2": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T22:52:35.142508+00:00",
+      "revision_id": 2561641675,
+      "source_qid": "Q2385804",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2561641675"
+    },
+    "s3": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T23:25:29.986255+00:00",
+      "revision_id": 2562960086,
+      "source_qid": "Q117",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2562960086"
+    }
+  },
+  "update_datetime": "2026-11-06T23:27:38.328805+00:00"
+}
