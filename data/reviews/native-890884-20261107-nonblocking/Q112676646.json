@@ -1,0 +1,502 @@
+{
+  "attribution": "distinct_native_research_and_review_subagents;not_cryptographic_identity",
+  "research": {
+    "baseline_sha256": "absent",
+    "candidate": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-06T22:39:33.705423+00:00",
+          "status": "not_found"
+        },
+        "geography": {
+          "checked_at": "2026-11-06T22:39:33.705423+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-06T22:39:33.705423+00:00",
+          "status": "not_found"
+        },
+        "identity": {
+          "checked_at": "2026-11-06T22:39:33.705423+00:00",
+          "status": "disputed"
+        },
+        "population": {
+          "checked_at": "2026-11-06T22:39:33.705423+00:00",
+          "status": "not_found"
+        },
+        "profile": {
+          "checked_at": "2026-11-06T22:39:33.705423+00:00",
+          "status": "not_found"
+        }
+      },
+      "curation": {
+        "identity_status": "in_scope"
+      },
+      "identity": {
+        "identifiers": {
+          "P5242": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P5242:0",
+                    "original_text": "\"property_label\": \"ARWU university ID\"",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "claim:P5242:0",
+                    "original_text": "\"value\": \"gannan-health-vocational-college\"",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "gannan-health-vocational-college",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "locations": [
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "\"id\": \"Q148\"",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "\"en\": \"People's Republic of China\"",
+                    "source_ref": "s3"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "country_name": "People's Republic of China",
+                  "country_qid": "Q148",
+                  "formatted": {
+                    "language": "en",
+                    "text": "People's Republic of China"
+                  }
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "country_china",
+          "kind": "administrative_area",
+          "qid": "Q148"
+        },
+        {
+          "id": "ganzhou",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "\"id\": \"Q363166\"",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "\"en\": \"Ganzhou\"",
+                    "source_ref": "s4"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Ganzhou"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q363166"
+        }
+      ],
+      "modified_datetime": "2026-11-06T22:40:48.044105+00:00",
+      "qid": "Q112676646",
+      "record_revision": 1,
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "ranking_identifier",
+          "reviewed_institution_type"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "included"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:20:19.632189+00:00",
+          "revision_id": 2548510701,
+          "source_qid": "Q112676646",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2548510701"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T16:23:40.181235+00:00",
+          "revision_id": 2553501921,
+          "source_qid": "Q38723",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2553501921"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:20:26.799256+00:00",
+          "revision_id": 2563722609,
+          "source_qid": "Q148",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2563722609"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:20:30.549404+00:00",
+          "revision_id": 2565378681,
+          "source_qid": "Q363166",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2565378681"
+        }
+      }
+    },
+    "coverage": [
+      {
+        "group": "identity",
+        "status": "disputed"
+      },
+      {
+        "group": "geography",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "status": "not_found"
+      },
+      {
+        "group": "population",
+        "status": "not_found"
+      },
+      {
+        "group": "finance",
+        "status": "not_found"
+      },
+      {
+        "group": "profile",
+        "status": "not_found"
+      }
+    ],
+    "delta": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-06T22:39:33.705423+00:00",
+          "status": "not_found"
+        },
+        "geography": {
+          "checked_at": "2026-11-06T22:39:33.705423+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-06T22:39:33.705423+00:00",
+          "status": "not_found"
+        },
+        "identity": {
+          "checked_at": "2026-11-06T22:39:33.705423+00:00",
+          "status": "disputed"
+        },
+        "population": {
+          "checked_at": "2026-11-06T22:39:33.705423+00:00",
+          "status": "not_found"
+        },
+        "profile": {
+          "checked_at": "2026-11-06T22:39:33.705423+00:00",
+          "status": "not_found"
+        }
+      },
+      "curation": {
+        "identity_status": "in_scope"
+      },
+      "identity": {
+        "identifiers": {
+          "P5242": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P5242:0",
+                    "original_text": "\"property_label\": \"ARWU university ID\"",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "claim:P5242:0",
+                    "original_text": "\"value\": \"gannan-health-vocational-college\"",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "gannan-health-vocational-college",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "locations": [
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "\"id\": \"Q148\"",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "\"en\": \"People's Republic of China\"",
+                    "source_ref": "s3"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "country_name": "People's Republic of China",
+                  "country_qid": "Q148",
+                  "formatted": {
+                    "language": "en",
+                    "text": "People's Republic of China"
+                  }
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "country_china",
+          "kind": "administrative_area",
+          "qid": "Q148"
+        },
+        {
+          "id": "ganzhou",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "\"id\": \"Q363166\"",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "\"en\": \"Ganzhou\"",
+                    "source_ref": "s4"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Ganzhou"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q363166"
+        }
+      ],
+      "qid": "Q112676646",
+      "record_revision": 1,
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "ranking_identifier",
+          "reviewed_institution_type"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "included"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:20:19.632189+00:00",
+          "revision_id": 2548510701,
+          "source_qid": "Q112676646",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2548510701"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T16:23:40.181235+00:00",
+          "revision_id": 2553501921,
+          "source_qid": "Q38723",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2553501921"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:20:26.799256+00:00",
+          "revision_id": 2563722609,
+          "source_qid": "Q148",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2563722609"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:20:30.549404+00:00",
+          "revision_id": 2565378681,
+          "source_qid": "Q363166",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2565378681"
+        }
+      }
+    },
+    "open_requests": [],
+    "proposed_at": "2026-11-06T22:40:48.044105+00:00",
+    "qid": "Q112676646",
+    "research": {
+      "model": "not_reported",
+      "prompt_sha256": "253ce8f57e27c048f1b73e23fc425885270ef58c86853767c32d46c0673db9d3",
+      "reasoning_effort": "not_reported",
+      "schema_sha256": "92e942f4fbf2ae28964462ea9ffa8312c5ee16a077a1e08b40aaaf741512422e",
+      "session": "/root/nb_research_q112676646"
+    },
+    "retrieval_failures": [
+      {
+        "reason": "unavailable"
+      },
+      {
+        "reason": "unavailable"
+      }
+    ],
+    "review_status": "unreviewed",
+    "seed": {
+      "channels": [
+        "ranking_identifier",
+        "reviewed_institution_type"
+      ],
+      "import_id": "seed-84c3beb45367905f",
+      "screening_status": "included"
+    },
+    "transport": {
+      "base_commit": "dc52058c0f7180142f16975e5b4be22df6b55d98",
+      "protocol": "native-subagent-v1",
+      "repository": "ider-zh/university-seed-curation",
+      "review_policy": {
+        "id": "source-grounded-flexible-v2",
+        "sha256": "b8ed7d2897e4c31dbd81b1379aafdc1077a21d1a33949edbd2d896b0adf99db2"
+      },
+      "schema_sha256": "bfa496eafa9dffca56146214168db7f000b09161b8993129632e7202e1c88833",
+      "seed_catalog_sha256": "84c3beb45367905f513d650684283dd62a9c1b77962bdc34151a6ef05bfa03d4"
+    },
+    "type": "university-proposal-v1"
+  },
+  "review": {
+    "contexts_checked": 2,
+    "coverage_checks": [
+      {
+        "group": "identity",
+        "reason": "Scope and captured identifier are supported, while institution-name/subtype extraction remains incomplete in the admissible corpus. The two optional external acquisition failures are disclosed; missing extraction is not represented as successful completion.",
+        "status": "disputed"
+      },
+      {
+        "group": "geography",
+        "reason": "Frozen root country and administrative-area claims support the limited geography survey. No institution P625 exists and no linked country/city coordinate is substituted.",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "reason": "No supported historical date is proposed from the successful frozen corpus; supplementary retrieval failures and incomplete coverage remain visible.",
+        "status": "not_found"
+      },
+      {
+        "group": "population",
+        "reason": "No numerical population observation is proposed; not_found describes the captured evidence limitation, not proof of absence or an exhaustive successful external survey.",
+        "status": "not_found"
+      },
+      {
+        "group": "finance",
+        "reason": "No finance observation is proposed; the failed supplementary attempts prevent a full successful survey or freshness claim.",
+        "status": "not_found"
+      },
+      {
+        "group": "profile",
+        "reason": "The sparse captured corpus does not support a grounded institutional overview; supplementary omissions and failed acquisition do not themselves block a supported partial record.",
+        "status": "not_found"
+      }
+    ],
+    "decision": "approve",
+    "facts_checked": 1,
+    "full_refresh": false,
+    "inferences": [],
+    "model": "not_reported",
+    "proposal_sha256": "75e7ab4dbd58e1f23665f72cb1c8188c90c54c914750fb7d9fae3a0bedb3e560",
+    "qid": "Q112676646",
+    "reasoning_effort": "not_reported",
+    "record_sha256": "135af3d0ca1f6b04aa499f2c43bdbee2ad786403e3da1f00e6790739c0b93203",
+    "request_responses": [],
+    "requests": [],
+    "review_scope": {
+      "not_independently_reviewed_ids": [
+        "$.locations[0].address:c1",
+        "$.locations[1].name:c1",
+        "location:country_china",
+        "location:ganzhou"
+      ],
+      "reviewed_ids": [
+        "$.identity.identifiers.P5242:c1",
+        "country:$.locations[0].address:c1",
+        "identity"
+      ],
+      "version": "core-review-v3"
+    },
+    "review_session": "/root/nb_review_q112676646",
+    "reviewed_at": "2026-11-06T22:41:47.473195+00:00",
+    "source_revisions_checked": 4,
+    "waived_requests": []
+  },
+  "review_result_sha256": "0e9e1ba8204bc14bd75b950e1997dccbe40a169d2f64bb1da3e5dd1261e83e38",
+  "type": "university-unified-receipt-v1"
+}
