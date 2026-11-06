@@ -1,0 +1,3675 @@
+{
+  "attribution": "distinct_native_research_and_review_subagents;not_cryptographic_identity",
+  "research": {
+    "baseline_sha256": "absent",
+    "candidate": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-06T11:42:42.269651+00:00",
+          "status": "checked"
+        },
+        "geography": {
+          "checked_at": "2026-11-06T11:42:42.269651+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-06T11:42:42.269651+00:00",
+          "status": "checked"
+        },
+        "identity": {
+          "checked_at": "2026-11-06T11:42:42.269651+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-06T11:42:42.269651+00:00",
+          "status": "checked"
+        },
+        "profile": {
+          "checked_at": "2026-11-06T11:42:42.269651+00:00",
+          "status": "checked"
+        }
+      },
+      "curation": {
+        "identity_status": "in_scope"
+      },
+      "finance": {
+        "endowment": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:10",
+                  "original_text": "Целевой капитал: 110 млн ₽ (22.12.2014[2])",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "day": 22,
+                "kind": "date",
+                "month": 12,
+                "year": 2014
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": "110000000",
+                "currency": "RUB",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "claim:P571:0",
+                      "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q13164$b404703c-45ce-1018-db01-46dd61cdfd6f\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+1755-01-12T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985786\"}, \"reference_count\": 1}",
+                      "source_ref": "s1"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "day": 12,
+                    "month": 1,
+                    "original_date": "12 January 1755 (Julian / Old Style; Wikidata calendarmodel Q1985786)",
+                    "precision": "day",
+                    "year": 1755
+                  },
+                  "verification": "supported"
+                },
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Imperial_Moscow_University",
+                      "original_text": "Ivan Shuvalov and Mikhail Lomonosov promoted the idea of a university in Moscow, and Russian Empress Elizabeth decreed its establishment on 23 January [O.S. 12 January] 1755.[4]",
+                      "source_ref": "s2"
+                    },
+                    {
+                      "locator": "infobox:7",
+                      "original_text": "Год основания: 12 (23) января 1755",
+                      "source_ref": "s3"
+                    }
+                  ],
+                  "id": "c2",
+                  "value": {
+                    "day": 23,
+                    "month": 1,
+                    "original_date": "23 January 1755 (New Style), paired by source with O.S. 12 January 1755",
+                    "precision": "day",
+                    "year": 1755
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c2",
+                "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+                "reason_code": "best_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Imperial_Moscow_University",
+                      "original_text": "Ivan Shuvalov and Mikhail Lomonosov promoted the idea of a university in Moscow, and Russian Empress Elizabeth decreed its establishment on 23 January [O.S. 12 January] 1755.[4]",
+                      "source_ref": "s2"
+                    },
+                    {
+                      "locator": "claim:P571:0",
+                      "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q13164$b404703c-45ce-1018-db01-46dd61cdfd6f\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+1755-01-12T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985786\"}, \"reference_count\": 1}",
+                      "source_ref": "s1"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "Empress Elizabeth decreed the establishment of Moscow University on 12 January 1755 Julian (Old Style), equivalent to 23 January 1755 Gregorian (New Style); Ivan Shuvalov and Mikhail Lomonosov promoted the proposal."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "establishment",
+            "kind": "institution_establishment",
+            "subject_ref": "institution"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:.D0.9E.D0.B1.D1.80.D0.B0.D0.B7.D0.BE.D0.B2.D0.B0.D0.BD.D0.B8.D0.B5_.D0.A3.D0.BD.D0.B8.D0.B2.D0.B5.D1.80.D1.81.D0.B8.D1.82.D0.B5.D1.82.D0.B0",
+                      "original_text": "Первые лекции в университете были прочитаны 26 апреля (7 мая) 1755 года[17].",
+                      "source_ref": "s3"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "day": 7,
+                    "month": 5,
+                    "original_date": "7 May 1755 New Style (26 April Old Style)",
+                    "precision": "day",
+                    "year": 1755
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:.D0.9E.D0.B1.D1.80.D0.B0.D0.B7.D0.BE.D0.B2.D0.B0.D0.BD.D0.B8.D0.B5_.D0.A3.D0.BD.D0.B8.D0.B2.D0.B5.D1.80.D1.81.D0.B8.D1.82.D0.B5.D1.82.D0.B0",
+                      "original_text": "Первые лекции в университете были прочитаны 26 апреля (7 мая) 1755 года[17].",
+                      "source_ref": "s3"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "First university lectures, dated 26 April (7 May) 1755 in the source."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "first-lectures",
+            "kind": "teaching_start",
+            "subject_ref": "institution"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:.D0.98.D1.81.D1.82.D0.BE.D1.80.D0.B8.D1.8F",
+                      "original_text": "7 мая 1940 — «Московский государственный университет им. М. В. Ломоносова»",
+                      "source_ref": "s3"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "day": 7,
+                    "month": 5,
+                    "precision": "day",
+                    "year": 1940
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:.D0.98.D1.81.D1.82.D0.BE.D1.80.D0.B8.D1.8F",
+                      "original_text": "7 мая 1940 — «Московский государственный университет им. М. В. Ломоносова»",
+                      "source_ref": "s3"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "The university adopted the name Московский государственный университет им. М. В. Ломоносова on 7 May 1940."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "lomonosov-name",
+            "kind": "rename",
+            "subject_ref": "institution"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Campus",
+                      "original_text": "Since 1953, most of the faculties have been situated on Sparrow Hills, in southwest Moscow.",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 1953
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Campus",
+                      "original_text": "Since 1953, most of the faculties have been situated on Sparrow Hills, in southwest Moscow.",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "Most faculties have been situated on Sparrow Hills in southwest Moscow since 1953."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "sparrow-hills-relocation",
+            "kind": "relocation",
+            "subject_ref": "institution"
+          }
+        ]
+      },
+      "identity": {
+        "aliases": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P1813:0",
+                    "original_text": "{\"property\": \"P1813\", \"property_label\": \"short name\", \"statement_id\": \"Q13164$d3e3993a-4c1d-7edb-00e5-cc732833f119\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"МГУ\", \"language\": \"ru\"}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "ru",
+                  "text": "МГУ"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P1813:1",
+                    "original_text": "{\"property\": \"P1813\", \"property_label\": \"short name\", \"statement_id\": \"Q13164$33be9ab0-490b-84f4-5ea8-ad6722d11b0f\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"MSU\", \"language\": \"en\"}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "MSU"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P1813:2",
+                    "original_text": "{\"property\": \"P1813\", \"property_label\": \"short name\", \"statement_id\": \"Q13164$87dd6ce2-4bd8-4cc6-138e-aeb8dfab4c80\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"МДУ\", \"language\": \"uk\"}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "uk",
+                  "text": "МДУ"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P1813:3",
+                    "original_text": "{\"property\": \"P1813\", \"property_label\": \"short name\", \"statement_id\": \"Q13164$4e6353b4-4fce-684e-31a0-cba682fdbdf7\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"莫大\", \"language\": \"zh\"}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "zh",
+                  "text": "莫大"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P1813:4",
+                    "original_text": "{\"property\": \"P1813\", \"property_label\": \"short name\", \"statement_id\": \"Q13164$e864c92d-4a60-e467-3d7d-0e74bb05a48b\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"МДУ\", \"language\": \"be\"}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "be",
+                  "text": "МДУ"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ],
+        "identifiers": {
+          "P5242": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P5242:0",
+                    "original_text": "{\"property\": \"P5242\", \"property_label\": \"ARWU university ID\", \"statement_id\": \"Q13164$8B2F81D5-D392-4430-A5B5-1DB0BD5DFE7B\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"Moscow-State-University\"}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "Moscow-State-University",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "P5584": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P5584:0",
+                    "original_text": "{\"property\": \"P5584\", \"property_label\": \"QS World University ID\", \"statement_id\": \"Q13164$8D8936E1-73AD-485C-ACCD-CCC79297A277\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"lomonosov-moscow-state-university\"}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "lomonosov-moscow-state-university",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "P5586": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P5586:0",
+                    "original_text": "{\"property\": \"P5586\", \"property_label\": \"Times Higher Education World University ID\", \"statement_id\": \"Q13164$43E25BD1-26E7-4674-B404-49F3B092AAA9\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"lomonosov-moscow-state-university\"}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "lomonosov-moscow-state-university",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:5",
+                  "original_text": "Type: Public research university",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "university",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q13164\", \"labels\": {\"ru\": \"Московский государственный университет\", \"en\": \"Lomonosov Moscow State University\"}, \"descriptions\": {\"en\": \"public research university in Moscow, Russia\", \"ru\": \"университет в Москве, Россия; один из старейших и крупнейших университетов России\"}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "Lomonosov Moscow State University",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "ru": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P1448:0",
+                    "original_text": "{\"property\": \"P1448\", \"property_label\": \"official name\", \"statement_id\": \"Q13164$AD627BA8-5C1D-4FDC-8422-A13003476AC5\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"Московский государственный университет имени М. В. Ломоносова\", \"language\": \"ru\"}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "Московский государственный университет имени М. В. Ломоносова",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        "ownership": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:5",
+                  "original_text": "Type: Public research university",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "infobox:9",
+                  "original_text": "Тип: государственный",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": "public",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "leadership": {
+        "rector": {
+          "candidates": [
+            {
+              "current_basis": "term_present",
+              "evidence": [
+                {
+                  "locator": "infobox:11",
+                  "original_text": "Ректор: Виктор Антонович Садовничий",
+                  "source_ref": "s3"
+                },
+                {
+                  "locator": "claim:P1075:46",
+                  "original_text": "{\"property\": \"P1075\", \"property_label\": \"rector\", \"statement_id\": \"Q13164$84be8a55-4284-8914-9309-8e020944adfe\", \"rank\": \"preferred\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 2622956, \"id\": \"Q2622956\"}, \"qualifiers\": {\"P580\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+1992-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "section:lead",
+                  "original_text": "С 1992 года ректором МГУ является академик Виктор Антонович Садовничий, советский и российский математик, деятель российского высшего образования.",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "person": {
+                  "name": "Виктор Антонович Садовничий",
+                  "qid": "Q2622956"
+                },
+                "term_start": {
+                  "precision": "year",
+                  "year": 1992
+                },
+                "title_original": {
+                  "language": "ru",
+                  "text": "Ректор"
+                }
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason": "The source gives a term continuing to the present.",
+            "reason_code": "term_present"
+          }
+        }
+      },
+      "locations": [
+        {
+          "id": "moscow",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q649\", \"labels\": {\"en\": \"Moscow\", \"ru\": \"Москва\"}, \"descriptions\": {\"en\": \"capital and most populous city of Russia\", \"ru\": \"cтолица и крупнейший город России, город федерального значения РФ\"}}",
+                    "source_ref": "s7"
+                  },
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q13164$da50bd90-48e2-c91b-ac2f-5b03bc6a725b\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 649, \"id\": \"Q649\"}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Moscow"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q649"
+        },
+        {
+          "id": "western",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q462475\", \"labels\": {\"ru\": \"Западный административный округ\", \"en\": \"Western Administrative Okrug\"}, \"descriptions\": {\"en\": \"administrative okrug of Moscow\", \"ru\": \"административный округ в Москве\"}}",
+                    "source_ref": "s8"
+                  },
+                  {
+                    "locator": "claim:P131:1",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q13164$4086b0f0-4437-5fef-f52a-826fa3c1d73f\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 462475, \"id\": \"Q462475\"}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Western Administrative Okrug"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q462475"
+        },
+        {
+          "id": "ramenki",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q2359096\", \"labels\": {\"ru\": \"Раменки\", \"en\": \"Ramenki District\"}, \"descriptions\": {\"ru\": \"район в Москве, расположенный в Западном административном округе\", \"en\": \"human settlement in Russia\"}}",
+                    "source_ref": "s9"
+                  },
+                  {
+                    "locator": "claim:P131:2",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q13164$daa11a48-4241-989a-b6fc-d80e24e8a1e9\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 2359096, \"id\": \"Q2359096\"}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Ramenki District"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q2359096"
+        },
+        {
+          "id": "leninskie",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q4258282\", \"labels\": {\"ru\": \"Ленинские горы\", \"en\": \"Leninskie Gory\"}, \"descriptions\": {\"ru\": \"микрорайон в Москве, входящий в состав района «Раменки»\", \"en\": \"microdistrict of Moscow, Russia\"}}",
+                    "source_ref": "s10"
+                  },
+                  {
+                    "locator": "claim:P131:3",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q13164$58e606d0-45e0-bf2e-9d86-a54539cfd72a\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 4258282, \"id\": \"Q4258282\"}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Leninskie Gory"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q4258282"
+        },
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "infobox:19",
+                    "original_text": "Юридический адрес: 119991, Российская Федерация, г. Москва, Ленинские горы, д. 1, МГУ имени М. В. Ломоносова[4]",
+                    "source_ref": "s3"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "city_name": "Москва",
+                  "city_qid": "Q649",
+                  "country_name": "Российская Федерация",
+                  "country_qid": "Q159",
+                  "formatted": {
+                    "language": "ru",
+                    "text": "119991, Российская Федерация, г. Москва, Ленинские горы, д. 1, МГУ имени М. В. Ломоносова"
+                  },
+                  "postal_code": "119991"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "headquarters",
+          "kind": "headquarters",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P159:0",
+                    "original_text": "{\"property\": \"P159\", \"property_label\": \"headquarters location\", \"statement_id\": \"Q13164$A30F4B13-AA65-4B60-AFD9-8E82D9AB9F7E\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 649, \"id\": \"Q649\"}, \"qualifiers\": {\"P281\": [{\"snaktype\": \"value\", \"value\": \"119991\"}], \"P17\": [{\"snaktype\": \"value\", \"value\": {\"entity-ty",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q649\", \"labels\": {\"en\": \"Moscow\", \"ru\": \"Москва\"}, \"descriptions\": {\"en\": \"capital and most populous city of Russia\", \"ru\": \"cтолица и крупнейший город России, город федерального значения РФ\"}}",
+                    "source_ref": "s7"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Moscow"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q649"
+        },
+        {
+          "id": "sparrow-hills",
+          "kind": "campus",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Campus",
+                    "original_text": "Since 1953, most of the faculties have been situated on Sparrow Hills, in southwest Moscow.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Sparrow Hills"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        {
+          "id": "mokhovaya",
+          "kind": "campus",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Campus",
+                    "original_text": "The building on Mokhovaya Street houses the Faculty of Journalism, the Faculty of Psychology, and Institute of Asian and African Countries.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Mokhovaya Street"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        {
+          "coordinates": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "statement:Q13164$91218e38-44f6-9f93-f224-dc962d051db9",
+                    "original_text": "\"latitude\": 55.7025",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "source_rank": "normal",
+                "value": {
+                  "crs": "EPSG:4326",
+                  "globe_qid": "Q2",
+                  "latitude": 55.7025,
+                  "longitude": 37.530555555556,
+                  "source_precision_degrees": 0.00027777777777778
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "wikidata-item-location",
+          "kind": "institution",
+          "qid": "Q13164"
+        }
+      ],
+      "modified_datetime": "2026-11-06T11:46:12.373196+00:00",
+      "population": {
+        "academic_staff": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:10",
+                  "original_text": "Academic staff: 5,000",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period_status": "not_stated",
+              "value": {
+                "amount": 5000,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "period_not_stated",
+              "single_source_family"
+            ],
+            "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+            "reason_code": "only_available"
+          }
+        },
+        "administrative_staff": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Staff_and_students",
+                  "original_text": "The university employs more than 4,000 academics and 15,000 support staff.[citation needed]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period_status": "not_stated",
+              "value": {
+                "amount": 15000,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "period_not_stated",
+              "single_source_family"
+            ],
+            "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+            "reason_code": "only_available"
+          }
+        },
+        "international_students": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:.D0.A1.D0.BE.D0.B2.D1.80.D0.B5.D0.BC.D0.B5.D0.BD.D0.BD.D1.8B.D0.B9_.D0.9C.D0.93.D0.A3",
+                  "original_text": "В 2023 году МГУ занимал 2 место в списке крупнейших университетов России и 4 место в России по количеству иностранных студентов, по данным Мониторинга Министерства науки и высшего образования РФ в университете в 2023 году обучались 39 282 и 5 403 чел соответственно[83].",
+                  "source_ref": "s3"
+                },
+                {
+                  "locator": "infobox:13",
+                  "original_text": "Иностранные студенты: 5403",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2023
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 5403,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason_code": "only_available"
+          }
+        },
+        "postgraduate_students": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Staff_and_students",
+                  "original_text": "More than 40,000 undergraduates and 7,000 advanced degree candidates are enrolled.[60]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period_status": "not_stated",
+              "value": {
+                "amount": 7000,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "period_not_stated",
+              "single_source_family"
+            ],
+            "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+            "reason_code": "only_available"
+          }
+        },
+        "research_staff": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:.D0.A1.D0.BE.D0.B2.D1.80.D0.B5.D0.BC.D0.B5.D0.BD.D0.BD.D1.8B.D0.B9_.D0.9C.D0.93.D0.A3",
+                  "original_text": "Около 5 тыс. учёных работают в научно-исследовательских институтах вуза и связанных с ними учреждениях.",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "period_status": "not_stated",
+              "value": {
+                "amount": 5000,
+                "basis": "unspecified",
+                "precision": "approximate"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "period_not_stated",
+              "single_source_family",
+              "approximate_value"
+            ],
+            "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+            "reason_code": "only_available"
+          }
+        },
+        "students_total": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2196:0",
+                  "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q13164$467fc053-4076-7bca-c0e6-f2a213ff732a\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+38150\", \"unit\": \"1\"}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "period_status": "not_stated",
+              "value": {
+                "amount": 38150,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:.D0.A1.D0.BE.D0.B2.D1.80.D0.B5.D0.BC.D0.B5.D0.BD.D0.BD.D1.8B.D0.B9_.D0.9C.D0.93.D0.A3",
+                  "original_text": "В 2023 году МГУ занимал 2 место в списке крупнейших университетов России и 4 место в России по количеству иностранных студентов, по данным Мониторинга Министерства науки и высшего образования РФ в университете в 2023 году обучались 39 282 и 5 403 чел соответственно[83].",
+                  "source_ref": "s3"
+                },
+                {
+                  "locator": "infobox:11",
+                  "original_text": "Students: 39,282[1]",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "infobox:12",
+                  "original_text": "Студенты: 39 282[3]",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c2",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2023
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 39282,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c2",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        },
+        "teaching_staff": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:.D0.A1.D0.BE.D0.B2.D1.80.D0.B5.D0.BC.D0.B5.D0.BD.D0.BD.D1.8B.D0.B9_.D0.9C.D0.93.D0.A3",
+                  "original_text": "Общая численность профессорско-преподавательского состава 4 940 человек, из них 79,45 % имеют учёную степень.",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "period_status": "not_stated",
+              "value": {
+                "amount": 4940,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "period_not_stated",
+              "single_source_family"
+            ],
+            "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+            "reason_code": "only_available"
+          }
+        },
+        "undergraduate_students": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:14",
+                  "original_text": "Бакалавриат: 22 563",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "period_status": "not_stated",
+              "value": {
+                "amount": 22563,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "period_not_stated",
+              "single_source_family"
+            ],
+            "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "profile": {
+        "academic_focus": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Faculties",
+                  "original_text": "Faculty of Mechanics and Mathematics\nFaculty of Computational Mathematics and Cybernetics\nFaculty of Physics\nFaculty of Chemistry\nFaculty of Materials Science\nFaculty of Biology\nFaculty of Bioengineering and Bioinformatics [ru]\nFaculty of Soil Science [ru]\nFaculty of Geology [ru]\nFaculty of Geography\nFaculty of Fundamental Medicine\nFaculty of Space Research\nFaculty of History\nFaculty of Philology [ru]\nFaculty of Philosophy [ru]\nFaculty of Economics\nFaculty of Law [ru]\nFaculty of Journalism\nFaculty of Psychology\nInstitute of Asian and African Countries\nFaculty of Sociology [ru]\nFaculty of Foreign Languages and Area Studies [ru]\nFaculty of Public Administration [ru]\nFaculty of World Politics [ru]\nFaculty of Political Science\n",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": [
+                {
+                  "language": "en",
+                  "text": "Mathematics"
+                },
+                {
+                  "language": "en",
+                  "text": "Physics"
+                },
+                {
+                  "language": "en",
+                  "text": "Chemistry"
+                },
+                {
+                  "language": "en",
+                  "text": "Biology"
+                },
+                {
+                  "language": "en",
+                  "text": "Medicine"
+                },
+                {
+                  "language": "en",
+                  "text": "History"
+                },
+                {
+                  "language": "en",
+                  "text": "Law"
+                },
+                {
+                  "language": "en",
+                  "text": "Economics"
+                },
+                {
+                  "language": "en",
+                  "text": "Humanities"
+                },
+                {
+                  "language": "en",
+                  "text": "Social sciences"
+                }
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "degree_levels": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:.D0.A3.D1.87.D0.B5.D0.B1.D0.BD.D1.8B.D0.B9_.D0.BF.D1.80.D0.BE.D1.86.D0.B5.D1.81.D1.81",
+                  "original_text": "Начиная с 2011 года в МГУ введено обучение по интегрированной шестилетней программе, основными формами подготовки в МГУ стали обучение на специалиста, магистра и бакалавра.",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": [
+                "bachelor",
+                "master",
+                "specialist"
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "motto": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P1451:0",
+                  "original_text": "{\"property\": \"P1451\", \"property_label\": \"motto text\", \"statement_id\": \"Q13164$91ea03df-4ea6-4349-93aa-efe15ef8ce9d\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"Scientia est clara cognitio veritatis, illustratio mentis\", \"language\": \"la\"}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "la",
+                "text": "Scientia est clara cognitio veritatis, illustratio mentis"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:3",
+                  "original_text": "Motto: Наука есть ясное познание истины, просвещение разума",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c2",
+              "value": {
+                "language": "ru",
+                "text": "Наука есть ясное познание истины, просвещение разума"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c2",
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        },
+        "summary": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:5",
+                  "original_text": "Type: Public research university",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "claim:P1448:0",
+                  "original_text": "{\"property\": \"P1448\", \"property_label\": \"official name\", \"statement_id\": \"Q13164$AD627BA8-5C1D-4FDC-8422-A13003476AC5\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"Московский государственный университет имени М. В. Ломоносова\", \"language\": \"ru\"}}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "section:Imperial_Moscow_University",
+                  "original_text": "Ivan Shuvalov and Mikhail Lomonosov promoted the idea of a university in Moscow, and Russian Empress Elizabeth decreed its establishment on 23 January [O.S. 12 January] 1755.[4]",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:.D0.9E.D0.B1.D1.80.D0.B0.D0.B7.D0.BE.D0.B2.D0.B0.D0.BD.D0.B8.D0.B5_.D0.A3.D0.BD.D0.B8.D0.B2.D0.B5.D1.80.D1.81.D0.B8.D1.82.D0.B5.D1.82.D0.B0",
+                  "original_text": "Первые лекции в университете были прочитаны 26 апреля (7 мая) 1755 года[17].",
+                  "source_ref": "s3"
+                },
+                {
+                  "locator": "claim:P1365:0",
+                  "original_text": "{\"property\": \"P1365\", \"property_label\": \"replaces\", \"statement_id\": \"Q13164$8f4c8c04-4166-cd80-c086-92a66b375925\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 27923720, \"id\": \"Q27923720\"}}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "metadata",
+                  "original_text": "{\"id\": \"Q27923720\", \"labels\": {\"ru\": \"Императорский Московский университет\", \"en\": \"Imperial Moscow University\"}, \"descriptions\": {\"ru\": \"первый из двенадцати Императорских университетов Российской империи, расположенный в Москве (1755—1917).\", \"en\": \"the first of the twelve Imperial universities of the Russian Empire, located in Moscow (1755—1917)\"}}",
+                  "source_ref": "s12"
+                },
+                {
+                  "locator": "section:.D0.98.D1.81.D1.82.D0.BE.D1.80.D0.B8.D1.8F",
+                  "original_text": "7 мая 1940 — «Московский государственный университет им. М. В. Ломоносова»",
+                  "source_ref": "s3"
+                },
+                {
+                  "locator": "section:Campus",
+                  "original_text": "[edit | edit source]\nMain article: Main building of Moscow State University\nBuilding of the Faculties of Biology and of Soil Science\nSince 1953, most of the faculties have been situated on Sparrow Hills, in southwest Moscow. In the post-war era, Joseph Stalin ordered seven tiered neoclassic towers to be built around the city. It was built using Gulag labour, as were many of Stalin's Great Construction Projects in Russia.[28][29][30] The MSU main building was the tallest building in Europe until 1990. The central tower is 240 m tall, 36 stories high.[31]\nThe university library\nAlong with the university administration, the Museum of Earth Sciences and faculties of Mechanics and Mathematics, Geology, Geography, and Fine and Performing Arts are in the main building. The building on Mokhovaya Street houses the Faculty of Journalism, the Faculty of Psychology, and Institute of Asian and African Countries. A number of faculty buildings are located near Manege Square in the centre of Moscow an",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Faculties",
+                  "original_text": "[edit | edit source]\nRector Viktor Sadovnichiy\nThe first Humanities Building\nAs of 2015[update], the Old Building housed the Department of Oriental studies.\nAs of 2009, the university had 39 faculties and 15 research centres. A number of small faculties opened, such as Faculty of Physics and Chemistry and Higher School of Television. The full list of faculties is as follows:[33]\nFaculty of Mechanics and Mathematics\nFaculty of Computational Mathematics and Cybernetics\nFaculty of Physics\nFaculty of Chemistry\nFaculty of Materials Science\nFaculty of Biology\nFaculty of Bioengineering and Bioinformatics [ru]\nFaculty of Soil Science [ru]\nFaculty of Geology [ru]\nFaculty of Geography\nFaculty of Fundamental Medicine\nFaculty of Space Research\nFaculty of History\nFaculty of Philology [ru]\nFaculty of Philosophy [ru]\nFaculty of Economics\nFaculty of Law [ru]\nFaculty of Journalism\nFaculty of Psychology\nInstitute of Asian and African Countries\nFaculty of Sociology [ru]\nFaculty of Foreign Languages and A",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:.D0.A3.D1.87.D0.B5.D0.B1.D0.BD.D1.8B.D0.B9_.D0.BF.D1.80.D0.BE.D1.86.D0.B5.D1.81.D1.81",
+                  "original_text": "Начиная с 2011 года в МГУ введено обучение по интегрированной шестилетней программе, основными формами подготовки в МГУ стали обучение на специалиста, магистра и бакалавра.",
+                  "source_ref": "s3"
+                },
+                {
+                  "locator": "infobox:14",
+                  "original_text": "Language: Russian",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:.D0.A1.D0.BE.D0.B2.D1.80.D0.B5.D0.BC.D0.B5.D0.BD.D0.BD.D1.8B.D0.B9_.D0.9C.D0.93.D0.A3",
+                  "original_text": "В 2023 году МГУ занимал 2 место в списке крупнейших университетов России и 4 место в России по количеству иностранных студентов, по данным Мониторинга Министерства науки и высшего образования РФ в университете в 2023 году обучались 39 282 и 5 403 чел соответственно[83].",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "Lomonosov Moscow State University (MSU), officially Московский государственный университет имени М. В. Ломоносова, is a public research university in Moscow, Russia. Its history dates to the establishment of Moscow University under Empress Elizabeth in 1755, following a proposal promoted by Ivan Shuvalov and Mikhail Lomonosov. The establishment date is given as 12 January in the Julian calendar and 23 January in the Gregorian calendar. The first lectures took place on 26 April Old Style, or 7 May New Style, that year. Imperial Moscow University is identified as its predecessor. The university adopted Lomonosov’s name in 1940. Since 1953, most faculties have been located on Sparrow Hills in southwest Moscow, while university buildings on Mokhovaya Street accommodate other academic units.\n\nThe university provides teaching and research across mathematics, the natural sciences, medicine, humanities and social sciences. Its faculties include law, economics, history, physics, chemistry and biology, alongside specialized schools and research institutes. In 2009, the university was reported to have 39 faculties and 15 research centres. Its educational offerings include bachelor’s, master’s and specialist programmes, and Russian is identified as a teaching language. In 2023, the university enrolled 39,282 students, including 5,403 international students."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "teaching_languages": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:14",
+                  "original_text": "Language: Russian",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": [
+                "Russian"
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "website": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P856:0",
+                  "original_text": "{\"property\": \"P856\", \"property_label\": \"official website\", \"statement_id\": \"Q13164$094a0244-4bfa-549e-8759-dca8d795d842\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"https://www.msu.ru/\", \"qualifiers\": {\"P407\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 7737, \"id\": \"Q7737\"}}]}}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "https://www.msu.ru/",
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P856:1",
+                  "original_text": "{\"property\": \"P856\", \"property_label\": \"official website\", \"statement_id\": \"Q13164$4bfe6693-49ff-8591-0f51-0a7d65ab1467\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"https://www.msu.ru/en/\", \"qualifiers\": {\"P407\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 1860, \"id\": \"Q1860\"}}]}}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c2",
+              "value": "https://www.msu.ru/en/",
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P856:2",
+                  "original_text": "{\"property\": \"P856\", \"property_label\": \"official website\", \"statement_id\": \"Q13164$f3b6291d-4539-5e3d-7429-cfa72978e3bb\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"https://www.msu.ru/ch/\", \"qualifiers\": {\"P407\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 24841726, \"id\": \"Q24841726\"}}]}}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c3",
+              "value": "https://www.msu.ru/ch/",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        }
+      },
+      "qid": "Q13164",
+      "record_revision": 1,
+      "related_entities": {
+        "imperial-moscow": {
+          "kind": "institution",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P1448:0",
+                    "original_text": "{\"property\": \"P1448\", \"property_label\": \"official name\", \"statement_id\": \"Q27923720$7A154E66-F60E-490D-966B-99F9E4BBEB67\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"Императорский Московский университет\", \"language\": \"ru\"}}",
+                    "source_ref": "s12"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "ru",
+                  "text": "Императорский Московский университет"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q27923720"
+        },
+        "ministry": {
+          "kind": "institution",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q53579434\", \"labels\": {\"ru\": \"Министерство науки и высшего образования Российской Федерации\", \"en\": \"Ministry of Science and Higher Education\"}, \"descriptions\": {\"ru\": \"федеральный орган исполнительной власти России с 2018 года\", \"en\": \"federal ministry of Russia\"}}",
+                    "source_ref": "s11"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "ru",
+                  "text": "Министерство науки и высшего образования Российской Федерации"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q53579434"
+        }
+      },
+      "relationships": {
+        "campus": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Campus",
+                    "original_text": "Since 1953, most of the faculties have been situated on Sparrow Hills, in southwest Moscow.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "target_ref": "location:sparrow-hills"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Campus",
+                    "original_text": "The building on Mokhovaya Street houses the Faculty of Journalism, the Faculty of Psychology, and Institute of Asian and African Countries.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "target_ref": "location:mokhovaya"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ],
+        "parent": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P749:0",
+                    "original_text": "{\"property\": \"P749\", \"property_label\": \"parent organization or unit\", \"statement_id\": \"Q13164$650700D4-0A8C-432F-A526-F7AF39093E89\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 53579434, \"id\": \"Q53579434\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q53579434\", \"labels\": {\"ru\": \"Министерство науки и высшего образования Российской Федерации\", \"en\": \"Ministry of Science and Higher Education\"}, \"descriptions\": {\"ru\": \"федеральный орган исполнительной власти России с 2018 года\", \"en\": \"federal ministry of Russia\"}}",
+                    "source_ref": "s11"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "target_ref": "related:ministry"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ],
+        "predecessor": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P1365:0",
+                    "original_text": "{\"property\": \"P1365\", \"property_label\": \"replaces\", \"statement_id\": \"Q13164$8f4c8c04-4166-cd80-c086-92a66b375925\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 27923720, \"id\": \"Q27923720\"}}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q27923720\", \"labels\": {\"ru\": \"Императорский Московский университет\", \"en\": \"Imperial Moscow University\"}, \"descriptions\": {\"ru\": \"первый из двенадцати Императорских университетов Российской империи, расположенный в Москве (1755—1917).\", \"en\": \"the first of the twelve Imperial universities of the Russian Empire, located in Moscow (1755—1917)\"}}",
+                    "source_ref": "s12"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "target_ref": "related:imperial-moscow"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ]
+      },
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "ranking_identifier",
+          "reviewed_institution_type"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "included"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T11:33:55.806608+00:00",
+          "revision_id": 2556166922,
+          "source_qid": "Q13164",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2556166922"
+        },
+        "s10": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T11:34:52.065727+00:00",
+          "revision_id": 2311110491,
+          "source_qid": "Q4258282",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2311110491"
+        },
+        "s11": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T11:34:56.959171+00:00",
+          "revision_id": 2550150612,
+          "source_qid": "Q53579434",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2550150612"
+        },
+        "s12": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T11:35:01.514994+00:00",
+          "revision_id": 2552593826,
+          "source_qid": "Q27923720",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2552593826"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikipedia",
+          "language": "en",
+          "page_id": 374544,
+          "publisher_role": "encyclopedia",
+          "retrieved_at": "2026-11-06T11:34:16.942021+00:00",
+          "revision_id": 1378287161,
+          "url": "https://en.wikipedia.org/w/index.php?oldid=1378287161"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikipedia",
+          "language": "ru",
+          "page_id": 7253,
+          "publisher_role": "encyclopedia",
+          "retrieved_at": "2026-11-06T11:34:21.859210+00:00",
+          "revision_id": 155995331,
+          "url": "https://ru.wikipedia.org/w/index.php?oldid=155995331"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T08:48:57.696840+00:00",
+          "revision_id": 2559546120,
+          "source_qid": "Q875538",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2559546120"
+        },
+        "s5": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T11:34:28.597683+00:00",
+          "revision_id": 2564284929,
+          "source_qid": "Q159",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2564284929"
+        },
+        "s6": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T11:34:33.451286+00:00",
+          "revision_id": 2563998051,
+          "source_qid": "Q15180",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2563998051"
+        },
+        "s7": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T11:34:38.241225+00:00",
+          "revision_id": 2564276450,
+          "source_qid": "Q649",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2564276450"
+        },
+        "s8": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T11:34:42.517034+00:00",
+          "revision_id": 2499899442,
+          "source_qid": "Q462475",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2499899442"
+        },
+        "s9": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T11:34:47.805154+00:00",
+          "revision_id": 2534939068,
+          "source_qid": "Q2359096",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2534939068"
+        }
+      }
+    },
+    "coverage": [
+      {
+        "group": "identity",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "status": "checked"
+      },
+      {
+        "group": "population",
+        "status": "checked"
+      },
+      {
+        "group": "finance",
+        "status": "checked"
+      },
+      {
+        "group": "profile",
+        "status": "checked"
+      }
+    ],
+    "delta": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-06T11:42:42.269651+00:00",
+          "status": "checked"
+        },
+        "geography": {
+          "checked_at": "2026-11-06T11:42:42.269651+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-06T11:42:42.269651+00:00",
+          "status": "checked"
+        },
+        "identity": {
+          "checked_at": "2026-11-06T11:42:42.269651+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-06T11:42:42.269651+00:00",
+          "status": "checked"
+        },
+        "profile": {
+          "checked_at": "2026-11-06T11:42:42.269651+00:00",
+          "status": "checked"
+        }
+      },
+      "curation": {
+        "identity_status": "in_scope"
+      },
+      "finance": {
+        "endowment": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:10",
+                  "original_text": "Целевой капитал: 110 млн ₽ (22.12.2014[2])",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "day": 22,
+                "kind": "date",
+                "month": 12,
+                "year": 2014
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": "110000000",
+                "currency": "RUB",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "claim:P571:0",
+                      "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q13164$b404703c-45ce-1018-db01-46dd61cdfd6f\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+1755-01-12T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985786\"}, \"reference_count\": 1}",
+                      "source_ref": "s1"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "day": 12,
+                    "month": 1,
+                    "original_date": "12 January 1755 (Julian / Old Style; Wikidata calendarmodel Q1985786)",
+                    "precision": "day",
+                    "year": 1755
+                  },
+                  "verification": "supported"
+                },
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Imperial_Moscow_University",
+                      "original_text": "Ivan Shuvalov and Mikhail Lomonosov promoted the idea of a university in Moscow, and Russian Empress Elizabeth decreed its establishment on 23 January [O.S. 12 January] 1755.[4]",
+                      "source_ref": "s2"
+                    },
+                    {
+                      "locator": "infobox:7",
+                      "original_text": "Год основания: 12 (23) января 1755",
+                      "source_ref": "s3"
+                    }
+                  ],
+                  "id": "c2",
+                  "value": {
+                    "day": 23,
+                    "month": 1,
+                    "original_date": "23 January 1755 (New Style), paired by source with O.S. 12 January 1755",
+                    "precision": "day",
+                    "year": 1755
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c2",
+                "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+                "reason_code": "best_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Imperial_Moscow_University",
+                      "original_text": "Ivan Shuvalov and Mikhail Lomonosov promoted the idea of a university in Moscow, and Russian Empress Elizabeth decreed its establishment on 23 January [O.S. 12 January] 1755.[4]",
+                      "source_ref": "s2"
+                    },
+                    {
+                      "locator": "claim:P571:0",
+                      "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q13164$b404703c-45ce-1018-db01-46dd61cdfd6f\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+1755-01-12T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985786\"}, \"reference_count\": 1}",
+                      "source_ref": "s1"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "Empress Elizabeth decreed the establishment of Moscow University on 12 January 1755 Julian (Old Style), equivalent to 23 January 1755 Gregorian (New Style); Ivan Shuvalov and Mikhail Lomonosov promoted the proposal."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "establishment",
+            "kind": "institution_establishment",
+            "subject_ref": "institution"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:.D0.9E.D0.B1.D1.80.D0.B0.D0.B7.D0.BE.D0.B2.D0.B0.D0.BD.D0.B8.D0.B5_.D0.A3.D0.BD.D0.B8.D0.B2.D0.B5.D1.80.D1.81.D0.B8.D1.82.D0.B5.D1.82.D0.B0",
+                      "original_text": "Первые лекции в университете были прочитаны 26 апреля (7 мая) 1755 года[17].",
+                      "source_ref": "s3"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "day": 7,
+                    "month": 5,
+                    "original_date": "7 May 1755 New Style (26 April Old Style)",
+                    "precision": "day",
+                    "year": 1755
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:.D0.9E.D0.B1.D1.80.D0.B0.D0.B7.D0.BE.D0.B2.D0.B0.D0.BD.D0.B8.D0.B5_.D0.A3.D0.BD.D0.B8.D0.B2.D0.B5.D1.80.D1.81.D0.B8.D1.82.D0.B5.D1.82.D0.B0",
+                      "original_text": "Первые лекции в университете были прочитаны 26 апреля (7 мая) 1755 года[17].",
+                      "source_ref": "s3"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "First university lectures, dated 26 April (7 May) 1755 in the source."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "first-lectures",
+            "kind": "teaching_start",
+            "subject_ref": "institution"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:.D0.98.D1.81.D1.82.D0.BE.D1.80.D0.B8.D1.8F",
+                      "original_text": "7 мая 1940 — «Московский государственный университет им. М. В. Ломоносова»",
+                      "source_ref": "s3"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "day": 7,
+                    "month": 5,
+                    "precision": "day",
+                    "year": 1940
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:.D0.98.D1.81.D1.82.D0.BE.D1.80.D0.B8.D1.8F",
+                      "original_text": "7 мая 1940 — «Московский государственный университет им. М. В. Ломоносова»",
+                      "source_ref": "s3"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "The university adopted the name Московский государственный университет им. М. В. Ломоносова on 7 May 1940."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "lomonosov-name",
+            "kind": "rename",
+            "subject_ref": "institution"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Campus",
+                      "original_text": "Since 1953, most of the faculties have been situated on Sparrow Hills, in southwest Moscow.",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 1953
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Campus",
+                      "original_text": "Since 1953, most of the faculties have been situated on Sparrow Hills, in southwest Moscow.",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "Most faculties have been situated on Sparrow Hills in southwest Moscow since 1953."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "sparrow-hills-relocation",
+            "kind": "relocation",
+            "subject_ref": "institution"
+          }
+        ]
+      },
+      "identity": {
+        "aliases": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P1813:0",
+                    "original_text": "{\"property\": \"P1813\", \"property_label\": \"short name\", \"statement_id\": \"Q13164$d3e3993a-4c1d-7edb-00e5-cc732833f119\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"МГУ\", \"language\": \"ru\"}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "ru",
+                  "text": "МГУ"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P1813:1",
+                    "original_text": "{\"property\": \"P1813\", \"property_label\": \"short name\", \"statement_id\": \"Q13164$33be9ab0-490b-84f4-5ea8-ad6722d11b0f\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"MSU\", \"language\": \"en\"}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "MSU"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P1813:2",
+                    "original_text": "{\"property\": \"P1813\", \"property_label\": \"short name\", \"statement_id\": \"Q13164$87dd6ce2-4bd8-4cc6-138e-aeb8dfab4c80\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"МДУ\", \"language\": \"uk\"}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "uk",
+                  "text": "МДУ"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P1813:3",
+                    "original_text": "{\"property\": \"P1813\", \"property_label\": \"short name\", \"statement_id\": \"Q13164$4e6353b4-4fce-684e-31a0-cba682fdbdf7\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"莫大\", \"language\": \"zh\"}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "zh",
+                  "text": "莫大"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P1813:4",
+                    "original_text": "{\"property\": \"P1813\", \"property_label\": \"short name\", \"statement_id\": \"Q13164$e864c92d-4a60-e467-3d7d-0e74bb05a48b\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"МДУ\", \"language\": \"be\"}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "be",
+                  "text": "МДУ"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ],
+        "identifiers": {
+          "P5242": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P5242:0",
+                    "original_text": "{\"property\": \"P5242\", \"property_label\": \"ARWU university ID\", \"statement_id\": \"Q13164$8B2F81D5-D392-4430-A5B5-1DB0BD5DFE7B\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"Moscow-State-University\"}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "Moscow-State-University",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "P5584": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P5584:0",
+                    "original_text": "{\"property\": \"P5584\", \"property_label\": \"QS World University ID\", \"statement_id\": \"Q13164$8D8936E1-73AD-485C-ACCD-CCC79297A277\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"lomonosov-moscow-state-university\"}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "lomonosov-moscow-state-university",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "P5586": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P5586:0",
+                    "original_text": "{\"property\": \"P5586\", \"property_label\": \"Times Higher Education World University ID\", \"statement_id\": \"Q13164$43E25BD1-26E7-4674-B404-49F3B092AAA9\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"lomonosov-moscow-state-university\"}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "lomonosov-moscow-state-university",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:5",
+                  "original_text": "Type: Public research university",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "university",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q13164\", \"labels\": {\"ru\": \"Московский государственный университет\", \"en\": \"Lomonosov Moscow State University\"}, \"descriptions\": {\"en\": \"public research university in Moscow, Russia\", \"ru\": \"университет в Москве, Россия; один из старейших и крупнейших университетов России\"}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "Lomonosov Moscow State University",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "ru": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P1448:0",
+                    "original_text": "{\"property\": \"P1448\", \"property_label\": \"official name\", \"statement_id\": \"Q13164$AD627BA8-5C1D-4FDC-8422-A13003476AC5\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"Московский государственный университет имени М. В. Ломоносова\", \"language\": \"ru\"}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "Московский государственный университет имени М. В. Ломоносова",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        "ownership": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:5",
+                  "original_text": "Type: Public research university",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "infobox:9",
+                  "original_text": "Тип: государственный",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": "public",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "leadership": {
+        "rector": {
+          "candidates": [
+            {
+              "current_basis": "term_present",
+              "evidence": [
+                {
+                  "locator": "infobox:11",
+                  "original_text": "Ректор: Виктор Антонович Садовничий",
+                  "source_ref": "s3"
+                },
+                {
+                  "locator": "claim:P1075:46",
+                  "original_text": "{\"property\": \"P1075\", \"property_label\": \"rector\", \"statement_id\": \"Q13164$84be8a55-4284-8914-9309-8e020944adfe\", \"rank\": \"preferred\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 2622956, \"id\": \"Q2622956\"}, \"qualifiers\": {\"P580\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+1992-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "section:lead",
+                  "original_text": "С 1992 года ректором МГУ является академик Виктор Антонович Садовничий, советский и российский математик, деятель российского высшего образования.",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "person": {
+                  "name": "Виктор Антонович Садовничий",
+                  "qid": "Q2622956"
+                },
+                "term_start": {
+                  "precision": "year",
+                  "year": 1992
+                },
+                "title_original": {
+                  "language": "ru",
+                  "text": "Ректор"
+                }
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason": "The source gives a term continuing to the present.",
+            "reason_code": "term_present"
+          }
+        }
+      },
+      "locations": [
+        {
+          "id": "moscow",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q649\", \"labels\": {\"en\": \"Moscow\", \"ru\": \"Москва\"}, \"descriptions\": {\"en\": \"capital and most populous city of Russia\", \"ru\": \"cтолица и крупнейший город России, город федерального значения РФ\"}}",
+                    "source_ref": "s7"
+                  },
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q13164$da50bd90-48e2-c91b-ac2f-5b03bc6a725b\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 649, \"id\": \"Q649\"}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Moscow"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q649"
+        },
+        {
+          "id": "western",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q462475\", \"labels\": {\"ru\": \"Западный административный округ\", \"en\": \"Western Administrative Okrug\"}, \"descriptions\": {\"en\": \"administrative okrug of Moscow\", \"ru\": \"административный округ в Москве\"}}",
+                    "source_ref": "s8"
+                  },
+                  {
+                    "locator": "claim:P131:1",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q13164$4086b0f0-4437-5fef-f52a-826fa3c1d73f\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 462475, \"id\": \"Q462475\"}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Western Administrative Okrug"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q462475"
+        },
+        {
+          "id": "ramenki",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q2359096\", \"labels\": {\"ru\": \"Раменки\", \"en\": \"Ramenki District\"}, \"descriptions\": {\"ru\": \"район в Москве, расположенный в Западном административном округе\", \"en\": \"human settlement in Russia\"}}",
+                    "source_ref": "s9"
+                  },
+                  {
+                    "locator": "claim:P131:2",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q13164$daa11a48-4241-989a-b6fc-d80e24e8a1e9\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 2359096, \"id\": \"Q2359096\"}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Ramenki District"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q2359096"
+        },
+        {
+          "id": "leninskie",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q4258282\", \"labels\": {\"ru\": \"Ленинские горы\", \"en\": \"Leninskie Gory\"}, \"descriptions\": {\"ru\": \"микрорайон в Москве, входящий в состав района «Раменки»\", \"en\": \"microdistrict of Moscow, Russia\"}}",
+                    "source_ref": "s10"
+                  },
+                  {
+                    "locator": "claim:P131:3",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q13164$58e606d0-45e0-bf2e-9d86-a54539cfd72a\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 4258282, \"id\": \"Q4258282\"}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Leninskie Gory"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q4258282"
+        },
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "infobox:19",
+                    "original_text": "Юридический адрес: 119991, Российская Федерация, г. Москва, Ленинские горы, д. 1, МГУ имени М. В. Ломоносова[4]",
+                    "source_ref": "s3"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "city_name": "Москва",
+                  "city_qid": "Q649",
+                  "country_name": "Российская Федерация",
+                  "country_qid": "Q159",
+                  "formatted": {
+                    "language": "ru",
+                    "text": "119991, Российская Федерация, г. Москва, Ленинские горы, д. 1, МГУ имени М. В. Ломоносова"
+                  },
+                  "postal_code": "119991"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "headquarters",
+          "kind": "headquarters",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P159:0",
+                    "original_text": "{\"property\": \"P159\", \"property_label\": \"headquarters location\", \"statement_id\": \"Q13164$A30F4B13-AA65-4B60-AFD9-8E82D9AB9F7E\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 649, \"id\": \"Q649\"}, \"qualifiers\": {\"P281\": [{\"snaktype\": \"value\", \"value\": \"119991\"}], \"P17\": [{\"snaktype\": \"value\", \"value\": {\"entity-ty",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q649\", \"labels\": {\"en\": \"Moscow\", \"ru\": \"Москва\"}, \"descriptions\": {\"en\": \"capital and most populous city of Russia\", \"ru\": \"cтолица и крупнейший город России, город федерального значения РФ\"}}",
+                    "source_ref": "s7"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Moscow"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q649"
+        },
+        {
+          "id": "sparrow-hills",
+          "kind": "campus",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Campus",
+                    "original_text": "Since 1953, most of the faculties have been situated on Sparrow Hills, in southwest Moscow.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Sparrow Hills"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        {
+          "id": "mokhovaya",
+          "kind": "campus",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Campus",
+                    "original_text": "The building on Mokhovaya Street houses the Faculty of Journalism, the Faculty of Psychology, and Institute of Asian and African Countries.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Mokhovaya Street"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        {
+          "coordinates": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "statement:Q13164$91218e38-44f6-9f93-f224-dc962d051db9",
+                    "original_text": "\"latitude\": 55.7025",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "source_rank": "normal",
+                "value": {
+                  "crs": "EPSG:4326",
+                  "globe_qid": "Q2",
+                  "latitude": 55.7025,
+                  "longitude": 37.530555555556,
+                  "source_precision_degrees": 0.00027777777777778
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "wikidata-item-location",
+          "kind": "institution",
+          "qid": "Q13164"
+        }
+      ],
+      "population": {
+        "academic_staff": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:10",
+                  "original_text": "Academic staff: 5,000",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period_status": "not_stated",
+              "value": {
+                "amount": 5000,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "period_not_stated",
+              "single_source_family"
+            ],
+            "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+            "reason_code": "only_available"
+          }
+        },
+        "administrative_staff": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Staff_and_students",
+                  "original_text": "The university employs more than 4,000 academics and 15,000 support staff.[citation needed]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period_status": "not_stated",
+              "value": {
+                "amount": 15000,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "period_not_stated",
+              "single_source_family"
+            ],
+            "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+            "reason_code": "only_available"
+          }
+        },
+        "international_students": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:.D0.A1.D0.BE.D0.B2.D1.80.D0.B5.D0.BC.D0.B5.D0.BD.D0.BD.D1.8B.D0.B9_.D0.9C.D0.93.D0.A3",
+                  "original_text": "В 2023 году МГУ занимал 2 место в списке крупнейших университетов России и 4 место в России по количеству иностранных студентов, по данным Мониторинга Министерства науки и высшего образования РФ в университете в 2023 году обучались 39 282 и 5 403 чел соответственно[83].",
+                  "source_ref": "s3"
+                },
+                {
+                  "locator": "infobox:13",
+                  "original_text": "Иностранные студенты: 5403",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2023
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 5403,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason_code": "only_available"
+          }
+        },
+        "postgraduate_students": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Staff_and_students",
+                  "original_text": "More than 40,000 undergraduates and 7,000 advanced degree candidates are enrolled.[60]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period_status": "not_stated",
+              "value": {
+                "amount": 7000,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "period_not_stated",
+              "single_source_family"
+            ],
+            "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+            "reason_code": "only_available"
+          }
+        },
+        "research_staff": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:.D0.A1.D0.BE.D0.B2.D1.80.D0.B5.D0.BC.D0.B5.D0.BD.D0.BD.D1.8B.D0.B9_.D0.9C.D0.93.D0.A3",
+                  "original_text": "Около 5 тыс. учёных работают в научно-исследовательских институтах вуза и связанных с ними учреждениях.",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "period_status": "not_stated",
+              "value": {
+                "amount": 5000,
+                "basis": "unspecified",
+                "precision": "approximate"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "period_not_stated",
+              "single_source_family",
+              "approximate_value"
+            ],
+            "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+            "reason_code": "only_available"
+          }
+        },
+        "students_total": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2196:0",
+                  "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q13164$467fc053-4076-7bca-c0e6-f2a213ff732a\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+38150\", \"unit\": \"1\"}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "period_status": "not_stated",
+              "value": {
+                "amount": 38150,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:.D0.A1.D0.BE.D0.B2.D1.80.D0.B5.D0.BC.D0.B5.D0.BD.D0.BD.D1.8B.D0.B9_.D0.9C.D0.93.D0.A3",
+                  "original_text": "В 2023 году МГУ занимал 2 место в списке крупнейших университетов России и 4 место в России по количеству иностранных студентов, по данным Мониторинга Министерства науки и высшего образования РФ в университете в 2023 году обучались 39 282 и 5 403 чел соответственно[83].",
+                  "source_ref": "s3"
+                },
+                {
+                  "locator": "infobox:11",
+                  "original_text": "Students: 39,282[1]",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "infobox:12",
+                  "original_text": "Студенты: 39 282[3]",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c2",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2023
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 39282,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c2",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        },
+        "teaching_staff": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:.D0.A1.D0.BE.D0.B2.D1.80.D0.B5.D0.BC.D0.B5.D0.BD.D0.BD.D1.8B.D0.B9_.D0.9C.D0.93.D0.A3",
+                  "original_text": "Общая численность профессорско-преподавательского состава 4 940 человек, из них 79,45 % имеют учёную степень.",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "period_status": "not_stated",
+              "value": {
+                "amount": 4940,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "period_not_stated",
+              "single_source_family"
+            ],
+            "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+            "reason_code": "only_available"
+          }
+        },
+        "undergraduate_students": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:14",
+                  "original_text": "Бакалавриат: 22 563",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "period_status": "not_stated",
+              "value": {
+                "amount": 22563,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "period_not_stated",
+              "single_source_family"
+            ],
+            "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "profile": {
+        "academic_focus": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Faculties",
+                  "original_text": "Faculty of Mechanics and Mathematics\nFaculty of Computational Mathematics and Cybernetics\nFaculty of Physics\nFaculty of Chemistry\nFaculty of Materials Science\nFaculty of Biology\nFaculty of Bioengineering and Bioinformatics [ru]\nFaculty of Soil Science [ru]\nFaculty of Geology [ru]\nFaculty of Geography\nFaculty of Fundamental Medicine\nFaculty of Space Research\nFaculty of History\nFaculty of Philology [ru]\nFaculty of Philosophy [ru]\nFaculty of Economics\nFaculty of Law [ru]\nFaculty of Journalism\nFaculty of Psychology\nInstitute of Asian and African Countries\nFaculty of Sociology [ru]\nFaculty of Foreign Languages and Area Studies [ru]\nFaculty of Public Administration [ru]\nFaculty of World Politics [ru]\nFaculty of Political Science\n",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": [
+                {
+                  "language": "en",
+                  "text": "Mathematics"
+                },
+                {
+                  "language": "en",
+                  "text": "Physics"
+                },
+                {
+                  "language": "en",
+                  "text": "Chemistry"
+                },
+                {
+                  "language": "en",
+                  "text": "Biology"
+                },
+                {
+                  "language": "en",
+                  "text": "Medicine"
+                },
+                {
+                  "language": "en",
+                  "text": "History"
+                },
+                {
+                  "language": "en",
+                  "text": "Law"
+                },
+                {
+                  "language": "en",
+                  "text": "Economics"
+                },
+                {
+                  "language": "en",
+                  "text": "Humanities"
+                },
+                {
+                  "language": "en",
+                  "text": "Social sciences"
+                }
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "degree_levels": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:.D0.A3.D1.87.D0.B5.D0.B1.D0.BD.D1.8B.D0.B9_.D0.BF.D1.80.D0.BE.D1.86.D0.B5.D1.81.D1.81",
+                  "original_text": "Начиная с 2011 года в МГУ введено обучение по интегрированной шестилетней программе, основными формами подготовки в МГУ стали обучение на специалиста, магистра и бакалавра.",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": [
+                "bachelor",
+                "master",
+                "specialist"
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "motto": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P1451:0",
+                  "original_text": "{\"property\": \"P1451\", \"property_label\": \"motto text\", \"statement_id\": \"Q13164$91ea03df-4ea6-4349-93aa-efe15ef8ce9d\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"Scientia est clara cognitio veritatis, illustratio mentis\", \"language\": \"la\"}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "la",
+                "text": "Scientia est clara cognitio veritatis, illustratio mentis"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:3",
+                  "original_text": "Motto: Наука есть ясное познание истины, просвещение разума",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c2",
+              "value": {
+                "language": "ru",
+                "text": "Наука есть ясное познание истины, просвещение разума"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c2",
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        },
+        "summary": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:5",
+                  "original_text": "Type: Public research university",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "claim:P1448:0",
+                  "original_text": "{\"property\": \"P1448\", \"property_label\": \"official name\", \"statement_id\": \"Q13164$AD627BA8-5C1D-4FDC-8422-A13003476AC5\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"Московский государственный университет имени М. В. Ломоносова\", \"language\": \"ru\"}}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "section:Imperial_Moscow_University",
+                  "original_text": "Ivan Shuvalov and Mikhail Lomonosov promoted the idea of a university in Moscow, and Russian Empress Elizabeth decreed its establishment on 23 January [O.S. 12 January] 1755.[4]",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:.D0.9E.D0.B1.D1.80.D0.B0.D0.B7.D0.BE.D0.B2.D0.B0.D0.BD.D0.B8.D0.B5_.D0.A3.D0.BD.D0.B8.D0.B2.D0.B5.D1.80.D1.81.D0.B8.D1.82.D0.B5.D1.82.D0.B0",
+                  "original_text": "Первые лекции в университете были прочитаны 26 апреля (7 мая) 1755 года[17].",
+                  "source_ref": "s3"
+                },
+                {
+                  "locator": "claim:P1365:0",
+                  "original_text": "{\"property\": \"P1365\", \"property_label\": \"replaces\", \"statement_id\": \"Q13164$8f4c8c04-4166-cd80-c086-92a66b375925\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 27923720, \"id\": \"Q27923720\"}}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "metadata",
+                  "original_text": "{\"id\": \"Q27923720\", \"labels\": {\"ru\": \"Императорский Московский университет\", \"en\": \"Imperial Moscow University\"}, \"descriptions\": {\"ru\": \"первый из двенадцати Императорских университетов Российской империи, расположенный в Москве (1755—1917).\", \"en\": \"the first of the twelve Imperial universities of the Russian Empire, located in Moscow (1755—1917)\"}}",
+                  "source_ref": "s12"
+                },
+                {
+                  "locator": "section:.D0.98.D1.81.D1.82.D0.BE.D1.80.D0.B8.D1.8F",
+                  "original_text": "7 мая 1940 — «Московский государственный университет им. М. В. Ломоносова»",
+                  "source_ref": "s3"
+                },
+                {
+                  "locator": "section:Campus",
+                  "original_text": "[edit | edit source]\nMain article: Main building of Moscow State University\nBuilding of the Faculties of Biology and of Soil Science\nSince 1953, most of the faculties have been situated on Sparrow Hills, in southwest Moscow. In the post-war era, Joseph Stalin ordered seven tiered neoclassic towers to be built around the city. It was built using Gulag labour, as were many of Stalin's Great Construction Projects in Russia.[28][29][30] The MSU main building was the tallest building in Europe until 1990. The central tower is 240 m tall, 36 stories high.[31]\nThe university library\nAlong with the university administration, the Museum of Earth Sciences and faculties of Mechanics and Mathematics, Geology, Geography, and Fine and Performing Arts are in the main building. The building on Mokhovaya Street houses the Faculty of Journalism, the Faculty of Psychology, and Institute of Asian and African Countries. A number of faculty buildings are located near Manege Square in the centre of Moscow an",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Faculties",
+                  "original_text": "[edit | edit source]\nRector Viktor Sadovnichiy\nThe first Humanities Building\nAs of 2015[update], the Old Building housed the Department of Oriental studies.\nAs of 2009, the university had 39 faculties and 15 research centres. A number of small faculties opened, such as Faculty of Physics and Chemistry and Higher School of Television. The full list of faculties is as follows:[33]\nFaculty of Mechanics and Mathematics\nFaculty of Computational Mathematics and Cybernetics\nFaculty of Physics\nFaculty of Chemistry\nFaculty of Materials Science\nFaculty of Biology\nFaculty of Bioengineering and Bioinformatics [ru]\nFaculty of Soil Science [ru]\nFaculty of Geology [ru]\nFaculty of Geography\nFaculty of Fundamental Medicine\nFaculty of Space Research\nFaculty of History\nFaculty of Philology [ru]\nFaculty of Philosophy [ru]\nFaculty of Economics\nFaculty of Law [ru]\nFaculty of Journalism\nFaculty of Psychology\nInstitute of Asian and African Countries\nFaculty of Sociology [ru]\nFaculty of Foreign Languages and A",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:.D0.A3.D1.87.D0.B5.D0.B1.D0.BD.D1.8B.D0.B9_.D0.BF.D1.80.D0.BE.D1.86.D0.B5.D1.81.D1.81",
+                  "original_text": "Начиная с 2011 года в МГУ введено обучение по интегрированной шестилетней программе, основными формами подготовки в МГУ стали обучение на специалиста, магистра и бакалавра.",
+                  "source_ref": "s3"
+                },
+                {
+                  "locator": "infobox:14",
+                  "original_text": "Language: Russian",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:.D0.A1.D0.BE.D0.B2.D1.80.D0.B5.D0.BC.D0.B5.D0.BD.D0.BD.D1.8B.D0.B9_.D0.9C.D0.93.D0.A3",
+                  "original_text": "В 2023 году МГУ занимал 2 место в списке крупнейших университетов России и 4 место в России по количеству иностранных студентов, по данным Мониторинга Министерства науки и высшего образования РФ в университете в 2023 году обучались 39 282 и 5 403 чел соответственно[83].",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "Lomonosov Moscow State University (MSU), officially Московский государственный университет имени М. В. Ломоносова, is a public research university in Moscow, Russia. Its history dates to the establishment of Moscow University under Empress Elizabeth in 1755, following a proposal promoted by Ivan Shuvalov and Mikhail Lomonosov. The establishment date is given as 12 January in the Julian calendar and 23 January in the Gregorian calendar. The first lectures took place on 26 April Old Style, or 7 May New Style, that year. Imperial Moscow University is identified as its predecessor. The university adopted Lomonosov’s name in 1940. Since 1953, most faculties have been located on Sparrow Hills in southwest Moscow, while university buildings on Mokhovaya Street accommodate other academic units.\n\nThe university provides teaching and research across mathematics, the natural sciences, medicine, humanities and social sciences. Its faculties include law, economics, history, physics, chemistry and biology, alongside specialized schools and research institutes. In 2009, the university was reported to have 39 faculties and 15 research centres. Its educational offerings include bachelor’s, master’s and specialist programmes, and Russian is identified as a teaching language. In 2023, the university enrolled 39,282 students, including 5,403 international students."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "teaching_languages": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:14",
+                  "original_text": "Language: Russian",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": [
+                "Russian"
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "website": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P856:0",
+                  "original_text": "{\"property\": \"P856\", \"property_label\": \"official website\", \"statement_id\": \"Q13164$094a0244-4bfa-549e-8759-dca8d795d842\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"https://www.msu.ru/\", \"qualifiers\": {\"P407\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 7737, \"id\": \"Q7737\"}}]}}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "https://www.msu.ru/",
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P856:1",
+                  "original_text": "{\"property\": \"P856\", \"property_label\": \"official website\", \"statement_id\": \"Q13164$4bfe6693-49ff-8591-0f51-0a7d65ab1467\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"https://www.msu.ru/en/\", \"qualifiers\": {\"P407\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 1860, \"id\": \"Q1860\"}}]}}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c2",
+              "value": "https://www.msu.ru/en/",
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P856:2",
+                  "original_text": "{\"property\": \"P856\", \"property_label\": \"official website\", \"statement_id\": \"Q13164$f3b6291d-4539-5e3d-7429-cfa72978e3bb\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"https://www.msu.ru/ch/\", \"qualifiers\": {\"P407\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 24841726, \"id\": \"Q24841726\"}}]}}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c3",
+              "value": "https://www.msu.ru/ch/",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        }
+      },
+      "qid": "Q13164",
+      "record_revision": 1,
+      "related_entities": {
+        "imperial-moscow": {
+          "kind": "institution",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P1448:0",
+                    "original_text": "{\"property\": \"P1448\", \"property_label\": \"official name\", \"statement_id\": \"Q27923720$7A154E66-F60E-490D-966B-99F9E4BBEB67\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"Императорский Московский университет\", \"language\": \"ru\"}}",
+                    "source_ref": "s12"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "ru",
+                  "text": "Императорский Московский университет"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q27923720"
+        },
+        "ministry": {
+          "kind": "institution",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q53579434\", \"labels\": {\"ru\": \"Министерство науки и высшего образования Российской Федерации\", \"en\": \"Ministry of Science and Higher Education\"}, \"descriptions\": {\"ru\": \"федеральный орган исполнительной власти России с 2018 года\", \"en\": \"federal ministry of Russia\"}}",
+                    "source_ref": "s11"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "ru",
+                  "text": "Министерство науки и высшего образования Российской Федерации"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q53579434"
+        }
+      },
+      "relationships": {
+        "campus": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Campus",
+                    "original_text": "Since 1953, most of the faculties have been situated on Sparrow Hills, in southwest Moscow.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "target_ref": "location:sparrow-hills"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Campus",
+                    "original_text": "The building on Mokhovaya Street houses the Faculty of Journalism, the Faculty of Psychology, and Institute of Asian and African Countries.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "target_ref": "location:mokhovaya"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ],
+        "parent": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P749:0",
+                    "original_text": "{\"property\": \"P749\", \"property_label\": \"parent organization or unit\", \"statement_id\": \"Q13164$650700D4-0A8C-432F-A526-F7AF39093E89\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 53579434, \"id\": \"Q53579434\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q53579434\", \"labels\": {\"ru\": \"Министерство науки и высшего образования Российской Федерации\", \"en\": \"Ministry of Science and Higher Education\"}, \"descriptions\": {\"ru\": \"федеральный орган исполнительной власти России с 2018 года\", \"en\": \"federal ministry of Russia\"}}",
+                    "source_ref": "s11"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "target_ref": "related:ministry"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ],
+        "predecessor": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P1365:0",
+                    "original_text": "{\"property\": \"P1365\", \"property_label\": \"replaces\", \"statement_id\": \"Q13164$8f4c8c04-4166-cd80-c086-92a66b375925\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 27923720, \"id\": \"Q27923720\"}}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q27923720\", \"labels\": {\"ru\": \"Императорский Московский университет\", \"en\": \"Imperial Moscow University\"}, \"descriptions\": {\"ru\": \"первый из двенадцати Императорских университетов Российской империи, расположенный в Москве (1755—1917).\", \"en\": \"the first of the twelve Imperial universities of the Russian Empire, located in Moscow (1755—1917)\"}}",
+                    "source_ref": "s12"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "target_ref": "related:imperial-moscow"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ]
+      },
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "ranking_identifier",
+          "reviewed_institution_type"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "included"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T11:33:55.806608+00:00",
+          "revision_id": 2556166922,
+          "source_qid": "Q13164",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2556166922"
+        },
+        "s10": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T11:34:52.065727+00:00",
+          "revision_id": 2311110491,
+          "source_qid": "Q4258282",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2311110491"
+        },
+        "s11": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T11:34:56.959171+00:00",
+          "revision_id": 2550150612,
+          "source_qid": "Q53579434",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2550150612"
+        },
+        "s12": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T11:35:01.514994+00:00",
+          "revision_id": 2552593826,
+          "source_qid": "Q27923720",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2552593826"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikipedia",
+          "language": "en",
+          "page_id": 374544,
+          "publisher_role": "encyclopedia",
+          "retrieved_at": "2026-11-06T11:34:16.942021+00:00",
+          "revision_id": 1378287161,
+          "url": "https://en.wikipedia.org/w/index.php?oldid=1378287161"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikipedia",
+          "language": "ru",
+          "page_id": 7253,
+          "publisher_role": "encyclopedia",
+          "retrieved_at": "2026-11-06T11:34:21.859210+00:00",
+          "revision_id": 155995331,
+          "url": "https://ru.wikipedia.org/w/index.php?oldid=155995331"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T08:48:57.696840+00:00",
+          "revision_id": 2559546120,
+          "source_qid": "Q875538",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2559546120"
+        },
+        "s5": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T11:34:28.597683+00:00",
+          "revision_id": 2564284929,
+          "source_qid": "Q159",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2564284929"
+        },
+        "s6": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T11:34:33.451286+00:00",
+          "revision_id": 2563998051,
+          "source_qid": "Q15180",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2563998051"
+        },
+        "s7": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T11:34:38.241225+00:00",
+          "revision_id": 2564276450,
+          "source_qid": "Q649",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2564276450"
+        },
+        "s8": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T11:34:42.517034+00:00",
+          "revision_id": 2499899442,
+          "source_qid": "Q462475",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2499899442"
+        },
+        "s9": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T11:34:47.805154+00:00",
+          "revision_id": 2534939068,
+          "source_qid": "Q2359096",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2534939068"
+        }
+      }
+    },
+    "open_requests": [
+      {
+        "category": "scope_conflict",
+        "field": "history.milestones.date",
+        "reason": "At $.history.milestones[0].date.conflicts[0].note: Correct calendar interpretation using supplied root P571 statement Q13164$b404703c-45ce-1018-db01-46dd61cdfd6f and s1 claim:P571:0: calendarmodel is Q1985786 (Julian), not Gregorian. s2 Imperial_Moscow_University explicitly pairs 23 January with Old Style 12 January 1755. Preserve c1 raw 12 January Julian and c2 23 January New Style observations with a calendar qualification; remove or reword the alleged time-disagreement conflict so equivalent calendar renderings are not portrayed as contradictory dates. If date value cannot encode a calendar, retain explicit Julian/Old Style wording in associated evidence/qualification rather than reinterpret c1 as Gregorian.",
+        "request_id": "45bd1dd6-09e2-56df-964e-a56bec30b42e",
+        "reviewed_proposal_sha256": "a5330723cdcbf745259860b214bbea38a2336a9188ca46124da05bd4f8ffd8c6"
+      }
+    ],
+    "proposed_at": "2026-11-06T11:46:12.373196+00:00",
+    "qid": "Q13164",
+    "research": {
+      "model": "not_reported",
+      "prompt_sha256": "6f029a38452d8b6dcbbdc491230f380469c974b6906f7228106bae2eba5af3ce",
+      "reasoning_effort": "not_reported",
+      "schema_sha256": "92e942f4fbf2ae28964462ea9ffa8312c5ee16a077a1e08b40aaaf741512422e",
+      "session": "/root/research_q13164_revision1"
+    },
+    "retrieval_failures": [],
+    "review_status": "unreviewed",
+    "seed": {
+      "channels": [
+        "ranking_identifier",
+        "reviewed_institution_type"
+      ],
+      "import_id": "seed-84c3beb45367905f",
+      "screening_status": "included"
+    },
+    "transport": {
+      "base_commit": "e1d9008fe2532bb0df6a46ff5158b764347a62b2",
+      "protocol": "native-subagent-v1",
+      "repository": "ider-zh/university-seed-curation",
+      "review_policy": {
+        "id": "source-grounded-flexible-v2",
+        "sha256": "b8ed7d2897e4c31dbd81b1379aafdc1077a21d1a33949edbd2d896b0adf99db2"
+      },
+      "schema_sha256": "bfa496eafa9dffca56146214168db7f000b09161b8993129632e7202e1c88833",
+      "seed_catalog_sha256": "84c3beb45367905f513d650684283dd62a9c1b77962bdc34151a6ef05bfa03d4"
+    },
+    "type": "university-proposal-v1"
+  },
+  "review": {
+    "contexts_checked": 15,
+    "coverage_checks": [
+      {
+        "group": "identity",
+        "reason": "Names, aliases, institution type and identifiers checked against the frozen sources.",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "reason": "Administrative areas, headquarters, sites and item-level coordinate checked; site classifications preserve source wording.",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "reason": "Establishment, lectures, naming, and Sparrow Hills event checked; the calendar distinction is preserved.",
+        "status": "checked"
+      },
+      {
+        "group": "population",
+        "reason": "Observed counts and years checked; source scopes and approximate values are retained in evidence. Downstream ranking requires explicit scope parsing.",
+        "status": "checked"
+      },
+      {
+        "group": "finance",
+        "reason": "The 22 December 2014 endowment value and ruble currency are retained from s3.",
+        "status": "checked"
+      },
+      {
+        "group": "profile",
+        "reason": "Focus, qualifications, language, websites, motto and summary checked; source-specific observations and dates are preserved.",
+        "status": "checked"
+      }
+    ],
+    "decision": "approve",
+    "facts_checked": 56,
+    "full_refresh": true,
+    "inferences": [
+      {
+        "id": "$.history.milestones[1].date:c1",
+        "reason": "s3 gives 26 April (7 May) 1755; the Old Style/New Style mapping is a calendar interpretation consistent with the 11-day difference in 1755."
+      },
+      {
+        "id": "$.locations[6].name:c1",
+        "reason": "s2 Campus identifies a university building on Mokhovaya Street housing academic units; campus is a broad site representation, with the building-level source wording retained."
+      },
+      {
+        "id": "$.population.administrative_staff:c1",
+        "reason": "s2 Staff_and_students reports 15,000 support staff; administrative staff is a broader mapping with original scope retained in evidence and period and basis unspecified."
+      },
+      {
+        "id": "$.population.postgraduate_students:c1",
+        "reason": "s2 Staff_and_students says 7,000 advanced degree candidates; postgraduate students is a reasonable broader mapping, with the source wording retained and period and basis unspecified."
+      },
+      {
+        "id": "$.profile.summary:c1",
+        "reason": "The cited sources support the name, public research university, dates, predecessor, sites, disciplines, 2009 counts, degree levels, language, and 2023 population. Calendar equivalence and the grouping of academic fields are reasonable interpretations of the cited wording."
+      },
+      {
+        "id": "$.relationships.campus[0]:c1",
+        "reason": "s2 Campus locates most faculties at Sparrow Hills since 1953; campus is a reasonable site representation."
+      },
+      {
+        "id": "$.relationships.campus[1]:c1",
+        "reason": "s2 Campus identifies a university building on Mokhovaya Street housing academic units; campus is a broad site representation, with the building-level source wording retained."
+      },
+      {
+        "id": "location:leninskie",
+        "reason": "s1 P131 identifies Q4258282; s10 describes a Moscow microdistrict. Administrative area is a broad representation."
+      },
+      {
+        "id": "location:sparrow-hills",
+        "reason": "s2 locates most faculties at Sparrow Hills; campus is a reasonable broader site representation."
+      },
+      {
+        "id": "location:mokhovaya",
+        "reason": "s2 locates academic units in a building on Mokhovaya Street; campus is a broader site representation with building-level wording preserved."
+      },
+      {
+        "id": "milestone:sparrow-hills-relocation",
+        "reason": "s2 states most faculties have been situated on Sparrow Hills since 1953; relocation is a broader event representation, qualified by the description."
+      }
+    ],
+    "model": "not_reported",
+    "proposal_sha256": "f173ba4e3ed8314dd3ea334388bf514554f50bc9c1de88bc78cf8c395823d533",
+    "qid": "Q13164",
+    "reasoning_effort": "not_reported",
+    "record_sha256": "2232526f30f496de4fd11e84bb7d04cc7ae25376dbe5f8c68d4fbce0f8fc7254",
+    "request_responses": [
+      {
+        "reason": "s1 P571 specifies Julian calendar Q1985786; c1 preserves 12 January Julian and c2 preserves 23 January New Style, consistent with s2. The former alleged disagreement has been removed, and the description explicitly qualifies the two renderings.",
+        "request_id": "45bd1dd6-09e2-56df-964e-a56bec30b42e",
+        "status": "addressed"
+      }
+    ],
+    "requests": [],
+    "review_session": "/root/review_q13164_revision1",
+    "reviewed_at": "2026-11-06T11:47:57.055084+00:00",
+    "source_revisions_checked": 12
+  },
+  "review_result_sha256": "0053253c29b58a50709d0902e6ded6c5e62ccfe9a2976e88fd3fe455a8a1ed00",
+  "type": "university-unified-receipt-v1"
+}
