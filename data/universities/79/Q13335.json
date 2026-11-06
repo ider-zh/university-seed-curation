@@ -1,0 +1,1195 @@
+{
+  "coverage": {
+    "finance": {
+      "checked_at": "2026-11-06T11:54:21.677333+00:00",
+      "status": "not_found"
+    },
+    "geography": {
+      "checked_at": "2026-11-06T11:54:21.677333+00:00",
+      "status": "checked"
+    },
+    "history": {
+      "checked_at": "2026-11-06T11:54:21.677333+00:00",
+      "status": "checked"
+    },
+    "identity": {
+      "checked_at": "2026-11-06T11:54:21.677333+00:00",
+      "status": "checked"
+    },
+    "population": {
+      "checked_at": "2026-11-06T11:54:21.677333+00:00",
+      "status": "checked"
+    },
+    "profile": {
+      "checked_at": "2026-11-06T11:54:21.677333+00:00",
+      "status": "checked"
+    }
+  },
+  "curation": {
+    "identity_status": "in_scope",
+    "refresh_profile": "core-v1",
+    "reviewed_groups": [
+      "identity",
+      "geography",
+      "history",
+      "population",
+      "finance",
+      "profile"
+    ]
+  },
+  "history": {
+    "milestones": [
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P571:0",
+                  "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q13335$cf28fa9f-4224-958d-467c-0be21d4db0a7\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+1995-05-09T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "day": 9,
+                "month": 5,
+                "precision": "day",
+                "year": 1995
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "established",
+        "kind": "institution_establishment",
+        "subject_ref": "institution"
+      },
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P576:0",
+                  "original_text": "{\"property\": \"P576\", \"property_label\": \"dissolved, abolished or demolished\", \"statement_id\": \"Q13335$3d700f8a-4eef-0333-961a-86fc1f004aad\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+2014-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "day": 1,
+                "month": 1,
+                "precision": "day",
+                "year": 2014
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "closure",
+        "kind": "closure",
+        "subject_ref": "institution"
+      },
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "Montesquieu University (French: Université Montesquieu), also known as Bordeaux IV (French: Bordeaux Quatre), was a French university, based in Pessac, the suburbs of Bordeaux. In 2014, it merged with the Bordeaux 1 and Bordeaux 2 to form the University of Bordeaux.[1]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "precision": "year",
+                "year": 2014
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "Montesquieu University (French: Université Montesquieu), also known as Bordeaux IV (French: Bordeaux Quatre), was a French university, based in Pessac, the suburbs of Bordeaux. In 2014, it merged with the Bordeaux 1 and Bordeaux 2 to form the University of Bordeaux.[1]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "Merged with Bordeaux 1 and Bordeaux 2 to form the University of Bordeaux."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "merger",
+        "kind": "merger",
+        "subject_ref": "institution"
+      }
+    ]
+  },
+  "identity": {
+    "aliases": [
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "Montesquieu University (French: Université Montesquieu), also known as Bordeaux IV (French: Bordeaux Quatre), was a French university, based in Pessac, the suburbs of Bordeaux. In 2014, it merged with the Bordeaux 1 and Bordeaux 2 to form the University of Bordeaux.[1]",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Bordeaux IV"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "Montesquieu University (French: Université Montesquieu), also known as Bordeaux IV (French: Bordeaux Quatre), was a French university, based in Pessac, the suburbs of Bordeaux. In 2014, it merged with the Bordeaux 1 and Bordeaux 2 to form the University of Bordeaux.[1]",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "fr",
+              "text": "Université Montesquieu"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    ],
+    "kind": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "Montesquieu University (French: Université Montesquieu), also known as Bordeaux IV (French: Bordeaux Quatre), was a French university, based in Pessac, the suburbs of Bordeaux. In 2014, it merged with the Bordeaux 1 and Bordeaux 2 to form the University of Bordeaux.[1]",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": "university",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "names": {
+      "en": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q13335\", \"labels\": {\"en\": \"Montesquieu University – Bordeaux IV\"}, \"descriptions\": {\"en\": \"former French university abolished and replaced in 2014\"}}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": "Montesquieu University – Bordeaux IV",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "fr": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "infobox:0",
+                "original_text": ": Université Montesquieu - Bordeaux IV",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": "Université Montesquieu - Bordeaux IV",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    "operating_status": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "Montesquieu University (French: Université Montesquieu), also known as Bordeaux IV (French: Bordeaux Quatre), was a French university, based in Pessac, the suburbs of Bordeaux. In 2014, it merged with the Bordeaux 1 and Bordeaux 2 to form the University of Bordeaux.[1]",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": "merged",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "ownership": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:2",
+              "original_text": "Type: Public",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": "public",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "leadership": {
+    "chair": {
+      "candidates": [
+        {
+          "current_basis": "historical",
+          "evidence": [
+            {
+              "locator": "claim:P488:0",
+              "original_text": "{\"property\": \"P488\", \"property_label\": \"chairperson\", \"statement_id\": \"Q13335$d96e51c5-4b5e-a39c-7f8d-76579226340a\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 54833656, \"id\": \"Q54833656\"}, \"qualifiers\": {\"P580\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+1995-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}], \"P582\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+1996-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}], \"P39\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 3153784, \"id\": \"Q3153784\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "metadata",
+              "original_text": "{\"id\": \"Q54833656\", \"labels\": {\"en\": \"Marc Penouil\"}, \"descriptions\": {\"en\": \"French economist\"}}",
+              "source_ref": "s8"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "person": {
+              "name": "Marc Penouil",
+              "qid": "Q54833656"
+            },
+            "term_end": {
+              "precision": "year",
+              "year": 1996
+            },
+            "term_start": {
+              "precision": "year",
+              "year": 1995
+            },
+            "title_original": {
+              "language": "en",
+              "text": "chairperson"
+            }
+          },
+          "verification": "supported"
+        },
+        {
+          "current_basis": "historical",
+          "evidence": [
+            {
+              "locator": "claim:P488:1",
+              "original_text": "{\"property\": \"P488\", \"property_label\": \"chairperson\", \"statement_id\": \"Q13335$576b0984-4b32-b42c-d228-184d7f4c1495\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 33103007, \"id\": \"Q33103007\"}, \"qualifiers\": {\"P580\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+1996-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}], \"P582\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2001-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "metadata",
+              "original_text": "{\"id\": \"Q33103007\", \"labels\": {\"en\": \"Jean de Gaudusson\"}, \"descriptions\": {\"en\": \"French jurist\"}}",
+              "source_ref": "s9"
+            }
+          ],
+          "id": "c2",
+          "value": {
+            "person": {
+              "name": "Jean de Gaudusson",
+              "qid": "Q33103007"
+            },
+            "term_end": {
+              "precision": "year",
+              "year": 2001
+            },
+            "term_start": {
+              "precision": "year",
+              "year": 1996
+            },
+            "title_original": {
+              "language": "en",
+              "text": "chairperson"
+            }
+          },
+          "verification": "supported"
+        },
+        {
+          "current_basis": "historical",
+          "evidence": [
+            {
+              "locator": "claim:P488:2",
+              "original_text": "{\"property\": \"P488\", \"property_label\": \"chairperson\", \"statement_id\": \"Q13335$e13ded32-46b3-6a71-85e7-a12a12cfd7d1\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 3124023, \"id\": \"Q3124023\"}, \"qualifiers\": {\"P580\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2001-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}], \"P582\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2006-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "metadata",
+              "original_text": "{\"id\": \"Q3124023\", \"labels\": {\"en\": \"Gérard Hirigoyen\"}, \"descriptions\": {\"en\": \"French economist\"}}",
+              "source_ref": "s10"
+            }
+          ],
+          "id": "c3",
+          "value": {
+            "person": {
+              "name": "Gérard Hirigoyen",
+              "qid": "Q3124023"
+            },
+            "term_end": {
+              "precision": "year",
+              "year": 2006
+            },
+            "term_start": {
+              "precision": "year",
+              "year": 2001
+            },
+            "title_original": {
+              "language": "en",
+              "text": "chairperson"
+            }
+          },
+          "verification": "supported"
+        },
+        {
+          "current_basis": "historical",
+          "evidence": [
+            {
+              "locator": "claim:P488:3",
+              "original_text": "{\"property\": \"P488\", \"property_label\": \"chairperson\", \"statement_id\": \"Q13335$5ee8c7f7-4bda-58a2-566d-5a738e5e3f9d\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 55597392, \"id\": \"Q55597392\"}, \"qualifiers\": {\"P580\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2006-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}], \"P582\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2011-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 2}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "metadata",
+              "original_text": "{\"id\": \"Q55597392\", \"labels\": {\"en\": \"Jean-Pierre Laborde\"}, \"descriptions\": {}}",
+              "source_ref": "s11"
+            }
+          ],
+          "id": "c4",
+          "value": {
+            "person": {
+              "name": "Jean-Pierre Laborde",
+              "qid": "Q55597392"
+            },
+            "term_end": {
+              "precision": "year",
+              "year": 2011
+            },
+            "term_start": {
+              "precision": "year",
+              "year": 2006
+            },
+            "title_original": {
+              "language": "en",
+              "text": "chairperson"
+            }
+          },
+          "verification": "supported"
+        },
+        {
+          "current_basis": "historical",
+          "evidence": [
+            {
+              "locator": "claim:P488:4",
+              "original_text": "{\"property\": \"P488\", \"property_label\": \"chairperson\", \"statement_id\": \"Q13335$3c51196a-4909-fe7c-5474-0afd6d92c4e1\", \"rank\": \"preferred\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 93373393, \"id\": \"Q93373393\"}, \"qualifiers\": {\"P580\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2011-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}], \"P582\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2013-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}], \"P1534\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 452440, \"id\": \"Q452440\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "metadata",
+              "original_text": "{\"id\": \"Q93373393\", \"labels\": {\"en\": \"Yannick Lung\"}, \"descriptions\": {\"en\": \"French scholar\"}}",
+              "source_ref": "s12"
+            }
+          ],
+          "id": "c5",
+          "value": {
+            "person": {
+              "name": "Yannick Lung",
+              "qid": "Q93373393"
+            },
+            "term_end": {
+              "precision": "year",
+              "year": 2013
+            },
+            "term_start": {
+              "precision": "year",
+              "year": 2011
+            },
+            "title_original": {
+              "language": "en",
+              "text": "chairperson"
+            }
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c5",
+        "qualifications": [
+          "single_source_family",
+          "last_known_only",
+          "historical_only"
+        ],
+        "reason": "Use the best available last-known appointment without claiming an explicitly confirmed current term.",
+        "reason_code": "last_known"
+      }
+    },
+    "president": {
+      "candidates": [
+        {
+          "current_basis": "historical",
+          "evidence": [
+            {
+              "locator": "infobox:4",
+              "original_text": "President: Jean-Pierre Laborde",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "metadata",
+              "original_text": "{\"id\": \"Q55597392\", \"labels\": {\"en\": \"Jean-Pierre Laborde\"}, \"descriptions\": {}}",
+              "source_ref": "s11"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "person": {
+              "name": "Jean-Pierre Laborde",
+              "qid": "Q55597392"
+            },
+            "title_original": {
+              "language": "en",
+              "text": "President"
+            }
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "single_source_family",
+          "last_known_only",
+          "historical_only"
+        ],
+        "reason": "Use the best available last-known appointment without claiming an explicitly confirmed current term.",
+        "reason_code": "last_known"
+      }
+    }
+  },
+  "locations": [
+    {
+      "id": "pessac",
+      "kind": "administrative_area",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P131:0",
+                "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q13335$5B32B5C6-002D-484D-8C86-4F27CAE97004\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 207156, \"id\": \"Q207156\"}, \"reference_count\": 1}",
+                "source_ref": "s1"
+              },
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q207156\", \"labels\": {\"en\": \"Pessac\"}, \"descriptions\": {\"en\": \"commune in Gironde, France\"}}",
+                "source_ref": "s5"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "fr",
+              "text": "Pessac"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "qid": "Q207156"
+    },
+    {
+      "coordinates": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "statement:Q13335$B7472953-E0A1-488B-91A7-3D1A6C1DC2E8",
+                "original_text": "\"latitude\": 44.797654",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "source_rank": "normal",
+            "value": {
+              "crs": "EPSG:4326",
+              "globe_qid": "Q2",
+              "latitude": 44.797654,
+              "longitude": -0.617799,
+              "source_precision_degrees": 2.77777777778e-06
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "id": "wikidata-item-location",
+      "kind": "institution",
+      "qid": "Q13335"
+    }
+  ],
+  "modified_datetime": "2026-11-06T11:58:00.820444+00:00",
+  "population": {
+    "academic_staff": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "The university had 14,000 students and a staff of 400 teachers and researchers, with a non-academic staff of 300. It awarded around 4,100 diplomas each year at the various sites in Bordeaux itself, as well as at the satellite sites of Agen and Périgueux.[citation needed]",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "period_status": "not_stated",
+          "value": {
+            "amount": 400,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "period_not_stated",
+          "single_source_family"
+        ],
+        "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+        "reason_code": "only_available"
+      }
+    },
+    "students_total": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:0",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q13335$5c9d7edb-bbb0-46c9-b5f0-4ea1cd703d59\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+12625\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2007-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2007
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 12625,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:1",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q13335$2abca35a-2af7-4a80-a632-da28691589cb\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+12906\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2008-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c2",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2008
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 12906,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:2",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q13335$f3d2d983-0fc2-4ee1-8297-ec3a20ddde8c\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+16387\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2010-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c3",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2010
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 16387,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:3",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q13335$ae95575d-e9c2-4e9d-b77d-08c3753345f5\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+17635\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2013-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c4",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2013
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 17635,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:4",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q13335$62afa446-4059-474e-a24e-d79d1ce1eec9\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+15733\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2009-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c5",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2009
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 15733,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:5",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q13335$27937dfb-dcb5-45c9-b144-8db23b75fc7d\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+15302\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2011-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c6",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2011
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 15302,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:6",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q13335$f346be0f-785d-475f-b7a7-35a68c589372\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+16852\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2012-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c7",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2012
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 16852,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "The university had 14,000 students and a staff of 400 teachers and researchers, with a non-academic staff of 300. It awarded around 4,100 diplomas each year at the various sites in Bordeaux itself, as well as at the satellite sites of Agen and Périgueux.[citation needed]",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c8",
+          "period_status": "not_stated",
+          "value": {
+            "amount": 14000,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c8",
+        "qualifications": [
+          "period_not_stated",
+          "single_source_family"
+        ],
+        "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+        "reason_code": "best_available"
+      }
+    }
+  },
+  "profile": {
+    "academic_focus": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "Named after the French lawyer and philosopher Montesquieu, Montesquieu University was the successor of the former Law and Economics Faculty, which origins go back as far as the 15th century. It incorporated long-standing teaching programmes and institutes which have an established reputation in the academic specialities of the university: law, political science, economics and management.",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": [
+            {
+              "language": "en",
+              "text": "law"
+            },
+            {
+              "language": "en",
+              "text": "political science"
+            },
+            {
+              "language": "en",
+              "text": "economics"
+            },
+            {
+              "language": "en",
+              "text": "management"
+            }
+          ],
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "summary": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "Montesquieu University (French: Université Montesquieu), also known as Bordeaux IV (French: Bordeaux Quatre), was a French university, based in Pessac, the suburbs of Bordeaux. In 2014, it merged with the Bordeaux 1 and Bordeaux 2 to form the University of Bordeaux.[1]",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:lead",
+              "original_text": "Named after the French lawyer and philosopher Montesquieu, Montesquieu University was the successor of the former Law and Economics Faculty, which origins go back as far as the 15th century. It incorporated long-standing teaching programmes and institutes which have an established reputation in the academic specialities of the university: law, political science, economics and management.",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:lead",
+              "original_text": "Montesquieu University was organised into 6 departments (UFR) in the areas of economics and management, law, and economic and social administration (AES), as well as an Institute of Business Administration (IAE), and 2 University Institutes of Technology (IUT). In addition, the Bordeaux Institute of Political Studies was also annexed to the university.",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:lead",
+              "original_text": "The university had 14,000 students and a staff of 400 teachers and researchers, with a non-academic staff of 300. It awarded around 4,100 diplomas each year at the various sites in Bordeaux itself, as well as at the satellite sites of Agen and Périgueux.[citation needed]",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "infobox:2",
+              "original_text": "Type: Public",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "claim:P571:0",
+              "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q13335$cf28fa9f-4224-958d-467c-0be21d4db0a7\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+1995-05-09T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "claim:P576:0",
+              "original_text": "{\"property\": \"P576\", \"property_label\": \"dissolved, abolished or demolished\", \"statement_id\": \"Q13335$3d700f8a-4eef-0333-961a-86fc1f004aad\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+2014-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "claim:P1366:0",
+              "original_text": "{\"property\": \"P1366\", \"property_label\": \"replaced by\", \"statement_id\": \"Q13335$8b07cf80-41ce-8770-87d5-18e338dc7568\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 13344, \"id\": \"Q13344\"}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "claim:P749:0",
+              "original_text": "{\"property\": \"P749\", \"property_label\": \"parent organization or unit\", \"statement_id\": \"Q13335$b5b45d7f-483b-5f7b-6a71-39963e938f2c\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 64685688, \"id\": \"Q64685688\"}, \"qualifiers\": {\"P580\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2007-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}], \"P582\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2014-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "metadata",
+              "original_text": "{\"id\": \"Q64685688\", \"labels\": {\"en\": \"PRES University of Bordeaux\"}, \"descriptions\": {\"en\": \"former cluster of French public universities and research institutions in the region Bordeaux organized from 2007-2015\"}}",
+              "source_ref": "s6"
+            },
+            {
+              "locator": "claim:P2196:3",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q13335$ae95575d-e9c2-4e9d-b77d-08c3753345f5\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+17635\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2013-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "language": "en",
+            "text": "Montesquieu University – Bordeaux IV, or Université Montesquieu, was a public French university based in Pessac, a suburb of Bordeaux. It was also known as Bordeaux IV and was named after the French lawyer and philosopher Montesquieu. Its academic specialities included law, political science, economics and management.\n\nThe university succeeded the former Faculty of Law and Economics, whose origins are described as reaching back to the fifteenth century. That earlier history is distinct from the university’s own 1995 inception. In 2014, Bordeaux IV merged with Bordeaux 1 and Bordeaux 2 to form the University of Bordeaux. Wikidata records its dissolution on 1 January 2014 and identifies the University of Bordeaux as its replacement. It also records the PRES University of Bordeaux as its parent from 2007 to 2014.\n\nThe university was organised into six departments covering economics and management, law, and economic and social administration. It also included an Institute of Business Administration and two University Institutes of Technology; the Bordeaux Institute of Political Studies was annexed to it. Its teaching sites included Bordeaux and satellite sites in Agen and Périgueux. Wikidata records 17,635 students in 2013; the source does not specify a headcount or full-time-equivalent basis."
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "website": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P856:0",
+              "original_text": "{\"property\": \"P856\", \"property_label\": \"official website\", \"statement_id\": \"Q13335$243B8A2E-E53C-4173-9C10-BFF69C2CA7C4\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"http://www.u-bordeaux4.fr/\", \"qualifiers\": {\"P407\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 150, \"id\": \"Q150\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "value": "http://www.u-bordeaux4.fr/",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "qid": "Q13335",
+  "record_revision": 1,
+  "related_entities": {
+    "bordeaux": {
+      "kind": "institution",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q13344\", \"labels\": {\"en\": \"University of Bordeaux\"}, \"descriptions\": {\"en\": \"university in France\"}}",
+                "source_ref": "s7"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "University of Bordeaux"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "qid": "Q13344"
+    },
+    "pres": {
+      "kind": "university_system",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q64685688\", \"labels\": {\"en\": \"PRES University of Bordeaux\"}, \"descriptions\": {\"en\": \"former cluster of French public universities and research institutions in the region Bordeaux organized from 2007-2015\"}}",
+                "source_ref": "s6"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "PRES University of Bordeaux"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "qid": "Q64685688"
+    }
+  },
+  "relationships": {
+    "parent": [
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P749:0",
+                "original_text": "{\"property\": \"P749\", \"property_label\": \"parent organization or unit\", \"statement_id\": \"Q13335$b5b45d7f-483b-5f7b-6a71-39963e938f2c\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 64685688, \"id\": \"Q64685688\"}, \"qualifiers\": {\"P580\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2007-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}], \"P582\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2014-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}}",
+                "source_ref": "s1"
+              },
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q64685688\", \"labels\": {\"en\": \"PRES University of Bordeaux\"}, \"descriptions\": {\"en\": \"former cluster of French public universities and research institutions in the region Bordeaux organized from 2007-2015\"}}",
+                "source_ref": "s6"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "target_ref": "related:pres",
+              "valid_from": {
+                "precision": "year",
+                "year": 2007
+              },
+              "valid_to": {
+                "precision": "year",
+                "year": 2014
+              }
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    ],
+    "successor": [
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P1366:0",
+                "original_text": "{\"property\": \"P1366\", \"property_label\": \"replaced by\", \"statement_id\": \"Q13335$8b07cf80-41ce-8770-87d5-18e338dc7568\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 13344, \"id\": \"Q13344\"}, \"reference_count\": 1}",
+                "source_ref": "s1"
+              },
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q13344\", \"labels\": {\"en\": \"University of Bordeaux\"}, \"descriptions\": {\"en\": \"university in France\"}}",
+                "source_ref": "s7"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "target_ref": "related:bordeaux"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    ]
+  },
+  "schema_version": "0.2.2",
+  "seed": {
+    "channels": [
+      "reviewed_institution_type"
+    ],
+    "import_id": "seed-84c3beb45367905f",
+    "screening_status": "included"
+  },
+  "selection_policy": "preferred-v1",
+  "sources": {
+    "s1": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T11:53:32.837246+00:00",
+      "revision_id": 2525951266,
+      "source_qid": "Q13335",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2525951266"
+    },
+    "s10": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T11:54:12.653210+00:00",
+      "revision_id": 2524110210,
+      "source_qid": "Q3124023",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2524110210"
+    },
+    "s11": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T11:54:17.177177+00:00",
+      "revision_id": 2495174487,
+      "source_qid": "Q55597392",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2495174487"
+    },
+    "s12": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T11:54:21.669049+00:00",
+      "revision_id": 2521923297,
+      "source_qid": "Q93373393",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2521923297"
+    },
+    "s2": {
+      "family": "wikimedia",
+      "kind": "wikipedia",
+      "language": "en",
+      "page_id": 13398390,
+      "publisher_role": "encyclopedia",
+      "retrieved_at": "2026-11-06T11:53:43.840978+00:00",
+      "revision_id": 1359554028,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1359554028"
+    },
+    "s3": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T09:15:59.048669+00:00",
+      "revision_id": 2468502188,
+      "source_qid": "Q3551775",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2468502188"
+    },
+    "s4": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T09:16:05.838184+00:00",
+      "revision_id": 2564285160,
+      "source_qid": "Q142",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2564285160"
+    },
+    "s5": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T11:53:48.589395+00:00",
+      "revision_id": 2564351467,
+      "source_qid": "Q207156",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2564351467"
+    },
+    "s6": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T11:53:53.576510+00:00",
+      "revision_id": 2236095738,
+      "source_qid": "Q64685688",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2236095738"
+    },
+    "s7": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T11:53:58.670705+00:00",
+      "revision_id": 2562980745,
+      "source_qid": "Q13344",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2562980745"
+    },
+    "s8": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T11:54:03.900837+00:00",
+      "revision_id": 2524201413,
+      "source_qid": "Q54833656",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2524201413"
+    },
+    "s9": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T11:54:08.128822+00:00",
+      "revision_id": 2563060882,
+      "source_qid": "Q33103007",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2563060882"
+    }
+  },
+  "update_datetime": "2026-11-06T11:58:00.820444+00:00"
+}

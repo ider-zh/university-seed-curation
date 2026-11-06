@@ -1,0 +1,3707 @@
+{
+  "attribution": "distinct_native_research_and_review_subagents;not_cryptographic_identity",
+  "research": {
+    "baseline_sha256": "absent",
+    "candidate": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-06T11:54:26.901696+00:00",
+          "status": "checked"
+        },
+        "geography": {
+          "checked_at": "2026-11-06T11:54:26.901696+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-06T11:54:26.901696+00:00",
+          "status": "checked"
+        },
+        "identity": {
+          "checked_at": "2026-11-06T11:54:26.901696+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-06T11:54:26.901696+00:00",
+          "status": "checked"
+        },
+        "profile": {
+          "checked_at": "2026-11-06T11:54:26.901696+00:00",
+          "status": "checked"
+        }
+      },
+      "curation": {
+        "identity_status": "in_scope"
+      },
+      "finance": {
+        "budget": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "Budget\n161 millions d'euros (2025)",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2025
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": "161000000",
+                "currency": "EUR",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "claim:P571:0",
+                      "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q13334$2a2ba270-4baf-fd66-ea94-432aa272a330\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+1966-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}",
+                      "source_ref": "s1"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 1966
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:L.27universit.C3.A9_actuelle_.28depuis_1960.29",
+                      "original_text": "Une université est créée par le décret du 14 avril 1966 sous le nom d'« université d'Orléans-Tours », avec date d'effet au 1er janvier 1966",
+                      "source_ref": "s3"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "fr",
+                    "text": "Création de l'université d'Orléans-Tours par décret du 14 avril 1966, avec effet au 1er janvier 1966."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "modern_establishment",
+            "kind": "institution_establishment",
+            "subject_ref": "institution"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:L.27universit.C3.A9_actuelle_.28depuis_1960.29",
+                      "original_text": "la séparation entre Tours et Orléans, officialisée le 1er janvier 1971",
+                      "source_ref": "s3"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "day": 1,
+                    "month": 1,
+                    "precision": "day",
+                    "year": 1971
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "split_1971",
+            "kind": "split",
+            "subject_ref": "institution"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:L.27ancienne_universit.C3.A9_.281306-1793.29",
+                      "original_text": "Le 27 janvier 1306, l'université d'Orléans est officiellement fondée par le pape Clément V",
+                      "source_ref": "s3"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "day": 27,
+                    "month": 1,
+                    "precision": "day",
+                    "year": 1306
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "medieval_foundation",
+            "kind": "predecessor_establishment",
+            "subject_ref": "related:medieval"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:L.27ancienne_universit.C3.A9_.281306-1793.29",
+                      "original_text": "supprimée par la Convention en 1793",
+                      "source_ref": "s3"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 1793
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "medieval_closure",
+            "kind": "closure",
+            "subject_ref": "related:medieval"
+          }
+        ]
+      },
+      "identity": {
+        "aliases": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "page_metadata",
+                    "original_text": "{\"title\": \"University of Orléans\", \"language\": \"en\"}",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "University of Orléans"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P1448:0",
+                    "original_text": "{\"property\": \"P1448\", \"property_label\": \"official name\", \"statement_id\": \"Q13334$D5EDA7B5-4562-44FB-8444-332FD33CE656\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"UNIVERSITE D'ORLEANS\", \"language\": \"fr\"}, \"qualifiers\": {\"P1013\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 131741681, \"id\": \"Q131741681\"}}]}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "fr",
+                  "text": "UNIVERSITE D'ORLEANS"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ],
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "Université publique (EPSCP)",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": "university",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "fr": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P1705:0",
+                    "original_text": "{\"property\": \"P1705\", \"property_label\": \"native label\", \"statement_id\": \"Q13334$4c4f41e8-4159-e5ad-68d1-eb508e0e6871\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"Université d'Orléans\", \"language\": \"fr\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "Université d'Orléans",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        "ownership": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "Université publique (EPSCP)",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": "public",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "leadership": {
+        "president": {
+          "candidates": [
+            {
+              "current_basis": "term_present",
+              "evidence": [
+                {
+                  "locator": "section:Pr.C3.A9sidence",
+                  "original_text": "Éric Blond[34]\n(né en 1974)2021En cours5 ans",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "person": {
+                  "name": "Éric Blond"
+                },
+                "term_start": {
+                  "precision": "year",
+                  "year": 2021
+                },
+                "title_original": {
+                  "language": "fr",
+                  "text": "Président"
+                }
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason": "The source gives a term continuing to the present.",
+            "reason_code": "term_present"
+          }
+        }
+      },
+      "locations": [
+        {
+          "id": "orleans_la_source",
+          "kind": "campus",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "Campus d'Orléans-La Source",
+                    "source_ref": "s3"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "fr",
+                  "text": "Campus d'Orléans-La Source"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        {
+          "id": "headquarters",
+          "kind": "headquarters",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q28952441\", \"labels\": {\"fr\": \"château de la Source\", \"en\": \"Château de la Source\"}, \"descriptions\": {\"fr\": \"château français situé à Orléans\"}}",
+                    "source_ref": "s7"
+                  },
+                  {
+                    "locator": "claim:P159:0",
+                    "original_text": "{\"property\": \"P159\", \"property_label\": \"headquarters location\", \"statement_id\": \"Q13334$88875b80-4465-e2d1-bf23-b3587e3b2294\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 28952441, \"id\": \"Q28952441\"}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "fr",
+                  "text": "château de la Source"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q28952441"
+        },
+        {
+          "coordinates": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "statement:Q13334$f69a79b1-412d-9dde-f9eb-c59aa143cdd3",
+                    "original_text": "\"latitude\": 47.84546205344158",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "source_rank": "normal",
+                "value": {
+                  "crs": "EPSG:4326",
+                  "globe_qid": "Q2",
+                  "latitude": 47.84546205344158,
+                  "longitude": 1.9339062077634974,
+                  "source_precision_degrees": 1e-08
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "wikidata-item-location",
+          "kind": "institution",
+          "qid": "Q13334"
+        }
+      ],
+      "modified_datetime": "2026-11-06T11:57:02.492999+00:00",
+      "population": {
+        "administrative_staff": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "BIATSS\n271 (au 1er janvier 2025)",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "day": 1,
+                "kind": "date",
+                "month": 1,
+                "year": 2025
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 271,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason_code": "only_available"
+          }
+        },
+        "students_total": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "Étudiants\n18 177 (au 1er janvier 2025)",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "day": 1,
+                "kind": "date",
+                "month": 1,
+                "year": 2025
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 18177,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2196:0",
+                  "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q13334$a51c5138-4557-a843-ed6b-46ba52c71198\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+16337\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2016-09-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 10, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c2",
+              "period": {
+                "kind": "date",
+                "month": 9,
+                "year": 2016
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 16337,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2196:1",
+                  "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q13334$2b3f9b52-4e20-61d8-f4d4-9e964c9fb325\", \"rank\": \"preferred\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+16629\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2017-09-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 10, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c3",
+              "period": {
+                "kind": "date",
+                "month": 9,
+                "year": 2017
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 16629,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2196:2",
+                  "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q13334$c13cdb1f-ff05-453a-bf9a-e7fd1d2a9440\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+14704\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2007-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c4",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2007
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 14704,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2196:3",
+                  "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q13334$13f4da93-2542-48b8-a95b-5d84421227a5\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+15978\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2009-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c5",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2009
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 15978,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2196:4",
+                  "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q13334$f889a8a2-5668-4cf7-a96f-47a687f58a9b\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+14433\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2012-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c6",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2012
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 14433,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2196:5",
+                  "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q13334$e8326f52-445a-46f5-b152-75a96f2e585a\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+13884\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2013-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c7",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2013
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 13884,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2196:6",
+                  "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q13334$71ef10bb-7768-48d7-b714-acdf1e1161b9\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+15826\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2015-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c8",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2015
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 15826,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2196:7",
+                  "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q13334$48f04274-4706-4e48-b8ba-6b21ac9d3bd0\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+15836\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2010-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c9",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2010
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 15836,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2196:8",
+                  "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q13334$045d4c89-a583-4536-a2ce-579abcfe004d\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+18893\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2018-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c10",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2018
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 18893,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2196:9",
+                  "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q13334$620e0767-a014-452b-a4ed-cbd8fc481590\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+19511\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2020-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c11",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2020
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 19511,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2196:10",
+                  "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q13334$52992343-b0e2-4a4b-a844-580e7fc2ac2d\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+14240\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2008-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c12",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2008
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 14240,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2196:11",
+                  "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q13334$71977ad7-fa99-45cf-904a-643d06fde3f3\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+14081\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2011-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c13",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2011
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 14081,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2196:12",
+                  "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q13334$6535353c-820b-4589-93e9-6170e1b748ec\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+14779\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2014-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c14",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2014
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 14779,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2196:13",
+                  "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q13334$a51bc00d-df8d-4b02-9b05-bb9e94e2f14a\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+19429\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2019-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c15",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2019
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 19429,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2196:14",
+                  "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q13334$eac2e07e-7b3c-4f88-b55e-80de3a6306d2\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+20292\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2022-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c16",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2022
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 20292,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2196:15",
+                  "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q13334$b6f88aee-058f-4e7b-ba92-dcd0f9f37b9c\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+17473\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2016-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c17",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2016
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 17473,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2196:16",
+                  "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q13334$899ace5b-cd57-4888-a7d0-f4b64b500f76\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+18536\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2017-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c18",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2017
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 18536,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2196:17",
+                  "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q13334$420df06a-5b22-4434-98b9-b7bb2e4689ab\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+20628\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2021-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c19",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2021
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 20628,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2196:18",
+                  "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q13334$f3bd9f0d-2434-464d-ae0b-035a2b580ab5\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+18713\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2023-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c20",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2023
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 18713,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:.C3.89volution_d.C3.A9mographique",
+                  "original_text": "[modifier | modifier le code]\nÉvolution démographique de la population universitaire\nÉvolution démographique (ligne 1)\n2000\n2001\n2002\n2003\n2004\n2005\n2006\n2007\n16 120[39]15 334[40]15 184[41]15 458[42]15 634[43]15 590[44]15 082[45]14 628[46]\nÉvolution démographique (ligne 2)\n2008\n2009\n2010\n2011\n2012\n2013\n2014\n2015\n15 978[47]15 836[48]14 081[49]14 433[50]14 278[51]14 656[51]15 473[51]17 184[51]\nÉvolution démographique (ligne 3)\n2016\n2017\n2018\n2019\n2020\n2021\n2022\n-\n18 135[51]18 505[51]19 002[51]19 285[51]20 434[51]20 083[51]18 494[51]-",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c21",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2007
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 14628,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:.C3.89volution_d.C3.A9mographique",
+                  "original_text": "[modifier | modifier le code]\nÉvolution démographique de la population universitaire\nÉvolution démographique (ligne 1)\n2000\n2001\n2002\n2003\n2004\n2005\n2006\n2007\n16 120[39]15 334[40]15 184[41]15 458[42]15 634[43]15 590[44]15 082[45]14 628[46]\nÉvolution démographique (ligne 2)\n2008\n2009\n2010\n2011\n2012\n2013\n2014\n2015\n15 978[47]15 836[48]14 081[49]14 433[50]14 278[51]14 656[51]15 473[51]17 184[51]\nÉvolution démographique (ligne 3)\n2016\n2017\n2018\n2019\n2020\n2021\n2022\n-\n18 135[51]18 505[51]19 002[51]19 285[51]20 434[51]20 083[51]18 494[51]-",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c22",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2008
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 15978,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:.C3.89volution_d.C3.A9mographique",
+                  "original_text": "[modifier | modifier le code]\nÉvolution démographique de la population universitaire\nÉvolution démographique (ligne 1)\n2000\n2001\n2002\n2003\n2004\n2005\n2006\n2007\n16 120[39]15 334[40]15 184[41]15 458[42]15 634[43]15 590[44]15 082[45]14 628[46]\nÉvolution démographique (ligne 2)\n2008\n2009\n2010\n2011\n2012\n2013\n2014\n2015\n15 978[47]15 836[48]14 081[49]14 433[50]14 278[51]14 656[51]15 473[51]17 184[51]\nÉvolution démographique (ligne 3)\n2016\n2017\n2018\n2019\n2020\n2021\n2022\n-\n18 135[51]18 505[51]19 002[51]19 285[51]20 434[51]20 083[51]18 494[51]-",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c23",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2009
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 15836,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:.C3.89volution_d.C3.A9mographique",
+                  "original_text": "[modifier | modifier le code]\nÉvolution démographique de la population universitaire\nÉvolution démographique (ligne 1)\n2000\n2001\n2002\n2003\n2004\n2005\n2006\n2007\n16 120[39]15 334[40]15 184[41]15 458[42]15 634[43]15 590[44]15 082[45]14 628[46]\nÉvolution démographique (ligne 2)\n2008\n2009\n2010\n2011\n2012\n2013\n2014\n2015\n15 978[47]15 836[48]14 081[49]14 433[50]14 278[51]14 656[51]15 473[51]17 184[51]\nÉvolution démographique (ligne 3)\n2016\n2017\n2018\n2019\n2020\n2021\n2022\n-\n18 135[51]18 505[51]19 002[51]19 285[51]20 434[51]20 083[51]18 494[51]-",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c24",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2010
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 14081,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:.C3.89volution_d.C3.A9mographique",
+                  "original_text": "[modifier | modifier le code]\nÉvolution démographique de la population universitaire\nÉvolution démographique (ligne 1)\n2000\n2001\n2002\n2003\n2004\n2005\n2006\n2007\n16 120[39]15 334[40]15 184[41]15 458[42]15 634[43]15 590[44]15 082[45]14 628[46]\nÉvolution démographique (ligne 2)\n2008\n2009\n2010\n2011\n2012\n2013\n2014\n2015\n15 978[47]15 836[48]14 081[49]14 433[50]14 278[51]14 656[51]15 473[51]17 184[51]\nÉvolution démographique (ligne 3)\n2016\n2017\n2018\n2019\n2020\n2021\n2022\n-\n18 135[51]18 505[51]19 002[51]19 285[51]20 434[51]20 083[51]18 494[51]-",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c25",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2011
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 14433,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:.C3.89volution_d.C3.A9mographique",
+                  "original_text": "[modifier | modifier le code]\nÉvolution démographique de la population universitaire\nÉvolution démographique (ligne 1)\n2000\n2001\n2002\n2003\n2004\n2005\n2006\n2007\n16 120[39]15 334[40]15 184[41]15 458[42]15 634[43]15 590[44]15 082[45]14 628[46]\nÉvolution démographique (ligne 2)\n2008\n2009\n2010\n2011\n2012\n2013\n2014\n2015\n15 978[47]15 836[48]14 081[49]14 433[50]14 278[51]14 656[51]15 473[51]17 184[51]\nÉvolution démographique (ligne 3)\n2016\n2017\n2018\n2019\n2020\n2021\n2022\n-\n18 135[51]18 505[51]19 002[51]19 285[51]20 434[51]20 083[51]18 494[51]-",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c26",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2012
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 14278,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:.C3.89volution_d.C3.A9mographique",
+                  "original_text": "[modifier | modifier le code]\nÉvolution démographique de la population universitaire\nÉvolution démographique (ligne 1)\n2000\n2001\n2002\n2003\n2004\n2005\n2006\n2007\n16 120[39]15 334[40]15 184[41]15 458[42]15 634[43]15 590[44]15 082[45]14 628[46]\nÉvolution démographique (ligne 2)\n2008\n2009\n2010\n2011\n2012\n2013\n2014\n2015\n15 978[47]15 836[48]14 081[49]14 433[50]14 278[51]14 656[51]15 473[51]17 184[51]\nÉvolution démographique (ligne 3)\n2016\n2017\n2018\n2019\n2020\n2021\n2022\n-\n18 135[51]18 505[51]19 002[51]19 285[51]20 434[51]20 083[51]18 494[51]-",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c27",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2013
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 14656,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:.C3.89volution_d.C3.A9mographique",
+                  "original_text": "[modifier | modifier le code]\nÉvolution démographique de la population universitaire\nÉvolution démographique (ligne 1)\n2000\n2001\n2002\n2003\n2004\n2005\n2006\n2007\n16 120[39]15 334[40]15 184[41]15 458[42]15 634[43]15 590[44]15 082[45]14 628[46]\nÉvolution démographique (ligne 2)\n2008\n2009\n2010\n2011\n2012\n2013\n2014\n2015\n15 978[47]15 836[48]14 081[49]14 433[50]14 278[51]14 656[51]15 473[51]17 184[51]\nÉvolution démographique (ligne 3)\n2016\n2017\n2018\n2019\n2020\n2021\n2022\n-\n18 135[51]18 505[51]19 002[51]19 285[51]20 434[51]20 083[51]18 494[51]-",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c28",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2014
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 15473,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:.C3.89volution_d.C3.A9mographique",
+                  "original_text": "[modifier | modifier le code]\nÉvolution démographique de la population universitaire\nÉvolution démographique (ligne 1)\n2000\n2001\n2002\n2003\n2004\n2005\n2006\n2007\n16 120[39]15 334[40]15 184[41]15 458[42]15 634[43]15 590[44]15 082[45]14 628[46]\nÉvolution démographique (ligne 2)\n2008\n2009\n2010\n2011\n2012\n2013\n2014\n2015\n15 978[47]15 836[48]14 081[49]14 433[50]14 278[51]14 656[51]15 473[51]17 184[51]\nÉvolution démographique (ligne 3)\n2016\n2017\n2018\n2019\n2020\n2021\n2022\n-\n18 135[51]18 505[51]19 002[51]19 285[51]20 434[51]20 083[51]18 494[51]-",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c29",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2015
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 17184,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:.C3.89volution_d.C3.A9mographique",
+                  "original_text": "[modifier | modifier le code]\nÉvolution démographique de la population universitaire\nÉvolution démographique (ligne 1)\n2000\n2001\n2002\n2003\n2004\n2005\n2006\n2007\n16 120[39]15 334[40]15 184[41]15 458[42]15 634[43]15 590[44]15 082[45]14 628[46]\nÉvolution démographique (ligne 2)\n2008\n2009\n2010\n2011\n2012\n2013\n2014\n2015\n15 978[47]15 836[48]14 081[49]14 433[50]14 278[51]14 656[51]15 473[51]17 184[51]\nÉvolution démographique (ligne 3)\n2016\n2017\n2018\n2019\n2020\n2021\n2022\n-\n18 135[51]18 505[51]19 002[51]19 285[51]20 434[51]20 083[51]18 494[51]-",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c30",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2016
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 18135,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:.C3.89volution_d.C3.A9mographique",
+                  "original_text": "[modifier | modifier le code]\nÉvolution démographique de la population universitaire\nÉvolution démographique (ligne 1)\n2000\n2001\n2002\n2003\n2004\n2005\n2006\n2007\n16 120[39]15 334[40]15 184[41]15 458[42]15 634[43]15 590[44]15 082[45]14 628[46]\nÉvolution démographique (ligne 2)\n2008\n2009\n2010\n2011\n2012\n2013\n2014\n2015\n15 978[47]15 836[48]14 081[49]14 433[50]14 278[51]14 656[51]15 473[51]17 184[51]\nÉvolution démographique (ligne 3)\n2016\n2017\n2018\n2019\n2020\n2021\n2022\n-\n18 135[51]18 505[51]19 002[51]19 285[51]20 434[51]20 083[51]18 494[51]-",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c31",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2017
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 18505,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:.C3.89volution_d.C3.A9mographique",
+                  "original_text": "[modifier | modifier le code]\nÉvolution démographique de la population universitaire\nÉvolution démographique (ligne 1)\n2000\n2001\n2002\n2003\n2004\n2005\n2006\n2007\n16 120[39]15 334[40]15 184[41]15 458[42]15 634[43]15 590[44]15 082[45]14 628[46]\nÉvolution démographique (ligne 2)\n2008\n2009\n2010\n2011\n2012\n2013\n2014\n2015\n15 978[47]15 836[48]14 081[49]14 433[50]14 278[51]14 656[51]15 473[51]17 184[51]\nÉvolution démographique (ligne 3)\n2016\n2017\n2018\n2019\n2020\n2021\n2022\n-\n18 135[51]18 505[51]19 002[51]19 285[51]20 434[51]20 083[51]18 494[51]-",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c32",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2018
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 19002,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:.C3.89volution_d.C3.A9mographique",
+                  "original_text": "[modifier | modifier le code]\nÉvolution démographique de la population universitaire\nÉvolution démographique (ligne 1)\n2000\n2001\n2002\n2003\n2004\n2005\n2006\n2007\n16 120[39]15 334[40]15 184[41]15 458[42]15 634[43]15 590[44]15 082[45]14 628[46]\nÉvolution démographique (ligne 2)\n2008\n2009\n2010\n2011\n2012\n2013\n2014\n2015\n15 978[47]15 836[48]14 081[49]14 433[50]14 278[51]14 656[51]15 473[51]17 184[51]\nÉvolution démographique (ligne 3)\n2016\n2017\n2018\n2019\n2020\n2021\n2022\n-\n18 135[51]18 505[51]19 002[51]19 285[51]20 434[51]20 083[51]18 494[51]-",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c33",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2019
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 19285,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:.C3.89volution_d.C3.A9mographique",
+                  "original_text": "[modifier | modifier le code]\nÉvolution démographique de la population universitaire\nÉvolution démographique (ligne 1)\n2000\n2001\n2002\n2003\n2004\n2005\n2006\n2007\n16 120[39]15 334[40]15 184[41]15 458[42]15 634[43]15 590[44]15 082[45]14 628[46]\nÉvolution démographique (ligne 2)\n2008\n2009\n2010\n2011\n2012\n2013\n2014\n2015\n15 978[47]15 836[48]14 081[49]14 433[50]14 278[51]14 656[51]15 473[51]17 184[51]\nÉvolution démographique (ligne 3)\n2016\n2017\n2018\n2019\n2020\n2021\n2022\n-\n18 135[51]18 505[51]19 002[51]19 285[51]20 434[51]20 083[51]18 494[51]-",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c34",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2020
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 20434,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:.C3.89volution_d.C3.A9mographique",
+                  "original_text": "[modifier | modifier le code]\nÉvolution démographique de la population universitaire\nÉvolution démographique (ligne 1)\n2000\n2001\n2002\n2003\n2004\n2005\n2006\n2007\n16 120[39]15 334[40]15 184[41]15 458[42]15 634[43]15 590[44]15 082[45]14 628[46]\nÉvolution démographique (ligne 2)\n2008\n2009\n2010\n2011\n2012\n2013\n2014\n2015\n15 978[47]15 836[48]14 081[49]14 433[50]14 278[51]14 656[51]15 473[51]17 184[51]\nÉvolution démographique (ligne 3)\n2016\n2017\n2018\n2019\n2020\n2021\n2022\n-\n18 135[51]18 505[51]19 002[51]19 285[51]20 434[51]20 083[51]18 494[51]-",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c35",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2021
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 20083,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:.C3.89volution_d.C3.A9mographique",
+                  "original_text": "[modifier | modifier le code]\nÉvolution démographique de la population universitaire\nÉvolution démographique (ligne 1)\n2000\n2001\n2002\n2003\n2004\n2005\n2006\n2007\n16 120[39]15 334[40]15 184[41]15 458[42]15 634[43]15 590[44]15 082[45]14 628[46]\nÉvolution démographique (ligne 2)\n2008\n2009\n2010\n2011\n2012\n2013\n2014\n2015\n15 978[47]15 836[48]14 081[49]14 433[50]14 278[51]14 656[51]15 473[51]17 184[51]\nÉvolution démographique (ligne 3)\n2016\n2017\n2018\n2019\n2020\n2021\n2022\n-\n18 135[51]18 505[51]19 002[51]19 285[51]20 434[51]20 083[51]18 494[51]-",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c36",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2022
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 18494,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "conflicts": [
+            {
+              "candidate_ids": [
+                "c4",
+                "c21"
+              ],
+              "kind": "value_disagreement",
+              "note": "Different figures labelled with the same year; source series definitions and observation dates are not stated and may differ.",
+              "status": "unresolved"
+            },
+            {
+              "candidate_ids": [
+                "c12",
+                "c22"
+              ],
+              "kind": "value_disagreement",
+              "note": "Different figures labelled with the same year; source series definitions and observation dates are not stated and may differ.",
+              "status": "unresolved"
+            },
+            {
+              "candidate_ids": [
+                "c5",
+                "c23"
+              ],
+              "kind": "value_disagreement",
+              "note": "Different figures labelled with the same year; source series definitions and observation dates are not stated and may differ.",
+              "status": "unresolved"
+            },
+            {
+              "candidate_ids": [
+                "c9",
+                "c24"
+              ],
+              "kind": "value_disagreement",
+              "note": "Different figures labelled with the same year; source series definitions and observation dates are not stated and may differ.",
+              "status": "unresolved"
+            },
+            {
+              "candidate_ids": [
+                "c13",
+                "c25"
+              ],
+              "kind": "value_disagreement",
+              "note": "Different figures labelled with the same year; source series definitions and observation dates are not stated and may differ.",
+              "status": "unresolved"
+            },
+            {
+              "candidate_ids": [
+                "c6",
+                "c26"
+              ],
+              "kind": "value_disagreement",
+              "note": "Different figures labelled with the same year; source series definitions and observation dates are not stated and may differ.",
+              "status": "unresolved"
+            },
+            {
+              "candidate_ids": [
+                "c7",
+                "c27"
+              ],
+              "kind": "value_disagreement",
+              "note": "Different figures labelled with the same year; source series definitions and observation dates are not stated and may differ.",
+              "status": "unresolved"
+            },
+            {
+              "candidate_ids": [
+                "c14",
+                "c28"
+              ],
+              "kind": "value_disagreement",
+              "note": "Different figures labelled with the same year; source series definitions and observation dates are not stated and may differ.",
+              "status": "unresolved"
+            },
+            {
+              "candidate_ids": [
+                "c8",
+                "c29"
+              ],
+              "kind": "value_disagreement",
+              "note": "Different figures labelled with the same year; source series definitions and observation dates are not stated and may differ.",
+              "status": "unresolved"
+            },
+            {
+              "candidate_ids": [
+                "c17",
+                "c30"
+              ],
+              "kind": "value_disagreement",
+              "note": "Different figures labelled with the same year; source series definitions and observation dates are not stated and may differ.",
+              "status": "unresolved"
+            },
+            {
+              "candidate_ids": [
+                "c18",
+                "c31"
+              ],
+              "kind": "value_disagreement",
+              "note": "Different figures labelled with the same year; source series definitions and observation dates are not stated and may differ.",
+              "status": "unresolved"
+            },
+            {
+              "candidate_ids": [
+                "c10",
+                "c32"
+              ],
+              "kind": "value_disagreement",
+              "note": "Different figures labelled with the same year; source series definitions and observation dates are not stated and may differ.",
+              "status": "unresolved"
+            },
+            {
+              "candidate_ids": [
+                "c15",
+                "c33"
+              ],
+              "kind": "value_disagreement",
+              "note": "Different figures labelled with the same year; source series definitions and observation dates are not stated and may differ.",
+              "status": "unresolved"
+            },
+            {
+              "candidate_ids": [
+                "c11",
+                "c34"
+              ],
+              "kind": "value_disagreement",
+              "note": "Different figures labelled with the same year; source series definitions and observation dates are not stated and may differ.",
+              "status": "unresolved"
+            },
+            {
+              "candidate_ids": [
+                "c19",
+                "c35"
+              ],
+              "kind": "value_disagreement",
+              "note": "Different figures labelled with the same year; source series definitions and observation dates are not stated and may differ.",
+              "status": "unresolved"
+            },
+            {
+              "candidate_ids": [
+                "c16",
+                "c36"
+              ],
+              "kind": "value_disagreement",
+              "note": "Different figures labelled with the same year; source series definitions and observation dates are not stated and may differ.",
+              "status": "unresolved"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family",
+              "conflicting_candidates"
+            ],
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        },
+        "teaching_staff": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "Enseignants\n991 (au 1er janvier 2025)",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "day": 1,
+                "kind": "date",
+                "month": 1,
+                "year": 2025
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 991,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "profile": {
+        "academic_focus": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Unit.C3.A9s_de_formation_et_de_recherche",
+                  "original_text": "[modifier | modifier le code]\nL'UFR lettres, langues et sciences humaines.\nL'université d'Orléans compte trois unités de formation et de recherche (UFR) :\nDroit, économie et gestion (DEG)\nLettres, langues et sciences humaines (LLSH)\nSciences et techniques (ST), comprenant le pôle sciences et techniques des activités physiques et sportives (STAPS)",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": [
+                {
+                  "language": "fr",
+                  "text": "Droit, économie et gestion"
+                },
+                {
+                  "language": "fr",
+                  "text": "Lettres, langues et sciences humaines"
+                },
+                {
+                  "language": "fr",
+                  "text": "Sciences et techniques"
+                }
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "motto": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "« Source de talents, depuis 1306 »",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "fr",
+                "text": "Source de talents, depuis 1306"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "summary": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "Université d'Orléans\nLe château de La Source, situé au cœur du Parc Floral de La Source, siège de la présidence de l'Université d'Orléans.HistoireFondation\n1306 par le pape Clément V\n1966 (université actuelle)[1]Dates-clés\n27 janvier 1306 : fondation par quatre bulles du pape Clément V\n14 avril 1966 : création de l'« Université d'Orléans-Tours »\n1er janvier 1971 : scission avec la création de l'Université de ToursStatutType\nUniversité publique (EPSCP)Forme juridique\nÉtablissement public national à caractère scientifique culturel et professionnel (d)Nom officiel\nUNIVERSITE D'ORLEANSRégime linguistique\nFrançaisFondateur\nClément V (pape de 1305 à 1314)Président\nÉric BlondRecteur\nJean-Philippe Agresti (recteur de l'académie d'Orléans-Tours)Devise\n« Source de talents, depuis 1306 »Membre de\nAssociation des universités européennes, Consortium universitaire de publications numériques Couperin, Réseau national de télécommunications pour la technologie, l'enseignement et la rechercheSite web\nun",
+                  "source_ref": "s3"
+                },
+                {
+                  "locator": "section:lead",
+                  "original_text": "iv-orleans.frChiffres-clésÉtudiants\n18 177 (au 1er janvier 2025)Enseignants\n991 (au 1er janvier 2025)BIATSS\n271 (au 1er janvier 2025)Budget\n161 millions d'euros (2025)LocalisationPays\nFranceCampus\nCampus d'Orléans-La SourceVille\nOrléans\nLocalisation sur la carte de France\nLocalisation sur la carte du Centre-Val de Loire\nLocalisation sur la carte d’Orléans\nmodifier - modifier le code - modifier Wikidata\nL'université d'Orléans (UO) est une université pluridisciplinaire française fondée en 1306 par le pape Clément V, ce qui en fait l'une des plus anciennes universités d'Europe[2]. Implantée en région Centre-Val de Loire, ses structures d'enseignement et de recherche sont présentes dans ses différentes antennes situées à Orléans (campus d'Orléans-La Source), Bourges, Chartres, Châteauroux, Issoudun, Blois et Tours (site Fondettes). L'INSPE Centre-Val de Loire dépend également de l'université d'Orléans.\nAu 1er janvier 2025, elle accueille 18 177 étudiants et emploie 991 enseignants[3].",
+                  "source_ref": "s3"
+                },
+                {
+                  "locator": "section:L.27universit.C3.A9_actuelle_.28depuis_1960.29",
+                  "original_text": "[modifier | modifier le code]\nLe château de la Source (vu du parc floral).\nIl est décidé, dès 1959, d'installer à Orléans-la-Source, à une dizaine de kilomètres au sud de la Loire, sur un domaine de près de 400 hectares, un campus[17]. Le ministre Pierre Sudreau parle de l'« Oxford français », « le premier campus européen », que Paris-Presse-L'Intransigeant reprend sous le nom d'« Oxford-sur-Loire »[18]. Le 2 août 1960 est créé un Collège scientifique universitaire (CSU), dépendant de la faculté des sciences de Paris. Il s'installe au château de la Source. Une école municipale de droit est créée en novembre 1962. Un centre d'études supérieures littéraires (CESL) est ouvert à son tour en 1964.\nUne université est créée par le décret du 14 avril 1966 sous le nom d'« université d'Orléans-Tours », avec date d'effet au 1er janvier 1966[19]. L'Université regroupe alors tous les enseignements universitaires organisés à Orléans mais aussi à Tours, les facultés de droit, de lettres et de science",
+                  "source_ref": "s3"
+                },
+                {
+                  "locator": "section:L.27universit.C3.A9_actuelle_.28depuis_1960.29",
+                  "original_text": "s étant dédoublées[20]. Mais le mouvement de mai 68 provoque la séparation entre Tours et Orléans, officialisée le 1er janvier 1971[21],[22].\nL'université d'Orléans inclut progressivement une faculté des sciences (1961), de droit (1968), de lettres (1969) de sport (1992), un Institut universitaire de Technologie à Orléans (1967), à Bourges (1968), à Châteauroux (1992), à Chartres (1996), une université du temps libre (1977) et deux écoles d'ingénieurs (ESEM en 1982 et ESPEO en 1992), qui fusionnent en 2002 pour former l'École polytechnique d'Orléans (Polytech'Orléans).\nEn 2004, l'Université d'Orléans rejoint le Pôle Universitaire Centre Val de Loire (association loi de 1901). En 2009, elle fonde et intègre aux côtés de l'Université de Tours le PRES : Université centre Val-de-Loire.\nL'université d’Orléans se caractérise donc par sa pluridisciplinarité. Elle compte 4 facultés, une école d’ingénieurs universitaire (Polytech'Orléans), 4 Instituts Universitaires de Technologie, l’ESPE Centr",
+                  "source_ref": "s3"
+                },
+                {
+                  "locator": "section:L.27ancienne_universit.C3.A9_.281306-1793.29",
+                  "original_text": "anvier 1306, l'université d'Orléans est officiellement fondée par le pape Clément V grâce à quatre bulles pontificales qui accordaient aux maîtres et aux écoliers d'Orléans le droit d'avoir une université, ainsi que les privilèges qui en découlaient. Le même jour, une cinquième bulle prévoit d'indemniser les professeurs qui avaient porté la demande de création auprès du pape[5]. Les habitants d'Orléans sont réticents aux privilèges accordés par le pape et tentent donc de s'opposer à l'établissement de l'université. Une émeute particulièrement violente se produit en 1309. Les représentants de l'université s'en remettent donc au roi Philippe le Bel, qui confirme les privilèges et la fondation ",
+                  "source_ref": "s3"
+                },
+                {
+                  "locator": "section:L.27ancienne_universit.C3.A9_.281306-1793.29",
+                  "original_text": "supprimée par la Convention en 1793",
+                  "source_ref": "s3"
+                },
+                {
+                  "locator": "section:Unit.C3.A9s_de_formation_et_de_recherche",
+                  "original_text": "[modifier | modifier le code]\nL'UFR lettres, langues et sciences humaines.\nL'université d'Orléans compte trois unités de formation et de recherche (UFR) :\nDroit, économie et gestion (DEG)\nLettres, langues et sciences humaines (LLSH)\nSciences et techniques (ST), comprenant le pôle sciences et techniques des activités physiques et sportives (STAPS)",
+                  "source_ref": "s3"
+                },
+                {
+                  "locator": "section:Instituts_universitaires_de_technologie",
+                  "original_text": "[modifier | modifier le code]\nLe site Galilée de Polytech'Orléans.\nLe bâtiment IIIA, accueillant le pôle informatique (UFR ST) et le Laboratoire d'informatique fondamentale d'Orléans.\nL'université d'Orléans comprend quatre instituts universitaires de technologie (IUT) : l'IUT d'Orléans, l'IUT de Bourges, l'IUT de Chartres et l'IUT de l'Indre (Châteauroux-Issoudun). L'IUT d'Orléans dispense des formations pour six bachelors universitaires de technologie (BUT) :\nBUT en Chimie\nBUT en gestion des entreprises et des administrations (GEA), parcours financier, ressources humaines ou management\nBUT en génie mécanique et productique (GMP)\nBUT en génie thermique et énergie (GTE)\nBUT en informatique\nBUT en qualité logistique industrielle et organisation (QLIO)",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "The University of Orléans (Université d'Orléans) is a public, multidisciplinary French university based in Orléans, in the Centre-Val de Loire region. Its teaching and research sites include Orléans-La Source and locations in Bourges, Chartres, Châteauroux, Issoudun, Blois and Tours. The Château de la Source houses the university presidency.\n\nThe institution's history reaches back to a medieval university founded by papal bulls on 27 January 1306 and suppressed in 1793. The modern university was created as the Université d'Orléans-Tours by a decree of 14 April 1966, effective from 1 January 1966. It initially brought together university teaching in Orléans and Tours; the separation of the two was formalised on 1 January 1971. Earlier modern developments included a scientific university college established in 1960, a municipal law school in 1962 and a literary studies centre in 1964.\n\nThe university's academic units cover law, economics and management; languages, literature and humanities; and science and technology, including sport. Its structure includes four university institutes of technology and the engineering school Polytech Orléans, formed in 2002 through a merger of two engineering schools. The French-language source reports 18,177 students and 991 teachers on 1 January 2025."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "teaching_languages": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "Régime linguistique\nFrançais",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": [
+                "fr"
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "website": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P856:0",
+                  "original_text": "{\"property\": \"P856\", \"property_label\": \"official website\", \"statement_id\": \"Q13334$99C97DD6-C2DE-4EA3-9AB8-B108BAAB7D29\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"https://www.univ-orleans.fr/\", \"reference_count\": 2}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "https://www.univ-orleans.fr/",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "qid": "Q13334",
+      "record_revision": 1,
+      "related_entities": {
+        "medieval": {
+          "kind": "institution",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:L.27ancienne_universit.C3.A9_.281306-1793.29",
+                    "original_text": "l'université d'Orléans",
+                    "source_ref": "s3"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "fr",
+                  "text": "ancienne université d'Orléans"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q23197733"
+        }
+      },
+      "relationships": {
+        "predecessor": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P1365:0",
+                    "original_text": "{\"property\": \"P1365\", \"property_label\": \"replaces\", \"statement_id\": \"Q13334$ca1e5c61-423a-72a9-acd1-ac2b47c7986f\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 23197733, \"id\": \"Q23197733\"}}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q23197733\", \"labels\": {\"fr\": \"ancienne université d'Orléans\", \"en\": \"Old University of Orléans\"}, \"descriptions\": {\"fr\": \"université française d'ancien régime située à Orléans\", \"en\": \"former university of Orléans\"}}",
+                    "source_ref": "s11"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "target_ref": "related:medieval"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ]
+      },
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "ranking_identifier",
+          "reviewed_institution_type"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "included"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T11:53:32.975616+00:00",
+          "revision_id": 2548483913,
+          "source_qid": "Q13334",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2548483913"
+        },
+        "s10": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T11:54:12.680646+00:00",
+          "revision_id": 2560433932,
+          "source_qid": "Q2944885",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2560433932"
+        },
+        "s11": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T11:54:17.732567+00:00",
+          "revision_id": 2526854538,
+          "source_qid": "Q23197733",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2526854538"
+        },
+        "s12": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T11:54:22.277297+00:00",
+          "revision_id": 2503624078,
+          "source_qid": "Q120489103",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2503624078"
+        },
+        "s13": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T11:54:26.893093+00:00",
+          "revision_id": 2486960514,
+          "source_qid": "Q96000294",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2486960514"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikipedia",
+          "language": "en",
+          "page_id": 6605415,
+          "publisher_role": "encyclopedia",
+          "retrieved_at": "2026-11-06T11:53:48.984840+00:00",
+          "revision_id": 1376844993,
+          "url": "https://en.wikipedia.org/w/index.php?oldid=1376844993"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikipedia",
+          "language": "fr",
+          "page_id": 1001371,
+          "publisher_role": "encyclopedia",
+          "retrieved_at": "2026-11-06T11:53:53.569107+00:00",
+          "revision_id": 239972317,
+          "url": "https://fr.wikipedia.org/w/index.php?oldid=239972317"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T09:15:59.048669+00:00",
+          "revision_id": 2468502188,
+          "source_qid": "Q3551775",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2468502188"
+        },
+        "s5": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T08:48:57.696840+00:00",
+          "revision_id": 2559546120,
+          "source_qid": "Q875538",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2559546120"
+        },
+        "s6": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T09:16:05.838184+00:00",
+          "revision_id": 2564285160,
+          "source_qid": "Q142",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2564285160"
+        },
+        "s7": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T11:53:58.388693+00:00",
+          "revision_id": 2086458592,
+          "source_qid": "Q28952441",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2086458592"
+        },
+        "s8": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T11:54:02.694936+00:00",
+          "revision_id": 1241537263,
+          "source_qid": "Q64711543",
+          "url": "https://www.wikidata.org/w/index.php?oldid=1241537263"
+        },
+        "s9": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T11:54:07.209809+00:00",
+          "revision_id": 2560443616,
+          "source_qid": "Q20735682",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2560443616"
+        }
+      }
+    },
+    "coverage": [
+      {
+        "group": "identity",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "status": "checked"
+      },
+      {
+        "group": "population",
+        "status": "checked"
+      },
+      {
+        "group": "finance",
+        "status": "checked"
+      },
+      {
+        "group": "profile",
+        "status": "checked"
+      }
+    ],
+    "delta": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-06T11:54:26.901696+00:00",
+          "status": "checked"
+        },
+        "geography": {
+          "checked_at": "2026-11-06T11:54:26.901696+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-06T11:54:26.901696+00:00",
+          "status": "checked"
+        },
+        "identity": {
+          "checked_at": "2026-11-06T11:54:26.901696+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-06T11:54:26.901696+00:00",
+          "status": "checked"
+        },
+        "profile": {
+          "checked_at": "2026-11-06T11:54:26.901696+00:00",
+          "status": "checked"
+        }
+      },
+      "curation": {
+        "identity_status": "in_scope"
+      },
+      "finance": {
+        "budget": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "Budget\n161 millions d'euros (2025)",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2025
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": "161000000",
+                "currency": "EUR",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "claim:P571:0",
+                      "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q13334$2a2ba270-4baf-fd66-ea94-432aa272a330\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+1966-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}",
+                      "source_ref": "s1"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 1966
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:L.27universit.C3.A9_actuelle_.28depuis_1960.29",
+                      "original_text": "Une université est créée par le décret du 14 avril 1966 sous le nom d'« université d'Orléans-Tours », avec date d'effet au 1er janvier 1966",
+                      "source_ref": "s3"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "fr",
+                    "text": "Création de l'université d'Orléans-Tours par décret du 14 avril 1966, avec effet au 1er janvier 1966."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "modern_establishment",
+            "kind": "institution_establishment",
+            "subject_ref": "institution"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:L.27universit.C3.A9_actuelle_.28depuis_1960.29",
+                      "original_text": "la séparation entre Tours et Orléans, officialisée le 1er janvier 1971",
+                      "source_ref": "s3"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "day": 1,
+                    "month": 1,
+                    "precision": "day",
+                    "year": 1971
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "split_1971",
+            "kind": "split",
+            "subject_ref": "institution"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:L.27ancienne_universit.C3.A9_.281306-1793.29",
+                      "original_text": "Le 27 janvier 1306, l'université d'Orléans est officiellement fondée par le pape Clément V",
+                      "source_ref": "s3"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "day": 27,
+                    "month": 1,
+                    "precision": "day",
+                    "year": 1306
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "medieval_foundation",
+            "kind": "predecessor_establishment",
+            "subject_ref": "related:medieval"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:L.27ancienne_universit.C3.A9_.281306-1793.29",
+                      "original_text": "supprimée par la Convention en 1793",
+                      "source_ref": "s3"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 1793
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "medieval_closure",
+            "kind": "closure",
+            "subject_ref": "related:medieval"
+          }
+        ]
+      },
+      "identity": {
+        "aliases": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "page_metadata",
+                    "original_text": "{\"title\": \"University of Orléans\", \"language\": \"en\"}",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "University of Orléans"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P1448:0",
+                    "original_text": "{\"property\": \"P1448\", \"property_label\": \"official name\", \"statement_id\": \"Q13334$D5EDA7B5-4562-44FB-8444-332FD33CE656\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"UNIVERSITE D'ORLEANS\", \"language\": \"fr\"}, \"qualifiers\": {\"P1013\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 131741681, \"id\": \"Q131741681\"}}]}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "fr",
+                  "text": "UNIVERSITE D'ORLEANS"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ],
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "Université publique (EPSCP)",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": "university",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "fr": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P1705:0",
+                    "original_text": "{\"property\": \"P1705\", \"property_label\": \"native label\", \"statement_id\": \"Q13334$4c4f41e8-4159-e5ad-68d1-eb508e0e6871\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"Université d'Orléans\", \"language\": \"fr\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "Université d'Orléans",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        "ownership": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "Université publique (EPSCP)",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": "public",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "leadership": {
+        "president": {
+          "candidates": [
+            {
+              "current_basis": "term_present",
+              "evidence": [
+                {
+                  "locator": "section:Pr.C3.A9sidence",
+                  "original_text": "Éric Blond[34]\n(né en 1974)2021En cours5 ans",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "person": {
+                  "name": "Éric Blond"
+                },
+                "term_start": {
+                  "precision": "year",
+                  "year": 2021
+                },
+                "title_original": {
+                  "language": "fr",
+                  "text": "Président"
+                }
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason": "The source gives a term continuing to the present.",
+            "reason_code": "term_present"
+          }
+        }
+      },
+      "locations": [
+        {
+          "id": "orleans_la_source",
+          "kind": "campus",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "Campus d'Orléans-La Source",
+                    "source_ref": "s3"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "fr",
+                  "text": "Campus d'Orléans-La Source"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        {
+          "id": "headquarters",
+          "kind": "headquarters",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q28952441\", \"labels\": {\"fr\": \"château de la Source\", \"en\": \"Château de la Source\"}, \"descriptions\": {\"fr\": \"château français situé à Orléans\"}}",
+                    "source_ref": "s7"
+                  },
+                  {
+                    "locator": "claim:P159:0",
+                    "original_text": "{\"property\": \"P159\", \"property_label\": \"headquarters location\", \"statement_id\": \"Q13334$88875b80-4465-e2d1-bf23-b3587e3b2294\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 28952441, \"id\": \"Q28952441\"}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "fr",
+                  "text": "château de la Source"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q28952441"
+        },
+        {
+          "coordinates": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "statement:Q13334$f69a79b1-412d-9dde-f9eb-c59aa143cdd3",
+                    "original_text": "\"latitude\": 47.84546205344158",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "source_rank": "normal",
+                "value": {
+                  "crs": "EPSG:4326",
+                  "globe_qid": "Q2",
+                  "latitude": 47.84546205344158,
+                  "longitude": 1.9339062077634974,
+                  "source_precision_degrees": 1e-08
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "wikidata-item-location",
+          "kind": "institution",
+          "qid": "Q13334"
+        }
+      ],
+      "population": {
+        "administrative_staff": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "BIATSS\n271 (au 1er janvier 2025)",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "day": 1,
+                "kind": "date",
+                "month": 1,
+                "year": 2025
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 271,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason_code": "only_available"
+          }
+        },
+        "students_total": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "Étudiants\n18 177 (au 1er janvier 2025)",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "day": 1,
+                "kind": "date",
+                "month": 1,
+                "year": 2025
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 18177,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2196:0",
+                  "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q13334$a51c5138-4557-a843-ed6b-46ba52c71198\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+16337\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2016-09-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 10, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c2",
+              "period": {
+                "kind": "date",
+                "month": 9,
+                "year": 2016
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 16337,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2196:1",
+                  "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q13334$2b3f9b52-4e20-61d8-f4d4-9e964c9fb325\", \"rank\": \"preferred\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+16629\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2017-09-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 10, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c3",
+              "period": {
+                "kind": "date",
+                "month": 9,
+                "year": 2017
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 16629,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2196:2",
+                  "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q13334$c13cdb1f-ff05-453a-bf9a-e7fd1d2a9440\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+14704\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2007-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c4",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2007
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 14704,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2196:3",
+                  "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q13334$13f4da93-2542-48b8-a95b-5d84421227a5\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+15978\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2009-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c5",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2009
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 15978,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2196:4",
+                  "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q13334$f889a8a2-5668-4cf7-a96f-47a687f58a9b\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+14433\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2012-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c6",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2012
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 14433,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2196:5",
+                  "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q13334$e8326f52-445a-46f5-b152-75a96f2e585a\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+13884\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2013-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c7",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2013
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 13884,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2196:6",
+                  "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q13334$71ef10bb-7768-48d7-b714-acdf1e1161b9\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+15826\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2015-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c8",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2015
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 15826,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2196:7",
+                  "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q13334$48f04274-4706-4e48-b8ba-6b21ac9d3bd0\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+15836\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2010-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c9",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2010
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 15836,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2196:8",
+                  "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q13334$045d4c89-a583-4536-a2ce-579abcfe004d\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+18893\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2018-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c10",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2018
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 18893,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2196:9",
+                  "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q13334$620e0767-a014-452b-a4ed-cbd8fc481590\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+19511\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2020-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c11",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2020
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 19511,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2196:10",
+                  "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q13334$52992343-b0e2-4a4b-a844-580e7fc2ac2d\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+14240\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2008-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c12",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2008
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 14240,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2196:11",
+                  "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q13334$71977ad7-fa99-45cf-904a-643d06fde3f3\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+14081\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2011-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c13",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2011
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 14081,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2196:12",
+                  "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q13334$6535353c-820b-4589-93e9-6170e1b748ec\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+14779\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2014-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c14",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2014
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 14779,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2196:13",
+                  "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q13334$a51bc00d-df8d-4b02-9b05-bb9e94e2f14a\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+19429\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2019-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c15",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2019
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 19429,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2196:14",
+                  "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q13334$eac2e07e-7b3c-4f88-b55e-80de3a6306d2\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+20292\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2022-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c16",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2022
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 20292,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2196:15",
+                  "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q13334$b6f88aee-058f-4e7b-ba92-dcd0f9f37b9c\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+17473\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2016-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c17",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2016
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 17473,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2196:16",
+                  "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q13334$899ace5b-cd57-4888-a7d0-f4b64b500f76\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+18536\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2017-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c18",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2017
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 18536,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2196:17",
+                  "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q13334$420df06a-5b22-4434-98b9-b7bb2e4689ab\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+20628\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2021-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c19",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2021
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 20628,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2196:18",
+                  "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q13334$f3bd9f0d-2434-464d-ae0b-035a2b580ab5\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+18713\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2023-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c20",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2023
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 18713,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:.C3.89volution_d.C3.A9mographique",
+                  "original_text": "[modifier | modifier le code]\nÉvolution démographique de la population universitaire\nÉvolution démographique (ligne 1)\n2000\n2001\n2002\n2003\n2004\n2005\n2006\n2007\n16 120[39]15 334[40]15 184[41]15 458[42]15 634[43]15 590[44]15 082[45]14 628[46]\nÉvolution démographique (ligne 2)\n2008\n2009\n2010\n2011\n2012\n2013\n2014\n2015\n15 978[47]15 836[48]14 081[49]14 433[50]14 278[51]14 656[51]15 473[51]17 184[51]\nÉvolution démographique (ligne 3)\n2016\n2017\n2018\n2019\n2020\n2021\n2022\n-\n18 135[51]18 505[51]19 002[51]19 285[51]20 434[51]20 083[51]18 494[51]-",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c21",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2007
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 14628,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:.C3.89volution_d.C3.A9mographique",
+                  "original_text": "[modifier | modifier le code]\nÉvolution démographique de la population universitaire\nÉvolution démographique (ligne 1)\n2000\n2001\n2002\n2003\n2004\n2005\n2006\n2007\n16 120[39]15 334[40]15 184[41]15 458[42]15 634[43]15 590[44]15 082[45]14 628[46]\nÉvolution démographique (ligne 2)\n2008\n2009\n2010\n2011\n2012\n2013\n2014\n2015\n15 978[47]15 836[48]14 081[49]14 433[50]14 278[51]14 656[51]15 473[51]17 184[51]\nÉvolution démographique (ligne 3)\n2016\n2017\n2018\n2019\n2020\n2021\n2022\n-\n18 135[51]18 505[51]19 002[51]19 285[51]20 434[51]20 083[51]18 494[51]-",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c22",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2008
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 15978,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:.C3.89volution_d.C3.A9mographique",
+                  "original_text": "[modifier | modifier le code]\nÉvolution démographique de la population universitaire\nÉvolution démographique (ligne 1)\n2000\n2001\n2002\n2003\n2004\n2005\n2006\n2007\n16 120[39]15 334[40]15 184[41]15 458[42]15 634[43]15 590[44]15 082[45]14 628[46]\nÉvolution démographique (ligne 2)\n2008\n2009\n2010\n2011\n2012\n2013\n2014\n2015\n15 978[47]15 836[48]14 081[49]14 433[50]14 278[51]14 656[51]15 473[51]17 184[51]\nÉvolution démographique (ligne 3)\n2016\n2017\n2018\n2019\n2020\n2021\n2022\n-\n18 135[51]18 505[51]19 002[51]19 285[51]20 434[51]20 083[51]18 494[51]-",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c23",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2009
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 15836,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:.C3.89volution_d.C3.A9mographique",
+                  "original_text": "[modifier | modifier le code]\nÉvolution démographique de la population universitaire\nÉvolution démographique (ligne 1)\n2000\n2001\n2002\n2003\n2004\n2005\n2006\n2007\n16 120[39]15 334[40]15 184[41]15 458[42]15 634[43]15 590[44]15 082[45]14 628[46]\nÉvolution démographique (ligne 2)\n2008\n2009\n2010\n2011\n2012\n2013\n2014\n2015\n15 978[47]15 836[48]14 081[49]14 433[50]14 278[51]14 656[51]15 473[51]17 184[51]\nÉvolution démographique (ligne 3)\n2016\n2017\n2018\n2019\n2020\n2021\n2022\n-\n18 135[51]18 505[51]19 002[51]19 285[51]20 434[51]20 083[51]18 494[51]-",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c24",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2010
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 14081,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:.C3.89volution_d.C3.A9mographique",
+                  "original_text": "[modifier | modifier le code]\nÉvolution démographique de la population universitaire\nÉvolution démographique (ligne 1)\n2000\n2001\n2002\n2003\n2004\n2005\n2006\n2007\n16 120[39]15 334[40]15 184[41]15 458[42]15 634[43]15 590[44]15 082[45]14 628[46]\nÉvolution démographique (ligne 2)\n2008\n2009\n2010\n2011\n2012\n2013\n2014\n2015\n15 978[47]15 836[48]14 081[49]14 433[50]14 278[51]14 656[51]15 473[51]17 184[51]\nÉvolution démographique (ligne 3)\n2016\n2017\n2018\n2019\n2020\n2021\n2022\n-\n18 135[51]18 505[51]19 002[51]19 285[51]20 434[51]20 083[51]18 494[51]-",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c25",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2011
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 14433,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:.C3.89volution_d.C3.A9mographique",
+                  "original_text": "[modifier | modifier le code]\nÉvolution démographique de la population universitaire\nÉvolution démographique (ligne 1)\n2000\n2001\n2002\n2003\n2004\n2005\n2006\n2007\n16 120[39]15 334[40]15 184[41]15 458[42]15 634[43]15 590[44]15 082[45]14 628[46]\nÉvolution démographique (ligne 2)\n2008\n2009\n2010\n2011\n2012\n2013\n2014\n2015\n15 978[47]15 836[48]14 081[49]14 433[50]14 278[51]14 656[51]15 473[51]17 184[51]\nÉvolution démographique (ligne 3)\n2016\n2017\n2018\n2019\n2020\n2021\n2022\n-\n18 135[51]18 505[51]19 002[51]19 285[51]20 434[51]20 083[51]18 494[51]-",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c26",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2012
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 14278,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:.C3.89volution_d.C3.A9mographique",
+                  "original_text": "[modifier | modifier le code]\nÉvolution démographique de la population universitaire\nÉvolution démographique (ligne 1)\n2000\n2001\n2002\n2003\n2004\n2005\n2006\n2007\n16 120[39]15 334[40]15 184[41]15 458[42]15 634[43]15 590[44]15 082[45]14 628[46]\nÉvolution démographique (ligne 2)\n2008\n2009\n2010\n2011\n2012\n2013\n2014\n2015\n15 978[47]15 836[48]14 081[49]14 433[50]14 278[51]14 656[51]15 473[51]17 184[51]\nÉvolution démographique (ligne 3)\n2016\n2017\n2018\n2019\n2020\n2021\n2022\n-\n18 135[51]18 505[51]19 002[51]19 285[51]20 434[51]20 083[51]18 494[51]-",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c27",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2013
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 14656,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:.C3.89volution_d.C3.A9mographique",
+                  "original_text": "[modifier | modifier le code]\nÉvolution démographique de la population universitaire\nÉvolution démographique (ligne 1)\n2000\n2001\n2002\n2003\n2004\n2005\n2006\n2007\n16 120[39]15 334[40]15 184[41]15 458[42]15 634[43]15 590[44]15 082[45]14 628[46]\nÉvolution démographique (ligne 2)\n2008\n2009\n2010\n2011\n2012\n2013\n2014\n2015\n15 978[47]15 836[48]14 081[49]14 433[50]14 278[51]14 656[51]15 473[51]17 184[51]\nÉvolution démographique (ligne 3)\n2016\n2017\n2018\n2019\n2020\n2021\n2022\n-\n18 135[51]18 505[51]19 002[51]19 285[51]20 434[51]20 083[51]18 494[51]-",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c28",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2014
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 15473,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:.C3.89volution_d.C3.A9mographique",
+                  "original_text": "[modifier | modifier le code]\nÉvolution démographique de la population universitaire\nÉvolution démographique (ligne 1)\n2000\n2001\n2002\n2003\n2004\n2005\n2006\n2007\n16 120[39]15 334[40]15 184[41]15 458[42]15 634[43]15 590[44]15 082[45]14 628[46]\nÉvolution démographique (ligne 2)\n2008\n2009\n2010\n2011\n2012\n2013\n2014\n2015\n15 978[47]15 836[48]14 081[49]14 433[50]14 278[51]14 656[51]15 473[51]17 184[51]\nÉvolution démographique (ligne 3)\n2016\n2017\n2018\n2019\n2020\n2021\n2022\n-\n18 135[51]18 505[51]19 002[51]19 285[51]20 434[51]20 083[51]18 494[51]-",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c29",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2015
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 17184,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:.C3.89volution_d.C3.A9mographique",
+                  "original_text": "[modifier | modifier le code]\nÉvolution démographique de la population universitaire\nÉvolution démographique (ligne 1)\n2000\n2001\n2002\n2003\n2004\n2005\n2006\n2007\n16 120[39]15 334[40]15 184[41]15 458[42]15 634[43]15 590[44]15 082[45]14 628[46]\nÉvolution démographique (ligne 2)\n2008\n2009\n2010\n2011\n2012\n2013\n2014\n2015\n15 978[47]15 836[48]14 081[49]14 433[50]14 278[51]14 656[51]15 473[51]17 184[51]\nÉvolution démographique (ligne 3)\n2016\n2017\n2018\n2019\n2020\n2021\n2022\n-\n18 135[51]18 505[51]19 002[51]19 285[51]20 434[51]20 083[51]18 494[51]-",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c30",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2016
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 18135,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:.C3.89volution_d.C3.A9mographique",
+                  "original_text": "[modifier | modifier le code]\nÉvolution démographique de la population universitaire\nÉvolution démographique (ligne 1)\n2000\n2001\n2002\n2003\n2004\n2005\n2006\n2007\n16 120[39]15 334[40]15 184[41]15 458[42]15 634[43]15 590[44]15 082[45]14 628[46]\nÉvolution démographique (ligne 2)\n2008\n2009\n2010\n2011\n2012\n2013\n2014\n2015\n15 978[47]15 836[48]14 081[49]14 433[50]14 278[51]14 656[51]15 473[51]17 184[51]\nÉvolution démographique (ligne 3)\n2016\n2017\n2018\n2019\n2020\n2021\n2022\n-\n18 135[51]18 505[51]19 002[51]19 285[51]20 434[51]20 083[51]18 494[51]-",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c31",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2017
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 18505,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:.C3.89volution_d.C3.A9mographique",
+                  "original_text": "[modifier | modifier le code]\nÉvolution démographique de la population universitaire\nÉvolution démographique (ligne 1)\n2000\n2001\n2002\n2003\n2004\n2005\n2006\n2007\n16 120[39]15 334[40]15 184[41]15 458[42]15 634[43]15 590[44]15 082[45]14 628[46]\nÉvolution démographique (ligne 2)\n2008\n2009\n2010\n2011\n2012\n2013\n2014\n2015\n15 978[47]15 836[48]14 081[49]14 433[50]14 278[51]14 656[51]15 473[51]17 184[51]\nÉvolution démographique (ligne 3)\n2016\n2017\n2018\n2019\n2020\n2021\n2022\n-\n18 135[51]18 505[51]19 002[51]19 285[51]20 434[51]20 083[51]18 494[51]-",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c32",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2018
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 19002,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:.C3.89volution_d.C3.A9mographique",
+                  "original_text": "[modifier | modifier le code]\nÉvolution démographique de la population universitaire\nÉvolution démographique (ligne 1)\n2000\n2001\n2002\n2003\n2004\n2005\n2006\n2007\n16 120[39]15 334[40]15 184[41]15 458[42]15 634[43]15 590[44]15 082[45]14 628[46]\nÉvolution démographique (ligne 2)\n2008\n2009\n2010\n2011\n2012\n2013\n2014\n2015\n15 978[47]15 836[48]14 081[49]14 433[50]14 278[51]14 656[51]15 473[51]17 184[51]\nÉvolution démographique (ligne 3)\n2016\n2017\n2018\n2019\n2020\n2021\n2022\n-\n18 135[51]18 505[51]19 002[51]19 285[51]20 434[51]20 083[51]18 494[51]-",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c33",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2019
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 19285,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:.C3.89volution_d.C3.A9mographique",
+                  "original_text": "[modifier | modifier le code]\nÉvolution démographique de la population universitaire\nÉvolution démographique (ligne 1)\n2000\n2001\n2002\n2003\n2004\n2005\n2006\n2007\n16 120[39]15 334[40]15 184[41]15 458[42]15 634[43]15 590[44]15 082[45]14 628[46]\nÉvolution démographique (ligne 2)\n2008\n2009\n2010\n2011\n2012\n2013\n2014\n2015\n15 978[47]15 836[48]14 081[49]14 433[50]14 278[51]14 656[51]15 473[51]17 184[51]\nÉvolution démographique (ligne 3)\n2016\n2017\n2018\n2019\n2020\n2021\n2022\n-\n18 135[51]18 505[51]19 002[51]19 285[51]20 434[51]20 083[51]18 494[51]-",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c34",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2020
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 20434,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:.C3.89volution_d.C3.A9mographique",
+                  "original_text": "[modifier | modifier le code]\nÉvolution démographique de la population universitaire\nÉvolution démographique (ligne 1)\n2000\n2001\n2002\n2003\n2004\n2005\n2006\n2007\n16 120[39]15 334[40]15 184[41]15 458[42]15 634[43]15 590[44]15 082[45]14 628[46]\nÉvolution démographique (ligne 2)\n2008\n2009\n2010\n2011\n2012\n2013\n2014\n2015\n15 978[47]15 836[48]14 081[49]14 433[50]14 278[51]14 656[51]15 473[51]17 184[51]\nÉvolution démographique (ligne 3)\n2016\n2017\n2018\n2019\n2020\n2021\n2022\n-\n18 135[51]18 505[51]19 002[51]19 285[51]20 434[51]20 083[51]18 494[51]-",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c35",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2021
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 20083,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:.C3.89volution_d.C3.A9mographique",
+                  "original_text": "[modifier | modifier le code]\nÉvolution démographique de la population universitaire\nÉvolution démographique (ligne 1)\n2000\n2001\n2002\n2003\n2004\n2005\n2006\n2007\n16 120[39]15 334[40]15 184[41]15 458[42]15 634[43]15 590[44]15 082[45]14 628[46]\nÉvolution démographique (ligne 2)\n2008\n2009\n2010\n2011\n2012\n2013\n2014\n2015\n15 978[47]15 836[48]14 081[49]14 433[50]14 278[51]14 656[51]15 473[51]17 184[51]\nÉvolution démographique (ligne 3)\n2016\n2017\n2018\n2019\n2020\n2021\n2022\n-\n18 135[51]18 505[51]19 002[51]19 285[51]20 434[51]20 083[51]18 494[51]-",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c36",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2022
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 18494,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "conflicts": [
+            {
+              "candidate_ids": [
+                "c4",
+                "c21"
+              ],
+              "kind": "value_disagreement",
+              "note": "Different figures labelled with the same year; source series definitions and observation dates are not stated and may differ.",
+              "status": "unresolved"
+            },
+            {
+              "candidate_ids": [
+                "c12",
+                "c22"
+              ],
+              "kind": "value_disagreement",
+              "note": "Different figures labelled with the same year; source series definitions and observation dates are not stated and may differ.",
+              "status": "unresolved"
+            },
+            {
+              "candidate_ids": [
+                "c5",
+                "c23"
+              ],
+              "kind": "value_disagreement",
+              "note": "Different figures labelled with the same year; source series definitions and observation dates are not stated and may differ.",
+              "status": "unresolved"
+            },
+            {
+              "candidate_ids": [
+                "c9",
+                "c24"
+              ],
+              "kind": "value_disagreement",
+              "note": "Different figures labelled with the same year; source series definitions and observation dates are not stated and may differ.",
+              "status": "unresolved"
+            },
+            {
+              "candidate_ids": [
+                "c13",
+                "c25"
+              ],
+              "kind": "value_disagreement",
+              "note": "Different figures labelled with the same year; source series definitions and observation dates are not stated and may differ.",
+              "status": "unresolved"
+            },
+            {
+              "candidate_ids": [
+                "c6",
+                "c26"
+              ],
+              "kind": "value_disagreement",
+              "note": "Different figures labelled with the same year; source series definitions and observation dates are not stated and may differ.",
+              "status": "unresolved"
+            },
+            {
+              "candidate_ids": [
+                "c7",
+                "c27"
+              ],
+              "kind": "value_disagreement",
+              "note": "Different figures labelled with the same year; source series definitions and observation dates are not stated and may differ.",
+              "status": "unresolved"
+            },
+            {
+              "candidate_ids": [
+                "c14",
+                "c28"
+              ],
+              "kind": "value_disagreement",
+              "note": "Different figures labelled with the same year; source series definitions and observation dates are not stated and may differ.",
+              "status": "unresolved"
+            },
+            {
+              "candidate_ids": [
+                "c8",
+                "c29"
+              ],
+              "kind": "value_disagreement",
+              "note": "Different figures labelled with the same year; source series definitions and observation dates are not stated and may differ.",
+              "status": "unresolved"
+            },
+            {
+              "candidate_ids": [
+                "c17",
+                "c30"
+              ],
+              "kind": "value_disagreement",
+              "note": "Different figures labelled with the same year; source series definitions and observation dates are not stated and may differ.",
+              "status": "unresolved"
+            },
+            {
+              "candidate_ids": [
+                "c18",
+                "c31"
+              ],
+              "kind": "value_disagreement",
+              "note": "Different figures labelled with the same year; source series definitions and observation dates are not stated and may differ.",
+              "status": "unresolved"
+            },
+            {
+              "candidate_ids": [
+                "c10",
+                "c32"
+              ],
+              "kind": "value_disagreement",
+              "note": "Different figures labelled with the same year; source series definitions and observation dates are not stated and may differ.",
+              "status": "unresolved"
+            },
+            {
+              "candidate_ids": [
+                "c15",
+                "c33"
+              ],
+              "kind": "value_disagreement",
+              "note": "Different figures labelled with the same year; source series definitions and observation dates are not stated and may differ.",
+              "status": "unresolved"
+            },
+            {
+              "candidate_ids": [
+                "c11",
+                "c34"
+              ],
+              "kind": "value_disagreement",
+              "note": "Different figures labelled with the same year; source series definitions and observation dates are not stated and may differ.",
+              "status": "unresolved"
+            },
+            {
+              "candidate_ids": [
+                "c19",
+                "c35"
+              ],
+              "kind": "value_disagreement",
+              "note": "Different figures labelled with the same year; source series definitions and observation dates are not stated and may differ.",
+              "status": "unresolved"
+            },
+            {
+              "candidate_ids": [
+                "c16",
+                "c36"
+              ],
+              "kind": "value_disagreement",
+              "note": "Different figures labelled with the same year; source series definitions and observation dates are not stated and may differ.",
+              "status": "unresolved"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family",
+              "conflicting_candidates"
+            ],
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        },
+        "teaching_staff": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "Enseignants\n991 (au 1er janvier 2025)",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "day": 1,
+                "kind": "date",
+                "month": 1,
+                "year": 2025
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 991,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "profile": {
+        "academic_focus": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Unit.C3.A9s_de_formation_et_de_recherche",
+                  "original_text": "[modifier | modifier le code]\nL'UFR lettres, langues et sciences humaines.\nL'université d'Orléans compte trois unités de formation et de recherche (UFR) :\nDroit, économie et gestion (DEG)\nLettres, langues et sciences humaines (LLSH)\nSciences et techniques (ST), comprenant le pôle sciences et techniques des activités physiques et sportives (STAPS)",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": [
+                {
+                  "language": "fr",
+                  "text": "Droit, économie et gestion"
+                },
+                {
+                  "language": "fr",
+                  "text": "Lettres, langues et sciences humaines"
+                },
+                {
+                  "language": "fr",
+                  "text": "Sciences et techniques"
+                }
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "motto": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "« Source de talents, depuis 1306 »",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "fr",
+                "text": "Source de talents, depuis 1306"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "summary": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "Université d'Orléans\nLe château de La Source, situé au cœur du Parc Floral de La Source, siège de la présidence de l'Université d'Orléans.HistoireFondation\n1306 par le pape Clément V\n1966 (université actuelle)[1]Dates-clés\n27 janvier 1306 : fondation par quatre bulles du pape Clément V\n14 avril 1966 : création de l'« Université d'Orléans-Tours »\n1er janvier 1971 : scission avec la création de l'Université de ToursStatutType\nUniversité publique (EPSCP)Forme juridique\nÉtablissement public national à caractère scientifique culturel et professionnel (d)Nom officiel\nUNIVERSITE D'ORLEANSRégime linguistique\nFrançaisFondateur\nClément V (pape de 1305 à 1314)Président\nÉric BlondRecteur\nJean-Philippe Agresti (recteur de l'académie d'Orléans-Tours)Devise\n« Source de talents, depuis 1306 »Membre de\nAssociation des universités européennes, Consortium universitaire de publications numériques Couperin, Réseau national de télécommunications pour la technologie, l'enseignement et la rechercheSite web\nun",
+                  "source_ref": "s3"
+                },
+                {
+                  "locator": "section:lead",
+                  "original_text": "iv-orleans.frChiffres-clésÉtudiants\n18 177 (au 1er janvier 2025)Enseignants\n991 (au 1er janvier 2025)BIATSS\n271 (au 1er janvier 2025)Budget\n161 millions d'euros (2025)LocalisationPays\nFranceCampus\nCampus d'Orléans-La SourceVille\nOrléans\nLocalisation sur la carte de France\nLocalisation sur la carte du Centre-Val de Loire\nLocalisation sur la carte d’Orléans\nmodifier - modifier le code - modifier Wikidata\nL'université d'Orléans (UO) est une université pluridisciplinaire française fondée en 1306 par le pape Clément V, ce qui en fait l'une des plus anciennes universités d'Europe[2]. Implantée en région Centre-Val de Loire, ses structures d'enseignement et de recherche sont présentes dans ses différentes antennes situées à Orléans (campus d'Orléans-La Source), Bourges, Chartres, Châteauroux, Issoudun, Blois et Tours (site Fondettes). L'INSPE Centre-Val de Loire dépend également de l'université d'Orléans.\nAu 1er janvier 2025, elle accueille 18 177 étudiants et emploie 991 enseignants[3].",
+                  "source_ref": "s3"
+                },
+                {
+                  "locator": "section:L.27universit.C3.A9_actuelle_.28depuis_1960.29",
+                  "original_text": "[modifier | modifier le code]\nLe château de la Source (vu du parc floral).\nIl est décidé, dès 1959, d'installer à Orléans-la-Source, à une dizaine de kilomètres au sud de la Loire, sur un domaine de près de 400 hectares, un campus[17]. Le ministre Pierre Sudreau parle de l'« Oxford français », « le premier campus européen », que Paris-Presse-L'Intransigeant reprend sous le nom d'« Oxford-sur-Loire »[18]. Le 2 août 1960 est créé un Collège scientifique universitaire (CSU), dépendant de la faculté des sciences de Paris. Il s'installe au château de la Source. Une école municipale de droit est créée en novembre 1962. Un centre d'études supérieures littéraires (CESL) est ouvert à son tour en 1964.\nUne université est créée par le décret du 14 avril 1966 sous le nom d'« université d'Orléans-Tours », avec date d'effet au 1er janvier 1966[19]. L'Université regroupe alors tous les enseignements universitaires organisés à Orléans mais aussi à Tours, les facultés de droit, de lettres et de science",
+                  "source_ref": "s3"
+                },
+                {
+                  "locator": "section:L.27universit.C3.A9_actuelle_.28depuis_1960.29",
+                  "original_text": "s étant dédoublées[20]. Mais le mouvement de mai 68 provoque la séparation entre Tours et Orléans, officialisée le 1er janvier 1971[21],[22].\nL'université d'Orléans inclut progressivement une faculté des sciences (1961), de droit (1968), de lettres (1969) de sport (1992), un Institut universitaire de Technologie à Orléans (1967), à Bourges (1968), à Châteauroux (1992), à Chartres (1996), une université du temps libre (1977) et deux écoles d'ingénieurs (ESEM en 1982 et ESPEO en 1992), qui fusionnent en 2002 pour former l'École polytechnique d'Orléans (Polytech'Orléans).\nEn 2004, l'Université d'Orléans rejoint le Pôle Universitaire Centre Val de Loire (association loi de 1901). En 2009, elle fonde et intègre aux côtés de l'Université de Tours le PRES : Université centre Val-de-Loire.\nL'université d’Orléans se caractérise donc par sa pluridisciplinarité. Elle compte 4 facultés, une école d’ingénieurs universitaire (Polytech'Orléans), 4 Instituts Universitaires de Technologie, l’ESPE Centr",
+                  "source_ref": "s3"
+                },
+                {
+                  "locator": "section:L.27ancienne_universit.C3.A9_.281306-1793.29",
+                  "original_text": "anvier 1306, l'université d'Orléans est officiellement fondée par le pape Clément V grâce à quatre bulles pontificales qui accordaient aux maîtres et aux écoliers d'Orléans le droit d'avoir une université, ainsi que les privilèges qui en découlaient. Le même jour, une cinquième bulle prévoit d'indemniser les professeurs qui avaient porté la demande de création auprès du pape[5]. Les habitants d'Orléans sont réticents aux privilèges accordés par le pape et tentent donc de s'opposer à l'établissement de l'université. Une émeute particulièrement violente se produit en 1309. Les représentants de l'université s'en remettent donc au roi Philippe le Bel, qui confirme les privilèges et la fondation ",
+                  "source_ref": "s3"
+                },
+                {
+                  "locator": "section:L.27ancienne_universit.C3.A9_.281306-1793.29",
+                  "original_text": "supprimée par la Convention en 1793",
+                  "source_ref": "s3"
+                },
+                {
+                  "locator": "section:Unit.C3.A9s_de_formation_et_de_recherche",
+                  "original_text": "[modifier | modifier le code]\nL'UFR lettres, langues et sciences humaines.\nL'université d'Orléans compte trois unités de formation et de recherche (UFR) :\nDroit, économie et gestion (DEG)\nLettres, langues et sciences humaines (LLSH)\nSciences et techniques (ST), comprenant le pôle sciences et techniques des activités physiques et sportives (STAPS)",
+                  "source_ref": "s3"
+                },
+                {
+                  "locator": "section:Instituts_universitaires_de_technologie",
+                  "original_text": "[modifier | modifier le code]\nLe site Galilée de Polytech'Orléans.\nLe bâtiment IIIA, accueillant le pôle informatique (UFR ST) et le Laboratoire d'informatique fondamentale d'Orléans.\nL'université d'Orléans comprend quatre instituts universitaires de technologie (IUT) : l'IUT d'Orléans, l'IUT de Bourges, l'IUT de Chartres et l'IUT de l'Indre (Châteauroux-Issoudun). L'IUT d'Orléans dispense des formations pour six bachelors universitaires de technologie (BUT) :\nBUT en Chimie\nBUT en gestion des entreprises et des administrations (GEA), parcours financier, ressources humaines ou management\nBUT en génie mécanique et productique (GMP)\nBUT en génie thermique et énergie (GTE)\nBUT en informatique\nBUT en qualité logistique industrielle et organisation (QLIO)",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "The University of Orléans (Université d'Orléans) is a public, multidisciplinary French university based in Orléans, in the Centre-Val de Loire region. Its teaching and research sites include Orléans-La Source and locations in Bourges, Chartres, Châteauroux, Issoudun, Blois and Tours. The Château de la Source houses the university presidency.\n\nThe institution's history reaches back to a medieval university founded by papal bulls on 27 January 1306 and suppressed in 1793. The modern university was created as the Université d'Orléans-Tours by a decree of 14 April 1966, effective from 1 January 1966. It initially brought together university teaching in Orléans and Tours; the separation of the two was formalised on 1 January 1971. Earlier modern developments included a scientific university college established in 1960, a municipal law school in 1962 and a literary studies centre in 1964.\n\nThe university's academic units cover law, economics and management; languages, literature and humanities; and science and technology, including sport. Its structure includes four university institutes of technology and the engineering school Polytech Orléans, formed in 2002 through a merger of two engineering schools. The French-language source reports 18,177 students and 991 teachers on 1 January 2025."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "teaching_languages": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "Régime linguistique\nFrançais",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": [
+                "fr"
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "website": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P856:0",
+                  "original_text": "{\"property\": \"P856\", \"property_label\": \"official website\", \"statement_id\": \"Q13334$99C97DD6-C2DE-4EA3-9AB8-B108BAAB7D29\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"https://www.univ-orleans.fr/\", \"reference_count\": 2}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "https://www.univ-orleans.fr/",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "qid": "Q13334",
+      "record_revision": 1,
+      "related_entities": {
+        "medieval": {
+          "kind": "institution",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:L.27ancienne_universit.C3.A9_.281306-1793.29",
+                    "original_text": "l'université d'Orléans",
+                    "source_ref": "s3"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "fr",
+                  "text": "ancienne université d'Orléans"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q23197733"
+        }
+      },
+      "relationships": {
+        "predecessor": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P1365:0",
+                    "original_text": "{\"property\": \"P1365\", \"property_label\": \"replaces\", \"statement_id\": \"Q13334$ca1e5c61-423a-72a9-acd1-ac2b47c7986f\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 23197733, \"id\": \"Q23197733\"}}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q23197733\", \"labels\": {\"fr\": \"ancienne université d'Orléans\", \"en\": \"Old University of Orléans\"}, \"descriptions\": {\"fr\": \"université française d'ancien régime située à Orléans\", \"en\": \"former university of Orléans\"}}",
+                    "source_ref": "s11"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "target_ref": "related:medieval"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ]
+      },
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "ranking_identifier",
+          "reviewed_institution_type"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "included"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T11:53:32.975616+00:00",
+          "revision_id": 2548483913,
+          "source_qid": "Q13334",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2548483913"
+        },
+        "s10": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T11:54:12.680646+00:00",
+          "revision_id": 2560433932,
+          "source_qid": "Q2944885",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2560433932"
+        },
+        "s11": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T11:54:17.732567+00:00",
+          "revision_id": 2526854538,
+          "source_qid": "Q23197733",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2526854538"
+        },
+        "s12": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T11:54:22.277297+00:00",
+          "revision_id": 2503624078,
+          "source_qid": "Q120489103",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2503624078"
+        },
+        "s13": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T11:54:26.893093+00:00",
+          "revision_id": 2486960514,
+          "source_qid": "Q96000294",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2486960514"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikipedia",
+          "language": "en",
+          "page_id": 6605415,
+          "publisher_role": "encyclopedia",
+          "retrieved_at": "2026-11-06T11:53:48.984840+00:00",
+          "revision_id": 1376844993,
+          "url": "https://en.wikipedia.org/w/index.php?oldid=1376844993"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikipedia",
+          "language": "fr",
+          "page_id": 1001371,
+          "publisher_role": "encyclopedia",
+          "retrieved_at": "2026-11-06T11:53:53.569107+00:00",
+          "revision_id": 239972317,
+          "url": "https://fr.wikipedia.org/w/index.php?oldid=239972317"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T09:15:59.048669+00:00",
+          "revision_id": 2468502188,
+          "source_qid": "Q3551775",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2468502188"
+        },
+        "s5": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T08:48:57.696840+00:00",
+          "revision_id": 2559546120,
+          "source_qid": "Q875538",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2559546120"
+        },
+        "s6": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T09:16:05.838184+00:00",
+          "revision_id": 2564285160,
+          "source_qid": "Q142",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2564285160"
+        },
+        "s7": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T11:53:58.388693+00:00",
+          "revision_id": 2086458592,
+          "source_qid": "Q28952441",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2086458592"
+        },
+        "s8": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T11:54:02.694936+00:00",
+          "revision_id": 1241537263,
+          "source_qid": "Q64711543",
+          "url": "https://www.wikidata.org/w/index.php?oldid=1241537263"
+        },
+        "s9": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T11:54:07.209809+00:00",
+          "revision_id": 2560443616,
+          "source_qid": "Q20735682",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2560443616"
+        }
+      }
+    },
+    "open_requests": [],
+    "proposed_at": "2026-11-06T11:57:02.492999+00:00",
+    "qid": "Q13334",
+    "research": {
+      "model": "not_reported",
+      "prompt_sha256": "483492772f4f3454e9fd1fc8267ab8c0f0105aa258b3ddc5372829b316bd60e1",
+      "reasoning_effort": "not_reported",
+      "schema_sha256": "92e942f4fbf2ae28964462ea9ffa8312c5ee16a077a1e08b40aaaf741512422e",
+      "session": "/root/trial_research_q13334"
+    },
+    "retrieval_failures": [],
+    "review_status": "unreviewed",
+    "seed": {
+      "channels": [
+        "ranking_identifier",
+        "reviewed_institution_type"
+      ],
+      "import_id": "seed-84c3beb45367905f",
+      "screening_status": "included"
+    },
+    "transport": {
+      "base_commit": "0d3dad9605857cc66371d3661d30eabe52f65819",
+      "protocol": "native-subagent-v1",
+      "repository": "ider-zh/university-seed-curation",
+      "review_policy": {
+        "id": "source-grounded-flexible-v2",
+        "sha256": "b8ed7d2897e4c31dbd81b1379aafdc1077a21d1a33949edbd2d896b0adf99db2"
+      },
+      "schema_sha256": "bfa496eafa9dffca56146214168db7f000b09161b8993129632e7202e1c88833",
+      "seed_catalog_sha256": "84c3beb45367905f513d650684283dd62a9c1b77962bdc34151a6ef05bfa03d4"
+    },
+    "type": "university-proposal-v1"
+  },
+  "review": {
+    "contexts_checked": 9,
+    "coverage_checks": [
+      {
+        "group": "identity",
+        "reason": "Names, public university identity and presidency are supported by the article and Wikidata.",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "reason": "The campus, château headquarters and institution item point are separate.",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "reason": "Medieval predecessor and modern institution events retain their distinct subjects and source precision.",
+        "status": "checked"
+      },
+      {
+        "group": "population",
+        "reason": "Article and Wikidata observations are retained separately, including differing values for the same year. BIATSS source scope is preserved; downstream comparison needs explicit scope parsing.",
+        "status": "checked"
+      },
+      {
+        "group": "finance",
+        "reason": "The article reports a 2025 budget of 161 million euros.",
+        "status": "checked"
+      },
+      {
+        "group": "profile",
+        "reason": "Academic disciplines, language, motto, website and summary are grounded in the supplied snapshot.",
+        "status": "checked"
+      }
+    ],
+    "decision": "approve",
+    "facts_checked": 60,
+    "full_refresh": true,
+    "inferences": [
+      {
+        "id": "$.population.administrative_staff:c1",
+        "reason": "s3 reports 271 BIATSS on 1 January 2025; administrative staff is a broader controlled category, while the original BIATSS wording preserves the source scope."
+      }
+    ],
+    "model": "not_reported",
+    "proposal_sha256": "dea3a6aaefd402b069c99e3fc1507b0754744a65794a3623191af6c9b214cf19",
+    "qid": "Q13334",
+    "reasoning_effort": "not_reported",
+    "record_sha256": "827020c72ca7c312bfb2ca8c658d233ba70dc947d5f4471d2e11579c7e8add68",
+    "request_responses": [],
+    "requests": [],
+    "review_session": "/root/trial_review_two",
+    "reviewed_at": "2026-11-06T11:59:13.164217+00:00",
+    "source_revisions_checked": 13
+  },
+  "review_result_sha256": "4fb75a340118df4a637572b84f601adcb19cc77af101ed1fdd6adc785c49083c",
+  "type": "university-unified-receipt-v1"
+}
