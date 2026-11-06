@@ -11,7 +11,8 @@ from university_curation.sources import Cache
 def main():
     if hasattr(sys.stdout, "reconfigure"): sys.stdout.reconfigure(encoding="utf-8")
     p = argparse.ArgumentParser(description=__doc__); p.add_argument("--cache", default=os.environ.get("UNIVERSITY_SOURCE_CACHE", ".private/cache/sources"))
-    p.add_argument("--maxlag", type=int, default=5, help="API replication-lag tolerance in seconds, 1..60; default 5")
+    p.add_argument("--maxlag", type=int, default=30, help="API replication-lag tolerance in seconds, 1..60; default 30")
+    p.add_argument("--timeout", type=float, default=90, help="HTTP socket timeout in seconds, 1..600; default 90")
     commands = p.add_subparsers(dest="command", required=True)
     get = commands.add_parser("wikidata-get"); get.add_argument("qid"); get.add_argument("--properties", nargs="*", default=[])
     get.add_argument("--languages", nargs="+", default=["en", "zh"]); get.add_argument("--resolve", nargs="*", default=[]); get.add_argument("--linked-limit", type=int, default=12); get.add_argument("--refresh", action="store_true")
@@ -20,7 +21,7 @@ def main():
     target = page.add_mutually_exclusive_group(required=True); target.add_argument("--qid"); target.add_argument("--title"); target.add_argument("--oldid", type=int)
     page.add_argument("--refresh", action="store_true"); page.add_argument("--view", choices=["summary", "infobox", "text"], default="summary")
     page.add_argument("--section"); page.add_argument("--offset", type=int, default=0); page.add_argument("--max-chars", type=int, default=12000)
-    args = p.parse_args(); cache = Cache(args.cache, maxlag=args.maxlag)
+    args = p.parse_args(); cache = Cache(args.cache, maxlag=args.maxlag, timeout=args.timeout)
     if args.command == "wikidata-get": result = cache.wikidata_get(args.qid, args.properties, args.languages, args.resolve, args.linked_limit, args.refresh)
     elif args.command == "wikidata-search": result = cache.wikidata_search(args.query, args.language, args.limit)
     else:

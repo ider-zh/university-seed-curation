@@ -28,3 +28,19 @@ class RetryTests(unittest.TestCase):
              patch.object(sources.time,'sleep') as sleep,patch.object(sources.random,'uniform',return_value=0):
             with self.assertRaises(sources.RetryableSourceError):sources.download('https://www.wikidata.org/w/api.php')
             self.assertEqual([c.args[0] for c in sleep.call_args_list],[5,10])
+
+    def test_timeout_retries_with_configurable_socket_timeout(self):
+        with patch.object(sources,'urlopen',side_effect=[TimeoutError('slow'),Response({'ok':True})]) as call, patch.object(sources.time,'sleep'):
+            self.assertEqual(sources.download('https://www.wikidata.org',timeout=120),{'ok':True})
+            self.assertEqual(call.call_args.kwargs['timeout'],120)
+
+    def test_wrapped_timeout_exhaustion_is_retryable(self):
+        from urllib.error import URLError
+        with patch.object(sources,'urlopen',side_effect=URLError(TimeoutError('slow'))), patch.object(sources.time,'sleep'):
+            with self.assertRaises(sources.RetryableSourceError) as caught: sources.download('https://www.wikidata.org')
+            self.assertEqual(caught.exception.code,'timeout')
+
+    def test_other_connection_errors_are_not_labelled_timeout(self):
+        from urllib.error import URLError
+        with patch.object(sources,'urlopen',side_effect=URLError('DNS failure')):
+            with self.assertRaises(URLError): sources.download('https://www.wikidata.org')

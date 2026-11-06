@@ -1,67 +1,41 @@
 ---
 name: university-curation
-description: Orchestrate native Research and offline Review subagents for university data, recover tasks and publish approved records directly to main through the connected GitHub plugin.
+description: Orchestrate native university Research and offline core Review subagents, recover tasks and publish approved structured data through concurrent-group pull requests with auto-merge.
 ---
 
 # University curation
 
-Use one Task Agent in one workspace, native Research and Review subagents, and
-only the main branch. Read AGENTS.md, docs/handoff.md, docs/agent-workflow.md and
-docs/commands.md. Start with references/task-agent.md. Research and Review role
-references describe subagent responsibilities, not standalone worker services.
+Use one Task Agent per workspace. Multiple groups may work concurrently.
+Read AGENTS.md, docs/agent-workflow.md, docs/commands.md, docs/source-tools.md,
+docs/review-scope-v3.md and references/task-agent.md from the repository root.
+Reuse the checkout, verify origin, fetch trusted main and preserve private caches.
+Use the host GitHub plugin and native subagents, no shell credentials or model CLI.
 
-Verify the checkout origin, fetch public origin/main and preserve private work.
-Clone into a child directory only when absent. Use trusted main code. The host
-owns GitHub plugin and native subagent tools; Python never launches a model or
-requires a shell token, signing key, gh, Codex CLI, SSH or another host.
+1. Run doctor and next --limit 5. Inspect open data PR QIDs to reduce duplicate
+   research. Follow recovery, Review, revision and source-retry priorities.
+2. research-prepare one QID; send its exact prompt/schema to its own Research
+   subagent. Record actual metadata and compile, then unified-proposal.
+3. review-prepare --research-job into a fresh private job; dispatch that QID's
+   dedicated independent Review session. Use only its frozen evidence, prompt
+   and schema. Compile the actual result; apply core-review-v3 scope, keeping
+   sourced secondary fields without independent factual checks.
+4. Preserve request IDs, at most two revisions, private snapshots and retry state.
+   Checkpoint rejected/unresolved work through a generated PR.
+5. unified-publish up to five approved schools. Execute its plugin plan: unique
+   data/ branch, blobs/tree/commit/ref, PR targeting main, enable-auto-merge.
+   Required CI validates exact reviewed data and concurrent baselines. Update
+   branches after main advances; rebuild and re-review affected-QID conflicts.
+6. Wait for actual merge, fetch main and publication-confirm the merge/squash
+   commit. A successful branch push or opened PR is not publication.
 
-1. Run doctor and next --limit 5. Follow returned actions/reasons, prioritizing
-   interrupted publication, approved work, Review and revisions. Do not read or
-   create coordination branches, PRs, permits or distributed role registries.
-2. Run research-prepare for one QID in a fresh private job. Dispatch its exact
-   prompt/schema to a native Research subagent. Record actual metadata, compile
-   its JSON, then use unified-proposal before Review.
-3. Run review-prepare with --research-job into a fresh private Review directory.
-   Create a dedicated Review subagent for each QID and pass only its prepared
-   packet/prompt/schema. Review different QIDs in parallel. Compile each result
-   with its actual Review session ID, distinct from every Research session and
-   every other QID's Review session.
-   It must check the frozen hash-verified snapshot offline, not re-fetch sources
-   or read Research-private model traces. Run review-compile on its actual JSON.
-4. On request_changes, retain request IDs/proposal hashes, start fresh Research
-   with saved feedback and repeat Review. After rejection/unresolved, publish and
-   confirm a compact checkpoint of questions/revision counters before continuing.
-   Maximum two revisions. Never fabricate
-   approval or publish unresolved cases. next returns pending actions and recovery
-   reasons from local checkpoints and main's compact backlog.
-5. Run unified-publish for up to five approved schools. Execute exactly its
-   GitHub blob/tree/commit/ref plan with expected_sha and force:false on main.
-   Refresh and re-review on conflict. Fetch the actual published main and run
-   publication-confirm before reporting completion.
-
-Keep at most five active data calls across Research and Review combined, with
-one active subagent per QID. Prioritize waiting Reviews, reserve capacity for
-them and heartbeat active jobs. If one reviewer is lost, replace only that QID's
-Review in a fresh session while other approvals remain valid on the same main
-baseline. Use the same workspace for private recovery.
-After a cache/job loss, rebuild evidence; a public historical proposal is not a
-substitute for captured sources. Historical receipts remain audit artifacts.
-
-Exhaust Wikidata and relevant multilingual Wikipedia before targeted external
-gap research. Limits per QID: 8 queries, 12 pages, 5 domains, 2 hops, 15 minutes;
-stop after two searches without credible new information. Use the bounded
-external capture adapter, hash-bound paragraph evidence and shared private
-30-day cache. Read docs/deep-research.md and docs/source-tools.md.
-
-Preserve institution/system/campus/predecessor boundaries, original language,
-periods, units and conflicts. Omit absent business values; never invent zeros.
-Root P625 is script-owned and institution-scoped. Use deterministic append-only
-materialization, not hand-edited canonical JSON or receipt/hash repairs.
-Follow immutable docs/review-policy-v2.md. Full six-group surveys alone advance
-update_datetime; partial accepted work has a separate seven-day retry interval.
-
-Generate a sourced neutral English profile.summary when possible, normally
-180–260 words, 90–179 for sparse evidence, in 2–3 paragraphs; read
-docs/university-overview.md. Keep raw pages/dumps, captures, prompts, model
-outputs/traces and credentials private. Only approved records, permitted short
-excerpts, manifests, receipts and compact task metadata are published.
+Five concurrent Research/Review calls combined per group; reserve Review capacity,
+heartbeat jobs and replace lost Review sessions independently. Never drop another
+group's records or tasks when resolving conflicts. Never push data directly to main.
+Use shared private 30-day cache, 90-second HTTP timeout and maxlag=30 defaults.
+Root P625 remains script-owned and institution-scoped; preserve subjects, periods,
+units and conflicts. Research follows docs/deep-research.md and the sourced summary
+requirements in docs/university-overview.md. Immutable review-policy-v2.md guides
+facts in scope; docs/review-scope-v3.md defines the mandatory independent checks.
+Only complete six-group successful surveys advance freshness. Keep raw sources,
+model prompts/results/traces and credentials private. Publish only generated data,
+receipts, manifests and pending-task metadata. Historical receipts remain unchanged.

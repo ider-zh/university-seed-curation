@@ -19,14 +19,15 @@ from .domain_refresh import materialize
 from .native_research import _base, _origin, _write
 from .research_schema import GROUPS
 from .git_data import blob
+from .review_scope import scope, receipt_scope, secondary_request
 from .records import encode, instant, qid as valid_qid
 from .web_sources import verify_packet as verify_web_packet
 
 
 def _prompt(value, policy):
     return (REVIEW_RULES+'\nREVIEW POLICY:\n'+policy+'\nReturn only one JSON object matching the supplied schema. '
-        'The source packet is a revision-bound, hash-checked evidence snapshot. Review every fact, context, source locator, '
-        'subject, period and unit against this snapshot. Do not fetch sources again. '
+        'CORE REVIEW V3: Only facts and contexts arrays are mandatory factual review. '
+        'Check their subject, period, unit and evidence against the frozen snapshot. Other proposal fields are unreviewed supplementary data; do not object to secondary facts, omissions, summaries, leadership, tenure, motto or campus counts. Coverage checks assess Research survey completion only, not every field. Only open_requests outside waived_request_ids require responses. Do not fetch sources again. '
         'You are the Review subagent in a session distinct from the Research subagent. '
         'Independence means independently assessing the frozen evidence and exact proposal, '
         'not fetching any site again or claiming a cryptographically signed identity. '
@@ -66,9 +67,11 @@ def prepare(repo, proposal_file, job, base_ref='origin/main', research_job=None)
         _,source=_root(packet)
         if root.get('id')!=entity or root.get('lastrevid')!=source['revision_id']:
             raise ValueError('Research root snapshot revision mismatch')
-    point=_verify_proposal(proposal,baseline,packet,root); facts,contexts=_fact_scope(proposal['delta'])
+    point=_verify_proposal(proposal,baseline,packet,root); facts,contexts,skipped=scope(proposal['delta'])
     value={'proposal':proposal,'baseline':baseline,'facts':facts,'contexts':contexts,
-        'source_corpus':packet['source_corpus'],'root_entity':root,'coordinate_projection':point}
+        'source_corpus':packet['source_corpus'],'root_entity':root,'coordinate_projection':point,
+        'review_scope':receipt_scope(proposal['delta']),
+        'waived_request_ids':[r['request_id'] for r in proposal.get('open_requests',[]) if secondary_request(r)]}
     prompt=_prompt(value,policy).encode('utf-8'); shape=encode(REVIEW_SCHEMA)
     for name,data in (('review-packet.json',encode(packet)),('root-entity.json',encode(root)),('review-input.json',encode(value)),
                       ('prompt.txt',prompt),('output.schema.json',shape)): _write(job/name,data)
@@ -108,9 +111,11 @@ def compile(repo, job, result_file, session, model, effort='medium', completed_a
     verify_web_packet(packet)
     root=load_json((job/'root-entity.json').read_bytes()); value=load_json((job/'review-input.json').read_bytes())
     if proposal.get('qid')!=entity or proposal.get('seed')!=seed_metadata(catalog[entity],digest): raise ValueError('Review proposal identity or seed changed')
-    point=_verify_proposal(proposal,baseline,packet,root); facts,contexts=_fact_scope(proposal['delta'])
+    point=_verify_proposal(proposal,baseline,packet,root); facts,contexts,skipped=scope(proposal['delta'])
     reconstructed={'proposal':proposal,'baseline':baseline,'facts':facts,'contexts':contexts,
-        'source_corpus':packet['source_corpus'],'root_entity':root,'coordinate_projection':point}
+        'source_corpus':packet['source_corpus'],'root_entity':root,'coordinate_projection':point,
+        'review_scope':receipt_scope(proposal['delta']),
+        'waived_request_ids':[r['request_id'] for r in proposal.get('open_requests',[]) if secondary_request(r)]}
     if value!=reconstructed: raise ValueError('Prepared Review input differs from independently captured sources')
     policy=blob(repo,base,'docs/review-policy-v2.md').decode('utf-8').replace('\r\n','\n')
     if sha(policy.encode())!=manifest['review_policy_sha256'] or (job/'prompt.txt').read_bytes()!=_prompt(value,policy).encode('utf-8'):
@@ -121,10 +126,11 @@ def compile(repo, job, result_file, session, model, effort='medium', completed_a
     expected={r['id'] for r in facts+contexts}; checks=verdict['checks']
     if len(checks)!=len(expected) or {r['id'] for r in checks}!=expected: raise ValueError('Review fact/context coverage incomplete')
     if len(verdict['coverage_checks'])!=len(GROUPS) or {r['group'] for r in verdict['coverage_checks']}!=set(GROUPS): raise ValueError('Review group coverage incomplete')
-    request_ids={r['request_id'] for r in proposal.get('open_requests',[])}; responses=verdict['request_responses']
+    request_ids={r['request_id'] for r in proposal.get('open_requests',[]) if not secondary_request(r)}; responses=verdict['request_responses']
     if len(responses)!=len(request_ids) or {r['request_id'] for r in responses}!=request_ids: raise ValueError('Review request response coverage incomplete')
     for row in checks+verdict['coverage_checks']+responses+verdict['requests']: _safe_reason(row['reason'])
     for row in verdict['requests']:
+        if secondary_request(row): raise ValueError('Secondary field is outside independent factual Review scope')
         if not re.fullmatch(r'[A-Za-z][A-Za-z0-9_.-]{0,127}',row['field']): raise ValueError('Invalid requested field')
     supported=all(row['supported'] and row['support_basis'] in ('direct','reasonable_inference') for row in checks)
     addressed=all(row['status']=='addressed' for row in responses)
@@ -138,6 +144,8 @@ def compile(repo, job, result_file, session, model, effort='medium', completed_a
     record=materialize(baseline,proposal['delta'],proposal['seed'],at,full) if verdict['decision']=='approve' else None
     inferences=[{'id':r['id'],'reason':_safe_reason(r['reason'])} for r in checks if r['support_basis']=='reasonable_inference']
     public={'decision':verdict['decision'],'qid':entity,'reviewed_at':at,'proposal_sha256':sha(encode(proposal)),
+        'review_scope':receipt_scope(proposal['delta']),
+        'waived_requests':[dict(r, waiver='outside_core_review_v3') for r in proposal.get('open_requests',[]) if secondary_request(r)],
         'facts_checked':len(facts),'contexts_checked':len(contexts),'source_revisions_checked':len(proposal['delta']['sources']),
         'requests':deepcopy(verdict['requests']),'request_responses':deepcopy(responses),'coverage_checks':deepcopy(verdict['coverage_checks']),
         'model':model,'reasoning_effort':effort,'review_session':session,'full_refresh':full,'inferences':inferences}

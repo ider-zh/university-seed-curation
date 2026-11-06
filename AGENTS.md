@@ -1,68 +1,49 @@
 # Agent operating contract
 
-Use one Task Agent in one workspace to orchestrate distinct native Research and
-Review subagents. Develop and publish directly on `main`. Do not create working,
-data or coordination branches, worktrees, PRs, PR permits, role-signing keys,
-separate Review services, or a legacy CLI runtime.
+Multiple Agent groups may work concurrently, each with one Task Agent and its
+own checkout/private state. Reuse the checkout, verify origin and fetch main.
+Develop and publish through unique branches and pull requests targeting main.
+Never push data or checkpoints directly to main. Use the connected GitHub plugin;
+no shell token, signing key, gh, SSH or separate model runtime is required.
 
-Read docs/handoff.md, docs/agent-workflow.md and the bundled
-.agents/skills/university-curation/SKILL.md. The manager startup prompt is
-.agents/skills/university-curation/references/task-agent.md.
+Read docs/handoff.md, docs/agent-workflow.md, docs/commands.md and the bundled
+.agents/skills/university-curation/SKILL.md. Start from its references/task-agent.md.
 
-- Reuse the checkout, verify origin, fetch public origin/main and preserve private
-  caches. Clone into a child directory only when absent. Use trusted main code.
-- The host owns the connected GitHub plugin and native subagent tools. Python
-  prepares evidence, validates JSON and emits publication operations; it never
-  launches models or inherits plugin credentials. No shell token, gh, SSH, Codex
-  CLI, signing key or another host is required. All GitHub writes use the plugin.
-- Task Agent selects tasks, prepares/compiles jobs, tracks retries, manages
-  revisions and publishes. It must not perform the subagents' primary university
-  research or fabricate Review approval. Each Research subagent handles one QID in its own session.
-  Give each QID its own Review subagent session, distinct from every Research
-  session and every other QID's Review session. Review different QIDs in parallel.
-- Each QID's Review subagent checks every fact, context, locator, period, unit,
-  all six coverage groups, summary and prior request against the exact prepared,
-  hash-verified offline Research snapshot. Never re-fetch Review sources or give
-  Review Research-private model traces. Only the manager publishes.
-- Local atomic checkpoints under .private/native track active jobs and source
-  failures. data/workflow/tasks.json carries portable pending-task metadata on
-  main; approved records, receipts and batch manifests establish publication.
-  Never infer publication from an old PR merge, task status or a local bundle.
-- Run next --limit 5; it returns actions and reasons from main plus local jobs.
-  It does not claim tasks. Prepare reserves the QID locally. One manager only;
-  independent managers in other workspaces are unsupported. Maximum five
-  concurrent data calls total, across Research and Review combined;
-  prioritize waiting Reviews and reserve capacity for them.
-  Prefer Terra medium when offered; report actual metadata or not_reported.
-  Heartbeat active jobs; discard results superseded by a newer job for the QID.
-- On request_changes, retain request IDs and exact proposal digests. Prepare a
-  fresh Research attempt with the saved feedback, maximum two revisions per QID.
-  After request_changes/unresolved, checkpoint the compact task metadata to main
-  and confirm it before continuing. Unresolved schools are not published. Source failures enter retry_wait, never
-  an empty accepted record or a successful refresh.
-- Exhaust Wikidata and relevant multilingual Wikipedia first. External searches
-  address specific gaps only: at most 8 queries, 12 pages, 5 domains, 2 hops and
-  15 minutes per QID. Use the bounded capture adapter; stop after two searches
-  without credible new evidence. Reuse the shared private 30-day cache.
-- Distinguish institutions, systems, campuses, faculties, predecessors and
-  buildings. Preserve original names, subject attribution, statistical periods,
-  units, qualifiers and source conflicts. Never invent absent values or zeros.
-  Root Wikidata P625 is script-owned and institution-scoped, never automatically
-  assigned to a campus/headquarters. Follow immutable docs/review-policy-v2.md.
-- Generate a neutral evidenced English profile.summary when support permits:
-  normally 180–260 words, 90–179 for sparse historical evidence, 2–3 paragraphs.
-- Use script-generated canonical records and append-only deltas. Keep existing
-  observations; do not hand-edit records, receipts, record revisions or hashes.
-  Only a complete six-group Research + Review survey advances update_datetime.
-  Partial accepted records use a separate seven-day retry interval.
-- unified-publish accepts only exact approved records and emits an expected-SHA,
-  non-forced main update. On conflict fetch main and prepare fresh offline Review
-  on the new baseline. Verify actual remote files and run publication-confirm
-  before declaring completion. At most five schools per publication batch.
-- Public output contains approved structured records, permitted short evidence,
-  receipts, batch manifests and compact workflow metadata. Raw dumps/pages,
-  captures, cache bodies, private prompts/results/traces and credentials stay
-  private. Historical proposals under data/history are unreviewed audit material.
-- Schema/policy changes and official external dataset releases require an
-  operator decision. Candidate-list import is not school identity acceptance.
-  Offline tests do not establish actual subagent execution or live publication.
+- Each QID has its own Research subagent and independent Review subagent session.
+  The Task Agent orchestrates and publishes, never fabricates factual Review.
+  Maximum five concurrent Research/Review calls per group, at most five QIDs per
+  batch; reserve capacity for waiting Reviews. Heartbeat active jobs.
+- Select with next --limit 5. Random selection is advisory, not a distributed
+  claim. Groups can overlap; PR checks reject stale affected-school baselines.
+  Inspect open data PR QIDs before dispatch to reduce duplicate research.
+- Use trusted main code. Source captures, prompts, model traces, raw pages/dumps
+  and credentials remain private. Shared local source cache TTL is 30 days.
+  Wikimedia HTTP socket timeout defaults to 90 seconds, maxlag to 30; retryable
+  failures enter retry_wait and are never accepted as empty successful data.
+- Review uses only the frozen hash-verified Research packet, no new retrieval or
+  private Research traces. Apply docs/review-scope-v3.md and immutable factual
+  guidance docs/review-policy-v2.md. Only mandatory core IDs need factual checks;
+  supplementary data remains sourced and structurally validated. Receipts
+  disclose reviewed/unreviewed scope and explicitly waived historical objections.
+- Preserve institution/system/campus/predecessor boundaries, source meanings,
+  periods, units, currencies and conflicts. Root P625 is script-owned and
+  institution-scoped. Do not invent absent values or zeros. Research generates
+  a sourced neutral English summary under docs/university-overview.md.
+- Research-compile, unified-proposal, review-prepare and review-compile produce
+  exact append-only structured data. No hand-editing canonical records, hashes,
+  receipts or revisions. Only full successful six-group surveys advance freshness.
+- Retain proposal-bound request IDs; maximum two Research revision rounds.
+  Rejected/unresolved work stays unpublished. Checkpoint pending metadata via PR.
+- unified-publish emits a unique data branch, blob/tree/commit/ref operations,
+  PR creation and enable-auto-merge. Execute the generated plan through GitHub.
+  Auto-merge requires protected-main status checks. Keep the source branch
+  current; if validation reports a changed QID or task baseline, fetch main,
+  rebind unchanged Research only if valid, prepare fresh Review, rebuild the
+  bundle and replace/close the obsolete PR. Never resolve conflicts by dropping
+  another group's records, receipts or pending tasks.
+- Wait until the PR actually merges, fetch origin/main, and publication-confirm
+  the actual merge/squash commit and exact file hashes. A branch push, PR opened,
+  successful CI or auto-merge request is not completed publication.
+- Schema/policy changes and formal external releases require an operator
+  decision. Historical receipts are immutable audit artifacts. Ordinary code
+  and data changes both use PRs; only generated data belongs in data/ branches.

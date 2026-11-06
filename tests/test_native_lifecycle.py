@@ -79,6 +79,37 @@ class NativeLifecycleTests(unittest.TestCase):
         result=self.private/(name+'-result.json');result.write_bytes(encode(output))
         compiled=self.run_cli('review-compile','--job',review,'--result',result,'--session',session or 'review-'+name,'--model','test-model')
         return review,compiled
+    def test_data_pr_validates_current_baseline_and_rejects_same_qid_race(self):
+        from university_curation import pr_validation
+        research,proposal=self.research()
+        review,compiled=self.review(research,proposal,'pr-review')
+        bundle=self.private/'pr-delivery'
+        self.run_cli('unified-publish','--proposal',proposal,'--review-job',review,
+            '--review-attempt',compiled['private_attempt'],'--batch-id','pr-fixture','--output',bundle)
+        plan=load_json((bundle/'operations.json').read_bytes()); base=plan['base_commit']
+        self.git('checkout','-b','data/fixture')
+        for path in plan['files']:
+            target=self.root/path; target.parent.mkdir(parents=True,exist_ok=True)
+            target.write_bytes((bundle/path).read_bytes())
+        self.git('add','data'); self.git('commit','-m','data proposal'); head=self.git('rev-parse','HEAD')
+        self.git('checkout','main')
+        (self.root/'docs/parallel.txt').write_text('Another group advanced main')
+        self.commit('unrelated main change'); current=self.git('rev-parse','HEAD')
+        with patch.object(pr_validation,'_base',side_effect=native_research._base):
+            self.assertEqual(pr_validation.validate_pr(self.root,current,head)['qids'],['Q101'])
+            self.git('merge','--no-ff','data/fixture','-m','Merge data PR')
+            merged=self.git('rev-parse','HEAD')
+            self.assertEqual(pr_validation.validate_pr(self.root,current,head,merged)['status'],'validated')
+            self.git('update-ref','refs/remotes/origin/main',merged)
+            self.assertEqual(self.run_cli('publication-confirm','--bundle',bundle,'--published-ref',merged)['status'],'publication_verified')
+            # Another group changed the same university on current main.
+            self.git('checkout','-b','changed-school',current)
+            record_path=next(p for p in plan['files'] if p.startswith('data/universities/'))
+            target=self.root/record_path; target.parent.mkdir(parents=True,exist_ok=True)
+            target.write_bytes((bundle/record_path).read_bytes()); self.commit('concurrent same QID')
+            with self.assertRaisesRegex(ValueError,'baseline changed'):
+                pr_validation.validate_pr(self.root,'HEAD',head)
+
     def test_offline_rebinding_and_interrupted_publication_confirmation(self):
         research,proposal=self.research()
         # Main may advance while native subagents are working on another school.
@@ -92,8 +123,10 @@ class NativeLifecycleTests(unittest.TestCase):
         arguments[4]=review;arguments[6]=compiled['private_attempt']
         self.run_cli(*arguments)
         plan=load_json((bundle/'operations.json').read_bytes())
-        self.assertEqual(plan['operations'][-1]['arguments']['branch_name'],'main')
-        self.assertFalse(plan['operations'][-1]['arguments']['force'])
+        self.assertEqual(plan['kind'],'pull_request')
+        self.assertTrue(plan['branch'].startswith('data/'))
+        self.assertEqual(plan['operations'][-1]['tool'],'mcp__codex_apps__github_enable_auto_merge')
+        self.assertFalse(next(o for o in plan['operations'] if o['tool'].endswith('update_ref'))['arguments']['force'])
         self.assertNotIn('Q101',load_json((bundle/manager.BACKLOG).read_bytes())['tasks'])
         self.assertEqual(load_json((bundle/manager.BACKLOG).read_bytes())['tasks']['Q102'],self.public['tasks']['Q102'])
         # Materialize exactly the plugin bundle in the isolated test repository.

@@ -1,3 +1,11 @@
+# Current publication contract
+
+All publication and checkpoint commands now emit **PR bundles**: unique data/
+branch, PR targeting main, then enable-auto-merge. Execute generated plugin
+operations sequentially. No command emits a main ref update. Wait for merge,
+fetch main and confirm its merge/squash SHA. See agent-workflow.md for concurrent
+baseline handling and review-scope-v3.md for factual Review coverage.
+
 # Manager commands
 
 Run from the existing checkout, or pass --workspace. Use Python 3.11+ and Git.
@@ -84,9 +92,9 @@ python .agents/skills/university-curation/scripts/agent.py unified-publish --pro
 ```
 
 Pass aligned repeated --proposal/--review-job/--review-attempt arguments for up
-to five schools. Recheck actual main, then execute the exact operations.json
+to five schools. Create the PR against main, then execute the exact operations.json
 through the GitHub plugin. On a SHA conflict fetch main and repeat offline Review.
-Never force. If main advances after approval or bundle generation, rebind the
+Never force. If an affected QID/task changes or conflict prevents merging, rebind the
 current manager proposal into a new private path (do not use a Review copy):
 
 ```bash

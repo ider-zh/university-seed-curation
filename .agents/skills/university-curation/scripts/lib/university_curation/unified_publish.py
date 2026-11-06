@@ -13,6 +13,7 @@ from .workflow_contract import check_proposal
 from .native_research import _base
 from .git_data import batch_slug, blob, canonical_json, no_legacy_duplicate, record_relative
 from .preferred import validate, recompute
+from .review_scope import scope, validate_receipt
 from .records import encode, instant
 
 
@@ -65,7 +66,8 @@ def _verified(repo, base, proposal, review_job, attempt, trust, catalog, catalog
     if not verdict.get('source_revisions_checked') == len(proposal['delta']['sources']): raise ValueError('Incomplete source coverage')
     from .research_contract import _fact_scope
     from .research_schema import GROUPS
-    facts,contexts=_fact_scope(proposal['delta'])
+    facts,contexts,_=scope(proposal['delta'])
+    validate_receipt(proposal['delta'],verdict)
     if verdict['facts_checked']!=len(facts) or verdict['contexts_checked']!=len(contexts) or {r['group'] for r in verdict['coverage_checks']}!=set(GROUPS):
         raise ValueError('Incomplete Review coverage')
     record=materialize(baseline,proposal['delta'],proposal['seed'],verdict['reviewed_at'],verdict['full_refresh'])
@@ -159,6 +161,7 @@ def verify_files(repo, base, files, trust):
                 attribution!='distinct_native_research_and_review_subagents;not_cryptographic_identity'):
             raise ValueError('Invalid unified receipt')
         proposal=receipt['research']; verdict=receipt['review']; baseline,_=baseline_at(repo,base,entity)
+        validate_receipt(proposal['delta'],verdict)
         reviewed.append((proposal,verdict))
         check_proposal(proposal,baseline,catalog,digest,trust)
         if verdict['decision']!='approve' or verdict['qid']!=entity or verdict['proposal_sha256']!=sha(encode(proposal)) or verdict['record_sha256']!=sha(files[path]) or verdict['requests']:

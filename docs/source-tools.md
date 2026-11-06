@@ -45,7 +45,7 @@ oldid 固定文章 revision，但模板渲染可能变化；实际观察的响�
 
 - 请求带项目 User-Agent、超时与有限重试，429/503 和 maxlag 遵守 Retry-After；最多三次请求、累计等待最多 30 秒。
   超过等待预算时返回可重试错误及建议重试时间，由 manager 延后该任务。
-- 默认 maxlag=5；服务端复制延迟较大时可能返回 maxlag 错误。调用者可显式配置
+- 默认 maxlag=30（此前独立命令为 5，Research 准备已为 30）；服务端复制延迟较大时可能返回 maxlag 错误。调用者可显式配置
   `python .agents/skills/university-curation/scripts/sources.py --maxlag 30 ...`。该值是 API 复制延迟容忍值，不是统计年份，
   也不取消 HTTP 限流。无成功响应不会伪造成空数据。
 - JSON 标准输出统一 UTF-8，适用于 Windows、Linux 等环境。
@@ -68,3 +68,13 @@ sharing design, not a distributed lock for an arbitrary network filesystem.
 Money-unit QIDs may be looked up on demand: `wikidata-get Q4917 --properties P498`.
 Retain the resolved entity's revision and ISO-code claim when present; do not guess
 an ISO currency from the institution country. Review verifies the exact captured entity revisions offline.
+
+## HTTP timeout
+
+The shared Wikimedia adapter now defaults to a 90-second HTTP socket timeout
+(previously 45), maxlag=30 for standalone commands and Research preparation.
+Use global `--timeout 120 --maxlag 30` before the source subcommand. Timeout is
+not a whole-job deadline. Direct/wrapped socket timeouts receive bounded retries;
+other URL errors retain their original failure classification. At most three
+requests and 30 seconds of backoff remain; longer Retry-After values yield the
+task to the manager. maxlag is replication tolerance, not query runtime.

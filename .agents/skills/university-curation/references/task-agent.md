@@ -1,57 +1,27 @@
 # Task Agent startup prompt
 
-Manage https://github.com/ider-zh/university-seed-curation as the single Main
-Agent in one workspace. For each batch of up to five QIDs, orchestrate one
-native Research subagent and one independent native Review subagent per QID.
-Do not perform their primary university research or independent factual review.
+Manage https://github.com/ider-zh/university-seed-curation as one Agent group.
+Other groups may operate concurrently in independent workspaces.
+Reuse the checkout, verify origin, fetch main and preserve private caches.
+Read AGENTS.md, docs/handoff.md, docs/agent-workflow.md, docs/commands.md,
+docs/source-tools.md, docs/review-scope-v3.md and the bundled SKILL.md.
+Run doctor; verify GitHub plugin and native subagent capabilities separately.
 
-Reuse the checkout after verifying origin; clone into a child directory only
-when absent. Fetch origin/main publicly, preserve work/caches, and use trusted
-main code. Read AGENTS.md, docs/handoff.md, the bundled SKILL.md,
-docs/agent-workflow.md, docs/commands.md, docs/deep-research.md,
-docs/university-overview.md and immutable docs/review-policy-v2.md.
+1. Inspect open data PR QIDs, then next --limit 5. Follow recovery/retry/revision
+   priorities. Random selection is advisory and does not claim QIDs globally.
+2. Prepare each QID and dispatch one native Research subagent; compile its actual
+   output and session metadata. Bind the exact proposal with unified-proposal.
+3. Prepare a dedicated independent offline Review per QID against the frozen
+   Research snapshot. Compile actual core-review-v3 checks and scope receipts.
+   Maximum five active calls across Research and Review combined per group.
+4. Preserve requests and two-round revision limits; checkpoint through a PR.
+5. unified-publish prepares at most five approved QIDs on a unique data/ branch,
+   a PR targeting main and enable-auto-merge. Execute the plugin plan in order.
+   Never push data/checkpoints to main. Keep branches up to date for required CI.
+6. Resolve affected-QID/task conflicts by fetching main, fresh Review and a new
+   exact bundle/PR. Preserve other groups' data; close obsolete PRs.
+7. Only after actual merge fetch main and publication-confirm its merge/squash
+   commit. Continue useful independent tasks while PR checks run.
 
-Run doctor. Verify the host GitHub plugin and native subagent tools separately.
-Do not require credentials in the shell, private keys, gh, Codex CLI, SSH or
-another host. Work only on main, with no development/data/coordination branches,
-worktrees, PRs or separate Review service.
-
-Repeat:
-1. Fetch and inspect main. Run next --limit 5 and follow each returned action
-   and reason. Recover interrupted publication and finish Review/revisions first.
-   Form the next Research batch from up to five eligible QIDs. Research picks
-   are randomized within priority tiers; record selection_seed for replay. This
-   reduces duplicate picks but does not claim tasks across workspaces.
-2. For Research, run research-prepare in a fresh private job. Supply its exact
-   prompt/schema to one native Research subagent for that QID. Record actual
-   session/model metadata, run research-compile, then unified-proposal.
-3. For Review, run review-prepare with the Research job and a fresh Review job.
-   Create a dedicated Review subagent for this QID as soon as Research is ready.
-   Supply only its prepared prompt/schema/evidence. Run different QIDs' Reviews
-   in parallel within the shared concurrency limit; never reuse one reviewer
-   across QIDs.
-   Review is offline: no source retrieval or Research-private model traces.
-   Run review-compile per QID using its actual Review session ID, distinct from
-   every Research session and every other QID's Review session; never invent
-   approval. If that session is lost, re-review only that QID in a fresh Review
-   session. Keep other approvals when their main baseline is unchanged.
-4. Retain proposal-bound question IDs. Use fresh Research and Review attempts
-   for up to two revisions. Publish and confirm a compact task checkpoint after
-   rejection/unresolved, before further attempts. Unsupported/unresolved records
-   remain unpublished.
-5. For up to five approved schools, run unified-publish. Recheck remote main and
-   execute only its plugin operations, expected_sha protected and force:false.
-   On conflict fetch main and repeat offline Review against the new baseline.
-6. Fetch the actual published main, run publication-confirm and verify records.
-   Only then report completion and actual GitHub commit links. Continue next work.
-
-Keep at most five data calls total across Research and Review combined, and one
-active subagent per QID. Prioritize waiting Reviews and reserve capacity for them.
-Heartbeat active jobs. Reuse the private 30-day source cache; respect bounded
-external research. Full surveys alone advance freshness. Temporary source
-failures delay a task so other QIDs can proceed.
-
-Report started/completed Research, approvals/rejections/revisions/unresolved,
-verified published records, source failures and active subagents periodically.
-Continue until the queue is exhausted, the user stops execution, or a genuine
-technical/authorization/resource blocker prevents further useful work.
+Do not perform primary university research or independent factual Review in the
+Task Agent. Keep raw source captures, prompts, results and traces private.

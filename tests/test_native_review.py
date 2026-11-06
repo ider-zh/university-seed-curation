@@ -79,5 +79,33 @@ class NativeReviewTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError,'input changed'): native.compile(ROOT,job,result,'review-session','not_reported')
         self.assertEqual(len(list((job/'compile-attempts').glob('*/native-result.json'))),2)
 
+    def test_secondary_prior_request_is_preserved_as_waived(self):
+        self.proposal['open_requests']=[{'request_id':'req-secondary','field':'leadership.chair.preferred',
+            'category':'scope_conflict','reason':'Recheck historical appointment', 'reviewed_proposal_sha256':'a'*64}]
+        self.proposal_file.write_bytes(encode(self.proposal))
+        job=self.private/'review-secondary'; native.prepare(ROOT,self.proposal_file,job,research_job=self.research_job)
+        value=native.load_json((job/'review-input.json').read_bytes())
+        self.assertEqual(value['waived_request_ids'],['req-secondary'])
+        result=self.private/'result-secondary.json'; result.write_bytes(encode(self.result_for(job)))
+        compiled=native.compile(ROOT,job,result,'review-session','not_reported')
+        self.assertEqual(compiled['public_verdict']['waived_requests'][0]['request_id'],'req-secondary')
+        self.assertEqual(compiled['public_verdict']['review_scope']['version'],'core-review-v3')
+
+    def test_secondary_fact_needs_no_model_check(self):
+        from copy import deepcopy
+        from university_curation.preferred import recompute
+        self.proposal['delta']['profile']={'motto':deepcopy(self.proposal['delta']['identity']['names']['en'])}
+        for c in self.proposal['delta']['profile']['motto']['candidates']:
+            c['value']={'text':c['value'],'language':'en'}
+        self.proposal['delta']=recompute(self.proposal['delta'])
+        self.proposal['candidate']=materialize(None,self.proposal['delta'],self.proposal['seed'],self.proposal['proposed_at'])
+        self.proposal_file.write_bytes(encode(self.proposal))
+        job=self.private/'review-motto'; native.prepare(ROOT,self.proposal_file,job,research_job=self.research_job)
+        value=native.load_json((job/'review-input.json').read_bytes())
+        self.assertFalse(any(r['field']=='$.profile.motto' for r in value['facts']))
+        result=self.private/'result-motto.json'; result.write_bytes(encode(self.result_for(job)))
+        compiled=native.compile(ROOT,job,result,'review-session','not_reported')
+        self.assertIn('$.profile.motto:c1',compiled['public_verdict']['review_scope']['not_independently_reviewed_ids'])
+
 from university_curation.domain_refresh import materialize, compile_delta
 if __name__=='__main__': unittest.main()

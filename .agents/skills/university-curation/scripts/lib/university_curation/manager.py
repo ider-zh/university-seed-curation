@@ -275,7 +275,10 @@ def confirm_publication(repo,bundle,published_ref):
     actual=commit(repo,published_ref); main=commit(repo,'origin/main')
     git(repo,'merge-base','--is-ancestor',actual,main)
     parents=git(repo,'rev-list','--parents','-n','1',actual).decode().split()
-    if parents!=[actual,plan['base_commit']]: raise ValueError('Published commit is not the planned main successor')
+    if plan.get('kind')=='pull_request':
+        git(repo,'merge-base','--is-ancestor',plan['base_commit'],actual)
+    elif parents!=[actual,plan['base_commit']]:
+        raise ValueError('Published commit is not the planned main successor')
     for path,digest in plan['files'].items():
         raw=blob(repo,actual,path)
         if sha(raw)!=digest: raise ValueError('Remote publication bytes differ from bundle')

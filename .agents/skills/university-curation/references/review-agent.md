@@ -7,9 +7,11 @@ Return one strict result for your QID. Read only the prepared Review prompt, str
 hash-verified evidence packet. Do not fetch sources, browse, inspect Research
 model traces, publish, or edit task/canonical state.
 
-Check every fact, context, source locator, subject attribution, historical scope,
-statistical period/unit, source conflict, root P625 interpretation, all six
-coverage groups and the institutional overview. Address every prior request ID.
+Check every ID in the prepared facts and contexts arrays, including subject,
+period, unit and evidence. Follow docs/review-scope-v3.md. Other fields are
+supplementary and do not receive independent factual checks. Six group checks
+assess completion of the Research survey only. Respond to prior requests except
+those explicitly listed in waived_request_ids; do not reopen secondary facts.
 Apply immutable docs/review-policy-v2.md as included in the prepared prompt.
 
 Return strict JSON with approve, request_changes or unresolved. Give specific

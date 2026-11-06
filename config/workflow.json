@@ -1,8 +1,8 @@
 {
-  "version": "single-manager-v1",
+  "version": "multi-group-pr-v2",
   "geography": "global",
   "institution_scope": "present_and_historical",
-  "research_managers": 1,
+  "research_managers": "one_per_workspace",
   "review_subagents_max": 5,
   "max_model_calls_total": 5,
   "max_revision_rounds": 2,
@@ -16,8 +16,8 @@
     "finance",
     "profile"
   ],
-  "branch": "main",
-  "publication": "reviewed_direct_main_expected_sha",
+  "branch": "data/curation-<unique-id>",
+  "publication": "reviewed_pull_request_auto_merge",
   "private_state": ".private/native/manager-state.json",
   "public_backlog": "data/workflow/tasks.json",
   "max_schools_per_batch": 5,
@@ -25,5 +25,9 @@
   "source_cache_days": 30,
   "formal_release_human_acceptance_required": true,
   "review_assignment": "dedicated_per_qid_after_research",
-  "next_selection": "randomized_research_within_priority_tiers"
+  "next_selection": "randomized_research_within_priority_tiers",
+  "coordination": "independent_groups_optimistic_pr_validation",
+  "review_scope": "core-review-v3",
+  "source_http_timeout_seconds": 90,
+  "source_maxlag": 30
 }

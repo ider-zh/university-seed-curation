@@ -2,7 +2,7 @@
 
 Reliable structured data about global present and historical higher-education
 institutions. One Task Agent orchestrates native Research and Review subagents,
-then publishes approved records directly to `main` through the GitHub plugin.
+then publishes approved records through PRs with auto-merge to `main` through the GitHub plugin.
 
 There is one workflow and one branch. Task progress lives in private local jobs;
 a compact pending-task list on main preserves unfinished migration work. Review
@@ -35,3 +35,5 @@ canonical bytes and receipts have been verified.
 
 Previous workflows are available in Git history. Frozen historical proposals
 and branch cleanup provenance are under data/history; they are not approvals.
+
+Current workflow: concurrent Agent groups, unique data branches, protected-main PRs and auto-merge. See docs/agent-workflow.md.
