@@ -1,0 +1,1731 @@
+{
+  "attribution": "distinct_native_research_and_review_subagents;not_cryptographic_identity",
+  "research": {
+    "baseline_sha256": "absent",
+    "candidate": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-06T22:53:07.893019+00:00",
+          "status": "checked"
+        },
+        "geography": {
+          "checked_at": "2026-11-06T22:53:07.893019+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-06T22:53:07.893019+00:00",
+          "status": "checked"
+        },
+        "identity": {
+          "checked_at": "2026-11-06T22:53:07.893019+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-06T22:53:07.893019+00:00",
+          "status": "disputed"
+        },
+        "profile": {
+          "checked_at": "2026-11-06T22:53:07.893019+00:00",
+          "status": "checked"
+        }
+      },
+      "curation": {
+        "identity_status": "related"
+      },
+      "finance": {
+        "research_funding": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Rankings",
+                  "original_text": "The University of Minnesota Medical School was ranked 21st in the country in the 2022 Blue Ridge Rankings, based on annual NIH funding of $341 million.[27]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period_status": "not_stated",
+              "value": {
+                "amount": "341000000",
+                "currency": "USD",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "period_not_stated",
+              "single_source_family"
+            ],
+            "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "claim:P571:0",
+                      "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q7895802$7FC5FB6C-8EE7-4009-BDB0-F5B21049B19B\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+1888-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}",
+                      "source_ref": "s1"
+                    },
+                    {
+                      "locator": "infobox:1",
+                      "original_text": "Established: 1888",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 1888
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:History",
+                      "original_text": "The University of Minnesota Medical School began in 1888 when three of the private medical schools in the Twin Cities in Minnesota merged their programs to form the University of Minnesota Medical School.[3]",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "Three private medical schools in the Twin Cities merged their programs to form the University of Minnesota Medical School."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "established",
+            "kind": "institution_establishment",
+            "subject_ref": "institution"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:History",
+                      "original_text": "A fourth school was integrated in 1908.",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 1908
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:History",
+                      "original_text": "A fourth school was integrated in 1908.",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "A fourth school was integrated into the medical school."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "integration",
+            "kind": "merger",
+            "subject_ref": "institution"
+          }
+        ]
+      },
+      "identity": {
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "The University of Minnesota Medical School is a medical school at the University of Minnesota.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "claim:P749:0",
+                  "original_text": "{\"property\": \"P749\", \"property_label\": \"parent organization or unit\", \"statement_id\": \"Q7895802$671C7355-EF84-4A59-B68A-A59DAB09D3B6\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 238101, \"id\": \"Q238101\"}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "faculty",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q7895802\", \"labels\": {\"en\": \"University of Minnesota Medical School\"}, \"descriptions\": {\"en\": \"medical school\"}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "University of Minnesota Medical School",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        "operating_status": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Academics",
+                  "original_text": "The University of Minnesota Medical School offers seven dual-degree programs for a degree in medical research (MD/PhD), public health (MD/MPH), biomedical engineering (MD/MS), law (MD/JD), business (MD/MBA), or health informatics (MD/MHI).[15]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "operating",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "ownership": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:0",
+                  "original_text": "Type: Public",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "public",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "locations": [
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P159:0",
+                    "original_text": "{\"property\": \"P159\", \"property_label\": \"headquarters location\", \"statement_id\": \"Q7895802$0C14B7E8-9578-4B99-AC57-FB1BD1447BDA\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 36091, \"id\": \"Q36091\"}, \"qualifiers\": {\"P281\": [{\"snaktype\": \"value\", \"value\": \"55455\"}], \"P17\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 30, \"id\": \"Q30\"}}], \"P6375\": [{\"snaktype\": \"value\", \"value\": {\"text\": \"420 Delaware St. SE\", \"language\": \"en\"}}]}}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q36091\", \"labels\": {\"en\": \"Minneapolis\"}, \"descriptions\": {\"en\": \"city in and seat of Hennepin County, and largest city in State of Minnesota, United States\"}}",
+                    "source_ref": "s5"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q30\", \"labels\": {\"en\": \"United States\"}, \"descriptions\": {\"en\": \"country located primarily in North America\"}}",
+                    "source_ref": "s4"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "city_name": "Minneapolis",
+                  "city_qid": "Q36091",
+                  "country_name": "United States",
+                  "country_qid": "Q30",
+                  "formatted": {
+                    "language": "en",
+                    "text": "420 Delaware St. SE, Minneapolis, 55455, United States"
+                  },
+                  "postal_code": "55455",
+                  "street": "420 Delaware St. SE"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "hq",
+          "kind": "headquarters",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q36091\", \"labels\": {\"en\": \"Minneapolis\"}, \"descriptions\": {\"en\": \"city in and seat of Hennepin County, and largest city in State of Minnesota, United States\"}}",
+                    "source_ref": "s5"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Minneapolis"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q36091"
+        },
+        {
+          "id": "twincities",
+          "kind": "campus",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Academics",
+                    "original_text": "The larger of the two campuses is in the Twin Cities.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Twin Cities campus"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        {
+          "id": "duluth",
+          "kind": "campus",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Academics",
+                    "original_text": "The Duluth campus, formerly the University of Minnesota Duluth School of Medicine, has approximately 65 students enrolled for each of the first two years of medical school as of 2022, after which they transfer to the Twin Cities campus for their clinical rotations.[18][better source needed]",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Duluth campus"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        {
+          "id": "stcloud",
+          "kind": "campus",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "It is a combination of three campuses located in Minneapolis, Duluth, and St. Cloud, Minnesota.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "St. Cloud campus"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      ],
+      "modified_datetime": "2026-11-06T22:56:05.311246+00:00",
+      "population": {
+        "academic_staff": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:3",
+                  "original_text": "Faculty: 2,089[citation needed]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period_status": "not_stated",
+              "value": {
+                "amount": 2089,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "period_not_stated",
+              "single_source_family"
+            ],
+            "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+            "reason_code": "only_available"
+          }
+        },
+        "students_total": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2196:0",
+                  "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q7895802$c2171238-4434-9651-ea9e-92ff148f4623\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+2089\", \"unit\": \"1\"}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "period_status": "not_stated",
+              "value": {
+                "amount": 2089,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "period_not_stated",
+              "single_source_family"
+            ],
+            "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "profile": {
+        "academic_focus": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Academics",
+                  "original_text": "The University of Minnesota Medical School offers seven dual-degree programs for a degree in medical research (MD/PhD), public health (MD/MPH), biomedical engineering (MD/MS), law (MD/JD), business (MD/MBA), or health informatics (MD/MHI).[15]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": [
+                {
+                  "language": "en",
+                  "text": "Medicine"
+                },
+                {
+                  "language": "en",
+                  "text": "Medical research"
+                },
+                {
+                  "language": "en",
+                  "text": "Public health"
+                },
+                {
+                  "language": "en",
+                  "text": "Biomedical engineering"
+                },
+                {
+                  "language": "en",
+                  "text": "Health informatics"
+                }
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "summary": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "The University of Minnesota Medical School is a medical school at the University of Minnesota. It is a combination of three campuses located in Minneapolis, Duluth, and St. Cloud, Minnesota.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "infobox:0",
+                  "original_text": "Type: Public",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:History",
+                  "original_text": "[edit | edit source]\nThe University of Minnesota Medical School began in 1888 when three of the private medical schools in the Twin Cities in Minnesota merged their programs to form the University of Minnesota Medical School.[3] A fourth school was integrated in 1908. As a consequence of these mergers, the school is one of two in the state, the other being the Mayo Clinic Alix School of Medicine in Rochester, Minnesota.[4] The University of Minnesota Medical School's older buildings include the Mayo Memorial Building (1954) and Jackson Hall (1912). Jackson Hall was built as the home of the Institute of Anatomy and is still the site of anatomy instruction for students.[5]",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Academics",
+                  "original_text": "[edit | edit source]\nThe University of Minnesota Medical School is part of the Academic Health Centers (AHC) in the United States. The AHC comprises the Medical School, School of Dentistry, School of Nursing, College of Pharmacy, School of Public Health, and the College of Veterinary Medicine.[14]\nThe University of Minnesota Medical School offers seven dual-degree programs for a degree in medical research (MD/PhD), public health (MD/MPH), biomedical engineering (MD/MS), law (MD/JD), business (MD/MBA), or health informatics (MD/MHI).[15] The Medical School also offers 10 pathways for students to experience longitudinal integrated clerkships at hosting sites, each with a different focus.[16] A longitudinal integrated clerkship was implemented at the University of Minnesota Medical School in 1971. Jack Verby created the Rural Physicians Associate Program (RPAP) as a workforce initiative for rural Minnesota.[17]",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Academics",
+                  "original_text": "Duluth is also a primary site for the Center for American Indian and Minority Health.[19][better source needed]",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Partnerships",
+                  "original_text": "[edit | edit source]\nThe University of Minnesota Medical School has partnered with Fairview Health Services in 1997, making the university hospital under Fairview operations and eventually moving pediatrics to the West Bank, and with its group practice, University of Minnesota Physicians, also known as M Physicians, is the multispecialty group practice composed of faculty from the University of Minnesota Medical School.\nA partnership between the University of Minnesota Physicians and Fairview Health Services was formalized through a 2019 agreement. The partnership included 11 hospitals and 56 primary care clinics, which were managed by Fairview.[26]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "The University of Minnesota Medical School is a public medical school within the University of Minnesota in Minnesota, United States. Its activities span locations in Minneapolis, Duluth and St. Cloud. It teaches medicine and participates in the university’s wider health sciences environment, alongside schools and colleges covering dentistry, nursing, pharmacy, public health and veterinary medicine. The school’s organizational position is distinct from that of its parent university.\n\nThe medical school began in 1888 through the merger of programs from three private medical schools in the Twin Cities. A fourth school was integrated in 1908. Its older teaching buildings include Jackson Hall, built in 1912 as the home of the Institute of Anatomy, and the Mayo Memorial Building, dating from 1954. The school’s history also includes the Rural Physicians Associate Program, created in 1971 as a workforce initiative for rural Minnesota.\n\nIts academic provision includes dual-degree combinations linking medicine with research, public health, biomedical engineering, law, business and health informatics. Longitudinal integrated clerkships provide different pathways for clinical experience. The Duluth campus has a role in the Center for American Indian and Minority Health. The medical school also works with Fairview Health Services and University of Minnesota Physicians in clinical partnerships."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "website": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P856:0",
+                  "original_text": "{\"property\": \"P856\", \"property_label\": \"official website\", \"statement_id\": \"Q7895802$DE43C88C-9395-4441-A3E2-713316815B4E\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"https://www.med.umn.edu\", \"qualifiers\": {\"P407\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 1860, \"id\": \"Q1860\"}}]}}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "https://www.med.umn.edu",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "qid": "Q7895802",
+      "record_revision": 1,
+      "related_entities": {
+        "parent": {
+          "kind": "institution",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q238101\", \"labels\": {\"en\": \"University of Minnesota\"}, \"descriptions\": {\"en\": \"public research university in Minneapolis and Saint Paul, Minnesota, United States\"}}",
+                    "source_ref": "s6"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "University of Minnesota"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q238101"
+        }
+      },
+      "relationships": {
+        "campus": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "It is a combination of three campuses located in Minneapolis, Duluth, and St. Cloud, Minnesota.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "target_ref": "location:twincities"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "It is a combination of three campuses located in Minneapolis, Duluth, and St. Cloud, Minnesota.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "target_ref": "location:duluth"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "It is a combination of three campuses located in Minneapolis, Duluth, and St. Cloud, Minnesota.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "target_ref": "location:stcloud"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ],
+        "parent": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P749:0",
+                    "original_text": "{\"property\": \"P749\", \"property_label\": \"parent organization or unit\", \"statement_id\": \"Q7895802$671C7355-EF84-4A59-B68A-A59DAB09D3B6\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 238101, \"id\": \"Q238101\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "target_ref": "related:parent"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ]
+      },
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "legacy_discovery"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "needs_review"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:52:46.152802+00:00",
+          "revision_id": 2478730299,
+          "source_qid": "Q7895802",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2478730299"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikipedia",
+          "language": "en",
+          "page_id": 4115780,
+          "publisher_role": "encyclopedia",
+          "retrieved_at": "2026-11-06T22:52:53.508905+00:00",
+          "revision_id": 1372630791,
+          "url": "https://en.wikipedia.org/w/index.php?oldid=1372630791"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:52:56.713145+00:00",
+          "revision_id": 2561583370,
+          "source_qid": "Q494230",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2561583370"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:53:00.553632+00:00",
+          "revision_id": 2565041516,
+          "source_qid": "Q30",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2565041516"
+        },
+        "s5": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:53:03.995735+00:00",
+          "revision_id": 2564864927,
+          "source_qid": "Q36091",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2564864927"
+        },
+        "s6": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:53:07.850766+00:00",
+          "revision_id": 2564625410,
+          "source_qid": "Q238101",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2564625410"
+        }
+      }
+    },
+    "coverage": [
+      {
+        "group": "identity",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "status": "checked"
+      },
+      {
+        "group": "population",
+        "status": "disputed"
+      },
+      {
+        "group": "finance",
+        "status": "checked"
+      },
+      {
+        "group": "profile",
+        "status": "checked"
+      }
+    ],
+    "delta": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-06T22:53:07.893019+00:00",
+          "status": "checked"
+        },
+        "geography": {
+          "checked_at": "2026-11-06T22:53:07.893019+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-06T22:53:07.893019+00:00",
+          "status": "checked"
+        },
+        "identity": {
+          "checked_at": "2026-11-06T22:53:07.893019+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-06T22:53:07.893019+00:00",
+          "status": "disputed"
+        },
+        "profile": {
+          "checked_at": "2026-11-06T22:53:07.893019+00:00",
+          "status": "checked"
+        }
+      },
+      "curation": {
+        "identity_status": "related"
+      },
+      "finance": {
+        "research_funding": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Rankings",
+                  "original_text": "The University of Minnesota Medical School was ranked 21st in the country in the 2022 Blue Ridge Rankings, based on annual NIH funding of $341 million.[27]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period_status": "not_stated",
+              "value": {
+                "amount": "341000000",
+                "currency": "USD",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "period_not_stated",
+              "single_source_family"
+            ],
+            "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "claim:P571:0",
+                      "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q7895802$7FC5FB6C-8EE7-4009-BDB0-F5B21049B19B\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+1888-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}",
+                      "source_ref": "s1"
+                    },
+                    {
+                      "locator": "infobox:1",
+                      "original_text": "Established: 1888",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 1888
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:History",
+                      "original_text": "The University of Minnesota Medical School began in 1888 when three of the private medical schools in the Twin Cities in Minnesota merged their programs to form the University of Minnesota Medical School.[3]",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "Three private medical schools in the Twin Cities merged their programs to form the University of Minnesota Medical School."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "established",
+            "kind": "institution_establishment",
+            "subject_ref": "institution"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:History",
+                      "original_text": "A fourth school was integrated in 1908.",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 1908
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:History",
+                      "original_text": "A fourth school was integrated in 1908.",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "A fourth school was integrated into the medical school."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "integration",
+            "kind": "merger",
+            "subject_ref": "institution"
+          }
+        ]
+      },
+      "identity": {
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "The University of Minnesota Medical School is a medical school at the University of Minnesota.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "claim:P749:0",
+                  "original_text": "{\"property\": \"P749\", \"property_label\": \"parent organization or unit\", \"statement_id\": \"Q7895802$671C7355-EF84-4A59-B68A-A59DAB09D3B6\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 238101, \"id\": \"Q238101\"}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "faculty",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q7895802\", \"labels\": {\"en\": \"University of Minnesota Medical School\"}, \"descriptions\": {\"en\": \"medical school\"}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "University of Minnesota Medical School",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        "operating_status": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Academics",
+                  "original_text": "The University of Minnesota Medical School offers seven dual-degree programs for a degree in medical research (MD/PhD), public health (MD/MPH), biomedical engineering (MD/MS), law (MD/JD), business (MD/MBA), or health informatics (MD/MHI).[15]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "operating",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "ownership": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:0",
+                  "original_text": "Type: Public",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "public",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "locations": [
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P159:0",
+                    "original_text": "{\"property\": \"P159\", \"property_label\": \"headquarters location\", \"statement_id\": \"Q7895802$0C14B7E8-9578-4B99-AC57-FB1BD1447BDA\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 36091, \"id\": \"Q36091\"}, \"qualifiers\": {\"P281\": [{\"snaktype\": \"value\", \"value\": \"55455\"}], \"P17\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 30, \"id\": \"Q30\"}}], \"P6375\": [{\"snaktype\": \"value\", \"value\": {\"text\": \"420 Delaware St. SE\", \"language\": \"en\"}}]}}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q36091\", \"labels\": {\"en\": \"Minneapolis\"}, \"descriptions\": {\"en\": \"city in and seat of Hennepin County, and largest city in State of Minnesota, United States\"}}",
+                    "source_ref": "s5"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q30\", \"labels\": {\"en\": \"United States\"}, \"descriptions\": {\"en\": \"country located primarily in North America\"}}",
+                    "source_ref": "s4"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "city_name": "Minneapolis",
+                  "city_qid": "Q36091",
+                  "country_name": "United States",
+                  "country_qid": "Q30",
+                  "formatted": {
+                    "language": "en",
+                    "text": "420 Delaware St. SE, Minneapolis, 55455, United States"
+                  },
+                  "postal_code": "55455",
+                  "street": "420 Delaware St. SE"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "hq",
+          "kind": "headquarters",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q36091\", \"labels\": {\"en\": \"Minneapolis\"}, \"descriptions\": {\"en\": \"city in and seat of Hennepin County, and largest city in State of Minnesota, United States\"}}",
+                    "source_ref": "s5"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Minneapolis"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q36091"
+        },
+        {
+          "id": "twincities",
+          "kind": "campus",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Academics",
+                    "original_text": "The larger of the two campuses is in the Twin Cities.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Twin Cities campus"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        {
+          "id": "duluth",
+          "kind": "campus",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Academics",
+                    "original_text": "The Duluth campus, formerly the University of Minnesota Duluth School of Medicine, has approximately 65 students enrolled for each of the first two years of medical school as of 2022, after which they transfer to the Twin Cities campus for their clinical rotations.[18][better source needed]",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Duluth campus"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        {
+          "id": "stcloud",
+          "kind": "campus",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "It is a combination of three campuses located in Minneapolis, Duluth, and St. Cloud, Minnesota.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "St. Cloud campus"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      ],
+      "population": {
+        "academic_staff": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:3",
+                  "original_text": "Faculty: 2,089[citation needed]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period_status": "not_stated",
+              "value": {
+                "amount": 2089,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "period_not_stated",
+              "single_source_family"
+            ],
+            "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+            "reason_code": "only_available"
+          }
+        },
+        "students_total": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2196:0",
+                  "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q7895802$c2171238-4434-9651-ea9e-92ff148f4623\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+2089\", \"unit\": \"1\"}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "period_status": "not_stated",
+              "value": {
+                "amount": 2089,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "period_not_stated",
+              "single_source_family"
+            ],
+            "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "profile": {
+        "academic_focus": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Academics",
+                  "original_text": "The University of Minnesota Medical School offers seven dual-degree programs for a degree in medical research (MD/PhD), public health (MD/MPH), biomedical engineering (MD/MS), law (MD/JD), business (MD/MBA), or health informatics (MD/MHI).[15]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": [
+                {
+                  "language": "en",
+                  "text": "Medicine"
+                },
+                {
+                  "language": "en",
+                  "text": "Medical research"
+                },
+                {
+                  "language": "en",
+                  "text": "Public health"
+                },
+                {
+                  "language": "en",
+                  "text": "Biomedical engineering"
+                },
+                {
+                  "language": "en",
+                  "text": "Health informatics"
+                }
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "summary": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "The University of Minnesota Medical School is a medical school at the University of Minnesota. It is a combination of three campuses located in Minneapolis, Duluth, and St. Cloud, Minnesota.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "infobox:0",
+                  "original_text": "Type: Public",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:History",
+                  "original_text": "[edit | edit source]\nThe University of Minnesota Medical School began in 1888 when three of the private medical schools in the Twin Cities in Minnesota merged their programs to form the University of Minnesota Medical School.[3] A fourth school was integrated in 1908. As a consequence of these mergers, the school is one of two in the state, the other being the Mayo Clinic Alix School of Medicine in Rochester, Minnesota.[4] The University of Minnesota Medical School's older buildings include the Mayo Memorial Building (1954) and Jackson Hall (1912). Jackson Hall was built as the home of the Institute of Anatomy and is still the site of anatomy instruction for students.[5]",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Academics",
+                  "original_text": "[edit | edit source]\nThe University of Minnesota Medical School is part of the Academic Health Centers (AHC) in the United States. The AHC comprises the Medical School, School of Dentistry, School of Nursing, College of Pharmacy, School of Public Health, and the College of Veterinary Medicine.[14]\nThe University of Minnesota Medical School offers seven dual-degree programs for a degree in medical research (MD/PhD), public health (MD/MPH), biomedical engineering (MD/MS), law (MD/JD), business (MD/MBA), or health informatics (MD/MHI).[15] The Medical School also offers 10 pathways for students to experience longitudinal integrated clerkships at hosting sites, each with a different focus.[16] A longitudinal integrated clerkship was implemented at the University of Minnesota Medical School in 1971. Jack Verby created the Rural Physicians Associate Program (RPAP) as a workforce initiative for rural Minnesota.[17]",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Academics",
+                  "original_text": "Duluth is also a primary site for the Center for American Indian and Minority Health.[19][better source needed]",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Partnerships",
+                  "original_text": "[edit | edit source]\nThe University of Minnesota Medical School has partnered with Fairview Health Services in 1997, making the university hospital under Fairview operations and eventually moving pediatrics to the West Bank, and with its group practice, University of Minnesota Physicians, also known as M Physicians, is the multispecialty group practice composed of faculty from the University of Minnesota Medical School.\nA partnership between the University of Minnesota Physicians and Fairview Health Services was formalized through a 2019 agreement. The partnership included 11 hospitals and 56 primary care clinics, which were managed by Fairview.[26]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "The University of Minnesota Medical School is a public medical school within the University of Minnesota in Minnesota, United States. Its activities span locations in Minneapolis, Duluth and St. Cloud. It teaches medicine and participates in the university’s wider health sciences environment, alongside schools and colleges covering dentistry, nursing, pharmacy, public health and veterinary medicine. The school’s organizational position is distinct from that of its parent university.\n\nThe medical school began in 1888 through the merger of programs from three private medical schools in the Twin Cities. A fourth school was integrated in 1908. Its older teaching buildings include Jackson Hall, built in 1912 as the home of the Institute of Anatomy, and the Mayo Memorial Building, dating from 1954. The school’s history also includes the Rural Physicians Associate Program, created in 1971 as a workforce initiative for rural Minnesota.\n\nIts academic provision includes dual-degree combinations linking medicine with research, public health, biomedical engineering, law, business and health informatics. Longitudinal integrated clerkships provide different pathways for clinical experience. The Duluth campus has a role in the Center for American Indian and Minority Health. The medical school also works with Fairview Health Services and University of Minnesota Physicians in clinical partnerships."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "website": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P856:0",
+                  "original_text": "{\"property\": \"P856\", \"property_label\": \"official website\", \"statement_id\": \"Q7895802$DE43C88C-9395-4441-A3E2-713316815B4E\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"https://www.med.umn.edu\", \"qualifiers\": {\"P407\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 1860, \"id\": \"Q1860\"}}]}}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "https://www.med.umn.edu",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "qid": "Q7895802",
+      "record_revision": 1,
+      "related_entities": {
+        "parent": {
+          "kind": "institution",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q238101\", \"labels\": {\"en\": \"University of Minnesota\"}, \"descriptions\": {\"en\": \"public research university in Minneapolis and Saint Paul, Minnesota, United States\"}}",
+                    "source_ref": "s6"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "University of Minnesota"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q238101"
+        }
+      },
+      "relationships": {
+        "campus": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "It is a combination of three campuses located in Minneapolis, Duluth, and St. Cloud, Minnesota.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "target_ref": "location:twincities"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "It is a combination of three campuses located in Minneapolis, Duluth, and St. Cloud, Minnesota.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "target_ref": "location:duluth"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "It is a combination of three campuses located in Minneapolis, Duluth, and St. Cloud, Minnesota.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "target_ref": "location:stcloud"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ],
+        "parent": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P749:0",
+                    "original_text": "{\"property\": \"P749\", \"property_label\": \"parent organization or unit\", \"statement_id\": \"Q7895802$671C7355-EF84-4A59-B68A-A59DAB09D3B6\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 238101, \"id\": \"Q238101\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "target_ref": "related:parent"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ]
+      },
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "legacy_discovery"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "needs_review"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:52:46.152802+00:00",
+          "revision_id": 2478730299,
+          "source_qid": "Q7895802",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2478730299"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikipedia",
+          "language": "en",
+          "page_id": 4115780,
+          "publisher_role": "encyclopedia",
+          "retrieved_at": "2026-11-06T22:52:53.508905+00:00",
+          "revision_id": 1372630791,
+          "url": "https://en.wikipedia.org/w/index.php?oldid=1372630791"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:52:56.713145+00:00",
+          "revision_id": 2561583370,
+          "source_qid": "Q494230",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2561583370"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:53:00.553632+00:00",
+          "revision_id": 2565041516,
+          "source_qid": "Q30",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2565041516"
+        },
+        "s5": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:53:03.995735+00:00",
+          "revision_id": 2564864927,
+          "source_qid": "Q36091",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2564864927"
+        },
+        "s6": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:53:07.850766+00:00",
+          "revision_id": 2564625410,
+          "source_qid": "Q238101",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2564625410"
+        }
+      }
+    },
+    "open_requests": [],
+    "proposed_at": "2026-11-06T22:56:05.311246+00:00",
+    "qid": "Q7895802",
+    "research": {
+      "model": "not_reported",
+      "prompt_sha256": "e0d28d2882150495dd4cadb5bac984fac5b219c635b8039163907ba6d42d2ef5",
+      "reasoning_effort": "medium",
+      "schema_sha256": "92e942f4fbf2ae28964462ea9ffa8312c5ee16a077a1e08b40aaaf741512422e",
+      "session": "/root/research_q7895802"
+    },
+    "retrieval_failures": [],
+    "review_status": "unreviewed",
+    "seed": {
+      "channels": [
+        "legacy_discovery"
+      ],
+      "import_id": "seed-84c3beb45367905f",
+      "screening_status": "needs_review"
+    },
+    "transport": {
+      "base_commit": "003414c9d83f4df0e87e3571a4ed73ca8a435378",
+      "protocol": "native-subagent-v1",
+      "repository": "ider-zh/university-seed-curation",
+      "review_policy": {
+        "id": "source-grounded-flexible-v2",
+        "sha256": "b8ed7d2897e4c31dbd81b1379aafdc1077a21d1a33949edbd2d896b0adf99db2"
+      },
+      "schema_sha256": "bfa496eafa9dffca56146214168db7f000b09161b8993129632e7202e1c88833",
+      "seed_catalog_sha256": "84c3beb45367905f513d650684283dd62a9c1b77962bdc34151a6ef05bfa03d4"
+    },
+    "type": "university-proposal-v1"
+  },
+  "review": {
+    "contexts_checked": 5,
+    "coverage_checks": [
+      {
+        "group": "identity",
+        "reason": "School identity, subordinate parent, public type and operational degree programs surveyed in frozen Wikimedia evidence.",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "reason": "Headquarters and campus observations surveyed; root P625 absent and no city coordinate substituted.",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "reason": "Founding and later integration surveyed in Wikidata/article.",
+        "status": "checked"
+      },
+      {
+        "group": "population",
+        "reason": "Both sourced 2089 observations retained with distinct source labels; disputed survey status accurately discloses staff/student scope ambiguity.",
+        "status": "disputed"
+      },
+      {
+        "group": "finance",
+        "reason": "Available NIH funding statement surveyed; annual funding meaning retained and no unsupported observation year supplied.",
+        "status": "checked"
+      },
+      {
+        "group": "profile",
+        "reason": "Article profile evidence surveyed; supplementary content is outside independent core factual checks.",
+        "status": "checked"
+      }
+    ],
+    "decision": "approve",
+    "facts_checked": 13,
+    "full_refresh": false,
+    "inferences": [
+      {
+        "id": "$.finance.research_funding:c1",
+        "reason": "Rankings explicitly reports annual NIH funding of $341 million for this medical school. The amount is retained; USD follows the US NIH context. Ranking year 2022 is not asserted as the funding observation period."
+      },
+      {
+        "id": "$.identity.kind:c1",
+        "reason": "Medical school at the University of Minnesota with P749 parent supports controlled faculty kind and avoids asserting independence."
+      },
+      {
+        "id": "$.identity.operating_status:c1",
+        "reason": "The frozen Academics section describes degree programs currently offered; operating is a supported inference, without a dated legal status assertion."
+      },
+      {
+        "id": "milestone:integration",
+        "reason": "A fourth school integrated in 1908 is reasonably represented as merger/integration into the same school; no unsupported predecessor identity is added."
+      }
+    ],
+    "model": "not_reported",
+    "proposal_sha256": "0f9c7dbf18fcf03532cbebd77a43d8d432ec69b2e9a0fa61e2a1323bbd5b29b2",
+    "qid": "Q7895802",
+    "reasoning_effort": "medium",
+    "record_sha256": "5118e4559c1d1bdc97a25f9351893c74dcea3023c80002138189d4e9f52585c3",
+    "request_responses": [],
+    "requests": [],
+    "review_scope": {
+      "not_independently_reviewed_ids": [
+        "$.history.milestones[0].description:c1",
+        "$.history.milestones[1].description:c1",
+        "$.locations[0].address:c1",
+        "$.locations[0].name:c1",
+        "$.locations[1].name:c1",
+        "$.locations[2].name:c1",
+        "$.locations[3].name:c1",
+        "$.profile.academic_focus:c1",
+        "$.profile.summary:c1",
+        "$.profile.website:c1",
+        "$.related_entities.parent.name:c1",
+        "location:duluth",
+        "location:hq",
+        "location:stcloud",
+        "location:twincities"
+      ],
+      "reviewed_ids": [
+        "$.finance.research_funding:c1",
+        "$.history.milestones[0].date:c1",
+        "$.history.milestones[1].date:c1",
+        "$.identity.kind:c1",
+        "$.identity.names.en:c1",
+        "$.identity.operating_status:c1",
+        "$.identity.ownership:c1",
+        "$.population.academic_staff:c1",
+        "$.population.students_total:c1",
+        "$.relationships.campus[0]:c1",
+        "$.relationships.campus[1]:c1",
+        "$.relationships.campus[2]:c1",
+        "$.relationships.parent[0]:c1",
+        "country:$.locations[0].address:c1",
+        "identity",
+        "milestone:established",
+        "milestone:integration",
+        "related:parent"
+      ],
+      "version": "core-review-v3"
+    },
+    "review_session": "/root/review_q7895802_contract",
+    "reviewed_at": "2026-11-06T23:10:22.016080+00:00",
+    "source_revisions_checked": 6,
+    "waived_requests": []
+  },
+  "review_result_sha256": "2afbb938d574cc7763f19745c230c0c686d09cacb29483b85865e2e133afafc8",
+  "type": "university-unified-receipt-v1"
+}
