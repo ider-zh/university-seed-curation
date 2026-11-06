@@ -1,0 +1,234 @@
+{
+  "coverage": {
+    "finance": {
+      "checked_at": "2026-11-06T23:25:08.833699+00:00",
+      "status": "not_found"
+    },
+    "geography": {
+      "checked_at": "2026-11-06T23:25:08.833699+00:00",
+      "status": "checked"
+    },
+    "history": {
+      "checked_at": "2026-11-06T23:25:08.833699+00:00",
+      "status": "not_found"
+    },
+    "identity": {
+      "checked_at": "2026-11-06T23:25:08.833699+00:00",
+      "status": "checked"
+    },
+    "population": {
+      "checked_at": "2026-11-06T23:25:08.833699+00:00",
+      "status": "not_found"
+    },
+    "profile": {
+      "checked_at": "2026-11-06T23:25:08.833699+00:00",
+      "status": "not_found"
+    }
+  },
+  "curation": {
+    "identity_status": "excluded",
+    "refresh_profile": "core-v1",
+    "reviewed_groups": [
+      "identity",
+      "geography",
+      "history",
+      "population",
+      "finance",
+      "profile"
+    ]
+  },
+  "identity": {
+    "kind": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "metadata",
+              "original_text": "{\"id\": \"Q108140168\", \"labels\": {}, \"descriptions\": {\"en\": \"private center for primary and secondary education in Valencia, Valencian Community, Spain\"}}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "claim:P31:0",
+              "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q108140168$559B5CD0-38F5-437D-BC2A-F4B501F516D7\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 23002042, \"id\": \"Q23002042\"}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "metadata",
+              "original_text": "{\"id\": \"Q23002042\", \"labels\": {\"en\": \"private educational institution\"}, \"descriptions\": {\"en\": \"educational institution not primarily funded by public means\"}}",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": "other",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "locations": [
+    {
+      "address": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P131:0",
+                "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q108140168$8B55E547-662A-4CDB-B8E9-9CE2A6CD177F\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 8818, \"id\": \"Q8818\"}, \"reference_count\": 1}",
+                "source_ref": "s1"
+              },
+              {
+                "locator": "claim:P17:0",
+                "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q108140168$5BDC5C88-DA18-44C0-A424-65184916C3C2\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 29, \"id\": \"Q29\"}, \"reference_count\": 1}",
+                "source_ref": "s1"
+              },
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q8818\", \"labels\": {\"en\": \"Valencia\"}, \"descriptions\": {\"en\": \"capital city of the Valencian Community, Spain\"}}",
+                "source_ref": "s4"
+              },
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q29\", \"labels\": {\"en\": \"Spain\"}, \"descriptions\": {\"en\": \"country in southwestern Europe with territories in Africa\"}}",
+                "source_ref": "s3"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "city_name": "Valencia",
+              "city_qid": "Q8818",
+              "country_name": "Spain",
+              "country_qid": "Q29",
+              "formatted": {
+                "language": "en",
+                "text": "Valencia, Spain"
+              }
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "id": "valencia",
+      "kind": "administrative_area",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P131:0",
+                "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q108140168$8B55E547-662A-4CDB-B8E9-9CE2A6CD177F\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 8818, \"id\": \"Q8818\"}, \"reference_count\": 1}",
+                "source_ref": "s1"
+              },
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q8818\", \"labels\": {\"en\": \"Valencia\"}, \"descriptions\": {\"en\": \"capital city of the Valencian Community, Spain\"}}",
+                "source_ref": "s4"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Valencia"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "qid": "Q8818"
+    },
+    {
+      "coordinates": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "statement:Q108140168$0A2D4418-6795-412D-B940-5A9151B02DD6",
+                "original_text": "\"latitude\": 39.48687",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "source_rank": "normal",
+            "value": {
+              "crs": "EPSG:4326",
+              "globe_qid": "Q2",
+              "latitude": 39.48687,
+              "longitude": -0.397782,
+              "source_precision_degrees": 1e-05
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "id": "wikidata-item-location",
+      "kind": "institution",
+      "qid": "Q108140168"
+    }
+  ],
+  "modified_datetime": "2026-11-06T23:28:12.192695+00:00",
+  "qid": "Q108140168",
+  "record_revision": 1,
+  "schema_version": "0.2.2",
+  "seed": {
+    "channels": [
+      "legacy_discovery"
+    ],
+    "import_id": "seed-84c3beb45367905f",
+    "screening_status": "needs_review"
+  },
+  "selection_policy": "preferred-v1",
+  "sources": {
+    "s1": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T23:24:51.524642+00:00",
+      "revision_id": 2446475585,
+      "source_qid": "Q108140168",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2446475585"
+    },
+    "s2": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T23:25:00.116657+00:00",
+      "revision_id": 2441243923,
+      "source_qid": "Q23002042",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2441243923"
+    },
+    "s3": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T23:25:04.425713+00:00",
+      "revision_id": 2565415102,
+      "source_qid": "Q29",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2565415102"
+    },
+    "s4": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T23:25:08.777498+00:00",
+      "revision_id": 2565392302,
+      "source_qid": "Q8818",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2565392302"
+    }
+  },
+  "update_datetime": "2026-11-06T23:28:12.192695+00:00"
+}
