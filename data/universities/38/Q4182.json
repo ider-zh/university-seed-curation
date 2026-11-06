@@ -1,0 +1,859 @@
+{
+  "coverage": {
+    "finance": {
+      "checked_at": "2026-11-06T09:43:49.166293+00:00",
+      "status": "checked"
+    },
+    "geography": {
+      "checked_at": "2026-11-06T09:43:49.166293+00:00",
+      "status": "checked"
+    },
+    "history": {
+      "checked_at": "2026-11-06T09:43:49.166293+00:00",
+      "status": "checked"
+    },
+    "identity": {
+      "checked_at": "2026-11-06T09:43:49.166293+00:00",
+      "status": "checked"
+    },
+    "population": {
+      "checked_at": "2026-11-06T09:43:49.166293+00:00",
+      "status": "checked"
+    },
+    "profile": {
+      "checked_at": "2026-11-06T09:43:49.166293+00:00",
+      "status": "checked"
+    }
+  },
+  "curation": {
+    "identity_status": "in_scope",
+    "refresh_profile": "core-v1",
+    "reviewed_groups": [
+      "identity",
+      "geography",
+      "history",
+      "population",
+      "finance",
+      "profile"
+    ]
+  },
+  "finance": {
+    "endowment": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:5",
+              "original_text": "Endowment: US$600.427 M (2019)[1]",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2019
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": "600427000",
+            "currency": "USD",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "single_source_family"
+        ],
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "history": {
+    "milestones": [
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:History",
+                  "original_text": "The institute was founded in 1934 by Chaim Weizmann and his initial (1st) team, which included Benjamin M. Bloch, as the Daniel Sieff Research Institute.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "precision": "year",
+                "year": 1934
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:History",
+                  "original_text": "The institute was founded in 1934 by Chaim Weizmann and his initial (1st) team, which included Benjamin M. Bloch, as the Daniel Sieff Research Institute.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "Founded as the Daniel Sieff Research Institute by Chaim Weizmann and his initial team."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "founding",
+        "kind": "institution_establishment",
+        "subject_ref": "institution"
+      },
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:History",
+                  "original_text": "On 2 November 1949, in agreement with the Sieff family, the institute was renamed the Weizmann Institute of Science in his honor.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "day": 2,
+                "month": 11,
+                "precision": "day",
+                "year": 1949
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:History",
+                  "original_text": "On 2 November 1949, in agreement with the Sieff family, the institute was renamed the Weizmann Institute of Science in his honor.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "Renamed the Weizmann Institute of Science in agreement with the Sieff family."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "rename",
+        "kind": "rename",
+        "subject_ref": "institution"
+      }
+    ]
+  },
+  "identity": {
+    "aliases": [
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "infobox:1",
+                "original_text": "Former name: Daniel Sieff Research Institute (1934–1949)",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Daniel Sieff Research Institute"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    ],
+    "kind": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "is a postgraduate university and research institute in Rehovot, Israel.",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": "university",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "names": {
+      "en": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "The Weizmann Institute of Science (or simply Weizmann; Hebrew: מכון ויצמן למדע Machon Weizmann LeMada) is a postgraduate university and research institute in Rehovot, Israel.",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": "Weizmann Institute of Science",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "he": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "infobox:0",
+                "original_text": ": מכון ויצמן למדע (Hebrew)",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": "מכון ויצמן למדע",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    "operating_status": {
+      "candidates": [
+        {
+          "current_basis": "explicit_current",
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "The institute is now a multidisciplinary research center",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": "operating",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "ownership": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:2",
+              "original_text": "Type: Public research",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": "public",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "leadership": {
+    "president": {
+      "candidates": [
+        {
+          "current_basis": "term_present",
+          "evidence": [
+            {
+              "locator": "infobox:6",
+              "original_text": "President: Alon Chen",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Presidents",
+              "original_text": "Alon Chen (2019–present)",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "person": {
+              "name": "Alon Chen"
+            },
+            "term_start": {
+              "precision": "year",
+              "year": 2019
+            },
+            "title_original": {
+              "language": "en",
+              "text": "President"
+            }
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "single_source_family"
+        ],
+        "reason": "The source gives a term continuing to the present.",
+        "reason_code": "term_present"
+      }
+    }
+  },
+  "locations": [
+    {
+      "id": "rehovot",
+      "kind": "administrative_area",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "infobox:12",
+                "original_text": "Location: Rehovot, Israel",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Rehovot, Israel"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "qid": "Q207350"
+    },
+    {
+      "id": "campus",
+      "kind": "campus",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Architectural_planning_at_the_Weizmann_Institute_of_Science",
+                "original_text": "The Institute's campus spans an area of 1,250 dunams.",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Weizmann Institute campus"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    {
+      "coordinates": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "statement:q4182$7EC19817-144F-4066-AE64-9119C78A4A7B",
+                "original_text": "\"latitude\": 31.9075",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "source_rank": "normal",
+            "value": {
+              "crs": "EPSG:4326",
+              "globe_qid": "Q2",
+              "latitude": 31.9075,
+              "longitude": 34.809166666667,
+              "source_precision_degrees": 0.00027777777777778
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "id": "wikidata-item-location",
+      "kind": "institution",
+      "qid": "Q4182"
+    }
+  ],
+  "modified_datetime": "2026-11-06T09:55:08.897991+00:00",
+  "population": {
+    "academic_staff": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:7",
+              "original_text": "Faculty: 952",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "period_status": "not_stated",
+          "value": {
+            "amount": 952,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "period_not_stated",
+          "single_source_family"
+        ],
+        "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+        "reason_code": "only_available"
+      }
+    },
+    "administrative_staff": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:8",
+              "original_text": "Administrative staff: 400",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "period_status": "not_stated",
+          "value": {
+            "amount": 400,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "period_not_stated",
+          "single_source_family"
+        ],
+        "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+        "reason_code": "only_available"
+      }
+    },
+    "doctoral_students": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:11",
+              "original_text": "Doctoral students: 750 (2025)[2]",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2025
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 750,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "single_source_family"
+        ],
+        "reason_code": "only_available"
+      }
+    },
+    "postgraduate_students": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:10",
+              "original_text": "Postgraduates: 500 (2025)[2]",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2025
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 500,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "single_source_family"
+        ],
+        "reason_code": "only_available"
+      }
+    },
+    "students_total": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:9",
+              "original_text": "Students: 1,700 (2025)[2]",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2025
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 1700,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:0",
+              "original_text": "\"amount\": \"+1000\"",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c2",
+          "period_status": "not_stated",
+          "value": {
+            "amount": 1000,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "single_source_family"
+        ],
+        "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+        "reason_code": "best_available"
+      }
+    }
+  },
+  "profile": {
+    "academic_focus": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:Graduate_program",
+              "original_text": "awards M.Sc. and Ph.D. degrees in mathematics, computer science, physics, chemistry, biochemistry, and biology",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": [
+            {
+              "language": "en",
+              "text": "Mathematics"
+            },
+            {
+              "language": "en",
+              "text": "Computer science"
+            },
+            {
+              "language": "en",
+              "text": "Physics"
+            },
+            {
+              "language": "en",
+              "text": "Chemistry"
+            },
+            {
+              "language": "en",
+              "text": "Biochemistry"
+            },
+            {
+              "language": "en",
+              "text": "Biology"
+            }
+          ],
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "degree_levels": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:Graduate_program",
+              "original_text": "awards M.Sc. and Ph.D. degrees in mathematics, computer science, physics, chemistry, biochemistry, and biology",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": [
+            "M.Sc.",
+            "Ph.D."
+          ],
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "summary": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "The Weizmann Institute of Science (or simply Weizmann; Hebrew: מכון ויצמן למדע Machon Weizmann LeMada) is a postgraduate university and research institute in Rehovot, Israel.",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "infobox:2",
+              "original_text": "Type: Public research",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:lead",
+              "original_text": "Unlike other Israeli universities, it exclusively offers postgraduate-only degrees in the natural and exact sciences.",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:History",
+              "original_text": "The institute was founded in 1934 by Chaim Weizmann and his initial (1st) team, which included Benjamin M. Bloch, as the Daniel Sieff Research Institute.",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:History",
+              "original_text": "On 2 November 1949, in agreement with the Sieff family, the institute was renamed the Weizmann Institute of Science in his honor.",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:History",
+              "original_text": "WEIZAC, one of the world's first electronic computers was locally built by the institute in 1954–1955",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:History",
+              "original_text": "In 1959, the institute set up a wholly owned subsidiary called Yeda Research and Development Company to commercialize inventions made at the institute.",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Graduate_program",
+              "original_text": "awards M.Sc. and Ph.D. degrees in mathematics, computer science, physics, chemistry, biochemistry, and biology, as well as several interdisciplinary programs.",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "infobox:9",
+              "original_text": "Students: 1,700 (2025)[2]",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "infobox:10",
+              "original_text": "Postgraduates: 500 (2025)[2]",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "infobox:11",
+              "original_text": "Doctoral students: 750 (2025)[2]",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Architectural_planning_at_the_Weizmann_Institute_of_Science",
+              "original_text": "The Institute's campus spans an area of 1,250 dunams.",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "language": "en",
+            "text": "The Weizmann Institute of Science (מכון ויצמן למדע) is a postgraduate university and research institute in Rehovot, Israel. It is described as a public research institution offering postgraduate degrees in the natural and exact sciences. Its multidisciplinary programmes and research activities distinguish its graduate-only educational focus from universities that also admit undergraduates.\n\nChaim Weizmann and his initial team established the Daniel Sieff Research Institute in 1934. On 2 November 1949, following agreement with the Sieff family, it adopted the Weizmann Institute of Science name. Scientists at the institute built the early electronic computer WEIZAC in 1954–1955. In 1959, it established the wholly owned Yeda Research and Development Company to commercialize inventions arising from institute work. These events describe institutional development rather than a merger with another university.\n\nGraduate programmes include M.Sc. and Ph.D. degrees in mathematics, computer science, physics, chemistry, biochemistry and biology, together with interdisciplinary programmes. An institutional infobox reports 1,700 students in 2025 and separately lists postgraduate and doctoral counts without explaining whether the categories overlap. The campus in Rehovot includes research buildings and residential facilities; a campus description records its land area as 1,250 dunams. The reported enrolment and physical scale are tied to particular sources and should not be treated as live totals."
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "website": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P856:0",
+              "original_text": "\"value\": \"http://www.weizmann.ac.il/\"",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "value": "http://www.weizmann.ac.il/",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "qid": "Q4182",
+  "record_revision": 1,
+  "schema_version": "0.2.2",
+  "seed": {
+    "channels": [
+      "ranking_identifier"
+    ],
+    "import_id": "seed-84c3beb45367905f",
+    "screening_status": "needs_review"
+  },
+  "selection_policy": "preferred-v1",
+  "sources": {
+    "s1": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T09:43:00.318091+00:00",
+      "revision_id": 2508712496,
+      "source_qid": "Q4182",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2508712496"
+    },
+    "s2": {
+      "family": "wikimedia",
+      "kind": "wikipedia",
+      "language": "en",
+      "page_id": 428545,
+      "publisher_role": "encyclopedia",
+      "retrieved_at": "2026-11-06T09:43:20.665075+00:00",
+      "revision_id": 1380026365,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1380026365"
+    },
+    "s3": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T09:43:27.677047+00:00",
+      "revision_id": 2562377479,
+      "source_qid": "Q1664720",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2562377479"
+    },
+    "s4": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T09:43:35.571092+00:00",
+      "revision_id": 2562647517,
+      "source_qid": "Q209465",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2562647517"
+    },
+    "s5": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T09:43:42.498905+00:00",
+      "revision_id": 2563911248,
+      "source_qid": "Q801",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2563911248"
+    },
+    "s6": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T09:43:49.122970+00:00",
+      "revision_id": 2562943799,
+      "source_qid": "Q207350",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2562943799"
+    }
+  },
+  "update_datetime": "2026-11-06T09:55:08.897991+00:00"
+}
