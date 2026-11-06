@@ -1,0 +1,695 @@
+{
+  "attribution": "distinct_native_research_and_review_subagents;not_cryptographic_identity",
+  "research": {
+    "baseline_sha256": "absent",
+    "candidate": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-06T15:29:25.369867+00:00",
+          "status": "not_found"
+        },
+        "geography": {
+          "checked_at": "2026-11-06T15:29:25.369867+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-06T15:29:25.369867+00:00",
+          "status": "checked"
+        },
+        "identity": {
+          "checked_at": "2026-11-06T15:29:25.369867+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-06T15:29:25.369867+00:00",
+          "status": "not_found"
+        },
+        "profile": {
+          "checked_at": "2026-11-06T15:29:25.369867+00:00",
+          "status": "checked"
+        }
+      },
+      "curation": {
+        "identity_status": "in_scope"
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "claim:P571:0",
+                      "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q125119741$63257aa4-46f7-c67d-075f-3adc1faaf41e\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+2023-05-10T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}",
+                      "source_ref": "s1"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "day": 10,
+                    "month": 5,
+                    "precision": "day",
+                    "year": 2023
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "establishment",
+            "kind": "institution_establishment",
+            "subject_ref": "institution"
+          }
+        ]
+      },
+      "identity": {
+        "identifiers": {
+          "P5242": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P5242:0",
+                    "original_text": "{\"property\": \"P5242\", \"property_label\": \"ARWU university ID\", \"statement_id\": \"Q125119741$7B1F8E78-1F6C-4F96-9088-CE8AC2FD1048\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"yueyang-modern-service-vocational-college\"}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "yueyang-modern-service-vocational-college",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "metadata",
+                  "original_text": "{\"id\": \"Q125119741\", \"labels\": {\"en\": \"Yueyang modern service vocational college\"}, \"descriptions\": {}}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "claim:P31:0",
+                  "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q125119741$b4cb98f8-4f38-fcb7-a810-08c02148af0e\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 38723, \"id\": \"Q38723\"}}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "metadata",
+                  "original_text": "{\"id\": \"Q38723\", \"labels\": {\"en\": \"higher education institution\"}, \"descriptions\": {\"en\": \"institution that provides higher education (e.g., universities, vocational universities, community colleges, liberal arts colleges, institutes of technology, and others)\"}}",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "higher_education_college",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q125119741\", \"labels\": {\"en\": \"Yueyang modern service vocational college\"}, \"descriptions\": {}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "Yueyang modern service vocational college",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "locations": [
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q125119741$1c345921-4e26-b564-b1f6-c13bd95c99d6\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 148, \"id\": \"Q148\"}}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q148\", \"labels\": {\"en\": \"People's Republic of China\"}, \"descriptions\": {\"en\": \"country in East Asia\"}}",
+                    "source_ref": "s3"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "country_name": "People's Republic of China",
+                  "country_qid": "Q148",
+                  "formatted": {
+                    "language": "en",
+                    "text": "People's Republic of China"
+                  }
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "country",
+          "kind": "administrative_area",
+          "qid": "Q148"
+        },
+        {
+          "coordinates": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "statement:Q125119741$3cb9934e-4c43-61ff-c639-81f4c1bc2e76",
+                    "original_text": "\"latitude\": 29.48931",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "source_rank": "normal",
+                "value": {
+                  "crs": "EPSG:4326",
+                  "globe_qid": "Q2",
+                  "latitude": 29.48931,
+                  "longitude": 113.23166,
+                  "source_precision_degrees": 1e-05
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "wikidata-item-location",
+          "kind": "institution",
+          "qid": "Q125119741"
+        }
+      ],
+      "modified_datetime": "2026-11-06T15:32:30.328728+00:00",
+      "profile": {
+        "website": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P856:0",
+                  "original_text": "{\"property\": \"P856\", \"property_label\": \"official website\", \"statement_id\": \"Q125119741$d0b014a5-455a-e22f-2a9b-bdf757727b57\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"https://www.yyxdfwzy.com/\"}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "https://www.yyxdfwzy.com/",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "qid": "Q125119741",
+      "record_revision": 1,
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "ranking_identifier",
+          "reviewed_institution_type"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "included"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T15:29:23.470842+00:00",
+          "revision_id": 2548512116,
+          "source_qid": "Q125119741",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2548512116"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T15:29:25.205262+00:00",
+          "revision_id": 2553501921,
+          "source_qid": "Q38723",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2553501921"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T15:28:34.694415+00:00",
+          "revision_id": 2563722609,
+          "source_qid": "Q148",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2563722609"
+        }
+      }
+    },
+    "coverage": [
+      {
+        "group": "identity",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "status": "checked"
+      },
+      {
+        "group": "population",
+        "status": "not_found"
+      },
+      {
+        "group": "finance",
+        "status": "not_found"
+      },
+      {
+        "group": "profile",
+        "status": "checked"
+      }
+    ],
+    "delta": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-06T15:29:25.369867+00:00",
+          "status": "not_found"
+        },
+        "geography": {
+          "checked_at": "2026-11-06T15:29:25.369867+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-06T15:29:25.369867+00:00",
+          "status": "checked"
+        },
+        "identity": {
+          "checked_at": "2026-11-06T15:29:25.369867+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-06T15:29:25.369867+00:00",
+          "status": "not_found"
+        },
+        "profile": {
+          "checked_at": "2026-11-06T15:29:25.369867+00:00",
+          "status": "checked"
+        }
+      },
+      "curation": {
+        "identity_status": "in_scope"
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "claim:P571:0",
+                      "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q125119741$63257aa4-46f7-c67d-075f-3adc1faaf41e\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+2023-05-10T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}",
+                      "source_ref": "s1"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "day": 10,
+                    "month": 5,
+                    "precision": "day",
+                    "year": 2023
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "establishment",
+            "kind": "institution_establishment",
+            "subject_ref": "institution"
+          }
+        ]
+      },
+      "identity": {
+        "identifiers": {
+          "P5242": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P5242:0",
+                    "original_text": "{\"property\": \"P5242\", \"property_label\": \"ARWU university ID\", \"statement_id\": \"Q125119741$7B1F8E78-1F6C-4F96-9088-CE8AC2FD1048\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"yueyang-modern-service-vocational-college\"}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "yueyang-modern-service-vocational-college",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "metadata",
+                  "original_text": "{\"id\": \"Q125119741\", \"labels\": {\"en\": \"Yueyang modern service vocational college\"}, \"descriptions\": {}}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "claim:P31:0",
+                  "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q125119741$b4cb98f8-4f38-fcb7-a810-08c02148af0e\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 38723, \"id\": \"Q38723\"}}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "metadata",
+                  "original_text": "{\"id\": \"Q38723\", \"labels\": {\"en\": \"higher education institution\"}, \"descriptions\": {\"en\": \"institution that provides higher education (e.g., universities, vocational universities, community colleges, liberal arts colleges, institutes of technology, and others)\"}}",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "higher_education_college",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q125119741\", \"labels\": {\"en\": \"Yueyang modern service vocational college\"}, \"descriptions\": {}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "Yueyang modern service vocational college",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "locations": [
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q125119741$1c345921-4e26-b564-b1f6-c13bd95c99d6\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 148, \"id\": \"Q148\"}}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q148\", \"labels\": {\"en\": \"People's Republic of China\"}, \"descriptions\": {\"en\": \"country in East Asia\"}}",
+                    "source_ref": "s3"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "country_name": "People's Republic of China",
+                  "country_qid": "Q148",
+                  "formatted": {
+                    "language": "en",
+                    "text": "People's Republic of China"
+                  }
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "country",
+          "kind": "administrative_area",
+          "qid": "Q148"
+        },
+        {
+          "coordinates": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "statement:Q125119741$3cb9934e-4c43-61ff-c639-81f4c1bc2e76",
+                    "original_text": "\"latitude\": 29.48931",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "source_rank": "normal",
+                "value": {
+                  "crs": "EPSG:4326",
+                  "globe_qid": "Q2",
+                  "latitude": 29.48931,
+                  "longitude": 113.23166,
+                  "source_precision_degrees": 1e-05
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "wikidata-item-location",
+          "kind": "institution",
+          "qid": "Q125119741"
+        }
+      ],
+      "profile": {
+        "website": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P856:0",
+                  "original_text": "{\"property\": \"P856\", \"property_label\": \"official website\", \"statement_id\": \"Q125119741$d0b014a5-455a-e22f-2a9b-bdf757727b57\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"https://www.yyxdfwzy.com/\"}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "https://www.yyxdfwzy.com/",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "qid": "Q125119741",
+      "record_revision": 1,
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "ranking_identifier",
+          "reviewed_institution_type"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "included"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T15:29:23.470842+00:00",
+          "revision_id": 2548512116,
+          "source_qid": "Q125119741",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2548512116"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T15:29:25.205262+00:00",
+          "revision_id": 2553501921,
+          "source_qid": "Q38723",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2553501921"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T15:28:34.694415+00:00",
+          "revision_id": 2563722609,
+          "source_qid": "Q148",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2563722609"
+        }
+      }
+    },
+    "open_requests": [],
+    "proposed_at": "2026-11-06T15:32:30.328728+00:00",
+    "qid": "Q125119741",
+    "research": {
+      "model": "not_reported",
+      "prompt_sha256": "fc305021a8e4573000c55cc67ed3a52008248cfff6f4505e6d91ef917ee327b5",
+      "reasoning_effort": "not_reported",
+      "schema_sha256": "92e942f4fbf2ae28964462ea9ffa8312c5ee16a077a1e08b40aaaf741512422e",
+      "session": "/root/research_q125119741"
+    },
+    "retrieval_failures": [],
+    "review_status": "unreviewed",
+    "seed": {
+      "channels": [
+        "ranking_identifier",
+        "reviewed_institution_type"
+      ],
+      "import_id": "seed-84c3beb45367905f",
+      "screening_status": "included"
+    },
+    "transport": {
+      "base_commit": "b11e6f1f4a40ac3081e8fba21a37c0a63fa07806",
+      "protocol": "native-subagent-v1",
+      "repository": "ider-zh/university-seed-curation",
+      "review_policy": {
+        "id": "source-grounded-flexible-v2",
+        "sha256": "b8ed7d2897e4c31dbd81b1379aafdc1077a21d1a33949edbd2d896b0adf99db2"
+      },
+      "schema_sha256": "bfa496eafa9dffca56146214168db7f000b09161b8993129632e7202e1c88833",
+      "seed_catalog_sha256": "84c3beb45367905f513d650684283dd62a9c1b77962bdc34151a6ef05bfa03d4"
+    },
+    "type": "university-proposal-v1"
+  },
+  "review": {
+    "contexts_checked": 4,
+    "coverage_checks": [
+      {
+        "group": "identity",
+        "reason": "Frozen root metadata, P31 and identifier evidence were surveyed; supported identity facts are represented. This does not claim external verification.",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "reason": "Frozen root country and coordinate evidence were surveyed with institution scope and precision preserved.",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "reason": "The available root inception statement was surveyed; no additional historical milestones are available in this packet.",
+        "status": "checked"
+      },
+      {
+        "group": "population",
+        "reason": "No population observations occur in the supplied frozen root/source corpus. This is packet-limited absence, not a claim that no external figures exist.",
+        "status": "not_found"
+      },
+      {
+        "group": "finance",
+        "reason": "No financial observations occur in the supplied frozen source corpus; no external absence or completed external search is asserted.",
+        "status": "not_found"
+      },
+      {
+        "group": "profile",
+        "reason": "The packet includes the official website identifier and sparse institutional metadata. Supplementary profile content is outside independent factual review; no unsupported summary is required.",
+        "status": "checked"
+      }
+    ],
+    "decision": "approve",
+    "facts_checked": 5,
+    "full_refresh": true,
+    "inferences": [
+      {
+        "id": "$.identity.kind:c1",
+        "reason": "Root P31 is higher education institution (Q38723), and the root English name identifies a vocational college. The broader controlled higher_education_college representation is supported without asserting university status or legal independence."
+      },
+      {
+        "id": "milestone:establishment",
+        "reason": "Using the root item's P571 inception as institution_establishment preserves the source meaning and root subject; no predecessor or charter date is invented."
+      }
+    ],
+    "model": "not_reported",
+    "proposal_sha256": "5084cb4d4cba5bcf10fa83d3915efad947cca70bca86bf2f35de96797f9d5e84",
+    "qid": "Q125119741",
+    "reasoning_effort": "not_reported",
+    "record_sha256": "7b53a760f7ff65fc6cbdb3cd5b957f3b3c2969ea22efe28a88a30b1bcea6ef02",
+    "request_responses": [],
+    "requests": [],
+    "review_scope": {
+      "not_independently_reviewed_ids": [
+        "$.locations[0].address:c1",
+        "$.profile.website:c1",
+        "location:country"
+      ],
+      "reviewed_ids": [
+        "$.history.milestones[0].date:c1",
+        "$.identity.identifiers.P5242:c1",
+        "$.identity.kind:c1",
+        "$.identity.names.en:c1",
+        "$.locations[1].coordinates:c1",
+        "country:$.locations[0].address:c1",
+        "identity",
+        "location:wikidata-item-location",
+        "milestone:establishment"
+      ],
+      "version": "core-review-v3"
+    },
+    "review_session": "/root/review_q125119741",
+    "reviewed_at": "2026-11-06T15:35:11.546819+00:00",
+    "source_revisions_checked": 3,
+    "waived_requests": []
+  },
+  "review_result_sha256": "e0e9443384c27bf14ffb5549329492d1635567579994458c1316148c9cd6e078",
+  "type": "university-unified-receipt-v1"
+}
