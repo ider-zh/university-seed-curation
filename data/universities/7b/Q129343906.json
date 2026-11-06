@@ -1,0 +1,253 @@
+{
+  "coverage": {
+    "finance": {
+      "checked_at": "2026-11-06T15:29:28.329512+00:00",
+      "status": "not_found"
+    },
+    "geography": {
+      "checked_at": "2026-11-06T15:29:28.329512+00:00",
+      "status": "checked"
+    },
+    "history": {
+      "checked_at": "2026-11-06T15:29:28.329512+00:00",
+      "status": "checked"
+    },
+    "identity": {
+      "checked_at": "2026-11-06T15:29:28.329512+00:00",
+      "status": "checked"
+    },
+    "population": {
+      "checked_at": "2026-11-06T15:29:28.329512+00:00",
+      "status": "not_found"
+    },
+    "profile": {
+      "checked_at": "2026-11-06T15:29:28.329512+00:00",
+      "status": "not_found"
+    }
+  },
+  "curation": {
+    "identity_status": "in_scope",
+    "refresh_profile": "core-v1",
+    "reviewed_groups": [
+      "identity",
+      "geography",
+      "history",
+      "population",
+      "finance",
+      "profile"
+    ]
+  },
+  "history": {
+    "milestones": [
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P571:0",
+                  "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q129343906$24FC6567-61AB-44AC-A3AB-167752C063FA\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+2012-12-19T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "day": 19,
+                "month": 12,
+                "precision": "day",
+                "year": 2012
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "establishment",
+        "kind": "institution_establishment",
+        "subject_ref": "institution"
+      }
+    ]
+  },
+  "identity": {
+    "kind": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P31:0",
+              "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q129343906$7DE8C49D-D4B7-4A6D-AEA8-1CB543EB501C\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 12513145, \"id\": \"Q12513145\"}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "metadata",
+              "original_text": "{\"id\": \"Q12513145\", \"labels\": {\"en\": \"sekolah tinggi\"}, \"descriptions\": {\"en\": \"Indonesian type of higher education institution, similar to college but provides undergraduate programs\"}}",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": "higher_education_college",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "names": {
+      "en": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q129343906\", \"labels\": {\"en\": \"Sekolah Tinggi Teologi Siloam Internasional\"}, \"descriptions\": {\"en\": \"university in Indonesia\"}}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": "Sekolah Tinggi Teologi Siloam Internasional",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    }
+  },
+  "locations": [
+    {
+      "address": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P131:0",
+                "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q129343906$84FCF8DC-FD11-43AB-9024-DC93B605BABD\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 187050, \"id\": \"Q187050\"}, \"reference_count\": 3}",
+                "source_ref": "s1"
+              },
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q187050\", \"labels\": {\"en\": \"South Thousand Islands\"}, \"descriptions\": {\"en\": \"district in Thousand Islands Regency, Jakarta Province, Indonesia\"}}",
+                "source_ref": "s4"
+              },
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q252\", \"labels\": {\"en\": \"Indonesia\"}, \"descriptions\": {\"en\": \"island country in Southeast Asia and Oceania\"}}",
+                "source_ref": "s3"
+              },
+              {
+                "locator": "claim:P17:0",
+                "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q187050$B71A2AD5-A56F-43C5-BAF7-00B9492647FB\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 252, \"id\": \"Q252\"}, \"reference_count\": 2}",
+                "source_ref": "s4"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "country_name": "Indonesia",
+              "country_qid": "Q252",
+              "formatted": {
+                "language": "en",
+                "text": "South Thousand Islands, Indonesia"
+              },
+              "region_name": "South Thousand Islands",
+              "region_qid": "Q187050"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "id": "south-thousand-islands",
+      "kind": "administrative_area",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P131:0",
+                "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q129343906$84FCF8DC-FD11-43AB-9024-DC93B605BABD\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 187050, \"id\": \"Q187050\"}, \"reference_count\": 3}",
+                "source_ref": "s1"
+              },
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q187050\", \"labels\": {\"en\": \"South Thousand Islands\"}, \"descriptions\": {\"en\": \"district in Thousand Islands Regency, Jakarta Province, Indonesia\"}}",
+                "source_ref": "s4"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "South Thousand Islands"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "qid": "Q187050"
+    }
+  ],
+  "modified_datetime": "2026-11-06T15:34:16.256769+00:00",
+  "qid": "Q129343906",
+  "record_revision": 1,
+  "schema_version": "0.2.2",
+  "seed": {
+    "channels": [
+      "reviewed_institution_type"
+    ],
+    "import_id": "seed-84c3beb45367905f",
+    "screening_status": "included"
+  },
+  "selection_policy": "preferred-v1",
+  "sources": {
+    "s1": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T15:29:23.628521+00:00",
+      "revision_id": 2270373152,
+      "source_qid": "Q129343906",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2270373152"
+    },
+    "s2": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T15:29:25.097649+00:00",
+      "revision_id": 2427034730,
+      "source_qid": "Q12513145",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2427034730"
+    },
+    "s3": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T15:29:27.258066+00:00",
+      "revision_id": 2562953677,
+      "source_qid": "Q252",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2562953677"
+    },
+    "s4": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T15:29:28.291492+00:00",
+      "revision_id": 2486059543,
+      "source_qid": "Q187050",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2486059543"
+    }
+  },
+  "update_datetime": "2026-11-06T15:34:16.256769+00:00"
+}
