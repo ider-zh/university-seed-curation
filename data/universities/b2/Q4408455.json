@@ -1,0 +1,975 @@
+{
+  "coverage": {
+    "finance": {
+      "checked_at": "2026-11-06T22:46:58.998658+00:00",
+      "status": "not_found"
+    },
+    "geography": {
+      "checked_at": "2026-11-06T22:46:58.998658+00:00",
+      "status": "disputed"
+    },
+    "history": {
+      "checked_at": "2026-11-06T22:46:58.998658+00:00",
+      "status": "checked"
+    },
+    "identity": {
+      "checked_at": "2026-11-06T22:46:58.998658+00:00",
+      "status": "checked"
+    },
+    "population": {
+      "checked_at": "2026-11-06T22:46:58.998658+00:00",
+      "status": "checked"
+    },
+    "profile": {
+      "checked_at": "2026-11-06T22:46:58.998658+00:00",
+      "status": "checked"
+    }
+  },
+  "curation": {
+    "identity_status": "in_scope",
+    "refresh_profile": "core-v1",
+    "reviewed_groups": [
+      "identity",
+      "geography",
+      "history",
+      "population",
+      "finance",
+      "profile"
+    ]
+  },
+  "history": {
+    "milestones": [
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:History",
+                  "original_text": "On June 10, 1909, the Emperor signed the \"Decree on the foundation of the university in Saratov\", which became the tenth University in Russia and consisted of the Medical Faculty only.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "day": 10,
+                "month": 6,
+                "precision": "day",
+                "year": 1909
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:History",
+                  "original_text": "The university was founded in 1909 as Imperial University by the Decree of Emperor Nicholas II.[3] On June 10, 1909, the Emperor signed the \"Decree on the foundation of the university in Saratov\", which became the tenth University in Russia and consisted of the Medical Faculty only.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "The university traces its origin to the Imperial University founded in Saratov in 1909, initially consisting only of a medical faculty."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "origin",
+        "kind": "predecessor_establishment",
+        "subject_ref": "institution"
+      },
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:History",
+                  "original_text": "In 1930, the Medical Faculty of Saratov University was transformed into an independent institution of higher education, which was known as the Medical Institute.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "precision": "year",
+                "year": 1930
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:History",
+                  "original_text": "In 1930, the Medical Faculty of Saratov University was transformed into an independent institution of higher education, which was known as the Medical Institute.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "The medical faculty of Saratov University became an independent higher education institution known as the Medical Institute."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "independent",
+        "kind": "institution_establishment",
+        "subject_ref": "institution"
+      },
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:History",
+                  "original_text": "In 1993, it received the status of a Medical University.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "precision": "year",
+                "year": 1993
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:History",
+                  "original_text": "In 1993, it received the status of a Medical University.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "The institution received medical university status."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "university",
+        "kind": "university_status",
+        "subject_ref": "institution"
+      },
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:History",
+                  "original_text": "In 2009, the university was named after its first rector Vasily Ivanovich Razumovsky.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "precision": "year",
+                "year": 2009
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:History",
+                  "original_text": "In 2009, the university was named after its first rector Vasily Ivanovich Razumovsky.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "The university was named after its first rector, Vasily Ivanovich Razumovsky."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "razumovsky",
+        "kind": "rename",
+        "subject_ref": "institution"
+      }
+    ]
+  },
+  "identity": {
+    "aliases": [
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "infobox:1",
+                "original_text": "Other names: Saratov State Medical University named after V.I. Razumovsky, Razumovsky University",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Razumovsky University"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    ],
+    "kind": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P31:0",
+              "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"q4408455$BDBD1526-1381-4384-B59F-2C751293CF9E\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 3918, \"id\": \"Q3918\"}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "value": "university",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "names": {
+      "en": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "page_metadata",
+                "original_text": "{\"title\": \"Saratov State Medical University\", \"language\": \"en\"}",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": "Saratov State Medical University",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "ru": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "infobox:0",
+                "original_text": ": Саратовский государственный медицинский университет им. В. И. Разумовского",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": "Саратовский государственный медицинский университет им. В. И. Разумовского",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    "ownership": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:5",
+              "original_text": "Type: Public",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": "public",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "leadership": {
+    "rector": {
+      "candidates": [
+        {
+          "current_basis": "term_present",
+          "evidence": [
+            {
+              "locator": "infobox:7",
+              "original_text": "Rector: Andrey Vyacheslavovich Eremin",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Rectors_of_the_Saratov_State_Medical_University",
+              "original_text": "Eremin Andrey Vyacheslavovich (September 2020 – Present)",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "person": {
+              "name": "Andrey Vyacheslavovich Eremin"
+            },
+            "term_start": {
+              "month": 9,
+              "precision": "month",
+              "year": 2020
+            },
+            "title_original": {
+              "language": "en",
+              "text": "Rector"
+            }
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "single_source_family"
+        ],
+        "reason": "The source gives a term continuing to the present.",
+        "reason_code": "term_present"
+      }
+    }
+  },
+  "locations": [
+    {
+      "id": "saratov",
+      "kind": "administrative_area",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "is a public university located in Saratov, Russia.",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Saratov"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "qid": "Q5332"
+    },
+    {
+      "address": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "infobox:8",
+                "original_text": "Location: 112 B. Kazachia Street, Saratov, Saratov Oblast, 410000, Russian Federation",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "city_qid": "Q5332",
+              "country_qid": "Q159",
+              "formatted": {
+                "language": "en",
+                "text": "112 B. Kazachia Street, Saratov, Saratov Oblast, 410000, Russian Federation"
+              },
+              "postal_code": "410000"
+            },
+            "verification": "supported"
+          },
+          {
+            "evidence": [
+              {
+                "locator": "infobox:13",
+                "original_text": "Юридический адрес: 410012, Российская Федерация, Саратовская область, Саратов, ул. Б. Казачья, д. 112",
+                "source_ref": "s3"
+              }
+            ],
+            "id": "c2",
+            "value": {
+              "city_qid": "Q5332",
+              "country_qid": "Q159",
+              "formatted": {
+                "language": "ru",
+                "text": "410012, Российская Федерация, Саратовская область, Саратов, ул. Б. Казачья, д. 112"
+              },
+              "postal_code": "410012"
+            },
+            "verification": "supported"
+          }
+        ],
+        "conflicts": [
+          {
+            "candidate_ids": [
+              "c1",
+              "c2"
+            ],
+            "kind": "value_disagreement",
+            "note": "The English address gives postal code 410000 while the Russian explicitly labelled legal address gives 410012 for the same street and number; source dates do not resolve this.",
+            "status": "unresolved"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c2",
+          "qualifications": [
+            "conflicting_candidates"
+          ],
+          "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+          "reason_code": "best_available"
+        }
+      },
+      "id": "legal_address",
+      "kind": "office"
+    },
+    {
+      "coordinates": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "statement:Q4408455$d6141444-48c0-1287-2a40-b8a0656a712d",
+                "original_text": "\"latitude\": 51.5383",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "source_rank": "normal",
+            "value": {
+              "crs": "EPSG:4326",
+              "globe_qid": "Q2",
+              "latitude": 51.5383,
+              "longitude": 46.0078,
+              "source_precision_degrees": 0.0001
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "id": "wikidata-item-location",
+      "kind": "institution",
+      "qid": "Q4408455"
+    }
+  ],
+  "modified_datetime": "2026-11-06T22:53:02.956011+00:00",
+  "population": {
+    "employees_total": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:.D0.A3.D1.87.D0.B5.D0.B1.D0.BD.D0.B0.D1.8F_.D0.B4.D0.B5.D1.8F.D1.82.D0.B5.D0.BB.D1.8C.D0.BD.D0.BE.D1.81.D1.82.D1.8C",
+              "original_text": "В университете работают 5000 сотрудников: 200 докторов, 600 кандидатов наук",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c1",
+          "period_status": "not_stated",
+          "value": {
+            "amount": 5000,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "period_not_stated",
+          "single_source_family"
+        ],
+        "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+        "reason_code": "only_available"
+      }
+    },
+    "international_students": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:11",
+              "original_text": "Иностранные студенты: 500",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c1",
+          "period_status": "not_stated",
+          "value": {
+            "amount": 500,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "period_not_stated",
+          "single_source_family"
+        ],
+        "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+        "reason_code": "only_available"
+      }
+    },
+    "students_total": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:10",
+              "original_text": "Студенты: 8286[1][2]",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c1",
+          "period_status": "not_stated",
+          "value": {
+            "amount": 8286,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "period_not_stated",
+          "single_source_family"
+        ],
+        "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "profile": {
+    "academic_focus": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:Faculties",
+              "original_text": "[edit | edit source]\nFaculty of General Medicine\nFaculty of Pediatrics\nFaculty of Dentistry\nFaculty of Medical and Preventative Care\nFaculty of Pharmacy\nFaculty of Clinical Psychology\nNursing Institute\nFaculty of Vocational Training and Professional Retraining of Specialists",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": [
+            {
+              "language": "en",
+              "text": "General medicine"
+            },
+            {
+              "language": "en",
+              "text": "Pediatrics"
+            },
+            {
+              "language": "en",
+              "text": "Dentistry"
+            },
+            {
+              "language": "en",
+              "text": "Medical and preventative care"
+            },
+            {
+              "language": "en",
+              "text": "Pharmacy"
+            },
+            {
+              "language": "en",
+              "text": "Clinical psychology"
+            },
+            {
+              "language": "en",
+              "text": "Nursing"
+            }
+          ],
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "motto": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:3",
+              "original_text": "Motto: «Знание и наследие»",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "language": "ru",
+            "text": "Знание и наследие"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "summary": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "Russian medical university\nThe Saratov State Medical University (SSMU; Russian: Саратовский государственный медицинский университет им. В. И. Разумовского, lit. 'Saratov State Medical University named after V.I. Razumovsky'; also known as Razumovsky University) is a public university located in Saratov, Russia.[1][2]",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:History",
+              "original_text": "The university was founded in 1909 as Imperial University by the Decree of Emperor Nicholas II.[3] On June 10, 1909, the Emperor signed the \"Decree on the foundation of the university in Saratov\", which became the tenth University in Russia and consisted of the Medical Faculty only. Professor V.I. Razumovsky became the first university rector.[4] In 1930, the Medical Faculty of Saratov University was transformed into an independent institution of higher education, which was known as the Medical Institute.\nIn 1993, it received the status of a Medical University. In 2009, the university was named after its first rector Vasily Ivanovich Razumovsky.[5]",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Faculties",
+              "original_text": "[edit | edit source]\nFaculty of General Medicine\nFaculty of Pediatrics\nFaculty of Dentistry\nFaculty of Medical and Preventative Care\nFaculty of Pharmacy\nFaculty of Clinical Psychology\nNursing Institute\nFaculty of Vocational Training and Professional Retraining of Specialists",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "infobox:9",
+              "original_text": "Language: Russian, English",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "infobox:4",
+              "original_text": "Motto in English: «Knowledge and heritage»(Latin: «Eruditio (Scientia, cognition) et Heredium»)",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Rectors_of_the_Saratov_State_Medical_University",
+              "original_text": "Eremin Andrey Vyacheslavovich (September 2020 – Present)",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "claim:P749:0",
+              "original_text": "{\"property\": \"P749\", \"property_label\": \"parent organization or unit\", \"statement_id\": \"Q4408455$76132BAA-F7D2-4EFE-9435-65239B47B213\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 2624248, \"id\": \"Q2624248\"}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "metadata",
+              "original_text": "{\"id\": \"Q2624248\", \"labels\": {\"ru\": \"Министерство здравоохранения Российской Федерации\", \"en\": \"Ministry of Healthcare of the Russian Federation\"}, \"descriptions\": {\"en\": \"Russian ministry\", \"ru\": \"федеральный орган исполнительной власти России\"}}",
+              "source_ref": "s10"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "language": "en",
+            "text": "Saratov State Medical University is a public university in Saratov, Russia, also known as Razumovsky University. Its Russian name commemorates Vasily Ivanovich Razumovsky, the first rector of the university from which it traces its origins. The institution is associated with the Ministry of Healthcare of the Russian Federation. Its listed teaching languages are Russian and English. The academic structure includes general medicine, pediatrics, dentistry, medical and preventative care, pharmacy and clinical psychology, together with a nursing institute and a faculty concerned with vocational training and professional retraining. Its motto translates as “Knowledge and heritage.”\n\nThe university traces its history to the Imperial University established in Saratov by decree of Nicholas II in 1909. At its foundation, that university consisted only of a medical faculty. In 1930 the medical faculty of Saratov University became an independent institution of higher education, known as the Medical Institute. The institution received medical university status in 1993 and was named after Razumovsky in 2009. The English-language rector list identifies Andrey Vyacheslavovich Eremin as serving from September 2020. These stages distinguish the university’s historical origin from the establishment of an independent medical institution and its later university designation."
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "teaching_languages": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:9",
+              "original_text": "Language: Russian, English",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": [
+            "Russian",
+            "English"
+          ],
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "website": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P856:0",
+              "original_text": "{\"property\": \"P856\", \"property_label\": \"official website\", \"statement_id\": \"Q4408455$30E57CA8-F5FE-4AFF-8BA0-84EDFC4C8608\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"http://www.sgmu.ru/\", \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "value": "http://www.sgmu.ru/",
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P856:1",
+              "original_text": "{\"property\": \"P856\", \"property_label\": \"official website\", \"statement_id\": \"Q4408455$9830501f-4c38-3868-76c5-70eda966faa1\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"http://www.sgmu.ru/en/\"}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c2",
+          "value": "http://www.sgmu.ru/en/",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+        "reason_code": "best_available"
+      }
+    }
+  },
+  "qid": "Q4408455",
+  "record_revision": 1,
+  "related_entities": {
+    "ministry": {
+      "kind": "institution",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q2624248\", \"labels\": {\"ru\": \"Министерство здравоохранения Российской Федерации\", \"en\": \"Ministry of Healthcare of the Russian Federation\"}, \"descriptions\": {\"en\": \"Russian ministry\", \"ru\": \"федеральный орган исполнительной власти России\"}}",
+                "source_ref": "s10"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Ministry of Healthcare of the Russian Federation"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "qid": "Q2624248"
+    }
+  },
+  "relationships": {
+    "parent": [
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P749:0",
+                "original_text": "{\"property\": \"P749\", \"property_label\": \"parent organization or unit\", \"statement_id\": \"Q4408455$76132BAA-F7D2-4EFE-9435-65239B47B213\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 2624248, \"id\": \"Q2624248\"}, \"reference_count\": 1}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "target_ref": "related:ministry"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    ]
+  },
+  "schema_version": "0.2.2",
+  "seed": {
+    "channels": [
+      "reviewed_institution_type"
+    ],
+    "import_id": "seed-84c3beb45367905f",
+    "screening_status": "included"
+  },
+  "selection_policy": "preferred-v1",
+  "sources": {
+    "s1": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T22:46:24.032944+00:00",
+      "revision_id": 2560423186,
+      "source_qid": "Q4408455",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2560423186"
+    },
+    "s10": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T22:46:58.981688+00:00",
+      "revision_id": 2489168558,
+      "source_qid": "Q2624248",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2489168558"
+    },
+    "s2": {
+      "family": "wikimedia",
+      "kind": "wikipedia",
+      "language": "en",
+      "page_id": 65224038,
+      "publisher_role": "encyclopedia",
+      "retrieved_at": "2026-11-06T22:46:32.328887+00:00",
+      "revision_id": 1370216069,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1370216069"
+    },
+    "s3": {
+      "family": "wikimedia",
+      "kind": "wikipedia",
+      "language": "ru",
+      "page_id": 544613,
+      "publisher_role": "encyclopedia",
+      "retrieved_at": "2026-11-06T22:46:36.344817+00:00",
+      "revision_id": 152402519,
+      "url": "https://ru.wikipedia.org/w/index.php?oldid=152402519"
+    },
+    "s4": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T22:46:38.637994+00:00",
+      "revision_id": 2562156954,
+      "source_qid": "Q3918",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2562156954"
+    },
+    "s5": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T22:46:35.809093+00:00",
+      "revision_id": 2523404231,
+      "source_qid": "Q45400320",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2523404231"
+    },
+    "s6": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T22:46:43.020285+00:00",
+      "revision_id": 2564284929,
+      "source_qid": "Q159",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2564284929"
+    },
+    "s7": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T22:46:47.311402+00:00",
+      "revision_id": 2562856573,
+      "source_qid": "Q34266",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2562856573"
+    },
+    "s8": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T22:46:51.560286+00:00",
+      "revision_id": 2563998051,
+      "source_qid": "Q15180",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2563998051"
+    },
+    "s9": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T22:46:55.641697+00:00",
+      "revision_id": 2553943453,
+      "source_qid": "Q5332",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2553943453"
+    }
+  },
+  "update_datetime": "2026-11-06T22:53:02.956011+00:00"
+}
