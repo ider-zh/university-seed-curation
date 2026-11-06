@@ -1,0 +1,794 @@
+{
+  "coverage": {
+    "finance": {
+      "checked_at": "2026-11-06T14:08:55.908090+00:00",
+      "status": "not_found"
+    },
+    "geography": {
+      "checked_at": "2026-11-06T14:08:55.908090+00:00",
+      "status": "checked"
+    },
+    "history": {
+      "checked_at": "2026-11-06T14:08:55.908090+00:00",
+      "status": "disputed"
+    },
+    "identity": {
+      "checked_at": "2026-11-06T14:08:55.908090+00:00",
+      "status": "checked"
+    },
+    "population": {
+      "checked_at": "2026-11-06T14:08:55.908090+00:00",
+      "status": "not_found"
+    },
+    "profile": {
+      "checked_at": "2026-11-06T14:08:55.908090+00:00",
+      "status": "checked"
+    }
+  },
+  "curation": {
+    "identity_status": "in_scope",
+    "refresh_profile": "core-v1",
+    "reviewed_groups": [
+      "identity",
+      "geography",
+      "history",
+      "population",
+      "finance",
+      "profile"
+    ]
+  },
+  "history": {
+    "milestones": [
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:History",
+                  "original_text": "The University Grants Commission (UGC) granted recognition to the university on 27 March 2025, with the university’s establishment being retroactively acknowledged from 8 November 2023.[9]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "day": 8,
+                "month": 11,
+                "precision": "day",
+                "year": 2023
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:2",
+                  "original_text": "Established: 2025 (1 year ago) (2025)",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c2",
+              "value": {
+                "precision": "year",
+                "year": 2025
+              },
+              "verification": "supported"
+            }
+          ],
+          "conflicts": [
+            {
+              "candidate_ids": [
+                "c1",
+                "c2"
+              ],
+              "kind": "time_disagreement",
+              "note": "The infobox gives establishment in 2025; the history states UGC retroactively acknowledged establishment from 8 November 2023. These may reflect different administrative milestones.",
+              "status": "unresolved"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "conflicting_candidates"
+            ],
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:History",
+                  "original_text": "The University Grants Commission (UGC) granted recognition to the university on 27 March 2025, with the university’s establishment being retroactively acknowledged from 8 November 2023.[9]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "The University Grants Commission recognized the university on 27 March 2025, with establishment retroactively acknowledged from 8 November 2023."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "establishment",
+        "kind": "institution_establishment",
+        "subject_ref": "institution"
+      },
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:History",
+                  "original_text": "On 11 June 2024, the state government formally approved the university’s official name as Guru Jambheshwar University.[6][7]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "day": 11,
+                "month": 6,
+                "precision": "day",
+                "year": 2024
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:History",
+                  "original_text": "On 11 June 2024, the state government formally approved the university’s official name as Guru Jambheshwar University.[6][7]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "The state government formally approved the name Guru Jambheshwar University."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "name_approval",
+        "kind": "rename",
+        "subject_ref": "institution"
+      },
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:History",
+                  "original_text": "The university commenced teaching from the academic session 2025-26.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "original_date": "2025-26",
+                "precision": "interval"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:History",
+                  "original_text": "The university commenced teaching from the academic session 2025-26.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "Teaching commenced in the 2025-26 academic session."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "teaching",
+        "kind": "teaching_start",
+        "subject_ref": "institution"
+      }
+    ]
+  },
+  "identity": {
+    "kind": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P31:0",
+              "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q135497634$4df7ca3c-6e9f-4d81-9005-d21e848c7a6e\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 3918, \"id\": \"Q3918\"}}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "metadata",
+              "original_text": "{\"id\": \"Q3918\", \"labels\": {\"en\": \"university\"}, \"descriptions\": {\"en\": \"an institution of tertiary education and research which awards academic degrees in several academic disciplines\"}}",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c1",
+          "value": "university",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "names": {
+      "en": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q135497634\", \"labels\": {\"en\": \"Guru Jambheshwar University, Moradabad\"}, \"descriptions\": {\"en\": \"state public university in Moradabad, Uttar Pradesh, India\"}}",
+                "source_ref": "s1"
+              },
+              {
+                "locator": "page_metadata",
+                "original_text": "{\"title\": \"Guru Jambheshwar University, Moradabad\", \"language\": \"en\"}",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": "Guru Jambheshwar University, Moradabad",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    "ownership": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P31:1",
+              "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q135497634$4D119932-7E6F-465B-B4EB-45B566C3DA06\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 7603893, \"id\": \"Q7603893\"}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "metadata",
+              "original_text": "{\"id\": \"Q7603893\", \"labels\": {\"en\": \"state public university\"}, \"descriptions\": {\"en\": \"institute of higher education run and funded by the government of an Indian state\"}}",
+              "source_ref": "s4"
+            },
+            {
+              "locator": "infobox:1",
+              "original_text": "Type: State",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": "public",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "leadership": {
+    "vice_chancellor": {
+      "candidates": [
+        {
+          "current_basis": "infobox_current",
+          "evidence": [
+            {
+              "locator": "infobox:5",
+              "original_text": "Vice-Chancellor: Prof. Sachin Maheshwari",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:History",
+              "original_text": "On 3 December 2024, Prof. Sachin Maheshwari was appointed as the first Vice Chancellor of the university.[8]",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "person": {
+              "name": "Sachin Maheshwari"
+            },
+            "term_start": {
+              "day": 3,
+              "month": 12,
+              "precision": "day",
+              "year": 2024
+            },
+            "title_original": {
+              "language": "en",
+              "text": "Vice-Chancellor"
+            }
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "single_source_family",
+          "reported_current"
+        ],
+        "reason": "The page reports this person in its current officeholder field; a term-end date is not required.",
+        "reason_code": "infobox_current"
+      }
+    }
+  },
+  "locations": [
+    {
+      "id": "district",
+      "kind": "administrative_area",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P131:0",
+                "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q135497634$3323EC7F-278C-4063-AE11-C4CCB0775A96\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 1345006, \"id\": \"Q1345006\"}, \"reference_count\": 1}",
+                "source_ref": "s1"
+              },
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q1345006\", \"labels\": {\"en\": \"Moradabad district\"}, \"descriptions\": {\"en\": \"district of Uttar Pradesh, India\"}}",
+                "source_ref": "s6"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Moradabad district"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "qid": "Q1345006"
+    },
+    {
+      "address": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Campus",
+                "original_text": "The university is presently functioning from a temporary campus at Govt Polytechnic, Kanth Road, Moradabad.[9]",
+                "source_ref": "s2"
+              },
+              {
+                "locator": "infobox:6",
+                "original_text": "Location: Moradabad, Uttar Pradesh, India",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "city_name": "Moradabad",
+              "country_name": "India",
+              "formatted": {
+                "language": "en",
+                "text": "Govt Polytechnic, Kanth Road, Moradabad"
+              },
+              "region_name": "Uttar Pradesh"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "id": "temporary",
+      "kind": "campus",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Campus",
+                "original_text": "The university is presently functioning from a temporary campus at Govt Polytechnic, Kanth Road, Moradabad.[9]",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Government Polytechnic temporary campus"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    {
+      "id": "permanent",
+      "kind": "campus",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Campus",
+                "original_text": "Construction of the permanent campus of the university at Hardaspur, Moradabad began in June 2024.[12]",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Permanent campus at Hardaspur, Moradabad"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    }
+  ],
+  "modified_datetime": "2026-11-06T14:15:31.216790+00:00",
+  "profile": {
+    "academic_focus": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:Faculties",
+              "original_text": "[edit | edit source]\nThe University offers academic courses through 74 schools, organized into 12 faculties:[14]\nFaculty\nNo of Schools\nSchools\nFaculty of Arts, Humanities, and Social Sciences[15]\n09\nSchool of Hindi\nSchool of Modern Indian Languages and Literature\nSchool of International Languages and Literature\nSchool of History & Heritage Studies\nSchool of Geospatial Studies\nSchool of Political Science and Governance\nSchool of Strategic Studies and National Security\nSchool of Disaster Resilience and Management\nSchool of Family Sciences\nFaculty of Creative and Performing Arts[16]\n04\nSchool of Music and Sound Arts\nSchool of Dance and Movement Arts\nSchool of Theatre and Performing Arts\nSchool of Traditional Crafts and Folk Arts\nFaculty of Indian Knowledge Systems and Social Innovation[17]\n10\nSchool of Indian Knowledge Systems\nSchool of Linguistic Studies & Communication\nSchool of Sanskrit & Indic Traditions\nSchool of Persian, Arabic & Urdu Studies\nSchool of Yoga and Holistic Practices",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Faculties",
+              "original_text": "\nSchool of Philosophy, Ethics, and Culture\nSchool of Policy Research & Governance\nSchool of Media Studies & Communication\nSchool of Behavioral Studies\nSchool of Sociology\nFaculty of Engineering Design and Technology[18]\n07\nSchool of Computer and Information Engineering\nSchool of Electronics and Communication Engineering\nSchool of Mechanical and Automation Engineering\nSchool of Instrumentation and Control Systems\nSchool of Materials and Metallurgical Engineering\nSchool of Product and Industrial Design\nSchool of Applied Sciences for Engineering\nFaculty of Applied Sciences and Technology[19]\n11\nSchool of Statistical Science\nSchool of Materials Science & Nanotechnology\nSchool of Forensic Science & Criminology\nSchool of Life Sciences & Microbiology\nSchool of Computational Science & Applications\nSchool of Bioinformatics & Computational Biology\nSchool of Environmental Sustainability\nSchool of Geophysics & Remote Sensing\nSchool of Artificial Intelligence & Machine Learning",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Faculties",
+              "original_text": "\nSchool of Earth & Planetary Sciences\nSchool of Food Processing Technology & Nutrition Science\nFaculty of Pharmaceutical Science & Pharmacy[20]\n02\nSchool of Pharmaceutical Sciences\nSchool of Pharmacy\nFaculty of Commerce Economics and Business Studies[21]\n03\nSchool of Economic Sciences\nSchool of Financial Systems and Accounting Practices\nSchool of Global Trade and International Business\nFaculty of Management and Sustainable Development[22]\n07\nSchool of Business and Strategic Management\nSchool of Hotel and Hospitality Management\nSchool of Forest and Environmental Management\nSchool of Crop Sciences and Agronomy\nSchool of Rural Industries and Sustainable Livelihoods\nSchool of Spiritual and Eco-Tourism\nSchool of Natural Resource Planning and Development\nFaculty of Education & Pedagogical Sciences[23]\n05\nSchool of Teacher Education & Development\nSchool of Vocational & Skill-based Education\nSchool of Physical Education & Sports Studies\nSchool of Library & Information Studies",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Faculties",
+              "original_text": "\nSchool of Inclusive Education\nFaculty of Pure Sciences[24]\n06\nSchool of Physical Sciences\nSchool of Chemical Sciences\nSchool of Earth Sciences\nSchool of Mathematical Sciences\nSchool of Botany and Plant Sciences\nSchool of Zoology and Animal Biology\nFaculty of Agriculture and Allied Sciences[25]\n08\nSchool of Horticulture and Perennial Crops\nSchool of Fisheries & Aquatic Sciences\nSchool of Animal Husbandry and Dairy Technology\nSchool of Crop Sciences and Agronomy\nSchool of Plant Breeding and Genetics\nSchool of Soil Science and Agrochemistry\nSchool of Agricultural Economics, Policy, and Data Analytics\nSchool of Plant Health and Pathology\nFaculty of Legal Studies[26]\n02\nSchool of Law and Justice\nSchool of Jurisprudence and Legal Innovation",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": [
+            {
+              "language": "en",
+              "text": "Arts, Humanities, and Social Sciences"
+            },
+            {
+              "language": "en",
+              "text": "Creative and Performing Arts"
+            },
+            {
+              "language": "en",
+              "text": "Indian Knowledge Systems and Social Innovation"
+            },
+            {
+              "language": "en",
+              "text": "Engineering Design and Technology"
+            },
+            {
+              "language": "en",
+              "text": "Applied Sciences and Technology"
+            },
+            {
+              "language": "en",
+              "text": "Pharmaceutical Science & Pharmacy"
+            },
+            {
+              "language": "en",
+              "text": "Commerce Economics and Business Studies"
+            },
+            {
+              "language": "en",
+              "text": "Management and Sustainable Development"
+            },
+            {
+              "language": "en",
+              "text": "Education & Pedagogical Sciences"
+            },
+            {
+              "language": "en",
+              "text": "Pure Sciences"
+            },
+            {
+              "language": "en",
+              "text": "Agriculture and Allied Sciences"
+            },
+            {
+              "language": "en",
+              "text": "Legal Studies"
+            }
+          ],
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "motto": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:0",
+              "original_text": "Motto: By knowledge, one attains immortality",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "language": "en",
+            "text": "By knowledge, one attains immortality"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "summary": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "metadata",
+              "original_text": "{\"id\": \"Q135497634\", \"labels\": {\"en\": \"Guru Jambheshwar University, Moradabad\"}, \"descriptions\": {\"en\": \"state public university in Moradabad, Uttar Pradesh, India\"}}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "section:History",
+              "original_text": "[edit | edit source]\nIn February 2023, the Government of Uttar Pradesh allocated ₹150 crore in its budget to establish three new universities in the state. These institutions were planned for the Vindhyachal, Devipatan, and Moradabad divisions.[1] On 1 November 2023, the Uttar Pradesh Cabinet gave formal approval for the establishment of a state university in Moradabad.[2][3]\nThe Chief Minister of Uttar Pradesh, Yogi Adityanath, laid the foundation stone for the Moradabad state university on 16 March 2024.[4] During the ceremony, he also announced that the university would be named after Guru Jambheshwar, the founder of the Bishnoi community.[4] According to local tradition, Guru Jambheshwar had arrived in Lodhipur Vishanpur town of Moradabad from Rajasthan 493 years ago, in 1587 AD (Vikram Samvat 1587).[5] On 11 June 2024, the state government formally approved the university’s official name as Guru Jambheshwar University.[6][7]",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:History",
+              "original_text": "\nOn 3 December 2024, Prof. Sachin Maheshwari was appointed as the first Vice Chancellor of the university.[8] The University Grants Commission (UGC) granted recognition to the university on 27 March 2025, with the university’s establishment being retroactively acknowledged from 8 November 2023.[9] The university’s official website and logo were unveiled on 14 July 2025.[10]\nThe Guru Jambheshwar University now oversees all the colleges within the Moradabad division that were previously affiliated with MJP Rohilkhand University, Bareilly.[11] A total of 372 colleges across the division are affiliated with the university, including 87 in Moradabad, 122 in Bijnor, 82 in Amroha, 37 in Rampur, and 44 in the Sambhal district.[9]\nThe university commenced teaching from the academic session 2025-26.",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "infobox:2",
+              "original_text": "Established: 2025 (1 year ago) (2025)",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Campus",
+              "original_text": "[edit | edit source]\nThe university is presently functioning from a temporary campus at Govt Polytechnic, Kanth Road, Moradabad.[9] Construction of the permanent campus of the university at Hardaspur, Moradabad began in June 2024.[12] A Budget of Rs 299 Crore was allotted for construction of the permanent campus of the University.[13]",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Faculties",
+              "original_text": "[edit | edit source]\nThe University offers academic courses through 74 schools, organized into 12 faculties:[14]\nFaculty\nNo of Schools\nSchools\nFaculty of Arts, Humanities, and Social Sciences[15]\n09\nSchool of Hindi\nSchool of Modern Indian Languages and Literature\nSchool of International Languages and Literature\nSchool of History & Heritage Studies\nSchool of Geospatial Studies\nSchool of Political Science and Governance\nSchool of Strategic Studies and National Security\nSchool of Disaster Resilience and Management\nSchool of Family Sciences\nFaculty of Creative and Performing Arts[16]\n04\nSchool of Music and Sound Arts\nSchool of Dance and Movement Arts\nSchool of Theatre and Performing Arts\nSchool of Traditional Crafts and Folk Arts\nFaculty of Indian Knowledge Systems and Social Innovation[17]\n10\nSchool of Indian Knowledge Systems\nSchool of Linguistic Studies & Communication\nSchool of Sanskrit & Indic Traditions\nSchool of Persian, Arabic & Urdu Studies\nSchool of Yoga and Holistic Practices",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Faculties",
+              "original_text": "\nSchool of Philosophy, Ethics, and Culture\nSchool of Policy Research & Governance\nSchool of Media Studies & Communication\nSchool of Behavioral Studies\nSchool of Sociology\nFaculty of Engineering Design and Technology[18]\n07\nSchool of Computer and Information Engineering\nSchool of Electronics and Communication Engineering\nSchool of Mechanical and Automation Engineering\nSchool of Instrumentation and Control Systems\nSchool of Materials and Metallurgical Engineering\nSchool of Product and Industrial Design\nSchool of Applied Sciences for Engineering\nFaculty of Applied Sciences and Technology[19]\n11\nSchool of Statistical Science\nSchool of Materials Science & Nanotechnology\nSchool of Forensic Science & Criminology\nSchool of Life Sciences & Microbiology\nSchool of Computational Science & Applications\nSchool of Bioinformatics & Computational Biology\nSchool of Environmental Sustainability\nSchool of Geophysics & Remote Sensing\nSchool of Artificial Intelligence & Machine Learning",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Faculties",
+              "original_text": "\nSchool of Earth & Planetary Sciences\nSchool of Food Processing Technology & Nutrition Science\nFaculty of Pharmaceutical Science & Pharmacy[20]\n02\nSchool of Pharmaceutical Sciences\nSchool of Pharmacy\nFaculty of Commerce Economics and Business Studies[21]\n03\nSchool of Economic Sciences\nSchool of Financial Systems and Accounting Practices\nSchool of Global Trade and International Business\nFaculty of Management and Sustainable Development[22]\n07\nSchool of Business and Strategic Management\nSchool of Hotel and Hospitality Management\nSchool of Forest and Environmental Management\nSchool of Crop Sciences and Agronomy\nSchool of Rural Industries and Sustainable Livelihoods\nSchool of Spiritual and Eco-Tourism\nSchool of Natural Resource Planning and Development\nFaculty of Education & Pedagogical Sciences[23]\n05\nSchool of Teacher Education & Development\nSchool of Vocational & Skill-based Education\nSchool of Physical Education & Sports Studies\nSchool of Library & Information Studies",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Faculties",
+              "original_text": "\nSchool of Inclusive Education\nFaculty of Pure Sciences[24]\n06\nSchool of Physical Sciences\nSchool of Chemical Sciences\nSchool of Earth Sciences\nSchool of Mathematical Sciences\nSchool of Botany and Plant Sciences\nSchool of Zoology and Animal Biology\nFaculty of Agriculture and Allied Sciences[25]\n08\nSchool of Horticulture and Perennial Crops\nSchool of Fisheries & Aquatic Sciences\nSchool of Animal Husbandry and Dairy Technology\nSchool of Crop Sciences and Agronomy\nSchool of Plant Breeding and Genetics\nSchool of Soil Science and Agrochemistry\nSchool of Agricultural Economics, Policy, and Data Analytics\nSchool of Plant Health and Pathology\nFaculty of Legal Studies[26]\n02\nSchool of Law and Justice\nSchool of Jurisprudence and Legal Innovation",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "language": "en",
+            "text": "Guru Jambheshwar University, Moradabad is a state public university in Moradabad, Uttar Pradesh, India. The Uttar Pradesh Cabinet approved the establishment of a state university in Moradabad in November 2023. Its foundation stone was laid in March 2024, and the state government approved the name Guru Jambheshwar University in June 2024. The University Grants Commission recognized the institution in March 2025, retrospectively acknowledging its establishment from 8 November 2023; the Wikipedia infobox separately gives 2025 as its establishment year. Teaching began in the 2025–26 academic session.\n\nThe university has operated from a temporary campus at Government Polytechnic on Kanth Road, while construction of a permanent campus at Hardaspur began in June 2024. Its described academic structure comprises 74 schools in 12 faculties, spanning fields including humanities, engineering, sciences, agriculture, management, education and law. The source reports 372 affiliated colleges across the Moradabad division, though it does not give a statistical date for this count."
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "website": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P856:0",
+              "original_text": "{\"property\": \"P856\", \"property_label\": \"official website\", \"statement_id\": \"Q135497634$85C96ED6-F3E5-44B1-A887-72E34E99A589\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"http://www.gjum.ac.in\", \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "value": "http://www.gjum.ac.in",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "qid": "Q135497634",
+  "record_revision": 1,
+  "relationships": {
+    "campus": [
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Campus",
+                "original_text": "The university is presently functioning from a temporary campus at Govt Polytechnic, Kanth Road, Moradabad.[9]",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "target_ref": "location:temporary"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Campus",
+                "original_text": "Construction of the permanent campus of the university at Hardaspur, Moradabad began in June 2024.[12]",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "target_ref": "location:permanent"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    ]
+  },
+  "schema_version": "0.2.2",
+  "seed": {
+    "channels": [
+      "reviewed_institution_type"
+    ],
+    "import_id": "seed-84c3beb45367905f",
+    "screening_status": "included"
+  },
+  "selection_policy": "preferred-v1",
+  "sources": {
+    "s1": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T14:08:17.308840+00:00",
+      "revision_id": 2560470837,
+      "source_qid": "Q135497634",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2560470837"
+    },
+    "s2": {
+      "family": "wikimedia",
+      "kind": "wikipedia",
+      "language": "en",
+      "page_id": 80448523,
+      "publisher_role": "encyclopedia",
+      "retrieved_at": "2026-11-06T14:08:32.068714+00:00",
+      "revision_id": 1359719198,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1359719198"
+    },
+    "s3": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T14:08:38.058792+00:00",
+      "revision_id": 2562156954,
+      "source_qid": "Q3918",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2562156954"
+    },
+    "s4": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T14:08:45.137490+00:00",
+      "revision_id": 2553507072,
+      "source_qid": "Q7603893",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2553507072"
+    },
+    "s5": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T14:08:51.973119+00:00",
+      "revision_id": 2563722390,
+      "source_qid": "Q668",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2563722390"
+    },
+    "s6": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T14:08:55.893520+00:00",
+      "revision_id": 2563992735,
+      "source_qid": "Q1345006",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2563992735"
+    }
+  },
+  "update_datetime": "2026-11-06T14:15:31.216790+00:00"
+}

@@ -96,6 +96,27 @@
       "phase": "unresolved",
       "reason": "resume_after_private_workspace_loss",
       "revision": 0
+    },
+    "Q5430465": {
+      "open_requests": [
+        {
+          "category": "scope_conflict",
+          "field": "history.milestones.1.date",
+          "reason": "Exact location: $.history.milestones[1].date. Preserve “1969 academic year” rather than asserting calendar-year precision; if the date schema cannot encode it, omit the normalized date and retain the sourced academic-year wording in the description.",
+          "request_id": "ad2242fc-40a6-5119-8e18-b42989dc41d0",
+          "reviewed_proposal_sha256": "56c1e9ab558808f77e16401d690f2edabce70fbb9d663ef93707055f810842b0"
+        },
+        {
+          "category": "other",
+          "field": "population.students_intake.preferred",
+          "reason": "Exact location: $.population.students_intake.preferred. The preferred selection is the 1967 initial class of 13 despite the later 1968 academic-year class of 200. Reassess the selection under the stated period comparison rule or explain a source-grounded reason for preferring the earlier observation, while retaining both.",
+          "request_id": "9c8e59f9-2037-5db2-9298-fe7e9780ab3f",
+          "reviewed_proposal_sha256": "56c1e9ab558808f77e16401d690f2edabce70fbb9d663ef93707055f810842b0"
+        }
+      ],
+      "phase": "revision_requested",
+      "reason": "resume_after_private_workspace_loss",
+      "revision": 0
     }
   },
   "type": "university-manager-backlog-v1"

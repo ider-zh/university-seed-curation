@@ -1,0 +1,679 @@
+{
+  "coverage": {
+    "finance": {
+      "checked_at": "2026-11-06T14:09:07.040147+00:00",
+      "status": "not_found"
+    },
+    "geography": {
+      "checked_at": "2026-11-06T14:09:07.040147+00:00",
+      "status": "checked"
+    },
+    "history": {
+      "checked_at": "2026-11-06T14:09:07.040147+00:00",
+      "status": "checked"
+    },
+    "identity": {
+      "checked_at": "2026-11-06T14:09:07.040147+00:00",
+      "status": "checked"
+    },
+    "population": {
+      "checked_at": "2026-11-06T14:09:07.040147+00:00",
+      "status": "not_found"
+    },
+    "profile": {
+      "checked_at": "2026-11-06T14:09:07.040147+00:00",
+      "status": "checked"
+    }
+  },
+  "curation": {
+    "identity_status": "in_scope",
+    "refresh_profile": "core-v1",
+    "reviewed_groups": [
+      "identity",
+      "geography",
+      "history",
+      "population",
+      "finance",
+      "profile"
+    ]
+  },
+  "history": {
+    "milestones": [
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:History",
+                  "original_text": "On 31 August 1972, this faculty was abolished and on its basis the Military Political Academy in Bratislava was established on 1 September 1972.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "claim:P571:0",
+                  "original_text": "+1972-00-00T00:00:00Z",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "day": 1,
+                "month": 9,
+                "precision": "day",
+                "year": 1972
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:History",
+                  "original_text": "On 31 August 1972, this faculty was abolished and on its basis the Military Political Academy in Bratislava was established on 1 September 1972.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "The Military Political Academy in Bratislava was established on the basis of the abolished Faculty of Social Sciences."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "established",
+        "kind": "institution_establishment",
+        "subject_ref": "institution"
+      },
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P576:0",
+                  "original_text": "+1989-00-00T00:00:00Z",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "precision": "year",
+                "year": 1989
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "dissolved",
+        "kind": "closure",
+        "subject_ref": "institution"
+      },
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:History",
+                  "original_text": "In 1993, the school was merged with the Military Technical School under the name Military Academy in Liptovský Mikuláš.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "precision": "year",
+                "year": 1993
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:History",
+                  "original_text": "In 1993, the school was merged with the Military Technical School under the name Military Academy in Liptovský Mikuláš.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "In 1993, the school was merged with the Military Technical School under the name Military Academy in Liptovský Mikuláš."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "merger",
+        "kind": "merger",
+        "subject_ref": "related:higher_school"
+      }
+    ]
+  },
+  "identity": {
+    "aliases": [
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "The Klement Gottwald Military Political Academy (Czech: Vojenská politická akademie Klementa Gottwalda, abbreviation VPA KG) was a military academy under the Main Political Administration of the Czechoslovak People's Army.",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Klement Gottwald Military Political Academy"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "The Klement Gottwald Military Political Academy (Czech: Vojenská politická akademie Klementa Gottwalda, abbreviation VPA KG) was a military academy under the Main Political Administration of the Czechoslovak People's Army.",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "cs",
+              "text": "VPA KG"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    ],
+    "kind": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P31:0",
+              "original_text": "Q917182",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "metadata",
+              "original_text": "military academy",
+              "source_ref": "s3"
+            },
+            {
+              "locator": "section:lead",
+              "original_text": "The Klement Gottwald Military Political Academy (Czech: Vojenská politická akademie Klementa Gottwalda, abbreviation VPA KG) was a military academy under the Main Political Administration of the Czechoslovak People's Army.",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": "specialist_institution",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "names": {
+      "cs": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "The Klement Gottwald Military Political Academy (Czech: Vojenská politická akademie Klementa Gottwalda, abbreviation VPA KG) was a military academy under the Main Political Administration of the Czechoslovak People's Army.",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": "Vojenská politická akademie Klementa Gottwalda",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    "operating_status": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P576:0",
+              "original_text": "+1989-00-00T00:00:00Z",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "section:History",
+              "original_text": "After the Velvet Revolution, it was renamed the Higher Military Pedagogical School.",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": "historical",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "locations": [
+    {
+      "id": "bratislava",
+      "kind": "headquarters",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P159:0",
+                "original_text": "Q1780",
+                "source_ref": "s1"
+              },
+              {
+                "locator": "claim:P1448:0",
+                "original_text": "Bratislava",
+                "source_ref": "s4"
+              },
+              {
+                "locator": "section:lead",
+                "original_text": "It was based in Bratislava, the capital of the Slovak Socialist Republic",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "sk",
+              "text": "Bratislava"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "qid": "Q1780"
+    }
+  ],
+  "modified_datetime": "2026-11-06T14:15:30.359019+00:00",
+  "profile": {
+    "academic_focus": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "prepared cadres for the political apparatus of the Czechoslovak People's Army.",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Academics",
+              "original_text": "Graduates worked as political instructors, supervisory officers responsible for the political education (ideology) of the units on behalf of the Communist Party of Czechoslovakia.",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": [
+            {
+              "language": "en",
+              "text": "Political education and preparation of cadres for the political apparatus of the Czechoslovak People’s Army"
+            }
+          ],
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "summary": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "The Klement Gottwald Military Political Academy (Czech: Vojenská politická akademie Klementa Gottwalda, abbreviation VPA KG) was a military academy under the Main Political Administration of the Czechoslovak People's Army. It was based in Bratislava, the capital of the Slovak Socialist Republic",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:History",
+              "original_text": "Its predecessor institution was a military political school first located in Prague, from 1953 to 1969.",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:History",
+              "original_text": "After the abolition of the academy in Prague, the so-called Faculty of Social Sciences in Bratislava was established on 1 September 1969, forming part of the Antonín Zápotocký Military Academy in Brno (currently the University of Defence).",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:History",
+              "original_text": "On 31 August 1972, this faculty was abolished and on its basis the Military Political Academy in Bratislava was established on 1 September 1972. After the Velvet Revolution, it was renamed the Higher Military Pedagogical School. In 1993, the school was merged with the Military Technical School under the name Military Academy in Liptovský Mikuláš.",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Academics",
+              "original_text": "The academy was one of the few schools whose graduates received the title of Doctor of Social and Political Sciences. Graduates worked as political instructors, supervisory officers responsible for the political education (ideology) of the units on behalf of the Communist Party of Czechoslovakia.",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "language": "en",
+            "text": "The Klement Gottwald Military Political Academy (Vojenská politická akademie Klementa Gottwalda, VPA KG) was a military academy based in Bratislava, then in the Slovak Socialist Republic within Czechoslovakia. It operated under the Main Political Administration of the Czechoslovak People’s Army and prepared cadres for its political apparatus.\n\nIts institutional history included a predecessor military political school located in Prague from 1953 to 1969 and a Faculty of Social Sciences established in Bratislava in 1969 as part of the Antonín Zápotocký Military Academy in Brno. The faculty was abolished on 31 August 1972, and the academy was established on its basis on 1 September 1972. After the Velvet Revolution, the academy was renamed the Higher Military Pedagogical School; in 1993 that school merged with the Military Technical School as the Military Academy in Liptovský Mikuláš. The academy’s graduates could receive the title Doctor of Social and Political Sciences and worked in political education roles."
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "qid": "Q16520007",
+  "record_revision": 1,
+  "related_entities": {
+    "faculty": {
+      "kind": "faculty",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:History",
+                "original_text": "the so-called Faculty of Social Sciences in Bratislava was established on 1 September 1969",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Faculty of Social Sciences"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    "higher_school": {
+      "kind": "institution",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:History",
+                "original_text": "After the Velvet Revolution, it was renamed the Higher Military Pedagogical School.",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Higher Military Pedagogical School"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    "military_academy_liptovsky": {
+      "kind": "institution",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:History",
+                "original_text": "In 1993, the school was merged with the Military Technical School under the name Military Academy in Liptovský Mikuláš.",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Military Academy in Liptovský Mikuláš"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    "military_technical_school": {
+      "kind": "institution",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:History",
+                "original_text": "In 1993, the school was merged with the Military Technical School under the name Military Academy in Liptovský Mikuláš.",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Military Technical School"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    "prague_school": {
+      "kind": "institution",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:History",
+                "original_text": "Its predecessor institution was a military political school first located in Prague, from 1953 to 1969.",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "military political school"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    }
+  },
+  "relationships": {
+    "predecessor": [
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:History",
+                "original_text": "On 31 August 1972, this faculty was abolished and on its basis the Military Political Academy in Bratislava was established on 1 September 1972.",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "target_ref": "related:faculty"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:History",
+                "original_text": "Its predecessor institution was a military political school first located in Prague, from 1953 to 1969.",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "target_ref": "related:prague_school"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    ],
+    "successor": [
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:History",
+                "original_text": "After the Velvet Revolution, it was renamed the Higher Military Pedagogical School. In 1993, the school was merged with the Military Technical School under the name Military Academy in Liptovský Mikuláš.",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "target_ref": "related:military_academy_liptovsky"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    ]
+  },
+  "schema_version": "0.2.2",
+  "seed": {
+    "channels": [
+      "reviewed_institution_type"
+    ],
+    "import_id": "seed-84c3beb45367905f",
+    "screening_status": "included"
+  },
+  "selection_policy": "preferred-v1",
+  "sources": {
+    "s1": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T14:08:40.796921+00:00",
+      "revision_id": 2560388260,
+      "source_qid": "Q16520007",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2560388260"
+    },
+    "s2": {
+      "family": "wikimedia",
+      "kind": "wikipedia",
+      "language": "en",
+      "page_id": 83997209,
+      "publisher_role": "encyclopedia",
+      "retrieved_at": "2026-11-06T14:08:51.972660+00:00",
+      "revision_id": 1369884046,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1369884046"
+    },
+    "s3": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T14:08:58.477201+00:00",
+      "revision_id": 2552872664,
+      "source_qid": "Q917182",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2552872664"
+    },
+    "s4": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T14:09:07.003172+00:00",
+      "revision_id": 2562607249,
+      "source_qid": "Q1780",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2562607249"
+    }
+  },
+  "update_datetime": "2026-11-06T14:15:30.359019+00:00"
+}

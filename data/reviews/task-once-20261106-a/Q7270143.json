@@ -1,0 +1,1166 @@
+{
+  "attribution": "distinct_native_research_and_review_subagents;not_cryptographic_identity",
+  "research": {
+    "baseline_sha256": "absent",
+    "candidate": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-06T14:08:59.596965+00:00",
+          "status": "not_found"
+        },
+        "geography": {
+          "checked_at": "2026-11-06T14:08:59.596965+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-06T14:08:59.596965+00:00",
+          "status": "checked"
+        },
+        "identity": {
+          "checked_at": "2026-11-06T14:08:59.596965+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-06T14:08:59.596965+00:00",
+          "status": "not_found"
+        },
+        "profile": {
+          "checked_at": "2026-11-06T14:08:59.596965+00:00",
+          "status": "checked"
+        }
+      },
+      "curation": {
+        "identity_status": "in_scope"
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:lead",
+                      "original_text": "established formally by royal charter on 3 September 1850",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "day": 3,
+                    "month": 9,
+                    "precision": "day",
+                    "year": 1850
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:lead",
+                      "original_text": "The Queen's University of Ireland was established formally by royal charter on 3 September 1850, as the degree-awarding university of the Queen's Colleges of Belfast, Cork, and Galway",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "Established formally by royal charter as the degree-awarding university of the Queen’s Colleges of Belfast, Cork and Galway."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "established",
+            "kind": "institution_establishment",
+            "subject_ref": "institution"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Dissolution",
+                      "original_text": "The Queen's University was formally dissolved on 3 February 1882.",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "day": 3,
+                    "month": 2,
+                    "precision": "day",
+                    "year": 1882
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "dissolved",
+            "kind": "closure",
+            "subject_ref": "institution"
+          }
+        ]
+      },
+      "identity": {
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "Former public university in Ireland (1850–1882)",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "university",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "page_metadata",
+                    "original_text": "Queen's University of Ireland",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": "Queen's University of Ireland",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        "operating_status": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Dissolution",
+                  "original_text": "The Queen's University was formally dissolved on 3 February 1882.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "closed",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "ownership": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:1",
+                  "original_text": "Type: Public",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "public",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "leadership": {
+        "vice_chancellor": {
+          "candidates": [
+            {
+              "current_basis": "historical",
+              "evidence": [
+                {
+                  "locator": "section:Establishment",
+                  "original_text": "Sir Dominic Corrigan (Vice-Chancellor)",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "person": {
+                  "name": "Sir Dominic Corrigan"
+                },
+                "title_original": {
+                  "language": "en",
+                  "text": "Vice-Chancellor"
+                }
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family",
+              "last_known_only",
+              "historical_only"
+            ],
+            "reason": "Use the best available last-known appointment without claiming an explicitly confirmed current term.",
+            "reason_code": "last_known"
+          }
+        }
+      },
+      "locations": [
+        {
+          "id": "belfast",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "infobox:3",
+                    "original_text": "Location: Belfast,Cork,Galway, Ireland",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Belfast"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q10686"
+        },
+        {
+          "id": "cork",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "infobox:3",
+                    "original_text": "Location: Belfast,Cork,Galway, Ireland",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Cork"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q36647"
+        },
+        {
+          "id": "galway",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "infobox:3",
+                    "original_text": "Location: Belfast,Cork,Galway, Ireland",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Galway"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q129610"
+        }
+      ],
+      "modified_datetime": "2026-11-06T14:10:30.031359+00:00",
+      "profile": {
+        "summary": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "The Queen's University of Ireland was established formally by royal charter on 3 September 1850, as the degree-awarding university of the Queen's Colleges of Belfast, Cork, and Galway",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Establishment",
+                  "original_text": "The colleges were incorporated on 30 December 1845; and on 30 October 1849 they opened for students.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Establishment",
+                  "original_text": "the Queen's Colleges were not permitted to give instruction in theology",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Establishment",
+                  "original_text": "A Board of Queen's Colleges was created to draw up regulations for the colleges, consisting of the President and Vice-President of each college.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Establishment",
+                  "original_text": "Academic degrees were conferred by the chancellor and senate of the university",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Dissolution",
+                  "original_text": "The Queen's University was superseded by a new, inclusive, degree-awarding institution, the Royal University of Ireland in 1880.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Dissolution",
+                  "original_text": "The Queen's University was formally dissolved on 3 February 1882.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Dissolution",
+                  "original_text": "The Belfast college was separated from the other two in 1908, and became The Queen's University of Belfast (QUB).",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Dissolution",
+                  "original_text": "Queen's College, Cork is now University College Cork (UCC), while Queen's College Galway is now the University of Galway.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "Queen's University of Ireland was a public university in Ireland associated with colleges in Belfast, Cork and Galway. Established by royal charter on 3 September 1850, it awarded degrees for the three Queen's Colleges. These colleges had been established in 1845 and opened to students on 30 October 1849. They were intended to provide university education to members of all religious denominations.\n\nThe colleges were not permitted to teach theology. A board comprising each college's president and vice-president drew up their regulations, while the university's chancellor and senate conferred degrees. In 1880 the Royal University of Ireland superseded Queen's University, which was formally dissolved on 3 February 1882. The Belfast college became Queen's University of Belfast in 1908; the Cork and Galway colleges are now University College Cork and the University of Galway."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "qid": "Q7270143",
+      "record_revision": 1,
+      "related_entities": {
+        "royal": {
+          "kind": "institution",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Dissolution",
+                    "original_text": "the Royal University of Ireland in 1880",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Royal University of Ireland"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "relationships": {
+        "successor": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Dissolution",
+                    "original_text": "The Queen's University was superseded by a new, inclusive, degree-awarding institution, the Royal University of Ireland in 1880.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "target_ref": "related:royal"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ]
+      },
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "reviewed_institution_type"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "included"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T14:08:29.830745+00:00",
+          "revision_id": 2560495665,
+          "source_qid": "Q7270143",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2560495665"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikipedia",
+          "language": "en",
+          "page_id": 2265419,
+          "publisher_role": "encyclopedia",
+          "retrieved_at": "2026-11-06T14:08:38.224814+00:00",
+          "revision_id": 1379229479,
+          "url": "https://en.wikipedia.org/w/index.php?oldid=1379229479"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T14:08:38.058792+00:00",
+          "revision_id": 2562156954,
+          "source_qid": "Q3918",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2562156954"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T14:08:44.132379+00:00",
+          "revision_id": 2565280092,
+          "source_qid": "Q27",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2565280092"
+        },
+        "s5": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T14:08:48.910380+00:00",
+          "revision_id": 2564289985,
+          "source_qid": "Q10686",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2564289985"
+        },
+        "s6": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T14:08:53.365365+00:00",
+          "revision_id": 2538952559,
+          "source_qid": "Q36647",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2538952559"
+        },
+        "s7": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T14:08:59.566001+00:00",
+          "revision_id": 2560066825,
+          "source_qid": "Q129610",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2560066825"
+        }
+      }
+    },
+    "coverage": [
+      {
+        "group": "identity",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "status": "checked"
+      },
+      {
+        "group": "population",
+        "status": "not_found"
+      },
+      {
+        "group": "finance",
+        "status": "not_found"
+      },
+      {
+        "group": "profile",
+        "status": "checked"
+      }
+    ],
+    "delta": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-06T14:08:59.596965+00:00",
+          "status": "not_found"
+        },
+        "geography": {
+          "checked_at": "2026-11-06T14:08:59.596965+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-06T14:08:59.596965+00:00",
+          "status": "checked"
+        },
+        "identity": {
+          "checked_at": "2026-11-06T14:08:59.596965+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-06T14:08:59.596965+00:00",
+          "status": "not_found"
+        },
+        "profile": {
+          "checked_at": "2026-11-06T14:08:59.596965+00:00",
+          "status": "checked"
+        }
+      },
+      "curation": {
+        "identity_status": "in_scope"
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:lead",
+                      "original_text": "established formally by royal charter on 3 September 1850",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "day": 3,
+                    "month": 9,
+                    "precision": "day",
+                    "year": 1850
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:lead",
+                      "original_text": "The Queen's University of Ireland was established formally by royal charter on 3 September 1850, as the degree-awarding university of the Queen's Colleges of Belfast, Cork, and Galway",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "Established formally by royal charter as the degree-awarding university of the Queen’s Colleges of Belfast, Cork and Galway."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "established",
+            "kind": "institution_establishment",
+            "subject_ref": "institution"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Dissolution",
+                      "original_text": "The Queen's University was formally dissolved on 3 February 1882.",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "day": 3,
+                    "month": 2,
+                    "precision": "day",
+                    "year": 1882
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "dissolved",
+            "kind": "closure",
+            "subject_ref": "institution"
+          }
+        ]
+      },
+      "identity": {
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "Former public university in Ireland (1850–1882)",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "university",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "page_metadata",
+                    "original_text": "Queen's University of Ireland",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": "Queen's University of Ireland",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        "operating_status": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Dissolution",
+                  "original_text": "The Queen's University was formally dissolved on 3 February 1882.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "closed",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "ownership": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:1",
+                  "original_text": "Type: Public",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "public",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "leadership": {
+        "vice_chancellor": {
+          "candidates": [
+            {
+              "current_basis": "historical",
+              "evidence": [
+                {
+                  "locator": "section:Establishment",
+                  "original_text": "Sir Dominic Corrigan (Vice-Chancellor)",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "person": {
+                  "name": "Sir Dominic Corrigan"
+                },
+                "title_original": {
+                  "language": "en",
+                  "text": "Vice-Chancellor"
+                }
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family",
+              "last_known_only",
+              "historical_only"
+            ],
+            "reason": "Use the best available last-known appointment without claiming an explicitly confirmed current term.",
+            "reason_code": "last_known"
+          }
+        }
+      },
+      "locations": [
+        {
+          "id": "belfast",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "infobox:3",
+                    "original_text": "Location: Belfast,Cork,Galway, Ireland",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Belfast"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q10686"
+        },
+        {
+          "id": "cork",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "infobox:3",
+                    "original_text": "Location: Belfast,Cork,Galway, Ireland",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Cork"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q36647"
+        },
+        {
+          "id": "galway",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "infobox:3",
+                    "original_text": "Location: Belfast,Cork,Galway, Ireland",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Galway"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q129610"
+        }
+      ],
+      "profile": {
+        "summary": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "The Queen's University of Ireland was established formally by royal charter on 3 September 1850, as the degree-awarding university of the Queen's Colleges of Belfast, Cork, and Galway",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Establishment",
+                  "original_text": "The colleges were incorporated on 30 December 1845; and on 30 October 1849 they opened for students.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Establishment",
+                  "original_text": "the Queen's Colleges were not permitted to give instruction in theology",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Establishment",
+                  "original_text": "A Board of Queen's Colleges was created to draw up regulations for the colleges, consisting of the President and Vice-President of each college.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Establishment",
+                  "original_text": "Academic degrees were conferred by the chancellor and senate of the university",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Dissolution",
+                  "original_text": "The Queen's University was superseded by a new, inclusive, degree-awarding institution, the Royal University of Ireland in 1880.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Dissolution",
+                  "original_text": "The Queen's University was formally dissolved on 3 February 1882.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Dissolution",
+                  "original_text": "The Belfast college was separated from the other two in 1908, and became The Queen's University of Belfast (QUB).",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Dissolution",
+                  "original_text": "Queen's College, Cork is now University College Cork (UCC), while Queen's College Galway is now the University of Galway.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "Queen's University of Ireland was a public university in Ireland associated with colleges in Belfast, Cork and Galway. Established by royal charter on 3 September 1850, it awarded degrees for the three Queen's Colleges. These colleges had been established in 1845 and opened to students on 30 October 1849. They were intended to provide university education to members of all religious denominations.\n\nThe colleges were not permitted to teach theology. A board comprising each college's president and vice-president drew up their regulations, while the university's chancellor and senate conferred degrees. In 1880 the Royal University of Ireland superseded Queen's University, which was formally dissolved on 3 February 1882. The Belfast college became Queen's University of Belfast in 1908; the Cork and Galway colleges are now University College Cork and the University of Galway."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "qid": "Q7270143",
+      "record_revision": 1,
+      "related_entities": {
+        "royal": {
+          "kind": "institution",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Dissolution",
+                    "original_text": "the Royal University of Ireland in 1880",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Royal University of Ireland"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "relationships": {
+        "successor": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Dissolution",
+                    "original_text": "The Queen's University was superseded by a new, inclusive, degree-awarding institution, the Royal University of Ireland in 1880.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "target_ref": "related:royal"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ]
+      },
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "reviewed_institution_type"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "included"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T14:08:29.830745+00:00",
+          "revision_id": 2560495665,
+          "source_qid": "Q7270143",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2560495665"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikipedia",
+          "language": "en",
+          "page_id": 2265419,
+          "publisher_role": "encyclopedia",
+          "retrieved_at": "2026-11-06T14:08:38.224814+00:00",
+          "revision_id": 1379229479,
+          "url": "https://en.wikipedia.org/w/index.php?oldid=1379229479"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T14:08:38.058792+00:00",
+          "revision_id": 2562156954,
+          "source_qid": "Q3918",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2562156954"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T14:08:44.132379+00:00",
+          "revision_id": 2565280092,
+          "source_qid": "Q27",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2565280092"
+        },
+        "s5": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T14:08:48.910380+00:00",
+          "revision_id": 2564289985,
+          "source_qid": "Q10686",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2564289985"
+        },
+        "s6": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T14:08:53.365365+00:00",
+          "revision_id": 2538952559,
+          "source_qid": "Q36647",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2538952559"
+        },
+        "s7": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T14:08:59.566001+00:00",
+          "revision_id": 2560066825,
+          "source_qid": "Q129610",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2560066825"
+        }
+      }
+    },
+    "open_requests": [],
+    "proposed_at": "2026-11-06T14:10:30.031359+00:00",
+    "qid": "Q7270143",
+    "research": {
+      "model": "not_reported",
+      "prompt_sha256": "d8d420d6b255a380d9277ede636d57bdd2d203fc0c33bc5e50386568091f678e",
+      "reasoning_effort": "not_reported",
+      "schema_sha256": "92e942f4fbf2ae28964462ea9ffa8312c5ee16a077a1e08b40aaaf741512422e",
+      "session": "/root/research_q7270143"
+    },
+    "retrieval_failures": [],
+    "review_status": "unreviewed",
+    "seed": {
+      "channels": [
+        "reviewed_institution_type"
+      ],
+      "import_id": "seed-84c3beb45367905f",
+      "screening_status": "included"
+    },
+    "transport": {
+      "base_commit": "ecb2043bff76cbe23df9d005991577031f05b097",
+      "protocol": "native-subagent-v1",
+      "repository": "ider-zh/university-seed-curation",
+      "review_policy": {
+        "id": "source-grounded-flexible-v2",
+        "sha256": "b8ed7d2897e4c31dbd81b1379aafdc1077a21d1a33949edbd2d896b0adf99db2"
+      },
+      "schema_sha256": "bfa496eafa9dffca56146214168db7f000b09161b8993129632e7202e1c88833",
+      "seed_catalog_sha256": "84c3beb45367905f513d650684283dd62a9c1b77962bdc34151a6ef05bfa03d4"
+    },
+    "type": "university-proposal-v1"
+  },
+  "review": {
+    "contexts_checked": 7,
+    "coverage_checks": [
+      {
+        "group": "identity",
+        "reason": "s1 metadata and s2 describe the named former public university.",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "reason": "s1 P131 and s2 infobox support the three administrative areas. Root Q7270143 has no P625 statement; no campus coordinate is asserted.",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "reason": "s2 lead and Dissolution support charter and dissolution; s1 provides consistent year precision.",
+        "status": "checked"
+      },
+      {
+        "group": "population",
+        "reason": "The supplied institution evidence contains no student or staff population total; references to students are not counts.",
+        "status": "not_found"
+      },
+      {
+        "group": "finance",
+        "reason": "No institution financial amount or period appears in the supplied source evidence; an 1845 Act permitting endowment is not a financial figure.",
+        "status": "not_found"
+      },
+      {
+        "group": "profile",
+        "reason": "s2 lead, Establishment and Dissolution support the supplied narrative and its historical distinctions.",
+        "status": "checked"
+      }
+    ],
+    "decision": "approve",
+    "facts_checked": 14,
+    "full_refresh": true,
+    "inferences": [
+      {
+        "id": "$.identity.operating_status:c1",
+        "reason": "s2 Dissolution records formal dissolution in 1882, supporting the broader closed status."
+      },
+      {
+        "id": "$.relationships.successor[0]:c1",
+        "reason": "s2 Dissolution says the Royal University superseded Queen’s University in 1880, supporting the successor relation; it does not conflate the dissolution date with succession."
+      }
+    ],
+    "model": "not_reported",
+    "proposal_sha256": "c447ff06e4f94fdb8ef48a661c869d83d771387a0c973cacf23d3b7b8b8e18cc",
+    "qid": "Q7270143",
+    "reasoning_effort": "not_reported",
+    "record_sha256": "3e7cd4f627b4a8b787a7908c0d484ed8ba437a30e005c38a02bd8af4b6adbba1",
+    "request_responses": [],
+    "requests": [],
+    "review_session": "/root/review_q7270143",
+    "reviewed_at": "2026-11-06T14:12:34.734249+00:00",
+    "source_revisions_checked": 7
+  },
+  "review_result_sha256": "3c037ff5c42ad85871a47fe0d8c6b096ea82ee95cc1577bb3d3d9d7d8dd45ec0",
+  "type": "university-unified-receipt-v1"
+}
