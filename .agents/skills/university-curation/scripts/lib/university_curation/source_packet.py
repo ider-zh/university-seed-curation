@@ -7,6 +7,7 @@ import re
 from .sources import Cache
 
 PROP_RE = re.compile(r"student|employee|staff|budget|endowment|revenue|income|expend|expense|asset|funding|inception|dissol|coordinate|country|administrative|headquarters|official name|native label|short name|official website|logo|image|rector|president|head of|chair|parent|subsidiary|part of|replaces|replaced by|instance of|subclass|motto|language of", re.I)
+RELEVANT = re.compile(r"history|histor|about|overview|campus|location|organization|organisation|administration|academics|facult|research|student|finance|budget|geschichte|standort|forschung|studium|universit|校史|历史|校区|院系|学科|科研", re.I)
 CORE_PROPERTIES = {"P31", "P17", "P131", "P159", "P625", "P571", "P576", "P856", "P18", "P154", "P488", "P169", "P749", "P361", "P355", "P1365", "P1366", "P1128", "P2196", "P1448", "P1705", "P1813", "P5584", "P5586", "P5242"}
 
 def save(path, value):
