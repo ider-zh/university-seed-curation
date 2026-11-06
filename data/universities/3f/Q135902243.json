@@ -1,0 +1,219 @@
+{
+  "coverage": {
+    "finance": {
+      "checked_at": "2026-11-06T22:55:12.921801+00:00",
+      "status": "not_found"
+    },
+    "geography": {
+      "checked_at": "2026-11-06T22:55:12.921801+00:00",
+      "status": "disputed"
+    },
+    "history": {
+      "checked_at": "2026-11-06T22:55:12.921801+00:00",
+      "status": "checked"
+    },
+    "identity": {
+      "checked_at": "2026-11-06T22:55:12.921801+00:00",
+      "status": "checked"
+    },
+    "population": {
+      "checked_at": "2026-11-06T22:55:12.921801+00:00",
+      "status": "disputed"
+    },
+    "profile": {
+      "checked_at": "2026-11-06T22:55:12.921801+00:00",
+      "status": "checked"
+    }
+  },
+  "curation": {
+    "identity_status": "in_scope",
+    "refresh_profile": "core-v1",
+    "reviewed_groups": [
+      "identity",
+      "geography",
+      "history",
+      "population",
+      "finance",
+      "profile"
+    ]
+  },
+  "history": {
+    "milestones": [
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P571:0",
+                  "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q135902243$d72b5668-4d05-ccc8-8e08-adb08b4e90ac\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+1994-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "precision": "year",
+                "year": 1994
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "establishment",
+        "kind": "institution_establishment",
+        "subject_ref": "institution"
+      }
+    ]
+  },
+  "identity": {
+    "aliases": [
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P1448:1",
+                "original_text": "{\"property\": \"P1448\", \"property_label\": \"official name\", \"statement_id\": \"Q135902243$f5ab6822-453b-3b8b-9295-d7d2fc107c7a\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"[جامعة العلوم والتكنولوجيا ،عدن\", \"language\": \"ar\"}}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "ar",
+              "text": "[جامعة العلوم والتكنولوجيا ،عدن"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    ],
+    "kind": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P31:0",
+              "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q135902243$eac3f2ed-4c65-2280-f104-f1de2a27ad23\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 902104, \"id\": \"Q902104\"}}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "metadata",
+              "original_text": "{\"id\": \"Q902104\", \"labels\": {\"en\": \"private university\"}, \"descriptions\": {\"en\": \"higher education institution not operated by a government\"}}",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c1",
+          "value": "university",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "names": {
+      "en": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P1448:0",
+                "original_text": "{\"property\": \"P1448\", \"property_label\": \"official name\", \"statement_id\": \"Q135902243$f081b81a-4c11-fae7-d165-c3ad06eec85b\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"University of Science and Technology, Aden\", \"language\": \"en\"}}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": "University of Science and Technology, Aden",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    }
+  },
+  "modified_datetime": "2026-11-06T23:02:21.578448+00:00",
+  "profile": {
+    "website": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P856:0",
+              "original_text": "{\"property\": \"P856\", \"property_label\": \"official website\", \"statement_id\": \"Q135902243$8b2abae3-47b4-d753-b6db-257ad0b5103c\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"https://ust.edu.ye\"}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "value": "https://ust.edu.ye",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "qid": "Q135902243",
+  "record_revision": 1,
+  "schema_version": "0.2.2",
+  "seed": {
+    "channels": [
+      "reviewed_institution_type"
+    ],
+    "import_id": "seed-84c3beb45367905f",
+    "screening_status": "included"
+  },
+  "selection_policy": "preferred-v1",
+  "sources": {
+    "s1": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T22:54:55.422492+00:00",
+      "revision_id": 2514829459,
+      "source_qid": "Q135902243",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2514829459"
+    },
+    "s2": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T22:55:01.630775+00:00",
+      "revision_id": 2560269214,
+      "source_qid": "Q49616",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2560269214"
+    },
+    "s3": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T22:55:09.257189+00:00",
+      "revision_id": 2560982823,
+      "source_qid": "Q902104",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2560982823"
+    },
+    "s4": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T22:55:12.857186+00:00",
+      "revision_id": 2276749758,
+      "source_qid": "Q7415559",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2276749758"
+    }
+  },
+  "update_datetime": "2026-11-06T23:02:21.578448+00:00"
+}
