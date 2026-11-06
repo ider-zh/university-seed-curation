@@ -1,0 +1,1000 @@
+{
+  "coverage": {
+    "finance": {
+      "checked_at": "2026-11-06T13:48:23.352577+00:00",
+      "status": "checked"
+    },
+    "geography": {
+      "checked_at": "2026-11-06T13:48:23.352577+00:00",
+      "status": "checked"
+    },
+    "history": {
+      "checked_at": "2026-11-06T13:48:23.352577+00:00",
+      "status": "checked"
+    },
+    "identity": {
+      "checked_at": "2026-11-06T13:48:23.352577+00:00",
+      "status": "checked"
+    },
+    "population": {
+      "checked_at": "2026-11-06T13:48:23.352577+00:00",
+      "status": "checked"
+    },
+    "profile": {
+      "checked_at": "2026-11-06T13:48:23.352577+00:00",
+      "status": "checked"
+    }
+  },
+  "curation": {
+    "identity_status": "in_scope",
+    "refresh_profile": "core-v1",
+    "reviewed_groups": [
+      "identity",
+      "geography",
+      "history",
+      "population",
+      "finance",
+      "profile"
+    ]
+  },
+  "finance": {
+    "endowment": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:4",
+              "original_text": "Endowment: $97.1 million (2024)[1]",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:References",
+              "original_text": "^ \"U.S. and Canadian 2024 NCSE Participating Institutions Listed by Fiscal Year 2024 Endowment Market Value, Change in Market Value from FY23 to FY24, and FY24 Endowment Market Values Per Full-time Equivalent Student\" (XLSX). National Association of College and University Business Officers (NACUBO). February 12, 2025. Archived from the original on February 12, 2025. Retrieved February 12, 2025.",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "period": {
+            "kind": "fiscal_year",
+            "year": 2024
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": "97100000",
+            "currency": "USD",
+            "precision": "approximate"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "single_source_family",
+          "approximate_value"
+        ],
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "history": {
+    "milestones": [
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P571:0",
+                  "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q7860053$7B6D2577-3049-4B6D-ACAF-33E68735483F\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+1926-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}, \"reference_count\": 2}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "infobox:3",
+                  "original_text": "Established: 1926",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "precision": "year",
+                "year": 1926
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:History",
+                  "original_text": "[edit | edit source]\nThe college operated as part of the Tyler public school system from its inception in 1926 until 1945, when voters supported the creation of an independent Tyler Junior College District. The junior college district now includes the Tyler, Chapel Hill, Grand Saline, Lindale, Van, and Winona school districts.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "The college began in 1926 as part of the Tyler public school system; voters supported creation of an independent Tyler Junior College District in 1945."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "establishment",
+        "kind": "institution_establishment",
+        "subject_ref": "institution"
+      }
+    ]
+  },
+  "identity": {
+    "aliases": [
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P1813:0",
+                "original_text": "{\"property\": \"P1813\", \"property_label\": \"short name\", \"statement_id\": \"Q7860053$bdad6793-437c-c0ec-7efc-bb7805e2ad83\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"TJC\", \"language\": \"en\"}}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "TJC"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    ],
+    "kind": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:2",
+              "original_text": "Type: Public community college",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "claim:P31:0",
+              "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q7860053$DCC169AA-E082-43B0-AEA5-8340DE645939\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 1336920, \"id\": \"Q1336920\"}}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "metadata",
+              "original_text": "{\"id\": \"Q1336920\", \"labels\": {\"en\": \"community college\"}, \"descriptions\": {\"en\": \"type of educational institution\"}}",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c1",
+          "value": "higher_education_college",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "names": {
+      "en": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q7860053\", \"labels\": {\"en\": \"Tyler Junior College\"}, \"descriptions\": {\"en\": \"community college in Tyler, Texas, United States\"}}",
+                "source_ref": "s1"
+              },
+              {
+                "locator": "page_metadata",
+                "original_text": "{\"title\": \"Tyler Junior College\", \"language\": \"en\"}",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": "Tyler Junior College",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    "operating_status": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "Its West campus includes continuing education and workforce training programs and TJC North in Lindale, Texas offers general education classes, nursing programs, and the veterinary technician associate of applied science. The college also operates locations in Jacksonville and Rusk. TJC offers Associate of Science, Associate of Applied Science and Associate of Arts, specialized baccalaureate degrees, and certificate programs.",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": "operating",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "ownership": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:2",
+              "original_text": "Type: Public community college",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": "public",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "leadership": {
+    "president": {
+      "candidates": [
+        {
+          "current_basis": "infobox_current",
+          "evidence": [
+            {
+              "locator": "infobox:5",
+              "original_text": "President: Juan E. Mejia",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "person": {
+              "name": "Juan E. Mejia"
+            },
+            "title_original": {
+              "language": "en",
+              "text": "President"
+            }
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "single_source_family",
+          "reported_current"
+        ],
+        "reason": "The page reports this person in its current officeholder field; a term-end date is not required.",
+        "reason_code": "infobox_current"
+      }
+    },
+    "provost": {
+      "candidates": [
+        {
+          "current_basis": "infobox_current",
+          "evidence": [
+            {
+              "locator": "infobox:6",
+              "original_text": "Provost: Deana K. Sheppard",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "person": {
+              "name": "Deana K. Sheppard"
+            },
+            "title_original": {
+              "language": "en",
+              "text": "Provost"
+            }
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "single_source_family",
+          "reported_current"
+        ],
+        "reason": "The page reports this person in its current officeholder field; a term-end date is not required.",
+        "reason_code": "infobox_current"
+      }
+    }
+  },
+  "locations": [
+    {
+      "address": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "infobox:8",
+                "original_text": "Location: Tyler, Texas, United States32°20′07″N 95°17′03″W﻿ / ﻿32.3353°N 95.2841°W﻿ / 32.3353; -95.2841",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "city_name": "Tyler",
+              "country_name": "United States",
+              "country_qid": "Q30",
+              "formatted": {
+                "language": "en",
+                "text": "Tyler, Texas, United States"
+              },
+              "region_name": "Texas",
+              "region_qid": "Q1439"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "id": "tyler",
+      "kind": "administrative_area",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "infobox:8",
+                "original_text": "Location: Tyler, Texas, United States32°20′07″N 95°17′03″W﻿ / ﻿32.3353°N 95.2841°W﻿ / 32.3353; -95.2841",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Tyler"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    {
+      "id": "texas",
+      "kind": "administrative_area",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q1439\", \"labels\": {\"en\": \"Texas\"}, \"descriptions\": {\"en\": \"state of the United States of America\"}}",
+                "source_ref": "s6"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Texas"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "qid": "Q1439"
+    },
+    {
+      "id": "usa",
+      "kind": "administrative_area",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q30\", \"labels\": {\"en\": \"United States\"}, \"descriptions\": {\"en\": \"country located primarily in North America\"}}",
+                "source_ref": "s5"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "United States"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "qid": "Q30"
+    },
+    {
+      "id": "main",
+      "kind": "campus",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "infobox:0",
+                "original_text": ": Jenkins Hall, located on the main campus",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "main campus"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    {
+      "id": "west",
+      "kind": "campus",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "West campus",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "West campus"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    {
+      "address": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "TJC North in Lindale, Texas",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "city_name": "Lindale",
+              "formatted": {
+                "language": "en",
+                "text": "Lindale, Texas"
+              },
+              "region_name": "Texas",
+              "region_qid": "Q1439"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "id": "north",
+      "kind": "campus",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "TJC North",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "TJC North"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    {
+      "coordinates": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "statement:q7860053$E126FE12-E1E9-4C25-B12F-6BD8648AE37C",
+                "original_text": "\"latitude\": 32.3344",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "source_rank": "normal",
+            "value": {
+              "crs": "EPSG:4326",
+              "globe_qid": "Q2",
+              "latitude": 32.3344,
+              "longitude": -95.2829,
+              "source_precision_degrees": 0.0001
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "id": "wikidata-item-location",
+      "kind": "institution",
+      "qid": "Q7860053"
+    }
+  ],
+  "modified_datetime": "2026-11-06T13:53:43.696470+00:00",
+  "population": {
+    "students_total": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:7",
+              "original_text": "Students: 12,500+",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "period_status": "not_stated",
+          "value": {
+            "amount": 12500,
+            "basis": "unspecified",
+            "precision": "approximate"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "with an enrollment of more than 12,000 credit students and an additional 20,000 continuing education enrollments annually.",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c2",
+          "period_status": "not_stated",
+          "value": {
+            "amount": 12000,
+            "basis": "unspecified",
+            "precision": "approximate"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "period_not_stated",
+          "single_source_family",
+          "approximate_value"
+        ],
+        "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+        "reason_code": "best_available"
+      }
+    }
+  },
+  "profile": {
+    "academic_focus": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "Its West campus includes continuing education and workforce training programs and TJC North in Lindale, Texas offers general education classes, nursing programs, and the veterinary technician associate of applied science. ",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": [
+            {
+              "language": "en",
+              "text": "continuing education"
+            },
+            {
+              "language": "en",
+              "text": "workforce training"
+            },
+            {
+              "language": "en",
+              "text": "general education"
+            },
+            {
+              "language": "en",
+              "text": "nursing"
+            },
+            {
+              "language": "en",
+              "text": "veterinary technician"
+            }
+          ],
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "degree_levels": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "TJC offers Associate of Science, Associate of Applied Science and Associate of Arts, specialized baccalaureate degrees, and certificate programs.",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": [
+            "Associate of Science",
+            "Associate of Applied Science",
+            "Associate of Arts",
+            "specialized baccalaureate degrees",
+            "certificate programs"
+          ],
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "motto": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:1",
+              "original_text": "Motto: Educating everyone — the path to a better world.",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "language": "en",
+            "text": "Educating everyone — the path to a better world."
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "summary": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "Community college in Tyler, Texas, U.S.\nTyler Junior College (TJC) is a public community college in Tyler, Texas. It is one of the largest community colleges in the state, with an enrollment of more than 12,000 credit students and an additional 20,000 continuing education enrollments annually. Its West campus includes continuing education and workforce training programs and TJC North in Lindale, Texas offers general education classes, nursing programs, and the veterinary technician associate of applied science. The college also operates locations in Jacksonville and Rusk. TJC offers Associate of Science, Associate of Applied Science and Associate of Arts, specialized baccalaureate degrees, and certificate programs.",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:History",
+              "original_text": "[edit | edit source]\nThe college operated as part of the Tyler public school system from its inception in 1926 until 1945, when voters supported the creation of an independent Tyler Junior College District. The junior college district now includes the Tyler, Chapel Hill, Grand Saline, Lindale, Van, and Winona school districts.",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Campus",
+              "original_text": "The independently operated Tyler Museum of Art is located on the school's main campus.[2] The Earth and Space Science Center has a planetarium and exhibit hall offering public shows in its 40-foot (12 m)-diameter domed theater every day except Mondays, and sponsors a monthly astronomy lecture series.[3] Additionally, Wagstaff Gymnasium is home to the TJC Apache volleyball and basketball teams.\n",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Campus",
+              "original_text": "Co-ed residence halls include Louise H. & Joseph Z. Ornelas Residential Complex, Crossroads, and Bateman Hall. Vaughn Hall houses women and Holley Hall is for men. Claridge Hall is co-ed for athletes. Sledge Hall houses members of female athletic teams, and Hudnall Hall houses members of the football team.[4]",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "infobox:4",
+              "original_text": "Endowment: $97.1 million (2024)[1]",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:References",
+              "original_text": "^ \"U.S. and Canadian 2024 NCSE Participating Institutions Listed by Fiscal Year 2024 Endowment Market Value, Change in Market Value from FY23 to FY24, and FY24 Endowment Market Values Per Full-time Equivalent Student\" (XLSX). National Association of College and University Business Officers (NACUBO). February 12, 2025. Archived from the original on February 12, 2025. Retrieved February 12, 2025.",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "language": "en",
+            "text": "Tyler Junior College (TJC) is a public community college in Tyler, Texas, United States. Established in 1926, it initially operated within the Tyler public school system. That arrangement continued until 1945, when voters supported forming an independent Tyler Junior College District. The district includes the Tyler, Chapel Hill, Grand Saline, Lindale, Van and Winona school districts. The college retains its community college identity while offering specialized baccalaureate degrees alongside associate degrees and certificates.\n\nTJC has a main campus and a West campus, whose programs include continuing education and workforce training. TJC North in Lindale provides general education classes, nursing programs and a veterinary technician Associate of Applied Science. The college also operates locations in Jacksonville and Rusk. On the main campus, the independently operated Tyler Museum of Art shares the setting with college facilities. The Earth and Space Science Center includes a planetarium and exhibition hall and presents public shows and astronomy lectures. Residence halls provide accommodation, and Wagstaff Gymnasium serves the college's volleyball and basketball teams. Its academic awards include Associate of Science, Associate of Applied Science and Associate of Arts degrees, as well as the specialized baccalaureate and certificate programs. Its endowment was reported at approximately US$97.1 million for fiscal 2024."
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "website": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P856:0",
+              "original_text": "{\"property\": \"P856\", \"property_label\": \"official website\", \"statement_id\": \"Q7860053$0FD895D1-68DD-45E5-A5B9-64D6EB391480\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"https://www.tjc.edu/\", \"qualifiers\": {\"P407\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 1860, \"id\": \"Q1860\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "value": "https://www.tjc.edu/",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "qid": "Q7860053",
+  "record_revision": 1,
+  "related_entities": {
+    "tyler_public_school_system": {
+      "kind": "institution",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:History",
+                "original_text": "[edit | edit source]\nThe college operated as part of the Tyler public school system from its inception in 1926 until 1945, when voters supported the creation of an independent Tyler Junior College District. The junior college district now includes the Tyler, Chapel Hill, Grand Saline, Lindale, Van, and Winona school districts.",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Tyler public school system"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    }
+  },
+  "relationships": {
+    "campus": [
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "infobox:0",
+                "original_text": ": Jenkins Hall, located on the main campus",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "target_ref": "location:main"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "Its West campus includes continuing education and workforce training programs and TJC North in Lindale, Texas offers general education classes, nursing programs, and the veterinary technician associate of applied science. ",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "target_ref": "location:west"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "Its West campus includes continuing education and workforce training programs and TJC North in Lindale, Texas offers general education classes, nursing programs, and the veterinary technician associate of applied science. ",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "target_ref": "location:north"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    ],
+    "parent": [
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:History",
+                "original_text": "[edit | edit source]\nThe college operated as part of the Tyler public school system from its inception in 1926 until 1945, when voters supported the creation of an independent Tyler Junior College District. The junior college district now includes the Tyler, Chapel Hill, Grand Saline, Lindale, Van, and Winona school districts.",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "target_ref": "related:tyler_public_school_system",
+              "valid_from": {
+                "precision": "year",
+                "year": 1926
+              },
+              "valid_to": {
+                "precision": "year",
+                "year": 1945
+              }
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    ]
+  },
+  "schema_version": "0.2.2",
+  "seed": {
+    "channels": [
+      "reviewed_institution_type"
+    ],
+    "import_id": "seed-84c3beb45367905f",
+    "screening_status": "included"
+  },
+  "selection_policy": "preferred-v1",
+  "sources": {
+    "s1": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T13:48:04.579365+00:00",
+      "revision_id": 2541954824,
+      "source_qid": "Q7860053",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2541954824"
+    },
+    "s2": {
+      "family": "wikimedia",
+      "kind": "wikipedia",
+      "language": "en",
+      "page_id": 2389651,
+      "publisher_role": "encyclopedia",
+      "retrieved_at": "2026-11-06T13:48:13.821545+00:00",
+      "revision_id": 1375080880,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1375080880"
+    },
+    "s3": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T13:48:18.301123+00:00",
+      "revision_id": 2550664938,
+      "source_qid": "Q1336920",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2550664938"
+    },
+    "s4": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T11:09:52.720710+00:00",
+      "revision_id": 2554628329,
+      "source_qid": "Q23002039",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2554628329"
+    },
+    "s5": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T09:50:50.405563+00:00",
+      "revision_id": 2565041516,
+      "source_qid": "Q30",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2565041516"
+    },
+    "s6": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T13:48:23.298429+00:00",
+      "revision_id": 2563746485,
+      "source_qid": "Q1439",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2563746485"
+    }
+  },
+  "update_datetime": "2026-11-06T13:53:43.696470+00:00"
+}

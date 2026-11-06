@@ -1,0 +1,714 @@
+{
+  "attribution": "distinct_native_research_and_review_subagents;not_cryptographic_identity",
+  "research": {
+    "baseline_sha256": "absent",
+    "candidate": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-06T13:48:14.732520+00:00",
+          "status": "not_found"
+        },
+        "geography": {
+          "checked_at": "2026-11-06T13:48:14.732520+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-06T13:48:14.732520+00:00",
+          "status": "checked"
+        },
+        "identity": {
+          "checked_at": "2026-11-06T13:48:14.732520+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-06T13:48:14.732520+00:00",
+          "status": "not_found"
+        },
+        "profile": {
+          "checked_at": "2026-11-06T13:48:14.732520+00:00",
+          "status": "checked"
+        }
+      },
+      "curation": {
+        "identity_status": "in_scope"
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "claim:P571:0",
+                      "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q109920674$6CAAB851-4BEC-4B69-8586-10DBEC760374\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+2014-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}, \"reference_count\": 1}",
+                      "source_ref": "s1"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "day": 1,
+                    "month": 1,
+                    "precision": "day",
+                    "year": 2014
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "inception",
+            "kind": "institution_establishment",
+            "subject_ref": "institution"
+          }
+        ]
+      },
+      "identity": {
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P31:0",
+                  "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q109920674$DCF6B26A-1C99-4A01-AFA3-266D9B0176A9\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 12513145, \"id\": \"Q12513145\"}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "metadata",
+                  "original_text": "{\"id\": \"Q12513145\", \"labels\": {\"en\": \"sekolah tinggi\"}, \"descriptions\": {\"en\": \"Indonesian type of higher education institution, similar to college but provides undergraduate programs\"}}",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "higher_education_college",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q109920674\", \"labels\": {\"en\": \"STAI Darussalam Martapura, Kalimantan Selatan\"}, \"descriptions\": {\"en\": \"higher education institution in Banjar, Indonesia\"}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "STAI Darussalam Martapura, Kalimantan Selatan",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "locations": [
+        {
+          "coordinates": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P625:0",
+                    "original_text": "{\"property\": \"P625\", \"property_label\": \"P625\", \"statement_id\": \"q2358819$E54EB206-018F-4256-BEA2-DA427AF83F5B\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"latitude\": -3.4166666666667, \"longitude\": 114.85, \"altitude\": null, \"precision\": 0.00027777777777778, \"globe\": \"http://www.wikidata.org/entity/Q2\"}, \"reference_count\": 1}",
+                    "source_ref": "s4"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "crs": "EPSG:4326",
+                  "latitude": -3.4166666666667,
+                  "longitude": 114.85
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "martapura",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q109920674$77CB9B96-3318-4ECF-8035-8E96F5D64521\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 2358819, \"id\": \"Q2358819\"}, \"reference_count\": 4}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q2358819\", \"labels\": {\"en\": \"Martapura\"}, \"descriptions\": {\"en\": \"district in Banjar Regency, South Kalimantan Province, Indonesia\"}}",
+                    "source_ref": "s4"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Martapura"
+                },
+                "verification": "supported"
+              },
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P1448:0",
+                    "original_text": "{\"property\": \"P1448\", \"property_label\": \"P1448\", \"statement_id\": \"Q2358819$B7CA7F8D-4A65-4A35-861D-A49D854F034C\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"Kecamatan Martapura\", \"language\": \"id\"}, \"reference_count\": 1}",
+                    "source_ref": "s4"
+                  }
+                ],
+                "id": "c2",
+                "value": {
+                  "language": "id",
+                  "text": "Kecamatan Martapura"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+              "reason_code": "best_available"
+            }
+          },
+          "qid": "Q2358819"
+        },
+        {
+          "id": "indonesia",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q109920674$FC9C09F9-9468-4DC3-97F4-D3AD525AA241\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 252, \"id\": \"Q252\"}}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q252\", \"labels\": {\"en\": \"Indonesia\"}, \"descriptions\": {\"en\": \"island country in Southeast Asia and Oceania\"}}",
+                    "source_ref": "s3"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Indonesia"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q252"
+        }
+      ],
+      "modified_datetime": "2026-11-06T13:50:21.986086+00:00",
+      "profile": {
+        "website": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P856:0",
+                  "original_text": "{\"property\": \"P856\", \"property_label\": \"official website\", \"statement_id\": \"Q109920674$A52F34AE-F954-481F-B40C-125A003551D4\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"https://www.stai-darussalam.ac.id\", \"qualifiers\": {\"P407\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 9240, \"id\": \"Q9240\"}}]}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "https://www.stai-darussalam.ac.id",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "qid": "Q109920674",
+      "record_revision": 1,
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "reviewed_institution_type"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "included"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T13:48:04.725283+00:00",
+          "revision_id": 2270378557,
+          "source_qid": "Q109920674",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2270378557"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T13:30:18.148307+00:00",
+          "revision_id": 2427034730,
+          "source_qid": "Q12513145",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2427034730"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T13:30:26.731454+00:00",
+          "revision_id": 2562953677,
+          "source_qid": "Q252",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2562953677"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T13:48:14.700253+00:00",
+          "revision_id": 2486071899,
+          "source_qid": "Q2358819",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2486071899"
+        }
+      }
+    },
+    "coverage": [
+      {
+        "group": "identity",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "status": "checked"
+      },
+      {
+        "group": "population",
+        "status": "not_found"
+      },
+      {
+        "group": "finance",
+        "status": "not_found"
+      },
+      {
+        "group": "profile",
+        "status": "checked"
+      }
+    ],
+    "delta": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-06T13:48:14.732520+00:00",
+          "status": "not_found"
+        },
+        "geography": {
+          "checked_at": "2026-11-06T13:48:14.732520+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-06T13:48:14.732520+00:00",
+          "status": "checked"
+        },
+        "identity": {
+          "checked_at": "2026-11-06T13:48:14.732520+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-06T13:48:14.732520+00:00",
+          "status": "not_found"
+        },
+        "profile": {
+          "checked_at": "2026-11-06T13:48:14.732520+00:00",
+          "status": "checked"
+        }
+      },
+      "curation": {
+        "identity_status": "in_scope"
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "claim:P571:0",
+                      "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q109920674$6CAAB851-4BEC-4B69-8586-10DBEC760374\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+2014-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}, \"reference_count\": 1}",
+                      "source_ref": "s1"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "day": 1,
+                    "month": 1,
+                    "precision": "day",
+                    "year": 2014
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "inception",
+            "kind": "institution_establishment",
+            "subject_ref": "institution"
+          }
+        ]
+      },
+      "identity": {
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P31:0",
+                  "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q109920674$DCF6B26A-1C99-4A01-AFA3-266D9B0176A9\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 12513145, \"id\": \"Q12513145\"}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "metadata",
+                  "original_text": "{\"id\": \"Q12513145\", \"labels\": {\"en\": \"sekolah tinggi\"}, \"descriptions\": {\"en\": \"Indonesian type of higher education institution, similar to college but provides undergraduate programs\"}}",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "higher_education_college",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q109920674\", \"labels\": {\"en\": \"STAI Darussalam Martapura, Kalimantan Selatan\"}, \"descriptions\": {\"en\": \"higher education institution in Banjar, Indonesia\"}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "STAI Darussalam Martapura, Kalimantan Selatan",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "locations": [
+        {
+          "coordinates": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P625:0",
+                    "original_text": "{\"property\": \"P625\", \"property_label\": \"P625\", \"statement_id\": \"q2358819$E54EB206-018F-4256-BEA2-DA427AF83F5B\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"latitude\": -3.4166666666667, \"longitude\": 114.85, \"altitude\": null, \"precision\": 0.00027777777777778, \"globe\": \"http://www.wikidata.org/entity/Q2\"}, \"reference_count\": 1}",
+                    "source_ref": "s4"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "crs": "EPSG:4326",
+                  "latitude": -3.4166666666667,
+                  "longitude": 114.85
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "martapura",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q109920674$77CB9B96-3318-4ECF-8035-8E96F5D64521\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 2358819, \"id\": \"Q2358819\"}, \"reference_count\": 4}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q2358819\", \"labels\": {\"en\": \"Martapura\"}, \"descriptions\": {\"en\": \"district in Banjar Regency, South Kalimantan Province, Indonesia\"}}",
+                    "source_ref": "s4"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Martapura"
+                },
+                "verification": "supported"
+              },
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P1448:0",
+                    "original_text": "{\"property\": \"P1448\", \"property_label\": \"P1448\", \"statement_id\": \"Q2358819$B7CA7F8D-4A65-4A35-861D-A49D854F034C\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"Kecamatan Martapura\", \"language\": \"id\"}, \"reference_count\": 1}",
+                    "source_ref": "s4"
+                  }
+                ],
+                "id": "c2",
+                "value": {
+                  "language": "id",
+                  "text": "Kecamatan Martapura"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+              "reason_code": "best_available"
+            }
+          },
+          "qid": "Q2358819"
+        },
+        {
+          "id": "indonesia",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q109920674$FC9C09F9-9468-4DC3-97F4-D3AD525AA241\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 252, \"id\": \"Q252\"}}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q252\", \"labels\": {\"en\": \"Indonesia\"}, \"descriptions\": {\"en\": \"island country in Southeast Asia and Oceania\"}}",
+                    "source_ref": "s3"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Indonesia"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q252"
+        }
+      ],
+      "profile": {
+        "website": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P856:0",
+                  "original_text": "{\"property\": \"P856\", \"property_label\": \"official website\", \"statement_id\": \"Q109920674$A52F34AE-F954-481F-B40C-125A003551D4\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"https://www.stai-darussalam.ac.id\", \"qualifiers\": {\"P407\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 9240, \"id\": \"Q9240\"}}]}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "https://www.stai-darussalam.ac.id",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "qid": "Q109920674",
+      "record_revision": 1,
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "reviewed_institution_type"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "included"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T13:48:04.725283+00:00",
+          "revision_id": 2270378557,
+          "source_qid": "Q109920674",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2270378557"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T13:30:18.148307+00:00",
+          "revision_id": 2427034730,
+          "source_qid": "Q12513145",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2427034730"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T13:30:26.731454+00:00",
+          "revision_id": 2562953677,
+          "source_qid": "Q252",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2562953677"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T13:48:14.700253+00:00",
+          "revision_id": 2486071899,
+          "source_qid": "Q2358819",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2486071899"
+        }
+      }
+    },
+    "open_requests": [],
+    "proposed_at": "2026-11-06T13:50:21.986086+00:00",
+    "qid": "Q109920674",
+    "research": {
+      "model": "not_reported",
+      "prompt_sha256": "f4e302a3432b077155bad9bd05cdec516b2276dca0f40f7aca5051d3f4f78929",
+      "reasoning_effort": "not_reported",
+      "schema_sha256": "92e942f4fbf2ae28964462ea9ffa8312c5ee16a077a1e08b40aaaf741512422e",
+      "session": "/root/research_q109920674"
+    },
+    "retrieval_failures": [],
+    "review_status": "unreviewed",
+    "seed": {
+      "channels": [
+        "reviewed_institution_type"
+      ],
+      "import_id": "seed-84c3beb45367905f",
+      "screening_status": "included"
+    },
+    "transport": {
+      "base_commit": "227efc5bbe182740c8a90ebceef15a994e7edab1",
+      "protocol": "native-subagent-v1",
+      "repository": "ider-zh/university-seed-curation",
+      "review_policy": {
+        "id": "source-grounded-flexible-v2",
+        "sha256": "b8ed7d2897e4c31dbd81b1379aafdc1077a21d1a33949edbd2d896b0adf99db2"
+      },
+      "schema_sha256": "bfa496eafa9dffca56146214168db7f000b09161b8993129632e7202e1c88833",
+      "seed_catalog_sha256": "84c3beb45367905f513d650684283dd62a9c1b77962bdc34151a6ef05bfa03d4"
+    },
+    "type": "university-proposal-v1"
+  },
+  "review": {
+    "contexts_checked": 4,
+    "coverage_checks": [
+      {
+        "group": "identity",
+        "reason": "English name, higher education classification and inclusion are supported by s1/s2. Mapping the source type to the controlled college field is a disclosed inference. A single Wikimedia family is permitted; no textual summary adds unsupported claims.",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "reason": "s1 supplies institution district and country; s3/s4 resolve those subjects. The sole extracted point belongs to Martapura administrative area, with normal rank and source precision retained in evidence. The institution root has no P625; no campus coordinates or historical jurisdiction were invented.",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "reason": "The frozen root and s1 supply day-precision inception 2014-01-01. No corroborated wider institutional chronology is established. Omitted optional events do not invalidate bounded core extraction.",
+        "status": "checked"
+      },
+      {
+        "group": "population",
+        "reason": "No institution enrollment, staff count, FTE or population period/value is present in the supplied corpus or root snapshot. not_found is bounded to this evidence, not a claim that no public figures exist.",
+        "status": "not_found"
+      },
+      {
+        "group": "finance",
+        "reason": "No institution financial amount, currency, financial year or basis is present in the supplied corpus or root snapshot. not_found is evidence-bounded; no unsupported monetary value is proposed.",
+        "status": "not_found"
+      },
+      {
+        "group": "profile",
+        "reason": "s1 supports the official website. Other root identifiers/contact/accreditation statements are not falsely interpreted as leaders, units or statistics. Optional profile omissions and lack of current website verification do not block this bounded extraction.",
+        "status": "checked"
+      }
+    ],
+    "decision": "approve",
+    "facts_checked": 8,
+    "full_refresh": true,
+    "inferences": [
+      {
+        "id": "$.identity.kind:c1",
+        "reason": "s1 claim:P31:0 directly types this institution as Q12513145; s2 metadata describes sekolah tinggi as an Indonesian higher education institution similar to a college providing undergraduate programs. Mapping to higher_education_college is a reasonable controlled-field adaptation, not a claim of university status or legal independence."
+      },
+      {
+        "id": "identity",
+        "reason": "The institution label and description in s1 metadata and P31 link to sekolah tinggi, explained by s2 metadata, support in_scope as a higher education institution. No unsupported university, campus, or legal independence claim is introduced."
+      },
+      {
+        "id": "location:indonesia",
+        "reason": "s1 P17 identifies Q252 and s3 metadata describes Indonesia as a country. Using administrative_area as a broad geographic container for this country is reasonable and retains its country meaning through cited evidence; no historical validity is asserted."
+      }
+    ],
+    "model": "not_reported",
+    "proposal_sha256": "d0fed985226bcbd3db04f4a8c942c751e9a791ba09b235a7a426eb765ea675aa",
+    "qid": "Q109920674",
+    "reasoning_effort": "not_reported",
+    "record_sha256": "2ae4359250f7213a3684ef67a0fcc952623df1b80dc8002bf6228936eeb36e23",
+    "request_responses": [],
+    "requests": [],
+    "review_session": "/root/review_q109920674",
+    "reviewed_at": "2026-11-06T13:51:58.827300+00:00",
+    "source_revisions_checked": 4
+  },
+  "review_result_sha256": "83e396aba4385dc0096d8b89a2242824cf913c0316f566f041a0ca675a21a31c",
+  "type": "university-unified-receipt-v1"
+}
