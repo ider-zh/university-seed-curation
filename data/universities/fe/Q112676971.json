@@ -1,0 +1,209 @@
+{
+  "coverage": {
+    "finance": {
+      "checked_at": "2026-11-06T14:55:54.077028+00:00",
+      "status": "not_found"
+    },
+    "geography": {
+      "checked_at": "2026-11-06T14:55:54.077028+00:00",
+      "status": "checked"
+    },
+    "history": {
+      "checked_at": "2026-11-06T14:55:54.077028+00:00",
+      "status": "not_found"
+    },
+    "identity": {
+      "checked_at": "2026-11-06T14:55:54.077028+00:00",
+      "status": "checked"
+    },
+    "population": {
+      "checked_at": "2026-11-06T14:55:54.077028+00:00",
+      "status": "not_found"
+    },
+    "profile": {
+      "checked_at": "2026-11-06T14:55:54.077028+00:00",
+      "status": "not_found"
+    }
+  },
+  "curation": {
+    "identity_status": "in_scope",
+    "refresh_profile": "core-v1",
+    "reviewed_groups": [
+      "identity",
+      "geography",
+      "history",
+      "population",
+      "finance",
+      "profile"
+    ]
+  },
+  "identity": {
+    "identifiers": {
+      "P5242": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P5242:0",
+                "original_text": "{\"property\": \"P5242\", \"property_label\": \"ARWU university ID\", \"statement_id\": \"Q112676971$0B5CC917-B946-41C2-8965-A258ECC16F9D\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"guangdong-xinan-vocational-technical-college\"}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": "guangdong-xinan-vocational-technical-college",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    "kind": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P31:0",
+              "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q112676971$B2D751B9-0AF3-486A-BC92-42CC7AEBADD4\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 38723, \"id\": \"Q38723\"}}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "metadata",
+              "original_text": "{\"id\": \"Q38723\", \"labels\": {\"en\": \"higher education institution\"}, \"descriptions\": {\"en\": \"institution that provides higher education (e.g., universities, vocational universities, community colleges, liberal arts colleges, institutes of technology, and others)\"}}",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": "other",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "locations": [
+    {
+      "id": "shenzhen",
+      "kind": "administrative_area",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P131:0",
+                "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q112676971$ED7CB9D8-9728-48F7-B0DD-D467E0640B87\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 15174, \"id\": \"Q15174\"}}",
+                "source_ref": "s1"
+              },
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q15174\", \"labels\": {\"en\": \"Shenzhen\"}, \"descriptions\": {\"en\": \"city in China\"}}",
+                "source_ref": "s4"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Shenzhen"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "qid": "Q15174"
+    },
+    {
+      "id": "china",
+      "kind": "administrative_area",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P17:0",
+                "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q112676971$51FC7B98-5E17-4928-8329-F0AF48A4ECD3\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 148, \"id\": \"Q148\"}}",
+                "source_ref": "s1"
+              },
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q148\", \"labels\": {\"en\": \"People's Republic of China\"}, \"descriptions\": {\"en\": \"country in East Asia\"}}",
+                "source_ref": "s3"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "People's Republic of China"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "qid": "Q148"
+    }
+  ],
+  "modified_datetime": "2026-11-06T15:05:02.328770+00:00",
+  "qid": "Q112676971",
+  "record_revision": 1,
+  "schema_version": "0.2.2",
+  "seed": {
+    "channels": [
+      "ranking_identifier",
+      "reviewed_institution_type"
+    ],
+    "import_id": "seed-84c3beb45367905f",
+    "screening_status": "included"
+  },
+  "selection_policy": "preferred-v1",
+  "sources": {
+    "s1": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T14:55:34.864293+00:00",
+      "revision_id": 2548512380,
+      "source_qid": "Q112676971",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2548512380"
+    },
+    "s2": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T14:55:50.017073+00:00",
+      "revision_id": 2553501921,
+      "source_qid": "Q38723",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2553501921"
+    },
+    "s3": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T14:48:31.339260+00:00",
+      "revision_id": 2563722609,
+      "source_qid": "Q148",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2563722609"
+    },
+    "s4": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T14:55:54.058264+00:00",
+      "revision_id": 2559853874,
+      "source_qid": "Q15174",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2559853874"
+    }
+  },
+  "update_datetime": "2026-11-06T15:05:02.328770+00:00"
+}

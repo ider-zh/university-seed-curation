@@ -1,0 +1,1477 @@
+{
+  "coverage": {
+    "finance": {
+      "checked_at": "2026-11-06T14:56:06.930404+00:00",
+      "status": "checked"
+    },
+    "geography": {
+      "checked_at": "2026-11-06T14:56:06.930404+00:00",
+      "status": "checked"
+    },
+    "history": {
+      "checked_at": "2026-11-06T14:56:06.930404+00:00",
+      "status": "disputed"
+    },
+    "identity": {
+      "checked_at": "2026-11-06T14:56:06.930404+00:00",
+      "status": "checked"
+    },
+    "population": {
+      "checked_at": "2026-11-06T14:56:06.930404+00:00",
+      "status": "checked"
+    },
+    "profile": {
+      "checked_at": "2026-11-06T14:56:06.930404+00:00",
+      "status": "checked"
+    }
+  },
+  "curation": {
+    "identity_status": "in_scope",
+    "refresh_profile": "core-v1",
+    "reviewed_groups": [
+      "identity",
+      "geography",
+      "history",
+      "population",
+      "finance",
+      "profile"
+    ]
+  },
+  "finance": {
+    "assets": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2403:0",
+              "original_text": "{\"property\": \"P2403\", \"property_label\": \"total assets\", \"statement_id\": \"Q56320581$CB00E116-9D02-47B5-B929-DC73796A7935\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+286779096\", \"unit\": \"http://www.wikidata.org/entity/Q4730\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2020-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "claim:P498:0",
+              "original_text": "{\"property\": \"P498\", \"property_label\": \"P498\", \"statement_id\": \"q4730$1203d2bb-4110-96ec-598a-1c5a2d00780d\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"MXN\", \"qualifiers\": {\"P580\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+1993-01-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 10, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c1",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2020
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": "286779096",
+            "currency": "MXN",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2403:1",
+              "original_text": "{\"property\": \"P2403\", \"property_label\": \"total assets\", \"statement_id\": \"Q56320581$C3A20332-1EBE-42A8-AC12-43377E692AC1\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+300401560\", \"unit\": \"http://www.wikidata.org/entity/Q4730\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2021-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "claim:P498:0",
+              "original_text": "{\"property\": \"P498\", \"property_label\": \"P498\", \"statement_id\": \"q4730$1203d2bb-4110-96ec-598a-1c5a2d00780d\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"MXN\", \"qualifiers\": {\"P580\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+1993-01-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 10, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c2",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2021
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": "300401560",
+            "currency": "MXN",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2403:2",
+              "original_text": "{\"property\": \"P2403\", \"property_label\": \"total assets\", \"statement_id\": \"Q56320581$CAF0C4DB-7639-4A54-B2B6-AF845129FFC2\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+626612207.42\", \"unit\": \"http://www.wikidata.org/entity/Q4730\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2022-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "claim:P498:0",
+              "original_text": "{\"property\": \"P498\", \"property_label\": \"P498\", \"statement_id\": \"q4730$1203d2bb-4110-96ec-598a-1c5a2d00780d\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"MXN\", \"qualifiers\": {\"P580\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+1993-01-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 10, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c3",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2022
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": "626612207.42",
+            "currency": "MXN",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2403:3",
+              "original_text": "{\"property\": \"P2403\", \"property_label\": \"total assets\", \"statement_id\": \"Q56320581$4B6AC02A-0928-4D1F-8B06-31CF236EC2A7\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+387259150\", \"unit\": \"http://www.wikidata.org/entity/Q4730\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2023-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "claim:P498:0",
+              "original_text": "{\"property\": \"P498\", \"property_label\": \"P498\", \"statement_id\": \"q4730$1203d2bb-4110-96ec-598a-1c5a2d00780d\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"MXN\", \"qualifiers\": {\"P580\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+1993-01-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 10, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c4",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2023
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": "387259150",
+            "currency": "MXN",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2403:4",
+              "original_text": "{\"property\": \"P2403\", \"property_label\": \"total assets\", \"statement_id\": \"Q56320581$5D230C85-9861-4A48-BBDC-F7E128CA4B95\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+381862663\", \"unit\": \"http://www.wikidata.org/entity/Q4730\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2024-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "claim:P498:0",
+              "original_text": "{\"property\": \"P498\", \"property_label\": \"P498\", \"statement_id\": \"q4730$1203d2bb-4110-96ec-598a-1c5a2d00780d\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"MXN\", \"qualifiers\": {\"P580\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+1993-01-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 10, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c5",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2024
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": "381862663",
+            "currency": "MXN",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2403:5",
+              "original_text": "{\"property\": \"P2403\", \"property_label\": \"total assets\", \"statement_id\": \"Q56320581$F79687CB-2743-4222-B897-D1A666CF89E6\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+391799536\", \"unit\": \"http://www.wikidata.org/entity/Q4730\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2025-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "claim:P498:0",
+              "original_text": "{\"property\": \"P498\", \"property_label\": \"P498\", \"statement_id\": \"q4730$1203d2bb-4110-96ec-598a-1c5a2d00780d\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"MXN\", \"qualifiers\": {\"P580\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+1993-01-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 10, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c6",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2025
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": "391799536",
+            "currency": "MXN",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c6",
+        "qualifications": [
+          "single_source_family"
+        ],
+        "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+        "reason_code": "best_available"
+      }
+    },
+    "revenue": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2139:0",
+              "original_text": "{\"property\": \"P2139\", \"property_label\": \"total revenue\", \"statement_id\": \"Q56320581$8D5D9103-B8E9-49BD-8322-ABC154AA9224\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+106552886\", \"unit\": \"http://www.wikidata.org/entity/Q4730\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2020-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "claim:P498:0",
+              "original_text": "{\"property\": \"P498\", \"property_label\": \"P498\", \"statement_id\": \"q4730$1203d2bb-4110-96ec-598a-1c5a2d00780d\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"MXN\", \"qualifiers\": {\"P580\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+1993-01-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 10, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c1",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2020
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": "106552886",
+            "currency": "MXN",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2139:1",
+              "original_text": "{\"property\": \"P2139\", \"property_label\": \"total revenue\", \"statement_id\": \"Q56320581$6B72672F-A98B-4292-97B8-BC6806D115C8\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+111690373\", \"unit\": \"http://www.wikidata.org/entity/Q4730\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2021-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "claim:P498:0",
+              "original_text": "{\"property\": \"P498\", \"property_label\": \"P498\", \"statement_id\": \"q4730$1203d2bb-4110-96ec-598a-1c5a2d00780d\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"MXN\", \"qualifiers\": {\"P580\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+1993-01-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 10, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c2",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2021
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": "111690373",
+            "currency": "MXN",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2139:2",
+              "original_text": "{\"property\": \"P2139\", \"property_label\": \"total revenue\", \"statement_id\": \"Q56320581$91046923-87E4-4EDE-B4C4-DA8E8DE1DEED\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+251274994.36\", \"unit\": \"http://www.wikidata.org/entity/Q4730\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2022-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "claim:P498:0",
+              "original_text": "{\"property\": \"P498\", \"property_label\": \"P498\", \"statement_id\": \"q4730$1203d2bb-4110-96ec-598a-1c5a2d00780d\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"MXN\", \"qualifiers\": {\"P580\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+1993-01-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 10, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c3",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2022
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": "251274994.36",
+            "currency": "MXN",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2139:3",
+              "original_text": "{\"property\": \"P2139\", \"property_label\": \"total revenue\", \"statement_id\": \"Q56320581$849AD04E-6BE7-4F12-945D-B782CE008701\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+165500240\", \"unit\": \"http://www.wikidata.org/entity/Q4730\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2023-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "claim:P498:0",
+              "original_text": "{\"property\": \"P498\", \"property_label\": \"P498\", \"statement_id\": \"q4730$1203d2bb-4110-96ec-598a-1c5a2d00780d\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"MXN\", \"qualifiers\": {\"P580\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+1993-01-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 10, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c4",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2023
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": "165500240",
+            "currency": "MXN",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2139:4",
+              "original_text": "{\"property\": \"P2139\", \"property_label\": \"total revenue\", \"statement_id\": \"Q56320581$F3F3A828-D5AA-4035-A71B-6206E55B192D\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+143711455\", \"unit\": \"http://www.wikidata.org/entity/Q4730\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2024-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "claim:P498:0",
+              "original_text": "{\"property\": \"P498\", \"property_label\": \"P498\", \"statement_id\": \"q4730$1203d2bb-4110-96ec-598a-1c5a2d00780d\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"MXN\", \"qualifiers\": {\"P580\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+1993-01-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 10, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c5",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2024
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": "143711455",
+            "currency": "MXN",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2139:5",
+              "original_text": "{\"property\": \"P2139\", \"property_label\": \"total revenue\", \"statement_id\": \"Q56320581$5E097967-0AB8-4A74-A291-6C0B14D39869\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+157799580\", \"unit\": \"http://www.wikidata.org/entity/Q4730\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2025-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "claim:P498:0",
+              "original_text": "{\"property\": \"P498\", \"property_label\": \"P498\", \"statement_id\": \"q4730$1203d2bb-4110-96ec-598a-1c5a2d00780d\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"MXN\", \"qualifiers\": {\"P580\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+1993-01-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 10, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c6",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2025
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": "157799580",
+            "currency": "MXN",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c6",
+        "qualifications": [
+          "single_source_family"
+        ],
+        "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+        "reason_code": "best_available"
+      }
+    }
+  },
+  "history": {
+    "milestones": [
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Historia",
+                  "original_text": "[editar]\nSan Juan Bautista de La Salle. F.S.C.\nEn la ciudad de Reims, Francia un San Juan Bautista de La Salle inició la congregación de los Hermanos de las Escuelas Cristianas.\nDe La Salle funda la primera escuela lasallista en el año de 1680 y desde esta fecha hasta 2026 el modelo educativo lasallista se ha esparcido por todo el mundo.[3]​[4]​\nActualmente, La Salle está presente en 82 países de 5 continentes, con obras educativas diversas, colegios, escuelas, normales, universidades, reformatorios y casas hogar.\nEn México se cuenta con 15 universidades lasallistas, presentes en 15 estados de la República Mexicana, las cuales forman La Red de Universidades La Salle en México.\nLa primera Universidad privada de la región se fundó en 1973 con el nombre de Instituto Superior de Ciencia y Tecnología, Asociación Civil (ISCYTAC). En 1993 se unió a la comunidad lasallista bajo el nombre ISCYTAC - LA SALLE que después cambiaría a Universidad La Salle Laguna en el 2001.[5]​",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "infobox:4",
+                  "original_text": "Fundación: 1973",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "precision": "year",
+                "year": 1973
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P571:0",
+                  "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q56320581$f98d76a0-47e7-d7f9-404e-74db5bf695ba\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+1974-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c2",
+              "value": {
+                "precision": "year",
+                "year": 1974
+              },
+              "verification": "supported"
+            }
+          ],
+          "conflicts": [
+            {
+              "candidate_ids": [
+                "c1",
+                "c2"
+              ],
+              "kind": "time_disagreement",
+              "note": "Wikipedia gives 1973 for founding; Wikidata records inception in 1974.",
+              "status": "unresolved"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "conflicting_candidates"
+            ],
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Historia",
+                  "original_text": "[editar]\nSan Juan Bautista de La Salle. F.S.C.\nEn la ciudad de Reims, Francia un San Juan Bautista de La Salle inició la congregación de los Hermanos de las Escuelas Cristianas.\nDe La Salle funda la primera escuela lasallista en el año de 1680 y desde esta fecha hasta 2026 el modelo educativo lasallista se ha esparcido por todo el mundo.[3]​[4]​\nActualmente, La Salle está presente en 82 países de 5 continentes, con obras educativas diversas, colegios, escuelas, normales, universidades, reformatorios y casas hogar.\nEn México se cuenta con 15 universidades lasallistas, presentes en 15 estados de la República Mexicana, las cuales forman La Red de Universidades La Salle en México.\nLa primera Universidad privada de la región se fundó en 1973 con el nombre de Instituto Superior de Ciencia y Tecnología, Asociación Civil (ISCYTAC). En 1993 se unió a la comunidad lasallista bajo el nombre ISCYTAC - LA SALLE que después cambiaría a Universidad La Salle Laguna en el 2001.[5]​",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "es",
+                "text": "Fundada con el nombre de Instituto Superior de Ciencia y Tecnología, Asociación Civil (ISCYTAC)."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "founding",
+        "kind": "institution_establishment",
+        "subject_ref": "institution"
+      },
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Historia",
+                  "original_text": "[editar]\nSan Juan Bautista de La Salle. F.S.C.\nEn la ciudad de Reims, Francia un San Juan Bautista de La Salle inició la congregación de los Hermanos de las Escuelas Cristianas.\nDe La Salle funda la primera escuela lasallista en el año de 1680 y desde esta fecha hasta 2026 el modelo educativo lasallista se ha esparcido por todo el mundo.[3]​[4]​\nActualmente, La Salle está presente en 82 países de 5 continentes, con obras educativas diversas, colegios, escuelas, normales, universidades, reformatorios y casas hogar.\nEn México se cuenta con 15 universidades lasallistas, presentes en 15 estados de la República Mexicana, las cuales forman La Red de Universidades La Salle en México.\nLa primera Universidad privada de la región se fundó en 1973 con el nombre de Instituto Superior de Ciencia y Tecnología, Asociación Civil (ISCYTAC). En 1993 se unió a la comunidad lasallista bajo el nombre ISCYTAC - LA SALLE que después cambiaría a Universidad La Salle Laguna en el 2001.[5]​",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "precision": "year",
+                "year": 1993
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Historia",
+                  "original_text": "[editar]\nSan Juan Bautista de La Salle. F.S.C.\nEn la ciudad de Reims, Francia un San Juan Bautista de La Salle inició la congregación de los Hermanos de las Escuelas Cristianas.\nDe La Salle funda la primera escuela lasallista en el año de 1680 y desde esta fecha hasta 2026 el modelo educativo lasallista se ha esparcido por todo el mundo.[3]​[4]​\nActualmente, La Salle está presente en 82 países de 5 continentes, con obras educativas diversas, colegios, escuelas, normales, universidades, reformatorios y casas hogar.\nEn México se cuenta con 15 universidades lasallistas, presentes en 15 estados de la República Mexicana, las cuales forman La Red de Universidades La Salle en México.\nLa primera Universidad privada de la región se fundó en 1973 con el nombre de Instituto Superior de Ciencia y Tecnología, Asociación Civil (ISCYTAC). En 1993 se unió a la comunidad lasallista bajo el nombre ISCYTAC - LA SALLE que después cambiaría a Universidad La Salle Laguna en el 2001.[5]​",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "es",
+                "text": "Se unió a la comunidad lasallista bajo el nombre ISCYTAC - LA SALLE."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "lasallian",
+        "kind": "rename",
+        "subject_ref": "institution"
+      },
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Historia",
+                  "original_text": "[editar]\nSan Juan Bautista de La Salle. F.S.C.\nEn la ciudad de Reims, Francia un San Juan Bautista de La Salle inició la congregación de los Hermanos de las Escuelas Cristianas.\nDe La Salle funda la primera escuela lasallista en el año de 1680 y desde esta fecha hasta 2026 el modelo educativo lasallista se ha esparcido por todo el mundo.[3]​[4]​\nActualmente, La Salle está presente en 82 países de 5 continentes, con obras educativas diversas, colegios, escuelas, normales, universidades, reformatorios y casas hogar.\nEn México se cuenta con 15 universidades lasallistas, presentes en 15 estados de la República Mexicana, las cuales forman La Red de Universidades La Salle en México.\nLa primera Universidad privada de la región se fundó en 1973 con el nombre de Instituto Superior de Ciencia y Tecnología, Asociación Civil (ISCYTAC). En 1993 se unió a la comunidad lasallista bajo el nombre ISCYTAC - LA SALLE que después cambiaría a Universidad La Salle Laguna en el 2001.[5]​",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "precision": "year",
+                "year": 2001
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Historia",
+                  "original_text": "[editar]\nSan Juan Bautista de La Salle. F.S.C.\nEn la ciudad de Reims, Francia un San Juan Bautista de La Salle inició la congregación de los Hermanos de las Escuelas Cristianas.\nDe La Salle funda la primera escuela lasallista en el año de 1680 y desde esta fecha hasta 2026 el modelo educativo lasallista se ha esparcido por todo el mundo.[3]​[4]​\nActualmente, La Salle está presente en 82 países de 5 continentes, con obras educativas diversas, colegios, escuelas, normales, universidades, reformatorios y casas hogar.\nEn México se cuenta con 15 universidades lasallistas, presentes en 15 estados de la República Mexicana, las cuales forman La Red de Universidades La Salle en México.\nLa primera Universidad privada de la región se fundó en 1973 con el nombre de Instituto Superior de Ciencia y Tecnología, Asociación Civil (ISCYTAC). En 1993 se unió a la comunidad lasallista bajo el nombre ISCYTAC - LA SALLE que después cambiaría a Universidad La Salle Laguna en el 2001.[5]​",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "es",
+                "text": "Cambió su nombre a Universidad La Salle Laguna."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "rename",
+        "kind": "rename",
+        "subject_ref": "institution"
+      }
+    ]
+  },
+  "identity": {
+    "aliases": [
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "infobox:1",
+                "original_text": "Sigla: ULSA",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "es",
+              "text": "ULSA"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Historia",
+                "original_text": "[editar]\nSan Juan Bautista de La Salle. F.S.C.\nEn la ciudad de Reims, Francia un San Juan Bautista de La Salle inició la congregación de los Hermanos de las Escuelas Cristianas.\nDe La Salle funda la primera escuela lasallista en el año de 1680 y desde esta fecha hasta 2026 el modelo educativo lasallista se ha esparcido por todo el mundo.[3]​[4]​\nActualmente, La Salle está presente en 82 países de 5 continentes, con obras educativas diversas, colegios, escuelas, normales, universidades, reformatorios y casas hogar.\nEn México se cuenta con 15 universidades lasallistas, presentes en 15 estados de la República Mexicana, las cuales forman La Red de Universidades La Salle en México.\nLa primera Universidad privada de la región se fundó en 1973 con el nombre de Instituto Superior de Ciencia y Tecnología, Asociación Civil (ISCYTAC). En 1993 se unió a la comunidad lasallista bajo el nombre ISCYTAC - LA SALLE que después cambiaría a Universidad La Salle Laguna en el 2001.[5]​",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "es",
+              "text": "Instituto Superior de Ciencia y Tecnología, Asociación Civil"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Historia",
+                "original_text": "[editar]\nSan Juan Bautista de La Salle. F.S.C.\nEn la ciudad de Reims, Francia un San Juan Bautista de La Salle inició la congregación de los Hermanos de las Escuelas Cristianas.\nDe La Salle funda la primera escuela lasallista en el año de 1680 y desde esta fecha hasta 2026 el modelo educativo lasallista se ha esparcido por todo el mundo.[3]​[4]​\nActualmente, La Salle está presente en 82 países de 5 continentes, con obras educativas diversas, colegios, escuelas, normales, universidades, reformatorios y casas hogar.\nEn México se cuenta con 15 universidades lasallistas, presentes en 15 estados de la República Mexicana, las cuales forman La Red de Universidades La Salle en México.\nLa primera Universidad privada de la región se fundó en 1973 con el nombre de Instituto Superior de Ciencia y Tecnología, Asociación Civil (ISCYTAC). En 1993 se unió a la comunidad lasallista bajo el nombre ISCYTAC - LA SALLE que después cambiaría a Universidad La Salle Laguna en el 2001.[5]​",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "es",
+              "text": "ISCYTAC - LA SALLE"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    ],
+    "kind": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "La Universidad La Salle Laguna es una universidad privada ubicada en Gómez Palacio, Durango, México, fundada en 1973.[2]​Pertenece al Instituto de los Hermanos de las Escuelas Cristianas, mejor conocidos como los Hermanos de LaSalle.",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "claim:P31:0",
+              "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q56320581$90ac3ced-4467-9fe5-8b65-4e892757a708\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 3918, \"id\": \"Q3918\"}}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "value": "university",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "names": {
+      "es": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q56320581\", \"labels\": {\"es\": \"Universidad La Salle Laguna\", \"en\": \"Universidad La Salle Laguna\"}, \"descriptions\": {\"en\": \"university in Mexico\"}}",
+                "source_ref": "s1"
+              },
+              {
+                "locator": "page_metadata",
+                "original_text": "{\"title\": \"Universidad La Salle Laguna\", \"language\": \"es\"}",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": "Universidad La Salle Laguna",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    "ownership": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:3",
+              "original_text": "Tipo: Privada",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "claim:P31:1",
+              "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q56320581$D5950587-B313-4F94-ABE4-5415E7B07EDD\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 163740, \"id\": \"Q163740\"}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "metadata",
+              "original_text": "{\"id\": \"Q163740\", \"labels\": {\"es\": \"organización sin fines de lucro\", \"en\": \"nonprofit organization\"}, \"descriptions\": {\"en\": \"organization operated for a collective benefit\", \"es\": \"entidad sin ganancia económica sino una finalidad altruista, humanitaria, o comunitaria\"}}",
+              "source_ref": "s5"
+            }
+          ],
+          "id": "c1",
+          "value": "private_nonprofit",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "leadership": {
+    "rector": {
+      "candidates": [
+        {
+          "current_basis": "infobox_current",
+          "evidence": [
+            {
+              "locator": "infobox:9",
+              "original_text": "Rector: C.P. Juan Roberto López González F.S.C.[1]​",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Rectores",
+              "original_text": "[editar]\n1974 - 1981: Lic. Héctor Cepeda Guerra\n1981 - 1987: Lic. Ramón Ma. Nava González\n1987 - 1996: Ing. Augusto Harry De la Peña\n1996 - 2005: M.C Manuel de Jesús Padilla Muñoz f.s.c.\n2005 - 2011: Dr. Felipe Pérez Gavilán Torres f.s.c.\n2011 - 2022: Lic. Luis Arturo Dávila de León f.s.c.\n2022 - actual C.P. Juan Roberto López González f.s.c.[10]​",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "person": {
+              "name": "Juan Roberto López González"
+            },
+            "term_start": {
+              "precision": "year",
+              "year": 2022
+            },
+            "title_original": {
+              "language": "es",
+              "text": "Rector"
+            }
+          },
+          "verification": "supported"
+        },
+        {
+          "current_basis": "historical",
+          "evidence": [
+            {
+              "locator": "section:Rectores",
+              "original_text": "[editar]\n1974 - 1981: Lic. Héctor Cepeda Guerra\n1981 - 1987: Lic. Ramón Ma. Nava González\n1987 - 1996: Ing. Augusto Harry De la Peña\n1996 - 2005: M.C Manuel de Jesús Padilla Muñoz f.s.c.\n2005 - 2011: Dr. Felipe Pérez Gavilán Torres f.s.c.\n2011 - 2022: Lic. Luis Arturo Dávila de León f.s.c.\n2022 - actual C.P. Juan Roberto López González f.s.c.[10]​",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c2",
+          "value": {
+            "person": {
+              "name": "Héctor Cepeda Guerra"
+            },
+            "term_end": {
+              "precision": "year",
+              "year": 1981
+            },
+            "term_start": {
+              "precision": "year",
+              "year": 1974
+            },
+            "title_original": {
+              "language": "es",
+              "text": "Rector"
+            }
+          },
+          "verification": "supported"
+        },
+        {
+          "current_basis": "historical",
+          "evidence": [
+            {
+              "locator": "section:Rectores",
+              "original_text": "[editar]\n1974 - 1981: Lic. Héctor Cepeda Guerra\n1981 - 1987: Lic. Ramón Ma. Nava González\n1987 - 1996: Ing. Augusto Harry De la Peña\n1996 - 2005: M.C Manuel de Jesús Padilla Muñoz f.s.c.\n2005 - 2011: Dr. Felipe Pérez Gavilán Torres f.s.c.\n2011 - 2022: Lic. Luis Arturo Dávila de León f.s.c.\n2022 - actual C.P. Juan Roberto López González f.s.c.[10]​",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c3",
+          "value": {
+            "person": {
+              "name": "Ramón Ma. Nava González"
+            },
+            "term_end": {
+              "precision": "year",
+              "year": 1987
+            },
+            "term_start": {
+              "precision": "year",
+              "year": 1981
+            },
+            "title_original": {
+              "language": "es",
+              "text": "Rector"
+            }
+          },
+          "verification": "supported"
+        },
+        {
+          "current_basis": "historical",
+          "evidence": [
+            {
+              "locator": "section:Rectores",
+              "original_text": "[editar]\n1974 - 1981: Lic. Héctor Cepeda Guerra\n1981 - 1987: Lic. Ramón Ma. Nava González\n1987 - 1996: Ing. Augusto Harry De la Peña\n1996 - 2005: M.C Manuel de Jesús Padilla Muñoz f.s.c.\n2005 - 2011: Dr. Felipe Pérez Gavilán Torres f.s.c.\n2011 - 2022: Lic. Luis Arturo Dávila de León f.s.c.\n2022 - actual C.P. Juan Roberto López González f.s.c.[10]​",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c4",
+          "value": {
+            "person": {
+              "name": "Augusto Harry De la Peña"
+            },
+            "term_end": {
+              "precision": "year",
+              "year": 1996
+            },
+            "term_start": {
+              "precision": "year",
+              "year": 1987
+            },
+            "title_original": {
+              "language": "es",
+              "text": "Rector"
+            }
+          },
+          "verification": "supported"
+        },
+        {
+          "current_basis": "historical",
+          "evidence": [
+            {
+              "locator": "section:Rectores",
+              "original_text": "[editar]\n1974 - 1981: Lic. Héctor Cepeda Guerra\n1981 - 1987: Lic. Ramón Ma. Nava González\n1987 - 1996: Ing. Augusto Harry De la Peña\n1996 - 2005: M.C Manuel de Jesús Padilla Muñoz f.s.c.\n2005 - 2011: Dr. Felipe Pérez Gavilán Torres f.s.c.\n2011 - 2022: Lic. Luis Arturo Dávila de León f.s.c.\n2022 - actual C.P. Juan Roberto López González f.s.c.[10]​",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c5",
+          "value": {
+            "person": {
+              "name": "Manuel de Jesús Padilla Muñoz"
+            },
+            "term_end": {
+              "precision": "year",
+              "year": 2005
+            },
+            "term_start": {
+              "precision": "year",
+              "year": 1996
+            },
+            "title_original": {
+              "language": "es",
+              "text": "Rector"
+            }
+          },
+          "verification": "supported"
+        },
+        {
+          "current_basis": "historical",
+          "evidence": [
+            {
+              "locator": "section:Rectores",
+              "original_text": "[editar]\n1974 - 1981: Lic. Héctor Cepeda Guerra\n1981 - 1987: Lic. Ramón Ma. Nava González\n1987 - 1996: Ing. Augusto Harry De la Peña\n1996 - 2005: M.C Manuel de Jesús Padilla Muñoz f.s.c.\n2005 - 2011: Dr. Felipe Pérez Gavilán Torres f.s.c.\n2011 - 2022: Lic. Luis Arturo Dávila de León f.s.c.\n2022 - actual C.P. Juan Roberto López González f.s.c.[10]​",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c6",
+          "value": {
+            "person": {
+              "name": "Felipe Pérez Gavilán Torres"
+            },
+            "term_end": {
+              "precision": "year",
+              "year": 2011
+            },
+            "term_start": {
+              "precision": "year",
+              "year": 2005
+            },
+            "title_original": {
+              "language": "es",
+              "text": "Rector"
+            }
+          },
+          "verification": "supported"
+        },
+        {
+          "current_basis": "historical",
+          "evidence": [
+            {
+              "locator": "section:Rectores",
+              "original_text": "[editar]\n1974 - 1981: Lic. Héctor Cepeda Guerra\n1981 - 1987: Lic. Ramón Ma. Nava González\n1987 - 1996: Ing. Augusto Harry De la Peña\n1996 - 2005: M.C Manuel de Jesús Padilla Muñoz f.s.c.\n2005 - 2011: Dr. Felipe Pérez Gavilán Torres f.s.c.\n2011 - 2022: Lic. Luis Arturo Dávila de León f.s.c.\n2022 - actual C.P. Juan Roberto López González f.s.c.[10]​",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c7",
+          "value": {
+            "person": {
+              "name": "Luis Arturo Dávila de León"
+            },
+            "term_end": {
+              "precision": "year",
+              "year": 2022
+            },
+            "term_start": {
+              "precision": "year",
+              "year": 2011
+            },
+            "title_original": {
+              "language": "es",
+              "text": "Rector"
+            }
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "single_source_family",
+          "reported_current"
+        ],
+        "reason": "The page reports this person in its current officeholder field; a term-end date is not required.",
+        "reason_code": "infobox_current"
+      }
+    }
+  },
+  "locations": [
+    {
+      "id": "gomez_palacio",
+      "kind": "administrative_area",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "La Universidad La Salle Laguna es una universidad privada ubicada en Gómez Palacio, Durango, México, fundada en 1973.[2]​Pertenece al Instituto de los Hermanos de las Escuelas Cristianas, mejor conocidos como los Hermanos de LaSalle.",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "es",
+              "text": "Gómez Palacio, Durango, México"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    {
+      "coordinates": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "statement:Q56320581$c787ae03-43d6-9169-9feb-f6a3718ec1e4",
+                "original_text": "\"latitude\": 25.55002777777778",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "source_rank": "normal",
+            "value": {
+              "crs": "EPSG:4326",
+              "globe_qid": "Q2",
+              "latitude": 25.55002777777778,
+              "longitude": -103.46960555555556,
+              "source_precision_degrees": 2.777777777777778e-06
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "id": "wikidata-item-location",
+      "kind": "institution",
+      "qid": "Q56320581"
+    }
+  ],
+  "modified_datetime": "2026-11-06T15:05:02.420070+00:00",
+  "population": {
+    "employees_total": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P1128:0",
+              "original_text": "{\"property\": \"P1128\", \"property_label\": \"employees\", \"statement_id\": \"Q56320581$3599618F-7CE1-4D96-8049-550E907BAC75\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+560\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2020-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2020
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 560,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P1128:1",
+              "original_text": "{\"property\": \"P1128\", \"property_label\": \"employees\", \"statement_id\": \"Q56320581$18DBEEB2-37C0-440C-874A-FE98A08F86AD\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+570\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2021-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c2",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2021
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 570,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P1128:2",
+              "original_text": "{\"property\": \"P1128\", \"property_label\": \"employees\", \"statement_id\": \"Q56320581$F917D483-9C8E-41C2-8D20-7A4EF09E4621\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+490\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2022-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c3",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2022
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 490,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P1128:3",
+              "original_text": "{\"property\": \"P1128\", \"property_label\": \"employees\", \"statement_id\": \"Q56320581$FFC19E3B-4CE1-4FC2-8A91-EDD185B3569C\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+472\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2023-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c4",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2023
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 472,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P1128:4",
+              "original_text": "{\"property\": \"P1128\", \"property_label\": \"employees\", \"statement_id\": \"Q56320581$329251BD-3754-46DB-A1A6-DE574661118F\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+333\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2024-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c5",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2024
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 333,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P1128:5",
+              "original_text": "{\"property\": \"P1128\", \"property_label\": \"employees\", \"statement_id\": \"Q56320581$012E0AB7-CDAF-4C09-9FF5-E8DB0C74563B\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+245\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2025-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c6",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2025
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 245,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c6",
+        "qualifications": [
+          "single_source_family"
+        ],
+        "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+        "reason_code": "best_available"
+      }
+    }
+  },
+  "profile": {
+    "academic_focus": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:Carreras",
+              "original_text": "[editar]\nAdministración y Gestión de negocios[18]​\nArquitectura\nCiencias de la Comunicación\nComercio Internacional\nContaduría Pública y Finanzas\nDerecho[19]​\nDiseño Multimedia [20]​\nDiseño Industrial\nFisioterapia y Rehabilitación\nGastronomía\nGestión Artística y Cultural [21]​\nIdiomas y Relaciones Públicas\nIngeniería Civil\nIngeniería Electromédica[22]​[23]​\nIngeniería Industrial [24]​\nIngeniería en Minas[25]​[26]​\nIngeniería Mecatrónica\nIngeniería en Desarrollo de Software\nMercadotecnia[27]​\nPsicología[28]​",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": [
+            {
+              "language": "es",
+              "text": "Administración y Gestión de negocios"
+            },
+            {
+              "language": "es",
+              "text": "Arquitectura"
+            },
+            {
+              "language": "es",
+              "text": "Ciencias de la Comunicación"
+            },
+            {
+              "language": "es",
+              "text": "Derecho"
+            },
+            {
+              "language": "es",
+              "text": "Diseño Industrial"
+            },
+            {
+              "language": "es",
+              "text": "Fisioterapia y Rehabilitación"
+            },
+            {
+              "language": "es",
+              "text": "Ingeniería Civil"
+            },
+            {
+              "language": "es",
+              "text": "Ingeniería Electromédica"
+            },
+            {
+              "language": "es",
+              "text": "Ingeniería en Minas"
+            },
+            {
+              "language": "es",
+              "text": "Ingeniería en Desarrollo de Software"
+            },
+            {
+              "language": "es",
+              "text": "Psicología"
+            }
+          ],
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "degree_levels": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:Carreras",
+              "original_text": "[editar]\nAdministración y Gestión de negocios[18]​\nArquitectura\nCiencias de la Comunicación\nComercio Internacional\nContaduría Pública y Finanzas\nDerecho[19]​\nDiseño Multimedia [20]​\nDiseño Industrial\nFisioterapia y Rehabilitación\nGastronomía\nGestión Artística y Cultural [21]​\nIdiomas y Relaciones Públicas\nIngeniería Civil\nIngeniería Electromédica[22]​[23]​\nIngeniería Industrial [24]​\nIngeniería en Minas[25]​[26]​\nIngeniería Mecatrónica\nIngeniería en Desarrollo de Software\nMercadotecnia[27]​\nPsicología[28]​",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Maestr.C3.ADas",
+              "original_text": "[editar]\nMaestría en Calidad\nMaestría en Comunicación Organizacional\nMaestría en Dirección y Gestión de Proyectos de Construcción\nMaestría en Diseño Arquitectónico\nMaestría en Diseño Estructural\nMaestría en Diseño Gráfico\nMaestría en Ingeniería Administrativa y Calidad\nMaestría en Ingeniería Económica y Financiera\nMaestría en Innovación Educativa\nMaestría en Psicoterapia Dinámica Infantil y Adolescente\nMaestría en Sustentabilidad y Responsabilidad Social Empresarial\nMaestría en Administración de Instituciones de Salud\nMaestría en Marketing Digital[29]​",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": [
+            "bachelor",
+            "master"
+          ],
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "motto": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:2",
+              "original_text": "Lema: Indivisa Manent«Lo unido permanece»",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "language": "la",
+            "text": "Indivisa Manent"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "infobox:2",
+              "original_text": "Lema: Indivisa Manent«Lo unido permanece»",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c2",
+          "value": {
+            "language": "es",
+            "text": "Lo unido permanece"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+        "reason_code": "best_available"
+      }
+    },
+    "summary": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "La Universidad La Salle Laguna es una universidad privada ubicada en Gómez Palacio, Durango, México, fundada en 1973.[2]​Pertenece al Instituto de los Hermanos de las Escuelas Cristianas, mejor conocidos como los Hermanos de LaSalle.",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Historia",
+              "original_text": "[editar]\nSan Juan Bautista de La Salle. F.S.C.\nEn la ciudad de Reims, Francia un San Juan Bautista de La Salle inició la congregación de los Hermanos de las Escuelas Cristianas.\nDe La Salle funda la primera escuela lasallista en el año de 1680 y desde esta fecha hasta 2026 el modelo educativo lasallista se ha esparcido por todo el mundo.[3]​[4]​\nActualmente, La Salle está presente en 82 países de 5 continentes, con obras educativas diversas, colegios, escuelas, normales, universidades, reformatorios y casas hogar.\nEn México se cuenta con 15 universidades lasallistas, presentes en 15 estados de la República Mexicana, las cuales forman La Red de Universidades La Salle en México.\nLa primera Universidad privada de la región se fundó en 1973 con el nombre de Instituto Superior de Ciencia y Tecnología, Asociación Civil (ISCYTAC). En 1993 se unió a la comunidad lasallista bajo el nombre ISCYTAC - LA SALLE que después cambiaría a Universidad La Salle Laguna en el 2001.[5]​",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "claim:P571:0",
+              "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q56320581$f98d76a0-47e7-d7f9-404e-74db5bf695ba\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+1974-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "section:Carreras",
+              "original_text": "[editar]\nAdministración y Gestión de negocios[18]​\nArquitectura\nCiencias de la Comunicación\nComercio Internacional\nContaduría Pública y Finanzas\nDerecho[19]​\nDiseño Multimedia [20]​\nDiseño Industrial\nFisioterapia y Rehabilitación\nGastronomía\nGestión Artística y Cultural [21]​\nIdiomas y Relaciones Públicas\nIngeniería Civil\nIngeniería Electromédica[22]​[23]​\nIngeniería Industrial [24]​\nIngeniería en Minas[25]​[26]​\nIngeniería Mecatrónica\nIngeniería en Desarrollo de Software\nMercadotecnia[27]​\nPsicología[28]​",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Maestr.C3.ADas",
+              "original_text": "[editar]\nMaestría en Calidad\nMaestría en Comunicación Organizacional\nMaestría en Dirección y Gestión de Proyectos de Construcción\nMaestría en Diseño Arquitectónico\nMaestría en Diseño Estructural\nMaestría en Diseño Gráfico\nMaestría en Ingeniería Administrativa y Calidad\nMaestría en Ingeniería Económica y Financiera\nMaestría en Innovación Educativa\nMaestría en Psicoterapia Dinámica Infantil y Adolescente\nMaestría en Sustentabilidad y Responsabilidad Social Empresarial\nMaestría en Administración de Instituciones de Salud\nMaestría en Marketing Digital[29]​",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Parque_de_Innovaci.C3.B3n",
+              "original_text": "[editar]\nEdificio donde se ubica el Parque de Innovación\nEn 2017 se inauguró[11]​ el Parque de Innovación[12]​ como una extensión de la Universidad La Salle Laguna, con el fin de generar convocatorias para proyectos sociales e innovadores.\nCuenta con un Buró de Servicios Gráficos y Prototipos,[13]​ una sala de impresión 3D, un Observatorio de Tendencias Digitales, una Zona de Proyectos de Emprendimiento y un Taller de Alta Ingeniería.[14]​\nEn 2017 a causa del Terremoto de Chiapas de 2017 se llevó a cabo el programa \"YoDiseñoXMéxico\" en el que se realizaron muebles que se ensamblaban con la finalidad de ayudar con la recuperación de los hogares afectados del estado de Oaxaca por el sismo.[15]​\nSe realizaron 50 juegos de comedor y sillas, que se enviaron a través de la Universidad La Salle Oaxaca\nDurante la Pandemia de enfermedad por coronavirus de 2020 en México se produjeron caretas[16]​[17]​ para personal médico de la ciudad de Gómez Palacio.",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "claim:P1128:5",
+              "original_text": "{\"property\": \"P1128\", \"property_label\": \"employees\", \"statement_id\": \"Q56320581$012E0AB7-CDAF-4C09-9FF5-E8DB0C74563B\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+245\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2025-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "language": "en",
+            "text": "Universidad La Salle Laguna is a private university in Gómez Palacio, Durango, Mexico. It belongs to the Instituto de los Hermanos de las Escuelas Cristianas, also known as the Brothers of La Salle. The Spanish Wikipedia traces the institution to the Instituto Superior de Ciencia y Tecnología, Asociación Civil, founded in 1973. It joined the Lasallian community in 1993 as ISCYTAC - LA SALLE and adopted its present name in 2001. Wikidata gives 1974 as its inception year.\n\nThe university’s listed undergraduate subjects include architecture, business management, law, psychology, software development and several engineering fields. Its listed postgraduate provision includes master’s programs in education, design, quality and health institution administration. An innovation park opened as an extension of the university in 2017, with facilities including 3D printing and prototyping. Wikidata records 245 employees for 2025; the basis of that count is unspecified."
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "website": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P856:0",
+              "original_text": "{\"property\": \"P856\", \"property_label\": \"official website\", \"statement_id\": \"Q56320581$B8BF96B8-8661-4C2D-8956-C4B8364691C6\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"https://lasallelaguna.mx/\", \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "value": "https://lasallelaguna.mx/",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "qid": "Q56320581",
+  "record_revision": 1,
+  "related_entities": {
+    "brothers": {
+      "kind": "institution",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "La Universidad La Salle Laguna es una universidad privada ubicada en Gómez Palacio, Durango, México, fundada en 1973.[2]​Pertenece al Instituto de los Hermanos de las Escuelas Cristianas, mejor conocidos como los Hermanos de LaSalle.",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "es",
+              "text": "Instituto de los Hermanos de las Escuelas Cristianas"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    }
+  },
+  "relationships": {
+    "parent": [
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "La Universidad La Salle Laguna es una universidad privada ubicada en Gómez Palacio, Durango, México, fundada en 1973.[2]​Pertenece al Instituto de los Hermanos de las Escuelas Cristianas, mejor conocidos como los Hermanos de LaSalle.",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "independence": "unresolved",
+              "target_ref": "related:brothers"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    ]
+  },
+  "schema_version": "0.2.2",
+  "seed": {
+    "channels": [
+      "reviewed_institution_type"
+    ],
+    "import_id": "seed-84c3beb45367905f",
+    "screening_status": "included"
+  },
+  "selection_policy": "preferred-v1",
+  "sources": {
+    "s1": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T14:55:36.561389+00:00",
+      "revision_id": 2562605267,
+      "source_qid": "Q56320581",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2562605267"
+    },
+    "s2": {
+      "family": "wikimedia",
+      "kind": "wikipedia",
+      "language": "es",
+      "page_id": 8626883,
+      "publisher_role": "encyclopedia",
+      "retrieved_at": "2026-11-06T14:55:52.317110+00:00",
+      "revision_id": 173201509,
+      "url": "https://es.wikipedia.org/w/index.php?oldid=173201509"
+    },
+    "s3": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T14:55:56.345091+00:00",
+      "revision_id": 2563674982,
+      "source_qid": "Q4730",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2563674982"
+    },
+    "s4": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T14:48:25.669686+00:00",
+      "revision_id": 2562156954,
+      "source_qid": "Q3918",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2562156954"
+    },
+    "s5": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T14:56:01.529455+00:00",
+      "revision_id": 2562512914,
+      "source_qid": "Q163740",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2562512914"
+    },
+    "s6": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T14:56:06.728024+00:00",
+      "revision_id": 2562983554,
+      "source_qid": "Q96",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2562983554"
+    }
+  },
+  "update_datetime": "2026-11-06T15:05:02.420070+00:00"
+}

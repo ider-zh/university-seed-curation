@@ -1,0 +1,2489 @@
+{
+  "attribution": "distinct_native_research_and_review_subagents;not_cryptographic_identity",
+  "research": {
+    "baseline_sha256": "absent",
+    "candidate": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-06T14:56:29.304065+00:00",
+          "status": "checked"
+        },
+        "geography": {
+          "checked_at": "2026-11-06T14:56:29.304065+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-06T14:56:29.304065+00:00",
+          "status": "checked"
+        },
+        "identity": {
+          "checked_at": "2026-11-06T14:56:29.304065+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-06T14:56:29.304065+00:00",
+          "status": "checked"
+        },
+        "profile": {
+          "checked_at": "2026-11-06T14:56:29.304065+00:00",
+          "status": "checked"
+        }
+      },
+      "curation": {
+        "identity_status": "in_scope"
+      },
+      "finance": {
+        "assets": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2403:0",
+                  "original_text": "{\"property\": \"P2403\", \"property_label\": \"total assets\", \"statement_id\": \"Q117876$7A1A2C3C-0F20-494B-8EDD-4FD75AF0DAAF\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+2088934000\", \"unit\": \"http://www.wikidata.org/entity/Q4917\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2020-06-30T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "day": 30,
+                "kind": "date",
+                "month": 6,
+                "year": 2020
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": "2088934000",
+                "currency": "USD",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason_code": "only_available"
+          }
+        },
+        "endowment": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P6589:0",
+                  "original_text": "{\"property\": \"P6589\", \"property_label\": \"endowment\", \"statement_id\": \"Q117876$42B6E825-A8E6-4C74-87CD-C2C3D765C041\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+908307000\", \"unit\": \"http://www.wikidata.org/entity/Q4917\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2020-06-30T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "day": 30,
+                "kind": "date",
+                "month": 6,
+                "year": 2020
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": "908307000",
+                "currency": "USD",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P6589:2",
+                  "original_text": "{\"property\": \"P6589\", \"property_label\": \"endowment\", \"statement_id\": \"Q117876$1EBAB75A-BBB6-4954-B97D-0CC803A10464\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+1106585000\", \"unit\": \"http://www.wikidata.org/entity/Q4917\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2021-06-30T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c2",
+              "period": {
+                "day": 30,
+                "kind": "date",
+                "month": 6,
+                "year": 2021
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": "1106585000",
+                "currency": "USD",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P6589:1",
+                  "original_text": "{\"property\": \"P6589\", \"property_label\": \"endowment\", \"statement_id\": \"Q117876$6D5CF4A8-9158-48F9-A6E1-9AB6C9300119\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+1205436000\", \"unit\": \"http://www.wikidata.org/entity/Q4917\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2022-06-30T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c3",
+              "period": {
+                "day": 30,
+                "kind": "date",
+                "month": 6,
+                "year": 2022
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": "1205436000",
+                "currency": "USD",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:6",
+                  "original_text": "Endowment: $1.3 billion (2024)[1]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c4",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2024
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": "1300000000",
+                "currency": "USD",
+                "precision": "approximate"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c4",
+            "qualifications": [
+              "single_source_family",
+              "approximate_value"
+            ],
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        }
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "claim:P571:0",
+                      "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q117876$DE0829C6-7B20-4F65-AEA1-445DA68B5D34\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+1937-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}, \"reference_count\": 1}",
+                      "source_ref": "s1"
+                    },
+                    {
+                      "locator": "section:Early_years",
+                      "original_text": "In February 1937, against the backdrop of the Great Depression, George Pepperdine founded a liberal arts college in the city of Los Angeles to be affiliated with the Churches of Christ.",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 1937
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "established",
+            "kind": "institution_establishment",
+            "subject_ref": "institution"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Growth_of_the_university",
+                      "original_text": "change the institution's name to Pepperdine University in 1971",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 1971
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Growth_of_the_university",
+                      "original_text": "change the institution's name to Pepperdine University in 1971",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "Renamed Pepperdine University"
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "rename",
+            "kind": "rename",
+            "subject_ref": "institution"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Racial_unrest.2C_murder.2C_and_move_to_Malibu",
+                      "original_text": "the new campus opened in September 1972",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "month": 9,
+                    "precision": "month",
+                    "year": 1972
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "malibu_open",
+            "kind": "campus_opening",
+            "subject_ref": "location:malibu"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Early_years",
+                      "original_text": "On September 21, 1937, 167 new students from 22 different states and two other countries entered classes",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "day": 21,
+                    "month": 9,
+                    "precision": "day",
+                    "year": 1937
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "classes",
+            "kind": "teaching_start",
+            "subject_ref": "institution"
+          }
+        ]
+      },
+      "identity": {
+        "aliases": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "infobox:0",
+                    "original_text": "Former name: George Pepperdine College (1937–1971)",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "George Pepperdine College"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ],
+        "identifiers": {
+          "P5242": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P5242:0",
+                    "original_text": "{\"property\": \"P5242\", \"property_label\": \"ARWU university ID\", \"statement_id\": \"Q117876$CFCBFD61-2D98-411D-A5B4-9CD26B7FD915\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"pepperdine-university\"}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "pepperdine-university",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "P5586": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P5586:0",
+                    "original_text": "{\"property\": \"P5586\", \"property_label\": \"Times Higher Education World University ID\", \"statement_id\": \"Q117876$329CA129-AA13-4DD2-9258-67AC04C78C25\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"pepperdine-university\"}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "pepperdine-university",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:2",
+                  "original_text": "Type: Private research university",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "university",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q117876\", \"labels\": {\"en\": \"Pepperdine University\"}, \"descriptions\": {\"en\": \"private university near Malibu, California, USA\"}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "Pepperdine University",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "leadership": {
+        "president": {
+          "candidates": [
+            {
+              "current_basis": "infobox_current",
+              "evidence": [
+                {
+                  "locator": "infobox:7",
+                  "original_text": "President: Jim Gash",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "person": {
+                  "name": "Jim Gash"
+                },
+                "title_original": {
+                  "language": "en",
+                  "text": "President"
+                }
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family",
+              "reported_current"
+            ],
+            "reason": "The page reports this person in its current officeholder field; a term-end date is not required.",
+            "reason_code": "infobox_current"
+          }
+        }
+      },
+      "locations": [
+        {
+          "id": "malibu",
+          "kind": "campus",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Malibu_campus",
+                    "original_text": "Pepperdine's Malibu campus is situated on 830 acres (340 ha) of the Santa Monica Mountains overlooking the Pacific Ocean and the Pacific Coast Highway.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Malibu campus"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "valid_from": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Racial_unrest.2C_murder.2C_and_move_to_Malibu",
+                    "original_text": "the new campus opened in September 1972",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "month": 9,
+                  "precision": "month",
+                  "year": 1972
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        {
+          "id": "county",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q117876$26aefb68-4253-ad49-f207-d5f7d712b77a\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 104994, \"id\": \"Q104994\"}, \"qualifiers\": {\"P580\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+1972-09-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 10, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q104994\", \"labels\": {\"en\": \"Los Angeles County\"}, \"descriptions\": {\"en\": \"county in California, United States\"}}",
+                    "source_ref": "s9"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Los Angeles County"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q104994"
+        },
+        {
+          "coordinates": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "statement:q117876$B4D528D3-B582-405B-A1B8-27F8594FD057",
+                    "original_text": "\"latitude\": 34.038683333333",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "source_rank": "normal",
+                "value": {
+                  "crs": "EPSG:4326",
+                  "globe_qid": "Q2",
+                  "latitude": 34.038683333333,
+                  "longitude": -118.70758055556,
+                  "source_precision_degrees": 0.00027777777777778
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "wikidata-item-location",
+          "kind": "institution",
+          "qid": "Q117876"
+        }
+      ],
+      "modified_datetime": "2026-11-06T14:59:38.242822+00:00",
+      "population": {
+        "employees_total": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P1128:0",
+                  "original_text": "{\"property\": \"P1128\", \"property_label\": \"employees\", \"statement_id\": \"Q117876$ACB3231C-4B30-4D67-A6C1-9D1E5F241D27\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+2072\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2020-09-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 10, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "kind": "date",
+                "month": 9,
+                "year": 2020
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 2072,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason_code": "only_available"
+          }
+        },
+        "postgraduate_students": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:11",
+                  "original_text": "Postgraduates: 6,368 (fall 2022)[2]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2022
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 6368,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:Student_body",
+                  "original_text": "Pepperdine's Fall 2023 enrollment was 9,545 students, of whom 3,629 were at the undergraduate and 5,916 at the graduate and professional levels.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c2",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2023
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 5916,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c2",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        },
+        "students_intake": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Early_years",
+                  "original_text": "On September 21, 1937, 167 new students from 22 different states and two other countries entered classes",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "day": 21,
+                "kind": "date",
+                "month": 9,
+                "year": 1937
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 167,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason_code": "only_available"
+          }
+        },
+        "students_total": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:9",
+                  "original_text": "Students: 10,030 (fall 2022)[2]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2022
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 10030,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:Student_body",
+                  "original_text": "Pepperdine's Fall 2023 enrollment was 9,545 students, of whom 3,629 were at the undergraduate and 5,916 at the graduate and professional levels.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c2",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2023
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 9545,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2196:0",
+                  "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q117876$65E996DC-1F77-4387-8CE4-BF4BBBF3DE3F\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+9554\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2020-09-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 10, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c3",
+              "period": {
+                "kind": "date",
+                "month": 9,
+                "year": 2020
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 9554,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c2",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        },
+        "undergraduate_students": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:10",
+                  "original_text": "Undergraduates: 3,662 (fall 2022)[2]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2022
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 3662,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:Student_body",
+                  "original_text": "Pepperdine's Fall 2023 enrollment was 9,545 students, of whom 3,629 were at the undergraduate and 5,916 at the graduate and professional levels.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c2",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2023
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 3629,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c2",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        }
+      },
+      "profile": {
+        "academic_focus": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "The university is composed of an undergraduate liberal arts school (Seaver College) and four graduate schools: the Caruso School of Law, the Graziadio Business School, the Graduate School of Education and Psychology, and the School of Public Policy.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": [
+                {
+                  "language": "en",
+                  "text": "Liberal arts"
+                },
+                {
+                  "language": "en",
+                  "text": "Law"
+                },
+                {
+                  "language": "en",
+                  "text": "Business"
+                },
+                {
+                  "language": "en",
+                  "text": "Education and psychology"
+                },
+                {
+                  "language": "en",
+                  "text": "Public policy"
+                }
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "degree_levels": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Frank_R._Seaver_College_of_Letters.2C_Arts.2C_and_Sciences",
+                  "original_text": "In addition to bachelor's degrees, the college offers the following graduate degrees",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Graduate_School_of_Education_and_Psychology",
+                  "original_text": "offers both masters and doctorate programs",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": [
+                "bachelor",
+                "master",
+                "doctorate"
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "motto": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P1451:0",
+                  "original_text": "{\"property\": \"P1451\", \"property_label\": \"motto text\", \"statement_id\": \"Q117876$2ebaf69d-4db8-2c91-35e7-874e8b138d4a\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"Freely ye received, freely give.\", \"language\": \"en\"}}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "Freely ye received, freely give."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "summary": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "Christian university in Los Angeles County, California, US\nPepperdine University (/ˈpɛpərdaɪn/) is a private research university affiliated with the Churches of Christ and with its main campus in Los Angeles County, California, United States. Pepperdine's main campus consists of 830 acres (340 ha) overlooking the Pacific Ocean and the Pacific Coast Highway near Malibu, California.[4][5] Founded by entrepreneur George Pepperdine in South Los Angeles in 1937, the school expanded to Malibu in 1972. Courses are taught at the main Malibu campus, as well as the graduate campuses in the United States, Latin America, and Europe.\nThe university is composed of an undergraduate liberal arts school (Seaver College) and four graduate schools: the Caruso School of Law, the Graziadio Business School, the Graduate School of Education and Psychology, and the School of Public Policy. It is classified with a \"Research 2 (R2): High Research Activity\" designation.[6]",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "infobox:0",
+                  "original_text": "Former name: George Pepperdine College (1937–1971)",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Early_years",
+                  "original_text": "In February 1937, against the backdrop of the Great Depression, George Pepperdine founded a liberal arts college in the city of Los Angeles to be affiliated with the Churches of Christ.[7]",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Early_years",
+                  "original_text": "On September 21, 1937, 167 new students from 22 different states and two other countries entered classes on a newly built campus on 34 acres (14 ha) at West 79th Street and South Vermont Avenue in the Vermont Knolls neighborhood of South Los Angeles,[10] later referred to as the Vermont Avenue campus.[11][12] The campus was designed in the Streamline Moderne style by John M. Cooper, an art deco architect.[13][14] By April 5, 1938, George Pepperdine College was fully accredited by the Northwest Association in large part due to the leadership of president Batsell Baxter and dean Hugh M. Tiner.[15]",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Early_years",
+                  "original_text": "The college expanded significantly in the years following its founding, reaching an enrollment of 1,839 for the 1948–1949 year.[17] The college's first graduate program, a master of arts in religion, admitted its first students in 1944,[18] and the school's first international program, a year-long program in Heidelberg, Germany, was launched in 1963.[19]",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Growth_of_the_university",
+                  "original_text": "In 1969, Pepperdine bought the Orange University College of Law in Santa Ana, California, which became the School of Law and moved to the Malibu campus in 1978.[34] What had been a business division offering graduate and undergraduate degrees became a graduate business school in 1968, which in 1971 was named the School of Business and Management.[35] Also in 1971, the School of Education was formed, which in 1981 became the Graduate School of Education and Psychology.[36] Pepperdine administrators used these expansions as justification to change the institution's name to Pepperdine University in 1971.[37]",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Racial_unrest.2C_murder.2C_and_move_to_Malibu",
+                  "original_text": "Construction in Malibu began on April 13, 1971, and the new campus opened in September 1972.[12][27] The campus and many of its buildings were planned by Los Angeles–based architect William Pereira, who had also designed the Los Angeles County Museum of Art, the University of California, Irvine, and much of the University of Southern California.[28] The construction of the Malibu campus was made possible largely by gifts from Blanche Seaver, the wife of Frank R. Seaver and heir of his oil-drill manufacturing fortune, who donated to Pepperdine more than $160 million over her lifetime.[29] The undergraduate college was officially named after Seaver in 1975.[30]",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Racial_unrest.2C_murder.2C_and_move_to_Malibu",
+                  "original_text": "The university retained and continued to expand its original Vermont Avenue Campus, building a new academic building there in 1970, and redesigning the curriculum to serve its more urban setting.[31] Much of the undergraduate liberal arts program, however, moved to the new Malibu campus.[32] In the decade to come, the Vermont Avenue Campus transitioned away from its residential model, and in 1981 it was sold to Crenshaw Christian Center, whose minister, Frederick K. C. Price, then oversaw construction of the \"Faith Dome,\" then the largest-domed church in the United States.[33]",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Malibu_campus",
+                  "original_text": "Pepperdine's Malibu campus is situated on 830 acres (340 ha) of the Santa Monica Mountains overlooking the Pacific Ocean and the Pacific Coast Highway.[43] It is its own census-designated place, located in an unincorporated area in Los Angeles County.[44] The campus offers views of the Santa Monica Bay, Catalina Island, the Palos Verdes Peninsula, and much of the westside of Los Angeles. Most buildings are designed in the Mediterranean Revival Style with white stucco walls, red tile roofs, and large tinted windows. The first round of construction on the site was completed in 1973.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Frank_R._Seaver_College_of_Letters.2C_Arts.2C_and_Sciences",
+                  "original_text": "Seaver College offers 46 majors and 47 minors across eight academic divisions: business administration, communication, fine arts, humanities and teacher education, international studies and languages, natural science, religion and philosophy, and social science.[51]",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:International_campuses",
+                  "original_text": "[edit | edit source]\nPepperdine owns and operates permanent satellite campuses in five countries, with each campus offering semester- and year-long programs for students of Seaver College. The first such program was opened in 1963 in Heidelberg. Programs were then introduced in the South Kensington district of London in 1984 and in Florence in 1985.[49] In 2023, the program in Lausanne was moved to the Chateau d'Hauteville in Blonay – Saint-Légier, Switzerland.[50]",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Student_body",
+                  "original_text": "[edit | edit source]\nUndergraduate demographics as of Fall 2020\nRace and ethnicity[64]\nTotal\nWhite\n48%\nHispanic\n16%\nAsian\n12%\nForeign national\n10%\nOther[a]\n8%\nBlack\n5%\nEconomic diversity\nLow-income[b]\n17%\nAffluent[c]\n83%\nPepperdine's Fall 2023 enrollment was 9,545 students, of whom 3,629 were at the undergraduate and 5,916 at the graduate and professional levels.[65]\nIn the 2017 academic year, the freshman retention rate was 91%.[66]\nFall freshman profile[65][67][68][69][70][71][66]\n2023\n2022\n2021\n2020\n2019\n2018\n2017\nApplicants\n12,457\n11,466\n11,854\n11,634\n12,764\n12,134\n11,704\nAdmits\n6,210\n5,585\n6,249\n4,925\n4,049\n4,664\n4,097\n% admitted\n49.9\n48.7\n52.7\n42.3\n31.7\n35.0\n39.8\nEnrolled\n732\n942\n1,024\n733\n726\n803\n862\nAverage GPA\n3.65\n3.75\n3.74\n3.69\n3.67\n3.66\n3.64\nACT range\n26–32\n28–32\n25–30\n26–31\n27–32\n26–32\n26–31\nSAT range\n1250–1440\n1290–1460\n1280–1430\n1210–1390\n1250–1430\n1,700–2,020\n1,670–2,020",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "Pepperdine University is a private research university affiliated with the Churches of Christ. Its main campus is in an unincorporated area of Los Angeles County, California, near Malibu, overlooking the Pacific Ocean. Entrepreneur George Pepperdine founded the liberal arts college in South Los Angeles in 1937. Initially called George Pepperdine College, it began classes that September with 167 students. Its first graduate program, a master of arts in religion, admitted students in 1944. The institution adopted the name Pepperdine University in 1971 as its schools expanded, and its Malibu campus opened in September 1972. Much of the undergraduate liberal arts program moved to the new campus, while the university retained its original Vermont Avenue campus until its sale in 1981.\n\nPepperdine comprises Seaver College, an undergraduate liberal arts school, and graduate schools of law, business, education and psychology, and public policy. Seaver offers studies across divisions including humanities, natural science, communication, business administration and social science. The university also offers programs at graduate campuses and operates international programs; its first international program began in Heidelberg in 1963. In fall 2023, enrollment was 9,545, including 3,629 undergraduate and 5,916 graduate and professional students."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "website": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P856:1",
+                  "original_text": "{\"property\": \"P856\", \"property_label\": \"official website\", \"statement_id\": \"Q117876$72bc44a0-4301-0799-1fa0-6aa73f338c30\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"https://www.pepperdine.edu/\", \"qualifiers\": {\"P407\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 1860, \"id\": \"Q1860\"}}]}}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "https://www.pepperdine.edu/",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "qid": "Q117876",
+      "record_revision": 1,
+      "relationships": {
+        "campus": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "its main campus in Los Angeles County, California, United States",
+                    "source_ref": "s2"
+                  },
+                  {
+                    "locator": "section:Malibu_campus",
+                    "original_text": "Pepperdine's Malibu campus is situated on 830 acres (340 ha) of the Santa Monica Mountains overlooking the Pacific Ocean and the Pacific Coast Highway.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "target_ref": "location:malibu"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ]
+      },
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "ranking_identifier",
+          "reviewed_institution_type"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "included"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T14:55:34.669290+00:00",
+          "revision_id": 2564415902,
+          "source_qid": "Q117876",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2564415902"
+        },
+        "s10": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T14:56:13.986693+00:00",
+          "revision_id": 2563594737,
+          "source_qid": "Q99",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2563594737"
+        },
+        "s11": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T14:56:21.817913+00:00",
+          "revision_id": 2557696812,
+          "source_qid": "Q387047",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2557696812"
+        },
+        "s12": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T14:56:29.297182+00:00",
+          "revision_id": 2555621684,
+          "source_qid": "Q61729443",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2555621684"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikipedia",
+          "language": "en",
+          "page_id": 424342,
+          "publisher_role": "encyclopedia",
+          "retrieved_at": "2026-11-06T14:55:48.133619+00:00",
+          "revision_id": 1378395073,
+          "url": "https://en.wikipedia.org/w/index.php?oldid=1378395073"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T14:48:30.346556+00:00",
+          "revision_id": 2557623321,
+          "source_qid": "Q4917",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2557623321"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T14:55:53.333297+00:00",
+          "revision_id": 2560982823,
+          "source_qid": "Q902104",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2560982823"
+        },
+        "s5": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T14:48:34.468386+00:00",
+          "revision_id": 2441014281,
+          "source_qid": "Q23002054",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2441014281"
+        },
+        "s6": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T14:55:57.332622+00:00",
+          "revision_id": 2523404231,
+          "source_qid": "Q45400320",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2523404231"
+        },
+        "s7": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T14:56:01.617419+00:00",
+          "revision_id": 2534305230,
+          "source_qid": "Q498162",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2534305230"
+        },
+        "s8": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T14:48:39.226373+00:00",
+          "revision_id": 2565041516,
+          "source_qid": "Q30",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2565041516"
+        },
+        "s9": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T14:56:06.517151+00:00",
+          "revision_id": 2561606979,
+          "source_qid": "Q104994",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2561606979"
+        }
+      }
+    },
+    "coverage": [
+      {
+        "group": "identity",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "status": "checked"
+      },
+      {
+        "group": "population",
+        "status": "checked"
+      },
+      {
+        "group": "finance",
+        "status": "checked"
+      },
+      {
+        "group": "profile",
+        "status": "checked"
+      }
+    ],
+    "delta": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-06T14:56:29.304065+00:00",
+          "status": "checked"
+        },
+        "geography": {
+          "checked_at": "2026-11-06T14:56:29.304065+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-06T14:56:29.304065+00:00",
+          "status": "checked"
+        },
+        "identity": {
+          "checked_at": "2026-11-06T14:56:29.304065+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-06T14:56:29.304065+00:00",
+          "status": "checked"
+        },
+        "profile": {
+          "checked_at": "2026-11-06T14:56:29.304065+00:00",
+          "status": "checked"
+        }
+      },
+      "curation": {
+        "identity_status": "in_scope"
+      },
+      "finance": {
+        "assets": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2403:0",
+                  "original_text": "{\"property\": \"P2403\", \"property_label\": \"total assets\", \"statement_id\": \"Q117876$7A1A2C3C-0F20-494B-8EDD-4FD75AF0DAAF\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+2088934000\", \"unit\": \"http://www.wikidata.org/entity/Q4917\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2020-06-30T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "day": 30,
+                "kind": "date",
+                "month": 6,
+                "year": 2020
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": "2088934000",
+                "currency": "USD",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason_code": "only_available"
+          }
+        },
+        "endowment": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P6589:0",
+                  "original_text": "{\"property\": \"P6589\", \"property_label\": \"endowment\", \"statement_id\": \"Q117876$42B6E825-A8E6-4C74-87CD-C2C3D765C041\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+908307000\", \"unit\": \"http://www.wikidata.org/entity/Q4917\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2020-06-30T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "day": 30,
+                "kind": "date",
+                "month": 6,
+                "year": 2020
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": "908307000",
+                "currency": "USD",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P6589:2",
+                  "original_text": "{\"property\": \"P6589\", \"property_label\": \"endowment\", \"statement_id\": \"Q117876$1EBAB75A-BBB6-4954-B97D-0CC803A10464\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+1106585000\", \"unit\": \"http://www.wikidata.org/entity/Q4917\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2021-06-30T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c2",
+              "period": {
+                "day": 30,
+                "kind": "date",
+                "month": 6,
+                "year": 2021
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": "1106585000",
+                "currency": "USD",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P6589:1",
+                  "original_text": "{\"property\": \"P6589\", \"property_label\": \"endowment\", \"statement_id\": \"Q117876$6D5CF4A8-9158-48F9-A6E1-9AB6C9300119\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+1205436000\", \"unit\": \"http://www.wikidata.org/entity/Q4917\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2022-06-30T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c3",
+              "period": {
+                "day": 30,
+                "kind": "date",
+                "month": 6,
+                "year": 2022
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": "1205436000",
+                "currency": "USD",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:6",
+                  "original_text": "Endowment: $1.3 billion (2024)[1]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c4",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2024
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": "1300000000",
+                "currency": "USD",
+                "precision": "approximate"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c4",
+            "qualifications": [
+              "single_source_family",
+              "approximate_value"
+            ],
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        }
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "claim:P571:0",
+                      "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q117876$DE0829C6-7B20-4F65-AEA1-445DA68B5D34\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+1937-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}, \"reference_count\": 1}",
+                      "source_ref": "s1"
+                    },
+                    {
+                      "locator": "section:Early_years",
+                      "original_text": "In February 1937, against the backdrop of the Great Depression, George Pepperdine founded a liberal arts college in the city of Los Angeles to be affiliated with the Churches of Christ.",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 1937
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "established",
+            "kind": "institution_establishment",
+            "subject_ref": "institution"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Growth_of_the_university",
+                      "original_text": "change the institution's name to Pepperdine University in 1971",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 1971
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Growth_of_the_university",
+                      "original_text": "change the institution's name to Pepperdine University in 1971",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "Renamed Pepperdine University"
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "rename",
+            "kind": "rename",
+            "subject_ref": "institution"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Racial_unrest.2C_murder.2C_and_move_to_Malibu",
+                      "original_text": "the new campus opened in September 1972",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "month": 9,
+                    "precision": "month",
+                    "year": 1972
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "malibu_open",
+            "kind": "campus_opening",
+            "subject_ref": "location:malibu"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Early_years",
+                      "original_text": "On September 21, 1937, 167 new students from 22 different states and two other countries entered classes",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "day": 21,
+                    "month": 9,
+                    "precision": "day",
+                    "year": 1937
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "classes",
+            "kind": "teaching_start",
+            "subject_ref": "institution"
+          }
+        ]
+      },
+      "identity": {
+        "aliases": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "infobox:0",
+                    "original_text": "Former name: George Pepperdine College (1937–1971)",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "George Pepperdine College"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ],
+        "identifiers": {
+          "P5242": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P5242:0",
+                    "original_text": "{\"property\": \"P5242\", \"property_label\": \"ARWU university ID\", \"statement_id\": \"Q117876$CFCBFD61-2D98-411D-A5B4-9CD26B7FD915\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"pepperdine-university\"}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "pepperdine-university",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "P5586": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P5586:0",
+                    "original_text": "{\"property\": \"P5586\", \"property_label\": \"Times Higher Education World University ID\", \"statement_id\": \"Q117876$329CA129-AA13-4DD2-9258-67AC04C78C25\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"pepperdine-university\"}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "pepperdine-university",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:2",
+                  "original_text": "Type: Private research university",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "university",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q117876\", \"labels\": {\"en\": \"Pepperdine University\"}, \"descriptions\": {\"en\": \"private university near Malibu, California, USA\"}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "Pepperdine University",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "leadership": {
+        "president": {
+          "candidates": [
+            {
+              "current_basis": "infobox_current",
+              "evidence": [
+                {
+                  "locator": "infobox:7",
+                  "original_text": "President: Jim Gash",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "person": {
+                  "name": "Jim Gash"
+                },
+                "title_original": {
+                  "language": "en",
+                  "text": "President"
+                }
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family",
+              "reported_current"
+            ],
+            "reason": "The page reports this person in its current officeholder field; a term-end date is not required.",
+            "reason_code": "infobox_current"
+          }
+        }
+      },
+      "locations": [
+        {
+          "id": "malibu",
+          "kind": "campus",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Malibu_campus",
+                    "original_text": "Pepperdine's Malibu campus is situated on 830 acres (340 ha) of the Santa Monica Mountains overlooking the Pacific Ocean and the Pacific Coast Highway.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Malibu campus"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "valid_from": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Racial_unrest.2C_murder.2C_and_move_to_Malibu",
+                    "original_text": "the new campus opened in September 1972",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "month": 9,
+                  "precision": "month",
+                  "year": 1972
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        {
+          "id": "county",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q117876$26aefb68-4253-ad49-f207-d5f7d712b77a\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 104994, \"id\": \"Q104994\"}, \"qualifiers\": {\"P580\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+1972-09-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 10, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q104994\", \"labels\": {\"en\": \"Los Angeles County\"}, \"descriptions\": {\"en\": \"county in California, United States\"}}",
+                    "source_ref": "s9"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Los Angeles County"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q104994"
+        },
+        {
+          "coordinates": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "statement:q117876$B4D528D3-B582-405B-A1B8-27F8594FD057",
+                    "original_text": "\"latitude\": 34.038683333333",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "source_rank": "normal",
+                "value": {
+                  "crs": "EPSG:4326",
+                  "globe_qid": "Q2",
+                  "latitude": 34.038683333333,
+                  "longitude": -118.70758055556,
+                  "source_precision_degrees": 0.00027777777777778
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "wikidata-item-location",
+          "kind": "institution",
+          "qid": "Q117876"
+        }
+      ],
+      "population": {
+        "employees_total": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P1128:0",
+                  "original_text": "{\"property\": \"P1128\", \"property_label\": \"employees\", \"statement_id\": \"Q117876$ACB3231C-4B30-4D67-A6C1-9D1E5F241D27\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+2072\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2020-09-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 10, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "kind": "date",
+                "month": 9,
+                "year": 2020
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 2072,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason_code": "only_available"
+          }
+        },
+        "postgraduate_students": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:11",
+                  "original_text": "Postgraduates: 6,368 (fall 2022)[2]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2022
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 6368,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:Student_body",
+                  "original_text": "Pepperdine's Fall 2023 enrollment was 9,545 students, of whom 3,629 were at the undergraduate and 5,916 at the graduate and professional levels.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c2",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2023
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 5916,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c2",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        },
+        "students_intake": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Early_years",
+                  "original_text": "On September 21, 1937, 167 new students from 22 different states and two other countries entered classes",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "day": 21,
+                "kind": "date",
+                "month": 9,
+                "year": 1937
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 167,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason_code": "only_available"
+          }
+        },
+        "students_total": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:9",
+                  "original_text": "Students: 10,030 (fall 2022)[2]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2022
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 10030,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:Student_body",
+                  "original_text": "Pepperdine's Fall 2023 enrollment was 9,545 students, of whom 3,629 were at the undergraduate and 5,916 at the graduate and professional levels.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c2",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2023
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 9545,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2196:0",
+                  "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q117876$65E996DC-1F77-4387-8CE4-BF4BBBF3DE3F\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+9554\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2020-09-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 10, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c3",
+              "period": {
+                "kind": "date",
+                "month": 9,
+                "year": 2020
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 9554,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c2",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        },
+        "undergraduate_students": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:10",
+                  "original_text": "Undergraduates: 3,662 (fall 2022)[2]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2022
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 3662,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:Student_body",
+                  "original_text": "Pepperdine's Fall 2023 enrollment was 9,545 students, of whom 3,629 were at the undergraduate and 5,916 at the graduate and professional levels.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c2",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2023
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 3629,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c2",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        }
+      },
+      "profile": {
+        "academic_focus": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "The university is composed of an undergraduate liberal arts school (Seaver College) and four graduate schools: the Caruso School of Law, the Graziadio Business School, the Graduate School of Education and Psychology, and the School of Public Policy.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": [
+                {
+                  "language": "en",
+                  "text": "Liberal arts"
+                },
+                {
+                  "language": "en",
+                  "text": "Law"
+                },
+                {
+                  "language": "en",
+                  "text": "Business"
+                },
+                {
+                  "language": "en",
+                  "text": "Education and psychology"
+                },
+                {
+                  "language": "en",
+                  "text": "Public policy"
+                }
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "degree_levels": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Frank_R._Seaver_College_of_Letters.2C_Arts.2C_and_Sciences",
+                  "original_text": "In addition to bachelor's degrees, the college offers the following graduate degrees",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Graduate_School_of_Education_and_Psychology",
+                  "original_text": "offers both masters and doctorate programs",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": [
+                "bachelor",
+                "master",
+                "doctorate"
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "motto": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P1451:0",
+                  "original_text": "{\"property\": \"P1451\", \"property_label\": \"motto text\", \"statement_id\": \"Q117876$2ebaf69d-4db8-2c91-35e7-874e8b138d4a\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"Freely ye received, freely give.\", \"language\": \"en\"}}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "Freely ye received, freely give."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "summary": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "Christian university in Los Angeles County, California, US\nPepperdine University (/ˈpɛpərdaɪn/) is a private research university affiliated with the Churches of Christ and with its main campus in Los Angeles County, California, United States. Pepperdine's main campus consists of 830 acres (340 ha) overlooking the Pacific Ocean and the Pacific Coast Highway near Malibu, California.[4][5] Founded by entrepreneur George Pepperdine in South Los Angeles in 1937, the school expanded to Malibu in 1972. Courses are taught at the main Malibu campus, as well as the graduate campuses in the United States, Latin America, and Europe.\nThe university is composed of an undergraduate liberal arts school (Seaver College) and four graduate schools: the Caruso School of Law, the Graziadio Business School, the Graduate School of Education and Psychology, and the School of Public Policy. It is classified with a \"Research 2 (R2): High Research Activity\" designation.[6]",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "infobox:0",
+                  "original_text": "Former name: George Pepperdine College (1937–1971)",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Early_years",
+                  "original_text": "In February 1937, against the backdrop of the Great Depression, George Pepperdine founded a liberal arts college in the city of Los Angeles to be affiliated with the Churches of Christ.[7]",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Early_years",
+                  "original_text": "On September 21, 1937, 167 new students from 22 different states and two other countries entered classes on a newly built campus on 34 acres (14 ha) at West 79th Street and South Vermont Avenue in the Vermont Knolls neighborhood of South Los Angeles,[10] later referred to as the Vermont Avenue campus.[11][12] The campus was designed in the Streamline Moderne style by John M. Cooper, an art deco architect.[13][14] By April 5, 1938, George Pepperdine College was fully accredited by the Northwest Association in large part due to the leadership of president Batsell Baxter and dean Hugh M. Tiner.[15]",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Early_years",
+                  "original_text": "The college expanded significantly in the years following its founding, reaching an enrollment of 1,839 for the 1948–1949 year.[17] The college's first graduate program, a master of arts in religion, admitted its first students in 1944,[18] and the school's first international program, a year-long program in Heidelberg, Germany, was launched in 1963.[19]",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Growth_of_the_university",
+                  "original_text": "In 1969, Pepperdine bought the Orange University College of Law in Santa Ana, California, which became the School of Law and moved to the Malibu campus in 1978.[34] What had been a business division offering graduate and undergraduate degrees became a graduate business school in 1968, which in 1971 was named the School of Business and Management.[35] Also in 1971, the School of Education was formed, which in 1981 became the Graduate School of Education and Psychology.[36] Pepperdine administrators used these expansions as justification to change the institution's name to Pepperdine University in 1971.[37]",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Racial_unrest.2C_murder.2C_and_move_to_Malibu",
+                  "original_text": "Construction in Malibu began on April 13, 1971, and the new campus opened in September 1972.[12][27] The campus and many of its buildings were planned by Los Angeles–based architect William Pereira, who had also designed the Los Angeles County Museum of Art, the University of California, Irvine, and much of the University of Southern California.[28] The construction of the Malibu campus was made possible largely by gifts from Blanche Seaver, the wife of Frank R. Seaver and heir of his oil-drill manufacturing fortune, who donated to Pepperdine more than $160 million over her lifetime.[29] The undergraduate college was officially named after Seaver in 1975.[30]",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Racial_unrest.2C_murder.2C_and_move_to_Malibu",
+                  "original_text": "The university retained and continued to expand its original Vermont Avenue Campus, building a new academic building there in 1970, and redesigning the curriculum to serve its more urban setting.[31] Much of the undergraduate liberal arts program, however, moved to the new Malibu campus.[32] In the decade to come, the Vermont Avenue Campus transitioned away from its residential model, and in 1981 it was sold to Crenshaw Christian Center, whose minister, Frederick K. C. Price, then oversaw construction of the \"Faith Dome,\" then the largest-domed church in the United States.[33]",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Malibu_campus",
+                  "original_text": "Pepperdine's Malibu campus is situated on 830 acres (340 ha) of the Santa Monica Mountains overlooking the Pacific Ocean and the Pacific Coast Highway.[43] It is its own census-designated place, located in an unincorporated area in Los Angeles County.[44] The campus offers views of the Santa Monica Bay, Catalina Island, the Palos Verdes Peninsula, and much of the westside of Los Angeles. Most buildings are designed in the Mediterranean Revival Style with white stucco walls, red tile roofs, and large tinted windows. The first round of construction on the site was completed in 1973.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Frank_R._Seaver_College_of_Letters.2C_Arts.2C_and_Sciences",
+                  "original_text": "Seaver College offers 46 majors and 47 minors across eight academic divisions: business administration, communication, fine arts, humanities and teacher education, international studies and languages, natural science, religion and philosophy, and social science.[51]",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:International_campuses",
+                  "original_text": "[edit | edit source]\nPepperdine owns and operates permanent satellite campuses in five countries, with each campus offering semester- and year-long programs for students of Seaver College. The first such program was opened in 1963 in Heidelberg. Programs were then introduced in the South Kensington district of London in 1984 and in Florence in 1985.[49] In 2023, the program in Lausanne was moved to the Chateau d'Hauteville in Blonay – Saint-Légier, Switzerland.[50]",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Student_body",
+                  "original_text": "[edit | edit source]\nUndergraduate demographics as of Fall 2020\nRace and ethnicity[64]\nTotal\nWhite\n48%\nHispanic\n16%\nAsian\n12%\nForeign national\n10%\nOther[a]\n8%\nBlack\n5%\nEconomic diversity\nLow-income[b]\n17%\nAffluent[c]\n83%\nPepperdine's Fall 2023 enrollment was 9,545 students, of whom 3,629 were at the undergraduate and 5,916 at the graduate and professional levels.[65]\nIn the 2017 academic year, the freshman retention rate was 91%.[66]\nFall freshman profile[65][67][68][69][70][71][66]\n2023\n2022\n2021\n2020\n2019\n2018\n2017\nApplicants\n12,457\n11,466\n11,854\n11,634\n12,764\n12,134\n11,704\nAdmits\n6,210\n5,585\n6,249\n4,925\n4,049\n4,664\n4,097\n% admitted\n49.9\n48.7\n52.7\n42.3\n31.7\n35.0\n39.8\nEnrolled\n732\n942\n1,024\n733\n726\n803\n862\nAverage GPA\n3.65\n3.75\n3.74\n3.69\n3.67\n3.66\n3.64\nACT range\n26–32\n28–32\n25–30\n26–31\n27–32\n26–32\n26–31\nSAT range\n1250–1440\n1290–1460\n1280–1430\n1210–1390\n1250–1430\n1,700–2,020\n1,670–2,020",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "Pepperdine University is a private research university affiliated with the Churches of Christ. Its main campus is in an unincorporated area of Los Angeles County, California, near Malibu, overlooking the Pacific Ocean. Entrepreneur George Pepperdine founded the liberal arts college in South Los Angeles in 1937. Initially called George Pepperdine College, it began classes that September with 167 students. Its first graduate program, a master of arts in religion, admitted students in 1944. The institution adopted the name Pepperdine University in 1971 as its schools expanded, and its Malibu campus opened in September 1972. Much of the undergraduate liberal arts program moved to the new campus, while the university retained its original Vermont Avenue campus until its sale in 1981.\n\nPepperdine comprises Seaver College, an undergraduate liberal arts school, and graduate schools of law, business, education and psychology, and public policy. Seaver offers studies across divisions including humanities, natural science, communication, business administration and social science. The university also offers programs at graduate campuses and operates international programs; its first international program began in Heidelberg in 1963. In fall 2023, enrollment was 9,545, including 3,629 undergraduate and 5,916 graduate and professional students."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "website": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P856:1",
+                  "original_text": "{\"property\": \"P856\", \"property_label\": \"official website\", \"statement_id\": \"Q117876$72bc44a0-4301-0799-1fa0-6aa73f338c30\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"https://www.pepperdine.edu/\", \"qualifiers\": {\"P407\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 1860, \"id\": \"Q1860\"}}]}}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "https://www.pepperdine.edu/",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "qid": "Q117876",
+      "record_revision": 1,
+      "relationships": {
+        "campus": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "its main campus in Los Angeles County, California, United States",
+                    "source_ref": "s2"
+                  },
+                  {
+                    "locator": "section:Malibu_campus",
+                    "original_text": "Pepperdine's Malibu campus is situated on 830 acres (340 ha) of the Santa Monica Mountains overlooking the Pacific Ocean and the Pacific Coast Highway.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "target_ref": "location:malibu"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ]
+      },
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "ranking_identifier",
+          "reviewed_institution_type"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "included"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T14:55:34.669290+00:00",
+          "revision_id": 2564415902,
+          "source_qid": "Q117876",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2564415902"
+        },
+        "s10": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T14:56:13.986693+00:00",
+          "revision_id": 2563594737,
+          "source_qid": "Q99",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2563594737"
+        },
+        "s11": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T14:56:21.817913+00:00",
+          "revision_id": 2557696812,
+          "source_qid": "Q387047",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2557696812"
+        },
+        "s12": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T14:56:29.297182+00:00",
+          "revision_id": 2555621684,
+          "source_qid": "Q61729443",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2555621684"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikipedia",
+          "language": "en",
+          "page_id": 424342,
+          "publisher_role": "encyclopedia",
+          "retrieved_at": "2026-11-06T14:55:48.133619+00:00",
+          "revision_id": 1378395073,
+          "url": "https://en.wikipedia.org/w/index.php?oldid=1378395073"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T14:48:30.346556+00:00",
+          "revision_id": 2557623321,
+          "source_qid": "Q4917",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2557623321"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T14:55:53.333297+00:00",
+          "revision_id": 2560982823,
+          "source_qid": "Q902104",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2560982823"
+        },
+        "s5": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T14:48:34.468386+00:00",
+          "revision_id": 2441014281,
+          "source_qid": "Q23002054",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2441014281"
+        },
+        "s6": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T14:55:57.332622+00:00",
+          "revision_id": 2523404231,
+          "source_qid": "Q45400320",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2523404231"
+        },
+        "s7": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T14:56:01.617419+00:00",
+          "revision_id": 2534305230,
+          "source_qid": "Q498162",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2534305230"
+        },
+        "s8": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T14:48:39.226373+00:00",
+          "revision_id": 2565041516,
+          "source_qid": "Q30",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2565041516"
+        },
+        "s9": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T14:56:06.517151+00:00",
+          "revision_id": 2561606979,
+          "source_qid": "Q104994",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2561606979"
+        }
+      }
+    },
+    "open_requests": [],
+    "proposed_at": "2026-11-06T14:59:38.242822+00:00",
+    "qid": "Q117876",
+    "research": {
+      "model": "gpt-6.1-terra",
+      "prompt_sha256": "33a8a8104d3d1d58ea58b6e990fdc34d5d83f306c148229f2907176c877a81cb",
+      "reasoning_effort": "medium",
+      "schema_sha256": "92e942f4fbf2ae28964462ea9ffa8312c5ee16a077a1e08b40aaaf741512422e",
+      "session": "/root/research_q117876"
+    },
+    "retrieval_failures": [],
+    "review_status": "unreviewed",
+    "seed": {
+      "channels": [
+        "ranking_identifier",
+        "reviewed_institution_type"
+      ],
+      "import_id": "seed-84c3beb45367905f",
+      "screening_status": "included"
+    },
+    "transport": {
+      "base_commit": "a08e06438796561424ab7b4e903fcf05ffe98ea4",
+      "protocol": "native-subagent-v1",
+      "repository": "ider-zh/university-seed-curation",
+      "review_policy": {
+        "id": "source-grounded-flexible-v2",
+        "sha256": "b8ed7d2897e4c31dbd81b1379aafdc1077a21d1a33949edbd2d896b0adf99db2"
+      },
+      "schema_sha256": "bfa496eafa9dffca56146214168db7f000b09161b8993129632e7202e1c88833",
+      "seed_catalog_sha256": "84c3beb45367905f513d650684283dd62a9c1b77962bdc34151a6ef05bfa03d4"
+    },
+    "type": "university-proposal-v1"
+  },
+  "review": {
+    "contexts_checked": 8,
+    "coverage_checks": [
+      {
+        "group": "identity",
+        "reason": "Reviewed university identity, name, former name and identifiers.",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "reason": "Reviewed campus, county and root item coordinate separately.",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "reason": "Reviewed establishment, rename, campus opening and teaching start; optional milestones are not exhaustive.",
+        "status": "checked"
+      },
+      {
+        "group": "population",
+        "reason": "Reviewed dated counts and their original scope; graduate and professional scope should be parsed downstream.",
+        "status": "checked"
+      },
+      {
+        "group": "finance",
+        "reason": "Reviewed assets and dated endowment observations, USD units and approximate 2024 figure.",
+        "status": "checked"
+      },
+      {
+        "group": "profile",
+        "reason": "Reviewed leadership, focus, degree levels, motto, website and summary.",
+        "status": "checked"
+      }
+    ],
+    "decision": "approve",
+    "facts_checked": 35,
+    "full_refresh": true,
+    "inferences": [
+      {
+        "id": "$.locations[0].valid_from:c1",
+        "reason": "s2 opening in September 1972 supports the start of the represented operational phase; it does not establish first physical existence."
+      },
+      {
+        "id": "$.population.postgraduate_students:c2",
+        "reason": "s2 student-body section reports 5,916 graduate and professional students in fall 2023; the broader postgraduate field is usable with that scope retained. Downstream ranking requires scope parsing."
+      }
+    ],
+    "model": "gpt-6.1-terra",
+    "proposal_sha256": "8e599ea2073c0eaaf82789bb09cd55c4a24f5a71275c633ded8b851a0dbc304b",
+    "qid": "Q117876",
+    "reasoning_effort": "medium",
+    "record_sha256": "88e5c27a4480dd8501aa7dded6d2e4e158642c3370b3523de917e3e17d02d0a0",
+    "request_responses": [],
+    "requests": [],
+    "review_session": "/root/recheck_q117876",
+    "reviewed_at": "2026-11-06T15:05:02.353150+00:00",
+    "source_revisions_checked": 12
+  },
+  "review_result_sha256": "fad3305f41cd5313052362513b08f2c9e4caec55707057838a1caf10a6579f64",
+  "type": "university-unified-receipt-v1"
+}

@@ -1,0 +1,612 @@
+{
+  "coverage": {
+    "finance": {
+      "checked_at": "2026-11-06T15:04:03.439209+00:00",
+      "status": "not_found"
+    },
+    "geography": {
+      "checked_at": "2026-11-06T15:04:03.439209+00:00",
+      "status": "checked"
+    },
+    "history": {
+      "checked_at": "2026-11-06T15:04:03.439209+00:00",
+      "status": "disputed"
+    },
+    "identity": {
+      "checked_at": "2026-11-06T15:04:03.439209+00:00",
+      "status": "checked"
+    },
+    "population": {
+      "checked_at": "2026-11-06T15:04:03.439209+00:00",
+      "status": "checked"
+    },
+    "profile": {
+      "checked_at": "2026-11-06T15:04:03.439209+00:00",
+      "status": "checked"
+    }
+  },
+  "curation": {
+    "identity_status": "in_scope",
+    "refresh_profile": "core-v1",
+    "reviewed_groups": [
+      "identity",
+      "geography",
+      "history",
+      "population",
+      "finance",
+      "profile"
+    ]
+  },
+  "history": {
+    "milestones": [
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "fondée en 2003",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "precision": "year",
+                "year": 2003
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:Histoire",
+                  "original_text": "Fondée en 2002",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c2",
+              "value": {
+                "precision": "year",
+                "year": 2002
+              },
+              "verification": "supported"
+            }
+          ],
+          "conflicts": [
+            {
+              "candidate_ids": [
+                "c1",
+                "c2"
+              ],
+              "kind": "time_disagreement",
+              "note": "The same French Wikipedia article states founding in 2003 in its lead and 2002 in its history section.",
+              "status": "unresolved"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "conflicting_candidates"
+            ],
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        },
+        "id": "founding_2003",
+        "kind": "institution_establishment",
+        "subject_ref": "institution"
+      },
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Histoire",
+                  "original_text": "elle commence à proposer un MBA en gestion des médias en 2003",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "precision": "year",
+                "year": 2003
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Histoire",
+                  "original_text": "elle commence à proposer un MBA en gestion des médias en 2003",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "The school began offering an MBA in media management. “Fondée en 2002” in the same section differs from the lead’s 2003 founding date."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "mba_start",
+        "kind": "teaching_start",
+        "subject_ref": "institution"
+      },
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Histoire",
+                  "original_text": "suivi en 2005 par l'ajout d'un programme de journalisme",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "precision": "year",
+                "year": 2005
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Histoire",
+                  "original_text": "suivi en 2005 par l'ajout d'un programme de journalisme",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "A journalism program was added."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "journalism_start",
+        "kind": "teaching_start",
+        "subject_ref": "institution"
+      }
+    ]
+  },
+  "identity": {
+    "aliases": [
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "La Hamburg Media School (HMS)",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "HMS"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    ],
+    "kind": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "École de cinéma",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": "specialist_institution",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "names": {
+      "en": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "metadata",
+                "original_text": "\"en\": \"Hamburg Media School\"",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": "Hamburg Media School",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    }
+  },
+  "locations": [
+    {
+      "id": "hamburg_nord",
+      "kind": "administrative_area",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "metadata",
+                "original_text": "\"en\": \"Hamburg-Nord\"",
+                "source_ref": "s7"
+              },
+              {
+                "locator": "claim:P131:0",
+                "original_text": "\"id\": \"Q1627\"",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Hamburg-Nord"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "qid": "Q1627"
+    },
+    {
+      "id": "headquarters",
+      "kind": "headquarters",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "metadata",
+                "original_text": "\"en\": \"Finkenau 35\"",
+                "source_ref": "s8"
+              },
+              {
+                "locator": "claim:P159:0",
+                "original_text": "\"id\": \"Q116373499\"",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Finkenau 35"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "qid": "Q116373499"
+    },
+    {
+      "coordinates": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "statement:Q1572917$78CDCEAE-4351-41CC-B1E3-1FE1B6E4E864",
+                "original_text": "\"latitude\": 53.56866667",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "source_rank": "normal",
+            "value": {
+              "crs": "EPSG:4326",
+              "globe_qid": "Q2",
+              "latitude": 53.56866667,
+              "longitude": 10.03338889,
+              "source_precision_degrees": 2.777777777778e-05
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "id": "wikidata-item-location",
+      "kind": "institution",
+      "qid": "Q1572917"
+    }
+  ],
+  "modified_datetime": "2026-11-06T15:06:14.519509+00:00",
+  "profile": {
+    "academic_focus": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:Histoire",
+              "original_text": "trois programmes d'études : gestion des médias, journalisme et cinéma, ainsi que divers cursus de formation continue",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": [
+            {
+              "language": "en",
+              "text": "media management"
+            },
+            {
+              "language": "en",
+              "text": "journalism"
+            },
+            {
+              "language": "en",
+              "text": "film"
+            }
+          ],
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "degree_levels": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "formations avancées destinées aux diplômés et aux professionnels en activité, ainsi qu'un programme de licence",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Gestion_num.C3.A9rique_et_des_m.C3.A9dias",
+              "original_text": "Ces programmes de master sont payants",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": [
+            "bachelor",
+            "master"
+          ],
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "summary": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "Hamburg Media School\nStatutType\nÉcole de cinémaSite web\n(de) www.hamburgmediaschool.comLocalisationPays\nAllemagneLocalisation\nArrondissement de Hambourg-Nord\nmodifier - modifier le code - modifier Wikidata\nÉcole des médias de Hambourg\nLa Hamburg Media School (HMS), fondée en 2003, est un établissement d'enseignement semi-public situé à Finkenau, dans le quartier d'Uhlenhorst à Hambourg. Inspirée du modèle des écoles doctorales anglo-saxonnes, elle propose des formations avancées destinées aux diplômés et aux professionnels en activité, ainsi qu'un programme de licence. Son financement repose sur un partenariat public-privé. Elle collabore avec l'Université de Hambourg, l'Université technique de Hambourg et l'Université des beaux-arts de Hambourg, ce qui garantit la reconnaissance étatique de ses diplômes et permet aux étudiants d'accéder à des études doctorales.",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Histoire",
+              "original_text": "[modifier | modifier le code]",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Histoire",
+              "original_text": "La Hamburg Media School est située dans les bâtiments de l'ancienne clinique pour femmes de Finkenau. Fondée en 2002, elle commence à proposer un MBA en gestion des médias en 2003. En 2004, le cursus cinématographique de l'Université de Hambourg est intégré à l'école, suivi en 2005 par l'ajout d'un programme de journalisme. Aujourd'hui, elle propose trois programmes d'études : gestion des médias, journalisme et cinéma, ainsi que divers cursus de formation continue[1].",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Histoire",
+              "original_text": "L'école fonctionne sous la forme d'un partenariat public-privé réunissant la Fondation HMS, la ville et le land de Hambourg, l'Université de Hambourg et l'Université des Beaux-Arts[2]. En 2011, elle fait l'objet de critiques à la suite d'un rapport de la Cour des comptes de Hambourg, qui met en lumière le financement partiel des études de certains étudiants par des fonds publics[1].",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Histoire",
+              "original_text": "Depuis l'automne 2013, elle propose un programme d'études à temps partiel en journalisme numérique, destiné aux journalistes et rédacteurs en exercice. La même année, un programme de licence en anglais dédié aux médias numériques est lancé en partenariat avec l'Université Leuphana de Lunebourg[3]. Depuis octobre 2019, le cursus de cinéma intègre l'étude des films publicitaires à valeur ajoutée.",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:.C3.89tudes_cin.C3.A9matographiques",
+              "original_text": "[modifier | modifier le code]",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:.C3.89tudes_cin.C3.A9matographiques",
+              "original_text": "Le cursus de cinéma est fondé en 1991 à l'Université de Hambourg par Hark Bohm et intégré à la Hamburg Media School en 2004[7],[8]. Conçu comme un programme alliant formation artistique, compétences techniques et exigences internationales, il bénéficie de la participation de cinéastes renommés tels que Michael Ballhaus et Karl Walter Lindenlaub. Tous les deux ans, 24 étudiants intègrent ce programme.",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:.C3.89tudes_cin.C3.A9matographiques",
+              "original_text": "Les films réalisés dans ce cadre ont été récompensés à de nombreuses reprises. En 2003 et 2005, les films de fin d’études The Red Jacket de Florian Baxmeyer et The Runaway reçoivent le Student Academy Award. En 2011, Raju remporte un troisième Oscar étudiant et est nommé aux Oscars dans la catégorie court métrage en 2012. En 2015, Sadakat obtient l’Oscar de l’Étudiant d’or, suivi en 2017 par Watu Wote – All of Us, distingué dans la catégorie Narrative (International Film Schools) et Istina en 2023[9]. Le programme cinématographique de la HMS détient ainsi cinq Oscars étudiants[10].",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:.C3.89tudes_cin.C3.A9matographiques",
+              "original_text": "Depuis septembre 2007, la direction du programme est assurée par Richard Reitinger et Hubertus Meyer-Burckhardt, puis par Richard Reitinger seul entre 2012 et octobre 2022, avant que Kathrin Lemme ne prenne la relève. Le cursus, qui couvre la réalisation, la caméra, l’écriture de scénario et la production, est le seul en Allemagne à être accrédité pour délivrer un Master of Arts in Film. La HMS est membre de l’association internationale des écoles de cinéma CILECT.",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:.C3.89tudes_cin.C3.A9matographiques",
+              "original_text": "En octobre 2022, Kathrin Lemme a été nommée à la tête du programme[11].",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "language": "en",
+            "text": "Hamburg Media School (HMS) is a specialist media education institution in Finkenau, in Hamburg, Germany. The French Wikipedia article describes it as a semi-public institution financed through a public–private partnership. It offers advanced education for graduates and working professionals as well as a bachelor’s program, and works with Hamburg universities on its degree offerings.\n\nThe article gives conflicting founding years: its lead says 2003, while its history section says 2002. An MBA in media management began in 2003. The University of Hamburg’s film program, founded there in 1991, joined HMS in 2004; a journalism program followed in 2005. A part-time digital journalism program and an English-language digital media bachelor’s program began in 2013.\n\nIts fields include media management, journalism and film, alongside continuing education. The film curriculum includes directing, camera work, screenwriting and production. The article reports an intake of 24 film students every two years, without dating that figure."
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "website": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P856:0",
+              "original_text": "https://www.hamburgmediaschool.com/",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "value": "https://www.hamburgmediaschool.com/",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "qid": "Q1572917",
+  "record_revision": 1,
+  "schema_version": "0.2.2",
+  "seed": {
+    "channels": [
+      "reviewed_institution_type"
+    ],
+    "import_id": "seed-84c3beb45367905f",
+    "screening_status": "included"
+  },
+  "selection_policy": "preferred-v1",
+  "sources": {
+    "s1": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T14:55:33.716897+00:00",
+      "revision_id": 2549949964,
+      "source_qid": "Q1572917",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2549949964"
+    },
+    "s2": {
+      "family": "wikimedia",
+      "kind": "wikipedia",
+      "language": "fr",
+      "page_id": 16715093,
+      "publisher_role": "encyclopedia",
+      "retrieved_at": "2026-11-06T14:55:43.572595+00:00",
+      "revision_id": 241079722,
+      "url": "https://fr.wikipedia.org/w/index.php?oldid=241079722"
+    },
+    "s3": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T14:55:47.976567+00:00",
+      "revision_id": 2563164085,
+      "source_qid": "Q380093",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2563164085"
+    },
+    "s4": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T14:55:52.024591+00:00",
+      "revision_id": 2505250373,
+      "source_qid": "Q352102",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2505250373"
+    },
+    "s5": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T14:55:59.616710+00:00",
+      "revision_id": 2547428257,
+      "source_qid": "Q21028957",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2547428257"
+    },
+    "s6": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T14:56:06.584755+00:00",
+      "revision_id": 2565378989,
+      "source_qid": "Q183",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2565378989"
+    },
+    "s7": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T14:56:11.229458+00:00",
+      "revision_id": 2563912232,
+      "source_qid": "Q1627",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2563912232"
+    },
+    "s8": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T14:56:15.896653+00:00",
+      "revision_id": 2497687416,
+      "source_qid": "Q116373499",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2497687416"
+    }
+  },
+  "update_datetime": "2026-11-06T15:06:14.519509+00:00"
+}
