@@ -1,0 +1,620 @@
+{
+  "attribution": "distinct_native_research_and_review_subagents;not_cryptographic_identity",
+  "research": {
+    "baseline_sha256": "absent",
+    "candidate": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-06T14:49:05.745661+00:00",
+          "status": "not_found"
+        },
+        "geography": {
+          "checked_at": "2026-11-06T14:49:05.745661+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-06T14:49:05.745661+00:00",
+          "status": "checked"
+        },
+        "identity": {
+          "checked_at": "2026-11-06T14:49:05.745661+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-06T14:49:05.745661+00:00",
+          "status": "not_found"
+        },
+        "profile": {
+          "checked_at": "2026-11-06T14:49:05.745661+00:00",
+          "status": "not_found"
+        }
+      },
+      "curation": {
+        "identity_status": "in_scope"
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "claim:P571:0",
+                      "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q6944339$3AC03CF6-C1AD-4EC2-8B38-B493568F53DA\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+1986-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}, \"reference_count\": 1}",
+                      "source_ref": "s1"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 1986
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "establishment",
+            "kind": "institution_establishment",
+            "subject_ref": "institution"
+          }
+        ]
+      },
+      "identity": {
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P31:0",
+                  "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q6944339$6F77755B-FB3E-4F18-BA1E-9214D2B729A4\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 3918, \"id\": \"Q3918\"}}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "metadata",
+                  "original_text": "{\"id\": \"Q3918\", \"labels\": {\"en\": \"university\"}, \"descriptions\": {\"en\": \"an institution of tertiary education and research which awards academic degrees in several academic disciplines\"}}",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "university",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q6944339\", \"labels\": {\"en\": \"Muzaffar Ahmed Mahavidyalaya\"}, \"descriptions\": {\"en\": \"college in West Bengal\"}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "Muzaffar Ahmed Mahavidyalaya",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "locations": [
+        {
+          "id": "west_bengal",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q6944339\", \"labels\": {\"en\": \"Muzaffar Ahmed Mahavidyalaya\"}, \"descriptions\": {\"en\": \"college in West Bengal\"}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "West Bengal"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        {
+          "id": "india",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q6944339$A66F08E4-9BBD-4222-B339-23A64571847C\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 668, \"id\": \"Q668\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q668\", \"labels\": {\"en\": \"India\"}, \"descriptions\": {\"en\": \"country in South Asia\"}}",
+                    "source_ref": "s3"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "India"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q668"
+        },
+        {
+          "coordinates": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "statement:Q6944339$799a86bb-5bdb-42c9-9d33-35a7b4e8f317",
+                    "original_text": "\"latitude\": 23.771416",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "source_rank": "normal",
+                "value": {
+                  "crs": "EPSG:4326",
+                  "globe_qid": "Q2",
+                  "latitude": 23.771416,
+                  "longitude": 88.1120048,
+                  "source_precision_degrees": 1e-05
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "wikidata-item-location",
+          "kind": "institution",
+          "qid": "Q6944339"
+        }
+      ],
+      "modified_datetime": "2026-11-06T14:51:30.889684+00:00",
+      "qid": "Q6944339",
+      "record_revision": 1,
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "reviewed_institution_type"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "included"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T14:48:55.472009+00:00",
+          "revision_id": 2560488007,
+          "source_qid": "Q6944339",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2560488007"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T14:48:05.474582+00:00",
+          "revision_id": 2562156954,
+          "source_qid": "Q3918",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2562156954"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T14:49:05.609610+00:00",
+          "revision_id": 2563722390,
+          "source_qid": "Q668",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2563722390"
+        }
+      }
+    },
+    "coverage": [
+      {
+        "group": "identity",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "status": "checked"
+      },
+      {
+        "group": "population",
+        "status": "not_found"
+      },
+      {
+        "group": "finance",
+        "status": "not_found"
+      },
+      {
+        "group": "profile",
+        "status": "not_found"
+      }
+    ],
+    "delta": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-06T14:49:05.745661+00:00",
+          "status": "not_found"
+        },
+        "geography": {
+          "checked_at": "2026-11-06T14:49:05.745661+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-06T14:49:05.745661+00:00",
+          "status": "checked"
+        },
+        "identity": {
+          "checked_at": "2026-11-06T14:49:05.745661+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-06T14:49:05.745661+00:00",
+          "status": "not_found"
+        },
+        "profile": {
+          "checked_at": "2026-11-06T14:49:05.745661+00:00",
+          "status": "not_found"
+        }
+      },
+      "curation": {
+        "identity_status": "in_scope"
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "claim:P571:0",
+                      "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q6944339$3AC03CF6-C1AD-4EC2-8B38-B493568F53DA\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+1986-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}, \"reference_count\": 1}",
+                      "source_ref": "s1"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 1986
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "establishment",
+            "kind": "institution_establishment",
+            "subject_ref": "institution"
+          }
+        ]
+      },
+      "identity": {
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P31:0",
+                  "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q6944339$6F77755B-FB3E-4F18-BA1E-9214D2B729A4\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 3918, \"id\": \"Q3918\"}}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "metadata",
+                  "original_text": "{\"id\": \"Q3918\", \"labels\": {\"en\": \"university\"}, \"descriptions\": {\"en\": \"an institution of tertiary education and research which awards academic degrees in several academic disciplines\"}}",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "university",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q6944339\", \"labels\": {\"en\": \"Muzaffar Ahmed Mahavidyalaya\"}, \"descriptions\": {\"en\": \"college in West Bengal\"}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "Muzaffar Ahmed Mahavidyalaya",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "locations": [
+        {
+          "id": "west_bengal",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q6944339\", \"labels\": {\"en\": \"Muzaffar Ahmed Mahavidyalaya\"}, \"descriptions\": {\"en\": \"college in West Bengal\"}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "West Bengal"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        {
+          "id": "india",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q6944339$A66F08E4-9BBD-4222-B339-23A64571847C\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 668, \"id\": \"Q668\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q668\", \"labels\": {\"en\": \"India\"}, \"descriptions\": {\"en\": \"country in South Asia\"}}",
+                    "source_ref": "s3"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "India"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q668"
+        },
+        {
+          "coordinates": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "statement:Q6944339$799a86bb-5bdb-42c9-9d33-35a7b4e8f317",
+                    "original_text": "\"latitude\": 23.771416",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "source_rank": "normal",
+                "value": {
+                  "crs": "EPSG:4326",
+                  "globe_qid": "Q2",
+                  "latitude": 23.771416,
+                  "longitude": 88.1120048,
+                  "source_precision_degrees": 1e-05
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "wikidata-item-location",
+          "kind": "institution",
+          "qid": "Q6944339"
+        }
+      ],
+      "qid": "Q6944339",
+      "record_revision": 1,
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "reviewed_institution_type"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "included"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T14:48:55.472009+00:00",
+          "revision_id": 2560488007,
+          "source_qid": "Q6944339",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2560488007"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T14:48:05.474582+00:00",
+          "revision_id": 2562156954,
+          "source_qid": "Q3918",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2562156954"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T14:49:05.609610+00:00",
+          "revision_id": 2563722390,
+          "source_qid": "Q668",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2563722390"
+        }
+      }
+    },
+    "open_requests": [],
+    "proposed_at": "2026-11-06T14:51:30.889684+00:00",
+    "qid": "Q6944339",
+    "research": {
+      "model": "not_reported",
+      "prompt_sha256": "2bbfc35128e1d32fbf811fc414770d90df66afd767c03f9932fcb08a97321b65",
+      "reasoning_effort": "not_reported",
+      "schema_sha256": "92e942f4fbf2ae28964462ea9ffa8312c5ee16a077a1e08b40aaaf741512422e",
+      "session": "/root/research_q6944339"
+    },
+    "retrieval_failures": [],
+    "review_status": "unreviewed",
+    "seed": {
+      "channels": [
+        "reviewed_institution_type"
+      ],
+      "import_id": "seed-84c3beb45367905f",
+      "screening_status": "included"
+    },
+    "transport": {
+      "base_commit": "ac63d1ef04819181c3e8b4f8c92a44aba0b73622",
+      "protocol": "native-subagent-v1",
+      "repository": "ider-zh/university-seed-curation",
+      "review_policy": {
+        "id": "source-grounded-flexible-v2",
+        "sha256": "b8ed7d2897e4c31dbd81b1379aafdc1077a21d1a33949edbd2d896b0adf99db2"
+      },
+      "schema_sha256": "bfa496eafa9dffca56146214168db7f000b09161b8993129632e7202e1c88833",
+      "seed_catalog_sha256": "84c3beb45367905f513d650684283dd62a9c1b77962bdc34151a6ef05bfa03d4"
+    },
+    "type": "university-proposal-v1"
+  },
+  "review": {
+    "contexts_checked": 5,
+    "coverage_checks": [
+      {
+        "group": "identity",
+        "reason": "The supplied name and P31 classification are represented. University classification and college description differ and are both recoverable in cited evidence; downstream interpretation should preserve that qualification.",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "reason": "The packet supports West Bengal, India and the complete sole normal-rank root P625 point. Its original precision and unknown period are retained; no point is reinterpreted as campus extent.",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "reason": "The supplied 1986 inception is represented with source year precision. The offline institution material supplies no additional core history dates.",
+        "status": "checked"
+      },
+      {
+        "group": "population",
+        "reason": "No institution population statistics are present in the supplied offline corpus. This is a bounded evidence result.",
+        "status": "not_found"
+      },
+      {
+        "group": "finance",
+        "reason": "No institution finance values or currencies are supplied in the offline corpus. This is a bounded evidence result.",
+        "status": "not_found"
+      },
+      {
+        "group": "profile",
+        "reason": "The supplied corpus contains no further institution profile facts requiring extraction. Related country and class-item facts concern those other subjects.",
+        "status": "not_found"
+      }
+    ],
+    "decision": "approve",
+    "facts_checked": 6,
+    "full_refresh": true,
+    "inferences": [
+      {
+        "id": "$.locations[2].coordinates:c1",
+        "reason": "The cited s1 statement locator resolves to the entire root P625 statement, supporting both coordinates, Earth Q2, normal rank and precision 0.00001 degrees: 23.771416, 88.1120048. EPSG:4326 is a reasonable normalization of this Earth geographic point. It represents the institution item point with unknown period, not a verified campus boundary or a country centroid."
+      },
+      {
+        "id": "identity",
+        "reason": "The root P31 university classification anchors inclusion of the named tertiary institution. Its differing college description remains visible; in_scope is a project inclusion inference rather than an independent legal determination."
+      },
+      {
+        "id": "location:west_bengal",
+        "reason": "The institution description explicitly places it in West Bengal; treating this named geographic region as administrative_area is reasonable. No unsupplied QID, temporal jurisdiction or exact campus is introduced."
+      }
+    ],
+    "model": "not_reported",
+    "proposal_sha256": "ad271aa60d80512065216b7201fd15bfef4103677104e3da28a5d706419efd72",
+    "qid": "Q6944339",
+    "reasoning_effort": "not_reported",
+    "record_sha256": "bb6e73a18b80f6787aff0a1f3e2a74576202635bf35882aefb7f65fc523603c2",
+    "request_responses": [],
+    "requests": [],
+    "review_session": "/root/baseline3_q6944339",
+    "reviewed_at": "2026-11-06T15:09:56.121360+00:00",
+    "source_revisions_checked": 3
+  },
+  "review_result_sha256": "943adb31e7fec3b23228cfee8223649aacd8e1ddf0ac81367d747dff80f0efdb",
+  "type": "university-unified-receipt-v1"
+}

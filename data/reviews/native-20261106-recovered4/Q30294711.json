@@ -1,0 +1,657 @@
+{
+  "attribution": "distinct_native_research_and_review_subagents;not_cryptographic_identity",
+  "research": {
+    "baseline_sha256": "absent",
+    "candidate": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-06T14:48:13.926424+00:00",
+          "status": "not_found"
+        },
+        "geography": {
+          "checked_at": "2026-11-06T14:48:13.926424+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-06T14:48:13.926424+00:00",
+          "status": "not_found"
+        },
+        "identity": {
+          "checked_at": "2026-11-06T14:48:13.926424+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-06T14:48:13.926424+00:00",
+          "status": "not_found"
+        },
+        "profile": {
+          "checked_at": "2026-11-06T14:48:13.926424+00:00",
+          "status": "not_found"
+        }
+      },
+      "curation": {
+        "identity_status": "in_scope"
+      },
+      "identity": {
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P31:0",
+                  "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q30294711$249A9900-AB5B-4871-8754-7DB434C36BA5\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 3918, \"id\": \"Q3918\"}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "metadata",
+                  "original_text": "{\"id\": \"Q3918\", \"labels\": {\"en\": \"university\"}, \"descriptions\": {\"en\": \"an institution of tertiary education and research which awards academic degrees in several academic disciplines\"}}",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "university",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q30294711\", \"labels\": {\"en\": \"Universitas Purwakarta\"}, \"descriptions\": {\"en\": \"education organization in Purwakarta, Indonesia\"}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "Universitas Purwakarta",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "locations": [
+        {
+          "id": "indonesia",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q30294711$28920FCE-C83D-4D2E-9DB1-3AA94B058E8F\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 252, \"id\": \"Q252\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q252\", \"labels\": {\"en\": \"Indonesia\"}, \"descriptions\": {\"en\": \"island country in Southeast Asia and Oceania\"}}",
+                    "source_ref": "s3"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Indonesia"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q252"
+        },
+        {
+          "id": "purwakarta",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q30294711$8A7D2223-1CED-4D22-BEA4-C83717901E08\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 1199917, \"id\": \"Q1199917\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q1199917\", \"labels\": {\"en\": \"Purwakarta\"}, \"descriptions\": {\"en\": \"district in Purwakarta Regency, West Java Province, Indonesia\"}}",
+                    "source_ref": "s4"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Purwakarta"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q1199917"
+        },
+        {
+          "id": "jatiluhur",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P131:1",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q30294711$CF3D4BAA-9817-42FA-BFDC-EEBEE7E175CB\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 930854, \"id\": \"Q930854\"}, \"reference_count\": 2}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q930854\", \"labels\": {\"en\": \"Jatiluhur\"}, \"descriptions\": {\"en\": \"district in Purwakarta Regency, West Java Province, Indonesia\"}}",
+                    "source_ref": "s5"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Jatiluhur"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q930854"
+        },
+        {
+          "coordinates": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "statement:Q30294711$010a1dca-47c5-c2d3-6e20-d1c5087cf6b7",
+                    "original_text": "\"latitude\": -6.560553754696311",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "source_rank": "normal",
+                "value": {
+                  "crs": "EPSG:4326",
+                  "globe_qid": "Q2",
+                  "latitude": -6.560553754696311,
+                  "longitude": 107.44254960578735,
+                  "source_precision_degrees": 1e-08
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "wikidata-item-location",
+          "kind": "institution",
+          "qid": "Q30294711"
+        }
+      ],
+      "modified_datetime": "2026-11-06T14:49:57.130657+00:00",
+      "qid": "Q30294711",
+      "record_revision": 1,
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "reviewed_institution_type"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "included"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T14:47:56.892902+00:00",
+          "revision_id": 2511437895,
+          "source_qid": "Q30294711",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2511437895"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T14:48:05.474582+00:00",
+          "revision_id": 2562156954,
+          "source_qid": "Q3918",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2562156954"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T14:48:02.225155+00:00",
+          "revision_id": 2562953677,
+          "source_qid": "Q252",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2562953677"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T14:48:09.565655+00:00",
+          "revision_id": 2549889510,
+          "source_qid": "Q1199917",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2549889510"
+        },
+        "s5": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T14:48:13.912793+00:00",
+          "revision_id": 2487577426,
+          "source_qid": "Q930854",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2487577426"
+        }
+      }
+    },
+    "coverage": [
+      {
+        "group": "identity",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "status": "not_found"
+      },
+      {
+        "group": "population",
+        "status": "not_found"
+      },
+      {
+        "group": "finance",
+        "status": "not_found"
+      },
+      {
+        "group": "profile",
+        "status": "not_found"
+      }
+    ],
+    "delta": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-06T14:48:13.926424+00:00",
+          "status": "not_found"
+        },
+        "geography": {
+          "checked_at": "2026-11-06T14:48:13.926424+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-06T14:48:13.926424+00:00",
+          "status": "not_found"
+        },
+        "identity": {
+          "checked_at": "2026-11-06T14:48:13.926424+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-06T14:48:13.926424+00:00",
+          "status": "not_found"
+        },
+        "profile": {
+          "checked_at": "2026-11-06T14:48:13.926424+00:00",
+          "status": "not_found"
+        }
+      },
+      "curation": {
+        "identity_status": "in_scope"
+      },
+      "identity": {
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P31:0",
+                  "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q30294711$249A9900-AB5B-4871-8754-7DB434C36BA5\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 3918, \"id\": \"Q3918\"}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "metadata",
+                  "original_text": "{\"id\": \"Q3918\", \"labels\": {\"en\": \"university\"}, \"descriptions\": {\"en\": \"an institution of tertiary education and research which awards academic degrees in several academic disciplines\"}}",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "university",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q30294711\", \"labels\": {\"en\": \"Universitas Purwakarta\"}, \"descriptions\": {\"en\": \"education organization in Purwakarta, Indonesia\"}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "Universitas Purwakarta",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "locations": [
+        {
+          "id": "indonesia",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q30294711$28920FCE-C83D-4D2E-9DB1-3AA94B058E8F\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 252, \"id\": \"Q252\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q252\", \"labels\": {\"en\": \"Indonesia\"}, \"descriptions\": {\"en\": \"island country in Southeast Asia and Oceania\"}}",
+                    "source_ref": "s3"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Indonesia"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q252"
+        },
+        {
+          "id": "purwakarta",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q30294711$8A7D2223-1CED-4D22-BEA4-C83717901E08\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 1199917, \"id\": \"Q1199917\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q1199917\", \"labels\": {\"en\": \"Purwakarta\"}, \"descriptions\": {\"en\": \"district in Purwakarta Regency, West Java Province, Indonesia\"}}",
+                    "source_ref": "s4"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Purwakarta"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q1199917"
+        },
+        {
+          "id": "jatiluhur",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P131:1",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q30294711$CF3D4BAA-9817-42FA-BFDC-EEBEE7E175CB\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 930854, \"id\": \"Q930854\"}, \"reference_count\": 2}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q930854\", \"labels\": {\"en\": \"Jatiluhur\"}, \"descriptions\": {\"en\": \"district in Purwakarta Regency, West Java Province, Indonesia\"}}",
+                    "source_ref": "s5"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Jatiluhur"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q930854"
+        },
+        {
+          "coordinates": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "statement:Q30294711$010a1dca-47c5-c2d3-6e20-d1c5087cf6b7",
+                    "original_text": "\"latitude\": -6.560553754696311",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "source_rank": "normal",
+                "value": {
+                  "crs": "EPSG:4326",
+                  "globe_qid": "Q2",
+                  "latitude": -6.560553754696311,
+                  "longitude": 107.44254960578735,
+                  "source_precision_degrees": 1e-08
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "wikidata-item-location",
+          "kind": "institution",
+          "qid": "Q30294711"
+        }
+      ],
+      "qid": "Q30294711",
+      "record_revision": 1,
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "reviewed_institution_type"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "included"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T14:47:56.892902+00:00",
+          "revision_id": 2511437895,
+          "source_qid": "Q30294711",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2511437895"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T14:48:05.474582+00:00",
+          "revision_id": 2562156954,
+          "source_qid": "Q3918",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2562156954"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T14:48:02.225155+00:00",
+          "revision_id": 2562953677,
+          "source_qid": "Q252",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2562953677"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T14:48:09.565655+00:00",
+          "revision_id": 2549889510,
+          "source_qid": "Q1199917",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2549889510"
+        },
+        "s5": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T14:48:13.912793+00:00",
+          "revision_id": 2487577426,
+          "source_qid": "Q930854",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2487577426"
+        }
+      }
+    },
+    "open_requests": [],
+    "proposed_at": "2026-11-06T14:49:57.130657+00:00",
+    "qid": "Q30294711",
+    "research": {
+      "model": "not_reported",
+      "prompt_sha256": "3f8e48bfd35be3112b4e125f06ed86db3009d89861d093357f00933fc1548c09",
+      "reasoning_effort": "not_reported",
+      "schema_sha256": "92e942f4fbf2ae28964462ea9ffa8312c5ee16a077a1e08b40aaaf741512422e",
+      "session": "/root/research_q30294711"
+    },
+    "retrieval_failures": [],
+    "review_status": "unreviewed",
+    "seed": {
+      "channels": [
+        "reviewed_institution_type"
+      ],
+      "import_id": "seed-84c3beb45367905f",
+      "screening_status": "included"
+    },
+    "transport": {
+      "base_commit": "ac63d1ef04819181c3e8b4f8c92a44aba0b73622",
+      "protocol": "native-subagent-v1",
+      "repository": "ider-zh/university-seed-curation",
+      "review_policy": {
+        "id": "source-grounded-flexible-v2",
+        "sha256": "b8ed7d2897e4c31dbd81b1379aafdc1077a21d1a33949edbd2d896b0adf99db2"
+      },
+      "schema_sha256": "bfa496eafa9dffca56146214168db7f000b09161b8993129632e7202e1c88833",
+      "seed_catalog_sha256": "84c3beb45367905f513d650684283dd62a9c1b77962bdc34151a6ef05bfa03d4"
+    },
+    "type": "university-proposal-v1"
+  },
+  "review": {
+    "contexts_checked": 5,
+    "coverage_checks": [
+      {
+        "group": "identity",
+        "reason": "The frozen root supports the supplied institutional kind and exact English name. The baseline is absent; this is an initial bounded extraction.",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "reason": "Country, both distinct undated P131 observations, and the complete normal-rank root P625 are represented. Administrative coordinates have not been substituted for the institution point.",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "reason": "No institution-specific history core fact is present in the frozen packet. not_found is limited to inspected evidence; facts about linked countries or districts do not establish institutional facts.",
+        "status": "not_found"
+      },
+      {
+        "group": "population",
+        "reason": "No institution-specific population core fact is present in the frozen packet. not_found is limited to inspected evidence; facts about linked countries or districts do not establish institutional facts.",
+        "status": "not_found"
+      },
+      {
+        "group": "finance",
+        "reason": "No institution-specific finance core fact is present in the frozen packet. not_found is limited to inspected evidence; facts about linked countries or districts do not establish institutional facts.",
+        "status": "not_found"
+      },
+      {
+        "group": "profile",
+        "reason": "No institution-specific profile core fact is present in the frozen packet. not_found is limited to inspected evidence; facts about linked countries or districts do not establish institutional facts.",
+        "status": "not_found"
+      }
+    ],
+    "decision": "approve",
+    "facts_checked": 6,
+    "full_refresh": true,
+    "inferences": [],
+    "model": "not_reported",
+    "proposal_sha256": "285cef9ebf963685c616223d48aa0dab2ee8cbb544f1d396eb65d4f952dd3211",
+    "qid": "Q30294711",
+    "reasoning_effort": "not_reported",
+    "record_sha256": "26f6e66bf34a5be22b2b76e3dd28d456772ac03fa23b6d7af099db37c1071992",
+    "request_responses": [],
+    "requests": [],
+    "review_session": "/root/baseline3_q30294711",
+    "reviewed_at": "2026-11-06T15:09:30.710784+00:00",
+    "source_revisions_checked": 5
+  },
+  "review_result_sha256": "e9de413a4e686e16d9375bcd5944cb30e6bf52a99a9bb2480477d3d992f747e5",
+  "type": "university-unified-receipt-v1"
+}
