@@ -24,6 +24,12 @@ batch per PR; checkpoint PRs contain only backlog metadata. Independent QIDs
 can proceed concurrently. Same-QID updates or overlapping pending-task changes
 must be regenerated against main; unrelated merged task rows must be preserved.
 
+Unrelated main advancement does not invalidate a frozen approval. Publication
+checks proposal/Review ancestry, unchanged schema, policy, scope, catalog and
+relevant compiler contracts, plus the affected school's record and task baseline.
+It retains the exact proposal, verdict and approved canonical bytes. Changes to
+these dependencies still require fresh Research or Review as appropriate.
+
 If another PR merges first, update the PR branch against main and let checks run
 again. If content conflicts or a QID baseline changed, rebuild from fetched main:
 rebind retained Research only if its baseline is still valid, run fresh offline
@@ -31,8 +37,11 @@ Review, create a replacement bundle/PR and close the obsolete PR. Shared backlog
 JSON may still produce Git conflicts; automatic merging does not resolve them.
 
 Wait for the actual PR merge, fetch main and run publication-confirm using its
-merge/squash commit. Confirmation checks ancestry and exact bundle bytes. It
-supports prior direct-main plans for interrupted historical work. No source
+merge/squash commit. Confirmation checks ancestry through the actual first parent
+and exact canonical, receipt and manifest bytes. It applies only the original
+bundle's task delta to that parent, preserves unrelated concurrent task changes,
+and rejects affected-QID/task conflicts or a later commit posing as publication.
+It supports prior direct-main plans for interrupted historical work. No source
 cache, model trace or private active-job state is committed. Historical records,
 receipts and v2 policy remain unchanged; new receipts identify core-review-v3.
 

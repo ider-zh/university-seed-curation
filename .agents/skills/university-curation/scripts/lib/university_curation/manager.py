@@ -91,6 +91,22 @@ def validate_checkpoint(previous,current,completed=()):
     return current
 
 
+def merge_checkpoint(previous,proposed,current,completed=()):
+    """Apply only the bundle's task changes, preserving unrelated main rows."""
+    validate_backlog(previous); validate_backlog(current)
+    validate_checkpoint(previous,proposed,completed)
+    old=previous['tasks']; new=proposed['tasks']; latest=current['tasks']
+    changed={q for q in old.keys()|new.keys() if old.get(q)!=new.get(q)}
+    for entity in changed|set(completed):
+        if latest.get(entity)!=old.get(entity):
+            raise ValueError('Concurrent task change: '+entity)
+    result=deepcopy(current)
+    for entity in changed:
+        if entity in new: result['tasks'][entity]=deepcopy(new[entity])
+        else: result['tasks'].pop(entity,None)
+    return validate_checkpoint(current,result,completed)
+
+
 def state_path(repo):
     return private_path(Path(repo)/'.private/native/manager-state.json')
 
@@ -282,10 +298,23 @@ def confirm_publication(repo,bundle,published_ref):
     git(repo,'merge-base','--is-ancestor',actual,main)
     parents=git(repo,'rev-list','--parents','-n','1',actual).decode().split()
     if plan.get('kind')=='pull_request':
-        git(repo,'merge-base','--is-ancestor',plan['base_commit'],actual)
+        if len(parents)<2: raise ValueError('Publication commit must have a main parent')
+        from .workflow_contract import check_publication_base
+        check_publication_base(repo,plan['base_commit'],parents[1],plan.get('qids',[]))
     elif parents!=[actual,plan['base_commit']]:
         raise ValueError('Published commit is not the planned main successor')
     for path,digest in plan['files'].items():
+        planned=(bundle/path).read_bytes()
+        if sha(planned)!=digest: raise ValueError('Local publication bytes differ from bundle')
+        if plan.get('kind')=='pull_request' and path.startswith(('data/batches/','data/reviews/')):
+            if blob(repo,parents[1],path,optional=True) is not None:
+                raise ValueError('Batch already published before supplied commit')
+        if plan.get('kind')=='pull_request' and path==BACKLOG:
+            expected=merge_checkpoint(backlog_at(repo,plan['base_commit']),canonical_json(planned),
+                                      backlog_at(repo,parents[1]),plan.get('qids',[]))
+            if blob(repo,actual,path)!=encode(expected):
+                raise ValueError('Merged backlog lost or altered concurrent task changes')
+            continue
         raw=blob(repo,actual,path)
         if sha(raw)!=digest: raise ValueError('Remote publication bytes differ from bundle')
     for entity in plan.get('qids',[]):
