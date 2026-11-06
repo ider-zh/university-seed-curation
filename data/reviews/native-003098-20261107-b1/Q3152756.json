@@ -1,0 +1,1729 @@
+{
+  "attribution": "distinct_native_research_and_review_subagents;not_cryptographic_identity",
+  "research": {
+    "baseline_sha256": "absent",
+    "candidate": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-06T22:56:09.670247+00:00",
+          "status": "not_found"
+        },
+        "geography": {
+          "checked_at": "2026-11-06T22:56:09.670247+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-06T22:56:09.670247+00:00",
+          "status": "checked"
+        },
+        "identity": {
+          "checked_at": "2026-11-06T22:56:09.670247+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-06T22:56:09.670247+00:00",
+          "status": "not_found"
+        },
+        "profile": {
+          "checked_at": "2026-11-06T22:56:09.670247+00:00",
+          "status": "checked"
+        }
+      },
+      "curation": {
+        "identity_status": "in_scope"
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "claim:P571:0",
+                      "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q3152756$522F0E6B-3D5E-4F94-9C3E-7507A1B3EC48\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+1991-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}, \"reference_count\": 1}",
+                      "source_ref": "s1"
+                    },
+                    {
+                      "locator": "section:Historique",
+                      "original_text": "L'IUT de l'Oise (campus Beauvais et Creil) a vu le jour en 1991",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 1991
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Historique",
+                      "original_text": "L'IUT de l'Oise (campus Beauvais et Creil) a vu le jour en 1991",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "fr",
+                    "text": "L'IUT de l'Oise (campus Beauvais et Creil) a vu le jour en 1991."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "establishment",
+            "kind": "institution_establishment",
+            "subject_ref": "institution"
+          }
+        ]
+      },
+      "identity": {
+        "aliases": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Historique",
+                    "original_text": "L'IUT de l'Oise (campus Beauvais et Creil)",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "fr",
+                  "text": "IUT de l'Oise"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ],
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "L’institut universitaire de technologie de l'Oise est un institut universitaire de technologie dépendant de l'université de Picardie Jules-Verne.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Formations_et_dipl.C3.B4mes",
+                  "original_text": "L'IUT de l'Oise propose un ensemble de formations de niveau BAC+2 et BAC+3",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "higher_education_college",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "fr": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "Institut universitaire de technologie de l'Oise",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "Institut universitaire de technologie de l'Oise",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        "operating_status": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "L’institut universitaire de technologie de l'Oise est un institut universitaire de technologie dépendant de l'université de Picardie Jules-Verne.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Formations_et_dipl.C3.B4mes",
+                  "original_text": "L'IUT de l'Oise propose un ensemble de formations de niveau BAC+2 et BAC+3",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "operating",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "locations": [
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:G.C3.A9n.C3.A9ralit.C3.A9s",
+                    "original_text": "site de Beauvais",
+                    "source_ref": "s2"
+                  },
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"q174257$39C5ED1B-6B86-4A33-AA0A-C4211B126E50\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 142, \"id\": \"Q142\"}, \"reference_count\": 2}",
+                    "source_ref": "s5"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "city_name": "Beauvais",
+                  "city_qid": "Q174257",
+                  "country_name": "France",
+                  "country_qid": "Q142",
+                  "formatted": {
+                    "language": "fr",
+                    "text": "Beauvais"
+                  }
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "beauvais",
+          "kind": "campus",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:G.C3.A9n.C3.A9ralit.C3.A9s",
+                    "original_text": "site de Beauvais",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "fr",
+                  "text": "site de Beauvais"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:G.C3.A9n.C3.A9ralit.C3.A9s",
+                    "original_text": "site de Creil",
+                    "source_ref": "s2"
+                  },
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"q331087$EB9EA4A3-5659-4003-A281-408EFF6D9552\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 142, \"id\": \"Q142\"}, \"reference_count\": 1}",
+                    "source_ref": "s6"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "city_name": "Creil",
+                  "city_qid": "Q331087",
+                  "country_name": "France",
+                  "country_qid": "Q142",
+                  "formatted": {
+                    "language": "fr",
+                    "text": "Creil"
+                  }
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "creil",
+          "kind": "campus",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:G.C3.A9n.C3.A9ralit.C3.A9s",
+                    "original_text": "site de Creil",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "fr",
+                  "text": "site de Creil"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "Pays\nFrance",
+                    "source_ref": "s2"
+                  },
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q3152756$355C6737-41E7-48F0-87A8-FEE23A1CB01B\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 142, \"id\": \"Q142\"}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "country_name": "France",
+                  "country_qid": "Q142",
+                  "formatted": {
+                    "language": "fr",
+                    "text": "France"
+                  }
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "country_france",
+          "kind": "administrative_area",
+          "qid": "Q142"
+        }
+      ],
+      "modified_datetime": "2026-11-06T22:59:47.902612+00:00",
+      "profile": {
+        "academic_focus": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:DUT",
+                  "original_text": "[modifier | modifier le code]\nSur le site de Beauvais : DUT GEA \"Gestion des Entreprises et des Administrations\", DUT TC \"Technique de Commercialisation\"\nSur le site de Creil : DUT TC \"Technique de Commercialisation\"[14], DUT GLT \"Gestion Logistique et Transport\", DUT HSE \"Hygiène Sécurité Environnement\"",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": [
+                {
+                  "language": "fr",
+                  "text": "Gestion des Entreprises et des Administrations"
+                },
+                {
+                  "language": "fr",
+                  "text": "Technique de Commercialisation"
+                },
+                {
+                  "language": "fr",
+                  "text": "Gestion Logistique et Transport"
+                },
+                {
+                  "language": "fr",
+                  "text": "Hygiène Sécurité Environnement"
+                }
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "degree_levels": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Formations_et_dipl.C3.B4mes",
+                  "original_text": "L'IUT de l'Oise propose un ensemble de formations de niveau BAC+2 et BAC+3",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": [
+                "BAC+2",
+                "BAC+3"
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "logo_url": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P154:0",
+                  "original_text": "{\"property\": \"P154\", \"property_label\": \"logo image\", \"statement_id\": \"Q3152756$028E6CAB-2D91-4846-A3A7-64834F5B54D9\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"Iut-oise.jpg\", \"qualifiers\": {\"P2096\": [{\"snaktype\": \"value\", \"value\": {\"text\": \"Logo de l'IUT de l'Oise.\", \"language\": \"fr\"}}]}}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "https://commons.wikimedia.org/wiki/Special:FilePath/Iut-oise.jpg",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "main_image_url": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P18:0",
+                  "original_text": "{\"property\": \"P18\", \"property_label\": \"image\", \"statement_id\": \"Q3152756$657157E8-E60A-4877-9BD1-3BDA17C6F021\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"Iut.jpg\"}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "https://commons.wikimedia.org/wiki/Special:FilePath/Iut.jpg",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "summary": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "L’institut universitaire de technologie de l'Oise est un institut universitaire de technologie dépendant de l'université de Picardie Jules-Verne.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:G.C3.A9n.C3.A9ralit.C3.A9s",
+                  "original_text": "[modifier | modifier le code]\nLe site de Beauvais de l'IUT de l’Oise a une architecture en forme de bateau. C'est l’un des deux sites de l’IUT de l’Oise, l’autre étant le site de Creil. L'IUT de l’Oise est actuellement[Quand ?] dirigé par Ahmed Benkhaled.\nL'établissement de Creil est situé dans le cadre du Parc Rouher, site pittoresque inscrit à l'Inventaire des sites classés et inscrits de l’Oise[11].",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Formations_et_dipl.C3.B4mes",
+                  "original_text": "[modifier | modifier le code]\nL'IUT de l'Oise propose un ensemble de formations de niveau BAC+2 et BAC+3[12], ainsi que des formations en alternance[13].",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Historique",
+                  "original_text": "La création de l’IUT de Beauvais a fait partie du « plan université 2000 »",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Historique",
+                  "original_text": "Le département gestion des entreprises et des administrations a ouvert en 1992",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Historique",
+                  "original_text": "La même année un département techniques de commercialisation est créé sur le site de Beauvais.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Historique",
+                  "original_text": "En 1994, il s’est installé dans les locaux de l’Antenne universitaire",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Historique",
+                  "original_text": "L’entrée dans les locaux dévolus à l’IUT se fait en septembre 1996",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Historique",
+                  "original_text": "Cette filière « hygiène, sécurité, environnement » est créée en 1999",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:DUT",
+                  "original_text": "[modifier | modifier le code]\nSur le site de Beauvais : DUT GEA \"Gestion des Entreprises et des Administrations\", DUT TC \"Technique de Commercialisation\"\nSur le site de Creil : DUT TC \"Technique de Commercialisation\"[14], DUT GLT \"Gestion Logistique et Transport\", DUT HSE \"Hygiène Sécurité Environnement\"",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Licences_Pro",
+                  "original_text": "[modifier | modifier le code]\nSur le site de Beauvais : LP \"Développement Commercial et Gestion des Échanges\", LP \"Contrôle de Gestion PME/PMI\", LP \"Gestion de la Comptabilité et de la Paye\", LP \"Gestion des Ressources Humaines\", LP \"Entrepreneuriat et Management PME/PMI\"\nSur le site de Creil : LP \"Management des Collectivités Territoriales\", LP \"Gestion des Systèmes Logistiques\", LP \"Sécurité des Biens et des Personnes\"",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "claim:P571:0",
+                  "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q3152756$522F0E6B-3D5E-4F94-9C3E-7507A1B3EC48\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+1991-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "The Institut universitaire de technologie de l'Oise is a higher education institute attached to the université de Picardie Jules-Verne in France. It has sites in Beauvais and Creil. The Beauvais site has a building described as boat-shaped, while the Creil establishment is located in Parc Rouher. The institute offers programmes at BAC+2 and BAC+3 level, including work-study courses.\n\nThe institute was established in 1991. Its creation formed part of the université 2000 plan, which sought to develop opportunities for young people from Picardy to study within the region. The business and administration management department opened at Beauvais in 1992, followed by a marketing department in 1994. The institute occupied university branch premises from 1994 and moved into premises assigned to it in September 1996. An environmental health and safety programme was created in 1999.\n\nThe programmes described for Beauvais include business and administration management and marketing. Those described for Creil include marketing, logistics and transport management, and environmental health and safety. Professional licence courses cover areas including commercial development, management control, accounting and payroll, human resources, logistics systems, and the safety of people and property."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "website": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P856:0",
+                  "original_text": "{\"property\": \"P856\", \"property_label\": \"official website\", \"statement_id\": \"Q3152756$CBFC0B8C-4199-4B07-BDBA-CBFCA6FFA670\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"http://www.iut-oise.u-picardie.fr\", \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "http://www.iut-oise.u-picardie.fr",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "qid": "Q3152756",
+      "record_revision": 1,
+      "related_entities": {
+        "gea_department": {
+          "kind": "faculty",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Historique",
+                    "original_text": "Le département gestion des entreprises et des administrations a ouvert en 1992 et a été le premier département sur le site de Beauvais.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "fr",
+                  "text": "département gestion des entreprises et des administrations"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        "parent_university": {
+          "kind": "institution",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "L’institut universitaire de technologie de l'Oise est un institut universitaire de technologie dépendant de l'université de Picardie Jules-Verne.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "fr",
+                  "text": "université de Picardie Jules-Verne"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "relationships": {
+        "campus": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:G.C3.A9n.C3.A9ralit.C3.A9s",
+                    "original_text": "C'est l’un des deux sites de l’IUT de l’Oise, l’autre étant le site de Creil.",
+                    "source_ref": "s2"
+                  },
+                  {
+                    "locator": "section:Historique",
+                    "original_text": "L'IUT de l'Oise (campus Beauvais et Creil)",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "target_ref": "location:beauvais"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:G.C3.A9n.C3.A9ralit.C3.A9s",
+                    "original_text": "C'est l’un des deux sites de l’IUT de l’Oise, l’autre étant le site de Creil.",
+                    "source_ref": "s2"
+                  },
+                  {
+                    "locator": "section:Historique",
+                    "original_text": "L'IUT de l'Oise (campus Beauvais et Creil)",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "target_ref": "location:creil"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ],
+        "faculty": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Historique",
+                    "original_text": "Le département gestion des entreprises et des administrations a ouvert en 1992 et a été le premier département sur le site de Beauvais.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "target_ref": "related:gea_department"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ],
+        "parent": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "L’institut universitaire de technologie de l'Oise est un institut universitaire de technologie dépendant de l'université de Picardie Jules-Verne.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "independence": "unresolved",
+                  "target_ref": "related:parent_university"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ]
+      },
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "reviewed_institution_type"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "included"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:55:49.130563+00:00",
+          "revision_id": 2415519058,
+          "source_qid": "Q3152756",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2415519058"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikipedia",
+          "language": "fr",
+          "page_id": 5545694,
+          "publisher_role": "encyclopedia",
+          "retrieved_at": "2026-11-06T22:55:56.505134+00:00",
+          "revision_id": 238027897,
+          "url": "https://fr.wikipedia.org/w/index.php?oldid=238027897"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:55:59.436557+00:00",
+          "revision_id": 2515928830,
+          "source_qid": "Q3152659",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2515928830"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:56:02.701184+00:00",
+          "revision_id": 2564285160,
+          "source_qid": "Q142",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2564285160"
+        },
+        "s5": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:56:06.577872+00:00",
+          "revision_id": 2563623109,
+          "source_qid": "Q174257",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2563623109"
+        },
+        "s6": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:56:09.653723+00:00",
+          "revision_id": 2563623836,
+          "source_qid": "Q331087",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2563623836"
+        }
+      }
+    },
+    "coverage": [
+      {
+        "group": "identity",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "status": "checked"
+      },
+      {
+        "group": "population",
+        "status": "not_found"
+      },
+      {
+        "group": "finance",
+        "status": "not_found"
+      },
+      {
+        "group": "profile",
+        "status": "checked"
+      }
+    ],
+    "delta": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-06T22:56:09.670247+00:00",
+          "status": "not_found"
+        },
+        "geography": {
+          "checked_at": "2026-11-06T22:56:09.670247+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-06T22:56:09.670247+00:00",
+          "status": "checked"
+        },
+        "identity": {
+          "checked_at": "2026-11-06T22:56:09.670247+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-06T22:56:09.670247+00:00",
+          "status": "not_found"
+        },
+        "profile": {
+          "checked_at": "2026-11-06T22:56:09.670247+00:00",
+          "status": "checked"
+        }
+      },
+      "curation": {
+        "identity_status": "in_scope"
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "claim:P571:0",
+                      "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q3152756$522F0E6B-3D5E-4F94-9C3E-7507A1B3EC48\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+1991-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}, \"reference_count\": 1}",
+                      "source_ref": "s1"
+                    },
+                    {
+                      "locator": "section:Historique",
+                      "original_text": "L'IUT de l'Oise (campus Beauvais et Creil) a vu le jour en 1991",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 1991
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Historique",
+                      "original_text": "L'IUT de l'Oise (campus Beauvais et Creil) a vu le jour en 1991",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "fr",
+                    "text": "L'IUT de l'Oise (campus Beauvais et Creil) a vu le jour en 1991."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "establishment",
+            "kind": "institution_establishment",
+            "subject_ref": "institution"
+          }
+        ]
+      },
+      "identity": {
+        "aliases": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Historique",
+                    "original_text": "L'IUT de l'Oise (campus Beauvais et Creil)",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "fr",
+                  "text": "IUT de l'Oise"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ],
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "L’institut universitaire de technologie de l'Oise est un institut universitaire de technologie dépendant de l'université de Picardie Jules-Verne.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Formations_et_dipl.C3.B4mes",
+                  "original_text": "L'IUT de l'Oise propose un ensemble de formations de niveau BAC+2 et BAC+3",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "higher_education_college",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "fr": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "Institut universitaire de technologie de l'Oise",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "Institut universitaire de technologie de l'Oise",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        "operating_status": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "L’institut universitaire de technologie de l'Oise est un institut universitaire de technologie dépendant de l'université de Picardie Jules-Verne.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Formations_et_dipl.C3.B4mes",
+                  "original_text": "L'IUT de l'Oise propose un ensemble de formations de niveau BAC+2 et BAC+3",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "operating",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "locations": [
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:G.C3.A9n.C3.A9ralit.C3.A9s",
+                    "original_text": "site de Beauvais",
+                    "source_ref": "s2"
+                  },
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"q174257$39C5ED1B-6B86-4A33-AA0A-C4211B126E50\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 142, \"id\": \"Q142\"}, \"reference_count\": 2}",
+                    "source_ref": "s5"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "city_name": "Beauvais",
+                  "city_qid": "Q174257",
+                  "country_name": "France",
+                  "country_qid": "Q142",
+                  "formatted": {
+                    "language": "fr",
+                    "text": "Beauvais"
+                  }
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "beauvais",
+          "kind": "campus",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:G.C3.A9n.C3.A9ralit.C3.A9s",
+                    "original_text": "site de Beauvais",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "fr",
+                  "text": "site de Beauvais"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:G.C3.A9n.C3.A9ralit.C3.A9s",
+                    "original_text": "site de Creil",
+                    "source_ref": "s2"
+                  },
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"q331087$EB9EA4A3-5659-4003-A281-408EFF6D9552\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 142, \"id\": \"Q142\"}, \"reference_count\": 1}",
+                    "source_ref": "s6"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "city_name": "Creil",
+                  "city_qid": "Q331087",
+                  "country_name": "France",
+                  "country_qid": "Q142",
+                  "formatted": {
+                    "language": "fr",
+                    "text": "Creil"
+                  }
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "creil",
+          "kind": "campus",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:G.C3.A9n.C3.A9ralit.C3.A9s",
+                    "original_text": "site de Creil",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "fr",
+                  "text": "site de Creil"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "Pays\nFrance",
+                    "source_ref": "s2"
+                  },
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q3152756$355C6737-41E7-48F0-87A8-FEE23A1CB01B\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 142, \"id\": \"Q142\"}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "country_name": "France",
+                  "country_qid": "Q142",
+                  "formatted": {
+                    "language": "fr",
+                    "text": "France"
+                  }
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "country_france",
+          "kind": "administrative_area",
+          "qid": "Q142"
+        }
+      ],
+      "profile": {
+        "academic_focus": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:DUT",
+                  "original_text": "[modifier | modifier le code]\nSur le site de Beauvais : DUT GEA \"Gestion des Entreprises et des Administrations\", DUT TC \"Technique de Commercialisation\"\nSur le site de Creil : DUT TC \"Technique de Commercialisation\"[14], DUT GLT \"Gestion Logistique et Transport\", DUT HSE \"Hygiène Sécurité Environnement\"",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": [
+                {
+                  "language": "fr",
+                  "text": "Gestion des Entreprises et des Administrations"
+                },
+                {
+                  "language": "fr",
+                  "text": "Technique de Commercialisation"
+                },
+                {
+                  "language": "fr",
+                  "text": "Gestion Logistique et Transport"
+                },
+                {
+                  "language": "fr",
+                  "text": "Hygiène Sécurité Environnement"
+                }
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "degree_levels": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Formations_et_dipl.C3.B4mes",
+                  "original_text": "L'IUT de l'Oise propose un ensemble de formations de niveau BAC+2 et BAC+3",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": [
+                "BAC+2",
+                "BAC+3"
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "logo_url": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P154:0",
+                  "original_text": "{\"property\": \"P154\", \"property_label\": \"logo image\", \"statement_id\": \"Q3152756$028E6CAB-2D91-4846-A3A7-64834F5B54D9\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"Iut-oise.jpg\", \"qualifiers\": {\"P2096\": [{\"snaktype\": \"value\", \"value\": {\"text\": \"Logo de l'IUT de l'Oise.\", \"language\": \"fr\"}}]}}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "https://commons.wikimedia.org/wiki/Special:FilePath/Iut-oise.jpg",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "main_image_url": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P18:0",
+                  "original_text": "{\"property\": \"P18\", \"property_label\": \"image\", \"statement_id\": \"Q3152756$657157E8-E60A-4877-9BD1-3BDA17C6F021\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"Iut.jpg\"}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "https://commons.wikimedia.org/wiki/Special:FilePath/Iut.jpg",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "summary": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "L’institut universitaire de technologie de l'Oise est un institut universitaire de technologie dépendant de l'université de Picardie Jules-Verne.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:G.C3.A9n.C3.A9ralit.C3.A9s",
+                  "original_text": "[modifier | modifier le code]\nLe site de Beauvais de l'IUT de l’Oise a une architecture en forme de bateau. C'est l’un des deux sites de l’IUT de l’Oise, l’autre étant le site de Creil. L'IUT de l’Oise est actuellement[Quand ?] dirigé par Ahmed Benkhaled.\nL'établissement de Creil est situé dans le cadre du Parc Rouher, site pittoresque inscrit à l'Inventaire des sites classés et inscrits de l’Oise[11].",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Formations_et_dipl.C3.B4mes",
+                  "original_text": "[modifier | modifier le code]\nL'IUT de l'Oise propose un ensemble de formations de niveau BAC+2 et BAC+3[12], ainsi que des formations en alternance[13].",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Historique",
+                  "original_text": "La création de l’IUT de Beauvais a fait partie du « plan université 2000 »",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Historique",
+                  "original_text": "Le département gestion des entreprises et des administrations a ouvert en 1992",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Historique",
+                  "original_text": "La même année un département techniques de commercialisation est créé sur le site de Beauvais.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Historique",
+                  "original_text": "En 1994, il s’est installé dans les locaux de l’Antenne universitaire",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Historique",
+                  "original_text": "L’entrée dans les locaux dévolus à l’IUT se fait en septembre 1996",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Historique",
+                  "original_text": "Cette filière « hygiène, sécurité, environnement » est créée en 1999",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:DUT",
+                  "original_text": "[modifier | modifier le code]\nSur le site de Beauvais : DUT GEA \"Gestion des Entreprises et des Administrations\", DUT TC \"Technique de Commercialisation\"\nSur le site de Creil : DUT TC \"Technique de Commercialisation\"[14], DUT GLT \"Gestion Logistique et Transport\", DUT HSE \"Hygiène Sécurité Environnement\"",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Licences_Pro",
+                  "original_text": "[modifier | modifier le code]\nSur le site de Beauvais : LP \"Développement Commercial et Gestion des Échanges\", LP \"Contrôle de Gestion PME/PMI\", LP \"Gestion de la Comptabilité et de la Paye\", LP \"Gestion des Ressources Humaines\", LP \"Entrepreneuriat et Management PME/PMI\"\nSur le site de Creil : LP \"Management des Collectivités Territoriales\", LP \"Gestion des Systèmes Logistiques\", LP \"Sécurité des Biens et des Personnes\"",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "claim:P571:0",
+                  "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q3152756$522F0E6B-3D5E-4F94-9C3E-7507A1B3EC48\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+1991-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "The Institut universitaire de technologie de l'Oise is a higher education institute attached to the université de Picardie Jules-Verne in France. It has sites in Beauvais and Creil. The Beauvais site has a building described as boat-shaped, while the Creil establishment is located in Parc Rouher. The institute offers programmes at BAC+2 and BAC+3 level, including work-study courses.\n\nThe institute was established in 1991. Its creation formed part of the université 2000 plan, which sought to develop opportunities for young people from Picardy to study within the region. The business and administration management department opened at Beauvais in 1992, followed by a marketing department in 1994. The institute occupied university branch premises from 1994 and moved into premises assigned to it in September 1996. An environmental health and safety programme was created in 1999.\n\nThe programmes described for Beauvais include business and administration management and marketing. Those described for Creil include marketing, logistics and transport management, and environmental health and safety. Professional licence courses cover areas including commercial development, management control, accounting and payroll, human resources, logistics systems, and the safety of people and property."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "website": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P856:0",
+                  "original_text": "{\"property\": \"P856\", \"property_label\": \"official website\", \"statement_id\": \"Q3152756$CBFC0B8C-4199-4B07-BDBA-CBFCA6FFA670\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"http://www.iut-oise.u-picardie.fr\", \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "http://www.iut-oise.u-picardie.fr",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "qid": "Q3152756",
+      "record_revision": 1,
+      "related_entities": {
+        "gea_department": {
+          "kind": "faculty",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Historique",
+                    "original_text": "Le département gestion des entreprises et des administrations a ouvert en 1992 et a été le premier département sur le site de Beauvais.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "fr",
+                  "text": "département gestion des entreprises et des administrations"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        "parent_university": {
+          "kind": "institution",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "L’institut universitaire de technologie de l'Oise est un institut universitaire de technologie dépendant de l'université de Picardie Jules-Verne.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "fr",
+                  "text": "université de Picardie Jules-Verne"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "relationships": {
+        "campus": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:G.C3.A9n.C3.A9ralit.C3.A9s",
+                    "original_text": "C'est l’un des deux sites de l’IUT de l’Oise, l’autre étant le site de Creil.",
+                    "source_ref": "s2"
+                  },
+                  {
+                    "locator": "section:Historique",
+                    "original_text": "L'IUT de l'Oise (campus Beauvais et Creil)",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "target_ref": "location:beauvais"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:G.C3.A9n.C3.A9ralit.C3.A9s",
+                    "original_text": "C'est l’un des deux sites de l’IUT de l’Oise, l’autre étant le site de Creil.",
+                    "source_ref": "s2"
+                  },
+                  {
+                    "locator": "section:Historique",
+                    "original_text": "L'IUT de l'Oise (campus Beauvais et Creil)",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "target_ref": "location:creil"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ],
+        "faculty": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Historique",
+                    "original_text": "Le département gestion des entreprises et des administrations a ouvert en 1992 et a été le premier département sur le site de Beauvais.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "target_ref": "related:gea_department"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ],
+        "parent": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "L’institut universitaire de technologie de l'Oise est un institut universitaire de technologie dépendant de l'université de Picardie Jules-Verne.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "independence": "unresolved",
+                  "target_ref": "related:parent_university"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ]
+      },
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "reviewed_institution_type"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "included"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:55:49.130563+00:00",
+          "revision_id": 2415519058,
+          "source_qid": "Q3152756",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2415519058"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikipedia",
+          "language": "fr",
+          "page_id": 5545694,
+          "publisher_role": "encyclopedia",
+          "retrieved_at": "2026-11-06T22:55:56.505134+00:00",
+          "revision_id": 238027897,
+          "url": "https://fr.wikipedia.org/w/index.php?oldid=238027897"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:55:59.436557+00:00",
+          "revision_id": 2515928830,
+          "source_qid": "Q3152659",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2515928830"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:56:02.701184+00:00",
+          "revision_id": 2564285160,
+          "source_qid": "Q142",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2564285160"
+        },
+        "s5": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:56:06.577872+00:00",
+          "revision_id": 2563623109,
+          "source_qid": "Q174257",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2563623109"
+        },
+        "s6": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:56:09.653723+00:00",
+          "revision_id": 2563623836,
+          "source_qid": "Q331087",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2563623836"
+        }
+      }
+    },
+    "open_requests": [],
+    "proposed_at": "2026-11-06T22:59:47.902612+00:00",
+    "qid": "Q3152756",
+    "research": {
+      "model": "not_reported",
+      "prompt_sha256": "1fb7a07fed48bb8441c7799ac9b4756f62b4891260c4e9d3b3029074adfcf7c6",
+      "reasoning_effort": "not_reported",
+      "schema_sha256": "92e942f4fbf2ae28964462ea9ffa8312c5ee16a077a1e08b40aaaf741512422e",
+      "session": "/root/research_q3152756"
+    },
+    "retrieval_failures": [],
+    "review_status": "unreviewed",
+    "seed": {
+      "channels": [
+        "reviewed_institution_type"
+      ],
+      "import_id": "seed-84c3beb45367905f",
+      "screening_status": "included"
+    },
+    "transport": {
+      "base_commit": "247ce6168deed8e9b439a944b763387537a0de1e",
+      "protocol": "native-subagent-v1",
+      "repository": "ider-zh/university-seed-curation",
+      "review_policy": {
+        "id": "source-grounded-flexible-v2",
+        "sha256": "b8ed7d2897e4c31dbd81b1379aafdc1077a21d1a33949edbd2d896b0adf99db2"
+      },
+      "schema_sha256": "bfa496eafa9dffca56146214168db7f000b09161b8993129632e7202e1c88833",
+      "seed_catalog_sha256": "84c3beb45367905f513d650684283dd62a9c1b77962bdc34151a6ef05bfa03d4"
+    },
+    "type": "university-proposal-v1"
+  },
+  "review": {
+    "contexts_checked": 7,
+    "coverage_checks": [
+      {
+        "group": "identity",
+        "reason": "Identity and educational level supported by frozen article.",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "reason": "Two sites and country supported; no root coordinate projected.",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "reason": "Institution establishment supported separately from supplementary milestones.",
+        "status": "checked"
+      },
+      {
+        "group": "population",
+        "reason": "No institution-wide count found in supplied survey; departmental cohort was not generalized; external gap remains disclosed.",
+        "status": "not_found"
+      },
+      {
+        "group": "finance",
+        "reason": "No finance observation in frozen survey; no exhaustive external search claimed.",
+        "status": "not_found"
+      },
+      {
+        "group": "profile",
+        "reason": "Sourced supplementary profile retained without independent factual checks.",
+        "status": "checked"
+      }
+    ],
+    "decision": "approve",
+    "facts_checked": 9,
+    "full_refresh": true,
+    "inferences": [
+      {
+        "id": "$.identity.kind:c1",
+        "reason": "University-dependent IUT providing BAC+2/BAC+3 programmes reasonably maps to higher_education_college."
+      },
+      {
+        "id": "$.identity.operating_status:c1",
+        "reason": "Present-tense programme offering supports operating status as an explicit source-based inference."
+      },
+      {
+        "id": "identity",
+        "reason": "BAC+2/BAC+3 IUT programmes establish tertiary eligibility while parent relationship is preserved."
+      }
+    ],
+    "model": "not_reported",
+    "proposal_sha256": "6c32bdf794e9025cf75f841a9f571d37adcd5f2c023f76c33c45d104eed036fe",
+    "qid": "Q3152756",
+    "reasoning_effort": "not_reported",
+    "record_sha256": "2c24629c6139a1532e99752830aff2da973b28c067c1140d06602a554c25b17b",
+    "request_responses": [],
+    "requests": [],
+    "review_scope": {
+      "not_independently_reviewed_ids": [
+        "$.history.milestones[0].description:c1",
+        "$.locations[0].address:c1",
+        "$.locations[0].name:c1",
+        "$.locations[1].address:c1",
+        "$.locations[1].name:c1",
+        "$.locations[2].address:c1",
+        "$.profile.academic_focus:c1",
+        "$.profile.degree_levels:c1",
+        "$.profile.logo_url:c1",
+        "$.profile.main_image_url:c1",
+        "$.profile.summary:c1",
+        "$.profile.website:c1",
+        "$.related_entities.gea_department.name:c1",
+        "$.related_entities.parent_university.name:c1",
+        "location:beauvais",
+        "location:country_france",
+        "location:creil"
+      ],
+      "reviewed_ids": [
+        "$.history.milestones[0].date:c1",
+        "$.identity.aliases[0]:c1",
+        "$.identity.kind:c1",
+        "$.identity.names.fr:c1",
+        "$.identity.operating_status:c1",
+        "$.relationships.campus[0]:c1",
+        "$.relationships.campus[1]:c1",
+        "$.relationships.faculty[0]:c1",
+        "$.relationships.parent[0]:c1",
+        "country:$.locations[0].address:c1",
+        "country:$.locations[1].address:c1",
+        "country:$.locations[2].address:c1",
+        "identity",
+        "milestone:establishment",
+        "related:gea_department",
+        "related:parent_university"
+      ],
+      "version": "core-review-v3"
+    },
+    "review_session": "/root/review2_q3152756",
+    "reviewed_at": "2026-11-06T23:04:15.179228+00:00",
+    "source_revisions_checked": 6,
+    "waived_requests": []
+  },
+  "review_result_sha256": "905c73864bdc19f664fd6fe47967dee74ab281f8c3833d1f6e8a3bca172e186d",
+  "type": "university-unified-receipt-v1"
+}
