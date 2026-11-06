@@ -1,0 +1,1492 @@
+{
+  "attribution": "distinct_native_research_and_review_subagents;not_cryptographic_identity",
+  "research": {
+    "baseline_sha256": "absent",
+    "candidate": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-06T14:18:32.765399+00:00",
+          "status": "not_found"
+        },
+        "geography": {
+          "checked_at": "2026-11-06T14:18:32.765399+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-06T14:18:32.765399+00:00",
+          "status": "checked"
+        },
+        "identity": {
+          "checked_at": "2026-11-06T14:18:32.765399+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-06T14:18:32.765399+00:00",
+          "status": "checked"
+        },
+        "profile": {
+          "checked_at": "2026-11-06T14:18:32.765399+00:00",
+          "status": "checked"
+        }
+      },
+      "curation": {
+        "identity_status": "related"
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:History",
+                      "original_text": "Founded in 1967, with a five-member faculty and an initial class of thirteen students, Fairhaven was housed in the former Latter Day Saints House.",
+                      "source_ref": "s2"
+                    },
+                    {
+                      "locator": "claim:P571:0",
+                      "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q5430465$2E350EE7-0BF4-4087-A944-47191EFF5CB4\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+1967-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}, \"reference_count\": 1}",
+                      "source_ref": "s1"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 1967
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:History",
+                      "original_text": "Founded in 1967, with a five-member faculty and an initial class of thirteen students, Fairhaven was housed in the former Latter Day Saints House.",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "Fairhaven was founded in 1967."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "founding",
+            "kind": "institution_establishment",
+            "subject_ref": "institution"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:History",
+                      "original_text": "The 1968 academic year saw Fairhaven's first full-size class of 200 students arrive. That class lived and held its Fairhaven seminars in Edens Hall, which also held its faculty and administration offices. In the 1969 academic year, Fairhaven moved to its new campus.",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "original_date": "1969 academic year",
+                    "precision": "uncertain"
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:History",
+                      "original_text": "The 1968 academic year saw Fairhaven's first full-size class of 200 students arrive. That class lived and held its Fairhaven seminars in Edens Hall, which also held its faculty and administration offices. In the 1969 academic year, Fairhaven moved to its new campus.",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "Fairhaven moved to its new campus in the 1969 academic year."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "move",
+            "kind": "relocation",
+            "subject_ref": "institution"
+          }
+        ]
+      },
+      "identity": {
+        "aliases": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q5430465\", \"labels\": {\"en\": \"Fairhaven College\"}, \"descriptions\": {\"en\": \"liberal arts college at Western Washington University, United States\"}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Fairhaven College"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ],
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "Fairhaven College of Interdisciplinary Studies is an interdisciplinary liberal arts college at Western Washington University.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "higher_education_college",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "Fairhaven College of Interdisciplinary Studies is an interdisciplinary liberal arts college at Western Washington University.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": "Fairhaven College of Interdisciplinary Studies",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        "ownership": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:0",
+                  "original_text": "Type: Public Baccalaureate",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "public",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "locations": [
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "infobox:4",
+                    "original_text": "Location: Bellingham, Washington, USA",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "city_name": "Bellingham",
+                  "city_qid": "Q430267",
+                  "country_name": "United States",
+                  "country_qid": "Q30",
+                  "formatted": {
+                    "language": "en",
+                    "text": "Bellingham, Washington, USA"
+                  },
+                  "region_name": "Washington"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "bellingham",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "infobox:4",
+                    "original_text": "Location: Bellingham, Washington, USA",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Bellingham"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q430267"
+        },
+        {
+          "coordinates": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "statement:q5430465$133A7560-D05B-4EEB-8EF7-74863650509A",
+                    "original_text": "\"latitude\": 48.730277777778",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "source_rank": "normal",
+                "value": {
+                  "crs": "EPSG:4326",
+                  "globe_qid": "Q2",
+                  "latitude": 48.730277777778,
+                  "longitude": -122.48583333333
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "wikidata-item-location",
+          "kind": "institution",
+          "qid": "Q5430465"
+        }
+      ],
+      "modified_datetime": "2026-11-06T14:20:39.610569+00:00",
+      "population": {
+        "academic_staff": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:History",
+                  "original_text": "Founded in 1967, with a five-member faculty and an initial class of thirteen students, Fairhaven was housed in the former Latter Day Saints House.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "kind": "calendar_year",
+                "year": 1967
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 5,
+                "basis": "headcount",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:3",
+                  "original_text": "Faculty: 29",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c2",
+              "period_status": "not_stated",
+              "value": {
+                "amount": 29,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family",
+              "different_basis_available"
+            ],
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        },
+        "students_intake": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:History",
+                  "original_text": "The 1968 academic year saw Fairhaven's first full-size class of 200 students arrive. That class lived and held its Fairhaven seminars in Edens Hall, which also held its faculty and administration offices. In the 1969 academic year, Fairhaven moved to its new campus.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "kind": "academic_year",
+                "year": 1968
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 200,
+                "basis": "headcount",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:History",
+                  "original_text": "Founded in 1967, with a five-member faculty and an initial class of thirteen students, Fairhaven was housed in the former Latter Day Saints House.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c2",
+              "period": {
+                "kind": "calendar_year",
+                "year": 1967
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 13,
+                "basis": "headcount",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        }
+      },
+      "profile": {
+        "academic_focus": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "Fairhaven College of Interdisciplinary Studies is an interdisciplinary liberal arts college at Western Washington University.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": [
+                {
+                  "language": "en",
+                  "text": "Interdisciplinary liberal arts"
+                }
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "summary": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "Fairhaven College of Interdisciplinary Studies is an interdisciplinary liberal arts college at Western Washington University.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "infobox:0",
+                  "original_text": "Type: Public Baccalaureate",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "infobox:4",
+                  "original_text": "Location: Bellingham, Washington, USA",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:History",
+                  "original_text": "Founded in 1967, with a five-member faculty and an initial class of thirteen students, Fairhaven was housed in the former Latter Day Saints House.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:History",
+                  "original_text": "Fairhaven students lived in the Western dorms and took classes both at Western and at Fairhaven, while helping plan Fairhaven's future.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:History",
+                  "original_text": "The 1968 academic year saw Fairhaven's first full-size class of 200 students arrive. That class lived and held its Fairhaven seminars in Edens Hall, which also held its faculty and administration offices. In the 1969 academic year, Fairhaven moved to its new campus.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:lead",
+                  "original_text": "Instead of completing the general education requirements at Western, students take interdisciplinary classes at Fairhaven, which aim to cover the same breadth and depth of subjects, but within small, interdisciplinary seminars.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:lead",
+                  "original_text": "When it comes time to move onto \"concentrated studies,\" students have the option of pursuing any of the majors or minors offered by Western Washington University, but may also choose to shape their own interdisciplinary concentration or major, combining independent study, internships, and Western Washington University courses with Fairhaven courses to define their course of study.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:lead",
+                  "original_text": "Fairhaven students do not receive letter grades; instead, they are given narrative evaluations, in addition to writing their own self-evaluations, for each class.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "Fairhaven College of Interdisciplinary Studies is a public interdisciplinary liberal arts college at Western Washington University in Bellingham, Washington, United States. Founded in 1967, it began with five faculty members and an initial class of 13 students in the former Latter Day Saints House. Students lived in Western dormitories and attended classes at both institutions while helping plan Fairhaven’s future. Its first full-size class of 200 arrived in the 1968 academic year, and the college moved to its new campus in the 1969 academic year.\n\nFairhaven offers interdisciplinary classes as an alternative to Western’s general education requirements, using small seminars. For concentrated study, students may pursue Western majors or minors or design an interdisciplinary concentration or major. The latter can combine independent study, internships, and courses at both Western and Fairhaven. Students receive narrative evaluations and write self-evaluations for each class rather than receiving letter grades."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "website": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P856:0",
+                  "original_text": "{\"property\": \"P856\", \"property_label\": \"official website\", \"statement_id\": \"Q5430465$D5A5CF40-2757-4A0D-BF38-7CF685C01C97\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"http://www.wwu.edu/depts/fairhaven/\", \"qualifiers\": {\"P407\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 1860, \"id\": \"Q1860\"}}]}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "http://www.wwu.edu/depts/fairhaven/",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "qid": "Q5430465",
+      "record_revision": 1,
+      "related_entities": {
+        "western": {
+          "kind": "institution",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "Fairhaven College of Interdisciplinary Studies is an interdisciplinary liberal arts college at Western Washington University.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Western Washington University"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q284777"
+        }
+      },
+      "relationships": {
+        "parent": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P749:0",
+                    "original_text": "{\"property\": \"P749\", \"property_label\": \"parent organization or unit\", \"statement_id\": \"Q5430465$2780ac18-45c6-35a9-258b-1301060a8dca\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 284777, \"id\": \"Q284777\"}}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "section:lead",
+                    "original_text": "Fairhaven College of Interdisciplinary Studies is an interdisciplinary liberal arts college at Western Washington University.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "target_ref": "related:western"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ]
+      },
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "reviewed_institution_type"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "included"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T14:08:59.832821+00:00",
+          "revision_id": 2541622638,
+          "source_qid": "Q5430465",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2541622638"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikipedia",
+          "language": "en",
+          "page_id": 383475,
+          "publisher_role": "encyclopedia",
+          "retrieved_at": "2026-11-06T14:09:08.353257+00:00",
+          "revision_id": 1368324222,
+          "url": "https://en.wikipedia.org/w/index.php?oldid=1368324222"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T14:09:12.120772+00:00",
+          "revision_id": 2542459094,
+          "source_qid": "Q1377182",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2542459094"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T14:09:16.878155+00:00",
+          "revision_id": 2565041516,
+          "source_qid": "Q30",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2565041516"
+        },
+        "s5": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T14:09:21.534140+00:00",
+          "revision_id": 2564892839,
+          "source_qid": "Q430267",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2564892839"
+        },
+        "s6": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T14:09:25.714037+00:00",
+          "revision_id": 2547433881,
+          "source_qid": "Q284777",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2547433881"
+        }
+      }
+    },
+    "coverage": [
+      {
+        "group": "identity",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "status": "checked"
+      },
+      {
+        "group": "population",
+        "status": "checked"
+      },
+      {
+        "group": "finance",
+        "status": "not_found"
+      },
+      {
+        "group": "profile",
+        "status": "checked"
+      }
+    ],
+    "delta": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-06T14:18:32.765399+00:00",
+          "status": "not_found"
+        },
+        "geography": {
+          "checked_at": "2026-11-06T14:18:32.765399+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-06T14:18:32.765399+00:00",
+          "status": "checked"
+        },
+        "identity": {
+          "checked_at": "2026-11-06T14:18:32.765399+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-06T14:18:32.765399+00:00",
+          "status": "checked"
+        },
+        "profile": {
+          "checked_at": "2026-11-06T14:18:32.765399+00:00",
+          "status": "checked"
+        }
+      },
+      "curation": {
+        "identity_status": "related"
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:History",
+                      "original_text": "Founded in 1967, with a five-member faculty and an initial class of thirteen students, Fairhaven was housed in the former Latter Day Saints House.",
+                      "source_ref": "s2"
+                    },
+                    {
+                      "locator": "claim:P571:0",
+                      "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q5430465$2E350EE7-0BF4-4087-A944-47191EFF5CB4\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+1967-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}, \"reference_count\": 1}",
+                      "source_ref": "s1"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 1967
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:History",
+                      "original_text": "Founded in 1967, with a five-member faculty and an initial class of thirteen students, Fairhaven was housed in the former Latter Day Saints House.",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "Fairhaven was founded in 1967."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "founding",
+            "kind": "institution_establishment",
+            "subject_ref": "institution"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:History",
+                      "original_text": "The 1968 academic year saw Fairhaven's first full-size class of 200 students arrive. That class lived and held its Fairhaven seminars in Edens Hall, which also held its faculty and administration offices. In the 1969 academic year, Fairhaven moved to its new campus.",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "original_date": "1969 academic year",
+                    "precision": "uncertain"
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:History",
+                      "original_text": "The 1968 academic year saw Fairhaven's first full-size class of 200 students arrive. That class lived and held its Fairhaven seminars in Edens Hall, which also held its faculty and administration offices. In the 1969 academic year, Fairhaven moved to its new campus.",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "Fairhaven moved to its new campus in the 1969 academic year."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "move",
+            "kind": "relocation",
+            "subject_ref": "institution"
+          }
+        ]
+      },
+      "identity": {
+        "aliases": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q5430465\", \"labels\": {\"en\": \"Fairhaven College\"}, \"descriptions\": {\"en\": \"liberal arts college at Western Washington University, United States\"}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Fairhaven College"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ],
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "Fairhaven College of Interdisciplinary Studies is an interdisciplinary liberal arts college at Western Washington University.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "higher_education_college",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "Fairhaven College of Interdisciplinary Studies is an interdisciplinary liberal arts college at Western Washington University.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": "Fairhaven College of Interdisciplinary Studies",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        "ownership": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:0",
+                  "original_text": "Type: Public Baccalaureate",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "public",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "locations": [
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "infobox:4",
+                    "original_text": "Location: Bellingham, Washington, USA",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "city_name": "Bellingham",
+                  "city_qid": "Q430267",
+                  "country_name": "United States",
+                  "country_qid": "Q30",
+                  "formatted": {
+                    "language": "en",
+                    "text": "Bellingham, Washington, USA"
+                  },
+                  "region_name": "Washington"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "bellingham",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "infobox:4",
+                    "original_text": "Location: Bellingham, Washington, USA",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Bellingham"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q430267"
+        },
+        {
+          "coordinates": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "statement:q5430465$133A7560-D05B-4EEB-8EF7-74863650509A",
+                    "original_text": "\"latitude\": 48.730277777778",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "source_rank": "normal",
+                "value": {
+                  "crs": "EPSG:4326",
+                  "globe_qid": "Q2",
+                  "latitude": 48.730277777778,
+                  "longitude": -122.48583333333
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "wikidata-item-location",
+          "kind": "institution",
+          "qid": "Q5430465"
+        }
+      ],
+      "population": {
+        "academic_staff": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:History",
+                  "original_text": "Founded in 1967, with a five-member faculty and an initial class of thirteen students, Fairhaven was housed in the former Latter Day Saints House.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "kind": "calendar_year",
+                "year": 1967
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 5,
+                "basis": "headcount",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:3",
+                  "original_text": "Faculty: 29",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c2",
+              "period_status": "not_stated",
+              "value": {
+                "amount": 29,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family",
+              "different_basis_available"
+            ],
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        },
+        "students_intake": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:History",
+                  "original_text": "The 1968 academic year saw Fairhaven's first full-size class of 200 students arrive. That class lived and held its Fairhaven seminars in Edens Hall, which also held its faculty and administration offices. In the 1969 academic year, Fairhaven moved to its new campus.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "kind": "academic_year",
+                "year": 1968
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 200,
+                "basis": "headcount",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:History",
+                  "original_text": "Founded in 1967, with a five-member faculty and an initial class of thirteen students, Fairhaven was housed in the former Latter Day Saints House.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c2",
+              "period": {
+                "kind": "calendar_year",
+                "year": 1967
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 13,
+                "basis": "headcount",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        }
+      },
+      "profile": {
+        "academic_focus": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "Fairhaven College of Interdisciplinary Studies is an interdisciplinary liberal arts college at Western Washington University.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": [
+                {
+                  "language": "en",
+                  "text": "Interdisciplinary liberal arts"
+                }
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "summary": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "Fairhaven College of Interdisciplinary Studies is an interdisciplinary liberal arts college at Western Washington University.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "infobox:0",
+                  "original_text": "Type: Public Baccalaureate",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "infobox:4",
+                  "original_text": "Location: Bellingham, Washington, USA",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:History",
+                  "original_text": "Founded in 1967, with a five-member faculty and an initial class of thirteen students, Fairhaven was housed in the former Latter Day Saints House.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:History",
+                  "original_text": "Fairhaven students lived in the Western dorms and took classes both at Western and at Fairhaven, while helping plan Fairhaven's future.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:History",
+                  "original_text": "The 1968 academic year saw Fairhaven's first full-size class of 200 students arrive. That class lived and held its Fairhaven seminars in Edens Hall, which also held its faculty and administration offices. In the 1969 academic year, Fairhaven moved to its new campus.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:lead",
+                  "original_text": "Instead of completing the general education requirements at Western, students take interdisciplinary classes at Fairhaven, which aim to cover the same breadth and depth of subjects, but within small, interdisciplinary seminars.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:lead",
+                  "original_text": "When it comes time to move onto \"concentrated studies,\" students have the option of pursuing any of the majors or minors offered by Western Washington University, but may also choose to shape their own interdisciplinary concentration or major, combining independent study, internships, and Western Washington University courses with Fairhaven courses to define their course of study.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:lead",
+                  "original_text": "Fairhaven students do not receive letter grades; instead, they are given narrative evaluations, in addition to writing their own self-evaluations, for each class.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "Fairhaven College of Interdisciplinary Studies is a public interdisciplinary liberal arts college at Western Washington University in Bellingham, Washington, United States. Founded in 1967, it began with five faculty members and an initial class of 13 students in the former Latter Day Saints House. Students lived in Western dormitories and attended classes at both institutions while helping plan Fairhaven’s future. Its first full-size class of 200 arrived in the 1968 academic year, and the college moved to its new campus in the 1969 academic year.\n\nFairhaven offers interdisciplinary classes as an alternative to Western’s general education requirements, using small seminars. For concentrated study, students may pursue Western majors or minors or design an interdisciplinary concentration or major. The latter can combine independent study, internships, and courses at both Western and Fairhaven. Students receive narrative evaluations and write self-evaluations for each class rather than receiving letter grades."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "website": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P856:0",
+                  "original_text": "{\"property\": \"P856\", \"property_label\": \"official website\", \"statement_id\": \"Q5430465$D5A5CF40-2757-4A0D-BF38-7CF685C01C97\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"http://www.wwu.edu/depts/fairhaven/\", \"qualifiers\": {\"P407\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 1860, \"id\": \"Q1860\"}}]}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "http://www.wwu.edu/depts/fairhaven/",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "qid": "Q5430465",
+      "record_revision": 1,
+      "related_entities": {
+        "western": {
+          "kind": "institution",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "Fairhaven College of Interdisciplinary Studies is an interdisciplinary liberal arts college at Western Washington University.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Western Washington University"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q284777"
+        }
+      },
+      "relationships": {
+        "parent": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P749:0",
+                    "original_text": "{\"property\": \"P749\", \"property_label\": \"parent organization or unit\", \"statement_id\": \"Q5430465$2780ac18-45c6-35a9-258b-1301060a8dca\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 284777, \"id\": \"Q284777\"}}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "section:lead",
+                    "original_text": "Fairhaven College of Interdisciplinary Studies is an interdisciplinary liberal arts college at Western Washington University.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "target_ref": "related:western"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ]
+      },
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "reviewed_institution_type"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "included"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T14:08:59.832821+00:00",
+          "revision_id": 2541622638,
+          "source_qid": "Q5430465",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2541622638"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikipedia",
+          "language": "en",
+          "page_id": 383475,
+          "publisher_role": "encyclopedia",
+          "retrieved_at": "2026-11-06T14:09:08.353257+00:00",
+          "revision_id": 1368324222,
+          "url": "https://en.wikipedia.org/w/index.php?oldid=1368324222"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T14:09:12.120772+00:00",
+          "revision_id": 2542459094,
+          "source_qid": "Q1377182",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2542459094"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T14:09:16.878155+00:00",
+          "revision_id": 2565041516,
+          "source_qid": "Q30",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2565041516"
+        },
+        "s5": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T14:09:21.534140+00:00",
+          "revision_id": 2564892839,
+          "source_qid": "Q430267",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2564892839"
+        },
+        "s6": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T14:09:25.714037+00:00",
+          "revision_id": 2547433881,
+          "source_qid": "Q284777",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2547433881"
+        }
+      }
+    },
+    "open_requests": [
+      {
+        "category": "scope_conflict",
+        "field": "history.milestones.1.date",
+        "reason": "Exact location: $.history.milestones[1].date. Preserve “1969 academic year” rather than asserting calendar-year precision; if the date schema cannot encode it, omit the normalized date and retain the sourced academic-year wording in the description.",
+        "request_id": "ad2242fc-40a6-5119-8e18-b42989dc41d0",
+        "reviewed_proposal_sha256": "56c1e9ab558808f77e16401d690f2edabce70fbb9d663ef93707055f810842b0"
+      },
+      {
+        "category": "other",
+        "field": "population.students_intake.preferred",
+        "reason": "Exact location: $.population.students_intake.preferred. The preferred selection is the 1967 initial class of 13 despite the later 1968 academic-year class of 200. Reassess the selection under the stated period comparison rule or explain a source-grounded reason for preferring the earlier observation, while retaining both.",
+        "request_id": "9c8e59f9-2037-5db2-9298-fe7e9780ab3f",
+        "reviewed_proposal_sha256": "56c1e9ab558808f77e16401d690f2edabce70fbb9d663ef93707055f810842b0"
+      }
+    ],
+    "proposed_at": "2026-11-06T14:20:39.610569+00:00",
+    "qid": "Q5430465",
+    "research": {
+      "model": "not_reported",
+      "prompt_sha256": "a7d976ca5a22caedd9f7d1863acead072458542eb4cc99074c31c71f628c227e",
+      "reasoning_effort": "not_reported",
+      "schema_sha256": "92e942f4fbf2ae28964462ea9ffa8312c5ee16a077a1e08b40aaaf741512422e",
+      "session": "/root/research_q5430465_revision1"
+    },
+    "retrieval_failures": [],
+    "review_status": "unreviewed",
+    "seed": {
+      "channels": [
+        "reviewed_institution_type"
+      ],
+      "import_id": "seed-84c3beb45367905f",
+      "screening_status": "included"
+    },
+    "transport": {
+      "base_commit": "46936264626ef69d5ba11319a19d3189ce3d388e",
+      "protocol": "native-subagent-v1",
+      "repository": "ider-zh/university-seed-curation",
+      "review_policy": {
+        "id": "source-grounded-flexible-v2",
+        "sha256": "b8ed7d2897e4c31dbd81b1379aafdc1077a21d1a33949edbd2d896b0adf99db2"
+      },
+      "schema_sha256": "bfa496eafa9dffca56146214168db7f000b09161b8993129632e7202e1c88833",
+      "seed_catalog_sha256": "84c3beb45367905f513d650684283dd62a9c1b77962bdc34151a6ef05bfa03d4"
+    },
+    "type": "university-proposal-v1"
+  },
+  "review": {
+    "contexts_checked": 6,
+    "coverage_checks": [
+      {
+        "group": "identity",
+        "reason": "Names, institutional kind, public type and parent relation are supported in the supplied sources.",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "reason": "City and country identification and the root item coordinate were checked; source coordinate precision is null and is not a campus assertion.",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "reason": "Founding and academic-year relocation are represented with source-compatible precision.",
+        "status": "checked"
+      },
+      {
+        "group": "population",
+        "reason": "Both staff and intake observations are preserved; sources distinguish initial from first full-size intake and retain unspecified period/basis where applicable. Downstream ranking needs explicit scope parsing.",
+        "status": "checked"
+      },
+      {
+        "group": "finance",
+        "reason": "No institution-specific finance observation was found in the supplied frozen sources; this does not assert none exists elsewhere.",
+        "status": "not_found"
+      },
+      {
+        "group": "profile",
+        "reason": "Focus, sourced summary and source-listed website were checked against the cited revisions.",
+        "status": "checked"
+      }
+    ],
+    "decision": "approve",
+    "facts_checked": 20,
+    "full_refresh": true,
+    "inferences": [
+      {
+        "id": "$.identity.kind:c1",
+        "reason": "s2 lead identifies an interdisciplinary liberal arts college at Western; higher education college is an appropriate broader controlled type."
+      },
+      {
+        "id": "$.population.students_intake:c1",
+        "reason": "s2 History states the first full-size class of 200 students arrived in the 1968 academic year; representing that class as a headcount intake is reasonable. Its first-full-size-class scope remains in cited wording and downstream ranking needs explicit scope parsing."
+      },
+      {
+        "id": "$.population.students_intake:c2",
+        "reason": "s2 History states an initial class of 13 at founding in 1967; intake headcount is a reasonable mapping. Initial-class scope remains in cited wording and downstream ranking needs explicit scope parsing."
+      },
+      {
+        "id": "$.profile.summary:c1",
+        "reason": "The cited s2 lead, infobox and History support the summary, including its distinct initial and first full-size classes and 1969 academic-year move; public is taken from the infobox type. Treating classes at Western and Fairhaven as classes at both institutions is a reasonable paraphrase, not a claim of independent legal status."
+      }
+    ],
+    "model": "not_reported",
+    "proposal_sha256": "ea2ff853ca69a663dd6e9e90d4b4ea89ae376891121d569e2ad7cb903dee58ac",
+    "qid": "Q5430465",
+    "reasoning_effort": "not_reported",
+    "record_sha256": "ef9ee92492653638ca5043ca58e35940aa5ec50e0bb92a144358f4251f5c33fc",
+    "request_responses": [
+      {
+        "reason": "The proposed date now uses original_date 1969 academic year and uncertain precision, without a calendar-year value; its description preserves the same academic-year wording.",
+        "request_id": "ad2242fc-40a6-5119-8e18-b42989dc41d0",
+        "status": "addressed"
+      },
+      {
+        "reason": "The proposal retains both 1967 initial class of 13 and 1968 academic-year first full-size class of 200, and now prefers the later c1 under the stated comparison policy. The source qualifications differ and should be parsed downstream.",
+        "request_id": "9c8e59f9-2037-5db2-9298-fe7e9780ab3f",
+        "status": "addressed"
+      }
+    ],
+    "requests": [],
+    "review_session": "/root/review_q5430465_revision1",
+    "reviewed_at": "2026-11-06T14:22:18.402730+00:00",
+    "source_revisions_checked": 6
+  },
+  "review_result_sha256": "0b6e067cf919ba2a3aa6ce95322df223eb0065ed79456c139de322ee972981e6",
+  "type": "university-unified-receipt-v1"
+}
