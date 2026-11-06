@@ -1,0 +1,1844 @@
+{
+  "coverage": {
+    "finance": {
+      "checked_at": "2026-11-06T22:52:34.280569+00:00",
+      "status": "checked"
+    },
+    "geography": {
+      "checked_at": "2026-11-06T22:52:34.280569+00:00",
+      "status": "checked"
+    },
+    "history": {
+      "checked_at": "2026-11-06T22:52:34.280569+00:00",
+      "status": "checked"
+    },
+    "identity": {
+      "checked_at": "2026-11-06T22:52:34.280569+00:00",
+      "status": "checked"
+    },
+    "population": {
+      "checked_at": "2026-11-06T22:52:34.280569+00:00",
+      "status": "disputed"
+    },
+    "profile": {
+      "checked_at": "2026-11-06T22:52:34.280569+00:00",
+      "status": "checked"
+    }
+  },
+  "curation": {
+    "identity_status": "in_scope"
+  },
+  "finance": {
+    "budget": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:7",
+              "original_text": "Budget: EUR 393 million[1]",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "period_status": "not_stated",
+          "value": {
+            "amount": "393000000",
+            "currency": "EUR",
+            "precision": "approximate"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "period_not_stated",
+          "single_source_family",
+          "approximate_value"
+        ],
+        "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "history": {
+    "milestones": [
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P571:0",
+                  "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q734324$2C3F7269-8A14-4FB0-97F9-519BD36AE775\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+1745-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "section:lead",
+                  "original_text": "University in Germany\nTU Braunschweig (German: Technische Universität Braunschweig) is the oldest technical university in Germany. It was founded in 1745 as Collegium Carolinum.[3] It is a member of TU9, an incorporated society of the most renowned German institutes of technology. It is commonly ranked among the top engineering universities in Germany.\nTU Braunschweig's research profile is very interdisciplinary, but with a focus on aeronautics, vehicle engineering including autonomous driving and electric mobility, manufacturing, life sciences, and metrology. Research is conducted in close collaboration with external organizations such as the German Aerospace Center (DLR), Helmholtz Centre for Infection Research, several Fraunhofer Institutes, and Germany's national metrology institute (Physikalisch-Technische Bundesanstalt, PTB), among many others. As one of very few research institutions of its type in the world, the university has its own research airport.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "precision": "year",
+                "year": 1745
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "University in Germany\nTU Braunschweig (German: Technische Universität Braunschweig) is the oldest technical university in Germany. It was founded in 1745 as Collegium Carolinum.[3] It is a member of TU9, an incorporated society of the most renowned German institutes of technology. It is commonly ranked among the top engineering universities in Germany.\nTU Braunschweig's research profile is very interdisciplinary, but with a focus on aeronautics, vehicle engineering including autonomous driving and electric mobility, manufacturing, life sciences, and metrology. Research is conducted in close collaboration with external organizations such as the German Aerospace Center (DLR), Helmholtz Centre for Infection Research, several Fraunhofer Institutes, and Germany's national metrology institute (Physikalisch-Technische Bundesanstalt, PTB), among many others. As one of very few research institutions of its type in the world, the university has its own research airport.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "infobox:5",
+                  "original_text": "Founder: Charles I, Duke of Brunswick-Wolfenbüttel",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "Founded in 1745 as Collegium Carolinum by Charles I, Duke of Brunswick-Wolfenbüttel."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "origin1745",
+        "kind": "institution_establishment",
+        "subject_ref": "institution"
+      }
+    ]
+  },
+  "identity": {
+    "aliases": [
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q734324\", \"labels\": {\"en\": \"TU Braunschweig\"}, \"descriptions\": {\"en\": \"university in Germany\"}}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "TU Braunschweig"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "infobox:0",
+                "original_text": "Former name: Collegium Carolinum",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "la",
+              "text": "Collegium Carolinum"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    ],
+    "identifiers": {
+      "P5242": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P5242:0",
+                "original_text": "{\"property\": \"P5242\", \"property_label\": \"ARWU university ID\", \"statement_id\": \"Q734324$D1A2D293-A9FA-4CD7-B1C4-12BAF4903D31\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"Technical-University-of-Braunschweig\"}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": "Technical-University-of-Braunschweig",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "P5584": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P5584:0",
+                "original_text": "{\"property\": \"P5584\", \"property_label\": \"QS World University ID\", \"statement_id\": \"Q734324$B29435D2-5DDC-46EE-BF97-8E191BDE11D2\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"technische-universitat-braunschweig\"}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": "technische-universitat-braunschweig",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "P5586": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P5586:0",
+                "original_text": "{\"property\": \"P5586\", \"property_label\": \"Times Higher Education World University ID\", \"statement_id\": \"Q734324$5E28356F-DD52-4D5F-8EDA-E4D13381B480\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"tu-braunschweig\"}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": "tu-braunschweig",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    "kind": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P31:0",
+              "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"q734324$0D3F6A58-AD8B-4867-B98F-3857B69DECD4\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 1371037, \"id\": \"Q1371037\"}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "metadata",
+              "original_text": "{\"id\": \"Q1371037\", \"labels\": {\"en\": \"university of technology\"}, \"descriptions\": {\"en\": \"college or university for applied sciences\"}}",
+              "source_ref": "s3"
+            },
+            {
+              "locator": "section:Name",
+              "original_text": "[edit | edit source]\nIts complete name is Technische Universität Braunschweig. Translating the name into English is discouraged by the university. While the adjective technische (English: technical) in its name implies a focus on science and engineering, it is still a university in the sense that it represents a wide range of subjects. It is subdivided into six faculties with different degree programmes and specialisations.",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": "university",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "names": {
+      "de": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Name",
+                "original_text": "[edit | edit source]\nIts complete name is Technische Universität Braunschweig. Translating the name into English is discouraged by the university. While the adjective technische (English: technical) in its name implies a focus on science and engineering, it is still a university in the sense that it represents a wide range of subjects. It is subdivided into six faculties with different degree programmes and specialisations.",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": "Technische Universität Braunschweig",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    "operating_status": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:Research",
+              "original_text": "[edit | edit source]\nThe TU Braunschweig focuses its research in four main areas: Future City, Metrology, Mobility and Engineering for Health. The university's researchers cooperate closely with other research institutions in Braunschweig.[4]",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Faculties_and_departments",
+              "original_text": "[edit | edit source]\nThe university has six faculties (German: Fakultäten).[6] Some faculties are divided further into departments (German: Departments). All faculties are additionally divided into numerous institutes.\nCarl-Friedrich-Gauß-Faculty\nDepartment of Mathematics\nDepartment of Computer Science\nDepartment of Business Administration and Economics\nDepartment of Social Sciences\nFaculty of Life Sciences\nFaculty of Architecture, Civil Engineering and Environmental Sciences\nDepartment of Architecture\nDepartment of Civil Engineering and Environmental Science\nFaculty of Mechanical Engineering\nFaculty of Electrical Engineering, Information Technology, Physics\nFaculty of Humanities and Educational Sciences",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": "operating",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "ownership": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:3",
+              "original_text": "Type: Public",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "claim:P31:1",
+              "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q734324$76bd5039-43e6-a99c-6f08-ed0bd9cdd0bf\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 875538, \"id\": \"Q875538\"}}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "metadata",
+              "original_text": "{\"id\": \"Q875538\", \"labels\": {\"en\": \"public university\"}, \"descriptions\": {\"en\": \"university predominantly funded by public means\"}}",
+              "source_ref": "s4"
+            }
+          ],
+          "id": "c1",
+          "value": "public",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "leadership": {
+    "president": {
+      "candidates": [
+        {
+          "current_basis": "infobox_current",
+          "evidence": [
+            {
+              "locator": "infobox:8",
+              "original_text": "President: Angela Ittel [de]",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "claim:P488:0",
+              "original_text": "{\"property\": \"P488\", \"property_label\": \"chairperson\", \"statement_id\": \"Q734324$f748a671-4b41-37fb-17d3-f11f101b6bc6\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 42433016, \"id\": \"Q42433016\"}, \"qualifiers\": {\"P580\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2021-07-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}], \"P3831\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 212071, \"id\": \"Q212071\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "metadata",
+              "original_text": "{\"id\": \"Q42433016\", \"labels\": {\"en\": \"Angela Ittel\"}, \"descriptions\": {}}",
+              "source_ref": "s8"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "person": {
+              "name": "Angela Ittel",
+              "qid": "Q42433016"
+            },
+            "term_start": {
+              "day": 1,
+              "month": 7,
+              "precision": "day",
+              "year": 2021
+            },
+            "title_original": {
+              "language": "en",
+              "text": "President"
+            }
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "single_source_family",
+          "reported_current"
+        ],
+        "reason": "The page reports this person in its current officeholder field; a term-end date is not required.",
+        "reason_code": "infobox_current"
+      }
+    }
+  },
+  "locations": [
+    {
+      "address": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "infobox:13",
+                "original_text": "Location: Braunschweig, Lower Saxony, Germany52°16′25″N 10°31′47″E﻿ / ﻿52.27361°N 10.52972°E﻿ / 52.27361; 10.52972",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "city_name": "Braunschweig",
+              "city_qid": "Q2773",
+              "country_name": "Germany",
+              "country_qid": "Q183",
+              "formatted": {
+                "language": "en",
+                "text": "Braunschweig, Lower Saxony, Germany"
+              },
+              "region_name": "Lower Saxony"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "id": "braunschweig",
+      "kind": "administrative_area",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P131:0",
+                "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q734324$17A7600D-A7D8-49DF-BB98-7AEB915188D5\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 2773, \"id\": \"Q2773\"}, \"reference_count\": 1}",
+                "source_ref": "s1"
+              },
+              {
+                "locator": "claim:P1705:0",
+                "original_text": "{\"property\": \"P1705\", \"property_label\": \"P1705\", \"statement_id\": \"Q2773$6e870c0b-404e-5a9d-3410-c846f3e526dc\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"Braunschweig\", \"language\": \"de\"}, \"reference_count\": 1}",
+                "source_ref": "s6"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "de",
+              "text": "Braunschweig"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "qid": "Q2773"
+    },
+    {
+      "address": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P159:0",
+                "original_text": "{\"property\": \"P159\", \"property_label\": \"headquarters location\", \"statement_id\": \"Q734324$041CA2BC-37F3-485F-BF26-01A8504C9237\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 2773, \"id\": \"Q2773\"}, \"qualifiers\": {\"P281\": [{\"snaktype\": \"value\", \"value\": \"38106\"}], \"P17\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 183, \"id\": \"Q183\"}}], \"P625\": [{\"snaktype\": \"value\", \"value\": {\"latitude\": 52.2736, \"longitude\": 10.5297, \"altitude\": null, \"precision\": 0.0001, \"globe\": \"http://www.wikidata.org/entity/Q2\"}}], \"P6375\": [{\"snaktype\": \"value\", \"value\": {\"text\": \"Pockelsstr. 14\", \"language\": \"de\"}}]}}",
+                "source_ref": "s1"
+              },
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q2773\", \"labels\": {\"en\": \"Brunswick\"}, \"descriptions\": {\"en\": \"city in Lower Saxony, Germany\"}}",
+                "source_ref": "s6"
+              },
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q183\", \"labels\": {\"en\": \"Germany\"}, \"descriptions\": {\"en\": \"country in Central Europe\"}}",
+                "source_ref": "s5"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "city_name": "Braunschweig",
+              "city_qid": "Q2773",
+              "country_name": "Germany",
+              "country_qid": "Q183",
+              "formatted": {
+                "language": "de",
+                "text": "Pockelsstr. 14"
+              },
+              "postal_code": "38106",
+              "street": "Pockelsstr. 14"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "coordinates": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P159:0",
+                "original_text": "{\"property\": \"P159\", \"property_label\": \"headquarters location\", \"statement_id\": \"Q734324$041CA2BC-37F3-485F-BF26-01A8504C9237\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 2773, \"id\": \"Q2773\"}, \"qualifiers\": {\"P281\": [{\"snaktype\": \"value\", \"value\": \"38106\"}], \"P17\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 183, \"id\": \"Q183\"}}], \"P625\": [{\"snaktype\": \"value\", \"value\": {\"latitude\": 52.2736, \"longitude\": 10.5297, \"altitude\": null, \"precision\": 0.0001, \"globe\": \"http://www.wikidata.org/entity/Q2\"}}], \"P6375\": [{\"snaktype\": \"value\", \"value\": {\"text\": \"Pockelsstr. 14\", \"language\": \"de\"}}]}}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "crs": "EPSG:4326",
+              "latitude": 52.2736,
+              "longitude": 10.5297
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "id": "headquarters",
+      "kind": "headquarters",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P159:0",
+                "original_text": "{\"property\": \"P159\", \"property_label\": \"headquarters location\", \"statement_id\": \"Q734324$041CA2BC-37F3-485F-BF26-01A8504C9237\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 2773, \"id\": \"Q2773\"}, \"qualifiers\": {\"P281\": [{\"snaktype\": \"value\", \"value\": \"38106\"}], \"P17\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 183, \"id\": \"Q183\"}}], \"P625\": [{\"snaktype\": \"value\", \"value\": {\"latitude\": 52.2736, \"longitude\": 10.5297, \"altitude\": null, \"precision\": 0.0001, \"globe\": \"http://www.wikidata.org/entity/Q2\"}}], \"P6375\": [{\"snaktype\": \"value\", \"value\": {\"text\": \"Pockelsstr. 14\", \"language\": \"de\"}}]}}",
+                "source_ref": "s1"
+              },
+              {
+                "locator": "claim:P1705:0",
+                "original_text": "{\"property\": \"P1705\", \"property_label\": \"P1705\", \"statement_id\": \"Q2773$6e870c0b-404e-5a9d-3410-c846f3e526dc\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"Braunschweig\", \"language\": \"de\"}, \"reference_count\": 1}",
+                "source_ref": "s6"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "de",
+              "text": "Braunschweig"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "qid": "Q2773"
+    },
+    {
+      "coordinates": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "statement:Q734324$a848a668-42b5-1331-c7ca-fb2df6284338",
+                "original_text": "\"latitude\": 52.2736",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "source_rank": "normal",
+            "value": {
+              "crs": "EPSG:4326",
+              "globe_qid": "Q2",
+              "latitude": 52.2736,
+              "longitude": 10.5297,
+              "source_precision_degrees": 0.0001
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "id": "wikidata-item-location",
+      "kind": "institution",
+      "qid": "Q734324"
+    }
+  ],
+  "modified_datetime": "2026-11-06T23:12:00.009292+00:00",
+  "population": {
+    "academic_staff": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:9",
+              "original_text": "Academic staff: 2,060 and 242 professors[1]",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "period_status": "not_stated",
+          "value": {
+            "amount": 2060,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "period_not_stated",
+          "single_source_family"
+        ],
+        "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+        "reason_code": "only_available"
+      }
+    },
+    "doctoral_students": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:12",
+              "original_text": "Doctoral students: 2,223[1]",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "period_status": "not_stated",
+          "value": {
+            "amount": 2223,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "period_not_stated",
+          "single_source_family"
+        ],
+        "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+        "reason_code": "only_available"
+      }
+    },
+    "employees_total": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:10",
+              "original_text": "Total staff: 3,795[1]",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "period_status": "not_stated",
+          "value": {
+            "amount": 3795,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "period_not_stated",
+          "single_source_family"
+        ],
+        "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+        "reason_code": "only_available"
+      }
+    },
+    "students_total": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:0",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q734324$0ce8b5a6-4881-cfa4-edbd-5d6efd4206b8\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+20037\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2016-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2016
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 20037,
+            "basis": "headcount",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:1",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q734324$C8C76884-965D-430E-81BE-C5ACAB87E2DC\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+14554\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+1998-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c2",
+          "period": {
+            "kind": "calendar_year",
+            "year": 1998
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 14554,
+            "basis": "headcount",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:2",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q734324$FECBFAB6-3AA1-4A75-ABB8-3C7BE2CC36D6\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+13509\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+1999-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c3",
+          "period": {
+            "kind": "calendar_year",
+            "year": 1999
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 13509,
+            "basis": "headcount",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:3",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q734324$89AA6CA0-3F22-47AE-A771-A8B3320D1C89\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+13538\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2000-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c4",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2000
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 13538,
+            "basis": "headcount",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:4",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q734324$7C0705C0-17CD-4BF9-B645-74C330546082\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+14166\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2001-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c5",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2001
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 14166,
+            "basis": "headcount",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:5",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q734324$4E5F3129-F5CD-425D-BAE9-D6C1477D7100\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+14450\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2002-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c6",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2002
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 14450,
+            "basis": "headcount",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:6",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q734324$71A13E56-6766-4174-8696-1ACF49DDA0CF\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+13501\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2003-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c7",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2003
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 13501,
+            "basis": "headcount",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:7",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q734324$0B276DAE-BFA3-420D-932E-A2A80C91C9CA\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+13444\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2004-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c8",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2004
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 13444,
+            "basis": "headcount",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:8",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q734324$2BF34997-AAD0-40C7-966E-190912FB8574\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+12854\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2005-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c9",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2005
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 12854,
+            "basis": "headcount",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:9",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q734324$4187CA7E-579B-48E6-8832-77F91883E77A\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+12310\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2006-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c10",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2006
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 12310,
+            "basis": "headcount",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:10",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q734324$FFB1D506-E812-4EA7-848E-39396E810E71\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+12017\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2007-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c11",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2007
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 12017,
+            "basis": "headcount",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:11",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q734324$951CDF72-CDAC-4B61-820A-D578AF5CE07F\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+12683\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2008-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c12",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2008
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 12683,
+            "basis": "headcount",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:12",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q734324$A64E6363-F0D2-476A-BC92-6B0FCBDD20F4\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+13379\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2009-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c13",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2009
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 13379,
+            "basis": "headcount",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:13",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q734324$61778338-25E9-4A85-8C3F-63C34CEE1D34\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+14108\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2010-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c14",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2010
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 14108,
+            "basis": "headcount",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:14",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q734324$01B6CA14-9999-44DF-981B-EA7404BCF566\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+15204\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2011-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c15",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2011
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 15204,
+            "basis": "headcount",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:15",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q734324$63FDDE90-A992-4E36-8774-18284F685A80\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+16304\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2012-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c16",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2012
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 16304,
+            "basis": "headcount",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:16",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q734324$79C7400A-4A2A-41A9-AF8D-AAE1A17ADA3A\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+17194\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2013-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c17",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2013
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 17194,
+            "basis": "headcount",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:17",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q734324$76C574B2-5CE5-472D-BF93-67DB63610A3D\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+18319\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2014-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c18",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2014
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 18319,
+            "basis": "headcount",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:18",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q734324$5B052B76-7466-48C2-9568-C9C835AE7891\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+19504\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2015-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c19",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2015
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 19504,
+            "basis": "headcount",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:19",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q734324$854C3033-33C7-43A7-92FC-DC314E662DD0\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+20029\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2016-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c20",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2016
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 20029,
+            "basis": "headcount",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:20",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q734324$FCBC0201-C171-41CE-B840-BCC20D2243D9\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+20116\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2017-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c21",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2017
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 20116,
+            "basis": "headcount",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:21",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q734324$81FBEE78-EDBE-4A9E-BFDD-A9C21D040959\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+19980\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2018-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c22",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2018
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 19980,
+            "basis": "headcount",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:22",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q734324$766A2318-717C-4F02-8BCC-581B5B57294C\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+19694\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2019-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c23",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2019
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 19694,
+            "basis": "headcount",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:23",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q734324$7D9EEFC9-F9CE-4FA3-99E5-9048F1685B27\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+18566\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2020-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c24",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2020
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 18566,
+            "basis": "headcount",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:24",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q734324$B1B51899-2B78-4E0C-8DDF-6353D806154C\", \"rank\": \"preferred\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+17794\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2021-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c25",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2021
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 17794,
+            "basis": "headcount",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "infobox:11",
+              "original_text": "Students: 19,981[2]",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c26",
+          "period_status": "not_stated",
+          "value": {
+            "amount": 19981,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        }
+      ],
+      "conflicts": [
+        {
+          "candidate_ids": [
+            "c1",
+            "c20"
+          ],
+          "kind": "value_disagreement",
+          "note": "Two normal-rank student counts for 2016: 20,037 and 20,029. Both retained; the captured claims do not resolve their census dates or differing scope.",
+          "status": "unresolved"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c26",
+        "qualifications": [
+          "period_not_stated",
+          "single_source_family",
+          "different_basis_available",
+          "conflicting_candidates"
+        ],
+        "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+        "reason_code": "best_available"
+      }
+    }
+  },
+  "profile": {
+    "academic_focus": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:Research",
+              "original_text": "[edit | edit source]\nThe TU Braunschweig focuses its research in four main areas: Future City, Metrology, Mobility and Engineering for Health. The university's researchers cooperate closely with other research institutions in Braunschweig.[4]",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": [
+            {
+              "language": "en",
+              "text": "Future City"
+            },
+            {
+              "language": "en",
+              "text": "Metrology"
+            },
+            {
+              "language": "en",
+              "text": "Mobility"
+            },
+            {
+              "language": "en",
+              "text": "Engineering for Health"
+            }
+          ],
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "logo_url": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox_image_urls",
+              "original_text": "[\"https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Siegel_TU_Braunschweig_transparent.svg/250px-Siegel_TU_Braunschweig_transparent.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail\", \"https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Germany_adm_location_map.svg/250px-Germany_adm_location_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail\", \"https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Red_pog.svg/20px-Red_pog.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail\", \"https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Lower_Saxony_location_map.svg/250px-Lower_Saxony_location_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail\", \"https://maps.wikimedia.org/img/osm-intl,12,a,a,270x200.png?lang=en&domain=en.wikipedia.org&title=TU_Braunschweig&revid=1376805317&groups=_198a0dfab4b2a01d46a2d9cee501761299f98239&parser=legacy\"]",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "claim:P154:0",
+              "original_text": "{\"property\": \"P154\", \"property_label\": \"logo image\", \"statement_id\": \"Q734324$28bae1d5-47ac-6138-aeef-ced3c0cf963b\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"Siegel TU Braunschweig transparent.svg\"}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "value": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Siegel_TU_Braunschweig_transparent.svg/250px-Siegel_TU_Braunschweig_transparent.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "motto": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:1",
+              "original_text": "Motto: Nec aspera terrent",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "language": "la",
+            "text": "Nec aspera terrent"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "infobox:2",
+              "original_text": "Motto in English: They are not terrified of the rough things",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c2",
+          "value": {
+            "language": "en",
+            "text": "They are not terrified of the rough things"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+        "reason_code": "best_available"
+      }
+    },
+    "summary": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:Name",
+              "original_text": "[edit | edit source]\nIts complete name is Technische Universität Braunschweig. Translating the name into English is discouraged by the university. While the adjective technische (English: technical) in its name implies a focus on science and engineering, it is still a university in the sense that it represents a wide range of subjects. It is subdivided into six faculties with different degree programmes and specialisations.",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "infobox:3",
+              "original_text": "Type: Public",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "infobox:13",
+              "original_text": "Location: Braunschweig, Lower Saxony, Germany52°16′25″N 10°31′47″E﻿ / ﻿52.27361°N 10.52972°E﻿ / 52.27361; 10.52972",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "infobox:5",
+              "original_text": "Founder: Charles I, Duke of Brunswick-Wolfenbüttel",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:lead",
+              "original_text": "University in Germany\nTU Braunschweig (German: Technische Universität Braunschweig) is the oldest technical university in Germany. It was founded in 1745 as Collegium Carolinum.[3] It is a member of TU9, an incorporated society of the most renowned German institutes of technology. It is commonly ranked among the top engineering universities in Germany.\nTU Braunschweig's research profile is very interdisciplinary, but with a focus on aeronautics, vehicle engineering including autonomous driving and electric mobility, manufacturing, life sciences, and metrology. Research is conducted in close collaboration with external organizations such as the German Aerospace Center (DLR), Helmholtz Centre for Infection Research, several Fraunhofer Institutes, and Germany's national metrology institute (Physikalisch-Technische Bundesanstalt, PTB), among many others. As one of very few research institutions of its type in the world, the university has its own research airport.",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Research",
+              "original_text": "[edit | edit source]\nThe TU Braunschweig focuses its research in four main areas: Future City, Metrology, Mobility and Engineering for Health. The university's researchers cooperate closely with other research institutions in Braunschweig.[4]",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Research_centres",
+              "original_text": "[edit | edit source]\nIn addition to the main areas of research, the research profile of the TU Braunschweig is shaped by several interdisciplinary and interdepartmental research associations, which are structured in research centres.[5]",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Faculties_and_departments",
+              "original_text": "[edit | edit source]\nThe university has six faculties (German: Fakultäten).[6] Some faculties are divided further into departments (German: Departments). All faculties are additionally divided into numerous institutes.\nCarl-Friedrich-Gauß-Faculty\nDepartment of Mathematics\nDepartment of Computer Science\nDepartment of Business Administration and Economics\nDepartment of Social Sciences\nFaculty of Life Sciences\nFaculty of Architecture, Civil Engineering and Environmental Sciences\nDepartment of Architecture\nDepartment of Civil Engineering and Environmental Science\nFaculty of Mechanical Engineering\nFaculty of Electrical Engineering, Information Technology, Physics\nFaculty of Humanities and Educational Sciences",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Battery_Lab_Factory_.28BLB.29",
+              "original_text": "[edit | edit source]\nBLB is a research centre of the TU Braunschweig. The centre is an interdisciplinary research platform for the development of production processes as well as diagnosis and simulation for current lithium-ion batteries and future battery technologies such as solid state and lithium-sulphur batteries. BLB unites 13 professorships from three universities (TU Braunschweig, TU Clausthal, Leibniz University Hannover) as well as battery experts from the PTB and integrates the necessary competences along the value chain for excellent R&D in the field of batteries in Lower Saxony.",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Braunschweig_Integrated_Centre_of_Systems_Biology_.28BRICS.29",
+              "original_text": "[edit | edit source]\nThe BRICS is an interdisciplinary centre in cooperation with the Helmholtz Centre for Infection Research. Three departments of the Helmholtz Centre as well as institutes from three faculties of the TU Braunschweig work together. At BRICS, microorganisms in the fields of biotechnology and infection research are investigated using systems biology methods. Mathematical models will be used to develop new anti-infectives and new biotechnological production processes.",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Laboratory_for_Emerging_Nanometrology_and_Analytics_.28LENA.29",
+              "original_text": "[edit | edit source]\nIn the Laboratory for Emerging Nanometrology, institutes of the TU Braunschweig conduct research together with departments of the Physikalisch-Technische Bundesanstalt. Research topics are nanonormals, method developments as well as ubiquitous sensors and standards. The focus is on the metrology of 3-dimensional Nano systems.",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Center_of_Pharmaceutical_Engineering_.28PVZ.29",
+              "original_text": "[edit | edit source]\nThe researchers at PVZ want to make it possible to produce drugs that are more cost-effective and, for example, exactly tailored to the patient's needs. This aim is to be achieved with new manufacturing technologies. Experts from pharmacy, process engineering and micro technology are working together on a long-term basis in a model that is unique in Germany to date.",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "claim:P2196:24",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q734324$B1B51899-2B78-4E0C-8DDF-6353D806154C\", \"rank\": \"preferred\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+17794\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2021-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "language": "en",
+            "text": "Technische Universität Braunschweig, commonly known as TU Braunschweig, is a public technical university in Braunschweig, Lower Saxony, Germany. It was founded in 1745 as Collegium Carolinum by Charles I, Duke of Brunswick-Wolfenbüttel. The institution combines a science and engineering focus with a broader range of academic subjects. It is a member of TU9, an association of German institutes of technology, and uses its German institutional name.\n\nIts research is organised around four main areas: Future City, Metrology, Mobility and Engineering for Health. Work spans aeronautics, vehicle engineering, autonomous driving, electric mobility, manufacturing and life sciences. Researchers collaborate with organisations including the German Aerospace Center, the Helmholtz Centre for Infection Research and the Physikalisch-Technische Bundesanstalt. Interdisciplinary research centres support work on batteries, systems biology, nanometrology and pharmaceutical engineering, while the university also has its own research airport.\n\nThe university has six faculties, covering mathematics and related disciplines in the Carl-Friedrich-Gauß-Faculty, life sciences, architecture and civil and environmental engineering, mechanical engineering, electrical engineering and information technology with physics, and humanities and educational sciences. Faculties contain numerous institutes, and some also contain departments. The recorded student population was 17,794 in 2021."
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "website": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P856:1",
+              "original_text": "{\"property\": \"P856\", \"property_label\": \"official website\", \"statement_id\": \"Q734324$43a9ca98-47ad-846b-e575-f53d4dc189d9\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"https://www.tu-braunschweig.de/\", \"qualifiers\": {\"P407\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 188, \"id\": \"Q188\"}}, {\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 1860, \"id\": \"Q1860\"}}]}}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "value": "https://www.tu-braunschweig.de/",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "qid": "Q734324",
+  "record_revision": 1,
+  "related_entities": {
+    "faculty1": {
+      "kind": "faculty",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Faculties_and_departments",
+                "original_text": "[edit | edit source]\nThe university has six faculties (German: Fakultäten).[6] Some faculties are divided further into departments (German: Departments). All faculties are additionally divided into numerous institutes.\nCarl-Friedrich-Gauß-Faculty\nDepartment of Mathematics\nDepartment of Computer Science\nDepartment of Business Administration and Economics\nDepartment of Social Sciences\nFaculty of Life Sciences\nFaculty of Architecture, Civil Engineering and Environmental Sciences\nDepartment of Architecture\nDepartment of Civil Engineering and Environmental Science\nFaculty of Mechanical Engineering\nFaculty of Electrical Engineering, Information Technology, Physics\nFaculty of Humanities and Educational Sciences",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Carl-Friedrich-Gauß-Faculty"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    "faculty2": {
+      "kind": "faculty",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Faculties_and_departments",
+                "original_text": "[edit | edit source]\nThe university has six faculties (German: Fakultäten).[6] Some faculties are divided further into departments (German: Departments). All faculties are additionally divided into numerous institutes.\nCarl-Friedrich-Gauß-Faculty\nDepartment of Mathematics\nDepartment of Computer Science\nDepartment of Business Administration and Economics\nDepartment of Social Sciences\nFaculty of Life Sciences\nFaculty of Architecture, Civil Engineering and Environmental Sciences\nDepartment of Architecture\nDepartment of Civil Engineering and Environmental Science\nFaculty of Mechanical Engineering\nFaculty of Electrical Engineering, Information Technology, Physics\nFaculty of Humanities and Educational Sciences",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Faculty of Life Sciences"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    "faculty3": {
+      "kind": "faculty",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Faculties_and_departments",
+                "original_text": "[edit | edit source]\nThe university has six faculties (German: Fakultäten).[6] Some faculties are divided further into departments (German: Departments). All faculties are additionally divided into numerous institutes.\nCarl-Friedrich-Gauß-Faculty\nDepartment of Mathematics\nDepartment of Computer Science\nDepartment of Business Administration and Economics\nDepartment of Social Sciences\nFaculty of Life Sciences\nFaculty of Architecture, Civil Engineering and Environmental Sciences\nDepartment of Architecture\nDepartment of Civil Engineering and Environmental Science\nFaculty of Mechanical Engineering\nFaculty of Electrical Engineering, Information Technology, Physics\nFaculty of Humanities and Educational Sciences",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Faculty of Architecture, Civil Engineering and Environmental Sciences"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    "faculty4": {
+      "kind": "faculty",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Faculties_and_departments",
+                "original_text": "[edit | edit source]\nThe university has six faculties (German: Fakultäten).[6] Some faculties are divided further into departments (German: Departments). All faculties are additionally divided into numerous institutes.\nCarl-Friedrich-Gauß-Faculty\nDepartment of Mathematics\nDepartment of Computer Science\nDepartment of Business Administration and Economics\nDepartment of Social Sciences\nFaculty of Life Sciences\nFaculty of Architecture, Civil Engineering and Environmental Sciences\nDepartment of Architecture\nDepartment of Civil Engineering and Environmental Science\nFaculty of Mechanical Engineering\nFaculty of Electrical Engineering, Information Technology, Physics\nFaculty of Humanities and Educational Sciences",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Faculty of Mechanical Engineering"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    "faculty5": {
+      "kind": "faculty",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Faculties_and_departments",
+                "original_text": "[edit | edit source]\nThe university has six faculties (German: Fakultäten).[6] Some faculties are divided further into departments (German: Departments). All faculties are additionally divided into numerous institutes.\nCarl-Friedrich-Gauß-Faculty\nDepartment of Mathematics\nDepartment of Computer Science\nDepartment of Business Administration and Economics\nDepartment of Social Sciences\nFaculty of Life Sciences\nFaculty of Architecture, Civil Engineering and Environmental Sciences\nDepartment of Architecture\nDepartment of Civil Engineering and Environmental Science\nFaculty of Mechanical Engineering\nFaculty of Electrical Engineering, Information Technology, Physics\nFaculty of Humanities and Educational Sciences",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Faculty of Electrical Engineering, Information Technology, Physics"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    "faculty6": {
+      "kind": "faculty",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Faculties_and_departments",
+                "original_text": "[edit | edit source]\nThe university has six faculties (German: Fakultäten).[6] Some faculties are divided further into departments (German: Departments). All faculties are additionally divided into numerous institutes.\nCarl-Friedrich-Gauß-Faculty\nDepartment of Mathematics\nDepartment of Computer Science\nDepartment of Business Administration and Economics\nDepartment of Social Sciences\nFaculty of Life Sciences\nFaculty of Architecture, Civil Engineering and Environmental Sciences\nDepartment of Architecture\nDepartment of Civil Engineering and Environmental Science\nFaculty of Mechanical Engineering\nFaculty of Electrical Engineering, Information Technology, Physics\nFaculty of Humanities and Educational Sciences",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Faculty of Humanities and Educational Sciences"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    }
+  },
+  "relationships": {
+    "faculty": [
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Faculties_and_departments",
+                "original_text": "[edit | edit source]\nThe university has six faculties (German: Fakultäten).[6] Some faculties are divided further into departments (German: Departments). All faculties are additionally divided into numerous institutes.\nCarl-Friedrich-Gauß-Faculty\nDepartment of Mathematics\nDepartment of Computer Science\nDepartment of Business Administration and Economics\nDepartment of Social Sciences\nFaculty of Life Sciences\nFaculty of Architecture, Civil Engineering and Environmental Sciences\nDepartment of Architecture\nDepartment of Civil Engineering and Environmental Science\nFaculty of Mechanical Engineering\nFaculty of Electrical Engineering, Information Technology, Physics\nFaculty of Humanities and Educational Sciences",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "target_ref": "related:faculty1"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Faculties_and_departments",
+                "original_text": "[edit | edit source]\nThe university has six faculties (German: Fakultäten).[6] Some faculties are divided further into departments (German: Departments). All faculties are additionally divided into numerous institutes.\nCarl-Friedrich-Gauß-Faculty\nDepartment of Mathematics\nDepartment of Computer Science\nDepartment of Business Administration and Economics\nDepartment of Social Sciences\nFaculty of Life Sciences\nFaculty of Architecture, Civil Engineering and Environmental Sciences\nDepartment of Architecture\nDepartment of Civil Engineering and Environmental Science\nFaculty of Mechanical Engineering\nFaculty of Electrical Engineering, Information Technology, Physics\nFaculty of Humanities and Educational Sciences",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "target_ref": "related:faculty2"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Faculties_and_departments",
+                "original_text": "[edit | edit source]\nThe university has six faculties (German: Fakultäten).[6] Some faculties are divided further into departments (German: Departments). All faculties are additionally divided into numerous institutes.\nCarl-Friedrich-Gauß-Faculty\nDepartment of Mathematics\nDepartment of Computer Science\nDepartment of Business Administration and Economics\nDepartment of Social Sciences\nFaculty of Life Sciences\nFaculty of Architecture, Civil Engineering and Environmental Sciences\nDepartment of Architecture\nDepartment of Civil Engineering and Environmental Science\nFaculty of Mechanical Engineering\nFaculty of Electrical Engineering, Information Technology, Physics\nFaculty of Humanities and Educational Sciences",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "target_ref": "related:faculty3"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Faculties_and_departments",
+                "original_text": "[edit | edit source]\nThe university has six faculties (German: Fakultäten).[6] Some faculties are divided further into departments (German: Departments). All faculties are additionally divided into numerous institutes.\nCarl-Friedrich-Gauß-Faculty\nDepartment of Mathematics\nDepartment of Computer Science\nDepartment of Business Administration and Economics\nDepartment of Social Sciences\nFaculty of Life Sciences\nFaculty of Architecture, Civil Engineering and Environmental Sciences\nDepartment of Architecture\nDepartment of Civil Engineering and Environmental Science\nFaculty of Mechanical Engineering\nFaculty of Electrical Engineering, Information Technology, Physics\nFaculty of Humanities and Educational Sciences",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "target_ref": "related:faculty4"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Faculties_and_departments",
+                "original_text": "[edit | edit source]\nThe university has six faculties (German: Fakultäten).[6] Some faculties are divided further into departments (German: Departments). All faculties are additionally divided into numerous institutes.\nCarl-Friedrich-Gauß-Faculty\nDepartment of Mathematics\nDepartment of Computer Science\nDepartment of Business Administration and Economics\nDepartment of Social Sciences\nFaculty of Life Sciences\nFaculty of Architecture, Civil Engineering and Environmental Sciences\nDepartment of Architecture\nDepartment of Civil Engineering and Environmental Science\nFaculty of Mechanical Engineering\nFaculty of Electrical Engineering, Information Technology, Physics\nFaculty of Humanities and Educational Sciences",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "target_ref": "related:faculty5"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Faculties_and_departments",
+                "original_text": "[edit | edit source]\nThe university has six faculties (German: Fakultäten).[6] Some faculties are divided further into departments (German: Departments). All faculties are additionally divided into numerous institutes.\nCarl-Friedrich-Gauß-Faculty\nDepartment of Mathematics\nDepartment of Computer Science\nDepartment of Business Administration and Economics\nDepartment of Social Sciences\nFaculty of Life Sciences\nFaculty of Architecture, Civil Engineering and Environmental Sciences\nDepartment of Architecture\nDepartment of Civil Engineering and Environmental Science\nFaculty of Mechanical Engineering\nFaculty of Electrical Engineering, Information Technology, Physics\nFaculty of Humanities and Educational Sciences",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "target_ref": "related:faculty6"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    ]
+  },
+  "schema_version": "0.2.2",
+  "seed": {
+    "channels": [
+      "ranking_identifier",
+      "reviewed_institution_type"
+    ],
+    "import_id": "seed-84c3beb45367905f",
+    "screening_status": "included"
+  },
+  "selection_policy": "preferred-v1",
+  "sources": {
+    "s1": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T22:52:02.032057+00:00",
+      "revision_id": 2552803209,
+      "source_qid": "Q734324",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2552803209"
+    },
+    "s2": {
+      "family": "wikimedia",
+      "kind": "wikipedia",
+      "language": "en",
+      "page_id": 2127047,
+      "publisher_role": "encyclopedia",
+      "retrieved_at": "2026-11-06T22:52:16.116852+00:00",
+      "revision_id": 1376805317,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1376805317"
+    },
+    "s3": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T22:52:20.820834+00:00",
+      "revision_id": 2553301690,
+      "source_qid": "Q1371037",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2553301690"
+    },
+    "s4": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T16:18:55.225825+00:00",
+      "revision_id": 2559546120,
+      "source_qid": "Q875538",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2559546120"
+    },
+    "s5": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T16:19:03.269059+00:00",
+      "revision_id": 2565378989,
+      "source_qid": "Q183",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2565378989"
+    },
+    "s6": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T22:52:24.735134+00:00",
+      "revision_id": 2550406208,
+      "source_qid": "Q2773",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2550406208"
+    },
+    "s7": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T22:52:30.302242+00:00",
+      "revision_id": 2474180673,
+      "source_qid": "Q109496585",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2474180673"
+    },
+    "s8": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T22:52:34.272904+00:00",
+      "revision_id": 2551945725,
+      "source_qid": "Q42433016",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2551945725"
+    }
+  }
+}

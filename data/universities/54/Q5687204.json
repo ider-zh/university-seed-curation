@@ -1,0 +1,691 @@
+{
+  "coverage": {
+    "finance": {
+      "checked_at": "2026-11-06T23:03:09.755180+00:00",
+      "status": "not_found"
+    },
+    "geography": {
+      "checked_at": "2026-11-06T23:03:09.755180+00:00",
+      "status": "checked"
+    },
+    "history": {
+      "checked_at": "2026-11-06T23:03:09.755180+00:00",
+      "status": "disputed"
+    },
+    "identity": {
+      "checked_at": "2026-11-06T23:03:09.755180+00:00",
+      "status": "checked"
+    },
+    "population": {
+      "checked_at": "2026-11-06T23:03:09.755180+00:00",
+      "status": "not_found"
+    },
+    "profile": {
+      "checked_at": "2026-11-06T23:03:09.755180+00:00",
+      "status": "checked"
+    }
+  },
+  "curation": {
+    "identity_status": "in_scope"
+  },
+  "history": {
+    "milestones": [
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P571:0",
+                  "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q5687204$128F5003-7DF7-4EA6-B1A9-6799121FC901\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+2006-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "precision": "year",
+                "year": 2006
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:3",
+                  "original_text": "Established: 2009",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c2",
+              "value": {
+                "precision": "year",
+                "year": 2009
+              },
+              "verification": "supported"
+            }
+          ],
+          "conflicts": [
+            {
+              "candidate_ids": [
+                "c1",
+                "c2"
+              ],
+              "kind": "time_disagreement",
+              "note": "Inception 2006 and infobox establishment 2009 remain separate unresolved source observations; development and licensing may explain distinct phases. No definitive founding year selected.",
+              "status": "unresolved"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c2",
+            "qualifications": [
+              "conflicting_candidates"
+            ],
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P571:0",
+                  "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q5687204$128F5003-7DF7-4EA6-B1A9-6799121FC901\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+2006-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "infobox:3",
+                  "original_text": "Established: 2009",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:History",
+                  "original_text": "[edit | edit source]\nHays International College was developed in 2006 and obtained licensing in 2008.[citation needed]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "Wikidata gives inception as 2006, while the English Wikipedia infobox gives establishment as 2009. Its history section describes development in 2006 and licensing in 2008, with a citation-needed tag; these may represent different phases."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "establishment",
+        "kind": "institution_establishment",
+        "subject_ref": "institution"
+      },
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Location",
+                  "original_text": "[edit | edit source]\nFrom 2009 to January 2022, Hays International College was located at 15 Hay Street, Box Hill South – the former site of St. Leo's Christian Brothers College, which closed in 1994.\nIn February 2022, Hays International College moved to 693 Station Street, Box Hill.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "month": 2,
+                "precision": "month",
+                "year": 2022
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Location",
+                  "original_text": "[edit | edit source]\nFrom 2009 to January 2022, Hays International College was located at 15 Hay Street, Box Hill South – the former site of St. Leo's Christian Brothers College, which closed in 1994.\nIn February 2022, Hays International College moved to 693 Station Street, Box Hill.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "Hays International College moved to 693 Station Street, Box Hill, in February 2022, after occupying 15 Hay Street, Box Hill South, from 2009 to January 2022."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "relocation",
+        "kind": "relocation",
+        "subject_ref": "institution"
+      }
+    ]
+  },
+  "identity": {
+    "kind": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "Hays International College is a tertiary level training institute situated in Melbourne, Australia.\nThe college offers certificate and diploma courses in Leisure and Health, Individual Support and Early Childhood Education and Care.[1]",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": "tertiary_vocational_institution",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "names": {
+      "en": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q5687204\", \"labels\": {\"en\": \"Hays International College\"}, \"descriptions\": {\"en\": \"private college in Melbourne, Australia\"}}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": "Hays International College",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    }
+  },
+  "locations": [
+    {
+      "id": "victoria",
+      "kind": "administrative_area",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P131:0",
+                "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"q5687204$2E8FB3AB-6DB7-4CD2-A4DA-5EB6EAE65B82\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 36687, \"id\": \"Q36687\"}, \"reference_count\": 1}",
+                "source_ref": "s1"
+              },
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q36687\", \"labels\": {\"en\": \"Victoria\"}, \"descriptions\": {\"en\": \"state of Australia\"}}",
+                "source_ref": "s5"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Victoria"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "qid": "Q36687"
+    },
+    {
+      "id": "box-hill",
+      "kind": "administrative_area",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "infobox:4",
+                "original_text": "Location: Box Hill, Victoria, Australia",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Box Hill"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    {
+      "address": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Location",
+                "original_text": "[edit | edit source]\nFrom 2009 to January 2022, Hays International College was located at 15 Hay Street, Box Hill South – the former site of St. Leo's Christian Brothers College, which closed in 1994.\nIn February 2022, Hays International College moved to 693 Station Street, Box Hill.",
+                "source_ref": "s2"
+              },
+              {
+                "locator": "infobox:4",
+                "original_text": "Location: Box Hill, Victoria, Australia",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "city_name": "Box Hill South",
+              "country_name": "Australia",
+              "formatted": {
+                "language": "en",
+                "text": "15 Hay Street, Box Hill South"
+              },
+              "region_name": "Victoria"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "id": "hay-street",
+      "kind": "campus",
+      "valid_from": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Location",
+                "original_text": "[edit | edit source]\nFrom 2009 to January 2022, Hays International College was located at 15 Hay Street, Box Hill South – the former site of St. Leo's Christian Brothers College, which closed in 1994.\nIn February 2022, Hays International College moved to 693 Station Street, Box Hill.",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "precision": "year",
+              "year": 2009
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "valid_to": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Location",
+                "original_text": "[edit | edit source]\nFrom 2009 to January 2022, Hays International College was located at 15 Hay Street, Box Hill South – the former site of St. Leo's Christian Brothers College, which closed in 1994.\nIn February 2022, Hays International College moved to 693 Station Street, Box Hill.",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "month": 1,
+              "precision": "month",
+              "year": 2022
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    {
+      "address": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Location",
+                "original_text": "[edit | edit source]\nFrom 2009 to January 2022, Hays International College was located at 15 Hay Street, Box Hill South – the former site of St. Leo's Christian Brothers College, which closed in 1994.\nIn February 2022, Hays International College moved to 693 Station Street, Box Hill.",
+                "source_ref": "s2"
+              },
+              {
+                "locator": "infobox:4",
+                "original_text": "Location: Box Hill, Victoria, Australia",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "city_name": "Box Hill",
+              "country_name": "Australia",
+              "formatted": {
+                "language": "en",
+                "text": "693 Station Street, Box Hill"
+              },
+              "region_name": "Victoria"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "id": "station-street",
+      "kind": "campus",
+      "valid_from": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Location",
+                "original_text": "[edit | edit source]\nFrom 2009 to January 2022, Hays International College was located at 15 Hay Street, Box Hill South – the former site of St. Leo's Christian Brothers College, which closed in 1994.\nIn February 2022, Hays International College moved to 693 Station Street, Box Hill.",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "month": 2,
+              "precision": "month",
+              "year": 2022
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    {
+      "coordinates": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "statement:q5687204$4E8DCAFB-8BBA-4353-B191-763350CE7B86",
+                "original_text": "\"latitude\": -37.8319",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "source_rank": "normal",
+            "value": {
+              "crs": "EPSG:4326",
+              "globe_qid": "Q2",
+              "latitude": -37.8319,
+              "longitude": 145.131,
+              "source_precision_degrees": 0.0001
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "id": "wikidata-item-location",
+      "kind": "institution",
+      "qid": "Q5687204"
+    }
+  ],
+  "modified_datetime": "2026-11-06T23:11:05.545543+00:00",
+  "profile": {
+    "academic_focus": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "Hays International College is a tertiary level training institute situated in Melbourne, Australia.\nThe college offers certificate and diploma courses in Leisure and Health, Individual Support and Early Childhood Education and Care.[1]",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": [
+            {
+              "language": "en",
+              "text": "Leisure and Health"
+            },
+            {
+              "language": "en",
+              "text": "Individual Support"
+            },
+            {
+              "language": "en",
+              "text": "Early Childhood Education and Care"
+            }
+          ],
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "degree_levels": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "Hays International College is a tertiary level training institute situated in Melbourne, Australia.\nThe college offers certificate and diploma courses in Leisure and Health, Individual Support and Early Childhood Education and Care.[1]",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": [
+            "certificate",
+            "diploma"
+          ],
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "motto": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:0",
+              "original_text": "Motto: Eruditio Nostram Viam Illuminat",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "language": "la",
+            "text": "Eruditio Nostram Viam Illuminat"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "infobox:1",
+              "original_text": "Motto in English: Education Illuminates Our Way",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c2",
+          "value": {
+            "language": "en",
+            "text": "Education Illuminates Our Way"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+        "reason_code": "best_available"
+      }
+    },
+    "summary": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "Hays International College is a tertiary level training institute situated in Melbourne, Australia.\nThe college offers certificate and diploma courses in Leisure and Health, Individual Support and Early Childhood Education and Care.[1]",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "infobox:2",
+              "original_text": "Type: Private",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "infobox:4",
+              "original_text": "Location: Box Hill, Victoria, Australia",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "infobox:5",
+              "original_text": "Campus: Urban",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Location",
+              "original_text": "[edit | edit source]\nFrom 2009 to January 2022, Hays International College was located at 15 Hay Street, Box Hill South – the former site of St. Leo's Christian Brothers College, which closed in 1994.\nIn February 2022, Hays International College moved to 693 Station Street, Box Hill.",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "infobox:0",
+              "original_text": "Motto: Eruditio Nostram Viam Illuminat",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "infobox:1",
+              "original_text": "Motto in English: Education Illuminates Our Way",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "language": "en",
+            "text": "Hays International College is a private tertiary training institution in Melbourne, Victoria, Australia. It offers certificate and diploma courses in Leisure and Health, Individual Support, and Early Childhood Education and Care. Its location is described as urban, in Box Hill.\n\nFrom 2009 until January 2022, the college occupied 15 Hay Street in Box Hill South. That address had previously been the site of St. Leo’s Christian Brothers College, which closed in 1994. Hays International College moved to 693 Station Street, Box Hill, in February 2022. Its Latin motto is “Eruditio Nostram Viam Illuminat”, rendered in English as “Education Illuminates Our Way”."
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "website": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:6",
+              "original_text": "Website: https://hic.vic.edu.au/",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": "https://hic.vic.edu.au/",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "qid": "Q5687204",
+  "record_revision": 1,
+  "schema_version": "0.2.2",
+  "seed": {
+    "channels": [
+      "legacy_discovery"
+    ],
+    "import_id": "seed-84c3beb45367905f",
+    "screening_status": "needs_review"
+  },
+  "selection_policy": "preferred-v1",
+  "sources": {
+    "s1": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T23:02:49.626584+00:00",
+      "revision_id": 2496780794,
+      "source_qid": "Q5687204",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2496780794"
+    },
+    "s2": {
+      "family": "wikimedia",
+      "kind": "wikipedia",
+      "language": "en",
+      "page_id": 19437342,
+      "publisher_role": "encyclopedia",
+      "retrieved_at": "2026-11-06T23:02:58.870568+00:00",
+      "revision_id": 1359721307,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1359721307"
+    },
+    "s3": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T22:20:33.072819+00:00",
+      "revision_id": 2522450452,
+      "source_qid": "Q4671277",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2522450452"
+    },
+    "s4": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T23:03:05.577107+00:00",
+      "revision_id": 2564191183,
+      "source_qid": "Q408",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2564191183"
+    },
+    "s5": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T23:03:09.708755+00:00",
+      "revision_id": 2565430698,
+      "source_qid": "Q36687",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2565430698"
+    }
+  }
+}

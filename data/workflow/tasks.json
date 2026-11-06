@@ -70,9 +70,17 @@
       "reason": "resume_after_private_workspace_loss",
       "revision": 0
     },
-    "Q109921901": {
-      "open_requests": [],
-      "phase": "research_pending",
+    "Q109912371": {
+      "open_requests": [
+        {
+          "category": "scope_conflict",
+          "field": "locations.wikidata-item-location.coordinates",
+          "reason": "Reconcile the root institution P625 latitude +2.6813689 with root P131 Tapalang and the frozen district point latitude -2.858783108163834 using source-grounded institution geographic evidence. Preserve the exact root observation/rank/precision and the conflict; do not invent a sign correction or use the district point as an institution coordinate. The frozen packet does not resolve this mandatory location context.",
+          "request_id": "598e1f93-520d-505c-bea9-4f4403c6415a",
+          "reviewed_proposal_sha256": "84fa179b0b5af159be431fde2c81411180d37ca1b719d35451797292bf8470d6"
+        }
+      ],
+      "phase": "unresolved",
       "reason": "resume_after_private_workspace_loss",
       "revision": 0
     },
@@ -150,6 +158,20 @@
         }
       ],
       "phase": "revision_requested",
+      "reason": "resume_after_private_workspace_loss",
+      "revision": 0
+    },
+    "Q116060952": {
+      "open_requests": [
+        {
+          "category": "evidence_gap",
+          "field": "identity",
+          "reason": "Resolve institutional eligibility with source-grounded identity assessment before publication. The frozen evidence supports retaining needs_review, but does not resolve the graduate-school/research-project boundary. Preserve this ambiguity and leave the proposal unpublished unless eligibility can be established; do not infer an independent university from the graduate-school P31 alone.",
+          "request_id": "a83405e7-56c2-5822-9cb8-a6a55f1cab1c",
+          "reviewed_proposal_sha256": "bebc683b636324740abef9dd29b8100d7a40bffcc47c97aba84c2b5ebf18829b"
+        }
+      ],
+      "phase": "unresolved",
       "reason": "resume_after_private_workspace_loss",
       "revision": 0
     },
@@ -319,6 +341,34 @@
       "reason": "technical_blocker_qualified_root_P625_requires_scoped_geography_task;research_result_retained_no_review_or_approval",
       "revision": 0
     },
+    "Q133811849": {
+      "open_requests": [
+        {
+          "category": "evidence_gap",
+          "field": "identity",
+          "reason": "Resolve university/higher-education eligibility using explicit source evidence of institutional level or recognized degree-granting status. Broad educational-institution classification and the college name do not establish eligibility; keep publication blocked while unresolved.",
+          "request_id": "0b24057b-0d46-5604-a77a-2de57c9b95a4",
+          "reviewed_proposal_sha256": "d0f46404803fb5878cef63c8798a829a2130ab1e647b0fd5f93be50766e0d652"
+        }
+      ],
+      "phase": "unresolved",
+      "reason": "resume_after_private_workspace_loss",
+      "revision": 0
+    },
+    "Q135095417": {
+      "open_requests": [
+        {
+          "category": "evidence_gap",
+          "field": "identity",
+          "reason": "Before publication, supply frozen source evidence resolving whether Q135095417 is an eligible university or independently qualifying higher-education institution, or establish exclusion. The broad educational institution classification does not decide eligibility. Keep needs_review and withhold publication until resolved; capture failures alone are not grounds to reject the supported name and inception year.",
+          "request_id": "d635b427-a40c-5499-b24e-0797cd2d6dd5",
+          "reviewed_proposal_sha256": "66ebabe9c582a25a5d32974ab8b80a40f69d4bbb30e3bee0e295b86cc2fe2138"
+        }
+      ],
+      "phase": "unresolved",
+      "reason": "resume_after_private_workspace_loss",
+      "revision": 0
+    },
     "Q137058666": {
       "open_requests": [
         {
@@ -344,6 +394,34 @@
         }
       ],
       "phase": "revision_requested",
+      "reason": "resume_after_private_workspace_loss",
+      "revision": 0
+    },
+    "Q137467866": {
+      "open_requests": [
+        {
+          "category": "evidence_gap",
+          "field": "identity",
+          "reason": "Keep this case unpublished and needs_review until evidence establishes whether Legiron is an eligible university/higher-education institution or an out-of-scope private school. Generic educational-institution classification and unavailable external pages establish neither eligibility nor definite exclusion. Obtain and freeze relevant evidence for a future independent review; do not treat failed captures alone as rejection grounds.",
+          "request_id": "001b954f-ae7a-59b5-99ac-1378525c2c50",
+          "reviewed_proposal_sha256": "0df81236b5c57417f84199d8846e865f33b079b3cf947115eadad6c6fc8575f2"
+        }
+      ],
+      "phase": "unresolved",
+      "reason": "resume_after_private_workspace_loss",
+      "revision": 0
+    },
+    "Q137467933": {
+      "open_requests": [
+        {
+          "category": "evidence_gap",
+          "field": "identity",
+          "reason": "Before publication, resolve collection eligibility with source evidence identifying this subject as an eligible higher-education institution, or complete an evidence-based ineligible disposition. Retain needs_review and block publication while that question remains unresolved; generic educational-institution P31 and the private-school description do not establish eligibility.",
+          "request_id": "7de4caf9-e9ab-560d-87d9-9fe94db6c7e8",
+          "reviewed_proposal_sha256": "8d553b573f330a9be77feb6c6dc320fe5089c5a4afde01707eb726c4b08ac253"
+        }
+      ],
+      "phase": "unresolved",
       "reason": "resume_after_private_workspace_loss",
       "revision": 0
     },
@@ -403,6 +481,20 @@
       "reason": "resume_after_private_workspace_loss",
       "revision": 0
     },
+    "Q16896306": {
+      "open_requests": [
+        {
+          "category": "evidence_gap",
+          "field": "curation.identity_status",
+          "reason": "Resolve higher-education eligibility with source-grounded evidence establishing the institution educational level or degree-granting role, or an explicit supported eligibility disposition. The frozen packet currently leaves identity_status needs_review; do not infer university or higher-education status merely from the college name.",
+          "request_id": "11c75926-5072-5655-a9cd-5cfee3ee9161",
+          "reviewed_proposal_sha256": "fa38e1aabbc2e9e3df9646f9e4e74444ae2989083f7f2afcc338a9cf118d45c0"
+        }
+      ],
+      "phase": "unresolved",
+      "reason": "resume_after_private_workspace_loss",
+      "revision": 0
+    },
     "Q17211677": {
       "open_requests": [
         {
@@ -418,6 +510,20 @@
           "reason": "Complete or accurately document the finance gap-source survey, including actual retrieval failures where applicable; do not claim completion based on the frozen Wikimedia sources alone.",
           "request_id": "2be7d8cb-de1e-5f35-87bf-2763bdd471bf",
           "reviewed_proposal_sha256": "fc8f279f75ed62e85305dabbb0e4d92eab6612ca65084a8f0084846cbae3ba7c"
+        }
+      ],
+      "phase": "revision_requested",
+      "reason": "resume_after_private_workspace_loss",
+      "revision": 0
+    },
+    "Q18110949": {
+      "open_requests": [
+        {
+          "category": "evidence_gap",
+          "field": "curation.identity_status",
+          "reason": "For exact proposal 891888ca05b6d9cde69ef14f219371a9293e8ef4866160931dd4e6f34f32ec8a, resolve root Q18110949 eligibility: supply evidence that this FRCER centre itself awards degrees or provides recognized tertiary teaching, or establish it is outside eligible higher-education scope and retain/defer accordingly. Preserve the existing university/research-centre source conflict; parent ICFRE activities or generic education/research wording do not establish root eligibility. Until resolved, keep needs_review and do not publish this QID as approved. No request is made merely to recover optional captures or fill absent population/finance.",
+          "request_id": "3baa1684-e873-5357-8dac-ba415b72cdd3",
+          "reviewed_proposal_sha256": "891888ca05b6d9cde69ef14f219371a9293e8ef4866160931dd4e6f34f32ec8a"
         }
       ],
       "phase": "revision_requested",
@@ -459,6 +565,20 @@
       "reason": "resume_after_private_workspace_loss",
       "revision": 0
     },
+    "Q30281657": {
+      "open_requests": [
+        {
+          "category": "evidence_gap",
+          "field": "curation.identity_status",
+          "reason": "Resolve core eligibility with source-grounded evidence identifying the institution and whether it independently provides higher education, rather than being a constituent graduate school or interinstitutional training network. Preserve affiliation/organizational context and set a justified eligible or excluded identity outcome. If evidence remains unavailable, retain needs_review and withhold publication; the present generic P31 and name are insufficient.",
+          "request_id": "299a1c2c-5017-52b2-8881-f8747b367c29",
+          "reviewed_proposal_sha256": "081c478d5ab74e6d76e4e9bfc86c3b6ea716ebcacdf058c27ab887dd2f0603a6"
+        }
+      ],
+      "phase": "revision_requested",
+      "reason": "resume_after_private_workspace_loss",
+      "revision": 0
+    },
     "Q30294019": {
       "open_requests": [
         {
@@ -470,12 +590,6 @@
         }
       ],
       "phase": "unresolved",
-      "reason": "resume_after_private_workspace_loss",
-      "revision": 0
-    },
-    "Q3152756": {
-      "open_requests": [],
-      "phase": "research_pending",
       "reason": "resume_after_private_workspace_loss",
       "revision": 0
     },
@@ -555,12 +669,6 @@
       "reason": "resume_after_private_workspace_loss",
       "revision": 0
     },
-    "Q5322728": {
-      "open_requests": [],
-      "phase": "research_pending",
-      "reason": "resume_after_private_workspace_loss",
-      "revision": 0
-    },
     "Q55639932": {
       "open_requests": [
         {
@@ -603,6 +711,20 @@
       "reason": "resume_after_private_workspace_loss",
       "revision": 0
     },
+    "Q72291484": {
+      "open_requests": [
+        {
+          "category": "evidence_gap",
+          "field": "identity.eligibility",
+          "reason": "Resolve institution eligibility and the conflicting normal-rank P31 classifications before publication. The frozen packet leaves identity_status as needs_review; preserving this uncertainty is accurate but cannot support publication approval. Keep the conflict visible and do not infer university eligibility or legal independence from the program name or parent museum relationship.",
+          "request_id": "25c6f660-b3f7-5e7c-99ad-be9f56088632",
+          "reviewed_proposal_sha256": "81943516aaea99273173ac7f99ab0d96d40fb9d6c5471a559264fb75fbba9a86"
+        }
+      ],
+      "phase": "unresolved",
+      "reason": "resume_after_private_workspace_loss",
+      "revision": 0
+    },
     "Q77076285": {
       "open_requests": [
         {
@@ -617,21 +739,31 @@
       "reason": "resume_after_private_workspace_loss",
       "revision": 0
     },
-    "Q7895802": {
-      "open_requests": [],
-      "phase": "research_pending",
+    "Q84426140": {
+      "open_requests": [
+        {
+          "category": "evidence_gap",
+          "field": "identity.eligibility",
+          "reason": "Resolve university eligibility with evidence distinguishing this affiliated college from a qualifying university, or explicitly exclude it. The supplied generic college classification and affiliation leave eligibility unresolved; do not publish while needs_review remains.",
+          "request_id": "be4f7d28-36d5-5bbf-a878-1a2fa114cf31",
+          "reviewed_proposal_sha256": "a69e34131a4ce467a68e061b03ea5177a7f031007cd867f2327a58d7cbc74731"
+        }
+      ],
+      "phase": "unresolved",
       "reason": "resume_after_private_workspace_loss",
       "revision": 0
     },
-    "Q84837853": {
-      "open_requests": [],
-      "phase": "research_pending",
-      "reason": "resume_after_private_workspace_loss",
-      "revision": 0
-    },
-    "Q91410145": {
-      "open_requests": [],
-      "phase": "research_pending",
+    "Q84742232": {
+      "open_requests": [
+        {
+          "category": "evidence_gap",
+          "field": "curation.identity_status",
+          "reason": "Resolve higher-education eligibility for Q84742232 with captured, locatable evidence of its tertiary program/qualification level or a specific higher-education classification, or provide a sourced exclusion determination if it is outside project scope. Generic college classification and the university-affiliation description leave the level ambiguous. Preserve supported observations and needs_review until resolved; failed optional captures alone are not the objection.",
+          "request_id": "6aba0537-1420-58af-b743-9c796a366dce",
+          "reviewed_proposal_sha256": "a91567cc05bd77deaf38c8d19dba4a8092dc012225eb056b7ef9fa2f5b735ba2"
+        }
+      ],
+      "phase": "revision_requested",
       "reason": "resume_after_private_workspace_loss",
       "revision": 0
     },
@@ -684,12 +816,6 @@
       "reason": "resume_after_private_workspace_loss",
       "revision": 0
     },
-    "Q93966929": {
-      "open_requests": [],
-      "phase": "research_pending",
-      "reason": "resume_after_private_workspace_loss",
-      "revision": 0
-    },
     "Q98945674": {
       "open_requests": [
         {
@@ -718,6 +844,20 @@
       "reason": "resume_after_private_workspace_loss",
       "revision": 0
     },
+    "Q98946861": {
+      "open_requests": [
+        {
+          "category": "evidence_gap",
+          "field": "curation.identity_status",
+          "reason": "Resolve higher-education eligibility with captured institution-specific evidence, such as a resolved affiliation or official tertiary programme/register entry tied to this item. Preserve needs_review until a supported in-scope, related or excluded disposition is possible. The blocker is unresolved eligibility, not the optional external-page failures themselves.",
+          "request_id": "0946b0c3-e719-58eb-b63f-f463e9c82df5",
+          "reviewed_proposal_sha256": "da528814cc7107585e9a1663d7e06737bd94de28989ee38e88336734f00513f8"
+        }
+      ],
+      "phase": "unresolved",
+      "reason": "resume_after_private_workspace_loss",
+      "revision": 0
+    },
     "Q99401787": {
       "open_requests": [
         {
@@ -731,6 +871,27 @@
       "phase": "unresolved",
       "reason": "resume_after_private_workspace_loss",
       "revision": 0
+    },
+    "Q99403381": {
+      "open_requests": [
+        {
+          "category": "evidence_gap",
+          "field": "curation.identity_status",
+          "reason": "Capture institution-official or education-register evidence establishing that this exact institution provides tertiary education; generic college Q189004 alone cannot establish eligibility. Retain needs_review until resolved.",
+          "request_id": "f2db8db6-d0c7-5c27-9a36-59eb07f243a6",
+          "reviewed_proposal_sha256": "84046f0034dce1c8b905e5c579524e5367aabe8f24c0c2fb7587106ac47b9a70"
+        },
+        {
+          "category": "evidence_gap",
+          "field": "curation.identity_status",
+          "reason": "Resolve the retained eligibility request with captured institution-specific official or education-register evidence establishing tertiary education for this exact institution. Preserve needs_review and keep unpublished while the evidence remains unavailable; the acquisition failure itself does not establish eligibility or exclusion.",
+          "request_id": "96a112b5-d08f-5a7f-bcf2-72b45d9072e6",
+          "reviewed_proposal_sha256": "955ef5865d393d76aae104775fc67b970ffe2bf1be193303285fc6848e8849ad"
+        }
+      ],
+      "phase": "unresolved",
+      "reason": "resume_after_private_workspace_loss",
+      "revision": 2
     }
   },
   "type": "university-manager-backlog-v1"

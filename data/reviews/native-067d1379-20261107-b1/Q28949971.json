@@ -1,0 +1,939 @@
+{
+  "attribution": "distinct_native_research_and_review_subagents;not_cryptographic_identity",
+  "research": {
+    "baseline_sha256": "absent",
+    "candidate": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-06T23:08:11.844405+00:00",
+          "status": "not_found"
+        },
+        "geography": {
+          "checked_at": "2026-11-06T23:08:11.844405+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-06T23:08:11.844405+00:00",
+          "status": "disputed"
+        },
+        "identity": {
+          "checked_at": "2026-11-06T23:08:11.844405+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-06T23:08:11.844405+00:00",
+          "status": "not_found"
+        },
+        "profile": {
+          "checked_at": "2026-11-06T23:08:11.844405+00:00",
+          "status": "checked"
+        }
+      },
+      "curation": {
+        "identity_status": "in_scope"
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "claim:P571:0",
+                      "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q28949971$4FB25650-7359-40E5-8396-DA8C3D2198F9\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+1963-10-03T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}",
+                      "source_ref": "s1"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "day": 3,
+                    "month": 10,
+                    "precision": "day",
+                    "year": 1963
+                  },
+                  "verification": "supported"
+                },
+                {
+                  "evidence": [
+                    {
+                      "locator": "claim:P571:1",
+                      "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q28949971$0C30D15B-FE21-4263-870E-AC29BD2C9F7A\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+1963-03-10T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}, \"reference_count\": 1}",
+                      "source_ref": "s1"
+                    }
+                  ],
+                  "id": "c2",
+                  "value": {
+                    "day": 10,
+                    "month": 3,
+                    "precision": "day",
+                    "year": 1963
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "conflicts": [
+                {
+                  "candidate_ids": [
+                    "c1",
+                    "c2"
+                  ],
+                  "kind": "time_disagreement",
+                  "note": "Two inception statements reverse the month and day; retain both without resolving.",
+                  "status": "unresolved"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "qualifications": [
+                  "conflicting_candidates"
+                ],
+                "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+                "reason_code": "best_available"
+              }
+            },
+            "id": "establishment",
+            "kind": "institution_establishment",
+            "subject_ref": "institution"
+          }
+        ]
+      },
+      "identity": {
+        "aliases": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P1813:0",
+                    "original_text": "{\"property\": \"P1813\", \"property_label\": \"short name\", \"statement_id\": \"Q28949971$DA746ED7-9212-44FD-8A4E-4605EA4BB43F\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"UNHI Denpasar\", \"language\": \"id\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "id",
+                  "text": "UNHI Denpasar"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ],
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P31:1",
+                  "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q28949971$D5602B01-3B27-466F-8CCA-8DD289D37270\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 3918, \"id\": \"Q3918\"}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "metadata",
+                  "original_text": "{\"id\": \"Q3918\", \"labels\": {\"en\": \"university\"}, \"descriptions\": {\"en\": \"an institution of tertiary education and research which awards academic degrees in several academic disciplines\"}}",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": "university",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q28949971\", \"labels\": {\"en\": \"Hindu Indonesia University\"}, \"descriptions\": {\"en\": \"Education organization in Denpasar Indonesia\"}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "Hindu Indonesia University",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "locations": [
+        {
+          "id": "east",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q28949971$49DCA771-C264-4D8D-AC5E-79AB27BCB4A4\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 12481270, \"id\": \"Q12481270\"}}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q12481270\", \"labels\": {\"en\": \"East Denpasar\"}, \"descriptions\": {\"en\": \"district in Denpasar City, Bali Province, Indonesia\"}}",
+                    "source_ref": "s5"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "East Denpasar"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q12481270"
+        },
+        {
+          "id": "south",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P131:1",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q28949971$FCEEBE85-52FD-40D4-808F-515C92557FD7\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 12481272, \"id\": \"Q12481272\"}, \"reference_count\": 3}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q12481272\", \"labels\": {\"en\": \"South Denpasar\"}, \"descriptions\": {\"en\": \"district in Denpasar City, Bali Province, Indonesia\"}}",
+                    "source_ref": "s6"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "South Denpasar"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q12481272"
+        },
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q28949971$0ab818e0-41ec-588e-d825-fe1acf9ae081\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 252, \"id\": \"Q252\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q252\", \"labels\": {\"en\": \"Indonesia\"}, \"descriptions\": {\"en\": \"island country in Southeast Asia and Oceania\"}}",
+                    "source_ref": "s4"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "country_name": "Indonesia",
+                  "country_qid": "Q252",
+                  "formatted": {
+                    "language": "en",
+                    "text": "Indonesia"
+                  }
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "country",
+          "kind": "administrative_area",
+          "qid": "Q252"
+        },
+        {
+          "coordinates": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "statement:Q28949971$49295AF1-43C8-497B-9F7F-2440AC63AF6F",
+                    "original_text": "\"latitude\": -8.633333333333333",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "source_rank": "normal",
+                "value": {
+                  "crs": "EPSG:4326",
+                  "globe_qid": "Q2",
+                  "latitude": -8.633333333333333,
+                  "longitude": 115.24366666666667,
+                  "source_precision_degrees": 2.777777777777778e-05
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "wikidata-item-location",
+          "kind": "institution",
+          "qid": "Q28949971"
+        }
+      ],
+      "modified_datetime": "2026-11-06T23:09:34.740058+00:00",
+      "profile": {
+        "website": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P856:0",
+                  "original_text": "{\"property\": \"P856\", \"property_label\": \"official website\", \"statement_id\": \"Q28949971$889C9328-CF60-45EE-8EB1-9BD0A351DF77\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"https://www.unhi.ac.id\", \"qualifiers\": {\"P407\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 9240, \"id\": \"Q9240\"}}]}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "https://www.unhi.ac.id",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "qid": "Q28949971",
+      "record_revision": 1,
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "reviewed_institution_type"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "included"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T23:07:41.572849+00:00",
+          "revision_id": 2548060592,
+          "source_qid": "Q28949971",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2548060592"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T23:07:49.821451+00:00",
+          "revision_id": 2560982823,
+          "source_qid": "Q902104",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2560982823"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T23:07:53.430042+00:00",
+          "revision_id": 2562156954,
+          "source_qid": "Q3918",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2562156954"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T23:07:57.049453+00:00",
+          "revision_id": 2562953677,
+          "source_qid": "Q252",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2562953677"
+        },
+        "s5": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T23:08:00.581577+00:00",
+          "revision_id": 2531405852,
+          "source_qid": "Q12481270",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2531405852"
+        },
+        "s6": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T23:08:11.832305+00:00",
+          "revision_id": 2531405855,
+          "source_qid": "Q12481272",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2531405855"
+        }
+      }
+    },
+    "coverage": [
+      {
+        "group": "identity",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "status": "disputed"
+      },
+      {
+        "group": "population",
+        "status": "not_found"
+      },
+      {
+        "group": "finance",
+        "status": "not_found"
+      },
+      {
+        "group": "profile",
+        "status": "checked"
+      }
+    ],
+    "delta": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-06T23:08:11.844405+00:00",
+          "status": "not_found"
+        },
+        "geography": {
+          "checked_at": "2026-11-06T23:08:11.844405+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-06T23:08:11.844405+00:00",
+          "status": "disputed"
+        },
+        "identity": {
+          "checked_at": "2026-11-06T23:08:11.844405+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-06T23:08:11.844405+00:00",
+          "status": "not_found"
+        },
+        "profile": {
+          "checked_at": "2026-11-06T23:08:11.844405+00:00",
+          "status": "checked"
+        }
+      },
+      "curation": {
+        "identity_status": "in_scope"
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "claim:P571:0",
+                      "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q28949971$4FB25650-7359-40E5-8396-DA8C3D2198F9\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+1963-10-03T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}",
+                      "source_ref": "s1"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "day": 3,
+                    "month": 10,
+                    "precision": "day",
+                    "year": 1963
+                  },
+                  "verification": "supported"
+                },
+                {
+                  "evidence": [
+                    {
+                      "locator": "claim:P571:1",
+                      "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q28949971$0C30D15B-FE21-4263-870E-AC29BD2C9F7A\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+1963-03-10T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}, \"reference_count\": 1}",
+                      "source_ref": "s1"
+                    }
+                  ],
+                  "id": "c2",
+                  "value": {
+                    "day": 10,
+                    "month": 3,
+                    "precision": "day",
+                    "year": 1963
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "conflicts": [
+                {
+                  "candidate_ids": [
+                    "c1",
+                    "c2"
+                  ],
+                  "kind": "time_disagreement",
+                  "note": "Two inception statements reverse the month and day; retain both without resolving.",
+                  "status": "unresolved"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "qualifications": [
+                  "conflicting_candidates"
+                ],
+                "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+                "reason_code": "best_available"
+              }
+            },
+            "id": "establishment",
+            "kind": "institution_establishment",
+            "subject_ref": "institution"
+          }
+        ]
+      },
+      "identity": {
+        "aliases": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P1813:0",
+                    "original_text": "{\"property\": \"P1813\", \"property_label\": \"short name\", \"statement_id\": \"Q28949971$DA746ED7-9212-44FD-8A4E-4605EA4BB43F\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"UNHI Denpasar\", \"language\": \"id\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "id",
+                  "text": "UNHI Denpasar"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ],
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P31:1",
+                  "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q28949971$D5602B01-3B27-466F-8CCA-8DD289D37270\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 3918, \"id\": \"Q3918\"}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "metadata",
+                  "original_text": "{\"id\": \"Q3918\", \"labels\": {\"en\": \"university\"}, \"descriptions\": {\"en\": \"an institution of tertiary education and research which awards academic degrees in several academic disciplines\"}}",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": "university",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q28949971\", \"labels\": {\"en\": \"Hindu Indonesia University\"}, \"descriptions\": {\"en\": \"Education organization in Denpasar Indonesia\"}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "Hindu Indonesia University",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "locations": [
+        {
+          "id": "east",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q28949971$49DCA771-C264-4D8D-AC5E-79AB27BCB4A4\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 12481270, \"id\": \"Q12481270\"}}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q12481270\", \"labels\": {\"en\": \"East Denpasar\"}, \"descriptions\": {\"en\": \"district in Denpasar City, Bali Province, Indonesia\"}}",
+                    "source_ref": "s5"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "East Denpasar"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q12481270"
+        },
+        {
+          "id": "south",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P131:1",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q28949971$FCEEBE85-52FD-40D4-808F-515C92557FD7\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 12481272, \"id\": \"Q12481272\"}, \"reference_count\": 3}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q12481272\", \"labels\": {\"en\": \"South Denpasar\"}, \"descriptions\": {\"en\": \"district in Denpasar City, Bali Province, Indonesia\"}}",
+                    "source_ref": "s6"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "South Denpasar"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q12481272"
+        },
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q28949971$0ab818e0-41ec-588e-d825-fe1acf9ae081\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 252, \"id\": \"Q252\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q252\", \"labels\": {\"en\": \"Indonesia\"}, \"descriptions\": {\"en\": \"island country in Southeast Asia and Oceania\"}}",
+                    "source_ref": "s4"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "country_name": "Indonesia",
+                  "country_qid": "Q252",
+                  "formatted": {
+                    "language": "en",
+                    "text": "Indonesia"
+                  }
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "country",
+          "kind": "administrative_area",
+          "qid": "Q252"
+        },
+        {
+          "coordinates": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "statement:Q28949971$49295AF1-43C8-497B-9F7F-2440AC63AF6F",
+                    "original_text": "\"latitude\": -8.633333333333333",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "source_rank": "normal",
+                "value": {
+                  "crs": "EPSG:4326",
+                  "globe_qid": "Q2",
+                  "latitude": -8.633333333333333,
+                  "longitude": 115.24366666666667,
+                  "source_precision_degrees": 2.777777777777778e-05
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "wikidata-item-location",
+          "kind": "institution",
+          "qid": "Q28949971"
+        }
+      ],
+      "profile": {
+        "website": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P856:0",
+                  "original_text": "{\"property\": \"P856\", \"property_label\": \"official website\", \"statement_id\": \"Q28949971$889C9328-CF60-45EE-8EB1-9BD0A351DF77\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"https://www.unhi.ac.id\", \"qualifiers\": {\"P407\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 9240, \"id\": \"Q9240\"}}]}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "https://www.unhi.ac.id",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "qid": "Q28949971",
+      "record_revision": 1,
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "reviewed_institution_type"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "included"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T23:07:41.572849+00:00",
+          "revision_id": 2548060592,
+          "source_qid": "Q28949971",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2548060592"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T23:07:49.821451+00:00",
+          "revision_id": 2560982823,
+          "source_qid": "Q902104",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2560982823"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T23:07:53.430042+00:00",
+          "revision_id": 2562156954,
+          "source_qid": "Q3918",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2562156954"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T23:07:57.049453+00:00",
+          "revision_id": 2562953677,
+          "source_qid": "Q252",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2562953677"
+        },
+        "s5": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T23:08:00.581577+00:00",
+          "revision_id": 2531405852,
+          "source_qid": "Q12481270",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2531405852"
+        },
+        "s6": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T23:08:11.832305+00:00",
+          "revision_id": 2531405855,
+          "source_qid": "Q12481272",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2531405855"
+        }
+      }
+    },
+    "open_requests": [],
+    "proposed_at": "2026-11-06T23:09:34.740058+00:00",
+    "qid": "Q28949971",
+    "research": {
+      "model": "not_reported",
+      "prompt_sha256": "d5a93f77b8b8de4651580536c47bd9f952f9dc2b8eade773857dff337b9168e8",
+      "reasoning_effort": "not_reported",
+      "schema_sha256": "92e942f4fbf2ae28964462ea9ffa8312c5ee16a077a1e08b40aaaf741512422e",
+      "session": "/root/research_q28949971"
+    },
+    "retrieval_failures": [],
+    "review_status": "unreviewed",
+    "seed": {
+      "channels": [
+        "reviewed_institution_type"
+      ],
+      "import_id": "seed-84c3beb45367905f",
+      "screening_status": "included"
+    },
+    "transport": {
+      "base_commit": "6c5c90a72889094131b0045ba10fafd98585b9a2",
+      "protocol": "native-subagent-v1",
+      "repository": "ider-zh/university-seed-curation",
+      "review_policy": {
+        "id": "source-grounded-flexible-v2",
+        "sha256": "b8ed7d2897e4c31dbd81b1379aafdc1077a21d1a33949edbd2d896b0adf99db2"
+      },
+      "schema_sha256": "bfa496eafa9dffca56146214168db7f000b09161b8993129632e7202e1c88833",
+      "seed_catalog_sha256": "84c3beb45367905f513d650684283dd62a9c1b77962bdc34151a6ef05bfa03d4"
+    },
+    "type": "university-proposal-v1"
+  },
+  "review": {
+    "contexts_checked": 4,
+    "coverage_checks": [
+      {
+        "group": "identity",
+        "reason": "Supplied root and resolved university class were surveyed for bounded identity and eligibility. Supported name, alias and kind are retained without filling missing ownership or operating status.",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "reason": "Frozen country, administrative-area claims and root coordinate were surveyed. Institution point and country attribution are properly scoped; district names remain supplementary.",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "reason": "Two day-precision inception statements disagree by reversing month and day. Both remain visible; no external chronology capture or completed external gap survey is supplied.",
+        "status": "disputed"
+      },
+      {
+        "group": "population",
+        "reason": "No population facts occur in the supplied Wikidata packet, but absence from this packet does not establish a completed targeted gap-source survey. Survey completeness is unresolved, not a numeric factual dispute.",
+        "status": "disputed"
+      },
+      {
+        "group": "finance",
+        "reason": "No finance observations occur in the frozen packet and no external survey is represented. A complete finance gap survey is not established; this is a coverage limitation rather than evidence of zero finances.",
+        "status": "disputed"
+      },
+      {
+        "group": "profile",
+        "reason": "The frozen root supplies a website URL but no captured website body or broader targeted profile survey. Supported supplementary content may remain, while survey completeness remains unresolved.",
+        "status": "disputed"
+      }
+    ],
+    "decision": "approve",
+    "facts_checked": 6,
+    "full_refresh": false,
+    "inferences": [
+      {
+        "id": "milestone:establishment",
+        "reason": "The institution-establishment milestone is a controlled representation of the two root inception claims. Both exact dates and their disagreement remain recoverable; no predecessor or separate campus subject is introduced."
+      }
+    ],
+    "model": "not_reported",
+    "proposal_sha256": "49d975fed0a3129bce20554383243a24aec7ea100c066a88d05c8d19f363d338",
+    "qid": "Q28949971",
+    "reasoning_effort": "not_reported",
+    "record_sha256": "322eb4ed1b03640e4c888380bcd0b4665a896f1c9a376fb29711872c99dbb314",
+    "request_responses": [],
+    "requests": [],
+    "review_scope": {
+      "not_independently_reviewed_ids": [
+        "$.locations[0].name:c1",
+        "$.locations[1].name:c1",
+        "$.locations[2].address:c1",
+        "$.profile.website:c1",
+        "location:country",
+        "location:east",
+        "location:south"
+      ],
+      "reviewed_ids": [
+        "$.history.milestones[0].date:c1",
+        "$.history.milestones[0].date:c2",
+        "$.identity.aliases[0]:c1",
+        "$.identity.kind:c1",
+        "$.identity.names.en:c1",
+        "$.locations[3].coordinates:c1",
+        "country:$.locations[2].address:c1",
+        "identity",
+        "location:wikidata-item-location",
+        "milestone:establishment"
+      ],
+      "version": "core-review-v3"
+    },
+    "review_session": "/root/review_final_q28949971",
+    "reviewed_at": "2026-11-06T23:17:57.145627+00:00",
+    "source_revisions_checked": 6,
+    "waived_requests": []
+  },
+  "review_result_sha256": "2ff90c9491343a1c46eb1a63ff5421f5b2a242507fefa4fbd7048cf6eea5419f",
+  "type": "university-unified-receipt-v1"
+}

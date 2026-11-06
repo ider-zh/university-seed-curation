@@ -137,7 +137,10 @@ def compile(repo, job, result_file, session, model, effort='medium', completed_a
     if verdict['decision']=='approve' and (not supported or not addressed or verdict['requests']): raise ValueError('Incomplete or contradictory approval')
     if verdict['decision']=='request_changes' and not verdict['requests']: raise ValueError('Changes requested without actionable requests')
     declared={r['group']:r['status'] for r in proposal['coverage']}; checked={r['group']:r['status'] for r in verdict['coverage_checks']}
-    full=(verdict['decision']=='approve' and declared==checked and not proposal['retrieval_failures'] and
+    full=(verdict['decision']=='approve' and declared==checked and
+          set(declared)==set(GROUPS) and
+          all(status in ('checked','not_found','not_applicable') for status in declared.values()) and
+          not proposal['retrieval_failures'] and
           proposal['delta']['curation']['identity_status'] in ('in_scope','related','excluded'))
     at=completed_at or datetime.now(timezone.utc).isoformat(); instant(at)
     if instant(at)<instant(manifest['prepared_at']) or instant(at)<instant(proposal['proposed_at']): raise ValueError('Native Review predates its inputs')
