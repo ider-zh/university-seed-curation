@@ -1,0 +1,423 @@
+{
+  "coverage": {
+    "finance": {
+      "checked_at": "2026-11-06T23:25:53.171273+00:00",
+      "status": "disputed"
+    },
+    "geography": {
+      "checked_at": "2026-11-06T23:25:53.171273+00:00",
+      "status": "checked"
+    },
+    "history": {
+      "checked_at": "2026-11-06T23:25:53.171273+00:00",
+      "status": "disputed"
+    },
+    "identity": {
+      "checked_at": "2026-11-06T23:25:53.171273+00:00",
+      "status": "checked"
+    },
+    "population": {
+      "checked_at": "2026-11-06T23:25:53.171273+00:00",
+      "status": "disputed"
+    },
+    "profile": {
+      "checked_at": "2026-11-06T23:25:53.171273+00:00",
+      "status": "checked"
+    }
+  },
+  "curation": {
+    "identity_status": "related"
+  },
+  "history": {
+    "milestones": [
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P571:0",
+                  "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q25524429$5dd2fb43-4037-8bb3-b57c-a6776c441076\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+1000-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985786\"}, \"qualifiers\": {\"P1480\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 5727902, \"id\": \"Q5727902\"}}]}}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "calendar": "Julian",
+                "original_date": "+1000-00-00T00:00:00Z",
+                "precision": "year",
+                "year": 1000
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:.D0.98.D1.81.D1.82.D0.BE.D1.80.D0.B8.D1.8F",
+                  "original_text": "в 1000 г. (по другим данным в 1004 г.)",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:.D0.98.D1.81.D1.82.D0.BE.D1.80.D0.B8.D1.8F",
+                  "original_text": "в 1004 году по его приказу основали научную Академию",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c2",
+              "value": {
+                "precision": "year",
+                "year": 1004
+              },
+              "verification": "supported"
+            }
+          ],
+          "conflicts": [
+            {
+              "candidate_ids": [
+                "c1",
+                "c2"
+              ],
+              "kind": "time_disagreement",
+              "note": "Competing 1000 and 1004 establishment accounts; Wikidata 1000 retains its Julian calendar and source qualification.",
+              "status": "unresolved"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c2",
+            "qualifications": [
+              "conflicting_candidates"
+            ],
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:.D0.98.D1.81.D1.82.D0.BE.D1.80.D0.B8.D1.8F",
+                  "original_text": "в 1000 г. (по другим данным в 1004 г.)",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:.D0.98.D1.81.D1.82.D0.BE.D1.80.D0.B8.D1.8F",
+                  "original_text": "г. Гургандж был создан центр для проведения научных изысканий",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "Establishment of the medieval research centre at Gurganj; accounts give 1000 or 1004."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "establishment",
+        "kind": "institution_establishment",
+        "subject_ref": "institution"
+      }
+    ]
+  },
+  "identity": {
+    "kind": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "средневековый научно-исследовательский центр («Дом мудрости»)",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": "historical_academy",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "names": {
+      "en": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "metadata",
+                "original_text": "Mamun Academy",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": "Mamun Academy",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "ru": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "metadata",
+                "original_text": "Академия хорезмшаха Мамуна",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": "Академия хорезмшаха Мамуна",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    "operating_status": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "средневековый научно-исследовательский центр («Дом мудрости»)",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": "historical",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "locations": [
+    {
+      "address": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "находившийся в Туркменистане в хорезмском городе Гургандж (ныне г. Кёнеургенч)",
+                "source_ref": "s2"
+              },
+              {
+                "locator": "claim:P17:0",
+                "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"q48472$FC7E3BE3-D504-4B6E-A3AB-CEFC8B3122A7\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 874, \"id\": \"Q874\"}}",
+                "source_ref": "s5"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "city_name": "Köneürgenç",
+              "city_qid": "Q48472",
+              "country_name": "Turkmenistan",
+              "country_qid": "Q874",
+              "formatted": {
+                "language": "ru",
+                "text": "Гургандж (ныне г. Кёнеургенч), Туркменистан"
+              }
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "id": "gurganj",
+      "kind": "administrative_area",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "Гургандж (Древний Ургенч)",
+                "source_ref": "s2"
+              },
+              {
+                "locator": "claim:P131:0",
+                "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q25524429$5969cde7-4688-c824-c0ac-bc2b1cae67dd\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 48472, \"id\": \"Q48472\"}}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "ru",
+              "text": "Гургандж (Древний Ургенч)"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "qid": "Q48472"
+    }
+  ],
+  "modified_datetime": "2026-11-06T23:28:47.684367+00:00",
+  "profile": {
+    "academic_focus": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:.D0.98.D1.81.D1.82.D0.BE.D1.80.D0.B8.D1.8F",
+              "original_text": "были собраны историки, астрономы, математики, медики",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": [
+            {
+              "language": "en",
+              "text": "history"
+            },
+            {
+              "language": "en",
+              "text": "astronomy"
+            },
+            {
+              "language": "en",
+              "text": "mathematics"
+            },
+            {
+              "language": "en",
+              "text": "medicine"
+            }
+          ],
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "summary": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "Гургандж (Древний Ургенч)\nАкадемия хорезмшаха Мамуна (перс. گنج خانه مأمون‎, بیت‌الحکمه[1], туркм. Mamun horezmşasynyň akademiýasy) — средневековый научно-исследовательский центр («Дом мудрости»), находившийся в Туркменистане в хорезмском городе Гургандж (ныне г. Кёнеургенч), и основанный в XI веке будущим хорезмшахом Абу-л-Аббасом Мамуном II[англ.]. В Академии Мамуна работали такие известные ученые как Ибн-Сина и аль-Бируни[2], которые также и возглавляли ее.[3] По мнению учёных, Академия Мамуна располагалась на месте древней крепости Кырк-Молла (туркм. Kyrk molla), которая в настоящее время является частью Кёнеургенчского национального историко-культурного музея-заповедника в Дашогузском велаяте Туркменистана[4][5][6].",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:.D0.98.D1.81.D1.82.D0.BE.D1.80.D0.B8.D1.8F",
+              "original_text": "в 1000 г. (по другим данным в 1004 г.)",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:.D0.98.D1.81.D1.82.D0.BE.D1.80.D0.B8.D1.8F",
+              "original_text": "С 1004 по 1017 год",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:.D0.98.D1.81.D1.82.D0.BE.D1.80.D0.B8.D1.8F",
+              "original_text": "проводил эксперименты, наблюдения в различных областях естественных наук.",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:.D0.90.D0.BA.D0.B0.D0.B4.D0.B5.D0.BC.D0.B8.D1.8F_.D0.B2_.D1.81.D0.BE.D0.B2.D1.80.D0.B5.D0.BC.D0.B5.D0.BD.D0.BD.D0.BE.D0.B9_.D0.BF.D0.B0.D0.BC.D1.8F.D1.82.D0.B8",
+              "original_text": "В ноябре 1997 года первый Президент Узбекистана Ислам Каримов издал указ «О возрождении Хорезмской Академии Мамуна».",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "language": "en",
+            "text": "Mamun Academy was a medieval centre of scientific research in Gurganj, the Khwarazmian city identified with present-day Köneürgenç in Turkmenistan. Known in Russian as Академия хорезмшаха Мамуна, it was also described as a House of Wisdom. Its scholarly community included historians, astronomers, mathematicians and physicians. Accounts associate the academy with the patronage of the Khwarazmian rulers and with scholars including al-Biruni and Ibn Sina.\n\nThe academy's establishment is dated to 1000 in one account and to 1004 in another. The historical narrative places al-Biruni's scientific activity there between 1004 and 1017, describing experiments, observations and the preparation of scholarly works. Ibn Sina also worked in Gurganj among the academy's scholars. Researchers have associated the academy's location with the ancient Kyrk-Molla fortress site. A later decree issued in Uzbekistan in November 1997 concerned the revival of the Khorezm Mamun Academy; that modern initiative is distinct from the medieval institution described here."
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "qid": "Q25524429",
+  "record_revision": 1,
+  "schema_version": "0.2.2",
+  "seed": {
+    "channels": [
+      "legacy_discovery"
+    ],
+    "import_id": "seed-84c3beb45367905f",
+    "screening_status": "needs_review"
+  },
+  "selection_policy": "preferred-v1",
+  "sources": {
+    "s1": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T23:25:32.627943+00:00",
+      "revision_id": 2480860567,
+      "source_qid": "Q25524429",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2480860567"
+    },
+    "s2": {
+      "family": "wikimedia",
+      "kind": "wikipedia",
+      "language": "ru",
+      "page_id": 9158251,
+      "publisher_role": "encyclopedia",
+      "retrieved_at": "2026-11-06T23:25:40.432489+00:00",
+      "revision_id": 155574037,
+      "url": "https://ru.wikipedia.org/w/index.php?oldid=155574037"
+    },
+    "s3": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T23:25:44.939243+00:00",
+      "revision_id": 2561641675,
+      "source_qid": "Q2385804",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2561641675"
+    },
+    "s4": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T23:25:49.788540+00:00",
+      "revision_id": 2548974358,
+      "source_qid": "Q6720623",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2548974358"
+    },
+    "s5": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T23:25:53.161698+00:00",
+      "revision_id": 2545770913,
+      "source_qid": "Q48472",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2545770913"
+    }
+  }
+}
