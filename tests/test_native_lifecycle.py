@@ -110,6 +110,28 @@ class NativeLifecycleTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError,'baseline changed'):
                 pr_validation.validate_pr(self.root,'HEAD',head)
 
+    def test_data_pr_accepts_unchanged_backlog(self):
+        from university_curation import pr_validation
+        self.public['tasks'].pop('Q101')
+        (self.root/manager.BACKLOG).write_bytes(encode(self.public))
+        self.commit('no pending task for new institution')
+        research,proposal=self.research()
+        review,compiled=self.review(research,proposal,'unchanged-backlog-review')
+        bundle=self.private/'unchanged-backlog-delivery'
+        self.run_cli('unified-publish','--proposal',proposal,'--review-job',review,
+            '--review-attempt',compiled['private_attempt'],'--batch-id','unchanged-backlog','--output',bundle)
+        plan=load_json((bundle/'operations.json').read_bytes());base=plan['base_commit']
+        self.assertEqual((bundle/manager.BACKLOG).read_bytes(),blob(self.root,base,manager.BACKLOG))
+        self.git('checkout','-b','data/unchanged-backlog')
+        for path in plan['files']:
+            target=self.root/path;target.parent.mkdir(parents=True,exist_ok=True)
+            target.write_bytes((bundle/path).read_bytes())
+        self.git('add','data');self.git('commit','-m','new institution with unchanged backlog')
+        head=self.git('rev-parse','HEAD')
+        self.assertNotIn(manager.BACKLOG,self.git('diff','--name-only',base,head).splitlines())
+        with patch.object(pr_validation,'_base',side_effect=native_research._base):
+            self.assertEqual(pr_validation.validate_pr(self.root,base,head,head)['qids'],['Q101'])
+
     def test_offline_rebinding_and_interrupted_publication_confirmation(self):
         research,proposal=self.research()
         # Main may advance while native subagents are working on another school.
