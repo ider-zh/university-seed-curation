@@ -12,8 +12,30 @@
       "revision": 0
     },
     "Q1377": {
-      "open_requests": [],
-      "phase": "research_pending",
+      "open_requests": [
+        {
+          "category": "scope_conflict",
+          "field": "population.students_total",
+          "reason": "Both student-count observations assert basis=headcount, while the cited text only says Students/enrolled students. Use unspecified basis or supply a revision-bound source explicitly defining headcount.",
+          "request_id": "1e4b9161-3369-5d8f-a194-748c7da9cc1f",
+          "reviewed_proposal_sha256": "6255b9db4725b214cc23334b649bdc39dcd0f6b20ab451f048934a8b54690cdf"
+        },
+        {
+          "category": "evidence_gap",
+          "field": "locations.palace",
+          "reason": "Provide frozen evidence explicitly mapping University of Ljubljana Palace (Q12794274) to the cited main building at 5 Congress Square and validating headquarters, or remove the unsupported QID/headquarters attribution while retaining the supported building-level caption.",
+          "request_id": "6b973ea8-21e1-57f7-b2f6-0533d6b03d9c",
+          "reviewed_proposal_sha256": "6255b9db4725b214cc23334b649bdc39dcd0f6b20ab451f048934a8b54690cdf"
+        },
+        {
+          "category": "subject_mismatch",
+          "field": "history.milestones.earlier.kind",
+          "reason": "Do not classify the separate 1810 French-period university as predecessor_establishment unless an institutional lineage is substantiated. Use a neutral historical event kind and preserve the distinct related subject.",
+          "request_id": "5ef26d8a-48b2-57f9-9d6d-f22605d1cd24",
+          "reviewed_proposal_sha256": "6255b9db4725b214cc23334b649bdc39dcd0f6b20ab451f048934a8b54690cdf"
+        }
+      ],
+      "phase": "revision_requested",
       "reason": "resume_released_research_after_model_lease_loss",
       "revision": 0
     },
