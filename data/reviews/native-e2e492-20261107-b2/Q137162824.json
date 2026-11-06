@@ -1,0 +1,602 @@
+{
+  "attribution": "distinct_native_research_and_review_subagents;not_cryptographic_identity",
+  "research": {
+    "baseline_sha256": "absent",
+    "candidate": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-06T23:25:02.032563+00:00",
+          "status": "not_found"
+        },
+        "geography": {
+          "checked_at": "2026-11-06T23:25:02.032563+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-06T23:25:02.032563+00:00",
+          "status": "not_found"
+        },
+        "identity": {
+          "checked_at": "2026-11-06T23:25:02.032563+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-06T23:25:02.032563+00:00",
+          "status": "not_found"
+        },
+        "profile": {
+          "checked_at": "2026-11-06T23:25:02.032563+00:00",
+          "status": "not_found"
+        }
+      },
+      "curation": {
+        "identity_status": "excluded"
+      },
+      "identity": {
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "metadata",
+                  "original_text": "{\"id\": \"Q137162824\", \"labels\": {\"en\": \"CES de ZOA\"}, \"descriptions\": {\"en\": \"public secondary school in Cameroon\"}}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "claim:P31:0",
+                  "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q137162824$3e326d98-4cc0-312c-35e6-86f98c5733dc\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 3914, \"id\": \"Q3914\"}}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "metadata",
+                  "original_text": "{\"id\": \"Q3914\", \"labels\": {\"en\": \"school\"}, \"descriptions\": {\"en\": \"institution, facility or building for the education of students by teachers\"}}",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "claim:P31:1",
+                  "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q137162824$ef6ca103-42ca-1135-9b43-453a5d8f95d2\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 189004, \"id\": \"Q189004\"}}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "metadata",
+                  "original_text": "{\"id\": \"Q189004\", \"labels\": {\"en\": \"college\"}, \"descriptions\": {\"en\": \"educational institution, varying in level from country to country\"}}",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": "other",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q137162824\", \"labels\": {\"en\": \"CES de ZOA\"}, \"descriptions\": {\"en\": \"public secondary school in Cameroon\"}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "CES de ZOA",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        "ownership": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "metadata",
+                  "original_text": "{\"id\": \"Q137162824\", \"labels\": {\"en\": \"CES de ZOA\"}, \"descriptions\": {\"en\": \"public secondary school in Cameroon\"}}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "public",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "locations": [
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q137162824$863d791b-4058-07ba-91bd-86bf48343792\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 1009, \"id\": \"Q1009\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q1009\", \"labels\": {\"en\": \"Cameroon\"}, \"descriptions\": {\"en\": \"sovereign state in West-Central Africa\"}}",
+                    "source_ref": "s4"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "country_name": "Cameroon",
+                  "country_qid": "Q1009",
+                  "formatted": {
+                    "language": "en",
+                    "text": "Cameroon"
+                  }
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "cameroon",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q137162824$863d791b-4058-07ba-91bd-86bf48343792\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 1009, \"id\": \"Q1009\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q1009\", \"labels\": {\"en\": \"Cameroon\"}, \"descriptions\": {\"en\": \"sovereign state in West-Central Africa\"}}",
+                    "source_ref": "s4"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Cameroon"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q1009"
+        }
+      ],
+      "modified_datetime": "2026-11-06T23:26:57.121222+00:00",
+      "qid": "Q137162824",
+      "record_revision": 1,
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "legacy_discovery"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "needs_review"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T23:24:50.250754+00:00",
+          "revision_id": 2435831993,
+          "source_qid": "Q137162824",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2435831993"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T23:24:58.441498+00:00",
+          "revision_id": 2564928993,
+          "source_qid": "Q3914",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2564928993"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:54:11.189516+00:00",
+          "revision_id": 2556557061,
+          "source_qid": "Q189004",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2556557061"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T23:25:01.950790+00:00",
+          "revision_id": 2565433658,
+          "source_qid": "Q1009",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2565433658"
+        }
+      }
+    },
+    "coverage": [
+      {
+        "group": "identity",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "status": "not_found"
+      },
+      {
+        "group": "population",
+        "status": "not_found"
+      },
+      {
+        "group": "finance",
+        "status": "not_found"
+      },
+      {
+        "group": "profile",
+        "status": "not_found"
+      }
+    ],
+    "delta": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-06T23:25:02.032563+00:00",
+          "status": "not_found"
+        },
+        "geography": {
+          "checked_at": "2026-11-06T23:25:02.032563+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-06T23:25:02.032563+00:00",
+          "status": "not_found"
+        },
+        "identity": {
+          "checked_at": "2026-11-06T23:25:02.032563+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-06T23:25:02.032563+00:00",
+          "status": "not_found"
+        },
+        "profile": {
+          "checked_at": "2026-11-06T23:25:02.032563+00:00",
+          "status": "not_found"
+        }
+      },
+      "curation": {
+        "identity_status": "excluded"
+      },
+      "identity": {
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "metadata",
+                  "original_text": "{\"id\": \"Q137162824\", \"labels\": {\"en\": \"CES de ZOA\"}, \"descriptions\": {\"en\": \"public secondary school in Cameroon\"}}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "claim:P31:0",
+                  "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q137162824$3e326d98-4cc0-312c-35e6-86f98c5733dc\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 3914, \"id\": \"Q3914\"}}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "metadata",
+                  "original_text": "{\"id\": \"Q3914\", \"labels\": {\"en\": \"school\"}, \"descriptions\": {\"en\": \"institution, facility or building for the education of students by teachers\"}}",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "claim:P31:1",
+                  "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q137162824$ef6ca103-42ca-1135-9b43-453a5d8f95d2\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 189004, \"id\": \"Q189004\"}}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "metadata",
+                  "original_text": "{\"id\": \"Q189004\", \"labels\": {\"en\": \"college\"}, \"descriptions\": {\"en\": \"educational institution, varying in level from country to country\"}}",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": "other",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q137162824\", \"labels\": {\"en\": \"CES de ZOA\"}, \"descriptions\": {\"en\": \"public secondary school in Cameroon\"}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "CES de ZOA",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        "ownership": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "metadata",
+                  "original_text": "{\"id\": \"Q137162824\", \"labels\": {\"en\": \"CES de ZOA\"}, \"descriptions\": {\"en\": \"public secondary school in Cameroon\"}}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "public",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "locations": [
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q137162824$863d791b-4058-07ba-91bd-86bf48343792\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 1009, \"id\": \"Q1009\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q1009\", \"labels\": {\"en\": \"Cameroon\"}, \"descriptions\": {\"en\": \"sovereign state in West-Central Africa\"}}",
+                    "source_ref": "s4"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "country_name": "Cameroon",
+                  "country_qid": "Q1009",
+                  "formatted": {
+                    "language": "en",
+                    "text": "Cameroon"
+                  }
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "cameroon",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q137162824$863d791b-4058-07ba-91bd-86bf48343792\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 1009, \"id\": \"Q1009\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q1009\", \"labels\": {\"en\": \"Cameroon\"}, \"descriptions\": {\"en\": \"sovereign state in West-Central Africa\"}}",
+                    "source_ref": "s4"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Cameroon"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q1009"
+        }
+      ],
+      "qid": "Q137162824",
+      "record_revision": 1,
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "legacy_discovery"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "needs_review"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T23:24:50.250754+00:00",
+          "revision_id": 2435831993,
+          "source_qid": "Q137162824",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2435831993"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T23:24:58.441498+00:00",
+          "revision_id": 2564928993,
+          "source_qid": "Q3914",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2564928993"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:54:11.189516+00:00",
+          "revision_id": 2556557061,
+          "source_qid": "Q189004",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2556557061"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T23:25:01.950790+00:00",
+          "revision_id": 2565433658,
+          "source_qid": "Q1009",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2565433658"
+        }
+      }
+    },
+    "open_requests": [],
+    "proposed_at": "2026-11-06T23:26:57.121222+00:00",
+    "qid": "Q137162824",
+    "research": {
+      "model": "not_reported",
+      "prompt_sha256": "dedf154145113dad0e35439c75a6620f232569bd9b40fa027576bc80c65395c3",
+      "reasoning_effort": "not_reported",
+      "schema_sha256": "92e942f4fbf2ae28964462ea9ffa8312c5ee16a077a1e08b40aaaf741512422e",
+      "session": "/root/b2_research_q137162824"
+    },
+    "retrieval_failures": [],
+    "review_status": "unreviewed",
+    "seed": {
+      "channels": [
+        "legacy_discovery"
+      ],
+      "import_id": "seed-84c3beb45367905f",
+      "screening_status": "needs_review"
+    },
+    "transport": {
+      "base_commit": "9deed17242bd46fb07cdb35763375b5c929835f2",
+      "protocol": "native-subagent-v1",
+      "repository": "ider-zh/university-seed-curation",
+      "review_policy": {
+        "id": "source-grounded-flexible-v2",
+        "sha256": "b8ed7d2897e4c31dbd81b1379aafdc1077a21d1a33949edbd2d896b0adf99db2"
+      },
+      "schema_sha256": "bfa496eafa9dffca56146214168db7f000b09161b8993129632e7202e1c88833",
+      "seed_catalog_sha256": "84c3beb45367905f513d650684283dd62a9c1b77962bdc34151a6ef05bfa03d4"
+    },
+    "type": "university-proposal-v1"
+  },
+  "review": {
+    "contexts_checked": 2,
+    "coverage_checks": [
+      {
+        "group": "identity",
+        "reason": "Frozen root metadata and claims support the identity survey.",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "reason": "Frozen P17 and country metadata support the geography survey; no root coordinate is present.",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "reason": "No applicable observations for this group were found in the bounded frozen source survey; this does not assert absence outside the packet.",
+        "status": "not_found"
+      },
+      {
+        "group": "population",
+        "reason": "No applicable observations for this group were found in the bounded frozen source survey; this does not assert absence outside the packet.",
+        "status": "not_found"
+      },
+      {
+        "group": "finance",
+        "reason": "No applicable observations for this group were found in the bounded frozen source survey; this does not assert absence outside the packet.",
+        "status": "not_found"
+      },
+      {
+        "group": "profile",
+        "reason": "No applicable observations for this group were found in the bounded frozen source survey; this does not assert absence outside the packet.",
+        "status": "not_found"
+      }
+    ],
+    "decision": "approve",
+    "facts_checked": 3,
+    "full_refresh": true,
+    "inferences": [
+      {
+        "id": "$.identity.kind:c1",
+        "reason": "The s1 metadata explicitly describes a secondary school; P31 school and the level-variable college item corroborate mapping to other rather than a higher-education institution."
+      },
+      {
+        "id": "identity",
+        "reason": "The explicit secondary-school description supports exclusion from the university collection; generic college typing does not establish higher education."
+      }
+    ],
+    "model": "not_reported",
+    "proposal_sha256": "f6e10ae0031c1f4c26cd7efbbe0133b43397b00d88029bb95e563b0e3d07ca67",
+    "qid": "Q137162824",
+    "reasoning_effort": "not_reported",
+    "record_sha256": "fe20a8ceb8ca53965c75803f47dad6efefff23c64b37b1a1b88f0d9960207213",
+    "request_responses": [],
+    "requests": [],
+    "review_scope": {
+      "not_independently_reviewed_ids": [
+        "$.locations[0].address:c1",
+        "$.locations[0].name:c1",
+        "location:cameroon"
+      ],
+      "reviewed_ids": [
+        "$.identity.kind:c1",
+        "$.identity.names.en:c1",
+        "$.identity.ownership:c1",
+        "country:$.locations[0].address:c1",
+        "identity"
+      ],
+      "version": "core-review-v3"
+    },
+    "review_session": "/root/b2_review_q137162824",
+    "reviewed_at": "2026-11-06T23:28:04.585710+00:00",
+    "source_revisions_checked": 4,
+    "waived_requests": []
+  },
+  "review_result_sha256": "2c6f95d7ff9e0f3a0cfaea6b5b764099ce2b0134b348d9099f17234e06186f22",
+  "type": "university-unified-receipt-v1"
+}
