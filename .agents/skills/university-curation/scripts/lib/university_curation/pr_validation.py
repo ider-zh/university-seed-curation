@@ -15,6 +15,9 @@ def validate_pr(repo, base, head, merged=None):
     if not names or any(not p.startswith('data/') for p in names):
         raise ValueError('Data PR must contain only generated data files')
     files={p:blob(repo,head,p) for p in names}
+    # A generated backlog can be byte-identical to the base and absent from diff.
+    # Validate its actual committed bytes alongside the changed bundle files.
+    files.setdefault(BACKLOG,blob(repo,head,BACKLOG))
     _,trust,catalog,digest=_base(repo,base)
     manifests=[p for p in names if p.startswith('data/batches/')]
     published=[]
@@ -23,7 +26,7 @@ def validate_pr(repo, base, head, merged=None):
         manifest=canonical_json(files[manifests[0]]); original=manifest['base_commit']
         git(repo,'merge-base','--is-ancestor',original,base)
         created=git(repo,'log','--diff-filter=A','--format=%H',head,'--',manifests[0]).decode().splitlines()[0]
-        frozen={p:blob(repo,created,p) for p in names}
+        frozen={p:blob(repo,created,p) for p in files}
         verify_files(repo,original,frozen,trust)
         if any(files[p]!=frozen[p] for p in names if p!=BACKLOG):
             raise ValueError('PR altered approved bundle after creation')
