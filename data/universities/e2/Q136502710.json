@@ -1,0 +1,251 @@
+{
+  "coverage": {
+    "finance": {
+      "checked_at": "2026-11-06T23:25:18.038065+00:00",
+      "status": "disputed"
+    },
+    "geography": {
+      "checked_at": "2026-11-06T23:25:18.038065+00:00",
+      "status": "checked"
+    },
+    "history": {
+      "checked_at": "2026-11-06T23:25:18.038065+00:00",
+      "status": "disputed"
+    },
+    "identity": {
+      "checked_at": "2026-11-06T23:25:18.038065+00:00",
+      "status": "checked"
+    },
+    "population": {
+      "checked_at": "2026-11-06T23:25:18.038065+00:00",
+      "status": "disputed"
+    },
+    "profile": {
+      "checked_at": "2026-11-06T23:25:18.038065+00:00",
+      "status": "disputed"
+    }
+  },
+  "curation": {
+    "identity_status": "excluded"
+  },
+  "identity": {
+    "kind": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "metadata",
+              "original_text": "{\"id\": \"Q136502710\", \"labels\": {\"en\": \"Ibiaku Clan Community Secondary school, Ikot Ebak\"}, \"descriptions\": {\"en\": \"secondary school in Akwa Ibom State, Nigeria\"}}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "claim:P31:0",
+              "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q136502710$f38446f3-4120-8385-5452-4b1d401e2e9f\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 4671277, \"id\": \"Q4671277\"}}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "metadata",
+              "original_text": "{\"id\": \"Q4671277\", \"labels\": {\"en\": \"academic institution\"}, \"descriptions\": {\"en\": \"educational institution dedicated to education and research\"}}",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": "other",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "names": {
+      "en": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q136502710\", \"labels\": {\"en\": \"Ibiaku Clan Community Secondary school, Ikot Ebak\"}, \"descriptions\": {\"en\": \"secondary school in Akwa Ibom State, Nigeria\"}}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": "Ibiaku Clan Community Secondary school, Ikot Ebak",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    }
+  },
+  "locations": [
+    {
+      "address": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P131:0",
+                "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q136502710$773b7f39-4f78-f056-9c9f-b5dc14da6a5d\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 6885516, \"id\": \"Q6885516\"}}",
+                "source_ref": "s1"
+              },
+              {
+                "locator": "claim:P17:0",
+                "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q136502710$dd534c02-4435-8d27-5940-2f0db5807757\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 1033, \"id\": \"Q1033\"}}",
+                "source_ref": "s1"
+              },
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q6885516\", \"labels\": {\"en\": \"Mkpat-Enin\"}, \"descriptions\": {\"en\": \"local government area in Akwa Ibom State, Nigeria\"}}",
+                "source_ref": "s4"
+              },
+              {
+                "locator": "claim:P17:0",
+                "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"q6885516$5DF59000-A515-448A-8092-65B6F5C42889\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 1033, \"id\": \"Q1033\"}, \"reference_count\": 1}",
+                "source_ref": "s4"
+              },
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q1033\", \"labels\": {\"en\": \"Nigeria\"}, \"descriptions\": {\"en\": \"sovereign state in West Africa\"}}",
+                "source_ref": "s3"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "country_name": "Nigeria",
+              "country_qid": "Q1033",
+              "formatted": {
+                "language": "en",
+                "text": "Mkpat-Enin, Nigeria"
+              },
+              "region_name": "Mkpat-Enin",
+              "region_qid": "Q6885516"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "id": "mkpat-enin",
+      "kind": "administrative_area",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P131:0",
+                "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q136502710$773b7f39-4f78-f056-9c9f-b5dc14da6a5d\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 6885516, \"id\": \"Q6885516\"}}",
+                "source_ref": "s1"
+              },
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q6885516\", \"labels\": {\"en\": \"Mkpat-Enin\"}, \"descriptions\": {\"en\": \"local government area in Akwa Ibom State, Nigeria\"}}",
+                "source_ref": "s4"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Mkpat-Enin"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "qid": "Q6885516"
+    },
+    {
+      "coordinates": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "statement:Q136502710$ad2af05b-41d4-2c33-e571-b4aaf837cbe3",
+                "original_text": "\"latitude\": 4.782032199503373",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "source_rank": "normal",
+            "value": {
+              "crs": "EPSG:4326",
+              "globe_qid": "Q2",
+              "latitude": 4.782032199503373,
+              "longitude": 7.737796152144241,
+              "source_precision_degrees": 1e-08
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "id": "wikidata-item-location",
+      "kind": "institution",
+      "qid": "Q136502710"
+    }
+  ],
+  "modified_datetime": "2026-11-06T23:28:16.847846+00:00",
+  "qid": "Q136502710",
+  "record_revision": 1,
+  "schema_version": "0.2.2",
+  "seed": {
+    "channels": [
+      "legacy_discovery"
+    ],
+    "import_id": "seed-84c3beb45367905f",
+    "screening_status": "needs_review"
+  },
+  "selection_policy": "preferred-v1",
+  "sources": {
+    "s1": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T23:25:04.976407+00:00",
+      "revision_id": 2495818426,
+      "source_qid": "Q136502710",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2495818426"
+    },
+    "s2": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T23:25:10.912684+00:00",
+      "revision_id": 2522450452,
+      "source_qid": "Q4671277",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2522450452"
+    },
+    "s3": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T23:25:13.905311+00:00",
+      "revision_id": 2562957087,
+      "source_qid": "Q1033",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2562957087"
+    },
+    "s4": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T23:25:18.025789+00:00",
+      "revision_id": 2514302093,
+      "source_qid": "Q6885516",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2514302093"
+    }
+  }
+}
