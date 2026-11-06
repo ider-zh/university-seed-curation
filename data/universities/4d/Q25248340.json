@@ -1,0 +1,292 @@
+{
+  "coverage": {
+    "finance": {
+      "checked_at": "2026-11-06T16:29:40.797628+00:00",
+      "status": "disputed"
+    },
+    "geography": {
+      "checked_at": "2026-11-06T16:29:40.797628+00:00",
+      "status": "checked"
+    },
+    "history": {
+      "checked_at": "2026-11-06T16:29:40.797628+00:00",
+      "status": "disputed"
+    },
+    "identity": {
+      "checked_at": "2026-11-06T16:29:40.797628+00:00",
+      "status": "checked"
+    },
+    "population": {
+      "checked_at": "2026-11-06T16:29:40.797628+00:00",
+      "status": "disputed"
+    },
+    "profile": {
+      "checked_at": "2026-11-06T16:29:40.797628+00:00",
+      "status": "disputed"
+    }
+  },
+  "curation": {
+    "identity_status": "in_scope",
+    "refresh_profile": "core-v1",
+    "reviewed_groups": [
+      "identity",
+      "geography",
+      "history",
+      "population",
+      "finance",
+      "profile"
+    ]
+  },
+  "identity": {
+    "aliases": [
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Self_-_Financing_Colleges_affiliated_to_Anna_University",
+                "original_text": "PERI Institute of Technology (Autonomous)\nChennai",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "PERI Institute of Technology (Autonomous)"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    ],
+    "kind": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "metadata",
+              "original_text": "higher education institute in India",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "section:Self_-_Financing_Colleges_affiliated_to_Anna_University",
+              "original_text": "PERI Institute of Technology (Autonomous)\nChennai",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": "higher_education_college",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "names": {
+      "en": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "metadata",
+                "original_text": "PERI Institute of Technology",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": "PERI Institute of Technology",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    }
+  },
+  "locations": [
+    {
+      "id": "chennai_district",
+      "kind": "administrative_area",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Self_-_Financing_Colleges_affiliated_to_Anna_University",
+                "original_text": "PERI Institute of Technology (Autonomous)\nChennai",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Chennai"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    {
+      "address": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P17:0",
+                "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q25248340$A66502BE-C29B-4FC2-A206-92709F9E32A3\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 668, \"id\": \"Q668\"}, \"reference_count\": 1}",
+                "source_ref": "s1"
+              },
+              {
+                "locator": "metadata",
+                "original_text": "India",
+                "source_ref": "s4"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "country_name": "India",
+              "country_qid": "Q668",
+              "formatted": {
+                "language": "en",
+                "text": "India"
+              }
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "id": "country",
+      "kind": "administrative_area",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "metadata",
+                "original_text": "India",
+                "source_ref": "s4"
+              },
+              {
+                "locator": "claim:P17:0",
+                "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q25248340$A66502BE-C29B-4FC2-A206-92709F9E32A3\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 668, \"id\": \"Q668\"}, \"reference_count\": 1}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "India"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "qid": "Q668"
+    },
+    {
+      "coordinates": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "statement:Q25248340$67A468A7-7C8B-468F-B359-16ABB8265282",
+                "original_text": "\"latitude\": 12.88611111",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "source_rank": "normal",
+            "value": {
+              "crs": "EPSG:4326",
+              "globe_qid": "Q2",
+              "latitude": 12.88611111,
+              "longitude": 80.06055556,
+              "source_precision_degrees": 0.00027777777777778
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "id": "wikidata-item-location",
+      "kind": "institution",
+      "qid": "Q25248340"
+    }
+  ],
+  "modified_datetime": "2026-11-06T16:36:37.873285+00:00",
+  "qid": "Q25248340",
+  "record_revision": 1,
+  "schema_version": "0.2.2",
+  "seed": {
+    "channels": [
+      "legacy_discovery"
+    ],
+    "import_id": "seed-84c3beb45367905f",
+    "screening_status": "needs_review"
+  },
+  "selection_policy": "preferred-v1",
+  "sources": {
+    "s1": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T16:24:22.940225+00:00",
+      "revision_id": 2479568997,
+      "source_qid": "Q25248340",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2479568997"
+    },
+    "s2": {
+      "family": "wikimedia",
+      "kind": "wikipedia",
+      "language": "en",
+      "page_id": 37068454,
+      "publisher_role": "encyclopedia",
+      "retrieved_at": "2026-11-06T16:24:35.265357+00:00",
+      "revision_id": 1378516354,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1378516354"
+    },
+    "s3": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T16:24:39.360665+00:00",
+      "revision_id": 2522450452,
+      "source_qid": "Q4671277",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2522450452"
+    },
+    "s4": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T16:24:43.906253+00:00",
+      "revision_id": 2563722390,
+      "source_qid": "Q668",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2563722390"
+    }
+  },
+  "update_datetime": "2026-11-06T16:36:37.873285+00:00"
+}
