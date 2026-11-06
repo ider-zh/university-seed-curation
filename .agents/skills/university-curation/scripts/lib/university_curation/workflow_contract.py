@@ -4,11 +4,41 @@ from .integrity import load_json, sha
 from .records import CURRENT_SCHEMA_VERSION, encode, instant
 from .preferred import validate, recompute
 from .domain_refresh import materialize
-from .git_data import blob, record_relative
+from .git_data import blob, record_relative, commit, git
 from .seed_catalog import NAMES, verify as verify_catalog
 
 PROPOSAL_KEYS = {"type", "review_status", "qid", "seed", "baseline_sha256", "delta", "candidate", "proposed_at",
                  "coverage", "retrieval_failures", "open_requests", "research", "transport"}
+
+# These inputs determine the meaning of a frozen Research/Review approval.
+# Publication plumbing and unrelated records may advance independently.
+REVIEW_CONTRACT_PATHS = (
+    '.curation/review-trust.json', 'schemas', *NAMES,
+    'docs/review-policy-v2.md', 'docs/review-scope-v3.md',
+    'docs/deep-research.md', 'docs/university-overview.md', 'config/workflow.json',
+) + tuple('.agents/skills/university-curation/scripts/lib/university_curation/'+name+'.py'
+          for name in ('native_research', 'native_review', 'research_contract',
+                       'research_schema', 'review_scope', 'domain_refresh',
+                       'records', 'preferred', 'coordinates', 'schema_v02',
+                       'seed_catalog', 'integrity', 'source_packet',
+                       'sources', 'source_requests', 'web_sources'))
+
+
+def check_publication_base(repo, original, current, entities=()):
+    """Permit main advancement only outside the reviewed contract/QID scope."""
+    original=commit(repo,original); current=commit(repo,current)
+    git(repo,'merge-base','--is-ancestor',original,current)
+    changed=git(repo,'diff','--name-only',original,current,'--',*REVIEW_CONTRACT_PATHS).decode().splitlines()
+    if changed:
+        raise ValueError('Review contract changed: '+', '.join(changed))
+    if entities:
+        from .manager import backlog_at
+        previous=backlog_at(repo,original)['tasks']; latest=backlog_at(repo,current)['tasks']
+        for entity in entities:
+            if baseline_at(repo,original,entity)[1]!=baseline_at(repo,current,entity)[1]:
+                raise ValueError('University baseline changed: '+entity)
+            if previous.get(entity)!=latest.get(entity):
+                raise ValueError('Concurrent task change: '+entity)
 
 
 def trust_at(repo, ref):

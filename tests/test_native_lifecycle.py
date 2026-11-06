@@ -140,9 +140,7 @@ class NativeLifecycleTests(unittest.TestCase):
         (self.root/'docs/unrelated.txt').write_text('another main update');self.commit('another unrelated update')
         bundle=self.private/'delivery'
         arguments=['unified-publish','--proposal',proposal,'--review-job',review,'--review-attempt',compiled['private_attempt'],'--batch-id','fixture-batch','--output',bundle]
-        with self.assertRaisesRegex(ValueError,'stale'):self.run_cli(*arguments)
-        review,compiled=self.review(research,proposal,'review-two')
-        arguments[4]=review;arguments[6]=compiled['private_attempt']
+        # Unrelated advancement must not invalidate the exact frozen approval.
         self.run_cli(*arguments)
         plan=load_json((bundle/'operations.json').read_bytes())
         self.assertEqual(plan['kind'],'pull_request')
@@ -323,3 +321,185 @@ class NativeLifecycleTests(unittest.TestCase):
         files['data/batches/attribution.json']=encode(manifest)
         with self.assertRaisesRegex(ValueError,'Invalid unified receipt'):
             unified_publish.verify_files(self.root,base,files,self.trust)
+
+    def prepare_bundle(self,name='concurrent'):
+        research,proposal=self.research()
+        review,result=self.review(research,proposal,name+'-review')
+        bundle=self.private/name
+        self.run_cli('unified-publish','--proposal',proposal,'--review-job',review,
+            '--review-attempt',result['private_attempt'],'--batch-id',name,'--output',bundle)
+        return bundle,load_json((bundle/'operations.json').read_bytes())
+
+    def write_bundle(self,bundle,plan):
+        for path in plan['files']:
+            target=self.root/path;target.parent.mkdir(parents=True,exist_ok=True)
+            target.write_bytes((bundle/path).read_bytes())
+
+    def test_approval_survives_unrelated_task_change_but_not_same_qid(self):
+        research,proposal=self.research()
+        review,result=self.review(research,proposal,'concurrent-review')
+        self.public['tasks']['Q102']['reason']='another_group_researched'
+        (self.root/manager.BACKLOG).write_bytes(encode(self.public));self.commit('other task advanced')
+        files=unified_publish.files(self.root,'origin/main','independent',[(proposal,review,result['private_attempt'])])
+        self.assertEqual(load_json(files[manager.BACKLOG])['tasks']['Q102'],self.public['tasks']['Q102'])
+        self.public['tasks']['Q101']['revision']=1
+        (self.root/manager.BACKLOG).write_bytes(encode(self.public));self.commit('same task advanced')
+        with self.assertRaisesRegex(ValueError,'Concurrent task change: Q101'):
+            unified_publish.files(self.root,'origin/main','conflict',[(proposal,review,result['private_attempt'])])
+
+    def test_approval_rejects_changed_contract_and_disconnected_review(self):
+        from university_curation.workflow_contract import REVIEW_CONTRACT_PATHS
+        research,proposal=self.research()
+        review,result=self.review(research,proposal,'contract-review')
+        base=self.git('rev-parse','HEAD')
+        for index,path in enumerate(REVIEW_CONTRACT_PATHS):
+            with self.subTest(path=path):
+                target=self.root/(path+'/changed.json' if path=='schemas' else path)
+                target.parent.mkdir(parents=True,exist_ok=True);target.write_bytes(b'changed contract')
+                self.git('add',str(target.relative_to(self.root)));self.git('commit','-m','contract change')
+                self.git('update-ref','refs/remotes/origin/main','HEAD')
+                with self.assertRaisesRegex(ValueError,'Review contract changed'):
+                    unified_publish.files(self.root,'origin/main','contract-'+str(index),[(proposal,review,result['private_attempt'])])
+                self.git('reset','--hard',base);self.git('update-ref','refs/remotes/origin/main',base)
+        # A review based on a side branch is not accepted by sibling main.
+        (self.root/'docs/side.txt').write_text('review branch');self.commit('review branch')
+        side_review,side_result=self.review(research,proposal,'side-review')
+        self.git('checkout','-b','sibling',base)
+        (self.root/'docs/sibling.txt').write_text('main branch');self.commit('main branch')
+        with self.assertRaises(subprocess.CalledProcessError):
+            unified_publish.files(self.root,'origin/main','side',[(proposal,side_review,side_result['private_attempt'])])
+
+    def exercise_concurrent_merge(self,squash=False,unchanged=False):
+        from university_curation import pr_validation
+        self.catalog.update({q:dict(self.catalog['Q102']) for q in ('Q103','Q104')})
+        self.public['tasks']['Q104']={**self.public['tasks']['Q102'],'reason':'will_be_resolved'}
+        if unchanged:self.public['tasks'].pop('Q101')
+        (self.root/manager.BACKLOG).write_bytes(encode(self.public));self.commit('additional pending tasks')
+        bundle,plan=self.prepare_bundle('merge-fixture')
+        self.git('checkout','-b','data/concurrent');self.write_bundle(bundle,plan)
+        self.git('add','data');self.git('commit','-m','frozen data bundle');head=self.git('rev-parse','HEAD')
+        self.git('checkout','main')
+        self.public['tasks']['Q102']['reason']='concurrent_edit'
+        self.public['tasks']['Q103']={**self.public['tasks']['Q102'],'reason':'concurrent_addition'}
+        self.public['tasks'].pop('Q104')
+        (self.root/manager.BACKLOG).write_bytes(encode(self.public));self.commit('other group tasks')
+        current=self.git('rev-parse','HEAD')
+        expected=manager.merge_checkpoint(manager.backlog_at(self.root,plan['base_commit']),
+            load_json((bundle/manager.BACKLOG).read_bytes()),self.public,plan['qids'])
+        with patch.object(pr_validation,'_base',side_effect=native_research._base):
+            self.assertEqual(pr_validation.validate_pr(self.root,current,head)['status'],'validated')
+            try:self.git('merge','--squash' if squash else '--no-ff','--no-commit','data/concurrent')
+            except subprocess.CalledProcessError:pass  # shared JSON may need an exact delta merge
+            (self.root/manager.BACKLOG).write_bytes(encode(expected))
+            self.git('add','data');self.git('commit','-m','merged reviewed data')
+            actual=self.git('rev-parse','HEAD');self.git('update-ref','refs/remotes/origin/main',actual)
+            self.assertEqual(pr_validation.validate_pr(self.root,current,head,actual)['status'],'validated')
+            self.assertEqual(self.run_cli('publication-confirm','--bundle',bundle,'--published-ref',actual)['status'],'publication_verified')
+            (self.root/'docs/later.txt').write_text('later unrelated commit');self.commit('later main')
+            self.assertEqual(self.run_cli('publication-confirm','--bundle',bundle,'--published-ref',actual)['status'],'publication_verified')
+            with self.assertRaisesRegex(ValueError,'baseline changed|already published'):
+                self.run_cli('publication-confirm','--bundle',bundle,'--published-ref',self.git('rev-parse','HEAD'))
+        self.assertEqual(manager.backlog_at(self.root,actual),expected)
+
+    def test_merge_confirmation_preserves_concurrent_tasks(self):
+        self.exercise_concurrent_merge()
+
+    def test_squash_confirmation_preserves_concurrent_tasks(self):
+        self.exercise_concurrent_merge(squash=True)
+
+    def test_unchanged_backlog_confirmation_preserves_concurrent_tasks(self):
+        self.exercise_concurrent_merge(squash=True,unchanged=True)
+
+    def test_confirmation_rejects_tampered_files_and_lost_tasks(self):
+        bundle,plan=self.prepare_bundle('tamper-confirm')
+        self.public['tasks']['Q102']['reason']='concurrent_edit'
+        (self.root/manager.BACKLOG).write_bytes(encode(self.public));self.commit('other group update')
+        parent=self.git('rev-parse','HEAD')
+        for path in plan['files']:
+            with self.subTest(path=path):
+                self.write_bundle(bundle,plan)
+                expected=manager.merge_checkpoint(manager.backlog_at(self.root,plan['base_commit']),
+                    load_json((bundle/manager.BACKLOG).read_bytes()),self.public,plan['qids'])
+                (self.root/manager.BACKLOG).write_bytes(encode(expected))
+                if path==manager.BACKLOG:
+                    (self.root/path).write_bytes((bundle/path).read_bytes())  # lose concurrent edit
+                else:(self.root/path).write_bytes((bundle/path).read_bytes()+b' ')
+                self.commit('tampered merge')
+                with self.assertRaisesRegex(ValueError,'bytes differ|Merged backlog'):
+                    self.run_cli('publication-confirm','--bundle',bundle,'--published-ref',self.git('rev-parse','HEAD'))
+                self.assertEqual(manager._read(self.root)['tasks']['Q101']['phase'],'publishing')
+                self.git('reset','--hard',parent);self.git('update-ref','refs/remotes/origin/main',parent)
+        self.write_bundle(bundle,plan)
+        (self.root/manager.BACKLOG).write_bytes(encode(expected));self.commit('valid merge')
+        frozen=bundle/manager.BACKLOG;frozen.write_bytes(frozen.read_bytes()+b' ')
+        with self.assertRaisesRegex(ValueError,'Local publication bytes'):
+            self.run_cli('publication-confirm','--bundle',bundle,'--published-ref',self.git('rev-parse','HEAD'))
+
+    def test_confirmation_rejects_new_pending_task_for_unchanged_published_qid(self):
+        self.public['tasks'].pop('Q101');(self.root/manager.BACKLOG).write_bytes(encode(self.public));self.commit('no pending Q101')
+        bundle,plan=self.prepare_bundle('new-task-conflict')
+        self.public['tasks']['Q101']={**self.public['tasks']['Q102'],'reason':'new_concurrent_question'}
+        (self.root/manager.BACKLOG).write_bytes(encode(self.public));self.commit('concurrent Q101 task')
+        self.write_bundle(bundle,plan);self.commit('attempt to discard Q101 task')
+        with self.assertRaisesRegex(ValueError,'Concurrent task change: Q101'):
+            self.run_cli('publication-confirm','--bundle',bundle,'--published-ref',self.git('rev-parse','HEAD'))
+
+    def test_checkpoint_confirmation_preserves_unrelated_tasks(self):
+        manager.set_phase(self.root,'Q101','unresolved',revision=1,open_requests=[REQUEST],reason='retained_question')
+        bundle=self.private/'checkpoint-concurrent';self.run_cli('checkpoint','--output',bundle)
+        plan=load_json((bundle/'operations.json').read_bytes())
+        self.public['tasks']['Q102']['reason']='another_group'
+        (self.root/manager.BACKLOG).write_bytes(encode(self.public));self.commit('other group checkpoint')
+        expected=manager.merge_checkpoint(manager.backlog_at(self.root,plan['base_commit']),
+            load_json((bundle/manager.BACKLOG).read_bytes()),self.public)
+        (self.root/manager.BACKLOG).write_bytes(encode(expected));self.commit('merged checkpoint')
+        self.assertEqual(self.run_cli('publication-confirm','--bundle',bundle,'--published-ref',self.git('rev-parse','HEAD'))['status'],'publication_verified')
+
+    def test_confirmation_requires_base_ancestry_through_first_parent(self):
+        earlier=self.git('rev-parse','HEAD')
+        (self.root/'docs/before-review.txt').write_text('advance');self.commit('advance before review')
+        bundle,plan=self.prepare_bundle('parent-lineage')
+        self.write_bundle(bundle,plan);self.git('add','data')
+        tree=self.git('write-tree')
+        wrong=self.git('commit-tree',tree,'-p',earlier,'-p',plan['base_commit'],'-m','wrong first parent')
+        self.git('update-ref','refs/remotes/origin/main',wrong)
+        with self.assertRaises(subprocess.CalledProcessError):
+            self.run_cli('publication-confirm','--bundle',bundle,'--published-ref',wrong)
+
+    def test_legacy_direct_main_confirmation_retains_exact_hashes(self):
+        bundle,plan=self.prepare_bundle('legacy-confirm')
+        plan.pop('kind');(bundle/'operations.json').write_bytes(encode(plan))
+        self.write_bundle(bundle,plan);self.commit('legacy direct successor')
+        actual=self.git('rev-parse','HEAD')
+        self.assertEqual(self.run_cli('publication-confirm','--bundle',bundle,'--published-ref',actual)['status'],'publication_verified')
+        (self.root/'docs/later.txt').write_text('later');self.commit('not direct successor')
+        with self.assertRaisesRegex(ValueError,'planned main successor'):
+            self.run_cli('publication-confirm','--bundle',bundle,'--published-ref',self.git('rev-parse','HEAD'))
+
+    def test_updated_data_branch_retains_original_conflict_fence(self):
+        from university_curation import pr_validation
+        bundle,plan=self.prepare_bundle('updated-branch')
+        self.git('checkout','-b','data/updated');self.write_bundle(bundle,plan)
+        self.git('add','data');self.git('commit','-m','original frozen bundle')
+        self.git('checkout','main')
+        self.public['tasks']['Q102']['reason']='concurrent_other_task'
+        (self.root/manager.BACKLOG).write_bytes(encode(self.public));self.commit('other task update')
+        current=self.git('rev-parse','HEAD')
+        expected=manager.merge_checkpoint(manager.backlog_at(self.root,plan['base_commit']),
+            load_json((bundle/manager.BACKLOG).read_bytes()),self.public,plan['qids'])
+        self.git('checkout','data/updated')
+        try:self.git('merge','--no-ff','--no-commit','main')
+        except subprocess.CalledProcessError:pass
+        (self.root/manager.BACKLOG).write_bytes(encode(expected))
+        self.git('add','data');self.git('commit','-m','update branch with main')
+        with patch.object(pr_validation,'_base',side_effect=native_research._base):
+            self.assertEqual(pr_validation.validate_pr(self.root,current,'HEAD')['status'],'validated')
+            self.git('checkout','main');self.public['tasks']['Q101']['revision']=1
+            (self.root/manager.BACKLOG).write_bytes(encode(self.public));self.commit('same QID conflict')
+            current=self.git('rev-parse','HEAD');self.git('checkout','data/updated')
+            try:self.git('merge','--no-ff','--no-commit','main')
+            except subprocess.CalledProcessError:pass
+            (self.root/manager.BACKLOG).write_bytes(encode(expected))
+            self.git('add','data');self.git('commit','-m','unsafe conflict resolution')
+            with self.assertRaisesRegex(ValueError,'Concurrent task change: Q101'):
+                pr_validation.validate_pr(self.root,current,'HEAD')
