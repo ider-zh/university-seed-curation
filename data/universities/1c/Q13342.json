@@ -1,0 +1,1518 @@
+{
+  "coverage": {
+    "finance": {
+      "checked_at": "2026-11-06T13:16:53.732098+00:00",
+      "status": "checked"
+    },
+    "geography": {
+      "checked_at": "2026-11-06T13:16:53.732098+00:00",
+      "status": "checked"
+    },
+    "history": {
+      "checked_at": "2026-11-06T13:16:53.732098+00:00",
+      "status": "disputed"
+    },
+    "identity": {
+      "checked_at": "2026-11-06T13:16:53.732098+00:00",
+      "status": "checked"
+    },
+    "population": {
+      "checked_at": "2026-11-06T13:16:53.732098+00:00",
+      "status": "checked"
+    },
+    "profile": {
+      "checked_at": "2026-11-06T13:16:53.732098+00:00",
+      "status": "checked"
+    }
+  },
+  "curation": {
+    "identity_status": "in_scope",
+    "refresh_profile": "core-v1",
+    "reviewed_groups": [
+      "identity",
+      "geography",
+      "history",
+      "population",
+      "finance",
+      "profile"
+    ]
+  },
+  "finance": {
+    "budget": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:6",
+              "original_text": "Budget: €99 million",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "period_status": "not_stated",
+          "value": {
+            "amount": "99000000",
+            "currency": "EUR",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "period_not_stated",
+          "single_source_family"
+        ],
+        "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "history": {
+    "milestones": [
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:History",
+                  "original_text": "Bordeaux Montaigne University was established in 1970 after a restructuring of public universities in and near the city of Bordeaux.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "precision": "year",
+                "year": 1970
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P571:0",
+                  "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q13342$BDAE36CE-C8F1-41FE-B749-4A9AD8B7AECF\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+1971-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c2",
+              "value": {
+                "precision": "year",
+                "year": 1971
+              },
+              "verification": "supported"
+            }
+          ],
+          "conflicts": [
+            {
+              "candidate_ids": [
+                "c1",
+                "c2"
+              ],
+              "kind": "time_disagreement",
+              "note": "English Wikipedia and French narrative say 1970; Wikidata and the French lead give 1971. Preserve both institution-establishment observations without resolving the difference.",
+              "status": "unresolved"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "conflicting_candidates"
+            ],
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:History",
+                  "original_text": "Bordeaux Montaigne University was established in 1970 after a restructuring of public universities in and near the city of Bordeaux.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "Established following the restructuring of the former University of Bordeaux."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "establishment",
+        "kind": "institution_establishment",
+        "subject_ref": "institution"
+      },
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Historique",
+                  "original_text": "En 1990 l'université Bordeaux III prend le nom d'« université Michel-de-Montaigne »",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "precision": "year",
+                "year": 1990
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Historique",
+                  "original_text": "En 1990 l'université Bordeaux III prend le nom d'« université Michel-de-Montaigne »",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "Bordeaux III adopted the name université Michel-de-Montaigne."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "rename-1990",
+        "kind": "rename",
+        "subject_ref": "institution"
+      },
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Historique",
+                  "original_text": "Le 12 mars 2014 l'université Michel-de-Montaigne Bordeaux III est rebaptisée « Université Bordeaux Montaigne »",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "day": 12,
+                "month": 3,
+                "precision": "day",
+                "year": 2014
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Historique",
+                  "original_text": "Le 12 mars 2014 l'université Michel-de-Montaigne Bordeaux III est rebaptisée « Université Bordeaux Montaigne »",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "Renamed Université Bordeaux Montaigne."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "rename-2014",
+        "kind": "rename",
+        "subject_ref": "institution"
+      }
+    ]
+  },
+  "identity": {
+    "aliases": [
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "infobox:2",
+                "original_text": "Former name: Université Michel de Montaigne Bordeaux 3",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "fr",
+              "text": "Université Michel de Montaigne Bordeaux 3"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:History",
+                "original_text": "The university was known as Université de Bordeaux 3 during its first two decades.",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "fr",
+              "text": "Université de Bordeaux 3"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    ],
+    "identifiers": {
+      "P5586": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P5586:0",
+                "original_text": "{\"property\": \"P5586\", \"property_label\": \"Times Higher Education World University ID\", \"statement_id\": \"Q13342$39862675-448E-4F33-9C4D-19D855095382\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"bordeaux-montaigne-university\", \"reference_count\": 1}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": "bordeaux-montaigne-university",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    "kind": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "is a public university in Pessac, France",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": "university",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "names": {
+      "en": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q13342\", \"labels\": {\"fr\": \"université Bordeaux-Montaigne\", \"en\": \"Bordeaux Montaigne University\"}, \"descriptions\": {\"fr\": \"université française créée en 1971\", \"en\": \"French university founded in 1971\"}}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": "Bordeaux Montaigne University",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "fr": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "infobox:0",
+                "original_text": ": Université Bordeaux Montaigne",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": "Université Bordeaux Montaigne",
+            "verification": "supported"
+          },
+          {
+            "evidence": [
+              {
+                "locator": "claim:P1448:0",
+                "original_text": "{\"property\": \"P1448\", \"property_label\": \"official name\", \"statement_id\": \"Q13342$0171C20F-7797-46F0-9A13-D4F8CF53FC1F\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"UNIVERSITE BORDEAUX MONTAIGNE BORDEAUX III\", \"language\": \"fr\"}, \"qualifiers\": {\"P1013\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 131741681, \"id\": \"Q131741681\"}}]}, \"reference_count\": 1}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c2",
+            "value": "UNIVERSITE BORDEAUX MONTAIGNE BORDEAUX III",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+          "reason_code": "best_available"
+        }
+      }
+    },
+    "operating_status": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:Curricula_and_syllabi",
+              "original_text": "The university provides bachelors, vocational bachelors, masters, and doctoral degrees in the arts, linguistics, management and humanities",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": "operating",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "ownership": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:3",
+              "original_text": "Type: Public",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": "public",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "leadership": {
+    "president": {
+      "candidates": [
+        {
+          "current_basis": "infobox_current",
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "Président\nAlexandre Péraud (d) (depuis 2024)",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "person": {
+              "name": "Alexandre Péraud"
+            },
+            "term_start": {
+              "precision": "year",
+              "year": 2024
+            },
+            "title_original": {
+              "language": "fr",
+              "text": "Président"
+            }
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "single_source_family",
+          "reported_current"
+        ],
+        "reason": "The page reports this person in its current officeholder field; a term-end date is not required.",
+        "reason_code": "infobox_current"
+      }
+    }
+  },
+  "locations": [
+    {
+      "id": "pessac",
+      "kind": "administrative_area",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "is a public university in Pessac, France",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "fr",
+              "text": "Pessac"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "qid": "Q207156"
+    },
+    {
+      "id": "pessac-campus",
+      "kind": "campus",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Campus_and_student_life",
+                "original_text": "on the campus in Pessac",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Pessac campus"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    {
+      "coordinates": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "statement:Q13342$FB372CA3-9B84-4B7B-87CA-91072C5D465F",
+                "original_text": "\"latitude\": 44.79529",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "source_rank": "normal",
+            "value": {
+              "crs": "EPSG:4326",
+              "globe_qid": "Q2",
+              "latitude": 44.79529,
+              "longitude": -0.616361,
+              "source_precision_degrees": 2.77777777778e-06
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "id": "wikidata-item-location",
+      "kind": "institution",
+      "qid": "Q13342"
+    }
+  ],
+  "modified_datetime": "2026-11-06T13:28:59.113357+00:00",
+  "population": {
+    "students_total": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:0",
+              "original_text": "\"amount\": \"+15485\"",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "claim:P2196:0",
+              "original_text": "\"time\": \"+2017-09-01T00:00:00Z\"",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "period": {
+            "kind": "date",
+            "month": 9,
+            "year": 2017
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 15485,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:1",
+              "original_text": "\"amount\": \"+14499\"",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "claim:P2196:1",
+              "original_text": "\"time\": \"+2016-09-00T00:00:00Z\"",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c2",
+          "period": {
+            "kind": "date",
+            "month": 9,
+            "year": 2016
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 14499,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:2",
+              "original_text": "\"amount\": \"+17786\"",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "claim:P2196:2",
+              "original_text": "\"time\": \"+2018-09-00T00:00:00Z\"",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c3",
+          "period": {
+            "kind": "date",
+            "month": 9,
+            "year": 2018
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 17786,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:3",
+              "original_text": "\"amount\": \"+16055\"",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "claim:P2196:3",
+              "original_text": "\"time\": \"+2021-09-00T00:00:00Z\"",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c4",
+          "period": {
+            "kind": "date",
+            "month": 9,
+            "year": 2021
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 16055,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:4",
+              "original_text": "\"amount\": \"+15318\"",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "claim:P2196:4",
+              "original_text": "\"time\": \"+2008-01-01T00:00:00Z\"",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c5",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2008
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 15318,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:5",
+              "original_text": "\"amount\": \"+15485\"",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "claim:P2196:5",
+              "original_text": "\"time\": \"+2018-01-01T00:00:00Z\"",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c6",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2018
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 15485,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:6",
+              "original_text": "\"amount\": \"+15657\"",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "claim:P2196:6",
+              "original_text": "\"time\": \"+2020-01-01T00:00:00Z\"",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c7",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2020
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 15657,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:7",
+              "original_text": "\"amount\": \"+16003\"",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "claim:P2196:7",
+              "original_text": "\"time\": \"+2021-01-01T00:00:00Z\"",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c8",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2021
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 16003,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:8",
+              "original_text": "\"amount\": \"+16055\"",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "claim:P2196:8",
+              "original_text": "\"time\": \"+2022-01-01T00:00:00Z\"",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c9",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2022
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 16055,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:9",
+              "original_text": "\"amount\": \"+15466\"",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "claim:P2196:9",
+              "original_text": "\"time\": \"+2011-01-01T00:00:00Z\"",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c10",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2011
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 15466,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:10",
+              "original_text": "\"amount\": \"+14888\"",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "claim:P2196:10",
+              "original_text": "\"time\": \"+2015-01-01T00:00:00Z\"",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c11",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2015
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 14888,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:11",
+              "original_text": "\"amount\": \"+14544\"",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "claim:P2196:11",
+              "original_text": "\"time\": \"+2023-01-01T00:00:00Z\"",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c12",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2023
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 14544,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:12",
+              "original_text": "\"amount\": \"+15600\"",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "claim:P2196:12",
+              "original_text": "\"time\": \"+2007-01-01T00:00:00Z\"",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c13",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2007
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 15600,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:13",
+              "original_text": "\"amount\": \"+14458\"",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "claim:P2196:13",
+              "original_text": "\"time\": \"+2013-01-01T00:00:00Z\"",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c14",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2013
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 14458,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:14",
+              "original_text": "\"amount\": \"+14770\"",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "claim:P2196:14",
+              "original_text": "\"time\": \"+2012-01-01T00:00:00Z\"",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c15",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2012
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 14770,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:15",
+              "original_text": "\"amount\": \"+14417\"",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "claim:P2196:15",
+              "original_text": "\"time\": \"+2009-01-01T00:00:00Z\"",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c16",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2009
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 14417,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:16",
+              "original_text": "\"amount\": \"+15247\"",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "claim:P2196:16",
+              "original_text": "\"time\": \"+2010-01-01T00:00:00Z\"",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c17",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2010
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 15247,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:17",
+              "original_text": "\"amount\": \"+14484\"",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "claim:P2196:17",
+              "original_text": "\"time\": \"+2014-01-01T00:00:00Z\"",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c18",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2014
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 14484,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:18",
+              "original_text": "\"amount\": \"+14995\"",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "claim:P2196:18",
+              "original_text": "\"time\": \"+2016-01-01T00:00:00Z\"",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c19",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2016
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 14995,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:19",
+              "original_text": "\"amount\": \"+14499\"",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "claim:P2196:19",
+              "original_text": "\"time\": \"+2017-01-01T00:00:00Z\"",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c20",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2017
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 14499,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:20",
+              "original_text": "\"amount\": \"+15831\"",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "claim:P2196:20",
+              "original_text": "\"time\": \"+2019-01-01T00:00:00Z\"",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c21",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2019
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 15831,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:21",
+              "original_text": "\"amount\": \"+16708\"",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "claim:P2196:21",
+              "original_text": "\"time\": \"+2023-09-00T00:00:00Z\"",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c22",
+          "period": {
+            "kind": "date",
+            "month": 9,
+            "year": 2023
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 16708,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "infobox:9",
+              "original_text": "Students: 18,137[2]",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c23",
+          "period_status": "not_stated",
+          "value": {
+            "amount": 18137,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c23",
+        "qualifications": [
+          "period_not_stated",
+          "single_source_family"
+        ],
+        "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+        "reason_code": "best_available"
+      }
+    }
+  },
+  "profile": {
+    "academic_focus": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "Ses domaines principaux d’enseignement et de recherche sont les arts, lettres, langues, histoire, histoire de l'art, géographie, aménagement, urbanisme, communication et journalisme.",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c1",
+          "value": [
+            {
+              "language": "en",
+              "text": "arts"
+            },
+            {
+              "language": "en",
+              "text": "literature"
+            },
+            {
+              "language": "en",
+              "text": "languages"
+            },
+            {
+              "language": "en",
+              "text": "history"
+            },
+            {
+              "language": "en",
+              "text": "art history"
+            },
+            {
+              "language": "en",
+              "text": "geography"
+            },
+            {
+              "language": "en",
+              "text": "spatial planning"
+            },
+            {
+              "language": "en",
+              "text": "urban planning"
+            },
+            {
+              "language": "en",
+              "text": "communication"
+            },
+            {
+              "language": "en",
+              "text": "journalism"
+            }
+          ],
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "degree_levels": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:Curricula_and_syllabi",
+              "original_text": "The university provides bachelors, vocational bachelors, masters, and doctoral degrees",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": [
+            "bachelor",
+            "vocational bachelor",
+            "master",
+            "doctorate"
+          ],
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "summary": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "is a public university in Pessac, France, approximately 8 kilometres (5 miles) southwest of the city centre of Bordeaux.",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:lead",
+              "original_text": "Ses domaines principaux d’enseignement et de recherche sont les arts, lettres, langues, histoire, histoire de l'art, géographie, aménagement, urbanisme, communication et journalisme.",
+              "source_ref": "s3"
+            },
+            {
+              "locator": "section:Campus_and_student_life",
+              "original_text": "Bordeaux Montaigne University conducts most of its teaching and research on the campus in Pessac. However, the journalism and technology institutes are located in the city centre of Bordeaux, and there are small teaching sites located in the towns of Agen and Bayonne.",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:History",
+              "original_text": "[edit | edit source]\nBordeaux Montaigne University was established in 1970 after a restructuring of public universities in and near the city of Bordeaux. The university was known as Université de Bordeaux 3 during its first two decades. In 1990, it took on the name of philosopher Michel de Montaigne who was a native of the modern-day Nouvelle-Aquitaine region, becoming Université Michel de Montaigne Bordeaux 3. In 2014, the university's name was simplified to Université Bordeaux Montaigne after the universities of Bordeaux 1, 2, and 4 were all merged to become the University of Bordeaux. Bordeaux Montaigne University celebrated its 50th anniversary in 2020.[4]",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Historique",
+              "original_text": "Le 12 mars 2014 l'université Michel-de-Montaigne Bordeaux III est rebaptisée « Université Bordeaux Montaigne »",
+              "source_ref": "s3"
+            },
+            {
+              "locator": "section:Curricula_and_syllabi",
+              "original_text": "The university provides bachelors, vocational bachelors, masters, and doctoral degrees in the arts, linguistics, management and humanities",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Curricula_and_syllabi",
+              "original_text": "Bordeaux Montaigne University also offers certificates such as DAEU and DUT.",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Unit.C3.A9s_de_formation_et_de_recherche",
+              "original_text": "Depuis la rentrée 2010, les UFR sont au nombre de trois : « Humanités » (5 155 étudiants), « Langues et Civilisations » (6 216 étudiants) et « Sciences des territoires et de la communication ».",
+              "source_ref": "s3"
+            },
+            {
+              "locator": "section:.C3.89coles_doctorales",
+              "original_text": "L'université comprend une école doctorale, appelée « Montaigne – Humanités », résultant de la fusion de deux anciennes écoles doctorales.",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "language": "en",
+            "text": "Bordeaux Montaigne University (Université Bordeaux Montaigne) is a public university in Pessac, France, southwest of central Bordeaux. Its teaching and research concentrate on the arts, literature, languages and humanities, alongside geography, spatial and urban planning, communication and journalism. Most teaching and research takes place on the Pessac campus. The journalism and technology institutes are based in central Bordeaux, while smaller teaching sites are also identified in Agen and Bayonne.\n\nThe institution emerged from the restructuring of the former University of Bordeaux in the early 1970s. Initially known as Université de Bordeaux 3, it adopted the name of Michel de Montaigne in 1990. Its name became Université Bordeaux Montaigne on 12 March 2014, following the merger of three other Bordeaux universities into the University of Bordeaux. Bordeaux Montaigne remained a distinct institution.\n\nThe university offers bachelor's, vocational bachelor's, master's and doctoral degrees, as well as additional certificates. Its organization has included three teaching and research units since the 2010 academic intake: Humanités, Langues et Civilisations, and Sciences des territoires et de la communication. Doctoral education is organized through the Montaigne–Humanités doctoral school, formed by merging two earlier doctoral schools."
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "website": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P856:0",
+              "original_text": "{\"property\": \"P856\", \"property_label\": \"official website\", \"statement_id\": \"Q13342$0A2BB678-CE2B-4943-B429-2FB15A303AC5\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"http://www.u-bordeaux-montaigne.fr/\", \"qualifiers\": {\"P407\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 150, \"id\": \"Q150\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "value": "http://www.u-bordeaux-montaigne.fr/",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "qid": "Q13342",
+  "record_revision": 1,
+  "relationships": {
+    "campus": [
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Campus_and_student_life",
+                "original_text": "Bordeaux Montaigne University conducts most of its teaching and research on the campus in Pessac.",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "target_ref": "location:pessac-campus"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    ]
+  },
+  "schema_version": "0.2.2",
+  "seed": {
+    "channels": [
+      "ranking_identifier",
+      "reviewed_institution_type"
+    ],
+    "import_id": "seed-84c3beb45367905f",
+    "screening_status": "included"
+  },
+  "selection_policy": "preferred-v1",
+  "sources": {
+    "s1": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T13:16:12.382399+00:00",
+      "revision_id": 2564528749,
+      "source_qid": "Q13342",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2564528749"
+    },
+    "s10": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T11:53:58.670705+00:00",
+      "revision_id": 2562980745,
+      "source_qid": "Q13344",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2562980745"
+    },
+    "s11": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T13:16:36.388935+00:00",
+      "revision_id": 2561380645,
+      "source_qid": "Q20791505",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2561380645"
+    },
+    "s12": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T13:16:47.497373+00:00",
+      "revision_id": 2563060303,
+      "source_qid": "Q15991977",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2563060303"
+    },
+    "s13": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T13:16:53.717299+00:00",
+      "revision_id": 2558226075,
+      "source_qid": "Q508217",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2558226075"
+    },
+    "s2": {
+      "family": "wikimedia",
+      "kind": "wikipedia",
+      "language": "en",
+      "page_id": 13398358,
+      "publisher_role": "encyclopedia",
+      "retrieved_at": "2026-11-06T13:16:30.124675+00:00",
+      "revision_id": 1359683882,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1359683882"
+    },
+    "s3": {
+      "family": "wikimedia",
+      "kind": "wikipedia",
+      "language": "fr",
+      "page_id": 241978,
+      "publisher_role": "encyclopedia",
+      "retrieved_at": "2026-11-06T13:16:35.794142+00:00",
+      "revision_id": 241039481,
+      "url": "https://fr.wikipedia.org/w/index.php?oldid=241039481"
+    },
+    "s4": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T08:48:57.696840+00:00",
+      "revision_id": 2559546120,
+      "source_qid": "Q875538",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2559546120"
+    },
+    "s5": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T09:15:59.048669+00:00",
+      "revision_id": 2468502188,
+      "source_qid": "Q3551775",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2468502188"
+    },
+    "s6": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T09:16:05.838184+00:00",
+      "revision_id": 2564285160,
+      "source_qid": "Q142",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2564285160"
+    },
+    "s7": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T11:53:48.589395+00:00",
+      "revision_id": 2564351467,
+      "source_qid": "Q207156",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2564351467"
+    },
+    "s8": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T13:16:42.812915+00:00",
+      "revision_id": 2560443582,
+      "source_qid": "Q16541346",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2560443582"
+    },
+    "s9": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T11:53:53.576510+00:00",
+      "revision_id": 2236095738,
+      "source_qid": "Q64685688",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2236095738"
+    }
+  },
+  "update_datetime": "2026-11-06T13:28:59.113357+00:00"
+}
