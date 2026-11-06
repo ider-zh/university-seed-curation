@@ -35,3 +35,8 @@ merge/squash commit. Confirmation checks ancestry and exact bundle bytes. It
 supports prior direct-main plans for interrupted historical work. No source
 cache, model trace or private active-job state is committed. Historical records,
 receipts and v2 policy remain unchanged; new receipts identify core-review-v3.
+
+If enable-auto-merge returns `Pull request is in clean status`, no checks are
+pending. Confirm required checks succeeded and the branch is current, then use
+GitHub merge_pull_request with the exact expected head SHA. Otherwise leave the
+PR waiting for auto-merge; never bypass required checks.
