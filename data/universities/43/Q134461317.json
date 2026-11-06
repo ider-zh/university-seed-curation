@@ -1,0 +1,208 @@
+{
+  "coverage": {
+    "finance": {
+      "checked_at": "2026-11-06T22:55:40.125276+00:00",
+      "status": "not_found"
+    },
+    "geography": {
+      "checked_at": "2026-11-06T22:55:40.125276+00:00",
+      "status": "checked"
+    },
+    "history": {
+      "checked_at": "2026-11-06T22:55:40.125276+00:00",
+      "status": "not_found"
+    },
+    "identity": {
+      "checked_at": "2026-11-06T22:55:40.125276+00:00",
+      "status": "checked"
+    },
+    "population": {
+      "checked_at": "2026-11-06T22:55:40.125276+00:00",
+      "status": "not_found"
+    },
+    "profile": {
+      "checked_at": "2026-11-06T22:55:40.125276+00:00",
+      "status": "not_found"
+    }
+  },
+  "curation": {
+    "identity_status": "excluded",
+    "refresh_profile": "core-v1",
+    "reviewed_groups": [
+      "identity",
+      "geography",
+      "history",
+      "population",
+      "finance",
+      "profile"
+    ]
+  },
+  "identity": {
+    "kind": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P31:0",
+              "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q134461317$A5800C3E-6F26-4EFA-9BDE-6A6F3B45FD09\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 53566453, \"id\": \"Q53566453\"}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "metadata",
+              "original_text": "{\"id\": \"Q53566453\", \"labels\": {\"en\": \"center for early childhood and primary education\"}, \"descriptions\": {\"en\": \"elementary school institution in Spain\"}}",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": "other",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "names": {
+      "es": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P18:0",
+                "original_text": "{\"property\": \"P18\", \"property_label\": \"image\", \"statement_id\": \"Q134461317$dfe3618b-e591-42d5-a2b1-bd5cd8d9a69d\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"CEIP Tierra Del Trigo.jpg\", \"qualifiers\": {\"P2096\": [{\"snaktype\": \"value\", \"value\": {\"text\": \"CEIP Tierra Del Trigo\", \"language\": \"es\"}}]}}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": "CEIP Tierra Del Trigo",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    "ownership": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P31:1",
+              "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q134461317$A385AF4C-93D8-43FC-B13F-76083D0CD88B\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 23002037, \"id\": \"Q23002037\"}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "metadata",
+              "original_text": "{\"id\": \"Q23002037\", \"labels\": {\"en\": \"public educational institution\"}, \"descriptions\": {\"en\": \"educational institution whose programs and activities are operated by publicly elected or appointed school officials and which is supported primarily by public funds\"}}",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c1",
+          "value": "public",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "locations": [
+    {
+      "coordinates": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "statement:Q134461317$79046445-9DF0-45D8-B507-7FB040D165AF",
+                "original_text": "\"latitude\": 28.352905",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "source_rank": "normal",
+            "value": {
+              "crs": "EPSG:4326",
+              "globe_qid": "Q2",
+              "latitude": 28.352905,
+              "longitude": -16.803711,
+              "source_precision_degrees": 1e-06
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "id": "wikidata-item-location",
+      "kind": "institution",
+      "qid": "Q134461317"
+    }
+  ],
+  "modified_datetime": "2026-11-06T23:00:36.000768+00:00",
+  "qid": "Q134461317",
+  "record_revision": 1,
+  "schema_version": "0.2.2",
+  "seed": {
+    "channels": [
+      "legacy_discovery"
+    ],
+    "import_id": "seed-84c3beb45367905f",
+    "screening_status": "needs_review"
+  },
+  "selection_policy": "preferred-v1",
+  "sources": {
+    "s1": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T22:55:23.057006+00:00",
+      "revision_id": 2557600335,
+      "source_qid": "Q134461317",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2557600335"
+    },
+    "s2": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T22:55:30.068766+00:00",
+      "revision_id": 2558915432,
+      "source_qid": "Q53566453",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2558915432"
+    },
+    "s3": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T22:55:33.028617+00:00",
+      "revision_id": 2504953437,
+      "source_qid": "Q23002037",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2504953437"
+    },
+    "s4": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T22:55:37.235630+00:00",
+      "revision_id": 2565415102,
+      "source_qid": "Q29",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2565415102"
+    },
+    "s5": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T22:55:40.110825+00:00",
+      "revision_id": 2536525454,
+      "source_qid": "Q682964",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2536525454"
+    }
+  },
+  "update_datetime": "2026-11-06T23:00:36.000768+00:00"
+}
