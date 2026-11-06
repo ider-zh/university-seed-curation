@@ -1,0 +1,648 @@
+{
+  "coverage": {
+    "finance": {
+      "checked_at": "2026-11-06T23:25:19.788017+00:00",
+      "status": "disputed"
+    },
+    "geography": {
+      "checked_at": "2026-11-06T23:25:19.788017+00:00",
+      "status": "checked"
+    },
+    "history": {
+      "checked_at": "2026-11-06T23:25:19.788017+00:00",
+      "status": "checked"
+    },
+    "identity": {
+      "checked_at": "2026-11-06T23:25:19.788017+00:00",
+      "status": "checked"
+    },
+    "population": {
+      "checked_at": "2026-11-06T23:25:19.788017+00:00",
+      "status": "checked"
+    },
+    "profile": {
+      "checked_at": "2026-11-06T23:25:19.788017+00:00",
+      "status": "checked"
+    }
+  },
+  "curation": {
+    "identity_status": "related"
+  },
+  "history": {
+    "milestones": [
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P571:0",
+                  "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q15238599$52518685-2B32-48C5-96EF-F1496CC65769\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+2007-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "infobox:4",
+                  "original_text": "Established: 2007",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "precision": "year",
+                "year": 2007
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "establishment",
+        "kind": "institution_establishment",
+        "subject_ref": "institution"
+      }
+    ]
+  },
+  "identity": {
+    "kind": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "University campus on Kish Island\nFor other universities that use the UT mnemonic, see UT.\nUniversity of Tehran's International Campus - Kish Island[1] is located on Kish Island. The official language of the Kish International Campus is English and all courses are offered in English.[2]",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": "campus",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "names": {
+      "en": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q15238599\", \"labels\": {\"en\": \"Kish International Campus, University of Tehran\"}, \"descriptions\": {\"en\": \"university campus on Kish Island\"}}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": "Kish International Campus, University of Tehran",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    "ownership": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:3",
+              "original_text": "Type: Public",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": "public",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "leadership": {
+    "chancellor": {
+      "candidates": [
+        {
+          "current_basis": "infobox_current",
+          "evidence": [
+            {
+              "locator": "infobox:6",
+              "original_text": "Chancellor: Dr Zargham",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "person": {
+              "name": "Dr Zargham"
+            },
+            "title_original": {
+              "language": "en",
+              "text": "Chancellor"
+            }
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "single_source_family",
+          "reported_current"
+        ],
+        "reason": "The page reports this person in its current officeholder field; a term-end date is not required.",
+        "reason_code": "infobox_current"
+      }
+    }
+  },
+  "locations": [
+    {
+      "address": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P131:0",
+                "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q15238599$34E4C462-DD36-41A8-B236-77FF17D14A87\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 10321288, \"id\": \"Q10321288\"}}",
+                "source_ref": "s1"
+              },
+              {
+                "locator": "claim:P17:0",
+                "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q15238599$32D61967-1D2E-4BFC-A943-ABB1E7E86889\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 794, \"id\": \"Q794\"}, \"reference_count\": 1}",
+                "source_ref": "s1"
+              },
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q10321288\", \"labels\": {\"en\": \"Kish\"}, \"descriptions\": {\"en\": \"city in Hormozgan Province, Iran\"}}",
+                "source_ref": "s5"
+              },
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q794\", \"labels\": {\"en\": \"Iran\"}, \"descriptions\": {\"en\": \"country in Western Asia\"}}",
+                "source_ref": "s4"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "city_name": "Kish",
+              "city_qid": "Q10321288",
+              "country_name": "Iran",
+              "country_qid": "Q794",
+              "formatted": {
+                "language": "en",
+                "text": "Kish, Iran"
+              }
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "id": "kish",
+      "kind": "administrative_area",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P131:0",
+                "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q15238599$34E4C462-DD36-41A8-B236-77FF17D14A87\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 10321288, \"id\": \"Q10321288\"}}",
+                "source_ref": "s1"
+              },
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q10321288\", \"labels\": {\"en\": \"Kish\"}, \"descriptions\": {\"en\": \"city in Hormozgan Province, Iran\"}}",
+                "source_ref": "s5"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Kish"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "qid": "Q10321288"
+    },
+    {
+      "coordinates": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "statement:Q15238599$8EE1A005-C94F-4098-9DAF-ED3D3DA1E5D1",
+                "original_text": "\"latitude\": 26.56629167",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "source_rank": "normal",
+            "value": {
+              "crs": "EPSG:4326",
+              "globe_qid": "Q2",
+              "latitude": 26.56629167,
+              "longitude": 53.95545278,
+              "source_precision_degrees": 2.77777777778e-06
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "id": "wikidata-item-location",
+      "kind": "institution",
+      "qid": "Q15238599"
+    }
+  ],
+  "modified_datetime": "2026-11-06T23:28:31.406005+00:00",
+  "population": {
+    "students_total": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:7",
+              "original_text": "Students: ~2500",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "period_status": "not_stated",
+          "value": {
+            "amount": 2500,
+            "basis": "unspecified",
+            "precision": "approximate"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "period_not_stated",
+          "single_source_family",
+          "approximate_value"
+        ],
+        "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "profile": {
+    "academic_focus": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:Departments",
+              "original_text": "[edit | edit source]\nEngineering\nFine Arts\nLaw\nManagement\nEnglish\nPhysical Education and Sports Sciences\nEconomics\nScience and Biotechnology",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": [
+            {
+              "language": "en",
+              "text": "Engineering"
+            },
+            {
+              "language": "en",
+              "text": "Fine Arts"
+            },
+            {
+              "language": "en",
+              "text": "Law"
+            },
+            {
+              "language": "en",
+              "text": "Management"
+            },
+            {
+              "language": "en",
+              "text": "English"
+            },
+            {
+              "language": "en",
+              "text": "Physical Education and Sports Sciences"
+            },
+            {
+              "language": "en",
+              "text": "Economics"
+            },
+            {
+              "language": "en",
+              "text": "Science and Biotechnology"
+            }
+          ],
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "degree_levels": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:Bachelor.27s_Degree",
+              "original_text": "[edit | edit source]\nArchitecture\nIndustrial Design\nPainting\nUrbanism\nEngineering (Computer, Industrial, or Electrical)\nFinancial Management\nAccounting\nIndustrial Management\nLaw",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Master.27s_Degree",
+              "original_text": "[edit | edit source]\nFinancial Management\nMBA\nSports Science and Physical Education\nEconomic Sciences\nAccounting\nIndustrial Management\nTourism Management\nGeography (Tourism Planning)\nGraphics (Visual Communication)\nArchitecture\nIndustrial Design\nVisual Arts\nPainting\nMusic Composing\nUrban Planning\nUrban Design\nIndustrial Engineering\nComputer Engineering\nInformation Technology\nInformation Security\nPolymer Engineering\nElectrical Engineering\nChemical Engineering (Hydrocarbon Reservoirs, Mechatronics)\nCell and Molecular Sciences (Biology)\nPersian Literature\nEnglish Literature\nTEFL\nInternational Law\nPublic Law\nPrivate Law\nEnvironmental Design",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:PhD",
+              "original_text": "[edit | edit source]\nTEFL\nEnglish Literature\nPersian Literature\nInternational Law\nPublic Law\nSports Sciences and Physical Education\nCorrective Exercise and Sports Injuries\nSports Management\nAccounting\nManagement (Finance, Research in Operation, Media, Production & Operations, Business)",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": [
+            "bachelor",
+            "master",
+            "doctoral"
+          ],
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "motto": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:2",
+              "original_text": "Motto in English: Rest not a moment from learning",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "language": "en",
+            "text": "Rest not a moment from learning"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "summary": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "University campus on Kish Island\nFor other universities that use the UT mnemonic, see UT.\nUniversity of Tehran's International Campus - Kish Island[1] is located on Kish Island. The official language of the Kish International Campus is English and all courses are offered in English.[2]",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "infobox:3",
+              "original_text": "Type: Public",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "infobox:4",
+              "original_text": "Established: 2007",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Departments",
+              "original_text": "[edit | edit source]\nEngineering\nFine Arts\nLaw\nManagement\nEnglish\nPhysical Education and Sports Sciences\nEconomics\nScience and Biotechnology",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Bachelor.27s_Degree",
+              "original_text": "[edit | edit source]\nArchitecture\nIndustrial Design\nPainting\nUrbanism\nEngineering (Computer, Industrial, or Electrical)\nFinancial Management\nAccounting\nIndustrial Management\nLaw",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Master.27s_Degree",
+              "original_text": "[edit | edit source]\nFinancial Management\nMBA\nSports Science and Physical Education\nEconomic Sciences\nAccounting\nIndustrial Management\nTourism Management\nGeography (Tourism Planning)\nGraphics (Visual Communication)\nArchitecture\nIndustrial Design\nVisual Arts\nPainting\nMusic Composing\nUrban Planning\nUrban Design\nIndustrial Engineering\nComputer Engineering\nInformation Technology\nInformation Security\nPolymer Engineering\nElectrical Engineering\nChemical Engineering (Hydrocarbon Reservoirs, Mechatronics)\nCell and Molecular Sciences (Biology)\nPersian Literature\nEnglish Literature\nTEFL\nInternational Law\nPublic Law\nPrivate Law\nEnvironmental Design",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:PhD",
+              "original_text": "[edit | edit source]\nTEFL\nEnglish Literature\nPersian Literature\nInternational Law\nPublic Law\nSports Sciences and Physical Education\nCorrective Exercise and Sports Injuries\nSports Management\nAccounting\nManagement (Finance, Research in Operation, Media, Production & Operations, Business)",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "infobox:7",
+              "original_text": "Students: ~2500",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "infobox:2",
+              "original_text": "Motto in English: Rest not a moment from learning",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "language": "en",
+            "text": "Kish International Campus is a campus of the University of Tehran on Kish Island in Iran. Established in 2007, it is described as public in the captured university profile. Its institutional identity is that of a campus within the University of Tehran, rather than a separately established university. English is the campus's official language, and the captured article states that its courses are offered in English.\n\nThe campus offers bachelor's, master's and doctoral programmes across several academic fields. Its departments include engineering, fine arts, law, management, English, physical education and sports sciences, economics, and science and biotechnology. The undergraduate offerings listed in the article encompass architecture, industrial design, painting, urbanism, several engineering fields, financial management, accounting, industrial management and law. Postgraduate study extends across management, engineering, design, literature and legal subjects, while the doctoral list includes languages and literature, law, sports sciences, accounting and management.\n\nThe article's undated profile reports approximately 2,500 students. This figure is an approximate observation without a stated reference year. The captured profile also gives the English motto as “Rest not a moment from learning.”"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "teaching_languages": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "University campus on Kish Island\nFor other universities that use the UT mnemonic, see UT.\nUniversity of Tehran's International Campus - Kish Island[1] is located on Kish Island. The official language of the Kish International Campus is English and all courses are offered in English.[2]",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": [
+            "English"
+          ],
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "website": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P856:0",
+              "original_text": "{\"property\": \"P856\", \"property_label\": \"official website\", \"statement_id\": \"Q15238599$24F100B0-0DB7-478A-95F3-F3AD5192C9A6\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"http://kish.ut.ac.ir/IPPWebV1C010/English_WebUI/Default.aspx\", \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "value": "http://kish.ut.ac.ir/IPPWebV1C010/English_WebUI/Default.aspx",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "qid": "Q15238599",
+  "record_revision": 1,
+  "related_entities": {
+    "parent": {
+      "kind": "institution",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "infobox:5",
+                "original_text": "Affiliations: University of Tehran",
+                "source_ref": "s2"
+              },
+              {
+                "locator": "section:lead",
+                "original_text": "University campus on Kish Island\nFor other universities that use the UT mnemonic, see UT.\nUniversity of Tehran's International Campus - Kish Island[1] is located on Kish Island. The official language of the Kish International Campus is English and all courses are offered in English.[2]",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "University of Tehran"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    }
+  },
+  "relationships": {
+    "parent": [
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "University campus on Kish Island\nFor other universities that use the UT mnemonic, see UT.\nUniversity of Tehran's International Campus - Kish Island[1] is located on Kish Island. The official language of the Kish International Campus is English and all courses are offered in English.[2]",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "target_ref": "related:parent"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    ]
+  },
+  "schema_version": "0.2.2",
+  "seed": {
+    "channels": [
+      "legacy_discovery"
+    ],
+    "import_id": "seed-84c3beb45367905f",
+    "screening_status": "needs_review"
+  },
+  "selection_policy": "preferred-v1",
+  "sources": {
+    "s1": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T23:25:05.521495+00:00",
+      "revision_id": 2389783093,
+      "source_qid": "Q15238599",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2389783093"
+    },
+    "s2": {
+      "family": "wikimedia",
+      "kind": "wikipedia",
+      "language": "en",
+      "page_id": 36335802,
+      "publisher_role": "encyclopedia",
+      "retrieved_at": "2026-11-06T23:25:13.582575+00:00",
+      "revision_id": 1359743801,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1359743801"
+    },
+    "s3": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T23:25:10.912684+00:00",
+      "revision_id": 2522450452,
+      "source_qid": "Q4671277",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2522450452"
+    },
+    "s4": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T23:25:16.833255+00:00",
+      "revision_id": 2562957317,
+      "source_qid": "Q794",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2562957317"
+    },
+    "s5": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T23:25:19.774257+00:00",
+      "revision_id": 2539762963,
+      "source_qid": "Q10321288",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2539762963"
+    }
+  }
+}
