@@ -1,0 +1,542 @@
+{
+  "attribution": "distinct_native_research_and_review_subagents;not_cryptographic_identity",
+  "research": {
+    "baseline_sha256": "absent",
+    "candidate": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-06T16:23:35.650282+00:00",
+          "status": "not_found"
+        },
+        "geography": {
+          "checked_at": "2026-11-06T16:23:35.650282+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-06T16:23:35.650282+00:00",
+          "status": "not_found"
+        },
+        "identity": {
+          "checked_at": "2026-11-06T16:23:35.650282+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-06T16:23:35.650282+00:00",
+          "status": "not_found"
+        },
+        "profile": {
+          "checked_at": "2026-11-06T16:23:35.650282+00:00",
+          "status": "not_found"
+        }
+      },
+      "curation": {
+        "identity_status": "in_scope"
+      },
+      "identity": {
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "metadata",
+                  "original_text": "{\"id\": \"Q90478239\", \"labels\": {\"en\": \"Shri Ram College, Bhopal\"}, \"descriptions\": {\"en\": \"college affiliated to the Barkatullah University\"}}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "claim:P31:0",
+                  "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q90478239$6BC16B5A-6AFC-4A16-BDA8-738D9742DB26\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 189004, \"id\": \"Q189004\"}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "higher_education_college",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q90478239\", \"labels\": {\"en\": \"Shri Ram College, Bhopal\"}, \"descriptions\": {\"en\": \"college affiliated to the Barkatullah University\"}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "Shri Ram College, Bhopal",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "locations": [
+        {
+          "id": "bhopal_district",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q90478239$EF07E587-8D16-4B59-AD25-96B9C19A2172\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 1797245, \"id\": \"Q1797245\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q1797245\", \"labels\": {\"en\": \"Bhopal district\"}, \"descriptions\": {\"en\": \"district of Madhya Pradesh, India\"}}",
+                    "source_ref": "s4"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Bhopal district"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q1797245"
+        },
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q90478239$B7C91360-8581-4ABE-B87C-DAEA4448DB9F\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 668, \"id\": \"Q668\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q668\", \"labels\": {\"en\": \"India\"}, \"descriptions\": {\"en\": \"country in South Asia\"}}",
+                    "source_ref": "s3"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "country_name": "India",
+                  "country_qid": "Q668",
+                  "formatted": {
+                    "language": "en",
+                    "text": "India"
+                  }
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "country_india",
+          "kind": "administrative_area",
+          "qid": "Q668"
+        }
+      ],
+      "modified_datetime": "2026-11-06T16:26:25.319941+00:00",
+      "qid": "Q90478239",
+      "record_revision": 1,
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "legacy_discovery"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "needs_review"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T16:23:27.253446+00:00",
+          "revision_id": 1192307078,
+          "source_qid": "Q90478239",
+          "url": "https://www.wikidata.org/w/index.php?oldid=1192307078"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T16:23:24.861403+00:00",
+          "revision_id": 2556557061,
+          "source_qid": "Q189004",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2556557061"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T16:23:28.325843+00:00",
+          "revision_id": 2563722390,
+          "source_qid": "Q668",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2563722390"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T16:23:35.629359+00:00",
+          "revision_id": 2531733962,
+          "source_qid": "Q1797245",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2531733962"
+        }
+      }
+    },
+    "coverage": [
+      {
+        "group": "identity",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "status": "not_found"
+      },
+      {
+        "group": "population",
+        "status": "not_found"
+      },
+      {
+        "group": "finance",
+        "status": "not_found"
+      },
+      {
+        "group": "profile",
+        "status": "not_found"
+      }
+    ],
+    "delta": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-06T16:23:35.650282+00:00",
+          "status": "not_found"
+        },
+        "geography": {
+          "checked_at": "2026-11-06T16:23:35.650282+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-06T16:23:35.650282+00:00",
+          "status": "not_found"
+        },
+        "identity": {
+          "checked_at": "2026-11-06T16:23:35.650282+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-06T16:23:35.650282+00:00",
+          "status": "not_found"
+        },
+        "profile": {
+          "checked_at": "2026-11-06T16:23:35.650282+00:00",
+          "status": "not_found"
+        }
+      },
+      "curation": {
+        "identity_status": "in_scope"
+      },
+      "identity": {
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "metadata",
+                  "original_text": "{\"id\": \"Q90478239\", \"labels\": {\"en\": \"Shri Ram College, Bhopal\"}, \"descriptions\": {\"en\": \"college affiliated to the Barkatullah University\"}}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "claim:P31:0",
+                  "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q90478239$6BC16B5A-6AFC-4A16-BDA8-738D9742DB26\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 189004, \"id\": \"Q189004\"}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "higher_education_college",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q90478239\", \"labels\": {\"en\": \"Shri Ram College, Bhopal\"}, \"descriptions\": {\"en\": \"college affiliated to the Barkatullah University\"}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "Shri Ram College, Bhopal",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "locations": [
+        {
+          "id": "bhopal_district",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q90478239$EF07E587-8D16-4B59-AD25-96B9C19A2172\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 1797245, \"id\": \"Q1797245\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q1797245\", \"labels\": {\"en\": \"Bhopal district\"}, \"descriptions\": {\"en\": \"district of Madhya Pradesh, India\"}}",
+                    "source_ref": "s4"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Bhopal district"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q1797245"
+        },
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q90478239$B7C91360-8581-4ABE-B87C-DAEA4448DB9F\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 668, \"id\": \"Q668\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q668\", \"labels\": {\"en\": \"India\"}, \"descriptions\": {\"en\": \"country in South Asia\"}}",
+                    "source_ref": "s3"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "country_name": "India",
+                  "country_qid": "Q668",
+                  "formatted": {
+                    "language": "en",
+                    "text": "India"
+                  }
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "country_india",
+          "kind": "administrative_area",
+          "qid": "Q668"
+        }
+      ],
+      "qid": "Q90478239",
+      "record_revision": 1,
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "legacy_discovery"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "needs_review"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T16:23:27.253446+00:00",
+          "revision_id": 1192307078,
+          "source_qid": "Q90478239",
+          "url": "https://www.wikidata.org/w/index.php?oldid=1192307078"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T16:23:24.861403+00:00",
+          "revision_id": 2556557061,
+          "source_qid": "Q189004",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2556557061"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T16:23:28.325843+00:00",
+          "revision_id": 2563722390,
+          "source_qid": "Q668",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2563722390"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T16:23:35.629359+00:00",
+          "revision_id": 2531733962,
+          "source_qid": "Q1797245",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2531733962"
+        }
+      }
+    },
+    "open_requests": [],
+    "proposed_at": "2026-11-06T16:26:25.319941+00:00",
+    "qid": "Q90478239",
+    "research": {
+      "model": "not_reported",
+      "prompt_sha256": "96cec7e39abad9fe35ef3bf0251d8f1f021c0b4de9d5a6ff978ae6020545ce07",
+      "reasoning_effort": "not_reported",
+      "schema_sha256": "92e942f4fbf2ae28964462ea9ffa8312c5ee16a077a1e08b40aaaf741512422e",
+      "session": "/root/research_q90478239"
+    },
+    "retrieval_failures": [],
+    "review_status": "unreviewed",
+    "seed": {
+      "channels": [
+        "legacy_discovery"
+      ],
+      "import_id": "seed-84c3beb45367905f",
+      "screening_status": "needs_review"
+    },
+    "transport": {
+      "base_commit": "93fa5b73e73b3205b65d1e4e331f649e0f231e2f",
+      "protocol": "native-subagent-v1",
+      "repository": "ider-zh/university-seed-curation",
+      "review_policy": {
+        "id": "source-grounded-flexible-v2",
+        "sha256": "b8ed7d2897e4c31dbd81b1379aafdc1077a21d1a33949edbd2d896b0adf99db2"
+      },
+      "schema_sha256": "bfa496eafa9dffca56146214168db7f000b09161b8993129632e7202e1c88833",
+      "seed_catalog_sha256": "84c3beb45367905f513d650684283dd62a9c1b77962bdc34151a6ef05bfa03d4"
+    },
+    "type": "university-proposal-v1"
+  },
+  "review": {
+    "contexts_checked": 2,
+    "coverage_checks": [
+      {
+        "group": "identity",
+        "reason": "The captured root name, college classification and university-affiliation description were surveyed. The published kind and eligibility are qualified reasonable inferences from that combination, not claims to a comprehensive external identity survey.",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "reason": "Frozen root P17 and P131 plus linked country and district captures support the represented geography. No root P625 statements exist, and no linked-country or district point is converted into an institutional coordinate.",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "reason": "No supported institutional historical dates are represented in the supplied snapshot. This is an explicit limitation of the bounded supplied evidence, not a claim that historical information does not exist.",
+        "status": "not_found"
+      },
+      {
+        "group": "population",
+        "reason": "The supplied snapshot contains no institution population observation. No external population survey or numerical zero is claimed, and the incomplete group does not support full-refresh freshness.",
+        "status": "not_found"
+      },
+      {
+        "group": "finance",
+        "reason": "The supplied snapshot contains no institutional finance observation. No external finance survey, amount or currency is invented; this remains incomplete coverage.",
+        "status": "not_found"
+      },
+      {
+        "group": "profile",
+        "reason": "Sparse supplied evidence does not support a grounded profile summary. The omitted summary and absent profile facts remain disclosed limitations; supplementary content is outside independent factual scope.",
+        "status": "not_found"
+      }
+    ],
+    "decision": "approve",
+    "facts_checked": 2,
+    "full_refresh": true,
+    "inferences": [
+      {
+        "id": "$.identity.kind:c1",
+        "reason": "Frozen s1 metadata identifies the subject as a college affiliated to Barkatullah University and s1 claim:P31:0 classifies it as Q189004 college. Taken together these support higher_education_college as a reasonable controlled-kind interpretation; no independent university status, degree-awarding power or legal independence is asserted."
+      },
+      {
+        "id": "identity",
+        "reason": "The exact root identity is Shri Ram College, Bhopal and its captured description specifically says college affiliated to Barkatullah University. In combination with the college P31 this reasonably supports an in-scope higher-education college rather than inferring eligibility from the generic college class alone. No system/campus identity or independent legal status is invented."
+      }
+    ],
+    "model": "not_reported",
+    "proposal_sha256": "d1089f16ed8d33af524becccdd7736b0acbfea3bcc457cac84f56f6a79b49d2e",
+    "qid": "Q90478239",
+    "reasoning_effort": "not_reported",
+    "record_sha256": "665e3851fc04320515ff580141b745618c8afa9345f890336d1f624b442493d9",
+    "request_responses": [],
+    "requests": [],
+    "review_scope": {
+      "not_independently_reviewed_ids": [
+        "$.locations[0].name:c1",
+        "$.locations[1].address:c1",
+        "location:bhopal_district",
+        "location:country_india"
+      ],
+      "reviewed_ids": [
+        "$.identity.kind:c1",
+        "$.identity.names.en:c1",
+        "country:$.locations[1].address:c1",
+        "identity"
+      ],
+      "version": "core-review-v3"
+    },
+    "review_session": "/root/review3_q90478239",
+    "reviewed_at": "2026-11-06T16:32:34.821012+00:00",
+    "source_revisions_checked": 4,
+    "waived_requests": []
+  },
+  "review_result_sha256": "e290afd96607f34e9d7c8d201cc58274b160cf6a8efa07ba5293c36a0ca66cb1",
+  "type": "university-unified-receipt-v1"
+}
