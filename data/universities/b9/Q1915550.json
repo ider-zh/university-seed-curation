@@ -1,0 +1,500 @@
+{
+  "coverage": {
+    "finance": {
+      "checked_at": "2026-11-06T13:55:25.759298+00:00",
+      "status": "not_found"
+    },
+    "geography": {
+      "checked_at": "2026-11-06T13:55:25.759298+00:00",
+      "status": "checked"
+    },
+    "history": {
+      "checked_at": "2026-11-06T13:55:25.759298+00:00",
+      "status": "checked"
+    },
+    "identity": {
+      "checked_at": "2026-11-06T13:55:25.759298+00:00",
+      "status": "checked"
+    },
+    "population": {
+      "checked_at": "2026-11-06T13:55:25.759298+00:00",
+      "status": "not_found"
+    },
+    "profile": {
+      "checked_at": "2026-11-06T13:55:25.759298+00:00",
+      "status": "checked"
+    }
+  },
+  "curation": {
+    "identity_status": "in_scope",
+    "refresh_profile": "core-v1",
+    "reviewed_groups": [
+      "identity",
+      "geography",
+      "history",
+      "population",
+      "finance",
+      "profile"
+    ]
+  },
+  "history": {
+    "milestones": [
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "On 26 February 1945, after approval by the Dutch government in exile, the Temporary Academy foundation in Eindhoven was formally established, with Balthasar van der Pol as chairman. Rector was Hendrik Casimir.[2]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "day": 26,
+                "month": 2,
+                "precision": "day",
+                "year": 1945
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "From Temporary Academy was a temporary institution for higher education in the southern Netherlands at the end of the Second World War. The academy was founded in Eindhoven at the beginning of 1945 following the allied liberation of the south of the Netherlands at the end of 1944.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:lead",
+                  "original_text": "On 26 February 1945, after approval by the Dutch government in exile, the Temporary Academy foundation in Eindhoven was formally established, with Balthasar van der Pol as chairman. Rector was Hendrik Casimir.[2]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "Founded in Eindhoven at the beginning of 1945 after the Allied liberation of the southern Netherlands in late 1944; the Temporary Academy foundation was formally established on 26 February 1945 following approval by the Dutch government in exile."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "establishment",
+        "kind": "institution_establishment",
+        "subject_ref": "institution"
+      },
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "The academy remained active even after the liberation of the whole of the Netherlands in May 1945, but by December of that year, the other universities had resumed their regular programs. This eliminated the need for the Temporary Academy, and it was closed.[1]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "precision": "year",
+                "year": 1945
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "The academy remained active even after the liberation of the whole of the Netherlands in May 1945, but by December of that year, the other universities had resumed their regular programs. This eliminated the need for the Temporary Academy, and it was closed.[1]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "The academy continued after the liberation of the whole Netherlands in May 1945. By December, other universities had resumed regular programs, eliminating the need for the academy, which closed."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "closure",
+        "kind": "closure",
+        "subject_ref": "institution"
+      }
+    ]
+  },
+  "identity": {
+    "kind": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P31:0",
+              "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q1915550$DA2D5C34-D1DE-4C60-9DDE-F490AFA63B73\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 3918, \"id\": \"Q3918\"}}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "metadata",
+              "original_text": "{\"id\": \"Q3918\", \"labels\": {\"en\": \"university\"}, \"descriptions\": {\"en\": \"an institution of tertiary education and research which awards academic degrees in several academic disciplines\"}}",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c1",
+          "value": "university",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "names": {
+      "en": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q1915550\", \"labels\": {\"en\": \"Temporary Academy\"}, \"descriptions\": {}}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": "Temporary Academy",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    "operating_status": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "The academy remained active even after the liberation of the whole of the Netherlands in May 1945, but by December of that year, the other universities had resumed their regular programs. This eliminated the need for the Temporary Academy, and it was closed.[1]",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": "closed",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "leadership": {
+    "chair": {
+      "candidates": [
+        {
+          "current_basis": "historical",
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "On 26 February 1945, after approval by the Dutch government in exile, the Temporary Academy foundation in Eindhoven was formally established, with Balthasar van der Pol as chairman. Rector was Hendrik Casimir.[2]",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "period": {
+            "kind": "calendar_year",
+            "year": 1945
+          },
+          "value": {
+            "person": {
+              "name": "Balthasar van der Pol"
+            },
+            "title_original": {
+              "language": "en",
+              "text": "chairman"
+            }
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "single_source_family",
+          "last_known_only",
+          "historical_only"
+        ],
+        "reason": "Use the best available last-known appointment without claiming an explicitly confirmed current term.",
+        "reason_code": "last_known"
+      }
+    },
+    "rector": {
+      "candidates": [
+        {
+          "current_basis": "historical",
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "On 26 February 1945, after approval by the Dutch government in exile, the Temporary Academy foundation in Eindhoven was formally established, with Balthasar van der Pol as chairman. Rector was Hendrik Casimir.[2]",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "period": {
+            "kind": "calendar_year",
+            "year": 1945
+          },
+          "value": {
+            "person": {
+              "name": "Hendrik Casimir"
+            },
+            "title_original": {
+              "language": "en",
+              "text": "Rector"
+            }
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "single_source_family",
+          "last_known_only",
+          "historical_only"
+        ],
+        "reason": "Use the best available last-known appointment without claiming an explicitly confirmed current term.",
+        "reason_code": "last_known"
+      }
+    }
+  },
+  "locations": [
+    {
+      "address": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "From Temporary Academy was a temporary institution for higher education in the southern Netherlands at the end of the Second World War. The academy was founded in Eindhoven at the beginning of 1945 following the allied liberation of the south of the Netherlands at the end of 1944.",
+                "source_ref": "s2"
+              },
+              {
+                "locator": "claim:P17:0",
+                "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q1915550$EEC17DFF-9CCF-4898-819A-47D27A544567\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 55, \"id\": \"Q55\"}}",
+                "source_ref": "s1"
+              },
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q55\", \"labels\": {\"en\": \"Netherlands\"}, \"descriptions\": {\"en\": \"one of the four autonomous countries of the Kingdom of the Netherlands; with territories in the Caribbean\"}}",
+                "source_ref": "s4"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "city_name": "Eindhoven",
+              "country_name": "Netherlands",
+              "country_qid": "Q55",
+              "formatted": {
+                "language": "en",
+                "text": "Eindhoven, Netherlands"
+              }
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "id": "eindhoven",
+      "kind": "administrative_area",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "From Temporary Academy was a temporary institution for higher education in the southern Netherlands at the end of the Second World War. The academy was founded in Eindhoven at the beginning of 1945 following the allied liberation of the south of the Netherlands at the end of 1944.",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Eindhoven"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    }
+  ],
+  "modified_datetime": "2026-11-06T14:01:47.238181+00:00",
+  "profile": {
+    "academic_focus": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "The purpose of the Temporary Academy was, among other things, to train academics for the Philips Physics Laboratory: all universities and colleges with programs in the exact sciences and engineering sciences were located in the then still occupied north of the Netherlands.[1]",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": [
+            {
+              "language": "en",
+              "text": "Exact sciences"
+            },
+            {
+              "language": "en",
+              "text": "Engineering sciences"
+            }
+          ],
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "summary": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "From Temporary Academy was a temporary institution for higher education in the southern Netherlands at the end of the Second World War. The academy was founded in Eindhoven at the beginning of 1945 following the allied liberation of the south of the Netherlands at the end of 1944.",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:lead",
+              "original_text": "The purpose of the Temporary Academy was, among other things, to train academics for the Philips Physics Laboratory: all universities and colleges with programs in the exact sciences and engineering sciences were located in the then still occupied north of the Netherlands.[1]",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:lead",
+              "original_text": "On 26 February 1945, after approval by the Dutch government in exile, the Temporary Academy foundation in Eindhoven was formally established, with Balthasar van der Pol as chairman. Rector was Hendrik Casimir.[2]",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:lead",
+              "original_text": "Excluded were students who had signed the loyalty declaration in 1943 that was demanded of students in occupied Netherlands at the time (an exception was possible for students who had signed but had not continued their studies).[3]",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:lead",
+              "original_text": "The academy remained active even after the liberation of the whole of the Netherlands in May 1945, but by December of that year, the other universities had resumed their regular programs. This eliminated the need for the Temporary Academy, and it was closed.[1]",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:lead",
+              "original_text": "It would not be until 1956 that the Eindhoven University of Technology was established, giving Eindhoven a university institution again.",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "language": "en",
+            "text": "Temporary Academy was a temporary institution of higher education in Eindhoven, in the southern Netherlands, at the end of the Second World War. It was founded at the beginning of 1945, after Allied forces had liberated the south of the country in late 1944. The Temporary Academy foundation in Eindhoven was formally established on 26 February 1945 with approval from the Dutch government in exile. Balthasar van der Pol served as chairman, and Hendrik Casimir was rector.\n\nThe academy was intended, among other purposes, to train academics for the Philips Physics Laboratory. Universities and colleges offering programs in the exact sciences and engineering sciences were then situated in the still occupied north of the Netherlands. Students who had signed the loyalty declaration demanded in 1943 were excluded, although an exception was possible for signatories who had subsequently discontinued their studies. The academy continued operating after the liberation of the entire Netherlands in May 1945. By December that year, the other universities had resumed their regular programs, removing the need for the temporary institution, and it closed. A university institution returned to Eindhoven in 1956 with the establishment of Eindhoven University of Technology."
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "qid": "Q1915550",
+  "record_revision": 1,
+  "schema_version": "0.2.2",
+  "seed": {
+    "channels": [
+      "reviewed_institution_type"
+    ],
+    "import_id": "seed-84c3beb45367905f",
+    "screening_status": "included"
+  },
+  "selection_policy": "preferred-v1",
+  "sources": {
+    "s1": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T13:55:04.313745+00:00",
+      "revision_id": 2560383874,
+      "source_qid": "Q1915550",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2560383874"
+    },
+    "s2": {
+      "family": "wikimedia",
+      "kind": "wikipedia",
+      "language": "en",
+      "page_id": 76222366,
+      "publisher_role": "encyclopedia",
+      "retrieved_at": "2026-11-06T13:55:20.372660+00:00",
+      "revision_id": 1330229046,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1330229046"
+    },
+    "s3": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T09:04:54.551367+00:00",
+      "revision_id": 2562156954,
+      "source_qid": "Q3918",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2562156954"
+    },
+    "s4": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T13:55:25.666504+00:00",
+      "revision_id": 2565178043,
+      "source_qid": "Q55",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2565178043"
+    }
+  },
+  "update_datetime": "2026-11-06T14:01:47.238181+00:00"
+}

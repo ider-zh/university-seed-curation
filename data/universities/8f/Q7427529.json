@@ -1,0 +1,728 @@
+{
+  "coverage": {
+    "finance": {
+      "checked_at": "2026-11-06T13:55:33.276460+00:00",
+      "status": "not_found"
+    },
+    "geography": {
+      "checked_at": "2026-11-06T13:55:33.276460+00:00",
+      "status": "disputed"
+    },
+    "history": {
+      "checked_at": "2026-11-06T13:55:33.276460+00:00",
+      "status": "checked"
+    },
+    "identity": {
+      "checked_at": "2026-11-06T13:55:33.276460+00:00",
+      "status": "checked"
+    },
+    "population": {
+      "checked_at": "2026-11-06T13:55:33.276460+00:00",
+      "status": "not_found"
+    },
+    "profile": {
+      "checked_at": "2026-11-06T13:55:33.276460+00:00",
+      "status": "checked"
+    }
+  },
+  "curation": {
+    "identity_status": "in_scope",
+    "refresh_profile": "core-v1",
+    "reviewed_groups": [
+      "identity",
+      "geography",
+      "history",
+      "population",
+      "finance",
+      "profile"
+    ]
+  },
+  "history": {
+    "milestones": [
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "This university was established on 23 May 1967, in Rajkot city, and the administrative headquarters are at Rajkot.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "claim:P571:0",
+                  "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q7427529$301D73ED-3A6B-47E9-BF85-94F8AD84A36A\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+1967-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}, \"reference_count\": 2}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "infobox:1",
+                  "original_text": "Established: 1967",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "day": 23,
+                "month": 5,
+                "precision": "day",
+                "year": 1967
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "This university was established on 23 May 1967, in Rajkot city, and the administrative headquarters are at Rajkot.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "Saurashtra University was established in Rajkot on 23 May 1967."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "establishment",
+        "kind": "institution_establishment",
+        "subject_ref": "institution"
+      }
+    ]
+  },
+  "identity": {
+    "identifiers": {
+      "P5586": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P5586:0",
+                "original_text": "{\"property\": \"P5586\", \"property_label\": \"Times Higher Education World University ID\", \"statement_id\": \"Q7427529$8d6f1e4f-4ffa-c492-b13d-a8360116b9d8\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"saurashtra-university\"}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": "saurashtra-university",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    "kind": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P31:0",
+              "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q7427529$5CA26FF7-1A5D-4863-AFD2-BF572BBDD8AE\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 7603893, \"id\": \"Q7603893\"}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "metadata",
+              "original_text": "{\"id\": \"Q7603893\", \"labels\": {\"en\": \"state public university\"}, \"descriptions\": {\"en\": \"institute of higher education run and funded by the government of an Indian state\"}}",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c1",
+          "value": "university",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "names": {
+      "en": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q7427529\", \"labels\": {\"en\": \"Saurashtra University\"}, \"descriptions\": {\"en\": \"state public university in Rajkot, Gujarat, India\"}}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": "Saurashtra University",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    "ownership": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:0",
+              "original_text": "Type: Public",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": "public",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "leadership": {
+    "vice_chancellor": {
+      "candidates": [
+        {
+          "current_basis": "infobox_current",
+          "evidence": [
+            {
+              "locator": "infobox:4",
+              "original_text": "Vice-Chancellor: Dr. Nitin Pethani[1]",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "person": {
+              "name": "Dr. Nitin Pethani"
+            },
+            "title_original": {
+              "language": "en",
+              "text": "Vice-Chancellor"
+            }
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "single_source_family",
+          "reported_current"
+        ],
+        "reason": "The page reports this person in its current officeholder field; a term-end date is not required.",
+        "reason_code": "infobox_current"
+      }
+    }
+  },
+  "locations": [
+    {
+      "address": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "infobox:5",
+                "original_text": "Location: Rajkot, Gujarat, India",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "city_name": "Rajkot",
+              "city_qid": "Q11854",
+              "country_name": "India",
+              "country_qid": "Q668",
+              "formatted": {
+                "language": "en",
+                "text": "Rajkot, Gujarat, India"
+              },
+              "region_name": "Gujarat"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "coordinates": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P625:0",
+                "original_text": "{\"property\": \"P625\", \"property_label\": \"coordinate location\", \"statement_id\": \"q11854$D1D3FFDC-FD43-40B2-B5C0-BC15D408FA21\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"latitude\": 22.296908333333, \"longitude\": 70.798363888889, \"altitude\": null, \"precision\": 2.7777777777778e-06, \"globe\": \"http://www.wikidata.org/entity/Q2\"}, \"reference_count\": 1}",
+                "source_ref": "s5"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "crs": "EPSG:4326",
+              "latitude": 22.296908333333,
+              "longitude": 70.798363888889
+            },
+            "verification": "supported"
+          },
+          {
+            "evidence": [
+              {
+                "locator": "claim:P625:1",
+                "original_text": "{\"property\": \"P625\", \"property_label\": \"coordinate location\", \"statement_id\": \"Q11854$C875EA06-59FD-44B2-AA1E-113F8B8593DC\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"latitude\": 22.291666666667, \"longitude\": 70.793333333333, \"altitude\": null, \"precision\": 0.00027777777777778, \"globe\": \"http://www.wikidata.org/entity/Q2\"}, \"reference_count\": 1}",
+                "source_ref": "s5"
+              }
+            ],
+            "id": "c2",
+            "value": {
+              "crs": "EPSG:4326",
+              "latitude": 22.291666666667,
+              "longitude": 70.793333333333
+            },
+            "verification": "supported"
+          }
+        ],
+        "conflicts": [
+          {
+            "candidate_ids": [
+              "c1",
+              "c2"
+            ],
+            "kind": "value_disagreement",
+            "note": "Rajkot city has two normal-rank P625 observations with different coordinates and no distinguishing statistical periods. Both refer to the city, not the university or a campus; retain both without selecting a preferred city point.",
+            "status": "unresolved"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "qualifications": [
+            "conflicting_candidates"
+          ],
+          "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+          "reason_code": "best_available"
+        }
+      },
+      "id": "rajkot",
+      "kind": "administrative_area",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q11854\", \"labels\": {\"en\": \"Rajkot\"}, \"descriptions\": {\"en\": \"city in Gujarat, India\"}}",
+                "source_ref": "s5"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Rajkot"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "qid": "Q11854"
+    },
+    {
+      "coordinates": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P625:0",
+                "original_text": "{\"property\": \"P625\", \"property_label\": \"coordinate location\", \"statement_id\": \"q1815245$CCF8FCE6-EB70-4EE8-BC18-8C59A28DB323\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"latitude\": 22.3, \"longitude\": 70.78, \"altitude\": null, \"precision\": 0.00027777777777778, \"globe\": \"http://www.wikidata.org/entity/Q2\"}, \"reference_count\": 1}",
+                "source_ref": "s6"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "crs": "EPSG:4326",
+              "latitude": 22.3,
+              "longitude": 70.78
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "id": "rajkot-district",
+      "kind": "administrative_area",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q1815245\", \"labels\": {\"en\": \"Rajkot district\"}, \"descriptions\": {\"en\": \"district of Gujarat, India\"}}",
+                "source_ref": "s6"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Rajkot district"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "qid": "Q1815245"
+    },
+    {
+      "id": "india",
+      "kind": "administrative_area",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q668\", \"labels\": {\"en\": \"India\"}, \"descriptions\": {\"en\": \"country in South Asia\"}}",
+                "source_ref": "s4"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "India"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "qid": "Q668"
+    },
+    {
+      "id": "gujarat",
+      "kind": "administrative_area",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "infobox:5",
+                "original_text": "Location: Rajkot, Gujarat, India",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Gujarat"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    {
+      "address": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "This university was established on 23 May 1967, in Rajkot city, and the administrative headquarters are at Rajkot.",
+                "source_ref": "s2"
+              },
+              {
+                "locator": "infobox:5",
+                "original_text": "Location: Rajkot, Gujarat, India",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "city_name": "Rajkot",
+              "city_qid": "Q11854",
+              "country_name": "India",
+              "country_qid": "Q668",
+              "formatted": {
+                "language": "en",
+                "text": "Rajkot"
+              }
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "id": "headquarters",
+      "kind": "headquarters",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "This university was established on 23 May 1967, in Rajkot city, and the administrative headquarters are at Rajkot.",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Administrative headquarters"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    {
+      "coordinates": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "statement:Q7427529$88df2813-4b05-3411-2569-ec146d8f22d0",
+                "original_text": "\"latitude\": 22.290802777777778",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "source_rank": "normal",
+            "value": {
+              "crs": "EPSG:4326",
+              "globe_qid": "Q2",
+              "latitude": 22.290802777777778,
+              "longitude": 70.74298611111111,
+              "source_precision_degrees": 2.777777777777778e-06
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "id": "wikidata-item-location",
+      "kind": "institution",
+      "qid": "Q7427529"
+    }
+  ],
+  "modified_datetime": "2026-11-06T14:01:46.125118+00:00",
+  "profile": {
+    "logo_url": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox_image_urls",
+              "original_text": "[\"https://upload.wikimedia.org/wikipedia/en/d/dc/Saurashtra_University_logo.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail_unscaled\", \"https://maps.wikimedia.org/img/osm-intl,13,a,a,270x200.png?lang=en&domain=en.wikipedia.org&title=Saurashtra_University&revid=1380639612&groups=_9c243896b8a5f56dfe6d1cd373f8405785f955dd&parser=legacy\"]",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": "https://upload.wikimedia.org/wikipedia/en/d/dc/Saurashtra_University_logo.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail_unscaled",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "motto": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P1451:0",
+              "original_text": "{\"property\": \"P1451\", \"property_label\": \"motto text\", \"statement_id\": \"Q7427529$2fd6ad16-4c42-a8b2-496c-e6381824f3c5\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"पावका नः सरस्वती\", \"language\": \"sa\"}}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "language": "sa",
+            "text": "पावका नः सरस्वती"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "summary": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "metadata",
+              "original_text": "{\"id\": \"Q7427529\", \"labels\": {\"en\": \"Saurashtra University\"}, \"descriptions\": {\"en\": \"state public university in Rajkot, Gujarat, India\"}}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "section:lead",
+              "original_text": "The Saurashtra University is one of the significant universities in Gujarat state in India. This university was established on 23 May 1967, in Rajkot city, and the administrative headquarters are at Rajkot. Presently, 272 colleges in Amreli, Jamnagar, Junagadh, Porbandar, Rajkot and Surendranagar districts are affiliated with the Saurashtra University.",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "infobox:2",
+              "original_text": "Affiliations: UGC",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "infobox:6",
+              "original_text": "Campus: Urban",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "claim:P1451:0",
+              "original_text": "{\"property\": \"P1451\", \"property_label\": \"motto text\", \"statement_id\": \"Q7427529$2fd6ad16-4c42-a8b2-496c-e6381824f3c5\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"पावका नः सरस्वती\", \"language\": \"sa\"}}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "language": "en",
+            "text": "Saurashtra University is a state public university in Rajkot, Gujarat, India. It was established in Rajkot on 23 May 1967, and its administrative headquarters are in the same city. The university’s Sanskrit motto is “पावका नः सरस्वती”.\n\nThe university has an affiliating role across several districts of Gujarat. An undated count records 272 colleges affiliated with Saurashtra University in Amreli, Jamnagar, Junagadh, Porbandar, Rajkot and Surendranagar districts. This figure describes affiliated colleges rather than the university’s student population or the number of its campuses. Its listed institutional affiliation is UGC, and its campus setting is described as urban."
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "website": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P856:0",
+              "original_text": "{\"property\": \"P856\", \"property_label\": \"official website\", \"statement_id\": \"Q7427529$63F2FAFB-436F-494D-A18E-665005FE75D7\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"https://www.saurashtrauniversity.edu\", \"qualifiers\": {\"P407\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 1860, \"id\": \"Q1860\"}}]}, \"reference_count\": 2}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "value": "https://www.saurashtrauniversity.edu",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "qid": "Q7427529",
+  "record_revision": 1,
+  "schema_version": "0.2.2",
+  "seed": {
+    "channels": [
+      "ranking_identifier",
+      "reviewed_institution_type"
+    ],
+    "import_id": "seed-84c3beb45367905f",
+    "screening_status": "included"
+  },
+  "selection_policy": "preferred-v1",
+  "sources": {
+    "s1": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T13:55:02.489585+00:00",
+      "revision_id": 2560456401,
+      "source_qid": "Q7427529",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2560456401"
+    },
+    "s2": {
+      "family": "wikimedia",
+      "kind": "wikipedia",
+      "language": "en",
+      "page_id": 26851047,
+      "publisher_role": "encyclopedia",
+      "retrieved_at": "2026-11-06T13:55:18.012757+00:00",
+      "revision_id": 1380639612,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1380639612"
+    },
+    "s3": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T13:55:23.763630+00:00",
+      "revision_id": 2553507072,
+      "source_qid": "Q7603893",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2553507072"
+    },
+    "s4": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T09:57:48.040516+00:00",
+      "revision_id": 2563722390,
+      "source_qid": "Q668",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2563722390"
+    },
+    "s5": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T13:55:28.648586+00:00",
+      "revision_id": 2547533544,
+      "source_qid": "Q11854",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2547533544"
+    },
+    "s6": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T13:55:33.265425+00:00",
+      "revision_id": 2537416807,
+      "source_qid": "Q1815245",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2537416807"
+    }
+  },
+  "update_datetime": "2026-11-06T14:01:46.125118+00:00"
+}

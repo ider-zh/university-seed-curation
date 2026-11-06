@@ -1,0 +1,1948 @@
+{
+  "attribution": "distinct_native_research_and_review_subagents;not_cryptographic_identity",
+  "research": {
+    "baseline_sha256": "absent",
+    "candidate": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-06T13:55:26.540088+00:00",
+          "status": "not_found"
+        },
+        "geography": {
+          "checked_at": "2026-11-06T13:55:26.540088+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-06T13:55:26.540088+00:00",
+          "status": "disputed"
+        },
+        "identity": {
+          "checked_at": "2026-11-06T13:55:26.540088+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-06T13:55:26.540088+00:00",
+          "status": "checked"
+        },
+        "profile": {
+          "checked_at": "2026-11-06T13:55:26.540088+00:00",
+          "status": "checked"
+        }
+      },
+      "curation": {
+        "identity_status": "in_scope"
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:lead",
+                      "original_text": "Established in 2005, the university is named after the late Marshal Mohammad Fahim, an Afghan political and military leader who served as the first vice president of Afghanistan from 2004 until his death in 2014.",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 2005
+                  },
+                  "verification": "supported"
+                },
+                {
+                  "evidence": [
+                    {
+                      "locator": "infobox:0",
+                      "original_text": "Established: 1 April 2013[1]",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c2",
+                  "value": {
+                    "day": 1,
+                    "month": 4,
+                    "precision": "day",
+                    "year": 2013
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "conflicts": [
+                {
+                  "candidate_ids": [
+                    "c1",
+                    "c2"
+                  ],
+                  "kind": "time_disagreement",
+                  "note": "The same university article gives establishment in 2005 in its lead and 1 April 2013 in its infobox. No distinction of institutional phases is supplied; retain both without choosing a date.",
+                  "status": "unresolved"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "qualifications": [
+                  "conflicting_candidates"
+                ],
+                "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+                "reason_code": "best_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "infobox:0",
+                      "original_text": "Established: 1 April 2013[1]",
+                      "source_ref": "s2"
+                    },
+                    {
+                      "locator": "section:lead",
+                      "original_text": "Established in 2005, the university is named after the late Marshal Mohammad Fahim, an Afghan political and military leader who served as the first vice president of Afghanistan from 2004 until his death in 2014.",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "The article lead gives establishment in 2005; its infobox instead gives 1 April 2013. The packet does not resolve whether these refer to different institutional phases."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "establishment",
+            "kind": "institution_establishment",
+            "subject_ref": "institution"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Islamic_Republic_period",
+                      "original_text": "A cornerstone-laying ceremony was conducted in April 2010 and the construction was completed in 2013.",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 2013
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Islamic_Republic_period",
+                      "original_text": "A cornerstone-laying ceremony was conducted in April 2010 and the construction was completed in 2013.",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "Construction at the Qargha site was completed in 2013, following an April 2010 cornerstone-laying ceremony."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "construction",
+            "kind": "construction_completion",
+            "subject_ref": "institution"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Islamic_Republic_period",
+                      "original_text": "In April 2014, the university was renamed the Defense University of Marshal Fahim in honour of the former Vice President of Afghanistan, Mohammed Fahim who died of a heart attack on 9 March 2014.",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "month": 4,
+                    "precision": "month",
+                    "year": 2014
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Islamic_Republic_period",
+                      "original_text": "In April 2014, the university was renamed the Defense University of Marshal Fahim in honour of the former Vice President of Afghanistan, Mohammed Fahim who died of a heart attack on 9 March 2014.",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "Renamed the Defense University of Marshal Fahim in honour of former Vice President Mohammed Fahim."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "rename",
+            "kind": "rename",
+            "subject_ref": "institution"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:National_Military_Academy",
+                      "original_text": "NMAA moved to the ANDU site in Qargha upon completion of its new campus in 2012.",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 2012
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:National_Military_Academy",
+                      "original_text": "NMAA moved to the ANDU site in Qargha upon completion of its new campus in 2012. It was previously located in the old Air Academy established by the Soviet Union to the north of Kabul beside Kabul International Airport.",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "The National Military Academy moved to the ANDU site in Qargha in 2012; its previous location was beside Kabul International Airport."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "nmaa_move",
+            "kind": "relocation",
+            "subject_ref": "related:nmaa"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Afghan_National_Army_Officer_Academy_.28ANAOA.29",
+                      "original_text": "The ANA Officer Academy accepted its first intake of 270 students selected from approximately 10,000 initial applicants in October 2013.",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "month": 10,
+                    "precision": "month",
+                    "year": 2013
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Afghan_National_Army_Officer_Academy_.28ANAOA.29",
+                      "original_text": "The ANA Officer Academy accepted its first intake of 270 students selected from approximately 10,000 initial applicants in October 2013.",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "The ANA Officer Academy accepted its first intake of 270 students in October 2013, selected from approximately 10,000 initial applicants; this is academy intake, not university-wide enrolment."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "anaoa_start",
+            "kind": "teaching_start",
+            "subject_ref": "related:anaoa"
+          }
+        ]
+      },
+      "identity": {
+        "aliases": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q4689062\", \"labels\": {\"en\": \"Afghan Defense University\"}, \"descriptions\": {}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Afghan Defense University"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "Marshal Fahim National Defense University (MFNDU) is a military university located in Kabul, the capital city of Afghanistan.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "MFNDU"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Islamic_Republic_period",
+                    "original_text": "Qargha remained heavily damaged until the decision was made to make it the site of the planned Afghan National Defense University.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Afghan National Defense University"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Islamic_Republic_period",
+                    "original_text": "In April 2014, the university was renamed the Defense University of Marshal Fahim in honour of the former Vice President of Afghanistan, Mohammed Fahim who died of a heart attack on 9 March 2014.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Defense University of Marshal Fahim"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ],
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P31:0",
+                  "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q4689062$3BFA8D17-C6B2-48A9-8659-A7A383EFAC71\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 3918, \"id\": \"Q3918\"}}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "section:lead",
+                  "original_text": "Marshal Fahim National Defense University (MFNDU) is a military university located in Kabul, the capital city of Afghanistan.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "university",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "page_metadata",
+                    "original_text": "{\"title\": \"Marshal Fahim National Defense University\", \"language\": \"en\"}",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": "Marshal Fahim National Defense University",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "locations": [
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "infobox:1",
+                    "original_text": "Location: Kabul, Afghanistan",
+                    "source_ref": "s2"
+                  },
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q4689062$79E915AD-E6BF-4346-92E7-82CCF3128FB0\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 889, \"id\": \"Q889\"}}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q4689062$6E57C56C-5110-40C5-A81A-431EA9BA4F93\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 5838, \"id\": \"Q5838\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "city_name": "Kabul",
+                  "city_qid": "Q5838",
+                  "country_name": "Afghanistan",
+                  "country_qid": "Q889",
+                  "formatted": {
+                    "language": "en",
+                    "text": "Kabul, Afghanistan"
+                  }
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "kabul",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "infobox:1",
+                    "original_text": "Location: Kabul, Afghanistan",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Kabul"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q5838"
+        },
+        {
+          "id": "qargha",
+          "kind": "campus",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Geography",
+                    "original_text": "The university's campus in Qargha is spread over an area of 400 acres.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Qargha"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        {
+          "coordinates": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "statement:Q4689062$0516F500-65CE-4715-B50E-A59513B88CCF",
+                    "original_text": "\"latitude\": 34.5542",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "source_rank": "normal",
+                "value": {
+                  "crs": "EPSG:4326",
+                  "globe_qid": "Q2",
+                  "latitude": 34.5542,
+                  "longitude": 69.0315,
+                  "source_precision_degrees": 0.010907311465617
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "wikidata-item-location",
+          "kind": "institution",
+          "qid": "Q4689062"
+        }
+      ],
+      "modified_datetime": "2026-11-06T13:59:25.026254+00:00",
+      "profile": {
+        "academic_focus": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "MFNDU provides undergraduate, graduate, and postgraduate programs in various fields, including military science, defense studies, strategic studies, leadership and management, international relations, law, and engineering.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": [
+                {
+                  "language": "en",
+                  "text": "military science"
+                },
+                {
+                  "language": "en",
+                  "text": "defense studies"
+                },
+                {
+                  "language": "en",
+                  "text": "strategic studies"
+                },
+                {
+                  "language": "en",
+                  "text": "leadership and management"
+                },
+                {
+                  "language": "en",
+                  "text": "international relations"
+                },
+                {
+                  "language": "en",
+                  "text": "law"
+                },
+                {
+                  "language": "en",
+                  "text": "engineering"
+                }
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "degree_levels": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "MFNDU provides undergraduate, graduate, and postgraduate programs in various fields, including military science, defense studies, strategic studies, leadership and management, international relations, law, and engineering.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": [
+                "undergraduate",
+                "graduate",
+                "postgraduate"
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "main_image_url": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox_image_urls",
+                  "original_text": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/An_Afghan_National_Defense_University_%28ANDU%29_instructor_exits_an_academic_hall_at_the_school_in_Kabul%2C_Afghanistan%2C_May_7%2C_2013_130507-F-OF869-007.jpg/250px-An_Afghan_National_Defense_University_%28ANDU%29_instructor_exits_an_academic_hall_at_the_school_in_Kabul%2C_Afghanistan%2C_May_7%2C_2013_130507-F-OF869-007.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/An_Afghan_National_Defense_University_%28ANDU%29_instructor_exits_an_academic_hall_at_the_school_in_Kabul%2C_Afghanistan%2C_May_7%2C_2013_130507-F-OF869-007.jpg/250px-An_Afghan_National_Defense_University_%28ANDU%29_instructor_exits_an_academic_hall_at_the_school_in_Kabul%2C_Afghanistan%2C_May_7%2C_2013_130507-F-OF869-007.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "summary": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "metadata",
+                  "original_text": "{\"id\": \"Q4689062\", \"labels\": {\"en\": \"Afghan Defense University\"}, \"descriptions\": {}}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "section:lead",
+                  "original_text": "Marshal Fahim National Defense University (MFNDU) is a military university located in Kabul, the capital city of Afghanistan.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Geography",
+                  "original_text": "The university's campus in Qargha is spread over an area of 400 acres. The campus includes academic and administrative buildings, student dormitories, faculty housing, sports facilities, and a library.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Geography",
+                  "original_text": "lying on the western outskirts of Kabul",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:lead",
+                  "original_text": "MFNDU educates and trains military officers, senior civil servants, and professionals from various government and non-government organizations in Afghanistan and other partner nations.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Islamic_Republic_period",
+                  "original_text": "American contractors moved in mid-2008 to clear the site, which previously served a variety of military roles since the Soviet–Afghan War.[4]",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Islamic_Republic_period",
+                  "original_text": "A cornerstone-laying ceremony was conducted in April 2010 and the construction was completed in 2013.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:National_Military_Academy",
+                  "original_text": "NMAA moved to the ANDU site in Qargha upon completion of its new campus in 2012. It was previously located in the old Air Academy established by the Soviet Union to the north of Kabul beside Kabul International Airport.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Islamic_Republic_period",
+                  "original_text": "In April 2014, the university was renamed the Defense University of Marshal Fahim in honour of the former Vice President of Afghanistan, Mohammed Fahim who died of a heart attack on 9 March 2014.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:lead",
+                  "original_text": "MFNDU provides undergraduate, graduate, and postgraduate programs in various fields, including military science, defense studies, strategic studies, leadership and management, international relations, law, and engineering. The university also offers short-term courses, workshops, and seminars for professionals in specific fields, conducts research on various security and defense-related issues, and publishes academic papers, reports, and policy briefs.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:National_Military_Academy",
+                  "original_text": "NMAA cadets study both military and academic subjects for a total of 4 years and are awarded a degree from ANDU before commissioning into the ANA as Second Lieutenants.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Afghan_National_Army_Officer_Academy_.28ANAOA.29",
+                  "original_text": "The ANA Officer Academy accepted its first intake of 270 students selected from approximately 10,000 initial applicants in October 2013.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "Marshal Fahim National Defense University, also known as Afghan Defense University, is a military university in Kabul, Afghanistan. Its campus at Qargha, on the western outskirts of the city, includes teaching and administrative buildings, student accommodation, faculty housing, sports facilities and a library. The institution trains military officers, senior civil servants and professionals from government and non-government organizations in Afghanistan and partner nations.\n\nThe Qargha site was prepared for the planned university from mid-2008. A cornerstone-laying ceremony followed in April 2010, and construction was completed in 2013. The National Military Academy of Afghanistan had moved to the site in 2012 from its earlier location beside Kabul International Airport. In April 2014, the university was renamed in honour of former Vice President Mohammed Fahim.\n\nIts academic provision encompasses undergraduate, graduate and postgraduate programs, with fields including military science, defense and strategic studies, leadership and management, international relations, law and engineering. Short courses and professional seminars complement these programs. National Military Academy cadets undertake four years of military and academic study and receive an ANDU degree before commissioning. The separate ANA Officer Academy accepted an initial cohort of 270 students in October 2013; that figure describes academy intake rather than total university enrolment."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "qid": "Q4689062",
+      "record_revision": 1,
+      "related_entities": {
+        "anaoa": {
+          "kind": "institution",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Afghan_National_Army_Officer_Academy_.28ANAOA.29",
+                    "original_text": "The ANA Officer Academy was also referred to in Afghanistan as ANAOA and the Junior Officer Academy.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Afghan National Army Officer Academy"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        "nmaa": {
+          "kind": "institution",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:National_Military_Academy",
+                    "original_text": "The National Military Academy of Afghanistan under American coalition occupation was modeled on the United States Military Academy and the United States Air Force Academy.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "National Military Academy of Afghanistan"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "relationships": {
+        "campus": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Geography",
+                    "original_text": "The university's campus in Qargha is spread over an area of 400 acres.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "target_ref": "location:qargha"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ]
+      },
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "reviewed_institution_type"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "included"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T13:55:01.971697+00:00",
+          "revision_id": 2560435778,
+          "source_qid": "Q4689062",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2560435778"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikipedia",
+          "language": "en",
+          "page_id": 35943298,
+          "publisher_role": "encyclopedia",
+          "retrieved_at": "2026-11-06T13:55:14.649296+00:00",
+          "revision_id": 1375205319,
+          "url": "https://en.wikipedia.org/w/index.php?oldid=1375205319"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T09:04:54.551367+00:00",
+          "revision_id": 2562156954,
+          "source_qid": "Q3918",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2562156954"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T13:55:21.085419+00:00",
+          "revision_id": 2564433743,
+          "source_qid": "Q889",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2564433743"
+        },
+        "s5": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T13:55:26.500674+00:00",
+          "revision_id": 2565261222,
+          "source_qid": "Q5838",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2565261222"
+        }
+      }
+    },
+    "coverage": [
+      {
+        "group": "identity",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "status": "disputed"
+      },
+      {
+        "group": "population",
+        "status": "checked"
+      },
+      {
+        "group": "finance",
+        "status": "not_found"
+      },
+      {
+        "group": "profile",
+        "status": "checked"
+      }
+    ],
+    "delta": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-06T13:55:26.540088+00:00",
+          "status": "not_found"
+        },
+        "geography": {
+          "checked_at": "2026-11-06T13:55:26.540088+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-06T13:55:26.540088+00:00",
+          "status": "disputed"
+        },
+        "identity": {
+          "checked_at": "2026-11-06T13:55:26.540088+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-06T13:55:26.540088+00:00",
+          "status": "checked"
+        },
+        "profile": {
+          "checked_at": "2026-11-06T13:55:26.540088+00:00",
+          "status": "checked"
+        }
+      },
+      "curation": {
+        "identity_status": "in_scope"
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:lead",
+                      "original_text": "Established in 2005, the university is named after the late Marshal Mohammad Fahim, an Afghan political and military leader who served as the first vice president of Afghanistan from 2004 until his death in 2014.",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 2005
+                  },
+                  "verification": "supported"
+                },
+                {
+                  "evidence": [
+                    {
+                      "locator": "infobox:0",
+                      "original_text": "Established: 1 April 2013[1]",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c2",
+                  "value": {
+                    "day": 1,
+                    "month": 4,
+                    "precision": "day",
+                    "year": 2013
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "conflicts": [
+                {
+                  "candidate_ids": [
+                    "c1",
+                    "c2"
+                  ],
+                  "kind": "time_disagreement",
+                  "note": "The same university article gives establishment in 2005 in its lead and 1 April 2013 in its infobox. No distinction of institutional phases is supplied; retain both without choosing a date.",
+                  "status": "unresolved"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "qualifications": [
+                  "conflicting_candidates"
+                ],
+                "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+                "reason_code": "best_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "infobox:0",
+                      "original_text": "Established: 1 April 2013[1]",
+                      "source_ref": "s2"
+                    },
+                    {
+                      "locator": "section:lead",
+                      "original_text": "Established in 2005, the university is named after the late Marshal Mohammad Fahim, an Afghan political and military leader who served as the first vice president of Afghanistan from 2004 until his death in 2014.",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "The article lead gives establishment in 2005; its infobox instead gives 1 April 2013. The packet does not resolve whether these refer to different institutional phases."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "establishment",
+            "kind": "institution_establishment",
+            "subject_ref": "institution"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Islamic_Republic_period",
+                      "original_text": "A cornerstone-laying ceremony was conducted in April 2010 and the construction was completed in 2013.",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 2013
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Islamic_Republic_period",
+                      "original_text": "A cornerstone-laying ceremony was conducted in April 2010 and the construction was completed in 2013.",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "Construction at the Qargha site was completed in 2013, following an April 2010 cornerstone-laying ceremony."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "construction",
+            "kind": "construction_completion",
+            "subject_ref": "institution"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Islamic_Republic_period",
+                      "original_text": "In April 2014, the university was renamed the Defense University of Marshal Fahim in honour of the former Vice President of Afghanistan, Mohammed Fahim who died of a heart attack on 9 March 2014.",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "month": 4,
+                    "precision": "month",
+                    "year": 2014
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Islamic_Republic_period",
+                      "original_text": "In April 2014, the university was renamed the Defense University of Marshal Fahim in honour of the former Vice President of Afghanistan, Mohammed Fahim who died of a heart attack on 9 March 2014.",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "Renamed the Defense University of Marshal Fahim in honour of former Vice President Mohammed Fahim."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "rename",
+            "kind": "rename",
+            "subject_ref": "institution"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:National_Military_Academy",
+                      "original_text": "NMAA moved to the ANDU site in Qargha upon completion of its new campus in 2012.",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 2012
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:National_Military_Academy",
+                      "original_text": "NMAA moved to the ANDU site in Qargha upon completion of its new campus in 2012. It was previously located in the old Air Academy established by the Soviet Union to the north of Kabul beside Kabul International Airport.",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "The National Military Academy moved to the ANDU site in Qargha in 2012; its previous location was beside Kabul International Airport."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "nmaa_move",
+            "kind": "relocation",
+            "subject_ref": "related:nmaa"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Afghan_National_Army_Officer_Academy_.28ANAOA.29",
+                      "original_text": "The ANA Officer Academy accepted its first intake of 270 students selected from approximately 10,000 initial applicants in October 2013.",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "month": 10,
+                    "precision": "month",
+                    "year": 2013
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Afghan_National_Army_Officer_Academy_.28ANAOA.29",
+                      "original_text": "The ANA Officer Academy accepted its first intake of 270 students selected from approximately 10,000 initial applicants in October 2013.",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "The ANA Officer Academy accepted its first intake of 270 students in October 2013, selected from approximately 10,000 initial applicants; this is academy intake, not university-wide enrolment."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "anaoa_start",
+            "kind": "teaching_start",
+            "subject_ref": "related:anaoa"
+          }
+        ]
+      },
+      "identity": {
+        "aliases": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q4689062\", \"labels\": {\"en\": \"Afghan Defense University\"}, \"descriptions\": {}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Afghan Defense University"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "Marshal Fahim National Defense University (MFNDU) is a military university located in Kabul, the capital city of Afghanistan.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "MFNDU"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Islamic_Republic_period",
+                    "original_text": "Qargha remained heavily damaged until the decision was made to make it the site of the planned Afghan National Defense University.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Afghan National Defense University"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Islamic_Republic_period",
+                    "original_text": "In April 2014, the university was renamed the Defense University of Marshal Fahim in honour of the former Vice President of Afghanistan, Mohammed Fahim who died of a heart attack on 9 March 2014.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Defense University of Marshal Fahim"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ],
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P31:0",
+                  "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q4689062$3BFA8D17-C6B2-48A9-8659-A7A383EFAC71\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 3918, \"id\": \"Q3918\"}}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "section:lead",
+                  "original_text": "Marshal Fahim National Defense University (MFNDU) is a military university located in Kabul, the capital city of Afghanistan.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "university",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "page_metadata",
+                    "original_text": "{\"title\": \"Marshal Fahim National Defense University\", \"language\": \"en\"}",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": "Marshal Fahim National Defense University",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "locations": [
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "infobox:1",
+                    "original_text": "Location: Kabul, Afghanistan",
+                    "source_ref": "s2"
+                  },
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q4689062$79E915AD-E6BF-4346-92E7-82CCF3128FB0\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 889, \"id\": \"Q889\"}}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q4689062$6E57C56C-5110-40C5-A81A-431EA9BA4F93\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 5838, \"id\": \"Q5838\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "city_name": "Kabul",
+                  "city_qid": "Q5838",
+                  "country_name": "Afghanistan",
+                  "country_qid": "Q889",
+                  "formatted": {
+                    "language": "en",
+                    "text": "Kabul, Afghanistan"
+                  }
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "kabul",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "infobox:1",
+                    "original_text": "Location: Kabul, Afghanistan",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Kabul"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q5838"
+        },
+        {
+          "id": "qargha",
+          "kind": "campus",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Geography",
+                    "original_text": "The university's campus in Qargha is spread over an area of 400 acres.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Qargha"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        {
+          "coordinates": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "statement:Q4689062$0516F500-65CE-4715-B50E-A59513B88CCF",
+                    "original_text": "\"latitude\": 34.5542",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "source_rank": "normal",
+                "value": {
+                  "crs": "EPSG:4326",
+                  "globe_qid": "Q2",
+                  "latitude": 34.5542,
+                  "longitude": 69.0315,
+                  "source_precision_degrees": 0.010907311465617
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "wikidata-item-location",
+          "kind": "institution",
+          "qid": "Q4689062"
+        }
+      ],
+      "profile": {
+        "academic_focus": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "MFNDU provides undergraduate, graduate, and postgraduate programs in various fields, including military science, defense studies, strategic studies, leadership and management, international relations, law, and engineering.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": [
+                {
+                  "language": "en",
+                  "text": "military science"
+                },
+                {
+                  "language": "en",
+                  "text": "defense studies"
+                },
+                {
+                  "language": "en",
+                  "text": "strategic studies"
+                },
+                {
+                  "language": "en",
+                  "text": "leadership and management"
+                },
+                {
+                  "language": "en",
+                  "text": "international relations"
+                },
+                {
+                  "language": "en",
+                  "text": "law"
+                },
+                {
+                  "language": "en",
+                  "text": "engineering"
+                }
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "degree_levels": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "MFNDU provides undergraduate, graduate, and postgraduate programs in various fields, including military science, defense studies, strategic studies, leadership and management, international relations, law, and engineering.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": [
+                "undergraduate",
+                "graduate",
+                "postgraduate"
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "main_image_url": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox_image_urls",
+                  "original_text": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/An_Afghan_National_Defense_University_%28ANDU%29_instructor_exits_an_academic_hall_at_the_school_in_Kabul%2C_Afghanistan%2C_May_7%2C_2013_130507-F-OF869-007.jpg/250px-An_Afghan_National_Defense_University_%28ANDU%29_instructor_exits_an_academic_hall_at_the_school_in_Kabul%2C_Afghanistan%2C_May_7%2C_2013_130507-F-OF869-007.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/An_Afghan_National_Defense_University_%28ANDU%29_instructor_exits_an_academic_hall_at_the_school_in_Kabul%2C_Afghanistan%2C_May_7%2C_2013_130507-F-OF869-007.jpg/250px-An_Afghan_National_Defense_University_%28ANDU%29_instructor_exits_an_academic_hall_at_the_school_in_Kabul%2C_Afghanistan%2C_May_7%2C_2013_130507-F-OF869-007.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "summary": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "metadata",
+                  "original_text": "{\"id\": \"Q4689062\", \"labels\": {\"en\": \"Afghan Defense University\"}, \"descriptions\": {}}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "section:lead",
+                  "original_text": "Marshal Fahim National Defense University (MFNDU) is a military university located in Kabul, the capital city of Afghanistan.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Geography",
+                  "original_text": "The university's campus in Qargha is spread over an area of 400 acres. The campus includes academic and administrative buildings, student dormitories, faculty housing, sports facilities, and a library.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Geography",
+                  "original_text": "lying on the western outskirts of Kabul",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:lead",
+                  "original_text": "MFNDU educates and trains military officers, senior civil servants, and professionals from various government and non-government organizations in Afghanistan and other partner nations.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Islamic_Republic_period",
+                  "original_text": "American contractors moved in mid-2008 to clear the site, which previously served a variety of military roles since the Soviet–Afghan War.[4]",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Islamic_Republic_period",
+                  "original_text": "A cornerstone-laying ceremony was conducted in April 2010 and the construction was completed in 2013.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:National_Military_Academy",
+                  "original_text": "NMAA moved to the ANDU site in Qargha upon completion of its new campus in 2012. It was previously located in the old Air Academy established by the Soviet Union to the north of Kabul beside Kabul International Airport.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Islamic_Republic_period",
+                  "original_text": "In April 2014, the university was renamed the Defense University of Marshal Fahim in honour of the former Vice President of Afghanistan, Mohammed Fahim who died of a heart attack on 9 March 2014.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:lead",
+                  "original_text": "MFNDU provides undergraduate, graduate, and postgraduate programs in various fields, including military science, defense studies, strategic studies, leadership and management, international relations, law, and engineering. The university also offers short-term courses, workshops, and seminars for professionals in specific fields, conducts research on various security and defense-related issues, and publishes academic papers, reports, and policy briefs.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:National_Military_Academy",
+                  "original_text": "NMAA cadets study both military and academic subjects for a total of 4 years and are awarded a degree from ANDU before commissioning into the ANA as Second Lieutenants.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Afghan_National_Army_Officer_Academy_.28ANAOA.29",
+                  "original_text": "The ANA Officer Academy accepted its first intake of 270 students selected from approximately 10,000 initial applicants in October 2013.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "Marshal Fahim National Defense University, also known as Afghan Defense University, is a military university in Kabul, Afghanistan. Its campus at Qargha, on the western outskirts of the city, includes teaching and administrative buildings, student accommodation, faculty housing, sports facilities and a library. The institution trains military officers, senior civil servants and professionals from government and non-government organizations in Afghanistan and partner nations.\n\nThe Qargha site was prepared for the planned university from mid-2008. A cornerstone-laying ceremony followed in April 2010, and construction was completed in 2013. The National Military Academy of Afghanistan had moved to the site in 2012 from its earlier location beside Kabul International Airport. In April 2014, the university was renamed in honour of former Vice President Mohammed Fahim.\n\nIts academic provision encompasses undergraduate, graduate and postgraduate programs, with fields including military science, defense and strategic studies, leadership and management, international relations, law and engineering. Short courses and professional seminars complement these programs. National Military Academy cadets undertake four years of military and academic study and receive an ANDU degree before commissioning. The separate ANA Officer Academy accepted an initial cohort of 270 students in October 2013; that figure describes academy intake rather than total university enrolment."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "qid": "Q4689062",
+      "record_revision": 1,
+      "related_entities": {
+        "anaoa": {
+          "kind": "institution",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Afghan_National_Army_Officer_Academy_.28ANAOA.29",
+                    "original_text": "The ANA Officer Academy was also referred to in Afghanistan as ANAOA and the Junior Officer Academy.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Afghan National Army Officer Academy"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        "nmaa": {
+          "kind": "institution",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:National_Military_Academy",
+                    "original_text": "The National Military Academy of Afghanistan under American coalition occupation was modeled on the United States Military Academy and the United States Air Force Academy.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "National Military Academy of Afghanistan"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "relationships": {
+        "campus": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Geography",
+                    "original_text": "The university's campus in Qargha is spread over an area of 400 acres.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "target_ref": "location:qargha"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ]
+      },
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "reviewed_institution_type"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "included"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T13:55:01.971697+00:00",
+          "revision_id": 2560435778,
+          "source_qid": "Q4689062",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2560435778"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikipedia",
+          "language": "en",
+          "page_id": 35943298,
+          "publisher_role": "encyclopedia",
+          "retrieved_at": "2026-11-06T13:55:14.649296+00:00",
+          "revision_id": 1375205319,
+          "url": "https://en.wikipedia.org/w/index.php?oldid=1375205319"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T09:04:54.551367+00:00",
+          "revision_id": 2562156954,
+          "source_qid": "Q3918",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2562156954"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T13:55:21.085419+00:00",
+          "revision_id": 2564433743,
+          "source_qid": "Q889",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2564433743"
+        },
+        "s5": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T13:55:26.500674+00:00",
+          "revision_id": 2565261222,
+          "source_qid": "Q5838",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2565261222"
+        }
+      }
+    },
+    "open_requests": [],
+    "proposed_at": "2026-11-06T13:59:25.026254+00:00",
+    "qid": "Q4689062",
+    "research": {
+      "model": "not_reported",
+      "prompt_sha256": "770dfbedfc03f1a009b53c3a8a2bca0dc4ffbe47d19a8417bc82097e5c0398b2",
+      "reasoning_effort": "not_reported",
+      "schema_sha256": "92e942f4fbf2ae28964462ea9ffa8312c5ee16a077a1e08b40aaaf741512422e",
+      "session": "/root/research_q4689062"
+    },
+    "retrieval_failures": [],
+    "review_status": "unreviewed",
+    "seed": {
+      "channels": [
+        "reviewed_institution_type"
+      ],
+      "import_id": "seed-84c3beb45367905f",
+      "screening_status": "included"
+    },
+    "transport": {
+      "base_commit": "75442fbc780149169515b91cb75a85e73f294680",
+      "protocol": "native-subagent-v1",
+      "repository": "ider-zh/university-seed-curation",
+      "review_policy": {
+        "id": "source-grounded-flexible-v2",
+        "sha256": "b8ed7d2897e4c31dbd81b1379aafdc1077a21d1a33949edbd2d896b0adf99db2"
+      },
+      "schema_sha256": "bfa496eafa9dffca56146214168db7f000b09161b8993129632e7202e1c88833",
+      "seed_catalog_sha256": "84c3beb45367905f513d650684283dd62a9c1b77962bdc34151a6ef05bfa03d4"
+    },
+    "type": "university-proposal-v1"
+  },
+  "review": {
+    "contexts_checked": 11,
+    "coverage_checks": [
+      {
+        "group": "identity",
+        "reason": "University identity, source-linked English name and four aliases are supported by root P31, metadata and article locators. One Wikimedia source family is acceptable under policy.",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "reason": "Kabul administrative locality, Qargha campus and root institution point remain separate. Root coordinate values, rank, globe and precision match; related city coordinates and historical countries are not projected onto the campus.",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "reason": "Both establishment observations are supported but conflict: 2005 versus 1 April 2013. The unresolved conflict and conflicting_candidates qualification preserve that limitation; the preferred candidate cannot be treated downstream as a resolved historical date. Construction, renaming and academy events have distinct subjects and retained precision. Optional leader and other milestones are not required.",
+        "status": "disputed"
+      },
+      {
+        "group": "population",
+        "reason": "The snapshot contains ANAOA initial intake of 270 in October 2013 from approximately 10,000 applicants, preserved only in academy-scoped narrative. It supplies no university-wide student or staff total. Downstream numerical ranking must explicitly parse this scope and cannot use intake as enrolment.",
+        "status": "checked"
+      },
+      {
+        "group": "finance",
+        "reason": "No university-wide budget, revenue, annual expenditure or endowment observation is supplied. The article mentions $200 million for the first construction phase, a project cost with no stated accounting period, not a university operating-finance statistic. Its omission does not require exhaustive extraction or justify conversion into annual expenditure.",
+        "status": "not_found"
+      },
+      {
+        "group": "profile",
+        "reason": "Academic fields, degree levels, source-linked image and every summary clause match the frozen locators. Undated article observations are acceptable under policy, with no claim that current operations have been independently verified.",
+        "status": "checked"
+      }
+    ],
+    "decision": "approve",
+    "facts_checked": 28,
+    "full_refresh": true,
+    "inferences": [
+      {
+        "id": "$.history.milestones[4].date:c1",
+        "reason": "The cited ANAOA section directly dates first intake to October 2013. Representation as teaching_start reasonably uses this initial operational intake, without claiming an exact first teaching day."
+      },
+      {
+        "id": "milestone:anaoa_start",
+        "reason": "The ANAOA first intake in October 2013 reasonably represents the academy teaching-start operational phase under the flexible event policy; it does not establish an exact first lesson or university founding."
+      }
+    ],
+    "model": "not_reported",
+    "proposal_sha256": "090daeb68e9c4a1d9ced5ca347fc7af37beb13cd2099db527a51c1f908e9934c",
+    "qid": "Q4689062",
+    "reasoning_effort": "not_reported",
+    "record_sha256": "fbca045d8ef8e979094c02a238adfa46274cf5e9533e0ac5a8a3a1abd03cc9d4",
+    "request_responses": [],
+    "requests": [],
+    "review_session": "/root/review_q4689062_recovery1",
+    "reviewed_at": "2026-11-06T14:04:43.707425+00:00",
+    "source_revisions_checked": 5
+  },
+  "review_result_sha256": "16012f942fe738dfa6825a85c824f4bfa3bbd62eb089c2a5d0decca59101baf5",
+  "type": "university-unified-receipt-v1"
+}
