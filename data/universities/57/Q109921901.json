@@ -1,0 +1,251 @@
+{
+  "coverage": {
+    "finance": {
+      "checked_at": "2026-11-06T22:53:21.441256+00:00",
+      "status": "not_found"
+    },
+    "geography": {
+      "checked_at": "2026-11-06T22:53:21.441256+00:00",
+      "status": "checked"
+    },
+    "history": {
+      "checked_at": "2026-11-06T22:53:21.441256+00:00",
+      "status": "checked"
+    },
+    "identity": {
+      "checked_at": "2026-11-06T22:53:21.441256+00:00",
+      "status": "checked"
+    },
+    "population": {
+      "checked_at": "2026-11-06T22:53:21.441256+00:00",
+      "status": "not_found"
+    },
+    "profile": {
+      "checked_at": "2026-11-06T22:53:21.441256+00:00",
+      "status": "not_found"
+    }
+  },
+  "curation": {
+    "identity_status": "in_scope",
+    "refresh_profile": "core-v1",
+    "reviewed_groups": [
+      "identity",
+      "geography",
+      "history",
+      "population",
+      "finance",
+      "profile"
+    ]
+  },
+  "history": {
+    "milestones": [
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P571:0",
+                  "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q109921901$CF4E3ABC-3DE8-4A60-BB8A-FA164AAA04FE\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+1997-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "day": 1,
+                "month": 1,
+                "precision": "day",
+                "year": 1997
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "inception",
+        "kind": "institution_establishment",
+        "subject_ref": "institution"
+      }
+    ]
+  },
+  "identity": {
+    "kind": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P31:0",
+              "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q109921901$231BEB61-B8B9-4614-AD89-ADA4B22D30A2\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 12513145, \"id\": \"Q12513145\"}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "metadata",
+              "original_text": "{\"id\": \"Q12513145\", \"labels\": {\"en\": \"sekolah tinggi\"}, \"descriptions\": {\"en\": \"Indonesian type of higher education institution, similar to college but provides undergraduate programs\"}}",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": "higher_education_college",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "names": {
+      "en": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q109921901\", \"labels\": {\"en\": \"STAIN Padangsidempuan\"}, \"descriptions\": {}}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": "STAIN Padangsidempuan",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    }
+  },
+  "locations": [
+    {
+      "address": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P131:0",
+                "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q109921901$57C32F31-49B9-437A-9D99-0FB6DDD5553F\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 4259331, \"id\": \"Q4259331\"}, \"reference_count\": 2}",
+                "source_ref": "s1"
+              },
+              {
+                "locator": "claim:P17:0",
+                "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q109921901$52AE30D1-FAD7-4D7F-AE18-B3B86221F5DE\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 252, \"id\": \"Q252\"}}",
+                "source_ref": "s1"
+              },
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q4259331\", \"labels\": {\"en\": \"South Padangsidimpuan\"}, \"descriptions\": {\"en\": \"district in Padang Sidempuan City, North Sumatra Province, Indonesia\"}}",
+                "source_ref": "s4"
+              },
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q252\", \"labels\": {\"en\": \"Indonesia\"}, \"descriptions\": {\"en\": \"island country in Southeast Asia and Oceania\"}}",
+                "source_ref": "s3"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "country_name": "Indonesia",
+              "country_qid": "Q252",
+              "formatted": {
+                "language": "en",
+                "text": "South Padangsidimpuan, Indonesia"
+              }
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "id": "south_padangsidimpuan",
+      "kind": "administrative_area",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P131:0",
+                "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q109921901$57C32F31-49B9-437A-9D99-0FB6DDD5553F\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 4259331, \"id\": \"Q4259331\"}, \"reference_count\": 2}",
+                "source_ref": "s1"
+              },
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q4259331\", \"labels\": {\"en\": \"South Padangsidimpuan\"}, \"descriptions\": {\"en\": \"district in Padang Sidempuan City, North Sumatra Province, Indonesia\"}}",
+                "source_ref": "s4"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "South Padangsidimpuan"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "qid": "Q4259331"
+    }
+  ],
+  "modified_datetime": "2026-11-06T22:55:43.533049+00:00",
+  "qid": "Q109921901",
+  "record_revision": 1,
+  "schema_version": "0.2.2",
+  "seed": {
+    "channels": [
+      "reviewed_institution_type"
+    ],
+    "import_id": "seed-84c3beb45367905f",
+    "screening_status": "included"
+  },
+  "selection_policy": "preferred-v1",
+  "sources": {
+    "s1": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T22:53:07.028752+00:00",
+      "revision_id": 2270383063,
+      "source_qid": "Q109921901",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2270383063"
+    },
+    "s2": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T22:53:13.629190+00:00",
+      "revision_id": 2427034730,
+      "source_qid": "Q12513145",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2427034730"
+    },
+    "s3": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T22:53:16.972554+00:00",
+      "revision_id": 2562953677,
+      "source_qid": "Q252",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2562953677"
+    },
+    "s4": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T22:53:21.425517+00:00",
+      "revision_id": 2486169514,
+      "source_qid": "Q4259331",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2486169514"
+    }
+  },
+  "update_datetime": "2026-11-06T22:55:43.533049+00:00"
+}
