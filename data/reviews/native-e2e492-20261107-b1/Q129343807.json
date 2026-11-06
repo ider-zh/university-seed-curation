@@ -1,0 +1,672 @@
+{
+  "attribution": "distinct_native_research_and_review_subagents;not_cryptographic_identity",
+  "research": {
+    "baseline_sha256": "absent",
+    "candidate": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-06T22:54:12.461450+00:00",
+          "status": "not_found"
+        },
+        "geography": {
+          "checked_at": "2026-11-06T22:54:12.461450+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-06T22:54:12.461450+00:00",
+          "status": "checked"
+        },
+        "identity": {
+          "checked_at": "2026-11-06T22:54:12.461450+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-06T22:54:12.461450+00:00",
+          "status": "not_found"
+        },
+        "profile": {
+          "checked_at": "2026-11-06T22:54:12.461450+00:00",
+          "status": "not_found"
+        }
+      },
+      "curation": {
+        "identity_status": "in_scope"
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "claim:P571:0",
+                      "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q129343807$78B2C01E-4838-41AB-A080-3AA5A1C65A2E\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+2023-10-16T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}, \"reference_count\": 1}",
+                      "source_ref": "s1"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "day": 16,
+                    "month": 10,
+                    "precision": "day",
+                    "year": 2023
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "establishment",
+            "kind": "institution_establishment",
+            "subject_ref": "institution"
+          }
+        ]
+      },
+      "identity": {
+        "aliases": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P1813:0",
+                    "original_text": "{\"property\": \"P1813\", \"property_label\": \"short name\", \"statement_id\": \"Q129343807$61D1F56A-FB54-430C-8B1A-4039B6549C37\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"POLTEK OTC\", \"language\": \"id\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "id",
+                  "text": "POLTEK OTC"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ],
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P31:0",
+                  "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q129343807$7D304D48-806A-469C-A1A1-272061928247\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 38723, \"id\": \"Q38723\"}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "metadata",
+                  "original_text": "{\"id\": \"Q38723\", \"labels\": {\"en\": \"higher education institution\"}, \"descriptions\": {\"en\": \"institution that provides higher education (e.g., universities, vocational universities, community colleges, liberal arts colleges, institutes of technology, and others)\"}}",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "higher_education_college",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q129343807\", \"labels\": {\"en\": \"Politeknik Omna Trisakti Chandra\"}, \"descriptions\": {\"en\": \"university in Indonesia\"}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "Politeknik Omna Trisakti Chandra",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "locations": [
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q129343807$4150785F-1E7E-4B76-874C-0509F7D8B6F6\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 11496, \"id\": \"Q11496\"}, \"reference_count\": 2}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q11496\", \"labels\": {\"en\": \"Gianyar\"}, \"descriptions\": {\"en\": \"regency in Bali Province, Indonesia\"}}",
+                    "source_ref": "s4"
+                  },
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"q11496$BE176179-49F3-4C99-9CE7-190C578405E7\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 252, \"id\": \"Q252\"}, \"reference_count\": 3}",
+                    "source_ref": "s4"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q252\", \"labels\": {\"en\": \"Indonesia\"}, \"descriptions\": {\"en\": \"island country in Southeast Asia and Oceania\"}}",
+                    "source_ref": "s3"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "country_name": "Indonesia",
+                  "country_qid": "Q252",
+                  "formatted": {
+                    "language": "en",
+                    "text": "Gianyar, Indonesia"
+                  },
+                  "region_name": "Gianyar",
+                  "region_qid": "Q11496"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "gianyar",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q129343807$4150785F-1E7E-4B76-874C-0509F7D8B6F6\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 11496, \"id\": \"Q11496\"}, \"reference_count\": 2}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q11496\", \"labels\": {\"en\": \"Gianyar\"}, \"descriptions\": {\"en\": \"regency in Bali Province, Indonesia\"}}",
+                    "source_ref": "s4"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Gianyar"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q11496"
+        }
+      ],
+      "modified_datetime": "2026-11-06T22:56:58.080863+00:00",
+      "qid": "Q129343807",
+      "record_revision": 1,
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "reviewed_institution_type"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "included"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:53:53.968683+00:00",
+          "revision_id": 2264117730,
+          "source_qid": "Q129343807",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2264117730"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:54:00.596884+00:00",
+          "revision_id": 2553501921,
+          "source_qid": "Q38723",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2553501921"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:54:08.860421+00:00",
+          "revision_id": 2562953677,
+          "source_qid": "Q252",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2562953677"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:54:12.446372+00:00",
+          "revision_id": 2555888635,
+          "source_qid": "Q11496",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2555888635"
+        }
+      }
+    },
+    "coverage": [
+      {
+        "group": "identity",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "status": "checked"
+      },
+      {
+        "group": "population",
+        "status": "not_found"
+      },
+      {
+        "group": "finance",
+        "status": "not_found"
+      },
+      {
+        "group": "profile",
+        "status": "not_found"
+      }
+    ],
+    "delta": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-06T22:54:12.461450+00:00",
+          "status": "not_found"
+        },
+        "geography": {
+          "checked_at": "2026-11-06T22:54:12.461450+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-06T22:54:12.461450+00:00",
+          "status": "checked"
+        },
+        "identity": {
+          "checked_at": "2026-11-06T22:54:12.461450+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-06T22:54:12.461450+00:00",
+          "status": "not_found"
+        },
+        "profile": {
+          "checked_at": "2026-11-06T22:54:12.461450+00:00",
+          "status": "not_found"
+        }
+      },
+      "curation": {
+        "identity_status": "in_scope"
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "claim:P571:0",
+                      "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q129343807$78B2C01E-4838-41AB-A080-3AA5A1C65A2E\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+2023-10-16T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}, \"reference_count\": 1}",
+                      "source_ref": "s1"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "day": 16,
+                    "month": 10,
+                    "precision": "day",
+                    "year": 2023
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "establishment",
+            "kind": "institution_establishment",
+            "subject_ref": "institution"
+          }
+        ]
+      },
+      "identity": {
+        "aliases": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P1813:0",
+                    "original_text": "{\"property\": \"P1813\", \"property_label\": \"short name\", \"statement_id\": \"Q129343807$61D1F56A-FB54-430C-8B1A-4039B6549C37\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"POLTEK OTC\", \"language\": \"id\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "id",
+                  "text": "POLTEK OTC"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ],
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P31:0",
+                  "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q129343807$7D304D48-806A-469C-A1A1-272061928247\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 38723, \"id\": \"Q38723\"}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "metadata",
+                  "original_text": "{\"id\": \"Q38723\", \"labels\": {\"en\": \"higher education institution\"}, \"descriptions\": {\"en\": \"institution that provides higher education (e.g., universities, vocational universities, community colleges, liberal arts colleges, institutes of technology, and others)\"}}",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "higher_education_college",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q129343807\", \"labels\": {\"en\": \"Politeknik Omna Trisakti Chandra\"}, \"descriptions\": {\"en\": \"university in Indonesia\"}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "Politeknik Omna Trisakti Chandra",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "locations": [
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q129343807$4150785F-1E7E-4B76-874C-0509F7D8B6F6\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 11496, \"id\": \"Q11496\"}, \"reference_count\": 2}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q11496\", \"labels\": {\"en\": \"Gianyar\"}, \"descriptions\": {\"en\": \"regency in Bali Province, Indonesia\"}}",
+                    "source_ref": "s4"
+                  },
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"q11496$BE176179-49F3-4C99-9CE7-190C578405E7\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 252, \"id\": \"Q252\"}, \"reference_count\": 3}",
+                    "source_ref": "s4"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q252\", \"labels\": {\"en\": \"Indonesia\"}, \"descriptions\": {\"en\": \"island country in Southeast Asia and Oceania\"}}",
+                    "source_ref": "s3"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "country_name": "Indonesia",
+                  "country_qid": "Q252",
+                  "formatted": {
+                    "language": "en",
+                    "text": "Gianyar, Indonesia"
+                  },
+                  "region_name": "Gianyar",
+                  "region_qid": "Q11496"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "gianyar",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q129343807$4150785F-1E7E-4B76-874C-0509F7D8B6F6\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 11496, \"id\": \"Q11496\"}, \"reference_count\": 2}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q11496\", \"labels\": {\"en\": \"Gianyar\"}, \"descriptions\": {\"en\": \"regency in Bali Province, Indonesia\"}}",
+                    "source_ref": "s4"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Gianyar"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q11496"
+        }
+      ],
+      "qid": "Q129343807",
+      "record_revision": 1,
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "reviewed_institution_type"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "included"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:53:53.968683+00:00",
+          "revision_id": 2264117730,
+          "source_qid": "Q129343807",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2264117730"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:54:00.596884+00:00",
+          "revision_id": 2553501921,
+          "source_qid": "Q38723",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2553501921"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:54:08.860421+00:00",
+          "revision_id": 2562953677,
+          "source_qid": "Q252",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2562953677"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:54:12.446372+00:00",
+          "revision_id": 2555888635,
+          "source_qid": "Q11496",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2555888635"
+        }
+      }
+    },
+    "open_requests": [],
+    "proposed_at": "2026-11-06T22:56:58.080863+00:00",
+    "qid": "Q129343807",
+    "research": {
+      "model": "not_reported",
+      "prompt_sha256": "5099472952666ec3ad29a8701d17135f5f66369c1045576940ac4d3adb338d4d",
+      "reasoning_effort": "not_reported",
+      "schema_sha256": "92e942f4fbf2ae28964462ea9ffa8312c5ee16a077a1e08b40aaaf741512422e",
+      "session": "/root/research_q129343807"
+    },
+    "retrieval_failures": [],
+    "review_status": "unreviewed",
+    "seed": {
+      "channels": [
+        "reviewed_institution_type"
+      ],
+      "import_id": "seed-84c3beb45367905f",
+      "screening_status": "included"
+    },
+    "transport": {
+      "base_commit": "f79f39f771ba262de260f5f10d9c7516d58b91bc",
+      "protocol": "native-subagent-v1",
+      "repository": "ider-zh/university-seed-curation",
+      "review_policy": {
+        "id": "source-grounded-flexible-v2",
+        "sha256": "b8ed7d2897e4c31dbd81b1379aafdc1077a21d1a33949edbd2d896b0adf99db2"
+      },
+      "schema_sha256": "bfa496eafa9dffca56146214168db7f000b09161b8993129632e7202e1c88833",
+      "seed_catalog_sha256": "84c3beb45367905f513d650684283dd62a9c1b77962bdc34151a6ef05bfa03d4"
+    },
+    "type": "university-proposal-v1"
+  },
+  "review": {
+    "contexts_checked": 3,
+    "coverage_checks": [
+      {
+        "group": "identity",
+        "reason": "Frozen institution metadata, P31 and P1813 support completion of the identity survey; this is bounded core review, not exhaustive extraction.",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "reason": "Frozen P131/P17 and related-entity metadata support the geography survey. Root entity has no P625 and projection correctly stays empty; Gianyar and country coordinates are not imported as institutional or campus points.",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "reason": "Frozen P571 provides the inception observation used by the history survey.",
+        "status": "checked"
+      },
+      {
+        "group": "population",
+        "reason": "No population count appears in the frozen institutional corpus; not_found reports this surveyed source limitation, not a zero.",
+        "status": "not_found"
+      },
+      {
+        "group": "finance",
+        "reason": "No finance observation appears in the frozen institutional corpus; no value, currency or period is invented.",
+        "status": "not_found"
+      },
+      {
+        "group": "profile",
+        "reason": "The frozen institutional corpus supplies no substantive supplementary profile facts. This survey status is accepted without independently reviewing supplementary fields.",
+        "status": "not_found"
+      }
+    ],
+    "decision": "approve",
+    "facts_checked": 4,
+    "full_refresh": true,
+    "inferences": [
+      {
+        "id": "$.identity.kind:c1",
+        "reason": "s1 claim:P31:0 identifies Q38723; s2 metadata defines it as higher education institution including vocational institutions. The Politeknik institution name and this classification support higher_education_college as a controlled representation; this does not assert university status or legal independence."
+      }
+    ],
+    "model": "not_reported",
+    "proposal_sha256": "47731e72432c30fc896ff122d795c969429ac5c06b3ab1c2cb89e7f5f6f23f7b",
+    "qid": "Q129343807",
+    "reasoning_effort": "not_reported",
+    "record_sha256": "40d1c8d93eb06f07dd7228fa61603b89bb6c938468b02970db1efec0e7b18cda",
+    "request_responses": [],
+    "requests": [],
+    "review_scope": {
+      "not_independently_reviewed_ids": [
+        "$.locations[0].address:c1",
+        "$.locations[0].name:c1",
+        "location:gianyar"
+      ],
+      "reviewed_ids": [
+        "$.history.milestones[0].date:c1",
+        "$.identity.aliases[0]:c1",
+        "$.identity.kind:c1",
+        "$.identity.names.en:c1",
+        "country:$.locations[0].address:c1",
+        "identity",
+        "milestone:establishment"
+      ],
+      "version": "core-review-v3"
+    },
+    "review_session": "/root/review_q129343807_final",
+    "reviewed_at": "2026-11-06T22:58:18.058207+00:00",
+    "source_revisions_checked": 4,
+    "waived_requests": []
+  },
+  "review_result_sha256": "d1ef7ff0ba1d979817a1c7df22669091667dc49b80623f985f08f5ff4132379f",
+  "type": "university-unified-receipt-v1"
+}

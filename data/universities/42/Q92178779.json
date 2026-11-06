@@ -1,0 +1,244 @@
+{
+  "coverage": {
+    "finance": {
+      "checked_at": "2026-11-06T22:54:18.425259+00:00",
+      "status": "not_found"
+    },
+    "geography": {
+      "checked_at": "2026-11-06T22:54:18.425259+00:00",
+      "status": "checked"
+    },
+    "history": {
+      "checked_at": "2026-11-06T22:54:18.425259+00:00",
+      "status": "checked"
+    },
+    "identity": {
+      "checked_at": "2026-11-06T22:54:18.425259+00:00",
+      "status": "checked"
+    },
+    "population": {
+      "checked_at": "2026-11-06T22:54:18.425259+00:00",
+      "status": "not_found"
+    },
+    "profile": {
+      "checked_at": "2026-11-06T22:54:18.425259+00:00",
+      "status": "not_found"
+    }
+  },
+  "curation": {
+    "identity_status": "in_scope",
+    "refresh_profile": "core-v1",
+    "reviewed_groups": [
+      "identity",
+      "geography",
+      "history",
+      "population",
+      "finance",
+      "profile"
+    ]
+  },
+  "history": {
+    "milestones": [
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P571:0",
+                  "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q92178779$F62576BD-3696-40DE-8830-1644BF97B0F9\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+2001-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "precision": "year",
+                "year": 2001
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "establishment",
+        "kind": "institution_establishment",
+        "subject_ref": "institution"
+      }
+    ]
+  },
+  "identity": {
+    "kind": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "metadata",
+              "original_text": "{\"id\": \"Q92178779\", \"labels\": {\"en\": \"D.V.R. Degree College, Krishna\"}, \"descriptions\": {\"en\": \"college affiliated to the Krishna University\"}}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "claim:P31:0",
+              "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q92178779$A10E068D-995C-4C98-A50D-212224D85CF8\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 189004, \"id\": \"Q189004\"}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "metadata",
+              "original_text": "{\"id\": \"Q189004\", \"labels\": {\"en\": \"college\"}, \"descriptions\": {\"en\": \"educational institution, varying in level from country to country\"}}",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": "higher_education_college",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "names": {
+      "en": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q92178779\", \"labels\": {\"en\": \"D.V.R. Degree College, Krishna\"}, \"descriptions\": {\"en\": \"college affiliated to the Krishna University\"}}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": "D.V.R. Degree College, Krishna",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    }
+  },
+  "locations": [
+    {
+      "address": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P17:0",
+                "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q92178779$3A1DD650-9F82-4330-8F4E-0E6FE342B9DE\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 668, \"id\": \"Q668\"}, \"reference_count\": 1}",
+                "source_ref": "s1"
+              },
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q668\", \"labels\": {\"en\": \"India\"}, \"descriptions\": {\"en\": \"country in South Asia\"}}",
+                "source_ref": "s3"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "country_name": "India",
+              "country_qid": "Q668",
+              "formatted": {
+                "language": "en",
+                "text": "India"
+              }
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "id": "krishna",
+      "kind": "administrative_area",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P131:0",
+                "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q92178779$8A771F1C-BD49-4C4C-B2F3-5C0AF8F0D8CC\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 15382, \"id\": \"Q15382\"}, \"reference_count\": 1}",
+                "source_ref": "s1"
+              },
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q15382\", \"labels\": {\"en\": \"Krishna district\"}, \"descriptions\": {\"en\": \"district of Andhra Pradesh, India\"}}",
+                "source_ref": "s4"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Krishna district"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "qid": "Q15382"
+    }
+  ],
+  "modified_datetime": "2026-11-06T23:01:14.824433+00:00",
+  "qid": "Q92178779",
+  "record_revision": 1,
+  "schema_version": "0.2.2",
+  "seed": {
+    "channels": [
+      "legacy_discovery"
+    ],
+    "import_id": "seed-84c3beb45367905f",
+    "screening_status": "needs_review"
+  },
+  "selection_policy": "preferred-v1",
+  "sources": {
+    "s1": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T22:53:57.301503+00:00",
+      "revision_id": 1192345271,
+      "source_qid": "Q92178779",
+      "url": "https://www.wikidata.org/w/index.php?oldid=1192345271"
+    },
+    "s2": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T22:54:11.189516+00:00",
+      "revision_id": 2556557061,
+      "source_qid": "Q189004",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2556557061"
+    },
+    "s3": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T22:54:15.230973+00:00",
+      "revision_id": 2563722390,
+      "source_qid": "Q668",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2563722390"
+    },
+    "s4": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T22:54:18.409101+00:00",
+      "revision_id": 2538593687,
+      "source_qid": "Q15382",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2538593687"
+    }
+  },
+  "update_datetime": "2026-11-06T23:01:14.824433+00:00"
+}
