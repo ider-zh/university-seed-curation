@@ -112,6 +112,40 @@ class ManagerTests(unittest.TestCase):
         with patch.object(m,'publication_index',return_value=published):
             self.assertNotIn('Q1',[r['qid'] for r in self.next()])
             published['Q1']['reviewed_at']='2030-10-01T00:00:00Z'
-            self.assertEqual(self.next()[0]['reason'],'partial_survey_retry')
+            self.assertEqual(next(r for r in self.next() if r['qid']=='Q1')['reason'],'partial_survey_retry')
+    def test_random_selection_replays_and_preserves_priority_and_eligibility(self):
+        catalog={f'Q{i}':{'queue_kind':'primary' if i<30 else 'discovery'} for i in range(1,41)}
+        m.begin(self.root,BASE,'Q1','researching',self.job('active'))
+        m.set_phase(self.root,'Q2','unresolved')
+        m.set_phase(self.root,'Q3','retry_wait',retry_after='2030-11-07T00:00:00Z',resume_phase='research_pending')
+        m.set_phase(self.root,'Q4','review_pending',proposal=str(self.job('proposal')),research_job=str(self.job('snapshot')))
+        m.set_phase(self.root,'Q5','research_pending')
+        def select(seed,limit=8):return m.next_tasks(self.root,BASE,catalog,{},limit,NOW,seed)
+        first=select(123)
+        self.assertEqual(first,select(123))
+        self.assertNotEqual(first,select(456))
+        self.assertEqual(first[0]['action'],'review')
+        self.assertEqual(first[1]['qid'],'Q5')
+        ids=[r['qid'] for r in first]
+        self.assertEqual(len(ids),len(set(ids)))
+        self.assertFalse({'Q1','Q2','Q3'} & set(ids))
+        self.assertTrue(all(r['queue_kind']=='primary' for r in first))
+        all_rows=select(123,100)
+        kinds=[r['queue_kind'] for r in all_rows]
+        self.assertEqual(kinds,sorted(kinds,key=lambda k:k!='primary'))
+        self.assertEqual(len(all_rows),37)
+    def test_cli_reports_selection_seed_without_claiming(self):
+        with patch.object(native_cli,'_base',return_value=(BASE,{}, {},'d'*64)),patch.object(native_cli,'recency_index',return_value={}),patch.object(m,'next_tasks',return_value=[]) as choose,patch.object(native_cli.secrets,'randbits',return_value=42):
+            result=native_cli.next_candidates(self.root)
+            self.assertEqual(result['selection_seed'],42)
+            self.assertFalse(result['claims_created'])
+            self.assertEqual(choose.call_args.args[-1],42)
+            native_cli.next_candidates(self.root,seed=123)
+            self.assertEqual(choose.call_args.args[-1],123)
+    def test_config_matches_capacity_and_dedicated_review(self):
+        config=load_json((Path(__file__).resolve().parents[1]/'config/workflow.json').read_bytes())
+        self.assertEqual(config['max_model_calls_total'],m.MAX_ACTIVE_CALLS)
+        self.assertEqual(config['review_subagents_max'],m.MAX_ACTIVE_CALLS)
+        self.assertEqual(config['review_assignment'],'dedicated_per_qid_after_research')
     def test_calendar_cutoff_handles_short_month(self):
         self.assertEqual(m.cutoff('2030-08-31T00:00:00Z').isoformat(),'2030-02-28T00:00:00+00:00')

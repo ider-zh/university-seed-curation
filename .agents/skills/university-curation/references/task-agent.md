@@ -19,7 +19,9 @@ worktrees, PRs or separate Review service.
 Repeat:
 1. Fetch and inspect main. Run next --limit 5 and follow each returned action
    and reason. Recover interrupted publication and finish Review/revisions first.
-   Form the next Research batch from up to five eligible QIDs.
+   Form the next Research batch from up to five eligible QIDs. Research picks
+   are randomized within priority tiers; record selection_seed for replay. This
+   reduces duplicate picks but does not claim tasks across workspaces.
 2. For Research, run research-prepare in a fresh private job. Supply its exact
    prompt/schema to one native Research subagent for that QID. Record actual
    session/model metadata, run research-compile, then unified-proposal.

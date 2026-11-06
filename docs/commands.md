@@ -13,6 +13,17 @@ doctor checks the local origin, signed candidate import, schema and policy. It
 does not authenticate the host plugin. next returns tasks with action and reason;
 there is no coordination snapshot input or branch lease step.
 
+Research candidates are randomized within each existing priority tier: saved tasks
+before new tasks, and primary before discovery. Recovery/publication/Review/revision
+actions retain their priority. Each call returns a fresh `selection_seed`; use
+`next --limit 5 --seed 123` to replay selection with the same main/local state.
+The limit is the number returned (up to the eligible count), not a random batch
+size. Selection is without replacement within a call. Randomization reduces
+repeated picks across workspaces but is not a distributed claim or a guarantee
+of disjoint batches; one manager per workspace remains the supported model.
+Local prepare locking and expected-SHA publication protection remain required.
+
+
 ## Research
 
 ```bash

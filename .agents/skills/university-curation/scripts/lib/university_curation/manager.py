@@ -4,6 +4,7 @@ from copy import deepcopy
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 import re
+import random
 import uuid
 
 from .integrity import load_json, private_path, sha
@@ -229,11 +230,12 @@ def publication_index(repo,base):
     return result
 
 
-def next_tasks(repo,base,catalog,studied,limit=5,at=None):
+def next_tasks(repo,base,catalog,studied,limit=5,at=None,seed=None):
     if not 1<=limit<=100: raise ValueError('Limit must be 1 to 100')
     stamp=at or now(); tasks=deepcopy(backlog_at(repo,base)['tasks']); tasks.update(_read(repo)['tasks'])
     published=publication_index(repo,base); rows=[]; threshold=cutoff(stamp)
-    for entity,seed in catalog.items():
+    rng=random.Random(seed)
+    for entity,candidate in catalog.items():
         task=tasks.get(entity,{}); phase=task.get('phase','research_pending'); reason='never_researched'
         if phase=='unresolved': continue
         if phase=='retry_wait':
@@ -261,8 +263,9 @@ def next_tasks(repo,base,catalog,studied,limit=5,at=None):
             if any(not task.get(key) or not Path(task[key]).exists() for key in required):
                 action='research'; reason='private_snapshot_unavailable'
         priority={'verify_publication':0,'publish':1,'review':2,'revise':3,'research':4}[action]
-        rows.append((priority,not bool(task),seed['queue_kind']!='primary',int(entity[1:]),
-                     {'qid':entity,'action':action,'reason':reason,'queue_kind':seed['queue_kind'],
+        rows.append((priority,not bool(task),candidate['queue_kind']!='primary',
+                     rng.random() if action=='research' else int(entity[1:]),
+                     {'qid':entity,'action':action,'reason':reason,'queue_kind':candidate['queue_kind'],
                       'revision':task.get('revision',0),'open_requests':task.get('open_requests',[])}))
     return [row[-1] for row in sorted(rows,key=lambda r:r[:4])[:limit]]
 

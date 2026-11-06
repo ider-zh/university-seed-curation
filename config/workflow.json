@@ -3,8 +3,8 @@
   "geography": "global",
   "institution_scope": "present_and_historical",
   "research_managers": 1,
-  "review_subagents_max": 1,
-  "max_model_calls_total": 3,
+  "review_subagents_max": 5,
+  "max_model_calls_total": 5,
   "max_revision_rounds": 2,
   "partial_retry_days": 7,
   "refresh_months": 6,
@@ -23,5 +23,7 @@
   "max_schools_per_batch": 5,
   "review_sources": "offline_research_snapshot_required",
   "source_cache_days": 30,
-  "formal_release_human_acceptance_required": true
+  "formal_release_human_acceptance_required": true,
+  "review_assignment": "dedicated_per_qid_after_research",
+  "next_selection": "randomized_research_within_priority_tiers"
 }

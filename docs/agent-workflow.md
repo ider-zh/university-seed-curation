@@ -14,6 +14,17 @@ It returns qid, action, reason, revision and open_requests. The priority order i
 verify interrupted publication, publish approved work, Review, Research revision,
 then new/recovered Research, primary before discovery. next remains advisory.
 
+Research candidates are randomized within each existing priority tier: saved tasks
+before new tasks, and primary before discovery. Recovery/publication/Review/revision
+actions retain their priority. Each call returns a fresh `selection_seed`; use
+`next --limit 5 --seed 123` to replay selection with the same main/local state.
+The limit is the number returned (up to the eligible count), not a random batch
+size. Selection is without replacement within a call. Randomization reduces
+repeated picks across workspaces but is not a distributed claim or a guarantee
+of disjoint batches; one manager per workspace remains the supported model.
+Local prepare locking and expected-SHA publication protection remain required.
+
+
 Prepare records an active local job under an OS-locked atomic checkpoint. It
 rejects duplicate active QIDs and exhausted capacity. There are at most five
 active data calls across Research and Review combined, with no separate one-Review

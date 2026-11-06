@@ -1,6 +1,7 @@
 """Single-manager native Research/Review and guarded direct-main publication."""
 import argparse
 import json
+import secrets
 from pathlib import Path
 
 from . import manager, native_research, native_review, unified_publish
@@ -24,11 +25,12 @@ def _save(path,value):
     path=_private_output(path); path.parent.mkdir(parents=True,exist_ok=True); path.write_bytes(encode(value)); return path
 
 
-def next_candidates(repo,base_ref='origin/main',limit=5,now=None):
+def next_candidates(repo,base_ref='origin/main',limit=5,now=None,seed=None):
     base,trust,catalog,digest=_base(repo,base_ref)
     studied=recency_index(repo,base,Path(repo)/'.private/native/recency-index.json')
-    rows=manager.next_tasks(repo,base,catalog,studied,limit,now)
-    return {'status':'advisory','base_commit':base,'tasks':rows,'claims_created':False,
+    seed=secrets.randbits(64) if seed is None else seed
+    rows=manager.next_tasks(repo,base,catalog,studied,limit,now,seed)
+    return {'status':'advisory','base_commit':base,'tasks':rows,'claims_created':False,'selection_seed':seed,
             'coordination':'single_manager_local_checkpoint_and_main_backlog'}
 
 
@@ -92,7 +94,7 @@ def main(argv=None):
     parser.add_argument('--workspace',default=str(ROOT))
     sub=parser.add_subparsers(dest='command',required=True)
     sub.add_parser('doctor')
-    p=sub.add_parser('next'); p.add_argument('--limit',type=int,default=5); p.add_argument('--base-ref',default='origin/main')
+    p=sub.add_parser('next'); p.add_argument('--seed',type=int,help='Replay randomized Research selection on the same eligible tasks'); p.add_argument('--limit',type=int,default=5); p.add_argument('--base-ref',default='origin/main')
     p=sub.add_parser('research-prepare'); p.add_argument('--qid',required=True); p.add_argument('--job',required=True); p.add_argument('--base-ref',default='origin/main'); p.add_argument('--feedback'); p.add_argument('--external-leads')
     p=sub.add_parser('review-prepare'); p.add_argument('--proposal',required=True); p.add_argument('--job',required=True); p.add_argument('--base-ref',default='origin/main'); p.add_argument('--research-job',required=True)
     for name in ('research-compile','review-compile'):
@@ -104,7 +106,7 @@ def main(argv=None):
     p=sub.add_parser('job-heartbeat'); p.add_argument('--qid',required=True)
     a=parser.parse_args(argv); repo=Path(a.workspace).resolve()
     if a.command=='doctor': result=native_research.doctor(repo)
-    elif a.command=='next': result=next_candidates(repo,a.base_ref,a.limit)
+    elif a.command=='next': result=next_candidates(repo,a.base_ref,a.limit,seed=a.seed)
     elif a.command.endswith('-prepare'): result=_prepare(repo,a)
     elif a.command in ('research-compile','review-compile'):
         meta=_json(Path(a.job)/'job.json'); entity=meta['qid']
