@@ -5,7 +5,7 @@ import json
 import re
 from pathlib import Path
 
-from . import attestations
+from . import integrity
 
 ROOT = "data/seeds/"
 NAMES = (ROOT + "primary.json", ROOT + "discovery.json", ROOT + "manifest.json")
@@ -60,44 +60,13 @@ def _check_rows(rows, kind):
         else: _strings(row["legacy_types"], qids=True)
 
 
-def build(primary, discovery, source_manifest, legacy_manifest, output_dir):
-    """Build an unsigned private preview from exactly the authorized input snapshots."""
-    inputs = {"primary": (Path(primary), Path(source_manifest)), "discovery": (Path(discovery), Path(legacy_manifest))}
-    for kind, (path, manifest) in inputs.items():
-        if digest(path.read_bytes()) != SOURCES[kind]["sha256"] or digest(manifest.read_bytes()) != SOURCES[kind]["manifest_sha256"]:
-            raise ValueError("Input snapshot or source manifest hash mismatch: " + kind)
-    import pyarrow.parquet as pq
-    p = pq.read_table(primary, columns=["qid", "classification", "discovery"]).to_pylist()
-    d = pq.read_table(discovery, columns=["qid", "legacy_types"]).to_pylist()
-    primary_rows = [{"qid": x["qid"], "screening_status": x["classification"]["screening_status"], "channels": sorted(x["discovery"]["channels"])} for x in p]
-    discovery_rows = [{"qid": x["qid"], "legacy_types": sorted(x["legacy_types"], key=number)} for x in d]
-    projected = {}
-    for kind, rows, name in zip(("primary", "discovery"), (primary_rows, discovery_rows), NAMES):
-        rows.sort(key=lambda x: number(x["qid"]))
-        _check_rows(rows, kind)
-        if len(rows) != SOURCES[kind]["count"]: raise ValueError("Input count mismatch: " + kind)
-        projected[name] = encode_rows(rows)
-    payload = {"version": 1, "format": "utf8-json-array-one-canonical-object-per-line-v1", "sources": SOURCES, "acceptance": AUTH,
-               "lists": {kind: {"path": name, "sha256": digest(projected[name]), "count": len(rows)} for kind, name, rows in (("primary", NAMES[0], primary_rows), ("discovery", NAMES[1], discovery_rows))}}
-    projected[NAMES[2]] = compact(payload) + b"\n"
-    verify(projected)
-    output = Path(output_dir).resolve()
-    if ".private" not in output.parts: raise ValueError("Preview must be under .private")
-    for name, data in projected.items():
-        path = output / name
-        path.parent.mkdir(parents=True, exist_ok=True)
-        if path.exists() and path.read_bytes() != data: raise ValueError("Preview would overwrite different file: " + str(path))
-        path.write_bytes(data)
-    return payload
-
-
 def verify(files, base_files=None, trust=None):
     """Validate projected bytes; with base trust require a signed manifest envelope."""
     del base_files
     if any(name not in files for name in NAMES): raise ValueError("Missing seed catalog file")
-    manifest = attestations.load_json(files[NAMES[2]])
+    manifest = integrity.load_json(files[NAMES[2]])
     if trust is not None:
-        manifest = attestations.verify(manifest, trust)
+        manifest = integrity.verify_catalog_signature(manifest, trust)
     elif isinstance(manifest, dict) and "payload" in manifest:
         raise ValueError("Trust required to verify signed catalog")
     if not isinstance(manifest, dict) or set(manifest) != {"version", "format", "sources", "acceptance", "lists"}: raise ValueError("Invalid catalog manifest")
@@ -109,7 +78,7 @@ def verify(files, base_files=None, trust=None):
     for kind, name in zip(("primary", "discovery"), NAMES):
         data = files[name]
         if len(data) > 20_000_000: raise ValueError("Catalog list too large")
-        rows = attestations.load_json(data)
+        rows = integrity.load_json(data)
         if not isinstance(rows, list) or encode_rows(rows) != data: raise ValueError("Noncanonical catalog list")
         _check_rows(rows, kind)
         if manifest["lists"][kind] != {"path": name, "sha256": digest(data), "count": len(rows)} or len(rows) != SOURCES[kind]["count"]:
@@ -123,7 +92,7 @@ def verify(files, base_files=None, trust=None):
 def load_catalog(repo, preview=False):
     repo = Path(repo)
     files = {name: (repo / name).read_bytes() for name in NAMES}
-    trust = None if preview else attestations.load_json((repo / ".curation/review-trust.json").read_bytes())
+    trust = None if preview else integrity.load_json((repo / ".curation/review-trust.json").read_bytes())
     rows = verify(files, trust=trust)
     catalog = {row["qid"]: {**row, "queue_kind": "discovery"} for row in rows["discovery"]}
     catalog.update({row["qid"]: {**row, "queue_kind": "primary"} for row in rows["primary"]})
@@ -133,10 +102,7 @@ def load_catalog(repo, preview=False):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     sub = parser.add_subparsers(dest="command", required=True)
-    b = sub.add_parser("build", help="build unsigned private preview")
-    for arg in ("primary", "discovery", "source-manifest", "legacy-manifest", "output-dir"): b.add_argument("--" + arg, required=True)
     v = sub.add_parser("verify", help="verify signed catalog using repository trust")
     v.add_argument("--repo", required=True)
     args = parser.parse_args()
-    if args.command == "build": print(json.dumps(build(args.primary, args.discovery, args.source_manifest, args.legacy_manifest, args.output_dir), indent=2))
-    else: print(json.dumps({"count": len(load_catalog(args.repo))}))
+    print(json.dumps({"count": len(load_catalog(args.repo))}))

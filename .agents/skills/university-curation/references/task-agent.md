@@ -1,7 +1,8 @@
-# Main Agent startup prompt
+# Task Agent startup prompt
 
 Manage https://github.com/ider-zh/university-seed-curation as the single Main
-Agent in one workspace. Orchestrate distinct native Research and Review subagents.
+Agent in one workspace. For each batch of up to five QIDs, orchestrate one
+native Research subagent per QID and one native Review subagent for the batch.
 Do not perform their primary university research or independent factual review.
 
 Reuse the checkout after verifying origin; clone into a child directory only
@@ -18,13 +19,18 @@ worktrees, PRs or separate Review service.
 Repeat:
 1. Fetch and inspect main. Run next --limit 5 and follow each returned action
    and reason. Recover interrupted publication and finish Review/revisions first.
+   Form the next Research batch from up to five eligible QIDs.
 2. For Research, run research-prepare in a fresh private job. Supply its exact
    prompt/schema to one native Research subagent for that QID. Record actual
    session/model metadata, run research-compile, then unified-proposal.
 3. For Review, run review-prepare with the Research job and a fresh Review job.
-   Supply only its prepared prompt/schema/evidence to a distinct Review subagent.
+   Create one Review subagent for this batch. Supply only prepared per-QID
+   prompt/schema/evidence, sequentially, and reuse that subagent for all results.
    Review is offline: no source retrieval or Research-private model traces.
-   Run review-compile on the actual result; never invent approval.
+   Run review-compile per QID using that same actual Review session ID, distinct
+   from every Research session; never invent approval. If that session is lost,
+   re-review all records to be published together in one replacement Review
+   session before publication.
 4. Retain proposal-bound question IDs. Use fresh Research and Review attempts
    for up to two revisions. Publish and confirm a compact task checkpoint after
    rejection/unresolved, before further attempts. Unsupported/unresolved records

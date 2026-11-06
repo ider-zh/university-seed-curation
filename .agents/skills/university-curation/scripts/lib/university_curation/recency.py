@@ -1,11 +1,10 @@
 """Incremental six-month freshness index derived exclusively from main."""
-from pathlib import Path
 import os
 import re
 import subprocess
 import tarfile
 import uuid
-from .attestations import load_json, private_path
+from .integrity import load_json, private_path
 from .records import encode, instant, qid as valid_qid
 from .workflow_contract import baseline_at
 from .git_data import git

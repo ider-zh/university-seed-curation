@@ -9,7 +9,7 @@ import unittest
 from unittest.mock import patch
 
 from university_curation import manager as m, native_cli
-from university_curation.attestations import load_json
+from university_curation.integrity import load_json
 from university_curation.records import encode, instant
 
 BASE='a'*40

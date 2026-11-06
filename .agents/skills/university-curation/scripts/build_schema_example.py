@@ -1,9 +1,7 @@
 """Generate a wholly fictional, complete university record for Schema review."""
 import json
-from pathlib import Path
-import sys
 
-from _bootstrap import ROOT, SCRIPTS
+from _bootstrap import ROOT
 from university_curation.preferred import recompute, validate
 
 NOW = "2026-11-05T00:00:00Z"
@@ -74,7 +72,7 @@ def example():
             "date": fs(c(date(year), "s5", "History/" + ident, text, extra_evidence=extra)),
             "description": fs(c({"text": text, "language": "en"}, "s5", "History/" + ident, text))})
     record = {
-        "schema_version": "0.2.0", "qid": Q, "record_revision": 3,
+        "schema_version": "0.2.2", "qid": Q, "record_revision": 3,
         "example": {"synthetic": True, "notice": "SCHEMA EXAMPLE ONLY. All institutions, people, figures, identifiers, URLs and source revisions are fictional. This is not a researched university record."},
         "update_datetime": NOW, "modified_datetime": NOW, "selection_policy": "preferred-v1",
         "curation": {"identity_status": "in_scope", "reviewed_groups": ["identity", "geography", "history", "population", "finance", "profile"], "refresh_profile": "core-v1"},

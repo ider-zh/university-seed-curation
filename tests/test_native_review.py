@@ -7,7 +7,7 @@ from unittest.mock import patch
 
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'.agents/skills/university-curation/scripts/lib'))
 from university_curation import native_review as native, research_contract as jobs
-from university_curation.attestations import sha
+from university_curation.integrity import sha
 from university_curation.records import ROOT, encode
 from university_curation.research_schema import GROUPS
 from test_research_schema import fixture
@@ -23,7 +23,7 @@ class NativeReviewTests(unittest.TestCase):
             'publisher_role':'knowledge_base','family':'wikimedia','source_qid':'Q101','revision_id':3,'retrieved_at':captured}
         self.root={'id':'Q101','lastrevid':3,'claims':{}}
         packet['source_corpus']['s2']=jobs.wikidata_corpus(self.root,{},['en'],True); packet['retrieval_failures']=[]
-        delta,_,_=jobs.compile_delta(raw,packet)
+        delta,_,_=compile_delta(raw,packet)
         seed={'import_id':'seed-'+'c'*16,'screening_status':'needs_review','channels':['type']}; delta['seed']=seed
         at=(datetime.now(timezone.utc)-timedelta(seconds=30)).isoformat()
         self.proposal={'type':'university-proposal-v1','review_status':'unreviewed','qid':'Q101','seed':seed,'baseline_sha256':'absent',
@@ -79,5 +79,5 @@ class NativeReviewTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError,'input changed'): native.compile(ROOT,job,result,'review-session','not_reported')
         self.assertEqual(len(list((job/'compile-attempts').glob('*/native-result.json'))),2)
 
-from university_curation.domain_refresh import materialize
+from university_curation.domain_refresh import materialize, compile_delta
 if __name__=='__main__': unittest.main()

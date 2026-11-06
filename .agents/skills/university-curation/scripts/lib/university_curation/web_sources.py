@@ -8,14 +8,12 @@ from html.parser import HTMLParser
 import hashlib
 import ipaddress
 import json
-from pathlib import Path
 import re
 import socket
-from urllib.error import HTTPError, URLError
 from urllib.parse import urlsplit
 from urllib.request import Request, build_opener, HTTPRedirectHandler
 
-from .attestations import private_path, sha
+from .integrity import private_path, sha
 from .records import encode
 from .records import instant
 from .cache_lock import request_lock

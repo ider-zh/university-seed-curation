@@ -1,7 +1,8 @@
 from copy import deepcopy
 from collections import Counter
 import unittest
-from university_curation.coordinates import projection, materialize, root_source, review_gate, KIND
+from university_curation.coordinates import projection
+from university_curation.research_contract import coordinate_delta
 from university_curation.preferred import validate
 from university_curation.records import ROOT, encode, record_path
 from test_research_schema import fixture
@@ -29,7 +30,7 @@ class CoordinateStorageTests(unittest.TestCase):
         from university_curation.preferred import recompute
         self.record = recompute(self.record)
         point = projection(self.record, self.entity)
-        result = materialize(self.record, point, NOW)
+        result = coordinate_delta(self.record,self.entity)[0]
         self.assertEqual(result['locations'][:-1], self.record['locations'])
         value = result['locations'][-1]['coordinates']['candidates'][0]['value']
         self.assertEqual(value['latitude'], 0)
@@ -42,7 +43,7 @@ class CoordinateStorageTests(unittest.TestCase):
         self.entity['claims']['P625'] = [self.claim('q101$abc-123', 52.16, 21.04)]
         point = projection(self.record, self.entity)
         self.assertEqual(point['statements'][0]['statement_id'], 'q101$abc-123')
-        result = materialize(self.record, point, NOW)
+        result = coordinate_delta(self.record,self.entity)[0]
         evidence = result['locations'][-1]['coordinates']['candidates'][0]['evidence'][0]
         self.assertEqual(evidence['locator'], 'statement:q101$abc-123')
         for foreign in ('q102$abc-123', 'q101abc-123', 'Q101$', 'Q101$abc_123'):
@@ -60,18 +61,16 @@ class CoordinateStorageTests(unittest.TestCase):
     def test_unknown_novalue_deprecated_and_multi_point_coverage(self):
         self.entity['claims']['P625'] = [self.claim('Q101$C', state='somevalue'), self.claim('Q101$D', state='novalue'), self.claim('Q101$E', rank='deprecated'), self.claim('Q101$B', 10, 20), self.claim('Q101$A', 11, 21, rank='preferred')]
         point = projection(self.record, self.entity)
-        result = materialize(self.record, point, NOW)
+        result = coordinate_delta(self.record,self.entity)[0]
         field = result['locations'][-1]['coordinates']
         self.assertEqual(len(field['candidates']), 4)
         self.assertEqual(field['candidates'][0]['value']['latitude'], 11)
         self.assertEqual(field['candidates'][2]['value_state'], 'unknown')
         self.assertEqual(field['candidates'][3]['value_state'], 'no_value')
         self.assertIn('conflicting_candidates', field['preferred']['qualifications'])
-        with self.assertRaises(ValueError):
-            review_gate({'decision': 'approve', 'scope_supported': True, 'checks': []}, point)
         for state in ('somevalue', 'novalue'):
             self.entity['claims']['P625'] = [self.claim('Q101$A', state=state, rank='preferred'), self.claim('Q101$B', 10, 20)]
-            result = materialize(self.record, projection(self.record, self.entity), NOW)
+            result = coordinate_delta(self.record,self.entity)[0]
             self.assertNotIn('preferred', result['locations'][-1]['coordinates'])
             self.assertEqual(result['locations'][-1]['coordinates']['candidates'][0]['source_rank'], 'preferred')
 

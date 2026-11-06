@@ -21,4 +21,7 @@ class BundledScriptTests(unittest.TestCase):
             for command in ('draft','finalize','decision','coord-plan','register-key'):
                 result=run('agent.py',command);self.assertNotEqual(result.returncode,0)
             self.assertNotEqual(run('agent.py','--runtime','cli','doctor').returncode,0)
+            self.assertNotEqual(run('agent.py','--role','review','doctor').returncode,0)
+            self.assertNotEqual(run('maintain_schema.py','register-coordinate-adapter').returncode,0)
+            self.assertNotEqual(run('seeds.py','build').returncode,0)
             self.assertFalse((SCRIPTS/'curate.py').exists())

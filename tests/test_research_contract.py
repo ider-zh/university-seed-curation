@@ -8,6 +8,7 @@ import unittest
 from unittest.mock import patch
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / '.agents/skills/university-curation/scripts/lib'))
 from university_curation import research_contract as jobs
+from university_curation.domain_refresh import compile_delta
 from university_curation.records import ROOT
 from university_curation.research_schema import GROUPS
 from test_research_schema import fixture
@@ -20,12 +21,12 @@ class ResearchContractTests(unittest.TestCase):
         root = {'id': 'Q101', 'lastrevid': 3, 'claims': {'P625': [{'id': 'Q101$abc', 'rank': 'normal', 'mainsnak': {'property': 'P625', 'datatype': 'globe-coordinate', 'snaktype': 'value', 'datavalue': {'type': 'globecoordinate', 'value': {'latitude': 0, 'longitude': 10, 'precision': 0.01, 'globe': 'http://www.wikidata.org/entity/Q2'}}}}]}}
         packet['source_corpus']['s2'] = jobs.wikidata_corpus(root, {}, ['en'], True)
         packet = jobs.coordinate_aliases(packet)
-        delta, _, _ = jobs.compile_delta(transport, packet)
+        delta, _, _ = compile_delta(transport, packet)
         seed = {'import_id': 'catalog', 'screening_status': 'needs_review', 'channels': ['primary']}
         delta['seed'] = seed
         delta, point = jobs.coordinate_delta(delta, root, packet)
         at = '2026-11-05T00:01:00Z'
-        proposal = {'type': 'university-proposal-v1', 'review_status': 'unreviewed', 'qid': 'Q101', 'seed': seed, 'baseline_sha256': 'absent', 'delta': delta, 'candidate': jobs.materialize(None, delta, seed, at, False), 'proposed_at': at, 'coverage': [{'group': x['group'], 'status': x['status']} for x in transport['coverage']], 'retrieval_failures': [], 'open_requests': [], 'research': {'model': jobs.MODEL, 'reasoning_effort': jobs.EFFORT, 'session': 'research', 'prompt_sha256': 'a' * 64, 'schema_sha256': 'b' * 64}}
+        proposal = {'type': 'university-proposal-v1', 'review_status': 'unreviewed', 'qid': 'Q101', 'seed': seed, 'baseline_sha256': 'absent', 'delta': delta, 'candidate': jobs.materialize(None, delta, seed, at, False), 'proposed_at': at, 'coverage': [{'group': x['group'], 'status': x['status']} for x in transport['coverage']], 'retrieval_failures': [], 'open_requests': [], 'research': {'model': 'reported-model', 'reasoning_effort': 'medium', 'session': 'research', 'prompt_sha256': 'a' * 64, 'schema_sha256': 'b' * 64}}
         self.assertEqual(jobs._verify_proposal(proposal, None, packet, root), point)
         changed = deepcopy(root)
         changed['claims']['P625'][0]['mainsnak']['datavalue']['value']['latitude'] = 1

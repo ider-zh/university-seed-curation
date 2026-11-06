@@ -4,7 +4,7 @@ import json
 from pathlib import Path
 
 from . import manager, native_research, native_review, unified_publish
-from .attestations import load_json, private_path, sha
+from .integrity import load_json, private_path, sha
 from .git_data import git
 from .records import ROOT, encode
 from .recency import recency_index
@@ -90,7 +90,6 @@ def _prepare(repo,args):
 def main(argv=None):
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--workspace',default=str(ROOT))
-    parser.add_argument('--role',choices=['research','review'],default='research',help='Subagent contract; the same manager runs all commands')
     sub=parser.add_subparsers(dest='command',required=True)
     sub.add_parser('doctor')
     p=sub.add_parser('next'); p.add_argument('--limit',type=int,default=5); p.add_argument('--base-ref',default='origin/main')

@@ -6,7 +6,7 @@ import unittest
 from unittest.mock import patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / ".agents/skills/university-curation/scripts/lib"))
-from university_curation import seed_catalog as s, attestations
+from university_curation import seed_catalog as s, integrity
 
 
 class SeedCatalogTests(unittest.TestCase):
@@ -29,11 +29,15 @@ class SeedCatalogTests(unittest.TestCase):
 
     def test_signature_required_and_rejects_changed_payload(self):
         with tempfile.TemporaryDirectory() as tmp, patch.object(s, "SOURCES", self.sources):
-            key = Path(tmp) / ".private" / "key.pem"
-            public = attestations.init_key(key)
+            from cryptography.hazmat.primitives.asymmetric.ed25519 import Ed25519PrivateKey
+            from cryptography.hazmat.primitives import serialization
+            from university_curation.records import encode
+            key=Ed25519PrivateKey.generate()
+            raw=key.public_key().public_bytes(serialization.Encoding.Raw,serialization.PublicFormat.Raw)
+            public={'key_id':'review-'+integrity.sha(raw)[:16],'algorithm':'Ed25519','public_key_hex':raw.hex()}
             trust = {"keys": {public["key_id"]: {**public, "status": "active"}}}
             with self.assertRaises(ValueError): s.verify(self.files, trust=trust)
-            signed = attestations.sign(self.payload, key, trust)
+            signed={'payload':self.payload,'key_id':public['key_id'],'signature_hex':key.sign(integrity.DOMAIN+encode(self.payload)).hex()}
             self.files[s.NAMES[2]] = s.compact(signed) + b"\n"
             self.assertEqual(s.verify(self.files, trust=trust)["overlap_count"], 1)
             signed["payload"]["acceptance"]["actor"] = "other"

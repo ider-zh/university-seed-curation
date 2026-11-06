@@ -5,7 +5,7 @@ import sys
 import unittest
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / ".agents/skills/university-curation/scripts/lib"))
-from university_curation.research_schema import compile_record, review_gate, GROUPS
+from university_curation.research_schema import compile_record, GROUPS
 
 
 def fixture():
@@ -26,7 +26,7 @@ def fixture():
     return proposal, packet
 
 
-class PilotTests(unittest.TestCase):
+class ResearchSchemaTests(unittest.TestCase):
     def test_strict_materialization_preserves_subject_unknown_period_and_evidence(self):
         proposal, packet = fixture(); record, facts, contexts = compile_record(proposal, packet)
         self.assertEqual(record["population"]["students_total"]["candidates"][0]["value"]["amount"], 100)
@@ -36,16 +36,6 @@ class PilotTests(unittest.TestCase):
         self.assertEqual([f["fact_id"] for f in facts], ["f1", "f2", "f3", "f4", "f5"])
         self.assertEqual(contexts, ["identity", "location:campus"])
 
-    def test_review_must_cover_every_fact_and_context(self):
-        proposal, packet = fixture(); _, facts, contexts = compile_record(proposal, packet)
-        verdict = {"qid": "Q101", "decision": "approve", "checks": [{"fact_id": f["fact_id"], "verdict": "supported"} for f in facts],
-            "context_checks": [{"context_id": c, "verdict": "supported"} for c in contexts],
-            "coverage_checks": [{"group": g, "status": "checked"} for g in GROUPS]}
-        self.assertTrue(review_gate(verdict, proposal, contexts))
-        wrong = deepcopy(verdict); wrong["checks"].pop()
-        with self.assertRaises(ValueError): review_gate(wrong, proposal, contexts)
-        wrong = deepcopy(verdict); wrong["checks"][0]["verdict"] = "wrong_subject"
-        self.assertFalse(review_gate(wrong, proposal, contexts))
 
     def test_nonverbatim_missing_source_and_invalid_conflict_cannot_pass(self):
         proposal, packet = fixture(); proposal["facts"][0]["evidence"][0]["original_text"] = "Invented University"

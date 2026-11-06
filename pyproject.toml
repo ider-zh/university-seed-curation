@@ -4,13 +4,10 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "university-seed-curation"
-version = "0.2.0"
+version = "0.2.1"
 description = "Single-manager native university Research/Review and direct-main publication"
 requires-python = ">=3.11"
 dependencies = ["jsonschema>=4.18,<5", "cryptography>=43,<51"]
-
-[project.optional-dependencies]
-seed-parquet = ["pyarrow>=15"]
 
 [tool.setuptools.packages.find]
 where = [".agents/skills/university-curation/scripts/lib"]

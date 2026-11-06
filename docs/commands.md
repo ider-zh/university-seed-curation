@@ -23,7 +23,10 @@ python .agents/skills/university-curation/scripts/agent.py unified-proposal --pr
 
 Give the returned prompt/schema paths to a one-QID native Research subagent.
 Use the actual compile-attempt path, session, model and effort, or not_reported
-for unavailable metadata. The manager does not author Research JSON itself.
+for unavailable metadata. The Task Agent does not author Research JSON itself. Each QID uses a distinct
+Research subagent session. Reuse one Review subagent for the batch, sending its
+prepared per-QID packets sequentially and compiling with that same actual Review
+session ID. Publication rejects mixed reviewers or reused Research sessions.
 
 For external gap research, first inspect Wikimedia evidence, then pass
 --external-leads with a private budget manifest:
@@ -44,7 +47,7 @@ python .agents/skills/university-curation/scripts/agent.py job-heartbeat --qid Q
 ```
 
 Review receives only its prepared packet/prompt/schema and never fetches sources.
-A Research job is mandatory; there is no --shared-cache switch or replay mode.
+A Research job is mandatory; there is no source replay mode.
 The manager records the actual result through review-compile. On request_changes,
 next returns revise; research-prepare automatically includes saved open requests.
 Use a new Research directory for each revision. Optional --feedback must retain
@@ -89,5 +92,5 @@ python -m unittest discover -s tests -v
 ```
 
 agent.py has one native execution mode. draft, finalize, decision, coord-plan,
-register-key and --runtime cli have been removed. The optional --role label only
-identifies a subagent contract; it does not create a separate manager/service.
+register-key, --role and --runtime cli have been removed. All commands belong
+to the single Task Agent. Research and Review subagents receive prepared tasks.

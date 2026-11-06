@@ -9,7 +9,7 @@ import unittest
 from unittest.mock import patch
 
 from university_curation import native_cli as cli, native_research, native_review, unified_publish, manager
-from university_curation.attestations import load_json, sha
+from university_curation.integrity import load_json, sha
 from university_curation.git_data import blob, commit
 from university_curation.records import ROOT, encode
 from test_research_schema import fixture
@@ -48,7 +48,7 @@ class NativeLifecycleTests(unittest.TestCase):
             def entity(self,*args,**kwargs):return parent.entity,{}
             def entity_revision(self,*args,**kwargs):return parent.entity,{}
         def prepare(case,job,source_cache=None):
-            native_research._write(Path(job)/'cases/Q101/research-packet.json',encode(parent.packet))
+            native_research._write(Path(job)/'cases'/case['qid']/'research-packet.json',encode(parent.packet))
         self.stack.enter_context(patch.object(native_research,'Cache',Cache))
         self.stack.enter_context(patch.object(native_research,'prepare_case',side_effect=prepare))
         self.http=self.stack.enter_context(patch('university_curation.sources.urlopen',side_effect=AssertionError('Unexpected HTTP')))
@@ -57,23 +57,25 @@ class NativeLifecycleTests(unittest.TestCase):
         self.git('add','docs','data');self.git('commit','-m',message);self.git('update-ref','refs/remotes/origin/main','HEAD')
     def run_cli(self,*args):
         with redirect_stdout(io.StringIO()):return cli.main(['--workspace',str(self.root),*map(str,args)])
-    def research(self):
-        job=self.private/'research';result=self.private/'research-result.json';result.write_bytes(encode(self.raw))
-        self.run_cli('research-prepare','--qid','Q101','--job',job)
-        compiled=self.run_cli('research-compile','--job',job,'--result',result,'--session','research-test','--model','test-model')
-        proposal=self.private/'proposal.json'
+    def research(self,entity='Q101'):
+        self.raw['qid']=entity;self.packet['case']['qid']=entity;self.entity['id']=entity
+        self.packet['sources']['s2']['source_qid']=entity
+        job=self.private/('research-'+entity);result=self.private/('research-result-'+entity+'.json');result.write_bytes(encode(self.raw))
+        self.run_cli('research-prepare','--qid',entity,'--job',job)
+        compiled=self.run_cli('research-compile','--job',job,'--result',result,'--session','research-'+entity,'--model','test-model')
+        proposal=self.private/('proposal-'+entity+'.json')
         self.run_cli('unified-proposal','--proposal',compiled['public_proposal_path'],'--output',proposal)
         return job,proposal
-    def review(self,job,proposal,name,decision="approve"):
+    def review(self,job,proposal,name,decision="approve",session=None):
         review=self.private/name
         self.run_cli('review-prepare','--proposal',proposal,'--research-job',job,'--job',review)
         value=load_json((review/'review-input.json').read_bytes())
-        output={'qid':'Q101','decision':decision,'checks':[{'id':r['id'],'supported':True,'support_basis':'direct','reason':'Fixture supported'} for r in value['facts']+value['contexts']],
+        output={'qid':value['proposal']['qid'],'decision':decision,'checks':[{'id':r['id'],'supported':True,'support_basis':'direct','reason':'Fixture supported'} for r in value['facts']+value['contexts']],
             'coverage_checks':[{'group':g,'status':'checked','reason':'Fixture checked'} for g in ['identity','geography','history','population','finance','profile']],
             'request_responses':[{'request_id':r['request_id'],'status':'addressed','reason':'Fixture resolved'} for r in value['proposal']['open_requests']], 'requests':[]}
         if decision=='request_changes': output['requests']=[{'field':'location_address','category':'evidence_gap','reason':'Fixture needs subject evidence'}]
         result=self.private/(name+'-result.json');result.write_bytes(encode(output))
-        compiled=self.run_cli('review-compile','--job',review,'--result',result,'--session','review-'+name,'--model','test-model')
+        compiled=self.run_cli('review-compile','--job',review,'--result',result,'--session',session or 'review-'+name,'--model','test-model')
         return review,compiled
     def test_offline_rebinding_and_interrupted_publication_confirmation(self):
         research,proposal=self.research()
@@ -148,3 +150,34 @@ class NativeLifecycleTests(unittest.TestCase):
         (Path(compiled['private_attempt'])/'native-result.json').write_bytes(b'{}')
         with self.assertRaisesRegex(ValueError,'changed after'):
             self.run_cli('unified-publish','--proposal',proposal,'--review-job',review,'--review-attempt',compiled['private_attempt'],'--batch-id','changed-result','--output',self.private/'changed-result')
+
+    def test_publication_batch_requires_one_reviewer_for_distinct_research_sessions(self):
+        first_research,first_proposal=self.research('Q101')
+        second_research,second_proposal=self.research('Q102')
+        first_review,first_result=self.review(first_research,first_proposal,'first-review',session='batch-reviewer')
+        second_review,second_result=self.review(second_research,second_proposal,'second-review',session='another-reviewer')
+        def arguments(review,result,output):
+            return ['unified-publish','--proposal',first_proposal,'--proposal',second_proposal,
+                '--review-job',first_review,'--review-job',review,'--review-attempt',first_result['private_attempt'],
+                '--review-attempt',result['private_attempt'],'--batch-id','two-schools','--output',output]
+        with self.assertRaisesRegex(ValueError,'One Review subagent'):
+            self.run_cli(*arguments(second_review,second_result,self.private/'mixed-reviewers'))
+        second_review,second_result=self.review(second_research,second_proposal,'rechecked',session='batch-reviewer')
+        bundle=self.private/'same-reviewer'
+        self.run_cli(*arguments(second_review,second_result,bundle))
+        manifest=load_json((bundle/'data/batches/two-schools.json').read_bytes())
+        self.assertEqual([row['qid'] for row in manifest['records']],['Q101','Q102'])
+        self.http.assert_not_called()
+
+    def test_new_publication_rejects_old_receipt_attribution(self):
+        research,proposal=self.research()
+        review,result=self.review(research,proposal,'current')
+        base=commit(self.root,'origin/main')
+        files=unified_publish.files(self.root,base,'attribution',[(proposal,review,result['private_attempt'])])
+        path='data/reviews/attribution/Q101.json'
+        receipt=load_json(files[path]);receipt['attribution']='main_agent_review_of_native_research_subagent;not_independent_signature'
+        files[path]=encode(receipt)
+        manifest=load_json(files['data/batches/attribution.json']);manifest['records'][0]['receipt_sha256']=sha(files[path])
+        files['data/batches/attribution.json']=encode(manifest)
+        with self.assertRaisesRegex(ValueError,'Invalid unified receipt'):
+            unified_publish.verify_files(self.root,base,files,self.trust)

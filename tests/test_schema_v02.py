@@ -11,7 +11,7 @@ sys.path.insert(0, str(SCRIPTS))
 spec = importlib.util.spec_from_file_location("schema_example", SCRIPTS / "build_schema_example.py")
 module = importlib.util.module_from_spec(spec); spec.loader.exec_module(module)
 from university_curation.preferred import validate, recompute
-from university_curation.records import create
+from university_curation.workflow_contract import check_publishable
 
 
 class PreferredTests(unittest.TestCase):
@@ -57,8 +57,14 @@ class PreferredTests(unittest.TestCase):
         with self.assertRaises(ValueError): validate(bad)
         bad = deepcopy(self.record); bad["population"]["teaching_staff"]["preferred"].pop("qualifications")
         with self.assertRaises(ValueError): validate(bad)
-        with tempfile.TemporaryDirectory() as tmp:
-            with self.assertRaises(ValueError): create(tmp, self.record)
+        with self.assertRaises(ValueError): check_publishable(self.record)
+
+    def test_historical_schema_is_read_only_and_new_records_require_current_version(self):
+        from university_curation.schema_v02 import schema
+        old=deepcopy(self.record);old['schema_version']='0.2.1'
+        validate(old)
+        with self.assertRaisesRegex(ValueError,'Only the current'):schema('0.2.1')
+        with self.assertRaisesRegex(ValueError,'current university schema'):check_publishable(old)
 
 
 if __name__ == "__main__": unittest.main()

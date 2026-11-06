@@ -3,7 +3,7 @@ from pathlib import Path
 import re
 import subprocess
 from urllib.parse import urlsplit
-from .attestations import load_json, sha
+from .integrity import load_json
 from .records import encode, record_path
 from .preferred import fields
 
@@ -47,8 +47,8 @@ def canonical_json(data):
 def check_source_revisions(record):
     """Fail closed on misleading public links to immutable Wikimedia revisions.
 
-    The private exporter additionally replays actual captures; this public check
-    validates the signed record's *claim* about the revision, not the live page.
+    Review checks the frozen source snapshot offline; this public check validates
+    each record URL and source locator.
     """
     for reference, source in record.get("sources", {}).items():
         kind = source["kind"]
@@ -71,26 +71,6 @@ def check_source_revisions(record):
                     raise ValueError("Empty evidence locator")
 
 
-def check_workspace(repo, base, files):
-    """Protect both the index and working tree; allow only exact completed retries."""
-    root = Path(repo).resolve()
-    for path, data in files.items():
-        target = root / path
-        if target.resolve() != target or not target.resolve().is_relative_to(root) or target.is_symlink():
-            raise ValueError("Export path escapes workspace or crosses a symlink/junction")
-        old = blob(repo, base, path, optional=True)
-        entries = [e for e in git(repo, "ls-files", "--stage", "-z", "--", path).split(b"\0") if e]
-        indexed = None
-        if entries:
-            if len(entries) != 1: raise ValueError("Unmerged index entry")
-            info, name = entries[0].split(b"\t", 1); mode, oid, stage = info.split()
-            if mode != b"100644" or stage != b"0" or name.decode() != path: raise ValueError("Unsafe index entry")
-            indexed = git(repo, "cat-file", "blob", oid.decode())
-        if indexed not in (old, data): raise ValueError("Refuse to overwrite staged work")
-        if target.exists():
-            if target.read_bytes() not in (old, data): raise ValueError("Refuse to overwrite uncommitted work")
-        elif old is not None and data is not None:
-            raise ValueError("Refuse to resurrect a locally deleted university")
 
 
 def no_legacy_duplicate(repo, base, entity_id):

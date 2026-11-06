@@ -1,7 +1,7 @@
 # Current state and handoff
 
 The 2026-11-06 operator decision replaces all branch/PR coordination with one
-Main Agent orchestrating Research and Review subagents in one workspace.
+Task Agent orchestrating Research and Review subagents in one workspace.
 Only main remains. Development and approved-data publication go directly to main
 through the connected GitHub plugin with expected-SHA protection.
 
@@ -42,3 +42,11 @@ bounded local wait; longer failures return a retryable task to the manager.
 Formal external dataset releases remain separate operator decisions. Local
 checks, plugin permissions and actual subagent execution must be reported
 separately; no runtime may fabricate a model identity or Review approval.
+
+The final cleanup removes the v0.1 record writer, key-generation/signing tools,
+standalone coordinate Review and duplicate Review formats. integrity.py verifies
+the existing signed seed catalog read-only. Current Research output and the
+example generator use schema v0.2.2; historical schema/data/receipt files remain
+unchanged audit artifacts. The only startup prompt is references/task-agent.md.
+A publication batch now requires a distinct Research session per QID and the
+same Review session for every approved result.

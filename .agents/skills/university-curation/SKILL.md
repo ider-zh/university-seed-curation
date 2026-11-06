@@ -5,9 +5,9 @@ description: Orchestrate native Research and offline Review subagents for univer
 
 # University curation
 
-Use one Main Agent in one workspace, native Research and Review subagents, and
+Use one Task Agent in one workspace, native Research and Review subagents, and
 only the main branch. Read AGENTS.md, docs/handoff.md, docs/agent-workflow.md and
-docs/commands.md. Start with references/main-agent.md. Research and Review role
+docs/commands.md. Start with references/task-agent.md. Research and Review role
 references describe subagent responsibilities, not standalone worker services.
 
 Verify the checkout origin, fetch public origin/main and preserve private work.
@@ -22,7 +22,9 @@ requires a shell token, signing key, gh, Codex CLI, SSH or another host.
    prompt/schema to a native Research subagent. Record actual metadata, compile
    its JSON, then use unified-proposal before Review.
 3. Run review-prepare with --research-job into a fresh private Review directory.
-   Dispatch a distinct Review subagent with only its prepared packet/prompt/schema.
+   Use one Review subagent for the batch, passing each prepared per-QID packet/
+   prompt/schema sequentially. Compile each result with that same actual Review
+   session ID, distinct from every Research session in the batch.
    It must check the frozen hash-verified snapshot offline, not re-fetch sources
    or read Research-private model traces. Run review-compile on its actual JSON.
 4. On request_changes, retain request IDs/proposal hashes, start fresh Research

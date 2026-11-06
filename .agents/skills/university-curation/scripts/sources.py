@@ -2,10 +2,9 @@
 import argparse
 import json
 import os
-from pathlib import Path
 import sys
 
-from _bootstrap import ROOT, SCRIPTS
+import _bootstrap  # Initialize the checkout-local package path.
 from university_curation.sources import Cache
 
 

@@ -1,3 +1,3 @@
-"""Offline record and task primitives; external execution is separately configured."""
+"""Single Task Agent orchestration, native evidence validation and direct-main publication."""
 
-__version__ = "0.1.0"
+__version__ = "0.2.1"

@@ -1,7 +1,7 @@
 # University Seed Curation
 
 Reliable structured data about global present and historical higher-education
-institutions. One Main Agent orchestrates native Research and Review subagents,
+institutions. One Task Agent orchestrates native Research and Review subagents,
 then publishes approved records directly to `main` through the GitHub plugin.
 
 There is one workflow and one branch. Task progress lives in private local jobs;
@@ -9,7 +9,7 @@ a compact pending-task list on main preserves unfinished migration work. Review
 uses the same hash-verified evidence offline. Sources, prompts and model traces
 remain private; approved records and review receipts are public.
 
-- [Manager startup prompt](.agents/skills/university-curation/references/main-agent.md)
+- [Task Agent startup prompt](.agents/skills/university-curation/references/task-agent.md)
 - [Operating contract](AGENTS.md), [current handoff](docs/handoff.md)
 - [Workflow](docs/agent-workflow.md), [commands](docs/commands.md)
 - [Data contract](docs/data-contract.md), [review policy](docs/review-policy-v2.md)

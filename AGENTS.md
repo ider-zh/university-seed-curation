@@ -1,13 +1,13 @@
 # Agent operating contract
 
-Use one Main Agent in one workspace to orchestrate distinct native Research and
+Use one Task Agent in one workspace to orchestrate distinct native Research and
 Review subagents. Develop and publish directly on `main`. Do not create working,
 data or coordination branches, worktrees, PRs, PR permits, role-signing keys,
 separate Review services, or a legacy CLI runtime.
 
 Read docs/handoff.md, docs/agent-workflow.md and the bundled
 .agents/skills/university-curation/SKILL.md. The manager startup prompt is
-.agents/skills/university-curation/references/main-agent.md.
+.agents/skills/university-curation/references/task-agent.md.
 
 - Reuse the checkout, verify origin, fetch public origin/main and preserve private
   caches. Clone into a child directory only when absent. Use trusted main code.
@@ -15,10 +15,11 @@ Read docs/handoff.md, docs/agent-workflow.md and the bundled
   prepares evidence, validates JSON and emits publication operations; it never
   launches models or inherits plugin credentials. No shell token, gh, SSH, Codex
   CLI, signing key or another host is required. All GitHub writes use the plugin.
-- Main Agent selects tasks, prepares/compiles jobs, tracks retries, manages
+- Task Agent selects tasks, prepares/compiles jobs, tracks retries, manages
   revisions and publishes. It must not perform the subagents' primary university
-  research or fabricate Review approval. Each Research subagent handles one QID.
-- A distinct Review subagent checks every fact, context, locator, period, unit,
+  research or fabricate Review approval. Each Research subagent handles one QID in its own session.
+  Reuse one Review subagent session across that batch of up to five QIDs.
+- The batch Review subagent checks every fact, context, locator, period, unit,
   all six coverage groups, summary and prior request against the exact prepared,
   hash-verified offline Research snapshot. Never re-fetch Review sources or give
   Review Research-private model traces. Only the manager publishes.

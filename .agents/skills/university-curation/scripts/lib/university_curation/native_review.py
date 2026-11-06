@@ -11,9 +11,9 @@ import uuid
 
 import jsonschema
 
-from .attestations import load_json, private_path, sha
+from .integrity import load_json, private_path, sha
 from .research_contract import (_verify_proposal, _fact_scope, _safe_reason,
-    REVIEW_RULES, REVIEW_SCHEMA, MODEL, EFFORT)
+    REVIEW_RULES, REVIEW_SCHEMA)
 from .workflow_contract import seed_metadata, baseline_at
 from .domain_refresh import materialize
 from .native_research import _base, _origin, _write
@@ -21,18 +21,6 @@ from .research_schema import GROUPS
 from .git_data import blob
 from .records import encode, instant, qid as valid_qid
 from .web_sources import verify_packet as verify_web_packet
-
-
-def _verify_native(proposal, baseline, packet, root):
-    """Apply the shared factual checks without claiming a caller-reported model is authenticated."""
-    metadata=proposal.get('research',{})
-    if not isinstance(metadata.get('model'),str) or not re.fullmatch(r'[A-Za-z0-9][A-Za-z0-9._:-]{0,127}',metadata['model']):
-        raise ValueError('Invalid reported Research model')
-    if metadata.get('reasoning_effort') not in ('low','medium','high','xhigh','max','ultra','not_reported'):
-        raise ValueError('Invalid reported Research effort')
-    adjusted=deepcopy(proposal)
-    adjusted['research']['model']=MODEL; adjusted['research']['reasoning_effort']=EFFORT
-    return _verify_proposal(adjusted,baseline,packet,root)
 
 
 def _prompt(value, policy):
@@ -78,7 +66,7 @@ def prepare(repo, proposal_file, job, base_ref='origin/main', research_job=None)
         _,source=_root(packet)
         if root.get('id')!=entity or root.get('lastrevid')!=source['revision_id']:
             raise ValueError('Research root snapshot revision mismatch')
-    point=_verify_native(proposal,baseline,packet,root); facts,contexts=_fact_scope(proposal['delta'])
+    point=_verify_proposal(proposal,baseline,packet,root); facts,contexts=_fact_scope(proposal['delta'])
     value={'proposal':proposal,'baseline':baseline,'facts':facts,'contexts':contexts,
         'source_corpus':packet['source_corpus'],'root_entity':root,'coordinate_projection':point}
     prompt=_prompt(value,policy).encode('utf-8'); shape=encode(REVIEW_SCHEMA)
@@ -89,7 +77,7 @@ def prepare(repo, proposal_file, job, base_ref='origin/main', research_job=None)
         'baseline_sha256':baseline_hash,'proposal_sha256':sha(encode(proposal)),'prepared_at':datetime.now(timezone.utc).isoformat(),
         'packet_sha256':sha(encode(packet)),'root_entity_sha256':sha(encode(root)),'review_input_sha256':sha(encode(value)),
         'prompt_sha256':sha(prompt),'output_schema_sha256':sha(shape),'native_code_sha256':sha(Path(__file__).read_bytes()),
-        'shared_source_cache':True,'offline_research_snapshot':True}
+        'offline_research_snapshot':True}
     _write(job/'job.json',encode(manifest))
     return {'status':'prepared','qid':entity,'job_dir':str(job),'base_commit':base,
         'prompt_path':str(job/'prompt.txt'),'schema_path':str(job/'output.schema.json'),
@@ -120,7 +108,7 @@ def compile(repo, job, result_file, session, model, effort='medium', completed_a
     verify_web_packet(packet)
     root=load_json((job/'root-entity.json').read_bytes()); value=load_json((job/'review-input.json').read_bytes())
     if proposal.get('qid')!=entity or proposal.get('seed')!=seed_metadata(catalog[entity],digest): raise ValueError('Review proposal identity or seed changed')
-    point=_verify_native(proposal,baseline,packet,root); facts,contexts=_fact_scope(proposal['delta'])
+    point=_verify_proposal(proposal,baseline,packet,root); facts,contexts=_fact_scope(proposal['delta'])
     reconstructed={'proposal':proposal,'baseline':baseline,'facts':facts,'contexts':contexts,
         'source_corpus':packet['source_corpus'],'root_entity':root,'coordinate_projection':point}
     if value!=reconstructed: raise ValueError('Prepared Review input differs from independently captured sources')

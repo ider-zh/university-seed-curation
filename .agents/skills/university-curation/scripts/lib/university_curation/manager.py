@@ -6,7 +6,7 @@ from pathlib import Path
 import re
 import uuid
 
-from .attestations import load_json, private_path, sha
+from .integrity import load_json, private_path, sha
 from .cache_lock import request_lock
 from .git_data import blob, canonical_json, commit, git, record_relative
 from .records import encode, instant, qid as valid_qid

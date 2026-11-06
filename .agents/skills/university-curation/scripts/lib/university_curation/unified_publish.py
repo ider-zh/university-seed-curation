@@ -6,7 +6,7 @@ claimed. Published receipts make the provenance and reduced independence clear.
 from pathlib import Path
 import re
 
-from .attestations import load_json, private_path, sha
+from .integrity import load_json, private_path, sha
 from .workflow_contract import attach_transport, baseline_at
 from .domain_refresh import materialize
 from .workflow_contract import check_proposal
@@ -16,12 +16,24 @@ from .preferred import validate, recompute
 from .records import encode, instant
 
 
+def check_batch_sessions(proposals_and_verdicts):
+    research=[proposal['research']['session'] for proposal,_ in proposals_and_verdicts]
+    reviews={verdict['review_session'] for _,verdict in proposals_and_verdicts}
+    if len(reviews)!=1:
+        raise ValueError('One Review subagent session must review the publication batch')
+    if len(research)!=len(set(research)):
+        raise ValueError('Each QID requires its own Research subagent session')
+    if reviews.intersection(research):
+        raise ValueError('Review session cannot also be a Research session in this batch')
+    return next(iter(reviews))
+
+
 def _verified(repo, base, proposal, review_job, attempt, trust, catalog, catalog_hash):
     job=private_path(review_job); attempt=private_path(attempt)
     if attempt.parent != job/'compile-attempts' or not attempt.is_dir():
         raise ValueError('Review attempt must be generated inside the supplied Review job')
     meta=load_json((job/'job.json').read_bytes())
-    if meta.get('type')!='native-review-job-v1' or not meta.get('shared_source_cache') or not meta.get('offline_research_snapshot'):
+    if meta.get('type')!='native-review-job-v1' or not meta.get('offline_research_snapshot'):
         raise ValueError('An offline Research-snapshot Review job is required')
     if meta['base_commit'] != base or meta['catalog_sha256'] != catalog_hash:
         raise ValueError('Review is stale relative to main/catalog')
@@ -75,7 +87,7 @@ def files(repo, base, batch, proposals_and_reviews):
     base_commit,trust,catalog,catalog_hash=_base(repo,base)
     if not 1<=len(proposals_and_reviews)<=trust['max_schools_per_batch']:
         raise ValueError('Invalid direct-main batch size')
-    output={}; rows=[]; seen=set()
+    output={}; rows=[]; seen=set(); reviewed=[]
     for proposal_path,job_path,attempt_path in proposals_and_reviews:
         proposal=load_json(private_path(proposal_path).read_bytes())
         if 'transport' not in proposal:
@@ -86,6 +98,7 @@ def files(repo, base, batch, proposals_and_reviews):
         if entity in seen: raise ValueError('Duplicate Research QID')
         seen.add(entity)
         record,verdict=_verified(repo,base_commit,proposal,job_path,attempt_path,trust,catalog,catalog_hash)
+        reviewed.append((proposal,verdict))
         record_path=record_relative(entity); receipt_path='data/reviews/'+batch+'/'+entity+'.json'
         no_legacy_duplicate(repo,base_commit,entity)
         if blob(repo,base_commit,receipt_path,optional=True) is not None: raise ValueError('Immutable receipt exists')
@@ -95,6 +108,7 @@ def files(repo, base, batch, proposals_and_reviews):
         output[record_path]=encode(record); output[receipt_path]=encode(receipt)
         rows.append({'qid':entity,'record_path':record_path,'record_sha256':sha(output[record_path]),
                      'receipt_path':receipt_path,'receipt_sha256':sha(output[receipt_path])})
+    check_batch_sessions(reviewed)
     rows.sort(key=lambda r:int(r['qid'][1:]))
     manifest={'type':'university-unified-batch-v1','repository':trust['repository'],'batch_id':batch,
               'base_commit':base_commit,'seed_catalog_sha256':catalog_hash,'records':rows}
@@ -126,6 +140,7 @@ def verify_files(repo, base, files, trust):
     validate_checkpoint(backlog_at(repo,base),checkpoint,ids)
     if any(entity not in catalog for entity in checkpoint['tasks']): raise ValueError('Checkpoint QID outside catalog')
     expected.add(BACKLOG)
+    reviewed=[]
     for row in rows:
         entity=row['qid']; path=record_relative(entity); receipt_path='data/reviews/'+batch+'/'+entity+'.json'
         if set(row)!={'qid','record_path','record_sha256','receipt_path','receipt_sha256'} or row['record_path']!=path or row['receipt_path']!=receipt_path:
@@ -138,10 +153,10 @@ def verify_files(repo, base, files, trust):
         attribution=receipt.get('attribution','')
         if (set(receipt)!={'type','research','review','attribution','review_result_sha256'} or
                 receipt['type']!='university-unified-receipt-v1' or
-                attribution not in ('main_agent_review_of_native_research_subagent;not_independent_signature',
-                                    'distinct_native_research_and_review_subagents;not_cryptographic_identity')):
+                attribution!='distinct_native_research_and_review_subagents;not_cryptographic_identity'):
             raise ValueError('Invalid unified receipt')
         proposal=receipt['research']; verdict=receipt['review']; baseline,_=baseline_at(repo,base,entity)
+        reviewed.append((proposal,verdict))
         check_proposal(proposal,baseline,catalog,digest,trust)
         if verdict['decision']!='approve' or verdict['qid']!=entity or verdict['proposal_sha256']!=sha(encode(proposal)) or verdict['record_sha256']!=sha(files[path]) or verdict['requests']:
             raise ValueError('No approval for exact record')
@@ -151,5 +166,6 @@ def verify_files(repo, base, files, trust):
             raise ValueError('Unified materialization mismatch')
         validate(record)
         if recompute(record)!=record: raise ValueError('Invalid preferred projection')
+    check_batch_sessions(reviewed)
     if set(files)!=expected: raise ValueError('Unexpected public files in unified batch')
     return {'status':'validated','task_kind':'unified','batch_id':batch,'qids':ids,'base_commit':base}

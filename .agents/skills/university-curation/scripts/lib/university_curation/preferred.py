@@ -3,9 +3,9 @@ from copy import deepcopy
 from decimal import Decimal
 from functools import lru_cache
 import math
-from pathlib import Path
 
 from .schema_v02 import schema
+from .records import CURRENT_SCHEMA_VERSION, ROOT
 
 AUTHORITY = {"institution_official": 5, "government": 5, "academic_publisher": 4,
              "encyclopedia": 3, "knowledge_base": 2, "other": 1}
@@ -114,9 +114,17 @@ def recompute(record):
 
 
 @lru_cache(maxsize=3)
-def validator(version="0.2.0"):
+def validator(version=CURRENT_SCHEMA_VERSION):
     import jsonschema
-    return jsonschema.Draft202012Validator(schema(version), format_checker=jsonschema.FormatChecker())
+    if version==CURRENT_SCHEMA_VERSION:
+        contract=schema()
+    elif version in ('0.2.0','0.2.1'):
+        # Frozen historical contracts support reads; current code never regenerates them.
+        import json
+        name='university.v0.2.schema.json' if version=='0.2.0' else 'university.v0.2.1.schema.json'
+        contract=json.loads((ROOT/'schemas'/name).read_text(encoding='utf-8'))
+    else: raise ValueError('Unsupported university schema version')
+    return jsonschema.Draft202012Validator(contract, format_checker=jsonschema.FormatChecker())
 
 
 def validate(record):
@@ -128,7 +136,7 @@ def validate(record):
             for value in node.values(): clean(value)
         elif isinstance(node, list):
             for value in node: clean(value)
-    clean(record); validator(record.get("schema_version", "0.2.0")).validate(record)
+    clean(record); validator(record.get("schema_version", CURRENT_SCHEMA_VERSION)).validate(record)
     sources = record.get("sources", {}); subjects = {"institution"}
     location_ids = [loc["id"] for loc in record.get("locations", [])]
     for loc in record.get("locations", []):

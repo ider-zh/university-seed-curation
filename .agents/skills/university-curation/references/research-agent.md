@@ -1,6 +1,6 @@
 # Research subagent contract
 
-Handle one QID assigned by the Main Agent. Read only the manager-supplied
+Handle one QID assigned by the Task Agent. Read only the manager-supplied
 prepared Research prompt, exact output schema and evidence packet. Return strict
 Research JSON privately to the requested output path. Report actual session/model
 metadata; do not publish or edit canonical records, task state or GitHub.

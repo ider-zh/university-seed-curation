@@ -1,11 +1,10 @@
 """Single-manager native proposal and repository contracts; no PR transport."""
-from pathlib import Path
 import re
-from .attestations import load_json, sha
-from .records import encode, instant
-from .preferred import validate, recompute, fields
+from .integrity import load_json, sha
+from .records import CURRENT_SCHEMA_VERSION, encode, instant
+from .preferred import validate, recompute
 from .domain_refresh import materialize
-from .git_data import blob, record_relative, batch_slug, canonical_json
+from .git_data import blob, record_relative
 from .seed_catalog import NAMES, verify as verify_catalog
 
 PROPOSAL_KEYS = {"type", "review_status", "qid", "seed", "baseline_sha256", "delta", "candidate", "proposed_at",
@@ -13,7 +12,6 @@ PROPOSAL_KEYS = {"type", "review_status", "qid", "seed", "baseline_sha256", "del
 
 
 def trust_at(repo, ref):
-    from .git_data import git
     trust = load_json(blob(repo, ref, ".curation/review-trust.json"))
     return trust
 
@@ -69,22 +67,24 @@ def check_proposal(proposal, baseline, catalog, catalog_hash, trust):
         raise ValueError("Proposal bound to another repository/schema/policy/catalog")
     if not re.fullmatch("[0-9a-f]{40}", transport["base_commit"]): raise ValueError("Invalid original Git base")
     if proposal["baseline_sha256"] != (sha(encode(baseline)) if baseline else "absent"): raise ValueError("University baseline changed")
-    validate(delta); validate(proposal["candidate"]); instant(proposal["proposed_at"])
+    check_publishable(delta); check_publishable(proposal["candidate"]); instant(proposal["proposed_at"])
     from .git_data import check_source_revisions
     check_source_revisions(delta)
     if proposal["candidate"] != materialize(baseline, delta, proposal["seed"], proposal["proposed_at"], False): raise ValueError("Research rewrote fields outside deterministic append delta")
     if proposal["candidate"] != recompute(proposal["candidate"]): raise ValueError("Noncanonical preferred projection")
-    metadata = proposal["research"]
-    if set(metadata) != {"model", "reasoning_effort", "session", "prompt_sha256", "schema_sha256"}: raise ValueError("Unexpected Research metadata")
-    if (not isinstance(metadata['model'],str) or not re.fullmatch(r'[A-Za-z0-9][A-Za-z0-9._:-]{0,127}',metadata['model'])
-            or metadata['reasoning_effort'] not in ('low','medium','high','xhigh','max','ultra','not_reported')
-            or not isinstance(metadata['session'],str) or not metadata['session'].strip()):
-        raise ValueError('Truthful native model, effort and session required')
-    for key in ("prompt_sha256", "schema_sha256"):
-        if not re.fullmatch("[0-9a-f]{64}", metadata[key]): raise ValueError("Research provenance hash missing")
+    from .research_contract import check_research_metadata
+    check_research_metadata(proposal['research'])
     from .research_schema import GROUPS
     coverage = {r["group"]: r["status"] for r in proposal["coverage"]}
     if len(proposal["coverage"]) != len(GROUPS) or set(coverage) != set(GROUPS) or any(delta["coverage"][g]["status"] != coverage[g] for g in GROUPS): raise ValueError("Coverage declaration mismatch")
     from .research_contract import _open_requests
     _open_requests({"open_requests": proposal["open_requests"]})
     public_bounds(proposal)
+
+
+def check_publishable(record):
+    if record.get('schema_version')!=CURRENT_SCHEMA_VERSION:
+        raise ValueError('New publications require the current university schema')
+    if record.get('example',{}).get('synthetic'):
+        raise ValueError('Synthetic examples cannot be published as university records')
+    validate(record)

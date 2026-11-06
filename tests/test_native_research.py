@@ -7,7 +7,7 @@ from unittest.mock import patch
 
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'.agents/skills/university-curation/scripts/lib'))
 from university_curation import native_research as native
-from university_curation.attestations import sha
+from university_curation.integrity import sha
 from university_curation.records import ROOT, encode
 from test_research_schema import fixture
 

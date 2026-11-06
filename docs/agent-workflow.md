@@ -1,7 +1,7 @@
 # Single-manager Research and Review
 
-One Main Agent works from main, with one native Research subagent per QID and a
-separate native Review subagent. Python does not launch models. The host owns
+One Task Agent works from main, with one native Research subagent per QID and a
+single native Review subagent for each batch of up to five QIDs. Python does not launch models. The host owns
 native subagent tools and the GitHub plugin. No remote coordination branches,
 PRs, separate Review service or shell GitHub credentials are used.
 
@@ -34,7 +34,9 @@ binds the compiled proposal to repository/catalog/schema/policy and main baselin
 review-prepare requires --research-job. It verifies the Research packet/root
 hashes, copies the evidence into a separate Review job, and prepares every fact,
 context and prior request for Review. No HTTP retrieval fallback exists. Review
-reads only its packet/prompt/schema and returns strict JSON in a distinct session.
+reads only its packet/prompt/schema and returns strict JSON in a session distinct
+from every Research session. Send each QID packet to the same Review subagent
+sequentially; compile one result per QID using the same Review session ID.
 review-compile validates complete coverage and cannot turn an incomplete or
 contradictory assessment into approval.
 
@@ -51,7 +53,8 @@ checkpoint all other pending tasks using portable metadata.
 
 unified-publish revalidates exact proposals, offline Review jobs/attempts,
 source counts, six coverage groups, canonical hashes and current main baseline.
-It produces only canonical records, receipts, a batch manifest and the updated
+A batch requires distinct Research sessions per QID and one common Review
+session; any cross-role session reuse is rejected. It produces only canonical records, receipts, a batch manifest and the updated
 main task backlog. Other pending backlog rows are preserved exactly.
 
 Execute its blob/tree/commit/ref operations through the GitHub plugin. The main
