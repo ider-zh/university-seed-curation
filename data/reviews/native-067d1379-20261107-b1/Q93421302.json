@@ -1,0 +1,723 @@
+{
+  "attribution": "distinct_native_research_and_review_subagents;not_cryptographic_identity",
+  "research": {
+    "baseline_sha256": "absent",
+    "candidate": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-06T23:11:30.833559+00:00",
+          "status": "not_found"
+        },
+        "geography": {
+          "checked_at": "2026-11-06T23:11:30.833559+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-06T23:11:30.833559+00:00",
+          "status": "checked"
+        },
+        "identity": {
+          "checked_at": "2026-11-06T23:11:30.833559+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-06T23:11:30.833559+00:00",
+          "status": "not_found"
+        },
+        "profile": {
+          "checked_at": "2026-11-06T23:11:30.833559+00:00",
+          "status": "not_found"
+        }
+      },
+      "curation": {
+        "identity_status": "in_scope"
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "claim:P571:0",
+                      "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q93421302$7003CAC8-7E48-4694-BE58-3029460C4329\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+2014-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}, \"reference_count\": 1}",
+                      "source_ref": "s1"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 2014
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "establishment",
+            "kind": "institution_establishment",
+            "subject_ref": "institution"
+          }
+        ]
+      },
+      "identity": {
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "metadata",
+                  "original_text": "{\"id\": \"Q93421302\", \"labels\": {\"en\": \"D R Group of Education, Aligarh\"}, \"descriptions\": {\"en\": \"college affiliated to the Dr. B. R. Ambedkar University\"}}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "claim:P31:0",
+                  "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q93421302$54E70A9A-134B-4761-AC2A-40303E578C94\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 189004, \"id\": \"Q189004\"}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "higher_education_college",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q93421302\", \"labels\": {\"en\": \"D R Group of Education, Aligarh\"}, \"descriptions\": {\"en\": \"college affiliated to the Dr. B. R. Ambedkar University\"}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "D R Group of Education, Aligarh",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "locations": [
+        {
+          "id": "aligarh-district",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q93421302$3AD83497-221C-4ECD-849C-5DFA04F26F2F\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 766918, \"id\": \"Q766918\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q766918\", \"labels\": {\"en\": \"Aligarh district\"}, \"descriptions\": {\"en\": \"district of Uttar Pradesh, India\"}}",
+                    "source_ref": "s4"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Aligarh district"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q766918"
+        },
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q93421302$403F5A7A-4470-41B3-A09F-4BB525C6B6A0\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 668, \"id\": \"Q668\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q668\", \"labels\": {\"en\": \"India\"}, \"descriptions\": {\"en\": \"country in South Asia\"}}",
+                    "source_ref": "s3"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "country_name": "India",
+                  "country_qid": "Q668",
+                  "formatted": {
+                    "language": "en",
+                    "text": "India"
+                  }
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "institution-country",
+          "kind": "administrative_area",
+          "qid": "Q668"
+        }
+      ],
+      "modified_datetime": "2026-11-06T23:12:40.933821+00:00",
+      "qid": "Q93421302",
+      "record_revision": 1,
+      "related_entities": {
+        "affiliating-university": {
+          "kind": "institution",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q93421302\", \"labels\": {\"en\": \"D R Group of Education, Aligarh\"}, \"descriptions\": {\"en\": \"college affiliated to the Dr. B. R. Ambedkar University\"}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Dr. B. R. Ambedkar University"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "relationships": {
+        "member_of": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q93421302\", \"labels\": {\"en\": \"D R Group of Education, Aligarh\"}, \"descriptions\": {\"en\": \"college affiliated to the Dr. B. R. Ambedkar University\"}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "target_ref": "related:affiliating-university"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ]
+      },
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "legacy_discovery"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "needs_review"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T23:07:25.866730+00:00",
+          "revision_id": 1198880436,
+          "source_qid": "Q93421302",
+          "url": "https://www.wikidata.org/w/index.php?oldid=1198880436"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T23:07:35.845155+00:00",
+          "revision_id": 2556557061,
+          "source_qid": "Q189004",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2556557061"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T23:07:39.680522+00:00",
+          "revision_id": 2563722390,
+          "source_qid": "Q668",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2563722390"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T23:07:48.001372+00:00",
+          "revision_id": 2563894850,
+          "source_qid": "Q766918",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2563894850"
+        }
+      }
+    },
+    "coverage": [
+      {
+        "group": "identity",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "status": "checked"
+      },
+      {
+        "group": "population",
+        "status": "not_found"
+      },
+      {
+        "group": "finance",
+        "status": "not_found"
+      },
+      {
+        "group": "profile",
+        "status": "not_found"
+      }
+    ],
+    "delta": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-06T23:11:30.833559+00:00",
+          "status": "not_found"
+        },
+        "geography": {
+          "checked_at": "2026-11-06T23:11:30.833559+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-06T23:11:30.833559+00:00",
+          "status": "checked"
+        },
+        "identity": {
+          "checked_at": "2026-11-06T23:11:30.833559+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-06T23:11:30.833559+00:00",
+          "status": "not_found"
+        },
+        "profile": {
+          "checked_at": "2026-11-06T23:11:30.833559+00:00",
+          "status": "not_found"
+        }
+      },
+      "curation": {
+        "identity_status": "in_scope"
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "claim:P571:0",
+                      "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q93421302$7003CAC8-7E48-4694-BE58-3029460C4329\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+2014-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}, \"reference_count\": 1}",
+                      "source_ref": "s1"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 2014
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "establishment",
+            "kind": "institution_establishment",
+            "subject_ref": "institution"
+          }
+        ]
+      },
+      "identity": {
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "metadata",
+                  "original_text": "{\"id\": \"Q93421302\", \"labels\": {\"en\": \"D R Group of Education, Aligarh\"}, \"descriptions\": {\"en\": \"college affiliated to the Dr. B. R. Ambedkar University\"}}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "claim:P31:0",
+                  "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q93421302$54E70A9A-134B-4761-AC2A-40303E578C94\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 189004, \"id\": \"Q189004\"}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "higher_education_college",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q93421302\", \"labels\": {\"en\": \"D R Group of Education, Aligarh\"}, \"descriptions\": {\"en\": \"college affiliated to the Dr. B. R. Ambedkar University\"}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "D R Group of Education, Aligarh",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "locations": [
+        {
+          "id": "aligarh-district",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q93421302$3AD83497-221C-4ECD-849C-5DFA04F26F2F\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 766918, \"id\": \"Q766918\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q766918\", \"labels\": {\"en\": \"Aligarh district\"}, \"descriptions\": {\"en\": \"district of Uttar Pradesh, India\"}}",
+                    "source_ref": "s4"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Aligarh district"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q766918"
+        },
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q93421302$403F5A7A-4470-41B3-A09F-4BB525C6B6A0\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 668, \"id\": \"Q668\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q668\", \"labels\": {\"en\": \"India\"}, \"descriptions\": {\"en\": \"country in South Asia\"}}",
+                    "source_ref": "s3"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "country_name": "India",
+                  "country_qid": "Q668",
+                  "formatted": {
+                    "language": "en",
+                    "text": "India"
+                  }
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "institution-country",
+          "kind": "administrative_area",
+          "qid": "Q668"
+        }
+      ],
+      "qid": "Q93421302",
+      "record_revision": 1,
+      "related_entities": {
+        "affiliating-university": {
+          "kind": "institution",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q93421302\", \"labels\": {\"en\": \"D R Group of Education, Aligarh\"}, \"descriptions\": {\"en\": \"college affiliated to the Dr. B. R. Ambedkar University\"}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Dr. B. R. Ambedkar University"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "relationships": {
+        "member_of": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q93421302\", \"labels\": {\"en\": \"D R Group of Education, Aligarh\"}, \"descriptions\": {\"en\": \"college affiliated to the Dr. B. R. Ambedkar University\"}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "target_ref": "related:affiliating-university"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ]
+      },
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "legacy_discovery"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "needs_review"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T23:07:25.866730+00:00",
+          "revision_id": 1198880436,
+          "source_qid": "Q93421302",
+          "url": "https://www.wikidata.org/w/index.php?oldid=1198880436"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T23:07:35.845155+00:00",
+          "revision_id": 2556557061,
+          "source_qid": "Q189004",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2556557061"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T23:07:39.680522+00:00",
+          "revision_id": 2563722390,
+          "source_qid": "Q668",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2563722390"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T23:07:48.001372+00:00",
+          "revision_id": 2563894850,
+          "source_qid": "Q766918",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2563894850"
+        }
+      }
+    },
+    "open_requests": [],
+    "proposed_at": "2026-11-06T23:12:40.933821+00:00",
+    "qid": "Q93421302",
+    "research": {
+      "model": "not_reported",
+      "prompt_sha256": "3c6ed27fea836ed61982a3ac8530656cbc1826798e3786da98839775418ec0c9",
+      "reasoning_effort": "not_reported",
+      "schema_sha256": "92e942f4fbf2ae28964462ea9ffa8312c5ee16a077a1e08b40aaaf741512422e",
+      "session": "/root/research_q93421302"
+    },
+    "retrieval_failures": [],
+    "review_status": "unreviewed",
+    "seed": {
+      "channels": [
+        "legacy_discovery"
+      ],
+      "import_id": "seed-84c3beb45367905f",
+      "screening_status": "needs_review"
+    },
+    "transport": {
+      "base_commit": "6c5c90a72889094131b0045ba10fafd98585b9a2",
+      "protocol": "native-subagent-v1",
+      "repository": "ider-zh/university-seed-curation",
+      "review_policy": {
+        "id": "source-grounded-flexible-v2",
+        "sha256": "b8ed7d2897e4c31dbd81b1379aafdc1077a21d1a33949edbd2d896b0adf99db2"
+      },
+      "schema_sha256": "bfa496eafa9dffca56146214168db7f000b09161b8993129632e7202e1c88833",
+      "seed_catalog_sha256": "84c3beb45367905f513d650684283dd62a9c1b77962bdc34151a6ef05bfa03d4"
+    },
+    "type": "university-proposal-v1"
+  },
+  "review": {
+    "contexts_checked": 4,
+    "coverage_checks": [
+      {
+        "group": "identity",
+        "reason": "Supplied root metadata and college class inspected with subject-specific university-affiliation evidence; supported limited identity extraction.",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "reason": "Root country and district claims and frozen linked metadata inspected; no root coordinate exists and linked country/district points are not transferred.",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "reason": "Supplied inception claim inspected at year precision; source-supported bounded history extraction does not invent additional chronology.",
+        "status": "checked"
+      },
+      {
+        "group": "population",
+        "reason": "Survey completeness is unestablished: no population facts in the limited Wikimedia packet, but no targeted external gap survey is captured. This is incomplete survey coverage, not a factual disagreement or proof of absence.",
+        "status": "disputed"
+      },
+      {
+        "group": "finance",
+        "reason": "Survey completeness is unestablished: limited Wikimedia packet has no finance data and no external gap-source survey. This disputes completeness only, not any financial value.",
+        "status": "disputed"
+      },
+      {
+        "group": "profile",
+        "reason": "Limited Wikimedia-only inspection and sparse overview material do not establish complete profile gap survey. Supported partial data may publish without treating unsearched sources as absent.",
+        "status": "disputed"
+      }
+    ],
+    "decision": "approve",
+    "facts_checked": 4,
+    "full_refresh": false,
+    "inferences": [
+      {
+        "id": "$.identity.kind:c1",
+        "reason": "Root s1 metadata explicitly describes a college affiliated to Dr. B. R. Ambedkar University, alongside root P31 college. This subject-specific university-affiliation context supports higher_education_college; generic college alone would not suffice."
+      },
+      {
+        "id": "$.relationships.member_of[0]:c1",
+        "reason": "Root s1 metadata explicitly states affiliation to the named university. Broad member_of is a controlled-schema adaptation retaining that affiliation wording and target; no ownership or legal independence is asserted."
+      },
+      {
+        "id": "identity",
+        "reason": "Root name and specific university-affiliated college description support an eligible higher-education institution rather than its affiliating university. Generic college ambiguity is resolved here by the subject-specific affiliation context."
+      }
+    ],
+    "model": "not_reported",
+    "proposal_sha256": "ffd19a9e5448b920914df2f3db180c7196748f841a537ec4602211e0faa259a9",
+    "qid": "Q93421302",
+    "reasoning_effort": "not_reported",
+    "record_sha256": "bec49ec2e59f0238fb934ba26853dafd9b1952165063ad9bf71b0b3af9d36048",
+    "request_responses": [],
+    "requests": [],
+    "review_scope": {
+      "not_independently_reviewed_ids": [
+        "$.locations[0].name:c1",
+        "$.locations[1].address:c1",
+        "$.related_entities.affiliating-university.name:c1",
+        "location:aligarh-district",
+        "location:institution-country"
+      ],
+      "reviewed_ids": [
+        "$.history.milestones[0].date:c1",
+        "$.identity.kind:c1",
+        "$.identity.names.en:c1",
+        "$.relationships.member_of[0]:c1",
+        "country:$.locations[1].address:c1",
+        "identity",
+        "milestone:establishment",
+        "related:affiliating-university"
+      ],
+      "version": "core-review-v3"
+    },
+    "review_session": "/root/review_final_q93421302",
+    "reviewed_at": "2026-11-06T23:18:07.065091+00:00",
+    "source_revisions_checked": 4,
+    "waived_requests": []
+  },
+  "review_result_sha256": "4ceb139337e6ac1a0e71cba1bd86d0e58f48788ae9dbeb1529519d7995b727cb",
+  "type": "university-unified-receipt-v1"
+}
