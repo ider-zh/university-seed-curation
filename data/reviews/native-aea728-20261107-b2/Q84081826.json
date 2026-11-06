@@ -1,0 +1,555 @@
+{
+  "attribution": "distinct_native_research_and_review_subagents;not_cryptographic_identity",
+  "research": {
+    "baseline_sha256": "absent",
+    "candidate": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-06T23:00:33.331951+00:00",
+          "status": "disputed"
+        },
+        "geography": {
+          "checked_at": "2026-11-06T23:00:33.331951+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-06T23:00:33.331951+00:00",
+          "status": "disputed"
+        },
+        "identity": {
+          "checked_at": "2026-11-06T23:00:33.331951+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-06T23:00:33.331951+00:00",
+          "status": "disputed"
+        },
+        "profile": {
+          "checked_at": "2026-11-06T23:00:33.331951+00:00",
+          "status": "disputed"
+        }
+      },
+      "curation": {
+        "identity_status": "in_scope"
+      },
+      "identity": {
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "metadata",
+                  "original_text": "college affiliated to the Visvesvaraya Technological University",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "claim:P31:0",
+                  "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q84081826$CD616A8A-DC65-43CA-8390-84F041E320EF\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 189004, \"id\": \"Q189004\"}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "higher_education_college",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "Government Engineering College Mosalehosahalli",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "Government Engineering College Mosalehosahalli",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "locations": [
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q84081826$0D3111BB-2AB6-42FE-8140-E7ABC59CD7AE\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 956732, \"id\": \"Q956732\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "Hassan district",
+                    "source_ref": "s4"
+                  },
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q84081826$DF6FA398-5849-4EE8-9AD2-9FB8E0A334B3\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 668, \"id\": \"Q668\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "India",
+                    "source_ref": "s3"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "country_name": "India",
+                  "country_qid": "Q668",
+                  "formatted": {
+                    "language": "en",
+                    "text": "Hassan district, India"
+                  },
+                  "region_name": "Hassan district",
+                  "region_qid": "Q956732"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "hassan-district",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q84081826$0D3111BB-2AB6-42FE-8140-E7ABC59CD7AE\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 956732, \"id\": \"Q956732\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "Hassan district",
+                    "source_ref": "s4"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Hassan district"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q956732"
+        }
+      ],
+      "modified_datetime": "2026-11-06T23:01:48.489224+00:00",
+      "qid": "Q84081826",
+      "record_revision": 1,
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "legacy_discovery"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "needs_review"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T23:00:27.072266+00:00",
+          "revision_id": 2553889673,
+          "source_qid": "Q84081826",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2553889673"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:50:36.637829+00:00",
+          "revision_id": 2556557061,
+          "source_qid": "Q189004",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2556557061"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:50:39.549376+00:00",
+          "revision_id": 2563722390,
+          "source_qid": "Q668",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2563722390"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T23:00:33.313777+00:00",
+          "revision_id": 2532051436,
+          "source_qid": "Q956732",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2532051436"
+        }
+      }
+    },
+    "coverage": [
+      {
+        "group": "identity",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "status": "disputed"
+      },
+      {
+        "group": "population",
+        "status": "disputed"
+      },
+      {
+        "group": "finance",
+        "status": "disputed"
+      },
+      {
+        "group": "profile",
+        "status": "disputed"
+      }
+    ],
+    "delta": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-06T23:00:33.331951+00:00",
+          "status": "disputed"
+        },
+        "geography": {
+          "checked_at": "2026-11-06T23:00:33.331951+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-06T23:00:33.331951+00:00",
+          "status": "disputed"
+        },
+        "identity": {
+          "checked_at": "2026-11-06T23:00:33.331951+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-06T23:00:33.331951+00:00",
+          "status": "disputed"
+        },
+        "profile": {
+          "checked_at": "2026-11-06T23:00:33.331951+00:00",
+          "status": "disputed"
+        }
+      },
+      "curation": {
+        "identity_status": "in_scope"
+      },
+      "identity": {
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "metadata",
+                  "original_text": "college affiliated to the Visvesvaraya Technological University",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "claim:P31:0",
+                  "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q84081826$CD616A8A-DC65-43CA-8390-84F041E320EF\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 189004, \"id\": \"Q189004\"}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "higher_education_college",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "Government Engineering College Mosalehosahalli",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "Government Engineering College Mosalehosahalli",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "locations": [
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q84081826$0D3111BB-2AB6-42FE-8140-E7ABC59CD7AE\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 956732, \"id\": \"Q956732\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "Hassan district",
+                    "source_ref": "s4"
+                  },
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q84081826$DF6FA398-5849-4EE8-9AD2-9FB8E0A334B3\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 668, \"id\": \"Q668\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "India",
+                    "source_ref": "s3"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "country_name": "India",
+                  "country_qid": "Q668",
+                  "formatted": {
+                    "language": "en",
+                    "text": "Hassan district, India"
+                  },
+                  "region_name": "Hassan district",
+                  "region_qid": "Q956732"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "hassan-district",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q84081826$0D3111BB-2AB6-42FE-8140-E7ABC59CD7AE\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 956732, \"id\": \"Q956732\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "Hassan district",
+                    "source_ref": "s4"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Hassan district"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q956732"
+        }
+      ],
+      "qid": "Q84081826",
+      "record_revision": 1,
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "legacy_discovery"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "needs_review"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T23:00:27.072266+00:00",
+          "revision_id": 2553889673,
+          "source_qid": "Q84081826",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2553889673"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:50:36.637829+00:00",
+          "revision_id": 2556557061,
+          "source_qid": "Q189004",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2556557061"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:50:39.549376+00:00",
+          "revision_id": 2563722390,
+          "source_qid": "Q668",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2563722390"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T23:00:33.313777+00:00",
+          "revision_id": 2532051436,
+          "source_qid": "Q956732",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2532051436"
+        }
+      }
+    },
+    "open_requests": [],
+    "proposed_at": "2026-11-06T23:01:48.489224+00:00",
+    "qid": "Q84081826",
+    "research": {
+      "model": "not_reported",
+      "prompt_sha256": "f78d5dbec1e6d422be9b6e1c6d5fb610c0f268281ab5125a191300b4c13b2104",
+      "reasoning_effort": "not_reported",
+      "schema_sha256": "92e942f4fbf2ae28964462ea9ffa8312c5ee16a077a1e08b40aaaf741512422e",
+      "session": "/root/b2_research_q84081826"
+    },
+    "retrieval_failures": [],
+    "review_status": "unreviewed",
+    "seed": {
+      "channels": [
+        "legacy_discovery"
+      ],
+      "import_id": "seed-84c3beb45367905f",
+      "screening_status": "needs_review"
+    },
+    "transport": {
+      "base_commit": "003414c9d83f4df0e87e3571a4ed73ca8a435378",
+      "protocol": "native-subagent-v1",
+      "repository": "ider-zh/university-seed-curation",
+      "review_policy": {
+        "id": "source-grounded-flexible-v2",
+        "sha256": "b8ed7d2897e4c31dbd81b1379aafdc1077a21d1a33949edbd2d896b0adf99db2"
+      },
+      "schema_sha256": "bfa496eafa9dffca56146214168db7f000b09161b8993129632e7202e1c88833",
+      "seed_catalog_sha256": "84c3beb45367905f513d650684283dd62a9c1b77962bdc34151a6ef05bfa03d4"
+    },
+    "type": "university-proposal-v1"
+  },
+  "review": {
+    "contexts_checked": 2,
+    "coverage_checks": [
+      {
+        "group": "identity",
+        "reason": "Frozen identity metadata and classification were surveyed; university-affiliation evidence supports the retained identity and eligibility.",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "reason": "Root country and administrative district plus linked entities were surveyed. Root has no P625; district and country coordinates are not institution coordinates.",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "reason": "No grounded historical observation is supplied, and no Wikipedia or external survey establishes comprehensive absence; survey completion remains unconfirmed.",
+        "status": "disputed"
+      },
+      {
+        "group": "population",
+        "reason": "No population observation is captured. Wider sources were not surveyed, so completeness cannot be confirmed and no zero is implied.",
+        "status": "disputed"
+      },
+      {
+        "group": "finance",
+        "reason": "No finance observation is captured and no external financial survey was performed; this is an incomplete survey rather than established absence.",
+        "status": "disputed"
+      },
+      {
+        "group": "profile",
+        "reason": "Sparse Wikidata evidence and no captured Wikipedia or external pages do not establish a complete profile survey. Supplementary omissions do not block supported partial approval.",
+        "status": "disputed"
+      }
+    ],
+    "decision": "approve",
+    "facts_checked": 2,
+    "full_refresh": false,
+    "inferences": [
+      {
+        "id": "$.identity.kind:c1",
+        "reason": "Frozen root metadata specifically describes a college affiliated to Visvesvaraya Technological University, together with root P31 college. That institution-specific university affiliation supports higher_education_college; generic college ancestry alone would not suffice."
+      },
+      {
+        "id": "identity",
+        "reason": "The root-specific university-affiliation description supports tertiary-college eligibility and in_scope disposition; no unsupported legal independence, operating status or public-ownership inference is introduced."
+      }
+    ],
+    "model": "not_reported",
+    "proposal_sha256": "7601ecdbed4937445da45462174bf26600433629c8ff6f71aba0848b3e0b8357",
+    "qid": "Q84081826",
+    "reasoning_effort": "not_reported",
+    "record_sha256": "4685ae4581584e6bdedab01177d9f6dca86f22ac44f89e28977cae1ab4605dca",
+    "request_responses": [],
+    "requests": [],
+    "review_scope": {
+      "not_independently_reviewed_ids": [
+        "$.locations[0].address:c1",
+        "$.locations[0].name:c1",
+        "location:hassan-district"
+      ],
+      "reviewed_ids": [
+        "$.identity.kind:c1",
+        "$.identity.names.en:c1",
+        "country:$.locations[0].address:c1",
+        "identity"
+      ],
+      "version": "core-review-v3"
+    },
+    "review_session": "/root/b2_final_review_q84081826",
+    "reviewed_at": "2026-11-06T23:08:25.281103+00:00",
+    "source_revisions_checked": 4,
+    "waived_requests": []
+  },
+  "review_result_sha256": "2e40c41b4b7884340442bf1f7e4e8754a2b227f33da9e8e42347da57bc7b7bec",
+  "type": "university-unified-receipt-v1"
+}
