@@ -1,0 +1,1957 @@
+{
+  "coverage": {
+    "finance": {
+      "checked_at": "2026-11-06T11:27:41.158062+00:00",
+      "status": "checked"
+    },
+    "geography": {
+      "checked_at": "2026-11-06T11:27:41.158062+00:00",
+      "status": "checked"
+    },
+    "history": {
+      "checked_at": "2026-11-06T11:27:41.158062+00:00",
+      "status": "disputed"
+    },
+    "identity": {
+      "checked_at": "2026-11-06T11:27:41.158062+00:00",
+      "status": "checked"
+    },
+    "population": {
+      "checked_at": "2026-11-06T11:27:41.158062+00:00",
+      "status": "checked"
+    },
+    "profile": {
+      "checked_at": "2026-11-06T11:27:41.158062+00:00",
+      "status": "checked"
+    }
+  },
+  "curation": {
+    "identity_status": "in_scope",
+    "refresh_profile": "core-v1",
+    "reviewed_groups": [
+      "identity",
+      "geography",
+      "history",
+      "population",
+      "finance",
+      "profile"
+    ]
+  },
+  "finance": {
+    "budget": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:7",
+              "original_text": "Budget: CHF 2.051 billion (2025)",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2025
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": "2051000000",
+            "currency": "CHF",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "Eidgenössische Technische Hochschulen und Forschungsanstalten\nÉcoles polytechniques fédérales\nPolitecnici federali\nScolas politecnicas federalas\nOrdentliches Budget 2024 (CHF Mio.)[9]\nETH-Bereich\n2'748\nHochschulen\nETH Zürich\nEPFL\n1'366\n742\nForschungsanstalten\nPSI\nWSL\nEmpa\nEawag\n328\n63\n117\n64\n",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c2",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2024
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": "1366000000",
+            "currency": "CHF",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "single_source_family"
+        ],
+        "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+        "reason_code": "best_available"
+      }
+    }
+  },
+  "history": {
+    "milestones": [
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:History",
+                  "original_text": "ETH Zurich was founded on 7 February 1854 by the Swiss Confederation and began giving its first lectures on 16 October 1855 as a polytechnic institute (eidgenössische polytechnische Schule) at various sites throughout the city of Zurich.[1]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "day": 7,
+                "month": 2,
+                "precision": "day",
+                "year": 1854
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P571:0",
+                  "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q11942$e9638741-48e1-0977-1465-0f523e064bc3\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+1855-10-16T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c2",
+              "value": {
+                "day": 16,
+                "month": 10,
+                "precision": "day",
+                "year": 1855
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:1",
+                  "original_text": "Gründung: 1855",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c3",
+              "value": {
+                "precision": "year",
+                "year": 1855
+              },
+              "verification": "supported"
+            }
+          ],
+          "conflicts": [
+            {
+              "candidate_ids": [
+                "c1",
+                "c2",
+                "c3"
+              ],
+              "kind": "time_disagreement",
+              "note": "English text distinguishes founding on 7 February 1854 from first teaching on 16 October 1855; Wikidata inception and German founding use 1855. Preserve both conventions.",
+              "status": "unresolved"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c3",
+            "qualifications": [
+              "conflicting_candidates"
+            ],
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:History",
+                  "original_text": "ETH Zurich was founded on 7 February 1854 by the Swiss Confederation and began giving its first lectures on 16 October 1855 as a polytechnic institute (eidgenössische polytechnische Schule) at various sites throughout the city of Zurich.[1]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "Founded by the Swiss Confederation on 7 February 1854; lectures began on 16 October 1855."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "establishment",
+        "kind": "institution_establishment",
+        "subject_ref": "institution"
+      },
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:History",
+                  "original_text": "ETH Zurich was founded on 7 February 1854 by the Swiss Confederation and began giving its first lectures on 16 October 1855 as a polytechnic institute (eidgenössische polytechnische Schule) at various sites throughout the city of Zurich.[1]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "day": 16,
+                "month": 10,
+                "precision": "day",
+                "year": 1855
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "teaching",
+        "kind": "teaching_start",
+        "subject_ref": "institution"
+      },
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:History",
+                  "original_text": "In 1911, the institution received its current name, Eidgenössische Technische Hochschule.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "precision": "year",
+                "year": 1911
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:History",
+                  "original_text": "In 1911, the institution received its current name, Eidgenössische Technische Hochschule.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "Renamed Eidgenössische Technische Hochschule."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "rename",
+        "kind": "rename",
+        "subject_ref": "institution"
+      },
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:History",
+                  "original_text": "The first doctorates were awarded in 1909.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "precision": "year",
+                "year": 1909
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:History",
+                  "original_text": "The first doctorates were awarded in 1909.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:History",
+                  "original_text": "From 1905 to 1908, under the presidency of Jérôme Franel, ETH Zurich restructured its course programs to those of a university and was granted the right to award doctorates. The first doctorates were awarded in 1909.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "First doctorates awarded; doctoral-awarding rights were granted during the 1905–1908 restructuring."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "doctorates",
+        "kind": "higher_education_status",
+        "subject_ref": "institution"
+      }
+    ]
+  },
+  "identity": {
+    "aliases": [
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P1705:0",
+                "original_text": "{\"property\": \"P1705\", \"property_label\": \"native label\", \"statement_id\": \"Q11942$e0035586-44c7-c384-e791-208696be7854\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"Eidgenössische Technische Hochschule Zürich\", \"language\": \"de\"}, \"reference_count\": 1}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "de",
+              "text": "Eidgenössische Technische Hochschule Zürich"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "infobox:2",
+                "original_text": "Other names: Swiss Federal Institute of Technology in Zurich, German: Polytechnikum, poly (polytechnic) (colloquially)",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Swiss Federal Institute of Technology in Zurich"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "infobox:3",
+                "original_text": "Former name: Federal Polytechnic School (Eidgenössische polytechnische Schule) (1855–1911)[1]",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "period": {
+              "end_year": 1911,
+              "kind": "interval",
+              "start_year": 1855
+            },
+            "value": {
+              "language": "de",
+              "text": "Eidgenössische polytechnische Schule"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P1813:0",
+                "original_text": "{\"property\": \"P1813\", \"property_label\": \"short name\", \"statement_id\": \"Q11942$7a62de87-4f41-2053-0c96-f759244e37d2\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"ETHZ\", \"language\": \"de\"}}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "de",
+              "text": "ETHZ"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P1813:1",
+                "original_text": "{\"property\": \"P1813\", \"property_label\": \"short name\", \"statement_id\": \"Q11942$a3501d50-407d-ac58-2cf6-e3aa2f1a31c3\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"EPFZ\", \"language\": \"fr\"}}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "fr",
+              "text": "EPFZ"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P1813:2",
+                "original_text": "{\"property\": \"P1813\", \"property_label\": \"short name\", \"statement_id\": \"Q11942$e9930bb6-46dd-b40e-aa5d-84feac049e40\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"PF di Zurigo\", \"language\": \"it\"}}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "it",
+              "text": "PF di Zurigo"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P1813:3",
+                "original_text": "{\"property\": \"P1813\", \"property_label\": \"short name\", \"statement_id\": \"Q11942$8e65815a-4b71-1798-40ca-c172217c1f7b\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"SPFT\", \"language\": \"rm\"}}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "rm",
+              "text": "SPFT"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P1813:4",
+                "original_text": "{\"property\": \"P1813\", \"property_label\": \"short name\", \"statement_id\": \"Q11942$8cd44126-4a98-6ebb-ab13-f57fa582ec87\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"チューリッヒ工科大学\", \"language\": \"ja\"}, \"qualifiers\": {\"P1814\": [{\"snaktype\": \"value\", \"value\": \"チューリッヒこうかだいがく\"}], \"P2125\": [{\"snaktype\": \"value\", \"value\": \"Chūrihhi Kōka Daigaku\"}]}}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "ja",
+              "text": "チューリッヒ工科大学"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P1813:5",
+                "original_text": "{\"property\": \"P1813\", \"property_label\": \"short name\", \"statement_id\": \"Q11942$84ed5d24-4d14-08a2-a049-e2fe937dca71\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"苏黎世理工\", \"language\": \"zh-hans\"}, \"qualifiers\": {\"P1721\": [{\"snaktype\": \"value\", \"value\": \"Sūlíshì Lǐgōng\"}]}}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "zh-hans",
+              "text": "苏黎世理工"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P1813:6",
+                "original_text": "{\"property\": \"P1813\", \"property_label\": \"short name\", \"statement_id\": \"Q11942$ebd66388-4063-ef5c-0e43-45ea7bf11b78\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"蘇黎世理工\", \"language\": \"zh-hant\"}, \"qualifiers\": {\"P1721\": [{\"snaktype\": \"value\", \"value\": \"Sūlíshì Lǐgōng\"}]}}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "zh-hant",
+              "text": "蘇黎世理工"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P1813:7",
+                "original_text": "{\"property\": \"P1813\", \"property_label\": \"short name\", \"statement_id\": \"Q11942$2b88e097-4b3d-b4e4-1004-a73fd904cfed\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"ВТШ Цюриха\", \"language\": \"ru\"}}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "ru",
+              "text": "ВТШ Цюриха"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    ],
+    "identifiers": {
+      "P5242": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P5242:1",
+                "original_text": "{\"property\": \"P5242\", \"property_label\": \"ARWU university ID\", \"statement_id\": \"Q11942$88086250-4236-28f7-e81b-fdd71e29b184\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"eth-zurich\"}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": "eth-zurich",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "P5584": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P5584:0",
+                "original_text": "{\"property\": \"P5584\", \"property_label\": \"QS World University ID\", \"statement_id\": \"Q11942$002229C0-3A64-46DD-BF01-CA5E4EFE2367\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"eth-zurich-swiss-federal-institute-technology\"}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": "eth-zurich-swiss-federal-institute-technology",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "P5586": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P5586:1",
+                "original_text": "{\"property\": \"P5586\", \"property_label\": \"Times Higher Education World University ID\", \"statement_id\": \"Q11942$1C0FD636-162F-4EA4-810B-8BE37D3793B0\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"eth-zurich\"}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": "eth-zurich",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    "kind": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "metadata",
+              "original_text": "{\"id\": \"Q11942\", \"labels\": {\"de\": \"ETH Zürich\", \"en\": \"ETH Zurich\"}, \"descriptions\": {\"de\": \"technische Universität in Zürich\", \"en\": \"public research university in Zurich\"}}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "value": "university",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "names": {
+      "de": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P1448:1",
+                "original_text": "{\"property\": \"P1448\", \"property_label\": \"official name\", \"statement_id\": \"Q11942$b7cdb486-4f5b-e287-e386-74f551e9d0ac\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"ETH Zürich\", \"language\": \"de\"}, \"reference_count\": 1}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": "ETH Zürich",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "en": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P1448:0",
+                "original_text": "{\"property\": \"P1448\", \"property_label\": \"official name\", \"statement_id\": \"Q11942$c563e7e3-49d7-227a-80c6-b62db3847938\", \"rank\": \"preferred\", \"snaktype\": \"value\", \"value\": {\"text\": \"ETH Zurich\", \"language\": \"en\"}, \"reference_count\": 1}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": "ETH Zurich",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    "ownership": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:4",
+              "original_text": "Type: Public",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": "public",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "leadership": {
+    "president": {
+      "candidates": [
+        {
+          "current_basis": "term_present",
+          "evidence": [
+            {
+              "locator": "section:Pr.C3.A4sidenten",
+              "original_text": "seit 2019 Joël Mesot",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "person": {
+              "name": "Joël Mesot",
+              "qid": "Q60445979"
+            },
+            "term_start": {
+              "precision": "year",
+              "year": 2019
+            },
+            "title_original": {
+              "language": "de",
+              "text": "Präsident"
+            }
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "single_source_family"
+        ],
+        "reason": "The source gives a term continuing to the present.",
+        "reason_code": "term_present"
+      }
+    },
+    "rector": {
+      "candidates": [
+        {
+          "current_basis": "undated_last_known",
+          "evidence": [
+            {
+              "locator": "claim:P1075:0",
+              "original_text": "{\"property\": \"P1075\", \"property_label\": \"rector\", \"statement_id\": \"Q11942$ff937f9f-4a83-5828-8623-06a295d2227a\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 24261927, \"id\": \"Q24261927\"}, \"qualifiers\": {\"P580\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2022-02-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 10, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "infobox:5",
+              "original_text": "Leitung: Joël Mesot (Präsident)[1]Günther Dissertori (Rektor)[2]",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "person": {
+              "name": "Günther Dissertori",
+              "qid": "Q24261927"
+            },
+            "term_start": {
+              "month": 2,
+              "precision": "month",
+              "year": 2022
+            },
+            "title_original": {
+              "language": "de",
+              "text": "Rektor"
+            }
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "single_source_family",
+          "last_known_only"
+        ],
+        "reason": "Use the best available last-known appointment without claiming an explicitly confirmed current term.",
+        "reason_code": "last_known"
+      }
+    }
+  },
+  "locations": [
+    {
+      "id": "zurich",
+      "kind": "administrative_area",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "infobox:17",
+                "original_text": "Location: Rämistrasse 101, Zurich, Switzerland47°22′35″N 8°32′53″E﻿ / ﻿47.37639°N 8.54806°E﻿ / 47.37639; 8.54806",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Zurich"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "qid": "Q72"
+    },
+    {
+      "id": "switzerland",
+      "kind": "administrative_area",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "infobox:17",
+                "original_text": "Location: Rämistrasse 101, Zurich, Switzerland47°22′35″N 8°32′53″E﻿ / ﻿47.37639°N 8.54806°E﻿ / 47.37639; 8.54806",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Switzerland"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "qid": "Q39"
+    },
+    {
+      "address": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P159:0",
+                "original_text": "{\"property\": \"P159\", \"property_label\": \"headquarters location\", \"statement_id\": \"q11942$9028ec89-4fcf-a240-a4d4-c5b443202553\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 14565994, \"id\": \"Q14565994\"}, \"qualifiers\": {\"P281\": [{\"snaktype\": \"value\", \"value\": \"8092\"}], \"P17\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 39, \"id\": \"Q39\"}}], \"P6375\": [{\"snaktype\": \"value\", \"value\": {\"text\": \"Rämistrasse 101\", \"language\": \"de\"}}], \"P625\": [{\"snaktype\": \"value\", \"value\": {\"latitude\": 47.37645, \"longitude\": 8.54785, \"altitude\": null, \"precision\": 2.777777777777778e-06, \"globe\": \"http://www.wikidata.org/entity/Q2\"}}]}}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "city_name": "Zürich",
+              "city_qid": "Q72",
+              "country_name": "Schweiz",
+              "country_qid": "Q39",
+              "formatted": {
+                "language": "de",
+                "text": "Rämistrasse 101, 8092 Zürich, Schweiz"
+              },
+              "postal_code": "8092",
+              "street": "Rämistrasse 101"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "coordinates": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P159:0",
+                "original_text": "{\"property\": \"P159\", \"property_label\": \"headquarters location\", \"statement_id\": \"q11942$9028ec89-4fcf-a240-a4d4-c5b443202553\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 14565994, \"id\": \"Q14565994\"}, \"qualifiers\": {\"P281\": [{\"snaktype\": \"value\", \"value\": \"8092\"}], \"P17\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 39, \"id\": \"Q39\"}}], \"P6375\": [{\"snaktype\": \"value\", \"value\": {\"text\": \"Rämistrasse 101\", \"language\": \"de\"}}], \"P625\": [{\"snaktype\": \"value\", \"value\": {\"latitude\": 47.37645, \"longitude\": 8.54785, \"altitude\": null, \"precision\": 2.777777777777778e-06, \"globe\": \"http://www.wikidata.org/entity/Q2\"}}]}}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "crs": "EPSG:4326",
+              "latitude": 47.37645,
+              "longitude": 8.54785
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "id": "headquarters",
+      "kind": "headquarters",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q14565994\", \"labels\": {\"de\": \"Hauptgebäude der ETH Zürich\", \"en\": \"ETH Zurich main building\"}, \"descriptions\": {\"de\": \"zentraler Bau der ETH Zürich\", \"en\": \"building in Switzerland\"}}",
+                "source_ref": "s11"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "ETH Zurich main building"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "qid": "Q14565994"
+    },
+    {
+      "id": "zentrum",
+      "kind": "campus",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Campus",
+                "original_text": "[edit | edit source]\nETH Zurich has two campuses, namely Zentrum and Hönggerberg; since 2007, ETH Zurich is also present in Basel with one department.[17][18] The Zentrum campus grew around the main building, which was constructed 1858–1864.[13]",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Zentrum"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    {
+      "id": "hoenggerberg",
+      "kind": "campus",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Campus",
+                "original_text": "[edit | edit source]\nETH Zurich has two campuses, namely Zentrum and Hönggerberg; since 2007, ETH Zurich is also present in Basel with one department.[17][18] The Zentrum campus grew around the main building, which was constructed 1858–1864.[13]",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Hönggerberg"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    {
+      "id": "basel",
+      "kind": "campus",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Basel_location",
+                "original_text": "[edit | edit source]\nThe Department of Biosystems Science and Engineering (D-BSSE)[24] is located on Campus Schällemätteli in close vicinity to the University of Basel, the University Hospital and the Children's Hospital, and several other research institutions as well as major players in the chemical and pharmaceutical industries. The concentration of life science institutions in this area of Europe, and Basel's tri-national reach, motivated ETH Zurich to establish a satellite campus in Basel in 2007. A train ride of 55 minutes connects the location in Basel with Zurich.",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Basel satellite campus"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "valid_from": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Basel_location",
+                "original_text": "[edit | edit source]\nThe Department of Biosystems Science and Engineering (D-BSSE)[24] is located on Campus Schällemätteli in close vicinity to the University of Basel, the University Hospital and the Children's Hospital, and several other research institutions as well as major players in the chemical and pharmaceutical industries. The concentration of life science institutions in this area of Europe, and Basel's tri-national reach, motivated ETH Zurich to establish a satellite campus in Basel in 2007. A train ride of 55 minutes connects the location in Basel with Zurich.",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "precision": "year",
+              "year": 2007
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    {
+      "id": "heilbronn",
+      "kind": "campus",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:ETH_Zurich_Campus_Heilbronn",
+                "original_text": "[edit | edit source]\nA teaching and research center for responsible digital transformation is established on the educational campus of the Dieter Schwarz Foundation in Heilbronn, Germany. Activities are planned in areas such as artificial intelligence and cybersecurity. This center will be operated in the form of a non-profit limited liability company under German law and started operation at the beginning of 2025.[33]",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "ETH Zurich Campus Heilbronn"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "valid_from": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:ETH_Zurich_Campus_Heilbronn",
+                "original_text": "[edit | edit source]\nA teaching and research center for responsible digital transformation is established on the educational campus of the Dieter Schwarz Foundation in Heilbronn, Germany. Activities are planned in areas such as artificial intelligence and cybersecurity. This center will be operated in the form of a non-profit limited liability company under German law and started operation at the beginning of 2025.[33]",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "precision": "year",
+              "year": 2025
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    {
+      "coordinates": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "statement:Q11942$8fb499e7-4b66-ef12-d69f-45d2c29647b6",
+                "original_text": "\"latitude\": 47.37645",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "source_rank": "normal",
+            "value": {
+              "crs": "EPSG:4326",
+              "globe_qid": "Q2",
+              "latitude": 47.37645,
+              "longitude": 8.54785,
+              "source_precision_degrees": 2.777777777777778e-06
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "id": "wikidata-item-location",
+      "kind": "institution",
+      "qid": "Q11942"
+    }
+  ],
+  "modified_datetime": "2026-11-06T11:35:44.848372+00:00",
+  "population": {
+    "academic_staff": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:10",
+              "original_text": "Academic staff: 6,634 (including doctoral students, excluding 516 professors of all ranks) (full-time equivalents end of 2025)[4]",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2025
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 6634,
+            "basis": "fte",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "infobox:8",
+              "original_text": "davon Professoren: 557 (Headcount)[4]",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c2",
+          "period_status": "not_stated",
+          "value": {
+            "amount": 557,
+            "basis": "headcount",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c2",
+        "qualifications": [
+          "period_not_stated",
+          "single_source_family",
+          "different_basis_available"
+        ],
+        "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+        "reason_code": "best_available"
+      }
+    },
+    "administrative_staff": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:11",
+              "original_text": "Administrative staff: 3,431 (full-time equivalents end of 2025)",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2025
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 3431,
+            "basis": "fte",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "single_source_family"
+        ],
+        "reason_code": "only_available"
+      }
+    },
+    "doctoral_students": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:15",
+              "original_text": "Doctoral students: 4,266",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:lead",
+              "original_text": "As of 2025, ETH Zurich enrolled 26,942 students, of whom 4,266 were pursuing doctoral degrees.[5]",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2025
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 4266,
+            "basis": "headcount",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "single_source_family"
+        ],
+        "reason_code": "only_available"
+      }
+    },
+    "employees_total": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:7",
+              "original_text": "Mitarbeiter: 13'600 (10'618 VZÄ)[4]",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c1",
+          "period_status": "not_stated",
+          "value": {
+            "amount": 13600,
+            "basis": "headcount",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "infobox:7",
+              "original_text": "Mitarbeiter: 13'600 (10'618 VZÄ)[4]",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c2",
+          "period_status": "not_stated",
+          "value": {
+            "amount": 10618,
+            "basis": "fte",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "period_not_stated",
+          "single_source_family",
+          "different_basis_available"
+        ],
+        "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+        "reason_code": "best_available"
+      }
+    },
+    "postgraduate_students": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:14",
+              "original_text": "Postgraduates: 10,144",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "period_status": "not_stated",
+          "value": {
+            "amount": 10144,
+            "basis": "headcount",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "period_not_stated",
+          "single_source_family"
+        ],
+        "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+        "reason_code": "only_available"
+      }
+    },
+    "students_total": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:0",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q11942$95d660b7-42f3-07b6-08d2-5e2cc19fe5ee\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+19233\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2014-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2014
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 19233,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:1",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q11942$b71b8982-4e4b-2312-7bd5-ee9b036433bf\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+23420\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2020-12-31T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c2",
+          "period": {
+            "date": "2020-12-31",
+            "kind": "date"
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 23420,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "infobox:12",
+              "original_text": "Students: 26,942 (headcount 2025)[5]",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c3",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2025
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 26942,
+            "basis": "headcount",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c3",
+        "qualifications": [
+          "single_source_family",
+          "different_basis_available"
+        ],
+        "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+        "reason_code": "best_available"
+      }
+    },
+    "undergraduate_students": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:13",
+              "original_text": "Undergraduates: 11,520",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "period_status": "not_stated",
+          "value": {
+            "amount": 11520,
+            "basis": "headcount",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "period_not_stated",
+          "single_source_family"
+        ],
+        "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "profile": {
+    "academic_focus": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "the university primarily teaches and conducts research in science, technology, engineering, and mathematics (STEM).",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": [
+            {
+              "language": "en",
+              "text": "Science"
+            },
+            {
+              "language": "en",
+              "text": "Technology"
+            },
+            {
+              "language": "en",
+              "text": "Engineering"
+            },
+            {
+              "language": "en",
+              "text": "Mathematics"
+            }
+          ],
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "degree_levels": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "Es gibt 16 Departemente für die verschiedenen Fachrichtungen, die zahlreiche Studiengänge vom Bachelor über den Master bis zum Doktorat anbieten.",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c1",
+          "value": [
+            "bachelor",
+            "master",
+            "doctorate"
+          ],
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "logo_url": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox_image_urls",
+              "original_text": "\"https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/ETH_Z%C3%BCrich_Logo_black.svg/250px-ETH_Z%C3%BCrich_Logo_black.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail\"",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/ETH_Z%C3%BCrich_Logo_black.svg/250px-ETH_Z%C3%BCrich_Logo_black.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "main_image_url": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox_image_urls",
+              "original_text": "\"https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/ETH_Z%C3%BCrich_-_Hauptgeb%C3%A4ude_-_Unispital_2012-07-30_07-57-03_ShiftN.jpg/250px-ETH_Z%C3%BCrich_-_Hauptgeb%C3%A4ude_-_Unispital_2012-07-30_07-57-03_ShiftN.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail\"",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/ETH_Z%C3%BCrich_-_Hauptgeb%C3%A4ude_-_Unispital_2012-07-30_07-57-03_ShiftN.jpg/250px-ETH_Z%C3%BCrich_-_Hauptgeb%C3%A4ude_-_Unispital_2012-07-30_07-57-03_ShiftN.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "summary": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "ETH Zurich (German: Eidgenössische Technische Hochschule Zürich; English: Swiss Federal Institute of Technology Zurich) is a public university in Zurich, Switzerland. Founded by the Swiss federal government in 1854, the university primarily teaches and conducts research in science, technology, engineering, and mathematics (STEM). ETH Zurich is widely regarded as one of the world's leading universities, particularly in the sciences, and consistently ranks among the top universities worldwide.[7][8][9][10]\nLike its sister institution École Polytechnique Fédérale de Lausanne (EPFL), ETH Zurich is part of the Swiss Federal Institutes of Technology Domain, a consortium of universities and research institutes under the Swiss Federal Department of Economic Affairs, Education and Research.[11] As of 2025, ETH Zurich enrolled 26,942 students, of whom 4,266 were pursuing doctoral degrees.[5]\n",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:History",
+              "original_text": "ETH Zurich was founded on 7 February 1854 by the Swiss Confederation and began giving its first lectures on 16 October 1855 as a polytechnic institute (eidgenössische polytechnische Schule) at various sites throughout the city of Zurich.[1]",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:History",
+              "original_text": "From 1905 to 1908, under the presidency of Jérôme Franel, ETH Zurich restructured its course programs to those of a university and was granted the right to award doctorates. The first doctorates were awarded in 1909. In 1911, the institution received its current name, Eidgenössische Technische Hochschule. Another reorganization in 1924 structured the university into 12 departments. Today, it has 16 departments.\nETH Zurich, along with EPFL and four associated research institutes, forms the \"ETH Domain\" to collaborate on scientific projects.[16]",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:lead",
+              "original_text": "Es gibt 16 Departemente für die verschiedenen Fachrichtungen, die zahlreiche Studiengänge vom Bachelor über den Master bis zum Doktorat anbieten.",
+              "source_ref": "s3"
+            },
+            {
+              "locator": "infobox:1",
+              "original_text": "Gründung: 1855",
+              "source_ref": "s3"
+            },
+            {
+              "locator": "infobox:19",
+              "original_text": "Language: German, English (Masters and upwards, some Bachelors)",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Campus",
+              "original_text": "[edit | edit source]\nETH Zurich has two campuses, namely Zentrum and Hönggerberg; since 2007, ETH Zurich is also present in Basel with one department.[17][18] The Zentrum campus grew around the main building, which was constructed 1858–1864.[13]",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Basel_location",
+              "original_text": "[edit | edit source]\nThe Department of Biosystems Science and Engineering (D-BSSE)[24] is located on Campus Schällemätteli in close vicinity to the University of Basel, the University Hospital and the Children's Hospital, and several other research institutions as well as major players in the chemical and pharmaceutical industries. The concentration of life science institutions in this area of Europe, and Basel's tri-national reach, motivated ETH Zurich to establish a satellite campus in Basel in 2007. A train ride of 55 minutes connects the location in Basel with Zurich.",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:ETH_Zurich_Campus_Heilbronn",
+              "original_text": "[edit | edit source]\nA teaching and research center for responsible digital transformation is established on the educational campus of the Dieter Schwarz Foundation in Heilbronn, Germany. Activities are planned in areas such as artificial intelligence and cybersecurity. This center will be operated in the form of a non-profit limited liability company under German law and started operation at the beginning of 2025.[33]",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "infobox:7",
+              "original_text": "Budget: CHF 2.051 billion (2025)",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "language": "en",
+            "text": "ETH Zurich (Eidgenössische Technische Hochschule Zürich) is a public university in Zurich, Switzerland, with a focus on science, technology, engineering and mathematics. It is a federal institution and belongs to the ETH Domain, which also includes EPFL and four research institutes. Its teaching and research are organized into 16 departments, with degree programmes extending from bachelor’s and master’s study to doctorates. German and English are used in teaching, with English used at master’s level and above and in some bachelor’s courses.\n\nThe Swiss Confederation founded the institution on 7 February 1854, and its first lectures began on 16 October 1855 under the name eidgenössische polytechnische Schule. The German account and Wikidata use 1855 as its founding or inception year. Its first doctorates were awarded in 1909, and it adopted the name Eidgenössische Technische Hochschule in 1911. The university has campuses at Zentrum and Hönggerberg in Zurich, and established a satellite campus in Basel in 2007 for biosystems science and engineering. A teaching and research centre in Heilbronn began operating in early 2025, focusing on responsible digital transformation. In 2025, ETH Zurich reported 26,942 students, including 4,266 doctoral students, and a budget of CHF 2.051 billion."
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "teaching_languages": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:19",
+              "original_text": "Language: German, English (Masters and upwards, some Bachelors)",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": [
+            "German",
+            "English"
+          ],
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "website": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P856:0",
+              "original_text": "{\"property\": \"P856\", \"property_label\": \"official website\", \"statement_id\": \"Q11942$125F243D-D7A7-46E4-B12A-528161B1BDA5\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"https://www.ethz.ch/\", \"qualifiers\": {\"P407\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 188, \"id\": \"Q188\"}}, {\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 1860, \"id\": \"Q1860\"}}, {\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 150, \"id\": \"Q150\"}}, {\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 652, \"id\": \"Q652\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "value": "https://www.ethz.ch/",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "qid": "Q11942",
+  "record_revision": 1,
+  "related_entities": {
+    "eth-domain": {
+      "kind": "university_system",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q664875\", \"labels\": {\"de\": \"ETH-Bereich\", \"en\": \"ETH Domain\"}, \"descriptions\": {\"en\": \"union of Swiss governmental universities and research institutions\", \"de\": \"übergeordnete Zusammenfassung der technisch-wissenschaftlichen eidgenössischen Universitäten und Forschungsanstalten\"}}",
+                "source_ref": "s12"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "ETH Domain"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "qid": "Q664875"
+    }
+  },
+  "relationships": {
+    "campus": [
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Campus",
+                "original_text": "[edit | edit source]\nETH Zurich has two campuses, namely Zentrum and Hönggerberg; since 2007, ETH Zurich is also present in Basel with one department.[17][18] The Zentrum campus grew around the main building, which was constructed 1858–1864.[13]",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "target_ref": "location:zentrum"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Campus",
+                "original_text": "[edit | edit source]\nETH Zurich has two campuses, namely Zentrum and Hönggerberg; since 2007, ETH Zurich is also present in Basel with one department.[17][18] The Zentrum campus grew around the main building, which was constructed 1858–1864.[13]",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "target_ref": "location:hoenggerberg"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Basel_location",
+                "original_text": "[edit | edit source]\nThe Department of Biosystems Science and Engineering (D-BSSE)[24] is located on Campus Schällemätteli in close vicinity to the University of Basel, the University Hospital and the Children's Hospital, and several other research institutions as well as major players in the chemical and pharmaceutical industries. The concentration of life science institutions in this area of Europe, and Basel's tri-national reach, motivated ETH Zurich to establish a satellite campus in Basel in 2007. A train ride of 55 minutes connects the location in Basel with Zurich.",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "target_ref": "location:basel"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:ETH_Zurich_Campus_Heilbronn",
+                "original_text": "[edit | edit source]\nA teaching and research center for responsible digital transformation is established on the educational campus of the Dieter Schwarz Foundation in Heilbronn, Germany. Activities are planned in areas such as artificial intelligence and cybersecurity. This center will be operated in the form of a non-profit limited liability company under German law and started operation at the beginning of 2025.[33]",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "target_ref": "location:heilbronn"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    ],
+    "parent": [
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P361:0",
+                "original_text": "{\"property\": \"P361\", \"property_label\": \"part of\", \"statement_id\": \"Q11942$0cc23f1a-498a-12fa-14f3-65b5ad815241\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 664875, \"id\": \"Q664875\"}}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "target_ref": "related:eth-domain"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    ]
+  },
+  "schema_version": "0.2.2",
+  "seed": {
+    "channels": [
+      "ranking_identifier",
+      "reviewed_institution_type"
+    ],
+    "import_id": "seed-84c3beb45367905f",
+    "screening_status": "needs_review"
+  },
+  "selection_policy": "preferred-v1",
+  "sources": {
+    "s1": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T11:26:38.230608+00:00",
+      "revision_id": 2562618481,
+      "source_qid": "Q11942",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2562618481"
+    },
+    "s10": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T11:27:26.309250+00:00",
+      "revision_id": 2561618009,
+      "source_qid": "Q72",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2561618009"
+    },
+    "s11": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T11:27:30.860750+00:00",
+      "revision_id": 2346073119,
+      "source_qid": "Q14565994",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2346073119"
+    },
+    "s12": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T11:27:36.584598+00:00",
+      "revision_id": 2552662854,
+      "source_qid": "Q664875",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2552662854"
+    },
+    "s13": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T11:27:41.149456+00:00",
+      "revision_id": 2554313224,
+      "source_qid": "Q60445979",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2554313224"
+    },
+    "s2": {
+      "family": "wikimedia",
+      "kind": "wikipedia",
+      "language": "en",
+      "page_id": 210910,
+      "publisher_role": "encyclopedia",
+      "retrieved_at": "2026-11-06T11:26:56.697449+00:00",
+      "revision_id": 1380132992,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1380132992"
+    },
+    "s3": {
+      "family": "wikimedia",
+      "kind": "wikipedia",
+      "language": "de",
+      "page_id": 1391,
+      "publisher_role": "encyclopedia",
+      "retrieved_at": "2026-11-06T11:27:01.049722+00:00",
+      "revision_id": 271916539,
+      "url": "https://de.wikipedia.org/w/index.php?oldid=271916539"
+    },
+    "s4": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T11:27:05.678607+00:00",
+      "revision_id": 2564041890,
+      "source_qid": "Q11573",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2564041890"
+    },
+    "s5": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T08:49:19.612846+00:00",
+      "revision_id": 2553301690,
+      "source_qid": "Q1371037",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2553301690"
+    },
+    "s6": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T08:48:57.696840+00:00",
+      "revision_id": 2559546120,
+      "source_qid": "Q875538",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2559546120"
+    },
+    "s7": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T11:27:12.676882+00:00",
+      "revision_id": 2505247812,
+      "source_qid": "Q845392",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2505247812"
+    },
+    "s8": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T11:27:17.620784+00:00",
+      "revision_id": 2555339508,
+      "source_qid": "Q1137109",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2555339508"
+    },
+    "s9": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T11:27:21.812566+00:00",
+      "revision_id": 2562955143,
+      "source_qid": "Q39",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2562955143"
+    }
+  },
+  "update_datetime": "2026-11-06T11:35:44.848372+00:00"
+}

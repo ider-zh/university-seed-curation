@@ -1,0 +1,1314 @@
+{
+  "coverage": {
+    "finance": {
+      "checked_at": "2026-11-06T11:26:52.569539+00:00",
+      "status": "checked"
+    },
+    "geography": {
+      "checked_at": "2026-11-06T11:26:52.569539+00:00",
+      "status": "checked"
+    },
+    "history": {
+      "checked_at": "2026-11-06T11:26:52.569539+00:00",
+      "status": "checked"
+    },
+    "identity": {
+      "checked_at": "2026-11-06T11:26:52.569539+00:00",
+      "status": "disputed"
+    },
+    "population": {
+      "checked_at": "2026-11-06T11:26:52.569539+00:00",
+      "status": "checked"
+    },
+    "profile": {
+      "checked_at": "2026-11-06T11:26:52.569539+00:00",
+      "status": "checked"
+    }
+  },
+  "curation": {
+    "identity_status": "in_scope",
+    "refresh_profile": "core-v1",
+    "reviewed_groups": [
+      "identity",
+      "geography",
+      "history",
+      "population",
+      "finance",
+      "profile"
+    ]
+  },
+  "finance": {
+    "revenue": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:Facts_.26_Figures",
+              "original_text": "3,37M€ revenues from contracts with the Industry in 2005",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2005
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": "3370000",
+            "currency": "EUR",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "single_source_family"
+        ],
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "history": {
+    "milestones": [
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Histoire",
+                  "original_text": "En 1883, l’école supérieure de chimie industrielle de Lyon (ESCIL) est fondée par Jules Raulin, ancien élève de Louis Pasteur.",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "precision": "year",
+                "year": 1883
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Histoire",
+                  "original_text": "En 1883, l’école supérieure de chimie industrielle de Lyon (ESCIL) est fondée par Jules Raulin, ancien élève de Louis Pasteur.",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "fr",
+                "text": "Fondation de l’École supérieure de chimie industrielle de Lyon par Jules Raulin."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "escil_origin",
+        "kind": "predecessor_establishment",
+        "subject_ref": "related:escil"
+      },
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Histoire",
+                  "original_text": "En 1919, l’institut de chimie et physique industrielles de Lyon (ICPI) est fondé par le Professeur Lepercq.",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "precision": "year",
+                "year": 1919
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Histoire",
+                  "original_text": "En 1919, l’institut de chimie et physique industrielles de Lyon (ICPI) est fondé par le Professeur Lepercq.",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "fr",
+                "text": "Fondation de l’institut de chimie et physique industrielles de Lyon par le Professeur Lepercq."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "icpi_origin",
+        "kind": "predecessor_establishment",
+        "subject_ref": "related:icpi"
+      },
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "Elle est née en 1994 de la fusion de deux écoles : l’Institut de chimie physique industrielle (ICPI), fondé en 1919, et l’École supérieure de chimie industrielle de Lyon (ESCIL), fondée en 1883.",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "precision": "year",
+                "year": 1994
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "Elle est née en 1994 de la fusion de deux écoles : l’Institut de chimie physique industrielle (ICPI), fondé en 1919, et l’École supérieure de chimie industrielle de Lyon (ESCIL), fondée en 1883.",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "fr",
+                "text": "Création de CPE Lyon par fusion de l’ESCIL et de l’ICPI."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "creation",
+        "kind": "institution_establishment",
+        "subject_ref": "institution"
+      },
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "Elle est née en 1994 de la fusion de deux écoles : l’Institut de chimie physique industrielle (ICPI), fondé en 1919, et l’École supérieure de chimie industrielle de Lyon (ESCIL), fondée en 1883.",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "precision": "year",
+                "year": 1994
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "Elle est née en 1994 de la fusion de deux écoles : l’Institut de chimie physique industrielle (ICPI), fondé en 1919, et l’École supérieure de chimie industrielle de Lyon (ESCIL), fondée en 1883.",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "fr",
+                "text": "Fusion de l’ESCIL et de l’ICPI pour fonder CPE Lyon."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "merger",
+        "kind": "merger",
+        "subject_ref": "institution"
+      }
+    ]
+  },
+  "identity": {
+    "aliases": [
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "L’École supérieure de chimie, physique, électronique de Lyon, communément désignée sous l'acronyme CPE Lyon (ou parfois ESCPE Lyon), est une école d'ingénieurs française spécialisée en chimie et en sciences du numérique, située sur le campus de la Doua (Villeurbanne, métropole de Lyon).",
+                "source_ref": "s3"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "fr",
+              "text": "CPE Lyon"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "L’École supérieure de chimie, physique, électronique de Lyon, communément désignée sous l'acronyme CPE Lyon (ou parfois ESCPE Lyon), est une école d'ingénieurs française spécialisée en chimie et en sciences du numérique, située sur le campus de la Doua (Villeurbanne, métropole de Lyon).",
+                "source_ref": "s3"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "fr",
+              "text": "ESCPE Lyon"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P1448:0",
+                "original_text": "{\"property\": \"P1448\", \"property_label\": \"official name\", \"statement_id\": \"Q10178$115C5606-46E4-41F2-82A4-B7545FB7FF17\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"ECOLE SUP CHIMIE PHYS ELECTRONIQ LYON\", \"language\": \"fr\"}, \"qualifiers\": {\"P1013\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 131741681, \"id\": \"Q131741681\"}}]}, \"reference_count\": 1}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "fr",
+              "text": "ECOLE SUP CHIMIE PHYS ELECTRONIQ LYON"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    ],
+    "kind": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "L’École supérieure de chimie, physique, électronique de Lyon, communément désignée sous l'acronyme CPE Lyon (ou parfois ESCPE Lyon), est une école d'ingénieurs française spécialisée en chimie et en sciences du numérique, située sur le campus de la Doua (Villeurbanne, métropole de Lyon).",
+              "source_ref": "s3"
+            },
+            {
+              "locator": "infobox:1",
+              "original_text": "Type: Grande école",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": "specialist_institution",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "names": {
+      "en": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q10178\", \"labels\": {\"fr\": \"École supérieure de chimie, physique, électronique de Lyon\", \"en\": \"École supérieure de chimie physique électronique de Lyon\"}, \"descriptions\": {\"en\": \"French engineering school\", \"fr\": \"école d'ingénieurs privée de la ville de Lyon habilitée par la CTI\"}}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": "École supérieure de chimie physique électronique de Lyon",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "fr": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "L’École supérieure de chimie, physique, électronique de Lyon, communément désignée sous l'acronyme CPE Lyon (ou parfois ESCPE Lyon), est une école d'ingénieurs française spécialisée en chimie et en sciences du numérique, située sur le campus de la Doua (Villeurbanne, métropole de Lyon).",
+                "source_ref": "s3"
+              }
+            ],
+            "id": "c1",
+            "value": "École supérieure de chimie, physique, électronique de Lyon",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    "operating_status": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:.C3.89tudes_d.27ing.C3.A9nieur",
+              "original_text": "European Biotechnology for Sustainability (EBS) - Nouveauté 2025",
+              "source_ref": "s3"
+            },
+            {
+              "locator": "section:Histoire",
+              "original_text": "Enfin, en 2025, Sophie Jullian devient la nouvelle Présidente de CPE Lyon.",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c1",
+          "value": "operating",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "leadership": {
+    "board_chair": {
+      "candidates": [
+        {
+          "current_basis": "undated_last_known",
+          "evidence": [
+            {
+              "locator": "section:Histoire",
+              "original_text": "En juillet 2020, c'est Bertrand Neuschwander, venu de l'industrie, qui prend la Présidence du Conseil d'Administration.",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "person": {
+              "name": "Bertrand Neuschwander"
+            },
+            "term_start": {
+              "month": 7,
+              "precision": "month",
+              "year": 2020
+            },
+            "title_original": {
+              "language": "fr",
+              "text": "Présidence du Conseil d'Administration"
+            }
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "single_source_family",
+          "last_known_only"
+        ],
+        "reason": "Use the best available last-known appointment without claiming an explicitly confirmed current term.",
+        "reason_code": "last_known"
+      }
+    },
+    "president": {
+      "candidates": [
+        {
+          "current_basis": "infobox_current",
+          "evidence": [
+            {
+              "locator": "infobox:3",
+              "original_text": "President: Bernard Bigot",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "person": {
+              "name": "Bernard Bigot"
+            },
+            "title_original": {
+              "language": "en",
+              "text": "President"
+            }
+          },
+          "verification": "supported"
+        },
+        {
+          "current_basis": "infobox_current",
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "Sophie Jullian",
+              "source_ref": "s3"
+            },
+            {
+              "locator": "section:Histoire",
+              "original_text": "Enfin, en 2025, Sophie Jullian devient la nouvelle Présidente de CPE Lyon.",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c2",
+          "value": {
+            "person": {
+              "name": "Sophie Jullian"
+            },
+            "term_start": {
+              "precision": "year",
+              "year": 2025
+            },
+            "title_original": {
+              "language": "fr",
+              "text": "Présidente"
+            }
+          },
+          "verification": "supported"
+        },
+        {
+          "current_basis": "historical",
+          "evidence": [
+            {
+              "locator": "section:Histoire",
+              "original_text": "En 2005, Jean Dercourt, secrétaire perpétuel de l’Académie des sciences, en devient le Président.",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c3",
+          "value": {
+            "person": {
+              "name": "Jean Dercourt"
+            },
+            "term_start": {
+              "precision": "year",
+              "year": 2005
+            },
+            "title_original": {
+              "language": "fr",
+              "text": "Président"
+            }
+          },
+          "verification": "supported"
+        },
+        {
+          "current_basis": "historical",
+          "evidence": [
+            {
+              "locator": "section:Histoire",
+              "original_text": "En 2011, Bernard Bigot devient Président de CPE Lyon.",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c4",
+          "value": {
+            "person": {
+              "name": "Bernard Bigot"
+            },
+            "term_start": {
+              "precision": "year",
+              "year": 2011
+            },
+            "title_original": {
+              "language": "fr",
+              "text": "Président"
+            }
+          },
+          "verification": "supported"
+        }
+      ],
+      "conflicts": [
+        {
+          "candidate_ids": [
+            "c1",
+            "c2"
+          ],
+          "kind": "value_disagreement",
+          "note": "English infobox names Bernard Bigot; French infobox names Sophie Jullian and explicitly dates her accession to 2025. These incompatible incumbent presentations remain visible; English is apparently stale.",
+          "status": "unresolved"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c2",
+        "qualifications": [
+          "single_source_family",
+          "conflicting_candidates",
+          "reported_current"
+        ],
+        "reason": "The page reports this person in its current officeholder field; a term-end date is not required.",
+        "reason_code": "infobox_current"
+      }
+    }
+  },
+  "locations": [
+    {
+      "address": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P159:0",
+                "original_text": "{\"property\": \"P159\", \"property_label\": \"headquarters location\", \"statement_id\": \"Q10178$24D4544B-27B6-48F2-8D42-AA8ABFE38CDB\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 582, \"id\": \"Q582\"}, \"qualifiers\": {\"P281\": [{\"snaktype\": \"value\", \"value\": \"69616 CEDEX\"}], \"P17\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 142, \"id\": \"Q142\"}}], \"P625\": [{\"snaktype\": \"value\", \"value\": {\"latitude\": 45.783888888889, \"longitude\": 4.8686111111111, \"altitude\": null, \"precision\": 0.00027777777777778, \"globe\": \"http://www.wikidata.org/entity/Q2\"}}], \"P6375\": [{\"snaktype\": \"value\", \"value\": {\"text\": \"43, boulevard du 11 Novembre 1918\", \"language\": \"fr\"}}]}}",
+                "source_ref": "s1"
+              },
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q582\", \"labels\": {\"en\": \"Villeurbanne\", \"fr\": \"Villeurbanne\"}, \"descriptions\": {\"en\": \"commune in the metropolis of Lyon, France\", \"fr\": \"commune française de la métropole de Lyon\"}}",
+                "source_ref": "s7"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "city_name": "Villeurbanne",
+              "city_qid": "Q582",
+              "country_name": "France",
+              "country_qid": "Q142",
+              "formatted": {
+                "language": "fr",
+                "text": "43, boulevard du 11 Novembre 1918, 69616 CEDEX, Villeurbanne, France"
+              },
+              "postal_code": "69616 CEDEX",
+              "street": "43, boulevard du 11 Novembre 1918"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "coordinates": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P159:0",
+                "original_text": "{\"property\": \"P159\", \"property_label\": \"headquarters location\", \"statement_id\": \"Q10178$24D4544B-27B6-48F2-8D42-AA8ABFE38CDB\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 582, \"id\": \"Q582\"}, \"qualifiers\": {\"P281\": [{\"snaktype\": \"value\", \"value\": \"69616 CEDEX\"}], \"P17\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 142, \"id\": \"Q142\"}}], \"P625\": [{\"snaktype\": \"value\", \"value\": {\"latitude\": 45.783888888889, \"longitude\": 4.8686111111111, \"altitude\": null, \"precision\": 0.00027777777777778, \"globe\": \"http://www.wikidata.org/entity/Q2\"}}], \"P6375\": [{\"snaktype\": \"value\", \"value\": {\"text\": \"43, boulevard du 11 Novembre 1918\", \"language\": \"fr\"}}]}}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "crs": "EPSG:4326",
+              "latitude": 45.783888888889,
+              "longitude": 4.8686111111111
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "id": "headquarters",
+      "kind": "headquarters",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q582\", \"labels\": {\"en\": \"Villeurbanne\", \"fr\": \"Villeurbanne\"}, \"descriptions\": {\"en\": \"commune in the metropolis of Lyon, France\", \"fr\": \"commune française de la métropole de Lyon\"}}",
+                "source_ref": "s7"
+              },
+              {
+                "locator": "claim:P159:0",
+                "original_text": "{\"property\": \"P159\", \"property_label\": \"headquarters location\", \"statement_id\": \"Q10178$24D4544B-27B6-48F2-8D42-AA8ABFE38CDB\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 582, \"id\": \"Q582\"}, \"qualifiers\": {\"P281\": [{\"snaktype\": \"value\", \"value\": \"69616 CEDEX\"}], \"P17\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 142, \"id\": \"Q142\"}}], \"P625\": [{\"snaktype\": \"value\", \"value\": {\"latitude\": 45.783888888889, \"longitude\": 4.8686111111111, \"altitude\": null, \"precision\": 0.00027777777777778, \"globe\": \"http://www.wikidata.org/entity/Q2\"}}], \"P6375\": [{\"snaktype\": \"value\", \"value\": {\"text\": \"43, boulevard du 11 Novembre 1918\", \"language\": \"fr\"}}]}}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "fr",
+              "text": "Villeurbanne"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "qid": "Q582"
+    },
+    {
+      "id": "doua",
+      "kind": "campus",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "L’École supérieure de chimie, physique, électronique de Lyon, communément désignée sous l'acronyme CPE Lyon (ou parfois ESCPE Lyon), est une école d'ingénieurs française spécialisée en chimie et en sciences du numérique, située sur le campus de la Doua (Villeurbanne, métropole de Lyon).",
+                "source_ref": "s3"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "fr",
+              "text": "campus de la Doua"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    {
+      "coordinates": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "statement:Q10178$db83454c-4fb1-d2aa-e544-60f43c008618",
+                "original_text": "\"latitude\": 45.78421361111111",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "source_rank": "normal",
+            "value": {
+              "crs": "EPSG:4326",
+              "globe_qid": "Q2",
+              "latitude": 45.78421361111111,
+              "longitude": 4.869380277777777,
+              "source_precision_degrees": 2.7777777777777776e-07
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "id": "wikidata-item-location",
+      "kind": "institution",
+      "qid": "Q10178"
+    }
+  ],
+  "modified_datetime": "2026-11-06T11:31:43.648949+00:00",
+  "population": {
+    "administrative_staff": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:5",
+              "original_text": "Administrative staff: 400",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "period_status": "not_stated",
+          "value": {
+            "amount": 400,
+            "basis": "headcount",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "period_not_stated",
+          "single_source_family"
+        ],
+        "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+        "reason_code": "only_available"
+      }
+    },
+    "students_intake": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:Pr.C3.A9sentation_g.C3.A9n.C3.A9rale",
+              "original_text": "L’école est située sur le campus de la Doua à Villeurbanne (Rhône) et accueille environ 400 nouveaux élèves chaque année (données 2020).",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c1",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2020
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 400,
+            "basis": "headcount",
+            "precision": "approximate"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "single_source_family",
+          "approximate_value"
+        ],
+        "reason_code": "only_available"
+      }
+    },
+    "students_total": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:6",
+              "original_text": "Students: 1,650[1]",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Notes_and_references",
+              "original_text": "^ 1200 students on engineer courses, 450 students in integrated preparatory classes",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "period_status": "not_stated",
+          "value": {
+            "amount": 1650,
+            "basis": "headcount",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "period_not_stated",
+          "single_source_family"
+        ],
+        "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "profile": {
+    "academic_focus": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:.C3.89tudes_d.27ing.C3.A9nieur",
+              "original_text": "L'école délivre sept diplômes d'ingénieur, dans trois domaines : chimie-procédés, biotechnologies et sciences du numérique.",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c1",
+          "value": [
+            {
+              "language": "fr",
+              "text": "chimie-procédés"
+            },
+            {
+              "language": "fr",
+              "text": "biotechnologies"
+            },
+            {
+              "language": "fr",
+              "text": "sciences du numérique"
+            }
+          ],
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "degree_levels": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:Degrees",
+              "original_text": "CPE Lyon offers two diplôme d'ingénieur (French: [diplom dɛ̃ʒenjœʁ]) and two Master's level degrees, in two disciplines[2] and three diplomas.[3]",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Degrees",
+              "original_text": "Selected students can prepare a PhD in one of the research laboratories (50 new students per year on average).",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": [
+            "diplôme d’ingénieur",
+            "Master's level",
+            "PhD"
+          ],
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "main_image_url": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox_image_urls",
+              "original_text": "[\"https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Cpe_front_building.JPG/250px-Cpe_front_building.JPG?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail\", \"https://thumb.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail\", \"https://maps.wikimedia.org/img/osm-intl,13,a,a,270x200.png?lang=en&domain=en.wikipedia.org&title=%C3%89cole_Sup%C3%A9rieure_de_Chimie_Physique_%C3%89lectronique_de_Lyon&revid=1356252700&groups=_5e4723a974e2b0157f1d0be6df8bd31465da3d87&parser=legacy\"]",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Cpe_front_building.JPG/250px-Cpe_front_building.JPG?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "motto": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P1451:0",
+              "original_text": "{\"property\": \"P1451\", \"property_label\": \"motto text\", \"statement_id\": \"Q10178$19ca765a-4e14-04ca-8f45-c7d0223b67de\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"Live and discover\", \"language\": \"en\"}}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "language": "en",
+            "text": "Live and discover"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "summary": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "L’École supérieure de chimie, physique, électronique de Lyon, communément désignée sous l'acronyme CPE Lyon (ou parfois ESCPE Lyon), est une école d'ingénieurs française spécialisée en chimie et en sciences du numérique, située sur le campus de la Doua (Villeurbanne, métropole de Lyon).",
+              "source_ref": "s3"
+            },
+            {
+              "locator": "section:lead",
+              "original_text": "Elle est née en 1994 de la fusion de deux écoles : l’Institut de chimie physique industrielle (ICPI), fondé en 1919, et l’École supérieure de chimie industrielle de Lyon (ESCIL), fondée en 1883.",
+              "source_ref": "s3"
+            },
+            {
+              "locator": "section:Pr.C3.A9sentation_g.C3.A9n.C3.A9rale",
+              "original_text": "[modifier | modifier le code]\nCPE Lyon est une école privée sous tutelle de la Chambre de commerce et d'industrie de Lyon, la Fondation scientifique de Lyon et du Sud-Est et l’Institut catholique de Lyon. Elle est également rattachée à l'université Lyon I[1]. Elle est membre du pôle de recherche et d'enseignement supérieur (PRES) de l'université de Lyon.\nL’école est située sur le campus de la Doua à Villeurbanne (Rhône) et accueille environ 400 nouveaux élèves chaque année (données 2020).",
+              "source_ref": "s3"
+            },
+            {
+              "locator": "section:Histoire",
+              "original_text": "En 1883, l’école supérieure de chimie industrielle de Lyon (ESCIL) est fondée par Jules Raulin, ancien élève de Louis Pasteur.",
+              "source_ref": "s3"
+            },
+            {
+              "locator": "section:Histoire",
+              "original_text": "En 1919, l’institut de chimie et physique industrielles de Lyon (ICPI) est fondé par le Professeur Lepercq.",
+              "source_ref": "s3"
+            },
+            {
+              "locator": "section:.C3.89tudes_d.27ing.C3.A9nieur",
+              "original_text": "L'école délivre sept diplômes d'ingénieur, dans trois domaines : chimie-procédés, biotechnologies et sciences du numérique.",
+              "source_ref": "s3"
+            },
+            {
+              "locator": "section:.C3.89tudes_d.27ing.C3.A9nieur",
+              "original_text": "Physique et Systèmes Microélectroniques (PSM), ouvert en 2023, en alternance en partenariat avec l'ITII Lyon - environ 20 élèves par promotion.",
+              "source_ref": "s3"
+            },
+            {
+              "locator": "section:Classes_pr.C3.A9paratoires_associ.C3.A9es",
+              "original_text": "CPE Lyon propose des classes préparatoires associées à l'Institution des Chartreux. Elles sont situées dans le quartier de Saint-Just et ont la particularité d’appliquer le même programme que les CPGE « classiques ».",
+              "source_ref": "s3"
+            },
+            {
+              "locator": "section:Degrees",
+              "original_text": "CPE Lyon also conducts research in organic chemistry, analytical sciences, chemical and process engineering, microelectronics and image processing.",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "language": "en",
+            "text": "École supérieure de chimie, physique, électronique de Lyon, commonly known as CPE Lyon or ESCPE Lyon, is a private French engineering school on the campus de la Doua in Villeurbanne, in the Lyon metropolitan area. Its teaching spans chemistry and process engineering, biotechnology and digital sciences. The school is associated with Université Lyon I and belongs to the research and higher education grouping of the Université de Lyon.\n\nThe present institution was created in 1994 through the merger of two schools with separate histories. The École supérieure de chimie industrielle de Lyon (ESCIL) was founded in 1883 by Jules Raulin, a former student of Louis Pasteur. The Institut de chimie et physique industrielles de Lyon (ICPI) was founded in 1919 by Professor Lepercq. These predecessor dates distinguish the school's nineteenth-century origins from the formation of CPE Lyon itself.\n\nCPE Lyon offers engineering qualifications across its three principal subject areas, including programmes delivered through work and study arrangements. Associated preparatory classes at the Institution des Chartreux are located in Lyon's Saint-Just district. The school reported approximately 400 new students annually in 2020. Its research includes organic chemistry, analytical sciences, chemical and process engineering, microelectronics and image processing."
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "website": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P856:0",
+              "original_text": "{\"property\": \"P856\", \"property_label\": \"official website\", \"statement_id\": \"Q10178$B2AF9B47-66F8-4B46-8BAE-98A161DAF731\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"https://www.cpe.fr/\", \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "value": "https://www.cpe.fr/",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "qid": "Q10178",
+  "record_revision": 1,
+  "related_entities": {
+    "escil": {
+      "kind": "institution",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "Elle est née en 1994 de la fusion de deux écoles : l’Institut de chimie physique industrielle (ICPI), fondé en 1919, et l’École supérieure de chimie industrielle de Lyon (ESCIL), fondée en 1883.",
+                "source_ref": "s3"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "fr",
+              "text": "École supérieure de chimie industrielle de Lyon"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    "icpi": {
+      "kind": "institution",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "Elle est née en 1994 de la fusion de deux écoles : l’Institut de chimie physique industrielle (ICPI), fondé en 1919, et l’École supérieure de chimie industrielle de Lyon (ESCIL), fondée en 1883.",
+                "source_ref": "s3"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "fr",
+              "text": "Institut de chimie physique industrielle"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    "universite_lyon": {
+      "kind": "university_system",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Pr.C3.A9sentation_g.C3.A9n.C3.A9rale",
+                "original_text": "Elle est membre du pôle de recherche et d'enseignement supérieur (PRES) de l'université de Lyon.",
+                "source_ref": "s3"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "fr",
+              "text": "Université de Lyon"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    }
+  },
+  "relationships": {
+    "campus": [
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "L’École supérieure de chimie, physique, électronique de Lyon, communément désignée sous l'acronyme CPE Lyon (ou parfois ESCPE Lyon), est une école d'ingénieurs française spécialisée en chimie et en sciences du numérique, située sur le campus de la Doua (Villeurbanne, métropole de Lyon).",
+                "source_ref": "s3"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "target_ref": "location:doua"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    ],
+    "member_of": [
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Pr.C3.A9sentation_g.C3.A9n.C3.A9rale",
+                "original_text": "Elle est membre du pôle de recherche et d'enseignement supérieur (PRES) de l'université de Lyon.",
+                "source_ref": "s3"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "target_ref": "related:universite_lyon"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    ],
+    "predecessor": [
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "Elle est née en 1994 de la fusion de deux écoles : l’Institut de chimie physique industrielle (ICPI), fondé en 1919, et l’École supérieure de chimie industrielle de Lyon (ESCIL), fondée en 1883.",
+                "source_ref": "s3"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "target_ref": "related:escil"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "Elle est née en 1994 de la fusion de deux écoles : l’Institut de chimie physique industrielle (ICPI), fondé en 1919, et l’École supérieure de chimie industrielle de Lyon (ESCIL), fondée en 1883.",
+                "source_ref": "s3"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "target_ref": "related:icpi"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    ]
+  },
+  "schema_version": "0.2.2",
+  "seed": {
+    "channels": [
+      "reviewed_institution_type"
+    ],
+    "import_id": "seed-84c3beb45367905f",
+    "screening_status": "included"
+  },
+  "selection_policy": "preferred-v1",
+  "sources": {
+    "s1": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T11:26:38.173323+00:00",
+      "revision_id": 2484473768,
+      "source_qid": "Q10178",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2484473768"
+    },
+    "s2": {
+      "family": "wikimedia",
+      "kind": "wikipedia",
+      "language": "en",
+      "page_id": 597739,
+      "publisher_role": "encyclopedia",
+      "retrieved_at": "2026-11-06T11:26:48.540696+00:00",
+      "revision_id": 1356252700,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1356252700"
+    },
+    "s3": {
+      "family": "wikimedia",
+      "kind": "wikipedia",
+      "language": "fr",
+      "page_id": 71668,
+      "publisher_role": "encyclopedia",
+      "retrieved_at": "2026-11-06T11:26:52.452711+00:00",
+      "revision_id": 240014893,
+      "url": "https://fr.wikipedia.org/w/index.php?oldid=240014893"
+    },
+    "s4": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T11:16:56.873368+00:00",
+      "revision_id": 2553501921,
+      "source_qid": "Q38723",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2553501921"
+    },
+    "s5": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T11:11:54.452975+00:00",
+      "revision_id": 2541518756,
+      "source_qid": "Q847027",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2541518756"
+    },
+    "s6": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T09:16:05.838184+00:00",
+      "revision_id": 2564285160,
+      "source_qid": "Q142",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2564285160"
+    },
+    "s7": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T09:16:12.743053+00:00",
+      "revision_id": 2563754608,
+      "source_qid": "Q582",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2563754608"
+    }
+  },
+  "update_datetime": "2026-11-06T11:31:43.648949+00:00"
+}

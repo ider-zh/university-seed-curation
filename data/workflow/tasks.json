@@ -1,4 +1,19 @@
 {
-  "tasks": {},
+  "tasks": {
+    "Q13164": {
+      "open_requests": [
+        {
+          "category": "scope_conflict",
+          "field": "history.milestones.date",
+          "reason": "At $.history.milestones[0].date.conflicts[0].note: Correct calendar interpretation using supplied root P571 statement Q13164$b404703c-45ce-1018-db01-46dd61cdfd6f and s1 claim:P571:0: calendarmodel is Q1985786 (Julian), not Gregorian. s2 Imperial_Moscow_University explicitly pairs 23 January with Old Style 12 January 1755. Preserve c1 raw 12 January Julian and c2 23 January New Style observations with a calendar qualification; remove or reword the alleged time-disagreement conflict so equivalent calendar renderings are not portrayed as contradictory dates. If date value cannot encode a calendar, retain explicit Julian/Old Style wording in associated evidence/qualification rather than reinterpret c1 as Gregorian.",
+          "request_id": "45bd1dd6-09e2-56df-964e-a56bec30b42e",
+          "reviewed_proposal_sha256": "a5330723cdcbf745259860b214bbea38a2336a9188ca46124da05bd4f8ffd8c6"
+        }
+      ],
+      "phase": "revision_requested",
+      "reason": "resume_after_private_workspace_loss",
+      "revision": 0
+    }
+  },
   "type": "university-manager-backlog-v1"
 }

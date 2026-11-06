@@ -1,0 +1,4049 @@
+{
+  "attribution": "distinct_native_research_and_review_subagents;not_cryptographic_identity",
+  "research": {
+    "baseline_sha256": "absent",
+    "candidate": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-06T11:31:12.608888+00:00",
+          "status": "checked"
+        },
+        "geography": {
+          "checked_at": "2026-11-06T11:31:12.608888+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-06T11:31:12.608888+00:00",
+          "status": "checked"
+        },
+        "identity": {
+          "checked_at": "2026-11-06T11:31:12.608888+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-06T11:31:12.608888+00:00",
+          "status": "checked"
+        },
+        "profile": {
+          "checked_at": "2026-11-06T11:31:12.608888+00:00",
+          "status": "checked"
+        }
+      },
+      "curation": {
+        "identity_status": "in_scope"
+      },
+      "finance": {
+        "endowment": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P6589:0",
+                  "original_text": "{\"property\": \"P6589\", \"property_label\": \"endowment\", \"statement_id\": \"Q12432$64782252-FEBC-40E7-95C5-7409CC85AC18\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+147630662\", \"unit\": \"http://www.wikidata.org/entity/Q4917\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2022-06-30T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "metadata",
+                  "original_text": "{\"id\": \"Q4917\", \"labels\": {\"en\": \"United States dollar\"}, \"descriptions\": {\"en\": \"official currency of the United States\"}}",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "date": "2022-06-30",
+                "kind": "date"
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": "147630662",
+                "currency": "USD",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P6589:1",
+                  "original_text": "{\"property\": \"P6589\", \"property_label\": \"endowment\", \"statement_id\": \"Q12432$EA8D48B8-C035-49FD-964E-58B0612FBBE7\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+151519725\", \"unit\": \"http://www.wikidata.org/entity/Q4917\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2021-06-30T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "metadata",
+                  "original_text": "{\"id\": \"Q4917\", \"labels\": {\"en\": \"United States dollar\"}, \"descriptions\": {\"en\": \"official currency of the United States\"}}",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c2",
+              "period": {
+                "date": "2021-06-30",
+                "kind": "date"
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": "151519725",
+                "currency": "USD",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:5",
+                  "original_text": "Endowment: $184.15 million (2025)[1]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c3",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2025
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": "184150000",
+                "currency": "USD",
+                "precision": "approximate"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c3",
+            "qualifications": [
+              "single_source_family",
+              "approximate_value"
+            ],
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        }
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:History",
+                      "original_text": "Michigan Tech was founded in 1885 as the Michigan Mining School.[7] After much agitation by Jay Abel Hubbell, the state legislature established the school to train mining engineers. Hubbell donated land for the school's first buildings.[8]",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 1885
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:History",
+                      "original_text": "Michigan Tech was founded in 1885 as the Michigan Mining School.[7] After much agitation by Jay Abel Hubbell, the state legislature established the school to train mining engineers. Hubbell donated land for the school's first buildings.[8]",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "Founded as the Michigan Mining School by the state legislature to train mining engineers."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "founded",
+            "kind": "institution_establishment",
+            "subject_ref": "institution"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:History",
+                      "original_text": "The name was then changed to the Michigan College of Mines in 1897.[11]",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 1897
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:History",
+                      "original_text": "The name was then changed to the Michigan College of Mines in 1897.[11]",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "Renamed Michigan College of Mines."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "rename-1897",
+            "kind": "rename",
+            "subject_ref": "institution"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:History",
+                      "original_text": "the school had begun offering a wider variety of degrees and once again decided to change its name to the Michigan College of Mining and Technology in 1927.[11]",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 1927
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:History",
+                      "original_text": "the school had begun offering a wider variety of degrees and once again decided to change its name to the Michigan College of Mining and Technology in 1927.[11]",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "Renamed Michigan College of Mining and Technology."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "rename-1927",
+            "kind": "rename",
+            "subject_ref": "institution"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:History",
+                      "original_text": "In 1964, one of the final years of his presidency, the school changed from a college to a university, changing its name a final time to Michigan Technological University.",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 1964
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:History",
+                      "original_text": "In 1964, one of the final years of his presidency, the school changed from a college to a university, changing its name a final time to Michigan Technological University.",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "Changed from a college to a university and adopted the name Michigan Technological University."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "university-1964",
+            "kind": "university_status",
+            "subject_ref": "institution"
+          }
+        ]
+      },
+      "identity": {
+        "aliases": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "Michigan Technological University (Michigan Tech, MTU, or simply Tech) is a public research university in Houghton, Michigan, United States.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Michigan Tech"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "Michigan Technological University (Michigan Tech, MTU, or simply Tech) is a public research university in Houghton, Michigan, United States.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "MTU"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "Michigan Technological University (Michigan Tech, MTU, or simply Tech) is a public research university in Houghton, Michigan, United States.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Tech"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "infobox:0",
+                    "original_text": "Former names: Michigan Mining School (1885–1897)Michigan College of Mines (1897–1927)Michigan College of Mining and Technology (1927–1964)",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Michigan Mining School"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "infobox:0",
+                    "original_text": "Former names: Michigan Mining School (1885–1897)Michigan College of Mines (1897–1927)Michigan College of Mining and Technology (1927–1964)",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Michigan College of Mines"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "infobox:0",
+                    "original_text": "Former names: Michigan Mining School (1885–1897)Michigan College of Mines (1897–1927)Michigan College of Mining and Technology (1927–1964)",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Michigan College of Mining and Technology"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ],
+        "identifiers": {
+          "P5242": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P5242:0",
+                    "original_text": "{\"property\": \"P5242\", \"property_label\": \"ARWU university ID\", \"statement_id\": \"Q12432$C9764CE1-A47A-4284-BFFE-F6B82E7E03E1\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"Michigan-Technological-University\"}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "Michigan-Technological-University",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "P5584": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P5584:0",
+                    "original_text": "{\"property\": \"P5584\", \"property_label\": \"QS World University ID\", \"statement_id\": \"Q12432$05D09402-2ECA-4183-90E4-C3473D9CC80B\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"michigan-technological-university\"}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "michigan-technological-university",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "P5586": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P5586:0",
+                    "original_text": "{\"property\": \"P5586\", \"property_label\": \"Times Higher Education World University ID\", \"statement_id\": \"Q12432$147241EF-D5E9-477E-AB01-ADC13C040966\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"michigan-technological-university\"}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "michigan-technological-university",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:2",
+                  "original_text": "Type: Public research university",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "university",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q12432\", \"labels\": {\"en\": \"Michigan Technological University\"}, \"descriptions\": {\"en\": \"University in Houghton, Michigan\"}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "Michigan Technological University",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        "ownership": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:2",
+                  "original_text": "Type: Public research university",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "public",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "leadership": {
+        "president": {
+          "candidates": [
+            {
+              "current_basis": "infobox_current",
+              "evidence": [
+                {
+                  "locator": "infobox:6",
+                  "original_text": "President: Richard J. Koubek",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "person": {
+                  "name": "Richard J. Koubek"
+                },
+                "title_original": {
+                  "language": "en",
+                  "text": "President"
+                }
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family",
+              "reported_current"
+            ],
+            "reason": "The page reports this person in its current officeholder field; a term-end date is not required.",
+            "reason_code": "infobox_current"
+          }
+        },
+        "provost": {
+          "candidates": [
+            {
+              "current_basis": "infobox_current",
+              "evidence": [
+                {
+                  "locator": "infobox:7",
+                  "original_text": "Provost: Andrew Storer",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "person": {
+                  "name": "Andrew Storer"
+                },
+                "title_original": {
+                  "language": "en",
+                  "text": "Provost"
+                }
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family",
+              "reported_current"
+            ],
+            "reason": "The page reports this person in its current officeholder field; a term-end date is not required.",
+            "reason_code": "infobox_current"
+          }
+        }
+      },
+      "locations": [
+        {
+          "id": "michigan",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"q12432$86F6D47B-CF2E-4070-A8EE-32F8A77B5066\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 1166, \"id\": \"Q1166\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q1166\", \"labels\": {\"en\": \"Michigan\"}, \"descriptions\": {\"en\": \"state of the United States of America\"}}",
+                    "source_ref": "s7"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Michigan"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q1166"
+        },
+        {
+          "id": "us",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q12432$3446BF0C-8E7B-4179-B694-AF31E24E2DA2\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 30, \"id\": \"Q30\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q30\", \"labels\": {\"en\": \"United States\"}, \"descriptions\": {\"en\": \"country located primarily in North America\"}}",
+                    "source_ref": "s6"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "United States"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q30"
+        },
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P159:0",
+                    "original_text": "\"qualifiers\": {\"P625\": [{\"snaktype\": \"value\", \"value\": {\"latitude\": 47.1105, \"longitude\": -88.5312, \"altitude\": null, \"precision\": 0.0001, \"globe\": \"http://www.wikidata.org/entity/Q2\"}}], \"P281\": [{\"snaktype\": \"value\", \"value\": \"49931\"}], \"P17\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 30, \"id\": \"Q30\"}}], \"P6375\": [{\"snaktype\": \"value\", \"value\": {\"text\": \"1400 Townsend Drive\", \"language\": \"en\"}}]}}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q12429\", \"labels\": {\"en\": \"Houghton\"}, \"descriptions\": {\"en\": \"county seat of Houghton County, Michigan, United States\"}}",
+                    "source_ref": "s8"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "city_name": "Houghton",
+                  "city_qid": "Q12429",
+                  "country_qid": "Q30",
+                  "formatted": {
+                    "language": "en",
+                    "text": "1400 Townsend Drive"
+                  },
+                  "postal_code": "49931",
+                  "street": "1400 Townsend Drive"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "coordinates": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P159:0",
+                    "original_text": "\"qualifiers\": {\"P625\": [{\"snaktype\": \"value\", \"value\": {\"latitude\": 47.1105, \"longitude\": -88.5312, \"altitude\": null, \"precision\": 0.0001, \"globe\": \"http://www.wikidata.org/entity/Q2\"}}], \"P281\": [{\"snaktype\": \"value\", \"value\": \"49931\"}], \"P17\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 30, \"id\": \"Q30\"}}], \"P6375\": [{\"snaktype\": \"value\", \"value\": {\"text\": \"1400 Townsend Drive\", \"language\": \"en\"}}]}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "crs": "EPSG:4326",
+                  "latitude": 47.1105,
+                  "longitude": -88.5312
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "houghton-hq",
+          "kind": "headquarters",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P159:0",
+                    "original_text": "\"value\": {\"entity-type\": \"item\", \"numeric-id\": 12429, \"id\": \"Q12429\"}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q12429\", \"labels\": {\"en\": \"Houghton\"}, \"descriptions\": {\"en\": \"county seat of Houghton County, Michigan, United States\"}}",
+                    "source_ref": "s8"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Houghton"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q12429"
+        },
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Campus",
+                    "original_text": "The main Michigan Tech campus is located in Houghton, Michigan—north of US 41 and south of the Portage Canal.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "city_name": "Houghton",
+                  "city_qid": "Q12429",
+                  "country_qid": "Q30",
+                  "formatted": {
+                    "language": "en",
+                    "text": "Houghton, Michigan"
+                  },
+                  "region_name": "Michigan",
+                  "region_qid": "Q1166"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "main",
+          "kind": "campus",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Campus",
+                    "original_text": "The main Michigan Tech campus is located in Houghton, Michigan—north of US 41 and south of the Portage Canal.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Main Michigan Tech campus"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        {
+          "coordinates": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "statement:q12432$7BB0649E-AA3E-464C-AE16-5E9F14548EDF",
+                    "original_text": "\"latitude\": 47.12",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "source_rank": "normal",
+                "value": {
+                  "crs": "EPSG:4326",
+                  "globe_qid": "Q2",
+                  "latitude": 47.12,
+                  "longitude": -88.55
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "wikidata-item-location",
+          "kind": "institution",
+          "qid": "Q12432"
+        }
+      ],
+      "modified_datetime": "2026-11-06T11:34:40.433436+00:00",
+      "population": {
+        "academic_staff": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Faculty",
+                  "original_text": "As of 2025, Michigan Tech has 495 faculty.[84]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2025
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 495,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:Student_body",
+                  "original_text": "The student body consisted of 7,324 students, including 1,421 graduate students and 473 faculty members.[59]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c2",
+              "period": {
+                "end_year": 2024,
+                "kind": "academic_year",
+                "label": "2023–2024",
+                "start_year": 2023
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 473,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        },
+        "administrative_staff": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:9",
+                  "original_text": "Administrative staff: 1,205[2]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period_status": "not_stated",
+              "value": {
+                "amount": 1205,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "period_not_stated",
+              "single_source_family"
+            ],
+            "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+            "reason_code": "only_available"
+          }
+        },
+        "employees_total": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P1128:0",
+                  "original_text": "{\"property\": \"P1128\", \"property_label\": \"employees\", \"statement_id\": \"Q12432$09B8D162-EC62-48FC-ABDE-35C46FFF67FB\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+1519\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2020-09-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 10, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "kind": "date",
+                "label": "September 2020",
+                "year": 2020
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 1519,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason_code": "only_available"
+          }
+        },
+        "postgraduate_students": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:12",
+                  "original_text": "Postgraduates: 1,407[2]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period_status": "not_stated",
+              "value": {
+                "amount": 1407,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:Student_body",
+                  "original_text": "The student body consisted of 7,324 students, including 1,421 graduate students and 473 faculty members.[59]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c2",
+              "period": {
+                "end_year": 2024,
+                "kind": "academic_year",
+                "label": "2023–2024",
+                "start_year": 2023
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 1421,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "period_not_stated",
+              "single_source_family"
+            ],
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        },
+        "students_intake": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Undergraduate_admissions",
+                  "original_text": "Fall first-time freshman statistics\n[30]\n[33]\n[34]\n[35]\n[36]\n[37]\n2021\n2020\n2019\n2018\n2017\n2016\nApplicants\n8,041\n7,476\n5,978\n5,838\n5,469\n5,589\nAdmits\n6,895\n5,260\n4,442\n4,313\n4,074\n4,272\nAdmit rate\n85.7\n70.4\n74.3\n73.9\n74.5\n76.4\nEnrolled\n1,479\n1,201\n1,301\n1,245\n1,323\n1,381",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "kind": "academic_year",
+                "label": "Fall 2021 first-time freshmen",
+                "year": 2021
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 1479,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:Undergraduate_admissions",
+                  "original_text": "Fall first-time freshman statistics\n[30]\n[33]\n[34]\n[35]\n[36]\n[37]\n2021\n2020\n2019\n2018\n2017\n2016\nApplicants\n8,041\n7,476\n5,978\n5,838\n5,469\n5,589\nAdmits\n6,895\n5,260\n4,442\n4,313\n4,074\n4,272\nAdmit rate\n85.7\n70.4\n74.3\n73.9\n74.5\n76.4\nEnrolled\n1,479\n1,201\n1,301\n1,245\n1,323\n1,381",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c2",
+              "period": {
+                "kind": "academic_year",
+                "label": "Fall 2020 first-time freshmen",
+                "year": 2020
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 1201,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:Undergraduate_admissions",
+                  "original_text": "Fall first-time freshman statistics\n[30]\n[33]\n[34]\n[35]\n[36]\n[37]\n2021\n2020\n2019\n2018\n2017\n2016\nApplicants\n8,041\n7,476\n5,978\n5,838\n5,469\n5,589\nAdmits\n6,895\n5,260\n4,442\n4,313\n4,074\n4,272\nAdmit rate\n85.7\n70.4\n74.3\n73.9\n74.5\n76.4\nEnrolled\n1,479\n1,201\n1,301\n1,245\n1,323\n1,381",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c3",
+              "period": {
+                "kind": "academic_year",
+                "label": "Fall 2019 first-time freshmen",
+                "year": 2019
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 1301,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:Undergraduate_admissions",
+                  "original_text": "Fall first-time freshman statistics\n[30]\n[33]\n[34]\n[35]\n[36]\n[37]\n2021\n2020\n2019\n2018\n2017\n2016\nApplicants\n8,041\n7,476\n5,978\n5,838\n5,469\n5,589\nAdmits\n6,895\n5,260\n4,442\n4,313\n4,074\n4,272\nAdmit rate\n85.7\n70.4\n74.3\n73.9\n74.5\n76.4\nEnrolled\n1,479\n1,201\n1,301\n1,245\n1,323\n1,381",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c4",
+              "period": {
+                "kind": "academic_year",
+                "label": "Fall 2018 first-time freshmen",
+                "year": 2018
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 1245,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:Undergraduate_admissions",
+                  "original_text": "Fall first-time freshman statistics\n[30]\n[33]\n[34]\n[35]\n[36]\n[37]\n2021\n2020\n2019\n2018\n2017\n2016\nApplicants\n8,041\n7,476\n5,978\n5,838\n5,469\n5,589\nAdmits\n6,895\n5,260\n4,442\n4,313\n4,074\n4,272\nAdmit rate\n85.7\n70.4\n74.3\n73.9\n74.5\n76.4\nEnrolled\n1,479\n1,201\n1,301\n1,245\n1,323\n1,381",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c5",
+              "period": {
+                "kind": "academic_year",
+                "label": "Fall 2017 first-time freshmen",
+                "year": 2017
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 1323,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:Undergraduate_admissions",
+                  "original_text": "Fall first-time freshman statistics\n[30]\n[33]\n[34]\n[35]\n[36]\n[37]\n2021\n2020\n2019\n2018\n2017\n2016\nApplicants\n8,041\n7,476\n5,978\n5,838\n5,469\n5,589\nAdmits\n6,895\n5,260\n4,442\n4,313\n4,074\n4,272\nAdmit rate\n85.7\n70.4\n74.3\n73.9\n74.5\n76.4\nEnrolled\n1,479\n1,201\n1,301\n1,245\n1,323\n1,381",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c6",
+              "period": {
+                "kind": "academic_year",
+                "label": "Fall 2016 first-time freshmen",
+                "year": 2016
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 1381,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        },
+        "students_total": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2196:1",
+                  "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q12432$280F8AED-A86B-46C1-85EF-B39D982049B6\", \"rank\": \"preferred\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+7074\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2022-09-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 10, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "kind": "date",
+                "label": "September 2022",
+                "year": 2022
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 7074,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:10",
+                  "original_text": "Students: 7,429[2]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c2",
+              "period_status": "not_stated",
+              "value": {
+                "amount": 7429,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:Today",
+                  "original_text": "As of the fall semester in 2021, the total enrollment at Michigan Technological University is 6,977.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c3",
+              "period": {
+                "kind": "academic_year",
+                "label": "Fall semester 2021",
+                "year": 2021
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 6977,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:Student_body",
+                  "original_text": "The student body consisted of 7,324 students, including 1,421 graduate students and 473 faculty members.[59]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c4",
+              "period": {
+                "end_year": 2024,
+                "kind": "academic_year",
+                "label": "2023–2024",
+                "start_year": 2023
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 7324,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c2",
+            "qualifications": [
+              "period_not_stated",
+              "single_source_family"
+            ],
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        },
+        "undergraduate_students": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:11",
+                  "original_text": "Undergraduates: 6,022[2]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period_status": "not_stated",
+              "value": {
+                "amount": 6022,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "period_not_stated",
+              "single_source_family"
+            ],
+            "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "profile": {
+        "academic_focus": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Divisions",
+                  "original_text": "Michigan Tech offers more than 120 undergraduate and graduate degrees in engineering, natural and physical sciences, computing, business and economics, technology, environmental studies, arts, humanities, and social sciences.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": [
+                {
+                  "language": "en",
+                  "text": "engineering"
+                },
+                {
+                  "language": "en",
+                  "text": "natural and physical sciences"
+                },
+                {
+                  "language": "en",
+                  "text": "computing"
+                },
+                {
+                  "language": "en",
+                  "text": "business and economics"
+                },
+                {
+                  "language": "en",
+                  "text": "technology"
+                },
+                {
+                  "language": "en",
+                  "text": "environmental studies"
+                },
+                {
+                  "language": "en",
+                  "text": "arts"
+                },
+                {
+                  "language": "en",
+                  "text": "humanities"
+                },
+                {
+                  "language": "en",
+                  "text": "social sciences"
+                }
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "degree_levels": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Divisions",
+                  "original_text": "The undergraduate degree programs, together with masters and doctoral degrees are offered across the college's nine departments:",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": [
+                "bachelor",
+                "master",
+                "doctorate"
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "motto": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:1",
+                  "original_text": "Motto: Tomorrow Needs Michigan Tech",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "Tomorrow Needs Michigan Tech"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "summary": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "Michigan Technological University (Michigan Tech, MTU, or simply Tech) is a public research university in Houghton, Michigan, United States.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Campus",
+                  "original_text": "The main Michigan Tech campus is located in Houghton, Michigan—north of US 41 and south of the Portage Canal.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:History",
+                  "original_text": "Michigan Tech was founded in 1885 as the Michigan Mining School.[7] After much agitation by Jay Abel Hubbell, the state legislature established the school to train mining engineers. Hubbell donated land for the school's first buildings.[8]",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:History",
+                  "original_text": "The school started with four faculty members and twenty-three students. It was housed in the Houghton Fire Hall from 1886 through 1889.[9]",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "infobox:0",
+                  "original_text": "Former names: Michigan Mining School (1885–1897)Michigan College of Mines (1897–1927)Michigan College of Mining and Technology (1927–1964)",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:History",
+                  "original_text": "In 1964, one of the final years of his presidency, the school changed from a college to a university, changing its name a final time to Michigan Technological University.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:lead",
+                  "original_text": "The university comprises five colleges and schools: the College of Engineering, the College of Computing, the College of Sciences and Arts, the College of Business, and the College of Forest Resources and Environmental Science.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Divisions",
+                  "original_text": "The undergraduate degree programs, together with masters and doctoral degrees are offered across the college's nine departments:",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Divisions",
+                  "original_text": "Michigan Tech offers more than 120 undergraduate and graduate degrees in engineering, natural and physical sciences, computing, business and economics, technology, environmental studies, arts, humanities, and social sciences.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:History",
+                  "original_text": "The university has historically been focused on engineering, and as of November 2022, 57% of students are enrolled in the College of Engineering.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Today",
+                  "original_text": "As of the fall semester in 2021, the total enrollment at Michigan Technological University is 6,977.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Faculty",
+                  "original_text": "As of 2025, Michigan Tech has 495 faculty.[84]",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Organization_and_administration",
+                  "original_text": "The university is governed by an eight-member board of trustees whose members are appointed by the governor of Michigan and confirmed by the Michigan Senate.[62][63]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "Michigan Technological University, commonly known as Michigan Tech or MTU, is a public research university in Houghton, Michigan, United States. Its main campus lies between US 41 and the Portage Canal. The institution was founded in 1885 as the Michigan Mining School, established by the state legislature to train mining engineers. It began with four faculty members and twenty-three students, and occupied the Houghton Fire Hall from 1886 through 1889. The school became the Michigan College of Mines in 1897 and the Michigan College of Mining and Technology in 1927. In 1964 it became a university and adopted its present name.\n\nThe university is organized into five colleges covering engineering, computing, sciences and arts, business, and forest resources and environmental science. Its academic offerings extend from undergraduate study to master’s and doctoral degrees, spanning engineering, natural and physical sciences, technology, environmental studies, humanities and social sciences. Its engineering heritage remains prominent: in November 2022, 57 percent of students were enrolled in the College of Engineering. Total enrollment was 6,977 in the fall semester of 2021. In 2025 the university reported 495 faculty members. It is governed by an eight-member board of trustees appointed by Michigan’s governor and confirmed by the Michigan Senate."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "website": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P856:0",
+                  "original_text": "{\"property\": \"P856\", \"property_label\": \"official website\", \"statement_id\": \"Q12432$57C17111-CE39-4539-93B8-A119C702F216\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"https://www.mtu.edu/\", \"qualifiers\": {\"P407\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 1860, \"id\": \"Q1860\"}}]}}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "https://www.mtu.edu/",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "qid": "Q12432",
+      "record_revision": 1,
+      "related_entities": {
+        "business": {
+          "kind": "faculty",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "The university comprises five colleges and schools: the College of Engineering, the College of Computing, the College of Sciences and Arts, the College of Business, and the College of Forest Resources and Environmental Science.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "College of Business"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        "computing": {
+          "kind": "faculty",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "The university comprises five colleges and schools: the College of Engineering, the College of Computing, the College of Sciences and Arts, the College of Business, and the College of Forest Resources and Environmental Science.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "College of Computing"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        "engineering": {
+          "kind": "faculty",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "The university comprises five colleges and schools: the College of Engineering, the College of Computing, the College of Sciences and Arts, the College of Business, and the College of Forest Resources and Environmental Science.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "College of Engineering"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        "forest": {
+          "kind": "faculty",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "The university comprises five colleges and schools: the College of Engineering, the College of Computing, the College of Sciences and Arts, the College of Business, and the College of Forest Resources and Environmental Science.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "College of Forest Resources and Environmental Science"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        "sciences-arts": {
+          "kind": "faculty",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "The university comprises five colleges and schools: the College of Engineering, the College of Computing, the College of Sciences and Arts, the College of Business, and the College of Forest Resources and Environmental Science.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "College of Sciences and Arts"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "relationships": {
+        "campus": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Campus",
+                    "original_text": "The main Michigan Tech campus is located in Houghton, Michigan—north of US 41 and south of the Portage Canal.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "target_ref": "location:main"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ],
+        "faculty": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "The university comprises five colleges and schools: the College of Engineering, the College of Computing, the College of Sciences and Arts, the College of Business, and the College of Forest Resources and Environmental Science.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "target_ref": "related:engineering"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "The university comprises five colleges and schools: the College of Engineering, the College of Computing, the College of Sciences and Arts, the College of Business, and the College of Forest Resources and Environmental Science.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "target_ref": "related:computing"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "The university comprises five colleges and schools: the College of Engineering, the College of Computing, the College of Sciences and Arts, the College of Business, and the College of Forest Resources and Environmental Science.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "target_ref": "related:sciences-arts"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "The university comprises five colleges and schools: the College of Engineering, the College of Computing, the College of Sciences and Arts, the College of Business, and the College of Forest Resources and Environmental Science.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "target_ref": "related:business"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "The university comprises five colleges and schools: the College of Engineering, the College of Computing, the College of Sciences and Arts, the College of Business, and the College of Forest Resources and Environmental Science.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "target_ref": "related:forest"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ]
+      },
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "ranking_identifier",
+          "reviewed_institution_type"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "needs_review"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T11:30:46.889623+00:00",
+          "revision_id": 2542941128,
+          "source_qid": "Q12432",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2542941128"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikipedia",
+          "language": "en",
+          "page_id": 45893,
+          "publisher_role": "encyclopedia",
+          "retrieved_at": "2026-11-06T11:31:02.298222+00:00",
+          "revision_id": 1383615673,
+          "url": "https://en.wikipedia.org/w/index.php?oldid=1383615673"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T09:50:17.552777+00:00",
+          "revision_id": 2557623321,
+          "source_qid": "Q4917",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2557623321"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T09:04:54.551367+00:00",
+          "revision_id": 2562156954,
+          "source_qid": "Q3918",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2562156954"
+        },
+        "s5": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T11:09:52.720710+00:00",
+          "revision_id": 2554628329,
+          "source_qid": "Q23002039",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2554628329"
+        },
+        "s6": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T09:50:50.405563+00:00",
+          "revision_id": 2565041516,
+          "source_qid": "Q30",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2565041516"
+        },
+        "s7": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T11:31:07.533246+00:00",
+          "revision_id": 2564415894,
+          "source_qid": "Q1166",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2564415894"
+        },
+        "s8": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T11:31:12.593360+00:00",
+          "revision_id": 2530079268,
+          "source_qid": "Q12429",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2530079268"
+        }
+      }
+    },
+    "coverage": [
+      {
+        "group": "identity",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "status": "checked"
+      },
+      {
+        "group": "population",
+        "status": "checked"
+      },
+      {
+        "group": "finance",
+        "status": "checked"
+      },
+      {
+        "group": "profile",
+        "status": "checked"
+      }
+    ],
+    "delta": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-06T11:31:12.608888+00:00",
+          "status": "checked"
+        },
+        "geography": {
+          "checked_at": "2026-11-06T11:31:12.608888+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-06T11:31:12.608888+00:00",
+          "status": "checked"
+        },
+        "identity": {
+          "checked_at": "2026-11-06T11:31:12.608888+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-06T11:31:12.608888+00:00",
+          "status": "checked"
+        },
+        "profile": {
+          "checked_at": "2026-11-06T11:31:12.608888+00:00",
+          "status": "checked"
+        }
+      },
+      "curation": {
+        "identity_status": "in_scope"
+      },
+      "finance": {
+        "endowment": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P6589:0",
+                  "original_text": "{\"property\": \"P6589\", \"property_label\": \"endowment\", \"statement_id\": \"Q12432$64782252-FEBC-40E7-95C5-7409CC85AC18\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+147630662\", \"unit\": \"http://www.wikidata.org/entity/Q4917\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2022-06-30T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "metadata",
+                  "original_text": "{\"id\": \"Q4917\", \"labels\": {\"en\": \"United States dollar\"}, \"descriptions\": {\"en\": \"official currency of the United States\"}}",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "date": "2022-06-30",
+                "kind": "date"
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": "147630662",
+                "currency": "USD",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P6589:1",
+                  "original_text": "{\"property\": \"P6589\", \"property_label\": \"endowment\", \"statement_id\": \"Q12432$EA8D48B8-C035-49FD-964E-58B0612FBBE7\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+151519725\", \"unit\": \"http://www.wikidata.org/entity/Q4917\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2021-06-30T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "metadata",
+                  "original_text": "{\"id\": \"Q4917\", \"labels\": {\"en\": \"United States dollar\"}, \"descriptions\": {\"en\": \"official currency of the United States\"}}",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c2",
+              "period": {
+                "date": "2021-06-30",
+                "kind": "date"
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": "151519725",
+                "currency": "USD",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:5",
+                  "original_text": "Endowment: $184.15 million (2025)[1]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c3",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2025
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": "184150000",
+                "currency": "USD",
+                "precision": "approximate"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c3",
+            "qualifications": [
+              "single_source_family",
+              "approximate_value"
+            ],
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        }
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:History",
+                      "original_text": "Michigan Tech was founded in 1885 as the Michigan Mining School.[7] After much agitation by Jay Abel Hubbell, the state legislature established the school to train mining engineers. Hubbell donated land for the school's first buildings.[8]",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 1885
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:History",
+                      "original_text": "Michigan Tech was founded in 1885 as the Michigan Mining School.[7] After much agitation by Jay Abel Hubbell, the state legislature established the school to train mining engineers. Hubbell donated land for the school's first buildings.[8]",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "Founded as the Michigan Mining School by the state legislature to train mining engineers."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "founded",
+            "kind": "institution_establishment",
+            "subject_ref": "institution"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:History",
+                      "original_text": "The name was then changed to the Michigan College of Mines in 1897.[11]",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 1897
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:History",
+                      "original_text": "The name was then changed to the Michigan College of Mines in 1897.[11]",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "Renamed Michigan College of Mines."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "rename-1897",
+            "kind": "rename",
+            "subject_ref": "institution"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:History",
+                      "original_text": "the school had begun offering a wider variety of degrees and once again decided to change its name to the Michigan College of Mining and Technology in 1927.[11]",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 1927
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:History",
+                      "original_text": "the school had begun offering a wider variety of degrees and once again decided to change its name to the Michigan College of Mining and Technology in 1927.[11]",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "Renamed Michigan College of Mining and Technology."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "rename-1927",
+            "kind": "rename",
+            "subject_ref": "institution"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:History",
+                      "original_text": "In 1964, one of the final years of his presidency, the school changed from a college to a university, changing its name a final time to Michigan Technological University.",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 1964
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:History",
+                      "original_text": "In 1964, one of the final years of his presidency, the school changed from a college to a university, changing its name a final time to Michigan Technological University.",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "Changed from a college to a university and adopted the name Michigan Technological University."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "university-1964",
+            "kind": "university_status",
+            "subject_ref": "institution"
+          }
+        ]
+      },
+      "identity": {
+        "aliases": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "Michigan Technological University (Michigan Tech, MTU, or simply Tech) is a public research university in Houghton, Michigan, United States.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Michigan Tech"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "Michigan Technological University (Michigan Tech, MTU, or simply Tech) is a public research university in Houghton, Michigan, United States.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "MTU"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "Michigan Technological University (Michigan Tech, MTU, or simply Tech) is a public research university in Houghton, Michigan, United States.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Tech"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "infobox:0",
+                    "original_text": "Former names: Michigan Mining School (1885–1897)Michigan College of Mines (1897–1927)Michigan College of Mining and Technology (1927–1964)",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Michigan Mining School"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "infobox:0",
+                    "original_text": "Former names: Michigan Mining School (1885–1897)Michigan College of Mines (1897–1927)Michigan College of Mining and Technology (1927–1964)",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Michigan College of Mines"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "infobox:0",
+                    "original_text": "Former names: Michigan Mining School (1885–1897)Michigan College of Mines (1897–1927)Michigan College of Mining and Technology (1927–1964)",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Michigan College of Mining and Technology"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ],
+        "identifiers": {
+          "P5242": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P5242:0",
+                    "original_text": "{\"property\": \"P5242\", \"property_label\": \"ARWU university ID\", \"statement_id\": \"Q12432$C9764CE1-A47A-4284-BFFE-F6B82E7E03E1\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"Michigan-Technological-University\"}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "Michigan-Technological-University",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "P5584": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P5584:0",
+                    "original_text": "{\"property\": \"P5584\", \"property_label\": \"QS World University ID\", \"statement_id\": \"Q12432$05D09402-2ECA-4183-90E4-C3473D9CC80B\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"michigan-technological-university\"}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "michigan-technological-university",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "P5586": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P5586:0",
+                    "original_text": "{\"property\": \"P5586\", \"property_label\": \"Times Higher Education World University ID\", \"statement_id\": \"Q12432$147241EF-D5E9-477E-AB01-ADC13C040966\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"michigan-technological-university\"}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "michigan-technological-university",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:2",
+                  "original_text": "Type: Public research university",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "university",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q12432\", \"labels\": {\"en\": \"Michigan Technological University\"}, \"descriptions\": {\"en\": \"University in Houghton, Michigan\"}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "Michigan Technological University",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        "ownership": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:2",
+                  "original_text": "Type: Public research university",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "public",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "leadership": {
+        "president": {
+          "candidates": [
+            {
+              "current_basis": "infobox_current",
+              "evidence": [
+                {
+                  "locator": "infobox:6",
+                  "original_text": "President: Richard J. Koubek",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "person": {
+                  "name": "Richard J. Koubek"
+                },
+                "title_original": {
+                  "language": "en",
+                  "text": "President"
+                }
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family",
+              "reported_current"
+            ],
+            "reason": "The page reports this person in its current officeholder field; a term-end date is not required.",
+            "reason_code": "infobox_current"
+          }
+        },
+        "provost": {
+          "candidates": [
+            {
+              "current_basis": "infobox_current",
+              "evidence": [
+                {
+                  "locator": "infobox:7",
+                  "original_text": "Provost: Andrew Storer",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "person": {
+                  "name": "Andrew Storer"
+                },
+                "title_original": {
+                  "language": "en",
+                  "text": "Provost"
+                }
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family",
+              "reported_current"
+            ],
+            "reason": "The page reports this person in its current officeholder field; a term-end date is not required.",
+            "reason_code": "infobox_current"
+          }
+        }
+      },
+      "locations": [
+        {
+          "id": "michigan",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"q12432$86F6D47B-CF2E-4070-A8EE-32F8A77B5066\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 1166, \"id\": \"Q1166\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q1166\", \"labels\": {\"en\": \"Michigan\"}, \"descriptions\": {\"en\": \"state of the United States of America\"}}",
+                    "source_ref": "s7"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Michigan"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q1166"
+        },
+        {
+          "id": "us",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q12432$3446BF0C-8E7B-4179-B694-AF31E24E2DA2\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 30, \"id\": \"Q30\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q30\", \"labels\": {\"en\": \"United States\"}, \"descriptions\": {\"en\": \"country located primarily in North America\"}}",
+                    "source_ref": "s6"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "United States"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q30"
+        },
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P159:0",
+                    "original_text": "\"qualifiers\": {\"P625\": [{\"snaktype\": \"value\", \"value\": {\"latitude\": 47.1105, \"longitude\": -88.5312, \"altitude\": null, \"precision\": 0.0001, \"globe\": \"http://www.wikidata.org/entity/Q2\"}}], \"P281\": [{\"snaktype\": \"value\", \"value\": \"49931\"}], \"P17\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 30, \"id\": \"Q30\"}}], \"P6375\": [{\"snaktype\": \"value\", \"value\": {\"text\": \"1400 Townsend Drive\", \"language\": \"en\"}}]}}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q12429\", \"labels\": {\"en\": \"Houghton\"}, \"descriptions\": {\"en\": \"county seat of Houghton County, Michigan, United States\"}}",
+                    "source_ref": "s8"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "city_name": "Houghton",
+                  "city_qid": "Q12429",
+                  "country_qid": "Q30",
+                  "formatted": {
+                    "language": "en",
+                    "text": "1400 Townsend Drive"
+                  },
+                  "postal_code": "49931",
+                  "street": "1400 Townsend Drive"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "coordinates": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P159:0",
+                    "original_text": "\"qualifiers\": {\"P625\": [{\"snaktype\": \"value\", \"value\": {\"latitude\": 47.1105, \"longitude\": -88.5312, \"altitude\": null, \"precision\": 0.0001, \"globe\": \"http://www.wikidata.org/entity/Q2\"}}], \"P281\": [{\"snaktype\": \"value\", \"value\": \"49931\"}], \"P17\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 30, \"id\": \"Q30\"}}], \"P6375\": [{\"snaktype\": \"value\", \"value\": {\"text\": \"1400 Townsend Drive\", \"language\": \"en\"}}]}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "crs": "EPSG:4326",
+                  "latitude": 47.1105,
+                  "longitude": -88.5312
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "houghton-hq",
+          "kind": "headquarters",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P159:0",
+                    "original_text": "\"value\": {\"entity-type\": \"item\", \"numeric-id\": 12429, \"id\": \"Q12429\"}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q12429\", \"labels\": {\"en\": \"Houghton\"}, \"descriptions\": {\"en\": \"county seat of Houghton County, Michigan, United States\"}}",
+                    "source_ref": "s8"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Houghton"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q12429"
+        },
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Campus",
+                    "original_text": "The main Michigan Tech campus is located in Houghton, Michigan—north of US 41 and south of the Portage Canal.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "city_name": "Houghton",
+                  "city_qid": "Q12429",
+                  "country_qid": "Q30",
+                  "formatted": {
+                    "language": "en",
+                    "text": "Houghton, Michigan"
+                  },
+                  "region_name": "Michigan",
+                  "region_qid": "Q1166"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "main",
+          "kind": "campus",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Campus",
+                    "original_text": "The main Michigan Tech campus is located in Houghton, Michigan—north of US 41 and south of the Portage Canal.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Main Michigan Tech campus"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        {
+          "coordinates": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "statement:q12432$7BB0649E-AA3E-464C-AE16-5E9F14548EDF",
+                    "original_text": "\"latitude\": 47.12",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "source_rank": "normal",
+                "value": {
+                  "crs": "EPSG:4326",
+                  "globe_qid": "Q2",
+                  "latitude": 47.12,
+                  "longitude": -88.55
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "wikidata-item-location",
+          "kind": "institution",
+          "qid": "Q12432"
+        }
+      ],
+      "population": {
+        "academic_staff": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Faculty",
+                  "original_text": "As of 2025, Michigan Tech has 495 faculty.[84]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2025
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 495,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:Student_body",
+                  "original_text": "The student body consisted of 7,324 students, including 1,421 graduate students and 473 faculty members.[59]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c2",
+              "period": {
+                "end_year": 2024,
+                "kind": "academic_year",
+                "label": "2023–2024",
+                "start_year": 2023
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 473,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        },
+        "administrative_staff": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:9",
+                  "original_text": "Administrative staff: 1,205[2]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period_status": "not_stated",
+              "value": {
+                "amount": 1205,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "period_not_stated",
+              "single_source_family"
+            ],
+            "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+            "reason_code": "only_available"
+          }
+        },
+        "employees_total": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P1128:0",
+                  "original_text": "{\"property\": \"P1128\", \"property_label\": \"employees\", \"statement_id\": \"Q12432$09B8D162-EC62-48FC-ABDE-35C46FFF67FB\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+1519\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2020-09-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 10, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "kind": "date",
+                "label": "September 2020",
+                "year": 2020
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 1519,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason_code": "only_available"
+          }
+        },
+        "postgraduate_students": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:12",
+                  "original_text": "Postgraduates: 1,407[2]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period_status": "not_stated",
+              "value": {
+                "amount": 1407,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:Student_body",
+                  "original_text": "The student body consisted of 7,324 students, including 1,421 graduate students and 473 faculty members.[59]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c2",
+              "period": {
+                "end_year": 2024,
+                "kind": "academic_year",
+                "label": "2023–2024",
+                "start_year": 2023
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 1421,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "period_not_stated",
+              "single_source_family"
+            ],
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        },
+        "students_intake": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Undergraduate_admissions",
+                  "original_text": "Fall first-time freshman statistics\n[30]\n[33]\n[34]\n[35]\n[36]\n[37]\n2021\n2020\n2019\n2018\n2017\n2016\nApplicants\n8,041\n7,476\n5,978\n5,838\n5,469\n5,589\nAdmits\n6,895\n5,260\n4,442\n4,313\n4,074\n4,272\nAdmit rate\n85.7\n70.4\n74.3\n73.9\n74.5\n76.4\nEnrolled\n1,479\n1,201\n1,301\n1,245\n1,323\n1,381",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "kind": "academic_year",
+                "label": "Fall 2021 first-time freshmen",
+                "year": 2021
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 1479,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:Undergraduate_admissions",
+                  "original_text": "Fall first-time freshman statistics\n[30]\n[33]\n[34]\n[35]\n[36]\n[37]\n2021\n2020\n2019\n2018\n2017\n2016\nApplicants\n8,041\n7,476\n5,978\n5,838\n5,469\n5,589\nAdmits\n6,895\n5,260\n4,442\n4,313\n4,074\n4,272\nAdmit rate\n85.7\n70.4\n74.3\n73.9\n74.5\n76.4\nEnrolled\n1,479\n1,201\n1,301\n1,245\n1,323\n1,381",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c2",
+              "period": {
+                "kind": "academic_year",
+                "label": "Fall 2020 first-time freshmen",
+                "year": 2020
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 1201,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:Undergraduate_admissions",
+                  "original_text": "Fall first-time freshman statistics\n[30]\n[33]\n[34]\n[35]\n[36]\n[37]\n2021\n2020\n2019\n2018\n2017\n2016\nApplicants\n8,041\n7,476\n5,978\n5,838\n5,469\n5,589\nAdmits\n6,895\n5,260\n4,442\n4,313\n4,074\n4,272\nAdmit rate\n85.7\n70.4\n74.3\n73.9\n74.5\n76.4\nEnrolled\n1,479\n1,201\n1,301\n1,245\n1,323\n1,381",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c3",
+              "period": {
+                "kind": "academic_year",
+                "label": "Fall 2019 first-time freshmen",
+                "year": 2019
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 1301,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:Undergraduate_admissions",
+                  "original_text": "Fall first-time freshman statistics\n[30]\n[33]\n[34]\n[35]\n[36]\n[37]\n2021\n2020\n2019\n2018\n2017\n2016\nApplicants\n8,041\n7,476\n5,978\n5,838\n5,469\n5,589\nAdmits\n6,895\n5,260\n4,442\n4,313\n4,074\n4,272\nAdmit rate\n85.7\n70.4\n74.3\n73.9\n74.5\n76.4\nEnrolled\n1,479\n1,201\n1,301\n1,245\n1,323\n1,381",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c4",
+              "period": {
+                "kind": "academic_year",
+                "label": "Fall 2018 first-time freshmen",
+                "year": 2018
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 1245,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:Undergraduate_admissions",
+                  "original_text": "Fall first-time freshman statistics\n[30]\n[33]\n[34]\n[35]\n[36]\n[37]\n2021\n2020\n2019\n2018\n2017\n2016\nApplicants\n8,041\n7,476\n5,978\n5,838\n5,469\n5,589\nAdmits\n6,895\n5,260\n4,442\n4,313\n4,074\n4,272\nAdmit rate\n85.7\n70.4\n74.3\n73.9\n74.5\n76.4\nEnrolled\n1,479\n1,201\n1,301\n1,245\n1,323\n1,381",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c5",
+              "period": {
+                "kind": "academic_year",
+                "label": "Fall 2017 first-time freshmen",
+                "year": 2017
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 1323,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:Undergraduate_admissions",
+                  "original_text": "Fall first-time freshman statistics\n[30]\n[33]\n[34]\n[35]\n[36]\n[37]\n2021\n2020\n2019\n2018\n2017\n2016\nApplicants\n8,041\n7,476\n5,978\n5,838\n5,469\n5,589\nAdmits\n6,895\n5,260\n4,442\n4,313\n4,074\n4,272\nAdmit rate\n85.7\n70.4\n74.3\n73.9\n74.5\n76.4\nEnrolled\n1,479\n1,201\n1,301\n1,245\n1,323\n1,381",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c6",
+              "period": {
+                "kind": "academic_year",
+                "label": "Fall 2016 first-time freshmen",
+                "year": 2016
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 1381,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        },
+        "students_total": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2196:1",
+                  "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q12432$280F8AED-A86B-46C1-85EF-B39D982049B6\", \"rank\": \"preferred\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+7074\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2022-09-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 10, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "kind": "date",
+                "label": "September 2022",
+                "year": 2022
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 7074,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:10",
+                  "original_text": "Students: 7,429[2]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c2",
+              "period_status": "not_stated",
+              "value": {
+                "amount": 7429,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:Today",
+                  "original_text": "As of the fall semester in 2021, the total enrollment at Michigan Technological University is 6,977.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c3",
+              "period": {
+                "kind": "academic_year",
+                "label": "Fall semester 2021",
+                "year": 2021
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 6977,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:Student_body",
+                  "original_text": "The student body consisted of 7,324 students, including 1,421 graduate students and 473 faculty members.[59]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c4",
+              "period": {
+                "end_year": 2024,
+                "kind": "academic_year",
+                "label": "2023–2024",
+                "start_year": 2023
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 7324,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c2",
+            "qualifications": [
+              "period_not_stated",
+              "single_source_family"
+            ],
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        },
+        "undergraduate_students": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:11",
+                  "original_text": "Undergraduates: 6,022[2]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period_status": "not_stated",
+              "value": {
+                "amount": 6022,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "period_not_stated",
+              "single_source_family"
+            ],
+            "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "profile": {
+        "academic_focus": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Divisions",
+                  "original_text": "Michigan Tech offers more than 120 undergraduate and graduate degrees in engineering, natural and physical sciences, computing, business and economics, technology, environmental studies, arts, humanities, and social sciences.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": [
+                {
+                  "language": "en",
+                  "text": "engineering"
+                },
+                {
+                  "language": "en",
+                  "text": "natural and physical sciences"
+                },
+                {
+                  "language": "en",
+                  "text": "computing"
+                },
+                {
+                  "language": "en",
+                  "text": "business and economics"
+                },
+                {
+                  "language": "en",
+                  "text": "technology"
+                },
+                {
+                  "language": "en",
+                  "text": "environmental studies"
+                },
+                {
+                  "language": "en",
+                  "text": "arts"
+                },
+                {
+                  "language": "en",
+                  "text": "humanities"
+                },
+                {
+                  "language": "en",
+                  "text": "social sciences"
+                }
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "degree_levels": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Divisions",
+                  "original_text": "The undergraduate degree programs, together with masters and doctoral degrees are offered across the college's nine departments:",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": [
+                "bachelor",
+                "master",
+                "doctorate"
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "motto": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:1",
+                  "original_text": "Motto: Tomorrow Needs Michigan Tech",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "Tomorrow Needs Michigan Tech"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "summary": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "Michigan Technological University (Michigan Tech, MTU, or simply Tech) is a public research university in Houghton, Michigan, United States.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Campus",
+                  "original_text": "The main Michigan Tech campus is located in Houghton, Michigan—north of US 41 and south of the Portage Canal.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:History",
+                  "original_text": "Michigan Tech was founded in 1885 as the Michigan Mining School.[7] After much agitation by Jay Abel Hubbell, the state legislature established the school to train mining engineers. Hubbell donated land for the school's first buildings.[8]",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:History",
+                  "original_text": "The school started with four faculty members and twenty-three students. It was housed in the Houghton Fire Hall from 1886 through 1889.[9]",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "infobox:0",
+                  "original_text": "Former names: Michigan Mining School (1885–1897)Michigan College of Mines (1897–1927)Michigan College of Mining and Technology (1927–1964)",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:History",
+                  "original_text": "In 1964, one of the final years of his presidency, the school changed from a college to a university, changing its name a final time to Michigan Technological University.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:lead",
+                  "original_text": "The university comprises five colleges and schools: the College of Engineering, the College of Computing, the College of Sciences and Arts, the College of Business, and the College of Forest Resources and Environmental Science.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Divisions",
+                  "original_text": "The undergraduate degree programs, together with masters and doctoral degrees are offered across the college's nine departments:",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Divisions",
+                  "original_text": "Michigan Tech offers more than 120 undergraduate and graduate degrees in engineering, natural and physical sciences, computing, business and economics, technology, environmental studies, arts, humanities, and social sciences.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:History",
+                  "original_text": "The university has historically been focused on engineering, and as of November 2022, 57% of students are enrolled in the College of Engineering.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Today",
+                  "original_text": "As of the fall semester in 2021, the total enrollment at Michigan Technological University is 6,977.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Faculty",
+                  "original_text": "As of 2025, Michigan Tech has 495 faculty.[84]",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Organization_and_administration",
+                  "original_text": "The university is governed by an eight-member board of trustees whose members are appointed by the governor of Michigan and confirmed by the Michigan Senate.[62][63]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "Michigan Technological University, commonly known as Michigan Tech or MTU, is a public research university in Houghton, Michigan, United States. Its main campus lies between US 41 and the Portage Canal. The institution was founded in 1885 as the Michigan Mining School, established by the state legislature to train mining engineers. It began with four faculty members and twenty-three students, and occupied the Houghton Fire Hall from 1886 through 1889. The school became the Michigan College of Mines in 1897 and the Michigan College of Mining and Technology in 1927. In 1964 it became a university and adopted its present name.\n\nThe university is organized into five colleges covering engineering, computing, sciences and arts, business, and forest resources and environmental science. Its academic offerings extend from undergraduate study to master’s and doctoral degrees, spanning engineering, natural and physical sciences, technology, environmental studies, humanities and social sciences. Its engineering heritage remains prominent: in November 2022, 57 percent of students were enrolled in the College of Engineering. Total enrollment was 6,977 in the fall semester of 2021. In 2025 the university reported 495 faculty members. It is governed by an eight-member board of trustees appointed by Michigan’s governor and confirmed by the Michigan Senate."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "website": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P856:0",
+                  "original_text": "{\"property\": \"P856\", \"property_label\": \"official website\", \"statement_id\": \"Q12432$57C17111-CE39-4539-93B8-A119C702F216\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"https://www.mtu.edu/\", \"qualifiers\": {\"P407\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 1860, \"id\": \"Q1860\"}}]}}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "https://www.mtu.edu/",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "qid": "Q12432",
+      "record_revision": 1,
+      "related_entities": {
+        "business": {
+          "kind": "faculty",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "The university comprises five colleges and schools: the College of Engineering, the College of Computing, the College of Sciences and Arts, the College of Business, and the College of Forest Resources and Environmental Science.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "College of Business"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        "computing": {
+          "kind": "faculty",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "The university comprises five colleges and schools: the College of Engineering, the College of Computing, the College of Sciences and Arts, the College of Business, and the College of Forest Resources and Environmental Science.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "College of Computing"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        "engineering": {
+          "kind": "faculty",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "The university comprises five colleges and schools: the College of Engineering, the College of Computing, the College of Sciences and Arts, the College of Business, and the College of Forest Resources and Environmental Science.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "College of Engineering"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        "forest": {
+          "kind": "faculty",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "The university comprises five colleges and schools: the College of Engineering, the College of Computing, the College of Sciences and Arts, the College of Business, and the College of Forest Resources and Environmental Science.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "College of Forest Resources and Environmental Science"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        "sciences-arts": {
+          "kind": "faculty",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "The university comprises five colleges and schools: the College of Engineering, the College of Computing, the College of Sciences and Arts, the College of Business, and the College of Forest Resources and Environmental Science.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "College of Sciences and Arts"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "relationships": {
+        "campus": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Campus",
+                    "original_text": "The main Michigan Tech campus is located in Houghton, Michigan—north of US 41 and south of the Portage Canal.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "target_ref": "location:main"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ],
+        "faculty": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "The university comprises five colleges and schools: the College of Engineering, the College of Computing, the College of Sciences and Arts, the College of Business, and the College of Forest Resources and Environmental Science.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "target_ref": "related:engineering"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "The university comprises five colleges and schools: the College of Engineering, the College of Computing, the College of Sciences and Arts, the College of Business, and the College of Forest Resources and Environmental Science.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "target_ref": "related:computing"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "The university comprises five colleges and schools: the College of Engineering, the College of Computing, the College of Sciences and Arts, the College of Business, and the College of Forest Resources and Environmental Science.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "target_ref": "related:sciences-arts"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "The university comprises five colleges and schools: the College of Engineering, the College of Computing, the College of Sciences and Arts, the College of Business, and the College of Forest Resources and Environmental Science.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "target_ref": "related:business"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "The university comprises five colleges and schools: the College of Engineering, the College of Computing, the College of Sciences and Arts, the College of Business, and the College of Forest Resources and Environmental Science.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "target_ref": "related:forest"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ]
+      },
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "ranking_identifier",
+          "reviewed_institution_type"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "needs_review"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T11:30:46.889623+00:00",
+          "revision_id": 2542941128,
+          "source_qid": "Q12432",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2542941128"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikipedia",
+          "language": "en",
+          "page_id": 45893,
+          "publisher_role": "encyclopedia",
+          "retrieved_at": "2026-11-06T11:31:02.298222+00:00",
+          "revision_id": 1383615673,
+          "url": "https://en.wikipedia.org/w/index.php?oldid=1383615673"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T09:50:17.552777+00:00",
+          "revision_id": 2557623321,
+          "source_qid": "Q4917",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2557623321"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T09:04:54.551367+00:00",
+          "revision_id": 2562156954,
+          "source_qid": "Q3918",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2562156954"
+        },
+        "s5": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T11:09:52.720710+00:00",
+          "revision_id": 2554628329,
+          "source_qid": "Q23002039",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2554628329"
+        },
+        "s6": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T09:50:50.405563+00:00",
+          "revision_id": 2565041516,
+          "source_qid": "Q30",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2565041516"
+        },
+        "s7": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T11:31:07.533246+00:00",
+          "revision_id": 2564415894,
+          "source_qid": "Q1166",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2564415894"
+        },
+        "s8": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T11:31:12.593360+00:00",
+          "revision_id": 2530079268,
+          "source_qid": "Q12429",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2530079268"
+        }
+      }
+    },
+    "open_requests": [],
+    "proposed_at": "2026-11-06T11:34:40.433436+00:00",
+    "qid": "Q12432",
+    "research": {
+      "model": "not_reported",
+      "prompt_sha256": "ea449ccd5812c2f98f2cf2589fff6688065bc94267d653979e7afa7f034052c7",
+      "reasoning_effort": "not_reported",
+      "schema_sha256": "92e942f4fbf2ae28964462ea9ffa8312c5ee16a077a1e08b40aaaf741512422e",
+      "session": "/root/research_q12432"
+    },
+    "retrieval_failures": [],
+    "review_status": "unreviewed",
+    "seed": {
+      "channels": [
+        "ranking_identifier",
+        "reviewed_institution_type"
+      ],
+      "import_id": "seed-84c3beb45367905f",
+      "screening_status": "needs_review"
+    },
+    "transport": {
+      "base_commit": "736426b019702627bb9053a08e15a772028875ae",
+      "protocol": "native-subagent-v1",
+      "repository": "ider-zh/university-seed-curation",
+      "review_policy": {
+        "id": "source-grounded-flexible-v2",
+        "sha256": "b8ed7d2897e4c31dbd81b1379aafdc1077a21d1a33949edbd2d896b0adf99db2"
+      },
+      "schema_sha256": "bfa496eafa9dffca56146214168db7f000b09161b8993129632e7202e1c88833",
+      "seed_catalog_sha256": "84c3beb45367905f513d650684283dd62a9c1b77962bdc34151a6ef05bfa03d4"
+    },
+    "type": "university-proposal-v1"
+  },
+  "review": {
+    "contexts_checked": 15,
+    "coverage_checks": [
+      {
+        "group": "identity",
+        "reason": "University/public type, names, historical aliases, identifiers and reported current president/provost checked. Former names linked to periods in evidence/history; no term dates invented.",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "reason": "State/country, Houghton headquarters, main campus and root P625 checked separately. Headquarters point differs from item point; root rank normal and unavailable precision respected. No city coordinate assigned as exact campus point.",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "reason": "1885 foundation, 1897/1927 renames, 1964 university status and all summary history assertions checked. Source narrative has wording oddity mentioning 1925 but explicit 1927 rename/infobox supports proposal. Optional omitted events are coverage limits.",
+        "status": "checked"
+      },
+      {
+        "group": "population",
+        "reason": "All employee, faculty, administrative, graduate, undergraduate, total and six intake observations checked. Month precision retained in September labels; 2023-2024 counts use disclosed contextual inference. Intake is fall first-time freshmen and needs scope parsing for ranking. Unknown dates and unspecified basis preserved.",
+        "status": "checked"
+      },
+      {
+        "group": "finance",
+        "reason": "Two exact USD endowments with day precision and rounded 2025 USD millions checked; amount conversion correct. Endowment not conflated with budget or revenue.",
+        "status": "checked"
+      },
+      {
+        "group": "profile",
+        "reason": "Fields, bachelor/master/doctorate provision, motto, website, five constituent college names/relations and every summary assertion checked. Faculty-type normalization keeps original college wording; no independent legal status invented.",
+        "status": "checked"
+      }
+    ],
+    "decision": "approve",
+    "facts_checked": 66,
+    "full_refresh": true,
+    "inferences": [
+      {
+        "id": "$.finance.endowment:c3",
+        "reason": "s2 endowment infobox reports $184.15 million for 2025, correctly converted to USD 184,150,000. Approximate precision conservatively represents rounded millions; US currency supported by institution country and source dollar context."
+      },
+      {
+        "id": "$.locations[2].coordinates:c1",
+        "reason": "Root P159 coordinate qualifier gives exactly 47.1105, -88.5312, globe Earth. EPSG:4326 reasonably represents terrestrial longitude/latitude; no city-centre point substituted."
+      },
+      {
+        "id": "$.population.academic_staff:c1",
+        "reason": "s2 Faculty explicitly gives 495 faculty as of 2025. Academic-staff field reasonably maps faculty members, not all employees; period year preserved and no FTE invented."
+      },
+      {
+        "id": "$.population.academic_staff:c2",
+        "reason": "s2 Student_body reports 473 faculty members. Assigning 2023-2024 academic year is a reasonable contextual inference from opening year-scoped paragraph and shared reference [59], not an explicit date in quoted sentence. Faculty separated from student total despite awkward source sentence."
+      },
+      {
+        "id": "$.population.postgraduate_students:c2",
+        "reason": "s2 Student_body reports 1,421 graduate students. 2023-2024 year is reasonable contextual inference from opening year-scoped paragraph and shared reference [59], not explicit in the count sentence; no FTE claim."
+      },
+      {
+        "id": "$.population.students_total:c4",
+        "reason": "s2 Student_body reports 7,324 students. 2023-2024 academic year is reasonable contextual inference from opening paragraph and same reference [59]. The 473 faculty members are not added to student count."
+      },
+      {
+        "id": "$.profile.degree_levels:c1",
+        "reason": "s2 Divisions explicitly reports undergraduate, masters and doctoral qualifications; bachelor is a reasonable normalization of undergraduate degree provision, corroborated by Bachelor of Science description in same section."
+      },
+      {
+        "id": "$.related_entities.business.name:c1",
+        "reason": "s2 lead explicitly names College of Business as one of five constituent colleges/schools; faculty entity is a reasonable broader organizational category, not an independent institution."
+      },
+      {
+        "id": "$.related_entities.computing.name:c1",
+        "reason": "s2 lead explicitly names College of Computing as one of five constituent colleges/schools; faculty entity is a reasonable broader organizational category, not an independent institution."
+      },
+      {
+        "id": "$.related_entities.engineering.name:c1",
+        "reason": "s2 lead explicitly names College of Engineering as one of five constituent colleges/schools; faculty entity is a reasonable broader organizational category, not an independent institution."
+      },
+      {
+        "id": "$.related_entities.forest.name:c1",
+        "reason": "s2 lead explicitly names College of Forest Resources and Environmental Science as one of five constituent colleges/schools; faculty entity is a reasonable broader organizational category, not an independent institution."
+      },
+      {
+        "id": "$.related_entities.sciences-arts.name:c1",
+        "reason": "s2 lead explicitly names College of Sciences and Arts as one of five constituent colleges/schools; faculty entity is a reasonable broader organizational category, not an independent institution."
+      },
+      {
+        "id": "$.relationships.faculty[0]:c1",
+        "reason": "s2 lead explicitly lists the target college as a constituent unit; broader faculty relation reasonably represents this college with original organizational title recoverable in target name and evidence."
+      },
+      {
+        "id": "$.relationships.faculty[1]:c1",
+        "reason": "s2 lead explicitly lists the target college as a constituent unit; broader faculty relation reasonably represents this college with original organizational title recoverable in target name and evidence."
+      },
+      {
+        "id": "$.relationships.faculty[2]:c1",
+        "reason": "s2 lead explicitly lists the target college as a constituent unit; broader faculty relation reasonably represents this college with original organizational title recoverable in target name and evidence."
+      },
+      {
+        "id": "$.relationships.faculty[3]:c1",
+        "reason": "s2 lead explicitly lists the target college as a constituent unit; broader faculty relation reasonably represents this college with original organizational title recoverable in target name and evidence."
+      },
+      {
+        "id": "$.relationships.faculty[4]:c1",
+        "reason": "s2 lead explicitly lists the target college as a constituent unit; broader faculty relation reasonably represents this college with original organizational title recoverable in target name and evidence."
+      },
+      {
+        "id": "related:business",
+        "reason": "College of Business explicitly constituent; broader faculty category preserves original college meaning."
+      },
+      {
+        "id": "related:computing",
+        "reason": "College of Computing explicitly constituent; broader faculty category preserves original college meaning."
+      },
+      {
+        "id": "related:engineering",
+        "reason": "College of Engineering explicitly constituent; broader faculty category preserves original college meaning."
+      },
+      {
+        "id": "related:forest",
+        "reason": "College of Forest Resources and Environmental Science explicitly constituent; broader faculty category preserves original college meaning."
+      },
+      {
+        "id": "related:sciences-arts",
+        "reason": "College of Sciences and Arts explicitly constituent; broader faculty category preserves original college meaning."
+      }
+    ],
+    "model": "not_reported",
+    "proposal_sha256": "6b8afcb83deddbaf402f705c3baaa175ded3ac5663acd0aff33cea0d2fded820",
+    "qid": "Q12432",
+    "reasoning_effort": "not_reported",
+    "record_sha256": "d7571f10da421eb6b0bb9ecbf9c77fc3dc3f607acefae733b93eb638adb064f7",
+    "request_responses": [],
+    "requests": [],
+    "review_session": "/root/review_batch_1930",
+    "reviewed_at": "2026-11-06T11:37:20.768440+00:00",
+    "source_revisions_checked": 8
+  },
+  "review_result_sha256": "771a5c6c8658d89e9fa88a27e7e2296255ed6db569833b0a47b1ada8e3af8891",
+  "type": "university-unified-receipt-v1"
+}

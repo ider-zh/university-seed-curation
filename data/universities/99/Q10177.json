@@ -1,0 +1,2285 @@
+{
+  "coverage": {
+    "finance": {
+      "checked_at": "2026-11-06T11:27:26.860412+00:00",
+      "status": "checked"
+    },
+    "geography": {
+      "checked_at": "2026-11-06T11:27:26.860412+00:00",
+      "status": "checked"
+    },
+    "history": {
+      "checked_at": "2026-11-06T11:27:26.860412+00:00",
+      "status": "disputed"
+    },
+    "identity": {
+      "checked_at": "2026-11-06T11:27:26.860412+00:00",
+      "status": "disputed"
+    },
+    "population": {
+      "checked_at": "2026-11-06T11:27:26.860412+00:00",
+      "status": "disputed"
+    },
+    "profile": {
+      "checked_at": "2026-11-06T11:27:26.860412+00:00",
+      "status": "checked"
+    }
+  },
+  "curation": {
+    "identity_status": "in_scope",
+    "refresh_profile": "core-v1",
+    "reviewed_groups": [
+      "identity",
+      "geography",
+      "history",
+      "population",
+      "finance",
+      "profile"
+    ]
+  },
+  "finance": {
+    "budget": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2769:0",
+              "original_text": "{\"property\": \"P2769\", \"property_label\": \"budget\", \"statement_id\": \"Q10177$37873d1a-466e-5e34-35b3-1827d4802a25\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+45000000\", \"unit\": \"http://www.wikidata.org/entity/Q4916\"}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "section:lead",
+              "original_text": "Budget\n45 millions d’euros",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c1",
+          "period_status": "not_stated",
+          "value": {
+            "amount": "45000000",
+            "currency": "EUR",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "period_not_stated",
+          "single_source_family"
+        ],
+        "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "history": {
+    "milestones": [
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P571:0",
+                  "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q10177$9237CE66-B1FB-4D81-A115-90D4FD7D03BC\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+1857-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "section:Fondation_et_premi.C3.A8res_ann.C3.A9es",
+                  "original_text": "[modifier | modifier le code]\nL'École centrale de Lyon est créée en 1857 sous le nom d'« École centrale lyonnaise pour l'industrie et le commerce » à l'initiative de François Barthélemy Arlès-Dufour[5], entrepreneur et humaniste lyonnais d’inspiration saint-simonienne et de Désiré Girardon, professeur à l'école de la Martinière désireux de « former les meilleurs élèves de la Martinière à la chimie, la mécanique industrielle, la construction civile et le dessin industriel »[6].\nDésiré Girardon devient le premier directeur de l’établissement. L’école s’installe au 19 quai Castellane et accueille sa première promotion de quatorze élèves le 3 novembre 1857. La première remise de diplômes a lieu en 1860.\nEn 1866, l’Association des anciens élèves de l’École centrale de Lyon est fondée afin de fédérer le réseau des diplômés. Elle prend plus tard le nom d’Association des centraliens de Lyon et joue un rôle actif dans le rayonnement de l’école.",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "precision": "year",
+                "year": 1857
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P571:0",
+                  "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q10177$9237CE66-B1FB-4D81-A115-90D4FD7D03BC\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+1857-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "section:Fondation_et_premi.C3.A8res_ann.C3.A9es",
+                  "original_text": "[modifier | modifier le code]\nL'École centrale de Lyon est créée en 1857 sous le nom d'« École centrale lyonnaise pour l'industrie et le commerce » à l'initiative de François Barthélemy Arlès-Dufour[5], entrepreneur et humaniste lyonnais d’inspiration saint-simonienne et de Désiré Girardon, professeur à l'école de la Martinière désireux de « former les meilleurs élèves de la Martinière à la chimie, la mécanique industrielle, la construction civile et le dessin industriel »[6].\nDésiré Girardon devient le premier directeur de l’établissement. L’école s’installe au 19 quai Castellane et accueille sa première promotion de quatorze élèves le 3 novembre 1857. La première remise de diplômes a lieu en 1860.\nEn 1866, l’Association des anciens élèves de l’École centrale de Lyon est fondée afin de fédérer le réseau des diplômés. Elle prend plus tard le nom d’Association des centraliens de Lyon et joue un rôle actif dans le rayonnement de l’école.",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "Established as École centrale lyonnaise pour l’industrie et le commerce by François Barthélemy Arlès-Dufour and Désiré Girardon."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "established",
+        "kind": "institution_establishment",
+        "subject_ref": "institution"
+      },
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Fondation_et_premi.C3.A8res_ann.C3.A9es",
+                  "original_text": "[modifier | modifier le code]\nL'École centrale de Lyon est créée en 1857 sous le nom d'« École centrale lyonnaise pour l'industrie et le commerce » à l'initiative de François Barthélemy Arlès-Dufour[5], entrepreneur et humaniste lyonnais d’inspiration saint-simonienne et de Désiré Girardon, professeur à l'école de la Martinière désireux de « former les meilleurs élèves de la Martinière à la chimie, la mécanique industrielle, la construction civile et le dessin industriel »[6].\nDésiré Girardon devient le premier directeur de l’établissement. L’école s’installe au 19 quai Castellane et accueille sa première promotion de quatorze élèves le 3 novembre 1857. La première remise de diplômes a lieu en 1860.\nEn 1866, l’Association des anciens élèves de l’École centrale de Lyon est fondée afin de fédérer le réseau des diplômés. Elle prend plus tard le nom d’Association des centraliens de Lyon et joue un rôle actif dans le rayonnement de l’école.",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "day": 3,
+                "month": 11,
+                "precision": "day",
+                "year": 1857
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Fondation_et_premi.C3.A8res_ann.C3.A9es",
+                  "original_text": "[modifier | modifier le code]\nL'École centrale de Lyon est créée en 1857 sous le nom d'« École centrale lyonnaise pour l'industrie et le commerce » à l'initiative de François Barthélemy Arlès-Dufour[5], entrepreneur et humaniste lyonnais d’inspiration saint-simonienne et de Désiré Girardon, professeur à l'école de la Martinière désireux de « former les meilleurs élèves de la Martinière à la chimie, la mécanique industrielle, la construction civile et le dessin industriel »[6].\nDésiré Girardon devient le premier directeur de l’établissement. L’école s’installe au 19 quai Castellane et accueille sa première promotion de quatorze élèves le 3 novembre 1857. La première remise de diplômes a lieu en 1860.\nEn 1866, l’Association des anciens élèves de l’École centrale de Lyon est fondée afin de fédérer le réseau des diplômés. Elle prend plus tard le nom d’Association des centraliens de Lyon et joue un rôle actif dans le rayonnement de l’école.",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "Opened with fourteen students."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "teaching",
+        "kind": "teaching_start",
+        "subject_ref": "institution"
+      },
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:D.C3.A9veloppement_au_XXe_si.C3.A8cle",
+                  "original_text": "[modifier | modifier le code]\nL’école déménage une première fois en 1869 au 20 quai Augagneur et devient l’« École centrale lyonnaise de l’industrie et du commerce ». En 1887, elle obtient le patronage de la Chambre de commerce de Lyon. En 1902, elle s’installe rue Chevreul[7] dans le quartier universitaire, sur un terrain cédé par la Ville de Lyon.\nSous la direction d’Henri Rigollot (1902–1929), l’établissement modernise ses locaux et ses équipements. Pierre Lemaire lui succède en 1929 et développe l’activité de recherche. L’école est nationalisée en 1947[8], devenant un établissement public sous l’impulsion de Paul Comparat, directeur à partir de 1950, avec le soutien d’Édouard Herriot.",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "precision": "year",
+                "year": 1947
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:D.C3.A9veloppement_au_XXe_si.C3.A8cle",
+                  "original_text": "[modifier | modifier le code]\nL’école déménage une première fois en 1869 au 20 quai Augagneur et devient l’« École centrale lyonnaise de l’industrie et du commerce ». En 1887, elle obtient le patronage de la Chambre de commerce de Lyon. En 1902, elle s’installe rue Chevreul[7] dans le quartier universitaire, sur un terrain cédé par la Ville de Lyon.\nSous la direction d’Henri Rigollot (1902–1929), l’établissement modernise ses locaux et ses équipements. Pierre Lemaire lui succède en 1929 et développe l’activité de recherche. L’école est nationalisée en 1947[8], devenant un établissement public sous l’impulsion de Paul Comparat, directeur à partir de 1950, avec le soutien d’Édouard Herriot.",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "The school was nationalised and became a public establishment."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "public",
+        "kind": "jurisdiction_change",
+        "subject_ref": "institution"
+      },
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Installation_.C3.A0_.C3.89cully_et_dimension_nationale",
+                  "original_text": "[modifier | modifier le code]\nDans les années 1950, l’école engage une réflexion sur son implantation et son statut. Le déménagement hors de Lyon intra-muros est décidé pour donner à l’établissement une envergure nationale, comparable a celle de l’École centrale de Paris. En 1967, elle s’installe sur un campus de 17 hectares à Écully, conçu par l’architecte Jacques Perrin-Fayolle. Cette année marque aussi une réforme des concours et une évolution de son statut.\nL’établissement devient officiellement l’« École centrale de Lyon » par décret en 1970. La première femme élève-ingénieur, Jeanne Morat, est admise en 1961. L’école participe dès cette époque au concours commun avec l’École centrale de Paris, élargi plus tard à Supélec et d’autres écoles du Groupe des Écoles centrales.\nEn 1992, l’école devient un établissement public à caractère scientifique, culturel et professionnel (EPSCP), habilité à délivrer le doctorat. Les élèves sont associés à la recherche dès 1968.",
+                  "source_ref": "s3"
+                },
+                {
+                  "locator": "section:Opening_internationally_since_the_campus_.C3.89cully",
+                  "original_text": "1967: Transfer in Ecully, creation of a campus in the \"American\".",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "precision": "year",
+                "year": 1967
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Installation_.C3.A0_.C3.89cully_et_dimension_nationale",
+                  "original_text": "[modifier | modifier le code]\nDans les années 1950, l’école engage une réflexion sur son implantation et son statut. Le déménagement hors de Lyon intra-muros est décidé pour donner à l’établissement une envergure nationale, comparable a celle de l’École centrale de Paris. En 1967, elle s’installe sur un campus de 17 hectares à Écully, conçu par l’architecte Jacques Perrin-Fayolle. Cette année marque aussi une réforme des concours et une évolution de son statut.\nL’établissement devient officiellement l’« École centrale de Lyon » par décret en 1970. La première femme élève-ingénieur, Jeanne Morat, est admise en 1961. L’école participe dès cette époque au concours commun avec l’École centrale de Paris, élargi plus tard à Supélec et d’autres écoles du Groupe des Écoles centrales.\nEn 1992, l’école devient un établissement public à caractère scientifique, culturel et professionnel (EPSCP), habilité à délivrer le doctorat. Les élèves sont associés à la recherche dès 1968.",
+                  "source_ref": "s3"
+                },
+                {
+                  "locator": "section:Opening_internationally_since_the_campus_.C3.89cully",
+                  "original_text": "1967: Transfer in Ecully, creation of a campus in the \"American\".",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "The Écully campus opened as the school moved from Lyon."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "ecully",
+        "kind": "campus_opening",
+        "subject_ref": "location:ecully-campus"
+      },
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Installation_.C3.A0_.C3.89cully_et_dimension_nationale",
+                  "original_text": "[modifier | modifier le code]\nDans les années 1950, l’école engage une réflexion sur son implantation et son statut. Le déménagement hors de Lyon intra-muros est décidé pour donner à l’établissement une envergure nationale, comparable a celle de l’École centrale de Paris. En 1967, elle s’installe sur un campus de 17 hectares à Écully, conçu par l’architecte Jacques Perrin-Fayolle. Cette année marque aussi une réforme des concours et une évolution de son statut.\nL’établissement devient officiellement l’« École centrale de Lyon » par décret en 1970. La première femme élève-ingénieur, Jeanne Morat, est admise en 1961. L’école participe dès cette époque au concours commun avec l’École centrale de Paris, élargi plus tard à Supélec et d’autres écoles du Groupe des Écoles centrales.\nEn 1992, l’école devient un établissement public à caractère scientifique, culturel et professionnel (EPSCP), habilité à délivrer le doctorat. Les élèves sont associés à la recherche dès 1968.",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "precision": "year",
+                "year": 1970
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Installation_.C3.A0_.C3.89cully_et_dimension_nationale",
+                  "original_text": "[modifier | modifier le code]\nDans les années 1950, l’école engage une réflexion sur son implantation et son statut. Le déménagement hors de Lyon intra-muros est décidé pour donner à l’établissement une envergure nationale, comparable a celle de l’École centrale de Paris. En 1967, elle s’installe sur un campus de 17 hectares à Écully, conçu par l’architecte Jacques Perrin-Fayolle. Cette année marque aussi une réforme des concours et une évolution de son statut.\nL’établissement devient officiellement l’« École centrale de Lyon » par décret en 1970. La première femme élève-ingénieur, Jeanne Morat, est admise en 1961. L’école participe dès cette époque au concours commun avec l’École centrale de Paris, élargi plus tard à Supélec et d’autres écoles du Groupe des Écoles centrales.\nEn 1992, l’école devient un établissement public à caractère scientifique, culturel et professionnel (EPSCP), habilité à délivrer le doctorat. Les élèves sont associés à la recherche dès 1968.",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "Officially renamed École centrale de Lyon by decree."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "rename",
+        "kind": "rename",
+        "subject_ref": "institution"
+      },
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Installation_.C3.A0_.C3.89cully_et_dimension_nationale",
+                  "original_text": "[modifier | modifier le code]\nDans les années 1950, l’école engage une réflexion sur son implantation et son statut. Le déménagement hors de Lyon intra-muros est décidé pour donner à l’établissement une envergure nationale, comparable a celle de l’École centrale de Paris. En 1967, elle s’installe sur un campus de 17 hectares à Écully, conçu par l’architecte Jacques Perrin-Fayolle. Cette année marque aussi une réforme des concours et une évolution de son statut.\nL’établissement devient officiellement l’« École centrale de Lyon » par décret en 1970. La première femme élève-ingénieur, Jeanne Morat, est admise en 1961. L’école participe dès cette époque au concours commun avec l’École centrale de Paris, élargi plus tard à Supélec et d’autres écoles du Groupe des Écoles centrales.\nEn 1992, l’école devient un établissement public à caractère scientifique, culturel et professionnel (EPSCP), habilité à délivrer le doctorat. Les élèves sont associés à la recherche dès 1968.",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "precision": "year",
+                "year": 1992
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Installation_.C3.A0_.C3.89cully_et_dimension_nationale",
+                  "original_text": "[modifier | modifier le code]\nDans les années 1950, l’école engage une réflexion sur son implantation et son statut. Le déménagement hors de Lyon intra-muros est décidé pour donner à l’établissement une envergure nationale, comparable a celle de l’École centrale de Paris. En 1967, elle s’installe sur un campus de 17 hectares à Écully, conçu par l’architecte Jacques Perrin-Fayolle. Cette année marque aussi une réforme des concours et une évolution de son statut.\nL’établissement devient officiellement l’« École centrale de Lyon » par décret en 1970. La première femme élève-ingénieur, Jeanne Morat, est admise en 1961. L’école participe dès cette époque au concours commun avec l’École centrale de Paris, élargi plus tard à Supélec et d’autres écoles du Groupe des Écoles centrales.\nEn 1992, l’école devient un établissement public à caractère scientifique, culturel et professionnel (EPSCP), habilité à délivrer le doctorat. Les élèves sont associés à la recherche dès 1968.",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "Became an EPSCP, authorised to award doctorates."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "epscp",
+        "kind": "higher_education_status",
+        "subject_ref": "institution"
+      },
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:.C3.89volutions_r.C3.A9centes_et_partenariats",
+                  "original_text": "[modifier | modifier le code]\nDepuis 2017, Centrale Lyon a engagé plusieurs évolutions institutionnelles et infrastructurelles. En 2017, elle lance le projet stratégique « ECL 4.0 », visant à moderniser ses infrastructures et à renforcer ses collaborations académiques et industrielles[10]. En 2021, l’École nationale d’ingénieurs de Saint-Étienne (ENISE) devient une école interne[3],[11], élargissant l’offre de formation d’ingénieurs et renforçant l’ancrage territorial de l’établissement. En 2022, Centrale Lyon cofonde le Collège d’ingénierie Lyon Saint-Étienne aux côtés de l’INSA Lyon, de l’ENTPE et de Mines Saint-Étienne[12], pour mutualiser certaines actions dans les domaines de la formation, de la recherche et de l’innovation. Ces évolutions s’inscrivent dans un plan stratégique 2022–2030 intégrant notamment des engagements en faveur du développement durable[13]. L’établissement a par ailleurs élargi son offre de formation depuis 2019[14],[15].",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "precision": "year",
+                "year": 2021
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:.C3.89volutions_r.C3.A9centes_et_partenariats",
+                  "original_text": "[modifier | modifier le code]\nDepuis 2017, Centrale Lyon a engagé plusieurs évolutions institutionnelles et infrastructurelles. En 2017, elle lance le projet stratégique « ECL 4.0 », visant à moderniser ses infrastructures et à renforcer ses collaborations académiques et industrielles[10]. En 2021, l’École nationale d’ingénieurs de Saint-Étienne (ENISE) devient une école interne[3],[11], élargissant l’offre de formation d’ingénieurs et renforçant l’ancrage territorial de l’établissement. En 2022, Centrale Lyon cofonde le Collège d’ingénierie Lyon Saint-Étienne aux côtés de l’INSA Lyon, de l’ENTPE et de Mines Saint-Étienne[12], pour mutualiser certaines actions dans les domaines de la formation, de la recherche et de l’innovation. Ces évolutions s’inscrivent dans un plan stratégique 2022–2030 intégrant notamment des engagements en faveur du développement durable[13]. L’établissement a par ailleurs élargi son offre de formation depuis 2019[14],[15].",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "ENISE became an internal school of Centrale Lyon."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "enise",
+        "kind": "merger",
+        "subject_ref": "institution"
+      },
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:At_the_heart_of_Lyon",
+                  "original_text": "1901: Transfer street Chevreul on land donated by the city of Lyon in the person of its mayor, Edouard Herriot.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "precision": "year",
+                "year": 1901
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:D.C3.A9veloppement_au_XXe_si.C3.A8cle",
+                  "original_text": "[modifier | modifier le code]\nL’école déménage une première fois en 1869 au 20 quai Augagneur et devient l’« École centrale lyonnaise de l’industrie et du commerce ». En 1887, elle obtient le patronage de la Chambre de commerce de Lyon. En 1902, elle s’installe rue Chevreul[7] dans le quartier universitaire, sur un terrain cédé par la Ville de Lyon.\nSous la direction d’Henri Rigollot (1902–1929), l’établissement modernise ses locaux et ses équipements. Pierre Lemaire lui succède en 1929 et développe l’activité de recherche. L’école est nationalisée en 1947[8], devenant un établissement public sous l’impulsion de Paul Comparat, directeur à partir de 1950, avec le soutien d’Édouard Herriot.",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c2",
+              "value": {
+                "precision": "year",
+                "year": 1902
+              },
+              "verification": "supported"
+            }
+          ],
+          "conflicts": [
+            {
+              "candidate_ids": [
+                "c1",
+                "c2"
+              ],
+              "kind": "time_disagreement",
+              "note": "English chronology gives 1901; French history gives 1902 for relocation to rue Chevreul.",
+              "status": "unresolved"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c2",
+            "qualifications": [
+              "conflicting_candidates"
+            ],
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:D.C3.A9veloppement_au_XXe_si.C3.A8cle",
+                  "original_text": "[modifier | modifier le code]\nL’école déménage une première fois en 1869 au 20 quai Augagneur et devient l’« École centrale lyonnaise de l’industrie et du commerce ». En 1887, elle obtient le patronage de la Chambre de commerce de Lyon. En 1902, elle s’installe rue Chevreul[7] dans le quartier universitaire, sur un terrain cédé par la Ville de Lyon.\nSous la direction d’Henri Rigollot (1902–1929), l’établissement modernise ses locaux et ses équipements. Pierre Lemaire lui succède en 1929 et développe l’activité de recherche. L’école est nationalisée en 1947[8], devenant un établissement public sous l’impulsion de Paul Comparat, directeur à partir de 1950, avec le soutien d’Édouard Herriot.",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "Relocation to rue Chevreul in Lyon, on land supplied by the city."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "chevreul",
+        "kind": "relocation",
+        "subject_ref": "institution"
+      }
+    ]
+  },
+  "identity": {
+    "aliases": [
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q10177\", \"labels\": {\"fr\": \"École centrale de Lyon\", \"en\": \"École Centrale de Lyon\"}, \"descriptions\": {\"en\": \"Research university in Lyon\", \"fr\": \"grande école d'ingénieurs française\"}}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "fr",
+              "text": "École centrale de Lyon"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q10177\", \"labels\": {\"fr\": \"École centrale de Lyon\", \"en\": \"École Centrale de Lyon\"}, \"descriptions\": {\"en\": \"Research university in Lyon\", \"fr\": \"grande école d'ingénieurs française\"}}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "École Centrale de Lyon"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Fondation_et_premi.C3.A8res_ann.C3.A9es",
+                "original_text": "[modifier | modifier le code]\nL'École centrale de Lyon est créée en 1857 sous le nom d'« École centrale lyonnaise pour l'industrie et le commerce » à l'initiative de François Barthélemy Arlès-Dufour[5], entrepreneur et humaniste lyonnais d’inspiration saint-simonienne et de Désiré Girardon, professeur à l'école de la Martinière désireux de « former les meilleurs élèves de la Martinière à la chimie, la mécanique industrielle, la construction civile et le dessin industriel »[6].\nDésiré Girardon devient le premier directeur de l’établissement. L’école s’installe au 19 quai Castellane et accueille sa première promotion de quatorze élèves le 3 novembre 1857. La première remise de diplômes a lieu en 1860.\nEn 1866, l’Association des anciens élèves de l’École centrale de Lyon est fondée afin de fédérer le réseau des diplômés. Elle prend plus tard le nom d’Association des centraliens de Lyon et joue un rôle actif dans le rayonnement de l’école.",
+                "source_ref": "s3"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "fr",
+              "text": "École centrale lyonnaise pour l’industrie et le commerce"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    ],
+    "identifiers": {
+      "P5242": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P5242:0",
+                "original_text": "{\"property\": \"P5242\", \"property_label\": \"ARWU university ID\", \"statement_id\": \"Q10177$948C4C12-841C-40E1-B743-EA172CE15633\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"Ecole-Centrale-Lyon\"}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": "Ecole-Centrale-Lyon",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "P5584": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P5584:0",
+                "original_text": "{\"property\": \"P5584\", \"property_label\": \"QS World University ID\", \"statement_id\": \"Q10177$68daa08d-4a09-7101-5e41-a8f8f7a59319\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"ecole-centrale-de-lyon\"}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": "ecole-centrale-de-lyon",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "P5586": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P5586:0",
+                "original_text": "{\"property\": \"P5586\", \"property_label\": \"Times Higher Education World University ID\", \"statement_id\": \"Q10177$8CCC21EE-1A40-47AA-9FF0-C66ADB5C9D63\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"ecole-centrale-de-lyon\"}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": "ecole-centrale-de-lyon",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    "kind": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "Centrale Lyon, anciennement École centrale de Lyon, est une école d'ingénieurs française fondée en 1857[2].",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c1",
+          "value": "specialist_institution",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "names": {
+      "fr": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P1448:0",
+                "original_text": "{\"property\": \"P1448\", \"property_label\": \"official name\", \"statement_id\": \"Q10177$FDFBC68A-604F-45A2-BB78-9F69FB2F6594\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"Centrale Lyon\", \"language\": \"fr\"}, \"qualifiers\": {\"P1013\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 131741681, \"id\": \"Q131741681\"}}]}, \"reference_count\": 1}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": "Centrale Lyon",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    "operating_status": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "Elle fait partie des 204 écoles accréditées à délivrer le diplôme d’ingénieur par la commission des titres d’ingénieur (CTI).",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c1",
+          "value": "operating",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "ownership": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:D.C3.A9veloppement_au_XXe_si.C3.A8cle",
+              "original_text": "[modifier | modifier le code]\nL’école déménage une première fois en 1869 au 20 quai Augagneur et devient l’« École centrale lyonnaise de l’industrie et du commerce ». En 1887, elle obtient le patronage de la Chambre de commerce de Lyon. En 1902, elle s’installe rue Chevreul[7] dans le quartier universitaire, sur un terrain cédé par la Ville de Lyon.\nSous la direction d’Henri Rigollot (1902–1929), l’établissement modernise ses locaux et ses équipements. Pierre Lemaire lui succède en 1929 et développe l’activité de recherche. L’école est nationalisée en 1947[8], devenant un établissement public sous l’impulsion de Paul Comparat, directeur à partir de 1950, avec le soutien d’Édouard Herriot.",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c1",
+          "value": "public",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "leadership": {
+    "chancellor": {
+      "candidates": [
+        {
+          "current_basis": "infobox_current",
+          "evidence": [
+            {
+              "locator": "infobox:4",
+              "original_text": "Chancellor: Christian Mari",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "person": {
+              "name": "Christian Mari"
+            },
+            "title_original": {
+              "language": "en",
+              "text": "Chancellor"
+            }
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "single_source_family",
+          "reported_current"
+        ],
+        "reason": "The page reports this person in its current officeholder field; a term-end date is not required.",
+        "reason_code": "infobox_current"
+      }
+    },
+    "president": {
+      "candidates": [
+        {
+          "current_basis": "infobox_current",
+          "evidence": [
+            {
+              "locator": "infobox:5",
+              "original_text": "President: Pascal Ray",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "person": {
+              "name": "Pascal Ray"
+            },
+            "title_original": {
+              "language": "en",
+              "text": "President"
+            }
+          },
+          "verification": "supported"
+        },
+        {
+          "current_basis": "infobox_current",
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "Président\nJacques Maigné (ECL'1977)",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c2",
+          "value": {
+            "person": {
+              "name": "Jacques Maigné"
+            },
+            "title_original": {
+              "language": "fr",
+              "text": "Président"
+            }
+          },
+          "verification": "supported"
+        }
+      ],
+      "conflicts": [
+        {
+          "candidate_ids": [
+            "c1",
+            "c2"
+          ],
+          "kind": "value_disagreement",
+          "note": "English infobox names Pascal Ray President; French lead names Jacques Maigné Président and Pascal Ray Directeur. Office equivalence and current incumbency need primary-source resolution.",
+          "status": "unresolved"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c2",
+        "qualifications": [
+          "single_source_family",
+          "conflicting_candidates",
+          "reported_current"
+        ],
+        "reason": "The page reports this person in its current officeholder field; a term-end date is not required.",
+        "reason_code": "infobox_current"
+      }
+    }
+  },
+  "locations": [
+    {
+      "address": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P159:0",
+                "original_text": "{\"property\": \"P159\", \"property_label\": \"headquarters location\", \"statement_id\": \"Q10177$AED92A68-E825-4568-98DF-73C2D64DD1EB\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 273748, \"id\": \"Q273748\"}, \"qualifiers\": {\"P281\": [{\"snaktype\": \"value\", \"value\": \"69134 CEDEX\"}], \"P17\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 142, \"id\": \"Q142\"}}], \"P625\": [{\"snaktype\": \"value\", \"value\": {\"latitude\": 45.783055555556, \"longitude\": 4.7694444444444, \"altitude\": null, \"precision\": 0.00027777777777778, \"globe\": \"http://www.wikidata.org/entity/Q2\"}}], \"P6375\": [{\"snaktype\": \"value\", \"value\": {\"text\": \"36 Avenue Guy de Collongue\", \"language\": \"fr\"}}]}}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "city_name": "Écully",
+              "city_qid": "Q273748",
+              "country_name": "France",
+              "country_qid": "Q142",
+              "formatted": {
+                "language": "fr",
+                "text": "36 Avenue Guy de Collongue"
+              },
+              "postal_code": "69134 CEDEX",
+              "street": "36 Avenue Guy de Collongue"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "coordinates": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P159:0",
+                "original_text": "{\"property\": \"P159\", \"property_label\": \"headquarters location\", \"statement_id\": \"Q10177$AED92A68-E825-4568-98DF-73C2D64DD1EB\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 273748, \"id\": \"Q273748\"}, \"qualifiers\": {\"P281\": [{\"snaktype\": \"value\", \"value\": \"69134 CEDEX\"}], \"P17\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 142, \"id\": \"Q142\"}}], \"P625\": [{\"snaktype\": \"value\", \"value\": {\"latitude\": 45.783055555556, \"longitude\": 4.7694444444444, \"altitude\": null, \"precision\": 0.00027777777777778, \"globe\": \"http://www.wikidata.org/entity/Q2\"}}], \"P6375\": [{\"snaktype\": \"value\", \"value\": {\"text\": \"36 Avenue Guy de Collongue\", \"language\": \"fr\"}}]}}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "crs": "EPSG:4326",
+              "latitude": 45.783055555556,
+              "longitude": 4.7694444444444
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "id": "ecully-hq",
+      "kind": "headquarters",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P159:0",
+                "original_text": "{\"property\": \"P159\", \"property_label\": \"headquarters location\", \"statement_id\": \"Q10177$AED92A68-E825-4568-98DF-73C2D64DD1EB\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 273748, \"id\": \"Q273748\"}, \"qualifiers\": {\"P281\": [{\"snaktype\": \"value\", \"value\": \"69134 CEDEX\"}], \"P17\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 142, \"id\": \"Q142\"}}], \"P625\": [{\"snaktype\": \"value\", \"value\": {\"latitude\": 45.783055555556, \"longitude\": 4.7694444444444, \"altitude\": null, \"precision\": 0.00027777777777778, \"globe\": \"http://www.wikidata.org/entity/Q2\"}}], \"P6375\": [{\"snaktype\": \"value\", \"value\": {\"text\": \"36 Avenue Guy de Collongue\", \"language\": \"fr\"}}]}}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "fr",
+              "text": "Écully"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "qid": "Q273748"
+    },
+    {
+      "address": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P159:1",
+                "original_text": "{\"property\": \"P159\", \"property_label\": \"headquarters location\", \"statement_id\": \"Q10177$1340b449-4702-08f8-6faa-fca388b5a96d\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 42716, \"id\": \"Q42716\"}, \"qualifiers\": {\"P281\": [{\"snaktype\": \"value\", \"value\": \"42100\"}], \"P6375\": [{\"snaktype\": \"value\", \"value\": {\"text\": \"58 rue Jean Parot\", \"language\": \"fr\"}}]}}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "city_name": "Saint-Étienne",
+              "city_qid": "Q42716",
+              "country_name": "France",
+              "country_qid": "Q142",
+              "formatted": {
+                "language": "fr",
+                "text": "58 rue Jean Parot"
+              },
+              "postal_code": "42100",
+              "street": "58 rue Jean Parot"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "id": "st-etienne-hq",
+      "kind": "headquarters",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P159:1",
+                "original_text": "{\"property\": \"P159\", \"property_label\": \"headquarters location\", \"statement_id\": \"Q10177$1340b449-4702-08f8-6faa-fca388b5a96d\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 42716, \"id\": \"Q42716\"}, \"qualifiers\": {\"P281\": [{\"snaktype\": \"value\", \"value\": \"42100\"}], \"P6375\": [{\"snaktype\": \"value\", \"value\": {\"text\": \"58 rue Jean Parot\", \"language\": \"fr\"}}]}}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "fr",
+              "text": "Saint-Étienne"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "qid": "Q42716"
+    },
+    {
+      "id": "ecully-campus",
+      "kind": "campus",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "L’établissement est situé depuis 1967 sur un campus de 17 hectares à Écully, près de Lyon, qui constitue son site principal.",
+                "source_ref": "s3"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "fr",
+              "text": "Campus d’Écully"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "population": {
+        "doctoral_students": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "Il accueille environ 1 700 élèves-ingénieurs, ainsi que 230 doctorants et plus de 230 enseignants-chercheurs[pdf 1].",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "period_status": "not_stated",
+              "value": {
+                "amount": 230,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "period_not_stated",
+              "single_source_family"
+            ],
+            "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+            "reason_code": "only_available"
+          }
+        },
+        "students_total": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "Il accueille environ 1 700 élèves-ingénieurs, ainsi que 230 doctorants et plus de 230 enseignants-chercheurs[pdf 1].",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "period_status": "not_stated",
+              "value": {
+                "amount": 1700,
+                "basis": "unspecified",
+                "precision": "approximate"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "period_not_stated",
+              "single_source_family",
+              "approximate_value"
+            ],
+            "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "valid_from": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Installation_.C3.A0_.C3.89cully_et_dimension_nationale",
+                "original_text": "[modifier | modifier le code]\nDans les années 1950, l’école engage une réflexion sur son implantation et son statut. Le déménagement hors de Lyon intra-muros est décidé pour donner à l’établissement une envergure nationale, comparable a celle de l’École centrale de Paris. En 1967, elle s’installe sur un campus de 17 hectares à Écully, conçu par l’architecte Jacques Perrin-Fayolle. Cette année marque aussi une réforme des concours et une évolution de son statut.\nL’établissement devient officiellement l’« École centrale de Lyon » par décret en 1970. La première femme élève-ingénieur, Jeanne Morat, est admise en 1961. L’école participe dès cette époque au concours commun avec l’École centrale de Paris, élargi plus tard à Supélec et d’autres écoles du Groupe des Écoles centrales.\nEn 1992, l’école devient un établissement public à caractère scientifique, culturel et professionnel (EPSCP), habilité à délivrer le doctorat. Les élèves sont associés à la recherche dès 1968.",
+                "source_ref": "s3"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "precision": "year",
+              "year": 1967
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    {
+      "id": "st-etienne-campus",
+      "kind": "campus",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "Depuis 2021, Centrale Lyon est également implantée à Saint-Étienne[3], où sont formés près de 1 040 élèves, dont 270 en alternance[pdf 2] dans le cadre de l'intégration de l’École nationale d’ingénieurs de Saint-Étienne (ENISE)[3].",
+                "source_ref": "s3"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "fr",
+              "text": "Saint-Étienne"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "population": {
+        "students_total": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "Depuis 2021, Centrale Lyon est également implantée à Saint-Étienne[3], où sont formés près de 1 040 élèves, dont 270 en alternance[pdf 2] dans le cadre de l'intégration de l’École nationale d’ingénieurs de Saint-Étienne (ENISE)[3].",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "period_status": "not_stated",
+              "value": {
+                "amount": 1040,
+                "basis": "unspecified",
+                "precision": "approximate"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "period_not_stated",
+              "single_source_family",
+              "approximate_value"
+            ],
+            "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "valid_from": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:.C3.89volutions_r.C3.A9centes_et_partenariats",
+                "original_text": "[modifier | modifier le code]\nDepuis 2017, Centrale Lyon a engagé plusieurs évolutions institutionnelles et infrastructurelles. En 2017, elle lance le projet stratégique « ECL 4.0 », visant à moderniser ses infrastructures et à renforcer ses collaborations académiques et industrielles[10]. En 2021, l’École nationale d’ingénieurs de Saint-Étienne (ENISE) devient une école interne[3],[11], élargissant l’offre de formation d’ingénieurs et renforçant l’ancrage territorial de l’établissement. En 2022, Centrale Lyon cofonde le Collège d’ingénierie Lyon Saint-Étienne aux côtés de l’INSA Lyon, de l’ENTPE et de Mines Saint-Étienne[12], pour mutualiser certaines actions dans les domaines de la formation, de la recherche et de l’innovation. Ces évolutions s’inscrivent dans un plan stratégique 2022–2030 intégrant notamment des engagements en faveur du développement durable[13]. L’établissement a par ailleurs élargi son offre de formation depuis 2019[14],[15].",
+                "source_ref": "s3"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "precision": "year",
+              "year": 2021
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    }
+  ],
+  "modified_datetime": "2026-11-06T11:33:47.369719+00:00",
+  "population": {
+    "academic_staff": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "Enseignants-chercheurs\n196",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c1",
+          "period_status": "not_stated",
+          "value": {
+            "amount": 196,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "period_not_stated",
+          "single_source_family"
+        ],
+        "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+        "reason_code": "only_available"
+      }
+    },
+    "doctoral_students": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:7",
+              "original_text": "Doctoral students: 170",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "period_status": "not_stated",
+          "value": {
+            "amount": 170,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "period_not_stated",
+          "single_source_family"
+        ],
+        "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+        "reason_code": "only_available"
+      }
+    },
+    "postgraduate_students": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:6",
+              "original_text": "Postgraduates: 1270",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "period_status": "not_stated",
+          "value": {
+            "amount": 1270,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "period_not_stated",
+          "single_source_family"
+        ],
+        "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+        "reason_code": "only_available"
+      }
+    },
+    "students_total": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:0",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q10177$24aff951-4f1d-8d90-fc2b-1cf208d60529\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+1468\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2019-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2019
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 1468,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:1",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q10177$1d15b61a-f1f7-4387-9567-30679b0ce269\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+1366\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2007-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c2",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2007
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 1366,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:2",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q10177$efd496d3-d9db-4253-94b0-11caeecbed7e\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+1390\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2012-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c3",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2012
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 1390,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:3",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q10177$c408b278-3c7c-42f5-8cb4-9bdcc419d002\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+2912\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2021-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c4",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2021
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 2912,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:4",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q10177$167a61c5-eb4a-4ca0-8d33-c528d5ac1dbf\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+1483\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2009-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c5",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2009
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 1483,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:5",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q10177$96288206-d575-41c9-a7a3-e2f49e7a9548\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+1633\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2014-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c6",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2014
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 1633,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:6",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q10177$e94b9c81-5b58-463e-95b3-945a15468048\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+1446\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2008-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c7",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2008
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 1446,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:7",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q10177$04b7f207-5554-403a-a4c0-948f7670d909\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+1513\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2013-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c8",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2013
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 1513,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:8",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q10177$564515a9-014a-44c7-80fd-bcfc6827bf67\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+1907\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2018-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c9",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2018
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 1907,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:9",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q10177$332d76c1-430f-491b-8d73-4452dc375c1d\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+1876\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2019-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c10",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2019
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 1876,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:10",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q10177$957b3617-d9d3-4f6c-836a-b65df123e687\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+1842\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2020-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c11",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2020
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 1842,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:11",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q10177$e3c9bcc2-8326-4ea5-8d8b-f3f387a80d0f\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+1392\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2010-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c12",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2010
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 1392,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:12",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q10177$622121d3-46f7-42f5-9432-8c64920390d2\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+1482\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2011-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c13",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2011
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 1482,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:13",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q10177$ebb6ddc2-7dfd-4696-aba4-86b70dffbb1a\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+1817\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2017-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c14",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2017
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 1817,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:14",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q10177$93084835-f27e-4938-992c-cb3bec177f23\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+1714\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2015-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c15",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2015
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 1714,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:15",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q10177$339e00c6-3308-4578-b1df-75fb3444e104\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+1774\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2016-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c16",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2016
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 1774,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:16",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q10177$38d56b90-8e23-4045-a851-456367911442\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+2916\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2022-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c17",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2022
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 2916,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:17",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q10177$445392c0-389a-4d44-b1e3-b1ae3fc255cc\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+2920\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2023-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c18",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2023
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 2920,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "Étudiants\n2 790",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c19",
+          "period_status": "not_stated",
+          "value": {
+            "amount": 2790,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        }
+      ],
+      "conflicts": [
+        {
+          "candidate_ids": [
+            "c1",
+            "c10"
+          ],
+          "kind": "value_disagreement",
+          "note": "Wikidata reports 1468 and 1876 students for 2019 with no distinguishing scope qualifier.",
+          "status": "unresolved"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c19",
+        "qualifications": [
+          "period_not_stated",
+          "single_source_family",
+          "conflicting_candidates"
+        ],
+        "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+        "reason_code": "best_available"
+      }
+    }
+  },
+  "profile": {
+    "academic_focus": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:Academics",
+              "original_text": "The defining characteristic of the curriculum is that it is multidisciplinary, with studies focusing on all math and physics derived engineering specialties: mechanics, physics, materials, fluid mechanics, electrical engineering, applied mathematics, civil engineering, aeronautics, computer science, telecommunications and micro-nano-biotechnology.",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": [
+            {
+              "language": "en",
+              "text": "engineering"
+            },
+            {
+              "language": "en",
+              "text": "applied mathematics"
+            },
+            {
+              "language": "en",
+              "text": "physics"
+            },
+            {
+              "language": "en",
+              "text": "materials science"
+            },
+            {
+              "language": "en",
+              "text": "fluid mechanics"
+            },
+            {
+              "language": "en",
+              "text": "electrical engineering"
+            },
+            {
+              "language": "en",
+              "text": "civil engineering"
+            },
+            {
+              "language": "en",
+              "text": "aeronautics"
+            },
+            {
+              "language": "en",
+              "text": "computer science"
+            },
+            {
+              "language": "en",
+              "text": "telecommunications"
+            },
+            {
+              "language": "en",
+              "text": "micro-nano-biotechnology"
+            }
+          ],
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "degree_levels": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:Academics",
+              "original_text": "The engineering degree of the École Centrale de Lyon (ingénieur centralien or \"centralien engineer\") is a Master of Science degree.",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Formation_doctorale",
+              "original_text": "[modifier | modifier le code]\nL’École centrale de Lyon propose à des diplômés Bac+5, centraliens ou non, de poursuivre leurs études par un Doctorat au sein de l'un des six laboratoires de recherche CNRS de l'école[22].",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c1",
+          "value": [
+            "master",
+            "doctorate"
+          ],
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "motto": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P1451:0",
+              "original_text": "{\"property\": \"P1451\", \"property_label\": \"motto text\", \"statement_id\": \"Q10177$78a49c36-406a-d444-2df8-51faa27ca861\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"Former des ingénieurs innovants, humanistes et ouverts sur le monde\", \"language\": \"fr\"}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "language": "fr",
+            "text": "Former des ingénieurs innovants, humanistes et ouverts sur le monde"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "infobox:0",
+              "original_text": "Motto: Une grande école sans frontières (French)",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c2",
+          "value": {
+            "language": "fr",
+            "text": "Une grande école sans frontières"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c2",
+        "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+        "reason_code": "best_available"
+      }
+    },
+    "summary": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:Fondation_et_premi.C3.A8res_ann.C3.A9es",
+              "original_text": "[modifier | modifier le code]\nL'École centrale de Lyon est créée en 1857 sous le nom d'« École centrale lyonnaise pour l'industrie et le commerce » à l'initiative de François Barthélemy Arlès-Dufour[5], entrepreneur et humaniste lyonnais d’inspiration saint-simonienne et de Désiré Girardon, professeur à l'école de la Martinière désireux de « former les meilleurs élèves de la Martinière à la chimie, la mécanique industrielle, la construction civile et le dessin industriel »[6].\nDésiré Girardon devient le premier directeur de l’établissement. L’école s’installe au 19 quai Castellane et accueille sa première promotion de quatorze élèves le 3 novembre 1857. La première remise de diplômes a lieu en 1860.\nEn 1866, l’Association des anciens élèves de l’École centrale de Lyon est fondée afin de fédérer le réseau des diplômés. Elle prend plus tard le nom d’Association des centraliens de Lyon et joue un rôle actif dans le rayonnement de l’école.",
+              "source_ref": "s3"
+            },
+            {
+              "locator": "section:D.C3.A9veloppement_au_XXe_si.C3.A8cle",
+              "original_text": "[modifier | modifier le code]\nL’école déménage une première fois en 1869 au 20 quai Augagneur et devient l’« École centrale lyonnaise de l’industrie et du commerce ». En 1887, elle obtient le patronage de la Chambre de commerce de Lyon. En 1902, elle s’installe rue Chevreul[7] dans le quartier universitaire, sur un terrain cédé par la Ville de Lyon.\nSous la direction d’Henri Rigollot (1902–1929), l’établissement modernise ses locaux et ses équipements. Pierre Lemaire lui succède en 1929 et développe l’activité de recherche. L’école est nationalisée en 1947[8], devenant un établissement public sous l’impulsion de Paul Comparat, directeur à partir de 1950, avec le soutien d’Édouard Herriot.",
+              "source_ref": "s3"
+            },
+            {
+              "locator": "section:Installation_.C3.A0_.C3.89cully_et_dimension_nationale",
+              "original_text": "[modifier | modifier le code]\nDans les années 1950, l’école engage une réflexion sur son implantation et son statut. Le déménagement hors de Lyon intra-muros est décidé pour donner à l’établissement une envergure nationale, comparable a celle de l’École centrale de Paris. En 1967, elle s’installe sur un campus de 17 hectares à Écully, conçu par l’architecte Jacques Perrin-Fayolle. Cette année marque aussi une réforme des concours et une évolution de son statut.\nL’établissement devient officiellement l’« École centrale de Lyon » par décret en 1970. La première femme élève-ingénieur, Jeanne Morat, est admise en 1961. L’école participe dès cette époque au concours commun avec l’École centrale de Paris, élargi plus tard à Supélec et d’autres écoles du Groupe des Écoles centrales.\nEn 1992, l’école devient un établissement public à caractère scientifique, culturel et professionnel (EPSCP), habilité à délivrer le doctorat. Les élèves sont associés à la recherche dès 1968.",
+              "source_ref": "s3"
+            },
+            {
+              "locator": "section:.C3.89volutions_r.C3.A9centes_et_partenariats",
+              "original_text": "[modifier | modifier le code]\nDepuis 2017, Centrale Lyon a engagé plusieurs évolutions institutionnelles et infrastructurelles. En 2017, elle lance le projet stratégique « ECL 4.0 », visant à moderniser ses infrastructures et à renforcer ses collaborations académiques et industrielles[10]. En 2021, l’École nationale d’ingénieurs de Saint-Étienne (ENISE) devient une école interne[3],[11], élargissant l’offre de formation d’ingénieurs et renforçant l’ancrage territorial de l’établissement. En 2022, Centrale Lyon cofonde le Collège d’ingénierie Lyon Saint-Étienne aux côtés de l’INSA Lyon, de l’ENTPE et de Mines Saint-Étienne[12], pour mutualiser certaines actions dans les domaines de la formation, de la recherche et de l’innovation. Ces évolutions s’inscrivent dans un plan stratégique 2022–2030 intégrant notamment des engagements en faveur du développement durable[13]. L’établissement a par ailleurs élargi son offre de formation depuis 2019[14],[15].",
+              "source_ref": "s3"
+            },
+            {
+              "locator": "section:lead",
+              "original_text": "L’école dispense une formation d’ingénieur généraliste, comprenant un tronc commun en sciences fondamentales (mathématiques, physique, informatique) et en sciences de l’ingénieur (mécanique, énergétique, matériaux, etc.). Cette base est complétée par des enseignements électifs permettant une spécialisation progressive, ainsi que par des modules en sciences humaines et sociales. Elle délivre également un diplôme d’ingénieur par alternance, notamment dans les domaines de l’énergie, du génie civil, du génie sensoriel et du génie mécanique, ainsi que plusieurs masters et formations doctorales, souvent en collaboration avec d'autres établissements. L’offre de formation comprend aussi des doubles diplômes en ingénierie, management ou architecture, en partenariat avec des institutions françaises ou étrangères. L’ensemble des cursus s’appuie sur des partenariats étroits avec le monde industriel et une forte dimension internationale[pdf 3].\n",
+              "source_ref": "s3"
+            },
+            {
+              "locator": "section:lead",
+              "original_text": "Centrale Lyon mène des activités de recherche dans six unités mixtes de recherche associées au CNRS, actives notamment en tribologie, acoustique, nanotechnologies, mécanique ou aéronautique. Les laboratoires sont implantés au cœur du campus d’Écully, en lien direct avec les formations[pdf 3].\n",
+              "source_ref": "s3"
+            },
+            {
+              "locator": "section:lead",
+              "original_text": "L’établissement est membre du Groupe des Écoles centrales, qui réunit cinq écoles en France et quatre campus à l’international. Il appartient également à l’université de Lyon, communauté d’établissements regroupant environ 130 000 étudiants[4], ainsi qu’à plusieurs réseaux académiques comme la Conférence des Grandes Écoles (CGE) ou le Collège d'ingénierie Lyon Saint-Étienne.",
+              "source_ref": "s3"
+            },
+            {
+              "locator": "claim:P2196:17",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q10177$445392c0-389a-4d44-b1e3-b1ae3fc255cc\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+2920\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2023-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "language": "en",
+            "text": "Centrale Lyon, formerly École centrale de Lyon, is a public engineering school in France, with its principal campus in Écully near Lyon and a further presence in Saint-Étienne. It was established in 1857 as the École centrale lyonnaise pour l’industrie et le commerce through the initiative of François Barthélemy Arlès-Dufour and Désiré Girardon. Its first fourteen students entered in November that year, and its first diplomas were awarded in 1860. The school was nationalised in 1947, moved to Écully in 1967, and formally adopted the name École centrale de Lyon in 1970. In 1992 it became an établissement public à caractère scientifique, culturel et professionnel, authorised to award doctorates. ENISE became its internal school in 2021.\n\nIts general engineering curriculum combines mathematics, physics, computing and engineering sciences with humanities and social sciences, followed by progressive specialisation. Its educational provision also includes specialist engineering, apprenticeship routes, master’s programmes and doctoral study, alongside double degrees with partner institutions. Research is conducted through six joint units associated with the CNRS, including work in tribology, acoustics, nanotechnology, mechanics and aeronautics. Centrale Lyon belongs to the Groupe des Écoles centrales and Université de Lyon. Wikidata records 2,920 students for 2023."
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "teaching_languages": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "Régime linguistique\nFrançais, anglais",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c1",
+          "value": [
+            "French",
+            "English"
+          ],
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "website": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P856:0",
+              "original_text": "{\"property\": \"P856\", \"property_label\": \"official website\", \"statement_id\": \"Q10177$7B2CA6C2-BDC8-4357-B258-76351CE47AA9\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"https://www.ec-lyon.fr/\", \"qualifiers\": {\"P407\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 150, \"id\": \"Q150\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "value": "https://www.ec-lyon.fr/",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "qid": "Q10177",
+  "record_revision": 1,
+  "related_entities": {
+    "centrale": {
+      "kind": "university_system",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q273649\", \"labels\": {\"fr\": \"Groupe des Écoles centrales\", \"en\": \"Centrale Graduate School\"}, \"descriptions\": {\"en\": \"French graduate school of engineering\", \"fr\": \"écoles d'ingénieurs francophones\"}}",
+                "source_ref": "s12"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "fr",
+              "text": "Groupe des Écoles centrales"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "qid": "Q273649"
+    },
+    "enise": {
+      "kind": "institution",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:.C3.89volutions_r.C3.A9centes_et_partenariats",
+                "original_text": "[modifier | modifier le code]\nDepuis 2017, Centrale Lyon a engagé plusieurs évolutions institutionnelles et infrastructurelles. En 2017, elle lance le projet stratégique « ECL 4.0 », visant à moderniser ses infrastructures et à renforcer ses collaborations académiques et industrielles[10]. En 2021, l’École nationale d’ingénieurs de Saint-Étienne (ENISE) devient une école interne[3],[11], élargissant l’offre de formation d’ingénieurs et renforçant l’ancrage territorial de l’établissement. En 2022, Centrale Lyon cofonde le Collège d’ingénierie Lyon Saint-Étienne aux côtés de l’INSA Lyon, de l’ENTPE et de Mines Saint-Étienne[12], pour mutualiser certaines actions dans les domaines de la formation, de la recherche et de l’innovation. Ces évolutions s’inscrivent dans un plan stratégique 2022–2030 intégrant notamment des engagements en faveur du développement durable[13]. L’établissement a par ailleurs élargi son offre de formation depuis 2019[14],[15].",
+                "source_ref": "s3"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "fr",
+              "text": "École nationale d’ingénieurs de Saint-Étienne"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "qid": "Q3578093"
+    },
+    "lyon": {
+      "kind": "university_system",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q10176\", \"labels\": {\"fr\": \"université de Lyon (ComUE)\", \"en\": \"University of Lyon\"}, \"descriptions\": {\"en\": \"French university system, in Lyon, France\", \"fr\": \"regroupement d'établissements d'enseignement supérieur dans la région de Lyon Saint-Étienne, prenant la forme d'une « communauté d'universités et d'établissements », créée en 2015\"}}",
+                "source_ref": "s11"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "fr",
+              "text": "Université de Lyon"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "qid": "Q10176"
+    }
+  },
+  "relationships": {
+    "campus": [
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Installation_.C3.A0_.C3.89cully_et_dimension_nationale",
+                "original_text": "[modifier | modifier le code]\nDans les années 1950, l’école engage une réflexion sur son implantation et son statut. Le déménagement hors de Lyon intra-muros est décidé pour donner à l’établissement une envergure nationale, comparable a celle de l’École centrale de Paris. En 1967, elle s’installe sur un campus de 17 hectares à Écully, conçu par l’architecte Jacques Perrin-Fayolle. Cette année marque aussi une réforme des concours et une évolution de son statut.\nL’établissement devient officiellement l’« École centrale de Lyon » par décret en 1970. La première femme élève-ingénieur, Jeanne Morat, est admise en 1961. L’école participe dès cette époque au concours commun avec l’École centrale de Paris, élargi plus tard à Supélec et d’autres écoles du Groupe des Écoles centrales.\nEn 1992, l’école devient un établissement public à caractère scientifique, culturel et professionnel (EPSCP), habilité à délivrer le doctorat. Les élèves sont associés à la recherche dès 1968.",
+                "source_ref": "s3"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "target_ref": "location:ecully-campus"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:.C3.89volutions_r.C3.A9centes_et_partenariats",
+                "original_text": "[modifier | modifier le code]\nDepuis 2017, Centrale Lyon a engagé plusieurs évolutions institutionnelles et infrastructurelles. En 2017, elle lance le projet stratégique « ECL 4.0 », visant à moderniser ses infrastructures et à renforcer ses collaborations académiques et industrielles[10]. En 2021, l’École nationale d’ingénieurs de Saint-Étienne (ENISE) devient une école interne[3],[11], élargissant l’offre de formation d’ingénieurs et renforçant l’ancrage territorial de l’établissement. En 2022, Centrale Lyon cofonde le Collège d’ingénierie Lyon Saint-Étienne aux côtés de l’INSA Lyon, de l’ENTPE et de Mines Saint-Étienne[12], pour mutualiser certaines actions dans les domaines de la formation, de la recherche et de l’innovation. Ces évolutions s’inscrivent dans un plan stratégique 2022–2030 intégrant notamment des engagements en faveur du développement durable[13]. L’établissement a par ailleurs élargi son offre de formation depuis 2019[14],[15].",
+                "source_ref": "s3"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "target_ref": "location:st-etienne-campus"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    ],
+    "faculty": [
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P355:7",
+                "original_text": "{\"property\": \"P355\", \"property_label\": \"child organization or unit\", \"statement_id\": \"Q10177$869e2c84-49da-80d5-3e7d-6ad75557de15\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 3578093, \"id\": \"Q3578093\"}, \"qualifiers\": {\"P281\": [{\"snaktype\": \"value\", \"value\": \"42100\"}], \"P6375\": [{\"snaktype\": \"value\", \"value\": {\"text\": \"58 Rue Jean Parot\", \"language\": \"fr\"}}]}}",
+                "source_ref": "s1"
+              },
+              {
+                "locator": "section:.C3.89volutions_r.C3.A9centes_et_partenariats",
+                "original_text": "[modifier | modifier le code]\nDepuis 2017, Centrale Lyon a engagé plusieurs évolutions institutionnelles et infrastructurelles. En 2017, elle lance le projet stratégique « ECL 4.0 », visant à moderniser ses infrastructures et à renforcer ses collaborations académiques et industrielles[10]. En 2021, l’École nationale d’ingénieurs de Saint-Étienne (ENISE) devient une école interne[3],[11], élargissant l’offre de formation d’ingénieurs et renforçant l’ancrage territorial de l’établissement. En 2022, Centrale Lyon cofonde le Collège d’ingénierie Lyon Saint-Étienne aux côtés de l’INSA Lyon, de l’ENTPE et de Mines Saint-Étienne[12], pour mutualiser certaines actions dans les domaines de la formation, de la recherche et de l’innovation. Ces évolutions s’inscrivent dans un plan stratégique 2022–2030 intégrant notamment des engagements en faveur du développement durable[13]. L’établissement a par ailleurs élargi son offre de formation depuis 2019[14],[15].",
+                "source_ref": "s3"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "target_ref": "related:enise",
+              "valid_from": {
+                "precision": "year",
+                "year": 2021
+              }
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    ],
+    "member_of": [
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P361:0",
+                "original_text": "{\"property\": \"P361\", \"property_label\": \"part of\", \"statement_id\": \"q10177$c654b204-4be7-f77d-132d-1e5aa81cca42\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 273649, \"id\": \"Q273649\"}}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "target_ref": "related:centrale"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    ],
+    "parent": [
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P749:0",
+                "original_text": "{\"property\": \"P749\", \"property_label\": \"parent organization or unit\", \"statement_id\": \"Q10177$9A4DF7BC-B2AD-4D98-BE22-1F376A1585CD\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 10176, \"id\": \"Q10176\"}, \"reference_count\": 1}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "target_ref": "related:lyon"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    ]
+  },
+  "schema_version": "0.2.2",
+  "seed": {
+    "channels": [
+      "ranking_identifier"
+    ],
+    "import_id": "seed-84c3beb45367905f",
+    "screening_status": "needs_review"
+  },
+  "selection_policy": "preferred-v1",
+  "sources": {
+    "s1": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T11:26:38.245972+00:00",
+      "revision_id": 2518458501,
+      "source_qid": "Q10177",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2518458501"
+    },
+    "s10": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T11:27:23.198750+00:00",
+      "revision_id": 2564888102,
+      "source_qid": "Q42716",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2564888102"
+    },
+    "s11": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T09:16:25.886028+00:00",
+      "revision_id": 2511220217,
+      "source_qid": "Q10176",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2511220217"
+    },
+    "s12": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T11:27:26.852899+00:00",
+      "revision_id": 2515863410,
+      "source_qid": "Q273649",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2515863410"
+    },
+    "s2": {
+      "family": "wikimedia",
+      "kind": "wikipedia",
+      "language": "en",
+      "page_id": 83157,
+      "publisher_role": "encyclopedia",
+      "retrieved_at": "2026-11-06T11:26:52.521564+00:00",
+      "revision_id": 1364613810,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1364613810"
+    },
+    "s3": {
+      "family": "wikimedia",
+      "kind": "wikipedia",
+      "language": "fr",
+      "page_id": 146858,
+      "publisher_role": "encyclopedia",
+      "retrieved_at": "2026-11-06T11:26:57.157292+00:00",
+      "revision_id": 239602413,
+      "url": "https://fr.wikipedia.org/w/index.php?oldid=239602413"
+    },
+    "s4": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T11:27:03.615703+00:00",
+      "revision_id": 2563349414,
+      "source_qid": "Q35852",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2563349414"
+    },
+    "s5": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T11:11:50.558813+00:00",
+      "revision_id": 2562478881,
+      "source_qid": "Q4916",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2562478881"
+    },
+    "s6": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T11:27:08.609229+00:00",
+      "revision_id": 2542789977,
+      "source_qid": "Q5341295",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2542789977"
+    },
+    "s7": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T11:27:12.612832+00:00",
+      "revision_id": 2543261275,
+      "source_qid": "Q1663017",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2543261275"
+    },
+    "s8": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T09:16:05.838184+00:00",
+      "revision_id": 2564285160,
+      "source_qid": "Q142",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2564285160"
+    },
+    "s9": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T11:27:17.441674+00:00",
+      "revision_id": 2563650840,
+      "source_qid": "Q273748",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2563650840"
+    }
+  },
+  "update_datetime": "2026-11-06T11:33:47.369719+00:00"
+}
