@@ -237,6 +237,14 @@ def next_tasks(repo,base,catalog,studied,limit=5,at=None,seed=None):
     rng=random.Random(seed)
     for entity,candidate in catalog.items():
         task=tasks.get(entity,{}); phase=task.get('phase','research_pending'); reason='never_researched'
+        # A concurrent group may have published a different record while this
+        # manager was working. Retain its private questions, but don't dispatch
+        # a proposal-bound job against an obsolete school baseline.
+        proposal=task.get('proposal')
+        if proposal and entity in published and Path(proposal).is_file():
+            local=load_json(Path(proposal).read_bytes())
+            if local.get('baseline_sha256') != published[entity]['record_sha256']:
+                continue
         if phase=='unresolved': continue
         if phase=='retry_wait':
             if instant(task['retry_after'])>instant(stamp): continue
@@ -262,12 +270,10 @@ def next_tasks(repo,base,catalog,studied,limit=5,at=None,seed=None):
                       'verify_publication':['bundle']}[action]
             if any(not task.get(key) or not Path(task[key]).exists() for key in required):
                 action='research'; reason='private_snapshot_unavailable'
-        priority={'verify_publication':0,'publish':1,'review':2,'revise':3,'research':4}[action]
-        rows.append((priority,not bool(task),candidate['queue_kind']!='primary',
-                     rng.random() if action=='research' else int(entity[1:]),
+        rows.append((rng.random(),
                      {'qid':entity,'action':action,'reason':reason,'queue_kind':candidate['queue_kind'],
                       'revision':task.get('revision',0),'open_requests':task.get('open_requests',[])}))
-    return [row[-1] for row in sorted(rows,key=lambda r:r[:4])[:limit]]
+    return [row[-1] for row in sorted(rows,key=lambda r:r[0])[:limit]]
 
 
 def confirm_publication(repo,bundle,published_ref):

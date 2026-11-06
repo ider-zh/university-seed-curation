@@ -139,7 +139,7 @@ def main(argv=None):
     parser.add_argument('--workspace',default=str(ROOT))
     sub=parser.add_subparsers(dest='command',required=True)
     sub.add_parser('doctor')
-    p=sub.add_parser('next'); p.add_argument('--seed',type=int,help='Replay randomized Research selection on the same eligible tasks'); p.add_argument('--limit',type=int,default=5); p.add_argument('--base-ref',default='origin/main')
+    p=sub.add_parser('next'); p.add_argument('--seed',type=int,help='Replay randomized selection on the same eligible tasks'); p.add_argument('--limit',type=int,default=5); p.add_argument('--base-ref',default='origin/main')
     p=sub.add_parser('research-prepare'); p.add_argument('--qid',required=True); p.add_argument('--job',required=True); p.add_argument('--base-ref',default='origin/main'); p.add_argument('--feedback'); p.add_argument('--external-leads')
     p=sub.add_parser('review-prepare'); p.add_argument('--proposal',required=True); p.add_argument('--job',required=True); p.add_argument('--base-ref',default='origin/main'); p.add_argument('--research-job',required=True)
     for name in ('research-compile','review-compile'):

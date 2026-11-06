@@ -235,7 +235,8 @@ class NativeLifecycleTests(unittest.TestCase):
         (self.root/manager.BACKLOG).write_bytes((checkpoint/manager.BACKLOG).read_bytes());self.commit('checkpoint questions')
         manager.state_path(self.root).unlink()
         rows=self.run_cli('next','--limit','5')['tasks']
-        self.assertEqual(rows[0]['action'],'revise');self.assertEqual(len(rows[0]['open_requests']),2)
+        row=next(row for row in rows if row['qid']=='Q101')
+        self.assertEqual(row['action'],'revise');self.assertEqual(len(row['open_requests']),2)
 
     def test_an_older_approval_cannot_override_a_later_unresolved_review(self):
         research,proposal=self.research()

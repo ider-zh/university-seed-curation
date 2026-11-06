@@ -43,7 +43,7 @@ class ManagerTests(unittest.TestCase):
         task=m._read(self.root)['tasks']['Q1'];self.assertNotIn('review_job',task)
         self.assertEqual(task['revision'],1)
         m.set_phase(self.root,'Q1','researching',expires_at='2030-11-05T00:00:00Z')
-        self.assertEqual(self.next()[0]['reason'],'interrupted_job')
+        self.assertEqual(next(r for r in self.next() if r['qid']=='Q1')['reason'],'interrupted_job')
     def test_capacity_reserves_review_and_caps_total_calls(self):
         for q in ['Q1','Q2','Q3','Q4']:m.begin(self.root,BASE,q,'researching',self.job(q))
         m.set_phase(self.root,'Q5','review_pending')
@@ -68,12 +68,12 @@ class ManagerTests(unittest.TestCase):
         m.set_phase(self.root,'Q1','retry_wait',retry_after='2030-11-07T00:00:00Z',resume_phase='research_pending')
         self.assertNotIn('Q1',[r['qid'] for r in self.next()])
         m.set_phase(self.root,'Q1','retry_wait',retry_after='2030-11-05T00:00:00Z',resume_phase='research_pending')
-        self.assertEqual(self.next()[0]['reason'],'retry_due')
+        self.assertEqual(next(r for r in self.next() if r['qid']=='Q1')['reason'],'retry_due')
     def test_action_order_and_missing_snapshot_rebuild(self):
         for q,phase in [('Q1','research_pending'),('Q2','revision_requested'),('Q3','ready_to_publish')]:
             m.set_phase(self.root,q,phase)
         m.set_phase(self.root,'Q3','ready_to_publish',proposal=str(self.job('p')),review_job=str(self.job('v')),review_attempt=str(self.job('a')))
-        self.assertEqual([r['action'] for r in self.next()][:2],['publish','revise'])
+        self.assertEqual({r['qid']:r['action'] for r in self.next()}['Q3'],'publish')
         m.set_phase(self.root,'Q3','review_pending',research_job=str(self.root/'.private/missing'))
         row=next(r for r in self.next() if r['qid']=='Q3');self.assertEqual(row['action'],'research')
         self.assertEqual(row['reason'],'private_snapshot_unavailable')
@@ -96,7 +96,7 @@ class ManagerTests(unittest.TestCase):
         request=checkpoint['tasks']['Q1']['open_requests'][0]
         self.assertEqual(request['reviewed_proposal_sha256'],'c'*64)
         m.state_path(self.root).unlink();self.backlog=checkpoint
-        row=self.next()[0];self.assertEqual(row['qid'],'Q1');self.assertEqual(row['open_requests'],[request])
+        row=next(r for r in self.next() if r['qid']=='Q1');self.assertEqual(row['open_requests'],[request])
         self.assertEqual(row['action'],'revise')
         restarted=m.begin(self.root,BASE,'Q1','researching',self.job('recovered-revision'))
         self.assertEqual(restarted['revision'],1)
@@ -113,7 +113,7 @@ class ManagerTests(unittest.TestCase):
             self.assertNotIn('Q1',[r['qid'] for r in self.next()])
             published['Q1']['reviewed_at']='2030-10-01T00:00:00Z'
             self.assertEqual(next(r for r in self.next() if r['qid']=='Q1')['reason'],'partial_survey_retry')
-    def test_random_selection_replays_and_preserves_priority_and_eligibility(self):
+    def test_random_selection_replays_across_actions_and_preserves_eligibility(self):
         catalog={f'Q{i}':{'queue_kind':'primary' if i<30 else 'discovery'} for i in range(1,41)}
         m.begin(self.root,BASE,'Q1','researching',self.job('active'))
         m.set_phase(self.root,'Q2','unresolved')
@@ -124,16 +124,22 @@ class ManagerTests(unittest.TestCase):
         first=select(123)
         self.assertEqual(first,select(123))
         self.assertNotEqual(first,select(456))
-        self.assertEqual(first[0]['action'],'review')
-        self.assertEqual(first[1]['qid'],'Q5')
         ids=[r['qid'] for r in first]
         self.assertEqual(len(ids),len(set(ids)))
         self.assertFalse({'Q1','Q2','Q3'} & set(ids))
-        self.assertTrue(all(r['queue_kind']=='primary' for r in first))
         all_rows=select(123,100)
         kinds=[r['queue_kind'] for r in all_rows]
-        self.assertEqual(kinds,sorted(kinds,key=lambda k:k!='primary'))
+        self.assertNotEqual(kinds,sorted(kinds,key=lambda k:k!='primary'))
         self.assertEqual(len(all_rows),37)
+    def test_changed_published_baseline_excludes_stale_local_proposal(self):
+        proposal=self.root/'.private/proposal.json'; proposal.parent.mkdir(parents=True,exist_ok=True)
+        proposal.write_bytes(encode({'baseline_sha256':'absent'}))
+        m.set_phase(self.root,'Q1','revision_requested',proposal=str(proposal),open_requests=[REQUEST])
+        published={'Q1':{'record_sha256':'c'*64,'reviewed_at':NOW,'full_refresh':True}}
+        with patch.object(m,'publication_index',return_value=published):
+            self.assertNotIn('Q1',[r['qid'] for r in self.next()])
+        self.assertEqual(m._read(self.root)['tasks']['Q1']['open_requests'],[REQUEST])
+
     def test_cli_reports_selection_seed_without_claiming(self):
         with patch.object(native_cli,'_base',return_value=(BASE,{}, {},'d'*64)),patch.object(native_cli,'recency_index',return_value={}),patch.object(m,'next_tasks',return_value=[]) as choose,patch.object(native_cli.secrets,'randbits',return_value=42):
             result=native_cli.next_candidates(self.root)
