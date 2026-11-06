@@ -1,0 +1,398 @@
+{
+  "coverage": {
+    "finance": {
+      "checked_at": "2026-11-06T23:25:08.408532+00:00",
+      "status": "not_found"
+    },
+    "geography": {
+      "checked_at": "2026-11-06T23:25:08.408532+00:00",
+      "status": "checked"
+    },
+    "history": {
+      "checked_at": "2026-11-06T23:25:08.408532+00:00",
+      "status": "checked"
+    },
+    "identity": {
+      "checked_at": "2026-11-06T23:25:08.408532+00:00",
+      "status": "checked"
+    },
+    "population": {
+      "checked_at": "2026-11-06T23:25:08.408532+00:00",
+      "status": "not_found"
+    },
+    "profile": {
+      "checked_at": "2026-11-06T23:25:08.408532+00:00",
+      "status": "checked"
+    }
+  },
+  "curation": {
+    "identity_status": "related",
+    "refresh_profile": "core-v1",
+    "reviewed_groups": [
+      "identity",
+      "geography",
+      "history",
+      "population",
+      "finance",
+      "profile"
+    ]
+  },
+  "history": {
+    "milestones": [
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P571:0",
+                  "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q9379358$824DAA22-A246-4ADC-80E4-DE6C295DBD84\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+1991-09-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "day": 1,
+                "month": 9,
+                "precision": "day",
+                "year": 1991
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "metadata",
+                  "original_text": "{\"id\": \"Q9379358\", \"labels\": {\"en\": \"Faculty of Chemistry, University of Gdańsk\"}, \"descriptions\": {\"en\": \"faculty of University of Gdańsk in Poland\"}}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "claim:P571:0",
+                  "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q9379358$824DAA22-A246-4ADC-80E4-DE6C295DBD84\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+1991-09-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "Inception of the Faculty of Chemistry, University of Gdańsk."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "faculty-inception",
+        "kind": "institution_establishment",
+        "subject_ref": "institution"
+      }
+    ]
+  },
+  "identity": {
+    "kind": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "metadata",
+              "original_text": "{\"id\": \"Q9379358\", \"labels\": {\"en\": \"Faculty of Chemistry, University of Gdańsk\"}, \"descriptions\": {\"en\": \"faculty of University of Gdańsk in Poland\"}}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "claim:P749:0",
+              "original_text": "{\"property\": \"P749\", \"property_label\": \"parent organization or unit\", \"statement_id\": \"Q9379358$981E8DF3-04DB-4B57-B81C-039DAA76068A\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 1758009, \"id\": \"Q1758009\"}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "claim:P361:0",
+              "original_text": "{\"property\": \"P361\", \"property_label\": \"part of\", \"statement_id\": \"Q9379358$237A41B8-921B-43F9-9687-7BB79F5F0CBF\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 1758009, \"id\": \"Q1758009\"}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "value": "faculty",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "names": {
+      "en": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q9379358\", \"labels\": {\"en\": \"Faculty of Chemistry, University of Gdańsk\"}, \"descriptions\": {\"en\": \"faculty of University of Gdańsk in Poland\"}}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": "Faculty of Chemistry, University of Gdańsk",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    }
+  },
+  "locations": [
+    {
+      "id": "gdansk",
+      "kind": "administrative_area",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P131:0",
+                "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q9379358$2003997E-19B4-45AE-97B8-289BD2EBB2F1\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 1792, \"id\": \"Q1792\"}, \"reference_count\": 1}",
+                "source_ref": "s1"
+              },
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q1792\", \"labels\": {\"en\": \"Gdańsk\"}, \"descriptions\": {\"en\": \"city and capital of the Pomeranian Voivodeship on the Baltic coast of northern Poland\"}}",
+                "source_ref": "s4"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Gdańsk"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "qid": "Q1792"
+    },
+    {
+      "id": "poland",
+      "kind": "administrative_area",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P17:0",
+                "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q9379358$FC7B8D66-0179-4D5D-9A79-093D38642455\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 36, \"id\": \"Q36\"}, \"reference_count\": 1}",
+                "source_ref": "s1"
+              },
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q36\", \"labels\": {\"en\": \"Poland\"}, \"descriptions\": {\"en\": \"country in Central Europe\"}}",
+                "source_ref": "s3"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Poland"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "qid": "Q36"
+    },
+    {
+      "coordinates": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "statement:Q9379358$2156a293-430c-89a5-b021-c2825a7e7d8f",
+                "original_text": "\"latitude\": 54.393604",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "source_rank": "normal",
+            "value": {
+              "crs": "EPSG:4326",
+              "globe_qid": "Q2",
+              "latitude": 54.393604,
+              "longitude": 18.576878,
+              "source_precision_degrees": 1e-06
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "id": "wikidata-item-location",
+      "kind": "institution",
+      "qid": "Q9379358"
+    }
+  ],
+  "modified_datetime": "2026-11-06T23:27:43.721629+00:00",
+  "profile": {
+    "website": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P856:0",
+              "original_text": "{\"property\": \"P856\", \"property_label\": \"official website\", \"statement_id\": \"Q9379358$2298FC82-FC56-48AB-9E2F-2E57893B1FA5\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"http://www.chemia.ug.edu.pl\", \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "value": "http://www.chemia.ug.edu.pl",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "qid": "Q9379358",
+  "record_revision": 1,
+  "related_entities": {
+    "parent-university": {
+      "kind": "institution",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q1758009\", \"labels\": {\"en\": \"University of Gdańsk\"}, \"descriptions\": {\"en\": \"university in Poland\"}}",
+                "source_ref": "s5"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "University of Gdańsk"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "qid": "Q1758009"
+    }
+  },
+  "relationships": {
+    "parent": [
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P749:0",
+                "original_text": "{\"property\": \"P749\", \"property_label\": \"parent organization or unit\", \"statement_id\": \"Q9379358$981E8DF3-04DB-4B57-B81C-039DAA76068A\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 1758009, \"id\": \"Q1758009\"}, \"reference_count\": 1}",
+                "source_ref": "s1"
+              },
+              {
+                "locator": "claim:P361:0",
+                "original_text": "{\"property\": \"P361\", \"property_label\": \"part of\", \"statement_id\": \"Q9379358$237A41B8-921B-43F9-9687-7BB79F5F0CBF\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 1758009, \"id\": \"Q1758009\"}, \"reference_count\": 1}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "target_ref": "related:parent-university"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    ]
+  },
+  "schema_version": "0.2.2",
+  "seed": {
+    "channels": [
+      "legacy_discovery"
+    ],
+    "import_id": "seed-84c3beb45367905f",
+    "screening_status": "needs_review"
+  },
+  "selection_policy": "preferred-v1",
+  "sources": {
+    "s1": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T23:24:52.240548+00:00",
+      "revision_id": 2476064503,
+      "source_qid": "Q9379358",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2476064503"
+    },
+    "s2": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T22:54:04.456783+00:00",
+      "revision_id": 2522450452,
+      "source_qid": "Q4671277",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2522450452"
+    },
+    "s3": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T23:25:00.412931+00:00",
+      "revision_id": 2564426432,
+      "source_qid": "Q36",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2564426432"
+    },
+    "s4": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T23:25:04.563358+00:00",
+      "revision_id": 2564570815,
+      "source_qid": "Q1792",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2564570815"
+    },
+    "s5": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T23:25:08.397263+00:00",
+      "revision_id": 2561791387,
+      "source_qid": "Q1758009",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2561791387"
+    }
+  },
+  "update_datetime": "2026-11-06T23:27:43.721629+00:00"
+}
