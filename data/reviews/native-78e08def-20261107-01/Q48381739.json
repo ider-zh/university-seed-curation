@@ -1,0 +1,873 @@
+{
+  "attribution": "distinct_native_research_and_review_subagents;not_cryptographic_identity",
+  "research": {
+    "baseline_sha256": "absent",
+    "candidate": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-06T16:26:06.420044+00:00",
+          "status": "not_found"
+        },
+        "geography": {
+          "checked_at": "2026-11-06T16:26:06.420044+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-06T16:26:06.420044+00:00",
+          "status": "checked"
+        },
+        "identity": {
+          "checked_at": "2026-11-06T16:26:06.420044+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-06T16:26:06.420044+00:00",
+          "status": "not_found"
+        },
+        "profile": {
+          "checked_at": "2026-11-06T16:26:06.420044+00:00",
+          "status": "checked"
+        }
+      },
+      "curation": {
+        "identity_status": "related"
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "claim:P571:0",
+                      "original_text": "\"time\": \"+2010-00-00T00:00:00Z\"",
+                      "source_ref": "s1"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 2010
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "inception",
+            "kind": "institution_establishment",
+            "subject_ref": "institution"
+          }
+        ]
+      },
+      "identity": {
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "metadata",
+                  "original_text": "faculty of the SWPS University",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "claim:P749:0",
+                  "original_text": "\"id\": \"Q7970913\"",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "faculty",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "SWPS University in Poznań",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "SWPS University in Poznań",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "locations": [
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "\"id\": \"Q268\"",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "\"id\": \"Q36\"",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "Poznań",
+                    "source_ref": "s4"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "Poland",
+                    "source_ref": "s3"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "city_name": "Poznań",
+                  "city_qid": "Q268",
+                  "country_name": "Poland",
+                  "country_qid": "Q36",
+                  "formatted": {
+                    "language": "en",
+                    "text": "Poznań, Poland"
+                  }
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "poznan",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "\"id\": \"Q268\"",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "Poznań",
+                    "source_ref": "s4"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Poznań"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q268"
+        },
+        {
+          "coordinates": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "statement:Q48381739$f83c34cf-4ccf-7e16-56d2-ea2fdd232e8d",
+                    "original_text": "\"latitude\": 52.415694444444",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "source_rank": "normal",
+                "value": {
+                  "crs": "EPSG:4326",
+                  "globe_qid": "Q2",
+                  "latitude": 52.415694444444,
+                  "longitude": 16.931583333333,
+                  "source_precision_degrees": 2.7777777777778e-05
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "wikidata-item-location",
+          "kind": "institution",
+          "qid": "Q48381739"
+        }
+      ],
+      "modified_datetime": "2026-11-06T16:28:44.542367+00:00",
+      "profile": {
+        "website": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P856:0",
+                  "original_text": "https://www.swps.pl/poznan/o-wydziale",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "https://www.swps.pl/poznan/o-wydziale",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "qid": "Q48381739",
+      "record_revision": 1,
+      "related_entities": {
+        "swps": {
+          "kind": "institution",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "SWPS University",
+                    "source_ref": "s5"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "SWPS University"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q7970913"
+        }
+      },
+      "relationships": {
+        "parent": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P749:0",
+                    "original_text": "\"id\": \"Q7970913\"",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "claim:P361:0",
+                    "original_text": "\"id\": \"Q7970913\"",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "target_ref": "related:swps"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ]
+      },
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "legacy_discovery"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "needs_review"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T16:25:35.496186+00:00",
+          "revision_id": 1972106268,
+          "source_qid": "Q48381739",
+          "url": "https://www.wikidata.org/w/index.php?oldid=1972106268"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T16:24:39.360665+00:00",
+          "revision_id": 2522450452,
+          "source_qid": "Q4671277",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2522450452"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T16:25:54.372181+00:00",
+          "revision_id": 2564426432,
+          "source_qid": "Q36",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2564426432"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T16:26:01.850012+00:00",
+          "revision_id": 2561823599,
+          "source_qid": "Q268",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2561823599"
+        },
+        "s5": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T16:26:06.402294+00:00",
+          "revision_id": 2526099202,
+          "source_qid": "Q7970913",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2526099202"
+        }
+      }
+    },
+    "coverage": [
+      {
+        "group": "identity",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "status": "checked"
+      },
+      {
+        "group": "population",
+        "status": "not_found"
+      },
+      {
+        "group": "finance",
+        "status": "not_found"
+      },
+      {
+        "group": "profile",
+        "status": "checked"
+      }
+    ],
+    "delta": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-06T16:26:06.420044+00:00",
+          "status": "not_found"
+        },
+        "geography": {
+          "checked_at": "2026-11-06T16:26:06.420044+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-06T16:26:06.420044+00:00",
+          "status": "checked"
+        },
+        "identity": {
+          "checked_at": "2026-11-06T16:26:06.420044+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-06T16:26:06.420044+00:00",
+          "status": "not_found"
+        },
+        "profile": {
+          "checked_at": "2026-11-06T16:26:06.420044+00:00",
+          "status": "checked"
+        }
+      },
+      "curation": {
+        "identity_status": "related"
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "claim:P571:0",
+                      "original_text": "\"time\": \"+2010-00-00T00:00:00Z\"",
+                      "source_ref": "s1"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 2010
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "inception",
+            "kind": "institution_establishment",
+            "subject_ref": "institution"
+          }
+        ]
+      },
+      "identity": {
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "metadata",
+                  "original_text": "faculty of the SWPS University",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "claim:P749:0",
+                  "original_text": "\"id\": \"Q7970913\"",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "faculty",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "SWPS University in Poznań",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "SWPS University in Poznań",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "locations": [
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "\"id\": \"Q268\"",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "\"id\": \"Q36\"",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "Poznań",
+                    "source_ref": "s4"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "Poland",
+                    "source_ref": "s3"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "city_name": "Poznań",
+                  "city_qid": "Q268",
+                  "country_name": "Poland",
+                  "country_qid": "Q36",
+                  "formatted": {
+                    "language": "en",
+                    "text": "Poznań, Poland"
+                  }
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "poznan",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "\"id\": \"Q268\"",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "Poznań",
+                    "source_ref": "s4"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Poznań"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q268"
+        },
+        {
+          "coordinates": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "statement:Q48381739$f83c34cf-4ccf-7e16-56d2-ea2fdd232e8d",
+                    "original_text": "\"latitude\": 52.415694444444",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "source_rank": "normal",
+                "value": {
+                  "crs": "EPSG:4326",
+                  "globe_qid": "Q2",
+                  "latitude": 52.415694444444,
+                  "longitude": 16.931583333333,
+                  "source_precision_degrees": 2.7777777777778e-05
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "wikidata-item-location",
+          "kind": "institution",
+          "qid": "Q48381739"
+        }
+      ],
+      "profile": {
+        "website": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P856:0",
+                  "original_text": "https://www.swps.pl/poznan/o-wydziale",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "https://www.swps.pl/poznan/o-wydziale",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "qid": "Q48381739",
+      "record_revision": 1,
+      "related_entities": {
+        "swps": {
+          "kind": "institution",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "SWPS University",
+                    "source_ref": "s5"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "SWPS University"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q7970913"
+        }
+      },
+      "relationships": {
+        "parent": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P749:0",
+                    "original_text": "\"id\": \"Q7970913\"",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "claim:P361:0",
+                    "original_text": "\"id\": \"Q7970913\"",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "target_ref": "related:swps"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ]
+      },
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "legacy_discovery"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "needs_review"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T16:25:35.496186+00:00",
+          "revision_id": 1972106268,
+          "source_qid": "Q48381739",
+          "url": "https://www.wikidata.org/w/index.php?oldid=1972106268"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T16:24:39.360665+00:00",
+          "revision_id": 2522450452,
+          "source_qid": "Q4671277",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2522450452"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T16:25:54.372181+00:00",
+          "revision_id": 2564426432,
+          "source_qid": "Q36",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2564426432"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T16:26:01.850012+00:00",
+          "revision_id": 2561823599,
+          "source_qid": "Q268",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2561823599"
+        },
+        "s5": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T16:26:06.402294+00:00",
+          "revision_id": 2526099202,
+          "source_qid": "Q7970913",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2526099202"
+        }
+      }
+    },
+    "open_requests": [],
+    "proposed_at": "2026-11-06T16:28:44.542367+00:00",
+    "qid": "Q48381739",
+    "research": {
+      "model": "not_reported",
+      "prompt_sha256": "c35e4a0bf65a1d16737eb656d7e6b8603e7629d391c03ce86320ab60c700ac36",
+      "reasoning_effort": "not_reported",
+      "schema_sha256": "92e942f4fbf2ae28964462ea9ffa8312c5ee16a077a1e08b40aaaf741512422e",
+      "session": "/root/research_q48381739"
+    },
+    "retrieval_failures": [],
+    "review_status": "unreviewed",
+    "seed": {
+      "channels": [
+        "legacy_discovery"
+      ],
+      "import_id": "seed-84c3beb45367905f",
+      "screening_status": "needs_review"
+    },
+    "transport": {
+      "base_commit": "c94615bfd862e0c91396374d9edcb5baaebf0584",
+      "protocol": "native-subagent-v1",
+      "repository": "ider-zh/university-seed-curation",
+      "review_policy": {
+        "id": "source-grounded-flexible-v2",
+        "sha256": "b8ed7d2897e4c31dbd81b1379aafdc1077a21d1a33949edbd2d896b0adf99db2"
+      },
+      "schema_sha256": "bfa496eafa9dffca56146214168db7f000b09161b8993129632e7202e1c88833",
+      "seed_catalog_sha256": "84c3beb45367905f513d650684283dd62a9c1b77962bdc34151a6ef05bfa03d4"
+    },
+    "type": "university-proposal-v1"
+  },
+  "review": {
+    "contexts_checked": 5,
+    "coverage_checks": [
+      {
+        "group": "identity",
+        "reason": "Frozen root metadata, academic-institution class and parent/part-of claims surveyed; faculty and related status preserve boundaries. No independent legal status is asserted.",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "reason": "Supplied country, city and root coordinate claims checked. Country attribution and root P625 scope/precision are supported; supplementary street/location details remain outside factual scope.",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "reason": "Supplied root inception was surveyed and represented only as 2010 with year precision. Additional institutional history is not established by this limited packet.",
+        "status": "checked"
+      },
+      {
+        "group": "population",
+        "reason": "No faculty-specific population observations occur in the frozen supplied evidence; this is a packet-limited result and does not assert that external figures do not exist.",
+        "status": "not_found"
+      },
+      {
+        "group": "finance",
+        "reason": "No root-specific finance amounts, periods or currencies occur in the frozen supplied evidence. No parent finance was transferred; external survey completion is not established.",
+        "status": "not_found"
+      },
+      {
+        "group": "profile",
+        "reason": "Available official website claim was surveyed. Profile remains limited, with no unsupported summary or assertion of a comprehensive external survey; supplementary profile values receive no independent factual checks.",
+        "status": "checked"
+      }
+    ],
+    "decision": "approve",
+    "facts_checked": 5,
+    "full_refresh": true,
+    "inferences": [
+      {
+        "id": "identity",
+        "reason": "Related status follows the explicit faculty description and parent/part-of claims to SWPS University; it avoids asserting an independent university."
+      },
+      {
+        "id": "milestone:inception",
+        "reason": "Root P571 inception reasonably maps to institution establishment at year precision. Its subject remains the represented faculty, with no transfer of the parent foundation date."
+      }
+    ],
+    "model": "not_reported",
+    "proposal_sha256": "958d75f90f61b0cecc086c592bec758ed923a7420f007283cc4a760c8ba39f34",
+    "qid": "Q48381739",
+    "reasoning_effort": "not_reported",
+    "record_sha256": "51e2bfbcec92815cb755e69c876065086de247223d7a41db9d92dcbe70712a28",
+    "request_responses": [],
+    "requests": [],
+    "review_scope": {
+      "not_independently_reviewed_ids": [
+        "$.locations[0].address:c1",
+        "$.locations[0].name:c1",
+        "$.profile.website:c1",
+        "$.related_entities.swps.name:c1",
+        "location:poznan"
+      ],
+      "reviewed_ids": [
+        "$.history.milestones[0].date:c1",
+        "$.identity.kind:c1",
+        "$.identity.names.en:c1",
+        "$.locations[1].coordinates:c1",
+        "$.relationships.parent[0]:c1",
+        "country:$.locations[0].address:c1",
+        "identity",
+        "location:wikidata-item-location",
+        "milestone:inception",
+        "related:swps"
+      ],
+      "version": "core-review-v3"
+    },
+    "review_session": "/root/final_review_q48381739",
+    "reviewed_at": "2026-11-06T16:32:32.824472+00:00",
+    "source_revisions_checked": 5,
+    "waived_requests": []
+  },
+  "review_result_sha256": "4379deeb9344441b12ca6146e66c5827fb1b14cb231bb2e06cb9bb9eddbb3a38",
+  "type": "university-unified-receipt-v1"
+}

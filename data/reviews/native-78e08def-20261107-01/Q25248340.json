@@ -1,0 +1,706 @@
+{
+  "attribution": "distinct_native_research_and_review_subagents;not_cryptographic_identity",
+  "research": {
+    "baseline_sha256": "absent",
+    "candidate": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-06T16:29:40.797628+00:00",
+          "status": "disputed"
+        },
+        "geography": {
+          "checked_at": "2026-11-06T16:29:40.797628+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-06T16:29:40.797628+00:00",
+          "status": "disputed"
+        },
+        "identity": {
+          "checked_at": "2026-11-06T16:29:40.797628+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-06T16:29:40.797628+00:00",
+          "status": "disputed"
+        },
+        "profile": {
+          "checked_at": "2026-11-06T16:29:40.797628+00:00",
+          "status": "disputed"
+        }
+      },
+      "curation": {
+        "identity_status": "in_scope"
+      },
+      "identity": {
+        "aliases": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Self_-_Financing_Colleges_affiliated_to_Anna_University",
+                    "original_text": "PERI Institute of Technology (Autonomous)\nChennai",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "PERI Institute of Technology (Autonomous)"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ],
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "metadata",
+                  "original_text": "higher education institute in India",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "section:Self_-_Financing_Colleges_affiliated_to_Anna_University",
+                  "original_text": "PERI Institute of Technology (Autonomous)\nChennai",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "higher_education_college",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "PERI Institute of Technology",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "PERI Institute of Technology",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "locations": [
+        {
+          "id": "chennai_district",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Self_-_Financing_Colleges_affiliated_to_Anna_University",
+                    "original_text": "PERI Institute of Technology (Autonomous)\nChennai",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Chennai"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q25248340$A66502BE-C29B-4FC2-A206-92709F9E32A3\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 668, \"id\": \"Q668\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "India",
+                    "source_ref": "s4"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "country_name": "India",
+                  "country_qid": "Q668",
+                  "formatted": {
+                    "language": "en",
+                    "text": "India"
+                  }
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "country",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "India",
+                    "source_ref": "s4"
+                  },
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q25248340$A66502BE-C29B-4FC2-A206-92709F9E32A3\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 668, \"id\": \"Q668\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "India"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q668"
+        },
+        {
+          "coordinates": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "statement:Q25248340$67A468A7-7C8B-468F-B359-16ABB8265282",
+                    "original_text": "\"latitude\": 12.88611111",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "source_rank": "normal",
+                "value": {
+                  "crs": "EPSG:4326",
+                  "globe_qid": "Q2",
+                  "latitude": 12.88611111,
+                  "longitude": 80.06055556,
+                  "source_precision_degrees": 0.00027777777777778
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "wikidata-item-location",
+          "kind": "institution",
+          "qid": "Q25248340"
+        }
+      ],
+      "modified_datetime": "2026-11-06T16:30:43.571296+00:00",
+      "qid": "Q25248340",
+      "record_revision": 1,
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "legacy_discovery"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "needs_review"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T16:24:22.940225+00:00",
+          "revision_id": 2479568997,
+          "source_qid": "Q25248340",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2479568997"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikipedia",
+          "language": "en",
+          "page_id": 37068454,
+          "publisher_role": "encyclopedia",
+          "retrieved_at": "2026-11-06T16:24:35.265357+00:00",
+          "revision_id": 1378516354,
+          "url": "https://en.wikipedia.org/w/index.php?oldid=1378516354"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T16:24:39.360665+00:00",
+          "revision_id": 2522450452,
+          "source_qid": "Q4671277",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2522450452"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T16:24:43.906253+00:00",
+          "revision_id": 2563722390,
+          "source_qid": "Q668",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2563722390"
+        }
+      }
+    },
+    "coverage": [
+      {
+        "group": "identity",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "status": "disputed"
+      },
+      {
+        "group": "population",
+        "status": "disputed"
+      },
+      {
+        "group": "finance",
+        "status": "disputed"
+      },
+      {
+        "group": "profile",
+        "status": "disputed"
+      }
+    ],
+    "delta": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-06T16:29:40.797628+00:00",
+          "status": "disputed"
+        },
+        "geography": {
+          "checked_at": "2026-11-06T16:29:40.797628+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-06T16:29:40.797628+00:00",
+          "status": "disputed"
+        },
+        "identity": {
+          "checked_at": "2026-11-06T16:29:40.797628+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-06T16:29:40.797628+00:00",
+          "status": "disputed"
+        },
+        "profile": {
+          "checked_at": "2026-11-06T16:29:40.797628+00:00",
+          "status": "disputed"
+        }
+      },
+      "curation": {
+        "identity_status": "in_scope"
+      },
+      "identity": {
+        "aliases": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Self_-_Financing_Colleges_affiliated_to_Anna_University",
+                    "original_text": "PERI Institute of Technology (Autonomous)\nChennai",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "PERI Institute of Technology (Autonomous)"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ],
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "metadata",
+                  "original_text": "higher education institute in India",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "section:Self_-_Financing_Colleges_affiliated_to_Anna_University",
+                  "original_text": "PERI Institute of Technology (Autonomous)\nChennai",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "higher_education_college",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "PERI Institute of Technology",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "PERI Institute of Technology",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "locations": [
+        {
+          "id": "chennai_district",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Self_-_Financing_Colleges_affiliated_to_Anna_University",
+                    "original_text": "PERI Institute of Technology (Autonomous)\nChennai",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Chennai"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q25248340$A66502BE-C29B-4FC2-A206-92709F9E32A3\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 668, \"id\": \"Q668\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "India",
+                    "source_ref": "s4"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "country_name": "India",
+                  "country_qid": "Q668",
+                  "formatted": {
+                    "language": "en",
+                    "text": "India"
+                  }
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "country",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "India",
+                    "source_ref": "s4"
+                  },
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q25248340$A66502BE-C29B-4FC2-A206-92709F9E32A3\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 668, \"id\": \"Q668\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "India"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q668"
+        },
+        {
+          "coordinates": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "statement:Q25248340$67A468A7-7C8B-468F-B359-16ABB8265282",
+                    "original_text": "\"latitude\": 12.88611111",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "source_rank": "normal",
+                "value": {
+                  "crs": "EPSG:4326",
+                  "globe_qid": "Q2",
+                  "latitude": 12.88611111,
+                  "longitude": 80.06055556,
+                  "source_precision_degrees": 0.00027777777777778
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "wikidata-item-location",
+          "kind": "institution",
+          "qid": "Q25248340"
+        }
+      ],
+      "qid": "Q25248340",
+      "record_revision": 1,
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "legacy_discovery"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "needs_review"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T16:24:22.940225+00:00",
+          "revision_id": 2479568997,
+          "source_qid": "Q25248340",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2479568997"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikipedia",
+          "language": "en",
+          "page_id": 37068454,
+          "publisher_role": "encyclopedia",
+          "retrieved_at": "2026-11-06T16:24:35.265357+00:00",
+          "revision_id": 1378516354,
+          "url": "https://en.wikipedia.org/w/index.php?oldid=1378516354"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T16:24:39.360665+00:00",
+          "revision_id": 2522450452,
+          "source_qid": "Q4671277",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2522450452"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T16:24:43.906253+00:00",
+          "revision_id": 2563722390,
+          "source_qid": "Q668",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2563722390"
+        }
+      }
+    },
+    "open_requests": [],
+    "proposed_at": "2026-11-06T16:30:43.571296+00:00",
+    "qid": "Q25248340",
+    "research": {
+      "model": "not_reported",
+      "prompt_sha256": "76f1b26177bd422e318052982331707ae36082c25c18f95327038eb3dce2d055",
+      "reasoning_effort": "not_reported",
+      "schema_sha256": "92e942f4fbf2ae28964462ea9ffa8312c5ee16a077a1e08b40aaaf741512422e",
+      "session": "/root/research_q25248340"
+    },
+    "retrieval_failures": [],
+    "review_status": "unreviewed",
+    "seed": {
+      "channels": [
+        "legacy_discovery"
+      ],
+      "import_id": "seed-84c3beb45367905f",
+      "screening_status": "needs_review"
+    },
+    "transport": {
+      "base_commit": "c94615bfd862e0c91396374d9edcb5baaebf0584",
+      "protocol": "native-subagent-v1",
+      "repository": "ider-zh/university-seed-curation",
+      "review_policy": {
+        "id": "source-grounded-flexible-v2",
+        "sha256": "b8ed7d2897e4c31dbd81b1379aafdc1077a21d1a33949edbd2d896b0adf99db2"
+      },
+      "schema_sha256": "bfa496eafa9dffca56146214168db7f000b09161b8993129632e7202e1c88833",
+      "seed_catalog_sha256": "84c3beb45367905f513d650684283dd62a9c1b77962bdc34151a6ef05bfa03d4"
+    },
+    "type": "university-proposal-v1"
+  },
+  "review": {
+    "contexts_checked": 3,
+    "coverage_checks": [
+      {
+        "group": "identity",
+        "reason": "Supplied root and Wikipedia evidence examined for institution identity; no ownership or operating-status assertion is invented.",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "reason": "Root P17/P625 and country resolver examined; item coordinates remain institution-scoped.",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "reason": "No establishment milestone in frozen sources; external capture failed DNS, so disputed status preserves an incomplete survey.",
+        "status": "disputed"
+      },
+      {
+        "group": "population",
+        "reason": "No scoped population observation in frozen evidence; external DNS capture failure prevents a complete survey and disputed status is appropriate.",
+        "status": "disputed"
+      },
+      {
+        "group": "finance",
+        "reason": "No scoped financial observation captured; failed external acquisition remains a survey limitation under disputed status.",
+        "status": "disputed"
+      },
+      {
+        "group": "profile",
+        "reason": "Only limited source material supplied; external capture failure leaves disputed coverage and summary omitted. Supplementary facts receive no independent factual approval.",
+        "status": "disputed"
+      }
+    ],
+    "decision": "approve",
+    "facts_checked": 4,
+    "full_refresh": true,
+    "inferences": [
+      {
+        "id": "$.identity.kind:c1",
+        "reason": "Root s1 describes a higher education institute; s2 places the named institution in an affiliated-colleges section, supporting the broader higher_education_college kind without asserting university status or legal independence."
+      },
+      {
+        "id": "identity",
+        "reason": "The root description and matching named entry in the affiliated higher-education colleges list establish eligibility as an institution; affiliation is not converted into parent-university identity."
+      }
+    ],
+    "model": "not_reported",
+    "proposal_sha256": "328ee0231f11b5a7de4cc8fa3de128aaad483e987b0d7330296f0fed0472ee47",
+    "qid": "Q25248340",
+    "reasoning_effort": "not_reported",
+    "record_sha256": "784ca46de4691706c1b00f4c482845182b36515786ffc33b033b281cc6796f37",
+    "request_responses": [],
+    "requests": [],
+    "review_scope": {
+      "not_independently_reviewed_ids": [
+        "$.locations[0].name:c1",
+        "$.locations[1].address:c1",
+        "$.locations[1].name:c1",
+        "location:chennai_district",
+        "location:country"
+      ],
+      "reviewed_ids": [
+        "$.identity.aliases[0]:c1",
+        "$.identity.kind:c1",
+        "$.identity.names.en:c1",
+        "$.locations[2].coordinates:c1",
+        "country:$.locations[1].address:c1",
+        "identity",
+        "location:wikidata-item-location"
+      ],
+      "version": "core-review-v3"
+    },
+    "review_session": "/root/final_review_q25248340",
+    "reviewed_at": "2026-11-06T16:32:39.767867+00:00",
+    "source_revisions_checked": 4,
+    "waived_requests": []
+  },
+  "review_result_sha256": "ad4c100153b9629142e9cf1f0f5c6db513439e13574df641aa4a26b7344ff1df",
+  "type": "university-unified-receipt-v1"
+}
