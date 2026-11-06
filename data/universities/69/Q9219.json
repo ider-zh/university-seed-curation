@@ -1,0 +1,1167 @@
+{
+  "coverage": {
+    "finance": {
+      "checked_at": "2026-11-06T11:10:04.880855+00:00",
+      "status": "checked"
+    },
+    "geography": {
+      "checked_at": "2026-11-06T11:10:04.880855+00:00",
+      "status": "checked"
+    },
+    "history": {
+      "checked_at": "2026-11-06T11:10:04.880855+00:00",
+      "status": "checked"
+    },
+    "identity": {
+      "checked_at": "2026-11-06T11:10:04.880855+00:00",
+      "status": "checked"
+    },
+    "population": {
+      "checked_at": "2026-11-06T11:10:04.880855+00:00",
+      "status": "checked"
+    },
+    "profile": {
+      "checked_at": "2026-11-06T11:10:04.880855+00:00",
+      "status": "checked"
+    }
+  },
+  "curation": {
+    "identity_status": "in_scope",
+    "refresh_profile": "core-v1",
+    "reviewed_groups": [
+      "identity",
+      "geography",
+      "history",
+      "population",
+      "finance",
+      "profile"
+    ]
+  },
+  "finance": {
+    "endowment": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:4",
+              "original_text": "Endowment: $590.6 million (2025)[4]",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "infobox:10",
+              "original_text": "Location: West Point, New York, United States",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2025
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": "590600000",
+            "currency": "USD",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "single_source_family"
+        ],
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "history": {
+    "milestones": [
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P571:0",
+                  "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q9219$F8A6EA80-AF65-49B6-AEF5-0C34CE09E31A\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+1802-03-16T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "infobox:2",
+                  "original_text": "Established: 16 March 1802; 224 years ago (1802-03-16)[2]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "day": 16,
+                "month": 3,
+                "precision": "day",
+                "year": 1802
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Colonial_period.2C_founding.2C_and_early_years",
+                  "original_text": "Congress formally authorized the establishment and funding of the school with the Military Peace Establishment Act of 1802, which Jefferson signed on 16 March.[2]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "Congress authorized the academy through the Military Peace Establishment Act of 1802, signed by Thomas Jefferson on 16 March."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "establishment",
+        "kind": "institution_establishment",
+        "subject_ref": "institution"
+      },
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Colonial_period.2C_founding.2C_and_early_years",
+                  "original_text": "The academy officially commenced operations on 4 July 1802.[22]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "day": 4,
+                "month": 7,
+                "precision": "day",
+                "year": 1802
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Colonial_period.2C_founding.2C_and_early_years",
+                  "original_text": "The academy officially commenced operations on 4 July 1802.[22]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "The academy officially commenced operations."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "operations",
+        "kind": "teaching_start",
+        "subject_ref": "institution"
+      }
+    ]
+  },
+  "identity": {
+    "aliases": [
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "The United States Military Academy (USMA), commonly known as West Point,[7] is a United States service academy in West Point, New York, that educates cadets for service as commissioned officers in the United States Army.",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "USMA"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "The United States Military Academy (USMA), commonly known as West Point,[7] is a United States service academy in West Point, New York, that educates cadets for service as commissioned officers in the United States Army.",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "West Point"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    ],
+    "identifiers": {
+      "P5586": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P5586:0",
+                "original_text": "{\"property\": \"P5586\", \"property_label\": \"Times Higher Education World University ID\", \"statement_id\": \"Q9219$CF49999A-EE7C-49B8-AA93-27E704CF3774\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"united-states-military-academy\"}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": "united-states-military-academy",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    "kind": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P31:0",
+              "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"q9219$1dd4f21d-4fde-b016-c4d9-1714f720cf15\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 917182, \"id\": \"Q917182\"}}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "metadata",
+              "original_text": "{\"id\": \"Q917182\", \"labels\": {\"en\": \"military academy\"}, \"descriptions\": {\"en\": \"higher education institution operated by or for the military\"}}",
+              "source_ref": "s3"
+            },
+            {
+              "locator": "section:Curriculum",
+              "original_text": "West Point is a highly residential baccalaureate college, with a full-time, four-year undergraduate program that emphasizes instruction in the arts, sciences, and professions with no graduate program.[141]",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": "specialist_institution",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "names": {
+      "en": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P1705:0",
+                "original_text": "{\"property\": \"P1705\", \"property_label\": \"native label\", \"statement_id\": \"Q9219$14dfc498-4bfd-79a9-7e13-db2c87b40e69\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"United States Military Academy\", \"language\": \"en\"}, \"reference_count\": 1}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": "United States Military Academy",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    "ownership": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P31:2",
+              "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q9219$6294F9A9-31A0-4114-926A-76D94A23AFDB\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 23002039, \"id\": \"Q23002039\"}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "metadata",
+              "original_text": "{\"id\": \"Q23002039\", \"labels\": {\"en\": \"public educational institution of the United States\"}, \"descriptions\": {\"en\": \"U.S. public educational institution\"}}",
+              "source_ref": "s5"
+            }
+          ],
+          "id": "c1",
+          "value": "public",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "leadership": {
+    "chair": {
+      "candidates": [
+        {
+          "current_basis": "explicit_current",
+          "evidence": [
+            {
+              "locator": "section:Academy_leadership",
+              "original_text": "Currently the BOV is chaired by Representative John Shimkus and is composed of three Senators, five Representatives and six presidential appointees.[126]",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "person": {
+              "name": "John Shimkus"
+            },
+            "title_original": {
+              "language": "en",
+              "text": "Chair of the Board of Visitors"
+            }
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "single_source_family"
+        ],
+        "reason": "The source explicitly identifies the current officeholder.",
+        "reason_code": "explicit_current"
+      }
+    },
+    "president": {
+      "candidates": [
+        {
+          "current_basis": "infobox_current",
+          "evidence": [
+            {
+              "locator": "infobox:5",
+              "original_text": "Superintendent: James B. Bartholomees III",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Academy_leadership",
+              "original_text": "The commanding officer at the USMA is the Superintendent, equivalent to the president or chancellor of a civilian university.",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Academy_leadership",
+              "original_text": "The 62nd Superintendent, Lieutenant General James B. Bartholomees III, took command on 17 August 2026, replacing Steven W. Gilland.[119]",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "person": {
+              "name": "James B. Bartholomees III"
+            },
+            "term_start": {
+              "day": 17,
+              "month": 8,
+              "precision": "day",
+              "year": 2026
+            },
+            "title_original": {
+              "language": "en",
+              "text": "Superintendent"
+            }
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "single_source_family",
+          "reported_current"
+        ],
+        "reason": "The page reports this person in its current officeholder field; a term-end date is not required.",
+        "reason_code": "infobox_current"
+      }
+    },
+    "provost": {
+      "candidates": [
+        {
+          "current_basis": "undated_last_known",
+          "evidence": [
+            {
+              "locator": "section:Academy_leadership",
+              "original_text": "Brigadier General Nicholas Gist is the Dean of the Academic Board, equivalent to a provost at the civilian level.[122]",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "person": {
+              "name": "Nicholas Gist"
+            },
+            "title_original": {
+              "language": "en",
+              "text": "Dean of the Academic Board"
+            }
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "single_source_family",
+          "last_known_only"
+        ],
+        "reason": "Use the best available last-known appointment without claiming an explicitly confirmed current term.",
+        "reason_code": "last_known"
+      }
+    }
+  },
+  "locations": [
+    {
+      "id": "west_point",
+      "kind": "administrative_area",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P1705:0",
+                "original_text": "{\"property\": \"P1705\", \"property_label\": \"native label\", \"statement_id\": \"Q679753$dec6f4e1-49a7-4735-5f5f-4cf2a5322258\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"West Point\", \"language\": \"en\"}, \"reference_count\": 1}",
+                "source_ref": "s8"
+              },
+              {
+                "locator": "claim:P131:0",
+                "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q9219$C94C64E6-D7F4-4692-AA8F-E5910B129C0D\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 679753, \"id\": \"Q679753\"}, \"reference_count\": 1}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "West Point"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "qid": "Q679753"
+    },
+    {
+      "address": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "infobox:10",
+                "original_text": "Location: West Point, New York, United States",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "city_name": "West Point",
+              "city_qid": "Q679753",
+              "country_name": "United States",
+              "country_qid": "Q30",
+              "formatted": {
+                "language": "en",
+                "text": "West Point, New York, United States"
+              },
+              "region_name": "New York"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "id": "academy_campus",
+      "kind": "campus",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Campus",
+                "original_text": "The academy is located approximately 50 miles (80 km) north of New York City on the western bank of the Hudson River.",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "United States Military Academy campus"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    {
+      "coordinates": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "statement:Q9219$a78f9fb0-1e97-495b-869c-902516ee5d4e",
+                "original_text": "\"latitude\": 41.3925",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "source_rank": "normal",
+            "value": {
+              "crs": "EPSG:4326",
+              "globe_qid": "Q2",
+              "latitude": 41.3925,
+              "longitude": -73.9575,
+              "source_precision_degrees": 0.0002777777777777778
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "id": "wikidata-item-location",
+      "kind": "institution",
+      "qid": "Q9219"
+    }
+  ],
+  "modified_datetime": "2026-11-06T11:17:29.094748+00:00",
+  "population": {
+    "academic_staff": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:8",
+              "original_text": "Faculty: 580",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "period_status": "not_stated",
+          "value": {
+            "amount": 580,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "period_not_stated",
+          "single_source_family"
+        ],
+        "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+        "reason_code": "only_available"
+      }
+    },
+    "employees_total": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P1128:0",
+              "original_text": "{\"property\": \"P1128\", \"property_label\": \"employees\", \"statement_id\": \"Q9219$FF2CEBA0-745E-41E6-AE12-3EDD61FB3885\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+1918\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2020-09-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 10, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "period": {
+            "kind": "date",
+            "month": 9,
+            "year": 2020
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 1918,
+            "basis": "headcount",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "single_source_family"
+        ],
+        "reason_code": "only_available"
+      }
+    },
+    "students_intake": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "About 1,300 cadets enter the academy each July, with about 1,000 cadets graduating.",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "period_status": "not_stated",
+          "value": {
+            "amount": 1300,
+            "basis": "headcount",
+            "precision": "approximate"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "period_not_stated",
+          "single_source_family",
+          "approximate_value"
+        ],
+        "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+        "reason_code": "only_available"
+      }
+    },
+    "students_total": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:0",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q9219$138e4093-40a7-6189-4396-49a6b676b888\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+4294\", \"unit\": \"1\"}}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "infobox:9",
+              "original_text": "Students: 4,294 cadets[5]",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "period_status": "not_stated",
+          "value": {
+            "amount": 4294,
+            "basis": "headcount",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:1",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q9219$2ed765c4-4f61-3a88-d478-93207541a56b\", \"rank\": \"preferred\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+4487\", \"unit\": \"1\"}}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c2",
+          "period_status": "not_stated",
+          "value": {
+            "amount": 4487,
+            "basis": "headcount",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "section:Life_in_the_corps",
+              "original_text": "The student population was 4,389 cadets for the 2016–2017 academic year.",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c3",
+          "period": {
+            "end_year": 2017,
+            "kind": "academic_year",
+            "label": "2016–2017",
+            "start_year": 2016
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 4389,
+            "basis": "headcount",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "period_not_stated",
+          "single_source_family"
+        ],
+        "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+        "reason_code": "best_available"
+      }
+    }
+  },
+  "profile": {
+    "academic_focus": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "West Point's academic program grants the Bachelor of Science degree with a curriculum that grades cadets' performance upon a broad academic program, military leadership performance, and mandatory participation in competitive athletics.",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Academics",
+              "original_text": "The academic program consists of a structured core of thirty-one courses balanced between the arts and sciences.[149]",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Academics",
+              "original_text": "This core course of instruction consists of mathematics, information technology, chemistry, physics, engineering, history, physical geography, philosophy, leadership and general psychology, English composition and literature, foreign language, political science, international relations, economics, and constitutional law.[151][152]",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": [
+            {
+              "language": "en",
+              "text": "Military leadership"
+            },
+            {
+              "language": "en",
+              "text": "Arts and sciences"
+            },
+            {
+              "language": "en",
+              "text": "Engineering"
+            }
+          ],
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "degree_levels": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:Academics",
+              "original_text": "Regardless of major, all cadets graduate with a Bachelor of Science degree.[149]",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Curriculum",
+              "original_text": "West Point is a highly residential baccalaureate college, with a full-time, four-year undergraduate program that emphasizes instruction in the arts, sciences, and professions with no graduate program.[141]",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": [
+            "bachelor"
+          ],
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "logo_url": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox_image_urls",
+              "original_text": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/United_States_Military_Academy_wordmark.svg/250px-United_States_Military_Academy_wordmark.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/United_States_Military_Academy_wordmark.svg/250px-United_States_Military_Academy_wordmark.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "motto": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P1451:0",
+              "original_text": "{\"property\": \"P1451\", \"property_label\": \"motto text\", \"statement_id\": \"Q9219$afeffee5-4a8e-3d18-a30b-9e4b428ab96c\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"Duty • Honor • Country\", \"language\": \"en\"}}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "infobox:0",
+              "original_text": "Motto: Duty • Honor • Country[1]",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "language": "en",
+            "text": "Duty • Honor • Country"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "summary": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "metadata",
+              "original_text": "{\"id\": \"Q9219\", \"labels\": {\"en\": \"United States Military Academy\"}, \"descriptions\": {\"en\": \"federal service academy in West Point, New York, United States\"}}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "section:lead",
+              "original_text": "The United States Military Academy (USMA), commonly known as West Point,[7] is a United States service academy in West Point, New York, that educates cadets for service as commissioned officers in the United States Army.",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Campus",
+              "original_text": "The academy is located approximately 50 miles (80 km) north of New York City on the western bank of the Hudson River.",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Academy_leadership",
+              "original_text": "The academy is a direct reporting unit, and as such, the Superintendent reports directly to the Army Chief of Staff (CSA).[120][121]",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Life_in_the_corps",
+              "original_text": "Cadets attend the United States Military Academy free of charge, with all tuition and board paid for by the Army in return for a service commitment of five years of active duty and three years of reserve status upon graduation.[179]",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:After_the_Civil_War",
+              "original_text": "West Point was first officially accredited in 1925, and in 1933 began granting Bachelor of Science degrees to all graduates.[58]",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Modern_era",
+              "original_text": "West Point admitted its first 119 female cadets in 1976.[74][75]",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Curriculum",
+              "original_text": "West Point is a highly residential baccalaureate college, with a full-time, four-year undergraduate program that emphasizes instruction in the arts, sciences, and professions with no graduate program.[141]",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Academics",
+              "original_text": "Regardless of major, all cadets graduate with a Bachelor of Science degree.[149]",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Research_centers_and_institutes",
+              "original_text": "[edit | edit source]\nThe academy's research centers and institutes include:[140]\nArmy Cyber Institute\nCombating Terrorism Center\nCenter for Data Analysis and Statistics\nCenter for Environmental and Geographical Science\nCenter for Holocaust and Genocide Studies\nCenter for Innovation and Engineering\nCenter for Languages, Cultures, and Regional Studies\nCenter for Leadership and Diversity in STEM\nCenter for Molecular Science\nCenter for Oral History\nCenter for the Study of Civil-Military Operations\nCyber Research Center\nDigital History Center\nLieber Institute for Law & Warfare\nMathematical Sciences Center\nModern War Institute\nOperations Research Center\nPhotonics Research Center\nRobotics Research Center\nSystems Design and Analysis Center\nWest Point Center for the Rule of Law\nWest Point Insider Threat Program\nWest Point Leadership Center\nWest Point Music Research Center\nWest Point Simulation Center",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Life_in_the_corps",
+              "original_text": "The student population was 4,389 cadets for the 2016–2017 academic year.",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:lead",
+              "original_text": "West Point's academic program grants the Bachelor of Science degree with a curriculum that grades cadets' performance upon a broad academic program, military leadership performance, and mandatory participation in competitive athletics.",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Colonial_period.2C_founding.2C_and_early_years",
+              "original_text": "\"Cadets\" underwent training in artillery and engineering studies at the garrison since 1794.[18]",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Colonial_period.2C_founding.2C_and_early_years",
+              "original_text": "Congress formally authorized the establishment and funding of the school with the Military Peace Establishment Act of 1802, which Jefferson signed on 16 March.[2] The academy officially commenced operations on 4 July 1802.[22]",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Colonial_period.2C_founding.2C_and_early_years",
+              "original_text": "In 1817, Colonel Sylvanus Thayer became the Superintendent and established the curriculum, elements of which are still in use as of 2020[update]. Thayer instilled strict disciplinary standards, set a standard course of academic study, and emphasized honorable conduct.",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "language": "en",
+            "text": "The United States Military Academy (USMA), commonly known as West Point, is a federal service academy in West Point, New York, that prepares cadets for commissioned service in the United States Army. Its campus lies on the western bank of the Hudson River, approximately 50 miles north of New York City. The academy is a direct reporting unit, and its Superintendent reports directly to the Army Chief of Staff. Cadets attend a residential, four-year undergraduate program, with tuition and board funded by the Army in exchange for a service commitment.\n\nCongress authorized the academy in legislation signed by Thomas Jefferson on 16 March 1802; operations began on 4 July that year. Earlier artillery and engineering training at the garrison dated from 1794. Under Sylvanus Thayer, who became Superintendent in 1817, the academy established a standardized curriculum and disciplinary framework. It was first officially accredited in 1925 and began awarding Bachelor of Science degrees to all graduates in 1933. Women first entered the academy in 1976.\n\nThe curriculum combines arts and sciences with military leadership and physical development. All graduates receive a Bachelor of Science degree regardless of major, and the institution has no graduate program. Its research centers cover subjects including cyber studies, contemporary conflict, engineering, and leadership. Enrollment was 4,389 cadets in the 2016–2017 academic year."
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "website": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P856:0",
+              "original_text": "{\"property\": \"P856\", \"property_label\": \"official website\", \"statement_id\": \"Q9219$CA30E401-FE65-4D77-8000-2B9CE64B8442\", \"rank\": \"preferred\", \"snaktype\": \"value\", \"value\": \"https://www.westpoint.edu\", \"qualifiers\": {\"P407\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 1860, \"id\": \"Q1860\"}}]}}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "value": "https://www.westpoint.edu",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "qid": "Q9219",
+  "record_revision": 1,
+  "related_entities": {
+    "army_department": {
+      "kind": "institution",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P1705:0",
+                "original_text": "{\"property\": \"P1705\", \"property_label\": \"native label\", \"statement_id\": \"Q1328562$6b576a9e-45d2-47f0-7973-792931be2b02\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"United States Department of the Army\", \"language\": \"en\"}, \"reference_count\": 1}",
+                "source_ref": "s9"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "United States Department of the Army"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "qid": "Q1328562"
+    }
+  },
+  "relationships": {
+    "campus": [
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Campus",
+                "original_text": "Though the entire military reservation encompasses 15,974 acres (65 km2), the academic area of the campus, known as \"central area\" or \"the cadet area\", is entirely accessible to cadets or visitors by foot.[101]",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "target_ref": "location:academy_campus"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    ],
+    "parent": [
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P749:0",
+                "original_text": "{\"property\": \"P749\", \"property_label\": \"parent organization or unit\", \"statement_id\": \"Q9219$fc1d4434-4c7e-098a-2373-b9f7aee4e614\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 1328562, \"id\": \"Q1328562\"}}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "target_ref": "related:army_department"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    ]
+  },
+  "schema_version": "0.2.2",
+  "seed": {
+    "channels": [
+      "ranking_identifier",
+      "reviewed_institution_type"
+    ],
+    "import_id": "seed-84c3beb45367905f",
+    "screening_status": "needs_review"
+  },
+  "selection_policy": "preferred-v1",
+  "sources": {
+    "s1": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T11:09:21.997550+00:00",
+      "revision_id": 2553359851,
+      "source_qid": "Q9219",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2553359851"
+    },
+    "s2": {
+      "family": "wikimedia",
+      "kind": "wikipedia",
+      "language": "en",
+      "page_id": 32173,
+      "publisher_role": "encyclopedia",
+      "retrieved_at": "2026-11-06T11:09:39.294524+00:00",
+      "revision_id": 1382604594,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1382604594"
+    },
+    "s3": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T11:09:44.029317+00:00",
+      "revision_id": 2552872664,
+      "source_qid": "Q917182",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2552872664"
+    },
+    "s4": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T11:09:48.134056+00:00",
+      "revision_id": 2561743397,
+      "source_qid": "Q2772772",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2561743397"
+    },
+    "s5": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T11:09:52.720710+00:00",
+      "revision_id": 2554628329,
+      "source_qid": "Q23002039",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2554628329"
+    },
+    "s6": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T11:09:56.448587+00:00",
+      "revision_id": 2321526851,
+      "source_qid": "Q127701543",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2321526851"
+    },
+    "s7": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T09:50:50.405563+00:00",
+      "revision_id": 2565041516,
+      "source_qid": "Q30",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2565041516"
+    },
+    "s8": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T11:10:00.921126+00:00",
+      "revision_id": 2558979096,
+      "source_qid": "Q679753",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2558979096"
+    },
+    "s9": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T11:10:04.857815+00:00",
+      "revision_id": 2544436985,
+      "source_qid": "Q1328562",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2544436985"
+    }
+  },
+  "update_datetime": "2026-11-06T11:17:29.094748+00:00"
+}

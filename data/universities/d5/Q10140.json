@@ -1,0 +1,1997 @@
+{
+  "coverage": {
+    "finance": {
+      "checked_at": "2026-11-06T11:12:11.412650+00:00",
+      "status": "checked"
+    },
+    "geography": {
+      "checked_at": "2026-11-06T11:12:11.412650+00:00",
+      "status": "checked"
+    },
+    "history": {
+      "checked_at": "2026-11-06T11:12:11.412650+00:00",
+      "status": "checked"
+    },
+    "identity": {
+      "checked_at": "2026-11-06T11:12:11.412650+00:00",
+      "status": "checked"
+    },
+    "population": {
+      "checked_at": "2026-11-06T11:12:11.412650+00:00",
+      "status": "checked"
+    },
+    "profile": {
+      "checked_at": "2026-11-06T11:12:11.412650+00:00",
+      "status": "checked"
+    }
+  },
+  "curation": {
+    "identity_status": "in_scope",
+    "refresh_profile": "core-v1",
+    "reviewed_groups": [
+      "identity",
+      "geography",
+      "history",
+      "population",
+      "finance",
+      "profile"
+    ]
+  },
+  "finance": {
+    "budget": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2769:0",
+              "original_text": "{\"property\": \"P2769\", \"property_label\": \"budget\", \"statement_id\": \"Q10140$04bb57aa-4dbe-912d-5528-b23ee68afb49\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+15000000\", \"unit\": \"http://www.wikidata.org/entity/Q4916\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2020-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "metadata",
+              "original_text": "{\"id\": \"Q4916\", \"labels\": {\"en\": \"euro\"}, \"descriptions\": {\"fr\": \"monnaie de l’Union européenne\", \"en\": \"currency of most countries in the European Union\"}}",
+              "source_ref": "s6"
+            }
+          ],
+          "id": "c1",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2020
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": "15000000",
+            "currency": "EUR",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "section:Annual_budget",
+              "original_text": "[edit | edit source]\nThe annual budget of the institution is €11,048,054 and a grant from the direction of music, dance, theater and amounts to €9,632,911.",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c2",
+          "period_status": "not_stated",
+          "value": {
+            "amount": "11048054",
+            "currency": "EUR",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c2",
+        "qualifications": [
+          "period_not_stated",
+          "single_source_family"
+        ],
+        "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+        "reason_code": "best_available"
+      }
+    }
+  },
+  "history": {
+    "milestones": [
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P571:0",
+                  "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q10140$546C35C5-399A-49BE-9652-04E1A5D0BDA1\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+1980-02-18T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "section:1980-2009_:_Conservatoire_national_sup.C3.A9rieur_de_musique_de_Lyon",
+                  "original_text": "Le Conservatoire national supérieur de musique de Lyon est créé par décret du 18 février 1980[3].",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "day": 18,
+                "month": 2,
+                "precision": "day",
+                "year": 1980
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P571:0",
+                  "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q10140$546C35C5-399A-49BE-9652-04E1A5D0BDA1\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+1980-02-18T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "section:1980-2009_:_Conservatoire_national_sup.C3.A9rieur_de_musique_de_Lyon",
+                  "original_text": "Le Conservatoire national supérieur de musique de Lyon est créé par décret du 18 février 1980[3].",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "fr",
+                "text": "Création par décret du Conservatoire national supérieur de musique de Lyon."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "establishment",
+        "kind": "institution_establishment",
+        "subject_ref": "institution"
+      },
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Origines",
+                  "original_text": "L'établissement ouvre ses portes en octobre 1979 avec 46 étudiants répartis dans un nombre de classes limitées (violon, alto, violoncelle, contrebasse, harpe, piano, chef de chœur, histoire de l'art, formation musicale et pratiques collectives)[1].",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "month": 10,
+                "precision": "month",
+                "year": 1979
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Origines",
+                  "original_text": "L'établissement ouvre ses portes en octobre 1979 avec 46 étudiants répartis dans un nombre de classes limitées (violon, alto, violoncelle, contrebasse, harpe, piano, chef de chœur, histoire de l'art, formation musicale et pratiques collectives)[1].",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "fr",
+                "text": "Ouverture des portes en octobre 1979 avec 46 étudiants."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "teaching",
+        "kind": "teaching_start",
+        "subject_ref": "institution"
+      },
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Depuis_2009_:_Conservatoire_national_sup.C3.A9rieur_de_musique_et_de_danse_de_Lyon",
+                  "original_text": "À la suite du décret no 2009-201 du 18 février 2009, la danse fait officiellement son apparition dans le titre de l'établissement qui devient Conservatoire national supérieur de musique et de danse de Lyon.",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "day": 18,
+                "month": 2,
+                "precision": "day",
+                "year": 2009
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Depuis_2009_:_Conservatoire_national_sup.C3.A9rieur_de_musique_et_de_danse_de_Lyon",
+                  "original_text": "À la suite du décret no 2009-201 du 18 février 2009, la danse fait officiellement son apparition dans le titre de l'établissement qui devient Conservatoire national supérieur de musique et de danse de Lyon.",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "fr",
+                "text": "La danse entre officiellement dans le titre : Conservatoire national supérieur de musique et de danse de Lyon."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "rename",
+        "kind": "rename",
+        "subject_ref": "institution"
+      },
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:1980-2009_:_Conservatoire_national_sup.C3.A9rieur_de_musique_de_Lyon",
+                  "original_text": "Le 18 février 1988, les nouveaux locaux aménagés au clos des Deux-Amants, quai Chauveau dans le 9e arrondissement de Lyon, sont inaugurés par Raymond Barre, François Léotard, Francisque Collomb et Gilbert Amy.",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "day": 18,
+                "month": 2,
+                "precision": "day",
+                "year": 1988
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:1980-2009_:_Conservatoire_national_sup.C3.A9rieur_de_musique_de_Lyon",
+                  "original_text": "Le 18 février 1988, les nouveaux locaux aménagés au clos des Deux-Amants, quai Chauveau dans le 9e arrondissement de Lyon, sont inaugurés par Raymond Barre, François Léotard, Francisque Collomb et Gilbert Amy.",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "fr",
+                "text": "Inauguration des nouveaux locaux au clos des Deux-Amants."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "clos-opening",
+        "kind": "campus_opening",
+        "subject_ref": "location:clos"
+      },
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:1980-2009_:_Conservatoire_national_sup.C3.A9rieur_de_musique_de_Lyon",
+                  "original_text": "Les studios aménagés pour le département danse au grenier d'abondance sont inaugurés le 5 juin 1993, puis le grand orgue Grenzing de l'amphithéâtre Xavier-Darasse le 16 juin 1993[a].",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "day": 5,
+                "month": 6,
+                "precision": "day",
+                "year": 1993
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:1980-2009_:_Conservatoire_national_sup.C3.A9rieur_de_musique_de_Lyon",
+                  "original_text": "Les studios aménagés pour le département danse au grenier d'abondance sont inaugurés le 5 juin 1993, puis le grand orgue Grenzing de l'amphithéâtre Xavier-Darasse le 16 juin 1993[a].",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "fr",
+                "text": "Inauguration des studios du département danse au grenier d’abondance."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "grenier-opening",
+        "kind": "campus_opening",
+        "subject_ref": "location:grenier"
+      }
+    ]
+  },
+  "identity": {
+    "aliases": [
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P1813:0",
+                "original_text": "{\"property\": \"P1813\", \"property_label\": \"short name\", \"statement_id\": \"Q10140$30fb566d-402b-93d1-85c2-516f8131593b\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"CNSMDL\", \"language\": \"fr\"}, \"qualifiers\": {\"P580\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2009-02-18T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "fr",
+              "text": "CNSMDL"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "« Conservatoire national supérieur musique et danse » sur son site web",
+                "source_ref": "s3"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "fr",
+              "text": "Conservatoire national supérieur musique et danse"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    ],
+    "kind": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "est un établissement d'enseignement supérieur français doté du statut d'« établissement public à caractère administratif » (EPA), qui dispense un enseignement professionnel de la musique et de la danse.",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c1",
+          "value": "specialist_institution",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "names": {
+      "fr": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P1448:1",
+                "original_text": "{\"property\": \"P1448\", \"property_label\": \"official name\", \"statement_id\": \"Q10140$668962aa-45fe-46e5-a3f5-22625d624a59\", \"rank\": \"preferred\", \"snaktype\": \"value\", \"value\": {\"text\": \"Conservatoire national supérieur de musique et de danse de Lyon\", \"language\": \"fr\"}, \"qualifiers\": {\"P580\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2009-02-18T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}], \"P7452\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 71536244, \"id\": \"Q71536244\"}}]}, \"reference_count\": 1}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "period": {
+              "kind": "interval",
+              "label": "since 18 February 2009"
+            },
+            "value": "Conservatoire national supérieur de musique et de danse de Lyon",
+            "verification": "supported"
+          },
+          {
+            "evidence": [
+              {
+                "locator": "claim:P1448:0",
+                "original_text": "{\"property\": \"P1448\", \"property_label\": \"official name\", \"statement_id\": \"Q10140$f26fe0ef-4bdb-59c0-112e-83f319f3bcca\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"Conservatoire national supérieur de musique de Lyon\", \"language\": \"fr\"}, \"qualifiers\": {\"P580\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+1980-02-18T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}], \"P582\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2009-02-17T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c2",
+            "period": {
+              "end_date": "2009-02-17",
+              "kind": "interval",
+              "label": "18 February 1980–17 February 2009",
+              "start_date": "1980-02-18"
+            },
+            "value": "Conservatoire national supérieur de musique de Lyon",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+          "reason_code": "best_available"
+        }
+      }
+    },
+    "ownership": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:Organisation",
+              "original_text": "[modifier | modifier le code]\nLe décret no 2009-201 du 18 février 2009 prévoit que le CNSMD de Lyon est un établissement public à caractère administratif placé sous la tutelle du ministère de la Culture[22], exercée par la direction générale de la Création artistique.",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c1",
+          "value": "public",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "leadership": {
+    "board_chair": {
+      "candidates": [
+        {
+          "current_basis": "historical",
+          "evidence": [
+            {
+              "locator": "section:Conseil_d.27administration",
+              "original_text": "[modifier | modifier le code]\nL'établissement est administré par un conseil d'administration dont le président est nommé par décret pour un mandat de trois ans renouvelable[23].\nListe des présidents successifs du conseil d'administration\nNom\nDébut du mandat\nFin du mandat\nRéférences\nPierre Doueil\n20 novembre 1980\n19 novembre 1983\n[24]\nFrancis Jeanson\n31 octobre 1984\n30 octobre 1987\n[25]\nHugues Taÿ\n22 janvier 1988\n14 mai 1994\n[26],[27]\nMichel Cusin\n1er septembre 1994\n31 août 1997\n[28]\nRoland Tissot\n5 mai 1998\n28 novembre 2000\n[29]\nDaniel Goudineau\n29 novembre 2000\n22 juin 2010\n[30],[31],[32],[33]\nYves Rolland\n23 juin 2010\n22 juin 2013\n[34]\nCatherine Tsekenis\n21 février 2014\n30 juin 2019\n[35],[36]\nAnne Poursin\n16 décembre 2019\n23 septembre 2021\n[37]\nCarine Soulay\n8 février 2022\n7 février 2025\n[38]",
+              "source_ref": "s3"
+            },
+            {
+              "locator": "claim:P488:0",
+              "original_text": "{\"property\": \"P488\", \"property_label\": \"chairperson\", \"statement_id\": \"Q10140$7ed092bc-4a81-0ce6-d479-7e168fa7ff98\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 50843090, \"id\": \"Q50843090\"}, \"qualifiers\": {\"P39\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 140686, \"id\": \"Q140686\"}}], \"P580\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+1980-11-20T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}], \"P582\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+1983-11-19T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "person": {
+              "name": "Pierre Doueil",
+              "qid": "Q50843090"
+            },
+            "term_end": {
+              "day": 19,
+              "month": 11,
+              "precision": "day",
+              "year": 1983
+            },
+            "term_start": {
+              "day": 20,
+              "month": 11,
+              "precision": "day",
+              "year": 1980
+            },
+            "title_original": {
+              "language": "fr",
+              "text": "président du conseil d’administration"
+            }
+          },
+          "verification": "supported"
+        },
+        {
+          "current_basis": "historical",
+          "evidence": [
+            {
+              "locator": "section:Conseil_d.27administration",
+              "original_text": "[modifier | modifier le code]\nL'établissement est administré par un conseil d'administration dont le président est nommé par décret pour un mandat de trois ans renouvelable[23].\nListe des présidents successifs du conseil d'administration\nNom\nDébut du mandat\nFin du mandat\nRéférences\nPierre Doueil\n20 novembre 1980\n19 novembre 1983\n[24]\nFrancis Jeanson\n31 octobre 1984\n30 octobre 1987\n[25]\nHugues Taÿ\n22 janvier 1988\n14 mai 1994\n[26],[27]\nMichel Cusin\n1er septembre 1994\n31 août 1997\n[28]\nRoland Tissot\n5 mai 1998\n28 novembre 2000\n[29]\nDaniel Goudineau\n29 novembre 2000\n22 juin 2010\n[30],[31],[32],[33]\nYves Rolland\n23 juin 2010\n22 juin 2013\n[34]\nCatherine Tsekenis\n21 février 2014\n30 juin 2019\n[35],[36]\nAnne Poursin\n16 décembre 2019\n23 septembre 2021\n[37]\nCarine Soulay\n8 février 2022\n7 février 2025\n[38]",
+              "source_ref": "s3"
+            },
+            {
+              "locator": "claim:P488:1",
+              "original_text": "{\"property\": \"P488\", \"property_label\": \"chairperson\", \"statement_id\": \"Q10140$87d17d4e-4c23-d59d-3dd1-5208cf7b14ca\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 3081521, \"id\": \"Q3081521\"}, \"qualifiers\": {\"P39\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 140686, \"id\": \"Q140686\"}}], \"P580\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+1984-10-31T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}], \"P582\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+1987-10-30T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c2",
+          "value": {
+            "person": {
+              "name": "Francis Jeanson",
+              "qid": "Q3081521"
+            },
+            "term_end": {
+              "day": 30,
+              "month": 10,
+              "precision": "day",
+              "year": 1987
+            },
+            "term_start": {
+              "day": 31,
+              "month": 10,
+              "precision": "day",
+              "year": 1984
+            },
+            "title_original": {
+              "language": "fr",
+              "text": "président du conseil d’administration"
+            }
+          },
+          "verification": "supported"
+        },
+        {
+          "current_basis": "historical",
+          "evidence": [
+            {
+              "locator": "section:Conseil_d.27administration",
+              "original_text": "[modifier | modifier le code]\nL'établissement est administré par un conseil d'administration dont le président est nommé par décret pour un mandat de trois ans renouvelable[23].\nListe des présidents successifs du conseil d'administration\nNom\nDébut du mandat\nFin du mandat\nRéférences\nPierre Doueil\n20 novembre 1980\n19 novembre 1983\n[24]\nFrancis Jeanson\n31 octobre 1984\n30 octobre 1987\n[25]\nHugues Taÿ\n22 janvier 1988\n14 mai 1994\n[26],[27]\nMichel Cusin\n1er septembre 1994\n31 août 1997\n[28]\nRoland Tissot\n5 mai 1998\n28 novembre 2000\n[29]\nDaniel Goudineau\n29 novembre 2000\n22 juin 2010\n[30],[31],[32],[33]\nYves Rolland\n23 juin 2010\n22 juin 2013\n[34]\nCatherine Tsekenis\n21 février 2014\n30 juin 2019\n[35],[36]\nAnne Poursin\n16 décembre 2019\n23 septembre 2021\n[37]\nCarine Soulay\n8 février 2022\n7 février 2025\n[38]",
+              "source_ref": "s3"
+            },
+            {
+              "locator": "claim:P488:2",
+              "original_text": "{\"property\": \"P488\", \"property_label\": \"chairperson\", \"statement_id\": \"Q10140$43432977-4967-dcb5-582e-dc9f35a63ad3\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 53114020, \"id\": \"Q53114020\"}, \"qualifiers\": {\"P39\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 140686, \"id\": \"Q140686\"}}], \"P580\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+1988-01-22T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}], \"P582\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+1994-05-14T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c3",
+          "value": {
+            "person": {
+              "name": "Hugues Taÿ",
+              "qid": "Q53114020"
+            },
+            "term_end": {
+              "day": 14,
+              "month": 5,
+              "precision": "day",
+              "year": 1994
+            },
+            "term_start": {
+              "day": 22,
+              "month": 1,
+              "precision": "day",
+              "year": 1988
+            },
+            "title_original": {
+              "language": "fr",
+              "text": "président du conseil d’administration"
+            }
+          },
+          "verification": "supported"
+        },
+        {
+          "current_basis": "historical",
+          "evidence": [
+            {
+              "locator": "section:Conseil_d.27administration",
+              "original_text": "[modifier | modifier le code]\nL'établissement est administré par un conseil d'administration dont le président est nommé par décret pour un mandat de trois ans renouvelable[23].\nListe des présidents successifs du conseil d'administration\nNom\nDébut du mandat\nFin du mandat\nRéférences\nPierre Doueil\n20 novembre 1980\n19 novembre 1983\n[24]\nFrancis Jeanson\n31 octobre 1984\n30 octobre 1987\n[25]\nHugues Taÿ\n22 janvier 1988\n14 mai 1994\n[26],[27]\nMichel Cusin\n1er septembre 1994\n31 août 1997\n[28]\nRoland Tissot\n5 mai 1998\n28 novembre 2000\n[29]\nDaniel Goudineau\n29 novembre 2000\n22 juin 2010\n[30],[31],[32],[33]\nYves Rolland\n23 juin 2010\n22 juin 2013\n[34]\nCatherine Tsekenis\n21 février 2014\n30 juin 2019\n[35],[36]\nAnne Poursin\n16 décembre 2019\n23 septembre 2021\n[37]\nCarine Soulay\n8 février 2022\n7 février 2025\n[38]",
+              "source_ref": "s3"
+            },
+            {
+              "locator": "claim:P488:3",
+              "original_text": "{\"property\": \"P488\", \"property_label\": \"chairperson\", \"statement_id\": \"Q10140$0009726d-456a-2a2a-7a2d-f0e98be4f2ed\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 54688214, \"id\": \"Q54688214\"}, \"qualifiers\": {\"P39\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 140686, \"id\": \"Q140686\"}}], \"P580\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+1994-09-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}], \"P582\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+1997-08-31T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c4",
+          "value": {
+            "person": {
+              "name": "Michel Cusin",
+              "qid": "Q54688214"
+            },
+            "term_end": {
+              "day": 31,
+              "month": 8,
+              "precision": "day",
+              "year": 1997
+            },
+            "term_start": {
+              "day": 1,
+              "month": 9,
+              "precision": "day",
+              "year": 1994
+            },
+            "title_original": {
+              "language": "fr",
+              "text": "président du conseil d’administration"
+            }
+          },
+          "verification": "supported"
+        },
+        {
+          "current_basis": "historical",
+          "evidence": [
+            {
+              "locator": "section:Conseil_d.27administration",
+              "original_text": "[modifier | modifier le code]\nL'établissement est administré par un conseil d'administration dont le président est nommé par décret pour un mandat de trois ans renouvelable[23].\nListe des présidents successifs du conseil d'administration\nNom\nDébut du mandat\nFin du mandat\nRéférences\nPierre Doueil\n20 novembre 1980\n19 novembre 1983\n[24]\nFrancis Jeanson\n31 octobre 1984\n30 octobre 1987\n[25]\nHugues Taÿ\n22 janvier 1988\n14 mai 1994\n[26],[27]\nMichel Cusin\n1er septembre 1994\n31 août 1997\n[28]\nRoland Tissot\n5 mai 1998\n28 novembre 2000\n[29]\nDaniel Goudineau\n29 novembre 2000\n22 juin 2010\n[30],[31],[32],[33]\nYves Rolland\n23 juin 2010\n22 juin 2013\n[34]\nCatherine Tsekenis\n21 février 2014\n30 juin 2019\n[35],[36]\nAnne Poursin\n16 décembre 2019\n23 septembre 2021\n[37]\nCarine Soulay\n8 février 2022\n7 février 2025\n[38]",
+              "source_ref": "s3"
+            },
+            {
+              "locator": "claim:P488:4",
+              "original_text": "{\"property\": \"P488\", \"property_label\": \"chairperson\", \"statement_id\": \"Q10140$1e580dc7-42fa-587a-267f-6e824e2b93c5\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 49145741, \"id\": \"Q49145741\"}, \"qualifiers\": {\"P39\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 140686, \"id\": \"Q140686\"}}], \"P580\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+1998-05-05T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}], \"P582\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2000-11-28T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c5",
+          "value": {
+            "person": {
+              "name": "Roland Tissot",
+              "qid": "Q49145741"
+            },
+            "term_end": {
+              "day": 28,
+              "month": 11,
+              "precision": "day",
+              "year": 2000
+            },
+            "term_start": {
+              "day": 5,
+              "month": 5,
+              "precision": "day",
+              "year": 1998
+            },
+            "title_original": {
+              "language": "fr",
+              "text": "président du conseil d’administration"
+            }
+          },
+          "verification": "supported"
+        },
+        {
+          "current_basis": "historical",
+          "evidence": [
+            {
+              "locator": "section:Conseil_d.27administration",
+              "original_text": "[modifier | modifier le code]\nL'établissement est administré par un conseil d'administration dont le président est nommé par décret pour un mandat de trois ans renouvelable[23].\nListe des présidents successifs du conseil d'administration\nNom\nDébut du mandat\nFin du mandat\nRéférences\nPierre Doueil\n20 novembre 1980\n19 novembre 1983\n[24]\nFrancis Jeanson\n31 octobre 1984\n30 octobre 1987\n[25]\nHugues Taÿ\n22 janvier 1988\n14 mai 1994\n[26],[27]\nMichel Cusin\n1er septembre 1994\n31 août 1997\n[28]\nRoland Tissot\n5 mai 1998\n28 novembre 2000\n[29]\nDaniel Goudineau\n29 novembre 2000\n22 juin 2010\n[30],[31],[32],[33]\nYves Rolland\n23 juin 2010\n22 juin 2013\n[34]\nCatherine Tsekenis\n21 février 2014\n30 juin 2019\n[35],[36]\nAnne Poursin\n16 décembre 2019\n23 septembre 2021\n[37]\nCarine Soulay\n8 février 2022\n7 février 2025\n[38]",
+              "source_ref": "s3"
+            },
+            {
+              "locator": "claim:P488:5",
+              "original_text": "{\"property\": \"P488\", \"property_label\": \"chairperson\", \"statement_id\": \"Q10140$a289c73f-4989-300a-64e6-3d833fb653a9\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 3014107, \"id\": \"Q3014107\"}, \"qualifiers\": {\"P39\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 140686, \"id\": \"Q140686\"}}], \"P580\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2000-11-29T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}], \"P582\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2010-06-22T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c6",
+          "value": {
+            "person": {
+              "name": "Daniel Goudineau",
+              "qid": "Q3014107"
+            },
+            "term_end": {
+              "day": 22,
+              "month": 6,
+              "precision": "day",
+              "year": 2010
+            },
+            "term_start": {
+              "day": 29,
+              "month": 11,
+              "precision": "day",
+              "year": 2000
+            },
+            "title_original": {
+              "language": "fr",
+              "text": "président du conseil d’administration"
+            }
+          },
+          "verification": "supported"
+        },
+        {
+          "current_basis": "historical",
+          "evidence": [
+            {
+              "locator": "section:Conseil_d.27administration",
+              "original_text": "[modifier | modifier le code]\nL'établissement est administré par un conseil d'administration dont le président est nommé par décret pour un mandat de trois ans renouvelable[23].\nListe des présidents successifs du conseil d'administration\nNom\nDébut du mandat\nFin du mandat\nRéférences\nPierre Doueil\n20 novembre 1980\n19 novembre 1983\n[24]\nFrancis Jeanson\n31 octobre 1984\n30 octobre 1987\n[25]\nHugues Taÿ\n22 janvier 1988\n14 mai 1994\n[26],[27]\nMichel Cusin\n1er septembre 1994\n31 août 1997\n[28]\nRoland Tissot\n5 mai 1998\n28 novembre 2000\n[29]\nDaniel Goudineau\n29 novembre 2000\n22 juin 2010\n[30],[31],[32],[33]\nYves Rolland\n23 juin 2010\n22 juin 2013\n[34]\nCatherine Tsekenis\n21 février 2014\n30 juin 2019\n[35],[36]\nAnne Poursin\n16 décembre 2019\n23 septembre 2021\n[37]\nCarine Soulay\n8 février 2022\n7 février 2025\n[38]",
+              "source_ref": "s3"
+            },
+            {
+              "locator": "claim:P488:6",
+              "original_text": "{\"property\": \"P488\", \"property_label\": \"chairperson\", \"statement_id\": \"Q10140$56c8c869-4340-2854-8d92-f36bbb627b58\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 3573939, \"id\": \"Q3573939\"}, \"qualifiers\": {\"P39\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 140686, \"id\": \"Q140686\"}}], \"P580\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2010-06-23T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}], \"P582\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2013-06-22T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c7",
+          "value": {
+            "person": {
+              "name": "Yves Rolland",
+              "qid": "Q3573939"
+            },
+            "term_end": {
+              "day": 22,
+              "month": 6,
+              "precision": "day",
+              "year": 2013
+            },
+            "term_start": {
+              "day": 23,
+              "month": 6,
+              "precision": "day",
+              "year": 2010
+            },
+            "title_original": {
+              "language": "fr",
+              "text": "président du conseil d’administration"
+            }
+          },
+          "verification": "supported"
+        },
+        {
+          "current_basis": "historical",
+          "evidence": [
+            {
+              "locator": "section:Conseil_d.27administration",
+              "original_text": "[modifier | modifier le code]\nL'établissement est administré par un conseil d'administration dont le président est nommé par décret pour un mandat de trois ans renouvelable[23].\nListe des présidents successifs du conseil d'administration\nNom\nDébut du mandat\nFin du mandat\nRéférences\nPierre Doueil\n20 novembre 1980\n19 novembre 1983\n[24]\nFrancis Jeanson\n31 octobre 1984\n30 octobre 1987\n[25]\nHugues Taÿ\n22 janvier 1988\n14 mai 1994\n[26],[27]\nMichel Cusin\n1er septembre 1994\n31 août 1997\n[28]\nRoland Tissot\n5 mai 1998\n28 novembre 2000\n[29]\nDaniel Goudineau\n29 novembre 2000\n22 juin 2010\n[30],[31],[32],[33]\nYves Rolland\n23 juin 2010\n22 juin 2013\n[34]\nCatherine Tsekenis\n21 février 2014\n30 juin 2019\n[35],[36]\nAnne Poursin\n16 décembre 2019\n23 septembre 2021\n[37]\nCarine Soulay\n8 février 2022\n7 février 2025\n[38]",
+              "source_ref": "s3"
+            },
+            {
+              "locator": "claim:P488:7",
+              "original_text": "{\"property\": \"P488\", \"property_label\": \"chairperson\", \"statement_id\": \"Q10140$b4b474af-4800-4878-840a-0f28d1d1e657\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 111018183, \"id\": \"Q111018183\"}, \"qualifiers\": {\"P39\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 140686, \"id\": \"Q140686\"}}], \"P580\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2014-02-21T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}], \"P582\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2019-06-30T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c8",
+          "value": {
+            "person": {
+              "name": "Catherine Tsekenis",
+              "qid": "Q111018183"
+            },
+            "term_end": {
+              "day": 30,
+              "month": 6,
+              "precision": "day",
+              "year": 2019
+            },
+            "term_start": {
+              "day": 21,
+              "month": 2,
+              "precision": "day",
+              "year": 2014
+            },
+            "title_original": {
+              "language": "fr",
+              "text": "présidente du conseil d’administration"
+            }
+          },
+          "verification": "supported"
+        },
+        {
+          "current_basis": "historical",
+          "evidence": [
+            {
+              "locator": "section:Conseil_d.27administration",
+              "original_text": "[modifier | modifier le code]\nL'établissement est administré par un conseil d'administration dont le président est nommé par décret pour un mandat de trois ans renouvelable[23].\nListe des présidents successifs du conseil d'administration\nNom\nDébut du mandat\nFin du mandat\nRéférences\nPierre Doueil\n20 novembre 1980\n19 novembre 1983\n[24]\nFrancis Jeanson\n31 octobre 1984\n30 octobre 1987\n[25]\nHugues Taÿ\n22 janvier 1988\n14 mai 1994\n[26],[27]\nMichel Cusin\n1er septembre 1994\n31 août 1997\n[28]\nRoland Tissot\n5 mai 1998\n28 novembre 2000\n[29]\nDaniel Goudineau\n29 novembre 2000\n22 juin 2010\n[30],[31],[32],[33]\nYves Rolland\n23 juin 2010\n22 juin 2013\n[34]\nCatherine Tsekenis\n21 février 2014\n30 juin 2019\n[35],[36]\nAnne Poursin\n16 décembre 2019\n23 septembre 2021\n[37]\nCarine Soulay\n8 février 2022\n7 février 2025\n[38]",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c9",
+          "value": {
+            "person": {
+              "name": "Anne Poursin",
+              "qid": "Q96107504"
+            },
+            "term_end": {
+              "day": 23,
+              "month": 9,
+              "precision": "day",
+              "year": 2021
+            },
+            "term_start": {
+              "day": 16,
+              "month": 12,
+              "precision": "day",
+              "year": 2019
+            },
+            "title_original": {
+              "language": "fr",
+              "text": "présidente du conseil d’administration"
+            }
+          },
+          "verification": "supported"
+        },
+        {
+          "current_basis": "historical",
+          "evidence": [
+            {
+              "locator": "section:Conseil_d.27administration",
+              "original_text": "[modifier | modifier le code]\nL'établissement est administré par un conseil d'administration dont le président est nommé par décret pour un mandat de trois ans renouvelable[23].\nListe des présidents successifs du conseil d'administration\nNom\nDébut du mandat\nFin du mandat\nRéférences\nPierre Doueil\n20 novembre 1980\n19 novembre 1983\n[24]\nFrancis Jeanson\n31 octobre 1984\n30 octobre 1987\n[25]\nHugues Taÿ\n22 janvier 1988\n14 mai 1994\n[26],[27]\nMichel Cusin\n1er septembre 1994\n31 août 1997\n[28]\nRoland Tissot\n5 mai 1998\n28 novembre 2000\n[29]\nDaniel Goudineau\n29 novembre 2000\n22 juin 2010\n[30],[31],[32],[33]\nYves Rolland\n23 juin 2010\n22 juin 2013\n[34]\nCatherine Tsekenis\n21 février 2014\n30 juin 2019\n[35],[36]\nAnne Poursin\n16 décembre 2019\n23 septembre 2021\n[37]\nCarine Soulay\n8 février 2022\n7 février 2025\n[38]",
+              "source_ref": "s3"
+            },
+            {
+              "locator": "claim:P488:9",
+              "original_text": "{\"property\": \"P488\", \"property_label\": \"chairperson\", \"statement_id\": \"Q10140$37af3891-4b93-76a1-9985-abbb6c27fdb9\", \"rank\": \"preferred\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 47504710, \"id\": \"Q47504710\"}, \"qualifiers\": {\"P39\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 140686, \"id\": \"Q140686\"}}], \"P580\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2022-02-08T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}], \"P7452\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 71536244, \"id\": \"Q71536244\"}}]}}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c10",
+          "value": {
+            "person": {
+              "name": "Carine Soulay",
+              "qid": "Q47504710"
+            },
+            "term_end": {
+              "day": 7,
+              "month": 2,
+              "precision": "day",
+              "year": 2025
+            },
+            "term_start": {
+              "day": 8,
+              "month": 2,
+              "precision": "day",
+              "year": 2022
+            },
+            "title_original": {
+              "language": "fr",
+              "text": "présidente du conseil d’administration"
+            }
+          },
+          "verification": "supported"
+        },
+        {
+          "current_basis": "historical",
+          "evidence": [
+            {
+              "locator": "claim:P488:8",
+              "original_text": "{\"property\": \"P488\", \"property_label\": \"chairperson\", \"statement_id\": \"Q10140$20939c0c-4909-d30a-4103-516b0190ec76\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 96107504, \"id\": \"Q96107504\"}, \"qualifiers\": {\"P39\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 140686, \"id\": \"Q140686\"}}], \"P580\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2019-12-18T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}], \"P582\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2021-09-23T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "section:Conseil_d.27administration",
+              "original_text": "Liste des présidents successifs du conseil d'administration",
+              "source_ref": "s3"
+            },
+            {
+              "locator": "section:Conseil_d.27administration",
+              "original_text": "Anne Poursin\n16 décembre 2019\n23 septembre 2021",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c11",
+          "value": {
+            "person": {
+              "name": "Anne Poursin",
+              "qid": "Q96107504"
+            },
+            "term_end": {
+              "day": 23,
+              "month": 9,
+              "precision": "day",
+              "year": 2021
+            },
+            "term_start": {
+              "day": 18,
+              "month": 12,
+              "precision": "day",
+              "year": 2019
+            },
+            "title_original": {
+              "language": "fr",
+              "text": "présidente du conseil d’administration"
+            }
+          },
+          "verification": "supported"
+        },
+        {
+          "current_basis": "infobox_current",
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "Présidente\nCarine Soulay (d) (depuis 2022)",
+              "source_ref": "s3"
+            },
+            {
+              "locator": "section:Conseil_d.27administration",
+              "original_text": "Liste des présidents successifs du conseil d'administration",
+              "source_ref": "s3"
+            },
+            {
+              "locator": "section:Conseil_d.27administration",
+              "original_text": "Carine Soulay\n8 février 2022\n7 février 2025",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c12",
+          "value": {
+            "person": {
+              "name": "Carine Soulay",
+              "qid": "Q47504710"
+            },
+            "term_start": {
+              "precision": "year",
+              "year": 2022
+            },
+            "title_original": {
+              "language": "fr",
+              "text": "Présidente"
+            }
+          },
+          "verification": "supported"
+        }
+      ],
+      "conflicts": [
+        {
+          "candidate_ids": [
+            "c9",
+            "c11"
+          ],
+          "kind": "time_disagreement",
+          "note": "French chair table starts Anne Poursin on 16 December 2019; Wikidata P488 starts 18 December 2019. Do not harmonize.",
+          "status": "unresolved"
+        },
+        {
+          "candidate_ids": [
+            "c10",
+            "c12"
+          ],
+          "kind": "time_disagreement",
+          "note": "The same French revision gives Carine Soulay an infobox incumbent claim since 2022 and a table term ending 7 February 2025; current status at capture in November 2026 is unresolved.",
+          "status": "unresolved"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c12",
+        "qualifications": [
+          "single_source_family",
+          "conflicting_candidates",
+          "reported_current"
+        ],
+        "reason": "The page reports this person in its current officeholder field; a term-end date is not required.",
+        "reason_code": "infobox_current"
+      }
+    }
+  },
+  "locations": [
+    {
+      "id": "lyon",
+      "kind": "administrative_area",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P131:0",
+                "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q10140$a4bbf107-43c8-804a-249a-814ca8b8edc4\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 456, \"id\": \"Q456\"}}",
+                "source_ref": "s1"
+              },
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q456\", \"labels\": {\"en\": \"Lyon\", \"fr\": \"Lyon\"}, \"descriptions\": {\"en\": \"city of France\", \"fr\": \"commune française (chef-lieu du département du Rhône et de la région Auvergne-Rhone-Alpes)\"}}",
+                "source_ref": "s9"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "fr",
+              "text": "Lyon"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "qid": "Q456"
+    },
+    {
+      "address": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "infobox:4",
+                "original_text": ": 3 Quai ChauveauLyon, 69009France45°46′09″N 004°48′45″E﻿ / ﻿45.76917°N 4.81250°E﻿ / 45.76917; 4.81250",
+                "source_ref": "s2"
+              },
+              {
+                "locator": "claim:P159:0",
+                "original_text": "{\"property\": \"P159\", \"property_label\": \"headquarters location\", \"statement_id\": \"Q10140$e9c26b62-4525-2210-3e22-fda699be0063\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 2979609, \"id\": \"Q2979609\"}, \"qualifiers\": {\"P625\": [{\"snaktype\": \"value\", \"value\": {\"latitude\": 45.76916667, \"longitude\": 4.8125, \"altitude\": null, \"precision\": 0.00027777777777778, \"globe\": \"http://www.wikidata.org/entity/Q2\"}}], \"P281\": [{\"snaktype\": \"value\", \"value\": \"69009\"}], \"P669\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 61650509, \"id\": \"Q61650509\"}}], \"P670\": [{\"snaktype\": \"value\", \"value\": \"3\"}], \"P131\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 3366, \"id\": \"Q3366\"}}], \"P17\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 142, \"id\": \"Q142\"}}], \"P580\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+1988-02-18T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calen",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "city_name": "Lyon",
+              "city_qid": "Q456",
+              "country_name": "France",
+              "country_qid": "Q142",
+              "formatted": {
+                "language": "fr",
+                "text": "3 Quai Chauveau, 69009 Lyon, France"
+              },
+              "postal_code": "69009"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "coordinates": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P159:0",
+                "original_text": "{\"property\": \"P159\", \"property_label\": \"headquarters location\", \"statement_id\": \"Q10140$e9c26b62-4525-2210-3e22-fda699be0063\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 2979609, \"id\": \"Q2979609\"}, \"qualifiers\": {\"P625\": [{\"snaktype\": \"value\", \"value\": {\"latitude\": 45.76916667, \"longitude\": 4.8125, \"altitude\": null, \"precision\": 0.00027777777777778, \"globe\": \"http://www.wikidata.org/entity/Q2\"}}], \"P281\": [{\"snaktype\": \"value\", \"value\": \"69009\"}], \"P669\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 61650509, \"id\": \"Q61650509\"}}], \"P670\": [{\"snaktype\": \"value\", \"value\": \"3\"}], \"P131\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 3366, \"id\": \"Q3366\"}}], \"P17\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 142, \"id\": \"Q142\"}}], \"P580\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+1988-02-18T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calen",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "crs": "EPSG:4326",
+              "latitude": 45.76916667,
+              "longitude": 4.8125
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "id": "clos",
+      "kind": "headquarters",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P159:0",
+                "original_text": "{\"property\": \"P159\", \"property_label\": \"headquarters location\", \"statement_id\": \"Q10140$e9c26b62-4525-2210-3e22-fda699be0063\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 2979609, \"id\": \"Q2979609\"}, \"qualifiers\": {\"P625\": [{\"snaktype\": \"value\", \"value\": {\"latitude\": 45.76916667, \"longitude\": 4.8125, \"altitude\": null, \"precision\": 0.00027777777777778, \"globe\": \"http://www.wikidata.org/entity/Q2\"}}], \"P281\": [{\"snaktype\": \"value\", \"value\": \"69009\"}], \"P669\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 61650509, \"id\": \"Q61650509\"}}], \"P670\": [{\"snaktype\": \"value\", \"value\": \"3\"}], \"P131\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 3366, \"id\": \"Q3366\"}}], \"P17\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 142, \"id\": \"Q142\"}}], \"P580\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+1988-02-18T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calen",
+                "source_ref": "s1"
+              },
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q2979609\", \"labels\": {\"fr\": \"clos des Deux-Amants\", \"en\": \"Clos des Deux-Amants\"}, \"descriptions\": {\"fr\": \"ancien édifice religieux, puis école vétérinaire, enfin conservatoire de musique et de danse de Lyon\", \"en\": \"building in 9th arrondissement of Lyon, France\"}}",
+                "source_ref": "s10"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "fr",
+              "text": "Clos des Deux-Amants"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "qid": "Q2979609",
+      "valid_from": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P159:0",
+                "original_text": "\"P580\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+1988-02-18T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "day": 18,
+              "month": 2,
+              "precision": "day",
+              "year": 1988
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    {
+      "id": "grenier",
+      "kind": "campus",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Depuis_1993_:_grenier_d.27abondance",
+                "original_text": "[modifier | modifier le code]\nArticle détaillé : Grenier d'abondance.\nDepuis 1993, le département danse occupe des studios aménagés au grenier d'abondance[8], quai Saint-Vincent, sur la rive gauche de la Saône, au pied de la Croix-Rousse, quasiment en face du site principal.\nLe conservatoire y dispose initialement de quatre studios de danse et y partage les locaux avec la direction régionale des Affaires culturelles d'Auvergne-Rhône-Alpes[21].\nFaçade principale\nAvant-corps central en façade\nStudio de danse\nStudio de danse\nGalerie : Grenier d'abondance",
+                "source_ref": "s3"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "fr",
+              "text": "Grenier d’abondance"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "valid_from": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Depuis_1993_:_grenier_d.27abondance",
+                "original_text": "[modifier | modifier le code]\nArticle détaillé : Grenier d'abondance.\nDepuis 1993, le département danse occupe des studios aménagés au grenier d'abondance[8], quai Saint-Vincent, sur la rive gauche de la Saône, au pied de la Croix-Rousse, quasiment en face du site principal.\nLe conservatoire y dispose initialement de quatre studios de danse et y partage les locaux avec la direction régionale des Affaires culturelles d'Auvergne-Rhône-Alpes[21].\nFaçade principale\nAvant-corps central en façade\nStudio de danse\nStudio de danse\nGalerie : Grenier d'abondance",
+                "source_ref": "s3"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "precision": "year",
+              "year": 1993
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    {
+      "id": "angile",
+      "kind": "campus",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:1979-1988_:_rue_de_l.27Angile",
+                "original_text": "[modifier | modifier le code]\nLe conservatoire est initialement installé rue de l'Angile, dans le 5e arrondissement, à l'arrière du Palais Bondy.\nCes locaux venaient d'être libérés par le conservatoire de musique de Lyon, futur conservatoire national de région puis conservatoire à rayonnement régional, transféré dans la montée de Fourvière. Outre la salle Witkowski et la salle Molière, les locaux sont étroits et sont un frein au développement de l'établissement[19].",
+                "source_ref": "s3"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "fr",
+              "text": "Rue de l’Angile"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    {
+      "coordinates": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "statement:Q10140$46914118-5185-46e5-b2c9-808895441227",
+                "original_text": "\"latitude\": 45.76915",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "source_rank": "normal",
+            "value": {
+              "crs": "EPSG:4326",
+              "globe_qid": "Q2",
+              "latitude": 45.76915,
+              "longitude": 4.81262,
+              "source_precision_degrees": 0.00012878130346191904
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "id": "wikidata-item-location",
+      "kind": "institution",
+      "qid": "Q10140"
+    }
+  ],
+  "modified_datetime": "2026-11-06T11:20:02.896317+00:00",
+  "population": {
+    "administrative_staff": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P1128:1",
+              "original_text": "{\"property\": \"P1128\", \"property_label\": \"employees\", \"statement_id\": \"Q10140$7840f600-449e-b383-1016-0e7c66ef8daa\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+69\", \"unit\": \"http://www.wikidata.org/entity/Q109929049\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2020-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "metadata",
+              "original_text": "{\"id\": \"Q109929049\", \"labels\": {\"en\": \"administrative officer\", \"fr\": \"agent administratif\"}, \"descriptions\": {\"en\": \"position in a public administration\", \"fr\": \"poste dans une administration publique\"}}",
+              "source_ref": "s5"
+            }
+          ],
+          "id": "c1",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2020
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 69,
+            "basis": "headcount",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "section:About",
+              "original_text": "The administrative and technical team comprises 65 people.",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c2",
+          "period_status": "not_stated",
+          "value": {
+            "amount": 65,
+            "basis": "headcount",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c2",
+        "qualifications": [
+          "period_not_stated",
+          "single_source_family"
+        ],
+        "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+        "reason_code": "best_available"
+      }
+    },
+    "students_total": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:0",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q10140$9b9825d8-4d14-43ff-5604-c01a624dcb45\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+643\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2020-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "section:lead",
+              "original_text": "Étudiants\n643 (2020)",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c1",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2020
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 643,
+            "basis": "headcount",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "section:Origines",
+              "original_text": "L'établissement ouvre ses portes en octobre 1979 avec 46 étudiants répartis dans un nombre de classes limitées (violon, alto, violoncelle, contrebasse, harpe, piano, chef de chœur, histoire de l'art, formation musicale et pratiques collectives)[1].",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c2",
+          "period": {
+            "kind": "date",
+            "month": 10,
+            "year": 1979
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 46,
+            "basis": "headcount",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "single_source_family"
+        ],
+        "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+        "reason_code": "best_available"
+      }
+    },
+    "teaching_staff": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P1128:0",
+              "original_text": "{\"property\": \"P1128\", \"property_label\": \"employees\", \"statement_id\": \"Q10140$662a7139-48e7-36c5-d6ab-3135c71bd0f0\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+189\", \"unit\": \"http://www.wikidata.org/entity/Q37226\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2020-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "metadata",
+              "original_text": "{\"id\": \"Q37226\", \"labels\": {\"fr\": \"enseignant ou enseignante\", \"en\": \"teacher\"}, \"descriptions\": {\"fr\": \"personne chargée de donner un enseignement à des enfants (élèves) ou à des adultes\", \"en\": \"person who helps others to acquire knowledge, competences or values\"}}",
+              "source_ref": "s4"
+            }
+          ],
+          "id": "c1",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2020
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 189,
+            "basis": "headcount",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "section:About",
+              "original_text": "The teaching staff consists of 180 teachers, assistants and attendants.",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c2",
+          "period_status": "not_stated",
+          "value": {
+            "amount": 180,
+            "basis": "headcount",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c2",
+        "qualifications": [
+          "period_not_stated",
+          "single_source_family"
+        ],
+        "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+        "reason_code": "best_available"
+      }
+    }
+  },
+  "profile": {
+    "academic_focus": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:Cursus",
+              "original_text": "[modifier | modifier le code]\nLe CNSMDL propose de nombreux cursus d'interprétation de la danse, d'interprétation de la musique, de création musicale, de culture musicale, de pédagogie. Il propose aussi des artist-diplomas et des doctorats.",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c1",
+          "value": [
+            {
+              "language": "fr",
+              "text": "Interprétation de la danse"
+            },
+            {
+              "language": "fr",
+              "text": "Interprétation de la musique"
+            },
+            {
+              "language": "fr",
+              "text": "Création musicale"
+            },
+            {
+              "language": "fr",
+              "text": "Culture musicale"
+            },
+            {
+              "language": "fr",
+              "text": "Pédagogie"
+            }
+          ],
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "degree_levels": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:G.C3.A9n.C3.A9ralit.C3.A9s",
+              "original_text": "Les études s’organisent en trois cycles distincts, s'inscrivant dans schéma LMD, menant à l'obtention des diplômes suivants[9] :",
+              "source_ref": "s3"
+            },
+            {
+              "locator": "section:G.C3.A9n.C3.A9ralit.C3.A9s",
+              "original_text": "diplôme de deuxième cycle supérieur musicien-interprète (diplôme d'établissement valant grade de master)[14],",
+              "source_ref": "s3"
+            },
+            {
+              "locator": "section:G.C3.A9n.C3.A9ralit.C3.A9s",
+              "original_text": "Troisième cycle :\nArtist-diploma CréationS (diplôme d'établissement),\nArtist-diploma violon soliste (diplôme d'établissement),\ndoctorat de musique recherche et pratique (diplôme national de doctorat délivré par l'Université de Lyon).",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c1",
+          "value": [
+            "first cycle",
+            "second cycle (master grade)",
+            "third cycle (artist diploma; partnered doctorate)"
+          ],
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "summary": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "Le Conservatoire national supérieur de musique et de danse de Lyon (CNSMD de Lyon, ou encore « Conservatoire national supérieur musique et danse » sur son site web) est un établissement d'enseignement supérieur français doté du statut d'« établissement public à caractère administratif » (EPA), qui dispense un enseignement professionnel de la musique et de la danse. Il est membre associé de l'université de Lyon.",
+              "source_ref": "s3"
+            },
+            {
+              "locator": "section:lead",
+              "original_text": "Étudiants\n643 (2020)Effectif\n189 enseignant ou enseignante (2020), 69 agent administratif (2020)Budget\n15 millions d’euros (2020)",
+              "source_ref": "s3"
+            },
+            {
+              "locator": "section:Organisation",
+              "original_text": "[modifier | modifier le code]\nLe décret no 2009-201 du 18 février 2009 prévoit que le CNSMD de Lyon est un établissement public à caractère administratif placé sous la tutelle du ministère de la Culture[22], exercée par la direction générale de la Création artistique.",
+              "source_ref": "s3"
+            },
+            {
+              "locator": "section:Origines",
+              "original_text": "[modifier | modifier le code]\nÀ la suite du déménagement du conservatoire de musique de Lyon de la rue de l'Angile à la montée de Fourvière, des personnalités lyonnaises telles que René Brot et Simone du Breuil souhaitent dès 1977 transformer les locaux libérés en un conservatoire supérieur et sollicitent le Premier ministre, Raymond Barre, le ministre de la Culture et de la Communication, Jean-Philippe Lecat, et la ville de Lyon.\nLe 21 septembre 1978, Raymond Barre officialise la décision de créer à Lyon un second CNSM[1].\nLe 3 août 1979, une association loi de 1901 pour le développement et le rayonnement du Conservatoire national supérieur à Lyon est créée sous la présidence d'Olivier Philip alors préfet du Rhône.\nPierre Cochereau assure la direction de l'établissement à partir du 1er juillet 1979[1].\nL'établissement ouvre ses portes en octobre 1979 avec 46 étudiants répartis dans un nombre de classes limitées (violon, alto, violoncelle, contrebasse, harpe, piano, chef de c",
+              "source_ref": "s3"
+            },
+            {
+              "locator": "section:1980-2009_:_Conservatoire_national_sup.C3.A9rieur_de_musique_de_Lyon",
+              "original_text": "Le Conservatoire national supérieur de musique de Lyon est créé par décret du 18 février 1980[3].",
+              "source_ref": "s3"
+            },
+            {
+              "locator": "section:1980-2009_:_Conservatoire_national_sup.C3.A9rieur_de_musique_de_Lyon",
+              "original_text": "Le département danse est créé en janvier 1984 et s'installe provisoirement au 40ter rue Vaubecour dans le 2e arrondissement de Lyon[4].",
+              "source_ref": "s3"
+            },
+            {
+              "locator": "section:1980-2009_:_Conservatoire_national_sup.C3.A9rieur_de_musique_de_Lyon",
+              "original_text": "Le 18 février 1988, les nouveaux locaux aménagés au clos des Deux-Amants, quai Chauveau dans le 9e arrondissement de Lyon, sont inaugurés par Raymond Barre, François Léotard, Francisque Collomb et Gilbert Amy.",
+              "source_ref": "s3"
+            },
+            {
+              "locator": "section:1980-2009_:_Conservatoire_national_sup.C3.A9rieur_de_musique_de_Lyon",
+              "original_text": "Les studios aménagés pour le département danse au grenier d'abondance sont inaugurés le 5 juin 1993, puis le grand orgue Grenzing de l'amphithéâtre Xavier-Darasse le 16 juin 1993[a].",
+              "source_ref": "s3"
+            },
+            {
+              "locator": "section:Depuis_2009_:_Conservatoire_national_sup.C3.A9rieur_de_musique_et_de_danse_de_Lyon",
+              "original_text": "À la suite du décret no 2009-201 du 18 février 2009, la danse fait officiellement son apparition dans le titre de l'établissement qui devient Conservatoire national supérieur de musique et de danse de Lyon.",
+              "source_ref": "s3"
+            },
+            {
+              "locator": "section:G.C3.A9n.C3.A9ralit.C3.A9s",
+              "original_text": "Le CNSMD de Lyon propose un enseignement destiné aux futurs professionnels, accessible sur concours.\nLes études s’organisent en trois cycles distincts, s'inscrivant dans schéma LMD, menant à l'obtention des diplômes suivants[9] :",
+              "source_ref": "s3"
+            },
+            {
+              "locator": "section:G.C3.A9n.C3.A9ralit.C3.A9s",
+              "original_text": "diplôme national supérieur professionnel de danseur (diplôme national)[14],\ndiplôme national supérieur professionnel de musicien (diplôme national), disciplines chef d’ensembles vocaux et instrumentaux, instrumentiste-chanteur et métiers de la création musicale[14],\nlicence arts, lettres, langues (diplôme national de licence délivré par l'université Lumière Lyon 2), mentions musicologie et arts du spectacle vivant ;",
+              "source_ref": "s3"
+            },
+            {
+              "locator": "section:G.C3.A9n.C3.A9ralit.C3.A9s",
+              "original_text": "diplôme de deuxième cycle supérieur musicien-interprète (diplôme d'établissement valant grade de master)[14],",
+              "source_ref": "s3"
+            },
+            {
+              "locator": "section:G.C3.A9n.C3.A9ralit.C3.A9s",
+              "original_text": "Troisième cycle :\nArtist-diploma CréationS (diplôme d'établissement),\nArtist-diploma violon soliste (diplôme d'établissement),\ndoctorat de musique recherche et pratique (diplôme national de doctorat délivré par l'Université de Lyon).",
+              "source_ref": "s3"
+            },
+            {
+              "locator": "section:Cursus",
+              "original_text": "[modifier | modifier le code]\nLe CNSMDL propose de nombreux cursus d'interprétation de la danse, d'interprétation de la musique, de création musicale, de culture musicale, de pédagogie. Il propose aussi des artist-diplomas et des doctorats.",
+              "source_ref": "s3"
+            },
+            {
+              "locator": "section:Depuis_1988_:_clos_des_Deux-Amants",
+              "original_text": "Ils abritent notamment 110 salles d’enseignement pour la musique, un auditorium de 280 places, un petit auditorium de 50 places, un amphithéâtre accueillant le grand orgue Grenzing, des studios de composition et la médiathèque Nadia-Boulanger[9].",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "language": "en",
+            "text": "The Conservatoire national supérieur de musique et de danse de Lyon (CNSMDL) is a French public higher education institution specialising in professional music and dance training in Lyon. It has the status of an établissement public à caractère administratif under the supervision of the Ministry of Culture and is an associate member of the Université de Lyon. Admission to its professional programmes is by competitive examination.\n\nTeaching began in October 1979 with 46 students, before the Conservatoire national supérieur de musique de Lyon was formally created by decree on 18 February 1980. The dance department was established in January 1984. The institution moved into renovated premises at the Clos des Deux-Amants in 1988; dance studios at the Grenier d’abondance opened in June 1993. Dance was officially added to its institutional name in February 2009.\n\nIts programmes cover musical and dance performance, musical creation, musical culture and pedagogy. The French account describes three study cycles, including national professional diplomas, qualifications carrying master grade and artist diplomas. Partner institutions award the associated licence and doctorate qualifications. The Clos des Deux-Amants houses music teaching rooms, performance spaces and the Nadia-Boulanger media library. In 2020, the conservatoire reported 643 students, 189 teaching staff and 69 administrative staff, with a budget of €15 million."
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "teaching_languages": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "Régime linguistique\nFrançais",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c1",
+          "value": [
+            "French"
+          ],
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "website": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P856:0",
+              "original_text": "{\"property\": \"P856\", \"property_label\": \"official website\", \"statement_id\": \"Q10140$7DB3FF85-82BC-42C8-AE72-DEFDE8E5B24B\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"http://www.cnsmd-lyon.fr\", \"qualifiers\": {\"P407\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 150, \"id\": \"Q150\"}}, {\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 1860, \"id\": \"Q1860\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "value": "http://www.cnsmd-lyon.fr",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "qid": "Q10140",
+  "record_revision": 1,
+  "related_entities": {
+    "aec": {
+      "kind": "institution",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "Université de Lyon (ComUE), Collège des hautes études Lyon sciences, Association européenne des conservatoires, académies de musique et Musikhochschulen (en)",
+                "source_ref": "s3"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "fr",
+              "text": "Association européenne des conservatoires, académies de musique et Musikhochschulen"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    "chels": {
+      "kind": "institution",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "Université de Lyon (ComUE), Collège des hautes études Lyon sciences, Association européenne des conservatoires, académies de musique et Musikhochschulen (en)",
+                "source_ref": "s3"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "fr",
+              "text": "Collège des hautes études Lyon sciences"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    "lyon-university": {
+      "kind": "institution",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "Il est membre associé de l'université de Lyon.",
+                "source_ref": "s3"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "fr",
+              "text": "Université de Lyon"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    }
+  },
+  "relationships": {
+    "campus": [
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Depuis_1993_:_grenier_d.27abondance",
+                "original_text": "[modifier | modifier le code]\nArticle détaillé : Grenier d'abondance.\nDepuis 1993, le département danse occupe des studios aménagés au grenier d'abondance[8], quai Saint-Vincent, sur la rive gauche de la Saône, au pied de la Croix-Rousse, quasiment en face du site principal.\nLe conservatoire y dispose initialement de quatre studios de danse et y partage les locaux avec la direction régionale des Affaires culturelles d'Auvergne-Rhône-Alpes[21].\nFaçade principale\nAvant-corps central en façade\nStudio de danse\nStudio de danse\nGalerie : Grenier d'abondance",
+                "source_ref": "s3"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "target_ref": "location:grenier"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:1979-1988_:_rue_de_l.27Angile",
+                "original_text": "[modifier | modifier le code]\nLe conservatoire est initialement installé rue de l'Angile, dans le 5e arrondissement, à l'arrière du Palais Bondy.\nCes locaux venaient d'être libérés par le conservatoire de musique de Lyon, futur conservatoire national de région puis conservatoire à rayonnement régional, transféré dans la montée de Fourvière. Outre la salle Witkowski et la salle Molière, les locaux sont étroits et sont un frein au développement de l'établissement[19].",
+                "source_ref": "s3"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "target_ref": "location:angile",
+              "valid_from": {
+                "precision": "year",
+                "year": 1979
+              },
+              "valid_to": {
+                "precision": "year",
+                "year": 1988
+              }
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    ],
+    "member_of": [
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "Il est membre associé de l'université de Lyon.",
+                "source_ref": "s3"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "target_ref": "related:lyon-university"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "Université de Lyon (ComUE), Collège des hautes études Lyon sciences, Association européenne des conservatoires, académies de musique et Musikhochschulen (en)",
+                "source_ref": "s3"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "target_ref": "related:chels"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "Université de Lyon (ComUE), Collège des hautes études Lyon sciences, Association européenne des conservatoires, académies de musique et Musikhochschulen (en)",
+                "source_ref": "s3"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "target_ref": "related:aec"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    ]
+  },
+  "schema_version": "0.2.2",
+  "seed": {
+    "channels": [
+      "reviewed_institution_type"
+    ],
+    "import_id": "seed-84c3beb45367905f",
+    "screening_status": "included"
+  },
+  "selection_policy": "preferred-v1",
+  "sources": {
+    "s1": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T11:11:24.877503+00:00",
+      "revision_id": 2511221082,
+      "source_qid": "Q10140",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2511221082"
+    },
+    "s10": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T11:11:59.028619+00:00",
+      "revision_id": 2491160920,
+      "source_qid": "Q2979609",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2491160920"
+    },
+    "s11": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T11:12:03.017248+00:00",
+      "revision_id": 2524035068,
+      "source_qid": "Q50843090",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2524035068"
+    },
+    "s12": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T11:12:07.317779+00:00",
+      "revision_id": 2519920028,
+      "source_qid": "Q3081521",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2519920028"
+    },
+    "s13": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T11:12:11.404776+00:00",
+      "revision_id": 2523954207,
+      "source_qid": "Q53114020",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2523954207"
+    },
+    "s2": {
+      "family": "wikimedia",
+      "kind": "wikipedia",
+      "language": "en",
+      "page_id": 20652222,
+      "publisher_role": "encyclopedia",
+      "retrieved_at": "2026-11-06T11:11:34.028581+00:00",
+      "revision_id": 1372573622,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1372573622"
+    },
+    "s3": {
+      "family": "wikimedia",
+      "kind": "wikipedia",
+      "language": "fr",
+      "page_id": 517991,
+      "publisher_role": "encyclopedia",
+      "retrieved_at": "2026-11-06T11:11:37.865469+00:00",
+      "revision_id": 240154765,
+      "url": "https://fr.wikipedia.org/w/index.php?oldid=240154765"
+    },
+    "s4": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T11:11:42.422498+00:00",
+      "revision_id": 2562581061,
+      "source_qid": "Q37226",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2562581061"
+    },
+    "s5": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T11:11:46.965644+00:00",
+      "revision_id": 2476928602,
+      "source_qid": "Q109929049",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2476928602"
+    },
+    "s6": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T11:11:50.558813+00:00",
+      "revision_id": 2562478881,
+      "source_qid": "Q4916",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2562478881"
+    },
+    "s7": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T11:11:54.452975+00:00",
+      "revision_id": 2541518756,
+      "source_qid": "Q847027",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2541518756"
+    },
+    "s8": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T09:16:05.838184+00:00",
+      "revision_id": 2564285160,
+      "source_qid": "Q142",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2564285160"
+    },
+    "s9": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T09:41:47.781576+00:00",
+      "revision_id": 2564980633,
+      "source_qid": "Q456",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2564980633"
+    }
+  },
+  "update_datetime": "2026-11-06T11:20:02.896317+00:00"
+}

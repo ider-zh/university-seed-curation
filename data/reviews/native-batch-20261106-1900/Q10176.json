@@ -1,0 +1,3046 @@
+{
+  "attribution": "distinct_native_research_and_review_subagents;not_cryptographic_identity",
+  "research": {
+    "baseline_sha256": "absent",
+    "candidate": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-06T11:18:42.480317+00:00",
+          "status": "checked"
+        },
+        "geography": {
+          "checked_at": "2026-11-06T11:18:42.480317+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-06T11:18:42.480317+00:00",
+          "status": "disputed"
+        },
+        "identity": {
+          "checked_at": "2026-11-06T11:18:42.480317+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-06T11:18:42.480317+00:00",
+          "status": "checked"
+        },
+        "profile": {
+          "checked_at": "2026-11-06T11:18:42.480317+00:00",
+          "status": "checked"
+        }
+      },
+      "curation": {
+        "identity_status": "in_scope"
+      },
+      "finance": {
+        "endowment": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:4",
+                  "original_text": "Endowment: €4,000,000 over two years",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "kind": "interval",
+                "label": "over two years (boundaries unstated)"
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": "4000000",
+                "currency": "EUR",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Historique",
+                      "original_text": "Le Pôle universitaire de Lyon a commencé son activité en 1995. Il s'agit alors d'un GIP – Groupement d'intérêt public – qui comprend 15 établissements d'enseignement supérieur et de recherche",
+                      "source_ref": "s3"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 1995
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Historique",
+                      "original_text": "Le Pôle universitaire de Lyon a commencé son activité en 1995. Il s'agit alors d'un GIP – Groupement d'intérêt public – qui comprend 15 établissements d'enseignement supérieur et de recherche",
+                      "source_ref": "s3"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "The Pôle universitaire de Lyon began activity as a public-interest grouping (GIP)."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "pole-1995",
+            "kind": "predecessor_establishment",
+            "subject_ref": "related:pole-universitaire"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Historique",
+                      "original_text": "En 2007, le Pôle universitaire de Lyon connait une première évolution en devenant un pôle de recherche et d'enseignement supérieur (PRES) – sous la forme d’un établissement public de coopération scientifique[3]. Dénommé désormais « Université de Lyon » (UdL)",
+                      "source_ref": "s3"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 2007
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Historique",
+                      "original_text": "En 2007, le Pôle universitaire de Lyon connait une première évolution en devenant un pôle de recherche et d'enseignement supérieur (PRES) – sous la forme d’un établissement public de coopération scientifique[3]. Dénommé désormais « Université de Lyon » (UdL)",
+                      "source_ref": "s3"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "The university grouping became a PRES, in the form of an établissement public de coopération scientifique, named Université de Lyon."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "pres-2007",
+            "kind": "predecessor_establishment",
+            "subject_ref": "related:pres"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Historique",
+                      "original_text": "En application de la loi relative à l'enseignement supérieur et à la recherche du 22 juillet 2013, l'Université de Lyon devient une Communauté d'universités et établissements (ComUE), un groupement confédéral au statut d'Établissement public à caractère scientifique, culturel et professionnel. La ComUE est approuvée le 16 juillet 2014 par le Conseil d'administration de l'UdL. Les statuts sont approuvés par un décret signé le 5 février 2015[4].",
+                      "source_ref": "s3"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 2015
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Historique",
+                      "original_text": "En application de la loi relative à l'enseignement supérieur et à la recherche du 22 juillet 2013, l'Université de Lyon devient une Communauté d'universités et établissements (ComUE), un groupement confédéral au statut d'Établissement public à caractère scientifique, culturel et professionnel. La ComUE est approuvée le 16 juillet 2014 par le Conseil d'administration de l'UdL. Les statuts sont approuvés par un décret signé le 5 février 2015[4].",
+                      "source_ref": "s3"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "The modern ComUE succeeded the PRES; its statutes were approved by decree signed 5 February 2015."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "comue-2015",
+            "kind": "institution_establishment",
+            "subject_ref": "institution"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Historique",
+                      "original_text": "En 2024, la ComUE est rebaptisée ComUE Lyon Saint-Étienne par décret[1].",
+                      "source_ref": "s3"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 2024
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Historique",
+                      "original_text": "En 2024, la ComUE est rebaptisée ComUE Lyon Saint-Étienne par décret[1].",
+                      "source_ref": "s3"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "The ComUE was renamed ComUE Lyon Saint-Étienne by decree."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "rename-2024",
+            "kind": "rename",
+            "subject_ref": "institution"
+          }
+        ]
+      },
+      "identity": {
+        "aliases": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "infobox:0",
+                    "original_text": ": Université de Lyon",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "fr",
+                  "text": "Université de Lyon"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P1813:0",
+                    "original_text": "{\"property\": \"P1813\", \"property_label\": \"short name\", \"statement_id\": \"Q10176$3fa13702-4ecb-6a38-6e12-5f0441a12280\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"UDL\", \"language\": \"fr\"}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "fr",
+                  "text": "UDL"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P1448:0",
+                    "original_text": "{\"property\": \"P1448\", \"property_label\": \"official name\", \"statement_id\": \"Q10176$54AB64DE-197E-4859-B50A-6649772B3D3C\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"COMMUNAUTE D'UNIVERSITES ET ETABLISSEMENTS (COMUE) UNIVERSITE DE LYON\", \"language\": \"fr\"}, \"qualifiers\": {\"P1013\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 131741681, \"id\": \"Q131741681\"}}]}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "fr",
+                  "text": "COMMUNAUTE D'UNIVERSITES ET ETABLISSEMENTS (COMUE) UNIVERSITE DE LYON"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ],
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "The University of Lyon (French: Université de Lyon, UdL) is a university system (ComUE) based in Lyon, France.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "university_system",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q10176\", \"labels\": {\"fr\": \"université de Lyon (ComUE)\", \"en\": \"University of Lyon\"}, \"descriptions\": {\"en\": \"French university system, in Lyon, France\", \"fr\": \"regroupement d'établissements d'enseignement supérieur dans la région de Lyon Saint-Étienne, prenant la forme d'une « communauté d'universités et d'établissements », créée en 2015\"}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "University of Lyon",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "fr": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "ComUE Lyon Saint-Étienne",
+                    "source_ref": "s3"
+                  }
+                ],
+                "id": "c1",
+                "value": "ComUE Lyon Saint-Étienne",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        "ownership": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:2",
+                  "original_text": "Type: Public",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "public",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "leadership": {
+        "chair": {
+          "candidates": [
+            {
+              "current_basis": "historical",
+              "evidence": [
+                {
+                  "locator": "claim:P488:0",
+                  "original_text": "{\"property\": \"P488\", \"property_label\": \"chairperson\", \"statement_id\": \"Q10176$9c5c2761-4851-d4c4-4323-67e63bcea5b8\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 27055693, \"id\": \"Q27055693\"}, \"qualifiers\": {\"P580\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2015-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}], \"P582\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2020-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "metadata",
+                  "original_text": "{\"id\": \"Q27055693\", \"labels\": {\"fr\": \"Khaled Bouabdallah\", \"en\": \"Khaled Bouabdallah\"}, \"descriptions\": {\"fr\": \"universitaire français\", \"en\": \"French scholar\"}}",
+                  "source_ref": "s9"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "person": {
+                  "name": "Khaled Bouabdallah",
+                  "qid": "Q27055693"
+                },
+                "term_end": {
+                  "precision": "year",
+                  "year": 2020
+                },
+                "term_start": {
+                  "precision": "year",
+                  "year": 2015
+                },
+                "title_original": {
+                  "language": "en",
+                  "text": "chairperson"
+                }
+              },
+              "verification": "supported"
+            },
+            {
+              "current_basis": "historical",
+              "evidence": [
+                {
+                  "locator": "claim:P488:1",
+                  "original_text": "{\"property\": \"P488\", \"property_label\": \"chairperson\", \"statement_id\": \"Q10176$d21d8d0a-4965-414c-3b69-c2af8ee5cc9d\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 111087428, \"id\": \"Q111087428\"}, \"qualifiers\": {\"P580\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2022-03-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}], \"P582\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2024-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "metadata",
+                  "original_text": "{\"id\": \"Q111087428\", \"labels\": {\"fr\": \"Frank Debouck\", \"en\": \"Frank Debouck\"}, \"descriptions\": {}}",
+                  "source_ref": "s10"
+                }
+              ],
+              "id": "c2",
+              "value": {
+                "person": {
+                  "name": "Frank Debouck",
+                  "qid": "Q111087428"
+                },
+                "term_end": {
+                  "precision": "year",
+                  "year": 2024
+                },
+                "term_start": {
+                  "day": 1,
+                  "month": 3,
+                  "precision": "day",
+                  "year": 2022
+                },
+                "title_original": {
+                  "language": "en",
+                  "text": "chairperson"
+                }
+              },
+              "verification": "supported"
+            },
+            {
+              "current_basis": "undated_last_known",
+              "evidence": [
+                {
+                  "locator": "claim:P488:2",
+                  "original_text": "{\"property\": \"P488\", \"property_label\": \"chairperson\", \"statement_id\": \"Q10176$13ef1fff-4c33-6d49-7fcc-e7e70f50e3c8\", \"rank\": \"preferred\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 47545757, \"id\": \"Q47545757\"}, \"qualifiers\": {\"P580\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2024-06-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 10, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}], \"P7452\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 71536244, \"id\": \"Q71536244\"}}]}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "metadata",
+                  "original_text": "{\"id\": \"Q47545757\", \"labels\": {\"fr\": \"Nathalie Dompnier\", \"en\": \"Nathalie Dompnier\"}, \"descriptions\": {\"fr\": \"politologue française\", \"en\": \"French polical scientist, president of Lyon University\"}}",
+                  "source_ref": "s11"
+                }
+              ],
+              "id": "c3",
+              "value": {
+                "person": {
+                  "name": "Nathalie Dompnier",
+                  "qid": "Q47545757"
+                },
+                "term_start": {
+                  "month": 6,
+                  "precision": "month",
+                  "year": 2024
+                },
+                "title_original": {
+                  "language": "en",
+                  "text": "chairperson"
+                }
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c3",
+            "qualifications": [
+              "single_source_family",
+              "last_known_only"
+            ],
+            "reason": "Use the best available last-known appointment without claiming an explicitly confirmed current term.",
+            "reason_code": "last_known"
+          }
+        },
+        "president": {
+          "candidates": [
+            {
+              "current_basis": "term_present",
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "Président\nNathalie Dompnier (d) (depuis 2024)",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "person": {
+                  "name": "Nathalie Dompnier",
+                  "qid": "Q47545757"
+                },
+                "term_start": {
+                  "precision": "year",
+                  "year": 2024
+                },
+                "title_original": {
+                  "language": "fr",
+                  "text": "Président"
+                }
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason": "The source gives a term continuing to the present.",
+            "reason_code": "term_present"
+          }
+        }
+      },
+      "locations": [
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P159:0",
+                    "original_text": "{\"property\": \"P159\", \"property_label\": \"headquarters location\", \"statement_id\": \"Q10176$D1194BD0-2A0A-4407-810B-D527561CEEF8\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 456, \"id\": \"Q456\"}, \"qualifiers\": {\"P281\": [{\"snaktype\": \"value\", \"value\": \"69365\"}], \"P625\": [{\"snaktype\": \"value\", \"value\": {\"latitude\": 45.7465, \"longitude\": 4.85022, \"altitude\": null, \"precision\": 0.01, \"globe\": \"http://www.wikidata.org/entity/Q2\"}}], \"P6375\": [{\"snaktype\": \"value\", \"value\": {\"text\": \"Quartier Sergent Blandan 37, rue du repos\", \"language\": \"fr\"}}]}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "city_name": "Lyon",
+                  "city_qid": "Q456",
+                  "formatted": {
+                    "language": "fr",
+                    "text": "Quartier Sergent Blandan 37, rue du repos"
+                  },
+                  "postal_code": "69365"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "coordinates": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P159:0",
+                    "original_text": "{\"property\": \"P159\", \"property_label\": \"headquarters location\", \"statement_id\": \"Q10176$D1194BD0-2A0A-4407-810B-D527561CEEF8\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 456, \"id\": \"Q456\"}, \"qualifiers\": {\"P281\": [{\"snaktype\": \"value\", \"value\": \"69365\"}], \"P625\": [{\"snaktype\": \"value\", \"value\": {\"latitude\": 45.7465, \"longitude\": 4.85022, \"altitude\": null, \"precision\": 0.01, \"globe\": \"http://www.wikidata.org/entity/Q2\"}}], \"P6375\": [{\"snaktype\": \"value\", \"value\": {\"text\": \"Quartier Sergent Blandan 37, rue du repos\", \"language\": \"fr\"}}]}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "crs": "EPSG:4326",
+                  "latitude": 45.7465,
+                  "longitude": 4.85022
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "headquarters",
+          "kind": "headquarters",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P159:0",
+                    "original_text": "{\"property\": \"P159\", \"property_label\": \"headquarters location\", \"statement_id\": \"Q10176$D1194BD0-2A0A-4407-810B-D527561CEEF8\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 456, \"id\": \"Q456\"}, \"qualifiers\": {\"P281\": [{\"snaktype\": \"value\", \"value\": \"69365\"}], \"P625\": [{\"snaktype\": \"value\", \"value\": {\"latitude\": 45.7465, \"longitude\": 4.85022, \"altitude\": null, \"precision\": 0.01, \"globe\": \"http://www.wikidata.org/entity/Q2\"}}], \"P6375\": [{\"snaktype\": \"value\", \"value\": {\"text\": \"Quartier Sergent Blandan 37, rue du repos\", \"language\": \"fr\"}}]}}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q456\", \"labels\": {\"en\": \"Lyon\", \"fr\": \"Lyon\"}, \"descriptions\": {\"en\": \"city of France\", \"fr\": \"commune française (chef-lieu du département du Rhône et de la région Auvergne-Rhone-Alpes)\"}}",
+                    "source_ref": "s7"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "fr",
+                  "text": "Lyon"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q456"
+        },
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "infobox:10",
+                    "original_text": "Location: 92, rue Pasteur 69361, Lyon, Auvergne-Rhône-Alpes, France45°44′53″N 4°51′08″E﻿ / ﻿45.748151°N 4.852352°E﻿ / 45.748151; 4.852352",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "city_name": "Lyon",
+                  "city_qid": "Q456",
+                  "country_name": "France",
+                  "country_qid": "Q142",
+                  "formatted": {
+                    "language": "fr",
+                    "text": "92, rue Pasteur 69361, Lyon, Auvergne-Rhône-Alpes, France"
+                  },
+                  "postal_code": "69361",
+                  "region_name": "Auvergne-Rhône-Alpes"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "lyon",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q456\", \"labels\": {\"en\": \"Lyon\", \"fr\": \"Lyon\"}, \"descriptions\": {\"en\": \"city of France\", \"fr\": \"commune française (chef-lieu du département du Rhône et de la région Auvergne-Rhone-Alpes)\"}}",
+                    "source_ref": "s7"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "fr",
+                  "text": "Lyon"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q456"
+        },
+        {
+          "id": "lyontech-la-doua",
+          "kind": "campus",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Lyon_Cit.C3.A9_Campus",
+                    "original_text": "pour les campus LyonTech-la Doua (Science et technologie au service du développement durable) et Charles Mérieux (Biosciences et Sciences humaines et sociales).",
+                    "source_ref": "s3"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "fr",
+                  "text": "LyonTech-la Doua"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        {
+          "id": "charles-merieux",
+          "kind": "campus",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Lyon_Cit.C3.A9_Campus",
+                    "original_text": "pour les campus LyonTech-la Doua (Science et technologie au service du développement durable) et Charles Mérieux (Biosciences et Sciences humaines et sociales).",
+                    "source_ref": "s3"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "fr",
+                  "text": "Charles Mérieux"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        {
+          "coordinates": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "statement:Q10176$E16957BA-73D2-4FBF-BFF7-DE0CDD50AAFD",
+                    "original_text": "\"latitude\": 45.78098",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "source_rank": "normal",
+                "value": {
+                  "crs": "EPSG:4326",
+                  "globe_qid": "Q2",
+                  "latitude": 45.78098,
+                  "longitude": 4.86759,
+                  "source_precision_degrees": 1e-06
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "wikidata-item-location",
+          "kind": "institution",
+          "qid": "Q10176"
+        }
+      ],
+      "modified_datetime": "2026-11-06T11:22:04.651841+00:00",
+      "population": {
+        "academic_staff": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:6",
+                  "original_text": "Faculty: 5,000",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period_status": "not_stated",
+              "value": {
+                "amount": 5000,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "Hosting 129,000 students, 11,500 educators and researchers, along with 510 private and public laboratories",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c2",
+              "period_status": "not_stated",
+              "value": {
+                "amount": 11500,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "period_not_stated",
+              "single_source_family"
+            ],
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        },
+        "administrative_staff": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:7",
+                  "original_text": "Administrative staff: 11,500",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period_status": "not_stated",
+              "value": {
+                "amount": 11500,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "period_not_stated",
+              "single_source_family"
+            ],
+            "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+            "reason_code": "only_available"
+          }
+        },
+        "doctoral_students": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:9",
+                  "original_text": "Doctoral students: 5,000",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period_status": "not_stated",
+              "value": {
+                "amount": 5000,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "period_not_stated",
+              "single_source_family"
+            ],
+            "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+            "reason_code": "only_available"
+          }
+        },
+        "students_total": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2196:0",
+                  "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q10176$B624C103-2F87-4680-97CF-C1C71EA48571\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+120000\", \"unit\": \"1\"}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "period_status": "not_stated",
+              "value": {
+                "amount": 120000,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:8",
+                  "original_text": "Students: 145,000",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c2",
+              "period_status": "not_stated",
+              "value": {
+                "amount": 145000,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "Hosting 129,000 students, 11,500 educators and researchers, along with 510 private and public laboratories",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c3",
+              "period_status": "not_stated",
+              "value": {
+                "amount": 129000,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c2",
+            "qualifications": [
+              "period_not_stated",
+              "single_source_family"
+            ],
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        }
+      },
+      "profile": {
+        "academic_focus": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Structure",
+                  "original_text": "The doctoral schools are divided into five categories: life sciences (biological sciences, health, neurobiology, sciences and cognition, cancerology and biology), exact sciences (electronics and electrotechnics, mechanics and civil engineering, chemistry, materials, engineering, computer science and mathematics, physics and astrophysics), and humanities and social sciences (social sciences, literature, languages and linguistics, education and psychology, economics and management, philosophy and history, law).",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": [
+                {
+                  "language": "en",
+                  "text": "Life sciences"
+                },
+                {
+                  "language": "en",
+                  "text": "Exact sciences"
+                },
+                {
+                  "language": "en",
+                  "text": "Humanities and social sciences"
+                }
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "degree_levels": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Missions_de_la_ComUE",
+                  "original_text": "Elle est à présent habilitée à délivrer le diplôme de doctorat \"Université de Lyon\"",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": [
+                "doctorate"
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "logo_url": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox_image_urls",
+                  "original_text": "https://thumb.wikimedia.org/wikipedia/en/thumb/f/f2/Logo_Universit%C3%A9_de_Lyon.svg/250px-Logo_Universit%C3%A9_de_Lyon.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "https://thumb.wikimedia.org/wikipedia/en/thumb/f/f2/Logo_Universit%C3%A9_de_Lyon.svg/250px-Logo_Universit%C3%A9_de_Lyon.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "main_image_url": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox_image_urls",
+                  "original_text": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Bandeau-www_palais-hirsch-nocturne.jpg/250px-Bandeau-www_palais-hirsch-nocturne.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Bandeau-www_palais-hirsch-nocturne.jpg/250px-Bandeau-www_palais-hirsch-nocturne.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "motto": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:1",
+                  "original_text": "Motto: Scienta et Labore",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "la",
+                "text": "Scienta et Labore"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "summary": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "La ComUE Lyon Saint-Étienne - jusqu'en 2024, Université de Lyon (UdL)[1] - est une communauté d'universités et établissements (ComUE) qui fédère onze établissements d’enseignement supérieur et de recherche de Lyon et Saint-Étienne et a pour vocation de promouvoir la qualité des formations et des recherches menées en leur sein, en lien avec les ONR (CNRS, INSERM...).",
+                  "source_ref": "s3"
+                },
+                {
+                  "locator": "infobox:2",
+                  "original_text": "Type: Public",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Historique",
+                  "original_text": "Le Pôle universitaire de Lyon a commencé son activité en 1995.",
+                  "source_ref": "s3"
+                },
+                {
+                  "locator": "section:Historique",
+                  "original_text": "En 2007, le Pôle universitaire de Lyon connait une première évolution en devenant un pôle de recherche et d'enseignement supérieur (PRES) – sous la forme d’un établissement public de coopération scientifique[3]. Dénommé désormais « Université de Lyon » (UdL)",
+                  "source_ref": "s3"
+                },
+                {
+                  "locator": "section:Historique",
+                  "original_text": "Les statuts sont approuvés par un décret signé le 5 février 2015[4].",
+                  "source_ref": "s3"
+                },
+                {
+                  "locator": "section:Historique",
+                  "original_text": "En 2024, la ComUE est rebaptisée ComUE Lyon Saint-Étienne par décret[1].",
+                  "source_ref": "s3"
+                },
+                {
+                  "locator": "section:lead",
+                  "original_text": "pour l'université de Lyon qui a existé entre 1896 et 1969 voir université de Lyon (1896-1969).",
+                  "source_ref": "s3"
+                },
+                {
+                  "locator": "section:Membres_et_associ.C3.A9s",
+                  "original_text": "Université Claude-Bernard-Lyon-I\nUniversité Lumière-Lyon-II\nUniversité Jean-Moulin-Lyon-III\nUniversité Jean-Monnet-Saint-Étienne",
+                  "source_ref": "s3"
+                },
+                {
+                  "locator": "section:Missions_de_la_ComUE",
+                  "original_text": "La ComUE reprend une grande partie des missions qui lui étaient confiées par ses établissements lorsqu'elle était un PRES, en allant toutefois plus loin. Ainsi, elle coordonne l’offre de formations et la stratégie de recherche et de transfert de technologies de ses membres. Elle est à présent habilitée à délivrer le diplôme de doctorat \"Université de Lyon\" et confie la détection et la mise sur le marché économique des innovations issues des laboratoires de ses établissements à sa société d'accélération du transfert de technologies (SATT) Pulsalys. Elle veille à l'amélioration de la qualité de vie des étudiants et assure la promotion du site universitaire lyonnais et stéphanois aux niveaux national et international. Enfin, elle facilite l’accès des citoyens à la recherche académique via manifestations culturelles et scientifiques et dispositifs de travail collaboratif.",
+                  "source_ref": "s3"
+                },
+                {
+                  "locator": "section:Structure",
+                  "original_text": "The doctoral schools are divided into five categories: life sciences (biological sciences, health, neurobiology, sciences and cognition, cancerology and biology), exact sciences (electronics and electrotechnics, mechanics and civil engineering, chemistry, materials, engineering, computer science and mathematics, physics and astrophysics), and humanities and social sciences (social sciences, literature, languages and linguistics, education and psychology, economics and management, philosophy and history, law).",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "The University of Lyon, known since 2024 as ComUE Lyon Saint-Étienne, is a public community of universities and institutions serving Lyon and Saint-Étienne in France. It brings together higher education and research establishments and coordinates their educational provision, research strategy and technology transfer. Its members include the universities Claude Bernard Lyon 1, Lumière Lyon 2, Jean Moulin Lyon 3 and Jean Monnet Saint-Étienne, alongside specialist schools. The grouping is distinct from the historical University of Lyon that existed in the nineteenth and twentieth centuries.\n\nThe modern collaboration began with the Pôle universitaire de Lyon in 1995, a public-interest grouping. In 2007 it became a pôle de recherche et d’enseignement supérieur (PRES), named Université de Lyon. It subsequently adopted the ComUE form, with statutes approved by decree in February 2015, before its 2024 renaming. The community is authorized to award the Université de Lyon doctorate. Its doctoral activities encompass life sciences, exact sciences, and humanities and social sciences. It also promotes the Lyon and Saint-Étienne university community nationally and internationally, supports student quality of life, and facilitates public access to academic research through scientific and cultural activities. Technology transfer from member laboratories is supported through the company Pulsalys."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "website": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P856:0",
+                  "original_text": "{\"property\": \"P856\", \"property_label\": \"official website\", \"statement_id\": \"Q10176$A197EA99-05AA-40FA-AFE8-A640362A1594\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"https://www.universite-lyon.fr/\", \"qualifiers\": {\"P407\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 150, \"id\": \"Q150\"}}, {\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 1860, \"id\": \"Q1860\"}}]}}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "https://www.universite-lyon.fr/",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "qid": "Q10176",
+      "record_revision": 1,
+      "related_entities": {
+        "pole-universitaire": {
+          "kind": "university_system",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Historique",
+                    "original_text": "Le Pôle universitaire de Lyon a commencé son activité en 1995.",
+                    "source_ref": "s3"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "fr",
+                  "text": "Pôle universitaire de Lyon"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        "pres": {
+          "kind": "university_system",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q64223469\", \"labels\": {\"fr\": \"université de Lyon\", \"en\": \"University of Lyon\"}, \"descriptions\": {\"fr\": \"ancien Pôle de recherche et d'enseignement supérieur à Lyon existant de 2007 à 2015\", \"en\": \"set of Lyon, France area colleges (2007-2015)\"}}",
+                    "source_ref": "s8"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "fr",
+                  "text": "Université de Lyon (PRES)"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q64223469"
+        }
+      },
+      "relationships": {
+        "campus": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Lyon_Cit.C3.A9_Campus",
+                    "original_text": "Le projet « Lyon Cité Campus[9] : la dynamique d’une nouvelle université », présenté par l’Université de Lyon à cet appel d’offres, a été retenu parmi les 46 dossiers déposés par les établissements d’enseignement supérieur et de recherche, pour les campus LyonTech-la Doua (Science et technologie au service du développement durable) et Charles Mérieux (Biosciences et Sciences humaines et sociales).",
+                    "source_ref": "s3"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "target_ref": "location:lyontech-la-doua"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Lyon_Cit.C3.A9_Campus",
+                    "original_text": "Le projet « Lyon Cité Campus[9] : la dynamique d’une nouvelle université », présenté par l’Université de Lyon à cet appel d’offres, a été retenu parmi les 46 dossiers déposés par les établissements d’enseignement supérieur et de recherche, pour les campus LyonTech-la Doua (Science et technologie au service du développement durable) et Charles Mérieux (Biosciences et Sciences humaines et sociales).",
+                    "source_ref": "s3"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "target_ref": "location:charles-merieux"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ],
+        "predecessor": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P1365:0",
+                    "original_text": "{\"property\": \"P1365\", \"property_label\": \"replaces\", \"statement_id\": \"Q10176$f1e0ccc7-4e20-bad9-f19a-bceef1c8adb6\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 64223469, \"id\": \"Q64223469\"}, \"qualifiers\": {\"P580\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2015-03-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "target_ref": "related:pres",
+                  "valid_from": {
+                    "day": 1,
+                    "month": 3,
+                    "precision": "day",
+                    "year": 2015
+                  }
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ]
+      },
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "reviewed_institution_type"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "needs_review"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T09:16:25.886028+00:00",
+          "revision_id": 2511220217,
+          "source_qid": "Q10176",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2511220217"
+        },
+        "s10": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T11:18:37.887141+00:00",
+          "revision_id": 2369847341,
+          "source_qid": "Q111087428",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2369847341"
+        },
+        "s11": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T11:18:42.469313+00:00",
+          "revision_id": 2513396334,
+          "source_qid": "Q47545757",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2513396334"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikipedia",
+          "language": "en",
+          "page_id": 715165,
+          "publisher_role": "encyclopedia",
+          "retrieved_at": "2026-11-06T11:18:18.560710+00:00",
+          "revision_id": 1367061181,
+          "url": "https://en.wikipedia.org/w/index.php?oldid=1367061181"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikipedia",
+          "language": "fr",
+          "page_id": 131103,
+          "publisher_role": "encyclopedia",
+          "retrieved_at": "2026-11-06T11:18:23.934395+00:00",
+          "revision_id": 238259747,
+          "url": "https://fr.wikipedia.org/w/index.php?oldid=238259747"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T11:18:28.229004+00:00",
+          "revision_id": 2497003282,
+          "source_qid": "Q15974764",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2497003282"
+        },
+        "s5": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T09:15:59.048669+00:00",
+          "revision_id": 2468502188,
+          "source_qid": "Q3551775",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2468502188"
+        },
+        "s6": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T09:16:05.838184+00:00",
+          "revision_id": 2564285160,
+          "source_qid": "Q142",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2564285160"
+        },
+        "s7": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T09:41:47.781576+00:00",
+          "revision_id": 2564980633,
+          "source_qid": "Q456",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2564980633"
+        },
+        "s8": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T09:16:19.380811+00:00",
+          "revision_id": 2314127583,
+          "source_qid": "Q64223469",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2314127583"
+        },
+        "s9": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T11:18:33.276784+00:00",
+          "revision_id": 2521922414,
+          "source_qid": "Q27055693",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2521922414"
+        }
+      }
+    },
+    "coverage": [
+      {
+        "group": "identity",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "status": "disputed"
+      },
+      {
+        "group": "population",
+        "status": "checked"
+      },
+      {
+        "group": "finance",
+        "status": "checked"
+      },
+      {
+        "group": "profile",
+        "status": "checked"
+      }
+    ],
+    "delta": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-06T11:18:42.480317+00:00",
+          "status": "checked"
+        },
+        "geography": {
+          "checked_at": "2026-11-06T11:18:42.480317+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-06T11:18:42.480317+00:00",
+          "status": "disputed"
+        },
+        "identity": {
+          "checked_at": "2026-11-06T11:18:42.480317+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-06T11:18:42.480317+00:00",
+          "status": "checked"
+        },
+        "profile": {
+          "checked_at": "2026-11-06T11:18:42.480317+00:00",
+          "status": "checked"
+        }
+      },
+      "curation": {
+        "identity_status": "in_scope"
+      },
+      "finance": {
+        "endowment": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:4",
+                  "original_text": "Endowment: €4,000,000 over two years",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "kind": "interval",
+                "label": "over two years (boundaries unstated)"
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": "4000000",
+                "currency": "EUR",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Historique",
+                      "original_text": "Le Pôle universitaire de Lyon a commencé son activité en 1995. Il s'agit alors d'un GIP – Groupement d'intérêt public – qui comprend 15 établissements d'enseignement supérieur et de recherche",
+                      "source_ref": "s3"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 1995
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Historique",
+                      "original_text": "Le Pôle universitaire de Lyon a commencé son activité en 1995. Il s'agit alors d'un GIP – Groupement d'intérêt public – qui comprend 15 établissements d'enseignement supérieur et de recherche",
+                      "source_ref": "s3"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "The Pôle universitaire de Lyon began activity as a public-interest grouping (GIP)."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "pole-1995",
+            "kind": "predecessor_establishment",
+            "subject_ref": "related:pole-universitaire"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Historique",
+                      "original_text": "En 2007, le Pôle universitaire de Lyon connait une première évolution en devenant un pôle de recherche et d'enseignement supérieur (PRES) – sous la forme d’un établissement public de coopération scientifique[3]. Dénommé désormais « Université de Lyon » (UdL)",
+                      "source_ref": "s3"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 2007
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Historique",
+                      "original_text": "En 2007, le Pôle universitaire de Lyon connait une première évolution en devenant un pôle de recherche et d'enseignement supérieur (PRES) – sous la forme d’un établissement public de coopération scientifique[3]. Dénommé désormais « Université de Lyon » (UdL)",
+                      "source_ref": "s3"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "The university grouping became a PRES, in the form of an établissement public de coopération scientifique, named Université de Lyon."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "pres-2007",
+            "kind": "predecessor_establishment",
+            "subject_ref": "related:pres"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Historique",
+                      "original_text": "En application de la loi relative à l'enseignement supérieur et à la recherche du 22 juillet 2013, l'Université de Lyon devient une Communauté d'universités et établissements (ComUE), un groupement confédéral au statut d'Établissement public à caractère scientifique, culturel et professionnel. La ComUE est approuvée le 16 juillet 2014 par le Conseil d'administration de l'UdL. Les statuts sont approuvés par un décret signé le 5 février 2015[4].",
+                      "source_ref": "s3"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 2015
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Historique",
+                      "original_text": "En application de la loi relative à l'enseignement supérieur et à la recherche du 22 juillet 2013, l'Université de Lyon devient une Communauté d'universités et établissements (ComUE), un groupement confédéral au statut d'Établissement public à caractère scientifique, culturel et professionnel. La ComUE est approuvée le 16 juillet 2014 par le Conseil d'administration de l'UdL. Les statuts sont approuvés par un décret signé le 5 février 2015[4].",
+                      "source_ref": "s3"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "The modern ComUE succeeded the PRES; its statutes were approved by decree signed 5 February 2015."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "comue-2015",
+            "kind": "institution_establishment",
+            "subject_ref": "institution"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Historique",
+                      "original_text": "En 2024, la ComUE est rebaptisée ComUE Lyon Saint-Étienne par décret[1].",
+                      "source_ref": "s3"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 2024
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Historique",
+                      "original_text": "En 2024, la ComUE est rebaptisée ComUE Lyon Saint-Étienne par décret[1].",
+                      "source_ref": "s3"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "The ComUE was renamed ComUE Lyon Saint-Étienne by decree."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "rename-2024",
+            "kind": "rename",
+            "subject_ref": "institution"
+          }
+        ]
+      },
+      "identity": {
+        "aliases": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "infobox:0",
+                    "original_text": ": Université de Lyon",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "fr",
+                  "text": "Université de Lyon"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P1813:0",
+                    "original_text": "{\"property\": \"P1813\", \"property_label\": \"short name\", \"statement_id\": \"Q10176$3fa13702-4ecb-6a38-6e12-5f0441a12280\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"UDL\", \"language\": \"fr\"}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "fr",
+                  "text": "UDL"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P1448:0",
+                    "original_text": "{\"property\": \"P1448\", \"property_label\": \"official name\", \"statement_id\": \"Q10176$54AB64DE-197E-4859-B50A-6649772B3D3C\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"COMMUNAUTE D'UNIVERSITES ET ETABLISSEMENTS (COMUE) UNIVERSITE DE LYON\", \"language\": \"fr\"}, \"qualifiers\": {\"P1013\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 131741681, \"id\": \"Q131741681\"}}]}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "fr",
+                  "text": "COMMUNAUTE D'UNIVERSITES ET ETABLISSEMENTS (COMUE) UNIVERSITE DE LYON"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ],
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "The University of Lyon (French: Université de Lyon, UdL) is a university system (ComUE) based in Lyon, France.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "university_system",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q10176\", \"labels\": {\"fr\": \"université de Lyon (ComUE)\", \"en\": \"University of Lyon\"}, \"descriptions\": {\"en\": \"French university system, in Lyon, France\", \"fr\": \"regroupement d'établissements d'enseignement supérieur dans la région de Lyon Saint-Étienne, prenant la forme d'une « communauté d'universités et d'établissements », créée en 2015\"}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "University of Lyon",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "fr": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "ComUE Lyon Saint-Étienne",
+                    "source_ref": "s3"
+                  }
+                ],
+                "id": "c1",
+                "value": "ComUE Lyon Saint-Étienne",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        "ownership": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:2",
+                  "original_text": "Type: Public",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "public",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "leadership": {
+        "chair": {
+          "candidates": [
+            {
+              "current_basis": "historical",
+              "evidence": [
+                {
+                  "locator": "claim:P488:0",
+                  "original_text": "{\"property\": \"P488\", \"property_label\": \"chairperson\", \"statement_id\": \"Q10176$9c5c2761-4851-d4c4-4323-67e63bcea5b8\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 27055693, \"id\": \"Q27055693\"}, \"qualifiers\": {\"P580\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2015-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}], \"P582\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2020-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "metadata",
+                  "original_text": "{\"id\": \"Q27055693\", \"labels\": {\"fr\": \"Khaled Bouabdallah\", \"en\": \"Khaled Bouabdallah\"}, \"descriptions\": {\"fr\": \"universitaire français\", \"en\": \"French scholar\"}}",
+                  "source_ref": "s9"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "person": {
+                  "name": "Khaled Bouabdallah",
+                  "qid": "Q27055693"
+                },
+                "term_end": {
+                  "precision": "year",
+                  "year": 2020
+                },
+                "term_start": {
+                  "precision": "year",
+                  "year": 2015
+                },
+                "title_original": {
+                  "language": "en",
+                  "text": "chairperson"
+                }
+              },
+              "verification": "supported"
+            },
+            {
+              "current_basis": "historical",
+              "evidence": [
+                {
+                  "locator": "claim:P488:1",
+                  "original_text": "{\"property\": \"P488\", \"property_label\": \"chairperson\", \"statement_id\": \"Q10176$d21d8d0a-4965-414c-3b69-c2af8ee5cc9d\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 111087428, \"id\": \"Q111087428\"}, \"qualifiers\": {\"P580\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2022-03-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}], \"P582\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2024-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "metadata",
+                  "original_text": "{\"id\": \"Q111087428\", \"labels\": {\"fr\": \"Frank Debouck\", \"en\": \"Frank Debouck\"}, \"descriptions\": {}}",
+                  "source_ref": "s10"
+                }
+              ],
+              "id": "c2",
+              "value": {
+                "person": {
+                  "name": "Frank Debouck",
+                  "qid": "Q111087428"
+                },
+                "term_end": {
+                  "precision": "year",
+                  "year": 2024
+                },
+                "term_start": {
+                  "day": 1,
+                  "month": 3,
+                  "precision": "day",
+                  "year": 2022
+                },
+                "title_original": {
+                  "language": "en",
+                  "text": "chairperson"
+                }
+              },
+              "verification": "supported"
+            },
+            {
+              "current_basis": "undated_last_known",
+              "evidence": [
+                {
+                  "locator": "claim:P488:2",
+                  "original_text": "{\"property\": \"P488\", \"property_label\": \"chairperson\", \"statement_id\": \"Q10176$13ef1fff-4c33-6d49-7fcc-e7e70f50e3c8\", \"rank\": \"preferred\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 47545757, \"id\": \"Q47545757\"}, \"qualifiers\": {\"P580\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2024-06-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 10, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}], \"P7452\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 71536244, \"id\": \"Q71536244\"}}]}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "metadata",
+                  "original_text": "{\"id\": \"Q47545757\", \"labels\": {\"fr\": \"Nathalie Dompnier\", \"en\": \"Nathalie Dompnier\"}, \"descriptions\": {\"fr\": \"politologue française\", \"en\": \"French polical scientist, president of Lyon University\"}}",
+                  "source_ref": "s11"
+                }
+              ],
+              "id": "c3",
+              "value": {
+                "person": {
+                  "name": "Nathalie Dompnier",
+                  "qid": "Q47545757"
+                },
+                "term_start": {
+                  "month": 6,
+                  "precision": "month",
+                  "year": 2024
+                },
+                "title_original": {
+                  "language": "en",
+                  "text": "chairperson"
+                }
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c3",
+            "qualifications": [
+              "single_source_family",
+              "last_known_only"
+            ],
+            "reason": "Use the best available last-known appointment without claiming an explicitly confirmed current term.",
+            "reason_code": "last_known"
+          }
+        },
+        "president": {
+          "candidates": [
+            {
+              "current_basis": "term_present",
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "Président\nNathalie Dompnier (d) (depuis 2024)",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "person": {
+                  "name": "Nathalie Dompnier",
+                  "qid": "Q47545757"
+                },
+                "term_start": {
+                  "precision": "year",
+                  "year": 2024
+                },
+                "title_original": {
+                  "language": "fr",
+                  "text": "Président"
+                }
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason": "The source gives a term continuing to the present.",
+            "reason_code": "term_present"
+          }
+        }
+      },
+      "locations": [
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P159:0",
+                    "original_text": "{\"property\": \"P159\", \"property_label\": \"headquarters location\", \"statement_id\": \"Q10176$D1194BD0-2A0A-4407-810B-D527561CEEF8\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 456, \"id\": \"Q456\"}, \"qualifiers\": {\"P281\": [{\"snaktype\": \"value\", \"value\": \"69365\"}], \"P625\": [{\"snaktype\": \"value\", \"value\": {\"latitude\": 45.7465, \"longitude\": 4.85022, \"altitude\": null, \"precision\": 0.01, \"globe\": \"http://www.wikidata.org/entity/Q2\"}}], \"P6375\": [{\"snaktype\": \"value\", \"value\": {\"text\": \"Quartier Sergent Blandan 37, rue du repos\", \"language\": \"fr\"}}]}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "city_name": "Lyon",
+                  "city_qid": "Q456",
+                  "formatted": {
+                    "language": "fr",
+                    "text": "Quartier Sergent Blandan 37, rue du repos"
+                  },
+                  "postal_code": "69365"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "coordinates": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P159:0",
+                    "original_text": "{\"property\": \"P159\", \"property_label\": \"headquarters location\", \"statement_id\": \"Q10176$D1194BD0-2A0A-4407-810B-D527561CEEF8\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 456, \"id\": \"Q456\"}, \"qualifiers\": {\"P281\": [{\"snaktype\": \"value\", \"value\": \"69365\"}], \"P625\": [{\"snaktype\": \"value\", \"value\": {\"latitude\": 45.7465, \"longitude\": 4.85022, \"altitude\": null, \"precision\": 0.01, \"globe\": \"http://www.wikidata.org/entity/Q2\"}}], \"P6375\": [{\"snaktype\": \"value\", \"value\": {\"text\": \"Quartier Sergent Blandan 37, rue du repos\", \"language\": \"fr\"}}]}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "crs": "EPSG:4326",
+                  "latitude": 45.7465,
+                  "longitude": 4.85022
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "headquarters",
+          "kind": "headquarters",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P159:0",
+                    "original_text": "{\"property\": \"P159\", \"property_label\": \"headquarters location\", \"statement_id\": \"Q10176$D1194BD0-2A0A-4407-810B-D527561CEEF8\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 456, \"id\": \"Q456\"}, \"qualifiers\": {\"P281\": [{\"snaktype\": \"value\", \"value\": \"69365\"}], \"P625\": [{\"snaktype\": \"value\", \"value\": {\"latitude\": 45.7465, \"longitude\": 4.85022, \"altitude\": null, \"precision\": 0.01, \"globe\": \"http://www.wikidata.org/entity/Q2\"}}], \"P6375\": [{\"snaktype\": \"value\", \"value\": {\"text\": \"Quartier Sergent Blandan 37, rue du repos\", \"language\": \"fr\"}}]}}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q456\", \"labels\": {\"en\": \"Lyon\", \"fr\": \"Lyon\"}, \"descriptions\": {\"en\": \"city of France\", \"fr\": \"commune française (chef-lieu du département du Rhône et de la région Auvergne-Rhone-Alpes)\"}}",
+                    "source_ref": "s7"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "fr",
+                  "text": "Lyon"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q456"
+        },
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "infobox:10",
+                    "original_text": "Location: 92, rue Pasteur 69361, Lyon, Auvergne-Rhône-Alpes, France45°44′53″N 4°51′08″E﻿ / ﻿45.748151°N 4.852352°E﻿ / 45.748151; 4.852352",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "city_name": "Lyon",
+                  "city_qid": "Q456",
+                  "country_name": "France",
+                  "country_qid": "Q142",
+                  "formatted": {
+                    "language": "fr",
+                    "text": "92, rue Pasteur 69361, Lyon, Auvergne-Rhône-Alpes, France"
+                  },
+                  "postal_code": "69361",
+                  "region_name": "Auvergne-Rhône-Alpes"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "lyon",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q456\", \"labels\": {\"en\": \"Lyon\", \"fr\": \"Lyon\"}, \"descriptions\": {\"en\": \"city of France\", \"fr\": \"commune française (chef-lieu du département du Rhône et de la région Auvergne-Rhone-Alpes)\"}}",
+                    "source_ref": "s7"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "fr",
+                  "text": "Lyon"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q456"
+        },
+        {
+          "id": "lyontech-la-doua",
+          "kind": "campus",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Lyon_Cit.C3.A9_Campus",
+                    "original_text": "pour les campus LyonTech-la Doua (Science et technologie au service du développement durable) et Charles Mérieux (Biosciences et Sciences humaines et sociales).",
+                    "source_ref": "s3"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "fr",
+                  "text": "LyonTech-la Doua"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        {
+          "id": "charles-merieux",
+          "kind": "campus",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Lyon_Cit.C3.A9_Campus",
+                    "original_text": "pour les campus LyonTech-la Doua (Science et technologie au service du développement durable) et Charles Mérieux (Biosciences et Sciences humaines et sociales).",
+                    "source_ref": "s3"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "fr",
+                  "text": "Charles Mérieux"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        {
+          "coordinates": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "statement:Q10176$E16957BA-73D2-4FBF-BFF7-DE0CDD50AAFD",
+                    "original_text": "\"latitude\": 45.78098",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "source_rank": "normal",
+                "value": {
+                  "crs": "EPSG:4326",
+                  "globe_qid": "Q2",
+                  "latitude": 45.78098,
+                  "longitude": 4.86759,
+                  "source_precision_degrees": 1e-06
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "wikidata-item-location",
+          "kind": "institution",
+          "qid": "Q10176"
+        }
+      ],
+      "population": {
+        "academic_staff": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:6",
+                  "original_text": "Faculty: 5,000",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period_status": "not_stated",
+              "value": {
+                "amount": 5000,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "Hosting 129,000 students, 11,500 educators and researchers, along with 510 private and public laboratories",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c2",
+              "period_status": "not_stated",
+              "value": {
+                "amount": 11500,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "period_not_stated",
+              "single_source_family"
+            ],
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        },
+        "administrative_staff": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:7",
+                  "original_text": "Administrative staff: 11,500",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period_status": "not_stated",
+              "value": {
+                "amount": 11500,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "period_not_stated",
+              "single_source_family"
+            ],
+            "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+            "reason_code": "only_available"
+          }
+        },
+        "doctoral_students": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:9",
+                  "original_text": "Doctoral students: 5,000",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period_status": "not_stated",
+              "value": {
+                "amount": 5000,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "period_not_stated",
+              "single_source_family"
+            ],
+            "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+            "reason_code": "only_available"
+          }
+        },
+        "students_total": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2196:0",
+                  "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q10176$B624C103-2F87-4680-97CF-C1C71EA48571\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+120000\", \"unit\": \"1\"}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "period_status": "not_stated",
+              "value": {
+                "amount": 120000,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:8",
+                  "original_text": "Students: 145,000",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c2",
+              "period_status": "not_stated",
+              "value": {
+                "amount": 145000,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "Hosting 129,000 students, 11,500 educators and researchers, along with 510 private and public laboratories",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c3",
+              "period_status": "not_stated",
+              "value": {
+                "amount": 129000,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c2",
+            "qualifications": [
+              "period_not_stated",
+              "single_source_family"
+            ],
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        }
+      },
+      "profile": {
+        "academic_focus": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Structure",
+                  "original_text": "The doctoral schools are divided into five categories: life sciences (biological sciences, health, neurobiology, sciences and cognition, cancerology and biology), exact sciences (electronics and electrotechnics, mechanics and civil engineering, chemistry, materials, engineering, computer science and mathematics, physics and astrophysics), and humanities and social sciences (social sciences, literature, languages and linguistics, education and psychology, economics and management, philosophy and history, law).",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": [
+                {
+                  "language": "en",
+                  "text": "Life sciences"
+                },
+                {
+                  "language": "en",
+                  "text": "Exact sciences"
+                },
+                {
+                  "language": "en",
+                  "text": "Humanities and social sciences"
+                }
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "degree_levels": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Missions_de_la_ComUE",
+                  "original_text": "Elle est à présent habilitée à délivrer le diplôme de doctorat \"Université de Lyon\"",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": [
+                "doctorate"
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "logo_url": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox_image_urls",
+                  "original_text": "https://thumb.wikimedia.org/wikipedia/en/thumb/f/f2/Logo_Universit%C3%A9_de_Lyon.svg/250px-Logo_Universit%C3%A9_de_Lyon.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "https://thumb.wikimedia.org/wikipedia/en/thumb/f/f2/Logo_Universit%C3%A9_de_Lyon.svg/250px-Logo_Universit%C3%A9_de_Lyon.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "main_image_url": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox_image_urls",
+                  "original_text": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Bandeau-www_palais-hirsch-nocturne.jpg/250px-Bandeau-www_palais-hirsch-nocturne.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Bandeau-www_palais-hirsch-nocturne.jpg/250px-Bandeau-www_palais-hirsch-nocturne.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "motto": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:1",
+                  "original_text": "Motto: Scienta et Labore",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "la",
+                "text": "Scienta et Labore"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "summary": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "La ComUE Lyon Saint-Étienne - jusqu'en 2024, Université de Lyon (UdL)[1] - est une communauté d'universités et établissements (ComUE) qui fédère onze établissements d’enseignement supérieur et de recherche de Lyon et Saint-Étienne et a pour vocation de promouvoir la qualité des formations et des recherches menées en leur sein, en lien avec les ONR (CNRS, INSERM...).",
+                  "source_ref": "s3"
+                },
+                {
+                  "locator": "infobox:2",
+                  "original_text": "Type: Public",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Historique",
+                  "original_text": "Le Pôle universitaire de Lyon a commencé son activité en 1995.",
+                  "source_ref": "s3"
+                },
+                {
+                  "locator": "section:Historique",
+                  "original_text": "En 2007, le Pôle universitaire de Lyon connait une première évolution en devenant un pôle de recherche et d'enseignement supérieur (PRES) – sous la forme d’un établissement public de coopération scientifique[3]. Dénommé désormais « Université de Lyon » (UdL)",
+                  "source_ref": "s3"
+                },
+                {
+                  "locator": "section:Historique",
+                  "original_text": "Les statuts sont approuvés par un décret signé le 5 février 2015[4].",
+                  "source_ref": "s3"
+                },
+                {
+                  "locator": "section:Historique",
+                  "original_text": "En 2024, la ComUE est rebaptisée ComUE Lyon Saint-Étienne par décret[1].",
+                  "source_ref": "s3"
+                },
+                {
+                  "locator": "section:lead",
+                  "original_text": "pour l'université de Lyon qui a existé entre 1896 et 1969 voir université de Lyon (1896-1969).",
+                  "source_ref": "s3"
+                },
+                {
+                  "locator": "section:Membres_et_associ.C3.A9s",
+                  "original_text": "Université Claude-Bernard-Lyon-I\nUniversité Lumière-Lyon-II\nUniversité Jean-Moulin-Lyon-III\nUniversité Jean-Monnet-Saint-Étienne",
+                  "source_ref": "s3"
+                },
+                {
+                  "locator": "section:Missions_de_la_ComUE",
+                  "original_text": "La ComUE reprend une grande partie des missions qui lui étaient confiées par ses établissements lorsqu'elle était un PRES, en allant toutefois plus loin. Ainsi, elle coordonne l’offre de formations et la stratégie de recherche et de transfert de technologies de ses membres. Elle est à présent habilitée à délivrer le diplôme de doctorat \"Université de Lyon\" et confie la détection et la mise sur le marché économique des innovations issues des laboratoires de ses établissements à sa société d'accélération du transfert de technologies (SATT) Pulsalys. Elle veille à l'amélioration de la qualité de vie des étudiants et assure la promotion du site universitaire lyonnais et stéphanois aux niveaux national et international. Enfin, elle facilite l’accès des citoyens à la recherche académique via manifestations culturelles et scientifiques et dispositifs de travail collaboratif.",
+                  "source_ref": "s3"
+                },
+                {
+                  "locator": "section:Structure",
+                  "original_text": "The doctoral schools are divided into five categories: life sciences (biological sciences, health, neurobiology, sciences and cognition, cancerology and biology), exact sciences (electronics and electrotechnics, mechanics and civil engineering, chemistry, materials, engineering, computer science and mathematics, physics and astrophysics), and humanities and social sciences (social sciences, literature, languages and linguistics, education and psychology, economics and management, philosophy and history, law).",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "The University of Lyon, known since 2024 as ComUE Lyon Saint-Étienne, is a public community of universities and institutions serving Lyon and Saint-Étienne in France. It brings together higher education and research establishments and coordinates their educational provision, research strategy and technology transfer. Its members include the universities Claude Bernard Lyon 1, Lumière Lyon 2, Jean Moulin Lyon 3 and Jean Monnet Saint-Étienne, alongside specialist schools. The grouping is distinct from the historical University of Lyon that existed in the nineteenth and twentieth centuries.\n\nThe modern collaboration began with the Pôle universitaire de Lyon in 1995, a public-interest grouping. In 2007 it became a pôle de recherche et d’enseignement supérieur (PRES), named Université de Lyon. It subsequently adopted the ComUE form, with statutes approved by decree in February 2015, before its 2024 renaming. The community is authorized to award the Université de Lyon doctorate. Its doctoral activities encompass life sciences, exact sciences, and humanities and social sciences. It also promotes the Lyon and Saint-Étienne university community nationally and internationally, supports student quality of life, and facilitates public access to academic research through scientific and cultural activities. Technology transfer from member laboratories is supported through the company Pulsalys."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "website": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P856:0",
+                  "original_text": "{\"property\": \"P856\", \"property_label\": \"official website\", \"statement_id\": \"Q10176$A197EA99-05AA-40FA-AFE8-A640362A1594\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"https://www.universite-lyon.fr/\", \"qualifiers\": {\"P407\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 150, \"id\": \"Q150\"}}, {\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 1860, \"id\": \"Q1860\"}}]}}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "https://www.universite-lyon.fr/",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "qid": "Q10176",
+      "record_revision": 1,
+      "related_entities": {
+        "pole-universitaire": {
+          "kind": "university_system",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Historique",
+                    "original_text": "Le Pôle universitaire de Lyon a commencé son activité en 1995.",
+                    "source_ref": "s3"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "fr",
+                  "text": "Pôle universitaire de Lyon"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        "pres": {
+          "kind": "university_system",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q64223469\", \"labels\": {\"fr\": \"université de Lyon\", \"en\": \"University of Lyon\"}, \"descriptions\": {\"fr\": \"ancien Pôle de recherche et d'enseignement supérieur à Lyon existant de 2007 à 2015\", \"en\": \"set of Lyon, France area colleges (2007-2015)\"}}",
+                    "source_ref": "s8"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "fr",
+                  "text": "Université de Lyon (PRES)"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q64223469"
+        }
+      },
+      "relationships": {
+        "campus": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Lyon_Cit.C3.A9_Campus",
+                    "original_text": "Le projet « Lyon Cité Campus[9] : la dynamique d’une nouvelle université », présenté par l’Université de Lyon à cet appel d’offres, a été retenu parmi les 46 dossiers déposés par les établissements d’enseignement supérieur et de recherche, pour les campus LyonTech-la Doua (Science et technologie au service du développement durable) et Charles Mérieux (Biosciences et Sciences humaines et sociales).",
+                    "source_ref": "s3"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "target_ref": "location:lyontech-la-doua"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Lyon_Cit.C3.A9_Campus",
+                    "original_text": "Le projet « Lyon Cité Campus[9] : la dynamique d’une nouvelle université », présenté par l’Université de Lyon à cet appel d’offres, a été retenu parmi les 46 dossiers déposés par les établissements d’enseignement supérieur et de recherche, pour les campus LyonTech-la Doua (Science et technologie au service du développement durable) et Charles Mérieux (Biosciences et Sciences humaines et sociales).",
+                    "source_ref": "s3"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "target_ref": "location:charles-merieux"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ],
+        "predecessor": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P1365:0",
+                    "original_text": "{\"property\": \"P1365\", \"property_label\": \"replaces\", \"statement_id\": \"Q10176$f1e0ccc7-4e20-bad9-f19a-bceef1c8adb6\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 64223469, \"id\": \"Q64223469\"}, \"qualifiers\": {\"P580\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2015-03-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "target_ref": "related:pres",
+                  "valid_from": {
+                    "day": 1,
+                    "month": 3,
+                    "precision": "day",
+                    "year": 2015
+                  }
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ]
+      },
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "reviewed_institution_type"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "needs_review"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T09:16:25.886028+00:00",
+          "revision_id": 2511220217,
+          "source_qid": "Q10176",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2511220217"
+        },
+        "s10": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T11:18:37.887141+00:00",
+          "revision_id": 2369847341,
+          "source_qid": "Q111087428",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2369847341"
+        },
+        "s11": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T11:18:42.469313+00:00",
+          "revision_id": 2513396334,
+          "source_qid": "Q47545757",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2513396334"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikipedia",
+          "language": "en",
+          "page_id": 715165,
+          "publisher_role": "encyclopedia",
+          "retrieved_at": "2026-11-06T11:18:18.560710+00:00",
+          "revision_id": 1367061181,
+          "url": "https://en.wikipedia.org/w/index.php?oldid=1367061181"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikipedia",
+          "language": "fr",
+          "page_id": 131103,
+          "publisher_role": "encyclopedia",
+          "retrieved_at": "2026-11-06T11:18:23.934395+00:00",
+          "revision_id": 238259747,
+          "url": "https://fr.wikipedia.org/w/index.php?oldid=238259747"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T11:18:28.229004+00:00",
+          "revision_id": 2497003282,
+          "source_qid": "Q15974764",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2497003282"
+        },
+        "s5": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T09:15:59.048669+00:00",
+          "revision_id": 2468502188,
+          "source_qid": "Q3551775",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2468502188"
+        },
+        "s6": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T09:16:05.838184+00:00",
+          "revision_id": 2564285160,
+          "source_qid": "Q142",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2564285160"
+        },
+        "s7": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T09:41:47.781576+00:00",
+          "revision_id": 2564980633,
+          "source_qid": "Q456",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2564980633"
+        },
+        "s8": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T09:16:19.380811+00:00",
+          "revision_id": 2314127583,
+          "source_qid": "Q64223469",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2314127583"
+        },
+        "s9": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T11:18:33.276784+00:00",
+          "revision_id": 2521922414,
+          "source_qid": "Q27055693",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2521922414"
+        }
+      }
+    },
+    "open_requests": [],
+    "proposed_at": "2026-11-06T11:22:04.651841+00:00",
+    "qid": "Q10176",
+    "research": {
+      "model": "not_reported",
+      "prompt_sha256": "4c1cdbe50071c43dfa556be40110279219c5a9faf711342077a26e0eae04d9a3",
+      "reasoning_effort": "not_reported",
+      "schema_sha256": "92e942f4fbf2ae28964462ea9ffa8312c5ee16a077a1e08b40aaaf741512422e",
+      "session": "/root/research_q10176"
+    },
+    "retrieval_failures": [],
+    "review_status": "unreviewed",
+    "seed": {
+      "channels": [
+        "reviewed_institution_type"
+      ],
+      "import_id": "seed-84c3beb45367905f",
+      "screening_status": "needs_review"
+    },
+    "transport": {
+      "base_commit": "f9dba8ff75f44193228952bfd41218acb6640bc3",
+      "protocol": "native-subagent-v1",
+      "repository": "ider-zh/university-seed-curation",
+      "review_policy": {
+        "id": "source-grounded-flexible-v2",
+        "sha256": "b8ed7d2897e4c31dbd81b1379aafdc1077a21d1a33949edbd2d896b0adf99db2"
+      },
+      "schema_sha256": "bfa496eafa9dffca56146214168db7f000b09161b8993129632e7202e1c88833",
+      "seed_catalog_sha256": "84c3beb45367905f513d650684283dd62a9c1b77962bdc34151a6ef05bfa03d4"
+    },
+    "type": "university-proposal-v1"
+  },
+  "review": {
+    "contexts_checked": 12,
+    "coverage_checks": [
+      {
+        "group": "identity",
+        "reason": "University-system kind, public status, old/common/legal names and current 2024 French name checked; modern ComUE and historical university remain distinct.",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "reason": "Two address observations, coarse P159-qualified headquarters point, named project-associated campuses and root P625 independently checked. Root normal rank, globe and precision match. No point is reassigned as an exact campus.",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "reason": "Frozen sources emphasize differing phases: 1995 GIP activity, 2007 PRES origin, 2014 board approval, February 2015 ComUE statutes, 1 March 2015 predecessor relationship and 2024 renaming. Representation keeps these phase distinctions rather than forcing one historical founding date; all supplied observations supported.",
+        "status": "disputed"
+      },
+      {
+        "group": "population",
+        "reason": "Source observations 120000/145000/129000 students and 5000 faculty versus 11500 educators/researchers, plus infobox administrative 11500 and doctoral 5000, are individually supported and remain separate. Lead numbers describe Lyon hub/network perimeter, not direct ComUE rolls or payroll. Unknown periods/bases preserved; downstream ranking needs explicit perimeter and category parsing.",
+        "status": "disputed"
+      },
+      {
+        "group": "finance",
+        "reason": "€4000000 over two years is supported as the infobox endowment observation with unstated interval boundaries; it is not converted to annual income. Campus-project €700m budget belongs to a distinct renovation project and is not substituted as institution finance.",
+        "status": "checked"
+      },
+      {
+        "group": "profile",
+        "reason": "All summary assertions, doctorate authority, broad subject areas, source-title-specific leaders/term precision, motto spelling, URLs and illustrated constituent building reviewed. Campus relationships are qualified project/network associations and not ownership claims.",
+        "status": "checked"
+      }
+    ],
+    "decision": "approve",
+    "facts_checked": 47,
+    "full_refresh": false,
+    "inferences": [
+      {
+        "id": "$.history.milestones[2].date:c1",
+        "reason": "s3 Historique gives statutes decree signed 5 February 2015 and s3 lead explicitly says 2015 becomes ComUE. Establishment year 2015 denotes this modern legal phase, not the earlier 2014 board approval or 2007 PRES origin; exact decree date stays in description/evidence."
+      },
+      {
+        "id": "$.population.academic_staff:c1",
+        "reason": "s2 infobox:6 explicitly gives Faculty 5000; academic_staff is a reasonable broader mapping with faculty label retained in evidence. No headcount/FTE basis or observation year is fabricated."
+      },
+      {
+        "id": "$.population.academic_staff:c2",
+        "reason": "s2 lead gives 11500 educators and researchers in the Lyon university-hub/network perimeter. academic_staff reasonably represents that combined category only with hosted network scope retained in citation; it is not direct ComUE payroll. Unspecified basis and unstated year preserved; downstream ranking must parse this scope."
+      },
+      {
+        "id": "$.population.students_total:c3",
+        "reason": "s2 lead explicitly gives 129000 hosted students for the Lyon university-hub/network perimeter. students_total is an acceptable broader network-scale representation when this perimeter is recoverable from evidence; it is not a proved direct ComUE registration roll. No year is invented and downstream comparisons require scope parsing."
+      },
+      {
+        "id": "$.related_entities.pres.name:c1",
+        "reason": "s8 labels Q64223469 Université de Lyon and describes former PRES 2007–2015. Added (PRES) is a supported disambiguating display label, preserving distinction from modern ComUE and historical university."
+      },
+      {
+        "id": "$.relationships.campus[0]:c1",
+        "reason": "s3 Lyon_Cité_Campus explicitly says Université de Lyon presented the accepted project for LyonTech-la Doua. campus relationship reasonably denotes a network/project-associated campus, not exclusive ComUE ownership or independently proved headquarters; full project wording retained."
+      },
+      {
+        "id": "$.relationships.campus[1]:c1",
+        "reason": "s3 Lyon_Cité_Campus explicitly includes Charles Mérieux in the Université de Lyon project. Broad campus association is grounded in that network/project role; it does not claim sole ComUE ownership."
+      },
+      {
+        "id": "milestone:pole-1995",
+        "reason": "s3 Historique explicitly gives Pôle activity start in 1995 as GIP. predecessor_establishment reasonably represents that operating start, not a fabricated legal incorporation date."
+      },
+      {
+        "id": "milestone:comue-2015",
+        "reason": "s3 gives 2015 ComUE form/statutes and separate 2014 board approval. Institution-establishment context denotes modern ComUE phase, not the 1995 network origin or exact decree effective date."
+      },
+      {
+        "id": "related:pole-universitaire",
+        "reason": "s3 describes GIP of 15 higher education/research institutions, a reasonable earlier university-system category, not a single degree-granting university."
+      }
+    ],
+    "model": "not_reported",
+    "proposal_sha256": "6dd05a9c883e2b8d7950e95552cc6493dcfc59953fa12ef3a5b971255a6de271",
+    "qid": "Q10176",
+    "reasoning_effort": "not_reported",
+    "record_sha256": "9ebd90afb1e2e1e0b962f14a7cb16fa226b240c789b3f43140d31555c95c88c0",
+    "request_responses": [],
+    "requests": [],
+    "review_session": "/root/review_batch_1900",
+    "reviewed_at": "2026-11-06T11:24:46.442593+00:00",
+    "source_revisions_checked": 11
+  },
+  "review_result_sha256": "b1ed0d889ecc04667b663b571aeea361307b2d83a40b04134d742c72f7dd2f5c",
+  "type": "university-unified-receipt-v1"
+}

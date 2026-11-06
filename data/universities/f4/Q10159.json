@@ -1,0 +1,1981 @@
+{
+  "coverage": {
+    "finance": {
+      "checked_at": "2026-11-06T11:17:13.300212+00:00",
+      "status": "checked"
+    },
+    "geography": {
+      "checked_at": "2026-11-06T11:17:13.300212+00:00",
+      "status": "checked"
+    },
+    "history": {
+      "checked_at": "2026-11-06T11:17:13.300212+00:00",
+      "status": "checked"
+    },
+    "identity": {
+      "checked_at": "2026-11-06T11:17:13.300212+00:00",
+      "status": "checked"
+    },
+    "population": {
+      "checked_at": "2026-11-06T11:17:13.300212+00:00",
+      "status": "disputed"
+    },
+    "profile": {
+      "checked_at": "2026-11-06T11:17:13.300212+00:00",
+      "status": "checked"
+    }
+  },
+  "curation": {
+    "identity_status": "in_scope",
+    "refresh_profile": "core-v1",
+    "reviewed_groups": [
+      "identity",
+      "geography",
+      "history",
+      "population",
+      "finance",
+      "profile"
+    ]
+  },
+  "finance": {
+    "budget": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:5",
+              "original_text": "Budget: €130 million[1]",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "period_status": "not_stated",
+          "value": {
+            "amount": "130000000",
+            "currency": "EUR",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "period_not_stated",
+          "single_source_family"
+        ],
+        "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "history": {
+    "milestones": [
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Histoire",
+                  "original_text": "L'École normale supérieure de Lyon provient de la réorganisation, entre 1981 et 1987, des anciennes Écoles normales supérieures de Saint-Cloud pour les garçons et de Fontenay-aux-Roses pour les filles. Ces écoles ont été instituées par Jules Ferry par les décrets du 13 juillet 1880 (Fontenay-aux-Roses) et du 22 décembre 1882 (Saint-Cloud). Elles avaient pour mission, jusqu'en 1945, de former les professeurs des écoles normales d'instituteurs et des écoles primaires supérieures, ainsi que les inspecteurs de l'enseignement primaire. Après-guerre, ces établissements ont perdu leur fonction initiale, pour préparer leurs élèves à l'agrégation et se tourner vers la recherche scientifique.\n",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "day": 13,
+                "month": 7,
+                "precision": "day",
+                "year": 1880
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Histoire",
+                  "original_text": "L'École normale supérieure de Lyon provient de la réorganisation, entre 1981 et 1987, des anciennes Écoles normales supérieures de Saint-Cloud pour les garçons et de Fontenay-aux-Roses pour les filles. Ces écoles ont été instituées par Jules Ferry par les décrets du 13 juillet 1880 (Fontenay-aux-Roses) et du 22 décembre 1882 (Saint-Cloud). Elles avaient pour mission, jusqu'en 1945, de former les professeurs des écoles normales d'instituteurs et des écoles primaires supérieures, ainsi que les inspecteurs de l'enseignement primaire. Après-guerre, ces établissements ont perdu leur fonction initiale, pour préparer leurs élèves à l'agrégation et se tourner vers la recherche scientifique.\n",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "Decree establishing the Fontenay-aux-Roses predecessor school."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "fontenay-1880",
+        "kind": "predecessor_establishment",
+        "subject_ref": "related:fontenay-origin"
+      },
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Histoire",
+                  "original_text": "L'École normale supérieure de Lyon provient de la réorganisation, entre 1981 et 1987, des anciennes Écoles normales supérieures de Saint-Cloud pour les garçons et de Fontenay-aux-Roses pour les filles. Ces écoles ont été instituées par Jules Ferry par les décrets du 13 juillet 1880 (Fontenay-aux-Roses) et du 22 décembre 1882 (Saint-Cloud). Elles avaient pour mission, jusqu'en 1945, de former les professeurs des écoles normales d'instituteurs et des écoles primaires supérieures, ainsi que les inspecteurs de l'enseignement primaire. Après-guerre, ces établissements ont perdu leur fonction initiale, pour préparer leurs élèves à l'agrégation et se tourner vers la recherche scientifique.\n",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "day": 22,
+                "month": 12,
+                "precision": "day",
+                "year": 1882
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Histoire",
+                  "original_text": "L'École normale supérieure de Lyon provient de la réorganisation, entre 1981 et 1987, des anciennes Écoles normales supérieures de Saint-Cloud pour les garçons et de Fontenay-aux-Roses pour les filles. Ces écoles ont été instituées par Jules Ferry par les décrets du 13 juillet 1880 (Fontenay-aux-Roses) et du 22 décembre 1882 (Saint-Cloud). Elles avaient pour mission, jusqu'en 1945, de former les professeurs des écoles normales d'instituteurs et des écoles primaires supérieures, ainsi que les inspecteurs de l'enseignement primaire. Après-guerre, ces établissements ont perdu leur fonction initiale, pour préparer leurs élèves à l'agrégation et se tourner vers la recherche scientifique.\n",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "Decree establishing the Saint-Cloud predecessor school."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "saint-cloud-1882",
+        "kind": "predecessor_establishment",
+        "subject_ref": "related:saint-cloud-origin"
+      },
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:The_relocation_in_Lyon",
+                  "original_text": "[edit | edit source]\nAs part of France's process of decentralisation, the Schools' scientific departments moved in 1987 to Gerland, an old industrial district of Lyon, in the premises of the current Monod campus. The relocated institution was named ENS Lyon. Humanities students remained in the Parisian suburbs within the coeducational École normale supérieure de Fontenay-Saint-Cloud. In 2000, this school, informally renamed École normale supérieure lettres et sciences humaines, was transferred to the new Descartes Campus also located in Gerland.\nOn the first of January 2010, the two branches merged to become a single institution, retaining the name École normale supérieure de Lyon.[5]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "day": 1,
+                "month": 1,
+                "precision": "day",
+                "year": 2010
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:The_relocation_in_Lyon",
+                  "original_text": "[edit | edit source]\nAs part of France's process of decentralisation, the Schools' scientific departments moved in 1987 to Gerland, an old industrial district of Lyon, in the premises of the current Monod campus. The relocated institution was named ENS Lyon. Humanities students remained in the Parisian suburbs within the coeducational École normale supérieure de Fontenay-Saint-Cloud. In 2000, this school, informally renamed École normale supérieure lettres et sciences humaines, was transferred to the new Descartes Campus also located in Gerland.\nOn the first of January 2010, the two branches merged to become a single institution, retaining the name École normale supérieure de Lyon.[5]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "The science and humanities branches merged as École normale supérieure de Lyon."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "unified-2010",
+        "kind": "institution_establishment",
+        "subject_ref": "institution"
+      },
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Site_Monod_.28Sciences.29",
+                  "original_text": "[modifier | modifier le code]\nLes bâtiments du campus Monod sont situés 46 allée d'Italie, dans le quartier de Gerland. Ils ont été conçus et réalisés par les architectes Philippe Dubois-Brunet et Daniel Barraud (architectes DPLG), à l'issue d'un concours d'architecture à deux degrés en 1981 et 1982. Francis Dubus, alors directeur de l'école à Saint-Cloud, s'était particulièrement impliqué dans ce projet. Une première tranche a été inaugurée par Jacques Chirac en 1986, et l'École est entrée en fonction en 1987.\nLe site Monod accueille la bibliothèque scientifique de l'École.\nCe site est desservi par les stations de métro Debourg et Stade de Gerland – Le LOU.\nDepuis février 2014, le tram T1 dessert les deux sites de l'ENS de Lyon.",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "precision": "year",
+                "year": 1987
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Site_Monod_.28Sciences.29",
+                  "original_text": "[modifier | modifier le code]\nLes bâtiments du campus Monod sont situés 46 allée d'Italie, dans le quartier de Gerland. Ils ont été conçus et réalisés par les architectes Philippe Dubois-Brunet et Daniel Barraud (architectes DPLG), à l'issue d'un concours d'architecture à deux degrés en 1981 et 1982. Francis Dubus, alors directeur de l'école à Saint-Cloud, s'était particulièrement impliqué dans ce projet. Une première tranche a été inaugurée par Jacques Chirac en 1986, et l'École est entrée en fonction en 1987.\nLe site Monod accueille la bibliothèque scientifique de l'École.\nCe site est desservi par les stations de métro Debourg et Stade de Gerland – Le LOU.\nDepuis février 2014, le tram T1 dessert les deux sites de l'ENS de Lyon.",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "The Monod site entered operation in 1987, after a first phase was inaugurated in 1986."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "monod-opening",
+        "kind": "campus_opening",
+        "subject_ref": "location:monod"
+      },
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Site_Descartes_.28Lettres_et_Sciences_Humaines.29",
+                  "original_text": "Les bâtiments du campus Descartes sont l'œuvre de l'architecte Henri Gaudin, son fils Bruno Gaudin étant l'auteur de la Bibliothèque Diderot. Le grand jardin a été conçu par le paysagiste et écologue Gilles Clément, pensé comme une oasis de biodiversité au milieu de la ville. Le campus, au départ « ENS LSH » (jusqu'à la refusion avec l'ENS « sciences » en 2010), est entré en fonction en 2000. ",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "precision": "year",
+                "year": 2000
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Site_Descartes_.28Lettres_et_Sciences_Humaines.29",
+                  "original_text": "Les bâtiments du campus Descartes sont l'œuvre de l'architecte Henri Gaudin, son fils Bruno Gaudin étant l'auteur de la Bibliothèque Diderot. Le grand jardin a été conçu par le paysagiste et écologue Gilles Clément, pensé comme une oasis de biodiversité au milieu de la ville. Le campus, au départ « ENS LSH » (jusqu'à la refusion avec l'ENS « sciences » en 2010), est entré en fonction en 2000. ",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "The Descartes campus entered operation in 2000 for ENS LSH."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "descartes-opening",
+        "kind": "campus_opening",
+        "subject_ref": "location:descartes"
+      },
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Depuis_1987_:_d.C3.A9localisation_.C3.A0_Lyon_et_unification",
+                  "original_text": "Jugeant que la fusion a été adoptée « à marche forcée » et que le nouvel établissement ne garantit pas la représentation démocratique des personnels, enseignants et étudiants, une intersyndicale menée par le mathématicien et juriste Claude Danthony dépose un recours contre le décret de fusion[34]. En décembre 2011, le Conseil d'État annule la fusion – en fixant la date d'effet de cette annulation au 30 juin 2012 – en estimant que des vices de procédure dans le processus de fusion ont privé les personnels d'une garantie constitutionnelle. Il crée à cette occasion une jurisprudence célèbre du droit public[35],[36],[37]. Un nouveau décret de fusion est publié le 8 mai 2012[38].\n",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "day": 8,
+                "month": 5,
+                "precision": "day",
+                "year": 2012
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Depuis_1987_:_d.C3.A9localisation_.C3.A0_Lyon_et_unification",
+                  "original_text": "Jugeant que la fusion a été adoptée « à marche forcée » et que le nouvel établissement ne garantit pas la représentation démocratique des personnels, enseignants et étudiants, une intersyndicale menée par le mathématicien et juriste Claude Danthony dépose un recours contre le décret de fusion[34]. En décembre 2011, le Conseil d'État annule la fusion – en fixant la date d'effet de cette annulation au 30 juin 2012 – en estimant que des vices de procédure dans le processus de fusion ont privé les personnels d'une garantie constitutionnelle. Il crée à cette occasion une jurisprudence célèbre du droit public[35],[36],[37]. Un nouveau décret de fusion est publié le 8 mai 2012[38].\n",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "A new merger decree was published after the Conseil d’État annulled the earlier merger in December 2011, effective 30 June 2012."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "renewed-merger-2012",
+        "kind": "merger",
+        "subject_ref": "institution"
+      }
+    ]
+  },
+  "identity": {
+    "aliases": [
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P1448:0",
+                "original_text": "{\"property\": \"P1448\", \"property_label\": \"official name\", \"statement_id\": \"Q10159$3BD97023-E6D7-4831-BD25-7D99BD601C82\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"ÉCOLE NORMALE SUPERIEURE DE LYON\", \"language\": \"fr\"}, \"qualifiers\": {\"P1013\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 131741681, \"id\": \"Q131741681\"}}]}, \"reference_count\": 1}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "fr",
+              "text": "ÉCOLE NORMALE SUPERIEURE DE LYON"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "The École normale supérieure de Lyon (French pronunciation: [ekɔl nɔʁmal sypeʁjœʁ də ljɔ̃]; also known as ENS de Lyon, ENSL or Normale Sup' Lyon) is a French grande école located in the city of Lyon. It is one of the four prestigious écoles normales supérieures in France. The school is composed of two academic units—Arts and Sciences—with campuses in Lyon, near the confluence of the Rhône and Saône rivers.\nENS de Lyon's students usually enjoy a special civil servant status in the wake of highly competitive exams, providing they pursue careers in public service.[4] Although it maintains extensive connections with the University of Lyon and external research institutions, including the CNRS, the school remains independent.",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "fr",
+              "text": "ENS de Lyon"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "The École normale supérieure de Lyon (French pronunciation: [ekɔl nɔʁmal sypeʁjœʁ də ljɔ̃]; also known as ENS de Lyon, ENSL or Normale Sup' Lyon) is a French grande école located in the city of Lyon. It is one of the four prestigious écoles normales supérieures in France. The school is composed of two academic units—Arts and Sciences—with campuses in Lyon, near the confluence of the Rhône and Saône rivers.\nENS de Lyon's students usually enjoy a special civil servant status in the wake of highly competitive exams, providing they pursue careers in public service.[4] Although it maintains extensive connections with the University of Lyon and external research institutions, including the CNRS, the school remains independent.",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "fr",
+              "text": "ENSL"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "The École normale supérieure de Lyon (French pronunciation: [ekɔl nɔʁmal sypeʁjœʁ də ljɔ̃]; also known as ENS de Lyon, ENSL or Normale Sup' Lyon) is a French grande école located in the city of Lyon. It is one of the four prestigious écoles normales supérieures in France. The school is composed of two academic units—Arts and Sciences—with campuses in Lyon, near the confluence of the Rhône and Saône rivers.\nENS de Lyon's students usually enjoy a special civil servant status in the wake of highly competitive exams, providing they pursue careers in public service.[4] Although it maintains extensive connections with the University of Lyon and external research institutions, including the CNRS, the school remains independent.",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "fr",
+              "text": "Normale Sup' Lyon"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    ],
+    "identifiers": {
+      "P5242": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P5242:0",
+                "original_text": "{\"property\": \"P5242\", \"property_label\": \"ARWU university ID\", \"statement_id\": \"Q10159$8d2b5595-4eff-c8e7-8f72-783b65cdb77c\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"ecole-normale-superieure-lyon\", \"reference_count\": 1}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": "ecole-normale-superieure-lyon",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "P5584": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P5584:0",
+                "original_text": "{\"property\": \"P5584\", \"property_label\": \"QS World University ID\", \"statement_id\": \"Q10159$47525967-4EAB-4DAA-9A72-B520482855E5\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"ecole-normale-superieure-de-lyon\"}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": "ecole-normale-superieure-de-lyon",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "P5586": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P5586:0",
+                "original_text": "{\"property\": \"P5586\", \"property_label\": \"Times Higher Education World University ID\", \"statement_id\": \"Q10159$228B81B1-A0C3-43F5-A36F-BC6C89EC3307\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"ecole-normale-superieure-de-lyon\"}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": "ecole-normale-superieure-de-lyon",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    "kind": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:2",
+              "original_text": "Type: Grande école (École normale supérieure)",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": "specialist_institution",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "names": {
+      "en": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q10159\", \"labels\": {\"fr\": \"École normale supérieure de Lyon\", \"en\": \"École Normale Supérieure de Lyon\"}, \"descriptions\": {\"en\": \"higher education institution in Lyon, France\", \"fr\": \"grande école publique française à caractère scientifique, culturel et professionnel, située à Lyon\"}}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": "École Normale Supérieure de Lyon",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "fr": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q10159\", \"labels\": {\"fr\": \"École normale supérieure de Lyon\", \"en\": \"École Normale Supérieure de Lyon\"}, \"descriptions\": {\"en\": \"higher education institution in Lyon, France\", \"fr\": \"grande école publique française à caractère scientifique, culturel et professionnel, située à Lyon\"}}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": "École normale supérieure de Lyon",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    "ownership": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "metadata",
+              "original_text": "{\"id\": \"Q10159\", \"labels\": {\"fr\": \"École normale supérieure de Lyon\", \"en\": \"École Normale Supérieure de Lyon\"}, \"descriptions\": {\"en\": \"higher education institution in Lyon, France\", \"fr\": \"grande école publique française à caractère scientifique, culturel et professionnel, située à Lyon\"}}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "value": "public",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "leadership": {
+    "president": {
+      "candidates": [
+        {
+          "current_basis": "infobox_current",
+          "evidence": [
+            {
+              "locator": "infobox:6",
+              "original_text": "President: Emmanuel Trizac[2]",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "claim:P488:1",
+              "original_text": "{\"property\": \"P488\", \"property_label\": \"chairperson\", \"statement_id\": \"Q10159$d97f95e4-482f-8a16-aa4e-d81d58df1100\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 90421066, \"id\": \"Q90421066\"}, \"qualifiers\": {\"P580\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2023-05-24T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "person": {
+              "name": "Emmanuel Trizac",
+              "qid": "Q90421066"
+            },
+            "term_start": {
+              "day": 24,
+              "month": 5,
+              "precision": "day",
+              "year": 2023
+            },
+            "title_original": {
+              "language": "fr",
+              "text": "Président"
+            }
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "single_source_family",
+          "reported_current"
+        ],
+        "reason": "The page reports this person in its current officeholder field; a term-end date is not required.",
+        "reason_code": "infobox_current"
+      }
+    }
+  },
+  "locations": [
+    {
+      "id": "lyon-hq",
+      "kind": "headquarters",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P159:0",
+                "original_text": "{\"property\": \"P159\", \"property_label\": \"headquarters location\", \"statement_id\": \"Q10159$C79155DC-3D99-4052-A146-3E40DDD6F36F\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 456, \"id\": \"Q456\"}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "fr",
+              "text": "Lyon"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "qid": "Q456"
+    },
+    {
+      "id": "lyon7",
+      "kind": "administrative_area",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "Localisation\n7e arrondissement de Lyon",
+                "source_ref": "s3"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "fr",
+              "text": "7e arrondissement de Lyon"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "qid": "Q3360"
+    },
+    {
+      "address": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Site_Monod_.28Sciences.29",
+                "original_text": "[modifier | modifier le code]\nLes bâtiments du campus Monod sont situés 46 allée d'Italie, dans le quartier de Gerland. Ils ont été conçus et réalisés par les architectes Philippe Dubois-Brunet et Daniel Barraud (architectes DPLG), à l'issue d'un concours d'architecture à deux degrés en 1981 et 1982. Francis Dubus, alors directeur de l'école à Saint-Cloud, s'était particulièrement impliqué dans ce projet. Une première tranche a été inaugurée par Jacques Chirac en 1986, et l'École est entrée en fonction en 1987.\nLe site Monod accueille la bibliothèque scientifique de l'École.\nCe site est desservi par les stations de métro Debourg et Stade de Gerland – Le LOU.\nDepuis février 2014, le tram T1 dessert les deux sites de l'ENS de Lyon.",
+                "source_ref": "s3"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "city_name": "Lyon",
+              "country_name": "France",
+              "formatted": {
+                "language": "fr",
+                "text": "46 allée d'Italie"
+              }
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "id": "monod",
+      "kind": "campus",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Site_Monod_.28Sciences.29",
+                "original_text": "[modifier | modifier le code]\nLes bâtiments du campus Monod sont situés 46 allée d'Italie, dans le quartier de Gerland. Ils ont été conçus et réalisés par les architectes Philippe Dubois-Brunet et Daniel Barraud (architectes DPLG), à l'issue d'un concours d'architecture à deux degrés en 1981 et 1982. Francis Dubus, alors directeur de l'école à Saint-Cloud, s'était particulièrement impliqué dans ce projet. Une première tranche a été inaugurée par Jacques Chirac en 1986, et l'École est entrée en fonction en 1987.\nLe site Monod accueille la bibliothèque scientifique de l'École.\nCe site est desservi par les stations de métro Debourg et Stade de Gerland – Le LOU.\nDepuis février 2014, le tram T1 dessert les deux sites de l'ENS de Lyon.",
+                "source_ref": "s3"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "fr",
+              "text": "campus Monod"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "valid_from": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Site_Monod_.28Sciences.29",
+                "original_text": "[modifier | modifier le code]\nLes bâtiments du campus Monod sont situés 46 allée d'Italie, dans le quartier de Gerland. Ils ont été conçus et réalisés par les architectes Philippe Dubois-Brunet et Daniel Barraud (architectes DPLG), à l'issue d'un concours d'architecture à deux degrés en 1981 et 1982. Francis Dubus, alors directeur de l'école à Saint-Cloud, s'était particulièrement impliqué dans ce projet. Une première tranche a été inaugurée par Jacques Chirac en 1986, et l'École est entrée en fonction en 1987.\nLe site Monod accueille la bibliothèque scientifique de l'École.\nCe site est desservi par les stations de métro Debourg et Stade de Gerland – Le LOU.\nDepuis février 2014, le tram T1 dessert les deux sites de l'ENS de Lyon.",
+                "source_ref": "s3"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "precision": "year",
+              "year": 1987
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    {
+      "id": "descartes",
+      "kind": "campus",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Site_Descartes_.28Lettres_et_Sciences_Humaines.29",
+                "original_text": "Les bâtiments du campus Descartes sont l'œuvre de l'architecte Henri Gaudin, son fils Bruno Gaudin étant l'auteur de la Bibliothèque Diderot. Le grand jardin a été conçu par le paysagiste et écologue Gilles Clément, pensé comme une oasis de biodiversité au milieu de la ville. Le campus, au départ « ENS LSH » (jusqu'à la refusion avec l'ENS « sciences » en 2010), est entré en fonction en 2000. ",
+                "source_ref": "s3"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "fr",
+              "text": "campus Descartes"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "valid_from": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Site_Descartes_.28Lettres_et_Sciences_Humaines.29",
+                "original_text": "Les bâtiments du campus Descartes sont l'œuvre de l'architecte Henri Gaudin, son fils Bruno Gaudin étant l'auteur de la Bibliothèque Diderot. Le grand jardin a été conçu par le paysagiste et écologue Gilles Clément, pensé comme une oasis de biodiversité au milieu de la ville. Le campus, au départ « ENS LSH » (jusqu'à la refusion avec l'ENS « sciences » en 2010), est entré en fonction en 2000. ",
+                "source_ref": "s3"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "precision": "year",
+              "year": 2000
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    {
+      "coordinates": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "statement:Q10159$7B92C26C-A4EB-46E9-8BD8-3A684E58A477",
+                "original_text": "\"latitude\": 45.729734",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "source_rank": "normal",
+            "value": {
+              "crs": "EPSG:4326",
+              "globe_qid": "Q2",
+              "latitude": 45.729734,
+              "longitude": 4.826875,
+              "source_precision_degrees": 1e-06
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "id": "wikidata-item-location",
+      "kind": "institution",
+      "qid": "Q10159"
+    }
+  ],
+  "modified_datetime": "2026-11-06T11:22:48.469542+00:00",
+  "population": {
+    "academic_staff": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:7",
+              "original_text": "Academic staff: 528[3]",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "period_status": "not_stated",
+          "value": {
+            "amount": 528,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "period_not_stated",
+          "single_source_family"
+        ],
+        "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+        "reason_code": "only_available"
+      }
+    },
+    "doctoral_students": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:9",
+              "original_text": "Doctoral students: 462",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "period_status": "not_stated",
+          "value": {
+            "amount": 462,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "period_not_stated",
+          "single_source_family"
+        ],
+        "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+        "reason_code": "only_available"
+      }
+    },
+    "research_staff": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "L'École accueille environ 2 200 étudiants, 1 000 chercheurs, et un nombre important de laboratoires et de centres de recherches, répartis en douze départements.",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c1",
+          "period_status": "not_stated",
+          "value": {
+            "amount": 1000,
+            "basis": "unspecified",
+            "precision": "approximate"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "period_not_stated",
+          "single_source_family",
+          "approximate_value"
+        ],
+        "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+        "reason_code": "only_available"
+      }
+    },
+    "students_total": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:0",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q10159$648f5948-443a-8dee-5192-8540f42ca291\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+2171\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2023-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2023
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 2171,
+            "basis": "headcount",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:1",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q10159$a10e49ba-ff17-4661-b18c-92d642499c04\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+1510\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2010-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c2",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2010
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 1510,
+            "basis": "headcount",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:2",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q10159$30d5fae6-b3bf-472c-a431-9d26c837de7f\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+1790\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2013-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c3",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2013
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 1790,
+            "basis": "headcount",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:3",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q10159$2e32a5a2-9f5b-4f35-ab46-0a3277ac4422\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+2169\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2021-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c4",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2021
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 2169,
+            "basis": "headcount",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:4",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q10159$272a5e10-5018-4a52-9866-3552ec4a45b8\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+1612\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2012-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c5",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2012
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 1612,
+            "basis": "headcount",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:5",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q10159$d7b4c85e-8b96-41db-a0ea-429f8db8f5b8\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+2053\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2015-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c6",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2015
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 2053,
+            "basis": "headcount",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:6",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q10159$9d4a21b2-4d8f-4380-b7d0-619ba5c2003e\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+1820\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2014-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c7",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2014
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 1820,
+            "basis": "headcount",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:7",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q10159$f4fac96d-1a69-4ce2-a4a6-e741f9a9db4e\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+2346\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2022-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c8",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2022
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 2346,
+            "basis": "headcount",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:8",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q10159$65da969d-5c68-4c55-a57e-0fae904ce8f4\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+2297\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2023-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c9",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2023
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 2297,
+            "basis": "headcount",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:9",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q10159$4611615c-6508-470d-b53b-b28b56964e8f\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+1528\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2011-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c10",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2011
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 1528,
+            "basis": "headcount",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:10",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q10159$b6e4de44-3c8c-4d88-84fd-5754a5bae156\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+1928\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2016-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c11",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2016
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 1928,
+            "basis": "headcount",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:11",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q10159$fafe8fe4-cbe0-49e2-8092-30354aa8c734\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+1954\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2017-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c12",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2017
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 1954,
+            "basis": "headcount",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:12",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q10159$41e00c5d-e876-4ec0-9791-4693568bcae6\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+1918\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2018-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c13",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2018
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 1918,
+            "basis": "headcount",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:13",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q10159$10d61558-6ef1-40e1-9dba-17d0f85636eb\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+1963\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2019-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c14",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2019
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 1963,
+            "basis": "headcount",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:14",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q10159$39aaa14f-ac4a-43fb-8272-0c21dac5e9be\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+2102\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2020-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c15",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2020
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 2102,
+            "basis": "headcount",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "infobox:8",
+              "original_text": "Students: 2,361",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c16",
+          "period_status": "not_stated",
+          "value": {
+            "amount": 2361,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "L'École accueille environ 2 200 étudiants, 1 000 chercheurs, et un nombre important de laboratoires et de centres de recherches, répartis en douze départements.",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c17",
+          "period_status": "not_stated",
+          "value": {
+            "amount": 2200,
+            "basis": "unspecified",
+            "precision": "approximate"
+          },
+          "verification": "supported"
+        }
+      ],
+      "conflicts": [
+        {
+          "candidate_ids": [
+            "c1",
+            "c9"
+          ],
+          "kind": "value_disagreement",
+          "note": "Wikidata gives two different student totals for 2023 (2171 and 2297), both with year precision. French Wikipedia repeats 2171; no compatible scope distinction is supplied.",
+          "status": "unresolved"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c17",
+        "qualifications": [
+          "period_not_stated",
+          "single_source_family",
+          "approximate_value",
+          "different_basis_available",
+          "conflicting_candidates"
+        ],
+        "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+        "reason_code": "best_available"
+      }
+    }
+  },
+  "profile": {
+    "academic_focus": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:D.C3.A9partements",
+              "original_text": "[modifier | modifier le code]\nDepuis la création du nouvel établissement en 2010, l'ENS de Lyon propose des formations à la fois en sciences, en lettres et en sciences humaines[48].\nIl existe six départements de sciences exactes et expérimentales : biologie, chimie, sciences de la Terre, informatique, mathématiques et physique.\nIl existe six départements en lettres et sciences humaines : éducation et humanités numériques, langues, littératures et civilisations étrangères, lettres et arts, sciences humaines, économie et sciences sociales.\n",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c1",
+          "value": [
+            {
+              "language": "fr",
+              "text": "biologie"
+            },
+            {
+              "language": "fr",
+              "text": "chimie"
+            },
+            {
+              "language": "fr",
+              "text": "sciences de la Terre"
+            },
+            {
+              "language": "fr",
+              "text": "informatique"
+            },
+            {
+              "language": "fr",
+              "text": "mathématiques"
+            },
+            {
+              "language": "fr",
+              "text": "physique"
+            },
+            {
+              "language": "fr",
+              "text": "éducation et humanités numériques"
+            },
+            {
+              "language": "fr",
+              "text": "langues, littératures et civilisations étrangères"
+            },
+            {
+              "language": "fr",
+              "text": "lettres et arts"
+            },
+            {
+              "language": "fr",
+              "text": "sciences humaines"
+            },
+            {
+              "language": "fr",
+              "text": "économie et sciences sociales"
+            }
+          ],
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "degree_levels": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:Les_cursus_.C3.A0_l.27ENS",
+              "original_text": "L'ENS de Lyon est habilitée à délivrer des masters[54], des doctorats, et le diplôme de l'école. Elle prépare en outre à de nombreux concours de l'agrégation. Seule la « moitié » scientifique de l'ENS délivre des licences (cohabilitées avec Lyon 1 Université) : les étudiants en parcours LSH qui intègrent en carré doivent donc passer leur première année conjointement à l'ENS et à l'université pour obtenir leur licence 3.",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c1",
+          "value": [
+            "bachelor",
+            "master",
+            "doctorate"
+          ],
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "logo_url": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox_image_urls",
+              "original_text": "[\"https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/%C3%89cole_normale_sup%C3%A9rieure_de_Lyon_Logo.svg/250px-%C3%89cole_normale_sup%C3%A9rieure_de_Lyon_Logo.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail\", \"https://maps.wikimedia.org/img/osm-intl,13,a,a,270x200.png?lang=en&domain=en.wikipedia.org&title=%C3%89cole_normale_sup%C3%A9rieure_de_Lyon&revid=1381598035&groups=_5faf94d22c9aa240f327e6c5185c2a4397868e15&parser=legacy\"]",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/%C3%89cole_normale_sup%C3%A9rieure_de_Lyon_Logo.svg/250px-%C3%89cole_normale_sup%C3%A9rieure_de_Lyon_Logo.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "motto": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:0",
+              "original_text": "Motto: L'enseignement par la recherche, pour la recherche",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "language": "fr",
+            "text": "L'enseignement par la recherche, pour la recherche"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "infobox:1",
+              "original_text": "Motto in English: Education through research, for research",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c2",
+          "value": {
+            "language": "en",
+            "text": "Education through research, for research"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+        "reason_code": "best_available"
+      }
+    },
+    "summary": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "metadata",
+              "original_text": "{\"id\": \"Q10159\", \"labels\": {\"fr\": \"École normale supérieure de Lyon\", \"en\": \"École Normale Supérieure de Lyon\"}, \"descriptions\": {\"en\": \"higher education institution in Lyon, France\", \"fr\": \"grande école publique française à caractère scientifique, culturel et professionnel, située à Lyon\"}}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "section:lead",
+              "original_text": "Higher learning institution in Lyon, France\nFor other uses, see École normale supérieure (disambiguation).\nENS de Lyon\nENS de Lyon (France)\nThe École normale supérieure de Lyon (French pronunciation: [ekɔl nɔʁmal sypeʁjœʁ də ljɔ̃]; also known as ENS de Lyon, ENSL or Normale Sup' Lyon) is a French grande école located in the city of Lyon. It is one of the four prestigious écoles normales supérieures in France. The school is composed of two academic units—Arts and Sciences—with campuses in Lyon, near the confluence of the Rhône and Saône rivers.\nENS de Lyon's students usually enjoy a special civil servant status in the wake of highly competitive exams, providing they pursue careers in public service.[4] Although it maintains extensive connections with the University of Lyon and external research institutions, including the CNRS, the school remains independent.",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:The_relocation_in_Lyon",
+              "original_text": "[edit | edit source]\nAs part of France's process of decentralisation, the Schools' scientific departments moved in 1987 to Gerland, an old industrial district of Lyon, in the premises of the current Monod campus. The relocated institution was named ENS Lyon. Humanities students remained in the Parisian suburbs within the coeducational École normale supérieure de Fontenay-Saint-Cloud. In 2000, this school, informally renamed École normale supérieure lettres et sciences humaines, was transferred to the new Descartes Campus also located in Gerland.\nOn the first of January 2010, the two branches merged to become a single institution, retaining the name École normale supérieure de Lyon.[5]",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Training_teachers_for_normal_schools",
+              "original_text": "[edit | edit source]\nL'École normale supérieure de Lyon is the descendant of two top educational institutions founded by Jules Ferry:\nL'École normale supérieure de Fontenay-aux-Roses, for girls, founded in 1880.\nL'École normale supérieure de Saint-Cloud, for boys, founded in 1882.\nRecruiting among the most brilliant French students, these two schools used to train the professors of the French normal schools. Whereas these schools were largely regarded as meritocratic, their sisters – the eldest, l'École Normale Supérieure de la Rue d'Ulm, and her feminine counterpart, l'École normale supérieure de jeunes filles de Sèvres -, which trained academics, were de facto dedicated to the heirs of the Parisian elites.",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:D.C3.A9partements",
+              "original_text": "[modifier | modifier le code]\nDepuis la création du nouvel établissement en 2010, l'ENS de Lyon propose des formations à la fois en sciences, en lettres et en sciences humaines[48].\nIl existe six départements de sciences exactes et expérimentales : biologie, chimie, sciences de la Terre, informatique, mathématiques et physique.\nIl existe six départements en lettres et sciences humaines : éducation et humanités numériques, langues, littératures et civilisations étrangères, lettres et arts, sciences humaines, économie et sciences sociales.\n",
+              "source_ref": "s3"
+            },
+            {
+              "locator": "section:Les_cursus_.C3.A0_l.27ENS",
+              "original_text": "L'ENS de Lyon est habilitée à délivrer des masters[54], des doctorats, et le diplôme de l'école. Elle prépare en outre à de nombreux concours de l'agrégation. Seule la « moitié » scientifique de l'ENS délivre des licences (cohabilitées avec Lyon 1 Université) : les étudiants en parcours LSH qui intègrent en carré doivent donc passer leur première année conjointement à l'ENS et à l'université pour obtenir leur licence 3.",
+              "source_ref": "s3"
+            },
+            {
+              "locator": "claim:P2196:7",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q10159$f4fac96d-1a69-4ce2-a4a6-e741f9a9db4e\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+2346\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2022-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "language": "en",
+            "text": "The École normale supérieure de Lyon (ENS de Lyon) is a public French grande école in Lyon, offering education and research in the sciences, humanities and social sciences. Its two campuses in the Gerland district divide these broad areas: Monod accommodates scientific departments, while Descartes accommodates humanities and social sciences. The school is associated with the University of Lyon and maintains links with external research organizations.\n\nThe present institution was formed on 1 January 2010 through the merger of Lyon’s scientific ENS and the humanities institution known as ENS Lettres et Sciences Humaines. Its historical origins lie in the teacher training schools of Fontenay-aux-Roses and Saint-Cloud, established in 1880 and 1882 respectively. Their scientific departments moved to Lyon in 1987; the humanities school followed in 2000. These predecessor dates therefore describe a longer institutional lineage rather than the establishment of the unified school.\n\nTeaching spans twelve departments, covering subjects from biology, chemistry, mathematics and physics to languages, literature, humanities, economics and social sciences. The school offers master’s and doctoral qualifications, science licence courses jointly accredited with Lyon 1, and preparation for the agrégation teaching examinations. Research training forms a central part of its educational work. Wikidata records 2,346 students for 2022."
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "website": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P856:0",
+              "original_text": "{\"property\": \"P856\", \"property_label\": \"official website\", \"statement_id\": \"Q10159$39C9BCB3-CA20-4841-8155-EB9F9268AC6E\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"http://www.ens-lyon.fr/\", \"qualifiers\": {\"P407\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 150, \"id\": \"Q150\"}}, {\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 1860, \"id\": \"Q1860\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "value": "http://www.ens-lyon.fr/",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "qid": "Q10159",
+  "record_revision": 1,
+  "related_entities": {
+    "ens-lsh": {
+      "kind": "institution",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q273605\", \"labels\": {\"fr\": \"École normale supérieure de Fontenay-Saint-Cloud\", \"en\": \"École normale supérieure de lettres et sciences humaines\"}, \"descriptions\": {\"fr\": \"grande école de lettres et sciences humaines de 1987 à 2009, située à Saint-Cloud et à Fontenay-aux-Roses puis à Lyon\", \"en\": \"former humanities-focused grande école in Lyon, France\"}}",
+                "source_ref": "s11"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "fr",
+              "text": "École normale supérieure de Fontenay-Saint-Cloud"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "qid": "Q273605"
+    },
+    "ens-sciences": {
+      "kind": "institution",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q139010267\", \"labels\": {\"fr\": \"École normale supérieure\"}, \"descriptions\": {\"fr\": \"école normale supérieure, section sciences, à Lyon de 1987 à 2009\"}}",
+                "source_ref": "s12"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "fr",
+              "text": "École normale supérieure"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "qid": "Q139010267"
+    },
+    "fontenay-origin": {
+      "kind": "institution",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Histoire",
+                "original_text": "L'École normale supérieure de Lyon provient de la réorganisation, entre 1981 et 1987, des anciennes Écoles normales supérieures de Saint-Cloud pour les garçons et de Fontenay-aux-Roses pour les filles. Ces écoles ont été instituées par Jules Ferry par les décrets du 13 juillet 1880 (Fontenay-aux-Roses) et du 22 décembre 1882 (Saint-Cloud). Elles avaient pour mission, jusqu'en 1945, de former les professeurs des écoles normales d'instituteurs et des écoles primaires supérieures, ainsi que les inspecteurs de l'enseignement primaire. Après-guerre, ces établissements ont perdu leur fonction initiale, pour préparer leurs élèves à l'agrégation et se tourner vers la recherche scientifique.\n",
+                "source_ref": "s3"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "fr",
+              "text": "École normale supérieure de Fontenay-aux-Roses"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    "lyon-system": {
+      "kind": "university_system",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q10176\", \"labels\": {\"fr\": \"université de Lyon (ComUE)\", \"en\": \"University of Lyon\"}, \"descriptions\": {\"en\": \"French university system, in Lyon, France\", \"fr\": \"regroupement d'établissements d'enseignement supérieur dans la région de Lyon Saint-Étienne, prenant la forme d'une « communauté d'universités et d'établissements », créée en 2015\"}}",
+                "source_ref": "s10"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "fr",
+              "text": "Université de Lyon"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "qid": "Q10176"
+    },
+    "saint-cloud-origin": {
+      "kind": "institution",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Histoire",
+                "original_text": "L'École normale supérieure de Lyon provient de la réorganisation, entre 1981 et 1987, des anciennes Écoles normales supérieures de Saint-Cloud pour les garçons et de Fontenay-aux-Roses pour les filles. Ces écoles ont été instituées par Jules Ferry par les décrets du 13 juillet 1880 (Fontenay-aux-Roses) et du 22 décembre 1882 (Saint-Cloud). Elles avaient pour mission, jusqu'en 1945, de former les professeurs des écoles normales d'instituteurs et des écoles primaires supérieures, ainsi que les inspecteurs de l'enseignement primaire. Après-guerre, ces établissements ont perdu leur fonction initiale, pour préparer leurs élèves à l'agrégation et se tourner vers la recherche scientifique.\n",
+                "source_ref": "s3"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "fr",
+              "text": "École normale supérieure de Saint-Cloud"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    }
+  },
+  "relationships": {
+    "campus": [
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Site_Monod_.28Sciences.29",
+                "original_text": "[modifier | modifier le code]\nLes bâtiments du campus Monod sont situés 46 allée d'Italie, dans le quartier de Gerland. Ils ont été conçus et réalisés par les architectes Philippe Dubois-Brunet et Daniel Barraud (architectes DPLG), à l'issue d'un concours d'architecture à deux degrés en 1981 et 1982. Francis Dubus, alors directeur de l'école à Saint-Cloud, s'était particulièrement impliqué dans ce projet. Une première tranche a été inaugurée par Jacques Chirac en 1986, et l'École est entrée en fonction en 1987.\nLe site Monod accueille la bibliothèque scientifique de l'École.\nCe site est desservi par les stations de métro Debourg et Stade de Gerland – Le LOU.\nDepuis février 2014, le tram T1 dessert les deux sites de l'ENS de Lyon.",
+                "source_ref": "s3"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "target_ref": "location:monod"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Site_Descartes_.28Lettres_et_Sciences_Humaines.29",
+                "original_text": "Les bâtiments du campus Descartes sont l'œuvre de l'architecte Henri Gaudin, son fils Bruno Gaudin étant l'auteur de la Bibliothèque Diderot. Le grand jardin a été conçu par le paysagiste et écologue Gilles Clément, pensé comme une oasis de biodiversité au milieu de la ville. Le campus, au départ « ENS LSH » (jusqu'à la refusion avec l'ENS « sciences » en 2010), est entré en fonction en 2000. ",
+                "source_ref": "s3"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "target_ref": "location:descartes"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    ],
+    "member_of": [
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P361:0",
+                "original_text": "{\"property\": \"P361\", \"property_label\": \"part of\", \"statement_id\": \"Q10159$84571182-9172-4F6C-8D9F-B66A41151E74\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 10176, \"id\": \"Q10176\"}, \"reference_count\": 1}",
+                "source_ref": "s1"
+              },
+              {
+                "locator": "section:lead",
+                "original_text": "Higher learning institution in Lyon, France\nFor other uses, see École normale supérieure (disambiguation).\nENS de Lyon\nENS de Lyon (France)\nThe École normale supérieure de Lyon (French pronunciation: [ekɔl nɔʁmal sypeʁjœʁ də ljɔ̃]; also known as ENS de Lyon, ENSL or Normale Sup' Lyon) is a French grande école located in the city of Lyon. It is one of the four prestigious écoles normales supérieures in France. The school is composed of two academic units—Arts and Sciences—with campuses in Lyon, near the confluence of the Rhône and Saône rivers.\nENS de Lyon's students usually enjoy a special civil servant status in the wake of highly competitive exams, providing they pursue careers in public service.[4] Although it maintains extensive connections with the University of Lyon and external research institutions, including the CNRS, the school remains independent.",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "independence": "unresolved",
+              "target_ref": "related:lyon-system"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    ],
+    "predecessor": [
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P1365:0",
+                "original_text": "{\"property\": \"P1365\", \"property_label\": \"replaces\", \"statement_id\": \"Q10159$7ba93d6b-46bf-8f44-0b6f-905ee685c779\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 273605, \"id\": \"Q273605\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2010-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "target_ref": "related:ens-lsh"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P1365:1",
+                "original_text": "{\"property\": \"P1365\", \"property_label\": \"replaces\", \"statement_id\": \"Q10159$e1479fa4-4333-5893-bb64-2614e062a132\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 139010267, \"id\": \"Q139010267\"}, \"reference_count\": 1}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "target_ref": "related:ens-sciences"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    ]
+  },
+  "schema_version": "0.2.2",
+  "seed": {
+    "channels": [
+      "ranking_identifier",
+      "reviewed_institution_type"
+    ],
+    "import_id": "seed-84c3beb45367905f",
+    "screening_status": "included"
+  },
+  "selection_policy": "preferred-v1",
+  "sources": {
+    "s1": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T11:16:28.709846+00:00",
+      "revision_id": 2532923769,
+      "source_qid": "Q10159",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2532923769"
+    },
+    "s10": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T09:16:25.886028+00:00",
+      "revision_id": 2511220217,
+      "source_qid": "Q10176",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2511220217"
+    },
+    "s11": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T11:17:05.298013+00:00",
+      "revision_id": 2517617060,
+      "source_qid": "Q273605",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2517617060"
+    },
+    "s12": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T11:17:09.323870+00:00",
+      "revision_id": 2480021120,
+      "source_qid": "Q139010267",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2480021120"
+    },
+    "s13": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T11:17:13.292902+00:00",
+      "revision_id": 2548708142,
+      "source_qid": "Q90421066",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2548708142"
+    },
+    "s2": {
+      "family": "wikimedia",
+      "kind": "wikipedia",
+      "language": "en",
+      "page_id": 319823,
+      "publisher_role": "encyclopedia",
+      "retrieved_at": "2026-11-06T11:16:42.737184+00:00",
+      "revision_id": 1381598035,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1381598035"
+    },
+    "s3": {
+      "family": "wikimedia",
+      "kind": "wikipedia",
+      "language": "fr",
+      "page_id": 20983,
+      "publisher_role": "encyclopedia",
+      "retrieved_at": "2026-11-06T11:16:47.682020+00:00",
+      "revision_id": 241047847,
+      "url": "https://fr.wikipedia.org/w/index.php?oldid=241047847"
+    },
+    "s4": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T11:16:51.864444+00:00",
+      "revision_id": 2532703991,
+      "source_qid": "Q135436",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2532703991"
+    },
+    "s5": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T11:11:54.452975+00:00",
+      "revision_id": 2541518756,
+      "source_qid": "Q847027",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2541518756"
+    },
+    "s6": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T11:16:56.873368+00:00",
+      "revision_id": 2553501921,
+      "source_qid": "Q38723",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2553501921"
+    },
+    "s7": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T09:16:05.838184+00:00",
+      "revision_id": 2564285160,
+      "source_qid": "Q142",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2564285160"
+    },
+    "s8": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T11:17:00.876891+00:00",
+      "revision_id": 2564847150,
+      "source_qid": "Q3360",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2564847150"
+    },
+    "s9": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T09:41:47.781576+00:00",
+      "revision_id": 2564980633,
+      "source_qid": "Q456",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2564980633"
+    }
+  },
+  "update_datetime": "2026-11-06T11:22:48.469542+00:00"
+}
