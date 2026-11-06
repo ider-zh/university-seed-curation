@@ -34,9 +34,12 @@ def next_candidates(repo,base_ref='origin/main',limit=5,now=None,seed=None):
             'coordination':'single_manager_local_checkpoint_and_main_backlog'}
 
 
-def direct_main(repo,output,files,base,repository,qids=()):
+def pull_request_bundle(repo,output,files,base,repository,qids=()):
     target=_private_output(output); tree=git(repo,'rev-parse',base+'^{tree}').decode().strip()
-    operations=[]; elements=[]
+    import uuid
+    branch='data/curation-'+uuid.uuid4().hex
+    operations=[{'tool':'mcp__codex_apps__github_create_branch','arguments':{
+        'repository_full_name':repository,'branch_name':branch,'sha':base}}]; elements=[]
     for index,(path,raw) in enumerate(sorted(files.items())):
         if not path.startswith('data/') or '..' in path.split('/'):
             raise ValueError('Direct publication accepts only structured data files')
@@ -47,19 +50,23 @@ def direct_main(repo,output,files,base,repository,qids=()):
     operations.extend([
         {'tool':'mcp__codex_apps__github_create_tree','arguments':{'repository_full_name':repository,'base_tree_sha':tree,'tree_elements':elements},'output':'tree_sha'},
         {'tool':'mcp__codex_apps__github_create_commit','arguments':{'repository_full_name':repository,'message':'Apply reviewed university batch','tree_sha':'$tree_sha','parent_sha':base},'output':'commit_sha'},
-        {'tool':'mcp__codex_apps__github_update_ref','arguments':{'repository_full_name':repository,'branch_name':'main','sha':'$commit_sha','expected_sha':base,'force':False}}
+        {'tool':'mcp__codex_apps__github_update_ref','arguments':{'repository_full_name':repository,'branch_name':branch,'sha':'$commit_sha','expected_sha':base,'force':False}},
+        {'tool':'mcp__codex_apps__github_create_pull_request','arguments':{'repository_full_name':repository,
+         'base':'main','head':branch,'title':'Publish reviewed university data',
+         'body':'Generated Research/Review bundle. Merge only after required validation passes.'},'output':'pr_number'},
+        {'tool':'mcp__codex_apps__github_enable_auto_merge','arguments':{'repository_full_name':repository,'pr_number':'$pr_number'}}
     ])
     target.mkdir(parents=True)
     for name,raw in files.items():
         path=target/name; path.parent.mkdir(parents=True,exist_ok=True); path.write_bytes(raw)
-    payload={'status':'awaiting_plugin_commit','kind':'direct_main','repository':repository,'base_commit':base,
+    payload={'status':'awaiting_plugin_commit','kind':'pull_request','branch':branch,'repository':repository,'base_commit':base,
         'qids':list(qids),'files':{path:sha(raw) for path,raw in sorted(files.items())},'operations':operations,
-        'preflight':['Confirm actual GitHub main head equals base_commit','Validate exact approved files',
-                     'On expected-head conflict refresh main and repeat offline Review'],
-        'after_commit':'Fetch main, then run publication-confirm against the actual remote commit'}
+        'preflight':['Confirm PR target is main and source branch is unique','Validate exact approved files',
+                     'On affected-QID conflict refresh main and repeat offline Review'],
+        'after_commit':'Wait for PR merge; fetch main and run publication-confirm on its merge/squash commit'}
     (target/'operations.json').write_bytes(encode(payload))
     for entity in qids: manager.set_phase(repo,entity,'publishing',bundle=str(target))
-    return {'status':'direct_main_bundle_prepared','output':str(target),'operations_path':str(target/'operations.json'),'base_commit':base}
+    return {'status':'pull_request_bundle_prepared','output':str(target),'operations_path':str(target/'operations.json'),'base_commit':base}
 
 
 def _prepare(repo,args):
@@ -171,13 +178,13 @@ def main(argv=None):
         base,trust,_,_=_base(repo,a.base_ref)
         files=unified_publish.files(repo,base,a.batch_id,list(zip(a.proposal,a.review_job,a.review_attempt)))
         entities=[_json(p)['qid'] for p in a.proposal]
-        result=direct_main(repo,a.output,files,base,trust['repository'],entities)
+        result=pull_request_bundle(repo,a.output,files,base,trust['repository'],entities)
     elif a.command=='publication-confirm': result=manager.confirm_publication(repo,a.bundle,a.published_ref)
     elif a.command=='checkpoint':
         base,trust,catalog,_=_base(repo,a.base_ref)
         raw=manager.after_publication(repo,base,())
         if any(entity not in catalog for entity in load_json(raw)['tasks']): raise ValueError('Checkpoint QID outside catalog')
-        result=direct_main(repo,a.output,{manager.BACKLOG:raw},base,trust['repository'])
+        result=pull_request_bundle(repo,a.output,{manager.BACKLOG:raw},base,trust['repository'])
     else:
         from datetime import timedelta
         from .records import instant

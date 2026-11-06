@@ -11,7 +11,7 @@ import random
 import math
 from email.utils import parsedate_to_datetime
 import tempfile
-from urllib.error import HTTPError
+from urllib.error import HTTPError, URLError
 from urllib.parse import urlencode, urljoin
 from urllib.request import Request, urlopen
 
@@ -36,20 +36,24 @@ def _retry_seconds(value):
         except (TypeError,ValueError,OverflowError): return 0
 
 
-def download(url):
+def download(url, timeout=90):
+    if not 1 <= timeout <= 600: raise ValueError("HTTP timeout must be 1..600 seconds")
     # Never shorten server Retry-After. If it exceeds the local wait budget,
     # return control to the manager so other QIDs can proceed.
     waited=0
     for attempt in range(3):
         try:
             request=Request(url,headers={'User-Agent':USER_AGENT,'Accept':'application/json'})
-            with urlopen(request,timeout=45) as response:
+            with urlopen(request,timeout=timeout) as response:
                 data=json.load(response); retry=_retry_seconds(response.headers.get('Retry-After'))
             code=data.get('error',{}).get('code')
             if code!='maxlag': return data
         except HTTPError as error:
             if error.code not in (429,503): raise
             code='http_'+str(error.code); retry=_retry_seconds(error.headers.get('Retry-After'))
+        except (TimeoutError, URLError) as error:
+            if isinstance(error, URLError) and not isinstance(error.reason, TimeoutError): raise
+            code='timeout'; retry=0
         delay=max(retry,5*(2**attempt)+random.uniform(0,1))
         if attempt==2 or waited+delay>30:
             raise RetryableSourceError(code,max(60,delay))
@@ -62,12 +66,13 @@ def language(value):
 
 
 class Cache:
-    def __init__(self, directory=None, fetch=download, now=lambda: datetime.now(timezone.utc), ttl_days=30, maxlag=5):
+    def __init__(self, directory=None, fetch=download, now=lambda: datetime.now(timezone.utc), ttl_days=30, maxlag=30, timeout=90):
         self.directory = Path(directory or os.environ.get("UNIVERSITY_SOURCE_CACHE", ".private/cache/sources")).resolve()
         if ".private" not in self.directory.parts: raise ValueError("Raw source caches must be stored in a .private directory")
         if ttl_days <= 0: raise ValueError("Positive cache TTL required")
         if not 1 <= maxlag <= 60: raise ValueError("maxlag must be between 1 and 60 seconds")
-        self.fetch = fetch; self.now = now; self.ttl = timedelta(days=ttl_days); self.maxlag = maxlag
+        if not 1 <= timeout <= 600: raise ValueError("HTTP timeout must be 1..600 seconds")
+        self.fetch = (lambda url: download(url, timeout=timeout)) if fetch is download else fetch; self.now = now; self.ttl = timedelta(days=ttl_days); self.maxlag = maxlag
 
     def _capture_path(self, payload):
         key = hashlib.sha256(json.dumps(payload, ensure_ascii=False, sort_keys=True, separators=(",", ":")).encode()).hexdigest()

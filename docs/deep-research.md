@@ -65,7 +65,7 @@ contains only bounded sourced facts, not raw page dumps or private captures.
 
 ## Publication
 
-The Review subagent verifies every Research fact and all six coverage groups.
+The Review subagent verifies the core-review-v3 facts and contexts and all six survey-coverage groups.
 Manager Agent validates the strict `review-compile` gate and generates an immutable unified receipt
 describing workflow attribution honestly. `unified-publish` emits a bounded
 blob/tree/commit/ref operations plan for the connected GitHub plugin. Confirm
@@ -74,3 +74,5 @@ the actual remote `main` SHA, then execute `update_ref` with `expected_sha` and
 
 No PRs are created for new unified data. Official dataset release remains a
 separate human approval decision.
+
+Independent factual Review now uses [core-review-v3](review-scope-v3.md). Supplementary fields remain structurally validated; new receipts disclose unreviewed IDs.

@@ -1,103 +1,37 @@
-# Single-manager Research and Review
+# Concurrent Agent groups and PR publication
 
-One Task Agent works from main, with one native Research subagent and one
-independent native Review subagent per QID. Reviews for different QIDs run in
-parallel, within the shared five-call limit. Python does not launch models. The host owns
-native subagent tools and the GitHub plugin. No remote coordination branches,
-PRs, separate Review service or shell GitHub credentials are used.
+Each group has one Task Agent, private checkpoints and its own checkout. Each
+QID has a distinct Research/Review session pair. Each group retains the combined
+five-call limit and five-school batch limit. Main is the shared published state.
 
-## Select and recover
+Fetch main, run doctor and next --limit 5. Inspect open data PRs to avoid duplicate
+QIDs where possible. Selection is randomized advisory work, not a global lock.
+Research prepares revision-bound source snapshots; Review checks the required
+core IDs offline under review-scope-v3.md. Compile outputs, bind the proposal and
+publish only exact approved records. Rejections retain proposal-bound requests,
+two revision rounds, portable checkpoint PRs and private retry state.
 
-Fetch origin/main, run doctor, then next --limit 5. next combines the main backlog,
-exact main publication receipts, refresh timestamps and private local jobs.
-It returns qid, action, reason, revision and open_requests. The priority order is
-verify interrupted publication, publish approved work, Review, Research revision,
-then new/recovered Research, primary before discovery. next remains advisory.
+unified-publish and checkpoint produce a unique data/curation-<id> branch plus
+GitHub operations creating a PR and enabling auto-merge. They never update main
+directly. Execute operations in order and substitute returned blob/tree/commit
+SHAs and PR number. Use a new branch for each bundle. GitHub checks the generated
+PR; main requires passing checks and an up-to-date branch before merging.
 
-Research candidates are randomized within each existing priority tier: saved tasks
-before new tasks, and primary before discovery. Recovery/publication/Review/revision
-actions retain their priority. Each call returns a fresh `selection_seed`; use
-`next --limit 5 --seed 123` to replay selection with the same main/local state.
-The limit is the number returned (up to the eligible count), not a random batch
-size. Selection is without replacement within a call. Randomization reduces
-repeated picks across workspaces but is not a distributed claim or a guarantee
-of disjoint batches; one manager per workspace remains the supported model.
-Local prepare locking and expected-SHA publication protection remain required.
+The data-publication check runs trusted base code and reads PR blobs without
+executing PR code. It validates exact manifest/receipt/record hashes and scope,
+current affected-QID baselines, pending requests, and the merged backlog. One
+batch per PR; checkpoint PRs contain only backlog metadata. Independent QIDs
+can proceed concurrently. Same-QID updates or overlapping pending-task changes
+must be regenerated against main; unrelated merged task rows must be preserved.
 
+If another PR merges first, update the PR branch against main and let checks run
+again. If content conflicts or a QID baseline changed, rebuild from fetched main:
+rebind retained Research only if its baseline is still valid, run fresh offline
+Review, create a replacement bundle/PR and close the obsolete PR. Shared backlog
+JSON may still produce Git conflicts; automatic merging does not resolve them.
 
-Prepare records an active local job under an OS-locked atomic checkpoint. It
-rejects duplicate active QIDs and exhausted capacity. There are at most five
-active data calls across Research and Review combined, with no separate one-Review
-limit. Prioritize waiting Reviews; reserve the last free slot for them rather
-than starting more Research when four calls are active and Review is pending.
-Run job-heartbeat while a subagent is active. Job expiry permits recovery but
-keeps completed Research/Review progress. Compilation checks the current job
-identity so an obsolete job cannot replace newer work.
-
-Temporary source failures enter retry_wait with retry_after and a resume phase.
-Validation errors keep outputs private. A completed partial survey has a separate
-seven-day retry interval; only full-refresh update_datetime has six-month freshness.
-
-## Research and offline Review
-
-research-prepare generates a fresh private job containing sources, root entity,
-prompt and strict schema. The manager supplies exactly these to Research, records
-its actual session/model metadata and runs research-compile. unified-proposal
-binds the compiled proposal to repository/catalog/schema/policy and main baseline.
-
-review-prepare requires --research-job. It verifies the Research packet/root
-hashes, copies the evidence into a separate Review job, and prepares every fact,
-context and prior request for Review. No HTTP retrieval fallback exists. Review
-reads only its packet/prompt/schema and returns strict JSON in a session distinct
-from every Research session and every other QID's Review session. Dispatch each
-QID packet to its own Review subagent as soon as Research is compiled, without
-waiting for other QIDs. Compile each result with that QID's actual Review session ID.
-If a Review session is lost, re-review only its QID in a fresh session; retain
-other valid approvals on the same main baseline.
-review-compile validates complete coverage and cannot turn an incomplete or
-contradictory assessment into approval.
-
-request_changes creates proposal-bound request IDs in the local checkpoint.
-The next Research attempt automatically receives the saved open_requests unless
-explicit feedback is supplied. At most two revisions per QID; unresolved or
-exhausted cases remain unpublished. Responses do not themselves constitute a
-Review approval. After request_changes/unresolved, use checkpoint, execute its
-main update and confirm it before continuing. This preserves question IDs and
-revision counters across loss of the private workspace. Publication bundles also
-checkpoint all other pending tasks using portable metadata.
-
-## Direct publication
-
-unified-publish revalidates exact proposals, offline Review jobs/attempts,
-source counts, six coverage groups, canonical hashes and current main baseline.
-A batch requires distinct Research sessions and distinct Review sessions per QID;
-any shared reviewer or cross-role session reuse is rejected. It produces only canonical records, receipts, a batch manifest and the updated
-main task backlog. Other pending backlog rows are preserved exactly.
-
-Execute its blob/tree/commit/ref operations through the GitHub plugin. The main
-update has expected_sha and force:false. On conflict, fetch main and repeat
-Review against the new baseline before rebuilding the bundle.
-
-Fetch the published main and run publication-confirm against the actual commit.
-It checks the planned parent, main ancestry and every file hash before recording
-completed. If the process stopped after the ref update, confirm that same bundle
-and commit; do not create a replacement batch. Main manifests and receipts are
-authoritative across sessions. A local state or successful operations plan alone
-is not publication.
-
-## Storage and history
-
-Keep source captures, model results/prompts and job paths private. Main contains
-compact portable backlog metadata, not raw packets or active-worker secrets.
-Private jobs can optimize recovery in the same workspace; after their loss,
-rebuild evidence from the retained QID and open questions.
-
-Frozen historical proposals are under data/history/proposals; current commands
-never read them as an approved proposal or re-enable their old PR protocol.
-Canonical observations and signed historical receipt bytes are not rewritten
-by this workflow migration. Dataset schema/policy and official release decisions
-remain operator controlled.
-
-Previously published batches with a shared Review session remain historical
-receipts. Before a new multi-QID publication, replace any unpublished shared-session
-approvals with fresh per-QID Reviews of the retained snapshots.
+Wait for the actual PR merge, fetch main and run publication-confirm using its
+merge/squash commit. Confirmation checks ancestry and exact bundle bytes. It
+supports prior direct-main plans for interrupted historical work. No source
+cache, model trace or private active-job state is committed. Historical records,
+receipts and v2 policy remain unchanged; new receipts identify core-review-v3.
