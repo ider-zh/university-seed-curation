@@ -1,0 +1,516 @@
+{
+  "coverage": {
+    "finance": {
+      "checked_at": "2026-11-06T16:23:04.274401+00:00",
+      "status": "not_found"
+    },
+    "geography": {
+      "checked_at": "2026-11-06T16:23:04.274401+00:00",
+      "status": "checked"
+    },
+    "history": {
+      "checked_at": "2026-11-06T16:23:04.274401+00:00",
+      "status": "checked"
+    },
+    "identity": {
+      "checked_at": "2026-11-06T16:23:04.274401+00:00",
+      "status": "checked"
+    },
+    "population": {
+      "checked_at": "2026-11-06T16:23:04.274401+00:00",
+      "status": "checked"
+    },
+    "profile": {
+      "checked_at": "2026-11-06T16:23:04.274401+00:00",
+      "status": "checked"
+    }
+  },
+  "curation": {
+    "identity_status": "excluded",
+    "refresh_profile": "core-v1",
+    "reviewed_groups": [
+      "identity",
+      "geography",
+      "history",
+      "population",
+      "finance",
+      "profile"
+    ]
+  },
+  "history": {
+    "milestones": [
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:7",
+                  "original_text": "Established: 30 August 2024; 2 years ago (2024-08-30)",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "day": 30,
+                "month": 8,
+                "precision": "day",
+                "year": 2024
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:7",
+                  "original_text": "Established: 30 August 2024; 2 years ago (2024-08-30)",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:lead",
+                  "original_text": "Burhan Academy is a private Islamic school located in Elgin, Illinois, United States.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "Establishment of Burhan Academy, a private Islamic school."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "establishment",
+        "kind": "institution_establishment",
+        "subject_ref": "institution"
+      },
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Enrollment_and_growth",
+                  "original_text": "When it opened in September 2024, Burhan Academy enrolled approximately 91 students in its first four months.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "month": 9,
+                "precision": "month",
+                "year": 2024
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Enrollment_and_growth",
+                  "original_text": "When it opened in September 2024, Burhan Academy enrolled approximately 91 students in its first four months.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "Burhan Academy opened for teaching in September 2024."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "teaching-start",
+        "kind": "teaching_start",
+        "subject_ref": "institution"
+      }
+    ]
+  },
+  "identity": {
+    "kind": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:12",
+              "original_text": "Grades: Pre-K to 12 (phased rollout)",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:History_and_founding",
+              "original_text": "As of the 2024–2025 academic year, the school offered classes from preschool through third grade, with plans to expand one grade level per year up to high school.",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": "other",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "names": {
+      "en": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "Burhan Academy is a private Islamic school located in Elgin, Illinois, United States.",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": "Burhan Academy",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    }
+  },
+  "leadership": {
+    "president": {
+      "candidates": [
+        {
+          "current_basis": "infobox_current",
+          "evidence": [
+            {
+              "locator": "infobox:9",
+              "original_text": "President: Yasir Nadeem al Wajidi",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "person": {
+              "name": "Yasir Nadeem al Wajidi"
+            },
+            "title_original": {
+              "language": "en",
+              "text": "President"
+            }
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "single_source_family",
+          "reported_current"
+        ],
+        "reason": "The page reports this person in its current officeholder field; a term-end date is not required.",
+        "reason_code": "infobox_current"
+      }
+    }
+  },
+  "locations": [
+    {
+      "address": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "infobox:2",
+                "original_text": ": 350 Park Street,Elgin, Illinois 60120United States42°02′30″N 88°16′42″W﻿ / ﻿42.0418°N 88.2782°W﻿ / 42.0418; -88.2782",
+                "source_ref": "s2"
+              },
+              {
+                "locator": "claim:P17:0",
+                "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q134585289$3eff4c10-4d7d-f31e-3ed5-e0fc1a4775f1\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 30, \"id\": \"Q30\"}}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "city_name": "Elgin",
+              "city_qid": "Q499887",
+              "country_name": "United States",
+              "country_qid": "Q30",
+              "formatted": {
+                "language": "en",
+                "text": "350 Park Street, Elgin, Illinois 60120, United States"
+              },
+              "postal_code": "60120",
+              "region_name": "Illinois",
+              "street": "350 Park Street"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "id": "elgin-campus",
+      "kind": "campus"
+    },
+    {
+      "coordinates": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "statement:Q134585289$a7a980d5-054a-4426-9785-03dab6a6e22b",
+                "original_text": "\"latitude\": 42.04138888888889",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "source_rank": "normal",
+            "value": {
+              "crs": "EPSG:4326",
+              "globe_qid": "Q2",
+              "latitude": 42.04138888888889,
+              "longitude": -88.27777777777777,
+              "source_precision_degrees": 0.0002777777777777778
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "id": "wikidata-item-location",
+      "kind": "institution",
+      "qid": "Q134585289"
+    }
+  ],
+  "modified_datetime": "2026-11-06T16:25:37.506087+00:00",
+  "population": {
+    "students_total": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:Enrollment_and_growth",
+              "original_text": "By early 2025, enrollment had reached approximately 100 students in pre-K through third grade",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "period": {
+            "kind": "calendar_year",
+            "label": "early 2025",
+            "year": 2025
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 100,
+            "basis": "headcount",
+            "precision": "approximate"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "single_source_family",
+          "approximate_value"
+        ],
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "profile": {
+    "motto": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:5",
+              "original_text": "Motto: \"Knowledge, Character, Community\"",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "language": "en",
+            "text": "Knowledge, Character, Community"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "summary": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "Burhan Academy is a private Islamic school located in Elgin, Illinois, United States. It occupies the historic campus of the former Elgin Academy, a 185-year-old independent school that closed in 2024. Founded by Yasir Nadeem al Wajidi, Burhan Academy has an Islamic style education.",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:History_and_founding",
+              "original_text": "As of the 2024–2025 academic year, the school offered classes from preschool through third grade, with plans to expand one grade level per year up to high school.[5][1] It is open to students of all backgrounds and faiths.",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Enrollment_and_growth",
+              "original_text": "By early 2025, enrollment had reached approximately 100 students in pre-K through third grade",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Campus_and_facilities",
+              "original_text": "Facilities available at the time of purchase included eight main buildings, a gym, a cafeteria with a full kitchen, classrooms, sports fields, and administrative offices.",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "language": "en",
+            "text": "Burhan Academy is a private Islamic school in Elgin, Illinois, United States. It occupies the historic campus of Elgin Academy, which closed in 2024. Founded by Yasir Nadeem al Wajidi in 2024, the school combines an Islamic educational approach with conventional academic subjects. Its intended educational range extends from preschool through twelfth grade.\n\nDuring the 2024–2025 academic year, Burhan Academy offered classes from preschool through third grade and planned to add grade levels. Enrollment had reached approximately 100 pupils by early 2025. The school welcomes pupils from different backgrounds and faiths. Its campus includes academic buildings, a gymnasium, a cafeteria, sports fields and administrative offices."
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "teaching_languages": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:15",
+              "original_text": "Language: English",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": [
+            "English"
+          ],
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "website": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:19",
+              "original_text": "Website: burhanacademy.us",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": "https://burhanacademy.us",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "qid": "Q134585289",
+  "record_revision": 1,
+  "schema_version": "0.2.2",
+  "seed": {
+    "channels": [
+      "legacy_discovery"
+    ],
+    "import_id": "seed-84c3beb45367905f",
+    "screening_status": "needs_review"
+  },
+  "selection_policy": "preferred-v1",
+  "sources": {
+    "s1": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T16:22:41.845015+00:00",
+      "revision_id": 2354230747,
+      "source_qid": "Q134585289",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2354230747"
+    },
+    "s2": {
+      "family": "wikimedia",
+      "kind": "wikipedia",
+      "language": "en",
+      "page_id": 79959113,
+      "publisher_role": "encyclopedia",
+      "retrieved_at": "2026-11-06T16:22:51.709178+00:00",
+      "revision_id": 1373749790,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1373749790"
+    },
+    "s3": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T16:22:55.637710+00:00",
+      "revision_id": 2561641675,
+      "source_qid": "Q2385804",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2561641675"
+    },
+    "s4": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T16:22:59.806677+00:00",
+      "revision_id": 2565041516,
+      "source_qid": "Q30",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2565041516"
+    },
+    "s5": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T16:23:04.254089+00:00",
+      "revision_id": 2544131309,
+      "source_qid": "Q499887",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2544131309"
+    }
+  },
+  "update_datetime": "2026-11-06T16:25:37.506087+00:00"
+}

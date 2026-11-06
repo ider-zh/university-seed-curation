@@ -1,0 +1,319 @@
+{
+  "coverage": {
+    "finance": {
+      "checked_at": "2026-11-06T16:23:57.899844+00:00",
+      "status": "not_found"
+    },
+    "geography": {
+      "checked_at": "2026-11-06T16:23:57.899844+00:00",
+      "status": "checked"
+    },
+    "history": {
+      "checked_at": "2026-11-06T16:23:57.899844+00:00",
+      "status": "not_found"
+    },
+    "identity": {
+      "checked_at": "2026-11-06T16:23:57.899844+00:00",
+      "status": "checked"
+    },
+    "population": {
+      "checked_at": "2026-11-06T16:23:57.899844+00:00",
+      "status": "not_found"
+    },
+    "profile": {
+      "checked_at": "2026-11-06T16:23:57.899844+00:00",
+      "status": "checked"
+    }
+  },
+  "curation": {
+    "identity_status": "excluded",
+    "refresh_profile": "core-v1",
+    "reviewed_groups": [
+      "identity",
+      "geography",
+      "history",
+      "population",
+      "finance",
+      "profile"
+    ]
+  },
+  "identity": {
+    "kind": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "metadata",
+              "original_text": "{\"id\": \"Q130619059\", \"labels\": {\"en\": \"OBO\"}, \"descriptions\": {\"en\": \"organisation for primary education in North Brabant, the Netherlands\"}}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "claim:P31:0",
+              "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q130619059$bc90a132-4b7c-8fc1-8995-ff5de36aef2e\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 138573992, \"id\": \"Q138573992\"}}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "metadata",
+              "original_text": "{\"id\": \"Q138573992\", \"labels\": {\"en\": \"school association\"}, \"descriptions\": {\"en\": \"organisation that is the board of multiple schools\"}}",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "claim:P31:1",
+              "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q130619059$5656e5dc-4dc2-1976-1152-67070fb4f5b9\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 188628, \"id\": \"Q188628\"}}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "metadata",
+              "original_text": "{\"id\": \"Q188628\", \"labels\": {\"en\": \"board of directors\"}, \"descriptions\": {\"en\": \"group of people who jointly supervise the activities of an organization\"}}",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c1",
+          "value": "other",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "names": {
+      "en": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q130619059\", \"labels\": {\"en\": \"OBO\"}, \"descriptions\": {\"en\": \"organisation for primary education in North Brabant, the Netherlands\"}}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": "OBO",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "nl": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P1448:0",
+                "original_text": "{\"property\": \"P1448\", \"property_label\": \"official name\", \"statement_id\": \"Q130619059$75fc9320-4c8a-aa2b-b1b0-406cdde9c6b9\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"Stichting Openbaar Basisonderwijs West-Brabant\", \"language\": \"nl\"}}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": "Stichting Openbaar Basisonderwijs West-Brabant",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    "ownership": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P31:2",
+              "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q130619059$8744d1fc-4c46-183b-0dc4-e5a032ce7540\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 23002037, \"id\": \"Q23002037\"}}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "metadata",
+              "original_text": "{\"id\": \"Q23002037\", \"labels\": {\"en\": \"public educational institution\"}, \"descriptions\": {\"en\": \"educational institution whose programs and activities are operated by publicly elected or appointed school officials and which is supported primarily by public funds\"}}",
+              "source_ref": "s4"
+            }
+          ],
+          "id": "c1",
+          "value": "public",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "locations": [
+    {
+      "address": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P159:0",
+                "original_text": "{\"property\": \"P159\", \"property_label\": \"headquarters location\", \"statement_id\": \"Q130619059$2ff4bc3a-4211-1b38-a352-89cbc89873dd\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 6903267, \"id\": \"Q6903267\"}}",
+                "source_ref": "s1"
+              },
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q6903267\", \"labels\": {\"en\": \"Roosendaal\"}, \"descriptions\": {\"en\": \"city in de Brabantse gemeente Roosendaal, Nederland\"}}",
+                "source_ref": "s6"
+              },
+              {
+                "locator": "claim:P17:0",
+                "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q130619059$aea53c32-4705-f2e3-8dcf-9f4668cfa953\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 55, \"id\": \"Q55\"}}",
+                "source_ref": "s1"
+              },
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q55\", \"labels\": {\"en\": \"Netherlands\"}, \"descriptions\": {\"en\": \"one of the four autonomous countries of the Kingdom of the Netherlands; with territories in the Caribbean\"}}",
+                "source_ref": "s5"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "city_name": "Roosendaal",
+              "city_qid": "Q6903267",
+              "country_name": "Netherlands",
+              "country_qid": "Q55",
+              "formatted": {
+                "language": "en",
+                "text": "Roosendaal, Netherlands"
+              }
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "id": "headquarters-roosendaal",
+      "kind": "headquarters",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P159:0",
+                "original_text": "{\"property\": \"P159\", \"property_label\": \"headquarters location\", \"statement_id\": \"Q130619059$2ff4bc3a-4211-1b38-a352-89cbc89873dd\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 6903267, \"id\": \"Q6903267\"}}",
+                "source_ref": "s1"
+              },
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q6903267\", \"labels\": {\"en\": \"Roosendaal\"}, \"descriptions\": {\"en\": \"city in de Brabantse gemeente Roosendaal, Nederland\"}}",
+                "source_ref": "s6"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Roosendaal"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "qid": "Q6903267"
+    }
+  ],
+  "modified_datetime": "2026-11-06T16:26:02.582277+00:00",
+  "profile": {
+    "website": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P856:0",
+              "original_text": "{\"property\": \"P856\", \"property_label\": \"official website\", \"statement_id\": \"Q130619059$093334bd-46d3-da73-1639-58fa16a27eca\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"https://stichtingobo.nl\", \"qualifiers\": {\"P407\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 7411, \"id\": \"Q7411\"}}]}}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "value": "https://stichtingobo.nl",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "qid": "Q130619059",
+  "record_revision": 1,
+  "schema_version": "0.2.2",
+  "seed": {
+    "channels": [
+      "legacy_discovery"
+    ],
+    "import_id": "seed-84c3beb45367905f",
+    "screening_status": "needs_review"
+  },
+  "selection_policy": "preferred-v1",
+  "sources": {
+    "s1": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T16:23:33.864903+00:00",
+      "revision_id": 2484564071,
+      "source_qid": "Q130619059",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2484564071"
+    },
+    "s2": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T16:23:41.966317+00:00",
+      "revision_id": 2496862324,
+      "source_qid": "Q138573992",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2496862324"
+    },
+    "s3": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T16:23:45.549072+00:00",
+      "revision_id": 2558399809,
+      "source_qid": "Q188628",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2558399809"
+    },
+    "s4": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T16:23:49.241409+00:00",
+      "revision_id": 2504953437,
+      "source_qid": "Q23002037",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2504953437"
+    },
+    "s5": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T16:23:53.703305+00:00",
+      "revision_id": 2565178043,
+      "source_qid": "Q55",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2565178043"
+    },
+    "s6": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T16:23:57.885353+00:00",
+      "revision_id": 2532335205,
+      "source_qid": "Q6903267",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2532335205"
+    }
+  },
+  "update_datetime": "2026-11-06T16:26:02.582277+00:00"
+}
