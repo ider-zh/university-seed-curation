@@ -2,8 +2,7 @@ name: Offline reference checks
 
 on:
   push:
-    branches: [main, codex/initial-design]
-  pull_request:
+    branches: [main]
 
 permissions:
   contents: read
@@ -18,6 +17,7 @@ jobs:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
         with:
           persist-credentials: false
+          fetch-depth: 0
       - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
         with:
           python-version: ${{ matrix.python-version }}
@@ -25,5 +25,4 @@ jobs:
       - run: python .agents/skills/university-curation/scripts/maintain_schema.py check
       - run: python -m unittest discover -s tests -v
 
-# Read-only prototype checks. This is NOT a trusted review-attestation or
-# auto-merge workflow, and it does not publish private outputs or artifacts.
+# Offline validation only. Model execution and remote publication remain host operations.

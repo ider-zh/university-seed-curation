@@ -3,7 +3,7 @@ from copy import deepcopy
 import json
 import re
 
-from .pilot_sources import wikidata_corpus
+from .source_packet import wikidata_corpus
 from .records import qid
 
 

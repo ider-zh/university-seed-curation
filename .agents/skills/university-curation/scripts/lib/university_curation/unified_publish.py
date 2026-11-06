@@ -7,11 +7,11 @@ from pathlib import Path
 import re
 
 from .attestations import load_json, private_path, sha
-from .distributed_protocol import attach_transport, baseline_at
+from .workflow_contract import attach_transport, baseline_at
 from .domain_refresh import materialize
-from .native_protocol import check_proposal
+from .workflow_contract import check_proposal
 from .native_research import _base
-from .pr_export import batch_slug, blob, canonical_json, no_legacy_duplicate, record_relative
+from .git_data import batch_slug, blob, canonical_json, no_legacy_duplicate, record_relative
 from .preferred import validate, recompute
 from .records import encode, instant
 
@@ -30,10 +30,14 @@ def _verified(repo, base, proposal, review_job, attempt, trust, catalog, catalog
     if meta['schema_sha256']!=trust['schemas']['0.2.2'] or meta['review_policy_sha256']!=trust['review_policy']['sha256']:
         raise ValueError('Review schema/policy mismatch')
     entity=proposal['qid']; baseline,baseline_hash=baseline_at(repo,base,entity)
+    from .manager import check_requests, required_requests
+    check_requests(required_requests(repo,base,entity),proposal.get('open_requests',[]))
     if baseline_hash!=meta['baseline_sha256']: raise ValueError('Record baseline changed')
     check_proposal(proposal,baseline,catalog,catalog_hash,trust)
     verdict=canonical_json((attempt/'public-verdict.json').read_bytes())
     metadata=canonical_json((attempt/'result-metadata.json').read_bytes())
+    if metadata.get('native_result_sha256')!=sha((attempt/'native-result.json').read_bytes()):
+        raise ValueError('Review result changed after deterministic compilation')
     if verdict.get('decision')!='approve' or verdict.get('qid')!=entity or verdict.get('proposal_sha256')!=sha(encode(proposal)):
         raise ValueError('Exact proposal lacks Review approval')
     if verdict.get('requests') or any(r['status']!='addressed' for r in verdict['request_responses']):
@@ -44,8 +48,8 @@ def _verified(repo, base, proposal, review_job, attempt, trust, catalog, catalog
         raise ValueError('Research and Review subagent sessions must differ')
     if instant(verdict['reviewed_at'])<instant(meta['prepared_at']): raise ValueError('Review predates source replay')
     if not verdict.get('source_revisions_checked') == len(proposal['delta']['sources']): raise ValueError('Incomplete source coverage')
-    from .distributed_jobs import _fact_scope
-    from .pilot_protocol import GROUPS
+    from .research_contract import _fact_scope
+    from .research_schema import GROUPS
     facts,contexts=_fact_scope(proposal['delta'])
     if verdict['facts_checked']!=len(facts) or verdict['contexts_checked']!=len(contexts) or {r['group'] for r in verdict['coverage_checks']}!=set(GROUPS):
         raise ValueError('Incomplete Review coverage')
@@ -77,6 +81,8 @@ def files(repo, base, batch, proposals_and_reviews):
         if 'transport' not in proposal:
             raise ValueError('Use unified-proposal before Review; reviewed bytes must match publication')
         entity=proposal['qid']
+        from .manager import publication_ready
+        publication_ready(repo,entity,proposal_path,job_path,attempt_path)
         if entity in seen: raise ValueError('Duplicate Research QID')
         seen.add(entity)
         record,verdict=_verified(repo,base_commit,proposal,job_path,attempt_path,trust,catalog,catalog_hash)
@@ -95,6 +101,8 @@ def files(repo, base, batch, proposals_and_reviews):
     path='data/batches/'+batch+'.json'
     if blob(repo,base_commit,path,optional=True) is not None: raise ValueError('Immutable batch exists')
     output[path]=encode(manifest)
+    from .manager import BACKLOG, after_publication
+    output[BACKLOG]=after_publication(repo,base_commit,seen)
     verify_files(repo,base_commit,output,trust)
     return output
 
@@ -112,6 +120,12 @@ def verify_files(repo, base, files, trust):
     if not 1<=len(rows)<=trust['max_schools_per_batch'] or ids!=sorted(set(ids),key=lambda q:int(q[1:])):
         raise ValueError('Invalid unified batch membership')
     expected={manifests[0]}
+    from .manager import BACKLOG, backlog_at, validate_checkpoint
+    if BACKLOG not in files: raise ValueError('Publication must include the pending backlog')
+    checkpoint=canonical_json(files[BACKLOG])
+    validate_checkpoint(backlog_at(repo,base),checkpoint,ids)
+    if any(entity not in catalog for entity in checkpoint['tasks']): raise ValueError('Checkpoint QID outside catalog')
+    expected.add(BACKLOG)
     for row in rows:
         entity=row['qid']; path=record_relative(entity); receipt_path='data/reviews/'+batch+'/'+entity+'.json'
         if set(row)!={'qid','record_path','record_sha256','receipt_path','receipt_sha256'} or row['record_path']!=path or row['receipt_path']!=receipt_path:

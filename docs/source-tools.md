@@ -43,12 +43,13 @@ oldid 固定文章 revision，但模板渲染可能变化；实际观察的响�
 
 ## 运行与错误
 
-- 请求带项目 User-Agent、超时与有限重试，429/503 遵守等待提示。
+- 请求带项目 User-Agent、超时与有限重试，429/503 和 maxlag 遵守 Retry-After；最多三次请求、累计等待最多 30 秒。
+  超过等待预算时返回可重试错误及建议重试时间，由 manager 延后该任务。
 - 默认 maxlag=5；服务端复制延迟较大时可能返回 maxlag 错误。调用者可显式配置
   `python .agents/skills/university-curation/scripts/sources.py --maxlag 30 ...`。该值是 API 复制延迟容忍值，不是统计年份，
   也不取消 HTTP 限流。无成功响应不会伪造成空数据。
 - JSON 标准输出统一 UTF-8，适用于 Windows、Linux 等环境。
-- --refresh 主动重取；缓存与原文不能放到公开 PR。
+- --refresh 主动重取；缓存与原文不能发布到 main。
 - 已在实际在线 QID、Wikipedia 页面、实体搜索与章节读取上验证，另有离线缓存/
   revision/有界关联项回归测试；并不表示完整 Agent 编排已上线。
 
@@ -58,8 +59,7 @@ oldid 固定文章 revision，但模板渲染可能变化；实际观察的响�
 ## Host-local cache across Research subagents
 
 Research subagents on one host may use `UNIVERSITY_SOURCE_CACHE` or global
-`--cache ABSOLUTE_PATH` for that host's private cache. Independent Review uses
-its own role-scoped cache, including in the same workspace. Same-key
+`--cache ABSOLUTE_PATH` for that host's private cache. Review reads the Research snapshot offline and never opens a source cache for new retrieval. Same-key
 requests on one host are serialized with an OS file lock and
 recheck the 30-day cache after acquiring the lock; different keys remain parallel.
 A failed process releases its OS lock automatically. This is a local-filesystem
@@ -67,5 +67,4 @@ sharing design, not a distributed lock for an arbitrary network filesystem.
 
 Money-unit QIDs may be looked up on demand: `wikidata-get Q4917 --properties P498`.
 Retain the resolved entity's revision and ISO-code claim when present; do not guess
-an ISO currency from the institution country. Review's revision-bound retrieval
-is tracked separately from Research's shared latest-entity lookup.
+an ISO currency from the institution country. Review verifies the exact captured entity revisions offline.

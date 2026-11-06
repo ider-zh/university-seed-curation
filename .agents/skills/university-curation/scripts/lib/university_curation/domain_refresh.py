@@ -1,12 +1,12 @@
 """Deterministic append-only merge of independently reviewed domain observations.
 
 This adapter intentionally does not implement corrections, withdrawals, or arbitrary
-JSON patching.  Its input is a freshly compiled pilot transport record.
+JSON patching.  Its input is a freshly compiled native Research transport record.
 """
 from copy import deepcopy
 from decimal import Decimal
 
-from .pilot_protocol import compile_record, GROUPS
+from .research_schema import compile_record, GROUPS
 from .preferred import recompute, validate, fields
 from .records import instant
 

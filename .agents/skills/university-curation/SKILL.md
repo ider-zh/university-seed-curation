@@ -1,109 +1,61 @@
 ---
 name: university-curation
-description: Research or independently review university records in the current workspace using native subagents, a connected GitHub plugin and deterministic local validation.
+description: Orchestrate native Research and offline Review subagents for university data, recover tasks and publish approved records directly to main through the connected GitHub plugin.
 ---
 
 # University curation
 
-## Current operator workflow: Research and Review subagents, direct main
+Use one Main Agent in one workspace, native Research and Review subagents, and
+only the main branch. Read AGENTS.md, docs/handoff.md, docs/agent-workflow.md and
+docs/commands.md. Start with references/main-agent.md. Research and Review role
+references describe subagent responsibilities, not standalone worker services.
 
-For NEW batches, one manager Agent dispatches Research subagents (one QID each)
-and a **distinct Review subagent** for critical offline assessment of the
-hash-checked source packet. Manager validates the structured Review result and
-commits approved records directly to main with an expected-head guard. No data
-PRs. Review never re-fetches sources, reads Research-private model traces, or
-publishes. Use `unified-proposal`, `review-prepare --shared-cache --research-job`,
-`review-compile`, and `unified-publish`; see `docs/commands.md`. Research and
-Review sessions must differ; no cryptographic role identity is implied.
+Verify the checkout origin, fetch public origin/main and preserve private work.
+Clone into a child directory only when absent. Use trusted main code. The host
+owns GitHub plugin and native subagent tools; Python never launches a model or
+requires a shell token, signing key, gh, Codex CLI, SSH or another host.
 
-Research must first exhaust Wikidata + multilingual Wikipedia, then do bounded
-gap-directed external deep research: maximum 8 queries, 12 pages, 5 domains,
-2 hops and 15 minutes per QID. Submit confirmed HTTPS website URLs to the
-bounded `--external-leads` capture adapter; the trusted v0.2.2 schema supports
-`website` sources with pinned local snapshot digest. Keep captures cached
-for 30 days, review all source-supported claims without a second retrieval,
-and mark unsupported gaps unresolved. Generate an evidenced neutral English
-`profile.summary` (180–260 words, 90–179 for sparse evidence) for university
-detail pages where sources permit. Read `docs/deep-research.md` and
-`docs/university-overview.md`. The older sections below document legacy PR
-compatibility and do not override these current instructions.
+1. Run doctor and next --limit 5. Follow returned actions/reasons, prioritizing
+   interrupted publication, approved work, Review and revisions. Do not read or
+   create coordination branches, PRs, permits or distributed role registries.
+2. Run research-prepare for one QID in a fresh private job. Dispatch its exact
+   prompt/schema to a native Research subagent. Record actual metadata, compile
+   its JSON, then use unified-proposal before Review.
+3. Run review-prepare with --research-job into a fresh private Review directory.
+   Dispatch a distinct Review subagent with only its prepared packet/prompt/schema.
+   It must check the frozen hash-verified snapshot offline, not re-fetch sources
+   or read Research-private model traces. Run review-compile on its actual JSON.
+4. On request_changes, retain request IDs/proposal hashes, start fresh Research
+   with saved feedback and repeat Review. After rejection/unresolved, publish and
+   confirm a compact checkpoint of questions/revision counters before continuing.
+   Maximum two revisions. Never fabricate
+   approval or publish unresolved cases. next returns pending actions and recovery
+   reasons from local checkpoints and main's compact backlog.
+5. Run unified-publish for up to five approved schools. Execute exactly its
+   GitHub blob/tree/commit/ref plan with expected_sha and force:false on main.
+   Refresh and re-review on conflict. Fetch the actual published main and run
+   publication-confirm before reporting completion.
 
-Read AGENTS.md and docs/handoff.md. Choose Research manager, one-QID Research
-subagent, or independent Review. Repository:
-https://github.com/ider-zh/university-seed-curation.
+Keep at most three active data calls including one Review; reserve waiting Review
+capacity and heartbeat active jobs. Use the same workspace for private recovery.
+After a cache/job loss, rebuild evidence; a public historical proposal is not a
+substitute for captured sources. Historical receipts remain audit artifacts.
 
-Run in the current workspace, reusing its checkout. Clone into a child directory
-only if absent. Preserve existing work and use trusted main code. Separate hosts
-are optional. Both roles may share a checkout in independent sessions.
+Exhaust Wikidata and relevant multilingual Wikipedia before targeted external
+gap research. Limits per QID: 8 queries, 12 pages, 5 domains, 2 hops, 15 minutes;
+stop after two searches without credible new information. Use the bounded
+external capture adapter, hash-bound paragraph evidence and shared private
+30-day cache. Read docs/deep-research.md and docs/source-tools.md.
 
-## Native execution (default)
+Preserve institution/system/campus/predecessor boundaries, original language,
+periods, units and conflicts. Omit absent business values; never invent zeros.
+Root P625 is script-owned and institution-scoped. Use deterministic append-only
+materialization, not hand-edited canonical JSON or receipt/hash repairs.
+Follow immutable docs/review-policy-v2.md. Full six-group surveys alone advance
+update_datetime; partial accepted work has a separate seven-day retry interval.
 
-GitHub operations use the host's **connected GitHub plugin**. Model work uses
-the host's **built-in subagent tool**. No signing key, shell token, gh, Codex CLI
-or SSH is required. Never infer plugin authentication from environment variables.
-Local doctor checks repository, signed input catalog and contracts; the host
-Agent separately verifies plugin/subagent capabilities. Historical catalog
-signatures are checked with public keys, without generating a Research key.
-
-All executable helpers and implementation live in scripts/ and scripts/lib/.
-agent.py defaults to native mode. Run from the checkout root or pass --workspace.
-Do not use register-key, the legacy research/publish loop, or --runtime cli as a
-workaround for native execution. The old signed CLI runtime remains explicit
-compatibility only; historical artifacts remain verifiable.
-
-## Research manager
-
-Read references/research-agent.md for the full startup instruction.
-
-1. Use the GitHub plugin to read main, open PRs/comments and complete coordination
-   state. next only proposes candidates, never claims them.
-2. coord-plan builds an **uncommitted plan**. Execute its plugin blob/tree/commit/
-   guarded ref operations, substitute returned SHAs, then confirm the ref.
-   On conflict reread/replan. Preserve old public Draft heads before replacement.
-3. Claim one QID per subagent. research-prepare writes a private prompt, strict
-   schema and source packet. Acquire a global model slot before native dispatch,
-   renew task/model leases, and cancel on loss. research-compile validates the
-   returned JSON and generates a compact unreviewed proposal.
-4. draft creates a bounded structured bundle and plugin publication plan.
-   Use an independent main-based branch, at most five schools per PR and three
-   active PR permits. Create Draft PRs with the plugin.
-5. Native owner-authored Review comments feed revisions back into the same PR.
-   Carry earlier question IDs, two revisions maximum, then unresolved.
-6. finalize requires exact independent Review decisions and no open objections.
-   Publish only its approved files and receipts, mark ready, and await human merge.
-   Confirm immutable receipts on actual main before marking tasks merged.
-
-## Independent Review
-
-Read references/review-agent.md.
-
-Use review-prepare to independently retrieve cited revisions and enumerate every
-fact/context. Dispatch a fresh native subagent under the global Review lease,
-then review-compile and decision. Post the generated structured comment through
-the plugin after rechecking the head. Review cannot share the Research session.
-Keep role-local caches and private jobs separate even in one workspace.
-
-Native comments are attributed to the actual configured repository-owner login
-and bound to PR, proposal digest, head, schema, policy and session. They are
-**not cryptographic role signatures**. The same account can represent both roles;
-independence is a workflow requirement and human merge remains explicit.
-
-## Data and sources
-
-Use sources.py for bounded online Wikidata, necessary linked items and
-revision-bound Wikipedia. Currency QIDs may be queried and retained with their
-revision. Each role uses its own private cache; raw sources never enter GitHub.
-Root P625 is script-owned and is not automatically a campus/headquarters point.
-
-Missing business fields are omitted; preserve explicit unknown/no-value,
-original language, subject, periods, units, historical events and conflicts.
-Preferred is a presentation choice, not proof a conflict is resolved.
-Follow immutable docs/review-policy-v2.md for reasonable disclosed inference.
-Wrong subjects/numbers/units and unsupported legal independence fail.
-
-Full six-group Research + Review surveys alone advance update_datetime.
-Partial/batch changes preserve it. School paths use SHA-256(QID)[:2], 256 buckets.
-Schema major changes and official releases require human approval.
-
-Read docs/commands.md for native commands, docs/data-contract.md for fields,
-docs/source-tools.md for sources, and docs/reviewed-pr-export.md for merge checks.
+Generate a sourced neutral English profile.summary when possible, normally
+180–260 words, 90–179 for sparse evidence, in 2–3 paragraphs; read
+docs/university-overview.md. Keep raw pages/dumps, captures, prompts, model
+outputs/traces and credentials private. Only approved records, permitted short
+excerpts, manifests, receipts and compact task metadata are published.

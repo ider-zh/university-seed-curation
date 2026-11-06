@@ -1,63 +1,44 @@
 # Current state and handoff
 
-## Operator decision, 2026-11-05 (supersedes workflow below)
+The 2026-11-06 operator decision replaces all branch/PR coordination with one
+Main Agent orchestrating Research and Review subagents in one workspace.
+Only main remains. Development and approved-data publication go directly to main
+through the connected GitHub plugin with expected-SHA protection.
 
-New university data batches use one manager Agent with distinct native Research
-and Review subagents. Review verifies Research's hash-checked, revision-bound
-**offline** snapshot without duplicate HTTP requests or Research model traces.
-No data PR. The manager publishes approved batches directly to main with a
-guarded expected-head update;
-schema changes and official dataset release still need a human decision.
-External deep research is constrained to 8 searches/12 pages/5 domains/2 hops/
-15 minutes per QID, after fully inspecting Wikidata/Wikipedia. The existing
-schema supports website facts; a bounded HTTPS capture adapter now provides
-hash-bound website evidence and reuse across offline Review. Main-page
-`profile.summary` is a sourced 180–260-word English overview (90–179 if sparse).
-See docs/commands.md, docs/deep-research.md, docs/university-overview.md. The
-rest of this handoff is historical background about the previous two-session
-PR workflow, not current operating instruction.
+The CLI no longer exposes Draft, finalize, PR decision, coord-plan, key
+registration or an alternate CLI/provider runtime. Obsolete PR Actions and
+signed model-runner scripts have been removed. Pure source/evidence/materialization
+checks are now shared by the native workflow instead of invoking old runners.
 
-The active implementation is the **GitHub-coordinated workflow**, executed in
-the current workspace using the connected GitHub plugin and native subagents.
-Research and Review use independent sessions and separate private jobs/caches;
-they may share a checkout. No keys, shell tokens, gh or Codex CLI are required.
-The former shared-host queue is a historical offline prototype, not production
-authority. Original trials and source captures remain private and unchanged.
+Five existing canonical records and all existing batch/review receipt bytes are
+preserved. Historical Q681/Q1060 proposals were moved, without changing bytes,
+to data/history/proposals. They are unreviewed historical evidence. Their
+pending work, Q1377's interrupted task and Q519556's coordinate follow-up are
+tracked by data/workflow/tasks.json. Q681's prior objection ID remains open.
+A merge of the old PRs is not a Review approval or canonical publication.
 
-PR #9 (workflow) and PR #10 (seed/bucket bootstrap) are merged. At `2790342`,
-main contains the signed candidate catalog and three approved school records
-under the two-hex, 256-bucket layout. Their bytes were preserved during migration.
-Q519556's coordinate correction remains a separate reviewed change; earlier
-feature-branch merges did not apply that correction to main.
+The branch-cleanup manifest records the 18 removed branch names and head SHAs.
+No coordination tokens or private caches were exported. Existing historical
+signatures and schema files are retained for audit, not as execution modes.
 
-The candidate files are now versioned on main:
-`data/seeds/primary.json` has 39,489 rows (34,672 included / 4,817 needs_review);
-`discovery.json` has 64,667 legacy-only QIDs. A signed manifest records exact
-source hashes and operator authorization for **candidate import only**.
-This is not factual acceptance or an external dataset release.
+Private .private/native/manager-state.json stores job progress, expiry and retries.
+An OS lock serializes checkpoint writes. The manager enforces three data calls,
+one Review, one active subagent per QID. This is deliberately a single-manager
+workflow, not a distributed worker service. Use the same checkout to retain
+captures; without private captures, rebuild Research evidence before Review.
 
-The startup prompts reuse the current workspace checkout and preserve existing
-work. If absent, clone into a child directory of that workspace. Scripts isolate
-per-PR branches/trees. agent.py defaults to native mode: doctor checks local
-contracts, prepare/compile handle model JSON, and coord-plan emits pending plugin
-operations. The host executes and confirms those operations before taking work.
-GitHub remains the shared task/Review channel even on one host.
+Run doctor, inspect next actions, then follow docs/commands.md. Source/API errors
+are not successful research. Review requires a hash-verified Research snapshot
+and has no network replay fallback. Publication includes task-backlog removal
+in the same data commit, then publication-confirm verifies the actual commit
+on fetched origin/main. Interrupted publication can be confirmed without
+submitting the same batch twice.
 
-Implemented: compact seed import, GitHub CAS task/model/
-PR lease plans, bounded native Research and independent Review, persistent objections,
-two-round revision entry, approved-only PR materialization, stale-base checks,
-private incremental recency indexing, and deployable trusted-main event scripts.
-All skill implementation remains inside the skill folder.
+The source adapters retain bounded online Wikidata/Wikipedia retrieval, shared
+30-day captures, root P625 checks, bounded external website capture and sourced
+English institutional summaries. maxlag/429/503 honor Retry-After within a
+bounded local wait; longer failures return a retryable task to the manager.
 
-Not yet demonstrated: a complete live native-subagent Research/Review PR cycle.
-Not configured: enabled event queue dispatch, a continuously
-running Review worker, required statuses/branch protection, or automatic merge.
-No webhook/service is deployed. Event dispatch defaults off. Human merging
-remains explicit. Native account/session attribution is not cryptographic role
-identity. Actual model/session metadata is caller-reported; missing host metadata
-is not_reported. Historical signed CLI adapters remain available explicitly.
-
-Read README → AGENTS → role startup prompt / SKILL. Consult the data contract,
-commands, source tools and immutable review-policy-v2 only as needed.
-Historical designs are available in Git history; do not duplicate old operating
-instructions into current docs.
+Formal external dataset releases remain separate operator decisions. Local
+checks, plugin permissions and actual subagent execution must be reported
+separately; no runtime may fabricate a model identity or Review approval.

@@ -9,7 +9,7 @@ sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'.agents/skills/univer
 from university_curation import native_research as native
 from university_curation.attestations import sha
 from university_curation.records import ROOT, encode
-from test_pilot_protocol import fixture
+from test_research_schema import fixture
 
 BASE='a'*40; POLICY='test native policy\n'
 

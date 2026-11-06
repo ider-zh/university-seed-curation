@@ -1,35 +1,35 @@
 # University Seed Curation
 
-Script-managed records for global present and historical higher education:
-online Wikidata/Wikipedia research, independent review, and small GitHub PRs.
+Reliable structured data about global present and historical higher-education
+institutions. One Main Agent orchestrates native Research and Review subagents,
+then publishes approved records directly to `main` through the GitHub plugin.
 
-Research and Review run in the current workspace using independent native
-subagent sessions and the connected ChatGPT GitHub plugin. No signing keys,
-shell tokens, gh or Codex CLI are needed. They share GitHub task refs, Draft PRs
-and structured owner-attributed comments. Drafts contain candidates; main contains
-approved records and receipts. Raw sources and model traces stay private.
+There is one workflow and one branch. Task progress lives in private local jobs;
+a compact pending-task list on main preserves unfinished migration work. Review
+uses the same hash-verified evidence offline. Sources, prompts and model traces
+remain private; approved records and review receipts are public.
 
-Start here:
+- [Manager startup prompt](.agents/skills/university-curation/references/main-agent.md)
+- [Operating contract](AGENTS.md), [current handoff](docs/handoff.md)
+- [Workflow](docs/agent-workflow.md), [commands](docs/commands.md)
+- [Data contract](docs/data-contract.md), [review policy](docs/review-policy-v2.md)
+- [Source tools](docs/source-tools.md), [bounded deep research](docs/deep-research.md)
+- [University overview](docs/university-overview.md)
 
-- [Current state](docs/handoff.md)
-- [Research startup prompt](.agents/skills/university-curation/references/research-agent.md)
-- [Review startup prompt](.agents/skills/university-curation/references/review-agent.md)
-- [Built-in skill](.agents/skills/university-curation/SKILL.md)
-- [Workflow](docs/agent-workflow.md) and [commands](docs/commands.md)
-- [Data contract](docs/data-contract.md), [source tools](docs/source-tools.md)
-- [Review policy](docs/review-policy-v2.md), [PR validation](docs/reviewed-pr-export.md)
+```bash
+python -m pip install -e .
+python .agents/skills/university-curation/scripts/agent.py doctor
+python .agents/skills/university-curation/scripts/agent.py next --limit 5
+```
 
-The candidate import contains **39,489 primary** and **64,667 discovery** QIDs,
-kept in compact `data/seeds/` lists. Research creates full school records lazily,
-one file at `data/universities/<sha256(QID)[:2]>/<QID>.json` (256 buckets).
-Importing seeds does not approve their university identities.
+The signed candidate import contains 39,489 primary and 64,667 discovery QIDs.
+Candidate membership does not establish a university's identity. Source-backed
+observations retain original subjects, languages, periods, units and conflicts.
 
-One Research manager dispatches one-QID subagents. GitHub leases enforce three
-total model calls and one Review call; every batch starts from main in an isolated
-worktree. A full refresh is due after six calendar months. Missing fields are
-omitted; sourced observations, conflicts and preferred references remain explicit.
+At most three concurrent data calls, including at most one Review; five schools
+per publication batch; two Research revisions per school. A full six-group
+survey alone advances freshness. Publication is complete only after remote
+canonical bytes and receipts have been verified.
 
-All executable skill code lives under `.agents/skills/university-curation/scripts/`.
-Offline checks: `python -m unittest discover -s tests`.
-Current docs describe one current workflow; previous designs remain in Git history.
-Read handoff for bootstrap status and execution prerequisites.
+Previous workflows are available in Git history. Frozen historical proposals
+and branch cleanup provenance are under data/history; they are not approvals.

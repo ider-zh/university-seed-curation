@@ -11,13 +11,13 @@ import re
 import jsonschema
 
 from .attestations import load_json, private_path, sha
-from .distributed_jobs import (RESEARCH_RULES, coordinate_aliases, coordinate_delta,
+from .research_contract import (RESEARCH_RULES, coordinate_aliases, coordinate_delta,
     guard_root_coordinates, source_languages, _clean_failures, _open_requests, _public_evidence, _root)
-from .distributed_protocol import trust_at, catalog_at, seed_metadata, baseline_at
+from .workflow_contract import trust_at, catalog_at, seed_metadata, baseline_at
 from .domain_refresh import compile_delta, materialize
-from .pilot_protocol import RESEARCH_INSTRUCTIONS, RESEARCH_SCHEMA
-from .pilot_sources import prepare_case
-from .pr_export import blob, commit, git
+from .research_schema import RESEARCH_INSTRUCTIONS, RESEARCH_SCHEMA
+from .source_packet import prepare_case
+from .git_data import blob, commit, git
 from .records import encode, instant, qid as valid_qid
 from .sources import Cache
 from .web_sources import collect as capture_external, verify_packet as verify_web_packet

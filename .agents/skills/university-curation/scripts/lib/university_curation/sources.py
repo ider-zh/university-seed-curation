@@ -7,6 +7,9 @@ import os
 from pathlib import Path
 import re
 import time
+import random
+import math
+from email.utils import parsedate_to_datetime
 import tempfile
 from urllib.error import HTTPError
 from urllib.parse import urlencode, urljoin
@@ -18,20 +21,39 @@ from .cache_lock import request_lock
 USER_AGENT = "UniversitySeedCuration/0.2 (https://github.com/ider-zh/university-seed-curation)"
 
 
+class RetryableSourceError(RuntimeError):
+    def __init__(self, code, retry_after):
+        self.code=code; self.retry_after=max(1,math.ceil(retry_after))
+        super().__init__('Temporary Wikimedia source failure: '+code)
+
+
+def _retry_seconds(value):
+    try:
+        seconds=float(value)
+        return max(0,seconds) if math.isfinite(seconds) else 0
+    except (TypeError,ValueError):
+        try: return max(0,(parsedate_to_datetime(value)-datetime.now(timezone.utc)).total_seconds())
+        except (TypeError,ValueError,OverflowError): return 0
+
+
 def download(url):
+    # Never shorten server Retry-After. If it exceeds the local wait budget,
+    # return control to the manager so other QIDs can proceed.
+    waited=0
     for attempt in range(3):
         try:
-            request = Request(url, headers={"User-Agent": USER_AGENT, "Accept": "application/json"})
-            with urlopen(request, timeout=45) as response:
-                data = json.load(response)
-            if data.get("error", {}).get("code") == "maxlag" and attempt < 2:
-                time.sleep(attempt + 1); continue
-            return data
+            request=Request(url,headers={'User-Agent':USER_AGENT,'Accept':'application/json'})
+            with urlopen(request,timeout=45) as response:
+                data=json.load(response); retry=_retry_seconds(response.headers.get('Retry-After'))
+            code=data.get('error',{}).get('code')
+            if code!='maxlag': return data
         except HTTPError as error:
-            if error.code not in (429, 503) or attempt == 2: raise
-            retry = error.headers.get("Retry-After", "2")
-            time.sleep(min(max(float(retry), 1), 5) if retry.isdigit() else 2)
-    raise RuntimeError("API retry budget exhausted")
+            if error.code not in (429,503): raise
+            code='http_'+str(error.code); retry=_retry_seconds(error.headers.get('Retry-After'))
+        delay=max(retry,5*(2**attempt)+random.uniform(0,1))
+        if attempt==2 or waited+delay>30:
+            raise RetryableSourceError(code,max(60,delay))
+        time.sleep(delay); waited+=delay
 
 
 def language(value):

@@ -1,4 +1,4 @@
-"""Bounded real-source packets and independent pinned-revision replay for pilot roles."""
+"""Bounded Wikidata/Wikipedia capture for native Research; Review reuses the snapshot."""
 from datetime import datetime, timezone
 import json
 from pathlib import Path
@@ -6,22 +6,8 @@ import re
 
 from .sources import Cache
 
-CASES = [
-    {"qid": "Q13371", "name": "Harvard University", "languages": ["en"], "focus": ["population_finance", "multiperiod_history"]},
-    {"qid": "Q34433", "name": "University of Oxford", "languages": ["en"], "focus": ["college_institution_boundary", "historical_milestones"]},
-    {"qid": "Q10924764", "name": "Sichuan Agricultural University", "languages": ["zh", "en"], "focus": ["multilingual", "multiple_campuses"]},
-    {"qid": "Q7842", "name": "University of Tokyo", "languages": ["ja", "en"], "focus": ["multilingual", "milestone_changes"]},
-    {"qid": "Q151510", "name": "Heidelberg University", "languages": ["de", "en"], "focus": ["multilingual", "long_history"]},
-    {"qid": "Q168756", "name": "University of California, Berkeley", "languages": ["en"], "focus": ["system_member_institution", "campus_boundary"]},
-    {"qid": "Q7896178", "name": "University of Puerto Rico at Ponce", "languages": ["es", "en"], "focus": ["branch_institution_boundary", "independence_requires_evidence"]},
-    {"qid": "Q1075625", "name": "University of Nottingham Ningbo China", "languages": ["zh", "en"], "focus": ["overseas_campus_and_independent_entity", "multilingual"]},
-    {"qid": "Q2845896", "name": "University of Paris (medieval institution)", "languages": ["fr", "en"], "focus": ["historical_institution", "successor_identity_boundary"]},
-    {"qid": "Q519556", "name": "National Southwestern Associated University", "languages": ["zh", "en"], "focus": ["historical_institution", "merger_and_separation"]}
-]
-RELEVANT = re.compile(r"lead|histor|found|origin|organ|admin|govern|campus|financ|student|academ|budget|endow|staff|statistic|name|president|rector|概要|沿革|歴史|組織|学生|教職|歴代|校史|历史|歷史|组织|組織|学生|學生|经费|經費|校园|校園|校区|校區|校长|校長|财|財|histoire|organisation|gouvernance|effectif|président|geschichte|rektor|universität|estudiante|historia|rector", re.I)
 PROP_RE = re.compile(r"student|employee|staff|budget|endowment|revenue|income|expend|expense|asset|funding|inception|dissol|coordinate|country|administrative|headquarters|official name|native label|short name|official website|logo|image|rector|president|head of|chair|parent|subsidiary|part of|replaces|replaced by|instance of|subclass|motto|language of", re.I)
 CORE_PROPERTIES = {"P31", "P17", "P131", "P159", "P625", "P571", "P576", "P856", "P18", "P154", "P488", "P169", "P749", "P361", "P355", "P1365", "P1366", "P1128", "P2196", "P1448", "P1705", "P1813", "P5584", "P5586", "P5242"}
-
 
 def save(path, value):
     path = Path(path); path.parent.mkdir(parents=True, exist_ok=True)
@@ -119,18 +105,3 @@ def prepare_case(case, root, source_cache=None):
         "retrieval_failures": failures, "property_labels": labels, "captured_at": datetime.now(timezone.utc).isoformat()}
     save(directory / "research-packet.json", packet); save(directory / "source-inventory.json", inventory)
     return {"qid": case["qid"], "sources": len(source_map), "wikipedia_languages": [s["language"] for s in source_map.values() if s["kind"] == "wikipedia"], "retrieval_failures": failures}
-
-
-def replay_packet(packet, root):
-    cache = Cache(Path(root) / "independent-review-cache", maxlag=30); corpus = {}; log = []
-    for ref, source in packet["sources"].items():
-        if source["kind"] == "wikidata":
-            entity, meta = cache.entity_revision(source["source_qid"], source["revision_id"])
-            corpus[ref] = wikidata_corpus(entity, packet["property_labels"], packet["case"]["languages"], source["source_qid"] == packet["case"]["qid"])
-        elif source["kind"] == "wikipedia":
-            page = cache.wikipedia_get(source["language"], oldid=source["revision_id"])
-            if page["page_id"] != source["page_id"]: raise ValueError("Review page identity mismatch")
-            meta = page; corpus[ref] = wikipedia_corpus(page)
-        else: raise ValueError("Unexpected pilot source kind")
-        log.append({"source_ref": ref, "revision_id": source["revision_id"], "review_retrieved_at": meta["retrieved_at"], "cache_path": meta["cache_path"]})
-    return {**packet, "source_corpus": corpus}, log

@@ -3,7 +3,7 @@
 For new records the manager Agent dispatches separate Research and Review
 subagents, validates their outputs and publishes directly to main. Research
 captures evidence; Review critically assesses it offline. Subagents never
-publish. Existing data PRs are reconciled separately; they cannot be
+publish. Historical proposals are archived under data/history; they cannot be
 assumed approved merely because this new pipeline exists.
 
 ## Search priority

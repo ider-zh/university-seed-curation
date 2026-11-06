@@ -5,7 +5,7 @@ import sys
 import unittest
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / ".agents/skills/university-curation/scripts/lib"))
-from university_curation.pilot_protocol import compile_record, review_gate, GROUPS
+from university_curation.research_schema import compile_record, review_gate, GROUPS
 
 
 def fixture():

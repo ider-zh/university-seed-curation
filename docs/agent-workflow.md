@@ -1,84 +1,79 @@
-# Native Research and Review workflow
+# Single-manager Research and Review
 
-Repository: https://github.com/ider-zh/university-seed-curation.
-Run in the current workspace. Reuse the checkout and preserve existing work;
-clone into a child directory only if absent. Research and Review use independent
-sessions, optionally in the same checkout, with separate private jobs/caches.
+One Main Agent works from main, with one native Research subagent per QID and a
+separate native Review subagent. Python does not launch models. The host owns
+native subagent tools and the GitHub plugin. No remote coordination branches,
+PRs, separate Review service or shell GitHub credentials are used.
 
-## Execution boundary
+## Select and recover
 
-The host Agent owns the connected GitHub plugin and native subagent tool.
-Local Python prepares sources/tasks, validates strict JSON, generates records
-and emits GitHub operation plans. It does not inherit plugin credentials or
-launch Codex. No role signing keys, GH_TOKEN, gh or separate machine are required.
+Fetch origin/main, run doctor, then next --limit 5. next combines the main backlog,
+exact main publication receipts, refresh timestamps and private local jobs.
+It returns qid, action, reason, revision and open_requests. The priority order is
+verify interrupted publication, publish approved work, Review, Research revision,
+then new/recovered Research, primary before discovery. next remains advisory.
 
-doctor returns local_ready after checking the repository, input catalog and
-contracts. The host verifies plugin/subagent availability in its session.
-Missing shell credentials are not evidence that the plugin is disconnected.
+Prepare records an active local job under an OS-locked atomic checkpoint. It
+rejects duplicate active QIDs and exhausted capacity. There are at most three
+active data calls including at most one Review; waiting Review reserves capacity.
+Run job-heartbeat while a subagent is active. Job expiry permits recovery but
+keeps completed Research/Review progress. Compilation checks the current job
+identity so an obsolete job cannot replace newer work.
 
-## Tasks and model budget
+Temporary source failures enter retry_wait with retry_after and a resume phase.
+Validation errors keep outputs private. A completed partial survey has a separate
+seven-day retry interval; only full-refresh update_datetime has six-month freshness.
 
-One Research manager selects primary candidates before discovery candidates,
-using never-refreshed/six-calendar-month-old approved records. next is advisory.
-The manager reads current coordination refs through the plugin and generates a
-coord-plan for claims. It executes the returned blob/tree/commit/ref operations
-with expected-head protection and confirms the resulting ref before assignment.
+## Research and offline Review
 
-The same process grants/renews/releases global model slots: at most three calls
-across both roles, at most one Review, reserving capacity for waiting Review.
-A native subagent starts only after its model lease is confirmed. Renew leases
-while it runs and cancel on loss. Coordination remains on GitHub, not local files.
+research-prepare generates a fresh private job containing sources, root entity,
+prompt and strict schema. The manager supplies exactly these to Research, records
+its actual session/model metadata and runs research-compile. unified-proposal
+binds the compiled proposal to repository/catalog/schema/policy and main baseline.
 
-## Research and Draft PRs
+review-prepare requires --research-job. It verifies the Research packet/root
+hashes, copies the evidence into a separate Review job, and prepares every fact,
+context and prior request for Review. No HTTP retrieval fallback exists. Review
+reads only its packet/prompt/schema and returns strict JSON in a distinct session.
+review-compile validates complete coverage and cannot turn an incomplete or
+contradictory assessment into approval.
 
-research-prepare creates a private revision-bound source packet, prompt and
-strict output Schema. The manager dispatches one native subagent per QID, then
-research-compile validates its returned JSON, root P625 and deterministic delta.
-Actual model/session metadata is caller-reported, not provider-authenticated.
-Prefer Terra medium when offered by the host; do not fabricate unavailable
-metadata or introduce a CLI requirement.
+request_changes creates proposal-bound request IDs in the local checkpoint.
+The next Research attempt automatically receives the saved open_requests unless
+explicit feedback is supplied. At most two revisions per QID; unresolved or
+exhausted cases remain unpublished. Responses do not themselves constitute a
+Review approval. After request_changes/unresolved, use checkpoint, execute its
+main update and confirm it before continuing. This preserves question IDs and
+revision counters across loss of the private workspace. Publication bundles also
+checkpoint all other pending tasks using portable metadata.
 
-draft builds raw structured native proposals under data/proposals/BATCH/, with
-an explicit native manifest. No Research signature is required. Execute the
-bundle's plugin operations and create a Draft PR. Each batch starts from main
-in an isolated worktree/tree, at most five schools and three active PR permits.
-Raw pages, caches, source corpora and model logs remain private.
+## Direct publication
 
-## Independent Review and revisions
+unified-publish revalidates exact proposals, offline Review jobs/attempts,
+source counts, six coverage groups, canonical hashes and current main baseline.
+It produces only canonical records, receipts, a batch manifest and the updated
+main task backlog. Other pending backlog rows are preserved exactly.
 
-Review reads the public structured proposal through the plugin. review-prepare
-independently retrieves pinned revisions and enumerates every fact/context and
-earlier request. A fresh native subagent supplies strict checks; review-compile
-rejects missing checks, same Research session, unsupported facts and unaddressed
-requests. decision creates a PR/head/proposal-bound structured comment.
+Execute its blob/tree/commit/ref operations through the GitHub plugin. The main
+update has expected_sha and force:false. On conflict, fetch main and repeat
+Review against the new baseline before rebuilding the bundle.
 
-Comments use the university-native-review-v1 marker and actual repository-owner
-GitHub attribution. Same-account sessions are a workflow separation, not
-cryptographic independent identities. Only a later valid Review addressing a
-request can resolve it; a head change or Research response cannot.
+Fetch the published main and run publication-confirm against the actual commit.
+It checks the planned parent, main ancestry and every file hash before recording
+completed. If the process stopped after the ref update, confirm that same bundle
+and commit; do not create a replacement batch. Main manifests and receipts are
+authoritative across sessions. A local state or successful operations plan alone
+is not publication.
 
-Research revises the same PR, maximum two rounds per school. Beyond that mark
-unresolved and preserve the failed public Draft head through coordination
-ancestry. Approved siblings can proceed independently after unresolved schools
-are explicitly removed from the final batch.
+## Storage and history
 
-## Finalization and completion
+Keep source captures, model results/prompts and job paths private. Main contains
+compact portable backlog metadata, not raw packets or active-worker secrets.
+Private jobs can optimize recovery in the same workspace; after their loss,
+rebuild evidence from the retained QID and open questions.
 
-finalize uses current main, actual PR number and complete plugin comment history.
-It requires the latest owner-authored independent approval, no open questions,
-unchanged school baseline and exact deterministic record hash. It generates
-canonical records, native receipts and a final manifest. Publish via guarded
-plugin ref updates, mark ready, and await human merge.
-
-Unrelated main changes permit mechanical rebind; changed same-school data needs
-fresh Research/Review. Confirm immutable receipts actually reached main before
-marking tasks merged. Closed unmerged PRs are unresolved, not blindly resubmitted.
-
-Only a complete six-group survey advances update_datetime. Missing/disputed
-values may remain disclosed; uncertain identity/source failures prevent complete
-freshness. Partial changes preserve that timestamp.
-
-Trusted CI checks use actual GitHub comment authors/history and exact blobs.
-Required-check/branch-protection setup and event deployment remain separate.
-No automatic merge is enabled. Native Review can poll via the plugin; queue-only
-Actions entry remains optional and disabled until configured.
+Frozen historical proposals are under data/history/proposals; current commands
+never read them as an approved proposal or re-enable their old PR protocol.
+Canonical observations and signed historical receipt bytes are not rewritten
+by this workflow migration. Dataset schema/policy and official release decisions
+remain operator controlled.
