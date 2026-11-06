@@ -1,0 +1,635 @@
+{
+  "attribution": "distinct_native_research_and_review_subagents;not_cryptographic_identity",
+  "research": {
+    "baseline_sha256": "absent",
+    "candidate": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-06T22:56:51.175811+00:00",
+          "status": "not_found"
+        },
+        "geography": {
+          "checked_at": "2026-11-06T22:56:51.175811+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-06T22:56:51.175811+00:00",
+          "status": "checked"
+        },
+        "identity": {
+          "checked_at": "2026-11-06T22:56:51.175811+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-06T22:56:51.175811+00:00",
+          "status": "not_found"
+        },
+        "profile": {
+          "checked_at": "2026-11-06T22:56:51.175811+00:00",
+          "status": "not_found"
+        }
+      },
+      "curation": {
+        "identity_status": "in_scope"
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "claim:P571:0",
+                      "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q93423291$CE00AA11-0E92-44DD-9A37-8225902165B9\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+2009-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}, \"reference_count\": 1}",
+                      "source_ref": "s1"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 2009
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "establishment",
+            "kind": "institution_establishment",
+            "subject_ref": "institution"
+          }
+        ]
+      },
+      "identity": {
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "metadata",
+                  "original_text": "{\"id\": \"Q93423291\", \"labels\": {\"en\": \"Adarsh Samaj Mahavidyalaya, Dolatpur\"}, \"descriptions\": {\"en\": \"college affiliated to the Dr. B. R. Ambedkar University\"}}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "claim:P31:0",
+                  "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q93423291$E918A44E-3C5F-4DCD-99E2-186A2DFCA18C\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 189004, \"id\": \"Q189004\"}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "metadata",
+                  "original_text": "{\"id\": \"Q189004\", \"labels\": {\"en\": \"college\"}, \"descriptions\": {\"en\": \"educational institution, varying in level from country to country\"}}",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "higher_education_college",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q93423291\", \"labels\": {\"en\": \"Adarsh Samaj Mahavidyalaya, Dolatpur\"}, \"descriptions\": {\"en\": \"college affiliated to the Dr. B. R. Ambedkar University\"}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "Adarsh Samaj Mahavidyalaya, Dolatpur",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "locations": [
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q93423291$AC620B62-60CC-41E8-8E33-83C29F4B1451\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 1946950, \"id\": \"Q1946950\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q93423291$3F38D19F-FD27-4AA3-89BC-323770475EDB\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 668, \"id\": \"Q668\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q1946950\", \"labels\": {\"en\": \"Firozabad district\"}, \"descriptions\": {\"en\": \"district of Uttar Pradesh, India\"}}",
+                    "source_ref": "s4"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q668\", \"labels\": {\"en\": \"India\"}, \"descriptions\": {\"en\": \"country in South Asia\"}}",
+                    "source_ref": "s3"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "country_name": "India",
+                  "country_qid": "Q668",
+                  "formatted": {
+                    "language": "en",
+                    "text": "Firozabad district, India"
+                  },
+                  "region_name": "Firozabad district",
+                  "region_qid": "Q1946950"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "district",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q93423291$AC620B62-60CC-41E8-8E33-83C29F4B1451\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 1946950, \"id\": \"Q1946950\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q1946950\", \"labels\": {\"en\": \"Firozabad district\"}, \"descriptions\": {\"en\": \"district of Uttar Pradesh, India\"}}",
+                    "source_ref": "s4"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Firozabad district"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q1946950"
+        }
+      ],
+      "modified_datetime": "2026-11-06T22:58:34.388518+00:00",
+      "qid": "Q93423291",
+      "record_revision": 1,
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "legacy_discovery"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "needs_review"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:56:39.777229+00:00",
+          "revision_id": 1192369355,
+          "source_qid": "Q93423291",
+          "url": "https://www.wikidata.org/w/index.php?oldid=1192369355"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:56:43.830365+00:00",
+          "revision_id": 2556557061,
+          "source_qid": "Q189004",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2556557061"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:56:46.509690+00:00",
+          "revision_id": 2563722390,
+          "source_qid": "Q668",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2563722390"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:56:51.165124+00:00",
+          "revision_id": 2563913964,
+          "source_qid": "Q1946950",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2563913964"
+        }
+      }
+    },
+    "coverage": [
+      {
+        "group": "identity",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "status": "checked"
+      },
+      {
+        "group": "population",
+        "status": "not_found"
+      },
+      {
+        "group": "finance",
+        "status": "not_found"
+      },
+      {
+        "group": "profile",
+        "status": "not_found"
+      }
+    ],
+    "delta": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-06T22:56:51.175811+00:00",
+          "status": "not_found"
+        },
+        "geography": {
+          "checked_at": "2026-11-06T22:56:51.175811+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-06T22:56:51.175811+00:00",
+          "status": "checked"
+        },
+        "identity": {
+          "checked_at": "2026-11-06T22:56:51.175811+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-06T22:56:51.175811+00:00",
+          "status": "not_found"
+        },
+        "profile": {
+          "checked_at": "2026-11-06T22:56:51.175811+00:00",
+          "status": "not_found"
+        }
+      },
+      "curation": {
+        "identity_status": "in_scope"
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "claim:P571:0",
+                      "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q93423291$CE00AA11-0E92-44DD-9A37-8225902165B9\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+2009-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}, \"reference_count\": 1}",
+                      "source_ref": "s1"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 2009
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "establishment",
+            "kind": "institution_establishment",
+            "subject_ref": "institution"
+          }
+        ]
+      },
+      "identity": {
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "metadata",
+                  "original_text": "{\"id\": \"Q93423291\", \"labels\": {\"en\": \"Adarsh Samaj Mahavidyalaya, Dolatpur\"}, \"descriptions\": {\"en\": \"college affiliated to the Dr. B. R. Ambedkar University\"}}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "claim:P31:0",
+                  "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q93423291$E918A44E-3C5F-4DCD-99E2-186A2DFCA18C\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 189004, \"id\": \"Q189004\"}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "metadata",
+                  "original_text": "{\"id\": \"Q189004\", \"labels\": {\"en\": \"college\"}, \"descriptions\": {\"en\": \"educational institution, varying in level from country to country\"}}",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "higher_education_college",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q93423291\", \"labels\": {\"en\": \"Adarsh Samaj Mahavidyalaya, Dolatpur\"}, \"descriptions\": {\"en\": \"college affiliated to the Dr. B. R. Ambedkar University\"}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "Adarsh Samaj Mahavidyalaya, Dolatpur",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "locations": [
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q93423291$AC620B62-60CC-41E8-8E33-83C29F4B1451\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 1946950, \"id\": \"Q1946950\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q93423291$3F38D19F-FD27-4AA3-89BC-323770475EDB\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 668, \"id\": \"Q668\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q1946950\", \"labels\": {\"en\": \"Firozabad district\"}, \"descriptions\": {\"en\": \"district of Uttar Pradesh, India\"}}",
+                    "source_ref": "s4"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q668\", \"labels\": {\"en\": \"India\"}, \"descriptions\": {\"en\": \"country in South Asia\"}}",
+                    "source_ref": "s3"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "country_name": "India",
+                  "country_qid": "Q668",
+                  "formatted": {
+                    "language": "en",
+                    "text": "Firozabad district, India"
+                  },
+                  "region_name": "Firozabad district",
+                  "region_qid": "Q1946950"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "district",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q93423291$AC620B62-60CC-41E8-8E33-83C29F4B1451\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 1946950, \"id\": \"Q1946950\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q1946950\", \"labels\": {\"en\": \"Firozabad district\"}, \"descriptions\": {\"en\": \"district of Uttar Pradesh, India\"}}",
+                    "source_ref": "s4"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Firozabad district"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q1946950"
+        }
+      ],
+      "qid": "Q93423291",
+      "record_revision": 1,
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "legacy_discovery"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "needs_review"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:56:39.777229+00:00",
+          "revision_id": 1192369355,
+          "source_qid": "Q93423291",
+          "url": "https://www.wikidata.org/w/index.php?oldid=1192369355"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:56:43.830365+00:00",
+          "revision_id": 2556557061,
+          "source_qid": "Q189004",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2556557061"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:56:46.509690+00:00",
+          "revision_id": 2563722390,
+          "source_qid": "Q668",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2563722390"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:56:51.165124+00:00",
+          "revision_id": 2563913964,
+          "source_qid": "Q1946950",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2563913964"
+        }
+      }
+    },
+    "open_requests": [],
+    "proposed_at": "2026-11-06T22:58:34.388518+00:00",
+    "qid": "Q93423291",
+    "research": {
+      "model": "not_reported",
+      "prompt_sha256": "3aec61ed00c0624f32a7e2c0480b57ad6aaa973c1f535971348a47db4eff1839",
+      "reasoning_effort": "not_reported",
+      "schema_sha256": "92e942f4fbf2ae28964462ea9ffa8312c5ee16a077a1e08b40aaaf741512422e",
+      "session": "/root/research_q93423291"
+    },
+    "retrieval_failures": [],
+    "review_status": "unreviewed",
+    "seed": {
+      "channels": [
+        "legacy_discovery"
+      ],
+      "import_id": "seed-84c3beb45367905f",
+      "screening_status": "needs_review"
+    },
+    "transport": {
+      "base_commit": "4df41fd43859bd17f98db25a6d97207bc2e9b5e3",
+      "protocol": "native-subagent-v1",
+      "repository": "ider-zh/university-seed-curation",
+      "review_policy": {
+        "id": "source-grounded-flexible-v2",
+        "sha256": "b8ed7d2897e4c31dbd81b1379aafdc1077a21d1a33949edbd2d896b0adf99db2"
+      },
+      "schema_sha256": "bfa496eafa9dffca56146214168db7f000b09161b8993129632e7202e1c88833",
+      "seed_catalog_sha256": "84c3beb45367905f513d650684283dd62a9c1b77962bdc34151a6ef05bfa03d4"
+    },
+    "type": "university-proposal-v1"
+  },
+  "review": {
+    "contexts_checked": 3,
+    "coverage_checks": [
+      {
+        "group": "identity",
+        "reason": "Frozen corpus contains relevant institution evidence for this survey group.",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "reason": "Frozen corpus supports completion of this survey group; root institution has no P625 statement and no related-item coordinate is promoted to campus.",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "reason": "Frozen corpus contains relevant institution evidence for this survey group.",
+        "status": "checked"
+      },
+      {
+        "group": "population",
+        "reason": "No relevant value found in the frozen corpus; not_found records the bounded survey result.",
+        "status": "not_found"
+      },
+      {
+        "group": "finance",
+        "reason": "No relevant value found in the frozen corpus; not_found records the bounded survey result.",
+        "status": "not_found"
+      },
+      {
+        "group": "profile",
+        "reason": "No relevant value found in the frozen corpus; not_found records the bounded survey result.",
+        "status": "not_found"
+      }
+    ],
+    "decision": "approve",
+    "facts_checked": 3,
+    "full_refresh": true,
+    "inferences": [
+      {
+        "id": "$.identity.kind:c1",
+        "reason": "s1 P31 identifies a college and its description specifies university affiliation; higher_education_college is a reasonable controlled classification."
+      },
+      {
+        "id": "identity",
+        "reason": "College classification and university affiliation support an in-scope higher education institution."
+      },
+      {
+        "id": "milestone:establishment",
+        "reason": "Institution inception in s1 P571 supports an establishment milestone without implying separate legal independence."
+      }
+    ],
+    "model": "GPT-6",
+    "proposal_sha256": "8500db8c908ee100878cf6711daf34149f7dac3e96fb0fedf4ec50066d538ae3",
+    "qid": "Q93423291",
+    "reasoning_effort": "not_reported",
+    "record_sha256": "a989a23cb1d3acedf18626db242385481dc7098c20c2e55e307019eb28d57722",
+    "request_responses": [],
+    "requests": [],
+    "review_scope": {
+      "not_independently_reviewed_ids": [
+        "$.locations[0].address:c1",
+        "$.locations[0].name:c1",
+        "location:district"
+      ],
+      "reviewed_ids": [
+        "$.history.milestones[0].date:c1",
+        "$.identity.kind:c1",
+        "$.identity.names.en:c1",
+        "country:$.locations[0].address:c1",
+        "identity",
+        "milestone:establishment"
+      ],
+      "version": "core-review-v3"
+    },
+    "review_session": "/root/capability_check/review3_934",
+    "reviewed_at": "2026-11-06T23:05:34.409632+00:00",
+    "source_revisions_checked": 4,
+    "waived_requests": []
+  },
+  "review_result_sha256": "bac52cba0c547bc1ca936d9a2a80cc2361ec7e456ff0feeea3e53628f0846e5f",
+  "type": "university-unified-receipt-v1"
+}
