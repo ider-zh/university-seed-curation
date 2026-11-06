@@ -89,6 +89,44 @@ def _prepare(repo,args):
         manager.failure(repo,entity,phase,error); raise
 
 
+
+def rebind_proposal(repo, proposal_file, output, base_ref='origin/main'):
+    """Invalidate stale approvals and bind unchanged Research to fetched main."""
+    from .workflow_contract import baseline_at, check_proposal, attach_transport
+    from .git_data import blob
+    source=private_path(proposal_file); proposal=_json(source); entity=proposal['qid']
+    base,trust,catalog,digest=_base(repo,base_ref)
+    baseline,_=baseline_at(repo,base,entity)
+    check_proposal(proposal,baseline,catalog,digest,trust)
+    manager.check_requests(manager.required_requests(repo,base,entity),proposal.get('open_requests',[]))
+    if proposal['transport']['base_commit']==base:
+        raise ValueError('Proposal is already bound to current main; prepare fresh Review')
+    rebound=attach_transport(proposal,trust['repository'],base,digest,trust)
+    def mutate(state):
+        task=state['tasks'].get(entity,{})
+        if task.get('phase') not in ('review_pending','ready_to_publish','publishing') or task.get('proposal')!=str(source):
+            raise ValueError('Rebind only the current inactive manager proposal')
+        # Match the immutable compiled Research body, never accept a new delta.
+        raw=dict(proposal); raw.pop('transport')
+        job=private_path(task['research_job'])
+        if not any(_json(p)==raw for p in (job/'compile-attempts').glob('*/public-proposal.json')):
+            raise ValueError('Proposal differs from compiled Research')
+        if task.get('bundle'):
+            plan=_json(Path(task['bundle'])/'operations.json')
+            for path,expected in plan['files'].items():
+                if path.startswith('data/batches/'):
+                    existing=blob(repo,base,path,optional=True)
+                    if existing is not None:
+                        raise ValueError('Batch already exists on main; confirm publication before rebinding')
+        path=_save(output,rebound)
+        for key in ('review_job','review_attempt','bundle','expires_at'):
+            task.pop(key,None)
+        task.update(phase='review_pending',proposal=str(path))
+        return {'status':'transport_rebound','qid':entity,'base_commit':base,
+                'proposal_path':str(path),'fresh_review_required':True}
+    return manager.update(repo,mutate)
+
+
 def main(argv=None):
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--workspace',default=str(ROOT))
@@ -99,7 +137,7 @@ def main(argv=None):
     p=sub.add_parser('review-prepare'); p.add_argument('--proposal',required=True); p.add_argument('--job',required=True); p.add_argument('--base-ref',default='origin/main'); p.add_argument('--research-job',required=True)
     for name in ('research-compile','review-compile'):
         p=sub.add_parser(name); p.add_argument('--job',required=True); p.add_argument('--result',required=True); p.add_argument('--session',required=True); p.add_argument('--model',required=True); p.add_argument('--effort',default='medium'); p.add_argument('--completed-at')
-    p=sub.add_parser('unified-proposal'); p.add_argument('--proposal',required=True); p.add_argument('--output',required=True); p.add_argument('--base-ref',default='origin/main')
+    p=sub.add_parser('unified-proposal'); p.add_argument('--rebind',action='store_true',help='Rebind the current inactive proposal after a main conflict; invalidate old approval'); p.add_argument('--proposal',required=True); p.add_argument('--output',required=True); p.add_argument('--base-ref',default='origin/main')
     p=sub.add_parser('unified-publish'); p.add_argument('--proposal',action='append',required=True); p.add_argument('--review-job',action='append',required=True); p.add_argument('--review-attempt',action='append',required=True); p.add_argument('--batch-id',required=True); p.add_argument('--base-ref',default='origin/main'); p.add_argument('--output',required=True)
     p=sub.add_parser('publication-confirm'); p.add_argument('--bundle',required=True); p.add_argument('--published-ref',required=True)
     p=sub.add_parser('checkpoint'); p.add_argument('--output',required=True); p.add_argument('--base-ref',default='origin/main')
@@ -118,6 +156,8 @@ def main(argv=None):
         else:
             manager.review_completed(repo,entity,a.job,result)
             result['checkpoint_required']=result['decision']!='approve'
+    elif a.command=='unified-proposal' and a.rebind:
+        result=rebind_proposal(repo,a.proposal,a.output,a.base_ref)
     elif a.command=='unified-proposal':
         entity=_json(a.proposal)['qid']; task=manager._read(repo)['tasks'].get(entity,{})
         if task.get('phase')!='review_pending' or task.get('proposal')!=str(private_path(a.proposal)):

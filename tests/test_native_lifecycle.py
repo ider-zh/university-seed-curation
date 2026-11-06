@@ -110,6 +110,50 @@ class NativeLifecycleTests(unittest.TestCase):
         self.assertEqual(manager._read(self.root)['tasks']['Q101']['open_requests'],[])
         self.assertNotIn('Q101',[r['qid'] for r in self.run_cli('next','--limit','5')['tasks']])
         self.http.assert_not_called()
+    def test_rebind_after_bundle_conflict_requires_fresh_review(self):
+        research,proposal=self.research()
+        review,approved=self.review(research,proposal,'before-conflict')
+        old_bundle=self.private/'old-bundle'
+        self.run_cli('unified-publish','--proposal',proposal,'--review-job',review,
+            '--review-attempt',approved['private_attempt'],'--batch-id','old-batch','--output',old_bundle)
+        before=load_json(proposal.read_bytes())
+        (self.root/'docs/unrelated.txt').write_text('concurrent publication');self.commit('advance main')
+        rebound=self.private/'rebound.json'
+        with self.assertRaisesRegex(ValueError,'current inactive'):
+            self.run_cli('unified-proposal','--rebind','--proposal',review/'public-proposal.json','--output',rebound)
+        result=self.run_cli('unified-proposal','--rebind','--proposal',proposal,'--output',rebound)
+        after=load_json(rebound.read_bytes())
+        self.assertTrue(result['fresh_review_required'])
+        self.assertEqual(after['transport']['base_commit'],commit(self.root,'origin/main'))
+        self.assertEqual({k:v for k,v in before.items() if k!='transport'},
+                         {k:v for k,v in after.items() if k!='transport'})
+        task=manager._read(self.root)['tasks']['Q101']
+        self.assertEqual(task['phase'],'review_pending')
+        self.assertEqual(task['research_job'],str(research))
+        self.assertNotIn('review_attempt',task);self.assertNotIn('bundle',task)
+        with self.assertRaisesRegex(ValueError,'current approved'):
+            self.run_cli('unified-publish','--proposal',rebound,'--review-job',review,
+                '--review-attempt',approved['private_attempt'],'--batch-id','bad','--output',self.private/'bad')
+        fresh,checked=self.review(research,rebound,'after-conflict')
+        self.run_cli('unified-publish','--proposal',rebound,'--review-job',fresh,
+            '--review-attempt',checked['private_attempt'],'--batch-id','new-batch','--output',self.private/'new-bundle')
+        self.http.assert_not_called()
+
+    def test_rebind_rejects_completed_and_changed_school_baseline(self):
+        research,proposal=self.research()
+        review,approved=self.review(research,proposal,'approved-rebind')
+        (self.root/'docs/unrelated.txt').write_text('advance');self.commit('advance')
+        manager.set_phase(self.root,'Q101','completed')
+        with self.assertRaisesRegex(ValueError,'current inactive'):
+            self.run_cli('unified-proposal','--rebind','--proposal',proposal,'--output',self.private/'completed')
+        manager.set_phase(self.root,'Q101','ready_to_publish')
+        with patch('university_curation.workflow_contract.baseline_at',return_value=({'qid':'Q101'},'changed')):
+            with self.assertRaisesRegex(ValueError,'baseline changed'):
+                self.run_cli('unified-proposal','--rebind','--proposal',proposal,'--output',self.private/'changed-school')
+        with patch.object(cli,'_base',return_value=(commit(self.root,'origin/main'),self.trust,self.catalog,'x'*64)):
+            with self.assertRaisesRegex(ValueError,'catalog'):
+                self.run_cli('unified-proposal','--rebind','--proposal',proposal,'--output',self.private/'changed')
+
     def test_review_is_mandatory_and_rejects_tampered_snapshot(self):
         research,proposal=self.research()
         with self.assertRaisesRegex(ValueError,'count mismatch'):

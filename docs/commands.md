@@ -86,7 +86,20 @@ python .agents/skills/university-curation/scripts/agent.py unified-publish --pro
 Pass aligned repeated --proposal/--review-job/--review-attempt arguments for up
 to five schools. Recheck actual main, then execute the exact operations.json
 through the GitHub plugin. On a SHA conflict fetch main and repeat offline Review.
-Never force. After successful publication, fetch public main and confirm:
+Never force. If main advances after approval or bundle generation, rebind the
+current manager proposal into a new private path (do not use a Review copy):
+
+```bash
+python .agents/skills/university-curation/scripts/agent.py unified-proposal --rebind --proposal .private/native/Q4032-proposal.json --output .private/native/Q4032-rebound.json
+```
+
+This preserves compiled Research and questions, removes the old active approval
+and bundle pointers, and returns to review_pending. Run review-prepare with the
+new proposal and retained Research job, dispatch a fresh dedicated Review session,
+then compile and build a new publication bundle. Other QIDs are unchanged. If the
+school baseline, catalog, schema or policy changed, rebuild Research instead.
+If the batch already exists on main, confirm its original publication first.
+After successful publication, fetch public main and confirm:
 
 ```bash
 git fetch origin main
