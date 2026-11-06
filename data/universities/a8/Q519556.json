@@ -1,27 +1,27 @@
 {
   "coverage": {
     "finance": {
-      "checked_at": "2026-11-05T02:01:08.290871+00:00",
+      "checked_at": "2026-11-06T09:11:12.081794+00:00",
       "status": "not_found"
     },
     "geography": {
-      "checked_at": "2026-11-05T02:01:08.290871+00:00",
-      "status": "checked"
-    },
-    "history": {
-      "checked_at": "2026-11-05T02:01:08.290871+00:00",
+      "checked_at": "2026-11-06T09:11:12.081794+00:00",
       "status": "disputed"
     },
+    "history": {
+      "checked_at": "2026-11-06T09:11:12.081794+00:00",
+      "status": "checked"
+    },
     "identity": {
-      "checked_at": "2026-11-05T02:01:08.290871+00:00",
+      "checked_at": "2026-11-06T09:11:12.081794+00:00",
       "status": "checked"
     },
     "population": {
-      "checked_at": "2026-11-05T02:01:08.290871+00:00",
+      "checked_at": "2026-11-06T09:11:12.081794+00:00",
       "status": "not_found"
     },
     "profile": {
-      "checked_at": "2026-11-05T02:01:08.290871+00:00",
+      "checked_at": "2026-11-06T09:11:12.081794+00:00",
       "status": "checked"
     }
   },
@@ -299,6 +299,23 @@
                 "year": 1946
               },
               "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:4",
+                  "original_text": "May 4, 1946 (1946-05-04)",
+                  "source_ref": "s8"
+                }
+              ],
+              "id": "c3",
+              "value": {
+                "day": 4,
+                "month": 5,
+                "precision": "day",
+                "year": 1946
+              },
+              "verification": "supported"
             }
           ],
           "conflicts": [
@@ -313,12 +330,40 @@
             }
           ],
           "preferred": {
-            "candidate_id": "c1",
+            "candidate_id": "c3",
             "qualifications": [
               "conflicting_candidates"
             ],
             "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
             "reason_code": "best_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Aftermath",
+                  "original_text": "Following the war, the majority of the Lianda community had returned to their north China campuses in Beijing and Tianjin.",
+                  "source_ref": "s8"
+                },
+                {
+                  "locator": "infobox:4",
+                  "original_text": "May 4, 1946",
+                  "source_ref": "s8"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "The associated university ended its active period after the war; the majority of its community returned to northern campuses."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
           }
         },
         "id": "closure_1946",
@@ -386,6 +431,186 @@
         "id": "separation_1946",
         "kind": "split",
         "subject_ref": "institution"
+      },
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:4",
+                  "original_text": "April 2, 1938 (1938-04-02)",
+                  "source_ref": "s8"
+                },
+                {
+                  "locator": "claim:P571:0",
+                  "original_text": "+1938-04-02T00:00:00Z",
+                  "source_ref": "s7"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "day": 2,
+                "month": 4,
+                "precision": "day",
+                "year": 1938
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "It was formed by the wartime incorporation of National Peking University, National Tsinghua University, and National Nankai University.",
+                  "source_ref": "s8"
+                },
+                {
+                  "locator": "infobox:4",
+                  "original_text": "April 2, 1938",
+                  "source_ref": "s8"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "National Southwestern Associated University began its formally dated institutional phase in Kunming following the wartime association of three northern universities."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "formation_1938",
+        "kind": "institution_establishment",
+        "subject_ref": "institution"
+      },
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:6",
+                  "original_text": "Changsha 1937–1938",
+                  "source_ref": "s8"
+                },
+                {
+                  "locator": "section:lead",
+                  "original_text": "form Changsha Temporary University in Changsha",
+                  "source_ref": "s8"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "precision": "year",
+                "year": 1937
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "Peking University, Tsinghua University and Nankai University merged to form Changsha Temporary University in Changsha",
+                  "source_ref": "s8"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "Peking University, Tsinghua University and Nankai University formed the wartime Changsha Temporary University before the Kunming phase."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "changsha_1937",
+        "kind": "predecessor_establishment",
+        "subject_ref": "related:changsha"
+      },
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:History",
+                  "original_text": "Japanese forces bombed Changsha in February 1938.",
+                  "source_ref": "s8"
+                },
+                {
+                  "locator": "section:History",
+                  "original_text": "had to flee and made the 1,000 mile journey to Kunming",
+                  "source_ref": "s8"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "precision": "year",
+                "year": 1938
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:History",
+                  "original_text": "Japanese forces bombed Changsha in February 1938.",
+                  "source_ref": "s8"
+                },
+                {
+                  "locator": "section:History",
+                  "original_text": "had to flee and made the 1,000 mile journey to Kunming",
+                  "source_ref": "s8"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "The associated university community relocated from Changsha to Kunming as Japanese forces advanced."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "wartime_move",
+        "kind": "relocation",
+        "subject_ref": "institution"
       }
     ]
   },
@@ -436,6 +661,29 @@
           "candidate_id": "c1",
           "reason_code": "only_available"
         }
+      },
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "infobox:1",
+                "original_text": "Lianda (聯大)",
+                "source_ref": "s8"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Lianda (聯大)"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
       }
     ],
     "kind": {
@@ -451,11 +699,24 @@
           "id": "c1",
           "value": "university",
           "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "was a national public university in Kunming, Yunnan, China, from 1938 to 1946",
+              "source_ref": "s8"
+            }
+          ],
+          "id": "c2",
+          "value": "university",
+          "verification": "supported"
         }
       ],
       "preferred": {
-        "candidate_id": "c1",
-        "reason_code": "only_available"
+        "candidate_id": "c2",
+        "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+        "reason_code": "best_available"
       }
     },
     "names": {
@@ -472,11 +733,24 @@
             "id": "c1",
             "value": "National Southwestern Associated University",
             "verification": "supported"
+          },
+          {
+            "evidence": [
+              {
+                "locator": "metadata",
+                "original_text": "National Southwestern Associated University",
+                "source_ref": "s7"
+              }
+            ],
+            "id": "c2",
+            "value": "National Southwestern Associated University",
+            "verification": "supported"
           }
         ],
         "preferred": {
-          "candidate_id": "c1",
-          "reason_code": "only_available"
+          "candidate_id": "c2",
+          "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+          "reason_code": "best_available"
         }
       },
       "zh": {
@@ -492,11 +766,24 @@
             "id": "c1",
             "value": "国立西南联合大学",
             "verification": "supported"
+          },
+          {
+            "evidence": [
+              {
+                "locator": "infobox:0",
+                "original_text": "國立西南聯合大學",
+                "source_ref": "s8"
+              }
+            ],
+            "id": "c2",
+            "value": "國立西南聯合大學",
+            "verification": "supported"
           }
         ],
         "preferred": {
-          "candidate_id": "c1",
-          "reason_code": "only_available"
+          "candidate_id": "c2",
+          "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+          "reason_code": "best_available"
         }
       }
     },
@@ -513,11 +800,25 @@
           "id": "c1",
           "value": "closed",
           "verification": "supported"
+        },
+        {
+          "current_basis": "historical",
+          "evidence": [
+            {
+              "locator": "infobox:4",
+              "original_text": "April 2, 1938 (1938-04-02)–May 4, 1946 (1946-05-04)",
+              "source_ref": "s8"
+            }
+          ],
+          "id": "c2",
+          "value": "closed",
+          "verification": "supported"
         }
       ],
       "preferred": {
-        "candidate_id": "c1",
-        "reason_code": "only_available"
+        "candidate_id": "c2",
+        "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+        "reason_code": "best_available"
       }
     },
     "ownership": {
@@ -533,11 +834,24 @@
           "id": "c1",
           "value": "public",
           "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "national public university",
+              "source_ref": "s8"
+            }
+          ],
+          "id": "c2",
+          "value": "public",
+          "verification": "supported"
         }
       ],
       "preferred": {
-        "candidate_id": "c1",
-        "reason_code": "only_available"
+        "candidate_id": "c2",
+        "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+        "reason_code": "best_available"
       }
     }
   },
@@ -607,11 +921,33 @@
               "text": "Kunming"
             },
             "verification": "supported"
+          },
+          {
+            "current_basis": "historical",
+            "evidence": [
+              {
+                "locator": "infobox:6",
+                "original_text": "Kunming 1938–1946, Yunnan Province, China",
+                "source_ref": "s8"
+              }
+            ],
+            "id": "c2",
+            "period": {
+              "end_year": 1946,
+              "kind": "interval",
+              "start_year": 1938
+            },
+            "value": {
+              "language": "en",
+              "text": "Kunming, Yunnan Province, China"
+            },
+            "verification": "supported"
           }
         ],
         "preferred": {
-          "candidate_id": "c1",
-          "reason_code": "only_available"
+          "candidate_id": "c2",
+          "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+          "reason_code": "best_available"
         }
       }
     },
@@ -720,9 +1056,41 @@
           "reason_code": "only_available"
         }
       }
+    },
+    {
+      "coordinates": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "statement:Q519556$CAF3F752-BFF3-465E-961E-4C614710433B",
+                "original_text": "\"latitude\": 25.05577",
+                "source_ref": "s7"
+              }
+            ],
+            "id": "c1",
+            "source_rank": "normal",
+            "value": {
+              "crs": "EPSG:4326",
+              "globe_qid": "Q2",
+              "latitude": 25.05577,
+              "longitude": 102.69757,
+              "source_precision_degrees": 2.77777777778e-06
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "id": "wikidata-item-location",
+      "kind": "institution",
+      "qid": "Q519556"
     }
   ],
-  "modified_datetime": "2026-11-05T03:05:41.105545+00:00",
+  "modified_datetime": "2026-11-06T09:13:31.579150+00:00",
   "profile": {
     "motto": {
       "candidates": [
@@ -740,11 +1108,27 @@
             "text": "刚毅坚卓"
           },
           "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "infobox:2",
+              "original_text": "剛毅堅卓",
+              "source_ref": "s8"
+            }
+          ],
+          "id": "c2",
+          "value": {
+            "language": "zh",
+            "text": "剛毅堅卓"
+          },
+          "verification": "supported"
         }
       ],
       "preferred": {
-        "candidate_id": "c1",
-        "reason_code": "only_available"
+        "candidate_id": "c2",
+        "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+        "reason_code": "best_available"
       }
     },
     "summary": {
@@ -768,17 +1152,129 @@
             "text": "A wartime national university in Yunnan formed through the association of Peking, Tsinghua and Nankai universities. It operated under its Southwestern Associated University name from 1938 until 1946."
           },
           "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "The National Southwestern Associated University was a national public university in Kunming, Yunnan, China, from 1938 to 1946.",
+              "source_ref": "s8"
+            },
+            {
+              "locator": "infobox:0",
+              "original_text": "國立西南聯合大學",
+              "source_ref": "s8"
+            },
+            {
+              "locator": "infobox:1",
+              "original_text": "Lianda (聯大)",
+              "source_ref": "s8"
+            },
+            {
+              "locator": "infobox:2",
+              "original_text": "剛毅堅卓",
+              "source_ref": "s8"
+            },
+            {
+              "locator": "section:lead",
+              "original_text": "It was formed by the wartime incorporation of National Peking University, National Tsinghua University, and National Nankai University.",
+              "source_ref": "s8"
+            },
+            {
+              "locator": "section:lead",
+              "original_text": "Changsha Temporary University in Changsha and later National Southwestern Associated University in Kunming",
+              "source_ref": "s8"
+            },
+            {
+              "locator": "section:History",
+              "original_text": "Japanese forces bombed Changsha in February 1938.",
+              "source_ref": "s8"
+            },
+            {
+              "locator": "infobox:4",
+              "original_text": "April 2, 1938 (1938-04-02)–May 4, 1946 (1946-05-04)",
+              "source_ref": "s8"
+            },
+            {
+              "locator": "section:Aftermath",
+              "original_text": "Following the war, the majority of the Lianda community had returned to their north China campuses in Beijing and Tianjin.",
+              "source_ref": "s8"
+            },
+            {
+              "locator": "section:lead",
+              "original_text": "What was left behind in Kunming became the National Kunming Normal University which later emerged as the Yunnan Normal University.",
+              "source_ref": "s8"
+            },
+            {
+              "locator": "section:History",
+              "original_text": "General History of China",
+              "source_ref": "s8"
+            },
+            {
+              "locator": "section:History",
+              "original_text": "Ch'ien Mu, then a professor at Lianda",
+              "source_ref": "s8"
+            },
+            {
+              "locator": "section:History",
+              "original_text": "Lianda alumni include the Nobel Prize laureates Yang Chen-Ning and Tsung-Dao Lee.",
+              "source_ref": "s8"
+            },
+            {
+              "locator": "claim:P625:0",
+              "original_text": "\"latitude\": 25.05577, \"longitude\": 102.69757",
+              "source_ref": "s7"
+            },
+            {
+              "locator": "infobox:6",
+              "original_text": "25.05916°N 102.69497°E",
+              "source_ref": "s8"
+            }
+          ],
+          "id": "c2",
+          "value": {
+            "language": "en",
+            "text": "National Southwestern Associated University (國立西南聯合大學), commonly called Lianda, was a national public university operating in Kunming, Yunnan, China, from 1938 until 1946. It was a wartime association of National Peking University, National Tsinghua University and National Nankai University. Its recorded motto was 剛毅堅卓. The institution is historical rather than a currently operating university.\n\nThe university emerged during the Second Sino-Japanese War. The three northern universities first formed Changsha Temporary University in Hunan in 1937. After Japanese forces bombed Changsha in February 1938, members of the university community traveled west to Kunming. The institution's recorded active period began on 2 April 1938 and ended on 4 May 1946. Following the war, most of its community returned to university campuses in Beijing and Tianjin. A remaining educational institution in Kunming became National Kunming Normal University and subsequently Yunnan Normal University; this should not be equated with a continuing National Southwestern Associated University.\n\nThe wartime curriculum included a compulsory General History of China course under national education policy. The historian Ch'ien Mu taught at Lianda and wrote an Outline of National History. Accounts of the university also identify physicists Yang Chen-Ning and Tsung-Dao Lee among its alumni. These descriptions reflect the historical institution and do not establish present-day enrollment, finances, or campus boundaries.\n\nIts precise historical site location is not settled by the supplied references: Wikidata provides an institution-level point at 25.05577°N, 102.69757°E, whereas the Wikipedia infobox lists 25.05916°N, 102.69497°E. These different positions should not be read as independently verified coordinates for an identifiable campus or headquarters."
+          },
+          "verification": "supported"
         }
       ],
       "preferred": {
-        "candidate_id": "c1",
-        "reason_code": "only_available"
+        "candidate_id": "c2",
+        "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+        "reason_code": "best_available"
       }
     }
   },
   "qid": "Q519556",
-  "record_revision": 1,
+  "record_revision": 2,
   "related_entities": {
+    "changsha": {
+      "kind": "institution",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "Changsha Temporary University",
+                "source_ref": "s8"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Changsha Temporary University"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
     "changsha_temporary": {
       "kind": "institution",
       "name": {
@@ -823,11 +1319,27 @@
               "text": "National Kunming Normal University"
             },
             "verification": "supported"
+          },
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "National Kunming Normal University",
+                "source_ref": "s8"
+              }
+            ],
+            "id": "c2",
+            "value": {
+              "language": "en",
+              "text": "National Kunming Normal University"
+            },
+            "verification": "supported"
           }
         ],
         "preferred": {
-          "candidate_id": "c1",
-          "reason_code": "only_available"
+          "candidate_id": "c2",
+          "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+          "reason_code": "best_available"
         }
       }
     },
@@ -849,11 +1361,27 @@
               "text": "Nankai University"
             },
             "verification": "supported"
+          },
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "Nankai University",
+                "source_ref": "s8"
+              }
+            ],
+            "id": "c2",
+            "value": {
+              "language": "en",
+              "text": "Nankai University"
+            },
+            "verification": "supported"
           }
         ],
         "preferred": {
-          "candidate_id": "c1",
-          "reason_code": "only_available"
+          "candidate_id": "c2",
+          "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+          "reason_code": "best_available"
         }
       }
     },
@@ -875,11 +1403,27 @@
               "text": "National Peking University"
             },
             "verification": "supported"
+          },
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "Peking University",
+                "source_ref": "s8"
+              }
+            ],
+            "id": "c2",
+            "value": {
+              "language": "en",
+              "text": "Peking University"
+            },
+            "verification": "supported"
           }
         ],
         "preferred": {
-          "candidate_id": "c1",
-          "reason_code": "only_available"
+          "candidate_id": "c2",
+          "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+          "reason_code": "best_available"
         }
       }
     },
@@ -901,11 +1445,27 @@
               "text": "National Tsinghua University"
             },
             "verification": "supported"
+          },
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "Tsinghua University",
+                "source_ref": "s8"
+              }
+            ],
+            "id": "c2",
+            "value": {
+              "language": "en",
+              "text": "Tsinghua University"
+            },
+            "verification": "supported"
           }
         ],
         "preferred": {
-          "candidate_id": "c1",
-          "reason_code": "only_available"
+          "candidate_id": "c2",
+          "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+          "reason_code": "best_available"
         }
       }
     }
@@ -925,6 +1485,80 @@
             "id": "c1",
             "value": {
               "target_ref": "location:xuyong_branch"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    ],
+    "parent": [
+      {
+        "candidates": [
+          {
+            "current_basis": "historical",
+            "evidence": [
+              {
+                "locator": "infobox:5",
+                "original_text": "Peking University Tsinghua University Nankai University",
+                "source_ref": "s8"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "independence": "unresolved",
+              "target_ref": "related:peking"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      {
+        "candidates": [
+          {
+            "current_basis": "historical",
+            "evidence": [
+              {
+                "locator": "infobox:5",
+                "original_text": "Peking University Tsinghua University Nankai University",
+                "source_ref": "s8"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "independence": "unresolved",
+              "target_ref": "related:tsinghua"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      {
+        "candidates": [
+          {
+            "current_basis": "historical",
+            "evidence": [
+              {
+                "locator": "infobox:5",
+                "original_text": "Peking University Tsinghua University Nankai University",
+                "source_ref": "s8"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "independence": "unresolved",
+              "target_ref": "related:nankai"
             },
             "verification": "supported"
           }
@@ -957,10 +1591,33 @@
           "candidate_id": "c1",
           "reason_code": "only_available"
         }
+      },
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "Changsha Temporary University in Changsha and later National Southwestern Associated University in Kunming",
+                "source_ref": "s8"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "independence": "unresolved",
+              "target_ref": "related:changsha"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
       }
     ]
   },
-  "schema_version": "0.2.1",
+  "schema_version": "0.2.2",
   "seed": {
     "channels": [
       "diagnostic_pilot_selection"
@@ -978,6 +1635,24 @@
       "revision_id": 2559137070,
       "source_qid": "Q519556",
       "url": "https://www.wikidata.org/w/index.php?oldid=2559137070"
+    },
+    "s10": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T09:05:06.744574+00:00",
+      "revision_id": 2563722609,
+      "source_qid": "Q148",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2563722609"
+    },
+    "s11": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T09:05:13.394092+00:00",
+      "revision_id": 2561341244,
+      "source_qid": "Q174091",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2561341244"
     },
     "s2": {
       "family": "wikimedia",
@@ -1025,7 +1700,35 @@
       "revision_id": 2561341244,
       "source_qid": "Q174091",
       "url": "https://www.wikidata.org/w/index.php?oldid=2561341244"
+    },
+    "s7": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T09:04:20.932983+00:00",
+      "revision_id": 2559137070,
+      "source_qid": "Q519556",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2559137070"
+    },
+    "s8": {
+      "family": "wikimedia",
+      "kind": "wikipedia",
+      "language": "en",
+      "page_id": 2999850,
+      "publisher_role": "encyclopedia",
+      "retrieved_at": "2026-11-06T09:04:48.204741+00:00",
+      "revision_id": 1379549666,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1379549666"
+    },
+    "s9": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T09:04:54.551367+00:00",
+      "revision_id": 2562156954,
+      "source_qid": "Q3918",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2562156954"
     }
   },
-  "update_datetime": "2026-11-05T03:05:41.105545+00:00"
+  "update_datetime": "2026-11-06T09:13:31.579150+00:00"
 }
