@@ -16,8 +16,23 @@
         "commit": "af796a25bc42a965ea4885ec16c8808ce78fdd95",
         "issue_url": "https://github.com/ider-zh/university-seed-curation/pull/7"
       },
-      "open_requests": [],
-      "phase": "research_pending",
+      "open_requests": [
+        {
+          "category": "scope_conflict",
+          "field": "locations.changsha",
+          "reason": "Do not attach the 1937–1938 Changsha predecessor location to the 1938–1946 root as an undated administrative area. Remove from root locations or explicitly bind it to distinct Changsha Temporary University and its period.",
+          "request_id": "6453da96-2c9b-5021-8c22-5f0c6661d377",
+          "reviewed_proposal_sha256": "8b91bc0cb3cce45a903831de6a046c256f8022cc82408577f2f681d133e5186c"
+        },
+        {
+          "category": "evidence_gap",
+          "field": "locations.root_coordinate_conflict",
+          "reason": "Wikidata Q519556 P625 is 25.05577, 102.69757 (precision 2.77777777778e-06 degrees), but pinned English Wikipedia infobox gives 25.05916, 102.69497. Retain the script-owned root P625 point without promoting it to a campus, and explicitly document the contradictory institution-level observation and unresolved source/scope ambiguity in a supported field or source-qualified summary; do not silently present a unique precise historical coordinate.",
+          "request_id": "26d43986-76cd-5c7a-b93f-f4774fdbf4d9",
+          "reviewed_proposal_sha256": "8b91bc0cb3cce45a903831de6a046c256f8022cc82408577f2f681d133e5186c"
+        }
+      ],
+      "phase": "revision_requested",
       "reason": "reassess_historical_root_coordinate_correction_with_current_sources",
       "revision": 0
     },
