@@ -1,0 +1,1529 @@
+{
+  "attribution": "distinct_native_research_and_review_subagents;not_cryptographic_identity",
+  "research": {
+    "baseline_sha256": "absent",
+    "candidate": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-06T23:25:15.521605+00:00",
+          "status": "not_found"
+        },
+        "geography": {
+          "checked_at": "2026-11-06T23:25:15.521605+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-06T23:25:15.521605+00:00",
+          "status": "checked"
+        },
+        "identity": {
+          "checked_at": "2026-11-06T23:25:15.521605+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-06T23:25:15.521605+00:00",
+          "status": "not_found"
+        },
+        "profile": {
+          "checked_at": "2026-11-06T23:25:15.521605+00:00",
+          "status": "checked"
+        }
+      },
+      "curation": {
+        "identity_status": "related"
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "claim:P571:0",
+                      "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q115012701$9ee1fcca-4f4e-1699-aa3b-a8eac3365617\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+1952-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}",
+                      "source_ref": "s1"
+                    },
+                    {
+                      "locator": "infobox:1",
+                      "original_text": "معلومات: ",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 1952
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:.D9.84.D9.85.D8.AD.D8.A9_.D8.AA.D8.A7.D8.B1.D9.8A.D8.AE.D9.8A.D8.A9",
+                      "original_text": "كلية الزراعة هي أول كلية زراعة في العراق، يعود تاريخ تأسيسها إلى عام 1952.",
+                      "source_ref": "s2"
+                    },
+                    {
+                      "locator": "page_metadata",
+                      "original_text": "{\"title\": \"كلية علوم الهندسة الزراعية\", \"language\": \"ar\"}",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "Establishment of the College of Agriculture, now named كلية علوم الهندسة الزراعية."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "establishment",
+            "kind": "institution_establishment",
+            "subject_ref": "institution"
+          }
+        ]
+      },
+      "identity": {
+        "aliases": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:.D9.84.D9.85.D8.AD.D8.A9_.D8.AA.D8.A7.D8.B1.D9.8A.D8.AE.D9.8A.D8.A9",
+                    "original_text": "كلية الزراعة هي أول كلية زراعة في العراق، يعود تاريخ تأسيسها إلى عام 1952.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "ar",
+                  "text": "كلية الزراعة"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ],
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "metadata",
+                  "original_text": "{\"id\": \"Q115012701\", \"labels\": {\"ar\": \"كلية علوم الهندسة الزراعية\"}, \"descriptions\": {\"ar\": \"إحدى كليات جامعة بغداد العراقية\"}}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "section:lead",
+                  "original_text": "كلية علوم الهندسة الزراعية هي إحدى كليات جامعة بغداد.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "faculty",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "ar": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q115012701\", \"labels\": {\"ar\": \"كلية علوم الهندسة الزراعية\"}, \"descriptions\": {\"ar\": \"إحدى كليات جامعة بغداد العراقية\"}}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "page_metadata",
+                    "original_text": "{\"title\": \"كلية علوم الهندسة الزراعية\", \"language\": \"ar\"}",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": "كلية علوم الهندسة الزراعية",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "locations": [
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q115012701$2a5cec52-4061-647f-cfa2-19ac9b92c90a\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 4702577, \"id\": \"Q4702577\"}}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q115012701$30402f2b-46fe-d17d-bfe3-922af22019b3\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 796, \"id\": \"Q796\"}}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q796\", \"labels\": {\"ar\": \"العراق\", \"en\": \"Iraq\"}, \"descriptions\": {\"en\": \"sovereign state in Western Asia\", \"ar\": \"دولة عربية في غرب آسيا\"}}",
+                    "source_ref": "s4"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q4702577\", \"labels\": {\"ar\": \"الجادرية\", \"en\": \"Al-Jadriya\"}, \"descriptions\": {\"ar\": \"حي سكني في العراق\", \"en\": \"District in Baghdad\"}}",
+                    "source_ref": "s5"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "country_name": "Iraq",
+                  "country_qid": "Q796",
+                  "formatted": {
+                    "language": "ar",
+                    "text": "الجادرية، العراق"
+                  },
+                  "region_name": "الجادرية",
+                  "region_qid": "Q4702577"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "jadriya",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q115012701$2a5cec52-4061-647f-cfa2-19ac9b92c90a\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 4702577, \"id\": \"Q4702577\"}}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q4702577\", \"labels\": {\"ar\": \"الجادرية\", \"en\": \"Al-Jadriya\"}, \"descriptions\": {\"ar\": \"حي سكني في العراق\", \"en\": \"District in Baghdad\"}}",
+                    "source_ref": "s5"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "ar",
+                  "text": "الجادرية"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q4702577"
+        },
+        {
+          "coordinates": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "statement:Q115012701$b34108fb-437d-06ec-7cb6-3cb57ed5deeb",
+                    "original_text": "\"latitude\": 33.268799",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "source_rank": "normal",
+                "value": {
+                  "crs": "EPSG:4326",
+                  "globe_qid": "Q2",
+                  "latitude": 33.268799,
+                  "longitude": 44.379015,
+                  "source_precision_degrees": 1e-06
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "wikidata-item-location",
+          "kind": "institution",
+          "qid": "Q115012701"
+        }
+      ],
+      "modified_datetime": "2026-11-06T23:27:07.333813+00:00",
+      "profile": {
+        "academic_focus": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:.D9.86.D8.B8.D8.A7.D9.85_.D8.A7.D9.84.D9.83.D9.84.D9.8A.D8.A9",
+                  "original_text": "[عدل | عدل المصدر]\nمدة الدراسة للحصول على شهادة البكالوريوس في العلوم الزراعية ((في التخصصات جميعها)) في هذه الكلية هي ((4)) سنوات دراسية وفق نظام الفصول الدراسية ((الكورسات)) وتوزع السنة الدراسية على فصلين دراسين مدة كل منهما ((15))أسبوعاً.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:.D9.82.D8.B3.D9.85_.D8.A7.D9.84.D8.A5.D9.86.D8.AA.D8.A7.D8.AC_.D8.A7.D9.84.D8.AD.D9.8A.D9.88.D8.A7.D9.86.D9.8A",
+                  "original_text": "[عدل | عدل المصدر]\nنشأ قسم الثروة الحيوانية مع تأسيس الكلية عام 1952 وكان يضم ثلاثة شعب هي:\nتربية الحيوان\nالدواجن\nالألبان\nاعتمدت المناهج الدراسية للقسم على الدروس الأساسية التي كان على طلبة القسم جميعهم دراستها خلال السنتين الأولى والثانية ودروس الاختصاص المتاحة فضلا عن عدد من الموضوعات الاختيارية في مجال تربية وتحسين الحيوان والألبان والدواجن والتي كان على الطالب اختيارها وفق رغبته وذلك لإكمال متطلبات التخرج ومن بين المواضيع الأخرى التي يحرص القسم على رفد الطلبة بها هي الأسس العامة في تربية وتح",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:.D9.82.D8.B3.D9.85_.D8.B9.D9.84.D9.88.D9.85_.D8.A7.D9.84.D8.A3.D8.BA.D8.B0.D9.8A.D8.A9_.D9.88.D8.A7.D9.84.D8.AA.D9.82.D8.A7.D9.86.D8.A7.D8.AA_.D8.A7.D9.84.D8.A3.D8.AD.D9.8A.D8.A7.D8.A6.D9.8A.D8.A9",
+                  "original_text": "[عدل | عدل المصدر]\nتأسس القسم عام 1963 كوحدة علمية مستقلة بعد 11 سنة من تأسيس كلية الزراعة عام 1952 وكانت مهمة القسم تهيئة وتخريج الكوادر في اختصاص تقنيات وعلوم الأغذية وقد أدى القسم هذه المهمة بجدارة إذ ساهم بتخريج عدد كبير من الطلبة انخرطوا في معترك الحياة العلمية والنتاجية في المراكز العلمية والمؤسسات الإنتاجية المختلفة في القطر وخارجه، وقد شهد القسم منذ تأسيسه تطورات كبيرة إلى أن أصبح على ما هو عليه الآن ومنها تأسيس معملين الأول لتصنيع الاغذية والثاني لتصنيع منتجات الألبان وعدد من المختبرات ",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:.D9.82.D8.B3.D9.85_.D8.A7.D9.84.D8.A8.D8.B3.D8.AA.D9.86.D8.A9_.D9.88.D9.87.D9.86.D8.AF.D8.B3.D8.A9_.D8.A7.D9.84.D8.AD.D8.AF.D8.A7.D8.A6.D9.82",
+                  "original_text": "[عدل | عدل المصدر]\nأحد الأقسام العلمية القائمة في الكلية حاليا والبالغة 9 أقسام حيث استحدث عام 1963 وكان التخصص فيه يبدأ في الصف الرابع واستمر الحال حتى عام 1972 حيث دمج مع قسمي المحاصيل الحقلية والإرشاد الزراعي وسمي قسم الإنتاج النباتي وفي عام 1976 فك ارتباطه من جديدي وبدء التخصص فيه من المرحلة الثالثة وكان عدد الطلاب في الصف الرابع عام 1963 ثمــانية طلاب فقط حتى أخذ يتزايد وبلغ ذروته عام 2000 حيث بلغ 170 طالب وطالبة وكان أول خريج للدراسات العليا هو/ ماجستير عام 1968 كما يقوم القسم بالتعاون مع ",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:.D9.82.D8.B3.D9.85_.D9.88.D9.82.D8.A7.D9.8A.D8.A9_.D8.A7.D9.84.D9.86.D8.A8.D8.A7.D8.AA",
+                  "original_text": "[عدل | عدل المصدر]\nمن الأقسام العلمية في الكلية وكان بداية القسم هي قسمان هما قسم الحشرات العامة والحيوان وقسم الأمراض النباتية وفي عام 1972 - 1973 اندمج لقسمان في قسم واحد سمي وقاية النبات أهداف هذا القسم إعداد ملاكات مؤهلة من حملة البكلوريوس والشهادات العليا ذات إلمام بالآفات التي تصيب النباتات والمحاصيل الزراعية وطرق السيطرة عليها ومعالجتها. أما الدراسات العليا فقد منح القسم أول شهادة ماجستير عام 1964 لــحكمت عباس العاني وتطور الدراسات العليا في القسم حتى بلغ 182 ماجستير و42 دكتوراه",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:.D9.82.D8.B3.D9.85_.D8.A7.D9.84.D8.AA.D8.B1.D8.A8.D8.A9",
+                  "original_text": "[عدل | عدل المصدر]\nيعد قسم التربة واحدا من أقدم الأقسام في الكلية حيث كان اختصاص التربة من الاختصاصات الفرعية ضمن تخصص الإنتاج النباتي وشكل اختصاص علوم التربة مع اختصاص المحاصيل الحقلية قسن التربة والمحاصيل الحقلية عام 1963 ثم أصبح قسما مستقلا باسم قسم التربة عام 1967 وقد تخرج من القسم إلى حد عام 2002 حوالي 2294 طالبا وطالبة إذ يبدا التخصص عند قبول الطالب للدراسة وفي المرحلة الأولى يبدا الطالب بدراسة العلوم الأساسية ثم يقوم بدراسة مواد التخصص في المرحلة الثانية وما بعدها. أما فيما يخص الدراسات ا",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:.D9.82.D8.B3.D9.85_.D8.A7.D9.84.D9.85.D9.83.D8.A7.D8.A6.D9.86_.D9.88.D8.A7.D9.84.D8.A2.D9.84.D8.A7.D8.AA_.D8.A7.D9.84.D8.B2.D8.B1.D8.A7.D8.B9.D9.8A.D8.A9",
+                  "original_text": "[عدل | عدل المصدر]\nتأسس هذا القسم عام 1987 بعد أن كان شعبة علمية تابعة إداريا لقسم التربة ويقوم بتدريس المواد ذات العلاقة بالمكائن والالات الزراعية. يهدف القسم حاليا إلى أعداد خريجين في اختصاصات المكائن والالات الزراعية قادرين على تشغيل وصيانة الساحبات والمعدات الزراعية والمكائن الثقيلة ومكائن استصلاح التربة فضلا عن تلقي الطالب دروس عملية في الأعمال الميكانيكية المختلفة ماللحام والخراطة والبرادة ويحتوي القسم على مجموعة من المختبرات ذات العلاقة، وورشة ميكانيكية يتلقى فيها الطلبة التدريب للدروس ال",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:.D9.82.D8.B3.D9.85_.D8.A7.D9.84.D9.85.D8.AD.D8.A7.D8.B5.D9.8A.D9.84_.D8.A7.D9.84.D8.AD.D9.82.D9.84.D9.8A.D8.A9",
+                  "original_text": "[عدل | عدل المصدر]\nتأسس القسم عام 1962 ويهدف إلى تخريج عناصر ذات مستوى عالي من المعرفة في مجال اختصاصهم بما يؤولهم للعمل في القطاع الزراعي والجهات ذات العلاقة للإسهام في تطويره عن طريق مواكبة وادخال آخر المستجدات الحديثة في اختصاص المحاصيل الحقلية. يضم القسم عشرة مختبرات للدراسات العلمية لمختلف المراحل فضلا عن 3 مختبرات للدراسات العليا ويعد من أوائل الأقسام التي فسحت شهادة الماجستير والدكتوراه وقد قد تخرج أول طالب ماجستير في القسم هو د. مدحت مجيد الساهوكي في عام 1969 وأول شهادة دكتوراه عام 1978 ",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:.D9.82.D8.B3.D9.85_.D8.A7.D9.84.D8.A7.D9.82.D8.AA.D8.B5.D8.A7.D8.AF_.D8.A7.D9.84.D8.B2.D8.B1.D8.A7.D8.B9.D9.8A",
+                  "original_text": "[عدل | عدل المصدر]\nتأسس عام 1961 وكان اسمه الاقتصاد والتعليم الزراعي وفي عام 1973 - 1974 بدل اسم القسم آلى (إدارة المزارع والتعاونيات) وفي عام 1979 - 1980 غير اسم القسم إلى قسم الاقتصاد الزراعي ويهدف القسم إلى تخريج طلبة يحملون معلومات بمستوى البكالوريوس في العلوم الاقتصادية الزراعية وبفروعها المختلفة ويعمل القسم على معالجة المشاكل لاقتصادية والزراعية التي تبرز في القطاع الزراعي والاستخدام الكفؤ للموارد الزراعية بما يحقق تعظيم الارباح وتدنية التكاليف للمنتج. اما الدراسات العليا فقد استحدثت في ال",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:.D9.82.D8.B3.D9.85_.D8.A7.D9.84.D8.A5.D8.B1.D8.B4.D8.A7.D8.AF_.D8.A7.D9.84.D8.B2.D8.B1.D8.A7.D8.B9.D9.8A",
+                  "original_text": "[عدل | عدل المصدر]\nيعود تاريخ التعليم والإرشاد الزراعي في كلية الزراعة منذ تأسيس عام 1952 إذ تضمن المناهج الدراسية في الكلية آنذاك عددا من مواد التخصص وفي العام 1964 جمع الاقتصد والتعليم الزراعي في قسم واحد وفي عام 1972 أنشا فرع للإرشاد الزراعي ضمن قسم الإنتاج النباتي وتخرج أولى دوراته عام 1974 وبقي الإرشاد الزراعي فرعا مسقلا في خريجيه حتى عام 1976 حيث استحدث قسم المدرسين الزراعيين عام 1977 - 1978 وفي عام 1989 اقتصر القسم على الإرشاد والتعليم الزراعي، يهدف القسم إلى إعداد خريجين مؤهلين علميا وعم",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": [
+                {
+                  "language": "en",
+                  "text": "Agricultural sciences"
+                },
+                {
+                  "language": "en",
+                  "text": "Animal production"
+                },
+                {
+                  "language": "en",
+                  "text": "Food science and biotechnology"
+                },
+                {
+                  "language": "en",
+                  "text": "Horticulture and garden engineering"
+                },
+                {
+                  "language": "en",
+                  "text": "Plant protection"
+                },
+                {
+                  "language": "en",
+                  "text": "Soil and water sciences"
+                },
+                {
+                  "language": "en",
+                  "text": "Agricultural machinery"
+                },
+                {
+                  "language": "en",
+                  "text": "Field crops"
+                },
+                {
+                  "language": "en",
+                  "text": "Agricultural economics"
+                },
+                {
+                  "language": "en",
+                  "text": "Agricultural extension"
+                }
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "degree_levels": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:.D9.86.D8.B8.D8.A7.D9.85_.D8.A7.D9.84.D9.83.D9.84.D9.8A.D8.A9",
+                  "original_text": "[عدل | عدل المصدر]\nمدة الدراسة للحصول على شهادة البكالوريوس في العلوم الزراعية ((في التخصصات جميعها)) في هذه الكلية هي ((4)) سنوات دراسية وفق نظام الفصول الدراسية ((الكورسات)) وتوزع السنة الدراسية على فصلين دراسين مدة كل منهما ((15))أسبوعاً.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:.D9.84.D9.85.D8.AD.D8.A9_.D8.AA.D8.A7.D8.B1.D9.8A.D8.AE.D9.8A.D8.A9",
+                  "original_text": "[عدل | عدل المصدر]\nكلية الزراعة هي أول كلية زراعة في العراق، يعود تاريخ تأسيسها إلى عام 1952. تتوزع بناياتها وحقولها على مساحة 400 دونم، منها 100 دونم تنتشر عليها بنايات العمادة والأقسام العلمية والمكتبة والقاعات والمختبرات الدراسية والورش والمعامل و300 دونم حقول وبساتين مخصصه لتدريب الطلبة ولإجراء بحوث وتجارب الاساتذه وطلبة الدراسات العليا. ومدة الدراسة للحصول على شهادة الماجستير سنتان وللحصول على شهادة الدكتوراه ثلاث سنوات وفق نظام الكورسات والبحث العلمي.[1]\nكلية الزراعة في جامعة بغداد",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": [
+                "bachelor",
+                "master",
+                "doctorate"
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "summary": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "metadata",
+                  "original_text": "{\"id\": \"Q115012701\", \"labels\": {\"ar\": \"كلية علوم الهندسة الزراعية\"}, \"descriptions\": {\"ar\": \"إحدى كليات جامعة بغداد العراقية\"}}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "claim:P131:0",
+                  "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q115012701$2a5cec52-4061-647f-cfa2-19ac9b92c90a\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 4702577, \"id\": \"Q4702577\"}}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "claim:P17:0",
+                  "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q115012701$30402f2b-46fe-d17d-bfe3-922af22019b3\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 796, \"id\": \"Q796\"}}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "metadata",
+                  "original_text": "{\"id\": \"Q4702577\", \"labels\": {\"ar\": \"الجادرية\", \"en\": \"Al-Jadriya\"}, \"descriptions\": {\"ar\": \"حي سكني في العراق\", \"en\": \"District in Baghdad\"}}",
+                  "source_ref": "s5"
+                },
+                {
+                  "locator": "section:lead",
+                  "original_text": "هذه المقالة تحتاج للمزيد من الوصلات للمقالات الأخرى للمساعدة في ترابط مقالات الموسوعة. فضلًا ساعد في تحسين هذه المقالة بإضافة وصلات إلى المقالات المتعلقة بها الموجودة في النص الحالي. (سبتمبر 2023)\nلمعلومات عن معانٍ أخرى، طالع كلية الزراعة (توضيح).\nكلية علوم الهندسة الزراعية هي إحدى كليات جامعة بغداد.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:.D9.84.D9.85.D8.AD.D8.A9_.D8.AA.D8.A7.D8.B1.D9.8A.D8.AE.D9.8A.D8.A9",
+                  "original_text": "[عدل | عدل المصدر]\nكلية الزراعة هي أول كلية زراعة في العراق، يعود تاريخ تأسيسها إلى عام 1952. تتوزع بناياتها وحقولها على مساحة 400 دونم، منها 100 دونم تنتشر عليها بنايات العمادة والأقسام العلمية والمكتبة والقاعات والمختبرات الدراسية والورش والمعامل و300 دونم حقول وبساتين مخصصه لتدريب الطلبة ولإجراء بحوث وتجارب الاساتذه وطلبة الدراسات العليا. ومدة الدراسة للحصول على شهادة الماجستير سنتان وللحصول على شهادة الدكتوراه ثلاث سنوات وفق نظام الكورسات والبحث العلمي.[1]\nكلية الزراعة في جامعة بغداد",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:.D9.86.D8.B8.D8.A7.D9.85_.D8.A7.D9.84.D9.83.D9.84.D9.8A.D8.A9",
+                  "original_text": "[عدل | عدل المصدر]\nمدة الدراسة للحصول على شهادة البكالوريوس في العلوم الزراعية ((في التخصصات جميعها)) في هذه الكلية هي ((4)) سنوات دراسية وفق نظام الفصول الدراسية ((الكورسات)) وتوزع السنة الدراسية على فصلين دراسين مدة كل منهما ((15))أسبوعاً.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:.D8.A7.D9.84.D8.AF.D8.B1.D8.A7.D8.B3.D8.A7.D8.AA_.D8.A7.D9.84.D8.B9.D9.84.D9.8A.D8.A7",
+                  "original_text": "[عدل | عدل المصدر]\nاستحدثت دراسة الماجستير في الكلية عام 1961 في قسم وقاية النبات. اما دراسة الدكتوراه فقد استحدثت في عام 1975 في قسم المحاصيل الحقلية. شهدت الدراسات العليا تطورا كبيراً في عدد التخصصات التي استحدثت وسجلت التخصصات العلمية جميعها في الكلية. كما شهدت تطورا كبيراً في اعداد الطلبة المقبولين فيها عاما بعد آخر.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:.D9.82.D8.B3.D9.85_.D8.A7.D9.84.D8.A5.D9.86.D8.AA.D8.A7.D8.AC_.D8.A7.D9.84.D8.AD.D9.8A.D9.88.D8.A7.D9.86.D9.8A",
+                  "original_text": "[عدل | عدل المصدر]\nنشأ قسم الثروة الحيوانية مع تأسيس الكلية عام 1952 وكان يضم ثلاثة شعب هي:\nتربية الحيوان\nالدواجن\nالألبان\nاعتمدت المناهج الدراسية للقسم على الدروس الأساسية التي كان على طلبة القسم جميعهم دراستها خلال السنتين الأولى والثانية ودروس الاختصاص المتاحة فضلا عن عدد من الموضوعات الاختيارية في مجال تربية وتحسين الحيوان والألبان والدواجن والتي كان على الطالب اختيارها وفق رغبته وذلك لإكمال متطلبات التخرج ومن بين المواضيع الأخرى التي يحرص القسم على رفد الطلبة بها هي الأسس العامة في تربية وتح",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:.D9.82.D8.B3.D9.85_.D8.B9.D9.84.D9.88.D9.85_.D8.A7.D9.84.D8.A3.D8.BA.D8.B0.D9.8A.D8.A9_.D9.88.D8.A7.D9.84.D8.AA.D9.82.D8.A7.D9.86.D8.A7.D8.AA_.D8.A7.D9.84.D8.A3.D8.AD.D9.8A.D8.A7.D8.A6.D9.8A.D8.A9",
+                  "original_text": "[عدل | عدل المصدر]\nتأسس القسم عام 1963 كوحدة علمية مستقلة بعد 11 سنة من تأسيس كلية الزراعة عام 1952 وكانت مهمة القسم تهيئة وتخريج الكوادر في اختصاص تقنيات وعلوم الأغذية وقد أدى القسم هذه المهمة بجدارة إذ ساهم بتخريج عدد كبير من الطلبة انخرطوا في معترك الحياة العلمية والنتاجية في المراكز العلمية والمؤسسات الإنتاجية المختلفة في القطر وخارجه، وقد شهد القسم منذ تأسيسه تطورات كبيرة إلى أن أصبح على ما هو عليه الآن ومنها تأسيس معملين الأول لتصنيع الاغذية والثاني لتصنيع منتجات الألبان وعدد من المختبرات ",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:.D9.82.D8.B3.D9.85_.D8.A7.D9.84.D8.A8.D8.B3.D8.AA.D9.86.D8.A9_.D9.88.D9.87.D9.86.D8.AF.D8.B3.D8.A9_.D8.A7.D9.84.D8.AD.D8.AF.D8.A7.D8.A6.D9.82",
+                  "original_text": "[عدل | عدل المصدر]\nأحد الأقسام العلمية القائمة في الكلية حاليا والبالغة 9 أقسام حيث استحدث عام 1963 وكان التخصص فيه يبدأ في الصف الرابع واستمر الحال حتى عام 1972 حيث دمج مع قسمي المحاصيل الحقلية والإرشاد الزراعي وسمي قسم الإنتاج النباتي وفي عام 1976 فك ارتباطه من جديدي وبدء التخصص فيه من المرحلة الثالثة وكان عدد الطلاب في الصف الرابع عام 1963 ثمــانية طلاب فقط حتى أخذ يتزايد وبلغ ذروته عام 2000 حيث بلغ 170 طالب وطالبة وكان أول خريج للدراسات العليا هو/ ماجستير عام 1968 كما يقوم القسم بالتعاون مع ",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:.D9.82.D8.B3.D9.85_.D9.88.D9.82.D8.A7.D9.8A.D8.A9_.D8.A7.D9.84.D9.86.D8.A8.D8.A7.D8.AA",
+                  "original_text": "[عدل | عدل المصدر]\nمن الأقسام العلمية في الكلية وكان بداية القسم هي قسمان هما قسم الحشرات العامة والحيوان وقسم الأمراض النباتية وفي عام 1972 - 1973 اندمج لقسمان في قسم واحد سمي وقاية النبات أهداف هذا القسم إعداد ملاكات مؤهلة من حملة البكلوريوس والشهادات العليا ذات إلمام بالآفات التي تصيب النباتات والمحاصيل الزراعية وطرق السيطرة عليها ومعالجتها. أما الدراسات العليا فقد منح القسم أول شهادة ماجستير عام 1964 لــحكمت عباس العاني وتطور الدراسات العليا في القسم حتى بلغ 182 ماجستير و42 دكتوراه",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:.D9.82.D8.B3.D9.85_.D8.A7.D9.84.D8.AA.D8.B1.D8.A8.D8.A9",
+                  "original_text": "[عدل | عدل المصدر]\nيعد قسم التربة واحدا من أقدم الأقسام في الكلية حيث كان اختصاص التربة من الاختصاصات الفرعية ضمن تخصص الإنتاج النباتي وشكل اختصاص علوم التربة مع اختصاص المحاصيل الحقلية قسن التربة والمحاصيل الحقلية عام 1963 ثم أصبح قسما مستقلا باسم قسم التربة عام 1967 وقد تخرج من القسم إلى حد عام 2002 حوالي 2294 طالبا وطالبة إذ يبدا التخصص عند قبول الطالب للدراسة وفي المرحلة الأولى يبدا الطالب بدراسة العلوم الأساسية ثم يقوم بدراسة مواد التخصص في المرحلة الثانية وما بعدها. أما فيما يخص الدراسات ا",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:.D9.82.D8.B3.D9.85_.D8.A7.D9.84.D9.85.D9.83.D8.A7.D8.A6.D9.86_.D9.88.D8.A7.D9.84.D8.A2.D9.84.D8.A7.D8.AA_.D8.A7.D9.84.D8.B2.D8.B1.D8.A7.D8.B9.D9.8A.D8.A9",
+                  "original_text": "[عدل | عدل المصدر]\nتأسس هذا القسم عام 1987 بعد أن كان شعبة علمية تابعة إداريا لقسم التربة ويقوم بتدريس المواد ذات العلاقة بالمكائن والالات الزراعية. يهدف القسم حاليا إلى أعداد خريجين في اختصاصات المكائن والالات الزراعية قادرين على تشغيل وصيانة الساحبات والمعدات الزراعية والمكائن الثقيلة ومكائن استصلاح التربة فضلا عن تلقي الطالب دروس عملية في الأعمال الميكانيكية المختلفة ماللحام والخراطة والبرادة ويحتوي القسم على مجموعة من المختبرات ذات العلاقة، وورشة ميكانيكية يتلقى فيها الطلبة التدريب للدروس ال",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:.D9.82.D8.B3.D9.85_.D8.A7.D9.84.D9.85.D8.AD.D8.A7.D8.B5.D9.8A.D9.84_.D8.A7.D9.84.D8.AD.D9.82.D9.84.D9.8A.D8.A9",
+                  "original_text": "[عدل | عدل المصدر]\nتأسس القسم عام 1962 ويهدف إلى تخريج عناصر ذات مستوى عالي من المعرفة في مجال اختصاصهم بما يؤولهم للعمل في القطاع الزراعي والجهات ذات العلاقة للإسهام في تطويره عن طريق مواكبة وادخال آخر المستجدات الحديثة في اختصاص المحاصيل الحقلية. يضم القسم عشرة مختبرات للدراسات العلمية لمختلف المراحل فضلا عن 3 مختبرات للدراسات العليا ويعد من أوائل الأقسام التي فسحت شهادة الماجستير والدكتوراه وقد قد تخرج أول طالب ماجستير في القسم هو د. مدحت مجيد الساهوكي في عام 1969 وأول شهادة دكتوراه عام 1978 ",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:.D9.82.D8.B3.D9.85_.D8.A7.D9.84.D8.A7.D9.82.D8.AA.D8.B5.D8.A7.D8.AF_.D8.A7.D9.84.D8.B2.D8.B1.D8.A7.D8.B9.D9.8A",
+                  "original_text": "[عدل | عدل المصدر]\nتأسس عام 1961 وكان اسمه الاقتصاد والتعليم الزراعي وفي عام 1973 - 1974 بدل اسم القسم آلى (إدارة المزارع والتعاونيات) وفي عام 1979 - 1980 غير اسم القسم إلى قسم الاقتصاد الزراعي ويهدف القسم إلى تخريج طلبة يحملون معلومات بمستوى البكالوريوس في العلوم الاقتصادية الزراعية وبفروعها المختلفة ويعمل القسم على معالجة المشاكل لاقتصادية والزراعية التي تبرز في القطاع الزراعي والاستخدام الكفؤ للموارد الزراعية بما يحقق تعظيم الارباح وتدنية التكاليف للمنتج. اما الدراسات العليا فقد استحدثت في ال",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:.D9.82.D8.B3.D9.85_.D8.A7.D9.84.D8.A5.D8.B1.D8.B4.D8.A7.D8.AF_.D8.A7.D9.84.D8.B2.D8.B1.D8.A7.D8.B9.D9.8A",
+                  "original_text": "[عدل | عدل المصدر]\nيعود تاريخ التعليم والإرشاد الزراعي في كلية الزراعة منذ تأسيس عام 1952 إذ تضمن المناهج الدراسية في الكلية آنذاك عددا من مواد التخصص وفي العام 1964 جمع الاقتصد والتعليم الزراعي في قسم واحد وفي عام 1972 أنشا فرع للإرشاد الزراعي ضمن قسم الإنتاج النباتي وتخرج أولى دوراته عام 1974 وبقي الإرشاد الزراعي فرعا مسقلا في خريجيه حتى عام 1976 حيث استحدث قسم المدرسين الزراعيين عام 1977 - 1978 وفي عام 1989 اقتصر القسم على الإرشاد والتعليم الزراعي، يهدف القسم إلى إعداد خريجين مؤهلين علميا وعم",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "The College of Agricultural Engineering Sciences (كلية علوم الهندسة الزراعية) is a constituent college of the University of Baghdad in Iraq. Located in Al-Jadriya, it traces its establishment to 1952 and is also described under the name College of Agriculture (كلية الزراعة). Its work combines agricultural education with practical training and research in fields and laboratories. The college offers undergraduate and postgraduate education in agricultural disciplines.\n\nThe bachelor’s programme in agricultural sciences is described as a four-year course organised into two semesters per academic year. Postgraduate study developed through individual departments: master’s study began in plant protection in 1961, while doctoral study was introduced in field crops in 1975. The historical account describes master’s programmes lasting two years and doctoral programmes lasting three years, combining coursework with research.\n\nIts academic areas include animal production, food science and biotechnology, horticulture and garden engineering, plant protection, soil and water sciences, agricultural machinery, field crops, agricultural economics, and agricultural extension. The animal-production department dates to the college’s foundation in 1952. Teaching and training facilities described in the institutional history include scientific departments, a library, classrooms, laboratories, workshops, agricultural fields and orchards used for student training and postgraduate research."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "website": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P856:0",
+                  "original_text": "{\"property\": \"P856\", \"property_label\": \"official website\", \"statement_id\": \"Q115012701$6eec6d08-4f42-6a30-e0b0-e16038703f07\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"https://coagri.uobaghdad.edu.iq/\"}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "https://coagri.uobaghdad.edu.iq/",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "qid": "Q115012701",
+      "record_revision": 1,
+      "related_entities": {
+        "baghdad": {
+          "kind": "institution",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q550376\", \"labels\": {\"ar\": \"جامعة بغداد\", \"en\": \"University of Baghdad\"}, \"descriptions\": {\"en\": \"university in Iraq\", \"ar\": \"هي من أشهر وأعرق الجامعات في العراق وأكبرها حجما\"}}",
+                    "source_ref": "s6"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "ar",
+                  "text": "جامعة بغداد"
+                },
+                "verification": "supported"
+              },
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q550376\", \"labels\": {\"ar\": \"جامعة بغداد\", \"en\": \"University of Baghdad\"}, \"descriptions\": {\"en\": \"university in Iraq\", \"ar\": \"هي من أشهر وأعرق الجامعات في العراق وأكبرها حجما\"}}",
+                    "source_ref": "s6"
+                  }
+                ],
+                "id": "c2",
+                "value": {
+                  "language": "en",
+                  "text": "University of Baghdad"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+              "reason_code": "best_available"
+            }
+          },
+          "qid": "Q550376"
+        }
+      },
+      "relationships": {
+        "parent": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P361:0",
+                    "original_text": "{\"property\": \"P361\", \"property_label\": \"part of\", \"statement_id\": \"Q115012701$6abba37c-419b-ebbb-e93e-e14be5ba175a\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 550376, \"id\": \"Q550376\"}}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "section:lead",
+                    "original_text": "كلية علوم الهندسة الزراعية هي إحدى كليات جامعة بغداد.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "target_ref": "related:baghdad"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ]
+      },
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "legacy_discovery"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "needs_review"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T23:24:55.152496+00:00",
+          "revision_id": 2463683816,
+          "source_qid": "Q115012701",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2463683816"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikipedia",
+          "language": "ar",
+          "page_id": 1100706,
+          "publisher_role": "encyclopedia",
+          "retrieved_at": "2026-11-06T23:25:02.220850+00:00",
+          "revision_id": 73514909,
+          "url": "https://ar.wikipedia.org/w/index.php?oldid=73514909"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T23:25:05.066510+00:00",
+          "revision_id": 2556557061,
+          "source_qid": "Q189004",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2556557061"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T23:25:08.849922+00:00",
+          "revision_id": 2562957333,
+          "source_qid": "Q796",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2562957333"
+        },
+        "s5": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T23:25:12.467544+00:00",
+          "revision_id": 2361315301,
+          "source_qid": "Q4702577",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2361315301"
+        },
+        "s6": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T23:25:15.490563+00:00",
+          "revision_id": 2525369139,
+          "source_qid": "Q550376",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2525369139"
+        }
+      }
+    },
+    "coverage": [
+      {
+        "group": "identity",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "status": "checked"
+      },
+      {
+        "group": "population",
+        "status": "not_found"
+      },
+      {
+        "group": "finance",
+        "status": "not_found"
+      },
+      {
+        "group": "profile",
+        "status": "checked"
+      }
+    ],
+    "delta": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-06T23:25:15.521605+00:00",
+          "status": "not_found"
+        },
+        "geography": {
+          "checked_at": "2026-11-06T23:25:15.521605+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-06T23:25:15.521605+00:00",
+          "status": "checked"
+        },
+        "identity": {
+          "checked_at": "2026-11-06T23:25:15.521605+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-06T23:25:15.521605+00:00",
+          "status": "not_found"
+        },
+        "profile": {
+          "checked_at": "2026-11-06T23:25:15.521605+00:00",
+          "status": "checked"
+        }
+      },
+      "curation": {
+        "identity_status": "related"
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "claim:P571:0",
+                      "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q115012701$9ee1fcca-4f4e-1699-aa3b-a8eac3365617\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+1952-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}",
+                      "source_ref": "s1"
+                    },
+                    {
+                      "locator": "infobox:1",
+                      "original_text": "معلومات: ",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 1952
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:.D9.84.D9.85.D8.AD.D8.A9_.D8.AA.D8.A7.D8.B1.D9.8A.D8.AE.D9.8A.D8.A9",
+                      "original_text": "كلية الزراعة هي أول كلية زراعة في العراق، يعود تاريخ تأسيسها إلى عام 1952.",
+                      "source_ref": "s2"
+                    },
+                    {
+                      "locator": "page_metadata",
+                      "original_text": "{\"title\": \"كلية علوم الهندسة الزراعية\", \"language\": \"ar\"}",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "Establishment of the College of Agriculture, now named كلية علوم الهندسة الزراعية."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "establishment",
+            "kind": "institution_establishment",
+            "subject_ref": "institution"
+          }
+        ]
+      },
+      "identity": {
+        "aliases": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:.D9.84.D9.85.D8.AD.D8.A9_.D8.AA.D8.A7.D8.B1.D9.8A.D8.AE.D9.8A.D8.A9",
+                    "original_text": "كلية الزراعة هي أول كلية زراعة في العراق، يعود تاريخ تأسيسها إلى عام 1952.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "ar",
+                  "text": "كلية الزراعة"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ],
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "metadata",
+                  "original_text": "{\"id\": \"Q115012701\", \"labels\": {\"ar\": \"كلية علوم الهندسة الزراعية\"}, \"descriptions\": {\"ar\": \"إحدى كليات جامعة بغداد العراقية\"}}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "section:lead",
+                  "original_text": "كلية علوم الهندسة الزراعية هي إحدى كليات جامعة بغداد.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "faculty",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "ar": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q115012701\", \"labels\": {\"ar\": \"كلية علوم الهندسة الزراعية\"}, \"descriptions\": {\"ar\": \"إحدى كليات جامعة بغداد العراقية\"}}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "page_metadata",
+                    "original_text": "{\"title\": \"كلية علوم الهندسة الزراعية\", \"language\": \"ar\"}",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": "كلية علوم الهندسة الزراعية",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "locations": [
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q115012701$2a5cec52-4061-647f-cfa2-19ac9b92c90a\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 4702577, \"id\": \"Q4702577\"}}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q115012701$30402f2b-46fe-d17d-bfe3-922af22019b3\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 796, \"id\": \"Q796\"}}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q796\", \"labels\": {\"ar\": \"العراق\", \"en\": \"Iraq\"}, \"descriptions\": {\"en\": \"sovereign state in Western Asia\", \"ar\": \"دولة عربية في غرب آسيا\"}}",
+                    "source_ref": "s4"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q4702577\", \"labels\": {\"ar\": \"الجادرية\", \"en\": \"Al-Jadriya\"}, \"descriptions\": {\"ar\": \"حي سكني في العراق\", \"en\": \"District in Baghdad\"}}",
+                    "source_ref": "s5"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "country_name": "Iraq",
+                  "country_qid": "Q796",
+                  "formatted": {
+                    "language": "ar",
+                    "text": "الجادرية، العراق"
+                  },
+                  "region_name": "الجادرية",
+                  "region_qid": "Q4702577"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "jadriya",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q115012701$2a5cec52-4061-647f-cfa2-19ac9b92c90a\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 4702577, \"id\": \"Q4702577\"}}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q4702577\", \"labels\": {\"ar\": \"الجادرية\", \"en\": \"Al-Jadriya\"}, \"descriptions\": {\"ar\": \"حي سكني في العراق\", \"en\": \"District in Baghdad\"}}",
+                    "source_ref": "s5"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "ar",
+                  "text": "الجادرية"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q4702577"
+        },
+        {
+          "coordinates": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "statement:Q115012701$b34108fb-437d-06ec-7cb6-3cb57ed5deeb",
+                    "original_text": "\"latitude\": 33.268799",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "source_rank": "normal",
+                "value": {
+                  "crs": "EPSG:4326",
+                  "globe_qid": "Q2",
+                  "latitude": 33.268799,
+                  "longitude": 44.379015,
+                  "source_precision_degrees": 1e-06
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "wikidata-item-location",
+          "kind": "institution",
+          "qid": "Q115012701"
+        }
+      ],
+      "profile": {
+        "academic_focus": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:.D9.86.D8.B8.D8.A7.D9.85_.D8.A7.D9.84.D9.83.D9.84.D9.8A.D8.A9",
+                  "original_text": "[عدل | عدل المصدر]\nمدة الدراسة للحصول على شهادة البكالوريوس في العلوم الزراعية ((في التخصصات جميعها)) في هذه الكلية هي ((4)) سنوات دراسية وفق نظام الفصول الدراسية ((الكورسات)) وتوزع السنة الدراسية على فصلين دراسين مدة كل منهما ((15))أسبوعاً.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:.D9.82.D8.B3.D9.85_.D8.A7.D9.84.D8.A5.D9.86.D8.AA.D8.A7.D8.AC_.D8.A7.D9.84.D8.AD.D9.8A.D9.88.D8.A7.D9.86.D9.8A",
+                  "original_text": "[عدل | عدل المصدر]\nنشأ قسم الثروة الحيوانية مع تأسيس الكلية عام 1952 وكان يضم ثلاثة شعب هي:\nتربية الحيوان\nالدواجن\nالألبان\nاعتمدت المناهج الدراسية للقسم على الدروس الأساسية التي كان على طلبة القسم جميعهم دراستها خلال السنتين الأولى والثانية ودروس الاختصاص المتاحة فضلا عن عدد من الموضوعات الاختيارية في مجال تربية وتحسين الحيوان والألبان والدواجن والتي كان على الطالب اختيارها وفق رغبته وذلك لإكمال متطلبات التخرج ومن بين المواضيع الأخرى التي يحرص القسم على رفد الطلبة بها هي الأسس العامة في تربية وتح",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:.D9.82.D8.B3.D9.85_.D8.B9.D9.84.D9.88.D9.85_.D8.A7.D9.84.D8.A3.D8.BA.D8.B0.D9.8A.D8.A9_.D9.88.D8.A7.D9.84.D8.AA.D9.82.D8.A7.D9.86.D8.A7.D8.AA_.D8.A7.D9.84.D8.A3.D8.AD.D9.8A.D8.A7.D8.A6.D9.8A.D8.A9",
+                  "original_text": "[عدل | عدل المصدر]\nتأسس القسم عام 1963 كوحدة علمية مستقلة بعد 11 سنة من تأسيس كلية الزراعة عام 1952 وكانت مهمة القسم تهيئة وتخريج الكوادر في اختصاص تقنيات وعلوم الأغذية وقد أدى القسم هذه المهمة بجدارة إذ ساهم بتخريج عدد كبير من الطلبة انخرطوا في معترك الحياة العلمية والنتاجية في المراكز العلمية والمؤسسات الإنتاجية المختلفة في القطر وخارجه، وقد شهد القسم منذ تأسيسه تطورات كبيرة إلى أن أصبح على ما هو عليه الآن ومنها تأسيس معملين الأول لتصنيع الاغذية والثاني لتصنيع منتجات الألبان وعدد من المختبرات ",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:.D9.82.D8.B3.D9.85_.D8.A7.D9.84.D8.A8.D8.B3.D8.AA.D9.86.D8.A9_.D9.88.D9.87.D9.86.D8.AF.D8.B3.D8.A9_.D8.A7.D9.84.D8.AD.D8.AF.D8.A7.D8.A6.D9.82",
+                  "original_text": "[عدل | عدل المصدر]\nأحد الأقسام العلمية القائمة في الكلية حاليا والبالغة 9 أقسام حيث استحدث عام 1963 وكان التخصص فيه يبدأ في الصف الرابع واستمر الحال حتى عام 1972 حيث دمج مع قسمي المحاصيل الحقلية والإرشاد الزراعي وسمي قسم الإنتاج النباتي وفي عام 1976 فك ارتباطه من جديدي وبدء التخصص فيه من المرحلة الثالثة وكان عدد الطلاب في الصف الرابع عام 1963 ثمــانية طلاب فقط حتى أخذ يتزايد وبلغ ذروته عام 2000 حيث بلغ 170 طالب وطالبة وكان أول خريج للدراسات العليا هو/ ماجستير عام 1968 كما يقوم القسم بالتعاون مع ",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:.D9.82.D8.B3.D9.85_.D9.88.D9.82.D8.A7.D9.8A.D8.A9_.D8.A7.D9.84.D9.86.D8.A8.D8.A7.D8.AA",
+                  "original_text": "[عدل | عدل المصدر]\nمن الأقسام العلمية في الكلية وكان بداية القسم هي قسمان هما قسم الحشرات العامة والحيوان وقسم الأمراض النباتية وفي عام 1972 - 1973 اندمج لقسمان في قسم واحد سمي وقاية النبات أهداف هذا القسم إعداد ملاكات مؤهلة من حملة البكلوريوس والشهادات العليا ذات إلمام بالآفات التي تصيب النباتات والمحاصيل الزراعية وطرق السيطرة عليها ومعالجتها. أما الدراسات العليا فقد منح القسم أول شهادة ماجستير عام 1964 لــحكمت عباس العاني وتطور الدراسات العليا في القسم حتى بلغ 182 ماجستير و42 دكتوراه",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:.D9.82.D8.B3.D9.85_.D8.A7.D9.84.D8.AA.D8.B1.D8.A8.D8.A9",
+                  "original_text": "[عدل | عدل المصدر]\nيعد قسم التربة واحدا من أقدم الأقسام في الكلية حيث كان اختصاص التربة من الاختصاصات الفرعية ضمن تخصص الإنتاج النباتي وشكل اختصاص علوم التربة مع اختصاص المحاصيل الحقلية قسن التربة والمحاصيل الحقلية عام 1963 ثم أصبح قسما مستقلا باسم قسم التربة عام 1967 وقد تخرج من القسم إلى حد عام 2002 حوالي 2294 طالبا وطالبة إذ يبدا التخصص عند قبول الطالب للدراسة وفي المرحلة الأولى يبدا الطالب بدراسة العلوم الأساسية ثم يقوم بدراسة مواد التخصص في المرحلة الثانية وما بعدها. أما فيما يخص الدراسات ا",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:.D9.82.D8.B3.D9.85_.D8.A7.D9.84.D9.85.D9.83.D8.A7.D8.A6.D9.86_.D9.88.D8.A7.D9.84.D8.A2.D9.84.D8.A7.D8.AA_.D8.A7.D9.84.D8.B2.D8.B1.D8.A7.D8.B9.D9.8A.D8.A9",
+                  "original_text": "[عدل | عدل المصدر]\nتأسس هذا القسم عام 1987 بعد أن كان شعبة علمية تابعة إداريا لقسم التربة ويقوم بتدريس المواد ذات العلاقة بالمكائن والالات الزراعية. يهدف القسم حاليا إلى أعداد خريجين في اختصاصات المكائن والالات الزراعية قادرين على تشغيل وصيانة الساحبات والمعدات الزراعية والمكائن الثقيلة ومكائن استصلاح التربة فضلا عن تلقي الطالب دروس عملية في الأعمال الميكانيكية المختلفة ماللحام والخراطة والبرادة ويحتوي القسم على مجموعة من المختبرات ذات العلاقة، وورشة ميكانيكية يتلقى فيها الطلبة التدريب للدروس ال",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:.D9.82.D8.B3.D9.85_.D8.A7.D9.84.D9.85.D8.AD.D8.A7.D8.B5.D9.8A.D9.84_.D8.A7.D9.84.D8.AD.D9.82.D9.84.D9.8A.D8.A9",
+                  "original_text": "[عدل | عدل المصدر]\nتأسس القسم عام 1962 ويهدف إلى تخريج عناصر ذات مستوى عالي من المعرفة في مجال اختصاصهم بما يؤولهم للعمل في القطاع الزراعي والجهات ذات العلاقة للإسهام في تطويره عن طريق مواكبة وادخال آخر المستجدات الحديثة في اختصاص المحاصيل الحقلية. يضم القسم عشرة مختبرات للدراسات العلمية لمختلف المراحل فضلا عن 3 مختبرات للدراسات العليا ويعد من أوائل الأقسام التي فسحت شهادة الماجستير والدكتوراه وقد قد تخرج أول طالب ماجستير في القسم هو د. مدحت مجيد الساهوكي في عام 1969 وأول شهادة دكتوراه عام 1978 ",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:.D9.82.D8.B3.D9.85_.D8.A7.D9.84.D8.A7.D9.82.D8.AA.D8.B5.D8.A7.D8.AF_.D8.A7.D9.84.D8.B2.D8.B1.D8.A7.D8.B9.D9.8A",
+                  "original_text": "[عدل | عدل المصدر]\nتأسس عام 1961 وكان اسمه الاقتصاد والتعليم الزراعي وفي عام 1973 - 1974 بدل اسم القسم آلى (إدارة المزارع والتعاونيات) وفي عام 1979 - 1980 غير اسم القسم إلى قسم الاقتصاد الزراعي ويهدف القسم إلى تخريج طلبة يحملون معلومات بمستوى البكالوريوس في العلوم الاقتصادية الزراعية وبفروعها المختلفة ويعمل القسم على معالجة المشاكل لاقتصادية والزراعية التي تبرز في القطاع الزراعي والاستخدام الكفؤ للموارد الزراعية بما يحقق تعظيم الارباح وتدنية التكاليف للمنتج. اما الدراسات العليا فقد استحدثت في ال",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:.D9.82.D8.B3.D9.85_.D8.A7.D9.84.D8.A5.D8.B1.D8.B4.D8.A7.D8.AF_.D8.A7.D9.84.D8.B2.D8.B1.D8.A7.D8.B9.D9.8A",
+                  "original_text": "[عدل | عدل المصدر]\nيعود تاريخ التعليم والإرشاد الزراعي في كلية الزراعة منذ تأسيس عام 1952 إذ تضمن المناهج الدراسية في الكلية آنذاك عددا من مواد التخصص وفي العام 1964 جمع الاقتصد والتعليم الزراعي في قسم واحد وفي عام 1972 أنشا فرع للإرشاد الزراعي ضمن قسم الإنتاج النباتي وتخرج أولى دوراته عام 1974 وبقي الإرشاد الزراعي فرعا مسقلا في خريجيه حتى عام 1976 حيث استحدث قسم المدرسين الزراعيين عام 1977 - 1978 وفي عام 1989 اقتصر القسم على الإرشاد والتعليم الزراعي، يهدف القسم إلى إعداد خريجين مؤهلين علميا وعم",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": [
+                {
+                  "language": "en",
+                  "text": "Agricultural sciences"
+                },
+                {
+                  "language": "en",
+                  "text": "Animal production"
+                },
+                {
+                  "language": "en",
+                  "text": "Food science and biotechnology"
+                },
+                {
+                  "language": "en",
+                  "text": "Horticulture and garden engineering"
+                },
+                {
+                  "language": "en",
+                  "text": "Plant protection"
+                },
+                {
+                  "language": "en",
+                  "text": "Soil and water sciences"
+                },
+                {
+                  "language": "en",
+                  "text": "Agricultural machinery"
+                },
+                {
+                  "language": "en",
+                  "text": "Field crops"
+                },
+                {
+                  "language": "en",
+                  "text": "Agricultural economics"
+                },
+                {
+                  "language": "en",
+                  "text": "Agricultural extension"
+                }
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "degree_levels": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:.D9.86.D8.B8.D8.A7.D9.85_.D8.A7.D9.84.D9.83.D9.84.D9.8A.D8.A9",
+                  "original_text": "[عدل | عدل المصدر]\nمدة الدراسة للحصول على شهادة البكالوريوس في العلوم الزراعية ((في التخصصات جميعها)) في هذه الكلية هي ((4)) سنوات دراسية وفق نظام الفصول الدراسية ((الكورسات)) وتوزع السنة الدراسية على فصلين دراسين مدة كل منهما ((15))أسبوعاً.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:.D9.84.D9.85.D8.AD.D8.A9_.D8.AA.D8.A7.D8.B1.D9.8A.D8.AE.D9.8A.D8.A9",
+                  "original_text": "[عدل | عدل المصدر]\nكلية الزراعة هي أول كلية زراعة في العراق، يعود تاريخ تأسيسها إلى عام 1952. تتوزع بناياتها وحقولها على مساحة 400 دونم، منها 100 دونم تنتشر عليها بنايات العمادة والأقسام العلمية والمكتبة والقاعات والمختبرات الدراسية والورش والمعامل و300 دونم حقول وبساتين مخصصه لتدريب الطلبة ولإجراء بحوث وتجارب الاساتذه وطلبة الدراسات العليا. ومدة الدراسة للحصول على شهادة الماجستير سنتان وللحصول على شهادة الدكتوراه ثلاث سنوات وفق نظام الكورسات والبحث العلمي.[1]\nكلية الزراعة في جامعة بغداد",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": [
+                "bachelor",
+                "master",
+                "doctorate"
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "summary": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "metadata",
+                  "original_text": "{\"id\": \"Q115012701\", \"labels\": {\"ar\": \"كلية علوم الهندسة الزراعية\"}, \"descriptions\": {\"ar\": \"إحدى كليات جامعة بغداد العراقية\"}}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "claim:P131:0",
+                  "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q115012701$2a5cec52-4061-647f-cfa2-19ac9b92c90a\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 4702577, \"id\": \"Q4702577\"}}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "claim:P17:0",
+                  "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q115012701$30402f2b-46fe-d17d-bfe3-922af22019b3\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 796, \"id\": \"Q796\"}}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "metadata",
+                  "original_text": "{\"id\": \"Q4702577\", \"labels\": {\"ar\": \"الجادرية\", \"en\": \"Al-Jadriya\"}, \"descriptions\": {\"ar\": \"حي سكني في العراق\", \"en\": \"District in Baghdad\"}}",
+                  "source_ref": "s5"
+                },
+                {
+                  "locator": "section:lead",
+                  "original_text": "هذه المقالة تحتاج للمزيد من الوصلات للمقالات الأخرى للمساعدة في ترابط مقالات الموسوعة. فضلًا ساعد في تحسين هذه المقالة بإضافة وصلات إلى المقالات المتعلقة بها الموجودة في النص الحالي. (سبتمبر 2023)\nلمعلومات عن معانٍ أخرى، طالع كلية الزراعة (توضيح).\nكلية علوم الهندسة الزراعية هي إحدى كليات جامعة بغداد.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:.D9.84.D9.85.D8.AD.D8.A9_.D8.AA.D8.A7.D8.B1.D9.8A.D8.AE.D9.8A.D8.A9",
+                  "original_text": "[عدل | عدل المصدر]\nكلية الزراعة هي أول كلية زراعة في العراق، يعود تاريخ تأسيسها إلى عام 1952. تتوزع بناياتها وحقولها على مساحة 400 دونم، منها 100 دونم تنتشر عليها بنايات العمادة والأقسام العلمية والمكتبة والقاعات والمختبرات الدراسية والورش والمعامل و300 دونم حقول وبساتين مخصصه لتدريب الطلبة ولإجراء بحوث وتجارب الاساتذه وطلبة الدراسات العليا. ومدة الدراسة للحصول على شهادة الماجستير سنتان وللحصول على شهادة الدكتوراه ثلاث سنوات وفق نظام الكورسات والبحث العلمي.[1]\nكلية الزراعة في جامعة بغداد",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:.D9.86.D8.B8.D8.A7.D9.85_.D8.A7.D9.84.D9.83.D9.84.D9.8A.D8.A9",
+                  "original_text": "[عدل | عدل المصدر]\nمدة الدراسة للحصول على شهادة البكالوريوس في العلوم الزراعية ((في التخصصات جميعها)) في هذه الكلية هي ((4)) سنوات دراسية وفق نظام الفصول الدراسية ((الكورسات)) وتوزع السنة الدراسية على فصلين دراسين مدة كل منهما ((15))أسبوعاً.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:.D8.A7.D9.84.D8.AF.D8.B1.D8.A7.D8.B3.D8.A7.D8.AA_.D8.A7.D9.84.D8.B9.D9.84.D9.8A.D8.A7",
+                  "original_text": "[عدل | عدل المصدر]\nاستحدثت دراسة الماجستير في الكلية عام 1961 في قسم وقاية النبات. اما دراسة الدكتوراه فقد استحدثت في عام 1975 في قسم المحاصيل الحقلية. شهدت الدراسات العليا تطورا كبيراً في عدد التخصصات التي استحدثت وسجلت التخصصات العلمية جميعها في الكلية. كما شهدت تطورا كبيراً في اعداد الطلبة المقبولين فيها عاما بعد آخر.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:.D9.82.D8.B3.D9.85_.D8.A7.D9.84.D8.A5.D9.86.D8.AA.D8.A7.D8.AC_.D8.A7.D9.84.D8.AD.D9.8A.D9.88.D8.A7.D9.86.D9.8A",
+                  "original_text": "[عدل | عدل المصدر]\nنشأ قسم الثروة الحيوانية مع تأسيس الكلية عام 1952 وكان يضم ثلاثة شعب هي:\nتربية الحيوان\nالدواجن\nالألبان\nاعتمدت المناهج الدراسية للقسم على الدروس الأساسية التي كان على طلبة القسم جميعهم دراستها خلال السنتين الأولى والثانية ودروس الاختصاص المتاحة فضلا عن عدد من الموضوعات الاختيارية في مجال تربية وتحسين الحيوان والألبان والدواجن والتي كان على الطالب اختيارها وفق رغبته وذلك لإكمال متطلبات التخرج ومن بين المواضيع الأخرى التي يحرص القسم على رفد الطلبة بها هي الأسس العامة في تربية وتح",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:.D9.82.D8.B3.D9.85_.D8.B9.D9.84.D9.88.D9.85_.D8.A7.D9.84.D8.A3.D8.BA.D8.B0.D9.8A.D8.A9_.D9.88.D8.A7.D9.84.D8.AA.D9.82.D8.A7.D9.86.D8.A7.D8.AA_.D8.A7.D9.84.D8.A3.D8.AD.D9.8A.D8.A7.D8.A6.D9.8A.D8.A9",
+                  "original_text": "[عدل | عدل المصدر]\nتأسس القسم عام 1963 كوحدة علمية مستقلة بعد 11 سنة من تأسيس كلية الزراعة عام 1952 وكانت مهمة القسم تهيئة وتخريج الكوادر في اختصاص تقنيات وعلوم الأغذية وقد أدى القسم هذه المهمة بجدارة إذ ساهم بتخريج عدد كبير من الطلبة انخرطوا في معترك الحياة العلمية والنتاجية في المراكز العلمية والمؤسسات الإنتاجية المختلفة في القطر وخارجه، وقد شهد القسم منذ تأسيسه تطورات كبيرة إلى أن أصبح على ما هو عليه الآن ومنها تأسيس معملين الأول لتصنيع الاغذية والثاني لتصنيع منتجات الألبان وعدد من المختبرات ",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:.D9.82.D8.B3.D9.85_.D8.A7.D9.84.D8.A8.D8.B3.D8.AA.D9.86.D8.A9_.D9.88.D9.87.D9.86.D8.AF.D8.B3.D8.A9_.D8.A7.D9.84.D8.AD.D8.AF.D8.A7.D8.A6.D9.82",
+                  "original_text": "[عدل | عدل المصدر]\nأحد الأقسام العلمية القائمة في الكلية حاليا والبالغة 9 أقسام حيث استحدث عام 1963 وكان التخصص فيه يبدأ في الصف الرابع واستمر الحال حتى عام 1972 حيث دمج مع قسمي المحاصيل الحقلية والإرشاد الزراعي وسمي قسم الإنتاج النباتي وفي عام 1976 فك ارتباطه من جديدي وبدء التخصص فيه من المرحلة الثالثة وكان عدد الطلاب في الصف الرابع عام 1963 ثمــانية طلاب فقط حتى أخذ يتزايد وبلغ ذروته عام 2000 حيث بلغ 170 طالب وطالبة وكان أول خريج للدراسات العليا هو/ ماجستير عام 1968 كما يقوم القسم بالتعاون مع ",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:.D9.82.D8.B3.D9.85_.D9.88.D9.82.D8.A7.D9.8A.D8.A9_.D8.A7.D9.84.D9.86.D8.A8.D8.A7.D8.AA",
+                  "original_text": "[عدل | عدل المصدر]\nمن الأقسام العلمية في الكلية وكان بداية القسم هي قسمان هما قسم الحشرات العامة والحيوان وقسم الأمراض النباتية وفي عام 1972 - 1973 اندمج لقسمان في قسم واحد سمي وقاية النبات أهداف هذا القسم إعداد ملاكات مؤهلة من حملة البكلوريوس والشهادات العليا ذات إلمام بالآفات التي تصيب النباتات والمحاصيل الزراعية وطرق السيطرة عليها ومعالجتها. أما الدراسات العليا فقد منح القسم أول شهادة ماجستير عام 1964 لــحكمت عباس العاني وتطور الدراسات العليا في القسم حتى بلغ 182 ماجستير و42 دكتوراه",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:.D9.82.D8.B3.D9.85_.D8.A7.D9.84.D8.AA.D8.B1.D8.A8.D8.A9",
+                  "original_text": "[عدل | عدل المصدر]\nيعد قسم التربة واحدا من أقدم الأقسام في الكلية حيث كان اختصاص التربة من الاختصاصات الفرعية ضمن تخصص الإنتاج النباتي وشكل اختصاص علوم التربة مع اختصاص المحاصيل الحقلية قسن التربة والمحاصيل الحقلية عام 1963 ثم أصبح قسما مستقلا باسم قسم التربة عام 1967 وقد تخرج من القسم إلى حد عام 2002 حوالي 2294 طالبا وطالبة إذ يبدا التخصص عند قبول الطالب للدراسة وفي المرحلة الأولى يبدا الطالب بدراسة العلوم الأساسية ثم يقوم بدراسة مواد التخصص في المرحلة الثانية وما بعدها. أما فيما يخص الدراسات ا",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:.D9.82.D8.B3.D9.85_.D8.A7.D9.84.D9.85.D9.83.D8.A7.D8.A6.D9.86_.D9.88.D8.A7.D9.84.D8.A2.D9.84.D8.A7.D8.AA_.D8.A7.D9.84.D8.B2.D8.B1.D8.A7.D8.B9.D9.8A.D8.A9",
+                  "original_text": "[عدل | عدل المصدر]\nتأسس هذا القسم عام 1987 بعد أن كان شعبة علمية تابعة إداريا لقسم التربة ويقوم بتدريس المواد ذات العلاقة بالمكائن والالات الزراعية. يهدف القسم حاليا إلى أعداد خريجين في اختصاصات المكائن والالات الزراعية قادرين على تشغيل وصيانة الساحبات والمعدات الزراعية والمكائن الثقيلة ومكائن استصلاح التربة فضلا عن تلقي الطالب دروس عملية في الأعمال الميكانيكية المختلفة ماللحام والخراطة والبرادة ويحتوي القسم على مجموعة من المختبرات ذات العلاقة، وورشة ميكانيكية يتلقى فيها الطلبة التدريب للدروس ال",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:.D9.82.D8.B3.D9.85_.D8.A7.D9.84.D9.85.D8.AD.D8.A7.D8.B5.D9.8A.D9.84_.D8.A7.D9.84.D8.AD.D9.82.D9.84.D9.8A.D8.A9",
+                  "original_text": "[عدل | عدل المصدر]\nتأسس القسم عام 1962 ويهدف إلى تخريج عناصر ذات مستوى عالي من المعرفة في مجال اختصاصهم بما يؤولهم للعمل في القطاع الزراعي والجهات ذات العلاقة للإسهام في تطويره عن طريق مواكبة وادخال آخر المستجدات الحديثة في اختصاص المحاصيل الحقلية. يضم القسم عشرة مختبرات للدراسات العلمية لمختلف المراحل فضلا عن 3 مختبرات للدراسات العليا ويعد من أوائل الأقسام التي فسحت شهادة الماجستير والدكتوراه وقد قد تخرج أول طالب ماجستير في القسم هو د. مدحت مجيد الساهوكي في عام 1969 وأول شهادة دكتوراه عام 1978 ",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:.D9.82.D8.B3.D9.85_.D8.A7.D9.84.D8.A7.D9.82.D8.AA.D8.B5.D8.A7.D8.AF_.D8.A7.D9.84.D8.B2.D8.B1.D8.A7.D8.B9.D9.8A",
+                  "original_text": "[عدل | عدل المصدر]\nتأسس عام 1961 وكان اسمه الاقتصاد والتعليم الزراعي وفي عام 1973 - 1974 بدل اسم القسم آلى (إدارة المزارع والتعاونيات) وفي عام 1979 - 1980 غير اسم القسم إلى قسم الاقتصاد الزراعي ويهدف القسم إلى تخريج طلبة يحملون معلومات بمستوى البكالوريوس في العلوم الاقتصادية الزراعية وبفروعها المختلفة ويعمل القسم على معالجة المشاكل لاقتصادية والزراعية التي تبرز في القطاع الزراعي والاستخدام الكفؤ للموارد الزراعية بما يحقق تعظيم الارباح وتدنية التكاليف للمنتج. اما الدراسات العليا فقد استحدثت في ال",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:.D9.82.D8.B3.D9.85_.D8.A7.D9.84.D8.A5.D8.B1.D8.B4.D8.A7.D8.AF_.D8.A7.D9.84.D8.B2.D8.B1.D8.A7.D8.B9.D9.8A",
+                  "original_text": "[عدل | عدل المصدر]\nيعود تاريخ التعليم والإرشاد الزراعي في كلية الزراعة منذ تأسيس عام 1952 إذ تضمن المناهج الدراسية في الكلية آنذاك عددا من مواد التخصص وفي العام 1964 جمع الاقتصد والتعليم الزراعي في قسم واحد وفي عام 1972 أنشا فرع للإرشاد الزراعي ضمن قسم الإنتاج النباتي وتخرج أولى دوراته عام 1974 وبقي الإرشاد الزراعي فرعا مسقلا في خريجيه حتى عام 1976 حيث استحدث قسم المدرسين الزراعيين عام 1977 - 1978 وفي عام 1989 اقتصر القسم على الإرشاد والتعليم الزراعي، يهدف القسم إلى إعداد خريجين مؤهلين علميا وعم",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "The College of Agricultural Engineering Sciences (كلية علوم الهندسة الزراعية) is a constituent college of the University of Baghdad in Iraq. Located in Al-Jadriya, it traces its establishment to 1952 and is also described under the name College of Agriculture (كلية الزراعة). Its work combines agricultural education with practical training and research in fields and laboratories. The college offers undergraduate and postgraduate education in agricultural disciplines.\n\nThe bachelor’s programme in agricultural sciences is described as a four-year course organised into two semesters per academic year. Postgraduate study developed through individual departments: master’s study began in plant protection in 1961, while doctoral study was introduced in field crops in 1975. The historical account describes master’s programmes lasting two years and doctoral programmes lasting three years, combining coursework with research.\n\nIts academic areas include animal production, food science and biotechnology, horticulture and garden engineering, plant protection, soil and water sciences, agricultural machinery, field crops, agricultural economics, and agricultural extension. The animal-production department dates to the college’s foundation in 1952. Teaching and training facilities described in the institutional history include scientific departments, a library, classrooms, laboratories, workshops, agricultural fields and orchards used for student training and postgraduate research."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "website": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P856:0",
+                  "original_text": "{\"property\": \"P856\", \"property_label\": \"official website\", \"statement_id\": \"Q115012701$6eec6d08-4f42-6a30-e0b0-e16038703f07\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"https://coagri.uobaghdad.edu.iq/\"}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "https://coagri.uobaghdad.edu.iq/",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "qid": "Q115012701",
+      "record_revision": 1,
+      "related_entities": {
+        "baghdad": {
+          "kind": "institution",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q550376\", \"labels\": {\"ar\": \"جامعة بغداد\", \"en\": \"University of Baghdad\"}, \"descriptions\": {\"en\": \"university in Iraq\", \"ar\": \"هي من أشهر وأعرق الجامعات في العراق وأكبرها حجما\"}}",
+                    "source_ref": "s6"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "ar",
+                  "text": "جامعة بغداد"
+                },
+                "verification": "supported"
+              },
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q550376\", \"labels\": {\"ar\": \"جامعة بغداد\", \"en\": \"University of Baghdad\"}, \"descriptions\": {\"en\": \"university in Iraq\", \"ar\": \"هي من أشهر وأعرق الجامعات في العراق وأكبرها حجما\"}}",
+                    "source_ref": "s6"
+                  }
+                ],
+                "id": "c2",
+                "value": {
+                  "language": "en",
+                  "text": "University of Baghdad"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+              "reason_code": "best_available"
+            }
+          },
+          "qid": "Q550376"
+        }
+      },
+      "relationships": {
+        "parent": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P361:0",
+                    "original_text": "{\"property\": \"P361\", \"property_label\": \"part of\", \"statement_id\": \"Q115012701$6abba37c-419b-ebbb-e93e-e14be5ba175a\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 550376, \"id\": \"Q550376\"}}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "section:lead",
+                    "original_text": "كلية علوم الهندسة الزراعية هي إحدى كليات جامعة بغداد.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "target_ref": "related:baghdad"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ]
+      },
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "legacy_discovery"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "needs_review"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T23:24:55.152496+00:00",
+          "revision_id": 2463683816,
+          "source_qid": "Q115012701",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2463683816"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikipedia",
+          "language": "ar",
+          "page_id": 1100706,
+          "publisher_role": "encyclopedia",
+          "retrieved_at": "2026-11-06T23:25:02.220850+00:00",
+          "revision_id": 73514909,
+          "url": "https://ar.wikipedia.org/w/index.php?oldid=73514909"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T23:25:05.066510+00:00",
+          "revision_id": 2556557061,
+          "source_qid": "Q189004",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2556557061"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T23:25:08.849922+00:00",
+          "revision_id": 2562957333,
+          "source_qid": "Q796",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2562957333"
+        },
+        "s5": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T23:25:12.467544+00:00",
+          "revision_id": 2361315301,
+          "source_qid": "Q4702577",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2361315301"
+        },
+        "s6": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T23:25:15.490563+00:00",
+          "revision_id": 2525369139,
+          "source_qid": "Q550376",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2525369139"
+        }
+      }
+    },
+    "open_requests": [],
+    "proposed_at": "2026-11-06T23:27:07.333813+00:00",
+    "qid": "Q115012701",
+    "research": {
+      "model": "not_reported",
+      "prompt_sha256": "5e26f8fbaeae85f071a53b0a3b38f6875293101d8b0a7e90f2d47b0ba9e18e25",
+      "reasoning_effort": "medium",
+      "schema_sha256": "92e942f4fbf2ae28964462ea9ffa8312c5ee16a077a1e08b40aaaf741512422e",
+      "session": "/root/b2_research_q115012701"
+    },
+    "retrieval_failures": [],
+    "review_status": "unreviewed",
+    "seed": {
+      "channels": [
+        "legacy_discovery"
+      ],
+      "import_id": "seed-84c3beb45367905f",
+      "screening_status": "needs_review"
+    },
+    "transport": {
+      "base_commit": "63b1a051a0401c343ebb6900a625a4ecc5ca7afa",
+      "protocol": "native-subagent-v1",
+      "repository": "ider-zh/university-seed-curation",
+      "review_policy": {
+        "id": "source-grounded-flexible-v2",
+        "sha256": "b8ed7d2897e4c31dbd81b1379aafdc1077a21d1a33949edbd2d896b0adf99db2"
+      },
+      "schema_sha256": "bfa496eafa9dffca56146214168db7f000b09161b8993129632e7202e1c88833",
+      "seed_catalog_sha256": "84c3beb45367905f513d650684283dd62a9c1b77962bdc34151a6ef05bfa03d4"
+    },
+    "type": "university-proposal-v1"
+  },
+  "review": {
+    "contexts_checked": 5,
+    "coverage_checks": [
+      {
+        "group": "identity",
+        "reason": "Frozen root and Arabic Wikipedia establish the name, college kind and parent relationship; ownership and operating status are not invented.",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "reason": "Root country, administrative area and institution-scoped P625 are surveyed with linked country and area entities.",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "reason": "Inception and the Arabic historical section support a 1952 college establishment; departmental dates remain distinguished.",
+        "status": "checked"
+      },
+      {
+        "group": "population",
+        "reason": "Frozen article contains departmental or historical subgroup numbers but no supported college-wide population total; no departmental count is promoted to a college total.",
+        "status": "not_found"
+      },
+      {
+        "group": "finance",
+        "reason": "No institution-wide financial observation is provided by the frozen root or Arabic article. External investigation is not claimed.",
+        "status": "not_found"
+      },
+      {
+        "group": "profile",
+        "reason": "The Arabic article supplies subject areas, degree study and official-site link; profile content remains supplementary under v3.",
+        "status": "checked"
+      }
+    ],
+    "decision": "approve",
+    "facts_checked": 6,
+    "full_refresh": true,
+    "inferences": [
+      {
+        "id": "$.identity.kind:c1",
+        "reason": "Root description and Arabic lead identify the entity as one of the colleges of University of Baghdad; faculty reasonably represents this constituent college without asserting independent university status."
+      }
+    ],
+    "model": "not_reported",
+    "proposal_sha256": "6867e1ddf501e49d958b9f86f60becf7146d2a3fc1a97d654615cb3482870925",
+    "qid": "Q115012701",
+    "reasoning_effort": "medium",
+    "record_sha256": "d852d4a59fe785c29174f04a567d887bcbe8e1c05b26bbea40fc979d880d738e",
+    "request_responses": [],
+    "requests": [],
+    "review_scope": {
+      "not_independently_reviewed_ids": [
+        "$.history.milestones[0].description:c1",
+        "$.locations[0].address:c1",
+        "$.locations[0].name:c1",
+        "$.profile.academic_focus:c1",
+        "$.profile.degree_levels:c1",
+        "$.profile.summary:c1",
+        "$.profile.website:c1",
+        "$.related_entities.baghdad.name:c1",
+        "$.related_entities.baghdad.name:c2",
+        "location:jadriya"
+      ],
+      "reviewed_ids": [
+        "$.history.milestones[0].date:c1",
+        "$.identity.aliases[0]:c1",
+        "$.identity.kind:c1",
+        "$.identity.names.ar:c1",
+        "$.locations[1].coordinates:c1",
+        "$.relationships.parent[0]:c1",
+        "country:$.locations[0].address:c1",
+        "identity",
+        "location:wikidata-item-location",
+        "milestone:establishment",
+        "related:baghdad"
+      ],
+      "version": "core-review-v3"
+    },
+    "review_session": "/root/b2_review_q115012701",
+    "reviewed_at": "2026-11-06T23:28:41.344403+00:00",
+    "source_revisions_checked": 6,
+    "waived_requests": []
+  },
+  "review_result_sha256": "30f683acd5919f66c2f486c71432b8911028a4fd1c7faf433bb97f1df6de612d",
+  "type": "university-unified-receipt-v1"
+}
