@@ -1,0 +1,513 @@
+{
+  "attribution": "distinct_native_research_and_review_subagents;not_cryptographic_identity",
+  "research": {
+    "baseline_sha256": "absent",
+    "candidate": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-06T23:25:41.510399+00:00",
+          "status": "disputed"
+        },
+        "geography": {
+          "checked_at": "2026-11-06T23:25:41.510399+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-06T23:25:41.510399+00:00",
+          "status": "disputed"
+        },
+        "identity": {
+          "checked_at": "2026-11-06T23:25:41.510399+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-06T23:25:41.510399+00:00",
+          "status": "disputed"
+        },
+        "profile": {
+          "checked_at": "2026-11-06T23:25:41.510399+00:00",
+          "status": "disputed"
+        }
+      },
+      "curation": {
+        "identity_status": "in_scope"
+      },
+      "identity": {
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P31:0",
+                  "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q99298808$FB013572-EA51-43F5-AA95-A44607015C4C\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 494230, \"id\": \"Q494230\"}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "metadata",
+                  "original_text": "tertiary educational institution, or part of such an institution, that teaches medicine and awards a professional degree for physicians and surgeons",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "specialist_institution",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "University of Colombo Postgraduate Institute of Medicine",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "University of Colombo Postgraduate Institute of Medicine",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "locations": [
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q99298808$A6A4AC37-E23C-4114-ABEF-C667035A133E\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 854, \"id\": \"Q854\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "Sri Lanka",
+                    "source_ref": "s3"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "country_name": "Sri Lanka",
+                  "country_qid": "Q854",
+                  "formatted": {
+                    "language": "en",
+                    "text": "Sri Lanka"
+                  }
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "country",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q99298808$A6A4AC37-E23C-4114-ABEF-C667035A133E\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 854, \"id\": \"Q854\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "Sri Lanka",
+                    "source_ref": "s3"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Sri Lanka"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q854"
+        }
+      ],
+      "modified_datetime": "2026-11-06T23:26:44.839853+00:00",
+      "qid": "Q99298808",
+      "record_revision": 1,
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "legacy_discovery"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "needs_review"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T23:25:34.391035+00:00",
+          "revision_id": 2052938174,
+          "source_qid": "Q99298808",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2052938174"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T23:00:42.309572+00:00",
+          "revision_id": 2561583370,
+          "source_qid": "Q494230",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2561583370"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T23:25:41.357205+00:00",
+          "revision_id": 2563723151,
+          "source_qid": "Q854",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2563723151"
+        }
+      }
+    },
+    "coverage": [
+      {
+        "group": "identity",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "status": "disputed"
+      },
+      {
+        "group": "population",
+        "status": "disputed"
+      },
+      {
+        "group": "finance",
+        "status": "disputed"
+      },
+      {
+        "group": "profile",
+        "status": "disputed"
+      }
+    ],
+    "delta": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-06T23:25:41.510399+00:00",
+          "status": "disputed"
+        },
+        "geography": {
+          "checked_at": "2026-11-06T23:25:41.510399+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-06T23:25:41.510399+00:00",
+          "status": "disputed"
+        },
+        "identity": {
+          "checked_at": "2026-11-06T23:25:41.510399+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-06T23:25:41.510399+00:00",
+          "status": "disputed"
+        },
+        "profile": {
+          "checked_at": "2026-11-06T23:25:41.510399+00:00",
+          "status": "disputed"
+        }
+      },
+      "curation": {
+        "identity_status": "in_scope"
+      },
+      "identity": {
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P31:0",
+                  "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q99298808$FB013572-EA51-43F5-AA95-A44607015C4C\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 494230, \"id\": \"Q494230\"}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "metadata",
+                  "original_text": "tertiary educational institution, or part of such an institution, that teaches medicine and awards a professional degree for physicians and surgeons",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "specialist_institution",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "University of Colombo Postgraduate Institute of Medicine",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "University of Colombo Postgraduate Institute of Medicine",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "locations": [
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q99298808$A6A4AC37-E23C-4114-ABEF-C667035A133E\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 854, \"id\": \"Q854\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "Sri Lanka",
+                    "source_ref": "s3"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "country_name": "Sri Lanka",
+                  "country_qid": "Q854",
+                  "formatted": {
+                    "language": "en",
+                    "text": "Sri Lanka"
+                  }
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "country",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q99298808$A6A4AC37-E23C-4114-ABEF-C667035A133E\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 854, \"id\": \"Q854\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "Sri Lanka",
+                    "source_ref": "s3"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Sri Lanka"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q854"
+        }
+      ],
+      "qid": "Q99298808",
+      "record_revision": 1,
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "legacy_discovery"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "needs_review"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T23:25:34.391035+00:00",
+          "revision_id": 2052938174,
+          "source_qid": "Q99298808",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2052938174"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T23:00:42.309572+00:00",
+          "revision_id": 2561583370,
+          "source_qid": "Q494230",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2561583370"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T23:25:41.357205+00:00",
+          "revision_id": 2563723151,
+          "source_qid": "Q854",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2563723151"
+        }
+      }
+    },
+    "open_requests": [],
+    "proposed_at": "2026-11-06T23:26:44.839853+00:00",
+    "qid": "Q99298808",
+    "research": {
+      "model": "not_reported",
+      "prompt_sha256": "05f43b297c6a722425964b842ed65a75132b5eaeed0c8bcf661fdfebd8375a90",
+      "reasoning_effort": "not_reported",
+      "schema_sha256": "92e942f4fbf2ae28964462ea9ffa8312c5ee16a077a1e08b40aaaf741512422e",
+      "session": "/root/b3_research_q99298808"
+    },
+    "retrieval_failures": [],
+    "review_status": "unreviewed",
+    "seed": {
+      "channels": [
+        "legacy_discovery"
+      ],
+      "import_id": "seed-84c3beb45367905f",
+      "screening_status": "needs_review"
+    },
+    "transport": {
+      "base_commit": "9deed17242bd46fb07cdb35763375b5c929835f2",
+      "protocol": "native-subagent-v1",
+      "repository": "ider-zh/university-seed-curation",
+      "review_policy": {
+        "id": "source-grounded-flexible-v2",
+        "sha256": "b8ed7d2897e4c31dbd81b1379aafdc1077a21d1a33949edbd2d896b0adf99db2"
+      },
+      "schema_sha256": "bfa496eafa9dffca56146214168db7f000b09161b8993129632e7202e1c88833",
+      "seed_catalog_sha256": "84c3beb45367905f513d650684283dd62a9c1b77962bdc34151a6ef05bfa03d4"
+    },
+    "type": "university-proposal-v1"
+  },
+  "review": {
+    "contexts_checked": 2,
+    "coverage_checks": [
+      {
+        "group": "identity",
+        "reason": "Frozen root name and specific medical-school class inspected. Supported institution identity and eligibility are represented.",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "reason": "Root country claim and resolved country metadata inspected. No root P625 exists and no linked country point is transferred.",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "reason": "Frozen packet supplies no institution chronology; wider source survey completion is unconfirmed.",
+        "status": "disputed"
+      },
+      {
+        "group": "population",
+        "reason": "Frozen packet contains no population observations; absence is limited to bounded captured evidence, with no completed broader survey.",
+        "status": "disputed"
+      },
+      {
+        "group": "finance",
+        "reason": "No institution finance observations appear in frozen evidence; external survey was not performed and completeness remains unconfirmed.",
+        "status": "disputed"
+      },
+      {
+        "group": "profile",
+        "reason": "Sparse metadata cannot establish complete profile survey; no Wikipedia or external captures support a broader completeness claim.",
+        "status": "disputed"
+      }
+    ],
+    "decision": "approve",
+    "facts_checked": 2,
+    "full_refresh": false,
+    "inferences": [
+      {
+        "id": "$.identity.kind:c1",
+        "reason": "Root P31 identifies medical school Q494230; captured linked class describes tertiary medical education. Specialist institution is a supported broader controlled classification without asserting legal independence."
+      },
+      {
+        "id": "identity",
+        "reason": "Institution-specific root medical-school classification, resolved to the captured tertiary medical-school class, supports higher-education eligibility. No independent university or degree-awarding legal status is invented."
+      }
+    ],
+    "model": "not_reported",
+    "proposal_sha256": "ddf05e60f4409e915edf74a7f0d3584fc779248e7ebc9a65e1f0c2af8bad505a",
+    "qid": "Q99298808",
+    "reasoning_effort": "not_reported",
+    "record_sha256": "326bb2700ea500cf5c8161ffe05175ec30bcc560c078a51c1d1260932b758087",
+    "request_responses": [],
+    "requests": [],
+    "review_scope": {
+      "not_independently_reviewed_ids": [
+        "$.locations[0].address:c1",
+        "$.locations[0].name:c1",
+        "location:country"
+      ],
+      "reviewed_ids": [
+        "$.identity.kind:c1",
+        "$.identity.names.en:c1",
+        "country:$.locations[0].address:c1",
+        "identity"
+      ],
+      "version": "core-review-v3"
+    },
+    "review_session": "/root/b3_review_q99298808",
+    "reviewed_at": "2026-11-06T23:27:35.616289+00:00",
+    "source_revisions_checked": 3,
+    "waived_requests": []
+  },
+  "review_result_sha256": "a0c1533e9ce4c1f4fde9546f0dabcd4c3f1d8a57cd10132dc788ab316c49db2b",
+  "type": "university-unified-receipt-v1"
+}
