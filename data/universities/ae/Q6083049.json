@@ -1,0 +1,386 @@
+{
+  "coverage": {
+    "finance": {
+      "checked_at": "2026-11-06T22:53:30.493547+00:00",
+      "status": "disputed"
+    },
+    "geography": {
+      "checked_at": "2026-11-06T22:53:30.493547+00:00",
+      "status": "checked"
+    },
+    "history": {
+      "checked_at": "2026-11-06T22:53:30.493547+00:00",
+      "status": "checked"
+    },
+    "identity": {
+      "checked_at": "2026-11-06T22:53:30.493547+00:00",
+      "status": "checked"
+    },
+    "population": {
+      "checked_at": "2026-11-06T22:53:30.493547+00:00",
+      "status": "disputed"
+    },
+    "profile": {
+      "checked_at": "2026-11-06T22:53:30.493547+00:00",
+      "status": "disputed"
+    }
+  },
+  "curation": {
+    "identity_status": "in_scope"
+  },
+  "history": {
+    "milestones": [
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:2",
+                  "original_text": "Established: February 1998",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "claim:P571:0",
+                  "original_text": "\"time\": \"+1998-02-00T00:00:00Z\"",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "month": 2,
+                "precision": "month",
+                "year": 1998
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:2",
+                  "original_text": "Established: February 1998",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "The college was established in February 1998."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "establishment",
+        "kind": "institution_establishment",
+        "subject_ref": "institution"
+      }
+    ]
+  },
+  "identity": {
+    "aliases": [
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "Island College of Technology (Malay: Kolej Teknologi Pulau; abbreviated KICT) is a private college in Malaysia.",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "KICT"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    ],
+    "kind": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "Island College of Technology (Malay: Kolej Teknologi Pulau; abbreviated KICT) is a private college in Malaysia.",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "claim:P31:0",
+              "original_text": "\"numeric-id\": 3918, \"id\": \"Q3918\"",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "value": "higher_education_college",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "names": {
+      "en": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "metadata",
+                "original_text": "Island College of Technology",
+                "source_ref": "s1"
+              },
+              {
+                "locator": "section:lead",
+                "original_text": "Island College of Technology (Malay: Kolej Teknologi Pulau; abbreviated KICT) is a private college in Malaysia.",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": "Island College of Technology",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "ms": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "Island College of Technology (Malay: Kolej Teknologi Pulau; abbreviated KICT) is a private college in Malaysia.",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": "Kolej Teknologi Pulau",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    }
+  },
+  "leadership": {
+    "president": {
+      "candidates": [
+        {
+          "current_basis": "infobox_current",
+          "evidence": [
+            {
+              "locator": "infobox:3",
+              "original_text": "President: Abd Halim B. Hj Muhamud",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "person": {
+              "name": "Abd Halim B. Hj Muhamud"
+            },
+            "title_original": {
+              "language": "en",
+              "text": "President"
+            }
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "single_source_family",
+          "reported_current"
+        ],
+        "reason": "The page reports this person in its current officeholder field; a term-end date is not required.",
+        "reason_code": "infobox_current"
+      }
+    }
+  },
+  "locations": [
+    {
+      "address": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "infobox:4",
+                "original_text": "Location: Balik Pulau, Penang, Malaysia",
+                "source_ref": "s2"
+              },
+              {
+                "locator": "claim:P17:0",
+                "original_text": "\"numeric-id\": 833, \"id\": \"Q833\"",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "city_name": "Balik Pulau",
+              "country_name": "Malaysia",
+              "country_qid": "Q833",
+              "formatted": {
+                "language": "en",
+                "text": "Balik Pulau, Penang, Malaysia"
+              },
+              "region_name": "Penang"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "id": "balik-pulau",
+      "kind": "administrative_area",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "infobox:4",
+                "original_text": "Location: Balik Pulau, Penang, Malaysia",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Balik Pulau"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    }
+  ],
+  "modified_datetime": "2026-11-06T22:56:10.779475+00:00",
+  "profile": {
+    "motto": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:0",
+              "original_text": "Motto: Commitment Towards Quality and Excellence",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "language": "en",
+            "text": "Commitment Towards Quality and Excellence"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "website": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:5",
+              "original_text": "Website: kict.edu.my",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": "https://kict.edu.my/",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "qid": "Q6083049",
+  "record_revision": 1,
+  "schema_version": "0.2.2",
+  "seed": {
+    "channels": [
+      "reviewed_institution_type"
+    ],
+    "import_id": "seed-84c3beb45367905f",
+    "screening_status": "included"
+  },
+  "selection_policy": "preferred-v1",
+  "sources": {
+    "s1": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T22:49:06.489839+00:00",
+      "revision_id": 2560466101,
+      "source_qid": "Q6083049",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2560466101"
+    },
+    "s2": {
+      "family": "wikimedia",
+      "kind": "wikipedia",
+      "language": "en",
+      "page_id": 8158367,
+      "publisher_role": "encyclopedia",
+      "retrieved_at": "2026-11-06T22:49:20.566616+00:00",
+      "revision_id": 1334391775,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1334391775"
+    },
+    "s3": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T22:49:23.734165+00:00",
+      "revision_id": 2562156954,
+      "source_qid": "Q3918",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2562156954"
+    },
+    "s4": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T22:49:27.942932+00:00",
+      "revision_id": 2562601540,
+      "source_qid": "Q833",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2562601540"
+    }
+  }
+}
