@@ -1,0 +1,2162 @@
+{
+  "attribution": "distinct_native_research_and_review_subagents;not_cryptographic_identity",
+  "research": {
+    "baseline_sha256": "absent",
+    "candidate": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-06T15:42:03.840125+00:00",
+          "status": "not_found"
+        },
+        "geography": {
+          "checked_at": "2026-11-06T15:42:03.840125+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-06T15:42:03.840125+00:00",
+          "status": "checked"
+        },
+        "identity": {
+          "checked_at": "2026-11-06T15:42:03.840125+00:00",
+          "status": "disputed"
+        },
+        "population": {
+          "checked_at": "2026-11-06T15:42:03.840125+00:00",
+          "status": "checked"
+        },
+        "profile": {
+          "checked_at": "2026-11-06T15:42:03.840125+00:00",
+          "status": "checked"
+        }
+      },
+      "curation": {
+        "identity_status": "in_scope"
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "claim:P571:0",
+                      "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q7055057$2E0B0424-5B44-476B-B642-1BAEF8C90B6D\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+1903-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}, \"reference_count\": 1}",
+                      "source_ref": "s1"
+                    },
+                    {
+                      "locator": "infobox:2",
+                      "original_text": "Established: 1903; 123 years ago (1903)",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 1903
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:lead",
+                      "original_text": "College in Wahpeton, North Dakota, US\nThis article needs more citations. Please help improve this article by adding citations to reliable sources. Unsourced material may be challenged and removed.\nFind sources: \"North Dakota State College of Science\" – news · newspapers · books · scholar · JSTOR (May 2018) (Learn how and when to remove this message)\nThe North Dakota State College of Science (NDSCS) is a public college in Wahpeton, North Dakota, United States. It is part of the North Dakota University System. Founded in 1903 by provision of the state constitution, the State College of Science offers degrees, certificates, and diplomas in more than 80 academic options in traditional career and technical studies as well as the liberal arts. The college also offers a variety of distance education and online courses.",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "Founded in 1903 by provision of the state constitution."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "establishment",
+            "kind": "institution_establishment",
+            "subject_ref": "institution"
+          }
+        ]
+      },
+      "identity": {
+        "aliases": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "College in Wahpeton, North Dakota, US\nThis article needs more citations. Please help improve this article by adding citations to reliable sources. Unsourced material may be challenged and removed.\nFind sources: \"North Dakota State College of Science\" – news · newspapers · books · scholar · JSTOR (May 2018) (Learn how and when to remove this message)\nThe North Dakota State College of Science (NDSCS) is a public college in Wahpeton, North Dakota, United States. It is part of the North Dakota University System. Founded in 1903 by provision of the state constitution, the State College of Science offers degrees, certificates, and diplomas in more than 80 academic options in traditional career and technical studies as well as the liberal arts. The college also offers a variety of distance education and online courses.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "NDSCS"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ],
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:1",
+                  "original_text": "Type: Public college",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:lead",
+                  "original_text": "College in Wahpeton, North Dakota, US\nThis article needs more citations. Please help improve this article by adding citations to reliable sources. Unsourced material may be challenged and removed.\nFind sources: \"North Dakota State College of Science\" – news · newspapers · books · scholar · JSTOR (May 2018) (Learn how and when to remove this message)\nThe North Dakota State College of Science (NDSCS) is a public college in Wahpeton, North Dakota, United States. It is part of the North Dakota University System. Founded in 1903 by provision of the state constitution, the State College of Science offers degrees, certificates, and diplomas in more than 80 academic options in traditional career and technical studies as well as the liberal arts. The college also offers a variety of distance education and online courses.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "higher_education_college",
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P31:0",
+                  "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q7055057$42556A9F-F4AF-470F-ADA0-0CFCCAA0CE62\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 3918, \"id\": \"Q3918\"}}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "metadata",
+                  "original_text": "{\"id\": \"Q3918\", \"labels\": {\"en\": \"university\"}, \"descriptions\": {\"en\": \"an institution of tertiary education and research which awards academic degrees in several academic disciplines\"}}",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c2",
+              "value": "university",
+              "verification": "supported"
+            }
+          ],
+          "conflicts": [
+            {
+              "candidate_ids": [
+                "c1",
+                "c2"
+              ],
+              "kind": "scope_disagreement",
+              "note": "Wikipedia identifies a public college, while the root Wikidata instance-of claim uses university. Preserve both classifications pending targeted official institutional-type evidence; this is not evidence of two institutions.",
+              "status": "unresolved"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "conflicting_candidates"
+            ],
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q7055057\", \"labels\": {\"en\": \"North Dakota State College of Science\"}, \"descriptions\": {\"en\": \"college in Wahpeton, North Dakota, U.S.\"}}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "section:lead",
+                    "original_text": "College in Wahpeton, North Dakota, US\nThis article needs more citations. Please help improve this article by adding citations to reliable sources. Unsourced material may be challenged and removed.\nFind sources: \"North Dakota State College of Science\" – news · newspapers · books · scholar · JSTOR (May 2018) (Learn how and when to remove this message)\nThe North Dakota State College of Science (NDSCS) is a public college in Wahpeton, North Dakota, United States. It is part of the North Dakota University System. Founded in 1903 by provision of the state constitution, the State College of Science offers degrees, certificates, and diplomas in more than 80 academic options in traditional career and technical studies as well as the liberal arts. The college also offers a variety of distance education and online courses.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": "North Dakota State College of Science",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        "ownership": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:1",
+                  "original_text": "Type: Public college",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "claim:P31:1",
+                  "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q7055057$9560B331-6189-4F5C-B252-AE49B1184931\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 23002039, \"id\": \"Q23002039\"}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "metadata",
+                  "original_text": "{\"id\": \"Q23002039\", \"labels\": {\"en\": \"public educational institution of the United States\"}, \"descriptions\": {\"en\": \"U.S. public educational institution\"}}",
+                  "source_ref": "s4"
+                }
+              ],
+              "id": "c1",
+              "value": "public",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "leadership": {
+        "president": {
+          "candidates": [
+            {
+              "current_basis": "infobox_current",
+              "evidence": [
+                {
+                  "locator": "infobox:5",
+                  "original_text": "President: Rod Flanigan",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "person": {
+                  "name": "Rod Flanigan"
+                },
+                "title_original": {
+                  "language": "en",
+                  "text": "President"
+                }
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family",
+              "reported_current"
+            ],
+            "reason": "The page reports this person in its current officeholder field; a term-end date is not required.",
+            "reason_code": "infobox_current"
+          }
+        }
+      },
+      "locations": [
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "infobox:7",
+                    "original_text": "Location: Wahpeton, North Dakota, United States",
+                    "source_ref": "s2"
+                  },
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q7055057$f2ed6f9d-4264-14ef-633b-cb1c095431f9\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 30, \"id\": \"Q30\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "city_name": "Wahpeton",
+                  "city_qid": "Q1996092",
+                  "country_name": "United States",
+                  "country_qid": "Q30",
+                  "formatted": {
+                    "language": "en",
+                    "text": "Wahpeton, North Dakota, United States"
+                  },
+                  "region_name": "North Dakota"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "wahpeton",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q1996092\", \"labels\": {\"en\": \"Wahpeton\"}, \"descriptions\": {\"en\": \"seat of Richland County, North Dakota, United States\"}}",
+                    "source_ref": "s6"
+                  },
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q7055057$cc3c6c20-46df-fadf-e410-a3e402b61b4b\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 1996092, \"id\": \"Q1996092\"}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Wahpeton"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q1996092"
+        },
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Campus",
+                    "original_text": "[edit | edit source]\nThe main campus of the North Dakota State College of Science is located in Wahpeton. A second site, referred to as NDSCS-Fargo, is located on 19th Avenue North in Fargo, North Dakota.",
+                    "source_ref": "s2"
+                  },
+                  {
+                    "locator": "infobox:7",
+                    "original_text": "Location: Wahpeton, North Dakota, United States",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "city_name": "Wahpeton",
+                  "country_name": "United States",
+                  "formatted": {
+                    "language": "en",
+                    "text": "Wahpeton, North Dakota, United States"
+                  },
+                  "region_name": "North Dakota"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "wahpeton_campus",
+          "kind": "campus",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Campus",
+                    "original_text": "[edit | edit source]\nThe main campus of the North Dakota State College of Science is located in Wahpeton. A second site, referred to as NDSCS-Fargo, is located on 19th Avenue North in Fargo, North Dakota.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Main campus in Wahpeton"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:NDSCS-Fargo",
+                    "original_text": "[edit | edit source]\nNorth Dakota State College of Science in Fargo\nNDSCS-Fargo is a campus of North Dakota State College of Science. Located across from the Fargodome on 19th Avenue North in Fargo, NDSCS-Fargo serves as the home to academic programming and non-credit training.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "city_name": "Fargo",
+                  "formatted": {
+                    "language": "en",
+                    "text": "19th Avenue North, across from the Fargodome, Fargo, North Dakota"
+                  },
+                  "region_name": "North Dakota",
+                  "street": "19th Avenue North"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "fargo_campus",
+          "kind": "campus",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:NDSCS-Fargo",
+                    "original_text": "[edit | edit source]\nNorth Dakota State College of Science in Fargo\nNDSCS-Fargo is a campus of North Dakota State College of Science. Located across from the Fargodome on 19th Avenue North in Fargo, NDSCS-Fargo serves as the home to academic programming and non-credit training.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "NDSCS-Fargo"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        {
+          "coordinates": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "statement:q7055057$BEDFED60-9A64-4A13-9768-A059F0196E5D",
+                    "original_text": "\"latitude\": 46.272777777778",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "source_rank": "normal",
+                "value": {
+                  "crs": "EPSG:4326",
+                  "globe_qid": "Q2",
+                  "latitude": 46.272777777778,
+                  "longitude": -96.608333333333
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "wikidata-item-location",
+          "kind": "institution",
+          "qid": "Q7055057"
+        }
+      ],
+      "modified_datetime": "2026-11-06T15:47:04.912145+00:00",
+      "population": {
+        "employees_total": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P1128:0",
+                  "original_text": "{\"property\": \"P1128\", \"property_label\": \"employees\", \"statement_id\": \"Q7055057$778830BF-86D3-4E0C-8446-D5F695D448DB\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+445\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2020-09-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 10, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "kind": "date",
+                "month": 9,
+                "year": 2020
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 445,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason_code": "only_available"
+          }
+        },
+        "students_total": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2196:0",
+                  "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q7055057$1DA9CA7C-2B24-485B-A556-DD638A072A0E\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+2829\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2020-09-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 10, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "kind": "date",
+                "month": 9,
+                "year": 2020
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 2829,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:6",
+                  "original_text": "Students: 2,802 (Fall 2021)",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c2",
+              "period": {
+                "kind": "calendar_year",
+                "label": "Fall 2021",
+                "year": 2021
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 2802,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c2",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        }
+      },
+      "profile": {
+        "academic_focus": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Academics",
+                  "original_text": "[edit | edit source]\nNDSCS offers academic options in the following career clusters:\nAgriculture, Food and Natural Resources\nArchitecture and Construction\nAutomotive and Diesel Technology\nBusiness, Management and Administration\nFinance\nEducation and Training\nHealth Science\nHospitality and Tourism\nHuman Services\nInformation Technology\nLaw, Public Safety, Corrections and Security\nManufacturing\nMarketing, Sales and Services\nScience, Technology, Engineering and Mathematics (STEM)\nTransportation\nNDSCS is a member of the Metro College Alliance, which allows students to take classes at other institutions in the Fargo-Moorhead area.[2]",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:lead",
+                  "original_text": "College in Wahpeton, North Dakota, US\nThis article needs more citations. Please help improve this article by adding citations to reliable sources. Unsourced material may be challenged and removed.\nFind sources: \"North Dakota State College of Science\" – news · newspapers · books · scholar · JSTOR (May 2018) (Learn how and when to remove this message)\nThe North Dakota State College of Science (NDSCS) is a public college in Wahpeton, North Dakota, United States. It is part of the North Dakota University System. Founded in 1903 by provision of the state constitution, the State College of Science offers degrees, certificates, and diplomas in more than 80 academic options in traditional career and technical studies as well as the liberal arts. The college also offers a variety of distance education and online courses.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": [
+                {
+                  "language": "en",
+                  "text": "Agriculture, Food and Natural Resources"
+                },
+                {
+                  "language": "en",
+                  "text": "Architecture and Construction"
+                },
+                {
+                  "language": "en",
+                  "text": "Automotive and Diesel Technology"
+                },
+                {
+                  "language": "en",
+                  "text": "Business, Management and Administration"
+                },
+                {
+                  "language": "en",
+                  "text": "Finance"
+                },
+                {
+                  "language": "en",
+                  "text": "Education and Training"
+                },
+                {
+                  "language": "en",
+                  "text": "Health Science"
+                },
+                {
+                  "language": "en",
+                  "text": "Hospitality and Tourism"
+                },
+                {
+                  "language": "en",
+                  "text": "Human Services"
+                },
+                {
+                  "language": "en",
+                  "text": "Information Technology"
+                },
+                {
+                  "language": "en",
+                  "text": "Law, Public Safety, Corrections and Security"
+                },
+                {
+                  "language": "en",
+                  "text": "Manufacturing"
+                },
+                {
+                  "language": "en",
+                  "text": "Marketing, Sales and Services"
+                },
+                {
+                  "language": "en",
+                  "text": "Science, Technology, Engineering and Mathematics (STEM)"
+                },
+                {
+                  "language": "en",
+                  "text": "Transportation"
+                },
+                {
+                  "language": "en",
+                  "text": "Liberal arts"
+                }
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "motto": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:0",
+                  "original_text": "Motto: NDSCS The Science of Success",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "NDSCS The Science of Success"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "summary": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "College in Wahpeton, North Dakota, US\nThis article needs more citations. Please help improve this article by adding citations to reliable sources. Unsourced material may be challenged and removed.\nFind sources: \"North Dakota State College of Science\" – news · newspapers · books · scholar · JSTOR (May 2018) (Learn how and when to remove this message)\nThe North Dakota State College of Science (NDSCS) is a public college in Wahpeton, North Dakota, United States. It is part of the North Dakota University System. Founded in 1903 by provision of the state constitution, the State College of Science offers degrees, certificates, and diplomas in more than 80 academic options in traditional career and technical studies as well as the liberal arts. The college also offers a variety of distance education and online courses.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Campus",
+                  "original_text": "[edit | edit source]\nThe main campus of the North Dakota State College of Science is located in Wahpeton. A second site, referred to as NDSCS-Fargo, is located on 19th Avenue North in Fargo, North Dakota.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:NDSCS-Fargo",
+                  "original_text": "[edit | edit source]\nNorth Dakota State College of Science in Fargo\nNDSCS-Fargo is a campus of North Dakota State College of Science. Located across from the Fargodome on 19th Avenue North in Fargo, NDSCS-Fargo serves as the home to academic programming and non-credit training.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Main_campus",
+                  "original_text": "[edit | edit source]\nNDSCS Old Main on the main campus in Wahpeton\nThe main campus sits on 128 acres of land and consists of 35 campus buildings. The campus is located by 8th Avenue to the south and 4th Street to the east. Old Main — the centerpiece of the NDSCS campus for generations — has been listed on the National Register of Historic Places since 1984. Designed by architect John M. Coxhead, Old Main was built in 1891 as the original home of Red River Valley University.[1] The North Dakota Academy of Science opened in the building's west wing in 1903. Old Main sits on the north side of the main oval, where many campus activities take place.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Academics",
+                  "original_text": "[edit | edit source]\nNDSCS offers academic options in the following career clusters:\nAgriculture, Food and Natural Resources\nArchitecture and Construction\nAutomotive and Diesel Technology\nBusiness, Management and Administration\nFinance\nEducation and Training\nHealth Science\nHospitality and Tourism\nHuman Services\nInformation Technology\nLaw, Public Safety, Corrections and Security\nManufacturing\nMarketing, Sales and Services\nScience, Technology, Engineering and Mathematics (STEM)\nTransportation\nNDSCS is a member of the Metro College Alliance, which allows students to take classes at other institutions in the Fargo-Moorhead area.[2]",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "infobox:6",
+                  "original_text": "Students: 2,802 (Fall 2021)",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "North Dakota State College of Science (NDSCS) is a public college in Wahpeton, North Dakota, United States, and part of the North Dakota University System. Founded in 1903 by provision of the state constitution, it offers degrees, certificates and diplomas in traditional career and technical studies as well as the liberal arts. Its educational provision also includes distance education and online courses.\n\nThe college has a main campus in Wahpeton and a second campus, NDSCS-Fargo, on 19th Avenue North across from the Fargodome in Fargo. The Fargo campus provides academic programming and non-credit training. Old Main is a historic feature of the Wahpeton campus: designed by John M. Coxhead, it was built in 1891 as the original home of Red River Valley University. The North Dakota Academy of Science opened in its west wing in 1903, and the building has been listed on the National Register of Historic Places since 1984.\n\nAcademic options span agriculture, construction, automotive and diesel technology, business, health science, information technology, manufacturing, transportation and STEM, among other fields. Membership in the Metro College Alliance enables students to take classes at other institutions in the Fargo-Moorhead area. The college reported 2,802 students in fall 2021."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "website": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P856:0",
+                  "original_text": "{\"property\": \"P856\", \"property_label\": \"official website\", \"statement_id\": \"Q7055057$89372773-3307-4DB5-8FD3-6B44FBC5DB07\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"https://www.ndscs.edu\", \"qualifiers\": {\"P407\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 1860, \"id\": \"Q1860\"}}]}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "https://www.ndscs.edu",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "qid": "Q7055057",
+      "record_revision": 1,
+      "related_entities": {
+        "metro_alliance": {
+          "kind": "institution",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Academics",
+                    "original_text": "[edit | edit source]\nNDSCS offers academic options in the following career clusters:\nAgriculture, Food and Natural Resources\nArchitecture and Construction\nAutomotive and Diesel Technology\nBusiness, Management and Administration\nFinance\nEducation and Training\nHealth Science\nHospitality and Tourism\nHuman Services\nInformation Technology\nLaw, Public Safety, Corrections and Security\nManufacturing\nMarketing, Sales and Services\nScience, Technology, Engineering and Mathematics (STEM)\nTransportation\nNDSCS is a member of the Metro College Alliance, which allows students to take classes at other institutions in the Fargo-Moorhead area.[2]",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Metro College Alliance"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        "ndus": {
+          "kind": "university_system",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q3878529\", \"labels\": {\"en\": \"North Dakota University System\"}, \"descriptions\": {\"en\": \"Public university system in North Dakota\"}}",
+                    "source_ref": "s7"
+                  },
+                  {
+                    "locator": "infobox:3",
+                    "original_text": "Parent institution: North Dakota University System",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "North Dakota University System"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q3878529"
+        }
+      },
+      "relationships": {
+        "campus": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Campus",
+                    "original_text": "[edit | edit source]\nThe main campus of the North Dakota State College of Science is located in Wahpeton. A second site, referred to as NDSCS-Fargo, is located on 19th Avenue North in Fargo, North Dakota.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "target_ref": "location:wahpeton_campus"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:NDSCS-Fargo",
+                    "original_text": "[edit | edit source]\nNorth Dakota State College of Science in Fargo\nNDSCS-Fargo is a campus of North Dakota State College of Science. Located across from the Fargodome on 19th Avenue North in Fargo, NDSCS-Fargo serves as the home to academic programming and non-credit training.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "target_ref": "location:fargo_campus"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ],
+        "member_of": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Academics",
+                    "original_text": "[edit | edit source]\nNDSCS offers academic options in the following career clusters:\nAgriculture, Food and Natural Resources\nArchitecture and Construction\nAutomotive and Diesel Technology\nBusiness, Management and Administration\nFinance\nEducation and Training\nHealth Science\nHospitality and Tourism\nHuman Services\nInformation Technology\nLaw, Public Safety, Corrections and Security\nManufacturing\nMarketing, Sales and Services\nScience, Technology, Engineering and Mathematics (STEM)\nTransportation\nNDSCS is a member of the Metro College Alliance, which allows students to take classes at other institutions in the Fargo-Moorhead area.[2]",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "target_ref": "related:metro_alliance"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ],
+        "parent": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P749:0",
+                    "original_text": "{\"property\": \"P749\", \"property_label\": \"parent organization or unit\", \"statement_id\": \"Q7055057$8A2259A5-D977-4832-B641-7137AD56F3AD\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 3878529, \"id\": \"Q3878529\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "infobox:3",
+                    "original_text": "Parent institution: North Dakota University System",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "target_ref": "related:ndus"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ]
+      },
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "reviewed_institution_type"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "included"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T15:41:27.511896+00:00",
+          "revision_id": 2560493474,
+          "source_qid": "Q7055057",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2560493474"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikipedia",
+          "language": "en",
+          "page_id": 1272221,
+          "publisher_role": "encyclopedia",
+          "retrieved_at": "2026-11-06T15:41:37.318282+00:00",
+          "revision_id": 1370685543,
+          "url": "https://en.wikipedia.org/w/index.php?oldid=1370685543"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T15:41:16.005321+00:00",
+          "revision_id": 2562156954,
+          "source_qid": "Q3918",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2562156954"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T15:41:49.151334+00:00",
+          "revision_id": 2554628329,
+          "source_qid": "Q23002039",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2554628329"
+        },
+        "s5": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T15:41:54.874061+00:00",
+          "revision_id": 2565041516,
+          "source_qid": "Q30",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2565041516"
+        },
+        "s6": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T15:41:59.180218+00:00",
+          "revision_id": 2557702272,
+          "source_qid": "Q1996092",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2557702272"
+        },
+        "s7": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T15:42:03.827846+00:00",
+          "revision_id": 2474511360,
+          "source_qid": "Q3878529",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2474511360"
+        }
+      }
+    },
+    "coverage": [
+      {
+        "group": "identity",
+        "status": "disputed"
+      },
+      {
+        "group": "geography",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "status": "checked"
+      },
+      {
+        "group": "population",
+        "status": "checked"
+      },
+      {
+        "group": "finance",
+        "status": "not_found"
+      },
+      {
+        "group": "profile",
+        "status": "checked"
+      }
+    ],
+    "delta": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-06T15:42:03.840125+00:00",
+          "status": "not_found"
+        },
+        "geography": {
+          "checked_at": "2026-11-06T15:42:03.840125+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-06T15:42:03.840125+00:00",
+          "status": "checked"
+        },
+        "identity": {
+          "checked_at": "2026-11-06T15:42:03.840125+00:00",
+          "status": "disputed"
+        },
+        "population": {
+          "checked_at": "2026-11-06T15:42:03.840125+00:00",
+          "status": "checked"
+        },
+        "profile": {
+          "checked_at": "2026-11-06T15:42:03.840125+00:00",
+          "status": "checked"
+        }
+      },
+      "curation": {
+        "identity_status": "in_scope"
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "claim:P571:0",
+                      "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q7055057$2E0B0424-5B44-476B-B642-1BAEF8C90B6D\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+1903-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}, \"reference_count\": 1}",
+                      "source_ref": "s1"
+                    },
+                    {
+                      "locator": "infobox:2",
+                      "original_text": "Established: 1903; 123 years ago (1903)",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 1903
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:lead",
+                      "original_text": "College in Wahpeton, North Dakota, US\nThis article needs more citations. Please help improve this article by adding citations to reliable sources. Unsourced material may be challenged and removed.\nFind sources: \"North Dakota State College of Science\" – news · newspapers · books · scholar · JSTOR (May 2018) (Learn how and when to remove this message)\nThe North Dakota State College of Science (NDSCS) is a public college in Wahpeton, North Dakota, United States. It is part of the North Dakota University System. Founded in 1903 by provision of the state constitution, the State College of Science offers degrees, certificates, and diplomas in more than 80 academic options in traditional career and technical studies as well as the liberal arts. The college also offers a variety of distance education and online courses.",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "Founded in 1903 by provision of the state constitution."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "establishment",
+            "kind": "institution_establishment",
+            "subject_ref": "institution"
+          }
+        ]
+      },
+      "identity": {
+        "aliases": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "College in Wahpeton, North Dakota, US\nThis article needs more citations. Please help improve this article by adding citations to reliable sources. Unsourced material may be challenged and removed.\nFind sources: \"North Dakota State College of Science\" – news · newspapers · books · scholar · JSTOR (May 2018) (Learn how and when to remove this message)\nThe North Dakota State College of Science (NDSCS) is a public college in Wahpeton, North Dakota, United States. It is part of the North Dakota University System. Founded in 1903 by provision of the state constitution, the State College of Science offers degrees, certificates, and diplomas in more than 80 academic options in traditional career and technical studies as well as the liberal arts. The college also offers a variety of distance education and online courses.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "NDSCS"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ],
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:1",
+                  "original_text": "Type: Public college",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:lead",
+                  "original_text": "College in Wahpeton, North Dakota, US\nThis article needs more citations. Please help improve this article by adding citations to reliable sources. Unsourced material may be challenged and removed.\nFind sources: \"North Dakota State College of Science\" – news · newspapers · books · scholar · JSTOR (May 2018) (Learn how and when to remove this message)\nThe North Dakota State College of Science (NDSCS) is a public college in Wahpeton, North Dakota, United States. It is part of the North Dakota University System. Founded in 1903 by provision of the state constitution, the State College of Science offers degrees, certificates, and diplomas in more than 80 academic options in traditional career and technical studies as well as the liberal arts. The college also offers a variety of distance education and online courses.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "higher_education_college",
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P31:0",
+                  "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q7055057$42556A9F-F4AF-470F-ADA0-0CFCCAA0CE62\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 3918, \"id\": \"Q3918\"}}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "metadata",
+                  "original_text": "{\"id\": \"Q3918\", \"labels\": {\"en\": \"university\"}, \"descriptions\": {\"en\": \"an institution of tertiary education and research which awards academic degrees in several academic disciplines\"}}",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c2",
+              "value": "university",
+              "verification": "supported"
+            }
+          ],
+          "conflicts": [
+            {
+              "candidate_ids": [
+                "c1",
+                "c2"
+              ],
+              "kind": "scope_disagreement",
+              "note": "Wikipedia identifies a public college, while the root Wikidata instance-of claim uses university. Preserve both classifications pending targeted official institutional-type evidence; this is not evidence of two institutions.",
+              "status": "unresolved"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "conflicting_candidates"
+            ],
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q7055057\", \"labels\": {\"en\": \"North Dakota State College of Science\"}, \"descriptions\": {\"en\": \"college in Wahpeton, North Dakota, U.S.\"}}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "section:lead",
+                    "original_text": "College in Wahpeton, North Dakota, US\nThis article needs more citations. Please help improve this article by adding citations to reliable sources. Unsourced material may be challenged and removed.\nFind sources: \"North Dakota State College of Science\" – news · newspapers · books · scholar · JSTOR (May 2018) (Learn how and when to remove this message)\nThe North Dakota State College of Science (NDSCS) is a public college in Wahpeton, North Dakota, United States. It is part of the North Dakota University System. Founded in 1903 by provision of the state constitution, the State College of Science offers degrees, certificates, and diplomas in more than 80 academic options in traditional career and technical studies as well as the liberal arts. The college also offers a variety of distance education and online courses.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": "North Dakota State College of Science",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        "ownership": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:1",
+                  "original_text": "Type: Public college",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "claim:P31:1",
+                  "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q7055057$9560B331-6189-4F5C-B252-AE49B1184931\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 23002039, \"id\": \"Q23002039\"}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "metadata",
+                  "original_text": "{\"id\": \"Q23002039\", \"labels\": {\"en\": \"public educational institution of the United States\"}, \"descriptions\": {\"en\": \"U.S. public educational institution\"}}",
+                  "source_ref": "s4"
+                }
+              ],
+              "id": "c1",
+              "value": "public",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "leadership": {
+        "president": {
+          "candidates": [
+            {
+              "current_basis": "infobox_current",
+              "evidence": [
+                {
+                  "locator": "infobox:5",
+                  "original_text": "President: Rod Flanigan",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "person": {
+                  "name": "Rod Flanigan"
+                },
+                "title_original": {
+                  "language": "en",
+                  "text": "President"
+                }
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family",
+              "reported_current"
+            ],
+            "reason": "The page reports this person in its current officeholder field; a term-end date is not required.",
+            "reason_code": "infobox_current"
+          }
+        }
+      },
+      "locations": [
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "infobox:7",
+                    "original_text": "Location: Wahpeton, North Dakota, United States",
+                    "source_ref": "s2"
+                  },
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q7055057$f2ed6f9d-4264-14ef-633b-cb1c095431f9\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 30, \"id\": \"Q30\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "city_name": "Wahpeton",
+                  "city_qid": "Q1996092",
+                  "country_name": "United States",
+                  "country_qid": "Q30",
+                  "formatted": {
+                    "language": "en",
+                    "text": "Wahpeton, North Dakota, United States"
+                  },
+                  "region_name": "North Dakota"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "wahpeton",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q1996092\", \"labels\": {\"en\": \"Wahpeton\"}, \"descriptions\": {\"en\": \"seat of Richland County, North Dakota, United States\"}}",
+                    "source_ref": "s6"
+                  },
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q7055057$cc3c6c20-46df-fadf-e410-a3e402b61b4b\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 1996092, \"id\": \"Q1996092\"}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Wahpeton"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q1996092"
+        },
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Campus",
+                    "original_text": "[edit | edit source]\nThe main campus of the North Dakota State College of Science is located in Wahpeton. A second site, referred to as NDSCS-Fargo, is located on 19th Avenue North in Fargo, North Dakota.",
+                    "source_ref": "s2"
+                  },
+                  {
+                    "locator": "infobox:7",
+                    "original_text": "Location: Wahpeton, North Dakota, United States",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "city_name": "Wahpeton",
+                  "country_name": "United States",
+                  "formatted": {
+                    "language": "en",
+                    "text": "Wahpeton, North Dakota, United States"
+                  },
+                  "region_name": "North Dakota"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "wahpeton_campus",
+          "kind": "campus",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Campus",
+                    "original_text": "[edit | edit source]\nThe main campus of the North Dakota State College of Science is located in Wahpeton. A second site, referred to as NDSCS-Fargo, is located on 19th Avenue North in Fargo, North Dakota.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Main campus in Wahpeton"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:NDSCS-Fargo",
+                    "original_text": "[edit | edit source]\nNorth Dakota State College of Science in Fargo\nNDSCS-Fargo is a campus of North Dakota State College of Science. Located across from the Fargodome on 19th Avenue North in Fargo, NDSCS-Fargo serves as the home to academic programming and non-credit training.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "city_name": "Fargo",
+                  "formatted": {
+                    "language": "en",
+                    "text": "19th Avenue North, across from the Fargodome, Fargo, North Dakota"
+                  },
+                  "region_name": "North Dakota",
+                  "street": "19th Avenue North"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "fargo_campus",
+          "kind": "campus",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:NDSCS-Fargo",
+                    "original_text": "[edit | edit source]\nNorth Dakota State College of Science in Fargo\nNDSCS-Fargo is a campus of North Dakota State College of Science. Located across from the Fargodome on 19th Avenue North in Fargo, NDSCS-Fargo serves as the home to academic programming and non-credit training.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "NDSCS-Fargo"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        {
+          "coordinates": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "statement:q7055057$BEDFED60-9A64-4A13-9768-A059F0196E5D",
+                    "original_text": "\"latitude\": 46.272777777778",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "source_rank": "normal",
+                "value": {
+                  "crs": "EPSG:4326",
+                  "globe_qid": "Q2",
+                  "latitude": 46.272777777778,
+                  "longitude": -96.608333333333
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "wikidata-item-location",
+          "kind": "institution",
+          "qid": "Q7055057"
+        }
+      ],
+      "population": {
+        "employees_total": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P1128:0",
+                  "original_text": "{\"property\": \"P1128\", \"property_label\": \"employees\", \"statement_id\": \"Q7055057$778830BF-86D3-4E0C-8446-D5F695D448DB\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+445\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2020-09-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 10, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "kind": "date",
+                "month": 9,
+                "year": 2020
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 445,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason_code": "only_available"
+          }
+        },
+        "students_total": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2196:0",
+                  "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q7055057$1DA9CA7C-2B24-485B-A556-DD638A072A0E\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+2829\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2020-09-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 10, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "kind": "date",
+                "month": 9,
+                "year": 2020
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 2829,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:6",
+                  "original_text": "Students: 2,802 (Fall 2021)",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c2",
+              "period": {
+                "kind": "calendar_year",
+                "label": "Fall 2021",
+                "year": 2021
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 2802,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c2",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        }
+      },
+      "profile": {
+        "academic_focus": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Academics",
+                  "original_text": "[edit | edit source]\nNDSCS offers academic options in the following career clusters:\nAgriculture, Food and Natural Resources\nArchitecture and Construction\nAutomotive and Diesel Technology\nBusiness, Management and Administration\nFinance\nEducation and Training\nHealth Science\nHospitality and Tourism\nHuman Services\nInformation Technology\nLaw, Public Safety, Corrections and Security\nManufacturing\nMarketing, Sales and Services\nScience, Technology, Engineering and Mathematics (STEM)\nTransportation\nNDSCS is a member of the Metro College Alliance, which allows students to take classes at other institutions in the Fargo-Moorhead area.[2]",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:lead",
+                  "original_text": "College in Wahpeton, North Dakota, US\nThis article needs more citations. Please help improve this article by adding citations to reliable sources. Unsourced material may be challenged and removed.\nFind sources: \"North Dakota State College of Science\" – news · newspapers · books · scholar · JSTOR (May 2018) (Learn how and when to remove this message)\nThe North Dakota State College of Science (NDSCS) is a public college in Wahpeton, North Dakota, United States. It is part of the North Dakota University System. Founded in 1903 by provision of the state constitution, the State College of Science offers degrees, certificates, and diplomas in more than 80 academic options in traditional career and technical studies as well as the liberal arts. The college also offers a variety of distance education and online courses.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": [
+                {
+                  "language": "en",
+                  "text": "Agriculture, Food and Natural Resources"
+                },
+                {
+                  "language": "en",
+                  "text": "Architecture and Construction"
+                },
+                {
+                  "language": "en",
+                  "text": "Automotive and Diesel Technology"
+                },
+                {
+                  "language": "en",
+                  "text": "Business, Management and Administration"
+                },
+                {
+                  "language": "en",
+                  "text": "Finance"
+                },
+                {
+                  "language": "en",
+                  "text": "Education and Training"
+                },
+                {
+                  "language": "en",
+                  "text": "Health Science"
+                },
+                {
+                  "language": "en",
+                  "text": "Hospitality and Tourism"
+                },
+                {
+                  "language": "en",
+                  "text": "Human Services"
+                },
+                {
+                  "language": "en",
+                  "text": "Information Technology"
+                },
+                {
+                  "language": "en",
+                  "text": "Law, Public Safety, Corrections and Security"
+                },
+                {
+                  "language": "en",
+                  "text": "Manufacturing"
+                },
+                {
+                  "language": "en",
+                  "text": "Marketing, Sales and Services"
+                },
+                {
+                  "language": "en",
+                  "text": "Science, Technology, Engineering and Mathematics (STEM)"
+                },
+                {
+                  "language": "en",
+                  "text": "Transportation"
+                },
+                {
+                  "language": "en",
+                  "text": "Liberal arts"
+                }
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "motto": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:0",
+                  "original_text": "Motto: NDSCS The Science of Success",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "NDSCS The Science of Success"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "summary": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "College in Wahpeton, North Dakota, US\nThis article needs more citations. Please help improve this article by adding citations to reliable sources. Unsourced material may be challenged and removed.\nFind sources: \"North Dakota State College of Science\" – news · newspapers · books · scholar · JSTOR (May 2018) (Learn how and when to remove this message)\nThe North Dakota State College of Science (NDSCS) is a public college in Wahpeton, North Dakota, United States. It is part of the North Dakota University System. Founded in 1903 by provision of the state constitution, the State College of Science offers degrees, certificates, and diplomas in more than 80 academic options in traditional career and technical studies as well as the liberal arts. The college also offers a variety of distance education and online courses.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Campus",
+                  "original_text": "[edit | edit source]\nThe main campus of the North Dakota State College of Science is located in Wahpeton. A second site, referred to as NDSCS-Fargo, is located on 19th Avenue North in Fargo, North Dakota.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:NDSCS-Fargo",
+                  "original_text": "[edit | edit source]\nNorth Dakota State College of Science in Fargo\nNDSCS-Fargo is a campus of North Dakota State College of Science. Located across from the Fargodome on 19th Avenue North in Fargo, NDSCS-Fargo serves as the home to academic programming and non-credit training.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Main_campus",
+                  "original_text": "[edit | edit source]\nNDSCS Old Main on the main campus in Wahpeton\nThe main campus sits on 128 acres of land and consists of 35 campus buildings. The campus is located by 8th Avenue to the south and 4th Street to the east. Old Main — the centerpiece of the NDSCS campus for generations — has been listed on the National Register of Historic Places since 1984. Designed by architect John M. Coxhead, Old Main was built in 1891 as the original home of Red River Valley University.[1] The North Dakota Academy of Science opened in the building's west wing in 1903. Old Main sits on the north side of the main oval, where many campus activities take place.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Academics",
+                  "original_text": "[edit | edit source]\nNDSCS offers academic options in the following career clusters:\nAgriculture, Food and Natural Resources\nArchitecture and Construction\nAutomotive and Diesel Technology\nBusiness, Management and Administration\nFinance\nEducation and Training\nHealth Science\nHospitality and Tourism\nHuman Services\nInformation Technology\nLaw, Public Safety, Corrections and Security\nManufacturing\nMarketing, Sales and Services\nScience, Technology, Engineering and Mathematics (STEM)\nTransportation\nNDSCS is a member of the Metro College Alliance, which allows students to take classes at other institutions in the Fargo-Moorhead area.[2]",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "infobox:6",
+                  "original_text": "Students: 2,802 (Fall 2021)",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "North Dakota State College of Science (NDSCS) is a public college in Wahpeton, North Dakota, United States, and part of the North Dakota University System. Founded in 1903 by provision of the state constitution, it offers degrees, certificates and diplomas in traditional career and technical studies as well as the liberal arts. Its educational provision also includes distance education and online courses.\n\nThe college has a main campus in Wahpeton and a second campus, NDSCS-Fargo, on 19th Avenue North across from the Fargodome in Fargo. The Fargo campus provides academic programming and non-credit training. Old Main is a historic feature of the Wahpeton campus: designed by John M. Coxhead, it was built in 1891 as the original home of Red River Valley University. The North Dakota Academy of Science opened in its west wing in 1903, and the building has been listed on the National Register of Historic Places since 1984.\n\nAcademic options span agriculture, construction, automotive and diesel technology, business, health science, information technology, manufacturing, transportation and STEM, among other fields. Membership in the Metro College Alliance enables students to take classes at other institutions in the Fargo-Moorhead area. The college reported 2,802 students in fall 2021."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "website": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P856:0",
+                  "original_text": "{\"property\": \"P856\", \"property_label\": \"official website\", \"statement_id\": \"Q7055057$89372773-3307-4DB5-8FD3-6B44FBC5DB07\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"https://www.ndscs.edu\", \"qualifiers\": {\"P407\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 1860, \"id\": \"Q1860\"}}]}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "https://www.ndscs.edu",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "qid": "Q7055057",
+      "record_revision": 1,
+      "related_entities": {
+        "metro_alliance": {
+          "kind": "institution",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Academics",
+                    "original_text": "[edit | edit source]\nNDSCS offers academic options in the following career clusters:\nAgriculture, Food and Natural Resources\nArchitecture and Construction\nAutomotive and Diesel Technology\nBusiness, Management and Administration\nFinance\nEducation and Training\nHealth Science\nHospitality and Tourism\nHuman Services\nInformation Technology\nLaw, Public Safety, Corrections and Security\nManufacturing\nMarketing, Sales and Services\nScience, Technology, Engineering and Mathematics (STEM)\nTransportation\nNDSCS is a member of the Metro College Alliance, which allows students to take classes at other institutions in the Fargo-Moorhead area.[2]",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Metro College Alliance"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        "ndus": {
+          "kind": "university_system",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q3878529\", \"labels\": {\"en\": \"North Dakota University System\"}, \"descriptions\": {\"en\": \"Public university system in North Dakota\"}}",
+                    "source_ref": "s7"
+                  },
+                  {
+                    "locator": "infobox:3",
+                    "original_text": "Parent institution: North Dakota University System",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "North Dakota University System"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q3878529"
+        }
+      },
+      "relationships": {
+        "campus": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Campus",
+                    "original_text": "[edit | edit source]\nThe main campus of the North Dakota State College of Science is located in Wahpeton. A second site, referred to as NDSCS-Fargo, is located on 19th Avenue North in Fargo, North Dakota.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "target_ref": "location:wahpeton_campus"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:NDSCS-Fargo",
+                    "original_text": "[edit | edit source]\nNorth Dakota State College of Science in Fargo\nNDSCS-Fargo is a campus of North Dakota State College of Science. Located across from the Fargodome on 19th Avenue North in Fargo, NDSCS-Fargo serves as the home to academic programming and non-credit training.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "target_ref": "location:fargo_campus"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ],
+        "member_of": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Academics",
+                    "original_text": "[edit | edit source]\nNDSCS offers academic options in the following career clusters:\nAgriculture, Food and Natural Resources\nArchitecture and Construction\nAutomotive and Diesel Technology\nBusiness, Management and Administration\nFinance\nEducation and Training\nHealth Science\nHospitality and Tourism\nHuman Services\nInformation Technology\nLaw, Public Safety, Corrections and Security\nManufacturing\nMarketing, Sales and Services\nScience, Technology, Engineering and Mathematics (STEM)\nTransportation\nNDSCS is a member of the Metro College Alliance, which allows students to take classes at other institutions in the Fargo-Moorhead area.[2]",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "target_ref": "related:metro_alliance"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ],
+        "parent": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P749:0",
+                    "original_text": "{\"property\": \"P749\", \"property_label\": \"parent organization or unit\", \"statement_id\": \"Q7055057$8A2259A5-D977-4832-B641-7137AD56F3AD\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 3878529, \"id\": \"Q3878529\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "infobox:3",
+                    "original_text": "Parent institution: North Dakota University System",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "target_ref": "related:ndus"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ]
+      },
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "reviewed_institution_type"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "included"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T15:41:27.511896+00:00",
+          "revision_id": 2560493474,
+          "source_qid": "Q7055057",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2560493474"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikipedia",
+          "language": "en",
+          "page_id": 1272221,
+          "publisher_role": "encyclopedia",
+          "retrieved_at": "2026-11-06T15:41:37.318282+00:00",
+          "revision_id": 1370685543,
+          "url": "https://en.wikipedia.org/w/index.php?oldid=1370685543"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T15:41:16.005321+00:00",
+          "revision_id": 2562156954,
+          "source_qid": "Q3918",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2562156954"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T15:41:49.151334+00:00",
+          "revision_id": 2554628329,
+          "source_qid": "Q23002039",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2554628329"
+        },
+        "s5": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T15:41:54.874061+00:00",
+          "revision_id": 2565041516,
+          "source_qid": "Q30",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2565041516"
+        },
+        "s6": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T15:41:59.180218+00:00",
+          "revision_id": 2557702272,
+          "source_qid": "Q1996092",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2557702272"
+        },
+        "s7": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T15:42:03.827846+00:00",
+          "revision_id": 2474511360,
+          "source_qid": "Q3878529",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2474511360"
+        }
+      }
+    },
+    "open_requests": [],
+    "proposed_at": "2026-11-06T15:47:04.912145+00:00",
+    "qid": "Q7055057",
+    "research": {
+      "model": "not_reported",
+      "prompt_sha256": "7a16a99276b6ed3003e92ec1dd273be1f63b4a2ffc38429b55e45955c910e483",
+      "reasoning_effort": "not_reported",
+      "schema_sha256": "92e942f4fbf2ae28964462ea9ffa8312c5ee16a077a1e08b40aaaf741512422e",
+      "session": "/root/run_university_curation/research_university_q7055057"
+    },
+    "retrieval_failures": [],
+    "review_status": "unreviewed",
+    "seed": {
+      "channels": [
+        "reviewed_institution_type"
+      ],
+      "import_id": "seed-84c3beb45367905f",
+      "screening_status": "included"
+    },
+    "transport": {
+      "base_commit": "dc52058c0f7180142f16975e5b4be22df6b55d98",
+      "protocol": "native-subagent-v1",
+      "repository": "ider-zh/university-seed-curation",
+      "review_policy": {
+        "id": "source-grounded-flexible-v2",
+        "sha256": "b8ed7d2897e4c31dbd81b1379aafdc1077a21d1a33949edbd2d896b0adf99db2"
+      },
+      "schema_sha256": "bfa496eafa9dffca56146214168db7f000b09161b8993129632e7202e1c88833",
+      "seed_catalog_sha256": "84c3beb45367905f513d650684283dd62a9c1b77962bdc34151a6ef05bfa03d4"
+    },
+    "type": "university-proposal-v1"
+  },
+  "review": {
+    "contexts_checked": 7,
+    "coverage_checks": [
+      {
+        "group": "identity",
+        "reason": "Survey is complete for the frozen identity sources; the college/university classification disagreement is explicitly preserved. Both observations are supported.",
+        "status": "disputed"
+      },
+      {
+        "group": "geography",
+        "reason": "Frozen sources survey institution country, Wahpeton and Fargo campus relations, and root P625; the required country and coordinate subjects are supported.",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "reason": "Frozen inception and establishment statements support the mandatory 1903 institutional founding. Supplementary history is not independently checked.",
+        "status": "checked"
+      },
+      {
+        "group": "population",
+        "reason": "Frozen sources supply September 2020 employees and students and Fall 2021 students; required counts, periods and unspecified bases are checked separately.",
+        "status": "checked"
+      },
+      {
+        "group": "finance",
+        "reason": "The frozen source corpus contains no institutional monetary observations. Finance is surveyed as not found; no zero amounts or currency assumptions are introduced.",
+        "status": "not_found"
+      },
+      {
+        "group": "profile",
+        "reason": "The frozen article contains profile material and the survey is represented. Supplementary profile content remains sourced but is not independently fact-checked under core-review-v3.",
+        "status": "checked"
+      }
+    ],
+    "decision": "approve",
+    "facts_checked": 14,
+    "full_refresh": true,
+    "inferences": [
+      {
+        "id": "related:metro_alliance",
+        "reason": "s2 section:Academics identifies a named interinstitutional alliance with course exchange. The broad institution category is acceptable as an organizational representation of that alliance, not a claim that it is itself a degree-awarding college, campus or parent system."
+      },
+      {
+        "id": "country:$.locations[1].address:c1",
+        "reason": "s2 section:Campus locates the main campus in Wahpeton; s2 infobox:7 locates that Wahpeton in North Dakota, United States. Combining these directly supports the campus country without asserting an exact street address or historical jurisdiction."
+      }
+    ],
+    "model": "not_reported",
+    "proposal_sha256": "c5afc8593c28249f06af5793c83aebe57aef255dfe26ae2aeb5dce262aabc1d2",
+    "qid": "Q7055057",
+    "reasoning_effort": "not_reported",
+    "record_sha256": "83c65105218a0870f404f63eabf79511bed2e7c927f03074a3f0aa9710b78bb1",
+    "request_responses": [],
+    "requests": [],
+    "review_scope": {
+      "not_independently_reviewed_ids": [
+        "$.history.milestones[0].description:c1",
+        "$.leadership.president:c1",
+        "$.locations[0].address:c1",
+        "$.locations[0].name:c1",
+        "$.locations[1].address:c1",
+        "$.locations[1].name:c1",
+        "$.locations[2].address:c1",
+        "$.locations[2].name:c1",
+        "$.profile.academic_focus:c1",
+        "$.profile.motto:c1",
+        "$.profile.summary:c1",
+        "$.profile.website:c1",
+        "$.related_entities.metro_alliance.name:c1",
+        "$.related_entities.ndus.name:c1",
+        "location:fargo_campus",
+        "location:wahpeton",
+        "location:wahpeton_campus"
+      ],
+      "reviewed_ids": [
+        "$.history.milestones[0].date:c1",
+        "$.identity.aliases[0]:c1",
+        "$.identity.kind:c1",
+        "$.identity.kind:c2",
+        "$.identity.names.en:c1",
+        "$.identity.ownership:c1",
+        "$.locations[3].coordinates:c1",
+        "$.population.employees_total:c1",
+        "$.population.students_total:c1",
+        "$.population.students_total:c2",
+        "$.relationships.campus[0]:c1",
+        "$.relationships.campus[1]:c1",
+        "$.relationships.member_of[0]:c1",
+        "$.relationships.parent[0]:c1",
+        "country:$.locations[0].address:c1",
+        "country:$.locations[1].address:c1",
+        "identity",
+        "location:wikidata-item-location",
+        "milestone:establishment",
+        "related:metro_alliance",
+        "related:ndus"
+      ],
+      "version": "core-review-v3"
+    },
+    "review_session": "/root/fix_concurrent_publication/review_university_q7055057",
+    "reviewed_at": "2026-11-06T22:44:35.485777+00:00",
+    "source_revisions_checked": 7,
+    "waived_requests": []
+  },
+  "review_result_sha256": "f483bc344da00c679a2c8bb5e74848201fddb3b06e4c44d80f11470b0ad71b5b",
+  "type": "university-unified-receipt-v1"
+}
