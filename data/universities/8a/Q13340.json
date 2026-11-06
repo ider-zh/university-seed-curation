@@ -1,0 +1,2502 @@
+{
+  "coverage": {
+    "finance": {
+      "checked_at": "2026-11-06T13:30:01.312915+00:00",
+      "status": "checked"
+    },
+    "geography": {
+      "checked_at": "2026-11-06T13:30:01.312915+00:00",
+      "status": "checked"
+    },
+    "history": {
+      "checked_at": "2026-11-06T13:30:01.312915+00:00",
+      "status": "disputed"
+    },
+    "identity": {
+      "checked_at": "2026-11-06T13:30:01.312915+00:00",
+      "status": "checked"
+    },
+    "population": {
+      "checked_at": "2026-11-06T13:30:01.312915+00:00",
+      "status": "disputed"
+    },
+    "profile": {
+      "checked_at": "2026-11-06T13:30:01.312915+00:00",
+      "status": "checked"
+    }
+  },
+  "curation": {
+    "identity_status": "in_scope",
+    "refresh_profile": "core-v1",
+    "reviewed_groups": [
+      "identity",
+      "geography",
+      "history",
+      "population",
+      "finance",
+      "profile"
+    ]
+  },
+  "finance": {
+    "budget": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:4",
+              "original_text": "Budget: € 171 million",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "period_status": "not_stated",
+          "value": {
+            "amount": "171000000",
+            "currency": "EUR",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "period_not_stated",
+          "single_source_family"
+        ],
+        "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "history": {
+    "milestones": [
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "21 mars 1970",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "day": 21,
+                "month": 3,
+                "precision": "day",
+                "year": 1970
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:2",
+                  "original_text": "Active: 1968–2014",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c2",
+              "value": {
+                "precision": "year",
+                "year": 1968
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P571:0",
+                  "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q13340$5D98BF62-2B91-4E9C-8343-D060DBBBF59E\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+1970-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c3",
+              "value": {
+                "precision": "year",
+                "year": 1970
+              },
+              "verification": "supported"
+            }
+          ],
+          "conflicts": [
+            {
+              "candidate_ids": [
+                "c1",
+                "c2"
+              ],
+              "kind": "time_disagreement",
+              "note": "English infobox gives Active 1968–2014; French founding date is 21 March 1970 and root P571 gives 1970. Preserve disagreement over start.",
+              "status": "unresolved"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "conflicting_candidates"
+            ],
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "21 mars 1970",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "fr",
+                "text": "Création de l’université Bordeaux-II ; Wikidata donne 1970, la page française précise le 21 mars."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "establishment",
+        "kind": "institution_establishment",
+        "subject_ref": "institution"
+      },
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "Elle fusionne le 1er janvier 2014 avec deux autres universités bordelaises pour former l'université de Bordeaux.",
+                  "source_ref": "s3"
+                },
+                {
+                  "locator": "claim:P576:0",
+                  "original_text": "{\"property\": \"P576\", \"property_label\": \"dissolved, abolished or demolished\", \"statement_id\": \"Q13340$1bd2ab19-430e-7867-598e-9ddd22975f15\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+2014-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "day": 1,
+                "month": 1,
+                "precision": "day",
+                "year": 2014
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "Elle fusionne le 1er janvier 2014 avec deux autres universités bordelaises pour former l'université de Bordeaux.",
+                  "source_ref": "s3"
+                },
+                {
+                  "locator": "claim:P576:0",
+                  "original_text": "{\"property\": \"P576\", \"property_label\": \"dissolved, abolished or demolished\", \"statement_id\": \"Q13340$1bd2ab19-430e-7867-598e-9ddd22975f15\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+2014-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "fr",
+                "text": "Fusion des universités Bordeaux-I, Bordeaux-II et Bordeaux-IV pour former l’université de Bordeaux."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "merger",
+        "kind": "merger",
+        "subject_ref": "institution"
+      },
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Fondation_et_disparition",
+                  "original_text": "Jusqu'en décembre 2010, l'université portait le nom université Victor Segalen Bordeaux 2. Mais pour pallier une utilisation pas toujours homogène de ce nom, préjudiciable surtout dans les publications scientifiques, le conseil d'administration s'est prononcé en juin 2010 pour le changement de nom[7]. Ce changement s'accompagne d'un nouveau logo qui symbolise « l'arborescence, la hiérarchisation, le savoir organisé, la technologie, la science mais aussi le cerveau de l'homme avec toutes ses connexions »[8].",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "month": 6,
+                "precision": "month",
+                "year": 2010
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Fondation_et_disparition",
+                  "original_text": "Jusqu'en décembre 2010, l'université portait le nom université Victor Segalen Bordeaux 2. Mais pour pallier une utilisation pas toujours homogène de ce nom, préjudiciable surtout dans les publications scientifiques, le conseil d'administration s'est prononcé en juin 2010 pour le changement de nom[7]. Ce changement s'accompagne d'un nouveau logo qui symbolise « l'arborescence, la hiérarchisation, le savoir organisé, la technologie, la science mais aussi le cerveau de l'homme avec toutes ses connexions »[8].",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "fr",
+                "text": "Le conseil d’administration se prononce en juin 2010 pour le changement de nom ; jusqu’en décembre 2010, l’université portait le nom université Victor Segalen Bordeaux 2."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "rename_decision",
+        "kind": "rename",
+        "subject_ref": "institution"
+      }
+    ]
+  },
+  "identity": {
+    "aliases": [
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q13340\", \"labels\": {\"fr\": \"université Bordeaux-II\", \"en\": \"Bordeaux Segalen University\"}, \"descriptions\": {\"fr\": \"université française (1970-2014)\", \"en\": \"former French university abolished and replaced in 2014\"}}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "fr",
+              "text": "université Bordeaux-II"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "infobox:0",
+                "original_text": ": Université Bordeaux Segalen",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "fr",
+              "text": "Université Bordeaux Segalen"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Fondation_et_disparition",
+                "original_text": "Jusqu'en décembre 2010, l'université portait le nom université Victor Segalen Bordeaux 2. Mais pour pallier une utilisation pas toujours homogène de ce nom, préjudiciable surtout dans les publications scientifiques, le conseil d'administration s'est prononcé en juin 2010 pour le changement de nom[7]. Ce changement s'accompagne d'un nouveau logo qui symbolise « l'arborescence, la hiérarchisation, le savoir organisé, la technologie, la science mais aussi le cerveau de l'homme avec toutes ses connexions »[8].",
+                "source_ref": "s3"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "fr",
+              "text": "université Victor Segalen Bordeaux 2"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    ],
+    "kind": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P31:0",
+              "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q13340$f817dd33-429d-6609-5df8-c7df9d3c65c8\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 875538, \"id\": \"Q875538\"}}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "metadata",
+              "original_text": "{\"id\": \"Q875538\", \"labels\": {\"en\": \"public university\", \"fr\": \"université publique\"}, \"descriptions\": {\"en\": \"university predominantly funded by public means\", \"fr\": \"université principalement financée par des moyens publics\"}}",
+              "source_ref": "s4"
+            }
+          ],
+          "id": "c1",
+          "value": "university",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "names": {
+      "en": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q13340\", \"labels\": {\"fr\": \"université Bordeaux-II\", \"en\": \"Bordeaux Segalen University\"}, \"descriptions\": {\"fr\": \"université française (1970-2014)\", \"en\": \"former French university abolished and replaced in 2014\"}}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": "Bordeaux Segalen University",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "fr": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P1448:0",
+                "original_text": "{\"property\": \"P1448\", \"property_label\": \"official name\", \"statement_id\": \"Q13340$5FEA0FAD-74AA-4189-AE62-1BA36809087A\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"UNIVERSITE DE BORDEAUX II VICTOR SEGALEN\", \"language\": \"fr\"}, \"qualifiers\": {\"P1013\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 131741681, \"id\": \"Q131741681\"}}]}, \"reference_count\": 1}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": "UNIVERSITE DE BORDEAUX II VICTOR SEGALEN",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    "operating_status": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "Elle fusionne le 1er janvier 2014 avec deux autres universités bordelaises pour former l'université de Bordeaux.",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c1",
+          "value": "merged",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "ownership": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:1",
+              "original_text": "Type: Public",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "claim:P31:0",
+              "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q13340$f817dd33-429d-6609-5df8-c7df9d3c65c8\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 875538, \"id\": \"Q875538\"}}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "metadata",
+              "original_text": "{\"id\": \"Q875538\", \"labels\": {\"en\": \"public university\", \"fr\": \"université publique\"}, \"descriptions\": {\"en\": \"university predominantly funded by public means\", \"fr\": \"université principalement financée par des moyens publics\"}}",
+              "source_ref": "s4"
+            }
+          ],
+          "id": "c1",
+          "value": "public",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "leadership": {
+    "president": {
+      "candidates": [
+        {
+          "current_basis": "historical",
+          "evidence": [
+            {
+              "locator": "section:Pr.C3.A9sidence",
+              "original_text": "[modifier | modifier le code]\nPrésidentsIdentitéPériodeDuréeDébutFinHenri Bricaud (d)[11]\n(1925 - 2010)197119765 ansJacques Latrille (d)[12]\n(1933 - 2005)197619815 ansJean Tavernier[13]\n(1928 - 2020)198019877 ansDominique Ducassou (d)[14]\n(1943 - 2018)198719925 ansJacques Beylot (d)[15]\n(né en 1938)199219975 ansJosy Reiffers (d)[16]\n(1949 - 2015)199720025 ansBernard Bégaud\n(né en 1949)200220086 ansJosé Manuel Tunon de Lara[17]\n(né en 1958)200820135 ans",
+              "source_ref": "s3"
+            },
+            {
+              "locator": "claim:P488:7",
+              "original_text": "{\"property\": \"P488\", \"property_label\": \"chairperson\", \"statement_id\": \"Q13340$6690dfcd-4fab-4cde-3968-adf910f2b675\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 3286942, \"id\": \"Q3286942\"}, \"qualifiers\": {\"P580\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2008-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}], \"P582\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2013-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "section:Presidency",
+              "original_text": "[edit | edit source]\nSuccession of presidents:\nProf. Henri Bricaud, elected on December 21, 1970\nPr Jacques Latrille, elected on December 19, 1975\nPr Jean Tavernier, elected October 19, 1980, re-elected February 15, 1982\nPr Dominique Ducassou, elected on December 17, 1987\nPr Jacques Beylot, elected on November 17, 1992\nPr Josy Reiffers, elected on November 17, 1997\nPr Bernard Bégaud, elected on September 30, 2002\nPr Manuel Tunon de Lara, was elected on January 29, 2008.",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "person": {
+              "name": "José Manuel Tunon de Lara",
+              "qid": "Q3286942"
+            },
+            "term_end": {
+              "precision": "year",
+              "year": 2013
+            },
+            "term_start": {
+              "precision": "year",
+              "year": 2008
+            },
+            "title_original": {
+              "language": "fr",
+              "text": "Président"
+            }
+          },
+          "verification": "supported"
+        },
+        {
+          "current_basis": "historical",
+          "evidence": [
+            {
+              "locator": "section:Pr.C3.A9sidence",
+              "original_text": "[modifier | modifier le code]\nPrésidentsIdentitéPériodeDuréeDébutFinHenri Bricaud (d)[11]\n(1925 - 2010)197119765 ansJacques Latrille (d)[12]\n(1933 - 2005)197619815 ansJean Tavernier[13]\n(1928 - 2020)198019877 ansDominique Ducassou (d)[14]\n(1943 - 2018)198719925 ansJacques Beylot (d)[15]\n(né en 1938)199219975 ansJosy Reiffers (d)[16]\n(1949 - 2015)199720025 ansBernard Bégaud\n(né en 1949)200220086 ansJosé Manuel Tunon de Lara[17]\n(né en 1958)200820135 ans",
+              "source_ref": "s3"
+            },
+            {
+              "locator": "claim:P488:0",
+              "original_text": "{\"property\": \"P488\", \"property_label\": \"chairperson\", \"statement_id\": \"Q13340$460d2e38-4d2d-6db7-c1ff-a6d61c26ccf5\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 125578416, \"id\": \"Q125578416\"}, \"qualifiers\": {\"P580\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+1971-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}], \"P582\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+1976-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "section:Presidency",
+              "original_text": "[edit | edit source]\nSuccession of presidents:\nProf. Henri Bricaud, elected on December 21, 1970\nPr Jacques Latrille, elected on December 19, 1975\nPr Jean Tavernier, elected October 19, 1980, re-elected February 15, 1982\nPr Dominique Ducassou, elected on December 17, 1987\nPr Jacques Beylot, elected on November 17, 1992\nPr Josy Reiffers, elected on November 17, 1997\nPr Bernard Bégaud, elected on September 30, 2002\nPr Manuel Tunon de Lara, was elected on January 29, 2008.",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c2",
+          "value": {
+            "person": {
+              "name": "Henri Bricaud",
+              "qid": "Q125578416"
+            },
+            "term_end": {
+              "precision": "year",
+              "year": 1976
+            },
+            "term_start": {
+              "precision": "year",
+              "year": 1971
+            },
+            "title_original": {
+              "language": "fr",
+              "text": "Président"
+            }
+          },
+          "verification": "supported"
+        },
+        {
+          "current_basis": "historical",
+          "evidence": [
+            {
+              "locator": "section:Pr.C3.A9sidence",
+              "original_text": "[modifier | modifier le code]\nPrésidentsIdentitéPériodeDuréeDébutFinHenri Bricaud (d)[11]\n(1925 - 2010)197119765 ansJacques Latrille (d)[12]\n(1933 - 2005)197619815 ansJean Tavernier[13]\n(1928 - 2020)198019877 ansDominique Ducassou (d)[14]\n(1943 - 2018)198719925 ansJacques Beylot (d)[15]\n(né en 1938)199219975 ansJosy Reiffers (d)[16]\n(1949 - 2015)199720025 ansBernard Bégaud\n(né en 1949)200220086 ansJosé Manuel Tunon de Lara[17]\n(né en 1958)200820135 ans",
+              "source_ref": "s3"
+            },
+            {
+              "locator": "claim:P488:1",
+              "original_text": "{\"property\": \"P488\", \"property_label\": \"chairperson\", \"statement_id\": \"Q13340$c6b76b72-4b1d-1557-2129-294aca00a337\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 103030476, \"id\": \"Q103030476\"}, \"qualifiers\": {\"P580\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+1976-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}], \"P582\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+1981-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "section:Presidency",
+              "original_text": "[edit | edit source]\nSuccession of presidents:\nProf. Henri Bricaud, elected on December 21, 1970\nPr Jacques Latrille, elected on December 19, 1975\nPr Jean Tavernier, elected October 19, 1980, re-elected February 15, 1982\nPr Dominique Ducassou, elected on December 17, 1987\nPr Jacques Beylot, elected on November 17, 1992\nPr Josy Reiffers, elected on November 17, 1997\nPr Bernard Bégaud, elected on September 30, 2002\nPr Manuel Tunon de Lara, was elected on January 29, 2008.",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c3",
+          "value": {
+            "person": {
+              "name": "Jacques Latrille",
+              "qid": "Q103030476"
+            },
+            "term_end": {
+              "precision": "year",
+              "year": 1981
+            },
+            "term_start": {
+              "precision": "year",
+              "year": 1976
+            },
+            "title_original": {
+              "language": "fr",
+              "text": "Président"
+            }
+          },
+          "verification": "supported"
+        },
+        {
+          "current_basis": "historical",
+          "evidence": [
+            {
+              "locator": "section:Pr.C3.A9sidence",
+              "original_text": "[modifier | modifier le code]\nPrésidentsIdentitéPériodeDuréeDébutFinHenri Bricaud (d)[11]\n(1925 - 2010)197119765 ansJacques Latrille (d)[12]\n(1933 - 2005)197619815 ansJean Tavernier[13]\n(1928 - 2020)198019877 ansDominique Ducassou (d)[14]\n(1943 - 2018)198719925 ansJacques Beylot (d)[15]\n(né en 1938)199219975 ansJosy Reiffers (d)[16]\n(1949 - 2015)199720025 ansBernard Bégaud\n(né en 1949)200220086 ansJosé Manuel Tunon de Lara[17]\n(né en 1958)200820135 ans",
+              "source_ref": "s3"
+            },
+            {
+              "locator": "claim:P488:2",
+              "original_text": "{\"property\": \"P488\", \"property_label\": \"chairperson\", \"statement_id\": \"Q13340$c4090370-4bda-b698-acfd-9f4b37933f0a\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 3174744, \"id\": \"Q3174744\"}, \"qualifiers\": {\"P580\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+1980-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}], \"P582\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+1987-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "section:Presidency",
+              "original_text": "[edit | edit source]\nSuccession of presidents:\nProf. Henri Bricaud, elected on December 21, 1970\nPr Jacques Latrille, elected on December 19, 1975\nPr Jean Tavernier, elected October 19, 1980, re-elected February 15, 1982\nPr Dominique Ducassou, elected on December 17, 1987\nPr Jacques Beylot, elected on November 17, 1992\nPr Josy Reiffers, elected on November 17, 1997\nPr Bernard Bégaud, elected on September 30, 2002\nPr Manuel Tunon de Lara, was elected on January 29, 2008.",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c4",
+          "value": {
+            "person": {
+              "name": "Jean Tavernier",
+              "qid": "Q3174744"
+            },
+            "term_end": {
+              "precision": "year",
+              "year": 1987
+            },
+            "term_start": {
+              "precision": "year",
+              "year": 1980
+            },
+            "title_original": {
+              "language": "fr",
+              "text": "Président"
+            }
+          },
+          "verification": "supported"
+        },
+        {
+          "current_basis": "historical",
+          "evidence": [
+            {
+              "locator": "section:Pr.C3.A9sidence",
+              "original_text": "[modifier | modifier le code]\nPrésidentsIdentitéPériodeDuréeDébutFinHenri Bricaud (d)[11]\n(1925 - 2010)197119765 ansJacques Latrille (d)[12]\n(1933 - 2005)197619815 ansJean Tavernier[13]\n(1928 - 2020)198019877 ansDominique Ducassou (d)[14]\n(1943 - 2018)198719925 ansJacques Beylot (d)[15]\n(né en 1938)199219975 ansJosy Reiffers (d)[16]\n(1949 - 2015)199720025 ansBernard Bégaud\n(né en 1949)200220086 ansJosé Manuel Tunon de Lara[17]\n(né en 1958)200820135 ans",
+              "source_ref": "s3"
+            },
+            {
+              "locator": "claim:P488:3",
+              "original_text": "{\"property\": \"P488\", \"property_label\": \"chairperson\", \"statement_id\": \"Q13340$562c3081-474e-5c2c-71b4-3fe2e5b5fa97\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 33192055, \"id\": \"Q33192055\"}, \"qualifiers\": {\"P580\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+1987-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}], \"P582\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+1992-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "section:Presidency",
+              "original_text": "[edit | edit source]\nSuccession of presidents:\nProf. Henri Bricaud, elected on December 21, 1970\nPr Jacques Latrille, elected on December 19, 1975\nPr Jean Tavernier, elected October 19, 1980, re-elected February 15, 1982\nPr Dominique Ducassou, elected on December 17, 1987\nPr Jacques Beylot, elected on November 17, 1992\nPr Josy Reiffers, elected on November 17, 1997\nPr Bernard Bégaud, elected on September 30, 2002\nPr Manuel Tunon de Lara, was elected on January 29, 2008.",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c5",
+          "value": {
+            "person": {
+              "name": "Dominique Ducassou",
+              "qid": "Q33192055"
+            },
+            "term_end": {
+              "precision": "year",
+              "year": 1992
+            },
+            "term_start": {
+              "precision": "year",
+              "year": 1987
+            },
+            "title_original": {
+              "language": "fr",
+              "text": "Président"
+            }
+          },
+          "verification": "supported"
+        },
+        {
+          "current_basis": "historical",
+          "evidence": [
+            {
+              "locator": "section:Pr.C3.A9sidence",
+              "original_text": "[modifier | modifier le code]\nPrésidentsIdentitéPériodeDuréeDébutFinHenri Bricaud (d)[11]\n(1925 - 2010)197119765 ansJacques Latrille (d)[12]\n(1933 - 2005)197619815 ansJean Tavernier[13]\n(1928 - 2020)198019877 ansDominique Ducassou (d)[14]\n(1943 - 2018)198719925 ansJacques Beylot (d)[15]\n(né en 1938)199219975 ansJosy Reiffers (d)[16]\n(1949 - 2015)199720025 ansBernard Bégaud\n(né en 1949)200220086 ansJosé Manuel Tunon de Lara[17]\n(né en 1958)200820135 ans",
+              "source_ref": "s3"
+            },
+            {
+              "locator": "claim:P488:4",
+              "original_text": "{\"property\": \"P488\", \"property_label\": \"chairperson\", \"statement_id\": \"Q13340$bc5bd304-4305-33df-07d6-0764a7467a8f\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 125578424, \"id\": \"Q125578424\"}, \"qualifiers\": {\"P580\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+1992-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}], \"P582\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+1997-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "section:Presidency",
+              "original_text": "[edit | edit source]\nSuccession of presidents:\nProf. Henri Bricaud, elected on December 21, 1970\nPr Jacques Latrille, elected on December 19, 1975\nPr Jean Tavernier, elected October 19, 1980, re-elected February 15, 1982\nPr Dominique Ducassou, elected on December 17, 1987\nPr Jacques Beylot, elected on November 17, 1992\nPr Josy Reiffers, elected on November 17, 1997\nPr Bernard Bégaud, elected on September 30, 2002\nPr Manuel Tunon de Lara, was elected on January 29, 2008.",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c6",
+          "value": {
+            "person": {
+              "name": "Jacques Beylot",
+              "qid": "Q125578424"
+            },
+            "term_end": {
+              "precision": "year",
+              "year": 1997
+            },
+            "term_start": {
+              "precision": "year",
+              "year": 1992
+            },
+            "title_original": {
+              "language": "fr",
+              "text": "Président"
+            }
+          },
+          "verification": "supported"
+        },
+        {
+          "current_basis": "historical",
+          "evidence": [
+            {
+              "locator": "section:Pr.C3.A9sidence",
+              "original_text": "[modifier | modifier le code]\nPrésidentsIdentitéPériodeDuréeDébutFinHenri Bricaud (d)[11]\n(1925 - 2010)197119765 ansJacques Latrille (d)[12]\n(1933 - 2005)197619815 ansJean Tavernier[13]\n(1928 - 2020)198019877 ansDominique Ducassou (d)[14]\n(1943 - 2018)198719925 ansJacques Beylot (d)[15]\n(né en 1938)199219975 ansJosy Reiffers (d)[16]\n(1949 - 2015)199720025 ansBernard Bégaud\n(né en 1949)200220086 ansJosé Manuel Tunon de Lara[17]\n(né en 1958)200820135 ans",
+              "source_ref": "s3"
+            },
+            {
+              "locator": "claim:P488:5",
+              "original_text": "{\"property\": \"P488\", \"property_label\": \"chairperson\", \"statement_id\": \"Q13340$75035708-4cbf-4932-2fae-e65b2cbfc721\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 119690296, \"id\": \"Q119690296\"}, \"qualifiers\": {\"P580\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+1997-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}], \"P582\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2002-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "section:Presidency",
+              "original_text": "[edit | edit source]\nSuccession of presidents:\nProf. Henri Bricaud, elected on December 21, 1970\nPr Jacques Latrille, elected on December 19, 1975\nPr Jean Tavernier, elected October 19, 1980, re-elected February 15, 1982\nPr Dominique Ducassou, elected on December 17, 1987\nPr Jacques Beylot, elected on November 17, 1992\nPr Josy Reiffers, elected on November 17, 1997\nPr Bernard Bégaud, elected on September 30, 2002\nPr Manuel Tunon de Lara, was elected on January 29, 2008.",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c7",
+          "value": {
+            "person": {
+              "name": "Josy Reiffers",
+              "qid": "Q119690296"
+            },
+            "term_end": {
+              "precision": "year",
+              "year": 2002
+            },
+            "term_start": {
+              "precision": "year",
+              "year": 1997
+            },
+            "title_original": {
+              "language": "fr",
+              "text": "Président"
+            }
+          },
+          "verification": "supported"
+        },
+        {
+          "current_basis": "historical",
+          "evidence": [
+            {
+              "locator": "section:Pr.C3.A9sidence",
+              "original_text": "[modifier | modifier le code]\nPrésidentsIdentitéPériodeDuréeDébutFinHenri Bricaud (d)[11]\n(1925 - 2010)197119765 ansJacques Latrille (d)[12]\n(1933 - 2005)197619815 ansJean Tavernier[13]\n(1928 - 2020)198019877 ansDominique Ducassou (d)[14]\n(1943 - 2018)198719925 ansJacques Beylot (d)[15]\n(né en 1938)199219975 ansJosy Reiffers (d)[16]\n(1949 - 2015)199720025 ansBernard Bégaud\n(né en 1949)200220086 ansJosé Manuel Tunon de Lara[17]\n(né en 1958)200820135 ans",
+              "source_ref": "s3"
+            },
+            {
+              "locator": "claim:P488:6",
+              "original_text": "{\"property\": \"P488\", \"property_label\": \"chairperson\", \"statement_id\": \"Q13340$9c4dd66c-4f72-51a9-576f-2739314733c7\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 2897614, \"id\": \"Q2897614\"}, \"qualifiers\": {\"P580\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2002-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}], \"P582\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2008-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "section:Presidency",
+              "original_text": "[edit | edit source]\nSuccession of presidents:\nProf. Henri Bricaud, elected on December 21, 1970\nPr Jacques Latrille, elected on December 19, 1975\nPr Jean Tavernier, elected October 19, 1980, re-elected February 15, 1982\nPr Dominique Ducassou, elected on December 17, 1987\nPr Jacques Beylot, elected on November 17, 1992\nPr Josy Reiffers, elected on November 17, 1997\nPr Bernard Bégaud, elected on September 30, 2002\nPr Manuel Tunon de Lara, was elected on January 29, 2008.",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c8",
+          "value": {
+            "person": {
+              "name": "Bernard Bégaud",
+              "qid": "Q2897614"
+            },
+            "term_end": {
+              "precision": "year",
+              "year": 2008
+            },
+            "term_start": {
+              "precision": "year",
+              "year": 2002
+            },
+            "title_original": {
+              "language": "fr",
+              "text": "Président"
+            }
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "single_source_family",
+          "last_known_only",
+          "historical_only"
+        ],
+        "reason": "Use the best available last-known appointment without claiming an explicitly confirmed current term.",
+        "reason_code": "last_known"
+      }
+    }
+  },
+  "locations": [
+    {
+      "address": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "infobox:10",
+                "original_text": "Location: 146 rue Léo-Saignat33076 Bordeaux CedexFrance, Bordeaux, Pessac, Villenave d'Ornon, Dax, France",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "city_name": "Bordeaux",
+              "country_name": "France",
+              "formatted": {
+                "language": "fr",
+                "text": "146 rue Léo-Saignat33076 Bordeaux CedexFrance"
+              },
+              "postal_code": "33076",
+              "street": "146 rue Léo-Saignat"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "id": "headquarters",
+      "kind": "headquarters",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P159:0",
+                "original_text": "{\"property\": \"P159\", \"property_label\": \"headquarters location\", \"statement_id\": \"Q13340$E1CC2541-9DD0-4020-92D9-373D0AD1EB25\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 1479, \"id\": \"Q1479\"}, \"reference_count\": 1}",
+                "source_ref": "s1"
+              },
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q1479\", \"labels\": {\"fr\": \"Bordeaux\", \"en\": \"Bordeaux\"}, \"descriptions\": {\"fr\": \"ville et commune française, chef-lieu du département de la Gironde\", \"en\": \"city and commune in Gironde, New Aquitaine, France\"}}",
+                "source_ref": "s8"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "fr",
+              "text": "Bordeaux"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "qid": "Q1479"
+    },
+    {
+      "id": "france",
+      "kind": "administrative_area",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P17:0",
+                "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q13340$9A7A6DCF-10FF-436B-A9E0-1F8F893526D3\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 142, \"id\": \"Q142\"}}",
+                "source_ref": "s1"
+              },
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q142\", \"labels\": {\"en\": \"France\", \"fr\": \"France\"}, \"descriptions\": {\"fr\": \"pays transcontinental au territoire métropolitain situé en Europe de l'Ouest\", \"en\": \"country in Western Europe and other continents (through its overseas territories in America, Africa and Oceania)\"}}",
+                "source_ref": "s7"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "fr",
+              "text": "France"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "qid": "Q142"
+    },
+    {
+      "id": "carreire",
+      "kind": "campus",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Implantations",
+                "original_text": "le site de Carreire : situé à proximité du groupe hospitalier Pellegrin, l'un des trois groupes hospitaliers formant le CHU de Bordeaux, pour les formations de biologie, de médecine et de pharmacie, pour les formations de l'ISPED et celles des écoles d'ingénieurs ;",
+                "source_ref": "s3"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "fr",
+              "text": "Site de Carreire"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    {
+      "id": "victoire",
+      "kind": "campus",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Implantations",
+                "original_text": "la place de la Victoire, dans le centre-ville de Bordeaux : ce sont les bâtiments de l’ancienne faculté mixte de médecine et de pharmacie construits entre 1876 et 1888 puis 1902 et 1922 par l’architecte prix de Rome Jean-Louis Pascal, où se trouvent actuellement les formations en sciences de l’Homme, l'UFR d'Odontologie (rue Elie Gintrac), ainsi que l'UFR de Sciences et Modélisation ;",
+                "source_ref": "s3"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "fr",
+              "text": "Place de la Victoire"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    {
+      "id": "talence_pessac_gradignan",
+      "kind": "campus",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Implantations",
+                "original_text": "le domaine universitaire de Talence Pessac Gradignan : situé sur le campus des trois autres universités, pour les formations en sciences du sport et d'œnologie (puis de cognitique après départ de l'œnologie à la Grande Ferrade) ;",
+                "source_ref": "s3"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "fr",
+              "text": "Domaine universitaire de Talence Pessac Gradignan"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    {
+      "id": "dax",
+      "kind": "campus",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Implantations",
+                "original_text": "le site de Dax, où se situe l'institut du thermalisme ;",
+                "source_ref": "s3"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "fr",
+              "text": "Site de Dax"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    {
+      "id": "grande_ferrade",
+      "kind": "campus",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Implantations",
+                "original_text": "le domaine de la Grande Ferrade à Villenave-d'Ornon, où se trouve l'Institut des Sciences de la Vigne et du Vin, sur le site de l'INRA ;",
+                "source_ref": "s3"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "fr",
+              "text": "Domaine de la Grande Ferrade"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    {
+      "coordinates": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "statement:Q13340$B33BB21D-B0C6-4F3D-B041-00D1C3CD4CF6",
+                "original_text": "\"latitude\": 44.825205",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "source_rank": "normal",
+            "value": {
+              "crs": "EPSG:4326",
+              "globe_qid": "Q2",
+              "latitude": 44.825205,
+              "longitude": -0.60579,
+              "source_precision_degrees": 2.77777777778e-06
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "id": "wikidata-item-location",
+      "kind": "institution",
+      "qid": "Q13340"
+    }
+  ],
+  "modified_datetime": "2026-11-06T13:37:19.768703+00:00",
+  "population": {
+    "academic_staff": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "1 012 (enseignants, enseignants-chercheurs et hospitalo-universitaires) (2011)[1]",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c1",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2011
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 1012,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "infobox:6",
+              "original_text": "Faculty: 1,012",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c2",
+          "period_status": "not_stated",
+          "value": {
+            "amount": 1012,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "single_source_family"
+        ],
+        "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+        "reason_code": "best_available"
+      }
+    },
+    "administrative_staff": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:7",
+              "original_text": "Administrative staff: 1,291",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "period_status": "not_stated",
+          "value": {
+            "amount": 1291,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "period_not_stated",
+          "single_source_family"
+        ],
+        "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+        "reason_code": "only_available"
+      }
+    },
+    "doctoral_students": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:9",
+              "original_text": "Doctoral students: 449",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "period_status": "not_stated",
+          "value": {
+            "amount": 449,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "period_not_stated",
+          "single_source_family"
+        ],
+        "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+        "reason_code": "only_available"
+      }
+    },
+    "students_total": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:0",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q13340$b0e473a3-4b87-48cf-be20-414ab5c80e13\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+17694\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2007-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2007
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 17694,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:1",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q13340$b37c03c4-9853-48d0-86a6-5c4791fa93ba\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+17759\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2008-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c2",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2008
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 17759,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:2",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q13340$588e8f11-779c-4da0-9fb9-d4f8115b3ff7\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+17748\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2009-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c3",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2009
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 17748,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:3",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q13340$e30a41b5-033e-4533-ac1f-2addd6eb36df\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+17897\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2010-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c4",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2010
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 17897,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:4",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q13340$73f8edfa-bd55-4399-ab61-1030773bd30a\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+17826\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2011-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c5",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2011
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 17826,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:5",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q13340$0857d78d-8f3c-4101-9e71-da631975e626\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+17649\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2012-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c6",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2012
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 17649,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:6",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q13340$18d0110b-f386-4cb8-adcf-bdd417a1bbfb\", \"rank\": \"preferred\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+18018\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2013-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c7",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2013
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 18018,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "section:.C3.89volution_d.C3.A9mographique",
+              "original_text": "[modifier | modifier le code]\nÉvolution démographique de la population universitaire\nÉvolution démographique (ligne 1)\n1987\n1988\n1989\n1990\n1991\n1992\n2000\n2001\n12 821[25]12 334[25]13 172[25]13 368[25]13 832[25]14 195[25]15 175[26]15 038[27]\nÉvolution démographique (ligne 2)\n2002\n2003\n2004\n2005\n2006\n2007\n2008\n2009\n16 069[28]16 745[29]17 011[30]17 487[31]17 694[32]17 759[33]17 748[34]17 897[35]\nÉvolution démographique (ligne 3)\n2010\n2011\n-\n-\n-\n-\n-\n-\n17 826[36]17 649[37]------",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c8",
+          "period": {
+            "kind": "calendar_year",
+            "year": 1987
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 12821,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "section:.C3.89volution_d.C3.A9mographique",
+              "original_text": "[modifier | modifier le code]\nÉvolution démographique de la population universitaire\nÉvolution démographique (ligne 1)\n1987\n1988\n1989\n1990\n1991\n1992\n2000\n2001\n12 821[25]12 334[25]13 172[25]13 368[25]13 832[25]14 195[25]15 175[26]15 038[27]\nÉvolution démographique (ligne 2)\n2002\n2003\n2004\n2005\n2006\n2007\n2008\n2009\n16 069[28]16 745[29]17 011[30]17 487[31]17 694[32]17 759[33]17 748[34]17 897[35]\nÉvolution démographique (ligne 3)\n2010\n2011\n-\n-\n-\n-\n-\n-\n17 826[36]17 649[37]------",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c9",
+          "period": {
+            "kind": "calendar_year",
+            "year": 1988
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 12334,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "section:.C3.89volution_d.C3.A9mographique",
+              "original_text": "[modifier | modifier le code]\nÉvolution démographique de la population universitaire\nÉvolution démographique (ligne 1)\n1987\n1988\n1989\n1990\n1991\n1992\n2000\n2001\n12 821[25]12 334[25]13 172[25]13 368[25]13 832[25]14 195[25]15 175[26]15 038[27]\nÉvolution démographique (ligne 2)\n2002\n2003\n2004\n2005\n2006\n2007\n2008\n2009\n16 069[28]16 745[29]17 011[30]17 487[31]17 694[32]17 759[33]17 748[34]17 897[35]\nÉvolution démographique (ligne 3)\n2010\n2011\n-\n-\n-\n-\n-\n-\n17 826[36]17 649[37]------",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c10",
+          "period": {
+            "kind": "calendar_year",
+            "year": 1989
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 13172,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "section:.C3.89volution_d.C3.A9mographique",
+              "original_text": "[modifier | modifier le code]\nÉvolution démographique de la population universitaire\nÉvolution démographique (ligne 1)\n1987\n1988\n1989\n1990\n1991\n1992\n2000\n2001\n12 821[25]12 334[25]13 172[25]13 368[25]13 832[25]14 195[25]15 175[26]15 038[27]\nÉvolution démographique (ligne 2)\n2002\n2003\n2004\n2005\n2006\n2007\n2008\n2009\n16 069[28]16 745[29]17 011[30]17 487[31]17 694[32]17 759[33]17 748[34]17 897[35]\nÉvolution démographique (ligne 3)\n2010\n2011\n-\n-\n-\n-\n-\n-\n17 826[36]17 649[37]------",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c11",
+          "period": {
+            "kind": "calendar_year",
+            "year": 1990
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 13368,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "section:.C3.89volution_d.C3.A9mographique",
+              "original_text": "[modifier | modifier le code]\nÉvolution démographique de la population universitaire\nÉvolution démographique (ligne 1)\n1987\n1988\n1989\n1990\n1991\n1992\n2000\n2001\n12 821[25]12 334[25]13 172[25]13 368[25]13 832[25]14 195[25]15 175[26]15 038[27]\nÉvolution démographique (ligne 2)\n2002\n2003\n2004\n2005\n2006\n2007\n2008\n2009\n16 069[28]16 745[29]17 011[30]17 487[31]17 694[32]17 759[33]17 748[34]17 897[35]\nÉvolution démographique (ligne 3)\n2010\n2011\n-\n-\n-\n-\n-\n-\n17 826[36]17 649[37]------",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c12",
+          "period": {
+            "kind": "calendar_year",
+            "year": 1991
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 13832,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "section:.C3.89volution_d.C3.A9mographique",
+              "original_text": "[modifier | modifier le code]\nÉvolution démographique de la population universitaire\nÉvolution démographique (ligne 1)\n1987\n1988\n1989\n1990\n1991\n1992\n2000\n2001\n12 821[25]12 334[25]13 172[25]13 368[25]13 832[25]14 195[25]15 175[26]15 038[27]\nÉvolution démographique (ligne 2)\n2002\n2003\n2004\n2005\n2006\n2007\n2008\n2009\n16 069[28]16 745[29]17 011[30]17 487[31]17 694[32]17 759[33]17 748[34]17 897[35]\nÉvolution démographique (ligne 3)\n2010\n2011\n-\n-\n-\n-\n-\n-\n17 826[36]17 649[37]------",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c13",
+          "period": {
+            "kind": "calendar_year",
+            "year": 1992
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 14195,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "section:.C3.89volution_d.C3.A9mographique",
+              "original_text": "[modifier | modifier le code]\nÉvolution démographique de la population universitaire\nÉvolution démographique (ligne 1)\n1987\n1988\n1989\n1990\n1991\n1992\n2000\n2001\n12 821[25]12 334[25]13 172[25]13 368[25]13 832[25]14 195[25]15 175[26]15 038[27]\nÉvolution démographique (ligne 2)\n2002\n2003\n2004\n2005\n2006\n2007\n2008\n2009\n16 069[28]16 745[29]17 011[30]17 487[31]17 694[32]17 759[33]17 748[34]17 897[35]\nÉvolution démographique (ligne 3)\n2010\n2011\n-\n-\n-\n-\n-\n-\n17 826[36]17 649[37]------",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c14",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2000
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 15175,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "section:.C3.89volution_d.C3.A9mographique",
+              "original_text": "[modifier | modifier le code]\nÉvolution démographique de la population universitaire\nÉvolution démographique (ligne 1)\n1987\n1988\n1989\n1990\n1991\n1992\n2000\n2001\n12 821[25]12 334[25]13 172[25]13 368[25]13 832[25]14 195[25]15 175[26]15 038[27]\nÉvolution démographique (ligne 2)\n2002\n2003\n2004\n2005\n2006\n2007\n2008\n2009\n16 069[28]16 745[29]17 011[30]17 487[31]17 694[32]17 759[33]17 748[34]17 897[35]\nÉvolution démographique (ligne 3)\n2010\n2011\n-\n-\n-\n-\n-\n-\n17 826[36]17 649[37]------",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c15",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2001
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 15038,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "section:.C3.89volution_d.C3.A9mographique",
+              "original_text": "[modifier | modifier le code]\nÉvolution démographique de la population universitaire\nÉvolution démographique (ligne 1)\n1987\n1988\n1989\n1990\n1991\n1992\n2000\n2001\n12 821[25]12 334[25]13 172[25]13 368[25]13 832[25]14 195[25]15 175[26]15 038[27]\nÉvolution démographique (ligne 2)\n2002\n2003\n2004\n2005\n2006\n2007\n2008\n2009\n16 069[28]16 745[29]17 011[30]17 487[31]17 694[32]17 759[33]17 748[34]17 897[35]\nÉvolution démographique (ligne 3)\n2010\n2011\n-\n-\n-\n-\n-\n-\n17 826[36]17 649[37]------",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c16",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2002
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 16069,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "section:.C3.89volution_d.C3.A9mographique",
+              "original_text": "[modifier | modifier le code]\nÉvolution démographique de la population universitaire\nÉvolution démographique (ligne 1)\n1987\n1988\n1989\n1990\n1991\n1992\n2000\n2001\n12 821[25]12 334[25]13 172[25]13 368[25]13 832[25]14 195[25]15 175[26]15 038[27]\nÉvolution démographique (ligne 2)\n2002\n2003\n2004\n2005\n2006\n2007\n2008\n2009\n16 069[28]16 745[29]17 011[30]17 487[31]17 694[32]17 759[33]17 748[34]17 897[35]\nÉvolution démographique (ligne 3)\n2010\n2011\n-\n-\n-\n-\n-\n-\n17 826[36]17 649[37]------",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c17",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2003
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 16745,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "section:.C3.89volution_d.C3.A9mographique",
+              "original_text": "[modifier | modifier le code]\nÉvolution démographique de la population universitaire\nÉvolution démographique (ligne 1)\n1987\n1988\n1989\n1990\n1991\n1992\n2000\n2001\n12 821[25]12 334[25]13 172[25]13 368[25]13 832[25]14 195[25]15 175[26]15 038[27]\nÉvolution démographique (ligne 2)\n2002\n2003\n2004\n2005\n2006\n2007\n2008\n2009\n16 069[28]16 745[29]17 011[30]17 487[31]17 694[32]17 759[33]17 748[34]17 897[35]\nÉvolution démographique (ligne 3)\n2010\n2011\n-\n-\n-\n-\n-\n-\n17 826[36]17 649[37]------",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c18",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2004
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 17011,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "section:.C3.89volution_d.C3.A9mographique",
+              "original_text": "[modifier | modifier le code]\nÉvolution démographique de la population universitaire\nÉvolution démographique (ligne 1)\n1987\n1988\n1989\n1990\n1991\n1992\n2000\n2001\n12 821[25]12 334[25]13 172[25]13 368[25]13 832[25]14 195[25]15 175[26]15 038[27]\nÉvolution démographique (ligne 2)\n2002\n2003\n2004\n2005\n2006\n2007\n2008\n2009\n16 069[28]16 745[29]17 011[30]17 487[31]17 694[32]17 759[33]17 748[34]17 897[35]\nÉvolution démographique (ligne 3)\n2010\n2011\n-\n-\n-\n-\n-\n-\n17 826[36]17 649[37]------",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c19",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2005
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 17487,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "section:.C3.89volution_d.C3.A9mographique",
+              "original_text": "[modifier | modifier le code]\nÉvolution démographique de la population universitaire\nÉvolution démographique (ligne 1)\n1987\n1988\n1989\n1990\n1991\n1992\n2000\n2001\n12 821[25]12 334[25]13 172[25]13 368[25]13 832[25]14 195[25]15 175[26]15 038[27]\nÉvolution démographique (ligne 2)\n2002\n2003\n2004\n2005\n2006\n2007\n2008\n2009\n16 069[28]16 745[29]17 011[30]17 487[31]17 694[32]17 759[33]17 748[34]17 897[35]\nÉvolution démographique (ligne 3)\n2010\n2011\n-\n-\n-\n-\n-\n-\n17 826[36]17 649[37]------",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c20",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2006
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 17694,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "section:.C3.89volution_d.C3.A9mographique",
+              "original_text": "[modifier | modifier le code]\nÉvolution démographique de la population universitaire\nÉvolution démographique (ligne 1)\n1987\n1988\n1989\n1990\n1991\n1992\n2000\n2001\n12 821[25]12 334[25]13 172[25]13 368[25]13 832[25]14 195[25]15 175[26]15 038[27]\nÉvolution démographique (ligne 2)\n2002\n2003\n2004\n2005\n2006\n2007\n2008\n2009\n16 069[28]16 745[29]17 011[30]17 487[31]17 694[32]17 759[33]17 748[34]17 897[35]\nÉvolution démographique (ligne 3)\n2010\n2011\n-\n-\n-\n-\n-\n-\n17 826[36]17 649[37]------",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c21",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2007
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 17759,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "section:.C3.89volution_d.C3.A9mographique",
+              "original_text": "[modifier | modifier le code]\nÉvolution démographique de la population universitaire\nÉvolution démographique (ligne 1)\n1987\n1988\n1989\n1990\n1991\n1992\n2000\n2001\n12 821[25]12 334[25]13 172[25]13 368[25]13 832[25]14 195[25]15 175[26]15 038[27]\nÉvolution démographique (ligne 2)\n2002\n2003\n2004\n2005\n2006\n2007\n2008\n2009\n16 069[28]16 745[29]17 011[30]17 487[31]17 694[32]17 759[33]17 748[34]17 897[35]\nÉvolution démographique (ligne 3)\n2010\n2011\n-\n-\n-\n-\n-\n-\n17 826[36]17 649[37]------",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c22",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2008
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 17748,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "section:.C3.89volution_d.C3.A9mographique",
+              "original_text": "[modifier | modifier le code]\nÉvolution démographique de la population universitaire\nÉvolution démographique (ligne 1)\n1987\n1988\n1989\n1990\n1991\n1992\n2000\n2001\n12 821[25]12 334[25]13 172[25]13 368[25]13 832[25]14 195[25]15 175[26]15 038[27]\nÉvolution démographique (ligne 2)\n2002\n2003\n2004\n2005\n2006\n2007\n2008\n2009\n16 069[28]16 745[29]17 011[30]17 487[31]17 694[32]17 759[33]17 748[34]17 897[35]\nÉvolution démographique (ligne 3)\n2010\n2011\n-\n-\n-\n-\n-\n-\n17 826[36]17 649[37]------",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c23",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2009
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 17897,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "section:.C3.89volution_d.C3.A9mographique",
+              "original_text": "[modifier | modifier le code]\nÉvolution démographique de la population universitaire\nÉvolution démographique (ligne 1)\n1987\n1988\n1989\n1990\n1991\n1992\n2000\n2001\n12 821[25]12 334[25]13 172[25]13 368[25]13 832[25]14 195[25]15 175[26]15 038[27]\nÉvolution démographique (ligne 2)\n2002\n2003\n2004\n2005\n2006\n2007\n2008\n2009\n16 069[28]16 745[29]17 011[30]17 487[31]17 694[32]17 759[33]17 748[34]17 897[35]\nÉvolution démographique (ligne 3)\n2010\n2011\n-\n-\n-\n-\n-\n-\n17 826[36]17 649[37]------",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c24",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2010
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 17826,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "section:.C3.89volution_d.C3.A9mographique",
+              "original_text": "[modifier | modifier le code]\nÉvolution démographique de la population universitaire\nÉvolution démographique (ligne 1)\n1987\n1988\n1989\n1990\n1991\n1992\n2000\n2001\n12 821[25]12 334[25]13 172[25]13 368[25]13 832[25]14 195[25]15 175[26]15 038[27]\nÉvolution démographique (ligne 2)\n2002\n2003\n2004\n2005\n2006\n2007\n2008\n2009\n16 069[28]16 745[29]17 011[30]17 487[31]17 694[32]17 759[33]17 748[34]17 897[35]\nÉvolution démographique (ligne 3)\n2010\n2011\n-\n-\n-\n-\n-\n-\n17 826[36]17 649[37]------",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c25",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2011
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 17649,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "21 474 (2011)[1]",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c26",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2011
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 21474,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "infobox:8",
+              "original_text": "Students: 21,474",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c27",
+          "period_status": "not_stated",
+          "value": {
+            "amount": 21474,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        }
+      ],
+      "conflicts": [
+        {
+          "candidate_ids": [
+            "c1",
+            "c21"
+          ],
+          "kind": "value_disagreement",
+          "note": "Student totals assigned to 2007 differ across the supplied Wikidata claims and French article table/infobox. Statistical scope and year conventions are not reconciled; preserve source-authored years.",
+          "status": "unresolved"
+        },
+        {
+          "candidate_ids": [
+            "c2",
+            "c22"
+          ],
+          "kind": "value_disagreement",
+          "note": "Student totals assigned to 2008 differ across the supplied Wikidata claims and French article table/infobox. Statistical scope and year conventions are not reconciled; preserve source-authored years.",
+          "status": "unresolved"
+        },
+        {
+          "candidate_ids": [
+            "c3",
+            "c23"
+          ],
+          "kind": "value_disagreement",
+          "note": "Student totals assigned to 2009 differ across the supplied Wikidata claims and French article table/infobox. Statistical scope and year conventions are not reconciled; preserve source-authored years.",
+          "status": "unresolved"
+        },
+        {
+          "candidate_ids": [
+            "c4",
+            "c24"
+          ],
+          "kind": "value_disagreement",
+          "note": "Student totals assigned to 2010 differ across the supplied Wikidata claims and French article table/infobox. Statistical scope and year conventions are not reconciled; preserve source-authored years.",
+          "status": "unresolved"
+        },
+        {
+          "candidate_ids": [
+            "c5",
+            "c25",
+            "c26"
+          ],
+          "kind": "value_disagreement",
+          "note": "Student totals assigned to 2011 differ across the supplied Wikidata claims and French article table/infobox. Statistical scope and year conventions are not reconciled; preserve source-authored years.",
+          "status": "unresolved"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c27",
+        "qualifications": [
+          "period_not_stated",
+          "single_source_family",
+          "conflicting_candidates"
+        ],
+        "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+        "reason_code": "best_available"
+      }
+    }
+  },
+  "profile": {
+    "academic_focus": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "Ses domaines principaux sont les sciences de la vie, les sciences de la santé et les sciences de l’Homme.",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c1",
+          "value": [
+            {
+              "language": "fr",
+              "text": "sciences de la vie"
+            },
+            {
+              "language": "fr",
+              "text": "sciences de la santé"
+            },
+            {
+              "language": "fr",
+              "text": "sciences de l’Homme"
+            }
+          ],
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "degree_levels": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:Licences",
+              "original_text": "[modifier | modifier le code]\nL’université délivre la licence dans trois domaines :\nSciences, technologies, santé\nBiologie\nMathématiques appliquées et sciences sociales\nSciences humaines et sociales\nAnthropologie\nPsychologie\nSciences de l’éducation\nSociologie\nSciences et techniques des activités physiques et sportives",
+              "source_ref": "s3"
+            },
+            {
+              "locator": "section:Licences_professionnelles",
+              "original_text": "[modifier | modifier le code]\nIl est possible d’obtenir une des licences professionnelles suivantes :\nŒnologie\nEnvironnement\nIndustries chimiques et pharmaceutiques\nSciences de la vie et de la santé\nSciences de l'Homme\nGestion et développement des organisations et des services sportifs et de loisirs (STAPS)",
+              "source_ref": "s3"
+            },
+            {
+              "locator": "section:Masters",
+              "original_text": "[modifier | modifier le code]\nBordeaux II délivre le master dans deux domaines :\nSciences, technologies, santé\nBiologie, santé\nMédicaments et produits de santé\nModélisation, ingénierie mathématique, statistique et économique\nSanté publique\nSciences humaines et sociales\nAnthropologie\nLangues de spécialité\nPsychologie\nSciences cognitives\nSciences de l'éducation\nSociologie\nSciences et techniques des activités physiques et sportives",
+              "source_ref": "s3"
+            },
+            {
+              "locator": "section:Doctorats",
+              "original_text": "[modifier | modifier le code]\nTrois écoles doctorales existent à Bordeaux II :\nSciences de la vie et de la santé,\nSciences sociales (société, santé, décision),\nMathématiques et Informatique.",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c1",
+          "value": [
+            "licence",
+            "licence professionnelle",
+            "master",
+            "doctorat"
+          ],
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "logo_url": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox_image_urls",
+              "original_text": "[\"https://thumb.wikimedia.org/wikipedia/en/thumb/8/83/Bordeaux_Segalen_University_logo.svg/250px-Bordeaux_Segalen_University_logo.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail\", \"https://maps.wikimedia.org/img/osm-intl,13,a,a,270x200.png?lang=en&domain=en.wikipedia.org&title=Bordeaux_Segalen_University&revid=1368018408&groups=_c950f9d981da848557fe3331e487d4e3fd1899ac&parser=legacy\"]",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": "https://thumb.wikimedia.org/wikipedia/en/thumb/8/83/Bordeaux_Segalen_University_logo.svg/250px-Bordeaux_Segalen_University_logo.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "summary": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "Université Bordeaux-II\nHistoireFondation\n21 mars 1970Dissolution\n1er janvier 2014StatutType\nUniversité publique (EPSCP)Forme juridique\nÉtablissement public national à caractère scientifique culturel et professionnel (d)Nom officiel\nUNIVERSITE DE BORDEAUX II VICTOR SEGALENPrésident\nHenri Bricaud (d) (1971-1976)Membre de\nAssociation des universités européennesSite web\nwww.univ-bordeauxsegalen.frChiffres-clésÉtudiants\n21 474 (2011)[1]Enseignants-chercheurs\n1 012 (enseignants, enseignants-chercheurs et hospitalo-universitaires) (2011)[1]LocalisationPays\nFranceCampus\nCarreire, place de la Victoire, Domaine universitaire de Talence Pessac Gradignan, Dax, BayonneVille\nBordeaux\nLocalisation sur la carte de France\nmodifier - modifier le code - modifier Wikidata\n",
+              "source_ref": "s3"
+            },
+            {
+              "locator": "section:lead",
+              "original_text": "L’université Bordeaux-II[2] ou université Bordeaux-Segalen, de nom d’usage « université Bordeaux Segalen »[3], est une université française ayant existé entre 1970 et 2013. Elle fusionne le 1er janvier 2014 avec deux autres universités bordelaises pour former l'université de Bordeaux.\nSes domaines principaux sont les sciences de la vie, les sciences de la santé et les sciences de l’Homme.",
+              "source_ref": "s3"
+            },
+            {
+              "locator": "section:Fondation_et_disparition",
+              "original_text": "[modifier | modifier le code]\nL’université Bordeaux-II fut créée en 1970 après la division en trois de l’ancienne université de Bordeaux reconstituée en 1896.\nEn 2007 Bordeaux-II est membre fondateur du PRES « Université de Bordeaux » et accède aux « compétences élargies » (applications de la LRU) en janvier 2010[6].\nJusqu'en décembre 2010, l'université portait le nom université Victor Segalen Bordeaux 2. Mais pour pallier une utilisation pas toujours homogène de ce nom, préjudiciable surtout dans les publications scientifiques, le conseil d'administration s'est prononcé en juin 2010 pour le changement de nom[7]. Ce changement s'accompagne d'un nouveau logo qui symbolise « l'arborescence, la hiérarchisation, le savoir organisé, la technologie, la science mais aussi le cerveau de l'homme avec toutes ses connexions »[8].\n",
+              "source_ref": "s3"
+            },
+            {
+              "locator": "section:Fondation_et_disparition",
+              "original_text": "Préparée depuis 2010[9], l’université de Bordeaux est reformée le 1er janvier 2014. C’est le résultat de la fusion des universités Bordeaux-I, Bordeaux-II et Bordeaux-IV[10].",
+              "source_ref": "s3"
+            },
+            {
+              "locator": "section:Implantations",
+              "original_text": "[modifier | modifier le code]\nSite de la Victoire.\nSite de Carreire.\nLes locaux de l’université sont répartis sur six sites différents[22] :\nle site de Carreire : situé à proximité du groupe hospitalier Pellegrin, l'un des trois groupes hospitaliers formant le CHU de Bordeaux, pour les formations de biologie, de médecine et de pharmacie, pour les formations de l'ISPED et celles des écoles d'ingénieurs ;\nla place de la Victoire, dans le centre-ville de Bordeaux : ce sont les bâtiments de l’ancienne faculté mixte de médecine et de pharmacie construits entre 1876 et 1888 puis 1902 et 1922 par l’architecte prix de Rome Jean-Louis Pascal, où se trouvent actuellement les formations en sciences de l’Homme, l'UFR d'Odontologie (rue Elie Gintrac), ainsi que l'UFR de Sciences et Modélisation ;\n",
+              "source_ref": "s3"
+            },
+            {
+              "locator": "section:Implantations",
+              "original_text": "le domaine universitaire de Talence Pessac Gradignan : situé sur le campus des trois autres universités, pour les formations en sciences du sport et d'œnologie (puis de cognitique après départ de l'œnologie à la Grande Ferrade) ;\nle site de Dax, où se situe l'institut du thermalisme ;\nle domaine de la Grande Ferrade à Villenave-d'Ornon, où se trouve l'Institut des Sciences de la Vigne et du Vin, sur le site de l'INRA ;\nle jardin botanique de Talence (rattaché à la pharmacie), situé à proximité du parc Peixotto de la mairie de Talence, cédé à la mairie en 2009.",
+              "source_ref": "s3"
+            },
+            {
+              "locator": "section:Composantes",
+              "original_text": "[modifier | modifier le code]\nL’université est constituée de douze composantes[18] :\nhuit UFR :\nsciences médicales (anciennement trois facultés : Paul Broca, Hyacinthe Vincent, Victor Pachon),\nodontologie,\nsciences pharmaceutiques,\nsciences de la vie (anciennement UFR de biologie et biochimie cellulaire UFR BBC),\nsciences et modélisation,\nsciences de l’Homme (anciennement UFR des sciences sociales et psychologique UFR-SSP),\nsciences du sport et de l’éducation physique (UFR-STAPS),\nœnologie (qui fait également partie de l’institut du vin et de la vigne Bordeaux-Aquitaine),\ndeux instituts internes (au sens de l'article L713.9 du Code de l'éducation) :\nl’institut de santé publique, d’épidémiologie et de développement (ISPED),\nl’institut du thermalisme.\n",
+              "source_ref": "s3"
+            },
+            {
+              "locator": "section:Composantes",
+              "original_text": "deux écoles internes d'ingénieurs (au sens de l'article L713.9[19]) créées par décret et transférées le 1er avril 2009[20] pour constituer l'IPB:\nl'École supérieure de technologie des biomolécules de l'université Bordeaux-II (ESTBB),\nl’Institut de cognitique (IdC)[21].\nCes quatorze (douze après la fusion des 3 facultés de médecine en une seule UFR médicale) composantes sont représentées par les 14 rayons du soleil du logo circulaire, puis par les 14 quatorze branches du dernier logo \"arbre des connaissances\", utilisé jusqu'à la disparition de l'établissement.",
+              "source_ref": "s3"
+            },
+            {
+              "locator": "section:Licences",
+              "original_text": "[modifier | modifier le code]\nL’université délivre la licence dans trois domaines :\nSciences, technologies, santé\nBiologie\nMathématiques appliquées et sciences sociales\nSciences humaines et sociales\nAnthropologie\nPsychologie\nSciences de l’éducation\nSociologie\nSciences et techniques des activités physiques et sportives",
+              "source_ref": "s3"
+            },
+            {
+              "locator": "section:Licences_professionnelles",
+              "original_text": "[modifier | modifier le code]\nIl est possible d’obtenir une des licences professionnelles suivantes :\nŒnologie\nEnvironnement\nIndustries chimiques et pharmaceutiques\nSciences de la vie et de la santé\nSciences de l'Homme\nGestion et développement des organisations et des services sportifs et de loisirs (STAPS)",
+              "source_ref": "s3"
+            },
+            {
+              "locator": "section:Masters",
+              "original_text": "[modifier | modifier le code]\nBordeaux II délivre le master dans deux domaines :\nSciences, technologies, santé\nBiologie, santé\nMédicaments et produits de santé\nModélisation, ingénierie mathématique, statistique et économique\nSanté publique\nSciences humaines et sociales\nAnthropologie\nLangues de spécialité\nPsychologie\nSciences cognitives\nSciences de l'éducation\nSociologie\nSciences et techniques des activités physiques et sportives",
+              "source_ref": "s3"
+            },
+            {
+              "locator": "section:Doctorats",
+              "original_text": "[modifier | modifier le code]\nTrois écoles doctorales existent à Bordeaux II :\nSciences de la vie et de la santé,\nSciences sociales (société, santé, décision),\nMathématiques et Informatique.",
+              "source_ref": "s3"
+            },
+            {
+              "locator": "section:.C3.89volution_d.C3.A9mographique",
+              "original_text": "[modifier | modifier le code]\nÉvolution démographique de la population universitaire\nÉvolution démographique (ligne 1)\n1987\n1988\n1989\n1990\n1991\n1992\n2000\n2001\n12 821[25]12 334[25]13 172[25]13 368[25]13 832[25]14 195[25]15 175[26]15 038[27]\nÉvolution démographique (ligne 2)\n2002\n2003\n2004\n2005\n2006\n2007\n2008\n2009\n16 069[28]16 745[29]17 011[30]17 487[31]17 694[32]17 759[33]17 748[34]17 897[35]\nÉvolution démographique (ligne 3)\n2010\n2011\n-\n-\n-\n-\n-\n-\n17 826[36]17 649[37]------",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "language": "en",
+            "text": "Bordeaux Segalen University (Université Bordeaux Segalen), also known as université Bordeaux-II, was a public university in Bordeaux, France, specializing in life and health sciences and the human and social sciences. The French account dates its creation to 1970, following the division of the former University of Bordeaux, which had been reconstituted in 1896. It became a founding member of the PRES Université de Bordeaux in 2007 and acquired expanded responsibilities under French university legislation in January 2010. A naming change approved in June 2010 followed its earlier designation as université Victor Segalen Bordeaux 2. On 1 January 2014, Bordeaux-II merged with Bordeaux-I and Bordeaux-IV to form the University of Bordeaux.\n\nIts teaching sites included Carreire, near the Pellegrin hospital complex; Place de la Victoire in central Bordeaux; the Talence Pessac Gradignan university domain; Dax; and Grande Ferrade at Villenave-d’Ornon. Its academic organization encompassed medicine, dentistry, pharmacy, life sciences, mathematical modelling, human sciences, sport and oenology, alongside institutes for public health and hydrotherapy. Programmes included licences, professional licences, masters and doctoral studies. Three doctoral schools covered life and health sciences, social sciences, and mathematics and computer science. The French article reports 21,474 students and 1,012 teachers, teacher-researchers and hospital-university staff in 2011; its separate enrolment series reports a different student total for that year."
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "website": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P856:0",
+              "original_text": "{\"property\": \"P856\", \"property_label\": \"official website\", \"statement_id\": \"Q13340$CD5C1715-D9D1-4966-A424-07CE2936A227\", \"rank\": \"deprecated\", \"snaktype\": \"value\", \"value\": \"http://www.univ-bordeauxsegalen.fr/\", \"qualifiers\": {\"P2241\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 1193907, \"id\": \"Q1193907\"}}]}}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "infobox:11",
+              "original_text": "Website: www.univ-bordeauxsegalen.fr",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": "http://www.univ-bordeauxsegalen.fr/",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "qid": "Q13340",
+  "record_revision": 1,
+  "related_entities": {
+    "bordeaux": {
+      "kind": "institution",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q13344\", \"labels\": {\"fr\": \"université de Bordeaux\", \"en\": \"University of Bordeaux\"}, \"descriptions\": {\"fr\": \"université française créée en 1441\", \"en\": \"university in France\"}}",
+                "source_ref": "s10"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "University of Bordeaux"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "qid": "Q13344"
+    },
+    "old_bordeaux": {
+      "kind": "institution",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q20791505\", \"labels\": {\"fr\": \"université de Bordeaux\", \"en\": \"University of Bordeaux\"}, \"descriptions\": {\"fr\": \"université française (1896-1971)\", \"en\": \"French university from 1896 to 1971\"}}",
+                "source_ref": "s11"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "University of Bordeaux (1896–1971)"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "qid": "Q20791505"
+    },
+    "pres": {
+      "kind": "university_system",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q64685688\", \"labels\": {\"en\": \"PRES University of Bordeaux\", \"fr\": \"PRES Université de Bordeaux\"}, \"descriptions\": {\"en\": \"former cluster of French public universities and research institutions in the region Bordeaux organized from 2007-2015\", \"fr\": \"ancien Pôle de Recherche et d'Enseignement Supérieur regroupant des universités et établissements de l'enseignement supérieur dans la région de Bordeaux, existant de 2007 à 2015\"}}",
+                "source_ref": "s9"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "fr",
+              "text": "PRES Université de Bordeaux"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "qid": "Q64685688"
+    }
+  },
+  "relationships": {
+    "campus": [
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Implantations",
+                "original_text": "le site de Carreire : situé à proximité du groupe hospitalier Pellegrin, l'un des trois groupes hospitaliers formant le CHU de Bordeaux, pour les formations de biologie, de médecine et de pharmacie, pour les formations de l'ISPED et celles des écoles d'ingénieurs ;",
+                "source_ref": "s3"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "target_ref": "location:carreire"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Implantations",
+                "original_text": "la place de la Victoire, dans le centre-ville de Bordeaux : ce sont les bâtiments de l’ancienne faculté mixte de médecine et de pharmacie construits entre 1876 et 1888 puis 1902 et 1922 par l’architecte prix de Rome Jean-Louis Pascal, où se trouvent actuellement les formations en sciences de l’Homme, l'UFR d'Odontologie (rue Elie Gintrac), ainsi que l'UFR de Sciences et Modélisation ;",
+                "source_ref": "s3"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "target_ref": "location:victoire"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Implantations",
+                "original_text": "le domaine universitaire de Talence Pessac Gradignan : situé sur le campus des trois autres universités, pour les formations en sciences du sport et d'œnologie (puis de cognitique après départ de l'œnologie à la Grande Ferrade) ;",
+                "source_ref": "s3"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "target_ref": "location:talence_pessac_gradignan"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Implantations",
+                "original_text": "le site de Dax, où se situe l'institut du thermalisme ;",
+                "source_ref": "s3"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "target_ref": "location:dax"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Implantations",
+                "original_text": "le domaine de la Grande Ferrade à Villenave-d'Ornon, où se trouve l'Institut des Sciences de la Vigne et du Vin, sur le site de l'INRA ;",
+                "source_ref": "s3"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "target_ref": "location:grande_ferrade"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    ],
+    "parent": [
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P749:0",
+                "original_text": "{\"property\": \"P749\", \"property_label\": \"parent organization or unit\", \"statement_id\": \"Q13340$0beab897-480f-dff3-b161-b9259024e5ec\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 64685688, \"id\": \"Q64685688\"}, \"qualifiers\": {\"P580\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2007-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}], \"P582\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2014-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "target_ref": "related:pres",
+              "valid_from": {
+                "precision": "year",
+                "year": 2007
+              },
+              "valid_to": {
+                "precision": "year",
+                "year": 2014
+              }
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    ],
+    "predecessor": [
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P1365:0",
+                "original_text": "{\"property\": \"P1365\", \"property_label\": \"replaces\", \"statement_id\": \"Q13340$CF894762-27EE-4D87-8757-ED5296E88233\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 13344, \"id\": \"Q13344\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+1971-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "target_ref": "related:bordeaux",
+              "valid_from": {
+                "precision": "year",
+                "year": 1971
+              }
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P1365:1",
+                "original_text": "{\"property\": \"P1365\", \"property_label\": \"replaces\", \"statement_id\": \"Q13340$E0FD50A3-1E68-467D-95DF-55895A482221\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 20791505, \"id\": \"Q20791505\"}}",
+                "source_ref": "s1"
+              },
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q20791505\", \"labels\": {\"fr\": \"université de Bordeaux\", \"en\": \"University of Bordeaux\"}, \"descriptions\": {\"fr\": \"université française (1896-1971)\", \"en\": \"French university from 1896 to 1971\"}}",
+                "source_ref": "s11"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "target_ref": "related:old_bordeaux"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    ],
+    "successor": [
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P1366:0",
+                "original_text": "{\"property\": \"P1366\", \"property_label\": \"replaced by\", \"statement_id\": \"Q13340$6ba064ab-4e15-1d9d-24e6-9f32791451ec\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 13344, \"id\": \"Q13344\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2014-04-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "target_ref": "related:bordeaux",
+              "valid_from": {
+                "day": 1,
+                "month": 4,
+                "precision": "day",
+                "year": 2014
+              }
+            },
+            "verification": "supported"
+          },
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "Elle fusionne le 1er janvier 2014 avec deux autres universités bordelaises pour former l'université de Bordeaux.",
+                "source_ref": "s3"
+              }
+            ],
+            "id": "c2",
+            "value": {
+              "target_ref": "related:bordeaux",
+              "valid_from": {
+                "day": 1,
+                "month": 1,
+                "precision": "day",
+                "year": 2014
+              }
+            },
+            "verification": "supported"
+          }
+        ],
+        "conflicts": [
+          {
+            "candidate_ids": [
+              "c1",
+              "c2"
+            ],
+            "kind": "time_disagreement",
+            "note": "P1366 point-in-time is 1 April 2014; French article describes the merger forming the University of Bordeaux on 1 January 2014. Relation dates retain both source observations.",
+            "status": "unresolved"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c2",
+          "qualifications": [
+            "conflicting_candidates"
+          ],
+          "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+          "reason_code": "best_available"
+        }
+      }
+    ]
+  },
+  "schema_version": "0.2.2",
+  "seed": {
+    "channels": [
+      "reviewed_institution_type"
+    ],
+    "import_id": "seed-84c3beb45367905f",
+    "screening_status": "included"
+  },
+  "selection_policy": "preferred-v1",
+  "sources": {
+    "s1": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T13:16:12.501513+00:00",
+      "revision_id": 2511233925,
+      "source_qid": "Q13340",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2511233925"
+    },
+    "s10": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T11:53:58.670705+00:00",
+      "revision_id": 2562980745,
+      "source_qid": "Q13344",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2562980745"
+    },
+    "s11": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T13:16:36.388935+00:00",
+      "revision_id": 2561380645,
+      "source_qid": "Q20791505",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2561380645"
+    },
+    "s12": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T13:16:42.784742+00:00",
+      "revision_id": 2447351217,
+      "source_qid": "Q125578416",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2447351217"
+    },
+    "s13": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T13:16:47.108726+00:00",
+      "revision_id": 2339757206,
+      "source_qid": "Q103030476",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2339757206"
+    },
+    "s2": {
+      "family": "wikimedia",
+      "kind": "wikipedia",
+      "language": "en",
+      "page_id": 7189098,
+      "publisher_role": "encyclopedia",
+      "retrieved_at": "2026-11-06T13:16:27.341027+00:00",
+      "revision_id": 1368018408,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1368018408"
+    },
+    "s3": {
+      "family": "wikimedia",
+      "kind": "wikipedia",
+      "language": "fr",
+      "page_id": 431343,
+      "publisher_role": "encyclopedia",
+      "retrieved_at": "2026-11-06T13:16:32.014332+00:00",
+      "revision_id": 239833155,
+      "url": "https://fr.wikipedia.org/w/index.php?oldid=239833155"
+    },
+    "s4": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T08:48:57.696840+00:00",
+      "revision_id": 2559546120,
+      "source_qid": "Q875538",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2559546120"
+    },
+    "s5": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T09:15:59.048669+00:00",
+      "revision_id": 2468502188,
+      "source_qid": "Q3551775",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2468502188"
+    },
+    "s6": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T13:16:36.347808+00:00",
+      "revision_id": 2523833824,
+      "source_qid": "Q123602198",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2523833824"
+    },
+    "s7": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T09:16:05.838184+00:00",
+      "revision_id": 2564285160,
+      "source_qid": "Q142",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2564285160"
+    },
+    "s8": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T13:16:31.975793+00:00",
+      "revision_id": 2563302635,
+      "source_qid": "Q1479",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2563302635"
+    },
+    "s9": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T11:53:53.576510+00:00",
+      "revision_id": 2236095738,
+      "source_qid": "Q64685688",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2236095738"
+    }
+  },
+  "update_datetime": "2026-11-06T13:37:19.768703+00:00"
+}

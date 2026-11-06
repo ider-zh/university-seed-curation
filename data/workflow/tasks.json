@@ -8,44 +8,23 @@
           "reason": "Remove or correct reason_code last_known, qualification last_known_only, and the claim that Jean-Marie Auby (1971–1975) is the best available last-known appointment. Frozen s1 revision 2560361578 has later chairperson statements claim:P488:1 through :8, including preferred-rank Q105337110 with 2012–2013 dates. Retain Auby as a supported historical observation with an honest selection rationale, or select a later supported observation using only the prepared evidence; do not fabricate a person name from an unresolved QID.",
           "request_id": "18e8be3e-2704-5bfe-ac1d-36d67e60dbec",
           "reviewed_proposal_sha256": "5085ceb73d0f9cf4c4d36a02baa9845068dd69a2e5d8fc18638bbfe0e87e8e3d"
-        }
-      ],
-      "phase": "revision_requested",
-      "reason": "resume_after_private_workspace_loss",
-      "revision": 0
-    },
-    "Q13340": {
-      "open_requests": [
+        },
         {
-          "category": "value_error",
-          "field": "leadership.president.preferred",
-          "reason": "Correct the last_known selection: c1 Henri Bricaud ends in 1976, while supplied c8 José Manuel Tunon de Lara serves 2008–2013. Select c8 for a last-known historical president, or remove/rewrite the last_known rationale if retaining c1 for a different explicitly historical purpose. Preserve all supported appointments and their source-authored dates.",
-          "request_id": "9ac46f28-d97d-5f58-9951-3d44e37c6ab9",
-          "reviewed_proposal_sha256": "5ae669ee97419031cf592a34ccfd0ab1d9e7efe814c7cb8e69f44cb88715eda1"
+          "category": "scope_conflict",
+          "field": "leadership.chair",
+          "reason": "The inaccurate last_known selection and last_known_only qualification are gone, but the revision deletes leadership.chair entirely. The request explicitly also required retaining Auby as a supported historical observation with an honest rationale or selecting a later supported chair observation; neither is present. Dean Lewis in the separate undated president field does not preserve the requested dated P488 observation. Frozen s1 P488:0 and s12 support Auby (1971–1975), and P488:8 supports Q105337110 (2012–2013), without needing an invented name.",
+          "request_id": "4b9ca1a2-9617-530c-81c7-15747c209e9e",
+          "reviewed_proposal_sha256": "62cd32b68d08c970360014dd1c52450320b77575e256ee9acc924ebba86ee460"
         }
       ],
       "phase": "revision_requested",
       "reason": "resume_after_private_workspace_loss",
-      "revision": 0
+      "revision": 1
     },
     "Q13344": {
       "open_requests": [],
       "phase": "unresolved",
       "reason": "technical_blocker_qualified_root_P625_requires_scoped_geography_task;research_result_retained_no_review_or_approval",
-      "revision": 0
-    },
-    "Q15142": {
-      "open_requests": [
-        {
-          "category": "scope_conflict",
-          "field": "coverage.finance",
-          "reason": "Correct finance coverage: s2 infobox:8 clearly separates $672 million (FY2025)(Amherst only) from $1.8 billion (FY2025)(system-wide), so the two are not conflicting observations of Q15142. Add the supported Amherst-only endowment with FY2025 period, currency, source locator and retained scope qualification, and mark finance checked unless another specific evidenced conflict is documented. Do not assign the system-wide figure to this university.",
-          "request_id": "af168bde-50fa-57c5-8397-30d75b511867",
-          "reviewed_proposal_sha256": "732eaba1a37997284fa890abac7e247f9bc49351481e0836632d65699ba8e27c"
-        }
-      ],
-      "phase": "revision_requested",
-      "reason": "resume_after_private_workspace_loss",
       "revision": 0
     }
   },
