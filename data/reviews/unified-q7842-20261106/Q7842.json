@@ -1,0 +1,3623 @@
+{
+  "attribution": "distinct_native_research_and_review_subagents;not_cryptographic_identity",
+  "research": {
+    "baseline_sha256": "absent",
+    "candidate": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-06T10:04:47.205160+00:00",
+          "status": "checked"
+        },
+        "geography": {
+          "checked_at": "2026-11-06T10:04:47.205160+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-06T10:04:47.205160+00:00",
+          "status": "checked"
+        },
+        "identity": {
+          "checked_at": "2026-11-06T10:04:47.205160+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-06T10:04:47.205160+00:00",
+          "status": "checked"
+        },
+        "profile": {
+          "checked_at": "2026-11-06T10:04:47.205160+00:00",
+          "status": "checked"
+        }
+      },
+      "curation": {
+        "identity_status": "in_scope"
+      },
+      "finance": {
+        "assets": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Finances",
+                  "original_text": "al assets of the university are valued at 1.47 trillion yen as of March 31, 2024. Land holdings make up the largest percentage of this figure, valued at 878 billion ",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "day": 31,
+                "kind": "date",
+                "month": 3,
+                "year": 2024
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": "1470000000000",
+                "currency": "JPY",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason_code": "only_available"
+          }
+        },
+        "budget": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2769:0",
+                  "original_text": "{\"property\": \"P2769\", \"property_label\": \"budget\", \"statement_id\": \"Q7842$330f69e7-4f30-dd65-82eb-2552e67f27e6\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+279840000000\", \"unit\": \"http://www.wikidata.org/entity/Q8146\"}, \"qualifiers\": {\"P585\": ",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "kind": "date",
+                "month": 4,
+                "year": 2021
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": "279840000000",
+                "currency": "JPY",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2769:1",
+                  "original_text": "{\"property\": \"P2769\", \"property_label\": \"budget\", \"statement_id\": \"Q7842$d42921d3-4469-6731-905c-74c31ace0798\", \"rank\": \"preferred\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+281788000000\", \"unit\": \"http://www.wikidata.org/entity/Q8146\"}, \"qualifiers\": {\"P585",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c2",
+              "period": {
+                "kind": "date",
+                "month": 4,
+                "year": 2022
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": "281788000000",
+                "currency": "JPY",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c2",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        },
+        "endowment": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Finances",
+                  "original_text": "'s endowment fund is relatively small, at 44 billion yen as of March 2023. This is because national universities in Japan, including UTokyo, were not allowed ",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "kind": "date",
+                "month": 3,
+                "year": 2023
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": "44000000000",
+                "currency": "JPY",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason_code": "only_available"
+          }
+        },
+        "revenue": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Finances",
+                  "original_text": "\n27.9\nIn 2021–2022, the university had an income of 264.1 billion yen. Of this, 93.4 billion yen (35.1%) was funded by the government, primarily through t",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "end_year": 2022,
+                "kind": "interval",
+                "start_year": 2021
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": "264100000000",
+                "currency": "JPY",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Origins",
+                      "original_text": "fucian school called Senseiden (先聖殿), was founded in 1630 by Razan Hayashi in Ueno.[23] This school was renamed the Shoheizaka Institute (昌平坂学",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 1630
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Origins",
+                      "original_text": " Edo period (1603–1868).[8] The oldest, a Shogun-funded Confucian school called Senseiden (先聖殿), was founded in 1630 by Razan Hayashi in Ueno.[23] This schoo",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "Founding of the separate Shogun-funded Confucian school Senseiden, a remote antecedent, not the 1877 university."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "senseiden",
+            "kind": "predecessor_establishment",
+            "subject_ref": "related:senseiden"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Origins",
+                      "original_text": "n 1791 as part of the Kansei Reforms. The Tenmongata, founded in 1684, was the astronomical research and education arm of the Shogunate.[24] It evolved in",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 1684
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Origins",
+                      "original_text": " The Tenmongata, founded in 1684, was the astronomical research and education arm of the Shogunate.[24] It evolved into the Kaisei School (開成学校), a school for Western",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "Founding of the separate Tokugawa astronomical education and research institution Tenmongata."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "tenmongata",
+            "kind": "predecessor_establishment",
+            "subject_ref": "related:tenmongata"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "claim:P571:0",
+                      "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"q7842$53691f4a-40d3-0fdb-b0d4-f786533cb5d7\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+1877-04-12T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calend",
+                      "source_ref": "s1"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "day": 12,
+                    "month": 4,
+                    "precision": "day",
+                    "year": 1877
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Founding_and_early_days",
+                      "original_text": " seen c. 1903\nThe University of Tokyo was chartered on April 12, 1877, by the Meiji government. Corresponding to the fields covered by the predecessor sch",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "The Meiji government chartered the University of Tokyo, combining earlier schools in law, science, letters, and medicine."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "founding",
+            "kind": "institution_establishment",
+            "subject_ref": "institution"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Founding_and_early_days",
+                      "original_text": "university as the Faculty of Engineering. In 1886, the university was renamed Imperial University, and it adopted the name Tokyo Imperial University in 1897 after the founding of ano",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 1886
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Founding_and_early_days",
+                      "original_text": "university as the Faculty of Engineering. In 1886, the university was renamed Imperial University, and it adopted the name Tokyo Imperial University in 1897 after the founding of ano",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "The university took the name Imperial University."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "rename1886",
+            "kind": "rename",
+            "subject_ref": "institution"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Founding_and_early_days",
+                      "original_text": "erial University, and it adopted the name Tokyo Imperial University in 1897 after the founding of another imperial university.[27] By 1888, all faculties had co",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 1897
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Founding_and_early_days",
+                      "original_text": "erial University, and it adopted the name Tokyo Imperial University in 1897 after the founding of another imperial university.[27] By 1888, all faculties had co",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "The university became Tokyo Imperial University."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "rename1897",
+            "kind": "rename",
+            "subject_ref": "institution"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Post-war_period",
+                      "original_text": "r president of the university (1945–1951)\nIn 1947, following Japan's defeat in the Second World War, the university dropped the word '",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 1947
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Post-war_period",
+                      "original_text": "r president of the university (1945–1951)\nIn 1947, following Japan's defeat in the Second World War, the university dropped the word '",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "The institution dropped Imperial and reverted to University of Tokyo."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "rename1947",
+            "kind": "rename",
+            "subject_ref": "institution"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Post-war_period",
+                      "original_text": "cational institutions nationwide.[54][55]\nIn 1949, as part of the reforms, UTokyo merged with two Higher Schools, which were universit",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 1949
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Post-war_period",
+                      "original_text": "]\nIn 1949, as part of the reforms, UTokyo merged with two Higher Schools, which were university preparatory boarding schools. It thereby became a four-year u",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "Post-war university reform merged in two higher schools and established a four-year undergraduate structure."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "reform1949",
+            "kind": "merger",
+            "subject_ref": "institution"
+          }
+        ]
+      },
+      "identity": {
+        "aliases": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "abbreviated as Tōdai (東大) in Japanese and UTokyo in English[7]) is a public research university in Bunkyō, Tokyo, Japan. Founded in 1877 as the ",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "UTokyo"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P1813:0",
+                    "original_text": "{\"property\": \"P1813\", \"property_label\": \"short name\", \"statement_id\": \"Q7842$a09a9851-40a5-6735-87a5-03fe50606dbf\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"東大\", \"language\": \"ja\"}, \"qualifiers\": {\"P1814\": [{\"snaktype\": \"value\", \"value\": \"とうだい\"",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "ja",
+                  "text": "東大"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "okyo (東京大学, Tōkyō daigaku, abbreviated as Tōdai (東大) in Japanese and UTokyo in English[7]) is a public research university in Bunkyō, Tok",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Tōdai"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ],
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:4",
+                  "original_text": "Type: Public research university",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "university",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "restaurant chain, see Todai (restaurant).\nThe University of Tokyo (東京大学, Tōkyō daigaku, abbreviated as Tōdai (東大) in Japanese and UTokyo in English[7]) ",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": "University of Tokyo",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "ja": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P1705:0",
+                    "original_text": "{\"property\": \"P1705\", \"property_label\": \"native label\", \"statement_id\": \"Q7842$e85cf3fe-43b3-f606-22be-5dc7bf797607\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"東京大学\", \"language\": \"ja\"}, \"qualifiers\": {\"P1814\": [{\"snaktype\": \"value\", \"value\": \"と",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "東京大学",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        "operating_status": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Organisation",
+                  "original_text": "s maintains its own administrative board. Today, the University of Tokyo is organised into 10 faculties[75] and 15 graduate schools.[76]\nThe leader of the University of T",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "operating",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "ownership": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:4",
+                  "original_text": "Type: Public research university",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "public",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "leadership": {
+        "president": {
+          "candidates": [
+            {
+              "current_basis": "term_present",
+              "evidence": [
+                {
+                  "locator": "section:Organisation",
+                  "original_text": "ulty members for a term of six years. The current president is Teruo Fujii, a scholar in applied microfluidics, who assumed the role in April 2021 and is expec",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "person": {
+                  "name": "Teruo Fujii"
+                },
+                "term_start": {
+                  "month": 4,
+                  "precision": "month",
+                  "year": 2021
+                },
+                "title_original": {
+                  "language": "ja",
+                  "text": "総長"
+                }
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason": "The source gives a term continuing to the present.",
+            "reason_code": "term_present"
+          }
+        }
+      },
+      "locations": [
+        {
+          "id": "bunkyo",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "sh[7]) is a public research university in Bunkyō, Tokyo, Japan. Founded in 1877 as the nation's first modern university by the merger of several pr",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Bunkyō, Tokyo"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q212713"
+        },
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P159:0",
+                    "original_text": "{\"property\": \"P159\", \"property_label\": \"headquarters location\", \"statement_id\": \"Q7842$4dae705b-429c-53b7-f2a3-9e930cb5a7a5\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 11524692, \"id\": \"Q11524692\"}, \"qualifiers\": {\"P6",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "formatted": {
+                    "language": "en",
+                    "text": "7 Chome-3-1 Hongo, Bunkyo City, Tokyo"
+                  },
+                  "postal_code": "113-8654"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "coordinates": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P625:0",
+                    "original_text": "{\"property\": \"P625\", \"property_label\": \"coordinate location\", \"statement_id\": \"Q11524692$F258DB13-CBB5-4A2A-828B-3149A4A4EF3A\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"latitude\": 35.71269444, \"longitude\": 139.76177778, \"altitude\": null, \"precision\": ",
+                    "source_ref": "s11"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "crs": "EPSG:4326",
+                  "latitude": 35.71269444,
+                  "longitude": 139.76177778
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "hongo",
+          "kind": "campus",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q11524692\", \"labels\": {\"ja\": \"東京大学本郷地区キャンパス\", \"en\": \"Hongō campus\"}, \"descriptions\": {\"ja\": \"東京都文京区本郷・弥生に所在する東京大学のキャンパス\", \"en\": \"University of Tokyo campus in Japan\"}}",
+                    "source_ref": "s11"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Hongo campus"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q11524692",
+          "valid_from": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Hongo_campus",
+                    "original_text": "o campus has been the university's centre since 1884, when the university's administration office relocated to the site. The campus faces",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "precision": "year",
+                  "year": 1884
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        {
+          "id": "komaba",
+          "kind": "campus",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Komaba_Campus",
+                    "original_text": "ticle: Komaba Campus, University of Tokyo\nThe Komaba Campus, serving as the educational hub for the first two years of undergraduate studies, pr",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Komaba Campus"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        {
+          "id": "kashiwa",
+          "kind": "campus",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Kashiwa_Campus",
+                    "original_text": "icle: Kashiwa Campus, University of Tokyo\nThe Kashiwa Campus is dedicated to postgraduate education and research. It houses the Graduate School o",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Kashiwa Campus"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        {
+          "id": "shirokanedai",
+          "kind": "campus",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Shirokanedai_Campus",
+                    "original_text": "t | edit source]\nThe main building of the Shirokanedai Campus\nThe relatively small Shirokanedai Campus[150] hosts the Institute of Medical Science",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Shirokanedai Campus"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        {
+          "coordinates": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "statement:q7842$540F0E25-E398-4419-91D9-778B24A87513",
+                    "original_text": "\"latitude\": 35.71339",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "source_rank": "normal",
+                "value": {
+                  "crs": "EPSG:4326",
+                  "globe_qid": "Q2",
+                  "latitude": 35.71339,
+                  "longitude": 139.76232,
+                  "source_precision_degrees": 1e-05
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "wikidata-item-location",
+          "kind": "institution",
+          "qid": "Q7842"
+        }
+      ],
+      "modified_datetime": "2026-11-06T10:10:08.377822+00:00",
+      "population": {
+        "academic_staff": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:9",
+                  "original_text": "Faculty: 6,311 (3,937 full-time / 2,374 part-time) (2022)[2]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2022
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 6311,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason_code": "only_available"
+          }
+        },
+        "employees_total": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P1128:0",
+                  "original_text": "{\"property\": \"P1128\", \"property_label\": \"employees\", \"statement_id\": \"Q7842$91e5a298-4bf8-4fe4-c3f9-17f3bb1f3fee\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+8192\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\":",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "day": 1,
+                "kind": "date",
+                "month": 5,
+                "year": 2023
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 8192,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason_code": "only_available"
+          }
+        },
+        "international_students": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:International_students",
+                  "original_text": "ay 1, 2026, the University of Tokyo hosts 5,383 international students, who represent 17.67 per cent of the total student body. Of these, 5,179 are postgra",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "day": 1,
+                "kind": "date",
+                "month": 5,
+                "year": 2026
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 5383,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason_code": "only_available"
+          }
+        },
+        "postgraduate_students": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:13",
+                  "original_text": "Postgraduates: 14,171 (2022)[5]including professional degree courses",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2022
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 14171,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": " it has 13,974 undergraduate students and 14,258 graduate students.[9] The majority of the university's educational and research facilities are concent",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c2",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2023
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 14258,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c2",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        },
+        "students_total": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2196:0",
+                  "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q7842$228a1609-4b2c-9916-c179-8e40f6d41bcb\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+28218\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\":",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "day": 1,
+                "kind": "date",
+                "month": 5,
+                "year": 2023
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 28218,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2196:1",
+                  "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q7842$1b741307-4286-f836-4ad4-b6af491db35b\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+28479\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\":",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c2",
+              "period": {
+                "day": 1,
+                "kind": "date",
+                "month": 5,
+                "year": 2024
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 28479,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2196:2",
+                  "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q7842$853990c0-4966-a5c1-13a8-eb7b9b4a4031\", \"rank\": \"preferred\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+28918\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"valu",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c3",
+              "period": {
+                "day": 1,
+                "kind": "date",
+                "month": 5,
+                "year": 2025
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 28918,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:11",
+                  "original_text": "Students: 28,133 (2022)[3]excluding research students and auditors",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c4",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2022
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 28133,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c3",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        },
+        "undergraduate_students": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:12",
+                  "original_text": "Undergraduates: 13,962 (2022)[4]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2022
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 13962,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "esearch institutes.[9] As of 2023, it has 13,974 undergraduate students and 14,258 graduate students.[9] The majority of the university's educational and re",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c2",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2023
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 13974,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c2",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        }
+      },
+      "profile": {
+        "academic_focus": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Faculties_and_graduate_schools",
+                  "original_text": "ations\nAffiliated graduate schools\nColour\nLaw\n1872\nHongo\nGraduate Schools for Law and Politics\nGreen\nMedicine\n1868\nHongo, Shirokane\nGra",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": [
+                {
+                  "language": "en",
+                  "text": "law"
+                },
+                {
+                  "language": "en",
+                  "text": "medicine"
+                },
+                {
+                  "language": "en",
+                  "text": "engineering"
+                },
+                {
+                  "language": "en",
+                  "text": "science"
+                },
+                {
+                  "language": "en",
+                  "text": "humanities"
+                },
+                {
+                  "language": "en",
+                  "text": "agriculture"
+                }
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "motto": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P1451:0",
+                  "original_text": "{\"property\": \"P1451\", \"property_label\": \"motto text\", \"statement_id\": \"Q7842$ebf3db8a-4daf-4ba8-509e-83afd2cc8758\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"Into a Sea of Diversity: Creating the Future through Dialogue\", \"language\": \"en\"}, \"qu",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "Into a Sea of Diversity: Creating the Future through Dialogue"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "summary": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "n Japanese and UTokyo in English[7]) is a public research university in Bunkyō, Tokyo, Japan. Founded in 1877 as the nation's first modern university by ",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Sites",
+                  "original_text": "e University of Tokyo is organised around three principal campuses: Hongo, Komaba, and Kashiwa. Apart from these main campuses, the university has a nu",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Hongo_campus",
+                  "original_text": "o campus has been the university's centre since 1884, when the university's administration office relocated to the site. The campus faces",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Komaba_Campus",
+                  "original_text": "s, serving as the educational hub for the first two years of undergraduate studies, provides general education to around 6,000 first and secon",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Kashiwa_Campus",
+                  "original_text": " Tokyo\nThe Kashiwa Campus is dedicated to postgraduate education and research. It houses the Graduate School of Frontier Sciences along with advanced research ins",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Organisation",
+                  "original_text": "the University of Tokyo is organised into 10 faculties[75] and 15 graduate schools.[76]\nThe leader of the University of Tokyo is known as t",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Origins",
+                  "original_text": "e University of Tokyo traces its roots to three independent institutes founded during the Edo period (1603–1868).[8] The oldest, a Shogun-funded Confucian ",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Founding_and_early_days",
+                  "original_text": " seen c. 1903\nThe University of Tokyo was chartered on April 12, 1877, by the Meiji government. Corresponding to the fields covered by the predecessor sch",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Post-war_period",
+                  "original_text": "r president of the university (1945–1951)\nIn 1947, following Japan's defeat in the Second World War, the university dropped the word '",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Faculties_and_graduate_schools",
+                  "original_text": "ations\nAffiliated graduate schools\nColour\nLaw\n1872\nHongo\nGraduate Schools for Law and Politics\nGreen\nMedicine\n1868\nHongo, Shirokane\nGra",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Research_institutes",
+                  "original_text": "te schools, the University of Tokyo hosts eleven affiliated research institutes (附置研究所). Simultaneously, they function as educational institutions for the graduate ",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:University_of_Tokyo_Hospital",
+                  "original_text": "al\nThe University of Tokyo Hospital is an academic health science centre operated by the Faculty of Medicine. The hospital finds its roots in the Kanda Otama",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "claim:P2196:2",
+                  "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q7842$853990c0-4966-a5c1-13a8-eb7b9b4a4031\", \"rank\": \"preferred\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+28918\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"valu",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "infobox:11",
+                  "original_text": "Students: 28,133 (2022)[3]excluding research students and auditors",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "claim:P2769:1",
+                  "original_text": "{\"property\": \"P2769\", \"property_label\": \"budget\", \"statement_id\": \"Q7842$d42921d3-4469-6731-905c-74c31ace0798\", \"rank\": \"preferred\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+281788000000\", \"unit\": \"http://www.wikidata.org/entity/Q8146\"}, \"qualifiers\": {\"P585",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "section:Finances",
+                  "original_text": "\n27.9\nIn 2021–2022, the university had an income of 264.1 billion yen. Of this, 93.4 billion yen (35.1%) was funded by the government, primarily through t",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "The University of Tokyo (東京大学, Tōkyō Daigaku), also known as UTokyo or Tōdai, is a public research university based in Bunkyō, Tokyo, Japan. Its principal sites are the Hongō, Komaba and Kashiwa campuses, with additional specialised facilities including Shirokanedai. Hongō has served as an administrative centre since 1884; Komaba provides much of the initial undergraduate general education, while Kashiwa is especially associated with graduate study and research. The university is organised into ten faculties and fifteen graduate schools, alongside affiliated research institutes.\n\nThe institution was chartered by the Meiji government on 12 April 1877, bringing together earlier schools in law, science, letters and medicine. Its much older educational antecedents include the Shogunate-era Senseiden and astronomical Tenmongata; those were separate institutions, not earlier legal names of the 1877 university. It was renamed Imperial University in 1886 and Tokyo Imperial University in 1897. The name University of Tokyo was restored in 1947, and post-war reforms brought two higher schools into the university in 1949.\n\nTeaching and research span the humanities, law, economics, medicine, engineering, agriculture and natural sciences. The university's research infrastructure includes specialised institutes and a medical teaching hospital. Its recorded student totals vary by measurement date and source: Wikidata reports 28,918 students on 1 May 2025, while a separate encyclopaedic account reports 28,133 for 2022. Financial figures also require period care: the institution's 2022 April budget observation is 281.788 billion yen, while an account of 2021–2022 reports 264.1 billion yen in income. These amounts describe different measures and should not be treated as interchangeable."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "teaching_languages": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:16",
+                  "original_text": "Language: JapaneseEnglish (for certain courses)",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": [
+                "Japanese",
+                "English (certain courses)"
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "website": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P856:1",
+                  "original_text": "{\"property\": \"P856\", \"property_label\": \"official website\", \"statement_id\": \"Q7842$295a1636-44fc-f30f-5eb6-ff5d0a11fb1a\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"https://www.u-tokyo.ac.jp/en/index.html\", \"qualifiers\": {\"P407\": [{\"snaktype\": \"value\", \"v",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "https://www.u-tokyo.ac.jp/en/index.html",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "qid": "Q7842",
+      "record_revision": 1,
+      "related_entities": {
+        "medical_school": {
+          "kind": "institution",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Origins",
+                    "original_text": " into a school of Western medicine called Tokyo Medical School (東京医学校, Tokyo Igakkō). Although plans to establish the country's first university had been ",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Tokyo Medical School (東京医学校)"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        "senseiden": {
+          "kind": "institution",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Origins",
+                    "original_text": ", a Shogun-funded Confucian school called Senseiden (先聖殿), was founded in 1630 by Razan Hayashi in Ueno.[23] This school was renamed the Shohe",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Senseiden (先聖殿)"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        "tenmongata": {
+          "kind": "institution",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Origins",
+                    "original_text": "te in 1791 as part of the Kansei Reforms. The Tenmongata, founded in 1684, was the astronomical research and education arm of the Shogunate.[24] It evolved in",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Tenmongata"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "ranking_identifier",
+          "reviewed_institution_type"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "included"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T10:03:16.666745+00:00",
+          "revision_id": 2562110359,
+          "source_qid": "Q7842",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2562110359"
+        },
+        "s10": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T10:04:25.223859+00:00",
+          "revision_id": 2563560752,
+          "source_qid": "Q1490",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2563560752"
+        },
+        "s11": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T10:04:31.744638+00:00",
+          "revision_id": 2509115117,
+          "source_qid": "Q11524692",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2509115117"
+        },
+        "s12": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T10:04:40.636373+00:00",
+          "revision_id": 2487369310,
+          "source_qid": "Q4129669",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2487369310"
+        },
+        "s13": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T10:04:47.197012+00:00",
+          "revision_id": 2560377866,
+          "source_qid": "Q39311438",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2560377866"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikipedia",
+          "language": "en",
+          "page_id": 166215,
+          "publisher_role": "encyclopedia",
+          "retrieved_at": "2026-11-06T10:03:44.710913+00:00",
+          "revision_id": 1380518306,
+          "url": "https://en.wikipedia.org/w/index.php?oldid=1380518306"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikipedia",
+          "language": "ja",
+          "page_id": 1554242,
+          "publisher_role": "encyclopedia",
+          "retrieved_at": "2026-11-06T10:03:52.056841+00:00",
+          "revision_id": 111531141,
+          "url": "https://ja.wikipedia.org/w/index.php?oldid=111531141"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T10:03:58.593583+00:00",
+          "revision_id": 2565024958,
+          "source_qid": "Q8146",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2565024958"
+        },
+        "s5": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T09:50:36.584805+00:00",
+          "revision_id": 2559741554,
+          "source_qid": "Q15936437",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2559741554"
+        },
+        "s6": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T10:04:05.144776+00:00",
+          "revision_id": 2561028767,
+          "source_qid": "Q265662",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2561028767"
+        },
+        "s7": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T08:53:06.188828+00:00",
+          "revision_id": 2535466906,
+          "source_qid": "Q96888669",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2535466906"
+        },
+        "s8": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T10:04:11.837223+00:00",
+          "revision_id": 2563565467,
+          "source_qid": "Q17",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2563565467"
+        },
+        "s9": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T10:04:18.757228+00:00",
+          "revision_id": 2536347898,
+          "source_qid": "Q3108376",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2536347898"
+        }
+      }
+    },
+    "coverage": [
+      {
+        "group": "identity",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "status": "checked"
+      },
+      {
+        "group": "population",
+        "status": "checked"
+      },
+      {
+        "group": "finance",
+        "status": "checked"
+      },
+      {
+        "group": "profile",
+        "status": "checked"
+      }
+    ],
+    "delta": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-06T10:04:47.205160+00:00",
+          "status": "checked"
+        },
+        "geography": {
+          "checked_at": "2026-11-06T10:04:47.205160+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-06T10:04:47.205160+00:00",
+          "status": "checked"
+        },
+        "identity": {
+          "checked_at": "2026-11-06T10:04:47.205160+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-06T10:04:47.205160+00:00",
+          "status": "checked"
+        },
+        "profile": {
+          "checked_at": "2026-11-06T10:04:47.205160+00:00",
+          "status": "checked"
+        }
+      },
+      "curation": {
+        "identity_status": "in_scope"
+      },
+      "finance": {
+        "assets": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Finances",
+                  "original_text": "al assets of the university are valued at 1.47 trillion yen as of March 31, 2024. Land holdings make up the largest percentage of this figure, valued at 878 billion ",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "day": 31,
+                "kind": "date",
+                "month": 3,
+                "year": 2024
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": "1470000000000",
+                "currency": "JPY",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason_code": "only_available"
+          }
+        },
+        "budget": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2769:0",
+                  "original_text": "{\"property\": \"P2769\", \"property_label\": \"budget\", \"statement_id\": \"Q7842$330f69e7-4f30-dd65-82eb-2552e67f27e6\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+279840000000\", \"unit\": \"http://www.wikidata.org/entity/Q8146\"}, \"qualifiers\": {\"P585\": ",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "kind": "date",
+                "month": 4,
+                "year": 2021
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": "279840000000",
+                "currency": "JPY",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2769:1",
+                  "original_text": "{\"property\": \"P2769\", \"property_label\": \"budget\", \"statement_id\": \"Q7842$d42921d3-4469-6731-905c-74c31ace0798\", \"rank\": \"preferred\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+281788000000\", \"unit\": \"http://www.wikidata.org/entity/Q8146\"}, \"qualifiers\": {\"P585",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c2",
+              "period": {
+                "kind": "date",
+                "month": 4,
+                "year": 2022
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": "281788000000",
+                "currency": "JPY",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c2",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        },
+        "endowment": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Finances",
+                  "original_text": "'s endowment fund is relatively small, at 44 billion yen as of March 2023. This is because national universities in Japan, including UTokyo, were not allowed ",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "kind": "date",
+                "month": 3,
+                "year": 2023
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": "44000000000",
+                "currency": "JPY",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason_code": "only_available"
+          }
+        },
+        "revenue": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Finances",
+                  "original_text": "\n27.9\nIn 2021–2022, the university had an income of 264.1 billion yen. Of this, 93.4 billion yen (35.1%) was funded by the government, primarily through t",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "end_year": 2022,
+                "kind": "interval",
+                "start_year": 2021
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": "264100000000",
+                "currency": "JPY",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Origins",
+                      "original_text": "fucian school called Senseiden (先聖殿), was founded in 1630 by Razan Hayashi in Ueno.[23] This school was renamed the Shoheizaka Institute (昌平坂学",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 1630
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Origins",
+                      "original_text": " Edo period (1603–1868).[8] The oldest, a Shogun-funded Confucian school called Senseiden (先聖殿), was founded in 1630 by Razan Hayashi in Ueno.[23] This schoo",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "Founding of the separate Shogun-funded Confucian school Senseiden, a remote antecedent, not the 1877 university."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "senseiden",
+            "kind": "predecessor_establishment",
+            "subject_ref": "related:senseiden"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Origins",
+                      "original_text": "n 1791 as part of the Kansei Reforms. The Tenmongata, founded in 1684, was the astronomical research and education arm of the Shogunate.[24] It evolved in",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 1684
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Origins",
+                      "original_text": " The Tenmongata, founded in 1684, was the astronomical research and education arm of the Shogunate.[24] It evolved into the Kaisei School (開成学校), a school for Western",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "Founding of the separate Tokugawa astronomical education and research institution Tenmongata."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "tenmongata",
+            "kind": "predecessor_establishment",
+            "subject_ref": "related:tenmongata"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "claim:P571:0",
+                      "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"q7842$53691f4a-40d3-0fdb-b0d4-f786533cb5d7\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+1877-04-12T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calend",
+                      "source_ref": "s1"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "day": 12,
+                    "month": 4,
+                    "precision": "day",
+                    "year": 1877
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Founding_and_early_days",
+                      "original_text": " seen c. 1903\nThe University of Tokyo was chartered on April 12, 1877, by the Meiji government. Corresponding to the fields covered by the predecessor sch",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "The Meiji government chartered the University of Tokyo, combining earlier schools in law, science, letters, and medicine."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "founding",
+            "kind": "institution_establishment",
+            "subject_ref": "institution"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Founding_and_early_days",
+                      "original_text": "university as the Faculty of Engineering. In 1886, the university was renamed Imperial University, and it adopted the name Tokyo Imperial University in 1897 after the founding of ano",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 1886
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Founding_and_early_days",
+                      "original_text": "university as the Faculty of Engineering. In 1886, the university was renamed Imperial University, and it adopted the name Tokyo Imperial University in 1897 after the founding of ano",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "The university took the name Imperial University."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "rename1886",
+            "kind": "rename",
+            "subject_ref": "institution"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Founding_and_early_days",
+                      "original_text": "erial University, and it adopted the name Tokyo Imperial University in 1897 after the founding of another imperial university.[27] By 1888, all faculties had co",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 1897
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Founding_and_early_days",
+                      "original_text": "erial University, and it adopted the name Tokyo Imperial University in 1897 after the founding of another imperial university.[27] By 1888, all faculties had co",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "The university became Tokyo Imperial University."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "rename1897",
+            "kind": "rename",
+            "subject_ref": "institution"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Post-war_period",
+                      "original_text": "r president of the university (1945–1951)\nIn 1947, following Japan's defeat in the Second World War, the university dropped the word '",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 1947
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Post-war_period",
+                      "original_text": "r president of the university (1945–1951)\nIn 1947, following Japan's defeat in the Second World War, the university dropped the word '",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "The institution dropped Imperial and reverted to University of Tokyo."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "rename1947",
+            "kind": "rename",
+            "subject_ref": "institution"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Post-war_period",
+                      "original_text": "cational institutions nationwide.[54][55]\nIn 1949, as part of the reforms, UTokyo merged with two Higher Schools, which were universit",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 1949
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:Post-war_period",
+                      "original_text": "]\nIn 1949, as part of the reforms, UTokyo merged with two Higher Schools, which were university preparatory boarding schools. It thereby became a four-year u",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "Post-war university reform merged in two higher schools and established a four-year undergraduate structure."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "reform1949",
+            "kind": "merger",
+            "subject_ref": "institution"
+          }
+        ]
+      },
+      "identity": {
+        "aliases": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "abbreviated as Tōdai (東大) in Japanese and UTokyo in English[7]) is a public research university in Bunkyō, Tokyo, Japan. Founded in 1877 as the ",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "UTokyo"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P1813:0",
+                    "original_text": "{\"property\": \"P1813\", \"property_label\": \"short name\", \"statement_id\": \"Q7842$a09a9851-40a5-6735-87a5-03fe50606dbf\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"東大\", \"language\": \"ja\"}, \"qualifiers\": {\"P1814\": [{\"snaktype\": \"value\", \"value\": \"とうだい\"",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "ja",
+                  "text": "東大"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "okyo (東京大学, Tōkyō daigaku, abbreviated as Tōdai (東大) in Japanese and UTokyo in English[7]) is a public research university in Bunkyō, Tok",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Tōdai"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ],
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:4",
+                  "original_text": "Type: Public research university",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "university",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "restaurant chain, see Todai (restaurant).\nThe University of Tokyo (東京大学, Tōkyō daigaku, abbreviated as Tōdai (東大) in Japanese and UTokyo in English[7]) ",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": "University of Tokyo",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "ja": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P1705:0",
+                    "original_text": "{\"property\": \"P1705\", \"property_label\": \"native label\", \"statement_id\": \"Q7842$e85cf3fe-43b3-f606-22be-5dc7bf797607\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"東京大学\", \"language\": \"ja\"}, \"qualifiers\": {\"P1814\": [{\"snaktype\": \"value\", \"value\": \"と",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "東京大学",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        "operating_status": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Organisation",
+                  "original_text": "s maintains its own administrative board. Today, the University of Tokyo is organised into 10 faculties[75] and 15 graduate schools.[76]\nThe leader of the University of T",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "operating",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "ownership": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:4",
+                  "original_text": "Type: Public research university",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "public",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "leadership": {
+        "president": {
+          "candidates": [
+            {
+              "current_basis": "term_present",
+              "evidence": [
+                {
+                  "locator": "section:Organisation",
+                  "original_text": "ulty members for a term of six years. The current president is Teruo Fujii, a scholar in applied microfluidics, who assumed the role in April 2021 and is expec",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "person": {
+                  "name": "Teruo Fujii"
+                },
+                "term_start": {
+                  "month": 4,
+                  "precision": "month",
+                  "year": 2021
+                },
+                "title_original": {
+                  "language": "ja",
+                  "text": "総長"
+                }
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason": "The source gives a term continuing to the present.",
+            "reason_code": "term_present"
+          }
+        }
+      },
+      "locations": [
+        {
+          "id": "bunkyo",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "sh[7]) is a public research university in Bunkyō, Tokyo, Japan. Founded in 1877 as the nation's first modern university by the merger of several pr",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Bunkyō, Tokyo"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q212713"
+        },
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P159:0",
+                    "original_text": "{\"property\": \"P159\", \"property_label\": \"headquarters location\", \"statement_id\": \"Q7842$4dae705b-429c-53b7-f2a3-9e930cb5a7a5\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 11524692, \"id\": \"Q11524692\"}, \"qualifiers\": {\"P6",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "formatted": {
+                    "language": "en",
+                    "text": "7 Chome-3-1 Hongo, Bunkyo City, Tokyo"
+                  },
+                  "postal_code": "113-8654"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "coordinates": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P625:0",
+                    "original_text": "{\"property\": \"P625\", \"property_label\": \"coordinate location\", \"statement_id\": \"Q11524692$F258DB13-CBB5-4A2A-828B-3149A4A4EF3A\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"latitude\": 35.71269444, \"longitude\": 139.76177778, \"altitude\": null, \"precision\": ",
+                    "source_ref": "s11"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "crs": "EPSG:4326",
+                  "latitude": 35.71269444,
+                  "longitude": 139.76177778
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "hongo",
+          "kind": "campus",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q11524692\", \"labels\": {\"ja\": \"東京大学本郷地区キャンパス\", \"en\": \"Hongō campus\"}, \"descriptions\": {\"ja\": \"東京都文京区本郷・弥生に所在する東京大学のキャンパス\", \"en\": \"University of Tokyo campus in Japan\"}}",
+                    "source_ref": "s11"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Hongo campus"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q11524692",
+          "valid_from": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Hongo_campus",
+                    "original_text": "o campus has been the university's centre since 1884, when the university's administration office relocated to the site. The campus faces",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "precision": "year",
+                  "year": 1884
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        {
+          "id": "komaba",
+          "kind": "campus",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Komaba_Campus",
+                    "original_text": "ticle: Komaba Campus, University of Tokyo\nThe Komaba Campus, serving as the educational hub for the first two years of undergraduate studies, pr",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Komaba Campus"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        {
+          "id": "kashiwa",
+          "kind": "campus",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Kashiwa_Campus",
+                    "original_text": "icle: Kashiwa Campus, University of Tokyo\nThe Kashiwa Campus is dedicated to postgraduate education and research. It houses the Graduate School o",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Kashiwa Campus"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        {
+          "id": "shirokanedai",
+          "kind": "campus",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Shirokanedai_Campus",
+                    "original_text": "t | edit source]\nThe main building of the Shirokanedai Campus\nThe relatively small Shirokanedai Campus[150] hosts the Institute of Medical Science",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Shirokanedai Campus"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        {
+          "coordinates": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "statement:q7842$540F0E25-E398-4419-91D9-778B24A87513",
+                    "original_text": "\"latitude\": 35.71339",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "source_rank": "normal",
+                "value": {
+                  "crs": "EPSG:4326",
+                  "globe_qid": "Q2",
+                  "latitude": 35.71339,
+                  "longitude": 139.76232,
+                  "source_precision_degrees": 1e-05
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "wikidata-item-location",
+          "kind": "institution",
+          "qid": "Q7842"
+        }
+      ],
+      "population": {
+        "academic_staff": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:9",
+                  "original_text": "Faculty: 6,311 (3,937 full-time / 2,374 part-time) (2022)[2]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2022
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 6311,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason_code": "only_available"
+          }
+        },
+        "employees_total": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P1128:0",
+                  "original_text": "{\"property\": \"P1128\", \"property_label\": \"employees\", \"statement_id\": \"Q7842$91e5a298-4bf8-4fe4-c3f9-17f3bb1f3fee\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+8192\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\":",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "day": 1,
+                "kind": "date",
+                "month": 5,
+                "year": 2023
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 8192,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason_code": "only_available"
+          }
+        },
+        "international_students": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:International_students",
+                  "original_text": "ay 1, 2026, the University of Tokyo hosts 5,383 international students, who represent 17.67 per cent of the total student body. Of these, 5,179 are postgra",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "day": 1,
+                "kind": "date",
+                "month": 5,
+                "year": 2026
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 5383,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason_code": "only_available"
+          }
+        },
+        "postgraduate_students": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:13",
+                  "original_text": "Postgraduates: 14,171 (2022)[5]including professional degree courses",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2022
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 14171,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": " it has 13,974 undergraduate students and 14,258 graduate students.[9] The majority of the university's educational and research facilities are concent",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c2",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2023
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 14258,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c2",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        },
+        "students_total": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2196:0",
+                  "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q7842$228a1609-4b2c-9916-c179-8e40f6d41bcb\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+28218\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\":",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "day": 1,
+                "kind": "date",
+                "month": 5,
+                "year": 2023
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 28218,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2196:1",
+                  "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q7842$1b741307-4286-f836-4ad4-b6af491db35b\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+28479\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\":",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c2",
+              "period": {
+                "day": 1,
+                "kind": "date",
+                "month": 5,
+                "year": 2024
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 28479,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P2196:2",
+                  "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q7842$853990c0-4966-a5c1-13a8-eb7b9b4a4031\", \"rank\": \"preferred\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+28918\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"valu",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c3",
+              "period": {
+                "day": 1,
+                "kind": "date",
+                "month": 5,
+                "year": 2025
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 28918,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:11",
+                  "original_text": "Students: 28,133 (2022)[3]excluding research students and auditors",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c4",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2022
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 28133,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c3",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        },
+        "undergraduate_students": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:12",
+                  "original_text": "Undergraduates: 13,962 (2022)[4]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2022
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 13962,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            },
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "esearch institutes.[9] As of 2023, it has 13,974 undergraduate students and 14,258 graduate students.[9] The majority of the university's educational and re",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c2",
+              "period": {
+                "kind": "calendar_year",
+                "year": 2023
+              },
+              "period_status": "stated",
+              "value": {
+                "amount": 13974,
+                "basis": "unspecified",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c2",
+            "qualifications": [
+              "single_source_family"
+            ],
+            "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+            "reason_code": "best_available"
+          }
+        }
+      },
+      "profile": {
+        "academic_focus": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Faculties_and_graduate_schools",
+                  "original_text": "ations\nAffiliated graduate schools\nColour\nLaw\n1872\nHongo\nGraduate Schools for Law and Politics\nGreen\nMedicine\n1868\nHongo, Shirokane\nGra",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": [
+                {
+                  "language": "en",
+                  "text": "law"
+                },
+                {
+                  "language": "en",
+                  "text": "medicine"
+                },
+                {
+                  "language": "en",
+                  "text": "engineering"
+                },
+                {
+                  "language": "en",
+                  "text": "science"
+                },
+                {
+                  "language": "en",
+                  "text": "humanities"
+                },
+                {
+                  "language": "en",
+                  "text": "agriculture"
+                }
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "motto": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P1451:0",
+                  "original_text": "{\"property\": \"P1451\", \"property_label\": \"motto text\", \"statement_id\": \"Q7842$ebf3db8a-4daf-4ba8-509e-83afd2cc8758\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"Into a Sea of Diversity: Creating the Future through Dialogue\", \"language\": \"en\"}, \"qu",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "Into a Sea of Diversity: Creating the Future through Dialogue"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "summary": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "n Japanese and UTokyo in English[7]) is a public research university in Bunkyō, Tokyo, Japan. Founded in 1877 as the nation's first modern university by ",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Sites",
+                  "original_text": "e University of Tokyo is organised around three principal campuses: Hongo, Komaba, and Kashiwa. Apart from these main campuses, the university has a nu",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Hongo_campus",
+                  "original_text": "o campus has been the university's centre since 1884, when the university's administration office relocated to the site. The campus faces",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Komaba_Campus",
+                  "original_text": "s, serving as the educational hub for the first two years of undergraduate studies, provides general education to around 6,000 first and secon",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Kashiwa_Campus",
+                  "original_text": " Tokyo\nThe Kashiwa Campus is dedicated to postgraduate education and research. It houses the Graduate School of Frontier Sciences along with advanced research ins",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Organisation",
+                  "original_text": "the University of Tokyo is organised into 10 faculties[75] and 15 graduate schools.[76]\nThe leader of the University of Tokyo is known as t",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Origins",
+                  "original_text": "e University of Tokyo traces its roots to three independent institutes founded during the Edo period (1603–1868).[8] The oldest, a Shogun-funded Confucian ",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Founding_and_early_days",
+                  "original_text": " seen c. 1903\nThe University of Tokyo was chartered on April 12, 1877, by the Meiji government. Corresponding to the fields covered by the predecessor sch",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Post-war_period",
+                  "original_text": "r president of the university (1945–1951)\nIn 1947, following Japan's defeat in the Second World War, the university dropped the word '",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Faculties_and_graduate_schools",
+                  "original_text": "ations\nAffiliated graduate schools\nColour\nLaw\n1872\nHongo\nGraduate Schools for Law and Politics\nGreen\nMedicine\n1868\nHongo, Shirokane\nGra",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Research_institutes",
+                  "original_text": "te schools, the University of Tokyo hosts eleven affiliated research institutes (附置研究所). Simultaneously, they function as educational institutions for the graduate ",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:University_of_Tokyo_Hospital",
+                  "original_text": "al\nThe University of Tokyo Hospital is an academic health science centre operated by the Faculty of Medicine. The hospital finds its roots in the Kanda Otama",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "claim:P2196:2",
+                  "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q7842$853990c0-4966-a5c1-13a8-eb7b9b4a4031\", \"rank\": \"preferred\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+28918\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"valu",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "infobox:11",
+                  "original_text": "Students: 28,133 (2022)[3]excluding research students and auditors",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "claim:P2769:1",
+                  "original_text": "{\"property\": \"P2769\", \"property_label\": \"budget\", \"statement_id\": \"Q7842$d42921d3-4469-6731-905c-74c31ace0798\", \"rank\": \"preferred\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+281788000000\", \"unit\": \"http://www.wikidata.org/entity/Q8146\"}, \"qualifiers\": {\"P585",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "section:Finances",
+                  "original_text": "\n27.9\nIn 2021–2022, the university had an income of 264.1 billion yen. Of this, 93.4 billion yen (35.1%) was funded by the government, primarily through t",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "The University of Tokyo (東京大学, Tōkyō Daigaku), also known as UTokyo or Tōdai, is a public research university based in Bunkyō, Tokyo, Japan. Its principal sites are the Hongō, Komaba and Kashiwa campuses, with additional specialised facilities including Shirokanedai. Hongō has served as an administrative centre since 1884; Komaba provides much of the initial undergraduate general education, while Kashiwa is especially associated with graduate study and research. The university is organised into ten faculties and fifteen graduate schools, alongside affiliated research institutes.\n\nThe institution was chartered by the Meiji government on 12 April 1877, bringing together earlier schools in law, science, letters and medicine. Its much older educational antecedents include the Shogunate-era Senseiden and astronomical Tenmongata; those were separate institutions, not earlier legal names of the 1877 university. It was renamed Imperial University in 1886 and Tokyo Imperial University in 1897. The name University of Tokyo was restored in 1947, and post-war reforms brought two higher schools into the university in 1949.\n\nTeaching and research span the humanities, law, economics, medicine, engineering, agriculture and natural sciences. The university's research infrastructure includes specialised institutes and a medical teaching hospital. Its recorded student totals vary by measurement date and source: Wikidata reports 28,918 students on 1 May 2025, while a separate encyclopaedic account reports 28,133 for 2022. Financial figures also require period care: the institution's 2022 April budget observation is 281.788 billion yen, while an account of 2021–2022 reports 264.1 billion yen in income. These amounts describe different measures and should not be treated as interchangeable."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "teaching_languages": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:16",
+                  "original_text": "Language: JapaneseEnglish (for certain courses)",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": [
+                "Japanese",
+                "English (certain courses)"
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "website": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P856:1",
+                  "original_text": "{\"property\": \"P856\", \"property_label\": \"official website\", \"statement_id\": \"Q7842$295a1636-44fc-f30f-5eb6-ff5d0a11fb1a\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"https://www.u-tokyo.ac.jp/en/index.html\", \"qualifiers\": {\"P407\": [{\"snaktype\": \"value\", \"v",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "https://www.u-tokyo.ac.jp/en/index.html",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "qid": "Q7842",
+      "record_revision": 1,
+      "related_entities": {
+        "medical_school": {
+          "kind": "institution",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Origins",
+                    "original_text": " into a school of Western medicine called Tokyo Medical School (東京医学校, Tokyo Igakkō). Although plans to establish the country's first university had been ",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Tokyo Medical School (東京医学校)"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        "senseiden": {
+          "kind": "institution",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Origins",
+                    "original_text": ", a Shogun-funded Confucian school called Senseiden (先聖殿), was founded in 1630 by Razan Hayashi in Ueno.[23] This school was renamed the Shohe",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Senseiden (先聖殿)"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        "tenmongata": {
+          "kind": "institution",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:Origins",
+                    "original_text": "te in 1791 as part of the Kansei Reforms. The Tenmongata, founded in 1684, was the astronomical research and education arm of the Shogunate.[24] It evolved in",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Tenmongata"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "ranking_identifier",
+          "reviewed_institution_type"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "included"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T10:03:16.666745+00:00",
+          "revision_id": 2562110359,
+          "source_qid": "Q7842",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2562110359"
+        },
+        "s10": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T10:04:25.223859+00:00",
+          "revision_id": 2563560752,
+          "source_qid": "Q1490",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2563560752"
+        },
+        "s11": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T10:04:31.744638+00:00",
+          "revision_id": 2509115117,
+          "source_qid": "Q11524692",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2509115117"
+        },
+        "s12": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T10:04:40.636373+00:00",
+          "revision_id": 2487369310,
+          "source_qid": "Q4129669",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2487369310"
+        },
+        "s13": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T10:04:47.197012+00:00",
+          "revision_id": 2560377866,
+          "source_qid": "Q39311438",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2560377866"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikipedia",
+          "language": "en",
+          "page_id": 166215,
+          "publisher_role": "encyclopedia",
+          "retrieved_at": "2026-11-06T10:03:44.710913+00:00",
+          "revision_id": 1380518306,
+          "url": "https://en.wikipedia.org/w/index.php?oldid=1380518306"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikipedia",
+          "language": "ja",
+          "page_id": 1554242,
+          "publisher_role": "encyclopedia",
+          "retrieved_at": "2026-11-06T10:03:52.056841+00:00",
+          "revision_id": 111531141,
+          "url": "https://ja.wikipedia.org/w/index.php?oldid=111531141"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T10:03:58.593583+00:00",
+          "revision_id": 2565024958,
+          "source_qid": "Q8146",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2565024958"
+        },
+        "s5": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T09:50:36.584805+00:00",
+          "revision_id": 2559741554,
+          "source_qid": "Q15936437",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2559741554"
+        },
+        "s6": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T10:04:05.144776+00:00",
+          "revision_id": 2561028767,
+          "source_qid": "Q265662",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2561028767"
+        },
+        "s7": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T08:53:06.188828+00:00",
+          "revision_id": 2535466906,
+          "source_qid": "Q96888669",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2535466906"
+        },
+        "s8": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T10:04:11.837223+00:00",
+          "revision_id": 2563565467,
+          "source_qid": "Q17",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2563565467"
+        },
+        "s9": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T10:04:18.757228+00:00",
+          "revision_id": 2536347898,
+          "source_qid": "Q3108376",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2536347898"
+        }
+      }
+    },
+    "open_requests": [],
+    "proposed_at": "2026-11-06T10:10:08.377822+00:00",
+    "qid": "Q7842",
+    "research": {
+      "model": "not_reported",
+      "prompt_sha256": "7595c6271fdb45277ebe99ef7fa06c47b7c4e62167bcceea222abc624547d5e4",
+      "reasoning_effort": "medium",
+      "schema_sha256": "92e942f4fbf2ae28964462ea9ffa8312c5ee16a077a1e08b40aaaf741512422e",
+      "session": "/root/research_q7842"
+    },
+    "retrieval_failures": [],
+    "review_status": "unreviewed",
+    "seed": {
+      "channels": [
+        "ranking_identifier",
+        "reviewed_institution_type"
+      ],
+      "import_id": "seed-84c3beb45367905f",
+      "screening_status": "included"
+    },
+    "transport": {
+      "base_commit": "e9553c7458b23d26dcc1cd74c276b1ca63c06331",
+      "protocol": "native-subagent-v1",
+      "repository": "ider-zh/university-seed-curation",
+      "review_policy": {
+        "id": "source-grounded-flexible-v2",
+        "sha256": "b8ed7d2897e4c31dbd81b1379aafdc1077a21d1a33949edbd2d896b0adf99db2"
+      },
+      "schema_sha256": "bfa496eafa9dffca56146214168db7f000b09161b8993129632e7202e1c88833",
+      "seed_catalog_sha256": "84c3beb45367905f513d650684283dd62a9c1b77962bdc34151a6ef05bfa03d4"
+    },
+    "type": "university-proposal-v1"
+  },
+  "review": {
+    "contexts_checked": 17,
+    "coverage_checks": [
+      {
+        "group": "identity",
+        "reason": "English/Japanese names, public operating status, leadership and aliases verified against pinned sources.",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "reason": "Hongo campus headquarters/address/1884 phase, Komaba, Kashiwa and Shirokanedai are distinct; root P625 remains institution-scoped.",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "reason": "1630/1684 remote antecedents, 1877 institutional charter, 1886/1897/1947 names and 1949 reform independently reviewed.",
+        "status": "checked"
+      },
+      {
+        "group": "population",
+        "reason": "2022 infobox category scope, dated 2023/24/25 Wikidata totals, 2026 international count, 2023 employees and 2021 president-related temporal distinctions maintained.",
+        "status": "checked"
+      },
+      {
+        "group": "finance",
+        "reason": "JPY budget April 2021/22, 2024 assets as-of March 31, 2023 endowment and 2021–22 revenue checked with original units and dates.",
+        "status": "checked"
+      },
+      {
+        "group": "profile",
+        "reason": "Neutral English summary, teaching fields/languages, hospital and university organization supported by pinned article and Wikidata statements.",
+        "status": "checked"
+      }
+    ],
+    "decision": "approve",
+    "facts_checked": 56,
+    "full_refresh": true,
+    "inferences": [
+      {
+        "id": "$.history.milestones[0].description:c1",
+        "reason": "Pinned Origins, Founding or Post-war sections support the dated event and retain separation of 1630/1684 antecedents from the 1877 institution."
+      },
+      {
+        "id": "$.history.milestones[1].description:c1",
+        "reason": "Pinned Origins, Founding or Post-war sections support the dated event and retain separation of 1630/1684 antecedents from the 1877 institution."
+      },
+      {
+        "id": "identity",
+        "reason": "Current operating public research university is directly described by lead and organisational account."
+      }
+    ],
+    "model": "not_reported",
+    "proposal_sha256": "aad4b78fc4150e0f755b02d0a0e6621a6b80adff8a3e1585c07e05f7a9dda57f",
+    "qid": "Q7842",
+    "reasoning_effort": "medium",
+    "record_sha256": "d0ab78879ae816cda7ac31b44b0962315cffb76528d3ea4327d7334a78263cfd",
+    "request_responses": [],
+    "requests": [],
+    "review_session": "/root/review_batch_2",
+    "reviewed_at": "2026-11-06T10:12:19.495573+00:00",
+    "source_revisions_checked": 13
+  },
+  "review_result_sha256": "3d160c4fb07cad82e19c49ce3f362ac7438e9a96944c7b7c9287bfc306371189",
+  "type": "university-unified-receipt-v1"
+}
