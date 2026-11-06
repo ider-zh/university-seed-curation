@@ -212,13 +212,42 @@
           "reviewed_proposal_sha256": "824e6d162ae5d14934ce0b03381a27cc516c266ef2e4b027491aebee00dd79bb"
         }
       ],
-      "phase": "revision_requested",
+      "phase": "research_pending",
       "reason": "resume_after_private_workspace_loss",
-      "revision": 0
+      "revision": 1
     },
     "Q92182375": {
-      "open_requests": [],
-      "phase": "research_pending",
+      "open_requests": [
+        {
+          "category": "evidence_gap",
+          "field": "curation.identity_status",
+          "reason": "Establish with subject-specific evidence whether the college qualifies within project scope; retain needs_review and withhold publication if the educational level or institutional identity cannot be established. A generic college class and a short university-affiliation description do not by themselves resolve eligibility.",
+          "request_id": "4c523896-41ff-58ff-b88f-d4d84f45e16d",
+          "reviewed_proposal_sha256": "6efb0d9a30476a9bfea5aba2ae508afdf40d8f6df16b8e9c279e801da48c54ac"
+        },
+        {
+          "category": "scope_conflict",
+          "field": "relationships.member_of",
+          "reason": "Provide evidence that the affiliation is accurately represented by member_of, or remove that specific membership assertion and preserve the source's affiliation wording without implying a stronger relationship.",
+          "request_id": "5fb5aabe-448b-5709-bee7-2830883b8588",
+          "reviewed_proposal_sha256": "6efb0d9a30476a9bfea5aba2ae508afdf40d8f6df16b8e9c279e801da48c54ac"
+        },
+        {
+          "category": "evidence_gap",
+          "field": "coverage.population",
+          "reason": "Complete or accurately document the required population gap-source survey, including actual retrieval failures when applicable, rather than presenting a Wikimedia-only search as a complete survey.",
+          "request_id": "1e3f1c30-a69a-5ff3-86cc-b93826a46996",
+          "reviewed_proposal_sha256": "6efb0d9a30476a9bfea5aba2ae508afdf40d8f6df16b8e9c279e801da48c54ac"
+        },
+        {
+          "category": "evidence_gap",
+          "field": "coverage.finance",
+          "reason": "Complete or accurately document the required finance gap-source survey, including actual retrieval failures when applicable, rather than presenting a Wikimedia-only search as a complete survey.",
+          "request_id": "1e8c7980-4961-5e01-b104-9bab6b22b409",
+          "reviewed_proposal_sha256": "6efb0d9a30476a9bfea5aba2ae508afdf40d8f6df16b8e9c279e801da48c54ac"
+        }
+      ],
+      "phase": "revision_requested",
       "reason": "resume_after_private_workspace_loss",
       "revision": 0
     }
