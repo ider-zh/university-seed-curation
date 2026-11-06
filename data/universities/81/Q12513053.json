@@ -1,0 +1,338 @@
+{
+  "coverage": {
+    "finance": {
+      "checked_at": "2026-11-06T15:41:21.081320+00:00",
+      "status": "not_found"
+    },
+    "geography": {
+      "checked_at": "2026-11-06T15:41:21.081320+00:00",
+      "status": "checked"
+    },
+    "history": {
+      "checked_at": "2026-11-06T15:41:21.081320+00:00",
+      "status": "checked"
+    },
+    "identity": {
+      "checked_at": "2026-11-06T15:41:21.081320+00:00",
+      "status": "checked"
+    },
+    "population": {
+      "checked_at": "2026-11-06T15:41:21.081320+00:00",
+      "status": "not_found"
+    },
+    "profile": {
+      "checked_at": "2026-11-06T15:41:21.081320+00:00",
+      "status": "checked"
+    }
+  },
+  "curation": {
+    "identity_status": "in_scope",
+    "refresh_profile": "core-v1",
+    "reviewed_groups": [
+      "identity",
+      "geography",
+      "history",
+      "population",
+      "finance",
+      "profile"
+    ]
+  },
+  "history": {
+    "milestones": [
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P571:0",
+                  "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q12513053$B7A9F192-D3EC-4848-B271-CCE9739AEA07\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+2020-01-23T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "day": 23,
+                "month": 1,
+                "precision": "day",
+                "year": 2020
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P571:0",
+                  "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q12513053$B7A9F192-D3EC-4848-B271-CCE9739AEA07\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+2020-01-23T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "Wikidata records the institution’s inception as 23 January 2020."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "inception",
+        "kind": "institution_establishment",
+        "subject_ref": "institution"
+      }
+    ]
+  },
+  "identity": {
+    "aliases": [
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P1813:0",
+                "original_text": "{\"property\": \"P1813\", \"property_label\": \"short name\", \"statement_id\": \"Q12513053$C00EB351-D152-47E3-B3C5-EF83BD889962\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"IAKN TORAJA\", \"language\": \"id\"}, \"reference_count\": 1}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "id",
+              "text": "IAKN TORAJA"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    ],
+    "kind": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "metadata",
+              "original_text": "{\"id\": \"Q12513053\", \"labels\": {\"en\": \"Institut Agama Kristen Negeri Toraja\"}, \"descriptions\": {\"en\": \"university in Indonesia\"}}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "claim:P31:0",
+              "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q12513053$8AA0CE69-5688-4BE8-9DBE-1F7619532568\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 38723, \"id\": \"Q38723\"}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "metadata",
+              "original_text": "{\"id\": \"Q38723\", \"labels\": {\"en\": \"higher education institution\"}, \"descriptions\": {\"en\": \"institution that provides higher education (e.g., universities, vocational universities, community colleges, liberal arts colleges, institutes of technology, and others)\"}}",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": "university",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "names": {
+      "en": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q12513053\", \"labels\": {\"en\": \"Institut Agama Kristen Negeri Toraja\"}, \"descriptions\": {\"en\": \"university in Indonesia\"}}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": "Institut Agama Kristen Negeri Toraja",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    }
+  },
+  "locations": [
+    {
+      "id": "tana_toraja",
+      "kind": "administrative_area",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P131:0",
+                "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q12513053$5907AE81-A5BA-4707-B394-9B591DAF7D24\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 14632, \"id\": \"Q14632\"}, \"reference_count\": 2}",
+                "source_ref": "s1"
+              },
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q14632\", \"labels\": {\"en\": \"Tana Toraja\"}, \"descriptions\": {\"en\": \"regency in South Sulawesi Province, Indonesia\"}}",
+                "source_ref": "s4"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Tana Toraja"
+            },
+            "verification": "supported"
+          },
+          {
+            "evidence": [
+              {
+                "locator": "claim:P131:0",
+                "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q12513053$5907AE81-A5BA-4707-B394-9B591DAF7D24\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 14632, \"id\": \"Q14632\"}, \"reference_count\": 2}",
+                "source_ref": "s1"
+              },
+              {
+                "locator": "claim:P1448:0",
+                "original_text": "{\"property\": \"P1448\", \"property_label\": \"P1448\", \"statement_id\": \"Q14632$1dc2f0d6-486d-955d-5f3e-c19d63d5bed2\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"Kabupaten Tana Toraja\", \"language\": \"id\"}, \"reference_count\": 1}",
+                "source_ref": "s4"
+              }
+            ],
+            "id": "c2",
+            "value": {
+              "language": "id",
+              "text": "Kabupaten Tana Toraja"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+          "reason_code": "best_available"
+        }
+      },
+      "qid": "Q14632"
+    },
+    {
+      "id": "indonesia",
+      "kind": "administrative_area",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P17:0",
+                "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q12513053$07302966-22F3-4A8B-A9CB-E4775FF380B6\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 252, \"id\": \"Q252\"}, \"reference_count\": 1}",
+                "source_ref": "s1"
+              },
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q252\", \"labels\": {\"en\": \"Indonesia\"}, \"descriptions\": {\"en\": \"island country in Southeast Asia and Oceania\"}}",
+                "source_ref": "s3"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Indonesia"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "qid": "Q252"
+    }
+  ],
+  "modified_datetime": "2026-11-06T16:24:35.829197+00:00",
+  "profile": {
+    "website": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P856:0",
+              "original_text": "{\"property\": \"P856\", \"property_label\": \"official website\", \"statement_id\": \"Q12513053$8827077D-4E95-4A63-BB31-46D6211AD414\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"https://iakn-toraja.ac.id/\", \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "value": "https://iakn-toraja.ac.id/",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "qid": "Q12513053",
+  "record_revision": 1,
+  "schema_version": "0.2.2",
+  "seed": {
+    "channels": [
+      "reviewed_institution_type"
+    ],
+    "import_id": "seed-84c3beb45367905f",
+    "screening_status": "included"
+  },
+  "selection_policy": "preferred-v1",
+  "sources": {
+    "s1": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T15:41:04.020419+00:00",
+      "revision_id": 2471486371,
+      "source_qid": "Q12513053",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2471486371"
+    },
+    "s2": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T15:41:13.157989+00:00",
+      "revision_id": 2553501921,
+      "source_qid": "Q38723",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2553501921"
+    },
+    "s3": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T15:41:17.191171+00:00",
+      "revision_id": 2562953677,
+      "source_qid": "Q252",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2562953677"
+    },
+    "s4": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T15:41:21.020880+00:00",
+      "revision_id": 2555889114,
+      "source_qid": "Q14632",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2555889114"
+    }
+  },
+  "update_datetime": "2026-11-06T16:24:35.829197+00:00"
+}

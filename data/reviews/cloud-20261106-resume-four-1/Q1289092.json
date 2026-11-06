@@ -1,0 +1,818 @@
+{
+  "attribution": "distinct_native_research_and_review_subagents;not_cryptographic_identity",
+  "research": {
+    "baseline_sha256": "absent",
+    "candidate": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-06T15:41:21.327138+00:00",
+          "status": "not_found"
+        },
+        "geography": {
+          "checked_at": "2026-11-06T15:41:21.327138+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-06T15:41:21.327138+00:00",
+          "status": "checked"
+        },
+        "identity": {
+          "checked_at": "2026-11-06T15:41:21.327138+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-06T15:41:21.327138+00:00",
+          "status": "not_found"
+        },
+        "profile": {
+          "checked_at": "2026-11-06T15:41:21.327138+00:00",
+          "status": "not_found"
+        }
+      },
+      "curation": {
+        "identity_status": "in_scope"
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "claim:P571:0",
+                      "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q1289092$7b377444-4542-ef44-cdc0-d97d67c68d8b\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+1958-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}",
+                      "source_ref": "s1"
+                    },
+                    {
+                      "locator": "section:lead",
+                      "original_text": "University in Vientiane, Laos (1958-75)\nSisavangvong University was a university in Vientiane, Laos, established in 1958 and named after King Sisavangvong. Following the exodus of teaching staff in 1975 when the communists came to power in Laos, Sisavangvong University was dissolved and divided into separate colleges, leaving the country with no degree-awarding institution.[1]",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 1958
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:lead",
+                      "original_text": "University in Vientiane, Laos (1958-75)\nSisavangvong University was a university in Vientiane, Laos, established in 1958 and named after King Sisavangvong. Following the exodus of teaching staff in 1975 when the communists came to power in Laos, Sisavangvong University was dissolved and divided into separate colleges, leaving the country with no degree-awarding institution.[1]",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "Sisavangvong University was established in 1958 and named after King Sisavangvong."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "establishment",
+            "kind": "institution_establishment",
+            "subject_ref": "institution"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:lead",
+                      "original_text": "University in Vientiane, Laos (1958-75)\nSisavangvong University was a university in Vientiane, Laos, established in 1958 and named after King Sisavangvong. Following the exodus of teaching staff in 1975 when the communists came to power in Laos, Sisavangvong University was dissolved and divided into separate colleges, leaving the country with no degree-awarding institution.[1]",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 1975
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:lead",
+                      "original_text": "University in Vientiane, Laos (1958-75)\nSisavangvong University was a university in Vientiane, Laos, established in 1958 and named after King Sisavangvong. Following the exodus of teaching staff in 1975 when the communists came to power in Laos, Sisavangvong University was dissolved and divided into separate colleges, leaving the country with no degree-awarding institution.[1]",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "Following the exodus of teaching staff in 1975 when the communists came to power in Laos, Sisavangvong University was dissolved and divided into separate colleges, leaving Laos with no degree-awarding institution."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "dissolution_split",
+            "kind": "split",
+            "subject_ref": "institution"
+          }
+        ]
+      },
+      "identity": {
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P31:0",
+                  "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q1289092$25F3232C-0F87-40D9-A5E8-975806451185\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 3918, \"id\": \"Q3918\"}}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "metadata",
+                  "original_text": "{\"id\": \"Q3918\", \"labels\": {\"en\": \"university\"}, \"descriptions\": {\"en\": \"an institution of tertiary education and research which awards academic degrees in several academic disciplines\"}}",
+                  "source_ref": "s3"
+                },
+                {
+                  "locator": "section:lead",
+                  "original_text": "University in Vientiane, Laos (1958-75)\nSisavangvong University was a university in Vientiane, Laos, established in 1958 and named after King Sisavangvong. Following the exodus of teaching staff in 1975 when the communists came to power in Laos, Sisavangvong University was dissolved and divided into separate colleges, leaving the country with no degree-awarding institution.[1]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "university",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q1289092\", \"labels\": {\"en\": \"Sisavangvong University\"}, \"descriptions\": {\"en\": \"university\"}}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "section:lead",
+                    "original_text": "University in Vientiane, Laos (1958-75)\nSisavangvong University was a university in Vientiane, Laos, established in 1958 and named after King Sisavangvong. Following the exodus of teaching staff in 1975 when the communists came to power in Laos, Sisavangvong University was dissolved and divided into separate colleges, leaving the country with no degree-awarding institution.[1]",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": "Sisavangvong University",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        "operating_status": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "University in Vientiane, Laos (1958-75)\nSisavangvong University was a university in Vientiane, Laos, established in 1958 and named after King Sisavangvong. Following the exodus of teaching staff in 1975 when the communists came to power in Laos, Sisavangvong University was dissolved and divided into separate colleges, leaving the country with no degree-awarding institution.[1]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "closed",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "locations": [
+        {
+          "id": "vientiane",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "University in Vientiane, Laos (1958-75)\nSisavangvong University was a university in Vientiane, Laos, established in 1958 and named after King Sisavangvong. Following the exodus of teaching staff in 1975 when the communists came to power in Laos, Sisavangvong University was dissolved and divided into separate colleges, leaving the country with no degree-awarding institution.[1]",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Vientiane"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        {
+          "id": "laos",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q1289092$B9E83D07-398A-42BD-B305-904BFEEE15B1\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 819, \"id\": \"Q819\"}}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q819\", \"labels\": {\"en\": \"Laos\"}, \"descriptions\": {\"en\": \"country in Southeast Asia\"}}",
+                    "source_ref": "s4"
+                  },
+                  {
+                    "locator": "section:lead",
+                    "original_text": "University in Vientiane, Laos (1958-75)\nSisavangvong University was a university in Vientiane, Laos, established in 1958 and named after King Sisavangvong. Following the exodus of teaching staff in 1975 when the communists came to power in Laos, Sisavangvong University was dissolved and divided into separate colleges, leaving the country with no degree-awarding institution.[1]",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Laos"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q819"
+        }
+      ],
+      "modified_datetime": "2026-11-06T15:43:22.419001+00:00",
+      "qid": "Q1289092",
+      "record_revision": 1,
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "reviewed_institution_type"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "included"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T15:41:00.829233+00:00",
+          "revision_id": 2560371382,
+          "source_qid": "Q1289092",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2560371382"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikipedia",
+          "language": "en",
+          "page_id": 2812554,
+          "publisher_role": "encyclopedia",
+          "retrieved_at": "2026-11-06T15:41:11.309120+00:00",
+          "revision_id": 1342947346,
+          "url": "https://en.wikipedia.org/w/index.php?oldid=1342947346"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T15:41:16.005321+00:00",
+          "revision_id": 2562156954,
+          "source_qid": "Q3918",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2562156954"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T15:41:21.208359+00:00",
+          "revision_id": 2565047087,
+          "source_qid": "Q819",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2565047087"
+        }
+      }
+    },
+    "coverage": [
+      {
+        "group": "identity",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "status": "checked"
+      },
+      {
+        "group": "population",
+        "status": "not_found"
+      },
+      {
+        "group": "finance",
+        "status": "not_found"
+      },
+      {
+        "group": "profile",
+        "status": "not_found"
+      }
+    ],
+    "delta": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-06T15:41:21.327138+00:00",
+          "status": "not_found"
+        },
+        "geography": {
+          "checked_at": "2026-11-06T15:41:21.327138+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-06T15:41:21.327138+00:00",
+          "status": "checked"
+        },
+        "identity": {
+          "checked_at": "2026-11-06T15:41:21.327138+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-06T15:41:21.327138+00:00",
+          "status": "not_found"
+        },
+        "profile": {
+          "checked_at": "2026-11-06T15:41:21.327138+00:00",
+          "status": "not_found"
+        }
+      },
+      "curation": {
+        "identity_status": "in_scope"
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "claim:P571:0",
+                      "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q1289092$7b377444-4542-ef44-cdc0-d97d67c68d8b\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+1958-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}",
+                      "source_ref": "s1"
+                    },
+                    {
+                      "locator": "section:lead",
+                      "original_text": "University in Vientiane, Laos (1958-75)\nSisavangvong University was a university in Vientiane, Laos, established in 1958 and named after King Sisavangvong. Following the exodus of teaching staff in 1975 when the communists came to power in Laos, Sisavangvong University was dissolved and divided into separate colleges, leaving the country with no degree-awarding institution.[1]",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 1958
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:lead",
+                      "original_text": "University in Vientiane, Laos (1958-75)\nSisavangvong University was a university in Vientiane, Laos, established in 1958 and named after King Sisavangvong. Following the exodus of teaching staff in 1975 when the communists came to power in Laos, Sisavangvong University was dissolved and divided into separate colleges, leaving the country with no degree-awarding institution.[1]",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "Sisavangvong University was established in 1958 and named after King Sisavangvong."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "establishment",
+            "kind": "institution_establishment",
+            "subject_ref": "institution"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:lead",
+                      "original_text": "University in Vientiane, Laos (1958-75)\nSisavangvong University was a university in Vientiane, Laos, established in 1958 and named after King Sisavangvong. Following the exodus of teaching staff in 1975 when the communists came to power in Laos, Sisavangvong University was dissolved and divided into separate colleges, leaving the country with no degree-awarding institution.[1]",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 1975
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:lead",
+                      "original_text": "University in Vientiane, Laos (1958-75)\nSisavangvong University was a university in Vientiane, Laos, established in 1958 and named after King Sisavangvong. Following the exodus of teaching staff in 1975 when the communists came to power in Laos, Sisavangvong University was dissolved and divided into separate colleges, leaving the country with no degree-awarding institution.[1]",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "Following the exodus of teaching staff in 1975 when the communists came to power in Laos, Sisavangvong University was dissolved and divided into separate colleges, leaving Laos with no degree-awarding institution."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "dissolution_split",
+            "kind": "split",
+            "subject_ref": "institution"
+          }
+        ]
+      },
+      "identity": {
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P31:0",
+                  "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q1289092$25F3232C-0F87-40D9-A5E8-975806451185\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 3918, \"id\": \"Q3918\"}}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "metadata",
+                  "original_text": "{\"id\": \"Q3918\", \"labels\": {\"en\": \"university\"}, \"descriptions\": {\"en\": \"an institution of tertiary education and research which awards academic degrees in several academic disciplines\"}}",
+                  "source_ref": "s3"
+                },
+                {
+                  "locator": "section:lead",
+                  "original_text": "University in Vientiane, Laos (1958-75)\nSisavangvong University was a university in Vientiane, Laos, established in 1958 and named after King Sisavangvong. Following the exodus of teaching staff in 1975 when the communists came to power in Laos, Sisavangvong University was dissolved and divided into separate colleges, leaving the country with no degree-awarding institution.[1]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "university",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q1289092\", \"labels\": {\"en\": \"Sisavangvong University\"}, \"descriptions\": {\"en\": \"university\"}}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "section:lead",
+                    "original_text": "University in Vientiane, Laos (1958-75)\nSisavangvong University was a university in Vientiane, Laos, established in 1958 and named after King Sisavangvong. Following the exodus of teaching staff in 1975 when the communists came to power in Laos, Sisavangvong University was dissolved and divided into separate colleges, leaving the country with no degree-awarding institution.[1]",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": "Sisavangvong University",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        "operating_status": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "University in Vientiane, Laos (1958-75)\nSisavangvong University was a university in Vientiane, Laos, established in 1958 and named after King Sisavangvong. Following the exodus of teaching staff in 1975 when the communists came to power in Laos, Sisavangvong University was dissolved and divided into separate colleges, leaving the country with no degree-awarding institution.[1]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "closed",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "locations": [
+        {
+          "id": "vientiane",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "University in Vientiane, Laos (1958-75)\nSisavangvong University was a university in Vientiane, Laos, established in 1958 and named after King Sisavangvong. Following the exodus of teaching staff in 1975 when the communists came to power in Laos, Sisavangvong University was dissolved and divided into separate colleges, leaving the country with no degree-awarding institution.[1]",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Vientiane"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        {
+          "id": "laos",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q1289092$B9E83D07-398A-42BD-B305-904BFEEE15B1\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 819, \"id\": \"Q819\"}}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q819\", \"labels\": {\"en\": \"Laos\"}, \"descriptions\": {\"en\": \"country in Southeast Asia\"}}",
+                    "source_ref": "s4"
+                  },
+                  {
+                    "locator": "section:lead",
+                    "original_text": "University in Vientiane, Laos (1958-75)\nSisavangvong University was a university in Vientiane, Laos, established in 1958 and named after King Sisavangvong. Following the exodus of teaching staff in 1975 when the communists came to power in Laos, Sisavangvong University was dissolved and divided into separate colleges, leaving the country with no degree-awarding institution.[1]",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Laos"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q819"
+        }
+      ],
+      "qid": "Q1289092",
+      "record_revision": 1,
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "reviewed_institution_type"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "included"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T15:41:00.829233+00:00",
+          "revision_id": 2560371382,
+          "source_qid": "Q1289092",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2560371382"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikipedia",
+          "language": "en",
+          "page_id": 2812554,
+          "publisher_role": "encyclopedia",
+          "retrieved_at": "2026-11-06T15:41:11.309120+00:00",
+          "revision_id": 1342947346,
+          "url": "https://en.wikipedia.org/w/index.php?oldid=1342947346"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T15:41:16.005321+00:00",
+          "revision_id": 2562156954,
+          "source_qid": "Q3918",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2562156954"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T15:41:21.208359+00:00",
+          "revision_id": 2565047087,
+          "source_qid": "Q819",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2565047087"
+        }
+      }
+    },
+    "open_requests": [],
+    "proposed_at": "2026-11-06T15:43:22.419001+00:00",
+    "qid": "Q1289092",
+    "research": {
+      "model": "not_reported",
+      "prompt_sha256": "10e8c144cb17d6d79c0e1a71c9a601b5f012984a547257a49b7f87bdd0fa6adf",
+      "reasoning_effort": "not_reported",
+      "schema_sha256": "92e942f4fbf2ae28964462ea9ffa8312c5ee16a077a1e08b40aaaf741512422e",
+      "session": "/root/run_university_curation/research_university_q1289092"
+    },
+    "retrieval_failures": [],
+    "review_status": "unreviewed",
+    "seed": {
+      "channels": [
+        "reviewed_institution_type"
+      ],
+      "import_id": "seed-84c3beb45367905f",
+      "screening_status": "included"
+    },
+    "transport": {
+      "base_commit": "cab495764cf3bba56cdbcd947aa66fbc5e33aa7a",
+      "protocol": "native-subagent-v1",
+      "repository": "ider-zh/university-seed-curation",
+      "review_policy": {
+        "id": "source-grounded-flexible-v2",
+        "sha256": "b8ed7d2897e4c31dbd81b1379aafdc1077a21d1a33949edbd2d896b0adf99db2"
+      },
+      "schema_sha256": "bfa496eafa9dffca56146214168db7f000b09161b8993129632e7202e1c88833",
+      "seed_catalog_sha256": "84c3beb45367905f513d650684283dd62a9c1b77962bdc34151a6ef05bfa03d4"
+    },
+    "type": "university-proposal-v1"
+  },
+  "review": {
+    "contexts_checked": 3,
+    "coverage_checks": [
+      {
+        "group": "identity",
+        "reason": "Frozen s1 metadata/P31, s2 lead and s3 metadata survey identify the historical university, English name and closed status. Only the supplied Wikimedia corpus is evidenced; no official or external survey is claimed.",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "reason": "Bounded frozen survey covers s1 P17 and s2 lead placing the institution in Vientiane, Laos. Root revision 2560371382 has no P625 statements, agreeing with the empty projection; root coordinate rank/precision are therefore not applicable. s4 P625 is a country coordinate and is not an institution or campus coordinate. Supplementary location records remain outside mandatory factual review. No external geographic survey is evidenced.",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "reason": "s1 P571 and s2 lead supply establishment and dissolution/division history. This is bounded coverage of the frozen source observations, with year-level dissolution inference explained above; no exhaustive chronology or external survey asserted.",
+        "status": "checked"
+      },
+      {
+        "group": "population",
+        "reason": "No institution enrollment or staff count is present in the supplied s1-s4 corpus. The s2 teaching-staff exodus is qualitative and supplies no statistic, period-specific headcount or FTE value. not_found is limited to this corpus, not an assertion of an external search.",
+        "status": "not_found"
+      },
+      {
+        "group": "finance",
+        "reason": "No institutional financial amount, currency, fiscal period or financial measure is present in the supplied s1-s4 corpus. No official financial-report or other external search is evidenced or claimed.",
+        "status": "not_found"
+      },
+      {
+        "group": "profile",
+        "reason": "Beyond identity/history/geography, the supplied frozen corpus provides no additional bounded institutional profile metrics or attributes to extract. s3 describes the general university class, not this institution. This is a corpus-limited finding, not proof that no external profile information exists.",
+        "status": "not_found"
+      }
+    ],
+    "decision": "approve",
+    "facts_checked": 5,
+    "full_refresh": true,
+    "inferences": [
+      {
+        "id": "$.history.milestones[1].date:c1",
+        "reason": "s2 revision 1342947346 section:lead describes the university as (1958-75), then dissolution and division following the 1975 teaching-staff exodus. Assigning 1975 to this operational dissolution/split is a reasonable year-level inference from the combined wording, not an independently documented exact legal dissolution date."
+      }
+    ],
+    "model": "not_reported",
+    "proposal_sha256": "95f7dd6f911263f3fae38d678dfe980018f367b761e52207f4db939368d395dc",
+    "qid": "Q1289092",
+    "reasoning_effort": "not_reported",
+    "record_sha256": "edaed54e07f30af273a11d68345b33f6a99293dc31b3840ceb80e5849b4e77a9",
+    "request_responses": [],
+    "requests": [],
+    "review_scope": {
+      "not_independently_reviewed_ids": [
+        "$.history.milestones[0].description:c1",
+        "$.history.milestones[1].description:c1",
+        "$.locations[0].name:c1",
+        "$.locations[1].name:c1",
+        "location:laos",
+        "location:vientiane"
+      ],
+      "reviewed_ids": [
+        "$.history.milestones[0].date:c1",
+        "$.history.milestones[1].date:c1",
+        "$.identity.kind:c1",
+        "$.identity.names.en:c1",
+        "$.identity.operating_status:c1",
+        "identity",
+        "milestone:dissolution_split",
+        "milestone:establishment"
+      ],
+      "version": "core-review-v3"
+    },
+    "review_session": "/root/run_university_curation/review_publication_q1289092",
+    "reviewed_at": "2026-11-06T16:24:23.030725+00:00",
+    "source_revisions_checked": 4,
+    "waived_requests": []
+  },
+  "review_result_sha256": "e65c5dd4ec253df3a2d96da6fc4f20c74dfd9dd935b6dc5ffc649feaff1206d1",
+  "type": "university-unified-receipt-v1"
+}
