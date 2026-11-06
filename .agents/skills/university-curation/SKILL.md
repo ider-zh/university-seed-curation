@@ -12,7 +12,7 @@ Reuse the checkout, verify origin, fetch trusted main and preserve private cache
 Use the host GitHub plugin and native subagents, no shell credentials or model CLI.
 
 1. Run doctor and next --limit 5. Inspect open data PR QIDs to reduce duplicate
-   research. Follow recovery, Review, revision and source-retry priorities.
+   research. Sample eligible actions randomly; honor each returned action and retry limits.
 2. research-prepare one QID; send its exact prompt/schema to its own Research
    subagent. Record actual metadata and compile, then unified-proposal.
 3. review-prepare --research-job into a fresh private job; dispatch that QID's

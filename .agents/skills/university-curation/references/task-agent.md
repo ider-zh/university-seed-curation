@@ -7,8 +7,8 @@ Read AGENTS.md, docs/handoff.md, docs/agent-workflow.md, docs/commands.md,
 docs/source-tools.md, docs/review-scope-v3.md and the bundled SKILL.md.
 Run doctor; verify GitHub plugin and native subagent capabilities separately.
 
-1. Inspect open data PR QIDs, then next --limit 5. Follow recovery/retry/revision
-   priorities. Random selection is advisory and does not claim QIDs globally.
+1. Inspect open data PR QIDs, then next --limit 5. Tasks are randomly sampled from eligible work across actions. Selection is
+   advisory and does not claim QIDs globally.
 2. Prepare each QID and dispatch one native Research subagent; compile its actual
    output and session metadata. Bind the exact proposal with unified-proposal.
 3. Prepare a dedicated independent offline Review per QID against the frozen
