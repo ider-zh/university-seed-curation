@@ -1,0 +1,1104 @@
+{
+  "attribution": "distinct_native_research_and_review_subagents;not_cryptographic_identity",
+  "research": {
+    "baseline_sha256": "absent",
+    "candidate": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-06T23:24:33.598134+00:00",
+          "status": "not_found"
+        },
+        "geography": {
+          "checked_at": "2026-11-06T23:24:33.598134+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-06T23:24:33.598134+00:00",
+          "status": "checked"
+        },
+        "identity": {
+          "checked_at": "2026-11-06T23:24:33.598134+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-06T23:24:33.598134+00:00",
+          "status": "not_found"
+        },
+        "profile": {
+          "checked_at": "2026-11-06T23:24:33.598134+00:00",
+          "status": "checked"
+        }
+      },
+      "curation": {
+        "identity_status": "related"
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:lead",
+                      "original_text": "The Rubenstein School of Environment and Natural Resources (RSENR) (established in 2003) is the University of Vermont's natural resources college. The University of Vermont recognized the importance of providing educational opportunities in this field of study, initiating forestry courses in 1888. The first school, originally called The School of Natural Resources was established in 1973.[1] The main home of the Rubenstein School of Environment and Natural Resources, the George D. Aiken Center opened in 1982. The building's name honors Vermont's distinguished late senator and governor.[2]",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 1973
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:lead",
+                      "original_text": "The Rubenstein School of Environment and Natural Resources (RSENR) (established in 2003) is the University of Vermont's natural resources college. The University of Vermont recognized the importance of providing educational opportunities in this field of study, initiating forestry courses in 1888. The first school, originally called The School of Natural Resources was established in 1973.[1] The main home of the Rubenstein School of Environment and Natural Resources, the George D. Aiken Center opened in 1982. The building's name honors Vermont's distinguished late senator and governor.[2]",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "The School of Natural Resources was established in 1973."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "origin",
+            "kind": "institution_establishment",
+            "subject_ref": "institution"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:lead",
+                      "original_text": "The Rubenstein School of Environment and Natural Resources (RSENR) (established in 2003) is the University of Vermont's natural resources college. The University of Vermont recognized the importance of providing educational opportunities in this field of study, initiating forestry courses in 1888. The first school, originally called The School of Natural Resources was established in 1973.[1] The main home of the Rubenstein School of Environment and Natural Resources, the George D. Aiken Center opened in 1982. The building's name honors Vermont's distinguished late senator and governor.[2]",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 2003
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:lead",
+                      "original_text": "The Rubenstein School of Environment and Natural Resources (RSENR) (established in 2003) is the University of Vermont's natural resources college. The University of Vermont recognized the importance of providing educational opportunities in this field of study, initiating forestry courses in 1888. The first school, originally called The School of Natural Resources was established in 1973.[1] The main home of the Rubenstein School of Environment and Natural Resources, the George D. Aiken Center opened in 1982. The building's name honors Vermont's distinguished late senator and governor.[2]",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "The article dates establishment of the Rubenstein School to 2003 and distinguishes the original School of Natural Resources established in 1973."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "rubenstein",
+            "kind": "institution_establishment",
+            "subject_ref": "institution"
+          }
+        ]
+      },
+      "identity": {
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "College at the University of Vermont\nThe George D. Aiken Center houses the Rubenstein School of Environment and Natural Resources\nThe Rubenstein School of Environment and Natural Resources (RSENR) (established in 2003) is the University of Vermont's natural resources college.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "claim:P361:0",
+                  "original_text": "{\"property\": \"P361\", \"property_label\": \"part of\", \"statement_id\": \"Q7376034$30b73832-4a7e-f63e-4b9e-534488b93f3d\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 1048898, \"id\": \"Q1048898\"}}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "faculty",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q7376034\", \"labels\": {\"en\": \"Rubenstein School of Environment and Natural Resources\"}, \"descriptions\": {\"en\": \"College at the University of Vermont\"}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "Rubenstein School of Environment and Natural Resources",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "locations": [
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q7376034$29c63b69-493a-2327-333e-be50b000f817\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 30, \"id\": \"Q30\"}}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q30\", \"labels\": {\"en\": \"United States\"}, \"descriptions\": {\"en\": \"country located primarily in North America\"}}",
+                    "source_ref": "s4"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "country_name": "United States of America",
+                  "country_qid": "Q30",
+                  "formatted": {
+                    "language": "en",
+                    "text": "United States of America"
+                  }
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "country",
+          "kind": "administrative_area",
+          "qid": "Q30"
+        },
+        {
+          "coordinates": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "statement:Q7376034$f7ce708d-9aa6-4bb9-8404-4b9f93f7618d",
+                    "original_text": "\"latitude\": 44.47595",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "source_rank": "normal",
+                "value": {
+                  "crs": "EPSG:4326",
+                  "globe_qid": "Q2",
+                  "latitude": 44.47595,
+                  "longitude": -73.19513,
+                  "source_precision_degrees": 1e-05
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "wikidata-item-location",
+          "kind": "institution",
+          "qid": "Q7376034"
+        }
+      ],
+      "modified_datetime": "2026-11-06T23:27:46.451901+00:00",
+      "profile": {
+        "academic_focus": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "RSENR is home to a natural resources and field study based curriculum, has its own core courses and building. There are several majors including environmental sciences; forestry; parks, recreation, and tourism; sustainability, ecology, and policy; and wildlife and fisheries biology.[1]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": [
+                {
+                  "language": "en",
+                  "text": "environmental sciences"
+                },
+                {
+                  "language": "en",
+                  "text": "forestry"
+                },
+                {
+                  "language": "en",
+                  "text": "parks, recreation, and tourism"
+                },
+                {
+                  "language": "en",
+                  "text": "sustainability, ecology, and policy"
+                },
+                {
+                  "language": "en",
+                  "text": "wildlife and fisheries biology"
+                }
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "summary": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P361:0",
+                  "original_text": "{\"property\": \"P361\", \"property_label\": \"part of\", \"statement_id\": \"Q7376034$30b73832-4a7e-f63e-4b9e-534488b93f3d\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 1048898, \"id\": \"Q1048898\"}}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "section:lead",
+                  "original_text": "College at the University of Vermont\nThe George D. Aiken Center houses the Rubenstein School of Environment and Natural Resources\nThe Rubenstein School of Environment and Natural Resources (RSENR) (established in 2003) is the University of Vermont's natural resources college. The University of Vermont recognized the importance of providing educational opportunities in this field of study, initiating forestry courses in 1888. The first school, originally called The School of Natural Resources was established in 1973.[1] The main home of the Rubenstein School of Environment and Natural Resources, the George D. Aiken Center opened in 1982. The building's name honors Vermont's distinguished late senator and governor.[2]\nRSENR is home to a natural resources and field study based curriculum, has its own core courses and building. There are several majors including environmental sciences; fores",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:lead",
+                  "original_text": "try; parks, recreation, and tourism; sustainability, ecology, and policy; and wildlife and fisheries biology.[1]\nThe Rubenstein School campus includes members of the UVM Environmental Program, the Gund Institute for Ecological Economics, the Rubenstein Ecosystem Science Laboratory, and the US Forest Service Northern Research Station.[3]\nIn 2012, the Aiken building housing the school was completely reconstructed as a green renovated facility and named the Aiken Center with a U.S. Green Building Council LEED certification of platinum, and has the highest certification score in the entire state of Vermont.[2] One of the other facilities belonging to the school is the Rubenstein Ecosystem Research Lab at the Burlington waterfront.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "The Rubenstein School of Environment and Natural Resources is the University of Vermont’s natural resources college in the United States. It forms part of the university rather than constituting a separate university. Its curriculum emphasizes natural resources and field study, with its own core courses. The subjects listed for its majors include environmental sciences; forestry; parks, recreation, and tourism; sustainability, ecology, and policy; and wildlife and fisheries biology.\n\nThe university’s teaching in this field extends back to forestry courses initiated in 1888. The original School of Natural Resources was established in 1973, while the Rubenstein School is described as established in 2003. These dates represent distinct stages in its development. Its principal home is the George D. Aiken Center, which opened in 1982 and was named in honor of Vermont senator and governor George D. Aiken. In 2012 the building underwent reconstruction as a green renovated facility and received LEED platinum certification. Another school facility is the Rubenstein Ecosystem Research Lab on the Burlington waterfront. The school’s campus also includes members of the university’s Environmental Program, the Gund Institute for Ecological Economics and the US Forest Service Northern Research Station."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "website": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P856:0",
+                  "original_text": "{\"property\": \"P856\", \"property_label\": \"official website\", \"statement_id\": \"Q7376034$BCB723BF-450D-4623-843A-D23AAA54BA09\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"https://www.uvm.edu/rsenr\", \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "https://www.uvm.edu/rsenr",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "qid": "Q7376034",
+      "record_revision": 1,
+      "related_entities": {
+        "uvm": {
+          "kind": "institution",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q1048898\", \"labels\": {\"en\": \"University of Vermont\"}, \"descriptions\": {\"en\": \"public research university in Burlington, Vermont, USA\"}}",
+                    "source_ref": "s5"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "University of Vermont"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q1048898"
+        }
+      },
+      "relationships": {
+        "parent": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P361:0",
+                    "original_text": "{\"property\": \"P361\", \"property_label\": \"part of\", \"statement_id\": \"Q7376034$30b73832-4a7e-f63e-4b9e-534488b93f3d\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 1048898, \"id\": \"Q1048898\"}}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "section:lead",
+                    "original_text": "College at the University of Vermont\nThe George D. Aiken Center houses the Rubenstein School of Environment and Natural Resources\nThe Rubenstein School of Environment and Natural Resources (RSENR) (established in 2003) is the University of Vermont's natural resources college.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "target_ref": "related:uvm"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ]
+      },
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "reviewed_institution_type"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "included"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T23:24:14.069721+00:00",
+          "revision_id": 2560499750,
+          "source_qid": "Q7376034",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2560499750"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikipedia",
+          "language": "en",
+          "page_id": 4846537,
+          "publisher_role": "encyclopedia",
+          "retrieved_at": "2026-11-06T23:24:22.996700+00:00",
+          "revision_id": 1339412407,
+          "url": "https://en.wikipedia.org/w/index.php?oldid=1339412407"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T23:24:25.992057+00:00",
+          "revision_id": 2562156954,
+          "source_qid": "Q3918",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2562156954"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T23:24:29.764336+00:00",
+          "revision_id": 2565041516,
+          "source_qid": "Q30",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2565041516"
+        },
+        "s5": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T23:24:33.577719+00:00",
+          "revision_id": 2563164182,
+          "source_qid": "Q1048898",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2563164182"
+        }
+      }
+    },
+    "coverage": [
+      {
+        "group": "identity",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "status": "checked"
+      },
+      {
+        "group": "population",
+        "status": "not_found"
+      },
+      {
+        "group": "finance",
+        "status": "not_found"
+      },
+      {
+        "group": "profile",
+        "status": "checked"
+      }
+    ],
+    "delta": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-06T23:24:33.598134+00:00",
+          "status": "not_found"
+        },
+        "geography": {
+          "checked_at": "2026-11-06T23:24:33.598134+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-06T23:24:33.598134+00:00",
+          "status": "checked"
+        },
+        "identity": {
+          "checked_at": "2026-11-06T23:24:33.598134+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-06T23:24:33.598134+00:00",
+          "status": "not_found"
+        },
+        "profile": {
+          "checked_at": "2026-11-06T23:24:33.598134+00:00",
+          "status": "checked"
+        }
+      },
+      "curation": {
+        "identity_status": "related"
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:lead",
+                      "original_text": "The Rubenstein School of Environment and Natural Resources (RSENR) (established in 2003) is the University of Vermont's natural resources college. The University of Vermont recognized the importance of providing educational opportunities in this field of study, initiating forestry courses in 1888. The first school, originally called The School of Natural Resources was established in 1973.[1] The main home of the Rubenstein School of Environment and Natural Resources, the George D. Aiken Center opened in 1982. The building's name honors Vermont's distinguished late senator and governor.[2]",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 1973
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:lead",
+                      "original_text": "The Rubenstein School of Environment and Natural Resources (RSENR) (established in 2003) is the University of Vermont's natural resources college. The University of Vermont recognized the importance of providing educational opportunities in this field of study, initiating forestry courses in 1888. The first school, originally called The School of Natural Resources was established in 1973.[1] The main home of the Rubenstein School of Environment and Natural Resources, the George D. Aiken Center opened in 1982. The building's name honors Vermont's distinguished late senator and governor.[2]",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "The School of Natural Resources was established in 1973."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "origin",
+            "kind": "institution_establishment",
+            "subject_ref": "institution"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:lead",
+                      "original_text": "The Rubenstein School of Environment and Natural Resources (RSENR) (established in 2003) is the University of Vermont's natural resources college. The University of Vermont recognized the importance of providing educational opportunities in this field of study, initiating forestry courses in 1888. The first school, originally called The School of Natural Resources was established in 1973.[1] The main home of the Rubenstein School of Environment and Natural Resources, the George D. Aiken Center opened in 1982. The building's name honors Vermont's distinguished late senator and governor.[2]",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 2003
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:lead",
+                      "original_text": "The Rubenstein School of Environment and Natural Resources (RSENR) (established in 2003) is the University of Vermont's natural resources college. The University of Vermont recognized the importance of providing educational opportunities in this field of study, initiating forestry courses in 1888. The first school, originally called The School of Natural Resources was established in 1973.[1] The main home of the Rubenstein School of Environment and Natural Resources, the George D. Aiken Center opened in 1982. The building's name honors Vermont's distinguished late senator and governor.[2]",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "The article dates establishment of the Rubenstein School to 2003 and distinguishes the original School of Natural Resources established in 1973."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "rubenstein",
+            "kind": "institution_establishment",
+            "subject_ref": "institution"
+          }
+        ]
+      },
+      "identity": {
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "College at the University of Vermont\nThe George D. Aiken Center houses the Rubenstein School of Environment and Natural Resources\nThe Rubenstein School of Environment and Natural Resources (RSENR) (established in 2003) is the University of Vermont's natural resources college.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "claim:P361:0",
+                  "original_text": "{\"property\": \"P361\", \"property_label\": \"part of\", \"statement_id\": \"Q7376034$30b73832-4a7e-f63e-4b9e-534488b93f3d\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 1048898, \"id\": \"Q1048898\"}}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "faculty",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q7376034\", \"labels\": {\"en\": \"Rubenstein School of Environment and Natural Resources\"}, \"descriptions\": {\"en\": \"College at the University of Vermont\"}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "Rubenstein School of Environment and Natural Resources",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "locations": [
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q7376034$29c63b69-493a-2327-333e-be50b000f817\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 30, \"id\": \"Q30\"}}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q30\", \"labels\": {\"en\": \"United States\"}, \"descriptions\": {\"en\": \"country located primarily in North America\"}}",
+                    "source_ref": "s4"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "country_name": "United States of America",
+                  "country_qid": "Q30",
+                  "formatted": {
+                    "language": "en",
+                    "text": "United States of America"
+                  }
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "country",
+          "kind": "administrative_area",
+          "qid": "Q30"
+        },
+        {
+          "coordinates": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "statement:Q7376034$f7ce708d-9aa6-4bb9-8404-4b9f93f7618d",
+                    "original_text": "\"latitude\": 44.47595",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "source_rank": "normal",
+                "value": {
+                  "crs": "EPSG:4326",
+                  "globe_qid": "Q2",
+                  "latitude": 44.47595,
+                  "longitude": -73.19513,
+                  "source_precision_degrees": 1e-05
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "wikidata-item-location",
+          "kind": "institution",
+          "qid": "Q7376034"
+        }
+      ],
+      "profile": {
+        "academic_focus": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "RSENR is home to a natural resources and field study based curriculum, has its own core courses and building. There are several majors including environmental sciences; forestry; parks, recreation, and tourism; sustainability, ecology, and policy; and wildlife and fisheries biology.[1]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": [
+                {
+                  "language": "en",
+                  "text": "environmental sciences"
+                },
+                {
+                  "language": "en",
+                  "text": "forestry"
+                },
+                {
+                  "language": "en",
+                  "text": "parks, recreation, and tourism"
+                },
+                {
+                  "language": "en",
+                  "text": "sustainability, ecology, and policy"
+                },
+                {
+                  "language": "en",
+                  "text": "wildlife and fisheries biology"
+                }
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "summary": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P361:0",
+                  "original_text": "{\"property\": \"P361\", \"property_label\": \"part of\", \"statement_id\": \"Q7376034$30b73832-4a7e-f63e-4b9e-534488b93f3d\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 1048898, \"id\": \"Q1048898\"}}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "section:lead",
+                  "original_text": "College at the University of Vermont\nThe George D. Aiken Center houses the Rubenstein School of Environment and Natural Resources\nThe Rubenstein School of Environment and Natural Resources (RSENR) (established in 2003) is the University of Vermont's natural resources college. The University of Vermont recognized the importance of providing educational opportunities in this field of study, initiating forestry courses in 1888. The first school, originally called The School of Natural Resources was established in 1973.[1] The main home of the Rubenstein School of Environment and Natural Resources, the George D. Aiken Center opened in 1982. The building's name honors Vermont's distinguished late senator and governor.[2]\nRSENR is home to a natural resources and field study based curriculum, has its own core courses and building. There are several majors including environmental sciences; fores",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:lead",
+                  "original_text": "try; parks, recreation, and tourism; sustainability, ecology, and policy; and wildlife and fisheries biology.[1]\nThe Rubenstein School campus includes members of the UVM Environmental Program, the Gund Institute for Ecological Economics, the Rubenstein Ecosystem Science Laboratory, and the US Forest Service Northern Research Station.[3]\nIn 2012, the Aiken building housing the school was completely reconstructed as a green renovated facility and named the Aiken Center with a U.S. Green Building Council LEED certification of platinum, and has the highest certification score in the entire state of Vermont.[2] One of the other facilities belonging to the school is the Rubenstein Ecosystem Research Lab at the Burlington waterfront.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "The Rubenstein School of Environment and Natural Resources is the University of Vermont’s natural resources college in the United States. It forms part of the university rather than constituting a separate university. Its curriculum emphasizes natural resources and field study, with its own core courses. The subjects listed for its majors include environmental sciences; forestry; parks, recreation, and tourism; sustainability, ecology, and policy; and wildlife and fisheries biology.\n\nThe university’s teaching in this field extends back to forestry courses initiated in 1888. The original School of Natural Resources was established in 1973, while the Rubenstein School is described as established in 2003. These dates represent distinct stages in its development. Its principal home is the George D. Aiken Center, which opened in 1982 and was named in honor of Vermont senator and governor George D. Aiken. In 2012 the building underwent reconstruction as a green renovated facility and received LEED platinum certification. Another school facility is the Rubenstein Ecosystem Research Lab on the Burlington waterfront. The school’s campus also includes members of the university’s Environmental Program, the Gund Institute for Ecological Economics and the US Forest Service Northern Research Station."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "website": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P856:0",
+                  "original_text": "{\"property\": \"P856\", \"property_label\": \"official website\", \"statement_id\": \"Q7376034$BCB723BF-450D-4623-843A-D23AAA54BA09\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"https://www.uvm.edu/rsenr\", \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "https://www.uvm.edu/rsenr",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "qid": "Q7376034",
+      "record_revision": 1,
+      "related_entities": {
+        "uvm": {
+          "kind": "institution",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q1048898\", \"labels\": {\"en\": \"University of Vermont\"}, \"descriptions\": {\"en\": \"public research university in Burlington, Vermont, USA\"}}",
+                    "source_ref": "s5"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "University of Vermont"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q1048898"
+        }
+      },
+      "relationships": {
+        "parent": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P361:0",
+                    "original_text": "{\"property\": \"P361\", \"property_label\": \"part of\", \"statement_id\": \"Q7376034$30b73832-4a7e-f63e-4b9e-534488b93f3d\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 1048898, \"id\": \"Q1048898\"}}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "section:lead",
+                    "original_text": "College at the University of Vermont\nThe George D. Aiken Center houses the Rubenstein School of Environment and Natural Resources\nThe Rubenstein School of Environment and Natural Resources (RSENR) (established in 2003) is the University of Vermont's natural resources college.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "target_ref": "related:uvm"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ]
+      },
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "reviewed_institution_type"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "included"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T23:24:14.069721+00:00",
+          "revision_id": 2560499750,
+          "source_qid": "Q7376034",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2560499750"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikipedia",
+          "language": "en",
+          "page_id": 4846537,
+          "publisher_role": "encyclopedia",
+          "retrieved_at": "2026-11-06T23:24:22.996700+00:00",
+          "revision_id": 1339412407,
+          "url": "https://en.wikipedia.org/w/index.php?oldid=1339412407"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T23:24:25.992057+00:00",
+          "revision_id": 2562156954,
+          "source_qid": "Q3918",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2562156954"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T23:24:29.764336+00:00",
+          "revision_id": 2565041516,
+          "source_qid": "Q30",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2565041516"
+        },
+        "s5": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T23:24:33.577719+00:00",
+          "revision_id": 2563164182,
+          "source_qid": "Q1048898",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2563164182"
+        }
+      }
+    },
+    "open_requests": [],
+    "proposed_at": "2026-11-06T23:27:46.451901+00:00",
+    "qid": "Q7376034",
+    "research": {
+      "model": "not_reported",
+      "prompt_sha256": "55f8eb4b0234514bc8693059724ab4aebdd076a585e68d703f2d46a1173cd4b6",
+      "reasoning_effort": "not_reported",
+      "schema_sha256": "92e942f4fbf2ae28964462ea9ffa8312c5ee16a077a1e08b40aaaf741512422e",
+      "session": "/root/batch/b2research_q7376034"
+    },
+    "retrieval_failures": [],
+    "review_status": "unreviewed",
+    "seed": {
+      "channels": [
+        "reviewed_institution_type"
+      ],
+      "import_id": "seed-84c3beb45367905f",
+      "screening_status": "included"
+    },
+    "transport": {
+      "base_commit": "9deed17242bd46fb07cdb35763375b5c929835f2",
+      "protocol": "native-subagent-v1",
+      "repository": "ider-zh/university-seed-curation",
+      "review_policy": {
+        "id": "source-grounded-flexible-v2",
+        "sha256": "b8ed7d2897e4c31dbd81b1379aafdc1077a21d1a33949edbd2d896b0adf99db2"
+      },
+      "schema_sha256": "bfa496eafa9dffca56146214168db7f000b09161b8993129632e7202e1c88833",
+      "seed_catalog_sha256": "84c3beb45367905f513d650684283dd62a9c1b77962bdc34151a6ef05bfa03d4"
+    },
+    "type": "university-proposal-v1"
+  },
+  "review": {
+    "contexts_checked": 6,
+    "coverage_checks": [
+      {
+        "group": "identity",
+        "reason": "Root, article and parent identity surveyed; academic unit boundary preserved.",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "reason": "Root P625 and country inspected; no parent coordinates substituted.",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "reason": "Article establishment stages surveyed at source precision.",
+        "status": "checked"
+      },
+      {
+        "group": "population",
+        "reason": "No population observation in supplied corpus; no exhaustive external survey claimed.",
+        "status": "not_found"
+      },
+      {
+        "group": "finance",
+        "reason": "No finance observation in supplied corpus; no exhaustive external survey claimed.",
+        "status": "not_found"
+      },
+      {
+        "group": "profile",
+        "reason": "Frozen article and root surveyed; supplementary profile fields outside independent factual checks.",
+        "status": "checked"
+      }
+    ],
+    "decision": "approve",
+    "facts_checked": 6,
+    "full_refresh": true,
+    "inferences": [
+      {
+        "id": "$.identity.kind:c1",
+        "reason": "Frozen s2 calls the subject UVM natural resources college and s1 P361 identifies UVM parent; faculty reasonably normalizes this academic unit."
+      },
+      {
+        "id": "identity",
+        "reason": "School is institution-specific college unit of UVM rather than independent university; related disposition preserves that boundary."
+      },
+      {
+        "id": "milestone:origin",
+        "reason": "1973 first-school establishment is retained as origin of this academic unit; broad establishment event does not assert independence."
+      },
+      {
+        "id": "milestone:rubenstein",
+        "reason": "2003 Rubenstein establishment is expressly supported separately from 1973 first-school date, preserving source stages."
+      }
+    ],
+    "model": "not_reported",
+    "proposal_sha256": "8558fd7f6e8d8d6d3b83282e682ab56102ab85f3d06ebb47acdfe703a0c9bdf6",
+    "qid": "Q7376034",
+    "reasoning_effort": "not_reported",
+    "record_sha256": "92d0829da2e70aa0cfb1e1c0bb809afb90594c1333f59db9a09a24d237649ff8",
+    "request_responses": [],
+    "requests": [],
+    "review_scope": {
+      "not_independently_reviewed_ids": [
+        "$.history.milestones[0].description:c1",
+        "$.history.milestones[1].description:c1",
+        "$.locations[0].address:c1",
+        "$.profile.academic_focus:c1",
+        "$.profile.summary:c1",
+        "$.profile.website:c1",
+        "$.related_entities.uvm.name:c1",
+        "location:country"
+      ],
+      "reviewed_ids": [
+        "$.history.milestones[0].date:c1",
+        "$.history.milestones[1].date:c1",
+        "$.identity.kind:c1",
+        "$.identity.names.en:c1",
+        "$.locations[1].coordinates:c1",
+        "$.relationships.parent[0]:c1",
+        "country:$.locations[0].address:c1",
+        "identity",
+        "location:wikidata-item-location",
+        "milestone:origin",
+        "milestone:rubenstein",
+        "related:uvm"
+      ],
+      "version": "core-review-v3"
+    },
+    "review_session": "/root/batch/b2review_q7376034",
+    "reviewed_at": "2026-11-06T23:28:48.631410+00:00",
+    "source_revisions_checked": 5,
+    "waived_requests": []
+  },
+  "review_result_sha256": "b74d9a341e26a4a1265e89f00be1ef77d1e053557f56fc0063bd2e6e6fac25e0",
+  "type": "university-unified-receipt-v1"
+}

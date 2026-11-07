@@ -238,6 +238,20 @@
       "reason": "resume_after_private_workspace_loss",
       "revision": 0
     },
+    "Q124634949": {
+      "open_requests": [
+        {
+          "category": "evidence_gap",
+          "field": "curation.identity_status",
+          "reason": "Resolve higher-education eligibility with institution-specific captured evidence or source-grounded explicit inference. Name and generic educational-institution classification alone are insufficient; preserve needs_review until resolved.",
+          "request_id": "fb90b9e3-754b-58ee-80af-0841d4656089",
+          "reviewed_proposal_sha256": "3f6f1f2861df93ba0cc79d04e7fc7e93b9ff04eddee7bfc4c2285fc0ff9f52fe"
+        }
+      ],
+      "phase": "unresolved",
+      "reason": "resume_after_private_workspace_loss",
+      "revision": 0
+    },
     "Q125116876": {
       "open_requests": [],
       "phase": "research_pending",
@@ -273,11 +287,25 @@
           "reason": "Account for the unreadable government source s6 as a retrieval or decoding failure, or supply valid decoded evidence, and accurately mark the survey status. Retain the supported fixed-asset observation with its limited scope.",
           "request_id": "7933f718-91f6-5ea2-a934-46880e74244c",
           "reviewed_proposal_sha256": "8df8bd736b6d8c48b20cc9264b29538e922d9da7322a0f96dce3a6f3532d904a"
+        },
+        {
+          "category": "evidence_gap",
+          "field": "coverage.population",
+          "reason": "The s6 snapshot is unreadable and retrieval_failures remains empty. Record the decoding failure or provide a valid decoded capture; maintain disputed status until the source survey limitation is accounted for.",
+          "request_id": "383d9a9a-b5bc-5a62-be2a-b684c0298668",
+          "reviewed_proposal_sha256": "793b07c036ceb7244c5d5adb414aab30fc692634a10feed5b632f1780f3ccb80"
+        },
+        {
+          "category": "evidence_gap",
+          "field": "coverage.finance",
+          "reason": "The s6 snapshot is unreadable and retrieval_failures remains empty. Record the decoding failure or provide a valid decoded capture; retain the fixed-asset scope and disputed survey status.",
+          "request_id": "3d7c2f77-d1c6-5d88-b36c-956c43c054e2",
+          "reviewed_proposal_sha256": "793b07c036ceb7244c5d5adb414aab30fc692634a10feed5b632f1780f3ccb80"
         }
       ],
-      "phase": "revision_requested",
+      "phase": "unresolved",
       "reason": "resume_after_private_workspace_loss",
-      "revision": 1
+      "revision": 2
     },
     "Q12690288": {
       "open_requests": [
@@ -355,6 +383,20 @@
       "reason": "resume_after_private_workspace_loss",
       "revision": 0
     },
+    "Q134461405": {
+      "open_requests": [
+        {
+          "category": "evidence_gap",
+          "field": "curation.identity_status",
+          "reason": "Resolve institutional identity and higher-education eligibility with institution-specific frozen evidence supporting in_scope, related or excluded. Generic educational and private-educational classifications do not establish tertiary status; retain needs_review until resolved. Optional supplementary-source absence alone is not the blocker.",
+          "request_id": "84aa8c4c-fd21-5e27-8b49-8a2e35ed69c9",
+          "reviewed_proposal_sha256": "d4f0614c6d83d3839a8b2bb2ade35b9a68334b10138948b13c718036de8dac29"
+        }
+      ],
+      "phase": "unresolved",
+      "reason": "resume_after_private_workspace_loss",
+      "revision": 0
+    },
     "Q135095417": {
       "open_requests": [
         {
@@ -363,6 +405,20 @@
           "reason": "Before publication, supply frozen source evidence resolving whether Q135095417 is an eligible university or independently qualifying higher-education institution, or establish exclusion. The broad educational institution classification does not decide eligibility. Keep needs_review and withhold publication until resolved; capture failures alone are not grounds to reject the supported name and inception year.",
           "request_id": "d635b427-a40c-5499-b24e-0797cd2d6dd5",
           "reviewed_proposal_sha256": "66ebabe9c582a25a5d32974ab8b80a40f69d4bbb30e3bee0e295b86cc2fe2138"
+        }
+      ],
+      "phase": "unresolved",
+      "reason": "resume_after_private_workspace_loss",
+      "revision": 0
+    },
+    "Q136216077": {
+      "open_requests": [
+        {
+          "category": "evidence_gap",
+          "field": "identity",
+          "reason": "Resolve the explicit needs_review/disputed institution identity and eligibility with sourced identity context before publication. The sparse classification and French label alone do not resolve the proposal’s flagged identity boundary.",
+          "request_id": "f401df80-3758-5727-82e3-090b6cf5c264",
+          "reviewed_proposal_sha256": "94e744cf1651b7dbf565c8dcafcb33442b9de511c6eaefeefb5bb33816abe884"
         }
       ],
       "phase": "unresolved",
@@ -447,11 +503,18 @@
           "reason": "Resolve higher-education eligibility with institution-specific evidence or a source-grounded explicit inference establishing tertiary status. General educational-institution classification is insufficient; retain needs_review until resolved.",
           "request_id": "939f32cb-5976-5adb-85c5-81f371fa290c",
           "reviewed_proposal_sha256": "9f313db3d649956d9c0842ae588b680b47c2abad961847a1db1487e90139f9b9"
+        },
+        {
+          "category": "evidence_gap",
+          "field": "curation.identity_status",
+          "reason": "Resolve institutional eligibility with institution-specific captured evidence establishing tertiary status or supported exclusion; retain needs_review until resolved.",
+          "request_id": "fd9367f5-2886-5f32-91e8-064f605f2a7f",
+          "reviewed_proposal_sha256": "138ed6f76804b35dde0118e9214cec7b293e72ccdaad49ec4031d2c0ed42f30e"
         }
       ],
-      "phase": "revision_requested",
-      "reason": "resume_after_private_workspace_loss",
-      "revision": 0
+      "phase": "unresolved",
+      "reason": "completed_review_stale_after_trusted_compiler_change",
+      "revision": 1
     },
     "Q137470920": {
       "open_requests": [
@@ -548,6 +611,20 @@
         }
       ],
       "phase": "revision_requested",
+      "reason": "resume_after_private_workspace_loss",
+      "revision": 0
+    },
+    "Q23703821": {
+      "open_requests": [
+        {
+          "category": "evidence_gap",
+          "field": "curation.identity_status",
+          "reason": "Resolve tertiary eligibility using institution-specific frozen evidence of higher-education programmes, affiliation or recognized level. The current journalism-school description and generic academic-institution type do not establish eligibility; retain needs_review until resolved. Optional external-source absence alone is not the blocker.",
+          "request_id": "e24deb61-e569-59d1-83a4-991de9f5007e",
+          "reviewed_proposal_sha256": "704b7d2c79e53e4e63ad694f8f48dc66cd33ad8455adcd9590dc6142ef5b829e"
+        }
+      ],
+      "phase": "unresolved",
       "reason": "resume_after_private_workspace_loss",
       "revision": 0
     },
@@ -666,6 +743,20 @@
         }
       ],
       "phase": "unresolved",
+      "reason": "resume_after_private_workspace_loss",
+      "revision": 0
+    },
+    "Q5254755": {
+      "open_requests": [
+        {
+          "category": "scope_conflict",
+          "field": "curation.identity_status",
+          "reason": "Resolve whether Q5254755 denotes a distinct eligible institution, a documented system, or a collective/list of three separate polytechnics, using subject-specific captured evidence. The frozen root description and article denote three institutions while P31 and P131 single out one university/location. Preserve the supported names, separate institution-scoped establishment dates and country attribution; retain conflation_suspected and unpublished status until root identity/eligibility is settled. Do not infer legal independence, system status or a shared campus from the item point.",
+          "request_id": "dc0013bf-a62e-5b92-99a1-1f5a783dad95",
+          "reviewed_proposal_sha256": "05b0b9133694bc12c94ed7fbae453b815d25cdcbe2353a7922695d51069eab5d"
+        }
+      ],
+      "phase": "revision_requested",
       "reason": "resume_after_private_workspace_loss",
       "revision": 0
     },
@@ -880,6 +971,20 @@
           "reason": "Resolve higher-education eligibility with captured institution-specific evidence, such as a resolved affiliation or official tertiary programme/register entry tied to this item. Preserve needs_review until a supported in-scope, related or excluded disposition is possible. The blocker is unresolved eligibility, not the optional external-page failures themselves.",
           "request_id": "0946b0c3-e719-58eb-b63f-f463e9c82df5",
           "reviewed_proposal_sha256": "da528814cc7107585e9a1663d7e06737bd94de28989ee38e88336734f00513f8"
+        }
+      ],
+      "phase": "unresolved",
+      "reason": "resume_after_private_workspace_loss",
+      "revision": 0
+    },
+    "Q99400015": {
+      "open_requests": [
+        {
+          "category": "evidence_gap",
+          "field": "curation.identity_status",
+          "reason": "Resolve tertiary eligibility with institution-specific captured evidence or source-grounded explicit inference; generic college class and name alone are insufficient. Preserve needs_review until resolved.",
+          "request_id": "63815919-726f-53a9-98c0-befe179b820a",
+          "reviewed_proposal_sha256": "3303bfd6c57e17788656f096a4894ae8d2309702dfecf8dfacaaedbb6e77ff92"
         }
       ],
       "phase": "unresolved",

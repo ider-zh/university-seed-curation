@@ -30,6 +30,13 @@ relevant compiler contracts, plus the affected school's record and task baseline
 It retains the exact proposal, verdict and approved canonical bytes. Changes to
 these dependencies still require fresh Research or Review as appropriate.
 
+An explicitly audited compiler transition may be allowlisted by its exact old
+and new Git blob hashes when the change is backward-compatible for a frozen
+approval. The publication gate still recomputes the affected Review's
+`full_refresh` decision under the current six-group survey rules and rejects
+any differing verdict. Unlisted compiler changes, altered scope/schema/policy,
+and affected QID/task changes continue to require a fresh Review or Research.
+
 If another PR merges first, update the PR branch against main and let checks run
 again. If content conflicts or a QID baseline changed, rebuild from fetched main:
 rebind retained Research only if its baseline is still valid, run fresh offline

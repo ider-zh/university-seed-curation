@@ -1,0 +1,268 @@
+{
+  "coverage": {
+    "finance": {
+      "checked_at": "2026-11-06T23:25:54.637425+00:00",
+      "status": "not_found"
+    },
+    "geography": {
+      "checked_at": "2026-11-06T23:25:54.637425+00:00",
+      "status": "checked"
+    },
+    "history": {
+      "checked_at": "2026-11-06T23:25:54.637425+00:00",
+      "status": "not_found"
+    },
+    "identity": {
+      "checked_at": "2026-11-06T23:25:54.637425+00:00",
+      "status": "checked"
+    },
+    "population": {
+      "checked_at": "2026-11-06T23:25:54.637425+00:00",
+      "status": "not_found"
+    },
+    "profile": {
+      "checked_at": "2026-11-06T23:25:54.637425+00:00",
+      "status": "not_found"
+    }
+  },
+  "curation": {
+    "identity_status": "excluded",
+    "refresh_profile": "core-v1",
+    "reviewed_groups": [
+      "identity",
+      "geography",
+      "history",
+      "population",
+      "finance",
+      "profile"
+    ]
+  },
+  "identity": {
+    "kind": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "metadata",
+              "original_text": "{\"id\": \"Q108132529\", \"labels\": {}, \"descriptions\": {\"en\": \"school of childhood and primary education in Elda, Valencian Community, Spain\"}}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "claim:P31:1",
+              "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q108132529$20C09CEA-CA33-44A9-9A60-E3DBF1FF99D1\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 53566453, \"id\": \"Q53566453\"}}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "metadata",
+              "original_text": "{\"id\": \"Q53566453\", \"labels\": {\"en\": \"center for early childhood and primary education\"}, \"descriptions\": {\"en\": \"elementary school institution in Spain\"}}",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c1",
+          "value": "other",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "ownership": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P31:0",
+              "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q108132529$654DEF80-63D8-49B0-840C-6FC3EC469B18\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 23002037, \"id\": \"Q23002037\"}}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "metadata",
+              "original_text": "{\"id\": \"Q23002037\", \"labels\": {\"en\": \"public educational institution\"}, \"descriptions\": {\"en\": \"educational institution whose programs and activities are operated by publicly elected or appointed school officials and which is supported primarily by public funds\"}}",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": "public",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "locations": [
+    {
+      "address": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P131:0",
+                "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q108132529$08E58B58-203C-4C8C-8766-D9AD39574502\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 608985, \"id\": \"Q608985\"}, \"reference_count\": 1}",
+                "source_ref": "s1"
+              },
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q608985\", \"labels\": {\"en\": \"Elda\"}, \"descriptions\": {\"en\": \"city in Spain\"}}",
+                "source_ref": "s5"
+              },
+              {
+                "locator": "claim:P17:0",
+                "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q108132529$BF8A3B73-BE5C-4B22-9330-CDC88687BAE9\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 29, \"id\": \"Q29\"}}",
+                "source_ref": "s1"
+              },
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q29\", \"labels\": {\"en\": \"Spain\"}, \"descriptions\": {\"en\": \"country in southwestern Europe with territories in Africa\"}}",
+                "source_ref": "s4"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "city_name": "Elda",
+              "city_qid": "Q608985",
+              "country_name": "Spain",
+              "country_qid": "Q29",
+              "formatted": {
+                "language": "en",
+                "text": "Elda, Spain"
+              }
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "id": "elda",
+      "kind": "administrative_area",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P131:0",
+                "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q108132529$08E58B58-203C-4C8C-8766-D9AD39574502\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 608985, \"id\": \"Q608985\"}, \"reference_count\": 1}",
+                "source_ref": "s1"
+              },
+              {
+                "locator": "claim:P1448:0",
+                "original_text": "{\"property\": \"P1448\", \"property_label\": \"P1448\", \"statement_id\": \"Q608985$1464E0AB-43F4-4409-A0FF-B88717AEF215\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"Elda\", \"language\": \"es\"}, \"reference_count\": 1}",
+                "source_ref": "s5"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "es",
+              "text": "Elda"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "qid": "Q608985"
+    },
+    {
+      "coordinates": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "statement:Q108132529$5EA917DE-7C92-4FEA-BBF3-DE96A1E81BCC",
+                "original_text": "\"latitude\": 38.479907",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "source_rank": "normal",
+            "value": {
+              "crs": "EPSG:4326",
+              "globe_qid": "Q2",
+              "latitude": 38.479907,
+              "longitude": -0.803279,
+              "source_precision_degrees": 1e-05
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "id": "wikidata-item-location",
+      "kind": "institution",
+      "qid": "Q108132529"
+    }
+  ],
+  "modified_datetime": "2026-11-06T23:28:42.295573+00:00",
+  "qid": "Q108132529",
+  "record_revision": 1,
+  "schema_version": "0.2.2",
+  "seed": {
+    "channels": [
+      "legacy_discovery"
+    ],
+    "import_id": "seed-84c3beb45367905f",
+    "screening_status": "needs_review"
+  },
+  "selection_policy": "preferred-v1",
+  "sources": {
+    "s1": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T23:25:38.548862+00:00",
+      "revision_id": 2559018378,
+      "source_qid": "Q108132529",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2559018378"
+    },
+    "s2": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T23:25:44.420584+00:00",
+      "revision_id": 2504953437,
+      "source_qid": "Q23002037",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2504953437"
+    },
+    "s3": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T23:25:47.460499+00:00",
+      "revision_id": 2558915432,
+      "source_qid": "Q53566453",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2558915432"
+    },
+    "s4": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T23:25:50.903504+00:00",
+      "revision_id": 2565415102,
+      "source_qid": "Q29",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2565415102"
+    },
+    "s5": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-06T23:25:54.613450+00:00",
+      "revision_id": 2509263395,
+      "source_qid": "Q608985",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2509263395"
+    }
+  },
+  "update_datetime": "2026-11-06T23:28:42.295573+00:00"
+}
