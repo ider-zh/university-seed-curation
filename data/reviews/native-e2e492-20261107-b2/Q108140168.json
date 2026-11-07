@@ -1,0 +1,586 @@
+{
+  "attribution": "distinct_native_research_and_review_subagents;not_cryptographic_identity",
+  "research": {
+    "baseline_sha256": "absent",
+    "candidate": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-06T23:25:08.833699+00:00",
+          "status": "not_found"
+        },
+        "geography": {
+          "checked_at": "2026-11-06T23:25:08.833699+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-06T23:25:08.833699+00:00",
+          "status": "not_found"
+        },
+        "identity": {
+          "checked_at": "2026-11-06T23:25:08.833699+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-06T23:25:08.833699+00:00",
+          "status": "not_found"
+        },
+        "profile": {
+          "checked_at": "2026-11-06T23:25:08.833699+00:00",
+          "status": "not_found"
+        }
+      },
+      "curation": {
+        "identity_status": "excluded"
+      },
+      "identity": {
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "metadata",
+                  "original_text": "{\"id\": \"Q108140168\", \"labels\": {}, \"descriptions\": {\"en\": \"private center for primary and secondary education in Valencia, Valencian Community, Spain\"}}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "claim:P31:0",
+                  "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q108140168$559B5CD0-38F5-437D-BC2A-F4B501F516D7\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 23002042, \"id\": \"Q23002042\"}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "metadata",
+                  "original_text": "{\"id\": \"Q23002042\", \"labels\": {\"en\": \"private educational institution\"}, \"descriptions\": {\"en\": \"educational institution not primarily funded by public means\"}}",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "other",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "locations": [
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q108140168$8B55E547-662A-4CDB-B8E9-9CE2A6CD177F\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 8818, \"id\": \"Q8818\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q108140168$5BDC5C88-DA18-44C0-A424-65184916C3C2\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 29, \"id\": \"Q29\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q8818\", \"labels\": {\"en\": \"Valencia\"}, \"descriptions\": {\"en\": \"capital city of the Valencian Community, Spain\"}}",
+                    "source_ref": "s4"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q29\", \"labels\": {\"en\": \"Spain\"}, \"descriptions\": {\"en\": \"country in southwestern Europe with territories in Africa\"}}",
+                    "source_ref": "s3"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "city_name": "Valencia",
+                  "city_qid": "Q8818",
+                  "country_name": "Spain",
+                  "country_qid": "Q29",
+                  "formatted": {
+                    "language": "en",
+                    "text": "Valencia, Spain"
+                  }
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "valencia",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q108140168$8B55E547-662A-4CDB-B8E9-9CE2A6CD177F\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 8818, \"id\": \"Q8818\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q8818\", \"labels\": {\"en\": \"Valencia\"}, \"descriptions\": {\"en\": \"capital city of the Valencian Community, Spain\"}}",
+                    "source_ref": "s4"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Valencia"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q8818"
+        },
+        {
+          "coordinates": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "statement:Q108140168$0A2D4418-6795-412D-B940-5A9151B02DD6",
+                    "original_text": "\"latitude\": 39.48687",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "source_rank": "normal",
+                "value": {
+                  "crs": "EPSG:4326",
+                  "globe_qid": "Q2",
+                  "latitude": 39.48687,
+                  "longitude": -0.397782,
+                  "source_precision_degrees": 1e-05
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "wikidata-item-location",
+          "kind": "institution",
+          "qid": "Q108140168"
+        }
+      ],
+      "modified_datetime": "2026-11-06T23:27:01.677901+00:00",
+      "qid": "Q108140168",
+      "record_revision": 1,
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "legacy_discovery"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "needs_review"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T23:24:51.524642+00:00",
+          "revision_id": 2446475585,
+          "source_qid": "Q108140168",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2446475585"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T23:25:00.116657+00:00",
+          "revision_id": 2441243923,
+          "source_qid": "Q23002042",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2441243923"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T23:25:04.425713+00:00",
+          "revision_id": 2565415102,
+          "source_qid": "Q29",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2565415102"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T23:25:08.777498+00:00",
+          "revision_id": 2565392302,
+          "source_qid": "Q8818",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2565392302"
+        }
+      }
+    },
+    "coverage": [
+      {
+        "group": "identity",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "status": "not_found"
+      },
+      {
+        "group": "population",
+        "status": "not_found"
+      },
+      {
+        "group": "finance",
+        "status": "not_found"
+      },
+      {
+        "group": "profile",
+        "status": "not_found"
+      }
+    ],
+    "delta": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-06T23:25:08.833699+00:00",
+          "status": "not_found"
+        },
+        "geography": {
+          "checked_at": "2026-11-06T23:25:08.833699+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-06T23:25:08.833699+00:00",
+          "status": "not_found"
+        },
+        "identity": {
+          "checked_at": "2026-11-06T23:25:08.833699+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-06T23:25:08.833699+00:00",
+          "status": "not_found"
+        },
+        "profile": {
+          "checked_at": "2026-11-06T23:25:08.833699+00:00",
+          "status": "not_found"
+        }
+      },
+      "curation": {
+        "identity_status": "excluded"
+      },
+      "identity": {
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "metadata",
+                  "original_text": "{\"id\": \"Q108140168\", \"labels\": {}, \"descriptions\": {\"en\": \"private center for primary and secondary education in Valencia, Valencian Community, Spain\"}}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "claim:P31:0",
+                  "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q108140168$559B5CD0-38F5-437D-BC2A-F4B501F516D7\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 23002042, \"id\": \"Q23002042\"}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "metadata",
+                  "original_text": "{\"id\": \"Q23002042\", \"labels\": {\"en\": \"private educational institution\"}, \"descriptions\": {\"en\": \"educational institution not primarily funded by public means\"}}",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "other",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "locations": [
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q108140168$8B55E547-662A-4CDB-B8E9-9CE2A6CD177F\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 8818, \"id\": \"Q8818\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q108140168$5BDC5C88-DA18-44C0-A424-65184916C3C2\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 29, \"id\": \"Q29\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q8818\", \"labels\": {\"en\": \"Valencia\"}, \"descriptions\": {\"en\": \"capital city of the Valencian Community, Spain\"}}",
+                    "source_ref": "s4"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q29\", \"labels\": {\"en\": \"Spain\"}, \"descriptions\": {\"en\": \"country in southwestern Europe with territories in Africa\"}}",
+                    "source_ref": "s3"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "city_name": "Valencia",
+                  "city_qid": "Q8818",
+                  "country_name": "Spain",
+                  "country_qid": "Q29",
+                  "formatted": {
+                    "language": "en",
+                    "text": "Valencia, Spain"
+                  }
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "valencia",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q108140168$8B55E547-662A-4CDB-B8E9-9CE2A6CD177F\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 8818, \"id\": \"Q8818\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q8818\", \"labels\": {\"en\": \"Valencia\"}, \"descriptions\": {\"en\": \"capital city of the Valencian Community, Spain\"}}",
+                    "source_ref": "s4"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Valencia"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q8818"
+        },
+        {
+          "coordinates": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "statement:Q108140168$0A2D4418-6795-412D-B940-5A9151B02DD6",
+                    "original_text": "\"latitude\": 39.48687",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "source_rank": "normal",
+                "value": {
+                  "crs": "EPSG:4326",
+                  "globe_qid": "Q2",
+                  "latitude": 39.48687,
+                  "longitude": -0.397782,
+                  "source_precision_degrees": 1e-05
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "wikidata-item-location",
+          "kind": "institution",
+          "qid": "Q108140168"
+        }
+      ],
+      "qid": "Q108140168",
+      "record_revision": 1,
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "legacy_discovery"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "needs_review"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T23:24:51.524642+00:00",
+          "revision_id": 2446475585,
+          "source_qid": "Q108140168",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2446475585"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T23:25:00.116657+00:00",
+          "revision_id": 2441243923,
+          "source_qid": "Q23002042",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2441243923"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T23:25:04.425713+00:00",
+          "revision_id": 2565415102,
+          "source_qid": "Q29",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2565415102"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T23:25:08.777498+00:00",
+          "revision_id": 2565392302,
+          "source_qid": "Q8818",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2565392302"
+        }
+      }
+    },
+    "open_requests": [],
+    "proposed_at": "2026-11-06T23:27:01.677901+00:00",
+    "qid": "Q108140168",
+    "research": {
+      "model": "not_reported",
+      "prompt_sha256": "d5bdecbc3dfe269c7fafc11dbc0b8bd3521e25f25479967e380ca0927f8f1966",
+      "reasoning_effort": "not_reported",
+      "schema_sha256": "92e942f4fbf2ae28964462ea9ffa8312c5ee16a077a1e08b40aaaf741512422e",
+      "session": "/root/b2_research_q108140168"
+    },
+    "retrieval_failures": [],
+    "review_status": "unreviewed",
+    "seed": {
+      "channels": [
+        "legacy_discovery"
+      ],
+      "import_id": "seed-84c3beb45367905f",
+      "screening_status": "needs_review"
+    },
+    "transport": {
+      "base_commit": "9deed17242bd46fb07cdb35763375b5c929835f2",
+      "protocol": "native-subagent-v1",
+      "repository": "ider-zh/university-seed-curation",
+      "review_policy": {
+        "id": "source-grounded-flexible-v2",
+        "sha256": "b8ed7d2897e4c31dbd81b1379aafdc1077a21d1a33949edbd2d896b0adf99db2"
+      },
+      "schema_sha256": "bfa496eafa9dffca56146214168db7f000b09161b8993129632e7202e1c88833",
+      "seed_catalog_sha256": "84c3beb45367905f513d650684283dd62a9c1b77962bdc34151a6ef05bfa03d4"
+    },
+    "type": "university-proposal-v1"
+  },
+  "review": {
+    "contexts_checked": 3,
+    "coverage_checks": [
+      {
+        "group": "identity",
+        "reason": "Frozen root entity and related identity/country/location revisions support the reported survey.",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "reason": "Frozen root entity and related identity/country/location revisions support the reported survey.",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "reason": "No observations for this group occur in the frozen root evidence; not_found is consistent with the supplied bounded survey and does not assert exhaustive external coverage.",
+        "status": "not_found"
+      },
+      {
+        "group": "population",
+        "reason": "No observations for this group occur in the frozen root evidence; not_found is consistent with the supplied bounded survey and does not assert exhaustive external coverage.",
+        "status": "not_found"
+      },
+      {
+        "group": "finance",
+        "reason": "No observations for this group occur in the frozen root evidence; not_found is consistent with the supplied bounded survey and does not assert exhaustive external coverage.",
+        "status": "not_found"
+      },
+      {
+        "group": "profile",
+        "reason": "No observations for this group occur in the frozen root evidence; not_found is consistent with the supplied bounded survey and does not assert exhaustive external coverage.",
+        "status": "not_found"
+      }
+    ],
+    "decision": "approve",
+    "facts_checked": 2,
+    "full_refresh": true,
+    "inferences": [
+      {
+        "id": "$.identity.kind:c1",
+        "reason": "s1 metadata directly identifies primary/secondary education; P31 points to s2 private educational institution. Controlled kind other is a reasonable representation of a non-higher-education school."
+      },
+      {
+        "id": "identity",
+        "reason": "s1 description explicitly says primary and secondary education; exclusion from the university seed set follows, without asserting unsupported higher-education eligibility."
+      }
+    ],
+    "model": "not_reported",
+    "proposal_sha256": "03c8fe6d30616cb67ab341b015229dd90c8a408bd476d9d6451861e120467c02",
+    "qid": "Q108140168",
+    "reasoning_effort": "not_reported",
+    "record_sha256": "ecbe6a0ce218b624a05d4fa87e2277387fc91c350a86a08e6cb4eb3ff1e38ee2",
+    "request_responses": [],
+    "requests": [],
+    "review_scope": {
+      "not_independently_reviewed_ids": [
+        "$.locations[0].address:c1",
+        "$.locations[0].name:c1",
+        "location:valencia"
+      ],
+      "reviewed_ids": [
+        "$.identity.kind:c1",
+        "$.locations[1].coordinates:c1",
+        "country:$.locations[0].address:c1",
+        "identity",
+        "location:wikidata-item-location"
+      ],
+      "version": "core-review-v3"
+    },
+    "review_session": "/root/b2_review_q108140168",
+    "reviewed_at": "2026-11-06T23:28:12.192695+00:00",
+    "source_revisions_checked": 4,
+    "waived_requests": []
+  },
+  "review_result_sha256": "289bba07adeb32392998a3500b8ca8e3af173054e32e3fe8064cf7a918c1a652",
+  "type": "university-unified-receipt-v1"
+}

@@ -1,0 +1,873 @@
+{
+  "attribution": "distinct_native_research_and_review_subagents;not_cryptographic_identity",
+  "research": {
+    "baseline_sha256": "absent",
+    "candidate": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-06T22:20:37.319081+00:00",
+          "status": "not_found"
+        },
+        "geography": {
+          "checked_at": "2026-11-06T22:20:37.319081+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-06T22:20:37.319081+00:00",
+          "status": "checked"
+        },
+        "identity": {
+          "checked_at": "2026-11-06T22:20:37.319081+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-06T22:20:37.319081+00:00",
+          "status": "not_found"
+        },
+        "profile": {
+          "checked_at": "2026-11-06T22:20:37.319081+00:00",
+          "status": "checked"
+        }
+      },
+      "curation": {
+        "identity_status": "excluded"
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "claim:P571:0",
+                      "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q5784085$4c3a03c0-4081-8bd2-0b57-239b308c6047\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+1966-01-27T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}, \"reference_count\": 1}",
+                      "source_ref": "s1"
+                    },
+                    {
+                      "locator": "infobox:1",
+                      "original_text": "Fundación: 27 de enero de 1966",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "day": 27,
+                    "month": 1,
+                    "precision": "day",
+                    "year": 1966
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "establishment",
+            "kind": "institution_establishment",
+            "subject_ref": "institution"
+          }
+        ]
+      },
+      "identity": {
+        "aliases": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P1813:0",
+                    "original_text": "{\"property\": \"P1813\", \"property_label\": \"short name\", \"statement_id\": \"Q5784085$b6684ae9-4024-686f-ae2b-9e135110421c\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"CEPS\", \"language\": \"es\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "es",
+                  "text": "CEPS"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ],
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "El Consejo de la Enseñanza Privada Superior (CEPS) es el encargado de velar tanto el nivel académico como el funcionamiento de las universidades privadas del país.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Funciones",
+                  "original_text": "b. Autorizar la creación de nuevas universidades; y",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "other",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "es": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q5784085\", \"labels\": {\"es\": \"Consejo de la Enseñanza Privada Superior (Guatemala)\"}, \"descriptions\": {}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "Consejo de la Enseñanza Privada Superior (Guatemala)",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "locations": [
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q5784085$8C553803-742D-4A36-B692-67B490E475B6\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 774, \"id\": \"Q774\"}}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q774\", \"labels\": {\"es\": \"Guatemala\", \"en\": \"Guatemala\"}, \"descriptions\": {\"en\": \"sovereign state in Central America\", \"es\": \"país de América Central\"}}",
+                    "source_ref": "s4"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "country_name": "Guatemala",
+                  "country_qid": "Q774",
+                  "formatted": {
+                    "language": "es",
+                    "text": "Guatemala"
+                  }
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "guatemala",
+          "kind": "administrative_area",
+          "qid": "Q774"
+        }
+      ],
+      "modified_datetime": "2026-11-06T22:22:41.299657+00:00",
+      "profile": {
+        "summary": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "El Consejo de la Enseñanza Privada Superior (CEPS) es el encargado de velar tanto el nivel académico como el funcionamiento de las universidades privadas del país. El CEPS se creó mediante el artículo 86 de la Constitución Política de la República de Guatemala y se rige por la Ley de Universidades Privadas.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Funciones",
+                  "original_text": "[editar]\nCorresponde al Consejo de la Enseñanza Privada Superior las siguientes funciones:\na. Velar porque se mantenga el nivel académico en las universidades privadas sin menoscabo de su independencia;\nb. Autorizar la creación de nuevas universidades; y\nc. Acordar la aplicación de sanciones de conformidad con lo establecido en la Ley de Universidades Privadas.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "infobox:1",
+                  "original_text": "Fundación: 27 de enero de 1966",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Composici.C3.B3n",
+                  "original_text": "Dos delegados de la Universidad de San Carlos de Guatemala;\nDos delegados de las Universidades privadas; y\nUn delegado electo por los presidentes de los colegios profesionales que no ejerza cargo alguno en ninguna universidad.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Composici.C3.B3n",
+                  "original_text": "Los miembros del Consejo de Enseñanza Privada Superior desempeñaran sus funciones en forma ad honór em.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Composici.C3.B3n",
+                  "original_text": "Así mismo, las entidades antes mencionadas designarán, además, un suplente por cada uno de sus delegados titulares",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Presidencia",
+                  "original_text": "La presidencia se ejercerá en forma rotativa, por períodos de seis meses",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:.C3.93rganos_Auxiliares",
+                  "original_text": "Secretaría Ejecutiva; y\nComisiones Específicas.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Secretar.C3.ADa_Ejecutiva",
+                  "original_text": "Encargarse de la recepción de los documentos dirigidos al Consejo.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Secretar.C3.ADa_Ejecutiva",
+                  "original_text": "Tramitar los expedientes y solicitudes y hacer las notificaciones y transcripciones de las resoluciones que dicte el Consejo.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Secretar.C3.ADa_Ejecutiva",
+                  "original_text": "Ordenar y conservar debidamente la documentación, archivos, correspondencia, libros y demás documentación del Consejo.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Secretar.C3.ADa_Ejecutiva",
+                  "original_text": "Prestar la colaboración que le sea requerida por los miembros del Consejo para el mejor desempeño de las funciones actividades de estos.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Secretar.C3.ADa_Ejecutiva",
+                  "original_text": "Elaborar las actas de las sesiones del Consejo",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Presupuesto",
+                  "original_text": "Los Rectores de las Universidades Privadas del país deberán aprobar el presupuesto de gastos administrativos que ocasione el funcionamiento del Consejo de la Enseñanza Privada Superior y sus órganos auxiliares",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Presupuesto",
+                  "original_text": "Las Universidades Privadas deberán poner a disposición del Consejo las sumas que a cada una de ellas corresponda",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Convocatorias_y_Sesiones",
+                  "original_text": "El Consejo de la Enseñanza Privada Superior se reunirá ordinariamente una vez al mes.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Convocatorias_y_Sesiones",
+                  "original_text": "el Consejo se reunirá en sesión extraordinaria.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "The Consejo de la Enseñanza Privada Superior (CEPS) is the council responsible for overseeing the academic standards and operation of private universities in Guatemala. Its functions include safeguarding academic standards while respecting the universities’ independence, authorizing the creation of new universities, and applying sanctions under the Law of Private Universities. The council was founded on 27 January 1966. The Spanish-language account describes its constitutional basis in Article 86 and its governance under the Law of Private Universities.\n\nThe council brings together two delegates from the Universidad de San Carlos de Guatemala, two delegates from private universities, and one representative elected by the presidents of professional associations. The latter representative must not hold a university post. Its members serve without remuneration, and substitute delegates are also appointed. The presidency rotates among the represented groups for six-month periods.\n\nThe council has an Executive Secretariat and specific commissions to support its work. The secretariat receives documents, manages files and correspondence, prepares meeting records, and assists the council. Administrative expenditure is financed through a budget approved by the rectors of the country’s private universities. The universities provide the corresponding contributions, while the council holds ordinary meetings once a month and can also convene extraordinary meetings."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "website": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P856:0",
+                  "original_text": "{\"property\": \"P856\", \"property_label\": \"official website\", \"statement_id\": \"Q5784085$dfa5afac-4fef-515e-d2fc-1bd2c59d116a\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"http://www.ceps.edu.gt/\", \"qualifiers\": {\"P407\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 1321, \"id\": \"Q1321\"}}]}}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "infobox:5",
+                  "original_text": ": http://www.ceps.edu.gt/",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "http://www.ceps.edu.gt/",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "qid": "Q5784085",
+      "record_revision": 1,
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "legacy_discovery"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "needs_review"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:20:21.843633+00:00",
+          "revision_id": 2397393008,
+          "source_qid": "Q5784085",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2397393008"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikipedia",
+          "language": "es",
+          "page_id": 3202114,
+          "publisher_role": "encyclopedia",
+          "retrieved_at": "2026-11-06T22:20:28.833273+00:00",
+          "revision_id": 167540048,
+          "url": "https://es.wikipedia.org/w/index.php?oldid=167540048"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:20:33.072819+00:00",
+          "revision_id": 2522450452,
+          "source_qid": "Q4671277",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2522450452"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:20:37.220088+00:00",
+          "revision_id": 2562954279,
+          "source_qid": "Q774",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2562954279"
+        }
+      }
+    },
+    "coverage": [
+      {
+        "group": "identity",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "status": "checked"
+      },
+      {
+        "group": "population",
+        "status": "not_found"
+      },
+      {
+        "group": "finance",
+        "status": "not_found"
+      },
+      {
+        "group": "profile",
+        "status": "checked"
+      }
+    ],
+    "delta": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-06T22:20:37.319081+00:00",
+          "status": "not_found"
+        },
+        "geography": {
+          "checked_at": "2026-11-06T22:20:37.319081+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-06T22:20:37.319081+00:00",
+          "status": "checked"
+        },
+        "identity": {
+          "checked_at": "2026-11-06T22:20:37.319081+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-06T22:20:37.319081+00:00",
+          "status": "not_found"
+        },
+        "profile": {
+          "checked_at": "2026-11-06T22:20:37.319081+00:00",
+          "status": "checked"
+        }
+      },
+      "curation": {
+        "identity_status": "excluded"
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "claim:P571:0",
+                      "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q5784085$4c3a03c0-4081-8bd2-0b57-239b308c6047\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+1966-01-27T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}, \"reference_count\": 1}",
+                      "source_ref": "s1"
+                    },
+                    {
+                      "locator": "infobox:1",
+                      "original_text": "Fundación: 27 de enero de 1966",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "day": 27,
+                    "month": 1,
+                    "precision": "day",
+                    "year": 1966
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "establishment",
+            "kind": "institution_establishment",
+            "subject_ref": "institution"
+          }
+        ]
+      },
+      "identity": {
+        "aliases": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P1813:0",
+                    "original_text": "{\"property\": \"P1813\", \"property_label\": \"short name\", \"statement_id\": \"Q5784085$b6684ae9-4024-686f-ae2b-9e135110421c\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"CEPS\", \"language\": \"es\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "es",
+                  "text": "CEPS"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ],
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "El Consejo de la Enseñanza Privada Superior (CEPS) es el encargado de velar tanto el nivel académico como el funcionamiento de las universidades privadas del país.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Funciones",
+                  "original_text": "b. Autorizar la creación de nuevas universidades; y",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "other",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "es": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q5784085\", \"labels\": {\"es\": \"Consejo de la Enseñanza Privada Superior (Guatemala)\"}, \"descriptions\": {}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "Consejo de la Enseñanza Privada Superior (Guatemala)",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "locations": [
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q5784085$8C553803-742D-4A36-B692-67B490E475B6\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 774, \"id\": \"Q774\"}}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q774\", \"labels\": {\"es\": \"Guatemala\", \"en\": \"Guatemala\"}, \"descriptions\": {\"en\": \"sovereign state in Central America\", \"es\": \"país de América Central\"}}",
+                    "source_ref": "s4"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "country_name": "Guatemala",
+                  "country_qid": "Q774",
+                  "formatted": {
+                    "language": "es",
+                    "text": "Guatemala"
+                  }
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "guatemala",
+          "kind": "administrative_area",
+          "qid": "Q774"
+        }
+      ],
+      "profile": {
+        "summary": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "El Consejo de la Enseñanza Privada Superior (CEPS) es el encargado de velar tanto el nivel académico como el funcionamiento de las universidades privadas del país. El CEPS se creó mediante el artículo 86 de la Constitución Política de la República de Guatemala y se rige por la Ley de Universidades Privadas.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Funciones",
+                  "original_text": "[editar]\nCorresponde al Consejo de la Enseñanza Privada Superior las siguientes funciones:\na. Velar porque se mantenga el nivel académico en las universidades privadas sin menoscabo de su independencia;\nb. Autorizar la creación de nuevas universidades; y\nc. Acordar la aplicación de sanciones de conformidad con lo establecido en la Ley de Universidades Privadas.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "infobox:1",
+                  "original_text": "Fundación: 27 de enero de 1966",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Composici.C3.B3n",
+                  "original_text": "Dos delegados de la Universidad de San Carlos de Guatemala;\nDos delegados de las Universidades privadas; y\nUn delegado electo por los presidentes de los colegios profesionales que no ejerza cargo alguno en ninguna universidad.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Composici.C3.B3n",
+                  "original_text": "Los miembros del Consejo de Enseñanza Privada Superior desempeñaran sus funciones en forma ad honór em.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Composici.C3.B3n",
+                  "original_text": "Así mismo, las entidades antes mencionadas designarán, además, un suplente por cada uno de sus delegados titulares",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Presidencia",
+                  "original_text": "La presidencia se ejercerá en forma rotativa, por períodos de seis meses",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:.C3.93rganos_Auxiliares",
+                  "original_text": "Secretaría Ejecutiva; y\nComisiones Específicas.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Secretar.C3.ADa_Ejecutiva",
+                  "original_text": "Encargarse de la recepción de los documentos dirigidos al Consejo.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Secretar.C3.ADa_Ejecutiva",
+                  "original_text": "Tramitar los expedientes y solicitudes y hacer las notificaciones y transcripciones de las resoluciones que dicte el Consejo.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Secretar.C3.ADa_Ejecutiva",
+                  "original_text": "Ordenar y conservar debidamente la documentación, archivos, correspondencia, libros y demás documentación del Consejo.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Secretar.C3.ADa_Ejecutiva",
+                  "original_text": "Prestar la colaboración que le sea requerida por los miembros del Consejo para el mejor desempeño de las funciones actividades de estos.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Secretar.C3.ADa_Ejecutiva",
+                  "original_text": "Elaborar las actas de las sesiones del Consejo",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Presupuesto",
+                  "original_text": "Los Rectores de las Universidades Privadas del país deberán aprobar el presupuesto de gastos administrativos que ocasione el funcionamiento del Consejo de la Enseñanza Privada Superior y sus órganos auxiliares",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Presupuesto",
+                  "original_text": "Las Universidades Privadas deberán poner a disposición del Consejo las sumas que a cada una de ellas corresponda",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Convocatorias_y_Sesiones",
+                  "original_text": "El Consejo de la Enseñanza Privada Superior se reunirá ordinariamente una vez al mes.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Convocatorias_y_Sesiones",
+                  "original_text": "el Consejo se reunirá en sesión extraordinaria.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "The Consejo de la Enseñanza Privada Superior (CEPS) is the council responsible for overseeing the academic standards and operation of private universities in Guatemala. Its functions include safeguarding academic standards while respecting the universities’ independence, authorizing the creation of new universities, and applying sanctions under the Law of Private Universities. The council was founded on 27 January 1966. The Spanish-language account describes its constitutional basis in Article 86 and its governance under the Law of Private Universities.\n\nThe council brings together two delegates from the Universidad de San Carlos de Guatemala, two delegates from private universities, and one representative elected by the presidents of professional associations. The latter representative must not hold a university post. Its members serve without remuneration, and substitute delegates are also appointed. The presidency rotates among the represented groups for six-month periods.\n\nThe council has an Executive Secretariat and specific commissions to support its work. The secretariat receives documents, manages files and correspondence, prepares meeting records, and assists the council. Administrative expenditure is financed through a budget approved by the rectors of the country’s private universities. The universities provide the corresponding contributions, while the council holds ordinary meetings once a month and can also convene extraordinary meetings."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "website": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P856:0",
+                  "original_text": "{\"property\": \"P856\", \"property_label\": \"official website\", \"statement_id\": \"Q5784085$dfa5afac-4fef-515e-d2fc-1bd2c59d116a\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"http://www.ceps.edu.gt/\", \"qualifiers\": {\"P407\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 1321, \"id\": \"Q1321\"}}]}}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "infobox:5",
+                  "original_text": ": http://www.ceps.edu.gt/",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "http://www.ceps.edu.gt/",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "qid": "Q5784085",
+      "record_revision": 1,
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "legacy_discovery"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "needs_review"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:20:21.843633+00:00",
+          "revision_id": 2397393008,
+          "source_qid": "Q5784085",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2397393008"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikipedia",
+          "language": "es",
+          "page_id": 3202114,
+          "publisher_role": "encyclopedia",
+          "retrieved_at": "2026-11-06T22:20:28.833273+00:00",
+          "revision_id": 167540048,
+          "url": "https://es.wikipedia.org/w/index.php?oldid=167540048"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:20:33.072819+00:00",
+          "revision_id": 2522450452,
+          "source_qid": "Q4671277",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2522450452"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:20:37.220088+00:00",
+          "revision_id": 2562954279,
+          "source_qid": "Q774",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2562954279"
+        }
+      }
+    },
+    "open_requests": [],
+    "proposed_at": "2026-11-06T22:22:41.299657+00:00",
+    "qid": "Q5784085",
+    "research": {
+      "model": "not_reported",
+      "prompt_sha256": "c1a13af47023089b77daf64746fde2c67ebfd548b102cc4940b6f09d8c773ec3",
+      "reasoning_effort": "not_reported",
+      "schema_sha256": "92e942f4fbf2ae28964462ea9ffa8312c5ee16a077a1e08b40aaaf741512422e",
+      "session": "/root/b2_research_q5784085"
+    },
+    "retrieval_failures": [],
+    "review_status": "unreviewed",
+    "seed": {
+      "channels": [
+        "legacy_discovery"
+      ],
+      "import_id": "seed-84c3beb45367905f",
+      "screening_status": "needs_review"
+    },
+    "transport": {
+      "base_commit": "138fa7d0e83dc3b89b09d1adabf6eba7cf41116f",
+      "protocol": "native-subagent-v1",
+      "repository": "ider-zh/university-seed-curation",
+      "review_policy": {
+        "id": "source-grounded-flexible-v2",
+        "sha256": "b8ed7d2897e4c31dbd81b1379aafdc1077a21d1a33949edbd2d896b0adf99db2"
+      },
+      "schema_sha256": "bfa496eafa9dffca56146214168db7f000b09161b8993129632e7202e1c88833",
+      "seed_catalog_sha256": "84c3beb45367905f513d650684283dd62a9c1b77962bdc34151a6ef05bfa03d4"
+    },
+    "type": "university-proposal-v1"
+  },
+  "review": {
+    "contexts_checked": 3,
+    "coverage_checks": [
+      {
+        "group": "identity",
+        "reason": "Captured root metadata and Spanish article establish name and council identity sufficient for the exclusion decision. Ownership and operating status are not asserted.",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "reason": "Frozen root country and linked-country metadata support Guatemala; no campus coordinates or exact street location is asserted.",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "reason": "Captured inception and foundation date were surveyed. The date is retained with day precision for the council.",
+        "status": "checked"
+      },
+      {
+        "group": "population",
+        "reason": "No population quantities occur in the supplied Wikimedia snapshot. This is bounded snapshot coverage, with no external survey represented; no zero or comprehensive external absence is inferred.",
+        "status": "not_found"
+      },
+      {
+        "group": "finance",
+        "reason": "The captured Presupuesto section describes administrative financing without numerical finance observations. No external finance survey or exhaustive absence is represented.",
+        "status": "not_found"
+      },
+      {
+        "group": "profile",
+        "reason": "The supplied article and website claim permit bounded profile coverage. Supplementary summary and website are outside independent factual review under core-review-v3.",
+        "status": "checked"
+      }
+    ],
+    "decision": "approve",
+    "facts_checked": 4,
+    "full_refresh": true,
+    "inferences": [
+      {
+        "id": "$.identity.kind:c1",
+        "reason": "Frozen s2 section:lead and section:Funciones describe oversight of private universities and authorization of new universities. The broader controlled value other appropriately represents this council, rather than a university teaching institution."
+      },
+      {
+        "id": "identity",
+        "reason": "Exclusion is justified by frozen s2 section:lead and section:Funciones: CEPS is the council overseeing and authorizing universities, rather than an eligible higher-education provider. The generic Wikidata academic-institution class does not override the specific functional evidence."
+      },
+      {
+        "id": "milestone:establishment",
+        "reason": "Institution-establishment is a reasonable controlled mapping of the CEPS foundation explicitly dated in s1 P571 and s2 infobox. It concerns the root council, without implying higher-education or university status."
+      }
+    ],
+    "model": "not_reported",
+    "proposal_sha256": "e74340f24bcd1b6134cbb41eec1f9ecac8ac2ccdde7c3d4539011b49ca723242",
+    "qid": "Q5784085",
+    "reasoning_effort": "not_reported",
+    "record_sha256": "1f0bcb846b5542439a0b5f0d836b85a32fa0d8993d113cf8bff99a9c272bdaab",
+    "request_responses": [],
+    "requests": [],
+    "review_scope": {
+      "not_independently_reviewed_ids": [
+        "$.locations[0].address:c1",
+        "$.profile.summary:c1",
+        "$.profile.website:c1",
+        "location:guatemala"
+      ],
+      "reviewed_ids": [
+        "$.history.milestones[0].date:c1",
+        "$.identity.aliases[0]:c1",
+        "$.identity.kind:c1",
+        "$.identity.names.es:c1",
+        "country:$.locations[0].address:c1",
+        "identity",
+        "milestone:establishment"
+      ],
+      "version": "core-review-v3"
+    },
+    "review_session": "/root/b2_review_q5784085",
+    "reviewed_at": "2026-11-06T22:24:20.529995+00:00",
+    "source_revisions_checked": 4,
+    "waived_requests": []
+  },
+  "review_result_sha256": "cc49825c818ed7e4c8f7ecfbc0de9cfcd99cbecfde00459bb9c6fe4f595d06ea",
+  "type": "university-unified-receipt-v1"
+}

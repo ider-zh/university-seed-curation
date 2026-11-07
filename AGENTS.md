@@ -20,6 +20,10 @@ Read docs/handoff.md, docs/agent-workflow.md, docs/commands.md and the bundled
   and credentials remain private. Shared local source cache TTL is 30 days.
   Wikimedia HTTP socket timeout defaults to 90 seconds, maxlag to 30; retryable
   failures enter retry_wait and are never accepted as empty successful data.
+- Optional external-page acquisition failures do not block Research/Review.
+  Freeze each failure and survey limitation alongside successful sources; never
+  claim full-refresh freshness from a failed survey. Unsupported core facts or
+  unresolved eligibility still block publication. Contract/integrity errors fail closed.
 - Review uses only the frozen hash-verified Research packet, no new retrieval or
   private Research traces. Apply docs/review-scope-v3.md and immutable factual
   guidance docs/review-policy-v2.md. Only mandatory core IDs need factual checks;

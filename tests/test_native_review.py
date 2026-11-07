@@ -60,6 +60,60 @@ class NativeReviewTests(unittest.TestCase):
         self.assertEqual(compiled['decision'],'approve'); self.assertFalse(compiled['provider_trace_verified'])
         self.assertEqual(compiled['public_verdict']['model'],'not_reported'); self.assertTrue(compiled['public_verdict']['full_refresh'])
         self.assertTrue(Path(compiled['final_record_path']).exists())
+
+    def test_matching_disputed_survey_approves_without_full_refresh(self):
+        # Agreement about an incomplete survey is not a completed survey.
+        for group in GROUPS:
+            with self.subTest(group=group):
+                self.proposal['coverage']=[{'group':g,'status':'disputed' if g==group else 'checked'} for g in GROUPS]
+                for g in GROUPS:
+                    self.proposal['delta']['coverage'][g]['status']='disputed' if g==group else 'checked'
+                self.proposal['candidate']=materialize(None,self.proposal['delta'],self.proposal['seed'],self.proposal['proposed_at'])
+                self.proposal_file.write_bytes(encode(self.proposal))
+                job=self.private/('review-disputed-'+group)
+                native.prepare(ROOT,self.proposal_file,job,research_job=self.research_job)
+                value=self.result_for(job)
+                for row in value['coverage_checks']:
+                    if row['group']==group: row['status']='disputed'
+                result=self.private/('result-disputed-'+group+'.json'); result.write_bytes(encode(value))
+                compiled=native.compile(ROOT,job,result,'review-'+group,'not_reported')
+                self.assertEqual(compiled['decision'],'approve')
+                self.assertFalse(compiled['public_verdict']['full_refresh'])
+                record=native.load_json(Path(compiled['final_record_path']).read_bytes())
+                self.assertNotIn('update_datetime',record)
+                self.assertNotIn('refresh_profile',record['curation'])
+                self.assertEqual(record['coverage'][group]['status'],'disputed')
+
+    def test_completed_negative_and_inapplicable_surveys_allow_full_refresh(self):
+        statuses={'population':'not_found','finance':'not_applicable'}
+        for row in self.proposal['coverage']: row['status']=statuses.get(row['group'],'checked')
+        for group,status in statuses.items(): self.proposal['delta']['coverage'][group]['status']=status
+        self.proposal['candidate']=materialize(None,self.proposal['delta'],self.proposal['seed'],self.proposal['proposed_at'])
+        self.proposal_file.write_bytes(encode(self.proposal))
+        job=self.private/'review-complete'; native.prepare(ROOT,self.proposal_file,job,research_job=self.research_job)
+        value=self.result_for(job)
+        for row in value['coverage_checks']: row['status']=statuses.get(row['group'],'checked')
+        result=self.private/'result-complete.json'; result.write_bytes(encode(value))
+        compiled=native.compile(ROOT,job,result,'review-complete','not_reported')
+        self.assertTrue(compiled['public_verdict']['full_refresh'])
+        record=native.load_json(Path(compiled['final_record_path']).read_bytes())
+        self.assertEqual(record['update_datetime'],compiled['public_verdict']['reviewed_at'])
+
+    def test_retrieval_failure_keeps_approved_record_partial(self):
+        failure={'language':'en','error':'TimeoutError: unavailable'}
+        self.packet['retrieval_failures']=[failure]
+        self.proposal['retrieval_failures']=[failure]
+        self.proposal_file.write_bytes(encode(self.proposal))
+        (self.research_job/'cases/Q101/research-packet.json').write_bytes(encode(self.packet))
+        meta_path=self.research_job/'job.json'; meta=native.load_json(meta_path.read_bytes())
+        meta['packet_sha256']=sha(encode(self.packet)); meta_path.write_bytes(encode(meta))
+        job=self.private/'review-failed-source'; native.prepare(ROOT,self.proposal_file,job,research_job=self.research_job)
+        result=self.private/'result-failed-source.json'; result.write_bytes(encode(self.result_for(job)))
+        compiled=native.compile(ROOT,job,result,'review-failed-source','not_reported')
+        self.assertEqual(compiled['decision'],'approve')
+        self.assertFalse(compiled['public_verdict']['full_refresh'])
+        record=native.load_json(Path(compiled['final_record_path']).read_bytes())
+        self.assertNotIn('update_datetime',record)
     def test_unaddressed_request_and_missing_fact_cannot_be_approved(self):
         self.proposal['open_requests']=[{'request_id':'req-1','field':'identity','category':'evidence_gap',
             'reason':'Check the institution identity','reviewed_proposal_sha256':'a'*64}]

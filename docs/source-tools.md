@@ -71,6 +71,15 @@ an ISO currency from the institution country. Review verifies the exact captured
 
 ## HTTP timeout
 
+External supplementary pages are optional. DNS, HTTP, timeout, decoding,
+unsupported-content and redirect failures are recorded per page in the private
+capture report and frozen Research packet; successful Wikimedia/other captures
+remain usable and Research preparation continues. Failed pages count against
+the budget and do not support facts or full-refresh freshness. Offline Review
+may approve supported partial records; unresolved identity/eligibility or core
+facts still block publication. Invalid manifests, unsafe URLs, budget overruns
+and corrupt cached evidence remain hard errors.
+
 The shared Wikimedia adapter now defaults to a 90-second HTTP socket timeout
 (previously 45), maxlag=30 for standalone commands and Research preparation.
 Use global `--timeout 120 --maxlag 30` before the source subcommand. Timeout is

@@ -3,8 +3,8 @@ import sys
 from .git_data import git, blob, canonical_json, record_relative, commit
 from .native_research import _base
 from .unified_publish import verify_files
-from .workflow_contract import baseline_at, check_proposal
-from .manager import BACKLOG, backlog_at, check_requests, required_requests
+from .workflow_contract import baseline_at, check_proposal, check_publication_base
+from .manager import BACKLOG, backlog_at, check_requests, required_requests, merge_checkpoint
 from .records import encode
 
 
@@ -28,6 +28,7 @@ def validate_pr(repo, base, head, merged=None):
         created=git(repo,'log','--diff-filter=A','--format=%H',head,'--',manifests[0]).decode().splitlines()[0]
         frozen={p:blob(repo,created,p) for p in files}
         verify_files(repo,original,frozen,trust)
+        check_publication_base(repo,original,base,[row['qid'] for row in manifest['records']])
         if any(files[p]!=frozen[p] for p in names if p!=BACKLOG):
             raise ValueError('PR altered approved bundle after creation')
         for row in manifest['records']:
@@ -38,21 +39,17 @@ def validate_pr(repo, base, head, merged=None):
             if blob(repo,base,row['receipt_path'],optional=True) is not None:
                 raise ValueError('Batch already published')
             published.append(entity)
+        proposed=canonical_json(frozen[BACKLOG])
+        branch_checkpoint=merge_checkpoint(backlog_at(repo,original),proposed,
+                                             backlog_at(repo,ancestor),published)
+        if canonical_json(files[BACKLOG])!=branch_checkpoint:
+            raise ValueError('PR altered planned backlog after creation')
     else:
         if names!=[BACKLOG]: raise ValueError('Checkpoint PR may only change the backlog')
         original=ancestor
-    old=backlog_at(repo,ancestor)['tasks']; proposed=canonical_json(files[BACKLOG])['tasks']
-    current=backlog_at(repo,base)['tasks']
-    changed={q for q in old.keys()|proposed.keys() if old.get(q)!=proposed.get(q)}
-    for q in changed:
-        if current.get(q)!=old.get(q): raise ValueError('Concurrent task change: '+q)
-    expected=dict(current)
-    for q in changed:
-        if q in proposed: expected[q]=proposed[q]
-        else: expected.pop(q,None)
-    from .manager import validate_checkpoint, BACKLOG_TYPE
-    checkpoint={'type':BACKLOG_TYPE,'tasks':expected}
-    validate_checkpoint(backlog_at(repo,base),checkpoint,published)
+        proposed=canonical_json(files[BACKLOG])
+    checkpoint=merge_checkpoint(backlog_at(repo,original),proposed,
+                                backlog_at(repo,base),published)
     if merged:
         if canonical_json(blob(repo,merged,BACKLOG))!=checkpoint:
             raise ValueError('Merged backlog lost concurrent task changes')

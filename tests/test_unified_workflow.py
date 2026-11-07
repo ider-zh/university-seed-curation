@@ -2,7 +2,7 @@
 import unittest
 from pathlib import Path
 from tempfile import TemporaryDirectory
-from unittest.mock import patch
+from unittest.mock import patch, MagicMock
 
 from university_curation import native_review, unified_publish
 from university_curation import web_sources
@@ -56,6 +56,55 @@ class UnifiedWorkflowTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError,'budget exceeded'):
                 web_sources.collect({'search_queries':['search']*9,'elapsed_seconds':1,'pages':[]},
                                     {},{},Path(directory)/'.private'/'web')
+
+    @patch('university_curation.web_sources._host',return_value='university.example')
+    def test_optional_page_failure_preserves_other_captures_and_budget(self,_host):
+        with TemporaryDirectory() as directory:
+            sources={'s1':{'kind':'wikidata'}}; corpus={'s1':[]}
+            leads={'search_queries':['official history'],'elapsed_seconds':1,'pages':[
+                {'url':'https://university.example/'+path,'publisher_role':'institution_official',
+                 'query_index':0,'depth':0} for path in ('failed','success')]}
+            def fetch(url):
+                if url.endswith('failed'): raise TimeoutError('unavailable')
+                return [{'locator':'paragraph:1','text':'A captured institutional history.'}]
+            report=web_sources.collect(leads,sources,corpus,Path(directory)/'.private',fetch=fetch)
+            self.assertEqual(report['pages'],2)
+            self.assertEqual(len(report['retrieval_failures']),1)
+            self.assertEqual(len(report['captures']),1)
+            self.assertEqual(set(sources),{'s1','s2'})
+            self.assertTrue(sources['s2']['url'].endswith('success'))
+            web_sources.verify_packet({'sources':sources,'source_corpus':corpus})
+
+    @patch('university_curation.web_sources._host',side_effect=web_sources.ExternalSourceUnavailable('DNS failed'))
+    def test_dns_failure_returns_a_disclosed_incomplete_survey(self,_host):
+        with TemporaryDirectory() as directory:
+            leads={'search_queries':['official'],'elapsed_seconds':1,'pages':[
+                {'url':'https://university.example/','publisher_role':'institution_official',
+                 'query_index':0,'depth':0}]}
+            report=web_sources.collect(leads,{}, {},Path(directory)/'.private')
+            self.assertEqual(report['captures'],[])
+            self.assertEqual((report['pages'],report['domains']),(1,1))
+            self.assertEqual(len(report['retrieval_failures']),1)
+
+    @patch('university_curation.web_sources._host',side_effect=ValueError('non-public IP'))
+    def test_contract_violations_still_fail_closed(self,_host):
+        with TemporaryDirectory() as directory:
+            leads={'search_queries':['official'],'elapsed_seconds':1,'pages':[
+                {'url':'https://university.example/','publisher_role':'institution_official',
+                 'query_index':0,'depth':0}]}
+            with self.assertRaisesRegex(ValueError,'non-public'):
+                web_sources.collect(leads,{}, {},Path(directory)/'.private')
+
+    def test_unreadable_page_is_a_failed_capture(self):
+        response=MagicMock()
+        response.__enter__.return_value=response
+        response.headers.get_content_type.return_value='text/html'
+        response.headers.get_content_charset.return_value='utf-8'
+        response.read.return_value=b'\xff\xfe unreadable'
+        with patch.object(web_sources,'build_opener') as opener:
+            opener.return_value.open.return_value=response
+            with self.assertRaisesRegex(web_sources.ExternalSourceUnavailable,'decoding failed'):
+                web_sources._fetch('https://university.example/')
 
 
 if __name__=='__main__': unittest.main()

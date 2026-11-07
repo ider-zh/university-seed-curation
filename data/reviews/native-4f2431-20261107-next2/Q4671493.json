@@ -1,0 +1,1005 @@
+{
+  "attribution": "distinct_native_research_and_review_subagents;not_cryptographic_identity",
+  "research": {
+    "baseline_sha256": "absent",
+    "candidate": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-06T23:24:30.132975+00:00",
+          "status": "not_found"
+        },
+        "geography": {
+          "checked_at": "2026-11-06T23:24:30.132975+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-06T23:24:30.132975+00:00",
+          "status": "checked"
+        },
+        "identity": {
+          "checked_at": "2026-11-06T23:24:30.132975+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-06T23:24:30.132975+00:00",
+          "status": "checked"
+        },
+        "profile": {
+          "checked_at": "2026-11-06T23:24:30.132975+00:00",
+          "status": "checked"
+        }
+      },
+      "curation": {
+        "identity_status": "excluded"
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "claim:P576:0",
+                      "original_text": "{\"property\": \"P576\", \"property_label\": \"dissolved, abolished or demolished\", \"statement_id\": \"Q4671493$10577de0-45f2-b722-7d78-a389a7f2ae46\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+2015-01-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 10, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}",
+                      "source_ref": "s1"
+                    },
+                    {
+                      "locator": "section:lead",
+                      "original_text": "In March 2014, AMS switched to an eight-week course until it was shut down in January 2015, and fully integrated into Air Force OTS.",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "month": 1,
+                    "precision": "month",
+                    "year": 2015
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:lead",
+                      "original_text": "In March 2014, AMS switched to an eight-week course until it was shut down in January 2015, and fully integrated into Air Force OTS.",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "The officer commissioning program shut down and was fully integrated into Air Force Officer Training School."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "closure",
+            "kind": "closure",
+            "subject_ref": "institution"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:lead",
+                      "original_text": "AMS was originally located at McGhee Tyson Air National Guard Base, outside Knoxville, Tennessee. It was moved to Maxwell in 2009.",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 2009
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:lead",
+                      "original_text": "AMS was originally located at McGhee Tyson Air National Guard Base, outside Knoxville, Tennessee. It was moved to Maxwell in 2009.",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "The program moved from McGhee Tyson Air National Guard Base to Maxwell Air Force Base."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "move",
+            "kind": "relocation",
+            "subject_ref": "institution"
+          }
+        ]
+      },
+      "identity": {
+        "aliases": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "The Academy of Military Science (AMS) was a six-week officer commissioning program of the United States Air Force. AMS was held at Maxwell Air Force Base in Montgomery, Alabama, with the purpose of training and commissioning Air National Guard officers only.[1] AMS was originally located at McGhee Tyson Air National Guard Base, outside Knoxville, Tennessee. It was moved to Maxwell in 2009.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "AMS"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ],
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "The Academy of Military Science (AMS) was a six-week officer commissioning program of the United States Air Force. AMS was held at Maxwell Air Force Base in Montgomery, Alabama, with the purpose of training and commissioning Air National Guard officers only.[1] AMS was originally located at McGhee Tyson Air National Guard Base, outside Knoxville, Tennessee. It was moved to Maxwell in 2009.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "other",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q4671493\", \"labels\": {\"en\": \"Academy of Military Science\"}, \"descriptions\": {\"en\": \"officer commissioning program of the U.S. Air Force\"}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "Academy of Military Science",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        "operating_status": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "In March 2014, AMS switched to an eight-week course until it was shut down in January 2015, and fully integrated into Air Force OTS.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "merged",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "locations": [
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "The Academy of Military Science (AMS) was a six-week officer commissioning program of the United States Air Force. AMS was held at Maxwell Air Force Base in Montgomery, Alabama, with the purpose of training and commissioning Air National Guard officers only.[1] AMS was originally located at McGhee Tyson Air National Guard Base, outside Knoxville, Tennessee. It was moved to Maxwell in 2009.",
+                    "source_ref": "s2"
+                  },
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q4671493$10F764F4-F092-4D0E-B74A-31B3351B9A0B\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 30, \"id\": \"Q30\"}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "city_name": "Montgomery",
+                  "country_name": "United States",
+                  "country_qid": "Q30",
+                  "formatted": {
+                    "language": "en",
+                    "text": "Montgomery, Alabama, United States"
+                  },
+                  "region_name": "Alabama"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "montgomery",
+          "kind": "administrative_area"
+        }
+      ],
+      "modified_datetime": "2026-11-06T23:28:10.085585+00:00",
+      "population": {
+        "students_intake": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "Each class includes approximately 125 students.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period_status": "not_stated",
+              "value": {
+                "amount": 125,
+                "basis": "headcount",
+                "precision": "approximate"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "period_not_stated",
+              "single_source_family",
+              "approximate_value"
+            ],
+            "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "profile": {
+        "academic_focus": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "The Academy of Military Science (AMS) was a six-week officer commissioning program of the United States Air Force. AMS was held at Maxwell Air Force Base in Montgomery, Alabama, with the purpose of training and commissioning Air National Guard officers only.[1] AMS was originally located at McGhee Tyson Air National Guard Base, outside Knoxville, Tennessee. It was moved to Maxwell in 2009.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": [
+                {
+                  "language": "en",
+                  "text": "Air National Guard officer training and commissioning"
+                }
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "summary": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "The Academy of Military Science (AMS) was a six-week officer commissioning program of the United States Air Force. AMS was held at Maxwell Air Force Base in Montgomery, Alabama, with the purpose of training and commissioning Air National Guard officers only.[1] AMS was originally located at McGhee Tyson Air National Guard Base, outside Knoxville, Tennessee. It was moved to Maxwell in 2009.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:lead",
+                  "original_text": "AMS is run by Air National Guard Detachment 12 for administrative purposes, but daily operation of AMS falls under the operational control of OTS. Det. 12 is a \"total force\" (staffed by all three Air Force components) organization with 25 positions within the academy's system, plus a position assigned to the Air University's Holm Center and another assigned as deputy commander of the Det. 12. AMS has been a total force organization since 1994.[2]",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:lead",
+                  "original_text": "The memorandum of agreement the Holm Center commander and the Air National Guard Readiness Center commander was finalized May 26, 2009. That agreement specified how AMS would operate at Maxwell. The first AMS class at Maxwell began in October 2009. Each class includes approximately 125 students.\nIn March 2014, AMS switched to an eight-week course until it was shut down in January 2015, and fully integrated into Air Force OTS.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "The Academy of Military Science (AMS) was an officer commissioning program of the United States Air Force for Air National Guard officers. It was held at Maxwell Air Force Base in Montgomery, Alabama, after moving from McGhee Tyson Air National Guard Base near Knoxville, Tennessee, in 2009. Its curriculum resembled that of Air Force Officer Training School, but its course was initially six weeks long. The program did not use the upper-class and lower-class structure described for Officer Training School.\n\nAMS was administered by Air National Guard Detachment 12, while its daily operations fell under Officer Training School operational control. An agreement governing its operation at Maxwell was finalized on May 26, 2009, and the first class there began in October of that year. The account describes each class as including approximately 125 students. In March 2014, the course expanded to eight weeks. It shut down in January 2015 and was fully integrated into Air Force Officer Training School."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "qid": "Q4671493",
+      "record_revision": 1,
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "legacy_discovery"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "needs_review"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T23:24:14.821784+00:00",
+          "revision_id": 1701708346,
+          "source_qid": "Q4671493",
+          "url": "https://www.wikidata.org/w/index.php?oldid=1701708346"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikipedia",
+          "language": "en",
+          "page_id": 14154496,
+          "publisher_role": "encyclopedia",
+          "retrieved_at": "2026-11-06T23:24:23.876520+00:00",
+          "revision_id": 1376136079,
+          "url": "https://en.wikipedia.org/w/index.php?oldid=1376136079"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:55:04.345438+00:00",
+          "revision_id": 2561641675,
+          "source_qid": "Q2385804",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2561641675"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T23:24:27.312870+00:00",
+          "revision_id": 2556724531,
+          "source_qid": "Q2351849",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2556724531"
+        },
+        "s5": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T23:24:29.764336+00:00",
+          "revision_id": 2565041516,
+          "source_qid": "Q30",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2565041516"
+        }
+      }
+    },
+    "coverage": [
+      {
+        "group": "identity",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "status": "checked"
+      },
+      {
+        "group": "population",
+        "status": "checked"
+      },
+      {
+        "group": "finance",
+        "status": "not_found"
+      },
+      {
+        "group": "profile",
+        "status": "checked"
+      }
+    ],
+    "delta": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-06T23:24:30.132975+00:00",
+          "status": "not_found"
+        },
+        "geography": {
+          "checked_at": "2026-11-06T23:24:30.132975+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-06T23:24:30.132975+00:00",
+          "status": "checked"
+        },
+        "identity": {
+          "checked_at": "2026-11-06T23:24:30.132975+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-06T23:24:30.132975+00:00",
+          "status": "checked"
+        },
+        "profile": {
+          "checked_at": "2026-11-06T23:24:30.132975+00:00",
+          "status": "checked"
+        }
+      },
+      "curation": {
+        "identity_status": "excluded"
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "claim:P576:0",
+                      "original_text": "{\"property\": \"P576\", \"property_label\": \"dissolved, abolished or demolished\", \"statement_id\": \"Q4671493$10577de0-45f2-b722-7d78-a389a7f2ae46\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+2015-01-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 10, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}",
+                      "source_ref": "s1"
+                    },
+                    {
+                      "locator": "section:lead",
+                      "original_text": "In March 2014, AMS switched to an eight-week course until it was shut down in January 2015, and fully integrated into Air Force OTS.",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "month": 1,
+                    "precision": "month",
+                    "year": 2015
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:lead",
+                      "original_text": "In March 2014, AMS switched to an eight-week course until it was shut down in January 2015, and fully integrated into Air Force OTS.",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "The officer commissioning program shut down and was fully integrated into Air Force Officer Training School."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "closure",
+            "kind": "closure",
+            "subject_ref": "institution"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:lead",
+                      "original_text": "AMS was originally located at McGhee Tyson Air National Guard Base, outside Knoxville, Tennessee. It was moved to Maxwell in 2009.",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 2009
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:lead",
+                      "original_text": "AMS was originally located at McGhee Tyson Air National Guard Base, outside Knoxville, Tennessee. It was moved to Maxwell in 2009.",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "The program moved from McGhee Tyson Air National Guard Base to Maxwell Air Force Base."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "move",
+            "kind": "relocation",
+            "subject_ref": "institution"
+          }
+        ]
+      },
+      "identity": {
+        "aliases": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "The Academy of Military Science (AMS) was a six-week officer commissioning program of the United States Air Force. AMS was held at Maxwell Air Force Base in Montgomery, Alabama, with the purpose of training and commissioning Air National Guard officers only.[1] AMS was originally located at McGhee Tyson Air National Guard Base, outside Knoxville, Tennessee. It was moved to Maxwell in 2009.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "AMS"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ],
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "The Academy of Military Science (AMS) was a six-week officer commissioning program of the United States Air Force. AMS was held at Maxwell Air Force Base in Montgomery, Alabama, with the purpose of training and commissioning Air National Guard officers only.[1] AMS was originally located at McGhee Tyson Air National Guard Base, outside Knoxville, Tennessee. It was moved to Maxwell in 2009.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "other",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q4671493\", \"labels\": {\"en\": \"Academy of Military Science\"}, \"descriptions\": {\"en\": \"officer commissioning program of the U.S. Air Force\"}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "Academy of Military Science",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        "operating_status": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "In March 2014, AMS switched to an eight-week course until it was shut down in January 2015, and fully integrated into Air Force OTS.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "merged",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "locations": [
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "The Academy of Military Science (AMS) was a six-week officer commissioning program of the United States Air Force. AMS was held at Maxwell Air Force Base in Montgomery, Alabama, with the purpose of training and commissioning Air National Guard officers only.[1] AMS was originally located at McGhee Tyson Air National Guard Base, outside Knoxville, Tennessee. It was moved to Maxwell in 2009.",
+                    "source_ref": "s2"
+                  },
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q4671493$10F764F4-F092-4D0E-B74A-31B3351B9A0B\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 30, \"id\": \"Q30\"}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "city_name": "Montgomery",
+                  "country_name": "United States",
+                  "country_qid": "Q30",
+                  "formatted": {
+                    "language": "en",
+                    "text": "Montgomery, Alabama, United States"
+                  },
+                  "region_name": "Alabama"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "montgomery",
+          "kind": "administrative_area"
+        }
+      ],
+      "population": {
+        "students_intake": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "Each class includes approximately 125 students.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period_status": "not_stated",
+              "value": {
+                "amount": 125,
+                "basis": "headcount",
+                "precision": "approximate"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "period_not_stated",
+              "single_source_family",
+              "approximate_value"
+            ],
+            "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "profile": {
+        "academic_focus": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "The Academy of Military Science (AMS) was a six-week officer commissioning program of the United States Air Force. AMS was held at Maxwell Air Force Base in Montgomery, Alabama, with the purpose of training and commissioning Air National Guard officers only.[1] AMS was originally located at McGhee Tyson Air National Guard Base, outside Knoxville, Tennessee. It was moved to Maxwell in 2009.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": [
+                {
+                  "language": "en",
+                  "text": "Air National Guard officer training and commissioning"
+                }
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "summary": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "The Academy of Military Science (AMS) was a six-week officer commissioning program of the United States Air Force. AMS was held at Maxwell Air Force Base in Montgomery, Alabama, with the purpose of training and commissioning Air National Guard officers only.[1] AMS was originally located at McGhee Tyson Air National Guard Base, outside Knoxville, Tennessee. It was moved to Maxwell in 2009.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:lead",
+                  "original_text": "AMS is run by Air National Guard Detachment 12 for administrative purposes, but daily operation of AMS falls under the operational control of OTS. Det. 12 is a \"total force\" (staffed by all three Air Force components) organization with 25 positions within the academy's system, plus a position assigned to the Air University's Holm Center and another assigned as deputy commander of the Det. 12. AMS has been a total force organization since 1994.[2]",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:lead",
+                  "original_text": "The memorandum of agreement the Holm Center commander and the Air National Guard Readiness Center commander was finalized May 26, 2009. That agreement specified how AMS would operate at Maxwell. The first AMS class at Maxwell began in October 2009. Each class includes approximately 125 students.\nIn March 2014, AMS switched to an eight-week course until it was shut down in January 2015, and fully integrated into Air Force OTS.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "The Academy of Military Science (AMS) was an officer commissioning program of the United States Air Force for Air National Guard officers. It was held at Maxwell Air Force Base in Montgomery, Alabama, after moving from McGhee Tyson Air National Guard Base near Knoxville, Tennessee, in 2009. Its curriculum resembled that of Air Force Officer Training School, but its course was initially six weeks long. The program did not use the upper-class and lower-class structure described for Officer Training School.\n\nAMS was administered by Air National Guard Detachment 12, while its daily operations fell under Officer Training School operational control. An agreement governing its operation at Maxwell was finalized on May 26, 2009, and the first class there began in October of that year. The account describes each class as including approximately 125 students. In March 2014, the course expanded to eight weeks. It shut down in January 2015 and was fully integrated into Air Force Officer Training School."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "qid": "Q4671493",
+      "record_revision": 1,
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "legacy_discovery"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "needs_review"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T23:24:14.821784+00:00",
+          "revision_id": 1701708346,
+          "source_qid": "Q4671493",
+          "url": "https://www.wikidata.org/w/index.php?oldid=1701708346"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikipedia",
+          "language": "en",
+          "page_id": 14154496,
+          "publisher_role": "encyclopedia",
+          "retrieved_at": "2026-11-06T23:24:23.876520+00:00",
+          "revision_id": 1376136079,
+          "url": "https://en.wikipedia.org/w/index.php?oldid=1376136079"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:55:04.345438+00:00",
+          "revision_id": 2561641675,
+          "source_qid": "Q2385804",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2561641675"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T23:24:27.312870+00:00",
+          "revision_id": 2556724531,
+          "source_qid": "Q2351849",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2556724531"
+        },
+        "s5": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T23:24:29.764336+00:00",
+          "revision_id": 2565041516,
+          "source_qid": "Q30",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2565041516"
+        }
+      }
+    },
+    "open_requests": [],
+    "proposed_at": "2026-11-06T23:28:10.085585+00:00",
+    "qid": "Q4671493",
+    "research": {
+      "model": "not_reported",
+      "prompt_sha256": "edc7ce93586b8819d40bb2c8cb055960fabd778bfba7ce95eb154f396b267038",
+      "reasoning_effort": "not_reported",
+      "schema_sha256": "92e942f4fbf2ae28964462ea9ffa8312c5ee16a077a1e08b40aaaf741512422e",
+      "session": "/root/batch/b2research_q4671493"
+    },
+    "retrieval_failures": [],
+    "review_status": "unreviewed",
+    "seed": {
+      "channels": [
+        "legacy_discovery"
+      ],
+      "import_id": "seed-84c3beb45367905f",
+      "screening_status": "needs_review"
+    },
+    "transport": {
+      "base_commit": "9deed17242bd46fb07cdb35763375b5c929835f2",
+      "protocol": "native-subagent-v1",
+      "repository": "ider-zh/university-seed-curation",
+      "review_policy": {
+        "id": "source-grounded-flexible-v2",
+        "sha256": "b8ed7d2897e4c31dbd81b1379aafdc1077a21d1a33949edbd2d896b0adf99db2"
+      },
+      "schema_sha256": "bfa496eafa9dffca56146214168db7f000b09161b8993129632e7202e1c88833",
+      "seed_catalog_sha256": "84c3beb45367905f513d650684283dd62a9c1b77962bdc34151a6ef05bfa03d4"
+    },
+    "type": "university-proposal-v1"
+  },
+  "review": {
+    "contexts_checked": 3,
+    "coverage_checks": [
+      {
+        "group": "finance",
+        "reason": "No finance observation found in supplied frozen corpus; no external survey claimed.",
+        "status": "not_found"
+      },
+      {
+        "group": "geography",
+        "reason": "Root country and article location surveyed; no root coordinate statements.",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "reason": "Frozen article and root surveyed; closure and integration preserved.",
+        "status": "checked"
+      },
+      {
+        "group": "identity",
+        "reason": "Frozen root and institution-specific article surveyed; exclusion supported.",
+        "status": "checked"
+      },
+      {
+        "group": "population",
+        "reason": "Frozen article surveyed; approximate per-class cohort retained with scope in evidence.",
+        "status": "checked"
+      },
+      {
+        "group": "profile",
+        "reason": "Frozen article supplies profile material; supplementary fields are outside factual checks.",
+        "status": "checked"
+      }
+    ],
+    "decision": "approve",
+    "facts_checked": 6,
+    "full_refresh": true,
+    "inferences": [
+      {
+        "id": "$.identity.kind:c1",
+        "reason": "Frozen s2 identifies an officer commissioning program, reasonably normalized to other rather than university."
+      },
+      {
+        "id": "$.identity.operating_status:c1",
+        "reason": "Frozen s2 explicitly says shut down and fully integrated into Air Force OTS; merged preserves the integration meaning alongside closure context."
+      },
+      {
+        "id": "$.population.students_intake:c1",
+        "reason": "Frozen s2 says each class includes approximately 125 students. Intake represents a class cohort, not institution-wide enrollment; approximate value and per-class wording retained in evidence. No calendar period asserted."
+      },
+      {
+        "id": "identity",
+        "reason": "Institution-specific frozen s2 identifies a short officer commissioning program, supporting exclusion from higher-education institution entities."
+      }
+    ],
+    "model": "not_reported",
+    "proposal_sha256": "4aeb6b04dbae634edfc11e5260fa8526c6c5b0b008dea13befd70c881abd6559",
+    "qid": "Q4671493",
+    "reasoning_effort": "not_reported",
+    "record_sha256": "7a214c23cd8b7da418e699f23aa134908824d7fd6be33c6dce2759e93fadb943",
+    "request_responses": [],
+    "requests": [],
+    "review_scope": {
+      "not_independently_reviewed_ids": [
+        "$.history.milestones[0].description:c1",
+        "$.history.milestones[1].date:c1",
+        "$.history.milestones[1].description:c1",
+        "$.locations[0].address:c1",
+        "$.profile.academic_focus:c1",
+        "$.profile.summary:c1",
+        "location:montgomery",
+        "milestone:move"
+      ],
+      "reviewed_ids": [
+        "$.history.milestones[0].date:c1",
+        "$.identity.aliases[0]:c1",
+        "$.identity.kind:c1",
+        "$.identity.names.en:c1",
+        "$.identity.operating_status:c1",
+        "$.population.students_intake:c1",
+        "country:$.locations[0].address:c1",
+        "identity",
+        "milestone:closure"
+      ],
+      "version": "core-review-v3"
+    },
+    "review_session": "/root/batch/b2review_q4671493",
+    "reviewed_at": "2026-11-06T23:29:05.631993+00:00",
+    "source_revisions_checked": 5,
+    "waived_requests": []
+  },
+  "review_result_sha256": "6005011d9e905fc4c848c47cee7010087f98fc30af854735c952b12049785ca9",
+  "type": "university-unified-receipt-v1"
+}
