@@ -1,0 +1,230 @@
+{
+  "coverage": {
+    "finance": {
+      "checked_at": "2026-11-07T07:31:45.798610+00:00",
+      "status": "not_found"
+    },
+    "geography": {
+      "checked_at": "2026-11-07T07:31:45.798610+00:00",
+      "status": "checked"
+    },
+    "history": {
+      "checked_at": "2026-11-07T07:31:45.798610+00:00",
+      "status": "not_found"
+    },
+    "identity": {
+      "checked_at": "2026-11-07T07:31:45.798610+00:00",
+      "status": "checked"
+    },
+    "population": {
+      "checked_at": "2026-11-07T07:31:45.798610+00:00",
+      "status": "not_found"
+    },
+    "profile": {
+      "checked_at": "2026-11-07T07:31:45.798610+00:00",
+      "status": "not_found"
+    }
+  },
+  "curation": {
+    "identity_status": "excluded",
+    "refresh_profile": "core-v1",
+    "reviewed_groups": [
+      "identity",
+      "geography",
+      "history",
+      "population",
+      "finance",
+      "profile"
+    ]
+  },
+  "identity": {
+    "kind": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "metadata",
+              "original_text": "{\"id\": \"Q105842437\", \"labels\": {\"en\": \"Leaders High School\"}, \"descriptions\": {\"en\": \"high school located in the Gravesend neighborhood of Brooklyn\"}}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "claim:P31:1",
+              "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q105842437$EE667518-C8C1-439C-A6D7-35FC7A96B5D8\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 3914, \"id\": \"Q3914\"}}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "metadata",
+              "original_text": "{\"id\": \"Q3914\", \"labels\": {\"en\": \"school\"}, \"descriptions\": {\"en\": \"institution, facility or building for the education of students by teachers\"}}",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c1",
+          "value": "other",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "names": {
+      "en": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q105842437\", \"labels\": {\"en\": \"Leaders High School\"}, \"descriptions\": {\"en\": \"high school located in the Gravesend neighborhood of Brooklyn\"}}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": "Leaders High School",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    }
+  },
+  "locations": [
+    {
+      "id": "brooklyn",
+      "kind": "administrative_area",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P131:0",
+                "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q105842437$015D503E-BC03-42F4-A104-F12F5F0E7074\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 18419, \"id\": \"Q18419\"}}",
+                "source_ref": "s1"
+              },
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q18419\", \"labels\": {\"en\": \"Brooklyn\"}, \"descriptions\": {\"en\": \"borough of New York City, New York, United States\"}}",
+                "source_ref": "s5"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Brooklyn"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "qid": "Q18419"
+    },
+    {
+      "coordinates": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "statement:Q105842437$A1EF9BB3-761A-4890-957A-3E90FB761309",
+                "original_text": "\"latitude\": 40.5937576",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "source_rank": "normal",
+            "value": {
+              "crs": "EPSG:4326",
+              "globe_qid": "Q2",
+              "latitude": 40.5937576,
+              "longitude": -73.9863546,
+              "source_precision_degrees": 1e-06
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "id": "wikidata-item-location",
+      "kind": "institution",
+      "qid": "Q105842437"
+    }
+  ],
+  "modified_datetime": "2026-11-07T07:37:10.207618+00:00",
+  "qid": "Q105842437",
+  "record_revision": 1,
+  "schema_version": "0.2.2",
+  "seed": {
+    "channels": [
+      "legacy_discovery"
+    ],
+    "import_id": "seed-84c3beb45367905f",
+    "screening_status": "needs_review"
+  },
+  "selection_policy": "preferred-v1",
+  "sources": {
+    "s1": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-07T07:31:39.185315+00:00",
+      "revision_id": 1908162509,
+      "source_qid": "Q105842437",
+      "url": "https://www.wikidata.org/w/index.php?oldid=1908162509"
+    },
+    "s2": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-07T07:31:40.895973+00:00",
+      "revision_id": 2522450452,
+      "source_qid": "Q4671277",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2522450452"
+    },
+    "s3": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-07T07:31:42.030912+00:00",
+      "revision_id": 2564928993,
+      "source_qid": "Q3914",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2564928993"
+    },
+    "s4": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-07T06:37:14.890664+00:00",
+      "revision_id": 2565041516,
+      "source_qid": "Q30",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2565041516"
+    },
+    "s5": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-07T07:31:43.800393+00:00",
+      "revision_id": 2560707273,
+      "source_qid": "Q18419",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2560707273"
+    },
+    "s6": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-07T07:31:45.687095+00:00",
+      "revision_id": 2565303686,
+      "source_qid": "Q1384",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2565303686"
+    }
+  },
+  "update_datetime": "2026-11-07T07:37:10.207618+00:00"
+}
