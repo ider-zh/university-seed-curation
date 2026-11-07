@@ -1,0 +1,605 @@
+{
+  "coverage": {
+    "finance": {
+      "checked_at": "2026-11-07T06:37:18.049565+00:00",
+      "status": "checked"
+    },
+    "geography": {
+      "checked_at": "2026-11-07T06:37:18.049565+00:00",
+      "status": "checked"
+    },
+    "history": {
+      "checked_at": "2026-11-07T06:37:18.049565+00:00",
+      "status": "checked"
+    },
+    "identity": {
+      "checked_at": "2026-11-07T06:37:18.049565+00:00",
+      "status": "checked"
+    },
+    "population": {
+      "checked_at": "2026-11-07T06:37:18.049565+00:00",
+      "status": "checked"
+    },
+    "profile": {
+      "checked_at": "2026-11-07T06:37:18.049565+00:00",
+      "status": "checked"
+    }
+  },
+  "curation": {
+    "identity_status": "in_scope",
+    "refresh_profile": "core-v1",
+    "reviewed_groups": [
+      "identity",
+      "geography",
+      "history",
+      "population",
+      "finance",
+      "profile"
+    ]
+  },
+  "finance": {
+    "budget": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "According to the Zhejiang Provincial Department of Education, Zhejiang Wanli University's total allocated budget is 2.36 billion yuan ($341.9 million USD).",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "period_status": "not_stated",
+          "value": {
+            "amount": "2360000000",
+            "currency": "CNY",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "period_not_stated",
+          "single_source_family"
+        ],
+        "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "history": {
+    "milestones": [
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P571:0",
+                  "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q19841130$C732F320-6F22-4DDD-8F88-2077C11BDE57\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+1999-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "infobox:5",
+                  "original_text": "Established: 1999 (1999) (current form)",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "precision": "year",
+                "year": 1999
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:5",
+                  "original_text": "Established: 1999 (1999) (current form)",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "Established in its current form in 1999."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "establishment",
+        "kind": "institution_establishment",
+        "subject_ref": "institution"
+      },
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:After_privatization",
+                  "original_text": "In 2002, the institution was granted \"college\" (学院) status, was renamed literally \"Zhejiang Wanli College\" (浙江万里学院) in the Chinese language, and started to provide bachelor's degree programs.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "precision": "year",
+                "year": 2002
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:After_privatization",
+                  "original_text": "In 2002, the institution was granted \"college\" (学院) status, was renamed literally \"Zhejiang Wanli College\" (浙江万里学院) in the Chinese language, and started to provide bachelor's degree programs.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "Granted college status and started bachelor degree programs."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "college2002",
+        "kind": "higher_education_status",
+        "subject_ref": "institution"
+      }
+    ]
+  },
+  "identity": {
+    "identifiers": {
+      "P5242": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P5242:0",
+                "original_text": "{\"property\": \"P5242\", \"property_label\": \"ARWU university ID\", \"statement_id\": \"Q19841130$EC4A26C3-E41D-4008-97BD-95F60C01FD7E\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"zhejiang-wanli-university\"}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": "zhejiang-wanli-university",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    "kind": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:4",
+              "original_text": "Type: Provincial Public University",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": "university",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "names": {
+      "en": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q19841130\", \"labels\": {\"en\": \"Zhejiang Wanli University\"}, \"descriptions\": {\"en\": \"university in China\"}}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": "Zhejiang Wanli University",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    "ownership": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:4",
+              "original_text": "Type: Provincial Public University",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:lead",
+              "original_text": "The college is operated by the Zhejiang Wanli Education Group Company (state owned).",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": "public",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "leadership": {
+    "chancellor": {
+      "candidates": [
+        {
+          "current_basis": "infobox_current",
+          "evidence": [
+            {
+              "locator": "infobox:6",
+              "original_text": "Chancellor: Zhihua Lin（林志华）",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "person": {
+              "name": "Zhihua Lin"
+            },
+            "title_original": {
+              "language": "en",
+              "text": "Chancellor"
+            }
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "single_source_family",
+          "reported_current"
+        ],
+        "reason": "The page reports this person in its current officeholder field; a term-end date is not required.",
+        "reason_code": "infobox_current"
+      }
+    }
+  },
+  "locations": [
+    {
+      "address": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "infobox:9",
+                "original_text": "Location: Ningbo, Zhejiang, China29°49′08″N 121°34′02″E﻿ / ﻿29.81901400°N 121.56733700°E﻿ / 29.81901400; 121.56733700[3]",
+                "source_ref": "s2"
+              },
+              {
+                "locator": "claim:P17:0",
+                "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q19841130$2BBBFD56-B462-4E77-9D64-302ADFFC7D6D\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 148, \"id\": \"Q148\"}, \"reference_count\": 1}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "city_name": "Ningbo",
+              "city_qid": "Q42780",
+              "country_name": "China",
+              "country_qid": "Q148",
+              "formatted": {
+                "language": "en",
+                "text": "Ningbo, Zhejiang, China"
+              }
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "id": "ningbo",
+      "kind": "administrative_area",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P131:0",
+                "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q19841130$C6DEA94F-A16C-4AA3-B863-6C15D539DB33\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 42780, \"id\": \"Q42780\"}, \"reference_count\": 1}",
+                "source_ref": "s1"
+              },
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q42780\", \"labels\": {\"en\": \"Ningbo\"}, \"descriptions\": {\"en\": \"prefecture-level city in Zhejiang, China\"}}",
+                "source_ref": "s5"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Ningbo"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "qid": "Q42780"
+    },
+    {
+      "coordinates": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "statement:Q19841130$b57ad87f-4008-da2a-02eb-6c1ae5774345",
+                "original_text": "\"latitude\": 29.819014",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "source_rank": "normal",
+            "value": {
+              "crs": "EPSG:4326",
+              "globe_qid": "Q2",
+              "latitude": 29.819014,
+              "longitude": 121.567337,
+              "source_precision_degrees": 1e-07
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "id": "wikidata-item-location",
+      "kind": "institution",
+      "qid": "Q19841130"
+    }
+  ],
+  "modified_datetime": "2026-11-07T06:43:04.204529+00:00",
+  "population": {
+    "academic_staff": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:7",
+              "original_text": "Faculty: 1,400",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "period_status": "not_stated",
+          "value": {
+            "amount": 1400,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "period_not_stated",
+          "single_source_family"
+        ],
+        "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+        "reason_code": "only_available"
+      }
+    },
+    "students_total": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:8",
+              "original_text": "Students: 20,000[2]",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "period_status": "not_stated",
+          "value": {
+            "amount": 20000,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "period_not_stated",
+          "single_source_family"
+        ],
+        "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "profile": {
+    "summary": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "Private college in Ningbo, Zhejiang, China\nZhejiang Wanli University (浙江万里学院; 'Zhejiang Wanli College'), formerly the Ningbo Branch of Zhejiang Agricultural University (浙江农业大学宁波分校), is a public university in Ningbo, Zhejiang, China.[4][5]\nThe college is operated by the Zhejiang Wanli Education Group Company (state owned).[6][7] The university has been specially approved by the Chinese Ministry of Education to pilot a market-oriented operating mechanism.[6] According to the Zhejiang Provincial Department of Education, Zhejiang Wanli University's total allocated budget is 2.36 billion yuan ($341.9 million USD).[8]\nAccording to the 2026 Academic Ranking of World Universities (ARWU), it ranks 312th among Chinese higher education institutions.[9]",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "infobox:5",
+              "original_text": "Established: 1999 (1999) (current form)",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Early_history",
+              "original_text": "[edit | edit source]\nIn 1950，Zhejiang Provincial Ningbo Agricultural Technical School was established，the school is located at the site of Wuling College(武岭学院), which was established by Chiang Kai-shek.[10] In 1958, the Ningbo Regional Agricultural Vocational School was established.[11] In 1960, it merged with the Ningbo Regional Institute of Agricultural Sciences and the Ningbo Regional Agricultural Tools Research Institute to form Ningbo Agricultural College.[12] The college was renamed Ningbo Regional Agricultural Vocational School in 1961.[12] In 1971, it merged with Ningbo Forestry School to become the Ningbo Regional Agriculture and Forestry School.[12] This institution was upgraded to Ningbo Regional Agricultural College in 1976.[12] The following year, in 1977, the college became the Ningbo Branch of Zhejiang Agricultural University.[12] In 1984, it was restructured as Zhejiang Rural Technical Teachers College.[13]",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:After_privatization",
+              "original_text": "[edit | edit source]\nIn February 1999, the Zhejiang Provincial People's Government implemented a reform to address the college's financial difficulties. As a result, the institution was restructured into a privately managed, government-owned university and renamed Zhejiang Wanli Vocational Technical College (浙江万里职业技术学院) in November.[14] In 2002, the institution was granted \"college\" (学院) status, was renamed literally \"Zhejiang Wanli College\" (浙江万里学院) in the Chinese language, and started to provide bachelor's degree programs.[6][11]\nIn 2004, the school established a partnership with the University of Nottingham, which led to the foundation of the University of Nottingham Ningbo China.[15] Zhejiang party secretary Xi Jinping attended the campus inauguration ceremony.[16]\nIn October 2019, the school opened its oversea campus in Hamburg, Germany.[17][18] In 2021, the school was accredited for three master's degree programs.[19]",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "infobox:7",
+              "original_text": "Faculty: 1,400",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "infobox:8",
+              "original_text": "Students: 20,000[2]",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "language": "en",
+            "text": "Zhejiang Wanli University is a public university in Ningbo, Zhejiang, China. It is operated by the state-owned Zhejiang Wanli Education Group Company and has been approved to pilot a market-oriented operating mechanism. Its current form dates from 1999, when the institution was restructured and renamed Zhejiang Wanli Vocational Technical College. In 2002 it received college status and began offering bachelor’s degree programs.\n\nIts institutional history includes an agricultural school founded in 1958 and a period as the Ningbo Branch of Zhejiang Agricultural University from 1977. In 2019 the school opened an overseas campus in Hamburg, Germany, and in 2021 it was accredited for three master’s degree programs. The available infobox reports 20,000 students and 1,400 faculty, without specifying a statistical year."
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "website": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P856:1",
+              "original_text": "{\"property\": \"P856\", \"property_label\": \"official website\", \"statement_id\": \"Q19841130$e1dc9923-4a95-3b67-b377-37ce06153a6c\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"https://www.zwu.edu.cn/\", \"qualifiers\": {\"P407\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 7850, \"id\": \"Q7850\"}}]}}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "value": "https://www.zwu.edu.cn/",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "qid": "Q19841130",
+  "record_revision": 1,
+  "schema_version": "0.2.2",
+  "seed": {
+    "channels": [
+      "ranking_identifier",
+      "reviewed_institution_type"
+    ],
+    "import_id": "seed-84c3beb45367905f",
+    "screening_status": "included"
+  },
+  "selection_policy": "preferred-v1",
+  "sources": {
+    "s1": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-07T06:37:10.750432+00:00",
+      "revision_id": 2511571543,
+      "source_qid": "Q19841130",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2511571543"
+    },
+    "s2": {
+      "family": "wikimedia",
+      "kind": "wikipedia",
+      "language": "en",
+      "page_id": 44706888,
+      "publisher_role": "encyclopedia",
+      "retrieved_at": "2026-11-07T06:37:13.154849+00:00",
+      "revision_id": 1382183013,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1382183013"
+    },
+    "s3": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-07T06:37:14.157484+00:00",
+      "revision_id": 2559546120,
+      "source_qid": "Q875538",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2559546120"
+    },
+    "s4": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-07T06:37:16.403363+00:00",
+      "revision_id": 2563722609,
+      "source_qid": "Q148",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2563722609"
+    },
+    "s5": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-07T06:37:18.008683+00:00",
+      "revision_id": 2559848761,
+      "source_qid": "Q42780",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2559848761"
+    }
+  },
+  "update_datetime": "2026-11-07T06:43:04.204529+00:00"
+}

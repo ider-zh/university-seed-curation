@@ -1,0 +1,1044 @@
+{
+  "attribution": "distinct_native_research_and_review_subagents;not_cryptographic_identity",
+  "research": {
+    "baseline_sha256": "absent",
+    "candidate": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-07T06:37:17.591146+00:00",
+          "status": "not_found"
+        },
+        "geography": {
+          "checked_at": "2026-11-07T06:37:17.591146+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-07T06:37:17.591146+00:00",
+          "status": "disputed"
+        },
+        "identity": {
+          "checked_at": "2026-11-07T06:37:17.591146+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-07T06:37:17.591146+00:00",
+          "status": "not_found"
+        },
+        "profile": {
+          "checked_at": "2026-11-07T06:37:17.591146+00:00",
+          "status": "checked"
+        }
+      },
+      "curation": {
+        "identity_status": "in_scope"
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "claim:P571:1",
+                      "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q107475800$60E3171C-4CB8-4F1F-9D73-B26A3599FC64\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+2014-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}, \"reference_count\": 1}",
+                      "source_ref": "s1"
+                    },
+                    {
+                      "locator": "section:History",
+                      "original_text": "[edit | edit source]\nThe Federal Polytechnic, Ile-Oluji was established in 2014.[1]",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 2014
+                  },
+                  "verification": "supported"
+                },
+                {
+                  "evidence": [
+                    {
+                      "locator": "claim:P571:0",
+                      "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q107475800$cfccdd6f-425b-5928-52b0-fd8198b5197b\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+2016-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}, \"reference_count\": 1}",
+                      "source_ref": "s1"
+                    }
+                  ],
+                  "id": "c2",
+                  "value": {
+                    "precision": "year",
+                    "year": 2016
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "conflicts": [
+                {
+                  "candidate_ids": [
+                    "c1",
+                    "c2"
+                  ],
+                  "kind": "time_disagreement",
+                  "note": "Wikidata reports both 2014 and 2016 as inception; Wikipedia reports establishment in 2014. The underlying distinction is unresolved.",
+                  "status": "unresolved"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "qualifications": [
+                  "conflicting_candidates"
+                ],
+                "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+                "reason_code": "best_available"
+              }
+            },
+            "id": "establishment",
+            "kind": "institution_establishment",
+            "subject_ref": "institution"
+          }
+        ]
+      },
+      "identity": {
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P31:0",
+                  "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q107475800$4858468a-43dd-eaef-37e2-cf3318c6bcf2\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 845392, \"id\": \"Q845392\"}}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "metadata",
+                  "original_text": "{\"id\": \"Q845392\", \"labels\": {\"en\": \"polytechnic\"}, \"descriptions\": {\"en\": \"type of higher education institution, teaching applied arts, science, technology, or engineering\"}}",
+                  "source_ref": "s3"
+                },
+                {
+                  "locator": "section:lead",
+                  "original_text": "Public university in Ile Oluji/Okeigbo, Ondo State, Nigeria\nThe Federal Polytechnic, Ile-Oluji is a Federal government owned higher education institution located in Ile Oluji, Ondo State, Nigeria. The current rector is Dr. Ademola Iyanda Ebeloku.[1]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "higher_education_college",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P1448:0",
+                    "original_text": "{\"property\": \"P1448\", \"property_label\": \"official name\", \"statement_id\": \"Q107475800$c96c058f-4668-d03c-efa5-a60b86b538b8\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"Federal Polytechnic, Ile-Oluji\", \"language\": \"en\"}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "Federal Polytechnic, Ile-Oluji",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        "ownership": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "Public university in Ile Oluji/Okeigbo, Ondo State, Nigeria\nThe Federal Polytechnic, Ile-Oluji is a Federal government owned higher education institution located in Ile Oluji, Ondo State, Nigeria. The current rector is Dr. Ademola Iyanda Ebeloku.[1]",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "infobox:0",
+                  "original_text": "Type: Public",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "public",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "leadership": {
+        "rector": {
+          "candidates": [
+            {
+              "current_basis": "infobox_current",
+              "evidence": [
+                {
+                  "locator": "infobox:2",
+                  "original_text": "Rector: Dr.Ademola Iyanda Ebeloku",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:lead",
+                  "original_text": "Public university in Ile Oluji/Okeigbo, Ondo State, Nigeria\nThe Federal Polytechnic, Ile-Oluji is a Federal government owned higher education institution located in Ile Oluji, Ondo State, Nigeria. The current rector is Dr. Ademola Iyanda Ebeloku.[1]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "person": {
+                  "name": "Ademola Iyanda Ebeloku"
+                },
+                "title_original": {
+                  "language": "en",
+                  "text": "Rector"
+                }
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family",
+              "reported_current"
+            ],
+            "reason": "The page reports this person in its current officeholder field; a term-end date is not required.",
+            "reason_code": "infobox_current"
+          }
+        }
+      },
+      "locations": [
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "infobox:3",
+                    "original_text": "Location: Ile Oluji/Okeigbo, Ondo State, Nigeria",
+                    "source_ref": "s2"
+                  },
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q107475800$0f3b913d-4567-7f6a-f90c-403deb9c7dc0\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 1033, \"id\": \"Q1033\"}}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q107475800$fb561509-455b-2e99-dd26-9971482ab61e\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 5997398, \"id\": \"Q5997398\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "country_name": "Nigeria",
+                  "country_qid": "Q1033",
+                  "formatted": {
+                    "language": "en",
+                    "text": "Ile Oluji/Okeigbo, Ondo State, Nigeria"
+                  }
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "ile_oluji",
+          "kind": "administrative_area",
+          "qid": "Q5997398"
+        },
+        {
+          "coordinates": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "statement:Q107475800$2931f116-41bc-cfda-33f3-d0f1eae2a51c",
+                    "original_text": "\"latitude\": 7.20249065867581",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "source_rank": "normal",
+                "value": {
+                  "crs": "EPSG:4326",
+                  "globe_qid": "Q2",
+                  "latitude": 7.20249065867581,
+                  "longitude": 4.863123450713707,
+                  "source_precision_degrees": 1e-08
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "wikidata-item-location",
+          "kind": "institution",
+          "qid": "Q107475800"
+        }
+      ],
+      "modified_datetime": "2026-11-07T06:39:54.812226+00:00",
+      "profile": {
+        "academic_focus": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Courses",
+                  "original_text": "[edit | edit source]\nThe institution offers the following courses;[2]\nBusiness Administration & Management\nComputer Engineering\nScience Laboratory Technology\nCivil Engineering Technology\nComputer Science\nAccountancy\nCooperative Economics And Management\nStatistics\nAgricultural Technology\nArchitectural Technology\nFisheries Technology\nElectrical/Electronic Engineering Technology",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": [
+                {
+                  "language": "en",
+                  "text": "Business Administration & Management"
+                },
+                {
+                  "language": "en",
+                  "text": "Computer Engineering"
+                },
+                {
+                  "language": "en",
+                  "text": "Science Laboratory Technology"
+                },
+                {
+                  "language": "en",
+                  "text": "Civil Engineering Technology"
+                },
+                {
+                  "language": "en",
+                  "text": "Computer Science"
+                },
+                {
+                  "language": "en",
+                  "text": "Accountancy"
+                },
+                {
+                  "language": "en",
+                  "text": "Cooperative Economics And Management"
+                },
+                {
+                  "language": "en",
+                  "text": "Statistics"
+                },
+                {
+                  "language": "en",
+                  "text": "Agricultural Technology"
+                },
+                {
+                  "language": "en",
+                  "text": "Architectural Technology"
+                },
+                {
+                  "language": "en",
+                  "text": "Fisheries Technology"
+                },
+                {
+                  "language": "en",
+                  "text": "Electrical/Electronic Engineering Technology"
+                }
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "website": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P856:0",
+                  "original_text": "{\"property\": \"P856\", \"property_label\": \"official website\", \"statement_id\": \"Q107475800$4abfc959-4a07-ca0e-f637-980b4f2cf268\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"https://www.fedpolel.edu.ng/\", \"qualifiers\": {\"P407\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 1860, \"id\": \"Q1860\"}}]}}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "https://www.fedpolel.edu.ng/",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "qid": "Q107475800",
+      "record_revision": 1,
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "reviewed_institution_type"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "needs_review"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-07T06:37:10.411197+00:00",
+          "revision_id": 2564377195,
+          "source_qid": "Q107475800",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2564377195"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikipedia",
+          "language": "en",
+          "page_id": 68646989,
+          "publisher_role": "encyclopedia",
+          "retrieved_at": "2026-11-07T06:37:12.257799+00:00",
+          "revision_id": 1329528995,
+          "url": "https://en.wikipedia.org/w/index.php?oldid=1329528995"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-07T06:37:13.194220+00:00",
+          "revision_id": 2505247812,
+          "source_qid": "Q845392",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2505247812"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-07T06:37:14.730842+00:00",
+          "revision_id": 2562156954,
+          "source_qid": "Q3918",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2562156954"
+        },
+        "s5": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-07T06:37:16.467181+00:00",
+          "revision_id": 2562957087,
+          "source_qid": "Q1033",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2562957087"
+        },
+        "s6": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-07T06:37:17.567517+00:00",
+          "revision_id": 2551256535,
+          "source_qid": "Q5997398",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2551256535"
+        }
+      }
+    },
+    "coverage": [
+      {
+        "group": "identity",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "status": "disputed"
+      },
+      {
+        "group": "population",
+        "status": "not_found"
+      },
+      {
+        "group": "finance",
+        "status": "not_found"
+      },
+      {
+        "group": "profile",
+        "status": "checked"
+      }
+    ],
+    "delta": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-07T06:37:17.591146+00:00",
+          "status": "not_found"
+        },
+        "geography": {
+          "checked_at": "2026-11-07T06:37:17.591146+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-07T06:37:17.591146+00:00",
+          "status": "disputed"
+        },
+        "identity": {
+          "checked_at": "2026-11-07T06:37:17.591146+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-07T06:37:17.591146+00:00",
+          "status": "not_found"
+        },
+        "profile": {
+          "checked_at": "2026-11-07T06:37:17.591146+00:00",
+          "status": "checked"
+        }
+      },
+      "curation": {
+        "identity_status": "in_scope"
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "claim:P571:1",
+                      "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q107475800$60E3171C-4CB8-4F1F-9D73-B26A3599FC64\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+2014-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}, \"reference_count\": 1}",
+                      "source_ref": "s1"
+                    },
+                    {
+                      "locator": "section:History",
+                      "original_text": "[edit | edit source]\nThe Federal Polytechnic, Ile-Oluji was established in 2014.[1]",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 2014
+                  },
+                  "verification": "supported"
+                },
+                {
+                  "evidence": [
+                    {
+                      "locator": "claim:P571:0",
+                      "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q107475800$cfccdd6f-425b-5928-52b0-fd8198b5197b\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+2016-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}, \"reference_count\": 1}",
+                      "source_ref": "s1"
+                    }
+                  ],
+                  "id": "c2",
+                  "value": {
+                    "precision": "year",
+                    "year": 2016
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "conflicts": [
+                {
+                  "candidate_ids": [
+                    "c1",
+                    "c2"
+                  ],
+                  "kind": "time_disagreement",
+                  "note": "Wikidata reports both 2014 and 2016 as inception; Wikipedia reports establishment in 2014. The underlying distinction is unresolved.",
+                  "status": "unresolved"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "qualifications": [
+                  "conflicting_candidates"
+                ],
+                "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+                "reason_code": "best_available"
+              }
+            },
+            "id": "establishment",
+            "kind": "institution_establishment",
+            "subject_ref": "institution"
+          }
+        ]
+      },
+      "identity": {
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P31:0",
+                  "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q107475800$4858468a-43dd-eaef-37e2-cf3318c6bcf2\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 845392, \"id\": \"Q845392\"}}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "metadata",
+                  "original_text": "{\"id\": \"Q845392\", \"labels\": {\"en\": \"polytechnic\"}, \"descriptions\": {\"en\": \"type of higher education institution, teaching applied arts, science, technology, or engineering\"}}",
+                  "source_ref": "s3"
+                },
+                {
+                  "locator": "section:lead",
+                  "original_text": "Public university in Ile Oluji/Okeigbo, Ondo State, Nigeria\nThe Federal Polytechnic, Ile-Oluji is a Federal government owned higher education institution located in Ile Oluji, Ondo State, Nigeria. The current rector is Dr. Ademola Iyanda Ebeloku.[1]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "higher_education_college",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P1448:0",
+                    "original_text": "{\"property\": \"P1448\", \"property_label\": \"official name\", \"statement_id\": \"Q107475800$c96c058f-4668-d03c-efa5-a60b86b538b8\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"Federal Polytechnic, Ile-Oluji\", \"language\": \"en\"}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "Federal Polytechnic, Ile-Oluji",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        "ownership": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "Public university in Ile Oluji/Okeigbo, Ondo State, Nigeria\nThe Federal Polytechnic, Ile-Oluji is a Federal government owned higher education institution located in Ile Oluji, Ondo State, Nigeria. The current rector is Dr. Ademola Iyanda Ebeloku.[1]",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "infobox:0",
+                  "original_text": "Type: Public",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "public",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "leadership": {
+        "rector": {
+          "candidates": [
+            {
+              "current_basis": "infobox_current",
+              "evidence": [
+                {
+                  "locator": "infobox:2",
+                  "original_text": "Rector: Dr.Ademola Iyanda Ebeloku",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:lead",
+                  "original_text": "Public university in Ile Oluji/Okeigbo, Ondo State, Nigeria\nThe Federal Polytechnic, Ile-Oluji is a Federal government owned higher education institution located in Ile Oluji, Ondo State, Nigeria. The current rector is Dr. Ademola Iyanda Ebeloku.[1]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "person": {
+                  "name": "Ademola Iyanda Ebeloku"
+                },
+                "title_original": {
+                  "language": "en",
+                  "text": "Rector"
+                }
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "single_source_family",
+              "reported_current"
+            ],
+            "reason": "The page reports this person in its current officeholder field; a term-end date is not required.",
+            "reason_code": "infobox_current"
+          }
+        }
+      },
+      "locations": [
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "infobox:3",
+                    "original_text": "Location: Ile Oluji/Okeigbo, Ondo State, Nigeria",
+                    "source_ref": "s2"
+                  },
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q107475800$0f3b913d-4567-7f6a-f90c-403deb9c7dc0\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 1033, \"id\": \"Q1033\"}}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q107475800$fb561509-455b-2e99-dd26-9971482ab61e\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 5997398, \"id\": \"Q5997398\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "country_name": "Nigeria",
+                  "country_qid": "Q1033",
+                  "formatted": {
+                    "language": "en",
+                    "text": "Ile Oluji/Okeigbo, Ondo State, Nigeria"
+                  }
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "ile_oluji",
+          "kind": "administrative_area",
+          "qid": "Q5997398"
+        },
+        {
+          "coordinates": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "statement:Q107475800$2931f116-41bc-cfda-33f3-d0f1eae2a51c",
+                    "original_text": "\"latitude\": 7.20249065867581",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "source_rank": "normal",
+                "value": {
+                  "crs": "EPSG:4326",
+                  "globe_qid": "Q2",
+                  "latitude": 7.20249065867581,
+                  "longitude": 4.863123450713707,
+                  "source_precision_degrees": 1e-08
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "wikidata-item-location",
+          "kind": "institution",
+          "qid": "Q107475800"
+        }
+      ],
+      "profile": {
+        "academic_focus": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Courses",
+                  "original_text": "[edit | edit source]\nThe institution offers the following courses;[2]\nBusiness Administration & Management\nComputer Engineering\nScience Laboratory Technology\nCivil Engineering Technology\nComputer Science\nAccountancy\nCooperative Economics And Management\nStatistics\nAgricultural Technology\nArchitectural Technology\nFisheries Technology\nElectrical/Electronic Engineering Technology",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": [
+                {
+                  "language": "en",
+                  "text": "Business Administration & Management"
+                },
+                {
+                  "language": "en",
+                  "text": "Computer Engineering"
+                },
+                {
+                  "language": "en",
+                  "text": "Science Laboratory Technology"
+                },
+                {
+                  "language": "en",
+                  "text": "Civil Engineering Technology"
+                },
+                {
+                  "language": "en",
+                  "text": "Computer Science"
+                },
+                {
+                  "language": "en",
+                  "text": "Accountancy"
+                },
+                {
+                  "language": "en",
+                  "text": "Cooperative Economics And Management"
+                },
+                {
+                  "language": "en",
+                  "text": "Statistics"
+                },
+                {
+                  "language": "en",
+                  "text": "Agricultural Technology"
+                },
+                {
+                  "language": "en",
+                  "text": "Architectural Technology"
+                },
+                {
+                  "language": "en",
+                  "text": "Fisheries Technology"
+                },
+                {
+                  "language": "en",
+                  "text": "Electrical/Electronic Engineering Technology"
+                }
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "website": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P856:0",
+                  "original_text": "{\"property\": \"P856\", \"property_label\": \"official website\", \"statement_id\": \"Q107475800$4abfc959-4a07-ca0e-f637-980b4f2cf268\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"https://www.fedpolel.edu.ng/\", \"qualifiers\": {\"P407\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 1860, \"id\": \"Q1860\"}}]}}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "https://www.fedpolel.edu.ng/",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "qid": "Q107475800",
+      "record_revision": 1,
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "reviewed_institution_type"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "needs_review"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-07T06:37:10.411197+00:00",
+          "revision_id": 2564377195,
+          "source_qid": "Q107475800",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2564377195"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikipedia",
+          "language": "en",
+          "page_id": 68646989,
+          "publisher_role": "encyclopedia",
+          "retrieved_at": "2026-11-07T06:37:12.257799+00:00",
+          "revision_id": 1329528995,
+          "url": "https://en.wikipedia.org/w/index.php?oldid=1329528995"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-07T06:37:13.194220+00:00",
+          "revision_id": 2505247812,
+          "source_qid": "Q845392",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2505247812"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-07T06:37:14.730842+00:00",
+          "revision_id": 2562156954,
+          "source_qid": "Q3918",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2562156954"
+        },
+        "s5": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-07T06:37:16.467181+00:00",
+          "revision_id": 2562957087,
+          "source_qid": "Q1033",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2562957087"
+        },
+        "s6": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-07T06:37:17.567517+00:00",
+          "revision_id": 2551256535,
+          "source_qid": "Q5997398",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2551256535"
+        }
+      }
+    },
+    "open_requests": [],
+    "proposed_at": "2026-11-07T06:39:54.812226+00:00",
+    "qid": "Q107475800",
+    "research": {
+      "model": "not_reported",
+      "prompt_sha256": "3986cd2cb8a1efd1ac6afaf409a293b5e3a490d678aa1585d75f4a60f72d1c14",
+      "reasoning_effort": "medium",
+      "schema_sha256": "92e942f4fbf2ae28964462ea9ffa8312c5ee16a077a1e08b40aaaf741512422e",
+      "session": "/root/research5"
+    },
+    "retrieval_failures": [],
+    "review_status": "unreviewed",
+    "seed": {
+      "channels": [
+        "reviewed_institution_type"
+      ],
+      "import_id": "seed-84c3beb45367905f",
+      "screening_status": "needs_review"
+    },
+    "transport": {
+      "base_commit": "514d80927ae3b259d08d8c5fb9939515fc0a15c2",
+      "protocol": "native-subagent-v1",
+      "repository": "ider-zh/university-seed-curation",
+      "review_policy": {
+        "id": "source-grounded-flexible-v2",
+        "sha256": "b8ed7d2897e4c31dbd81b1379aafdc1077a21d1a33949edbd2d896b0adf99db2"
+      },
+      "schema_sha256": "bfa496eafa9dffca56146214168db7f000b09161b8993129632e7202e1c88833",
+      "seed_catalog_sha256": "84c3beb45367905f513d650684283dd62a9c1b77962bdc34151a6ef05bfa03d4"
+    },
+    "type": "university-proposal-v1"
+  },
+  "review": {
+    "contexts_checked": 4,
+    "coverage_checks": [
+      {
+        "group": "identity",
+        "reason": "Identity and type were surveyed in the supplied Wikidata and Wikipedia captures.",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "reason": "The captures include country, administrative location and root coordinates.",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "reason": "The captured sources provide conflicting inception years, preserved in the proposal.",
+        "status": "disputed"
+      },
+      {
+        "group": "population",
+        "reason": "No population observations are present in the supplied surveyed captures.",
+        "status": "not_found"
+      },
+      {
+        "group": "finance",
+        "reason": "No finance observations are present in the supplied surveyed captures.",
+        "status": "not_found"
+      },
+      {
+        "group": "profile",
+        "reason": "The supplied Wikidata and Wikipedia captures include profile information.",
+        "status": "checked"
+      }
+    ],
+    "decision": "approve",
+    "facts_checked": 6,
+    "full_refresh": false,
+    "inferences": [],
+    "model": "not_reported",
+    "proposal_sha256": "e24e20f4eb1ccdb40a90c2110b8de9c065bb1e4be612cfb5bad23da126ab5fc2",
+    "qid": "Q107475800",
+    "reasoning_effort": "medium",
+    "record_sha256": "42b30a14af5417ec9a380ddd52e7c8d6857c5905635efb3a2fbb58aff9028449",
+    "request_responses": [],
+    "requests": [],
+    "review_scope": {
+      "not_independently_reviewed_ids": [
+        "$.leadership.rector:c1",
+        "$.locations[0].address:c1",
+        "$.profile.academic_focus:c1",
+        "$.profile.website:c1",
+        "location:ile_oluji"
+      ],
+      "reviewed_ids": [
+        "$.history.milestones[0].date:c1",
+        "$.history.milestones[0].date:c2",
+        "$.identity.kind:c1",
+        "$.identity.names.en:c1",
+        "$.identity.ownership:c1",
+        "$.locations[1].coordinates:c1",
+        "country:$.locations[0].address:c1",
+        "identity",
+        "location:wikidata-item-location",
+        "milestone:establishment"
+      ],
+      "version": "core-review-v3"
+    },
+    "review_session": "/root/review5",
+    "reviewed_at": "2026-11-07T06:41:50.038273+00:00",
+    "source_revisions_checked": 6,
+    "waived_requests": []
+  },
+  "review_result_sha256": "d88691d535bbaadc34d0324ea2900cc01fa6627f590ff9ee858457c1259aeac8",
+  "type": "university-unified-receipt-v1"
+}
