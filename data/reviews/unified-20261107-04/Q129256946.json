@@ -1,0 +1,758 @@
+{
+  "attribution": "distinct_native_research_and_review_subagents;not_cryptographic_identity",
+  "research": {
+    "baseline_sha256": "absent",
+    "candidate": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-07T07:31:45.274312+00:00",
+          "status": "not_found"
+        },
+        "geography": {
+          "checked_at": "2026-11-07T07:31:45.274312+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-07T07:31:45.274312+00:00",
+          "status": "not_found"
+        },
+        "identity": {
+          "checked_at": "2026-11-07T07:31:45.274312+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-07T07:31:45.274312+00:00",
+          "status": "not_found"
+        },
+        "profile": {
+          "checked_at": "2026-11-07T07:31:45.274312+00:00",
+          "status": "not_found"
+        }
+      },
+      "curation": {
+        "identity_status": "in_scope"
+      },
+      "identity": {
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P31:0",
+                  "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q129256946$76CE7761-F538-4DEE-BCD0-7E3F8BC70C1E\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 3918, \"id\": \"Q3918\"}}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "metadata",
+                  "original_text": "{\"id\": \"Q3918\", \"labels\": {\"en\": \"university\"}, \"descriptions\": {\"en\": \"an institution of tertiary education and research which awards academic degrees in several academic disciplines\"}}",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "university",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q129256946\", \"labels\": {\"en\": \"Akademi Komunitas Negeri Rejang Lebong\"}, \"descriptions\": {}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "Akademi Komunitas Negeri Rejang Lebong",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "locations": [
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q129256946$06ffc365-4c95-08b9-3f87-e015e25bc43e\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 8035, \"id\": \"Q8035\"}}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q8035\", \"labels\": {\"en\": \"Rejang Lebong\"}, \"descriptions\": {\"en\": \"regency in Bengkulu Province, Indonesia\"}}",
+                    "source_ref": "s4"
+                  },
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q129256946$083848D5-8B41-420F-8BAE-41F3D209297E\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 252, \"id\": \"Q252\"}}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q252\", \"labels\": {\"en\": \"Indonesia\"}, \"descriptions\": {\"en\": \"island country in Southeast Asia and Oceania\"}}",
+                    "source_ref": "s3"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "country_name": "Indonesia",
+                  "country_qid": "Q252",
+                  "formatted": {
+                    "language": "en",
+                    "text": "Rejang Lebong"
+                  },
+                  "region_name": "Rejang Lebong",
+                  "region_qid": "Q8035"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "rejang-lebong",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q129256946$06ffc365-4c95-08b9-3f87-e015e25bc43e\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 8035, \"id\": \"Q8035\"}}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q8035\", \"labels\": {\"en\": \"Rejang Lebong\"}, \"descriptions\": {\"en\": \"regency in Bengkulu Province, Indonesia\"}}",
+                    "source_ref": "s4"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Rejang Lebong"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q8035"
+        },
+        {
+          "coordinates": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "statement:Q129256946$6ecdfb2c-42e7-4212-48cc-3486472bfd51",
+                    "original_text": "\"latitude\": -3.4768559730339454",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "source_rank": "normal",
+                "value": {
+                  "crs": "EPSG:4326",
+                  "globe_qid": "Q2",
+                  "latitude": -3.4768559730339454,
+                  "longitude": 102.51646902915415,
+                  "source_precision_degrees": 1e-08
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "wikidata-item-location",
+          "kind": "institution",
+          "qid": "Q129256946"
+        }
+      ],
+      "modified_datetime": "2026-11-07T07:36:20.938546+00:00",
+      "qid": "Q129256946",
+      "record_revision": 1,
+      "related_entities": {
+        "ministry": {
+          "kind": "institution",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q130710937\", \"labels\": {\"en\": \"Ministry of Higher Education, Science, and Technology\"}, \"descriptions\": {\"en\": \"government ministry of Indonesia\"}}",
+                    "source_ref": "s5"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Ministry of Higher Education, Science, and Technology"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q130710937"
+        }
+      },
+      "relationships": {
+        "parent": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P749:0",
+                    "original_text": "{\"property\": \"P749\", \"property_label\": \"parent organization or unit\", \"statement_id\": \"Q129256946$9BDC65B6-3FC4-42D9-896C-2CD52AFD3268\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 130710937, \"id\": \"Q130710937\"}}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q130710937\", \"labels\": {\"en\": \"Ministry of Higher Education, Science, and Technology\"}, \"descriptions\": {\"en\": \"government ministry of Indonesia\"}}",
+                    "source_ref": "s5"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "target_ref": "related:ministry"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ]
+      },
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "reviewed_institution_type"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "included"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-07T07:31:39.213835+00:00",
+          "revision_id": 2547052619,
+          "source_qid": "Q129256946",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2547052619"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-07T06:37:14.730842+00:00",
+          "revision_id": 2562156954,
+          "source_qid": "Q3918",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2562156954"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-07T07:31:42.158376+00:00",
+          "revision_id": 2562953677,
+          "source_qid": "Q252",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2562953677"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-07T07:31:43.992641+00:00",
+          "revision_id": 2555888073,
+          "source_qid": "Q8035",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2555888073"
+        },
+        "s5": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-07T07:31:45.242044+00:00",
+          "revision_id": 2561429131,
+          "source_qid": "Q130710937",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2561429131"
+        }
+      }
+    },
+    "coverage": [
+      {
+        "group": "identity",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "status": "not_found"
+      },
+      {
+        "group": "population",
+        "status": "not_found"
+      },
+      {
+        "group": "finance",
+        "status": "not_found"
+      },
+      {
+        "group": "profile",
+        "status": "not_found"
+      }
+    ],
+    "delta": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-07T07:31:45.274312+00:00",
+          "status": "not_found"
+        },
+        "geography": {
+          "checked_at": "2026-11-07T07:31:45.274312+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-07T07:31:45.274312+00:00",
+          "status": "not_found"
+        },
+        "identity": {
+          "checked_at": "2026-11-07T07:31:45.274312+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-07T07:31:45.274312+00:00",
+          "status": "not_found"
+        },
+        "profile": {
+          "checked_at": "2026-11-07T07:31:45.274312+00:00",
+          "status": "not_found"
+        }
+      },
+      "curation": {
+        "identity_status": "in_scope"
+      },
+      "identity": {
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P31:0",
+                  "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q129256946$76CE7761-F538-4DEE-BCD0-7E3F8BC70C1E\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 3918, \"id\": \"Q3918\"}}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "metadata",
+                  "original_text": "{\"id\": \"Q3918\", \"labels\": {\"en\": \"university\"}, \"descriptions\": {\"en\": \"an institution of tertiary education and research which awards academic degrees in several academic disciplines\"}}",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "university",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q129256946\", \"labels\": {\"en\": \"Akademi Komunitas Negeri Rejang Lebong\"}, \"descriptions\": {}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "Akademi Komunitas Negeri Rejang Lebong",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "locations": [
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q129256946$06ffc365-4c95-08b9-3f87-e015e25bc43e\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 8035, \"id\": \"Q8035\"}}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q8035\", \"labels\": {\"en\": \"Rejang Lebong\"}, \"descriptions\": {\"en\": \"regency in Bengkulu Province, Indonesia\"}}",
+                    "source_ref": "s4"
+                  },
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q129256946$083848D5-8B41-420F-8BAE-41F3D209297E\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 252, \"id\": \"Q252\"}}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q252\", \"labels\": {\"en\": \"Indonesia\"}, \"descriptions\": {\"en\": \"island country in Southeast Asia and Oceania\"}}",
+                    "source_ref": "s3"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "country_name": "Indonesia",
+                  "country_qid": "Q252",
+                  "formatted": {
+                    "language": "en",
+                    "text": "Rejang Lebong"
+                  },
+                  "region_name": "Rejang Lebong",
+                  "region_qid": "Q8035"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "rejang-lebong",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q129256946$06ffc365-4c95-08b9-3f87-e015e25bc43e\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 8035, \"id\": \"Q8035\"}}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q8035\", \"labels\": {\"en\": \"Rejang Lebong\"}, \"descriptions\": {\"en\": \"regency in Bengkulu Province, Indonesia\"}}",
+                    "source_ref": "s4"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Rejang Lebong"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q8035"
+        },
+        {
+          "coordinates": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "statement:Q129256946$6ecdfb2c-42e7-4212-48cc-3486472bfd51",
+                    "original_text": "\"latitude\": -3.4768559730339454",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "source_rank": "normal",
+                "value": {
+                  "crs": "EPSG:4326",
+                  "globe_qid": "Q2",
+                  "latitude": -3.4768559730339454,
+                  "longitude": 102.51646902915415,
+                  "source_precision_degrees": 1e-08
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "wikidata-item-location",
+          "kind": "institution",
+          "qid": "Q129256946"
+        }
+      ],
+      "qid": "Q129256946",
+      "record_revision": 1,
+      "related_entities": {
+        "ministry": {
+          "kind": "institution",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q130710937\", \"labels\": {\"en\": \"Ministry of Higher Education, Science, and Technology\"}, \"descriptions\": {\"en\": \"government ministry of Indonesia\"}}",
+                    "source_ref": "s5"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Ministry of Higher Education, Science, and Technology"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q130710937"
+        }
+      },
+      "relationships": {
+        "parent": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P749:0",
+                    "original_text": "{\"property\": \"P749\", \"property_label\": \"parent organization or unit\", \"statement_id\": \"Q129256946$9BDC65B6-3FC4-42D9-896C-2CD52AFD3268\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 130710937, \"id\": \"Q130710937\"}}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q130710937\", \"labels\": {\"en\": \"Ministry of Higher Education, Science, and Technology\"}, \"descriptions\": {\"en\": \"government ministry of Indonesia\"}}",
+                    "source_ref": "s5"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "target_ref": "related:ministry"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ]
+      },
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "reviewed_institution_type"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "included"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-07T07:31:39.213835+00:00",
+          "revision_id": 2547052619,
+          "source_qid": "Q129256946",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2547052619"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-07T06:37:14.730842+00:00",
+          "revision_id": 2562156954,
+          "source_qid": "Q3918",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2562156954"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-07T07:31:42.158376+00:00",
+          "revision_id": 2562953677,
+          "source_qid": "Q252",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2562953677"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-07T07:31:43.992641+00:00",
+          "revision_id": 2555888073,
+          "source_qid": "Q8035",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2555888073"
+        },
+        "s5": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-07T07:31:45.242044+00:00",
+          "revision_id": 2561429131,
+          "source_qid": "Q130710937",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2561429131"
+        }
+      }
+    },
+    "open_requests": [],
+    "proposed_at": "2026-11-07T07:36:20.938546+00:00",
+    "qid": "Q129256946",
+    "research": {
+      "model": "not_reported",
+      "prompt_sha256": "b70368f9bac150bb35dd0831ba677dde462ff796becf6947c2c29abdf7fdbcbf",
+      "reasoning_effort": "medium",
+      "schema_sha256": "92e942f4fbf2ae28964462ea9ffa8312c5ee16a077a1e08b40aaaf741512422e",
+      "session": "/root/b2_research5"
+    },
+    "retrieval_failures": [],
+    "review_status": "unreviewed",
+    "seed": {
+      "channels": [
+        "reviewed_institution_type"
+      ],
+      "import_id": "seed-84c3beb45367905f",
+      "screening_status": "included"
+    },
+    "transport": {
+      "base_commit": "eb7077ce79d05e63d8d27e7cb651cc1ffb8c0c1a",
+      "protocol": "native-subagent-v1",
+      "repository": "ider-zh/university-seed-curation",
+      "review_policy": {
+        "id": "source-grounded-flexible-v2",
+        "sha256": "b8ed7d2897e4c31dbd81b1379aafdc1077a21d1a33949edbd2d896b0adf99db2"
+      },
+      "schema_sha256": "bfa496eafa9dffca56146214168db7f000b09161b8993129632e7202e1c88833",
+      "seed_catalog_sha256": "84c3beb45367905f513d650684283dd62a9c1b77962bdc34151a6ef05bfa03d4"
+    },
+    "type": "university-proposal-v1"
+  },
+  "review": {
+    "contexts_checked": 4,
+    "coverage_checks": [
+      {
+        "group": "identity",
+        "reason": "Root Wikidata metadata and classification were inspected; the available evidence is limited to the frozen Wikimedia packet.",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "reason": "Root country, administrative location and coordinates and their linked contexts were inspected in the frozen packet.",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "reason": "No supported history observation was found in the available frozen Wikimedia packet; this is not an exhaustive external survey.",
+        "status": "not_found"
+      },
+      {
+        "group": "population",
+        "reason": "No supported population observation was found in the available frozen Wikimedia packet; this is not an exhaustive external survey.",
+        "status": "not_found"
+      },
+      {
+        "group": "finance",
+        "reason": "No supported financial observation was found in the available frozen Wikimedia packet; this is not an exhaustive external survey.",
+        "status": "not_found"
+      },
+      {
+        "group": "profile",
+        "reason": "No profile observation was found in the available frozen Wikimedia packet; this is not an exhaustive external survey.",
+        "status": "not_found"
+      }
+    ],
+    "decision": "approve",
+    "facts_checked": 4,
+    "full_refresh": true,
+    "inferences": [
+      {
+        "id": "identity",
+        "reason": "The root P31 explicitly classifies the subject as a university, whose linked item describes a tertiary institution. In-scope status follows this source classification; the community academy label is preserved without asserting a more specific type."
+      }
+    ],
+    "model": "not_reported",
+    "proposal_sha256": "ad12bbccb68d96c00a64c02d9b04f42ead846d9a876487ee66f60a4109ad7c0b",
+    "qid": "Q129256946",
+    "reasoning_effort": "medium",
+    "record_sha256": "d718d3aa7b7a44387186e6b7c2275700e13fbabf1d38c973a5914cf5a8ba72db",
+    "request_responses": [],
+    "requests": [],
+    "review_scope": {
+      "not_independently_reviewed_ids": [
+        "$.locations[0].address:c1",
+        "$.locations[0].name:c1",
+        "$.related_entities.ministry.name:c1",
+        "location:rejang-lebong"
+      ],
+      "reviewed_ids": [
+        "$.identity.kind:c1",
+        "$.identity.names.en:c1",
+        "$.locations[1].coordinates:c1",
+        "$.relationships.parent[0]:c1",
+        "country:$.locations[0].address:c1",
+        "identity",
+        "location:wikidata-item-location",
+        "related:ministry"
+      ],
+      "version": "core-review-v3"
+    },
+    "review_session": "/root/b2_review5",
+    "reviewed_at": "2026-11-07T07:37:58.080033+00:00",
+    "source_revisions_checked": 5,
+    "waived_requests": []
+  },
+  "review_result_sha256": "862db7c50195413ccecc6177746c18950ec637f016f5a3605cdb16624cf8ac93",
+  "type": "university-unified-receipt-v1"
+}

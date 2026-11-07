@@ -1,0 +1,577 @@
+{
+  "attribution": "distinct_native_research_and_review_subagents;not_cryptographic_identity",
+  "research": {
+    "baseline_sha256": "absent",
+    "candidate": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-07T07:31:45.798610+00:00",
+          "status": "not_found"
+        },
+        "geography": {
+          "checked_at": "2026-11-07T07:31:45.798610+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-07T07:31:45.798610+00:00",
+          "status": "not_found"
+        },
+        "identity": {
+          "checked_at": "2026-11-07T07:31:45.798610+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-07T07:31:45.798610+00:00",
+          "status": "not_found"
+        },
+        "profile": {
+          "checked_at": "2026-11-07T07:31:45.798610+00:00",
+          "status": "not_found"
+        }
+      },
+      "curation": {
+        "identity_status": "excluded"
+      },
+      "identity": {
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "metadata",
+                  "original_text": "{\"id\": \"Q105842437\", \"labels\": {\"en\": \"Leaders High School\"}, \"descriptions\": {\"en\": \"high school located in the Gravesend neighborhood of Brooklyn\"}}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "claim:P31:1",
+                  "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q105842437$EE667518-C8C1-439C-A6D7-35FC7A96B5D8\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 3914, \"id\": \"Q3914\"}}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "metadata",
+                  "original_text": "{\"id\": \"Q3914\", \"labels\": {\"en\": \"school\"}, \"descriptions\": {\"en\": \"institution, facility or building for the education of students by teachers\"}}",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": "other",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q105842437\", \"labels\": {\"en\": \"Leaders High School\"}, \"descriptions\": {\"en\": \"high school located in the Gravesend neighborhood of Brooklyn\"}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "Leaders High School",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "locations": [
+        {
+          "id": "brooklyn",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q105842437$015D503E-BC03-42F4-A104-F12F5F0E7074\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 18419, \"id\": \"Q18419\"}}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q18419\", \"labels\": {\"en\": \"Brooklyn\"}, \"descriptions\": {\"en\": \"borough of New York City, New York, United States\"}}",
+                    "source_ref": "s5"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Brooklyn"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q18419"
+        },
+        {
+          "coordinates": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "statement:Q105842437$A1EF9BB3-761A-4890-957A-3E90FB761309",
+                    "original_text": "\"latitude\": 40.5937576",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "source_rank": "normal",
+                "value": {
+                  "crs": "EPSG:4326",
+                  "globe_qid": "Q2",
+                  "latitude": 40.5937576,
+                  "longitude": -73.9863546,
+                  "source_precision_degrees": 1e-06
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "wikidata-item-location",
+          "kind": "institution",
+          "qid": "Q105842437"
+        }
+      ],
+      "modified_datetime": "2026-11-07T07:34:58.857679+00:00",
+      "qid": "Q105842437",
+      "record_revision": 1,
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "legacy_discovery"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "needs_review"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-07T07:31:39.185315+00:00",
+          "revision_id": 1908162509,
+          "source_qid": "Q105842437",
+          "url": "https://www.wikidata.org/w/index.php?oldid=1908162509"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-07T07:31:40.895973+00:00",
+          "revision_id": 2522450452,
+          "source_qid": "Q4671277",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2522450452"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-07T07:31:42.030912+00:00",
+          "revision_id": 2564928993,
+          "source_qid": "Q3914",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2564928993"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-07T06:37:14.890664+00:00",
+          "revision_id": 2565041516,
+          "source_qid": "Q30",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2565041516"
+        },
+        "s5": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-07T07:31:43.800393+00:00",
+          "revision_id": 2560707273,
+          "source_qid": "Q18419",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2560707273"
+        },
+        "s6": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-07T07:31:45.687095+00:00",
+          "revision_id": 2565303686,
+          "source_qid": "Q1384",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2565303686"
+        }
+      }
+    },
+    "coverage": [
+      {
+        "group": "identity",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "status": "not_found"
+      },
+      {
+        "group": "population",
+        "status": "not_found"
+      },
+      {
+        "group": "finance",
+        "status": "not_found"
+      },
+      {
+        "group": "profile",
+        "status": "not_found"
+      }
+    ],
+    "delta": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-07T07:31:45.798610+00:00",
+          "status": "not_found"
+        },
+        "geography": {
+          "checked_at": "2026-11-07T07:31:45.798610+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-07T07:31:45.798610+00:00",
+          "status": "not_found"
+        },
+        "identity": {
+          "checked_at": "2026-11-07T07:31:45.798610+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-07T07:31:45.798610+00:00",
+          "status": "not_found"
+        },
+        "profile": {
+          "checked_at": "2026-11-07T07:31:45.798610+00:00",
+          "status": "not_found"
+        }
+      },
+      "curation": {
+        "identity_status": "excluded"
+      },
+      "identity": {
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "metadata",
+                  "original_text": "{\"id\": \"Q105842437\", \"labels\": {\"en\": \"Leaders High School\"}, \"descriptions\": {\"en\": \"high school located in the Gravesend neighborhood of Brooklyn\"}}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "claim:P31:1",
+                  "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q105842437$EE667518-C8C1-439C-A6D7-35FC7A96B5D8\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 3914, \"id\": \"Q3914\"}}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "metadata",
+                  "original_text": "{\"id\": \"Q3914\", \"labels\": {\"en\": \"school\"}, \"descriptions\": {\"en\": \"institution, facility or building for the education of students by teachers\"}}",
+                  "source_ref": "s3"
+                }
+              ],
+              "id": "c1",
+              "value": "other",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q105842437\", \"labels\": {\"en\": \"Leaders High School\"}, \"descriptions\": {\"en\": \"high school located in the Gravesend neighborhood of Brooklyn\"}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "Leaders High School",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "locations": [
+        {
+          "id": "brooklyn",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q105842437$015D503E-BC03-42F4-A104-F12F5F0E7074\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 18419, \"id\": \"Q18419\"}}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q18419\", \"labels\": {\"en\": \"Brooklyn\"}, \"descriptions\": {\"en\": \"borough of New York City, New York, United States\"}}",
+                    "source_ref": "s5"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Brooklyn"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q18419"
+        },
+        {
+          "coordinates": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "statement:Q105842437$A1EF9BB3-761A-4890-957A-3E90FB761309",
+                    "original_text": "\"latitude\": 40.5937576",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "source_rank": "normal",
+                "value": {
+                  "crs": "EPSG:4326",
+                  "globe_qid": "Q2",
+                  "latitude": 40.5937576,
+                  "longitude": -73.9863546,
+                  "source_precision_degrees": 1e-06
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "wikidata-item-location",
+          "kind": "institution",
+          "qid": "Q105842437"
+        }
+      ],
+      "qid": "Q105842437",
+      "record_revision": 1,
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "legacy_discovery"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "needs_review"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-07T07:31:39.185315+00:00",
+          "revision_id": 1908162509,
+          "source_qid": "Q105842437",
+          "url": "https://www.wikidata.org/w/index.php?oldid=1908162509"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-07T07:31:40.895973+00:00",
+          "revision_id": 2522450452,
+          "source_qid": "Q4671277",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2522450452"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-07T07:31:42.030912+00:00",
+          "revision_id": 2564928993,
+          "source_qid": "Q3914",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2564928993"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-07T06:37:14.890664+00:00",
+          "revision_id": 2565041516,
+          "source_qid": "Q30",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2565041516"
+        },
+        "s5": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-07T07:31:43.800393+00:00",
+          "revision_id": 2560707273,
+          "source_qid": "Q18419",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2560707273"
+        },
+        "s6": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-07T07:31:45.687095+00:00",
+          "revision_id": 2565303686,
+          "source_qid": "Q1384",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2565303686"
+        }
+      }
+    },
+    "open_requests": [],
+    "proposed_at": "2026-11-07T07:34:58.857679+00:00",
+    "qid": "Q105842437",
+    "research": {
+      "model": "not_reported",
+      "prompt_sha256": "12c31f4c718e4a68461bb78a34ec3d28e4ed787369ce7de34e268068498164d7",
+      "reasoning_effort": "medium",
+      "schema_sha256": "92e942f4fbf2ae28964462ea9ffa8312c5ee16a077a1e08b40aaaf741512422e",
+      "session": "/root/b2_research3"
+    },
+    "retrieval_failures": [],
+    "review_status": "unreviewed",
+    "seed": {
+      "channels": [
+        "legacy_discovery"
+      ],
+      "import_id": "seed-84c3beb45367905f",
+      "screening_status": "needs_review"
+    },
+    "transport": {
+      "base_commit": "eb7077ce79d05e63d8d27e7cb651cc1ffb8c0c1a",
+      "protocol": "native-subagent-v1",
+      "repository": "ider-zh/university-seed-curation",
+      "review_policy": {
+        "id": "source-grounded-flexible-v2",
+        "sha256": "b8ed7d2897e4c31dbd81b1379aafdc1077a21d1a33949edbd2d896b0adf99db2"
+      },
+      "schema_sha256": "bfa496eafa9dffca56146214168db7f000b09161b8993129632e7202e1c88833",
+      "seed_catalog_sha256": "84c3beb45367905f513d650684283dd62a9c1b77962bdc34151a6ef05bfa03d4"
+    },
+    "type": "university-proposal-v1"
+  },
+  "review": {
+    "contexts_checked": 2,
+    "coverage_checks": [
+      {
+        "group": "identity",
+        "reason": "The frozen survey is limited to available Wikidata evidence; no external pages were captured, so this does not assert an exhaustive survey or full-refresh freshness.",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "reason": "The frozen survey is limited to available Wikidata evidence; no external pages were captured, so this does not assert an exhaustive survey or full-refresh freshness.",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "reason": "The frozen survey is limited to available Wikidata evidence; no external pages were captured, so this does not assert an exhaustive survey or full-refresh freshness.",
+        "status": "not_found"
+      },
+      {
+        "group": "population",
+        "reason": "The frozen survey is limited to available Wikidata evidence; no external pages were captured, so this does not assert an exhaustive survey or full-refresh freshness.",
+        "status": "not_found"
+      },
+      {
+        "group": "finance",
+        "reason": "The frozen survey is limited to available Wikidata evidence; no external pages were captured, so this does not assert an exhaustive survey or full-refresh freshness.",
+        "status": "not_found"
+      },
+      {
+        "group": "profile",
+        "reason": "The frozen survey is limited to available Wikidata evidence; no external pages were captured, so this does not assert an exhaustive survey or full-refresh freshness.",
+        "status": "not_found"
+      }
+    ],
+    "decision": "approve",
+    "facts_checked": 3,
+    "full_refresh": true,
+    "inferences": [
+      {
+        "id": "$.identity.kind:c1",
+        "reason": "The root metadata describes the named entity as a high school; P31 school supports the broader controlled kind other. The generic academic institution class is compatible with a school and does not establish tertiary status."
+      },
+      {
+        "id": "identity",
+        "reason": "The subject-specific Wikidata description identifies this New York entity as a high school; excluded from higher education is a reasonable inference, while the generic academic institution class does not establish tertiary education."
+      }
+    ],
+    "model": "not_reported",
+    "proposal_sha256": "0d694e6a287424d02dec8493acfd4700fcae719fdca9f47c1aecf016ff1ac2ea",
+    "qid": "Q105842437",
+    "reasoning_effort": "medium",
+    "record_sha256": "989ee46e655ee11b2640e73cafed8dc359912835aa4269fb316cd3c8765c0b74",
+    "request_responses": [],
+    "requests": [],
+    "review_scope": {
+      "not_independently_reviewed_ids": [
+        "$.locations[0].name:c1",
+        "location:brooklyn"
+      ],
+      "reviewed_ids": [
+        "$.identity.kind:c1",
+        "$.identity.names.en:c1",
+        "$.locations[1].coordinates:c1",
+        "identity",
+        "location:wikidata-item-location"
+      ],
+      "version": "core-review-v3"
+    },
+    "review_session": "/root/b2_review3",
+    "reviewed_at": "2026-11-07T07:37:10.207618+00:00",
+    "source_revisions_checked": 6,
+    "waived_requests": []
+  },
+  "review_result_sha256": "39b645f3edc1490ecf2a3712486bfcd1c17af63abb7e319db685a5da29741130",
+  "type": "university-unified-receipt-v1"
+}

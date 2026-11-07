@@ -1,0 +1,806 @@
+{
+  "coverage": {
+    "finance": {
+      "checked_at": "2026-11-07T07:31:54.086678+00:00",
+      "status": "checked"
+    },
+    "geography": {
+      "checked_at": "2026-11-07T07:31:54.086678+00:00",
+      "status": "checked"
+    },
+    "history": {
+      "checked_at": "2026-11-07T07:31:54.086678+00:00",
+      "status": "checked"
+    },
+    "identity": {
+      "checked_at": "2026-11-07T07:31:54.086678+00:00",
+      "status": "checked"
+    },
+    "population": {
+      "checked_at": "2026-11-07T07:31:54.086678+00:00",
+      "status": "checked"
+    },
+    "profile": {
+      "checked_at": "2026-11-07T07:31:54.086678+00:00",
+      "status": "checked"
+    }
+  },
+  "curation": {
+    "identity_status": "in_scope",
+    "refresh_profile": "core-v1",
+    "reviewed_groups": [
+      "identity",
+      "geography",
+      "history",
+      "population",
+      "finance",
+      "profile"
+    ]
+  },
+  "finance": {
+    "budget": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2769:0",
+              "original_text": "{\"property\": \"P2769\", \"property_label\": \"budget\", \"statement_id\": \"Q194223$5F409A9F-6325-4BB1-A24A-5C3D68A73E23\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+3891476727\", \"unit\": \"http://www.wikidata.org/entity/Q199578\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2014-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "claim:P498:0",
+              "original_text": "{\"property\": \"P498\", \"property_label\": \"P498\", \"statement_id\": \"q199578$096f312c-49c2-f7ca-0169-f7061cfba76b\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"ARS\"}",
+              "source_ref": "s5"
+            }
+          ],
+          "id": "c1",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2014
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": "3891476727",
+            "currency": "ARS",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "infobox:5",
+              "original_text": "Budget: AR$ 541,780 million (US$451 million; 2024)[1]",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c2",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2024
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": "541780000000",
+            "currency": "ARS",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c2",
+        "qualifications": [
+          "single_source_family"
+        ],
+        "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+        "reason_code": "best_available"
+      }
+    }
+  },
+  "history": {
+    "milestones": [
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P571:0",
+                  "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"q194223$ddde4755-4f77-f54b-a2d0-018426e310d5\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+1821-08-12T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "day": 12,
+                "month": 8,
+                "precision": "day",
+                "year": 1821
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Early_years",
+                  "original_text": "On 12 August 1821, the University of Buenos Aires was officially founded through a decree by Governor Martín Rodríguez. At the university's inaugural act, the cleric and statesman Antonio Sáenz was appointed as the first Rector.[24]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "Officially founded by decree of Governor Martin Rodriguez; Antonio Saenz was appointed first rector at the inaugural act."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "establishment",
+        "kind": "institution_establishment",
+        "subject_ref": "institution"
+      }
+    ]
+  },
+  "identity": {
+    "aliases": [
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P1813:0",
+                "original_text": "{\"property\": \"P1813\", \"property_label\": \"short name\", \"statement_id\": \"Q194223$756c0de3-4cf8-cadd-677d-00ad7c669cc1\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"UBA\", \"language\": \"es\"}}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "es",
+              "text": "UBA"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    ],
+    "identifiers": {
+      "P5242": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P5242:0",
+                "original_text": "{\"property\": \"P5242\", \"property_label\": \"ARWU university ID\", \"statement_id\": \"Q194223$53DBA541-475B-4EC7-809B-13C97B83F84A\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"University-of-Buenos-Aires\"}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": "University-of-Buenos-Aires",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "P5584": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P5584:0",
+                "original_text": "{\"property\": \"P5584\", \"property_label\": \"QS World University ID\", \"statement_id\": \"Q194223$74E30DEA-17EB-47EE-9957-042AC2DD1B55\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"universidad-de-buenos-aires-uba\"}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": "universidad-de-buenos-aires-uba",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    "kind": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "metadata",
+              "original_text": "{\"id\": \"Q194223\", \"labels\": {\"es\": \"Universidad de Buenos Aires\", \"en\": \"University of Buenos Aires\"}, \"descriptions\": {\"en\": \"public research university in Buenos Aires, Argentina\", \"es\": \"universidad pública argentina\"}}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "infobox:3",
+              "original_text": "Type: Public Research University",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": "university",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "names": {
+      "en": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q194223\", \"labels\": {\"es\": \"Universidad de Buenos Aires\", \"en\": \"University of Buenos Aires\"}, \"descriptions\": {\"en\": \"public research university in Buenos Aires, Argentina\", \"es\": \"universidad pública argentina\"}}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": "University of Buenos Aires",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "es": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P1705:0",
+                "original_text": "{\"property\": \"P1705\", \"property_label\": \"native label\", \"statement_id\": \"Q194223$f04031fc-4c50-22f5-3ffa-000d7ccb319d\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"Universidad de Buenos Aires\", \"language\": \"es\"}}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": "Universidad de Buenos Aires",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    "ownership": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "metadata",
+              "original_text": "{\"id\": \"Q194223\", \"labels\": {\"es\": \"Universidad de Buenos Aires\", \"en\": \"University of Buenos Aires\"}, \"descriptions\": {\"en\": \"public research university in Buenos Aires, Argentina\", \"es\": \"universidad pública argentina\"}}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "infobox:3",
+              "original_text": "Type: Public Research University",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": "public",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "locations": [
+    {
+      "address": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P131:0",
+                "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q194223$fa930c7e-4171-6608-0dc9-fe70f7eac88b\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 1486, \"id\": \"Q1486\"}}",
+                "source_ref": "s1"
+              },
+              {
+                "locator": "claim:P17:0",
+                "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"q194223$1a3e2788-4727-7280-ec48-a9ab54fcd143\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 414, \"id\": \"Q414\"}, \"reference_count\": 1}",
+                "source_ref": "s1"
+              },
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q1486\", \"labels\": {\"es\": \"Buenos Aires\", \"en\": \"Buenos Aires\"}, \"descriptions\": {\"es\": \"capital y ciudad más poblada de Argentina\", \"en\": \"capital and largest city of Argentina\"}}",
+                "source_ref": "s9"
+              },
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q414\", \"labels\": {\"es\": \"Argentina\", \"en\": \"Argentina\"}, \"descriptions\": {\"es\": \"país de América del Sur\", \"en\": \"country in South America\"}}",
+                "source_ref": "s8"
+              },
+              {
+                "locator": "infobox:12",
+                "original_text": "Location: Buenos Aires, Argentina",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "city_name": "Buenos Aires",
+              "city_qid": "Q1486",
+              "country_name": "Argentina",
+              "country_qid": "Q414",
+              "formatted": {
+                "language": "en",
+                "text": "Buenos Aires, Argentina"
+              }
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "id": "buenos-aires",
+      "kind": "administrative_area",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P131:0",
+                "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q194223$fa930c7e-4171-6608-0dc9-fe70f7eac88b\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 1486, \"id\": \"Q1486\"}}",
+                "source_ref": "s1"
+              },
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q1486\", \"labels\": {\"es\": \"Buenos Aires\", \"en\": \"Buenos Aires\"}, \"descriptions\": {\"es\": \"capital y ciudad más poblada de Argentina\", \"en\": \"capital and largest city of Argentina\"}}",
+                "source_ref": "s9"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Buenos Aires"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "qid": "Q1486"
+    },
+    {
+      "coordinates": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "statement:q194223$EFE3B82E-1F9C-4B28-81C0-AF168ABC2436",
+                "original_text": "\"latitude\": -34.599722222222",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "source_rank": "normal",
+            "value": {
+              "crs": "EPSG:4326",
+              "globe_qid": "Q2",
+              "latitude": -34.599722222222,
+              "longitude": -58.373055555556,
+              "source_precision_degrees": 0.00027777777777778
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "id": "wikidata-item-location",
+      "kind": "institution",
+      "qid": "Q194223"
+    }
+  ],
+  "modified_datetime": "2026-11-07T07:37:47.671829+00:00",
+  "population": {
+    "academic_staff": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:8",
+              "original_text": "Academic staff: 30,850 (2024)[2]",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2024
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 30850,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "single_source_family"
+        ],
+        "reason_code": "only_available"
+      }
+    },
+    "postgraduate_students": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:11",
+              "original_text": "Postgraduates: 30,000 (2018)[4]",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2018
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 30000,
+            "basis": "unspecified",
+            "precision": "approximate"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "single_source_family",
+          "approximate_value"
+        ],
+        "reason_code": "only_available"
+      }
+    },
+    "students_total": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:0",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q194223$878D9D48-0AA4-4BA4-8A4E-6E3C912A87EC\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+262932\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2011-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2011
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 262932,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "claim:P2196:1",
+              "original_text": "{\"property\": \"P2196\", \"property_label\": \"count of students\", \"statement_id\": \"Q194223$AE7B5CE5-B156-41B7-8B7F-9901F5927C88\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+367762\", \"unit\": \"1\"}, \"qualifiers\": {\"P585\": [{\"snaktype\": \"value\", \"value\": {\"time\": \"+2023-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}]}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c2",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2023
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 367762,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "infobox:9",
+              "original_text": "Students: 350,000 (2024)[2]",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c3",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2024
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 350000,
+            "basis": "unspecified",
+            "precision": "approximate"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c3",
+        "qualifications": [
+          "single_source_family",
+          "approximate_value"
+        ],
+        "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+        "reason_code": "best_available"
+      }
+    },
+    "undergraduate_students": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:10",
+              "original_text": "Undergraduates: 297,639 (2004)[3]",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2004
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 297639,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "single_source_family"
+        ],
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "profile": {
+    "motto": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P1451:0",
+              "original_text": "{\"property\": \"P1451\", \"property_label\": \"motto text\", \"statement_id\": \"Q194223$d114f3ff-4bf0-ed5b-5ccd-af89185c9813\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"text\": \"Argentum virtus robur et studium\", \"language\": \"la\"}, \"qualifiers\": {\"P2441\": [{\"snaktype\": \"value\", \"value\": {\"text\": \"La virtud argentina es la fuerza y el estudio\", \"language\": \"es\"}}]}}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "language": "la",
+            "text": "Argentum virtus robur et studium"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "summary": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "The University of Buenos Aires (Spanish: Universidad de Buenos Aires, UBA) is a public research university in Buenos Aires, Argentina.",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Early_years",
+              "original_text": "On 12 August 1821, the University of Buenos Aires was officially founded through a decree by Governor Martín Rodríguez. At the university's inaugural act, the cleric and statesman Antonio Sáenz was appointed as the first Rector.[24]",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Organization",
+              "original_text": "The University of Buenos Aires is made up of thirteen self-governing faculties (Spanish: facultades), which impart a number of graduate and post-graduate courses (Spanish: carreras).[43] Although not a faculty, the university also manages the Ciclo Básico Común (CBC, \"Common Basic Cycle\"), a fixed set of subjects that all aspiring UBA students must pass in order to access any graduate course in the university, and that replaced entrance exams in 1985.",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Organization",
+              "original_text": "The Ciudad Universitaria (\"University City\") complex, located in the Núñez neighborhood along the banks of the Río de la Plata, is the closest thing to a centralized campus UBA has, housing the Faculty of Exact and Natural Sciences, the Faculty of Architecture, Design and Urbanism, a CBC branch, and various research institutes.[44]",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Organization",
+              "original_text": "UBA does not count with a single, unified campus. All of its facilities are spread out throughout the City of Buenos Aires, with some (especially branches of the CBC) based in the Greater Buenos Aires metro area.",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "language": "en",
+            "text": "The University of Buenos Aires (Universidad de Buenos Aires, UBA) is a public research university in Buenos Aires, Argentina. It was officially founded on 12 August 1821 by a decree of Governor Martín Rodríguez, and Antonio Sáenz was appointed its first rector at the inaugural ceremony. The university is organized into thirteen self-governing faculties and provides courses across a range of disciplines.\n\nIts Common Basic Cycle, known as the Ciclo Básico Común, replaced entrance examinations in 1985 and students must pass it to access university courses. The university's facilities are distributed across Buenos Aires and the surrounding metropolitan area. The Ciudad Universitaria complex includes the faculties of Exact and Natural Sciences and of Architecture, Design and Urbanism, as well as a Common Basic Cycle branch and research institutes."
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "website": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P856:0",
+              "original_text": "{\"property\": \"P856\", \"property_label\": \"official website\", \"statement_id\": \"Q194223$1C9709F6-1AC7-4FEE-9343-D85E4F0B9084\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"https://uba.ar\", \"qualifiers\": {\"P407\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 1321, \"id\": \"Q1321\"}}]}}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "value": "https://uba.ar",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "qid": "Q194223",
+  "record_revision": 1,
+  "schema_version": "0.2.2",
+  "seed": {
+    "channels": [
+      "ranking_identifier",
+      "reviewed_institution_type"
+    ],
+    "import_id": "seed-84c3beb45367905f",
+    "screening_status": "included"
+  },
+  "selection_policy": "preferred-v1",
+  "sources": {
+    "s1": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-07T07:31:39.850737+00:00",
+      "revision_id": 2535209873,
+      "source_qid": "Q194223",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2535209873"
+    },
+    "s10": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-07T07:31:54.060405+00:00",
+      "revision_id": 2234632497,
+      "source_qid": "Q117787599",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2234632497"
+    },
+    "s2": {
+      "family": "wikimedia",
+      "kind": "wikipedia",
+      "language": "en",
+      "page_id": 477714,
+      "publisher_role": "encyclopedia",
+      "retrieved_at": "2026-11-07T07:31:43.908962+00:00",
+      "revision_id": 1375712598,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1375712598"
+    },
+    "s3": {
+      "family": "wikimedia",
+      "kind": "wikipedia",
+      "language": "es",
+      "page_id": 18425,
+      "publisher_role": "encyclopedia",
+      "retrieved_at": "2026-11-07T07:31:45.994626+00:00",
+      "revision_id": 176075574,
+      "url": "https://es.wikipedia.org/w/index.php?oldid=176075574"
+    },
+    "s4": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-07T07:31:47.520766+00:00",
+      "revision_id": 2564041890,
+      "source_qid": "Q11573",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2564041890"
+    },
+    "s5": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-07T07:31:48.481165+00:00",
+      "revision_id": 2559687410,
+      "source_qid": "Q199578",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2559687410"
+    },
+    "s6": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-07T06:37:14.157484+00:00",
+      "revision_id": 2559546120,
+      "source_qid": "Q875538",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2559546120"
+    },
+    "s7": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-07T07:31:49.217784+00:00",
+      "revision_id": 2523404231,
+      "source_qid": "Q45400320",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2523404231"
+    },
+    "s8": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-07T07:31:51.215197+00:00",
+      "revision_id": 2564498975,
+      "source_qid": "Q414",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2564498975"
+    },
+    "s9": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-07T07:31:53.075950+00:00",
+      "revision_id": 2546716664,
+      "source_qid": "Q1486",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2546716664"
+    }
+  },
+  "update_datetime": "2026-11-07T07:37:47.671829+00:00"
+}
