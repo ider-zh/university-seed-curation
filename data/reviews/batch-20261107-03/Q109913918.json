@@ -1,0 +1,668 @@
+{
+  "attribution": "distinct_native_research_and_review_subagents;not_cryptographic_identity",
+  "research": {
+    "baseline_sha256": "absent",
+    "candidate": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-06T22:56:49.120790+00:00",
+          "status": "not_found"
+        },
+        "geography": {
+          "checked_at": "2026-11-06T22:56:49.120790+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-06T22:56:49.120790+00:00",
+          "status": "checked"
+        },
+        "identity": {
+          "checked_at": "2026-11-06T22:56:49.120790+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-06T22:56:49.120790+00:00",
+          "status": "not_found"
+        },
+        "profile": {
+          "checked_at": "2026-11-06T22:56:49.120790+00:00",
+          "status": "checked"
+        }
+      },
+      "curation": {
+        "identity_status": "in_scope"
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "claim:P571:0",
+                      "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q109913918$0B4CC898-70AD-4303-BD3B-AB38F77D6F3C\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+2001-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}, \"reference_count\": 1}",
+                      "source_ref": "s1"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "day": 1,
+                    "month": 1,
+                    "precision": "day",
+                    "year": 2001
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "inception",
+            "kind": "institution_establishment",
+            "subject_ref": "institution"
+          }
+        ]
+      },
+      "identity": {
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P31:0",
+                  "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q109913918$0F737399-37D5-43F0-8EF8-7B2025594DBE\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 12513145, \"id\": \"Q12513145\"}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "metadata",
+                  "original_text": "{\"id\": \"Q12513145\", \"labels\": {\"en\": \"sekolah tinggi\"}, \"descriptions\": {\"en\": \"Indonesian type of higher education institution, similar to college but provides undergraduate programs\"}}",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "higher_education_college",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q109913918\", \"labels\": {\"en\": \"STAK Negeri Kupang\"}, \"descriptions\": {\"en\": \"higher education institution in Kupang, Indonesia\"}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "STAK Negeri Kupang",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "locations": [
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q109913918$0681FD5A-8B10-4C84-BA2E-7B428FBB3D5C\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 12501155, \"id\": \"Q12501155\"}, \"reference_count\": 3}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q12501155\", \"labels\": {\"en\": \"Oebobo\"}, \"descriptions\": {\"en\": \"district in Kupang City, East Nusa Tenggara Province, Indonesia\"}}",
+                    "source_ref": "s4"
+                  },
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q109913918$09D14BA7-F484-4B33-A067-1FAA56A847DF\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 252, \"id\": \"Q252\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q252\", \"labels\": {\"en\": \"Indonesia\"}, \"descriptions\": {\"en\": \"island country in Southeast Asia and Oceania\"}}",
+                    "source_ref": "s3"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "city_name": "Kupang",
+                  "country_name": "Indonesia",
+                  "country_qid": "Q252",
+                  "formatted": {
+                    "language": "en",
+                    "text": "Oebobo, Kupang, Indonesia"
+                  }
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "oebobo",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q109913918$0681FD5A-8B10-4C84-BA2E-7B428FBB3D5C\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 12501155, \"id\": \"Q12501155\"}, \"reference_count\": 3}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q12501155\", \"labels\": {\"en\": \"Oebobo\"}, \"descriptions\": {\"en\": \"district in Kupang City, East Nusa Tenggara Province, Indonesia\"}}",
+                    "source_ref": "s4"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Oebobo"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q12501155"
+        }
+      ],
+      "modified_datetime": "2026-11-06T22:58:11.971150+00:00",
+      "profile": {
+        "website": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P856:0",
+                  "original_text": "{\"property\": \"P856\", \"property_label\": \"official website\", \"statement_id\": \"Q109913918$FD97758B-54E7-4445-B62D-E4332B43749A\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"https://www.staknkupang.ac.id\", \"qualifiers\": {\"P407\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 9240, \"id\": \"Q9240\"}}]}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "https://www.staknkupang.ac.id",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "qid": "Q109913918",
+      "record_revision": 1,
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "reviewed_institution_type"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "included"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:56:35.776781+00:00",
+          "revision_id": 2270375528,
+          "source_qid": "Q109913918",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2270375528"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:56:42.127201+00:00",
+          "revision_id": 2427034730,
+          "source_qid": "Q12513145",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2427034730"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:56:45.089411+00:00",
+          "revision_id": 2562953677,
+          "source_qid": "Q252",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2562953677"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:56:49.096855+00:00",
+          "revision_id": 2487498484,
+          "source_qid": "Q12501155",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2487498484"
+        }
+      }
+    },
+    "coverage": [
+      {
+        "group": "identity",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "status": "checked"
+      },
+      {
+        "group": "population",
+        "status": "not_found"
+      },
+      {
+        "group": "finance",
+        "status": "not_found"
+      },
+      {
+        "group": "profile",
+        "status": "checked"
+      }
+    ],
+    "delta": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-06T22:56:49.120790+00:00",
+          "status": "not_found"
+        },
+        "geography": {
+          "checked_at": "2026-11-06T22:56:49.120790+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-06T22:56:49.120790+00:00",
+          "status": "checked"
+        },
+        "identity": {
+          "checked_at": "2026-11-06T22:56:49.120790+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-06T22:56:49.120790+00:00",
+          "status": "not_found"
+        },
+        "profile": {
+          "checked_at": "2026-11-06T22:56:49.120790+00:00",
+          "status": "checked"
+        }
+      },
+      "curation": {
+        "identity_status": "in_scope"
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "claim:P571:0",
+                      "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q109913918$0B4CC898-70AD-4303-BD3B-AB38F77D6F3C\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+2001-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 11, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}, \"reference_count\": 1}",
+                      "source_ref": "s1"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "day": 1,
+                    "month": 1,
+                    "precision": "day",
+                    "year": 2001
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "inception",
+            "kind": "institution_establishment",
+            "subject_ref": "institution"
+          }
+        ]
+      },
+      "identity": {
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P31:0",
+                  "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q109913918$0F737399-37D5-43F0-8EF8-7B2025594DBE\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 12513145, \"id\": \"Q12513145\"}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "metadata",
+                  "original_text": "{\"id\": \"Q12513145\", \"labels\": {\"en\": \"sekolah tinggi\"}, \"descriptions\": {\"en\": \"Indonesian type of higher education institution, similar to college but provides undergraduate programs\"}}",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "higher_education_college",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q109913918\", \"labels\": {\"en\": \"STAK Negeri Kupang\"}, \"descriptions\": {\"en\": \"higher education institution in Kupang, Indonesia\"}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "STAK Negeri Kupang",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "locations": [
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q109913918$0681FD5A-8B10-4C84-BA2E-7B428FBB3D5C\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 12501155, \"id\": \"Q12501155\"}, \"reference_count\": 3}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q12501155\", \"labels\": {\"en\": \"Oebobo\"}, \"descriptions\": {\"en\": \"district in Kupang City, East Nusa Tenggara Province, Indonesia\"}}",
+                    "source_ref": "s4"
+                  },
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q109913918$09D14BA7-F484-4B33-A067-1FAA56A847DF\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 252, \"id\": \"Q252\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q252\", \"labels\": {\"en\": \"Indonesia\"}, \"descriptions\": {\"en\": \"island country in Southeast Asia and Oceania\"}}",
+                    "source_ref": "s3"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "city_name": "Kupang",
+                  "country_name": "Indonesia",
+                  "country_qid": "Q252",
+                  "formatted": {
+                    "language": "en",
+                    "text": "Oebobo, Kupang, Indonesia"
+                  }
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "oebobo",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q109913918$0681FD5A-8B10-4C84-BA2E-7B428FBB3D5C\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 12501155, \"id\": \"Q12501155\"}, \"reference_count\": 3}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q12501155\", \"labels\": {\"en\": \"Oebobo\"}, \"descriptions\": {\"en\": \"district in Kupang City, East Nusa Tenggara Province, Indonesia\"}}",
+                    "source_ref": "s4"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Oebobo"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q12501155"
+        }
+      ],
+      "profile": {
+        "website": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P856:0",
+                  "original_text": "{\"property\": \"P856\", \"property_label\": \"official website\", \"statement_id\": \"Q109913918$FD97758B-54E7-4445-B62D-E4332B43749A\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"https://www.staknkupang.ac.id\", \"qualifiers\": {\"P407\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 9240, \"id\": \"Q9240\"}}]}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "https://www.staknkupang.ac.id",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "qid": "Q109913918",
+      "record_revision": 1,
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "reviewed_institution_type"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "included"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:56:35.776781+00:00",
+          "revision_id": 2270375528,
+          "source_qid": "Q109913918",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2270375528"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:56:42.127201+00:00",
+          "revision_id": 2427034730,
+          "source_qid": "Q12513145",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2427034730"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:56:45.089411+00:00",
+          "revision_id": 2562953677,
+          "source_qid": "Q252",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2562953677"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-06T22:56:49.096855+00:00",
+          "revision_id": 2487498484,
+          "source_qid": "Q12501155",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2487498484"
+        }
+      }
+    },
+    "open_requests": [],
+    "proposed_at": "2026-11-06T22:58:11.971150+00:00",
+    "qid": "Q109913918",
+    "research": {
+      "model": "not_reported",
+      "prompt_sha256": "cfe24fd96e04dc1ea1ecb0747b222e87fa6f77d8ceb71eaeeaadeb9d79cfb1ea",
+      "reasoning_effort": "not_reported",
+      "schema_sha256": "92e942f4fbf2ae28964462ea9ffa8312c5ee16a077a1e08b40aaaf741512422e",
+      "session": "/root/research_q109913918"
+    },
+    "retrieval_failures": [],
+    "review_status": "unreviewed",
+    "seed": {
+      "channels": [
+        "reviewed_institution_type"
+      ],
+      "import_id": "seed-84c3beb45367905f",
+      "screening_status": "included"
+    },
+    "transport": {
+      "base_commit": "4df41fd43859bd17f98db25a6d97207bc2e9b5e3",
+      "protocol": "native-subagent-v1",
+      "repository": "ider-zh/university-seed-curation",
+      "review_policy": {
+        "id": "source-grounded-flexible-v2",
+        "sha256": "b8ed7d2897e4c31dbd81b1379aafdc1077a21d1a33949edbd2d896b0adf99db2"
+      },
+      "schema_sha256": "bfa496eafa9dffca56146214168db7f000b09161b8993129632e7202e1c88833",
+      "seed_catalog_sha256": "84c3beb45367905f513d650684283dd62a9c1b77962bdc34151a6ef05bfa03d4"
+    },
+    "type": "university-proposal-v1"
+  },
+  "review": {
+    "contexts_checked": 3,
+    "coverage_checks": [
+      {
+        "group": "finance",
+        "reason": "No financial statistics in the frozen root source.",
+        "status": "not_found"
+      },
+      {
+        "group": "geography",
+        "reason": "P17 and P131 surveyed; root has no P625 statements. Related administrative coordinates are not projected as campus coordinates.",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "reason": "Root P571 surveyed.",
+        "status": "checked"
+      },
+      {
+        "group": "identity",
+        "reason": "Root metadata and P31 surveyed.",
+        "status": "checked"
+      },
+      {
+        "group": "population",
+        "reason": "No population statistics in the frozen root source.",
+        "status": "not_found"
+      },
+      {
+        "group": "profile",
+        "reason": "Root official website claim surveyed.",
+        "status": "checked"
+      }
+    ],
+    "decision": "approve",
+    "facts_checked": 3,
+    "full_refresh": true,
+    "inferences": [
+      {
+        "id": "$.identity.kind:c1",
+        "reason": "s1 claim:P31:0 identifies sekolah tinggi Q12513145; s2 metadata describes this as an Indonesian higher education institution similar to college. The broader controlled college category is a reasonable mapping."
+      },
+      {
+        "id": "identity",
+        "reason": "s1 institution description and P31, with s2 type description, support inclusion as a higher education institution."
+      }
+    ],
+    "model": "GPT-6.1",
+    "proposal_sha256": "b5e84112e2b23e2b4bf3e38ac76306f79332e0aed0615af23605b25df3f3e2be",
+    "qid": "Q109913918",
+    "reasoning_effort": "not_reported",
+    "record_sha256": "19d8826f4850b2ff3f0310cfe3e16442bdaaffcb03df58e49a194f41cb28696e",
+    "request_responses": [],
+    "requests": [],
+    "review_scope": {
+      "not_independently_reviewed_ids": [
+        "$.locations[0].address:c1",
+        "$.locations[0].name:c1",
+        "$.profile.website:c1",
+        "location:oebobo"
+      ],
+      "reviewed_ids": [
+        "$.history.milestones[0].date:c1",
+        "$.identity.kind:c1",
+        "$.identity.names.en:c1",
+        "country:$.locations[0].address:c1",
+        "identity",
+        "milestone:inception"
+      ],
+      "version": "core-review-v3"
+    },
+    "review_session": "/root/capability_check/review3_109",
+    "reviewed_at": "2026-11-06T23:05:25.353814+00:00",
+    "source_revisions_checked": 4,
+    "waived_requests": []
+  },
+  "review_result_sha256": "93e81c236db1adc1a987989515ffb8bcb96f4684ff860e6cd0015bcde43a396d",
+  "type": "university-unified-receipt-v1"
+}
