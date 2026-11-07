@@ -1,0 +1,602 @@
+{
+  "attribution": "distinct_native_research_and_review_subagents;not_cryptographic_identity",
+  "research": {
+    "baseline_sha256": "absent",
+    "candidate": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-07T07:17:32.807677+00:00",
+          "status": "not_found"
+        },
+        "geography": {
+          "checked_at": "2026-11-07T07:17:32.807677+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-07T07:17:32.807677+00:00",
+          "status": "checked"
+        },
+        "identity": {
+          "checked_at": "2026-11-07T07:17:32.807677+00:00",
+          "status": "disputed"
+        },
+        "population": {
+          "checked_at": "2026-11-07T07:17:32.807677+00:00",
+          "status": "not_found"
+        },
+        "profile": {
+          "checked_at": "2026-11-07T07:17:32.807677+00:00",
+          "status": "not_found"
+        }
+      },
+      "curation": {
+        "identity_status": "conflation_suspected"
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "claim:P571:0",
+                      "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q7681286$6973DD52-325F-421C-A325-37ACCB517A43\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+2011-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}, \"reference_count\": 1}",
+                      "source_ref": "s1"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 2011
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "inception_2011",
+            "kind": "institution_establishment",
+            "subject_ref": "institution"
+          }
+        ]
+      },
+      "identity": {
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P31:0",
+                  "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q7681286$CBF7171A-FAB1-4B3E-97AA-80EB6249DB7A\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 3918, \"id\": \"Q3918\"}}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "university",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q7681286\", \"labels\": {\"en\": \"Tamil Nadu Horticulture University\"}, \"descriptions\": {}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "Tamil Nadu Horticulture University",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "locations": [
+        {
+          "id": "tamil_nadu",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q7681286$0C44475E-2518-49F2-88C0-16DD64D0C525\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 9885, \"id\": \"Q9885\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Tamil Nadu"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q9885"
+        },
+        {
+          "coordinates": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "statement:Q7681286$4EF28CB5-8260-437D-AB28-E36DB39B1FE9",
+                    "original_text": "\"latitude\": 11.1176",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "source_rank": "normal",
+                "value": {
+                  "crs": "EPSG:4326",
+                  "globe_qid": "Q2",
+                  "latitude": 11.1176,
+                  "longitude": 76.9944,
+                  "source_precision_degrees": 0.009154959580644
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "wikidata-item-location",
+          "kind": "institution",
+          "qid": "Q7681286"
+        }
+      ],
+      "modified_datetime": "2026-11-07T07:18:13.366624+00:00",
+      "qid": "Q7681286",
+      "record_revision": 1,
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "reviewed_institution_type"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "included"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-07T06:53:54.969232+00:00",
+          "revision_id": 2560503447,
+          "source_qid": "Q7681286",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2560503447"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikipedia",
+          "language": "en",
+          "page_id": 2513652,
+          "publisher_role": "encyclopedia",
+          "retrieved_at": "2026-11-07T06:54:03.106392+00:00",
+          "revision_id": 1383622410,
+          "url": "https://en.wikipedia.org/w/index.php?oldid=1383622410"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-07T06:40:15.558743+00:00",
+          "revision_id": 2562156954,
+          "source_qid": "Q3918",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2562156954"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-07T06:40:10.456118+00:00",
+          "revision_id": 2563722390,
+          "source_qid": "Q668",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2563722390"
+        },
+        "s5": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-07T06:54:06.822862+00:00",
+          "revision_id": 2562618323,
+          "source_qid": "Q9885",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2562618323"
+        }
+      }
+    },
+    "coverage": [
+      {
+        "group": "identity",
+        "status": "disputed"
+      },
+      {
+        "group": "geography",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "status": "checked"
+      },
+      {
+        "group": "population",
+        "status": "not_found"
+      },
+      {
+        "group": "finance",
+        "status": "not_found"
+      },
+      {
+        "group": "profile",
+        "status": "not_found"
+      }
+    ],
+    "delta": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-07T07:17:32.807677+00:00",
+          "status": "not_found"
+        },
+        "geography": {
+          "checked_at": "2026-11-07T07:17:32.807677+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-07T07:17:32.807677+00:00",
+          "status": "checked"
+        },
+        "identity": {
+          "checked_at": "2026-11-07T07:17:32.807677+00:00",
+          "status": "disputed"
+        },
+        "population": {
+          "checked_at": "2026-11-07T07:17:32.807677+00:00",
+          "status": "not_found"
+        },
+        "profile": {
+          "checked_at": "2026-11-07T07:17:32.807677+00:00",
+          "status": "not_found"
+        }
+      },
+      "curation": {
+        "identity_status": "conflation_suspected"
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "claim:P571:0",
+                      "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q7681286$6973DD52-325F-421C-A325-37ACCB517A43\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+2011-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}, \"reference_count\": 1}",
+                      "source_ref": "s1"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 2011
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "inception_2011",
+            "kind": "institution_establishment",
+            "subject_ref": "institution"
+          }
+        ]
+      },
+      "identity": {
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P31:0",
+                  "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q7681286$CBF7171A-FAB1-4B3E-97AA-80EB6249DB7A\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 3918, \"id\": \"Q3918\"}}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "university",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q7681286\", \"labels\": {\"en\": \"Tamil Nadu Horticulture University\"}, \"descriptions\": {}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "Tamil Nadu Horticulture University",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "locations": [
+        {
+          "id": "tamil_nadu",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q7681286$0C44475E-2518-49F2-88C0-16DD64D0C525\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 9885, \"id\": \"Q9885\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Tamil Nadu"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q9885"
+        },
+        {
+          "coordinates": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "statement:Q7681286$4EF28CB5-8260-437D-AB28-E36DB39B1FE9",
+                    "original_text": "\"latitude\": 11.1176",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "source_rank": "normal",
+                "value": {
+                  "crs": "EPSG:4326",
+                  "globe_qid": "Q2",
+                  "latitude": 11.1176,
+                  "longitude": 76.9944,
+                  "source_precision_degrees": 0.009154959580644
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "wikidata-item-location",
+          "kind": "institution",
+          "qid": "Q7681286"
+        }
+      ],
+      "qid": "Q7681286",
+      "record_revision": 1,
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "reviewed_institution_type"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "included"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-07T06:53:54.969232+00:00",
+          "revision_id": 2560503447,
+          "source_qid": "Q7681286",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2560503447"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikipedia",
+          "language": "en",
+          "page_id": 2513652,
+          "publisher_role": "encyclopedia",
+          "retrieved_at": "2026-11-07T06:54:03.106392+00:00",
+          "revision_id": 1383622410,
+          "url": "https://en.wikipedia.org/w/index.php?oldid=1383622410"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-07T06:40:15.558743+00:00",
+          "revision_id": 2562156954,
+          "source_qid": "Q3918",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2562156954"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-07T06:40:10.456118+00:00",
+          "revision_id": 2563722390,
+          "source_qid": "Q668",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2563722390"
+        },
+        "s5": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-07T06:54:06.822862+00:00",
+          "revision_id": 2562618323,
+          "source_qid": "Q9885",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2562618323"
+        }
+      }
+    },
+    "open_requests": [
+      {
+        "category": "subject_mismatch",
+        "field": "identity",
+        "reason": "Research must resolve or explicitly exclude the Tamil Nadu Agricultural University Wikipedia revision from evidence for Q7681286 (Tamil Nadu Horticulture University), and provide an exact matching source for any cross-source identity assertion. Keep the independently supported Wikidata facts and item-level P625 scope unchanged unless new evidence requires a correction.",
+        "request_id": "4afcc1b6-7ca0-5de4-ace0-6b57030c032d",
+        "reviewed_proposal_sha256": "dd7096692d52e20a317aedf180b0a8c0f96c4effcc7c3c0ec3e3c0da74651ec0"
+      }
+    ],
+    "proposed_at": "2026-11-07T07:18:13.366624+00:00",
+    "qid": "Q7681286",
+    "research": {
+      "model": "gpt-6.1-sol",
+      "prompt_sha256": "4798d94ef0f76e7dce60f20524565ff79953be02ad761471239f871e51166824",
+      "reasoning_effort": "medium",
+      "schema_sha256": "92e942f4fbf2ae28964462ea9ffa8312c5ee16a077a1e08b40aaaf741512422e",
+      "session": "/root/r_q7681286"
+    },
+    "retrieval_failures": [],
+    "review_status": "unreviewed",
+    "seed": {
+      "channels": [
+        "reviewed_institution_type"
+      ],
+      "import_id": "seed-84c3beb45367905f",
+      "screening_status": "included"
+    },
+    "transport": {
+      "base_commit": "cb6e1c7953d69cb9d813b36f5a721b326ddc469e",
+      "protocol": "native-subagent-v1",
+      "repository": "ider-zh/university-seed-curation",
+      "review_policy": {
+        "id": "source-grounded-flexible-v2",
+        "sha256": "b8ed7d2897e4c31dbd81b1379aafdc1077a21d1a33949edbd2d896b0adf99db2"
+      },
+      "schema_sha256": "bfa496eafa9dffca56146214168db7f000b09161b8993129632e7202e1c88833",
+      "seed_catalog_sha256": "84c3beb45367905f513d650684283dd62a9c1b77962bdc34151a6ef05bfa03d4"
+    },
+    "type": "university-proposal-v1"
+  },
+  "review": {
+    "contexts_checked": 3,
+    "coverage_checks": [
+      {
+        "group": "identity",
+        "reason": "Research surveyed the identity evidence and explicitly identified the differently named Wikipedia article as a distinct subject; only item-matching Wikidata evidence supports the mandatory facts.",
+        "status": "disputed"
+      },
+      {
+        "group": "geography",
+        "reason": "The item-level P625 coordinate, rank, globe, precision and scope were surveyed; no campus inference is made.",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "reason": "The year-precision P571 inception statement was surveyed and represented conservatively.",
+        "status": "checked"
+      },
+      {
+        "group": "population",
+        "reason": "No applicable mandatory population claims or matching observations in the frozen Research packet.",
+        "status": "not_found"
+      },
+      {
+        "group": "finance",
+        "reason": "No applicable mandatory financial claims or matching observations in the frozen Research packet.",
+        "status": "not_found"
+      },
+      {
+        "group": "profile",
+        "reason": "No mandatory profile claims in the frozen Research packet beyond reviewed identity information.",
+        "status": "not_found"
+      }
+    ],
+    "decision": "approve",
+    "facts_checked": 4,
+    "full_refresh": false,
+    "inferences": [],
+    "model": "gpt-6.1-sol",
+    "proposal_sha256": "e9fe83f25377e5f138d16cf958bceb5f6b26a9f1a882cbb3c1654392e6f1beef",
+    "qid": "Q7681286",
+    "reasoning_effort": "medium",
+    "record_sha256": "14f134c9e2de04e125b02bd131bdc4642231bb9f800e97163c57f3b6e491bbd7",
+    "request_responses": [
+      {
+        "reason": "The revised Research explicitly recognizes Tamil Nadu Agricultural University as a different Wikipedia subject and excludes its revision from Q7681286 fact evidence. Item-matching Wikidata P31, P571, label, and P625 remain supported and location scope remains item-level. It makes no unsupported cross-source identity assertion.",
+        "request_id": "4afcc1b6-7ca0-5de4-ace0-6b57030c032d",
+        "status": "addressed"
+      }
+    ],
+    "requests": [],
+    "review_scope": {
+      "not_independently_reviewed_ids": [
+        "$.locations[0].name:c1",
+        "location:tamil_nadu"
+      ],
+      "reviewed_ids": [
+        "$.history.milestones[0].date:c1",
+        "$.identity.kind:c1",
+        "$.identity.names.en:c1",
+        "$.locations[1].coordinates:c1",
+        "identity",
+        "location:wikidata-item-location",
+        "milestone:inception_2011"
+      ],
+      "version": "core-review-v3"
+    },
+    "review_session": "/root/v_q7681286_r2",
+    "reviewed_at": "2026-11-07T07:22:30.496109+00:00",
+    "source_revisions_checked": 5,
+    "waived_requests": []
+  },
+  "review_result_sha256": "611c45740b8c4195110154cbf58f9d59bf95d7548ab69b8cd0deb3ccefee4d11",
+  "type": "university-unified-receipt-v1"
+}

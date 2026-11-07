@@ -1,0 +1,555 @@
+{
+  "coverage": {
+    "finance": {
+      "checked_at": "2026-11-07T06:54:37.607917+00:00",
+      "status": "checked"
+    },
+    "geography": {
+      "checked_at": "2026-11-07T06:54:37.607917+00:00",
+      "status": "checked"
+    },
+    "history": {
+      "checked_at": "2026-11-07T06:54:37.607917+00:00",
+      "status": "checked"
+    },
+    "identity": {
+      "checked_at": "2026-11-07T06:54:37.607917+00:00",
+      "status": "checked"
+    },
+    "population": {
+      "checked_at": "2026-11-07T06:54:37.607917+00:00",
+      "status": "checked"
+    },
+    "profile": {
+      "checked_at": "2026-11-07T06:54:37.607917+00:00",
+      "status": "checked"
+    }
+  },
+  "curation": {
+    "identity_status": "in_scope",
+    "refresh_profile": "core-v1",
+    "reviewed_groups": [
+      "identity",
+      "geography",
+      "history",
+      "population",
+      "finance",
+      "profile"
+    ]
+  },
+  "finance": {
+    "assets": {
+      "candidates": [
+        {
+          "current_basis": "historical",
+          "evidence": [
+            {
+              "locator": "claim:P2403:0",
+              "original_text": "\"amount\": \"+428238000\", \"unit\": \"http://www.wikidata.org/entity/Q4917\"",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "period": {
+            "day": 30,
+            "kind": "date",
+            "month": 6,
+            "year": 2020
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": "428238000",
+            "currency": "USD",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "single_source_family"
+        ],
+        "reason_code": "only_available"
+      }
+    },
+    "endowment": {
+      "candidates": [
+        {
+          "current_basis": "historical",
+          "evidence": [
+            {
+              "locator": "claim:P6589:0",
+              "original_text": "\"amount\": \"+88304000\", \"unit\": \"http://www.wikidata.org/entity/Q4917\"",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "period": {
+            "day": 30,
+            "kind": "date",
+            "month": 6,
+            "year": 2020
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": "88304000",
+            "currency": "USD",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "current_basis": "historical",
+          "evidence": [
+            {
+              "locator": "infobox:7",
+              "original_text": "Endowment: $107.2 million (2025)[2]",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c2",
+          "period": {
+            "kind": "calendar_year",
+            "year": 2025
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": "107200000",
+            "currency": "USD",
+            "precision": "approximate"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c2",
+        "qualifications": [
+          "single_source_family",
+          "approximate_value"
+        ],
+        "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+        "reason_code": "best_available"
+      }
+    }
+  },
+  "identity": {
+    "aliases": [
+      {
+        "candidates": [
+          {
+            "current_basis": "historical",
+            "evidence": [
+              {
+                "locator": "infobox:0",
+                "original_text": "Former names: Fairleigh Dickinson Junior College (1942–1948)Fairleigh Dickinson College (1948–1956)",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "period": {
+              "end_year": 1948,
+              "kind": "interval",
+              "start_year": 1942
+            },
+            "value": {
+              "language": "en",
+              "text": "Fairleigh Dickinson Junior College"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      {
+        "candidates": [
+          {
+            "current_basis": "historical",
+            "evidence": [
+              {
+                "locator": "infobox:0",
+                "original_text": "Former names: Fairleigh Dickinson Junior College (1942–1948)Fairleigh Dickinson College (1948–1956)",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "period": {
+              "end_year": 1956,
+              "kind": "interval",
+              "start_year": 1948
+            },
+            "value": {
+              "language": "en",
+              "text": "Fairleigh Dickinson College"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    ],
+    "kind": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:3",
+              "original_text": "Type: Private university",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": "university",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "names": {
+      "en": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "page_metadata",
+                "original_text": "{\"title\": \"Fairleigh Dickinson University\", \"language\": \"en\"}",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": "Fairleigh Dickinson University",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    }
+  },
+  "leadership": {
+    "president": {
+      "candidates": [
+        {
+          "current_basis": "infobox_current",
+          "evidence": [
+            {
+              "locator": "infobox:8",
+              "original_text": "President: Michael J. Avaltroni (since April 2023)[3]",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "person": {
+              "name": "Michael J. Avaltroni"
+            },
+            "term_start": {
+              "month": 4,
+              "precision": "month",
+              "year": 2023
+            },
+            "title_original": {
+              "language": "en",
+              "text": "President"
+            }
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "single_source_family",
+          "reported_current"
+        ],
+        "reason": "The page reports this person in its current officeholder field; a term-end date is not required.",
+        "reason_code": "infobox_current"
+      }
+    },
+    "provost": {
+      "candidates": [
+        {
+          "current_basis": "infobox_current",
+          "evidence": [
+            {
+              "locator": "infobox:9",
+              "original_text": "Provost: Benjamin Rifkin [4]",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "person": {
+              "name": "Benjamin Rifkin"
+            },
+            "title_original": {
+              "language": "en",
+              "text": "Provost"
+            }
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "single_source_family",
+          "reported_current"
+        ],
+        "reason": "The page reports this person in its current officeholder field; a term-end date is not required.",
+        "reason_code": "infobox_current"
+      }
+    }
+  },
+  "locations": [
+    {
+      "coordinates": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "statement:q1393301$9B98C2E3-8977-4D8B-8CFB-FAD69A37AF77",
+                "original_text": "\"latitude\": 40.897967",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "source_rank": "normal",
+            "value": {
+              "crs": "EPSG:4326",
+              "globe_qid": "Q2",
+              "latitude": 40.897967,
+              "longitude": -74.029278,
+              "source_precision_degrees": 0.00027777777777778
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "id": "wikidata-item-location",
+      "kind": "institution",
+      "qid": "Q1393301"
+    }
+  ],
+  "modified_datetime": "2026-11-07T07:20:21.771332+00:00",
+  "population": {
+    "students_total": {
+      "candidates": [
+        {
+          "current_basis": "historical",
+          "evidence": [
+            {
+              "locator": "claim:P2196:0",
+              "original_text": "\"amount\": \"+7479\", \"unit\": \"1\"",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "period": {
+            "kind": "date",
+            "month": 9,
+            "year": 2020
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 7479,
+            "basis": "headcount",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "single_source_family"
+        ],
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "profile": {
+    "motto": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:1",
+              "original_text": "Motto: Fortiter et Suaviter (Latin)",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "language": "la",
+            "text": "Fortiter et Suaviter"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "website": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P856:0",
+              "original_text": "\"value\": \"https://www.fdu.edu/\"",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "value": "https://www.fdu.edu/",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "qid": "Q1393301",
+  "record_revision": 1,
+  "schema_version": "0.2.2",
+  "seed": {
+    "channels": [
+      "ranking_identifier",
+      "reviewed_institution_type"
+    ],
+    "import_id": "seed-84c3beb45367905f",
+    "screening_status": "included"
+  },
+  "selection_policy": "preferred-v1",
+  "sources": {
+    "s1": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-07T06:53:55.266477+00:00",
+      "revision_id": 2540170817,
+      "source_qid": "Q1393301",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2540170817"
+    },
+    "s10": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-07T06:54:30.442280+00:00",
+      "revision_id": 2550609597,
+      "source_qid": "Q1086712",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2550609597"
+    },
+    "s11": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-07T06:54:34.382583+00:00",
+      "revision_id": 2550891142,
+      "source_qid": "Q938359",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2550891142"
+    },
+    "s12": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-07T06:54:37.598298+00:00",
+      "revision_id": 2557587474,
+      "source_qid": "Q991387",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2557587474"
+    },
+    "s2": {
+      "family": "wikimedia",
+      "kind": "wikipedia",
+      "language": "en",
+      "page_id": 295139,
+      "publisher_role": "encyclopedia",
+      "retrieved_at": "2026-11-07T06:54:06.530543+00:00",
+      "revision_id": 1383755809,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1383755809"
+    },
+    "s3": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-07T06:54:09.560683+00:00",
+      "revision_id": 2557623321,
+      "source_qid": "Q4917",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2557623321"
+    },
+    "s4": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-07T06:40:15.558743+00:00",
+      "revision_id": 2562156954,
+      "source_qid": "Q3918",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2562156954"
+    },
+    "s5": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-07T06:54:12.453641+00:00",
+      "revision_id": 2441014281,
+      "source_qid": "Q23002054",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2441014281"
+    },
+    "s6": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-07T06:54:15.295022+00:00",
+      "revision_id": 2562512914,
+      "source_qid": "Q163740",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2562512914"
+    },
+    "s7": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-07T06:54:18.883957+00:00",
+      "revision_id": 2565041516,
+      "source_qid": "Q30",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2565041516"
+    },
+    "s8": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-07T06:54:23.605097+00:00",
+      "revision_id": 2565033078,
+      "source_qid": "Q1408",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2565033078"
+    },
+    "s9": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-07T06:54:26.658200+00:00",
+      "revision_id": 2540118180,
+      "source_qid": "Q498163",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2540118180"
+    }
+  },
+  "update_datetime": "2026-11-07T07:20:21.771332+00:00"
+}

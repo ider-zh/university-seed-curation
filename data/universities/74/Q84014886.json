@@ -1,0 +1,257 @@
+{
+  "coverage": {
+    "finance": {
+      "checked_at": "2026-11-07T06:54:05.840276+00:00",
+      "status": "not_found"
+    },
+    "geography": {
+      "checked_at": "2026-11-07T06:54:05.840276+00:00",
+      "status": "checked"
+    },
+    "history": {
+      "checked_at": "2026-11-07T06:54:05.840276+00:00",
+      "status": "checked"
+    },
+    "identity": {
+      "checked_at": "2026-11-07T06:54:05.840276+00:00",
+      "status": "checked"
+    },
+    "population": {
+      "checked_at": "2026-11-07T06:54:05.840276+00:00",
+      "status": "not_found"
+    },
+    "profile": {
+      "checked_at": "2026-11-07T06:54:05.840276+00:00",
+      "status": "checked"
+    }
+  },
+  "curation": {
+    "identity_status": "in_scope",
+    "refresh_profile": "core-v1",
+    "reviewed_groups": [
+      "identity",
+      "geography",
+      "history",
+      "population",
+      "finance",
+      "profile"
+    ]
+  },
+  "history": {
+    "milestones": [
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P571:0",
+                  "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q84014886$2441712C-C604-4BCC-A987-27F588C123DF\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+2006-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "precision": "year",
+                "year": 2006
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "inception_2006",
+        "kind": "institution_establishment",
+        "subject_ref": "institution"
+      }
+    ]
+  },
+  "identity": {
+    "kind": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P31:0",
+              "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q84014886$D0474B37-68A8-4C37-8441-E655EB34B47E\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 189004, \"id\": \"Q189004\"}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "metadata",
+              "original_text": "{\"id\": \"Q189004\", \"labels\": {\"en\": \"college\"}, \"descriptions\": {\"en\": \"educational institution, varying in level from country to country\"}}",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": "higher_education_college",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "names": {
+      "en": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q84014886\", \"labels\": {\"en\": \"Government College of Nursing, Holenarasipura\"}, \"descriptions\": {\"en\": \"college affiliated to the Rajiv Gandhi University of Health Sciences\"}}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": "Government College of Nursing, Holenarasipura",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    }
+  },
+  "locations": [
+    {
+      "id": "hassan_district",
+      "kind": "administrative_area",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P131:0",
+                "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q84014886$614933ED-67B5-4D76-A181-F0412B38AB17\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 956732, \"id\": \"Q956732\"}, \"reference_count\": 1}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Hassan district"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "qid": "Q956732"
+    },
+    {
+      "id": "india",
+      "kind": "administrative_area",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P17:0",
+                "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q84014886$D7A184BF-8970-4416-84AD-D090BBB05DBF\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 668, \"id\": \"Q668\"}, \"reference_count\": 1}",
+                "source_ref": "s1"
+              },
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q668\", \"labels\": {\"en\": \"India\"}, \"descriptions\": {\"en\": \"country in South Asia\"}}",
+                "source_ref": "s3"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "India"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "qid": "Q668"
+    }
+  ],
+  "modified_datetime": "2026-11-07T07:15:48.601297+00:00",
+  "profile": {
+    "website": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P856:0",
+              "original_text": "{\"property\": \"P856\", \"property_label\": \"official website\", \"statement_id\": \"Q84014886$F3332639-66F1-42DE-B5C6-4C5207CA87B5\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"http://www.hims-nursinghnp.org\", \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "value": "http://www.hims-nursinghnp.org",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "qid": "Q84014886",
+  "record_revision": 1,
+  "schema_version": "0.2.2",
+  "seed": {
+    "channels": [
+      "legacy_discovery"
+    ],
+    "import_id": "seed-84c3beb45367905f",
+    "screening_status": "needs_review"
+  },
+  "selection_policy": "preferred-v1",
+  "sources": {
+    "s1": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-07T06:53:53.749947+00:00",
+      "revision_id": 2554032482,
+      "source_qid": "Q84014886",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2554032482"
+    },
+    "s2": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-07T06:40:12.006521+00:00",
+      "revision_id": 2556557061,
+      "source_qid": "Q189004",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2556557061"
+    },
+    "s3": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-07T06:40:10.456118+00:00",
+      "revision_id": 2563722390,
+      "source_qid": "Q668",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2563722390"
+    },
+    "s4": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-07T06:54:05.814051+00:00",
+      "revision_id": 2532051436,
+      "source_qid": "Q956732",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2532051436"
+    }
+  },
+  "update_datetime": "2026-11-07T07:15:48.601297+00:00"
+}

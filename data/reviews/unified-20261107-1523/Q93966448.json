@@ -1,0 +1,580 @@
+{
+  "attribution": "distinct_native_research_and_review_subagents;not_cryptographic_identity",
+  "research": {
+    "baseline_sha256": "absent",
+    "candidate": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-07T06:54:06.279622+00:00",
+          "status": "not_found"
+        },
+        "geography": {
+          "checked_at": "2026-11-07T06:54:06.279622+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-07T06:54:06.279622+00:00",
+          "status": "checked"
+        },
+        "identity": {
+          "checked_at": "2026-11-07T06:54:06.279622+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-07T06:54:06.279622+00:00",
+          "status": "not_found"
+        },
+        "profile": {
+          "checked_at": "2026-11-07T06:54:06.279622+00:00",
+          "status": "checked"
+        }
+      },
+      "curation": {
+        "identity_status": "in_scope"
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "claim:P571:0",
+                      "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q93966448$137C81A0-2382-44BF-A854-91D37955A2C9\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+2003-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}, \"reference_count\": 1}",
+                      "source_ref": "s1"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 2003
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "inception_2003",
+            "kind": "institution_establishment",
+            "subject_ref": "institution"
+          }
+        ]
+      },
+      "identity": {
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P31:0",
+                  "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q93966448$09C69AAD-4529-46DF-AC03-B0953D9D1433\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 189004, \"id\": \"Q189004\"}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "metadata",
+                  "original_text": "{\"id\": \"Q189004\", \"labels\": {\"en\": \"college\"}, \"descriptions\": {\"en\": \"educational institution, varying in level from country to country\"}}",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "higher_education_college",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q93966448\", \"labels\": {\"en\": \"Dr. Shadi Lal College of Education, Handa Nursingh Home Complex, Sardana Road\"}, \"descriptions\": {\"en\": \"college affiliated to the Chaudhary Charan Singh University\"}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "Dr. Shadi Lal College of Education, Handa Nursingh Home Complex, Sardana Road",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "locations": [
+        {
+          "id": "meerut_district",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q93966448$1BE9748A-DBAC-4855-A4F2-84F3F3DB5BCE\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 1764627, \"id\": \"Q1764627\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q1764627\", \"labels\": {\"en\": \"Meerut district\"}, \"descriptions\": {\"en\": \"district of Uttar Pradesh, India\"}}",
+                    "source_ref": "s4"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Meerut district"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q1764627"
+        }
+      ],
+      "modified_datetime": "2026-11-07T07:09:13.484268+00:00",
+      "profile": {
+        "website": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P856:0",
+                  "original_text": "{\"property\": \"P856\", \"property_label\": \"official website\", \"statement_id\": \"Q93966448$225B45E4-EC77-4F7D-9850-0D52812899B5\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"http://www.dslc.edu.in\", \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "http://www.dslc.edu.in",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "qid": "Q93966448",
+      "record_revision": 1,
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "legacy_discovery"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "needs_review"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-07T06:53:55.356700+00:00",
+          "revision_id": 1192370280,
+          "source_qid": "Q93966448",
+          "url": "https://www.wikidata.org/w/index.php?oldid=1192370280"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-07T06:40:12.006521+00:00",
+          "revision_id": 2556557061,
+          "source_qid": "Q189004",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2556557061"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-07T06:40:10.456118+00:00",
+          "revision_id": 2563722390,
+          "source_qid": "Q668",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2563722390"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-07T06:54:06.269951+00:00",
+          "revision_id": 2563984895,
+          "source_qid": "Q1764627",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2563984895"
+        }
+      }
+    },
+    "coverage": [
+      {
+        "group": "identity",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "status": "checked"
+      },
+      {
+        "group": "population",
+        "status": "not_found"
+      },
+      {
+        "group": "finance",
+        "status": "not_found"
+      },
+      {
+        "group": "profile",
+        "status": "checked"
+      }
+    ],
+    "delta": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-07T06:54:06.279622+00:00",
+          "status": "not_found"
+        },
+        "geography": {
+          "checked_at": "2026-11-07T06:54:06.279622+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-07T06:54:06.279622+00:00",
+          "status": "checked"
+        },
+        "identity": {
+          "checked_at": "2026-11-07T06:54:06.279622+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-07T06:54:06.279622+00:00",
+          "status": "not_found"
+        },
+        "profile": {
+          "checked_at": "2026-11-07T06:54:06.279622+00:00",
+          "status": "checked"
+        }
+      },
+      "curation": {
+        "identity_status": "in_scope"
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "claim:P571:0",
+                      "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q93966448$137C81A0-2382-44BF-A854-91D37955A2C9\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+2003-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}, \"reference_count\": 1}",
+                      "source_ref": "s1"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 2003
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "inception_2003",
+            "kind": "institution_establishment",
+            "subject_ref": "institution"
+          }
+        ]
+      },
+      "identity": {
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P31:0",
+                  "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q93966448$09C69AAD-4529-46DF-AC03-B0953D9D1433\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 189004, \"id\": \"Q189004\"}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "metadata",
+                  "original_text": "{\"id\": \"Q189004\", \"labels\": {\"en\": \"college\"}, \"descriptions\": {\"en\": \"educational institution, varying in level from country to country\"}}",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "higher_education_college",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q93966448\", \"labels\": {\"en\": \"Dr. Shadi Lal College of Education, Handa Nursingh Home Complex, Sardana Road\"}, \"descriptions\": {\"en\": \"college affiliated to the Chaudhary Charan Singh University\"}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "Dr. Shadi Lal College of Education, Handa Nursingh Home Complex, Sardana Road",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "locations": [
+        {
+          "id": "meerut_district",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q93966448$1BE9748A-DBAC-4855-A4F2-84F3F3DB5BCE\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 1764627, \"id\": \"Q1764627\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q1764627\", \"labels\": {\"en\": \"Meerut district\"}, \"descriptions\": {\"en\": \"district of Uttar Pradesh, India\"}}",
+                    "source_ref": "s4"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Meerut district"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q1764627"
+        }
+      ],
+      "profile": {
+        "website": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P856:0",
+                  "original_text": "{\"property\": \"P856\", \"property_label\": \"official website\", \"statement_id\": \"Q93966448$225B45E4-EC77-4F7D-9850-0D52812899B5\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"http://www.dslc.edu.in\", \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "http://www.dslc.edu.in",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "qid": "Q93966448",
+      "record_revision": 1,
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "legacy_discovery"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "needs_review"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-07T06:53:55.356700+00:00",
+          "revision_id": 1192370280,
+          "source_qid": "Q93966448",
+          "url": "https://www.wikidata.org/w/index.php?oldid=1192370280"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-07T06:40:12.006521+00:00",
+          "revision_id": 2556557061,
+          "source_qid": "Q189004",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2556557061"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-07T06:40:10.456118+00:00",
+          "revision_id": 2563722390,
+          "source_qid": "Q668",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2563722390"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-07T06:54:06.269951+00:00",
+          "revision_id": 2563984895,
+          "source_qid": "Q1764627",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2563984895"
+        }
+      }
+    },
+    "open_requests": [],
+    "proposed_at": "2026-11-07T07:09:13.484268+00:00",
+    "qid": "Q93966448",
+    "research": {
+      "model": "gpt-6.1-sol",
+      "prompt_sha256": "850775e9b24c57b79b7632f1e3e7939a05c837f711ef96c079d8407f0abd2921",
+      "reasoning_effort": "medium",
+      "schema_sha256": "92e942f4fbf2ae28964462ea9ffa8312c5ee16a077a1e08b40aaaf741512422e",
+      "session": "/root/r_q93966448"
+    },
+    "retrieval_failures": [],
+    "review_status": "unreviewed",
+    "seed": {
+      "channels": [
+        "legacy_discovery"
+      ],
+      "import_id": "seed-84c3beb45367905f",
+      "screening_status": "needs_review"
+    },
+    "transport": {
+      "base_commit": "cb6e1c7953d69cb9d813b36f5a721b326ddc469e",
+      "protocol": "native-subagent-v1",
+      "repository": "ider-zh/university-seed-curation",
+      "review_policy": {
+        "id": "source-grounded-flexible-v2",
+        "sha256": "b8ed7d2897e4c31dbd81b1379aafdc1077a21d1a33949edbd2d896b0adf99db2"
+      },
+      "schema_sha256": "bfa496eafa9dffca56146214168db7f000b09161b8993129632e7202e1c88833",
+      "seed_catalog_sha256": "84c3beb45367905f513d650684283dd62a9c1b77962bdc34151a6ef05bfa03d4"
+    },
+    "type": "university-proposal-v1"
+  },
+  "review": {
+    "contexts_checked": 2,
+    "coverage_checks": [
+      {
+        "group": "identity",
+        "reason": "The frozen survey marks identity checked and provides classification, description, and label evidence; key identity claims were reviewed above.",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "reason": "The frozen Research survey records geography as checked. Secondary geographic fields are outside the core-review-v3 factual claim set.",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "reason": "The frozen survey records history as checked; the 2003 inception milestone is supported at year precision as reviewed above.",
+        "status": "checked"
+      },
+      {
+        "group": "profile",
+        "reason": "The frozen Research survey records profile as checked. This is a coverage receipt, not a new factual verification of secondary profile fields.",
+        "status": "checked"
+      },
+      {
+        "group": "population",
+        "reason": "The frozen Research survey records no usable population evidence; no enrollment figure is inferred.",
+        "status": "not_found"
+      },
+      {
+        "group": "finance",
+        "reason": "The frozen Research survey records no usable finance evidence; no financial figures are inferred.",
+        "status": "not_found"
+      }
+    ],
+    "decision": "approve",
+    "facts_checked": 3,
+    "full_refresh": true,
+    "inferences": [
+      {
+        "id": "$.identity.kind:c1",
+        "reason": "The frozen P31 statement identifies the entity as a college (Q189004), and the target description identifies it as affiliated with Chaudhary Charan Singh University. Together these support the higher-education-college normalization, though that normalized category is not stated verbatim."
+      },
+      {
+        "id": "identity",
+        "reason": "The frozen entity description and college classification support treating this university-affiliated college as in scope. This is a scope judgment based on the packet, not an independent online verification."
+      },
+      {
+        "id": "milestone:inception_2003",
+        "reason": "The frozen inception property supports a 2003 institutional milestone; classifying it as institution_establishment for the institution is a reasonable normalization, without asserting a separately verified legal founding event."
+      }
+    ],
+    "model": "not_reported",
+    "proposal_sha256": "bb0d7d57f86141cf8147f26933998af785441593f6168a575320be92873674ee",
+    "qid": "Q93966448",
+    "reasoning_effort": "medium",
+    "record_sha256": "9331def212614d2c0f0be7e0313c160a99a619fe09b280e0a6c0f317075cd04e",
+    "request_responses": [],
+    "requests": [],
+    "review_scope": {
+      "not_independently_reviewed_ids": [
+        "$.locations[0].name:c1",
+        "$.profile.website:c1",
+        "location:meerut_district"
+      ],
+      "reviewed_ids": [
+        "$.history.milestones[0].date:c1",
+        "$.identity.kind:c1",
+        "$.identity.names.en:c1",
+        "identity",
+        "milestone:inception_2003"
+      ],
+      "version": "core-review-v3"
+    },
+    "review_session": "/root/v_q93966448",
+    "reviewed_at": "2026-11-07T07:14:04.914021+00:00",
+    "source_revisions_checked": 4,
+    "waived_requests": []
+  },
+  "review_result_sha256": "2d2eda983dbabf4a0925470f2e1af807b4ca1eb24c76cf8bc40c66062378c167",
+  "type": "university-unified-receipt-v1"
+}
