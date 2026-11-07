@@ -1,0 +1,888 @@
+{
+  "attribution": "distinct_native_research_and_review_subagents;not_cryptographic_identity",
+  "research": {
+    "baseline_sha256": "absent",
+    "candidate": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-07T07:45:50.098887+00:00",
+          "status": "not_found"
+        },
+        "geography": {
+          "checked_at": "2026-11-07T07:45:50.098887+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-07T07:45:50.098887+00:00",
+          "status": "checked"
+        },
+        "identity": {
+          "checked_at": "2026-11-07T07:45:50.098887+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-07T07:45:50.098887+00:00",
+          "status": "not_found"
+        },
+        "profile": {
+          "checked_at": "2026-11-07T07:45:50.098887+00:00",
+          "status": "checked"
+        }
+      },
+      "curation": {
+        "identity_status": "in_scope"
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "claim:P571:0",
+                      "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q95185333$7441E4C6-91E0-4A48-8C6A-4FDB0D4E5E41\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+2018-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}, \"reference_count\": 1}",
+                      "source_ref": "s1"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 2018
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "inception",
+            "kind": "institution_establishment",
+            "subject_ref": "institution"
+          }
+        ]
+      },
+      "identity": {
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "metadata",
+                  "original_text": "{\"id\": \"Q95185333\", \"labels\": {\"en\": \"R A S Girls Degree College, Lucknow\"}, \"descriptions\": {\"en\": \"college affiliated to the University of Lucknow\"}}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "paragraph:129",
+                  "original_text": "Seats in University Campus and Colleges in Faculty of Arts",
+                  "source_ref": "s6"
+                },
+                {
+                  "locator": "paragraph:142",
+                  "original_text": "Details of B.A. Eligibility The minimum marks required for General and Other Backward Classes candidates is 40% of marks* in Intermediate or equivalent examination and for Scheduled Castes and Scheduled Tribes is 33%* of marks in Intermediate or equivalent examination. *This percentage is based upon total marks of all the subjects. Choice of Subject",
+                  "source_ref": "s6"
+                },
+                {
+                  "locator": "paragraph:208",
+                  "original_text": "R.A.S. GIRLS DEGREE COLLEGE",
+                  "source_ref": "s6"
+                },
+                {
+                  "locator": "paragraph:209",
+                  "original_text": "NEAR TRAFFIC TRAINING PARK, KRISHNANAGAR LUCKNOW",
+                  "source_ref": "s6"
+                },
+                {
+                  "locator": "paragraph:210",
+                  "original_text": "HINDI, ENGLISH, HOMESCIENCE, SANSKRIT, HISTORY(MIH), POL.SCIENCE, SOCIOLOGY(60 SEATS IN EACH SUBJECT)",
+                  "source_ref": "s6"
+                }
+              ],
+              "id": "c1",
+              "value": "higher_education_college",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q95185333\", \"labels\": {\"en\": \"R A S Girls Degree College, Lucknow\"}, \"descriptions\": {\"en\": \"college affiliated to the University of Lucknow\"}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "R A S Girls Degree College, Lucknow",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "locations": [
+        {
+          "id": "lucknow-district",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q95185333$29829FF3-5B96-4C10-8299-BF974CEB6E0C\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 1773416, \"id\": \"Q1773416\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q1773416\", \"labels\": {\"en\": \"Lucknow district\"}, \"descriptions\": {\"en\": \"district of Uttar Pradesh, India\"}}",
+                    "source_ref": "s4"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Lucknow district"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q1773416"
+        },
+        {
+          "coordinates": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "statement:Q95185333$C3BD15E1-6654-43BB-8E78-9CDAAF7DE520",
+                    "original_text": "\"latitude\": 26.79286",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "source_rank": "normal",
+                "value": {
+                  "crs": "EPSG:4326",
+                  "globe_qid": "Q2",
+                  "latitude": 26.79286,
+                  "longitude": 80.8706223,
+                  "source_precision_degrees": 1e-05
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "wikidata-item-location",
+          "kind": "institution",
+          "qid": "Q95185333"
+        }
+      ],
+      "modified_datetime": "2026-11-07T07:47:27.053596+00:00",
+      "profile": {
+        "degree_levels": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "paragraph:129",
+                  "original_text": "Seats in University Campus and Colleges in Faculty of Arts",
+                  "source_ref": "s6"
+                },
+                {
+                  "locator": "paragraph:142",
+                  "original_text": "Details of B.A. Eligibility The minimum marks required for General and Other Backward Classes candidates is 40% of marks* in Intermediate or equivalent examination and for Scheduled Castes and Scheduled Tribes is 33%* of marks in Intermediate or equivalent examination. *This percentage is based upon total marks of all the subjects. Choice of Subject",
+                  "source_ref": "s6"
+                },
+                {
+                  "locator": "paragraph:208",
+                  "original_text": "R.A.S. GIRLS DEGREE COLLEGE",
+                  "source_ref": "s6"
+                },
+                {
+                  "locator": "paragraph:209",
+                  "original_text": "NEAR TRAFFIC TRAINING PARK, KRISHNANAGAR LUCKNOW",
+                  "source_ref": "s6"
+                },
+                {
+                  "locator": "paragraph:210",
+                  "original_text": "HINDI, ENGLISH, HOMESCIENCE, SANSKRIT, HISTORY(MIH), POL.SCIENCE, SOCIOLOGY(60 SEATS IN EACH SUBJECT)",
+                  "source_ref": "s6"
+                },
+                {
+                  "locator": "paragraph:129",
+                  "original_text": "Seats in University Campus and Colleges in Faculty of Commerce",
+                  "source_ref": "s7"
+                },
+                {
+                  "locator": "paragraph:133",
+                  "original_text": "B.Com.(Self-Finance)",
+                  "source_ref": "s7"
+                },
+                {
+                  "locator": "paragraph:209",
+                  "original_text": "R.A.S. GIRLS DEGREE COLLEGE",
+                  "source_ref": "s7"
+                },
+                {
+                  "locator": "paragraph:210",
+                  "original_text": "NEAR TRAFFIC TRAINING PARK, KRISHNANAGAR LUCKNOW",
+                  "source_ref": "s7"
+                }
+              ],
+              "id": "c1",
+              "value": [
+                "bachelor"
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "website": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P856:0",
+                  "original_text": "{\"property\": \"P856\", \"property_label\": \"official website\", \"statement_id\": \"Q95185333$103B6BA8-4A2A-408D-A4CF-4BD7A3F8DFCE\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"http://www.rasgirlsdegreecollege.org\", \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "http://www.rasgirlsdegreecollege.org",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "qid": "Q95185333",
+      "record_revision": 1,
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "legacy_discovery"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "needs_review"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-07T07:31:39.171066+00:00",
+          "revision_id": 1198892336,
+          "source_qid": "Q95185333",
+          "url": "https://www.wikidata.org/w/index.php?oldid=1198892336"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-07T06:37:12.440636+00:00",
+          "revision_id": 2556557061,
+          "source_qid": "Q189004",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2556557061"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-07T06:37:16.154939+00:00",
+          "revision_id": 2563722390,
+          "source_qid": "Q668",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2563722390"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-07T07:31:41.165925+00:00",
+          "revision_id": 2565428428,
+          "source_qid": "Q1773416",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2565428428"
+        },
+        "s5": {
+          "family": "www.lkouniv.ac.in",
+          "kind": "website",
+          "publisher_role": "other",
+          "retrieved_at": "2026-11-07T07:40:12.370591+00:00",
+          "snapshot_id": "sha256:4c237e9c65b448234421c741af5004b8bb5940fb8a195292732e15b9f1912a54",
+          "url": "https://www.lkouniv.ac.in/article/en/college-list"
+        },
+        "s6": {
+          "family": "www.lkouniv.ac.in",
+          "kind": "website",
+          "publisher_role": "other",
+          "retrieved_at": "2026-11-07T07:45:50.151877+00:00",
+          "snapshot_id": "sha256:266ef8ffea9c9f669678a8e9691640157effc4b68c3ae86013d77ad1216e33e3",
+          "url": "https://www.lkouniv.ac.in/en/article/program-arts?brd=1"
+        },
+        "s7": {
+          "family": "www.lkouniv.ac.in",
+          "kind": "website",
+          "publisher_role": "other",
+          "retrieved_at": "2026-11-07T07:45:50.151877+00:00",
+          "snapshot_id": "sha256:fe4def9d826b22b0eb6d711f2d25aa468e240c05a5af27e74bc3121e47ae8d8e",
+          "url": "https://www.lkouniv.ac.in/en/article/program-commerce"
+        }
+      }
+    },
+    "coverage": [
+      {
+        "group": "identity",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "status": "checked"
+      },
+      {
+        "group": "population",
+        "status": "not_found"
+      },
+      {
+        "group": "finance",
+        "status": "not_found"
+      },
+      {
+        "group": "profile",
+        "status": "checked"
+      }
+    ],
+    "delta": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-07T07:45:50.098887+00:00",
+          "status": "not_found"
+        },
+        "geography": {
+          "checked_at": "2026-11-07T07:45:50.098887+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-07T07:45:50.098887+00:00",
+          "status": "checked"
+        },
+        "identity": {
+          "checked_at": "2026-11-07T07:45:50.098887+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-07T07:45:50.098887+00:00",
+          "status": "not_found"
+        },
+        "profile": {
+          "checked_at": "2026-11-07T07:45:50.098887+00:00",
+          "status": "checked"
+        }
+      },
+      "curation": {
+        "identity_status": "in_scope"
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "claim:P571:0",
+                      "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q95185333$7441E4C6-91E0-4A48-8C6A-4FDB0D4E5E41\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+2018-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}, \"reference_count\": 1}",
+                      "source_ref": "s1"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 2018
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "inception",
+            "kind": "institution_establishment",
+            "subject_ref": "institution"
+          }
+        ]
+      },
+      "identity": {
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "metadata",
+                  "original_text": "{\"id\": \"Q95185333\", \"labels\": {\"en\": \"R A S Girls Degree College, Lucknow\"}, \"descriptions\": {\"en\": \"college affiliated to the University of Lucknow\"}}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "paragraph:129",
+                  "original_text": "Seats in University Campus and Colleges in Faculty of Arts",
+                  "source_ref": "s6"
+                },
+                {
+                  "locator": "paragraph:142",
+                  "original_text": "Details of B.A. Eligibility The minimum marks required for General and Other Backward Classes candidates is 40% of marks* in Intermediate or equivalent examination and for Scheduled Castes and Scheduled Tribes is 33%* of marks in Intermediate or equivalent examination. *This percentage is based upon total marks of all the subjects. Choice of Subject",
+                  "source_ref": "s6"
+                },
+                {
+                  "locator": "paragraph:208",
+                  "original_text": "R.A.S. GIRLS DEGREE COLLEGE",
+                  "source_ref": "s6"
+                },
+                {
+                  "locator": "paragraph:209",
+                  "original_text": "NEAR TRAFFIC TRAINING PARK, KRISHNANAGAR LUCKNOW",
+                  "source_ref": "s6"
+                },
+                {
+                  "locator": "paragraph:210",
+                  "original_text": "HINDI, ENGLISH, HOMESCIENCE, SANSKRIT, HISTORY(MIH), POL.SCIENCE, SOCIOLOGY(60 SEATS IN EACH SUBJECT)",
+                  "source_ref": "s6"
+                }
+              ],
+              "id": "c1",
+              "value": "higher_education_college",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q95185333\", \"labels\": {\"en\": \"R A S Girls Degree College, Lucknow\"}, \"descriptions\": {\"en\": \"college affiliated to the University of Lucknow\"}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "R A S Girls Degree College, Lucknow",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "locations": [
+        {
+          "id": "lucknow-district",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q95185333$29829FF3-5B96-4C10-8299-BF974CEB6E0C\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 1773416, \"id\": \"Q1773416\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q1773416\", \"labels\": {\"en\": \"Lucknow district\"}, \"descriptions\": {\"en\": \"district of Uttar Pradesh, India\"}}",
+                    "source_ref": "s4"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Lucknow district"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q1773416"
+        },
+        {
+          "coordinates": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "statement:Q95185333$C3BD15E1-6654-43BB-8E78-9CDAAF7DE520",
+                    "original_text": "\"latitude\": 26.79286",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "source_rank": "normal",
+                "value": {
+                  "crs": "EPSG:4326",
+                  "globe_qid": "Q2",
+                  "latitude": 26.79286,
+                  "longitude": 80.8706223,
+                  "source_precision_degrees": 1e-05
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "wikidata-item-location",
+          "kind": "institution",
+          "qid": "Q95185333"
+        }
+      ],
+      "profile": {
+        "degree_levels": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "paragraph:129",
+                  "original_text": "Seats in University Campus and Colleges in Faculty of Arts",
+                  "source_ref": "s6"
+                },
+                {
+                  "locator": "paragraph:142",
+                  "original_text": "Details of B.A. Eligibility The minimum marks required for General and Other Backward Classes candidates is 40% of marks* in Intermediate or equivalent examination and for Scheduled Castes and Scheduled Tribes is 33%* of marks in Intermediate or equivalent examination. *This percentage is based upon total marks of all the subjects. Choice of Subject",
+                  "source_ref": "s6"
+                },
+                {
+                  "locator": "paragraph:208",
+                  "original_text": "R.A.S. GIRLS DEGREE COLLEGE",
+                  "source_ref": "s6"
+                },
+                {
+                  "locator": "paragraph:209",
+                  "original_text": "NEAR TRAFFIC TRAINING PARK, KRISHNANAGAR LUCKNOW",
+                  "source_ref": "s6"
+                },
+                {
+                  "locator": "paragraph:210",
+                  "original_text": "HINDI, ENGLISH, HOMESCIENCE, SANSKRIT, HISTORY(MIH), POL.SCIENCE, SOCIOLOGY(60 SEATS IN EACH SUBJECT)",
+                  "source_ref": "s6"
+                },
+                {
+                  "locator": "paragraph:129",
+                  "original_text": "Seats in University Campus and Colleges in Faculty of Commerce",
+                  "source_ref": "s7"
+                },
+                {
+                  "locator": "paragraph:133",
+                  "original_text": "B.Com.(Self-Finance)",
+                  "source_ref": "s7"
+                },
+                {
+                  "locator": "paragraph:209",
+                  "original_text": "R.A.S. GIRLS DEGREE COLLEGE",
+                  "source_ref": "s7"
+                },
+                {
+                  "locator": "paragraph:210",
+                  "original_text": "NEAR TRAFFIC TRAINING PARK, KRISHNANAGAR LUCKNOW",
+                  "source_ref": "s7"
+                }
+              ],
+              "id": "c1",
+              "value": [
+                "bachelor"
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "website": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P856:0",
+                  "original_text": "{\"property\": \"P856\", \"property_label\": \"official website\", \"statement_id\": \"Q95185333$103B6BA8-4A2A-408D-A4CF-4BD7A3F8DFCE\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"http://www.rasgirlsdegreecollege.org\", \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "http://www.rasgirlsdegreecollege.org",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "qid": "Q95185333",
+      "record_revision": 1,
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "legacy_discovery"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "needs_review"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-07T07:31:39.171066+00:00",
+          "revision_id": 1198892336,
+          "source_qid": "Q95185333",
+          "url": "https://www.wikidata.org/w/index.php?oldid=1198892336"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-07T06:37:12.440636+00:00",
+          "revision_id": 2556557061,
+          "source_qid": "Q189004",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2556557061"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-07T06:37:16.154939+00:00",
+          "revision_id": 2563722390,
+          "source_qid": "Q668",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2563722390"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-07T07:31:41.165925+00:00",
+          "revision_id": 2565428428,
+          "source_qid": "Q1773416",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2565428428"
+        },
+        "s5": {
+          "family": "www.lkouniv.ac.in",
+          "kind": "website",
+          "publisher_role": "other",
+          "retrieved_at": "2026-11-07T07:40:12.370591+00:00",
+          "snapshot_id": "sha256:4c237e9c65b448234421c741af5004b8bb5940fb8a195292732e15b9f1912a54",
+          "url": "https://www.lkouniv.ac.in/article/en/college-list"
+        },
+        "s6": {
+          "family": "www.lkouniv.ac.in",
+          "kind": "website",
+          "publisher_role": "other",
+          "retrieved_at": "2026-11-07T07:45:50.151877+00:00",
+          "snapshot_id": "sha256:266ef8ffea9c9f669678a8e9691640157effc4b68c3ae86013d77ad1216e33e3",
+          "url": "https://www.lkouniv.ac.in/en/article/program-arts?brd=1"
+        },
+        "s7": {
+          "family": "www.lkouniv.ac.in",
+          "kind": "website",
+          "publisher_role": "other",
+          "retrieved_at": "2026-11-07T07:45:50.151877+00:00",
+          "snapshot_id": "sha256:fe4def9d826b22b0eb6d711f2d25aa468e240c05a5af27e74bc3121e47ae8d8e",
+          "url": "https://www.lkouniv.ac.in/en/article/program-commerce"
+        }
+      }
+    },
+    "open_requests": [
+      {
+        "category": "evidence_gap",
+        "field": "curation.identity_status",
+        "reason": "Resolve higher education eligibility using captured institution-specific authoritative evidence of the education level or programmes, or retain needs_review without publication. The generic college class and an unverified affiliation description do not alone establish tertiary status; preserve the institution subject and root coordinate precision.",
+        "request_id": "cfc8551a-ecae-54df-bc5b-2e2007d338e8",
+        "reviewed_proposal_sha256": "2ec66b3f22e0c4bae9b0264bcb5eb753e788b6c667b71d3d2d1b860b53a054a7"
+      },
+      {
+        "category": "evidence_gap",
+        "field": "curation.identity_status",
+        "reason": "Resolve the retained eligibility request using subject-specific captured educational-level or programme evidence, or retain needs_review and withhold publication. Preserve the exact entity and coordinate subject; do not equate similarly named institutions or infer eligibility or exclusion from failed retrieval.",
+        "request_id": "b809b23b-6fd7-563b-bc36-ee456793e021",
+        "reviewed_proposal_sha256": "c70c34b287260cc9dcab8b5b70410d156bebd555dde7e3c0a29a68f7bc3f214e"
+      }
+    ],
+    "proposed_at": "2026-11-07T07:47:27.053596+00:00",
+    "qid": "Q95185333",
+    "research": {
+      "model": "not_reported",
+      "prompt_sha256": "0e1f77e17a45a458a0f5a09f498c758323840ee88ba9b5e36c654d601c6a6690",
+      "reasoning_effort": "medium",
+      "schema_sha256": "92e942f4fbf2ae28964462ea9ffa8312c5ee16a077a1e08b40aaaf741512422e",
+      "session": "/root/b2_revision4c"
+    },
+    "retrieval_failures": [
+      {
+        "reason": "unavailable"
+      },
+      {
+        "reason": "unavailable"
+      }
+    ],
+    "review_status": "unreviewed",
+    "seed": {
+      "channels": [
+        "legacy_discovery"
+      ],
+      "import_id": "seed-84c3beb45367905f",
+      "screening_status": "needs_review"
+    },
+    "transport": {
+      "base_commit": "34c7be0fe2597ed5f4112c5e8b9e2ff880ab72a1",
+      "protocol": "native-subagent-v1",
+      "repository": "ider-zh/university-seed-curation",
+      "review_policy": {
+        "id": "source-grounded-flexible-v2",
+        "sha256": "b8ed7d2897e4c31dbd81b1379aafdc1077a21d1a33949edbd2d896b0adf99db2"
+      },
+      "schema_sha256": "bfa496eafa9dffca56146214168db7f000b09161b8993129632e7202e1c88833",
+      "seed_catalog_sha256": "84c3beb45367905f513d650684283dd62a9c1b77962bdc34151a6ef05bfa03d4"
+    },
+    "type": "university-proposal-v1"
+  },
+  "review": {
+    "contexts_checked": 3,
+    "coverage_checks": [
+      {
+        "group": "identity",
+        "reason": "Wikidata and university programme pages examined; matching is inferred from name, location and affiliation.",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "reason": "Wikidata root country, district and root coordinates were surveyed; no separate campus point inferred.",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "reason": "Root inception was examined; historical survey is limited to captured material.",
+        "status": "checked"
+      },
+      {
+        "group": "population",
+        "reason": "No population observation located in captured sources; not an exhaustive survey.",
+        "status": "not_found"
+      },
+      {
+        "group": "finance",
+        "reason": "No finance observation located in captured sources; not an exhaustive survey.",
+        "status": "not_found"
+      },
+      {
+        "group": "profile",
+        "reason": "Captured Wikidata and university programme pages were examined; two external page attempts failed, so full refresh is not attested.",
+        "status": "checked"
+      }
+    ],
+    "decision": "approve",
+    "facts_checked": 4,
+    "full_refresh": false,
+    "inferences": [
+      {
+        "id": "$.identity.kind:c1",
+        "reason": "Root s1 identifies R A S Girls Degree College in Lucknow and its Lucknow University affiliation; frozen university source s6 lists the same distinctive name in Lucknow with subjects and seats in the Arts degree programme, and s7 lists it under B.Com colleges. Exact name, locality and affiliation jointly support matching the subject and tertiary level; the match is an inference rather than a separately asserted identifier."
+      },
+      {
+        "id": "identity",
+        "reason": "The frozen University of Lucknow Arts and Commerce lists contain the distinctive R.A.S. Girls Degree College name in Lucknow under degree programme college listings, consistent with root name, locality and described affiliation. Taken together this supports in_scope, while subject matching is inferred."
+      }
+    ],
+    "model": "not_reported",
+    "proposal_sha256": "807c341500c60490d3f41b7e85e9e5106b2315f785536bf7f4d1588ea004c2d7",
+    "qid": "Q95185333",
+    "reasoning_effort": "medium",
+    "record_sha256": "dbd3f9d6bc26132e215ec37702eaac567ddb0c62baa09ccae4cc00a3136e8079",
+    "request_responses": [
+      {
+        "reason": "Frozen university Arts and Commerce listings use the matching distinctive girls degree college name and Lucknow locality and place it in degree programme college lists; root describes an affiliation to the same university. This supports tertiary eligibility by a source-grounded subject match, with root coordinate retained at its original scope and precision.",
+        "request_id": "cfc8551a-ecae-54df-bc5b-2e2007d338e8",
+        "status": "addressed"
+      },
+      {
+        "reason": "Frozen university Arts and Commerce listings use the matching distinctive girls degree college name and Lucknow locality and place it in degree programme college lists; root describes an affiliation to the same university. This supports tertiary eligibility by a source-grounded subject match, with root coordinate retained at its original scope and precision.",
+        "request_id": "b809b23b-6fd7-563b-bc36-ee456793e021",
+        "status": "addressed"
+      }
+    ],
+    "requests": [],
+    "review_scope": {
+      "not_independently_reviewed_ids": [
+        "$.locations[0].name:c1",
+        "$.profile.degree_levels:c1",
+        "$.profile.website:c1",
+        "location:lucknow-district"
+      ],
+      "reviewed_ids": [
+        "$.history.milestones[0].date:c1",
+        "$.identity.kind:c1",
+        "$.identity.names.en:c1",
+        "$.locations[1].coordinates:c1",
+        "identity",
+        "location:wikidata-item-location",
+        "milestone:inception"
+      ],
+      "version": "core-review-v3"
+    },
+    "review_session": "/root/b2_review4c",
+    "reviewed_at": "2026-11-07T07:49:09.217464+00:00",
+    "source_revisions_checked": 7,
+    "waived_requests": []
+  },
+  "review_result_sha256": "f66330ad1368d1fd3b7c3c361c346b0b83163825902a08fa38060425f0584020",
+  "type": "university-unified-receipt-v1"
+}
