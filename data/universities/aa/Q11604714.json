@@ -1,0 +1,330 @@
+{
+  "coverage": {
+    "finance": {
+      "checked_at": "2026-11-07T06:40:22.404519+00:00",
+      "status": "not_found"
+    },
+    "geography": {
+      "checked_at": "2026-11-07T06:40:22.404519+00:00",
+      "status": "checked"
+    },
+    "history": {
+      "checked_at": "2026-11-07T06:40:22.404519+00:00",
+      "status": "disputed"
+    },
+    "identity": {
+      "checked_at": "2026-11-07T06:40:22.404519+00:00",
+      "status": "checked"
+    },
+    "population": {
+      "checked_at": "2026-11-07T06:40:22.404519+00:00",
+      "status": "not_found"
+    },
+    "profile": {
+      "checked_at": "2026-11-07T06:40:22.404519+00:00",
+      "status": "checked"
+    }
+  },
+  "curation": {
+    "identity_status": "in_scope"
+  },
+  "history": {
+    "milestones": [
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "established in 1967",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "claim:P571:1",
+                  "original_text": "+1967-00-00T00:00:00Z",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "precision": "year",
+                "year": 1967
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "established1967",
+        "kind": "institution_establishment",
+        "subject_ref": "institution"
+      }
+    ]
+  },
+  "identity": {
+    "aliases": [
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "Seika Women's Junior College (精華女子短期大学, Seika joshi tanki daigaku)",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "ja",
+              "text": "精華女子短期大学"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    ],
+    "kind": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "is a private junior women's college in Fukuoka, Fukuoka, Japan",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": "higher_education_college",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "names": {
+      "en": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "metadata",
+                "original_text": "Seika Women's Junior College",
+                "source_ref": "s1"
+              },
+              {
+                "locator": "section:lead",
+                "original_text": "Seika Women's Junior College (精華女子短期大学, Seika joshi tanki daigaku)",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": "Seika Women's Junior College",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    }
+  },
+  "locations": [
+    {
+      "address": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "in Fukuoka, Fukuoka, Japan",
+                "source_ref": "s2"
+              },
+              {
+                "locator": "claim:P17:0",
+                "original_text": "Q17",
+                "source_ref": "s1"
+              },
+              {
+                "locator": "metadata",
+                "original_text": "Fukuoka",
+                "source_ref": "s5"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "city_name": "Fukuoka",
+              "city_qid": "Q26600",
+              "country_name": "Japan",
+              "country_qid": "Q17",
+              "formatted": {
+                "language": "en",
+                "text": "Fukuoka, Japan"
+              }
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "id": "fukuoka",
+      "kind": "headquarters",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P159:0",
+                "original_text": "Q26600",
+                "source_ref": "s1"
+              },
+              {
+                "locator": "metadata",
+                "original_text": "Fukuoka",
+                "source_ref": "s5"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Fukuoka"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "qid": "Q26600"
+    },
+    {
+      "coordinates": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "statement:Q11604714$EF525A81-335A-49E3-B037-48A353DB86B3",
+                "original_text": "\"latitude\": 33.54694444",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "source_rank": "normal",
+            "value": {
+              "crs": "EPSG:4326",
+              "globe_qid": "Q2",
+              "latitude": 33.54694444,
+              "longitude": 130.45333333,
+              "source_precision_degrees": 0.00027777777777778
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "id": "wikidata-item-location",
+      "kind": "institution",
+      "qid": "Q11604714"
+    }
+  ],
+  "modified_datetime": "2026-11-07T06:44:06.239907+00:00",
+  "profile": {
+    "website": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P856:0",
+              "original_text": "http://www2.seika.ac.jp/",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "value": "http://www2.seika.ac.jp/",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "qid": "Q11604714",
+  "record_revision": 1,
+  "schema_version": "0.2.2",
+  "seed": {
+    "channels": [
+      "legacy_discovery"
+    ],
+    "import_id": "seed-84c3beb45367905f",
+    "screening_status": "needs_review"
+  },
+  "selection_policy": "preferred-v1",
+  "sources": {
+    "s1": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-07T06:39:56.505939+00:00",
+      "revision_id": 2474207617,
+      "source_qid": "Q11604714",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2474207617"
+    },
+    "s2": {
+      "family": "wikimedia",
+      "kind": "wikipedia",
+      "language": "en",
+      "page_id": 18261469,
+      "publisher_role": "encyclopedia",
+      "retrieved_at": "2026-11-07T06:40:07.061701+00:00",
+      "revision_id": 1279158683,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1279158683"
+    },
+    "s3": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-07T06:40:12.006521+00:00",
+      "revision_id": 2556557061,
+      "source_qid": "Q189004",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2556557061"
+    },
+    "s4": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-07T06:40:16.061443+00:00",
+      "revision_id": 2563565467,
+      "source_qid": "Q17",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2563565467"
+    },
+    "s5": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-07T06:40:22.359346+00:00",
+      "revision_id": 2564656011,
+      "source_qid": "Q26600",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2564656011"
+    }
+  }
+}
