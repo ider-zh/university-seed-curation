@@ -1,5 +1,6 @@
 """Single-manager native proposal and repository contracts; no PR transport."""
 import re
+import subprocess
 from .integrity import load_json, sha
 from .records import CURRENT_SCHEMA_VERSION, encode, instant
 from .preferred import validate, recompute
@@ -23,13 +24,51 @@ REVIEW_CONTRACT_PATHS = (
                        'seed_catalog', 'integrity', 'source_packet',
                        'sources', 'source_requests', 'web_sources'))
 
+# An explicitly audited compiler transition: the only change tightens
+# full_refresh for a disputed six-group survey. Old approvals are compatible
+# only when their frozen verdict still computes the same full_refresh under
+# the current rule (checked again by verify_files).
+_NATIVE_REVIEW_PATH = '.agents/skills/university-curation/scripts/lib/university_curation/native_review.py'
+_COMPATIBLE_REVIEW_BLOBS = {
+    ('1ccce38fd841a4656bb925f907386dbfb655adde',
+     'f8f4111d5e3892a6b2b3bb7a4c9d93c8c057e58f'),
+}
+
+
+def _compatible_review_change(repo, original, current, changed):
+    """Allow only an exact, previously audited review-compiler transition."""
+    if changed != [_NATIVE_REVIEW_PATH]:
+        return False
+    try:
+        previous = git(repo, 'rev-parse', original + ':' + _NATIVE_REVIEW_PATH).decode().strip()
+        latest = git(repo, 'rev-parse', current + ':' + _NATIVE_REVIEW_PATH).decode().strip()
+    except subprocess.CalledProcessError:
+        return False
+    return (previous, latest) in _COMPATIBLE_REVIEW_BLOBS
+
+
+def check_review_refresh(proposal, verdict):
+    """Recompute full-refresh eligibility, including for frozen approvals."""
+    from .research_schema import GROUPS
+    declared = {r['group']: r['status'] for r in proposal['coverage']}
+    reviewed = verdict['coverage_checks']
+    checked = {r['group']: r['status'] for r in reviewed}
+    full = (verdict['decision'] == 'approve' and declared == checked and
+            len(declared) == len(GROUPS) and set(declared) == set(GROUPS) and
+            len(reviewed) == len(GROUPS) and
+            all(s in ('checked', 'not_found', 'not_applicable') for s in declared.values()) and
+            not proposal['retrieval_failures'] and
+            proposal['delta']['curation']['identity_status'] in ('in_scope', 'related', 'excluded'))
+    if type(verdict.get('full_refresh')) is not bool or verdict['full_refresh'] != full:
+        raise ValueError('Review full_refresh differs from current survey rules')
+
 
 def check_publication_base(repo, original, current, entities=()):
     """Permit main advancement only outside the reviewed contract/QID scope."""
     original=commit(repo,original); current=commit(repo,current)
     git(repo,'merge-base','--is-ancestor',original,current)
     changed=git(repo,'diff','--name-only',original,current,'--',*REVIEW_CONTRACT_PATHS).decode().splitlines()
-    if changed:
+    if changed and not _compatible_review_change(repo,original,current,changed):
         raise ValueError('Review contract changed: '+', '.join(changed))
     if entities:
         from .manager import backlog_at
