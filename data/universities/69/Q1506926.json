@@ -1,0 +1,745 @@
+{
+  "coverage": {
+    "finance": {
+      "checked_at": "2026-11-07T07:29:02.908667+00:00",
+      "status": "not_found"
+    },
+    "geography": {
+      "checked_at": "2026-11-07T07:29:02.908667+00:00",
+      "status": "checked"
+    },
+    "history": {
+      "checked_at": "2026-11-07T07:29:02.908667+00:00",
+      "status": "checked"
+    },
+    "identity": {
+      "checked_at": "2026-11-07T07:29:02.908667+00:00",
+      "status": "checked"
+    },
+    "population": {
+      "checked_at": "2026-11-07T07:29:02.908667+00:00",
+      "status": "checked"
+    },
+    "profile": {
+      "checked_at": "2026-11-07T07:29:02.908667+00:00",
+      "status": "checked"
+    }
+  },
+  "curation": {
+    "identity_status": "related",
+    "refresh_profile": "core-v1",
+    "reviewed_groups": [
+      "identity",
+      "geography",
+      "history",
+      "population",
+      "finance",
+      "profile"
+    ]
+  },
+  "history": {
+    "milestones": [
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P571:0",
+                  "original_text": "+1827-02-18T00:00:00Z",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "infobox:1",
+                  "original_text": "February 18, 1827",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "day": 18,
+                "month": 2,
+                "precision": "day",
+                "year": 1827
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Foundation",
+                  "original_text": "The college was established in February 1827 as an Anglican missionary school by the Church Missionary Society with support from Charles MacCarthy, the governor of Sierra Leone.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "Established as an Anglican missionary school by the Church Missionary Society with support from colonial governor Charles MacCarthy."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "foundation_1827",
+        "kind": "institution_establishment",
+        "subject_ref": "institution"
+      }
+    ]
+  },
+  "identity": {
+    "kind": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "It is a constituent college of the University of Sierra Leone (USL)",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "claim:P31:0",
+              "original_text": "Q875538",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "value": "higher_education_college",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "names": {
+      "en": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "metadata",
+                "original_text": "Fourah Bay College",
+                "source_ref": "s1"
+              },
+              {
+                "locator": "page_metadata",
+                "original_text": "Fourah Bay College",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": "Fourah Bay College",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    "ownership": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:0",
+              "original_text": "Type: Public",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:lead",
+              "original_text": "public university",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": "public",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "locations": [
+    {
+      "address": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "Freetown, Sierra Leone",
+                "source_ref": "s2"
+              },
+              {
+                "locator": "claim:P17:0",
+                "original_text": "Q1044",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "city_name": "Freetown",
+              "city_qid": "Q3780",
+              "country_name": "Sierra Leone",
+              "country_qid": "Q1044",
+              "formatted": {
+                "language": "en",
+                "text": "Freetown, Sierra Leone"
+              }
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "id": "freetown",
+      "kind": "administrative_area",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "metadata",
+                "original_text": "Freetown",
+                "source_ref": "s8"
+              },
+              {
+                "locator": "claim:P131:0",
+                "original_text": "Q3780",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Freetown"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "qid": "Q3780"
+    },
+    {
+      "address": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "infobox:4",
+                "original_text": "Mount Aureol, Freetown, Sierra Leone",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "city_name": "Freetown",
+              "city_qid": "Q3780",
+              "country_name": "Sierra Leone",
+              "country_qid": "Q1044",
+              "formatted": {
+                "language": "en",
+                "text": "Mount Aureol, Freetown, Sierra Leone"
+              }
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "id": "freetown_campus",
+      "kind": "campus",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "infobox:5",
+                "original_text": "Freetown campus (urban)",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Freetown campus"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    {
+      "coordinates": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "statement:Q1506926$E3D20C4C-81EA-412F-A471-F6B764F73267",
+                "original_text": "\"latitude\": 8.49222222",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "source_rank": "normal",
+            "value": {
+              "crs": "EPSG:4326",
+              "globe_qid": "Q2",
+              "latitude": 8.49222222,
+              "longitude": -13.20944444,
+              "source_precision_degrees": 0.00027777777777778
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "id": "wikidata-item-location",
+      "kind": "institution",
+      "qid": "Q1506926"
+    }
+  ],
+  "modified_datetime": "2026-11-07T07:45:54.997572+00:00",
+  "population": {
+    "students_total": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:3",
+              "original_text": "Students: 3,465 total",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "period_status": "not_stated",
+          "value": {
+            "amount": 3465,
+            "basis": "headcount",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        },
+        {
+          "evidence": [
+            {
+              "locator": "section:Students",
+              "original_text": "As of 1998/1999, the student enrollment was around 2,000",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c2",
+          "period": {
+            "end_year": 1999,
+            "kind": "academic_year",
+            "label": "1998/1999",
+            "start_year": 1998
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 2000,
+            "basis": "headcount",
+            "precision": "approximate"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "period_not_stated",
+          "single_source_family"
+        ],
+        "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+        "reason_code": "best_available"
+      }
+    }
+  },
+  "profile": {
+    "academic_focus": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:Faculties",
+              "original_text": "Faculty of Arts\nFaculty of Engineering\nFaculty of Pure and Applied Sciences\nFaculty of Social Sciences\nFaculty of Law\nFaculty of Applied Accounting",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": [
+            {
+              "language": "en",
+              "text": "Arts"
+            },
+            {
+              "language": "en",
+              "text": "Engineering"
+            },
+            {
+              "language": "en",
+              "text": "Pure and Applied Sciences"
+            },
+            {
+              "language": "en",
+              "text": "Social Sciences"
+            },
+            {
+              "language": "en",
+              "text": "Law"
+            },
+            {
+              "language": "en",
+              "text": "Applied Accounting"
+            }
+          ],
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "summary": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "It is a constituent college of the University of Sierra Leone (USL)",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Foundation",
+              "original_text": "The college was established in February 1827 as an Anglican missionary school",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Old_Fourah_Bay_College_Building",
+              "original_text": "The building was proclaimed a National Monument in 1955.",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Faculties",
+              "original_text": "Faculty of Engineering",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Students",
+              "original_text": "As of 1998/1999, the student enrollment was around 2,000",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "infobox:3",
+              "original_text": "Students: 3,465 total",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "language": "en",
+            "text": "Fourah Bay College is a public higher-education college in the Mount Aureol neighbourhood of Freetown, Sierra Leone. It is a constituent college of the University of Sierra Leone, rather than an independently represented parent university. Founded on 18 February 1827, it has a long history of providing higher education in West Africa. English is listed as its teaching language.\n\nThe institution began as an Anglican missionary school established by the Church Missionary Society with support from Sierra Leone's then governor, Charles MacCarthy. Its early students included Samuel Ajayi Crowther. The college subsequently attracted students from Sierra Leone and other parts of West Africa, particularly for theology and education. Between 1876 and 1967 it was affiliated with Durham University. Its original nineteenth-century building was later used for railway administration and as a magistrate court, and it was designated a national monument in 1955.\n\nThe college's listed faculties cover arts, engineering, pure and applied sciences, social sciences, law, and applied accounting. A historical account places enrolment at about 2,000 during the 1998/1999 academic year. An undated infobox reports a larger total of 3,465; these numbers should not be compared as a measured trend without their original reporting dates."
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "teaching_languages": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:6",
+              "original_text": "Language: English",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": [
+            "English"
+          ],
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "website": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P856:0",
+              "original_text": "http://fourahbaycollege.net/",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "value": "http://fourahbaycollege.net/",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "qid": "Q1506926",
+  "record_revision": 1,
+  "related_entities": {
+    "durham": {
+      "kind": "institution",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "Durham University (1876–1967)",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Durham University"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    "usl": {
+      "kind": "institution",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "metadata",
+                "original_text": "University of Sierra Leone",
+                "source_ref": "s9"
+              },
+              {
+                "locator": "infobox:2",
+                "original_text": "University of Sierra Leone",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "University of Sierra Leone"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "qid": "Q15045868"
+    }
+  },
+  "relationships": {
+    "member_of": [
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "formerly affiliated with Durham University (1876–1967)",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "target_ref": "related:durham",
+              "valid_from": {
+                "precision": "year",
+                "year": 1876
+              },
+              "valid_to": {
+                "precision": "year",
+                "year": 1967
+              }
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    ],
+    "parent": [
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "constituent college of the University of Sierra Leone (USL)",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "target_ref": "related:usl"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    ]
+  },
+  "schema_version": "0.2.2",
+  "seed": {
+    "channels": [
+      "reviewed_institution_type"
+    ],
+    "import_id": "seed-84c3beb45367905f",
+    "screening_status": "included"
+  },
+  "selection_policy": "preferred-v1",
+  "sources": {
+    "s1": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-07T07:28:38.086841+00:00",
+      "revision_id": 2559505601,
+      "source_qid": "Q1506926",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2559505601"
+    },
+    "s2": {
+      "family": "wikimedia",
+      "kind": "wikipedia",
+      "language": "en",
+      "page_id": 6238608,
+      "publisher_role": "encyclopedia",
+      "retrieved_at": "2026-11-07T07:28:44.694551+00:00",
+      "revision_id": 1382631816,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1382631816"
+    },
+    "s3": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-07T06:40:16.262649+00:00",
+      "revision_id": 2559546120,
+      "source_qid": "Q875538",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2559546120"
+    },
+    "s4": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-07T07:28:48.069873+00:00",
+      "revision_id": 2542789977,
+      "source_qid": "Q5341295",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2542789977"
+    },
+    "s5": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-07T06:40:06.558388+00:00",
+      "revision_id": 2561641675,
+      "source_qid": "Q2385804",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2561641675"
+    },
+    "s6": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-07T07:28:51.054050+00:00",
+      "revision_id": 2522450452,
+      "source_qid": "Q4671277",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2522450452"
+    },
+    "s7": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-07T07:28:54.991371+00:00",
+      "revision_id": 2564284988,
+      "source_qid": "Q1044",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2564284988"
+    },
+    "s8": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-07T07:28:58.514642+00:00",
+      "revision_id": 2557253328,
+      "source_qid": "Q3780",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2557253328"
+    },
+    "s9": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-07T07:29:02.901942+00:00",
+      "revision_id": 2561121024,
+      "source_qid": "Q15045868",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2561121024"
+    }
+  },
+  "update_datetime": "2026-11-07T07:45:54.997572+00:00"
+}
