@@ -1,0 +1,816 @@
+{
+  "coverage": {
+    "finance": {
+      "checked_at": "2026-11-07T07:28:54.087217+00:00",
+      "status": "not_found"
+    },
+    "geography": {
+      "checked_at": "2026-11-07T07:28:54.087217+00:00",
+      "status": "checked"
+    },
+    "history": {
+      "checked_at": "2026-11-07T07:28:54.087217+00:00",
+      "status": "checked"
+    },
+    "identity": {
+      "checked_at": "2026-11-07T07:28:54.087217+00:00",
+      "status": "checked"
+    },
+    "population": {
+      "checked_at": "2026-11-07T07:28:54.087217+00:00",
+      "status": "checked"
+    },
+    "profile": {
+      "checked_at": "2026-11-07T07:28:54.087217+00:00",
+      "status": "checked"
+    }
+  },
+  "curation": {
+    "identity_status": "in_scope",
+    "refresh_profile": "core-v1",
+    "reviewed_groups": [
+      "identity",
+      "geography",
+      "history",
+      "population",
+      "finance",
+      "profile"
+    ]
+  },
+  "history": {
+    "milestones": [
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P571:0",
+                  "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q1054047$060CDA8E-CC48-4051-BF56-2B12EC842B18\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+1981-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "precision": "year",
+                "year": 1981
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "It was established in 1981 as \"Technikon Free State.\"",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "Established in 1981 as Technikon Free State."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "founding",
+        "kind": "institution_establishment",
+        "subject_ref": "institution"
+      }
+    ]
+  },
+  "identity": {
+    "aliases": [
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "The Central University of Technology, Free State (CUT) is a public technology university with campuses in Bloemfontein and Welkom, Free State province, South Africa.",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "CUT"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    ],
+    "identifiers": {
+      "P5586": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P5586:0",
+                "original_text": "{\"property\": \"P5586\", \"property_label\": \"Times Higher Education World University ID\", \"statement_id\": \"Q1054047$6386C9B6-E112-46C2-B2C9-3D88C907349F\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"central-university-technology-free-state\", \"reference_count\": 1}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": "central-university-technology-free-state",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    "kind": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P31:0",
+              "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q1054047$B1B44521-738A-42A0-A7CE-074D0CDD02D8\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 3918, \"id\": \"Q3918\"}}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "value": "university",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "names": {
+      "en": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "metadata",
+                "original_text": "Central University of Technology, Free State",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": "Central University of Technology, Free State",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    "ownership": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:1",
+              "original_text": "Type: Public University of Technology",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": "public",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "leadership": {
+    "chancellor": {
+      "candidates": [
+        {
+          "current_basis": "infobox_current",
+          "evidence": [
+            {
+              "locator": "infobox:3",
+              "original_text": "Chancellor: Vincent Maphai",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "person": {
+              "name": "Vincent Maphai"
+            },
+            "title_original": {
+              "language": "en",
+              "text": "Chancellor"
+            }
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "single_source_family",
+          "reported_current"
+        ],
+        "reason": "The page reports this person in its current officeholder field; a term-end date is not required.",
+        "reason_code": "infobox_current"
+      }
+    },
+    "vice_chancellor": {
+      "candidates": [
+        {
+          "current_basis": "infobox_current",
+          "evidence": [
+            {
+              "locator": "infobox:4",
+              "original_text": "Vice-Chancellor: Pamela Dube",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "person": {
+              "name": "Pamela Dube"
+            },
+            "title_original": {
+              "language": "en",
+              "text": "Vice-Chancellor"
+            }
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "single_source_family",
+          "reported_current"
+        ],
+        "reason": "The page reports this person in its current officeholder field; a term-end date is not required.",
+        "reason_code": "infobox_current"
+      }
+    }
+  },
+  "locations": [
+    {
+      "id": "bloemfontein_hq",
+      "kind": "headquarters",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P159:0",
+                "original_text": "{\"property\": \"P159\", \"property_label\": \"headquarters location\", \"statement_id\": \"Q1054047$9AF22B38-566D-4873-B329-4F10205E8DE1\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 37701, \"id\": \"Q37701\"}, \"qualifiers\": {\"P281\": [{\"snaktype\": \"value\", \"value\": \"9300\"}], \"P17\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 258, \"id\": \"Q258\"}}], \"P625\": [{\"snaktype\": \"value\", \"value\": {\"latitude\": -29.12138889, \"longitude\": 26.21361111, \"altitude\": null, \"precision\": 0.00027777777777778, \"globe\": \"http://www.wikidata.org/entity/Q2\"}}]}}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Bloemfontein"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "qid": "Q37701"
+    },
+    {
+      "id": "bloemfontein_area",
+      "kind": "administrative_area",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P131:0",
+                "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q1054047$1F430BCC-D267-41AF-8E88-89D4F63C140C\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 37701, \"id\": \"Q37701\"}, \"reference_count\": 1}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Bloemfontein"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "qid": "Q37701"
+    },
+    {
+      "id": "bloemfontein_campus",
+      "kind": "campus",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Campus",
+                "original_text": "The university has two campuses – one in Bloemfontein, the judicial capital of South Africa, and one in Welkom, in the heart of the Free State goldfields.",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Bloemfontein campus"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    {
+      "id": "welkom_campus",
+      "kind": "campus",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:Campus",
+                "original_text": "The university has two campuses – one in Bloemfontein, the judicial capital of South Africa, and one in Welkom, in the heart of the Free State goldfields.",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Welkom campus"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    {
+      "coordinates": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "statement:Q1054047$B7A7E6E0-6583-43CF-901C-6467CB0D4FBE",
+                "original_text": "\"latitude\": -29.121389",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "source_rank": "normal",
+            "value": {
+              "crs": "EPSG:4326",
+              "globe_qid": "Q2",
+              "latitude": -29.121389,
+              "longitude": 26.213611,
+              "source_precision_degrees": 1e-06
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "id": "wikidata-item-location",
+      "kind": "institution",
+      "qid": "Q1054047"
+    }
+  ],
+  "modified_datetime": "2026-11-07T07:51:51.006529+00:00",
+  "population": {
+    "administrative_staff": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:5",
+              "original_text": "Administrative staff: 1 100",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "period_status": "not_stated",
+          "value": {
+            "amount": 1100,
+            "basis": "headcount",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "period_not_stated",
+          "single_source_family"
+        ],
+        "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+        "reason_code": "only_available"
+      }
+    },
+    "employees_total": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P1128:0",
+              "original_text": "{\"property\": \"P1128\", \"property_label\": \"employees\", \"statement_id\": \"Q1054047$BD70A56E-DFF5-4FFF-A378-7CD0ED0878D3\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+1500\", \"unit\": \"1\"}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "period_status": "not_stated",
+          "value": {
+            "amount": 1500,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "period_not_stated",
+          "single_source_family"
+        ],
+        "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+        "reason_code": "only_available"
+      }
+    },
+    "students_total": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:6",
+              "original_text": "Students: 21 993",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "period_status": "not_stated",
+          "value": {
+            "amount": 21993,
+            "basis": "headcount",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "period_not_stated",
+          "single_source_family"
+        ],
+        "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "profile": {
+    "academic_focus": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:Campus",
+              "original_text": "The two campuses offer education opportunities in a number of technological fields, including science, technology, engineering and mathematics (STEM); management sciences; humanities; and education.",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": [
+            {
+              "language": "en",
+              "text": "Science, technology, engineering and mathematics (STEM)"
+            },
+            {
+              "language": "en",
+              "text": "Management sciences"
+            },
+            {
+              "language": "en",
+              "text": "Humanities"
+            },
+            {
+              "language": "en",
+              "text": "Education"
+            }
+          ],
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "degree_levels": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:Student_enrollment",
+              "original_text": "The university offers certificates and diplomas at undergraduate level, as well as advanced diplomas, postgraduate diplomas at honours level, and master's and doctoral degrees.[1]",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": [
+            "certificate",
+            "undergraduate diploma",
+            "advanced diploma",
+            "postgraduate diploma (honours level)",
+            "master's degree",
+            "doctoral degree"
+          ],
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "motto": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:0",
+              "original_text": "Motto: Thinking Beyond",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "language": "en",
+            "text": "Thinking Beyond"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "summary": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "Public university in Bloemfontein, South Africa\nThe Central University of Technology, Free State (CUT) is a public technology university with campuses in Bloemfontein and Welkom, Free State province, South Africa.\nIt was established in 1981 as \"Technikon Free State.\" As part of the South African government's restructuring of tertiary education for the new millennium it was promoted to university of technology status.\nIt is currently part of the BRICS Universities League, a consortium of leading research universities from Brazil, Russia, India, China, and South Africa.",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Campus",
+              "original_text": "The university has two campuses – one in Bloemfontein, the judicial capital of South Africa, and one in Welkom, in the heart of the Free State goldfields.",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Faculties",
+              "original_text": "Faculty of Engineering, Built Environment and Information Technology\nFaculty of Health and Environmental Sciences\nFaculty of Humanities\nFaculty of Management Sciences",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Student_enrollment",
+              "original_text": "The university offers certificates and diplomas at undergraduate level, as well as advanced diplomas, postgraduate diplomas at honours level, and master's and doctoral degrees.",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Academics",
+              "original_text": "The Central University of Technology employs over 800 academic and research staff spread across four faculties.",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "infobox:6",
+              "original_text": "Students: 21 993",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "infobox:5",
+              "original_text": "Administrative staff: 1 100",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "claim:P1128:0",
+              "original_text": "{\"property\": \"P1128\", \"property_label\": \"employees\", \"statement_id\": \"Q1054047$BD70A56E-DFF5-4FFF-A378-7CD0ED0878D3\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"amount\": \"+1500\", \"unit\": \"1\"}, \"reference_count\": 1}",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "infobox:3",
+              "original_text": "Chancellor: Vincent Maphai",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "infobox:4",
+              "original_text": "Vice-Chancellor: Pamela Dube",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "infobox:0",
+              "original_text": "Motto: Thinking Beyond",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "claim:P159:0",
+              "original_text": "{\"property\": \"P159\", \"property_label\": \"headquarters location\", \"statement_id\": \"Q1054047$9AF22B38-566D-4873-B329-4F10205E8DE1\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 37701, \"id\": \"Q37701\"}, \"qualifiers\": {\"P281\": [{\"snaktype\": \"value\", \"value\": \"9300\"}], \"P17\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 258, \"id\": \"Q258\"}}], \"P625\": [{\"snaktype\": \"value\", \"value\": {\"latitude\": -29.12138889, \"longitude\": 26.21361111, \"altitude\": null, \"precision\": 0.00027777777777778, \"globe\": \"http://www.wikidata.org/entity/Q2\"}}]}}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "language": "en",
+            "text": "The Central University of Technology, Free State (CUT) is a public university of technology in South Africa's Free State province. It operates campuses in Bloemfontein and Welkom, while Wikidata identifies Bloemfontein as its headquarters location. The institution traces its establishment to 1981, when it was known as Technikon Free State. During a later restructuring of South African tertiary education, it attained university of technology status; the available source does not provide an exact year for that change.\n\nCUT describes its teaching across technological fields alongside management sciences, humanities and education. Its four faculties cover Engineering, Built Environment and Information Technology; Health and Environmental Sciences; Humanities; and Management Sciences. The university lists undergraduate certificates and diplomas, advanced diplomas, postgraduate diplomas at honours level, and master's and doctoral degrees. The source also describes an academic and research workforce of more than 800 across these faculties.\n\nAn undated Wikipedia infobox reports 21,993 students and 1,100 administrative staff, while an undated Wikidata claim gives 1,500 employees; these figures have no shared reporting period and should not be treated as directly comparable. The infobox names Vincent Maphai as chancellor and Pamela Dube as vice-chancellor. CUT's published motto is “Thinking Beyond.”"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "website": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P856:0",
+              "original_text": "{\"property\": \"P856\", \"property_label\": \"official website\", \"statement_id\": \"Q1054047$C303DDC9-5819-42B6-BE92-6EC2E037F1EB\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"http://www.cut.ac.za/\"}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "value": "http://www.cut.ac.za/",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "qid": "Q1054047",
+  "record_revision": 1,
+  "related_entities": {
+    "technikon_free_state": {
+      "kind": "institution",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "It was established in 1981 as \"Technikon Free State.\"",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Technikon Free State"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    }
+  },
+  "relationships": {
+    "predecessor": [
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "It was established in 1981 as \"Technikon Free State.\"",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "independence": "unresolved",
+              "target_ref": "related:technikon_free_state"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    ]
+  },
+  "schema_version": "0.2.2",
+  "seed": {
+    "channels": [
+      "ranking_identifier",
+      "reviewed_institution_type"
+    ],
+    "import_id": "seed-84c3beb45367905f",
+    "screening_status": "included"
+  },
+  "selection_policy": "preferred-v1",
+  "sources": {
+    "s1": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-07T07:28:38.666383+00:00",
+      "revision_id": 2559735778,
+      "source_qid": "Q1054047",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2559735778"
+    },
+    "s2": {
+      "family": "wikimedia",
+      "kind": "wikipedia",
+      "language": "en",
+      "page_id": 4748478,
+      "publisher_role": "encyclopedia",
+      "retrieved_at": "2026-11-07T07:28:47.477973+00:00",
+      "revision_id": 1291590279,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1291590279"
+    },
+    "s3": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-07T06:40:15.558743+00:00",
+      "revision_id": 2562156954,
+      "source_qid": "Q3918",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2562156954"
+    },
+    "s4": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-07T07:28:50.813196+00:00",
+      "revision_id": 2562953138,
+      "source_qid": "Q258",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2562953138"
+    },
+    "s5": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-07T07:28:54.074313+00:00",
+      "revision_id": 2563424361,
+      "source_qid": "Q37701",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2563424361"
+    }
+  },
+  "update_datetime": "2026-11-07T07:51:51.006529+00:00"
+}

@@ -1,0 +1,657 @@
+{
+  "coverage": {
+    "finance": {
+      "checked_at": "2026-11-07T07:29:00.757400+00:00",
+      "status": "not_found"
+    },
+    "geography": {
+      "checked_at": "2026-11-07T07:29:00.757400+00:00",
+      "status": "checked"
+    },
+    "history": {
+      "checked_at": "2026-11-07T07:29:00.757400+00:00",
+      "status": "checked"
+    },
+    "identity": {
+      "checked_at": "2026-11-07T07:29:00.757400+00:00",
+      "status": "checked"
+    },
+    "population": {
+      "checked_at": "2026-11-07T07:29:00.757400+00:00",
+      "status": "checked"
+    },
+    "profile": {
+      "checked_at": "2026-11-07T07:29:00.757400+00:00",
+      "status": "checked"
+    }
+  },
+  "curation": {
+    "identity_status": "in_scope",
+    "refresh_profile": "core-v1",
+    "reviewed_groups": [
+      "identity",
+      "geography",
+      "history",
+      "population",
+      "finance",
+      "profile"
+    ]
+  },
+  "history": {
+    "milestones": [
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Founding",
+                  "original_text": "The school was officially established on 31 August, and in December, a newly completed campus came into use on Liuhe Road near the foot of Pingfeng Hill.[4][5]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "day": 31,
+                "month": 8,
+                "precision": "day",
+                "year": 1956
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Founding",
+                  "original_text": "The origins of Guilin University of Technology can be traced back to the Guilin Geological School, which was founded in 1956 by the Ministry of Heavy Industry.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "Guilin Geological School, the university’s historical predecessor, was founded in 1956."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "origin1956",
+        "kind": "predecessor_establishment",
+        "subject_ref": "institution"
+      },
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Growth_and_Expansion",
+                  "original_text": "On December 28 of the same year, the school was officially upgraded and renamed the Guilin Metallurgical and Geological College under the direct administration of the Ministry of Metallurgical Industry, marking the formal conclusion of its secondary specialized school system.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "day": 28,
+                "month": 12,
+                "precision": "day",
+                "year": 1978
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "degree1978",
+        "kind": "higher_education_status",
+        "subject_ref": "institution"
+      },
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Growth_and_Expansion",
+                  "original_text": "On 29 March 2009, the institution was officially renamed the Guilin University of Technology.[11]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "day": 29,
+                "month": 3,
+                "precision": "day",
+                "year": 2009
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:Growth_and_Expansion",
+                  "original_text": "On 29 March 2009, the institution was officially renamed the Guilin University of Technology.[11]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "The institution adopted the name Guilin University of Technology."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "rename2009",
+        "kind": "rename",
+        "subject_ref": "institution"
+      }
+    ]
+  },
+  "identity": {
+    "aliases": [
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "Guilin University of Technology (GUT) is a provincial university in Guilin and Nanning, Guangxi, China.",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "GUT"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    ],
+    "kind": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "Guilin University of Technology (GUT) is a provincial university in Guilin and Nanning, Guangxi, China.",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": "university",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "names": {
+      "en": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q5615997\", \"labels\": {\"en\": \"Guilin University of Technology\"}, \"descriptions\": {\"en\": \"university in Guilin, China\"}}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": "Guilin University of Technology",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "zh-hans": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P1448:0",
+                "original_text": "{\"property\": \"P1448\", \"property_label\": \"official name\", \"statement_id\": \"Q5615997$f4e08472-4ef4-81ed-061d-afca9f91f730\", \"rank\": \"preferred\", \"snaktype\": \"value\", \"value\": {\"text\": \"桂林理工大学\", \"language\": \"zh-hans\"}}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": "桂林理工大学",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    "ownership": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:2",
+              "original_text": "Type: Public",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": "public",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "leadership": {
+    "president": {
+      "candidates": [
+        {
+          "current_basis": "infobox_current",
+          "evidence": [
+            {
+              "locator": "infobox:4",
+              "original_text": "President: Wang Dunqiu (王敦球)[2]",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "person": {
+              "name": "Wang Dunqiu (王敦球)"
+            },
+            "title_original": {
+              "language": "en",
+              "text": "President"
+            }
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "single_source_family",
+          "reported_current"
+        ],
+        "reason": "The page reports this person in its current officeholder field; a term-end date is not required.",
+        "reason_code": "infobox_current"
+      }
+    }
+  },
+  "locations": [
+    {
+      "id": "guilin",
+      "kind": "administrative_area",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "infobox:8",
+                "original_text": "Location: Guilin and Nanning, Guangxi, China",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Guilin, Guangxi, China"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    {
+      "id": "nanning",
+      "kind": "administrative_area",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "infobox:8",
+                "original_text": "Location: Guilin and Nanning, Guangxi, China",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Nanning, Guangxi, China"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    {
+      "coordinates": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "statement:Q5615997$53d9606b-4f85-ce06-7f26-7ceb02d4336c",
+                "original_text": "\"latitude\": 25.283722222222",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "source_rank": "normal",
+            "value": {
+              "crs": "EPSG:4326",
+              "globe_qid": "Q2",
+              "latitude": 25.283722222222,
+              "longitude": 110.31213888889,
+              "source_precision_degrees": 1e-05
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "id": "wikidata-item-location",
+      "kind": "institution",
+      "qid": "Q5615997"
+    }
+  ],
+  "modified_datetime": "2026-11-07T07:49:15.810173+00:00",
+  "population": {
+    "employees_total": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:6",
+              "original_text": "Total staff: 3,300 (Mar. 2026)[3]",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "period": {
+            "kind": "date",
+            "month": 3,
+            "year": 2026
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 3300,
+            "basis": "headcount",
+            "precision": "approximate"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "single_source_family",
+          "approximate_value"
+        ],
+        "reason_code": "only_available"
+      }
+    },
+    "students_total": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:7",
+              "original_text": "Students: 47,000 (Mar. 2026)[3]",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "period": {
+            "kind": "date",
+            "month": 3,
+            "year": 2026
+          },
+          "period_status": "stated",
+          "value": {
+            "amount": 47000,
+            "basis": "headcount",
+            "precision": "approximate"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "single_source_family",
+          "approximate_value"
+        ],
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "profile": {
+    "motto": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:1",
+              "original_text": "Motto: 厚德笃学、惟实励新[1]",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "language": "zh",
+            "text": "厚德笃学、惟实励新"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "summary": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "Guilin University of Technology (GUT) is a provincial university in Guilin and Nanning, Guangxi, China.",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "infobox:2",
+              "original_text": "Type: Public",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Founding",
+              "original_text": "The origins of Guilin University of Technology can be traced back to the Guilin Geological School, which was founded in 1956 by the Ministry of Heavy Industry.",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Growth_and_Expansion",
+              "original_text": "The college was later approved as a master's degree-granting institution in 1986, and in December 1993, it was renamed the Guilin Institute of Technology.[7][6]",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Growth_and_Expansion",
+              "original_text": "On 29 March 2009, the institution was officially renamed the Guilin University of Technology.[11]",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "infobox:7",
+              "original_text": "Students: 47,000 (Mar. 2026)[3]",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "infobox:6",
+              "original_text": "Total staff: 3,300 (Mar. 2026)[3]",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Faculty_and_departments",
+              "original_text": "The university comprises the following academic units, grouped by discipline:[12]",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "language": "en",
+            "text": "Guilin University of Technology (GUT; 桂林理工大学) is a public provincial university located in Guilin and Nanning in China’s Guangxi region. The university operates across multiple sites, and its academic units span the sciences, engineering, humanities, business and arts. Its history extends back to Guilin Geological School, founded in 1956 by the Ministry of Heavy Industry. In 1958, the school became Guilin Metallurgical College under the Guangxi People’s Government, marking an early transition toward higher education.\n\nThe institution underwent several organizational changes and name changes over subsequent decades. It resumed undergraduate admissions in 1978 and was upgraded that December to Guilin Metallurgical and Geological College. Authorization to award bachelor’s degrees followed in 1982 and master’s degrees in 1986. It became the Guilin Institute of Technology in 1993, then took its present name on 29 March 2009. Doctoral degree-conferring authorization followed in 2013. Its diverse departments reflect an evolution from geological and metallurgical education into a broader university. As of March 2026, the infobox reports approximately 47,000 students and 3,300 total staff. These are dated figures and should not be assumed to describe other academic years."
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "website": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P856:0",
+              "original_text": "{\"property\": \"P856\", \"property_label\": \"official website\", \"statement_id\": \"Q5615997$9B32AD28-F606-4AE6-8998-DDFB80E41920\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"http://www.glut.edu.cn\", \"reference_count\": 1}",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "value": "http://www.glut.edu.cn",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "qid": "Q5615997",
+  "record_revision": 1,
+  "schema_version": "0.2.2",
+  "seed": {
+    "channels": [
+      "ranking_identifier",
+      "reviewed_institution_type"
+    ],
+    "import_id": "seed-84c3beb45367905f",
+    "screening_status": "included"
+  },
+  "selection_policy": "preferred-v1",
+  "sources": {
+    "s1": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-07T07:28:38.326249+00:00",
+      "revision_id": 2515944824,
+      "source_qid": "Q5615997",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2515944824"
+    },
+    "s2": {
+      "family": "wikimedia",
+      "kind": "wikipedia",
+      "language": "en",
+      "page_id": 20259782,
+      "publisher_role": "encyclopedia",
+      "retrieved_at": "2026-11-07T07:28:46.617780+00:00",
+      "revision_id": 1383303160,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1383303160"
+    },
+    "s3": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-07T07:28:49.938003+00:00",
+      "revision_id": 2553301690,
+      "source_qid": "Q1371037",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2553301690"
+    },
+    "s4": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-07T07:28:53.732156+00:00",
+      "revision_id": 2563722609,
+      "source_qid": "Q148",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2563722609"
+    },
+    "s5": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-07T07:28:57.342392+00:00",
+      "revision_id": 2540542996,
+      "source_qid": "Q189633",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2540542996"
+    },
+    "s6": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-07T07:29:00.739148+00:00",
+      "revision_id": 2561341166,
+      "source_qid": "Q179608",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2561341166"
+    }
+  },
+  "update_datetime": "2026-11-07T07:49:15.810173+00:00"
+}
