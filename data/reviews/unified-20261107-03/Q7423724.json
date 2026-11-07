@@ -1,0 +1,1151 @@
+{
+  "attribution": "distinct_native_research_and_review_subagents;not_cryptographic_identity",
+  "research": {
+    "baseline_sha256": "absent",
+    "candidate": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-07T06:46:45.046440+00:00",
+          "status": "not_found"
+        },
+        "geography": {
+          "checked_at": "2026-11-07T06:46:45.046440+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-07T06:46:45.046440+00:00",
+          "status": "checked"
+        },
+        "identity": {
+          "checked_at": "2026-11-07T06:46:45.046440+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-07T06:46:45.046440+00:00",
+          "status": "not_found"
+        },
+        "profile": {
+          "checked_at": "2026-11-07T06:46:45.046440+00:00",
+          "status": "checked"
+        }
+      },
+      "curation": {
+        "identity_status": "in_scope"
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "claim:P571:0",
+                      "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q7423724$ED38F4D1-C42C-4759-BA41-FA4F4058AD21\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+2000-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}, \"reference_count\": 1}",
+                      "source_ref": "s1"
+                    },
+                    {
+                      "locator": "paragraph:10",
+                      "original_text": "Established in 2000, Sardar Raja College of Engineering (SRCE) is one of the leading Private engineering college based in Tirunelveli. It is the 3rd Engineering college of the Rajas group that was established by Founder Chairman Dr. S.A. Raja and administered by Er. A. Jesus Raja, Chairman, Jesus Group of Organization. It is popularly known as SRCE among the students. The Institution offers a wide array of Undergraduate and Postgraduate academic courses that are approved by AICTE and affiliated by Anna University, Chennai.",
+                      "source_ref": "s5"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 2000
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "establishment",
+            "kind": "institution_establishment",
+            "subject_ref": "institution"
+          }
+        ]
+      },
+      "identity": {
+        "aliases": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "paragraph:10",
+                    "original_text": "Established in 2000, Sardar Raja College of Engineering (SRCE) is one of the leading Private engineering college based in Tirunelveli. It is the 3rd Engineering college of the Rajas group that was established by Founder Chairman Dr. S.A. Raja and administered by Er. A. Jesus Raja, Chairman, Jesus Group of Organization. It is popularly known as SRCE among the students. The Institution offers a wide array of Undergraduate and Postgraduate academic courses that are approved by AICTE and affiliated by Anna University, Chennai.",
+                    "source_ref": "s5"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "SRCE"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ],
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P31:0",
+                  "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q7423724$691443E9-97BA-42D1-AFAA-4712EA786F1A\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 1663017, \"id\": \"Q1663017\"}}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "metadata",
+                  "original_text": "{\"id\": \"Q1663017\", \"labels\": {\"en\": \"engineering school\"}, \"descriptions\": {\"en\": \"educational institution for the study of engineering\"}}",
+                  "source_ref": "s3"
+                },
+                {
+                  "locator": "paragraph:10",
+                  "original_text": "Established in 2000, Sardar Raja College of Engineering (SRCE) is one of the leading Private engineering college based in Tirunelveli. It is the 3rd Engineering college of the Rajas group that was established by Founder Chairman Dr. S.A. Raja and administered by Er. A. Jesus Raja, Chairman, Jesus Group of Organization. It is popularly known as SRCE among the students. The Institution offers a wide array of Undergraduate and Postgraduate academic courses that are approved by AICTE and affiliated by Anna University, Chennai.",
+                  "source_ref": "s5"
+                }
+              ],
+              "id": "c1",
+              "value": "specialist_institution",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q7423724\", \"labels\": {\"en\": \"Sardar Raja College of Engineering\"}, \"descriptions\": {\"en\": \"Indian engineering college\"}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "Sardar Raja College of Engineering",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "locations": [
+        {
+          "coordinates": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "statement:Q7423724$11252443-A2A7-4BEA-8673-95FDFF175EA5",
+                    "original_text": "\"latitude\": 8.87686667",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "source_rank": "normal",
+                "value": {
+                  "crs": "EPSG:4326",
+                  "globe_qid": "Q2",
+                  "latitude": 8.87686667,
+                  "longitude": 77.44867222,
+                  "source_precision_degrees": 2.77777777778e-06
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "wikidata-item-location",
+          "kind": "institution",
+          "qid": "Q7423724"
+        }
+      ],
+      "modified_datetime": "2026-11-07T06:49:31.235608+00:00",
+      "profile": {
+        "academic_focus": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "paragraph:2",
+                  "original_text": "Mechanical Engineering",
+                  "source_ref": "s5"
+                },
+                {
+                  "locator": "paragraph:3",
+                  "original_text": "Electrical and Electronics Engineering",
+                  "source_ref": "s5"
+                },
+                {
+                  "locator": "paragraph:4",
+                  "original_text": "Electronics And Communication Engineering",
+                  "source_ref": "s5"
+                },
+                {
+                  "locator": "paragraph:5",
+                  "original_text": "Computer Science Engineering",
+                  "source_ref": "s5"
+                },
+                {
+                  "locator": "paragraph:6",
+                  "original_text": "Artificial Intelligence and Data Science(B.Tech)",
+                  "source_ref": "s5"
+                }
+              ],
+              "id": "c1",
+              "value": [
+                {
+                  "language": "en",
+                  "text": "Mechanical Engineering"
+                },
+                {
+                  "language": "en",
+                  "text": "Electrical and Electronics Engineering"
+                },
+                {
+                  "language": "en",
+                  "text": "Electronics and Communication Engineering"
+                },
+                {
+                  "language": "en",
+                  "text": "Computer Science Engineering"
+                },
+                {
+                  "language": "en",
+                  "text": "Artificial Intelligence and Data Science"
+                }
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "degree_levels": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "paragraph:10",
+                  "original_text": "Established in 2000, Sardar Raja College of Engineering (SRCE) is one of the leading Private engineering college based in Tirunelveli. It is the 3rd Engineering college of the Rajas group that was established by Founder Chairman Dr. S.A. Raja and administered by Er. A. Jesus Raja, Chairman, Jesus Group of Organization. It is popularly known as SRCE among the students. The Institution offers a wide array of Undergraduate and Postgraduate academic courses that are approved by AICTE and affiliated by Anna University, Chennai.",
+                  "source_ref": "s5"
+                },
+                {
+                  "locator": "paragraph:18",
+                  "original_text": "Affiliated to Anna University, this institution offers both Undergraduate and Postgraduate programs in Engineering.",
+                  "source_ref": "s5"
+                }
+              ],
+              "id": "c1",
+              "value": [
+                "undergraduate",
+                "postgraduate"
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "summary": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "metadata",
+                  "original_text": "{\"id\": \"Q7423724\", \"labels\": {\"en\": \"Sardar Raja College of Engineering\"}, \"descriptions\": {\"en\": \"Indian engineering college\"}}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "paragraph:10",
+                  "original_text": "Established in 2000, Sardar Raja College of Engineering (SRCE) is one of the leading Private engineering college based in Tirunelveli. It is the 3rd Engineering college of the Rajas group that was established by Founder Chairman Dr. S.A. Raja and administered by Er. A. Jesus Raja, Chairman, Jesus Group of Organization. It is popularly known as SRCE among the students. The Institution offers a wide array of Undergraduate and Postgraduate academic courses that are approved by AICTE and affiliated by Anna University, Chennai.",
+                  "source_ref": "s5"
+                },
+                {
+                  "locator": "paragraph:132",
+                  "original_text": "Sardar Raja College of Engineering Raja nagar, Alangulam. TENKASI - 627808. Tamilnadu.",
+                  "source_ref": "s5"
+                },
+                {
+                  "locator": "paragraph:2",
+                  "original_text": "Mechanical Engineering",
+                  "source_ref": "s5"
+                },
+                {
+                  "locator": "paragraph:3",
+                  "original_text": "Electrical and Electronics Engineering",
+                  "source_ref": "s5"
+                },
+                {
+                  "locator": "paragraph:4",
+                  "original_text": "Electronics And Communication Engineering",
+                  "source_ref": "s5"
+                },
+                {
+                  "locator": "paragraph:5",
+                  "original_text": "Computer Science Engineering",
+                  "source_ref": "s5"
+                },
+                {
+                  "locator": "paragraph:6",
+                  "original_text": "Artificial Intelligence and Data Science(B.Tech)",
+                  "source_ref": "s5"
+                },
+                {
+                  "locator": "paragraph:7",
+                  "original_text": "M.E Computer Science and Engineering",
+                  "source_ref": "s5"
+                },
+                {
+                  "locator": "paragraph:8",
+                  "original_text": "Master of Computer Application",
+                  "source_ref": "s5"
+                },
+                {
+                  "locator": "paragraph:6",
+                  "original_text": "Sardar Raja College of Engineering",
+                  "source_ref": "s6"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "Sardar Raja College of Engineering (SRCE) is an engineering college in Tamil Nadu, India. Its website describes it as a private institution established in 2000 and based in Tirunelveli. The college says its undergraduate and postgraduate courses are affiliated with Anna University and approved by AICTE. Anna University also lists Sardar Raja College of Engineering on its Tenkasi district college page.\n\nThe college lists teaching in mechanical engineering, electrical and electronics engineering, electronics and communication engineering, computer science engineering, and artificial intelligence and data science. Its listed postgraduate offerings include a Master of Engineering in computer science and engineering and a Master of Computer Applications."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "website": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P856:0",
+                  "original_text": "{\"property\": \"P856\", \"property_label\": \"official website\", \"statement_id\": \"Q7423724$C6346C20-699D-4C2E-8412-A5A2F0D872FB\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"http://www.srce.co.in/\", \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "http://www.srce.co.in/",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "qid": "Q7423724",
+      "record_revision": 1,
+      "related_entities": {
+        "anna-university": {
+          "kind": "institution",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "paragraph:18",
+                    "original_text": "Affiliated to Anna University, this institution offers both Undergraduate and Postgraduate programs in Engineering.",
+                    "source_ref": "s5"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Anna University"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "relationships": {
+        "member_of": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "paragraph:10",
+                    "original_text": "Established in 2000, Sardar Raja College of Engineering (SRCE) is one of the leading Private engineering college based in Tirunelveli. It is the 3rd Engineering college of the Rajas group that was established by Founder Chairman Dr. S.A. Raja and administered by Er. A. Jesus Raja, Chairman, Jesus Group of Organization. It is popularly known as SRCE among the students. The Institution offers a wide array of Undergraduate and Postgraduate academic courses that are approved by AICTE and affiliated by Anna University, Chennai.",
+                    "source_ref": "s5"
+                  },
+                  {
+                    "locator": "paragraph:18",
+                    "original_text": "Affiliated to Anna University, this institution offers both Undergraduate and Postgraduate programs in Engineering.",
+                    "source_ref": "s5"
+                  },
+                  {
+                    "locator": "paragraph:6",
+                    "original_text": "Sardar Raja College of Engineering",
+                    "source_ref": "s6"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "target_ref": "related:anna-university"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ]
+      },
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "legacy_discovery"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "needs_review"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-07T06:37:10.408210+00:00",
+          "revision_id": 2479585232,
+          "source_qid": "Q7423724",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2479585232"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikipedia",
+          "language": "en",
+          "page_id": 37068454,
+          "publisher_role": "encyclopedia",
+          "retrieved_at": "2026-11-07T06:37:13.099758+00:00",
+          "revision_id": 1378516354,
+          "url": "https://en.wikipedia.org/w/index.php?oldid=1378516354"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-07T06:37:14.035237+00:00",
+          "revision_id": 2543261275,
+          "source_qid": "Q1663017",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2543261275"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-07T06:37:16.154939+00:00",
+          "revision_id": 2563722390,
+          "source_qid": "Q668",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2563722390"
+        },
+        "s5": {
+          "family": "src.org.in",
+          "kind": "website",
+          "publisher_role": "institution_official",
+          "retrieved_at": "2026-11-07T06:46:46.610718+00:00",
+          "snapshot_id": "sha256:eb57abbfefd7ce83c3841faf7d2e17b87a1b4c7f2183d2a5d254b49bbdb5ecbe",
+          "url": "https://src.org.in/"
+        },
+        "s6": {
+          "family": "www.annauniv.edu",
+          "kind": "website",
+          "publisher_role": "other",
+          "retrieved_at": "2026-11-07T06:46:46.610718+00:00",
+          "snapshot_id": "sha256:4766d01085754aa9fe6415568c53c177eac16f34dc18c44f6413f1e8d041c83d",
+          "url": "https://www.annauniv.edu/cai/District%20wise/district/Tenkasi.php"
+        }
+      }
+    },
+    "coverage": [
+      {
+        "group": "identity",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "status": "checked"
+      },
+      {
+        "group": "population",
+        "status": "not_found"
+      },
+      {
+        "group": "finance",
+        "status": "not_found"
+      },
+      {
+        "group": "profile",
+        "status": "checked"
+      }
+    ],
+    "delta": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-07T06:46:45.046440+00:00",
+          "status": "not_found"
+        },
+        "geography": {
+          "checked_at": "2026-11-07T06:46:45.046440+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-07T06:46:45.046440+00:00",
+          "status": "checked"
+        },
+        "identity": {
+          "checked_at": "2026-11-07T06:46:45.046440+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-07T06:46:45.046440+00:00",
+          "status": "not_found"
+        },
+        "profile": {
+          "checked_at": "2026-11-07T06:46:45.046440+00:00",
+          "status": "checked"
+        }
+      },
+      "curation": {
+        "identity_status": "in_scope"
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "claim:P571:0",
+                      "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q7423724$ED38F4D1-C42C-4759-BA41-FA4F4058AD21\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+2000-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}, \"reference_count\": 1}",
+                      "source_ref": "s1"
+                    },
+                    {
+                      "locator": "paragraph:10",
+                      "original_text": "Established in 2000, Sardar Raja College of Engineering (SRCE) is one of the leading Private engineering college based in Tirunelveli. It is the 3rd Engineering college of the Rajas group that was established by Founder Chairman Dr. S.A. Raja and administered by Er. A. Jesus Raja, Chairman, Jesus Group of Organization. It is popularly known as SRCE among the students. The Institution offers a wide array of Undergraduate and Postgraduate academic courses that are approved by AICTE and affiliated by Anna University, Chennai.",
+                      "source_ref": "s5"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 2000
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "establishment",
+            "kind": "institution_establishment",
+            "subject_ref": "institution"
+          }
+        ]
+      },
+      "identity": {
+        "aliases": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "paragraph:10",
+                    "original_text": "Established in 2000, Sardar Raja College of Engineering (SRCE) is one of the leading Private engineering college based in Tirunelveli. It is the 3rd Engineering college of the Rajas group that was established by Founder Chairman Dr. S.A. Raja and administered by Er. A. Jesus Raja, Chairman, Jesus Group of Organization. It is popularly known as SRCE among the students. The Institution offers a wide array of Undergraduate and Postgraduate academic courses that are approved by AICTE and affiliated by Anna University, Chennai.",
+                    "source_ref": "s5"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "SRCE"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ],
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P31:0",
+                  "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q7423724$691443E9-97BA-42D1-AFAA-4712EA786F1A\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 1663017, \"id\": \"Q1663017\"}}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "metadata",
+                  "original_text": "{\"id\": \"Q1663017\", \"labels\": {\"en\": \"engineering school\"}, \"descriptions\": {\"en\": \"educational institution for the study of engineering\"}}",
+                  "source_ref": "s3"
+                },
+                {
+                  "locator": "paragraph:10",
+                  "original_text": "Established in 2000, Sardar Raja College of Engineering (SRCE) is one of the leading Private engineering college based in Tirunelveli. It is the 3rd Engineering college of the Rajas group that was established by Founder Chairman Dr. S.A. Raja and administered by Er. A. Jesus Raja, Chairman, Jesus Group of Organization. It is popularly known as SRCE among the students. The Institution offers a wide array of Undergraduate and Postgraduate academic courses that are approved by AICTE and affiliated by Anna University, Chennai.",
+                  "source_ref": "s5"
+                }
+              ],
+              "id": "c1",
+              "value": "specialist_institution",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q7423724\", \"labels\": {\"en\": \"Sardar Raja College of Engineering\"}, \"descriptions\": {\"en\": \"Indian engineering college\"}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "Sardar Raja College of Engineering",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "locations": [
+        {
+          "coordinates": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "statement:Q7423724$11252443-A2A7-4BEA-8673-95FDFF175EA5",
+                    "original_text": "\"latitude\": 8.87686667",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "source_rank": "normal",
+                "value": {
+                  "crs": "EPSG:4326",
+                  "globe_qid": "Q2",
+                  "latitude": 8.87686667,
+                  "longitude": 77.44867222,
+                  "source_precision_degrees": 2.77777777778e-06
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "wikidata-item-location",
+          "kind": "institution",
+          "qid": "Q7423724"
+        }
+      ],
+      "profile": {
+        "academic_focus": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "paragraph:2",
+                  "original_text": "Mechanical Engineering",
+                  "source_ref": "s5"
+                },
+                {
+                  "locator": "paragraph:3",
+                  "original_text": "Electrical and Electronics Engineering",
+                  "source_ref": "s5"
+                },
+                {
+                  "locator": "paragraph:4",
+                  "original_text": "Electronics And Communication Engineering",
+                  "source_ref": "s5"
+                },
+                {
+                  "locator": "paragraph:5",
+                  "original_text": "Computer Science Engineering",
+                  "source_ref": "s5"
+                },
+                {
+                  "locator": "paragraph:6",
+                  "original_text": "Artificial Intelligence and Data Science(B.Tech)",
+                  "source_ref": "s5"
+                }
+              ],
+              "id": "c1",
+              "value": [
+                {
+                  "language": "en",
+                  "text": "Mechanical Engineering"
+                },
+                {
+                  "language": "en",
+                  "text": "Electrical and Electronics Engineering"
+                },
+                {
+                  "language": "en",
+                  "text": "Electronics and Communication Engineering"
+                },
+                {
+                  "language": "en",
+                  "text": "Computer Science Engineering"
+                },
+                {
+                  "language": "en",
+                  "text": "Artificial Intelligence and Data Science"
+                }
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "degree_levels": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "paragraph:10",
+                  "original_text": "Established in 2000, Sardar Raja College of Engineering (SRCE) is one of the leading Private engineering college based in Tirunelveli. It is the 3rd Engineering college of the Rajas group that was established by Founder Chairman Dr. S.A. Raja and administered by Er. A. Jesus Raja, Chairman, Jesus Group of Organization. It is popularly known as SRCE among the students. The Institution offers a wide array of Undergraduate and Postgraduate academic courses that are approved by AICTE and affiliated by Anna University, Chennai.",
+                  "source_ref": "s5"
+                },
+                {
+                  "locator": "paragraph:18",
+                  "original_text": "Affiliated to Anna University, this institution offers both Undergraduate and Postgraduate programs in Engineering.",
+                  "source_ref": "s5"
+                }
+              ],
+              "id": "c1",
+              "value": [
+                "undergraduate",
+                "postgraduate"
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "summary": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "metadata",
+                  "original_text": "{\"id\": \"Q7423724\", \"labels\": {\"en\": \"Sardar Raja College of Engineering\"}, \"descriptions\": {\"en\": \"Indian engineering college\"}}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "paragraph:10",
+                  "original_text": "Established in 2000, Sardar Raja College of Engineering (SRCE) is one of the leading Private engineering college based in Tirunelveli. It is the 3rd Engineering college of the Rajas group that was established by Founder Chairman Dr. S.A. Raja and administered by Er. A. Jesus Raja, Chairman, Jesus Group of Organization. It is popularly known as SRCE among the students. The Institution offers a wide array of Undergraduate and Postgraduate academic courses that are approved by AICTE and affiliated by Anna University, Chennai.",
+                  "source_ref": "s5"
+                },
+                {
+                  "locator": "paragraph:132",
+                  "original_text": "Sardar Raja College of Engineering Raja nagar, Alangulam. TENKASI - 627808. Tamilnadu.",
+                  "source_ref": "s5"
+                },
+                {
+                  "locator": "paragraph:2",
+                  "original_text": "Mechanical Engineering",
+                  "source_ref": "s5"
+                },
+                {
+                  "locator": "paragraph:3",
+                  "original_text": "Electrical and Electronics Engineering",
+                  "source_ref": "s5"
+                },
+                {
+                  "locator": "paragraph:4",
+                  "original_text": "Electronics And Communication Engineering",
+                  "source_ref": "s5"
+                },
+                {
+                  "locator": "paragraph:5",
+                  "original_text": "Computer Science Engineering",
+                  "source_ref": "s5"
+                },
+                {
+                  "locator": "paragraph:6",
+                  "original_text": "Artificial Intelligence and Data Science(B.Tech)",
+                  "source_ref": "s5"
+                },
+                {
+                  "locator": "paragraph:7",
+                  "original_text": "M.E Computer Science and Engineering",
+                  "source_ref": "s5"
+                },
+                {
+                  "locator": "paragraph:8",
+                  "original_text": "Master of Computer Application",
+                  "source_ref": "s5"
+                },
+                {
+                  "locator": "paragraph:6",
+                  "original_text": "Sardar Raja College of Engineering",
+                  "source_ref": "s6"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "Sardar Raja College of Engineering (SRCE) is an engineering college in Tamil Nadu, India. Its website describes it as a private institution established in 2000 and based in Tirunelveli. The college says its undergraduate and postgraduate courses are affiliated with Anna University and approved by AICTE. Anna University also lists Sardar Raja College of Engineering on its Tenkasi district college page.\n\nThe college lists teaching in mechanical engineering, electrical and electronics engineering, electronics and communication engineering, computer science engineering, and artificial intelligence and data science. Its listed postgraduate offerings include a Master of Engineering in computer science and engineering and a Master of Computer Applications."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "website": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P856:0",
+                  "original_text": "{\"property\": \"P856\", \"property_label\": \"official website\", \"statement_id\": \"Q7423724$C6346C20-699D-4C2E-8412-A5A2F0D872FB\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"http://www.srce.co.in/\", \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "http://www.srce.co.in/",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "qid": "Q7423724",
+      "record_revision": 1,
+      "related_entities": {
+        "anna-university": {
+          "kind": "institution",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "paragraph:18",
+                    "original_text": "Affiliated to Anna University, this institution offers both Undergraduate and Postgraduate programs in Engineering.",
+                    "source_ref": "s5"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Anna University"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "relationships": {
+        "member_of": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "paragraph:10",
+                    "original_text": "Established in 2000, Sardar Raja College of Engineering (SRCE) is one of the leading Private engineering college based in Tirunelveli. It is the 3rd Engineering college of the Rajas group that was established by Founder Chairman Dr. S.A. Raja and administered by Er. A. Jesus Raja, Chairman, Jesus Group of Organization. It is popularly known as SRCE among the students. The Institution offers a wide array of Undergraduate and Postgraduate academic courses that are approved by AICTE and affiliated by Anna University, Chennai.",
+                    "source_ref": "s5"
+                  },
+                  {
+                    "locator": "paragraph:18",
+                    "original_text": "Affiliated to Anna University, this institution offers both Undergraduate and Postgraduate programs in Engineering.",
+                    "source_ref": "s5"
+                  },
+                  {
+                    "locator": "paragraph:6",
+                    "original_text": "Sardar Raja College of Engineering",
+                    "source_ref": "s6"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "target_ref": "related:anna-university"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ]
+      },
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "legacy_discovery"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "needs_review"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-07T06:37:10.408210+00:00",
+          "revision_id": 2479585232,
+          "source_qid": "Q7423724",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2479585232"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikipedia",
+          "language": "en",
+          "page_id": 37068454,
+          "publisher_role": "encyclopedia",
+          "retrieved_at": "2026-11-07T06:37:13.099758+00:00",
+          "revision_id": 1378516354,
+          "url": "https://en.wikipedia.org/w/index.php?oldid=1378516354"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-07T06:37:14.035237+00:00",
+          "revision_id": 2543261275,
+          "source_qid": "Q1663017",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2543261275"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-07T06:37:16.154939+00:00",
+          "revision_id": 2563722390,
+          "source_qid": "Q668",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2563722390"
+        },
+        "s5": {
+          "family": "src.org.in",
+          "kind": "website",
+          "publisher_role": "institution_official",
+          "retrieved_at": "2026-11-07T06:46:46.610718+00:00",
+          "snapshot_id": "sha256:eb57abbfefd7ce83c3841faf7d2e17b87a1b4c7f2183d2a5d254b49bbdb5ecbe",
+          "url": "https://src.org.in/"
+        },
+        "s6": {
+          "family": "www.annauniv.edu",
+          "kind": "website",
+          "publisher_role": "other",
+          "retrieved_at": "2026-11-07T06:46:46.610718+00:00",
+          "snapshot_id": "sha256:4766d01085754aa9fe6415568c53c177eac16f34dc18c44f6413f1e8d041c83d",
+          "url": "https://www.annauniv.edu/cai/District%20wise/district/Tenkasi.php"
+        }
+      }
+    },
+    "open_requests": [
+      {
+        "category": "evidence_gap",
+        "field": "curation.identity_status",
+        "reason": "Obtain institution-specific evidence sufficient to establish whether Q7423724 is an eligible higher-education institution, including its degree-level education or verified higher-education affiliation. Preserve uncertainty if evidence remains insufficient.",
+        "request_id": "dcbdd51c-6e3d-5921-9296-8e90ac9f48d2",
+        "reviewed_proposal_sha256": "4b99a27eef5565ccae72f97651f20e8891831582b2db1015983339da6b3f0315"
+      }
+    ],
+    "proposed_at": "2026-11-07T06:49:31.235608+00:00",
+    "qid": "Q7423724",
+    "research": {
+      "model": "not_reported",
+      "prompt_sha256": "91f5cef37e6893de858e3615c0c06edb963ae7b12b10c7b60c865da25a6f2c9c",
+      "reasoning_effort": "medium",
+      "schema_sha256": "92e942f4fbf2ae28964462ea9ffa8312c5ee16a077a1e08b40aaaf741512422e",
+      "session": "/root/revision4"
+    },
+    "retrieval_failures": [],
+    "review_status": "unreviewed",
+    "seed": {
+      "channels": [
+        "legacy_discovery"
+      ],
+      "import_id": "seed-84c3beb45367905f",
+      "screening_status": "needs_review"
+    },
+    "transport": {
+      "base_commit": "cb6e1c7953d69cb9d813b36f5a721b326ddc469e",
+      "protocol": "native-subagent-v1",
+      "repository": "ider-zh/university-seed-curation",
+      "review_policy": {
+        "id": "source-grounded-flexible-v2",
+        "sha256": "b8ed7d2897e4c31dbd81b1379aafdc1077a21d1a33949edbd2d896b0adf99db2"
+      },
+      "schema_sha256": "bfa496eafa9dffca56146214168db7f000b09161b8993129632e7202e1c88833",
+      "seed_catalog_sha256": "84c3beb45367905f513d650684283dd62a9c1b77962bdc34151a6ef05bfa03d4"
+    },
+    "type": "university-proposal-v1"
+  },
+  "review": {
+    "contexts_checked": 4,
+    "coverage_checks": [
+      {
+        "group": "identity",
+        "reason": "Root classification, label, official institution programs and university listing were examined.",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "reason": "Root item country and coordinate evidence were surveyed; the point remains institution-scoped.",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "reason": "Root inception and institution official establishment statement were surveyed.",
+        "status": "checked"
+      },
+      {
+        "group": "population",
+        "reason": "No supported population figure was found in the frozen material; this is a partial survey, not proof of absence.",
+        "status": "not_found"
+      },
+      {
+        "group": "finance",
+        "reason": "No supported finance observation was found in the frozen material; this is a partial survey, not proof of absence.",
+        "status": "not_found"
+      },
+      {
+        "group": "profile",
+        "reason": "Official institution profile and available Wikimedia sources were surveyed; supplementary facts are not independently reviewed.",
+        "status": "checked"
+      }
+    ],
+    "decision": "approve",
+    "facts_checked": 6,
+    "full_refresh": true,
+    "inferences": [
+      {
+        "id": "$.identity.kind:c1",
+        "reason": "Root P31 engineering school and s5 degree-level engineering courses support the broader specialist institution classification."
+      },
+      {
+        "id": "$.relationships.member_of[0]:c1",
+        "reason": "s5 paragraphs 10 and 18 identify affiliation with Anna University; the broad relationship retains the affiliated target and source wording."
+      }
+    ],
+    "model": "not_reported",
+    "proposal_sha256": "f2d57122aaf4f8b05a59050a6f80e30a33158b51dfc0c3e2c06218998331ee63",
+    "qid": "Q7423724",
+    "reasoning_effort": "medium",
+    "record_sha256": "c1f2592c49bc79c3b62745e4a8949f3dc968cd0f0613fbacbb7a19caf5bcdd78",
+    "request_responses": [
+      {
+        "reason": "Frozen official institution page identifies this exact college and its undergraduate and postgraduate engineering programs and Anna University affiliation; the university district listing also names it.",
+        "request_id": "dcbdd51c-6e3d-5921-9296-8e90ac9f48d2",
+        "status": "addressed"
+      }
+    ],
+    "requests": [],
+    "review_scope": {
+      "not_independently_reviewed_ids": [
+        "$.profile.academic_focus:c1",
+        "$.profile.degree_levels:c1",
+        "$.profile.summary:c1",
+        "$.profile.website:c1",
+        "$.related_entities.anna-university.name:c1"
+      ],
+      "reviewed_ids": [
+        "$.history.milestones[0].date:c1",
+        "$.identity.aliases[0]:c1",
+        "$.identity.kind:c1",
+        "$.identity.names.en:c1",
+        "$.locations[0].coordinates:c1",
+        "$.relationships.member_of[0]:c1",
+        "identity",
+        "location:wikidata-item-location",
+        "milestone:establishment",
+        "related:anna-university"
+      ],
+      "version": "core-review-v3"
+    },
+    "review_session": "/root/review4b",
+    "reviewed_at": "2026-11-07T06:51:20.698487+00:00",
+    "source_revisions_checked": 6,
+    "waived_requests": []
+  },
+  "review_result_sha256": "eabb2f22cfe885ddc426f648de7d1511dd00cd500e75d97869c031d3e115260f",
+  "type": "university-unified-receipt-v1"
+}

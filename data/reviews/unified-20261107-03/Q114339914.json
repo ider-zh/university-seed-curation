@@ -1,0 +1,976 @@
+{
+  "attribution": "distinct_native_research_and_review_subagents;not_cryptographic_identity",
+  "research": {
+    "baseline_sha256": "absent",
+    "candidate": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-07T06:46:45.129990+00:00",
+          "status": "not_found"
+        },
+        "geography": {
+          "checked_at": "2026-11-07T06:46:45.129990+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-07T06:46:45.129990+00:00",
+          "status": "checked"
+        },
+        "identity": {
+          "checked_at": "2026-11-07T06:46:45.129990+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-07T06:46:45.129990+00:00",
+          "status": "not_found"
+        },
+        "profile": {
+          "checked_at": "2026-11-07T06:46:45.129990+00:00",
+          "status": "checked"
+        }
+      },
+      "curation": {
+        "identity_status": "related"
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "paragraph:34",
+                      "original_text": "The Richmond campus of South University was established in 2009",
+                      "source_ref": "s4"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 2009
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "campus_opening",
+            "kind": "campus_opening",
+            "subject_ref": "location:richmond_campus"
+          }
+        ]
+      },
+      "identity": {
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "paragraph:34",
+                  "original_text": "The Richmond campus of South University was established in 2009",
+                  "source_ref": "s4"
+                }
+              ],
+              "id": "c1",
+              "value": "campus",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "South University-Richmond",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "South University-Richmond",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "locations": [
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "paragraph:106",
+                    "original_text": "The South University, Richmond campus is located at 2151 Old Brick Road, Glen Allen, VA 23060.",
+                    "source_ref": "s4"
+                  },
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q114339914$C7F65E1E-ACCB-4FE4-8681-BABBCD9ADA29\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 30, \"id\": \"Q30\"}}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "United States",
+                    "source_ref": "s3"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "city_name": "Glen Allen",
+                  "country_name": "United States",
+                  "country_qid": "Q30",
+                  "formatted": {
+                    "language": "en",
+                    "text": "2151 Old Brick Road, Glen Allen, VA 23060"
+                  },
+                  "region_name": "Virginia"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "richmond_campus",
+          "kind": "campus"
+        }
+      ],
+      "modified_datetime": "2026-11-07T06:48:58.033036+00:00",
+      "profile": {
+        "academic_focus": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "paragraph:37",
+                  "original_text": "You can choose from the following areas at Richmond: Business & Technology, Counseling & Psychology, Criminal Justice and Legal Studies, Healthcare, Nursing, and Public Health.",
+                  "source_ref": "s4"
+                }
+              ],
+              "id": "c1",
+              "value": [
+                {
+                  "language": "en",
+                  "text": "Business & Technology"
+                },
+                {
+                  "language": "en",
+                  "text": "Counseling & Psychology"
+                },
+                {
+                  "language": "en",
+                  "text": "Criminal Justice and Legal Studies"
+                },
+                {
+                  "language": "en",
+                  "text": "Healthcare"
+                },
+                {
+                  "language": "en",
+                  "text": "Nursing"
+                },
+                {
+                  "language": "en",
+                  "text": "Public Health"
+                }
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "degree_levels": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "paragraph:46",
+                  "original_text": "Find the associate, bachelor or master degree that's right for you at our Richmond, VA location.",
+                  "source_ref": "s4"
+                }
+              ],
+              "id": "c1",
+              "value": [
+                "associate",
+                "bachelor",
+                "master"
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "summary": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "paragraph:34",
+                  "original_text": "The Richmond campus of South University was established in 2009 and sports a close-knit community from the staff and faculty and that extends to their students and helping them pursue their degrees. The campus frequently partners with local organizations such as HCA, BonSecours, Wings of Hope, and Little Sisters of the Poor for clinical opportunities.",
+                  "source_ref": "s4"
+                },
+                {
+                  "locator": "paragraph:37",
+                  "original_text": "Several of the programs offered at the Richmond campus are offered in an online format; others are taught on-campus. Some programs are a hybrid* of online and classroom learning.",
+                  "source_ref": "s4"
+                },
+                {
+                  "locator": "paragraph:37",
+                  "original_text": "You can choose from the following areas at Richmond: Business & Technology, Counseling & Psychology, Criminal Justice and Legal Studies, Healthcare, Nursing, and Public Health.",
+                  "source_ref": "s4"
+                },
+                {
+                  "locator": "paragraph:46",
+                  "original_text": "Find the associate, bachelor or master degree that's right for you at our Richmond, VA location.",
+                  "source_ref": "s4"
+                },
+                {
+                  "locator": "paragraph:106",
+                  "original_text": "The South University, Richmond campus is located at 2151 Old Brick Road, Glen Allen, VA 23060.",
+                  "source_ref": "s4"
+                },
+                {
+                  "locator": "paragraph:119",
+                  "original_text": "Yes. The Richmond campus features an on-campus and virtual library, a student lounge for collaboration and relaxation, and an Academic Success Center that provides tutoring and academic support. There are also additional quiet spaces for studying and computer labs available for student use.",
+                  "source_ref": "s4"
+                },
+                {
+                  "locator": "paragraph:11",
+                  "original_text": "South University, Richmond is owned by South University of Virginia - Member, LLC, which is a subsidiary South University Savannah, LLC; 709 Mall Boulevard, Savannah, GA 31406.",
+                  "source_ref": "s5"
+                },
+                {
+                  "locator": "paragraph:32",
+                  "original_text": "Located in the West Broad Village",
+                  "source_ref": "s4"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "South University, Richmond is a campus of South University in Glen Allen, Virginia, in the United States. The campus was established in 2009 and is located in West Broad Village. Its programs include associate, bachelor and master degree offerings. Areas of study listed for Richmond include business and technology, counseling and psychology, criminal justice and legal studies, healthcare, nursing and public health.\n\nSome Richmond programs are offered online, others on campus, and some use a hybrid format. The campus provides an on-campus and virtual library, a student lounge and an Academic Success Center. South University states that the Richmond campus is owned by South University of Virginia - Member, LLC, a subsidiary of South University Savannah, LLC."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "website": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "paragraph:1",
+                  "original_text": "South University Richmond (Glen Allen), VA Campus | Programs & Degrees",
+                  "source_ref": "s4"
+                }
+              ],
+              "id": "c1",
+              "value": "https://www.southuniversity.edu/richmond",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "qid": "Q114339914",
+      "record_revision": 1,
+      "related_entities": {
+        "south_university": {
+          "kind": "institution",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "paragraph:34",
+                    "original_text": "The Richmond campus of South University was established in 2009",
+                    "source_ref": "s4"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "South University"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "relationships": {
+        "parent": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "paragraph:34",
+                    "original_text": "The Richmond campus of South University was established in 2009",
+                    "source_ref": "s4"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "independence": "unresolved",
+                  "target_ref": "related:south_university"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ]
+      },
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "legacy_discovery"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "needs_review"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-07T06:37:10.404383+00:00",
+          "revision_id": 1916600216,
+          "source_qid": "Q114339914",
+          "url": "https://www.wikidata.org/w/index.php?oldid=1916600216"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-07T06:37:12.350780+00:00",
+          "revision_id": 2561641675,
+          "source_qid": "Q2385804",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2561641675"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-07T06:37:14.890664+00:00",
+          "revision_id": 2565041516,
+          "source_qid": "Q30",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2565041516"
+        },
+        "s4": {
+          "family": "www.southuniversity.edu",
+          "kind": "website",
+          "publisher_role": "institution_official",
+          "retrieved_at": "2026-11-07T06:46:45.700329+00:00",
+          "snapshot_id": "sha256:fd1a1f6e0f9585e8aa7628608d048e8058be203873f0d402e944661d85cfacea",
+          "url": "https://www.southuniversity.edu/richmond"
+        },
+        "s5": {
+          "family": "catalog.southuniversity.edu",
+          "kind": "website",
+          "publisher_role": "institution_official",
+          "retrieved_at": "2026-11-07T06:46:45.700329+00:00",
+          "snapshot_id": "sha256:7e87930506d389de0a3aa0eb73395cb9594f59f1813cc0952259a26e1cc3e81a",
+          "url": "https://catalog.southuniversity.edu/ownership"
+        }
+      }
+    },
+    "coverage": [
+      {
+        "group": "identity",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "status": "checked"
+      },
+      {
+        "group": "population",
+        "status": "not_found"
+      },
+      {
+        "group": "finance",
+        "status": "not_found"
+      },
+      {
+        "group": "profile",
+        "status": "checked"
+      }
+    ],
+    "delta": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-07T06:46:45.129990+00:00",
+          "status": "not_found"
+        },
+        "geography": {
+          "checked_at": "2026-11-07T06:46:45.129990+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-07T06:46:45.129990+00:00",
+          "status": "checked"
+        },
+        "identity": {
+          "checked_at": "2026-11-07T06:46:45.129990+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-07T06:46:45.129990+00:00",
+          "status": "not_found"
+        },
+        "profile": {
+          "checked_at": "2026-11-07T06:46:45.129990+00:00",
+          "status": "checked"
+        }
+      },
+      "curation": {
+        "identity_status": "related"
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "paragraph:34",
+                      "original_text": "The Richmond campus of South University was established in 2009",
+                      "source_ref": "s4"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 2009
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "campus_opening",
+            "kind": "campus_opening",
+            "subject_ref": "location:richmond_campus"
+          }
+        ]
+      },
+      "identity": {
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "paragraph:34",
+                  "original_text": "The Richmond campus of South University was established in 2009",
+                  "source_ref": "s4"
+                }
+              ],
+              "id": "c1",
+              "value": "campus",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "South University-Richmond",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "South University-Richmond",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "locations": [
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "paragraph:106",
+                    "original_text": "The South University, Richmond campus is located at 2151 Old Brick Road, Glen Allen, VA 23060.",
+                    "source_ref": "s4"
+                  },
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q114339914$C7F65E1E-ACCB-4FE4-8681-BABBCD9ADA29\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 30, \"id\": \"Q30\"}}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "United States",
+                    "source_ref": "s3"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "city_name": "Glen Allen",
+                  "country_name": "United States",
+                  "country_qid": "Q30",
+                  "formatted": {
+                    "language": "en",
+                    "text": "2151 Old Brick Road, Glen Allen, VA 23060"
+                  },
+                  "region_name": "Virginia"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "richmond_campus",
+          "kind": "campus"
+        }
+      ],
+      "profile": {
+        "academic_focus": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "paragraph:37",
+                  "original_text": "You can choose from the following areas at Richmond: Business & Technology, Counseling & Psychology, Criminal Justice and Legal Studies, Healthcare, Nursing, and Public Health.",
+                  "source_ref": "s4"
+                }
+              ],
+              "id": "c1",
+              "value": [
+                {
+                  "language": "en",
+                  "text": "Business & Technology"
+                },
+                {
+                  "language": "en",
+                  "text": "Counseling & Psychology"
+                },
+                {
+                  "language": "en",
+                  "text": "Criminal Justice and Legal Studies"
+                },
+                {
+                  "language": "en",
+                  "text": "Healthcare"
+                },
+                {
+                  "language": "en",
+                  "text": "Nursing"
+                },
+                {
+                  "language": "en",
+                  "text": "Public Health"
+                }
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "degree_levels": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "paragraph:46",
+                  "original_text": "Find the associate, bachelor or master degree that's right for you at our Richmond, VA location.",
+                  "source_ref": "s4"
+                }
+              ],
+              "id": "c1",
+              "value": [
+                "associate",
+                "bachelor",
+                "master"
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "summary": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "paragraph:34",
+                  "original_text": "The Richmond campus of South University was established in 2009 and sports a close-knit community from the staff and faculty and that extends to their students and helping them pursue their degrees. The campus frequently partners with local organizations such as HCA, BonSecours, Wings of Hope, and Little Sisters of the Poor for clinical opportunities.",
+                  "source_ref": "s4"
+                },
+                {
+                  "locator": "paragraph:37",
+                  "original_text": "Several of the programs offered at the Richmond campus are offered in an online format; others are taught on-campus. Some programs are a hybrid* of online and classroom learning.",
+                  "source_ref": "s4"
+                },
+                {
+                  "locator": "paragraph:37",
+                  "original_text": "You can choose from the following areas at Richmond: Business & Technology, Counseling & Psychology, Criminal Justice and Legal Studies, Healthcare, Nursing, and Public Health.",
+                  "source_ref": "s4"
+                },
+                {
+                  "locator": "paragraph:46",
+                  "original_text": "Find the associate, bachelor or master degree that's right for you at our Richmond, VA location.",
+                  "source_ref": "s4"
+                },
+                {
+                  "locator": "paragraph:106",
+                  "original_text": "The South University, Richmond campus is located at 2151 Old Brick Road, Glen Allen, VA 23060.",
+                  "source_ref": "s4"
+                },
+                {
+                  "locator": "paragraph:119",
+                  "original_text": "Yes. The Richmond campus features an on-campus and virtual library, a student lounge for collaboration and relaxation, and an Academic Success Center that provides tutoring and academic support. There are also additional quiet spaces for studying and computer labs available for student use.",
+                  "source_ref": "s4"
+                },
+                {
+                  "locator": "paragraph:11",
+                  "original_text": "South University, Richmond is owned by South University of Virginia - Member, LLC, which is a subsidiary South University Savannah, LLC; 709 Mall Boulevard, Savannah, GA 31406.",
+                  "source_ref": "s5"
+                },
+                {
+                  "locator": "paragraph:32",
+                  "original_text": "Located in the West Broad Village",
+                  "source_ref": "s4"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "South University, Richmond is a campus of South University in Glen Allen, Virginia, in the United States. The campus was established in 2009 and is located in West Broad Village. Its programs include associate, bachelor and master degree offerings. Areas of study listed for Richmond include business and technology, counseling and psychology, criminal justice and legal studies, healthcare, nursing and public health.\n\nSome Richmond programs are offered online, others on campus, and some use a hybrid format. The campus provides an on-campus and virtual library, a student lounge and an Academic Success Center. South University states that the Richmond campus is owned by South University of Virginia - Member, LLC, a subsidiary of South University Savannah, LLC."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "website": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "paragraph:1",
+                  "original_text": "South University Richmond (Glen Allen), VA Campus | Programs & Degrees",
+                  "source_ref": "s4"
+                }
+              ],
+              "id": "c1",
+              "value": "https://www.southuniversity.edu/richmond",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "qid": "Q114339914",
+      "record_revision": 1,
+      "related_entities": {
+        "south_university": {
+          "kind": "institution",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "paragraph:34",
+                    "original_text": "The Richmond campus of South University was established in 2009",
+                    "source_ref": "s4"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "South University"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "relationships": {
+        "parent": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "paragraph:34",
+                    "original_text": "The Richmond campus of South University was established in 2009",
+                    "source_ref": "s4"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "independence": "unresolved",
+                  "target_ref": "related:south_university"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ]
+      },
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "legacy_discovery"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "needs_review"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-07T06:37:10.404383+00:00",
+          "revision_id": 1916600216,
+          "source_qid": "Q114339914",
+          "url": "https://www.wikidata.org/w/index.php?oldid=1916600216"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-07T06:37:12.350780+00:00",
+          "revision_id": 2561641675,
+          "source_qid": "Q2385804",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2561641675"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-07T06:37:14.890664+00:00",
+          "revision_id": 2565041516,
+          "source_qid": "Q30",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2565041516"
+        },
+        "s4": {
+          "family": "www.southuniversity.edu",
+          "kind": "website",
+          "publisher_role": "institution_official",
+          "retrieved_at": "2026-11-07T06:46:45.700329+00:00",
+          "snapshot_id": "sha256:fd1a1f6e0f9585e8aa7628608d048e8058be203873f0d402e944661d85cfacea",
+          "url": "https://www.southuniversity.edu/richmond"
+        },
+        "s5": {
+          "family": "catalog.southuniversity.edu",
+          "kind": "website",
+          "publisher_role": "institution_official",
+          "retrieved_at": "2026-11-07T06:46:45.700329+00:00",
+          "snapshot_id": "sha256:7e87930506d389de0a3aa0eb73395cb9594f59f1813cc0952259a26e1cc3e81a",
+          "url": "https://catalog.southuniversity.edu/ownership"
+        }
+      }
+    },
+    "open_requests": [
+      {
+        "category": "evidence_gap",
+        "field": "identity",
+        "reason": "Obtain and freeze evidence establishing whether this exact item represents an eligible higher-education institution and clarify its institution or campus relationship; retain uncertainty if evidence cannot resolve the subject.",
+        "request_id": "0ab191dd-a7bc-50c3-ab66-3de7f69a0efb",
+        "reviewed_proposal_sha256": "28d8a9fec5b34251d16dcb4a772706fb4f3f40094b3824904179a37ab226fb9f"
+      }
+    ],
+    "proposed_at": "2026-11-07T06:48:58.033036+00:00",
+    "qid": "Q114339914",
+    "research": {
+      "model": "not_reported",
+      "prompt_sha256": "96d4e287f65948b17c8feedd550556b18789a76d5af0ff9d159a5d54e6099b47",
+      "reasoning_effort": "medium",
+      "schema_sha256": "92e942f4fbf2ae28964462ea9ffa8312c5ee16a077a1e08b40aaaf741512422e",
+      "session": "/root/revision1"
+    },
+    "retrieval_failures": [],
+    "review_status": "unreviewed",
+    "seed": {
+      "channels": [
+        "legacy_discovery"
+      ],
+      "import_id": "seed-84c3beb45367905f",
+      "screening_status": "needs_review"
+    },
+    "transport": {
+      "base_commit": "514d80927ae3b259d08d8c5fb9939515fc0a15c2",
+      "protocol": "native-subagent-v1",
+      "repository": "ider-zh/university-seed-curation",
+      "review_policy": {
+        "id": "source-grounded-flexible-v2",
+        "sha256": "b8ed7d2897e4c31dbd81b1379aafdc1077a21d1a33949edbd2d896b0adf99db2"
+      },
+      "schema_sha256": "bfa496eafa9dffca56146214168db7f000b09161b8993129632e7202e1c88833",
+      "seed_catalog_sha256": "84c3beb45367905f513d650684283dd62a9c1b77962bdc34151a6ef05bfa03d4"
+    },
+    "type": "university-proposal-v1"
+  },
+  "review": {
+    "contexts_checked": 3,
+    "coverage_checks": [
+      {
+        "group": "identity",
+        "reason": "Root Wikidata and the frozen institution-official campus and ownership pages were consulted; eligible degree offerings and the campus relationship are documented.",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "reason": "Root country and the official campus address are available; the root coordinate projection has no P625 statements.",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "reason": "The official campus page documents establishment of this campus in 2009; this is a limited survey rather than exhaustive institutional history.",
+        "status": "checked"
+      },
+      {
+        "group": "population",
+        "reason": "No supported campus population figure is identified in the supplied source survey; absence is not a zero and the survey is limited.",
+        "status": "not_found"
+      },
+      {
+        "group": "finance",
+        "reason": "No supported campus finance observation is identified in the supplied source survey; absence is not a zero and the survey is limited.",
+        "status": "not_found"
+      },
+      {
+        "group": "profile",
+        "reason": "The captured official campus page describes degree levels and offerings; this records a survey, not independent review of supplementary profile fields.",
+        "status": "checked"
+      }
+    ],
+    "decision": "approve",
+    "facts_checked": 3,
+    "full_refresh": true,
+    "inferences": [],
+    "model": "not_reported",
+    "proposal_sha256": "369698fdacb8130fb9cc25078f411899b3042dc917d4902d7d8d947c7d7deda9",
+    "qid": "Q114339914",
+    "reasoning_effort": "medium",
+    "record_sha256": "c3f7adbf71d1577e2f0a757f83f2b5167b9a445f6f5d7287e4f430dc39c39246",
+    "request_responses": [
+      {
+        "reason": "The frozen official page identifies the exact Richmond campus of South University and associate, bachelor and master programs; the proposal represents it as a related campus while leaving legal independence unresolved.",
+        "request_id": "0ab191dd-a7bc-50c3-ab66-3de7f69a0efb",
+        "status": "addressed"
+      }
+    ],
+    "requests": [],
+    "review_scope": {
+      "not_independently_reviewed_ids": [
+        "$.history.milestones[0].date:c1",
+        "$.locations[0].address:c1",
+        "$.profile.academic_focus:c1",
+        "$.profile.degree_levels:c1",
+        "$.profile.summary:c1",
+        "$.profile.website:c1",
+        "$.related_entities.south_university.name:c1",
+        "location:richmond_campus",
+        "milestone:campus_opening"
+      ],
+      "reviewed_ids": [
+        "$.identity.kind:c1",
+        "$.identity.names.en:c1",
+        "$.relationships.parent[0]:c1",
+        "country:$.locations[0].address:c1",
+        "identity",
+        "related:south_university"
+      ],
+      "version": "core-review-v3"
+    },
+    "review_session": "/root/review1b",
+    "reviewed_at": "2026-11-07T06:51:11.577020+00:00",
+    "source_revisions_checked": 5,
+    "waived_requests": []
+  },
+  "review_result_sha256": "cf6da5dd39401c6309c9f8a4189fbe9c014924c0af06eee89acd0fd73e06f544",
+  "type": "university-unified-receipt-v1"
+}
