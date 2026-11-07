@@ -1,0 +1,1379 @@
+{
+  "attribution": "distinct_native_research_and_review_subagents;not_cryptographic_identity",
+  "research": {
+    "baseline_sha256": "absent",
+    "candidate": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-07T06:40:19.058983+00:00",
+          "status": "not_found"
+        },
+        "geography": {
+          "checked_at": "2026-11-07T06:40:19.058983+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-07T06:40:19.058983+00:00",
+          "status": "disputed"
+        },
+        "identity": {
+          "checked_at": "2026-11-07T06:40:19.058983+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-07T06:40:19.058983+00:00",
+          "status": "checked"
+        },
+        "profile": {
+          "checked_at": "2026-11-07T06:40:19.058983+00:00",
+          "status": "checked"
+        }
+      },
+      "curation": {
+        "identity_status": "in_scope"
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "claim:P571:0",
+                      "original_text": "+2012-00-00T00:00:00Z",
+                      "source_ref": "s1"
+                    },
+                    {
+                      "locator": "infobox:4",
+                      "original_text": "Established: 2012",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 2012
+                  },
+                  "verification": "supported"
+                },
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:lead",
+                      "original_text": "AJKMC was established in 2011.",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c2",
+                  "value": {
+                    "precision": "year",
+                    "year": 2011
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "conflicts": [
+                {
+                  "candidate_ids": [
+                    "c1",
+                    "c2"
+                  ],
+                  "kind": "time_disagreement",
+                  "note": "Two establishment-year representations disagree: Wikidata/institution infobox 2012 versus article lead 2011; inauguration in October 2011 is separately described and should not be silently substituted for establishment.",
+                  "status": "unresolved"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "qualifications": [
+                  "conflicting_candidates"
+                ],
+                "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+                "reason_code": "best_available"
+              }
+            },
+            "id": "establishment",
+            "kind": "institution_establishment",
+            "subject_ref": "institution"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:History",
+                      "original_text": "AJKMC was inaugurated by Prime Minister Syed Yousaf Raza Gillani on 8 October 2011.",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "day": 8,
+                    "month": 10,
+                    "precision": "day",
+                    "year": 2011
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "inauguration",
+            "kind": "teaching_start",
+            "subject_ref": "institution"
+          }
+        ]
+      },
+      "identity": {
+        "aliases": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "Azad Jammu Kashmir Medical College",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Azad Jammu Kashmir Medical College"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "or (AJKMC)",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "AJKMC"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "infobox:1",
+                    "original_text": "Other name: Mirwaiz Maulvi Mohammad Farooq Medical College",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Mirwaiz Maulvi Mohammad Farooq Medical College"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ],
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "is a public medical institute located in Muzaffarabad",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "specialist_institution",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "Azad Jammu and Kashmir Medical College",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "Azad Jammu and Kashmir Medical College",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        "ownership": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:3",
+                  "original_text": "Type: Public",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "public",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "locations": [
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "infobox:9",
+                    "original_text": "Muzaffarabad, Azad Jammu & Kashmir, Pakistan",
+                    "source_ref": "s2"
+                  },
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "\"id\": \"Q843\"",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "Pakistan",
+                    "source_ref": "s4"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "city_name": "Muzaffarabad",
+                  "country_name": "Pakistan",
+                  "country_qid": "Q843",
+                  "formatted": {
+                    "language": "en",
+                    "text": "Muzaffarabad, Azad Jammu & Kashmir, Pakistan"
+                  },
+                  "region_name": "Azad Jammu & Kashmir"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "muzaffarabad",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "infobox:9",
+                    "original_text": "Location: Muzaffarabad, Azad Jammu & Kashmir, Pakistan",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Muzaffarabad"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        {
+          "coordinates": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "statement:Q18385303$1DBF36AF-3217-44A3-A1F3-72B6BF3BC9F2",
+                    "original_text": "\"latitude\": 34.21",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "source_rank": "normal",
+                "value": {
+                  "crs": "EPSG:4326",
+                  "globe_qid": "Q2",
+                  "latitude": 34.21,
+                  "longitude": 73.28,
+                  "source_precision_degrees": 0.010862567563167
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "wikidata-item-location",
+          "kind": "institution",
+          "qid": "Q18385303"
+        }
+      ],
+      "modified_datetime": "2026-11-07T06:42:46.390156+00:00",
+      "population": {
+        "students_total": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "AJKMC is home to 500 students in the MBBS program",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "infobox:8",
+                  "original_text": "Students: 500",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period_status": "not_stated",
+              "value": {
+                "amount": 500,
+                "basis": "headcount",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "period_not_stated",
+              "single_source_family"
+            ],
+            "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "profile": {
+        "academic_focus": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "public medical institute",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": [
+                {
+                  "language": "en",
+                  "text": "medicine"
+                }
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "degree_levels": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "500 students in the MBBS program",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": [
+                "MBBS"
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "motto": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:2",
+                  "original_text": "Motto: Serving humanity is serving the Almighty",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "Serving humanity is serving the Almighty"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "summary": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "AJKMC is home to 500 students in the MBBS program, with clinical rotations occurring at Combined Military Hospital Muzaffarabad and Abbas Institute of Medical Sciences. AJKMC was established in 2011.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "infobox:1",
+                  "original_text": "Other name: Mirwaiz Maulvi Mohammad Farooq Medical College",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "infobox:4",
+                  "original_text": "Established: 2012",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:History",
+                  "original_text": "AJKMC was inaugurated by Prime Minister Syed Yousaf Raza Gillani on 8 October 2011.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Affiliations_and_recognitions",
+                  "original_text": "Pakistan Medical and Dental Council",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Publications",
+                  "original_text": "The official scientific journals of the college is Kashmir Journal of Medical Sciences (KJMS).",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "Azad Jammu and Kashmir Medical College (AJKMC) is a public medical institution in Muzaffarabad, Azad Jammu and Kashmir, Pakistan. Its English name is also presented as Azad Jammu Kashmir Medical College, and the institution is additionally identified as Mirwaiz Maulvi Mohammad Farooq Medical College. The college offers an MBBS program and the available encyclopedia account describes a student body of approximately 500, without a specified statistical year.\n\nThe college's establishment date is reported inconsistently: Wikidata and the encyclopedia infobox give 2012, while the article narrative says it was established in 2011. The narrative separately dates its inauguration to 8 October 2011 by Prime Minister Syed Yousaf Raza Gillani. It connects the rationale for establishing the college to shortages of medical professionals highlighted by the 2005 Kashmir earthquake. Clinical rotations for its MBBS students are described at Combined Military Hospital Muzaffarabad and Abbas Institute of Medical Sciences. The article lists professional recognition and affiliations, including the Pakistan Medical and Dental Council and the University of Azad Jammu and Kashmir. It also identifies the Kashmir Journal of Medical Sciences as the college's scientific journal."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "teaching_languages": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:11",
+                  "original_text": "Language: Urdu, English",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": [
+                "Urdu",
+                "English"
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "website": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P856:0",
+                  "original_text": "http://ajkmc.edu.pk/",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "http://ajkmc.edu.pk/",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "qid": "Q18385303",
+      "record_revision": 1,
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "reviewed_institution_type"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "included"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-07T06:39:57.473770+00:00",
+          "revision_id": 2511429713,
+          "source_qid": "Q18385303",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2511429713"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikipedia",
+          "language": "en",
+          "page_id": 44254092,
+          "publisher_role": "encyclopedia",
+          "retrieved_at": "2026-11-07T06:40:10.477774+00:00",
+          "revision_id": 1359885522,
+          "url": "https://en.wikipedia.org/w/index.php?oldid=1359885522"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-07T06:40:15.558743+00:00",
+          "revision_id": 2562156954,
+          "source_qid": "Q3918",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2562156954"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-07T06:40:18.967995+00:00",
+          "revision_id": 2565433264,
+          "source_qid": "Q843",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2565433264"
+        }
+      }
+    },
+    "coverage": [
+      {
+        "group": "identity",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "status": "disputed"
+      },
+      {
+        "group": "population",
+        "status": "checked"
+      },
+      {
+        "group": "finance",
+        "status": "not_found"
+      },
+      {
+        "group": "profile",
+        "status": "checked"
+      }
+    ],
+    "delta": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-07T06:40:19.058983+00:00",
+          "status": "not_found"
+        },
+        "geography": {
+          "checked_at": "2026-11-07T06:40:19.058983+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-07T06:40:19.058983+00:00",
+          "status": "disputed"
+        },
+        "identity": {
+          "checked_at": "2026-11-07T06:40:19.058983+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-07T06:40:19.058983+00:00",
+          "status": "checked"
+        },
+        "profile": {
+          "checked_at": "2026-11-07T06:40:19.058983+00:00",
+          "status": "checked"
+        }
+      },
+      "curation": {
+        "identity_status": "in_scope"
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "claim:P571:0",
+                      "original_text": "+2012-00-00T00:00:00Z",
+                      "source_ref": "s1"
+                    },
+                    {
+                      "locator": "infobox:4",
+                      "original_text": "Established: 2012",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 2012
+                  },
+                  "verification": "supported"
+                },
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:lead",
+                      "original_text": "AJKMC was established in 2011.",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c2",
+                  "value": {
+                    "precision": "year",
+                    "year": 2011
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "conflicts": [
+                {
+                  "candidate_ids": [
+                    "c1",
+                    "c2"
+                  ],
+                  "kind": "time_disagreement",
+                  "note": "Two establishment-year representations disagree: Wikidata/institution infobox 2012 versus article lead 2011; inauguration in October 2011 is separately described and should not be silently substituted for establishment.",
+                  "status": "unresolved"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "qualifications": [
+                  "conflicting_candidates"
+                ],
+                "reason": "Apply preferred-v1: compare stated periods within matching basis/currency, keep undated values eligible, then consider support, source role and observation recency.",
+                "reason_code": "best_available"
+              }
+            },
+            "id": "establishment",
+            "kind": "institution_establishment",
+            "subject_ref": "institution"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:History",
+                      "original_text": "AJKMC was inaugurated by Prime Minister Syed Yousaf Raza Gillani on 8 October 2011.",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "day": 8,
+                    "month": 10,
+                    "precision": "day",
+                    "year": 2011
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "inauguration",
+            "kind": "teaching_start",
+            "subject_ref": "institution"
+          }
+        ]
+      },
+      "identity": {
+        "aliases": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "Azad Jammu Kashmir Medical College",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Azad Jammu Kashmir Medical College"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "or (AJKMC)",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "AJKMC"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "infobox:1",
+                    "original_text": "Other name: Mirwaiz Maulvi Mohammad Farooq Medical College",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Mirwaiz Maulvi Mohammad Farooq Medical College"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ],
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "is a public medical institute located in Muzaffarabad",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "specialist_institution",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "Azad Jammu and Kashmir Medical College",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "Azad Jammu and Kashmir Medical College",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        "ownership": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:3",
+                  "original_text": "Type: Public",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "public",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "locations": [
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "infobox:9",
+                    "original_text": "Muzaffarabad, Azad Jammu & Kashmir, Pakistan",
+                    "source_ref": "s2"
+                  },
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "\"id\": \"Q843\"",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "Pakistan",
+                    "source_ref": "s4"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "city_name": "Muzaffarabad",
+                  "country_name": "Pakistan",
+                  "country_qid": "Q843",
+                  "formatted": {
+                    "language": "en",
+                    "text": "Muzaffarabad, Azad Jammu & Kashmir, Pakistan"
+                  },
+                  "region_name": "Azad Jammu & Kashmir"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "muzaffarabad",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "infobox:9",
+                    "original_text": "Location: Muzaffarabad, Azad Jammu & Kashmir, Pakistan",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Muzaffarabad"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        {
+          "coordinates": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "statement:Q18385303$1DBF36AF-3217-44A3-A1F3-72B6BF3BC9F2",
+                    "original_text": "\"latitude\": 34.21",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "source_rank": "normal",
+                "value": {
+                  "crs": "EPSG:4326",
+                  "globe_qid": "Q2",
+                  "latitude": 34.21,
+                  "longitude": 73.28,
+                  "source_precision_degrees": 0.010862567563167
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "wikidata-item-location",
+          "kind": "institution",
+          "qid": "Q18385303"
+        }
+      ],
+      "population": {
+        "students_total": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "AJKMC is home to 500 students in the MBBS program",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "infobox:8",
+                  "original_text": "Students: 500",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "period_status": "not_stated",
+              "value": {
+                "amount": 500,
+                "basis": "headcount",
+                "precision": "exact"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "qualifications": [
+              "period_not_stated",
+              "single_source_family"
+            ],
+            "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "profile": {
+        "academic_focus": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "public medical institute",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": [
+                {
+                  "language": "en",
+                  "text": "medicine"
+                }
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "degree_levels": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "500 students in the MBBS program",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": [
+                "MBBS"
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "motto": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:2",
+                  "original_text": "Motto: Serving humanity is serving the Almighty",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "Serving humanity is serving the Almighty"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "summary": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:lead",
+                  "original_text": "AJKMC is home to 500 students in the MBBS program, with clinical rotations occurring at Combined Military Hospital Muzaffarabad and Abbas Institute of Medical Sciences. AJKMC was established in 2011.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "infobox:1",
+                  "original_text": "Other name: Mirwaiz Maulvi Mohammad Farooq Medical College",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "infobox:4",
+                  "original_text": "Established: 2012",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:History",
+                  "original_text": "AJKMC was inaugurated by Prime Minister Syed Yousaf Raza Gillani on 8 October 2011.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Affiliations_and_recognitions",
+                  "original_text": "Pakistan Medical and Dental Council",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:Publications",
+                  "original_text": "The official scientific journals of the college is Kashmir Journal of Medical Sciences (KJMS).",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "Azad Jammu and Kashmir Medical College (AJKMC) is a public medical institution in Muzaffarabad, Azad Jammu and Kashmir, Pakistan. Its English name is also presented as Azad Jammu Kashmir Medical College, and the institution is additionally identified as Mirwaiz Maulvi Mohammad Farooq Medical College. The college offers an MBBS program and the available encyclopedia account describes a student body of approximately 500, without a specified statistical year.\n\nThe college's establishment date is reported inconsistently: Wikidata and the encyclopedia infobox give 2012, while the article narrative says it was established in 2011. The narrative separately dates its inauguration to 8 October 2011 by Prime Minister Syed Yousaf Raza Gillani. It connects the rationale for establishing the college to shortages of medical professionals highlighted by the 2005 Kashmir earthquake. Clinical rotations for its MBBS students are described at Combined Military Hospital Muzaffarabad and Abbas Institute of Medical Sciences. The article lists professional recognition and affiliations, including the Pakistan Medical and Dental Council and the University of Azad Jammu and Kashmir. It also identifies the Kashmir Journal of Medical Sciences as the college's scientific journal."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "teaching_languages": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:11",
+                  "original_text": "Language: Urdu, English",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": [
+                "Urdu",
+                "English"
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "website": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P856:0",
+                  "original_text": "http://ajkmc.edu.pk/",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "http://ajkmc.edu.pk/",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "qid": "Q18385303",
+      "record_revision": 1,
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "reviewed_institution_type"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "included"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-07T06:39:57.473770+00:00",
+          "revision_id": 2511429713,
+          "source_qid": "Q18385303",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2511429713"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikipedia",
+          "language": "en",
+          "page_id": 44254092,
+          "publisher_role": "encyclopedia",
+          "retrieved_at": "2026-11-07T06:40:10.477774+00:00",
+          "revision_id": 1359885522,
+          "url": "https://en.wikipedia.org/w/index.php?oldid=1359885522"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-07T06:40:15.558743+00:00",
+          "revision_id": 2562156954,
+          "source_qid": "Q3918",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2562156954"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-07T06:40:18.967995+00:00",
+          "revision_id": 2565433264,
+          "source_qid": "Q843",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2565433264"
+        }
+      }
+    },
+    "open_requests": [],
+    "proposed_at": "2026-11-07T06:42:46.390156+00:00",
+    "qid": "Q18385303",
+    "research": {
+      "model": "gpt-6.1-sol",
+      "prompt_sha256": "27c5f6008f396052bb8a020cfd3ce4d8982e69ee3896a85f11b7f3218e7162df",
+      "reasoning_effort": "medium",
+      "schema_sha256": "92e942f4fbf2ae28964462ea9ffa8312c5ee16a077a1e08b40aaaf741512422e",
+      "session": "/root/research_q18385303"
+    },
+    "retrieval_failures": [],
+    "review_status": "unreviewed",
+    "seed": {
+      "channels": [
+        "reviewed_institution_type"
+      ],
+      "import_id": "seed-84c3beb45367905f",
+      "screening_status": "included"
+    },
+    "transport": {
+      "base_commit": "514d80927ae3b259d08d8c5fb9939515fc0a15c2",
+      "protocol": "native-subagent-v1",
+      "repository": "ider-zh/university-seed-curation",
+      "review_policy": {
+        "id": "source-grounded-flexible-v2",
+        "sha256": "b8ed7d2897e4c31dbd81b1379aafdc1077a21d1a33949edbd2d896b0adf99db2"
+      },
+      "schema_sha256": "bfa496eafa9dffca56146214168db7f000b09161b8993129632e7202e1c88833",
+      "seed_catalog_sha256": "84c3beb45367905f513d650684283dd62a9c1b77962bdc34151a6ef05bfa03d4"
+    },
+    "type": "university-proposal-v1"
+  },
+  "review": {
+    "contexts_checked": 4,
+    "coverage_checks": [
+      {
+        "group": "identity",
+        "reason": "Root identity and Wikipedia lead/infobox were surveyed, with names, kind, ownership and eligibility represented.",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "reason": "Root country/coordinate and article location were surveyed; administrative-area address and separate root point are distinguished.",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "reason": "Wikidata/infobox establishment 2012 conflicts with article lead establishment 2011; the October 2011 inauguration is separately sourced.",
+        "status": "disputed"
+      },
+      {
+        "group": "population",
+        "reason": "The available 500-student MBBS observation was captured without an invented period.",
+        "status": "checked"
+      },
+      {
+        "group": "finance",
+        "reason": "The frozen survey did not provide a usable institution finance observation; no value or zero was invented.",
+        "status": "not_found"
+      },
+      {
+        "group": "profile",
+        "reason": "Article and infobox profile material was surveyed; supplementary fields do not receive independent factual review under core-review-v3.",
+        "status": "checked"
+      }
+    ],
+    "decision": "approve",
+    "facts_checked": 10,
+    "full_refresh": false,
+    "inferences": [
+      {
+        "id": "$.identity.kind:c1",
+        "reason": "The article calls this a public medical institute; specialist_institution is a reasonable controlled-category adaptation for a medical college, not a claim of general university status."
+      }
+    ],
+    "model": "gpt-6.1-sol",
+    "proposal_sha256": "71619cebdcd6ed77da61982f15860b6be8c466c7fcadf549b83035a6ee8a2ce8",
+    "qid": "Q18385303",
+    "reasoning_effort": "medium",
+    "record_sha256": "001d49d0118f2eeffe2fd517ea3b1e9eb6bfa5f7176cd7a7875d4cb23e50695f",
+    "request_responses": [],
+    "requests": [],
+    "review_scope": {
+      "not_independently_reviewed_ids": [
+        "$.history.milestones[1].date:c1",
+        "$.locations[0].address:c1",
+        "$.locations[0].name:c1",
+        "$.profile.academic_focus:c1",
+        "$.profile.degree_levels:c1",
+        "$.profile.motto:c1",
+        "$.profile.summary:c1",
+        "$.profile.teaching_languages:c1",
+        "$.profile.website:c1",
+        "location:muzaffarabad",
+        "milestone:inauguration"
+      ],
+      "reviewed_ids": [
+        "$.history.milestones[0].date:c1",
+        "$.history.milestones[0].date:c2",
+        "$.identity.aliases[0]:c1",
+        "$.identity.aliases[1]:c1",
+        "$.identity.aliases[2]:c1",
+        "$.identity.kind:c1",
+        "$.identity.names.en:c1",
+        "$.identity.ownership:c1",
+        "$.locations[1].coordinates:c1",
+        "$.population.students_total:c1",
+        "country:$.locations[0].address:c1",
+        "identity",
+        "location:wikidata-item-location",
+        "milestone:establishment"
+      ],
+      "version": "core-review-v3"
+    },
+    "review_session": "/root/review_q18385303",
+    "reviewed_at": "2026-11-07T06:44:01.961823+00:00",
+    "source_revisions_checked": 4,
+    "waived_requests": []
+  },
+  "review_result_sha256": "2cac5dd2d73d7ecdfbcd663854b5613ef567e3d513ffb0b29b3175447859d933",
+  "type": "university-unified-receipt-v1"
+}
