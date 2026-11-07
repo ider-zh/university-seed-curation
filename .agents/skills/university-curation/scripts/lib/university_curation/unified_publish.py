@@ -9,7 +9,7 @@ import re
 from .integrity import load_json, private_path, sha
 from .workflow_contract import attach_transport, baseline_at
 from .domain_refresh import materialize
-from .workflow_contract import check_proposal, check_publication_base
+from .workflow_contract import check_proposal, check_publication_base, check_review_refresh
 from .native_research import _base
 from .git_data import batch_slug, blob, canonical_json, no_legacy_duplicate, record_relative
 from .preferred import validate, recompute
@@ -60,6 +60,7 @@ def _verified(repo, base, proposal, review_job, attempt, trust, catalog, catalog
         raise ValueError('Exact proposal lacks Review approval')
     if verdict.get('requests') or any(r['status']!='addressed' for r in verdict['request_responses']):
         raise ValueError('Unresolved Review questions')
+    check_review_refresh(proposal,verdict)
     if metadata.get('session')!=verdict['review_session'] or metadata.get('model')!=verdict['model'] or metadata.get('reasoning_effort')!=verdict['reasoning_effort']:
         raise ValueError('Review provenance mismatch')
     if verdict['review_session']==proposal['research']['session']:
@@ -167,6 +168,7 @@ def verify_files(repo, base, files, trust):
         validate_receipt(proposal['delta'],verdict)
         reviewed.append((proposal,verdict))
         check_proposal(proposal,baseline,catalog,digest,trust)
+        check_review_refresh(proposal,verdict)
         if verdict['decision']!='approve' or verdict['qid']!=entity or verdict['proposal_sha256']!=sha(encode(proposal)) or verdict['record_sha256']!=sha(files[path]) or verdict['requests']:
             raise ValueError('No approval for exact record')
         if verdict['review_session']==proposal['research']['session'] or verdict['source_revisions_checked']!=len(proposal['delta']['sources']):
