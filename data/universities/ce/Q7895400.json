@@ -1,0 +1,685 @@
+{
+  "coverage": {
+    "finance": {
+      "checked_at": "2026-11-12T06:16:03.559261+00:00",
+      "status": "not_found"
+    },
+    "geography": {
+      "checked_at": "2026-11-12T06:16:03.559261+00:00",
+      "status": "checked"
+    },
+    "history": {
+      "checked_at": "2026-11-12T06:16:03.559261+00:00",
+      "status": "checked"
+    },
+    "identity": {
+      "checked_at": "2026-11-12T06:16:03.559261+00:00",
+      "status": "checked"
+    },
+    "population": {
+      "checked_at": "2026-11-12T06:16:03.559261+00:00",
+      "status": "checked"
+    },
+    "profile": {
+      "checked_at": "2026-11-12T06:16:03.559261+00:00",
+      "status": "checked"
+    }
+  },
+  "curation": {
+    "identity_status": "related",
+    "refresh_profile": "core-v1",
+    "reviewed_groups": [
+      "identity",
+      "geography",
+      "history",
+      "population",
+      "finance",
+      "profile"
+    ]
+  },
+  "history": {
+    "milestones": [
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:1",
+                  "original_text": "Established: 1964",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "claim:P571:0",
+                  "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q7895400$C9508BD3-FE01-4033-8CB6-FE01E35D9CE0\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+1964-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "precision": "year",
+                "year": 1964
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "infobox:1",
+                  "original_text": "Established: 1964",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:lead",
+                  "original_text": "University of Florida Center for African Studies (CAS) is a center within of the College of Liberal Arts and Sciences (CLAS) at the University of Florida (UF).",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "Establishment of the Center for African Studies, a unit within the University of Florida."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "establishment",
+        "kind": "institution_establishment",
+        "subject_ref": "institution"
+      }
+    ]
+  },
+  "identity": {
+    "aliases": [
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "University of Florida Center for African Studies (CAS) is a center within of the College of Liberal Arts and Sciences (CLAS) at the University of Florida (UF).",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "CAS"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    ],
+    "kind": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "University of Florida Center for African Studies (CAS) is a center within of the College of Liberal Arts and Sciences (CLAS) at the University of Florida (UF).",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": "other",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "names": {
+      "en": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "page_metadata",
+                "original_text": "{\"title\": \"University of Florida Center for African Studies\", \"language\": \"en\"}",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": "University of Florida Center for African Studies",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    "operating_status": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:Overview",
+              "original_text": "The Center for African Studies currently offers undergraduate and postgraduate study programs in numerous Africa-related fields.[2]",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": "operating",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "ownership": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:0",
+              "original_text": "Type: Public",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": "public",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "locations": [
+    {
+      "address": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "infobox:5",
+                "original_text": "Location: Gainesville, Florida, USA",
+                "source_ref": "s2"
+              },
+              {
+                "locator": "claim:P131:0",
+                "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q7895400$FFC27BB2-AFC4-47E3-A11C-B7FA71129F99\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 487999, \"id\": \"Q487999\"}, \"reference_count\": 1}",
+                "source_ref": "s1"
+              },
+              {
+                "locator": "claim:P17:0",
+                "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q7895400$F4C28356-4681-48E5-B463-E9DEB199E3B4\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 30, \"id\": \"Q30\"}, \"reference_count\": 1}",
+                "source_ref": "s1"
+              },
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q487999\", \"labels\": {\"en\": \"Gainesville\"}, \"descriptions\": {\"en\": \"city and county seat of Alachua County, Florida, United States\"}}",
+                "source_ref": "s5"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "city_name": "Gainesville",
+              "city_qid": "Q487999",
+              "country_name": "United States",
+              "country_qid": "Q30",
+              "formatted": {
+                "language": "en",
+                "text": "Gainesville, Florida, USA"
+              },
+              "region_name": "Florida"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "id": "gainesville",
+      "kind": "administrative_area",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q487999\", \"labels\": {\"en\": \"Gainesville\"}, \"descriptions\": {\"en\": \"city and county seat of Alachua County, Florida, United States\"}}",
+                "source_ref": "s5"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Gainesville"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "qid": "Q487999"
+    },
+    {
+      "coordinates": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "statement:Q7895400$3dc7a206-4d8b-b938-3948-53f55caf3f15",
+                "original_text": "\"latitude\": 29.649277777777776",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "source_rank": "normal",
+            "value": {
+              "crs": "EPSG:4326",
+              "globe_qid": "Q2",
+              "latitude": 29.649277777777776,
+              "longitude": -82.34208333333333,
+              "source_precision_degrees": 2.777777777777778e-05
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "id": "wikidata-item-location",
+      "kind": "institution",
+      "qid": "Q7895400"
+    }
+  ],
+  "modified_datetime": "2026-11-12T06:22:26.984900+00:00",
+  "profile": {
+    "academic_focus": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "The Center provides teaching and research into issues of African languages, humanities, social sciences, agriculture, business, engineering, education, fine arts, environmental studies, conservation, journalism, and law.[1]",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": [
+            {
+              "language": "en",
+              "text": "African studies"
+            },
+            {
+              "language": "en",
+              "text": "African languages"
+            },
+            {
+              "language": "en",
+              "text": "Humanities"
+            },
+            {
+              "language": "en",
+              "text": "Social sciences"
+            },
+            {
+              "language": "en",
+              "text": "Agriculture"
+            },
+            {
+              "language": "en",
+              "text": "Business"
+            },
+            {
+              "language": "en",
+              "text": "Engineering"
+            },
+            {
+              "language": "en",
+              "text": "Education"
+            },
+            {
+              "language": "en",
+              "text": "Fine arts"
+            },
+            {
+              "language": "en",
+              "text": "Environmental studies"
+            },
+            {
+              "language": "en",
+              "text": "Conservation"
+            },
+            {
+              "language": "en",
+              "text": "Journalism"
+            },
+            {
+              "language": "en",
+              "text": "Law"
+            }
+          ],
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "degree_levels": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:Overview",
+              "original_text": "A number of faculty members with appointments wholly or partially within the Center have facilitated the development of a core curriculum in African Studies in support of the undergraduate minor and graduate certificate programs.[3]",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": [
+            "undergraduate minor",
+            "graduate certificate"
+          ],
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "summary": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "University of Florida department\nUniversity of Florida Center for African Studies (CAS) is a center within of the College of Liberal Arts and Sciences (CLAS) at the University of Florida (UF). The Center provides teaching and research into issues of African languages, humanities, social sciences, agriculture, business, engineering, education, fine arts, environmental studies, conservation, journalism, and law.[1]",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "infobox:0",
+              "original_text": "Type: Public",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "infobox:1",
+              "original_text": "Established: 1964",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "infobox:5",
+              "original_text": "Location: Gainesville, Florida, USA29°38′57.4″N 82°20′31.5″W﻿ / ﻿29.649278°N 82.342083°W﻿ / 29.649278; -82.342083",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Overview",
+              "original_text": "The Center for African Studies currently offers undergraduate and postgraduate study programs in numerous Africa-related fields.[2]",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Overview",
+              "original_text": "The Center for African Studies is in the College of Liberal Arts & Sciences at the University of Florida. In addition to undergraduate education, the Center promotes and supports graduate studies.",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Overview",
+              "original_text": "The Center has over 100 affiliated teaching and research faculty in a wide variety of fields, including: languages, the humanities, the social sciences, agriculture, business, engineering, education, fine arts, environmental studies and conservation, journalism, and law. A number of faculty members with appointments wholly or partially within the Center have facilitated the development of a core curriculum in African Studies in support of the undergraduate minor and graduate certificate programs.[3]",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Overview",
+              "original_text": "A full-time Outreach Director[4] oversees an active program that provides ongoing training opportunities for K-12 teachers and educators from postsecondary institutions as well as outreach for business, media, and community groups.",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Overview",
+              "original_text": "CAS is funded in part by the U.S. Department of Education Title VI National Resource Center program[5] which supports research, teaching, outreach, and development of international linkages. It is the only National Resource Center for Africa located in the southeastern US, and the only one in a sub-tropical zone.[citation needed]",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:Program_in_African_Languages",
+              "original_text": "[edit | edit source]\nThe Program in African Languages[6] is one of the Center for African Studies’ central components.\nCurrently, the Center for African Studies offers language training in Akan, Amharic, Arabic, Swahili, Wolof, Xhosa, and Yoruba, although other languages have been offered in the past.[7] The University of Florida is only the second university nationwide to offer an African languages major.",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:African_Studies_Library_Collection",
+              "original_text": "The African Studies Collection has a collaborative partnership with the UF Center for African Studies, which contributes generous funding for library materials and services through its U.S. Department of Education Title VI grant as a National Resource Center.",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:African_Studies_Quarterly",
+              "original_text": "[edit | edit source]\nThe Center for African Studies founded the African Studies Quarterly (ASQ)[18] to promote research on Africa beyond that undertaken by University of Florida faculty and graduate students. It is an interdisciplinary, fully refereed, online open access journal.",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "language": "en",
+            "text": "The University of Florida Center for African Studies (CAS) is a teaching and research center within the university’s College of Liberal Arts and Sciences in Gainesville, Florida, United States. Established in 1964, it is an academic unit of the University of Florida. Its interdisciplinary work addresses African languages, humanities and social sciences, alongside agriculture, business, engineering, education, fine arts, environmental studies, conservation, journalism and law. The center supports undergraduate education and graduate studies, including an undergraduate minor and a graduate certificate in African Studies. Faculty members with appointments wholly or partly within the center contribute to its core curriculum.\n\nThe Program in African Languages is one of the center’s principal components. The captured account lists training in Akan, Amharic, Arabic, Swahili, Wolof, Xhosa and Yoruba. The center also conducts outreach for school teachers, postsecondary educators, businesses, media and community groups. Part of its funding comes through the U.S. Department of Education’s Title VI National Resource Center program, supporting research, teaching, outreach and international linkages. Its collaboration with the University of Florida Libraries’ African Studies Collection includes support for library materials and services. The center founded African Studies Quarterly, an interdisciplinary, peer-reviewed, open-access online journal intended to promote research on Africa beyond the university’s own faculty and graduate students."
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "website": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:6",
+              "original_text": "Website: http://africa.ufl.edu/",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": "http://africa.ufl.edu/",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "qid": "Q7895400",
+  "record_revision": 1,
+  "related_entities": {
+    "clas": {
+      "kind": "faculty",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "University of Florida Center for African Studies (CAS) is a center within of the College of Liberal Arts and Sciences (CLAS) at the University of Florida (UF).",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "College of Liberal Arts and Sciences"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    "uf": {
+      "kind": "institution",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "infobox:2",
+                "original_text": "Affiliations: University of Florida",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "University of Florida"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    }
+  },
+  "relationships": {
+    "parent": [
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "University of Florida Center for African Studies (CAS) is a center within of the College of Liberal Arts and Sciences (CLAS) at the University of Florida (UF).",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "target_ref": "related:clas"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "infobox:2",
+                "original_text": "Affiliations: University of Florida",
+                "source_ref": "s2"
+              },
+              {
+                "locator": "section:lead",
+                "original_text": "University of Florida Center for African Studies (CAS) is a center within of the College of Liberal Arts and Sciences (CLAS) at the University of Florida (UF).",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "target_ref": "related:uf"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    ]
+  },
+  "schema_version": "0.2.2",
+  "seed": {
+    "channels": [
+      "reviewed_institution_type"
+    ],
+    "import_id": "seed-84c3beb45367905f",
+    "screening_status": "needs_review"
+  },
+  "selection_policy": "preferred-v1",
+  "sources": {
+    "s1": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-12T06:15:48.852012+00:00",
+      "revision_id": 2530575526,
+      "source_qid": "Q7895400",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2530575526"
+    },
+    "s2": {
+      "family": "wikimedia",
+      "kind": "wikipedia",
+      "language": "en",
+      "page_id": 20783426,
+      "publisher_role": "encyclopedia",
+      "retrieved_at": "2026-11-12T06:15:56.259895+00:00",
+      "revision_id": 1369089251,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1369089251"
+    },
+    "s3": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-07T06:40:15.558743+00:00",
+      "revision_id": 2562156954,
+      "source_qid": "Q3918",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2562156954"
+    },
+    "s4": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-07T06:54:18.883957+00:00",
+      "revision_id": 2565041516,
+      "source_qid": "Q30",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2565041516"
+    },
+    "s5": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-12T06:16:03.522235+00:00",
+      "revision_id": 2554627717,
+      "source_qid": "Q487999",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2554627717"
+    }
+  },
+  "update_datetime": "2026-11-12T06:22:26.984900+00:00"
+}
