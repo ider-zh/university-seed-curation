@@ -1,0 +1,666 @@
+{
+  "coverage": {
+    "finance": {
+      "checked_at": "2026-11-13T23:31:45.246943+00:00",
+      "status": "not_found"
+    },
+    "geography": {
+      "checked_at": "2026-11-13T23:31:45.246943+00:00",
+      "status": "checked"
+    },
+    "history": {
+      "checked_at": "2026-11-13T23:31:45.246943+00:00",
+      "status": "checked"
+    },
+    "identity": {
+      "checked_at": "2026-11-13T23:31:45.246943+00:00",
+      "status": "checked"
+    },
+    "population": {
+      "checked_at": "2026-11-13T23:31:45.246943+00:00",
+      "status": "checked"
+    },
+    "profile": {
+      "checked_at": "2026-11-13T23:31:45.246943+00:00",
+      "status": "checked"
+    }
+  },
+  "curation": {
+    "identity_status": "related",
+    "refresh_profile": "core-v1",
+    "reviewed_groups": [
+      "identity",
+      "geography",
+      "history",
+      "population",
+      "finance",
+      "profile"
+    ]
+  },
+  "history": {
+    "milestones": [
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:History",
+                  "original_text": "The College of Business was founded in 1936 as the Department of Commerce",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "precision": "year",
+                "year": 1936
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:History",
+                  "original_text": "The College of Business was founded in 1936 as the Department of Commerce",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "Founded as the Department of Commerce"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "foundation",
+        "kind": "institution_establishment",
+        "subject_ref": "institution"
+      },
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:History",
+                  "original_text": "The department was renamed the School of Business in 1960.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "precision": "year",
+                "year": 1960
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:History",
+                  "original_text": "The department was renamed the School of Business in 1960.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "Renamed the School of Business"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "rename1960",
+        "kind": "rename",
+        "subject_ref": "institution"
+      },
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:History",
+                  "original_text": "In 2002, school changed its name from the Business School to the College of Business.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "precision": "year",
+                "year": 2002
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "description": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:History",
+                  "original_text": "In 2002, school changed its name from the Business School to the College of Business.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "Changed its name from the Business School to the College of Business"
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "rename2002",
+        "kind": "rename",
+        "subject_ref": "institution"
+      }
+    ]
+  },
+  "identity": {
+    "kind": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "The College of Business is the business school at East Carolina University.",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": "faculty",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "names": {
+      "en": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "metadata",
+                "original_text": "East Carolina University College of Business",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": "East Carolina University College of Business",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    "ownership": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:0",
+              "original_text": "Type: Public Business School",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": "public",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "locations": [
+    {
+      "address": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "infobox:8",
+                "original_text": "Location: Greenville, North Carolina, United States",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "city_name": "Greenville",
+              "country_name": "United States",
+              "country_qid": "Q30",
+              "formatted": {
+                "language": "en",
+                "text": "Greenville, North Carolina, United States"
+              },
+              "region_name": "North Carolina"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "id": "greenville",
+      "kind": "administrative_area",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "infobox:8",
+                "original_text": "Location: Greenville, North Carolina, United States",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Greenville, North Carolina, United States"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    {
+      "coordinates": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "statement:q5328026$44549181-2E59-465A-94CD-54963502D384",
+                "original_text": "\"latitude\": 35.6061",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "source_rank": "normal",
+            "value": {
+              "crs": "EPSG:4326",
+              "globe_qid": "Q2",
+              "latitude": 35.6061,
+              "longitude": -77.3652,
+              "source_precision_degrees": 0.0001
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "id": "wikidata-item-location",
+      "kind": "institution",
+      "qid": "Q5328026"
+    }
+  ],
+  "modified_datetime": "2026-11-13T23:37:19.802377+00:00",
+  "population": {
+    "academic_staff": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:4",
+              "original_text": "Faculty: 117",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "period_status": "not_stated",
+          "value": {
+            "amount": 117,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "period_not_stated",
+          "single_source_family"
+        ],
+        "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+        "reason_code": "only_available"
+      }
+    },
+    "postgraduate_students": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:7",
+              "original_text": "Postgraduates: 820",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "period_status": "not_stated",
+          "value": {
+            "amount": 820,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "period_not_stated",
+          "single_source_family"
+        ],
+        "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+        "reason_code": "only_available"
+      }
+    },
+    "students_total": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:5",
+              "original_text": "Students: 4,566",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "period_status": "not_stated",
+          "value": {
+            "amount": 4566,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "period_not_stated",
+          "single_source_family"
+        ],
+        "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+        "reason_code": "only_available"
+      }
+    },
+    "undergraduate_students": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "infobox:6",
+              "original_text": "Undergraduates: 3,746",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "period_status": "not_stated",
+          "value": {
+            "amount": 3746,
+            "basis": "unspecified",
+            "precision": "exact"
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "qualifications": [
+          "period_not_stated",
+          "single_source_family"
+        ],
+        "reason": "Use the available sourced value; missing period or corroboration does not prevent selection.",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "profile": {
+    "degree_levels": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "The College grants two undergraduate degrees, the Bachelor of Science in Business Administration and the Bachelor of Science in Hospitality Management. The College grants two graduate degrees, the Master of Business Administration and the Master of Science in Accounting",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": [
+            "undergraduate",
+            "graduate"
+          ],
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "summary": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "The College of Business is the business school at East Carolina University.",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "section:History",
+              "original_text": "The College of Business was founded in 1936 as the Department of Commerce",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "infobox:8",
+              "original_text": "Location: Greenville, North Carolina, United States",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": {
+            "language": "en",
+            "text": "The East Carolina University College of Business is the business school of East Carolina University, located in Greenville, North Carolina. The school originated in 1936 as the Department of Commerce, became the School of Business in 1960 and adopted the College of Business name in 2002. The Association to Advance Collegiate Schools of Business accredited its undergraduate programs in 1967 and its graduate programs in 1976.\n\nThe college offers undergraduate degrees in business administration and hospitality management and graduate degrees in business administration and accounting. It also offers a dual-degree opportunity with the Brody School of Medicine. Its history includes a move from the Rawl Building to the Harold H. Bate Building and the development of online MBA courses."
+          },
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "website": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P856:0",
+              "original_text": "http://www.ecu.edu/cs-bus/",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "value": "http://www.ecu.edu/cs-bus/",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "qid": "Q5328026",
+  "record_revision": 1,
+  "related_entities": {
+    "ecu": {
+      "kind": "institution",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "The College of Business is the business school at East Carolina University.",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "East Carolina University"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    }
+  },
+  "relationships": {
+    "parent": [
+      {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "section:lead",
+                "original_text": "The College of Business is the business school at East Carolina University.",
+                "source_ref": "s2"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "target_ref": "related:ecu"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    ]
+  },
+  "schema_version": "0.2.2",
+  "seed": {
+    "channels": [
+      "reviewed_institution_type"
+    ],
+    "import_id": "seed-84c3beb45367905f",
+    "screening_status": "included"
+  },
+  "selection_policy": "preferred-v1",
+  "sources": {
+    "s1": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-13T23:31:30.042870+00:00",
+      "revision_id": 2049386320,
+      "source_qid": "Q5328026",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2049386320"
+    },
+    "s2": {
+      "family": "wikimedia",
+      "kind": "wikipedia",
+      "language": "en",
+      "page_id": 6170723,
+      "publisher_role": "encyclopedia",
+      "retrieved_at": "2026-11-13T23:31:40.856746+00:00",
+      "revision_id": 1368483007,
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1368483007"
+    },
+    "s3": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-07T06:40:04.466187+00:00",
+      "revision_id": 2549122764,
+      "source_qid": "Q1143635",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2549122764"
+    },
+    "s4": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-07T06:54:18.883957+00:00",
+      "revision_id": 2565041516,
+      "source_qid": "Q30",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2565041516"
+    },
+    "s5": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-13T23:31:45.210560+00:00",
+      "revision_id": 2562959951,
+      "source_qid": "Q1454",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2562959951"
+    }
+  },
+  "update_datetime": "2026-11-13T23:37:19.802377+00:00"
+}
