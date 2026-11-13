@@ -1,0 +1,279 @@
+{
+  "coverage": {
+    "finance": {
+      "checked_at": "2026-11-13T23:32:41.899954+00:00",
+      "status": "not_found"
+    },
+    "geography": {
+      "checked_at": "2026-11-13T23:32:41.899954+00:00",
+      "status": "checked"
+    },
+    "history": {
+      "checked_at": "2026-11-13T23:32:41.899954+00:00",
+      "status": "checked"
+    },
+    "identity": {
+      "checked_at": "2026-11-13T23:32:41.899954+00:00",
+      "status": "checked"
+    },
+    "population": {
+      "checked_at": "2026-11-13T23:32:41.899954+00:00",
+      "status": "not_found"
+    },
+    "profile": {
+      "checked_at": "2026-11-13T23:32:41.899954+00:00",
+      "status": "not_found"
+    }
+  },
+  "curation": {
+    "identity_status": "excluded",
+    "refresh_profile": "core-v1",
+    "reviewed_groups": [
+      "identity",
+      "geography",
+      "history",
+      "population",
+      "finance",
+      "profile"
+    ]
+  },
+  "history": {
+    "milestones": [
+      {
+        "date": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P571:0",
+                  "original_text": "+1825-00-00T00:00:00Z",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "precision": "year",
+                "year": 1825
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "id": "establishment",
+        "kind": "institution_establishment",
+        "subject_ref": "institution"
+      }
+    ]
+  },
+  "identity": {
+    "kind": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "公立文理中学",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": "other",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "names": {
+      "pt-br": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P1705:0",
+                "original_text": "Ginásio Pernambucano",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": "Ginásio Pernambucano",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "zh": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "metadata",
+                "original_text": "伯南布哥文理中学",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": "伯南布哥文理中学",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    },
+    "ownership": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "section:lead",
+              "original_text": "公立文理中学",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": "public",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "locations": [
+    {
+      "id": "recife",
+      "kind": "administrative_area",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "metadata",
+                "original_text": "Recife",
+                "source_ref": "s5"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Recife"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "qid": "Q48344"
+    },
+    {
+      "coordinates": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "statement:Q10289705$F668983F-21EE-4CE3-9307-8E1BF2013EB8",
+                "original_text": "\"latitude\": -8.05777778",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "source_rank": "normal",
+            "value": {
+              "crs": "EPSG:4326",
+              "globe_qid": "Q2",
+              "latitude": -8.05777778,
+              "longitude": -34.87944444,
+              "source_precision_degrees": 1e-05
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "id": "wikidata-item-location",
+      "kind": "institution",
+      "qid": "Q10289705"
+    }
+  ],
+  "modified_datetime": "2026-11-13T23:37:26.608256+00:00",
+  "qid": "Q10289705",
+  "record_revision": 1,
+  "schema_version": "0.2.2",
+  "seed": {
+    "channels": [
+      "legacy_discovery"
+    ],
+    "import_id": "seed-84c3beb45367905f",
+    "screening_status": "needs_review"
+  },
+  "selection_policy": "preferred-v1",
+  "sources": {
+    "s1": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-13T23:32:28.946414+00:00",
+      "revision_id": 2424212450,
+      "source_qid": "Q10289705",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2424212450"
+    },
+    "s2": {
+      "family": "wikimedia",
+      "kind": "wikipedia",
+      "language": "zh",
+      "page_id": 6934128,
+      "publisher_role": "encyclopedia",
+      "retrieved_at": "2026-11-13T23:32:37.213802+00:00",
+      "revision_id": 94688704,
+      "url": "https://zh.wikipedia.org/w/index.php?oldid=94688704"
+    },
+    "s3": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-07T06:40:06.558388+00:00",
+      "revision_id": 2561641675,
+      "source_qid": "Q2385804",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2561641675"
+    },
+    "s4": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-12T06:16:02.521032+00:00",
+      "revision_id": 2567934123,
+      "source_qid": "Q155",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2567934123"
+    },
+    "s5": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-13T23:32:41.871547+00:00",
+      "revision_id": 2567464987,
+      "source_qid": "Q48344",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2567464987"
+    }
+  },
+  "update_datetime": "2026-11-13T23:37:26.608256+00:00"
+}
