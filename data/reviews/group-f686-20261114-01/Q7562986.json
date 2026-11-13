@@ -1,0 +1,1165 @@
+{
+  "attribution": "distinct_native_research_and_review_subagents;not_cryptographic_identity",
+  "research": {
+    "baseline_sha256": "absent",
+    "candidate": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-13T23:18:26.116110+00:00",
+          "status": "not_found"
+        },
+        "geography": {
+          "checked_at": "2026-11-13T23:18:26.116110+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-13T23:18:26.116110+00:00",
+          "status": "checked"
+        },
+        "identity": {
+          "checked_at": "2026-11-13T23:18:26.116110+00:00",
+          "status": "disputed"
+        },
+        "population": {
+          "checked_at": "2026-11-13T23:18:26.116110+00:00",
+          "status": "not_found"
+        },
+        "profile": {
+          "checked_at": "2026-11-13T23:18:26.116110+00:00",
+          "status": "checked"
+        }
+      },
+      "curation": {
+        "identity_status": "conflation_suspected"
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "claim:P571:0",
+                      "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q7562986$A7FA7CB1-A8C6-4AD4-86BE-E05D420B6176\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+1973-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}, \"reference_count\": 1}",
+                      "source_ref": "s1"
+                    },
+                    {
+                      "locator": "section:History",
+                      "original_text": "The CUNY School of Medicine has its roots in 1973 when the Sophie Davis School of Biomedical Education was founded.",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 1973
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:History",
+                      "original_text": "The CUNY School of Medicine has its roots in 1973 when the Sophie Davis School of Biomedical Education was founded.",
+                      "source_ref": "s2"
+                    },
+                    {
+                      "locator": "section:lead",
+                      "original_text": "Founded in 2015 on the campus of The City College of New York, CUNY Medicine became the only public medical school in Manhattan and the first public MD-granting school to open in New York City since 1860.[1]",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "Founding of the Sophie Davis School of Biomedical Education; this is distinct from the establishment of the CUNY School of Medicine in 2015."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "establishment",
+            "kind": "institution_establishment",
+            "subject_ref": "institution"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:History",
+                      "original_text": "In 2016, the Sophie Davis School of Biomedical Education was renamed as the Sophie Davis Biomedical Education Program when it became part of the CUNY School of Medicine.[5]",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 2016
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:History",
+                      "original_text": "In 2016, the Sophie Davis School of Biomedical Education was renamed as the Sophie Davis Biomedical Education Program when it became part of the CUNY School of Medicine.[5]",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "The Sophie Davis School of Biomedical Education was renamed the Sophie Davis Biomedical Education Program when it became part of the CUNY School of Medicine."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "rename",
+            "kind": "rename",
+            "subject_ref": "institution"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "infobox:4",
+                      "original_text": "Established: 2015",
+                      "source_ref": "s2"
+                    },
+                    {
+                      "locator": "section:lead",
+                      "original_text": "Founded in 2015 on the campus of The City College of New York, CUNY Medicine became the only public medical school in Manhattan and the first public MD-granting school to open in New York City since 1860.[1]",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 2015
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "cuny-establishment",
+            "kind": "institution_establishment",
+            "subject_ref": "related:cuny-medicine"
+          }
+        ]
+      },
+      "identity": {
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:History",
+                  "original_text": "Before the start of its current seven-year curriculum, students completed their undergraduate education (B.S.) and the first two years of medical school at Sophie Davis.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "specialist_institution",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q7562986\", \"labels\": {\"en\": \"Sophie Davis School of Biomedical Education\"}, \"descriptions\": {}}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "section:History",
+                    "original_text": "The CUNY School of Medicine has its roots in 1973 when the Sophie Davis School of Biomedical Education was founded.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": "Sophie Davis School of Biomedical Education",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "locations": [
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q7562986$B16EAA64-EE98-4407-A2AE-FB85A4544BFB\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 60, \"id\": \"Q60\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q7562986$B2A0416E-EE08-47B0-ACC1-87E9F8B60F8E\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 30, \"id\": \"Q30\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q60\", \"labels\": {\"en\": \"New York City\"}, \"descriptions\": {\"en\": \"most populous city in the United States\"}}",
+                    "source_ref": "s5"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q30\", \"labels\": {\"en\": \"United States\"}, \"descriptions\": {\"en\": \"country located primarily in North America\"}}",
+                    "source_ref": "s4"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "city_qid": "Q60",
+                  "country_qid": "Q30",
+                  "formatted": {
+                    "language": "en",
+                    "text": "New York City, United States"
+                  }
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "new-york-city",
+          "kind": "administrative_area",
+          "qid": "Q60"
+        },
+        {
+          "coordinates": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "statement:Q7562986$DD433B88-052E-41DE-B991-F72E1F466B3A",
+                    "original_text": "\"latitude\": 40.8194",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "source_rank": "normal",
+                "value": {
+                  "crs": "EPSG:4326",
+                  "globe_qid": "Q2",
+                  "latitude": 40.8194,
+                  "longitude": -73.95,
+                  "source_precision_degrees": 1e-06
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "wikidata-item-location",
+          "kind": "institution",
+          "qid": "Q7562986"
+        }
+      ],
+      "modified_datetime": "2026-11-13T23:22:32.578029+00:00",
+      "profile": {
+        "academic_focus": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:History",
+                  "original_text": "Its purpose was to address the increasing demand for primary care physicians in the United States, particularly in urban areas.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:History",
+                  "original_text": "Before the start of its current seven-year curriculum, students completed their undergraduate education (B.S.) and the first two years of medical school at Sophie Davis.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": [
+                {
+                  "language": "en",
+                  "text": "Biomedical education"
+                },
+                {
+                  "language": "en",
+                  "text": "Primary care medicine"
+                }
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "summary": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:History",
+                  "original_text": "[edit | edit source]\nThis section needs more citations. Please help improve this section by adding citations to reliable sources. Unsourced material may be challenged and removed. (November 2023) (Learn how and when to remove this message)\nThe CUNY School of Medicine has its roots in 1973 when the Sophie Davis School of Biomedical Education was founded. This institution was named in honor of Sophie Davis (née Kesner), the wife of Colonial Penn founder Leonard Davis, a graduate of CCNY and a major benefactor. Its purpose was to address the increasing demand for primary care physicians in the United States, particularly in urban areas.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:History",
+                  "original_text": "The Sophie Davis School admits students primarily from high schools all across New York State and attracts talented graduates from diverse cultural and ethnic backgrounds in New York City, with a focus on minority students, including those of African-American and Hispanic descent. The school offers a challenging curriculum, and approximately 40% of its graduates pursue careers as primary care physicians. Leonard and Sophie Davis\nBefore the start of its current seven-year curriculum, students completed their undergraduate education (B.S.) and the first two years of medical school at Sophie Davis. After passing the USMLE Step 1, they transferred to one of several affiliated medical schools to complete the final two years, which primarily consisted of medical rotations, and earn their Doctor of Medicine (M.D.) degree.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:History",
+                  "original_text": "The schools that accepted Sophie Davis graduates included NYU School of Medicine, SUNY Downstate Medical Center, New York Medical College, Albany Medical College, Northeast Ohio Medical University, Dartmouth Medical School, and Stony Brook School of Medicine.\nIn 2016, the Sophie Davis School of Biomedical Education was renamed as the Sophie Davis Biomedical Education Program when it became part of the CUNY School of Medicine.[5] Upon completing the accelerated three-year Sophie Davis Biomedical Education Program, students receive a Bachelor of Science degree in Biomedical Sciences from The City College of New York and gain direct admission to the CUNY School of Medicine, without the need to take the Medical College Admissions Test (MCAT).[6] After finishing the traditional four-year medical school curriculum, students are awarded the Doctor of Medicine degree.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:History",
+                  "original_text": "The CUNY School of Medicine no longer requires graduates to commit to a career in primary care.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "claim:P131:0",
+                  "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q7562986$B16EAA64-EE98-4407-A2AE-FB85A4544BFB\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 60, \"id\": \"Q60\"}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "section:lead",
+                  "original_text": "Medical school of the City University of New York\nThis article needs more citations. Please help improve this article by adding citations to reliable sources. Unsourced material may be challenged and removed.\nFind sources: \"CUNY School of Medicine\" – news · newspapers · books · scholar · JSTOR (November 2018) (Learn how and when to remove this message)\nThe CUNY School of Medicine (CUNY Medicine) is the medical school of the City University of New York (CUNY). Founded in 2015 on the campus of The City College of New York, CUNY Medicine became the only public medical school in Manhattan and the first public MD-granting school to open in New York City since 1860.[1]\nThe school partners with St.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:lead",
+                  "original_text": "Barnabas Hospital (Bronx), Harlem Hospital Center of NYC Health + Hospitals, and Staten Island University Hospital of Northwell Health for clinical medical education.[2]\nThe main pathway for admission to the CUNY School of Medicine is through the Sophie Davis Biomedical Education Program, an accelerated seven-year BS/MD program.[3]\nCUNY Medicine also offers a two-year M.S. program in Physician Assistant studies.[4]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "The Sophie Davis School of Biomedical Education was a biomedical and medical education institution in New York City, founded in 1973. It was named for Sophie Davis, the wife of Leonard Davis, a City College of New York graduate and benefactor. The school was established to address demand for primary care physicians, particularly in urban communities. Its admissions drew mainly on high schools across New York State, with an emphasis on students from diverse cultural and ethnic backgrounds, including African-American and Hispanic students.\n\nUnder its earlier educational arrangement, students completed a Bachelor of Science course and the first two years of medical school at Sophie Davis. After passing the first step of the United States Medical Licensing Examination, they transferred to affiliated medical schools for the final two years and the Doctor of Medicine degree. The school's history must be distinguished from that of the CUNY School of Medicine, which was founded in 2015. In 2016, Sophie Davis was renamed the Sophie Davis Biomedical Education Program and became part of that medical school. The resulting pathway combined an accelerated three-year biomedical sciences program, leading to a City College Bachelor of Science degree, with a four-year medical curriculum."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "website": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P856:0",
+                  "original_text": "{\"property\": \"P856\", \"property_label\": \"official website\", \"statement_id\": \"Q7562986$354F20A1-BF9E-405F-BEE1-1F3482954FAF\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"http://med.cuny.edu/\", \"qualifiers\": {\"P407\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 1860, \"id\": \"Q1860\"}}]}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "http://med.cuny.edu/",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "qid": "Q7562986",
+      "record_revision": 1,
+      "related_entities": {
+        "cuny-medicine": {
+          "kind": "institution",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "The CUNY School of Medicine (CUNY Medicine) is the medical school of the City University of New York (CUNY).",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "CUNY School of Medicine"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "reviewed_institution_type"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "included"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-13T23:18:14.666559+00:00",
+          "revision_id": 2560502236,
+          "source_qid": "Q7562986",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2560502236"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikipedia",
+          "language": "en",
+          "page_id": 47244482,
+          "publisher_role": "encyclopedia",
+          "retrieved_at": "2026-11-13T23:18:21.848042+00:00",
+          "revision_id": 1383620465,
+          "url": "https://en.wikipedia.org/w/index.php?oldid=1383620465"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-07T06:40:15.558743+00:00",
+          "revision_id": 2562156954,
+          "source_qid": "Q3918",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2562156954"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-07T06:54:18.883957+00:00",
+          "revision_id": 2565041516,
+          "source_qid": "Q30",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2565041516"
+        },
+        "s5": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-13T23:18:26.055637+00:00",
+          "revision_id": 2568190757,
+          "source_qid": "Q60",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2568190757"
+        }
+      }
+    },
+    "coverage": [
+      {
+        "group": "identity",
+        "status": "disputed"
+      },
+      {
+        "group": "geography",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "status": "checked"
+      },
+      {
+        "group": "population",
+        "status": "not_found"
+      },
+      {
+        "group": "finance",
+        "status": "not_found"
+      },
+      {
+        "group": "profile",
+        "status": "checked"
+      }
+    ],
+    "delta": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-13T23:18:26.116110+00:00",
+          "status": "not_found"
+        },
+        "geography": {
+          "checked_at": "2026-11-13T23:18:26.116110+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-13T23:18:26.116110+00:00",
+          "status": "checked"
+        },
+        "identity": {
+          "checked_at": "2026-11-13T23:18:26.116110+00:00",
+          "status": "disputed"
+        },
+        "population": {
+          "checked_at": "2026-11-13T23:18:26.116110+00:00",
+          "status": "not_found"
+        },
+        "profile": {
+          "checked_at": "2026-11-13T23:18:26.116110+00:00",
+          "status": "checked"
+        }
+      },
+      "curation": {
+        "identity_status": "conflation_suspected"
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "claim:P571:0",
+                      "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q7562986$A7FA7CB1-A8C6-4AD4-86BE-E05D420B6176\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+1973-00-00T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}, \"reference_count\": 1}",
+                      "source_ref": "s1"
+                    },
+                    {
+                      "locator": "section:History",
+                      "original_text": "The CUNY School of Medicine has its roots in 1973 when the Sophie Davis School of Biomedical Education was founded.",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 1973
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:History",
+                      "original_text": "The CUNY School of Medicine has its roots in 1973 when the Sophie Davis School of Biomedical Education was founded.",
+                      "source_ref": "s2"
+                    },
+                    {
+                      "locator": "section:lead",
+                      "original_text": "Founded in 2015 on the campus of The City College of New York, CUNY Medicine became the only public medical school in Manhattan and the first public MD-granting school to open in New York City since 1860.[1]",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "Founding of the Sophie Davis School of Biomedical Education; this is distinct from the establishment of the CUNY School of Medicine in 2015."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "establishment",
+            "kind": "institution_establishment",
+            "subject_ref": "institution"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:History",
+                      "original_text": "In 2016, the Sophie Davis School of Biomedical Education was renamed as the Sophie Davis Biomedical Education Program when it became part of the CUNY School of Medicine.[5]",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 2016
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "section:History",
+                      "original_text": "In 2016, the Sophie Davis School of Biomedical Education was renamed as the Sophie Davis Biomedical Education Program when it became part of the CUNY School of Medicine.[5]",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "The Sophie Davis School of Biomedical Education was renamed the Sophie Davis Biomedical Education Program when it became part of the CUNY School of Medicine."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "rename",
+            "kind": "rename",
+            "subject_ref": "institution"
+          },
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "infobox:4",
+                      "original_text": "Established: 2015",
+                      "source_ref": "s2"
+                    },
+                    {
+                      "locator": "section:lead",
+                      "original_text": "Founded in 2015 on the campus of The City College of New York, CUNY Medicine became the only public medical school in Manhattan and the first public MD-granting school to open in New York City since 1860.[1]",
+                      "source_ref": "s2"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 2015
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "cuny-establishment",
+            "kind": "institution_establishment",
+            "subject_ref": "related:cuny-medicine"
+          }
+        ]
+      },
+      "identity": {
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:History",
+                  "original_text": "Before the start of its current seven-year curriculum, students completed their undergraduate education (B.S.) and the first two years of medical school at Sophie Davis.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "specialist_institution",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q7562986\", \"labels\": {\"en\": \"Sophie Davis School of Biomedical Education\"}, \"descriptions\": {}}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "section:History",
+                    "original_text": "The CUNY School of Medicine has its roots in 1973 when the Sophie Davis School of Biomedical Education was founded.",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": "Sophie Davis School of Biomedical Education",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "locations": [
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q7562986$B16EAA64-EE98-4407-A2AE-FB85A4544BFB\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 60, \"id\": \"Q60\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q7562986$B2A0416E-EE08-47B0-ACC1-87E9F8B60F8E\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 30, \"id\": \"Q30\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q60\", \"labels\": {\"en\": \"New York City\"}, \"descriptions\": {\"en\": \"most populous city in the United States\"}}",
+                    "source_ref": "s5"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q30\", \"labels\": {\"en\": \"United States\"}, \"descriptions\": {\"en\": \"country located primarily in North America\"}}",
+                    "source_ref": "s4"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "city_qid": "Q60",
+                  "country_qid": "Q30",
+                  "formatted": {
+                    "language": "en",
+                    "text": "New York City, United States"
+                  }
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "new-york-city",
+          "kind": "administrative_area",
+          "qid": "Q60"
+        },
+        {
+          "coordinates": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "statement:Q7562986$DD433B88-052E-41DE-B991-F72E1F466B3A",
+                    "original_text": "\"latitude\": 40.8194",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "source_rank": "normal",
+                "value": {
+                  "crs": "EPSG:4326",
+                  "globe_qid": "Q2",
+                  "latitude": 40.8194,
+                  "longitude": -73.95,
+                  "source_precision_degrees": 1e-06
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "wikidata-item-location",
+          "kind": "institution",
+          "qid": "Q7562986"
+        }
+      ],
+      "profile": {
+        "academic_focus": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:History",
+                  "original_text": "Its purpose was to address the increasing demand for primary care physicians in the United States, particularly in urban areas.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:History",
+                  "original_text": "Before the start of its current seven-year curriculum, students completed their undergraduate education (B.S.) and the first two years of medical school at Sophie Davis.",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": [
+                {
+                  "language": "en",
+                  "text": "Biomedical education"
+                },
+                {
+                  "language": "en",
+                  "text": "Primary care medicine"
+                }
+              ],
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "summary": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "section:History",
+                  "original_text": "[edit | edit source]\nThis section needs more citations. Please help improve this section by adding citations to reliable sources. Unsourced material may be challenged and removed. (November 2023) (Learn how and when to remove this message)\nThe CUNY School of Medicine has its roots in 1973 when the Sophie Davis School of Biomedical Education was founded. This institution was named in honor of Sophie Davis (née Kesner), the wife of Colonial Penn founder Leonard Davis, a graduate of CCNY and a major benefactor. Its purpose was to address the increasing demand for primary care physicians in the United States, particularly in urban areas.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:History",
+                  "original_text": "The Sophie Davis School admits students primarily from high schools all across New York State and attracts talented graduates from diverse cultural and ethnic backgrounds in New York City, with a focus on minority students, including those of African-American and Hispanic descent. The school offers a challenging curriculum, and approximately 40% of its graduates pursue careers as primary care physicians. Leonard and Sophie Davis\nBefore the start of its current seven-year curriculum, students completed their undergraduate education (B.S.) and the first two years of medical school at Sophie Davis. After passing the USMLE Step 1, they transferred to one of several affiliated medical schools to complete the final two years, which primarily consisted of medical rotations, and earn their Doctor of Medicine (M.D.) degree.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:History",
+                  "original_text": "The schools that accepted Sophie Davis graduates included NYU School of Medicine, SUNY Downstate Medical Center, New York Medical College, Albany Medical College, Northeast Ohio Medical University, Dartmouth Medical School, and Stony Brook School of Medicine.\nIn 2016, the Sophie Davis School of Biomedical Education was renamed as the Sophie Davis Biomedical Education Program when it became part of the CUNY School of Medicine.[5] Upon completing the accelerated three-year Sophie Davis Biomedical Education Program, students receive a Bachelor of Science degree in Biomedical Sciences from The City College of New York and gain direct admission to the CUNY School of Medicine, without the need to take the Medical College Admissions Test (MCAT).[6] After finishing the traditional four-year medical school curriculum, students are awarded the Doctor of Medicine degree.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:History",
+                  "original_text": "The CUNY School of Medicine no longer requires graduates to commit to a career in primary care.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "claim:P131:0",
+                  "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q7562986$B16EAA64-EE98-4407-A2AE-FB85A4544BFB\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 60, \"id\": \"Q60\"}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "section:lead",
+                  "original_text": "Medical school of the City University of New York\nThis article needs more citations. Please help improve this article by adding citations to reliable sources. Unsourced material may be challenged and removed.\nFind sources: \"CUNY School of Medicine\" – news · newspapers · books · scholar · JSTOR (November 2018) (Learn how and when to remove this message)\nThe CUNY School of Medicine (CUNY Medicine) is the medical school of the City University of New York (CUNY). Founded in 2015 on the campus of The City College of New York, CUNY Medicine became the only public medical school in Manhattan and the first public MD-granting school to open in New York City since 1860.[1]\nThe school partners with St.",
+                  "source_ref": "s2"
+                },
+                {
+                  "locator": "section:lead",
+                  "original_text": "Barnabas Hospital (Bronx), Harlem Hospital Center of NYC Health + Hospitals, and Staten Island University Hospital of Northwell Health for clinical medical education.[2]\nThe main pathway for admission to the CUNY School of Medicine is through the Sophie Davis Biomedical Education Program, an accelerated seven-year BS/MD program.[3]\nCUNY Medicine also offers a two-year M.S. program in Physician Assistant studies.[4]",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": {
+                "language": "en",
+                "text": "The Sophie Davis School of Biomedical Education was a biomedical and medical education institution in New York City, founded in 1973. It was named for Sophie Davis, the wife of Leonard Davis, a City College of New York graduate and benefactor. The school was established to address demand for primary care physicians, particularly in urban communities. Its admissions drew mainly on high schools across New York State, with an emphasis on students from diverse cultural and ethnic backgrounds, including African-American and Hispanic students.\n\nUnder its earlier educational arrangement, students completed a Bachelor of Science course and the first two years of medical school at Sophie Davis. After passing the first step of the United States Medical Licensing Examination, they transferred to affiliated medical schools for the final two years and the Doctor of Medicine degree. The school's history must be distinguished from that of the CUNY School of Medicine, which was founded in 2015. In 2016, Sophie Davis was renamed the Sophie Davis Biomedical Education Program and became part of that medical school. The resulting pathway combined an accelerated three-year biomedical sciences program, leading to a City College Bachelor of Science degree, with a four-year medical curriculum."
+              },
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "website": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P856:0",
+                  "original_text": "{\"property\": \"P856\", \"property_label\": \"official website\", \"statement_id\": \"Q7562986$354F20A1-BF9E-405F-BEE1-1F3482954FAF\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"http://med.cuny.edu/\", \"qualifiers\": {\"P407\": [{\"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 1860, \"id\": \"Q1860\"}}]}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "http://med.cuny.edu/",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "qid": "Q7562986",
+      "record_revision": 1,
+      "related_entities": {
+        "cuny-medicine": {
+          "kind": "institution",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "section:lead",
+                    "original_text": "The CUNY School of Medicine (CUNY Medicine) is the medical school of the City University of New York (CUNY).",
+                    "source_ref": "s2"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "CUNY School of Medicine"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "reviewed_institution_type"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "included"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-13T23:18:14.666559+00:00",
+          "revision_id": 2560502236,
+          "source_qid": "Q7562986",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2560502236"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikipedia",
+          "language": "en",
+          "page_id": 47244482,
+          "publisher_role": "encyclopedia",
+          "retrieved_at": "2026-11-13T23:18:21.848042+00:00",
+          "revision_id": 1383620465,
+          "url": "https://en.wikipedia.org/w/index.php?oldid=1383620465"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-07T06:40:15.558743+00:00",
+          "revision_id": 2562156954,
+          "source_qid": "Q3918",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2562156954"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-07T06:54:18.883957+00:00",
+          "revision_id": 2565041516,
+          "source_qid": "Q30",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2565041516"
+        },
+        "s5": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-13T23:18:26.055637+00:00",
+          "revision_id": 2568190757,
+          "source_qid": "Q60",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2568190757"
+        }
+      }
+    },
+    "open_requests": [],
+    "proposed_at": "2026-11-13T23:22:32.578029+00:00",
+    "qid": "Q7562986",
+    "research": {
+      "model": "not_reported",
+      "prompt_sha256": "428bc5c207cf7a6b26e26af265e9ec15d4bbbe3c147107c7e669e08b28b10aa7",
+      "reasoning_effort": "not_reported",
+      "schema_sha256": "92e942f4fbf2ae28964462ea9ffa8312c5ee16a077a1e08b40aaaf741512422e",
+      "session": "/root/research_q7562986"
+    },
+    "retrieval_failures": [],
+    "review_status": "unreviewed",
+    "seed": {
+      "channels": [
+        "reviewed_institution_type"
+      ],
+      "import_id": "seed-84c3beb45367905f",
+      "screening_status": "included"
+    },
+    "transport": {
+      "base_commit": "f536d8704fa31c156e2806afa610491ebc062f0f",
+      "protocol": "native-subagent-v1",
+      "repository": "ider-zh/university-seed-curation",
+      "review_policy": {
+        "id": "source-grounded-flexible-v2",
+        "sha256": "b8ed7d2897e4c31dbd81b1379aafdc1077a21d1a33949edbd2d896b0adf99db2"
+      },
+      "schema_sha256": "bfa496eafa9dffca56146214168db7f000b09161b8993129632e7202e1c88833",
+      "seed_catalog_sha256": "84c3beb45367905f513d650684283dd62a9c1b77962bdc34151a6ef05bfa03d4"
+    },
+    "type": "university-proposal-v1"
+  },
+  "review": {
+    "contexts_checked": 6,
+    "coverage_checks": [
+      {
+        "group": "identity",
+        "reason": "Survey completed; the root label and linked article refer to historically related but differently dated subjects. The proposal preserves this uncertainty.",
+        "status": "disputed"
+      },
+      {
+        "group": "geography",
+        "reason": "Survey contains root country, city and P625 and article location evidence. The root item point remains distinct from a campus claim.",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "reason": "Survey identified root 1973 founding, related medical-school 2015 founding and the 2016 transition, preserving their subjects.",
+        "status": "checked"
+      },
+      {
+        "group": "population",
+        "reason": "Survey completed. s2 infobox has faculty 117 and students 500 for CUNY School of Medicine, but these are not established as root Sophie Davis statistics and are not transferred across the disputed identity.",
+        "status": "not_found"
+      },
+      {
+        "group": "finance",
+        "reason": "No root institution financial observation is present in the supplied frozen survey corpus.",
+        "status": "not_found"
+      },
+      {
+        "group": "profile",
+        "reason": "The supplied article history and lead provide specialist education and related-institution context; coverage reflects survey completion without extending factual review to supplementary fields.",
+        "status": "checked"
+      }
+    ],
+    "decision": "approve",
+    "facts_checked": 5,
+    "full_refresh": false,
+    "inferences": [
+      {
+        "id": "$.identity.kind:c1",
+        "reason": "s2 section:History describes biomedical and medical education at Sophie Davis, including undergraduate study and the first two years of medical school. specialist_institution reasonably classifies that specialist educational institution without asserting legal independence; s1 P31 university remains a differing source classification."
+      },
+      {
+        "id": "identity",
+        "reason": "Conflation suspicion is justified: s1 labels the root as Sophie Davis with 1973 inception, while s2 is titled CUNY School of Medicine, founded in 2015, and describes Sophie Davis becoming a program within it in 2016. Retaining the distinction is appropriately qualified."
+      }
+    ],
+    "model": "not_reported",
+    "proposal_sha256": "724d08c262f5884f415505c402a0180bb2dbc9c2149c7cd67d192e2fc17c90b1",
+    "qid": "Q7562986",
+    "reasoning_effort": "not_reported",
+    "record_sha256": "39e9e0677d14ee7bec45795ab35b779f837424164f34f440fe7e621875cfc39f",
+    "request_responses": [],
+    "requests": [],
+    "review_scope": {
+      "not_independently_reviewed_ids": [
+        "$.history.milestones[0].description:c1",
+        "$.history.milestones[1].date:c1",
+        "$.history.milestones[1].description:c1",
+        "$.locations[0].address:c1",
+        "$.profile.academic_focus:c1",
+        "$.profile.summary:c1",
+        "$.profile.website:c1",
+        "$.related_entities.cuny-medicine.name:c1",
+        "location:new-york-city",
+        "milestone:rename"
+      ],
+      "reviewed_ids": [
+        "$.history.milestones[0].date:c1",
+        "$.history.milestones[2].date:c1",
+        "$.identity.kind:c1",
+        "$.identity.names.en:c1",
+        "$.locations[1].coordinates:c1",
+        "country:$.locations[0].address:c1",
+        "identity",
+        "location:wikidata-item-location",
+        "milestone:cuny-establishment",
+        "milestone:establishment",
+        "related:cuny-medicine"
+      ],
+      "version": "core-review-v3"
+    },
+    "review_session": "/root/review_q7562986",
+    "reviewed_at": "2026-11-13T23:23:47.848548+00:00",
+    "source_revisions_checked": 5,
+    "waived_requests": []
+  },
+  "review_result_sha256": "0b2e12abeab634a578ae2182f59f934822364f03a0c65349c79bee773e9d8b6c",
+  "type": "university-unified-receipt-v1"
+}
