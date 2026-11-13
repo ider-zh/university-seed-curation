@@ -1,0 +1,714 @@
+{
+  "attribution": "distinct_native_research_and_review_subagents;not_cryptographic_identity",
+  "research": {
+    "baseline_sha256": "absent",
+    "candidate": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-13T23:23:41.186108+00:00",
+          "status": "not_found"
+        },
+        "geography": {
+          "checked_at": "2026-11-13T23:23:41.186108+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-13T23:23:41.186108+00:00",
+          "status": "checked"
+        },
+        "identity": {
+          "checked_at": "2026-11-13T23:23:41.186108+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-13T23:23:41.186108+00:00",
+          "status": "not_found"
+        },
+        "profile": {
+          "checked_at": "2026-11-13T23:23:41.186108+00:00",
+          "status": "checked"
+        }
+      },
+      "curation": {
+        "identity_status": "in_scope"
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "claim:P571:0",
+                      "original_text": "\"property\": \"P571\", \"property_label\": \"inception\"",
+                      "source_ref": "s1"
+                    },
+                    {
+                      "locator": "claim:P571:0",
+                      "original_text": "\"time\": \"+2007-00-00T00:00:00Z\"",
+                      "source_ref": "s1"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 2007
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "inception",
+            "kind": "institution_establishment",
+            "subject_ref": "institution"
+          }
+        ]
+      },
+      "identity": {
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P31:0",
+                  "original_text": "\"property\": \"P31\", \"property_label\": \"instance of\"",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "claim:P31:0",
+                  "original_text": "\"id\": \"Q3918\"",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "metadata",
+                  "original_text": "\"en\": \"university\"",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "university",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "\"en\": \"Pritilata Waddedar Mahavidyalaya\"",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "Pritilata Waddedar Mahavidyalaya",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "locations": [
+        {
+          "id": "west_bengal",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "\"en\": \"college in West Bengal\"",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "West Bengal"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        {
+          "id": "india",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "\"property\": \"P17\", \"property_label\": \"country\"",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "\"id\": \"Q668\"",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "\"en\": \"India\"",
+                    "source_ref": "s3"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "India"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q668"
+        },
+        {
+          "coordinates": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "statement:Q7245982$0bf496bb-9632-439e-ae1c-aec216581c33",
+                    "original_text": "\"latitude\": 23.2334324",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "source_rank": "normal",
+                "value": {
+                  "crs": "EPSG:4326",
+                  "globe_qid": "Q2",
+                  "latitude": 23.2334324,
+                  "longitude": 88.6577104,
+                  "source_precision_degrees": 1e-05
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "wikidata-item-location",
+          "kind": "institution",
+          "qid": "Q7245982"
+        }
+      ],
+      "modified_datetime": "2026-11-13T23:27:25.795259+00:00",
+      "profile": {
+        "website": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P856:0",
+                  "original_text": "\"value\": \"http://www.pwmpanikhali.in\"",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "http://www.pwmpanikhali.in",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "qid": "Q7245982",
+      "record_revision": 1,
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "reviewed_institution_type"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "included"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-13T23:23:34.335313+00:00",
+          "revision_id": 2560495446,
+          "source_qid": "Q7245982",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2560495446"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-13T23:23:41.118792+00:00",
+          "revision_id": 2567518346,
+          "source_qid": "Q3918",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2567518346"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-13T23:23:21.966762+00:00",
+          "revision_id": 2568774463,
+          "source_qid": "Q668",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2568774463"
+        }
+      }
+    },
+    "coverage": [
+      {
+        "group": "identity",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "status": "checked"
+      },
+      {
+        "group": "population",
+        "status": "not_found"
+      },
+      {
+        "group": "finance",
+        "status": "not_found"
+      },
+      {
+        "group": "profile",
+        "status": "checked"
+      }
+    ],
+    "delta": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-13T23:23:41.186108+00:00",
+          "status": "not_found"
+        },
+        "geography": {
+          "checked_at": "2026-11-13T23:23:41.186108+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-13T23:23:41.186108+00:00",
+          "status": "checked"
+        },
+        "identity": {
+          "checked_at": "2026-11-13T23:23:41.186108+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-13T23:23:41.186108+00:00",
+          "status": "not_found"
+        },
+        "profile": {
+          "checked_at": "2026-11-13T23:23:41.186108+00:00",
+          "status": "checked"
+        }
+      },
+      "curation": {
+        "identity_status": "in_scope"
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "claim:P571:0",
+                      "original_text": "\"property\": \"P571\", \"property_label\": \"inception\"",
+                      "source_ref": "s1"
+                    },
+                    {
+                      "locator": "claim:P571:0",
+                      "original_text": "\"time\": \"+2007-00-00T00:00:00Z\"",
+                      "source_ref": "s1"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 2007
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "inception",
+            "kind": "institution_establishment",
+            "subject_ref": "institution"
+          }
+        ]
+      },
+      "identity": {
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P31:0",
+                  "original_text": "\"property\": \"P31\", \"property_label\": \"instance of\"",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "claim:P31:0",
+                  "original_text": "\"id\": \"Q3918\"",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "metadata",
+                  "original_text": "\"en\": \"university\"",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "university",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "\"en\": \"Pritilata Waddedar Mahavidyalaya\"",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "Pritilata Waddedar Mahavidyalaya",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "locations": [
+        {
+          "id": "west_bengal",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "\"en\": \"college in West Bengal\"",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "West Bengal"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        },
+        {
+          "id": "india",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "\"property\": \"P17\", \"property_label\": \"country\"",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "\"id\": \"Q668\"",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "\"en\": \"India\"",
+                    "source_ref": "s3"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "India"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q668"
+        },
+        {
+          "coordinates": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "statement:Q7245982$0bf496bb-9632-439e-ae1c-aec216581c33",
+                    "original_text": "\"latitude\": 23.2334324",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "source_rank": "normal",
+                "value": {
+                  "crs": "EPSG:4326",
+                  "globe_qid": "Q2",
+                  "latitude": 23.2334324,
+                  "longitude": 88.6577104,
+                  "source_precision_degrees": 1e-05
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "wikidata-item-location",
+          "kind": "institution",
+          "qid": "Q7245982"
+        }
+      ],
+      "profile": {
+        "website": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P856:0",
+                  "original_text": "\"value\": \"http://www.pwmpanikhali.in\"",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "http://www.pwmpanikhali.in",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "qid": "Q7245982",
+      "record_revision": 1,
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "reviewed_institution_type"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "included"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-13T23:23:34.335313+00:00",
+          "revision_id": 2560495446,
+          "source_qid": "Q7245982",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2560495446"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-13T23:23:41.118792+00:00",
+          "revision_id": 2567518346,
+          "source_qid": "Q3918",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2567518346"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-13T23:23:21.966762+00:00",
+          "revision_id": 2568774463,
+          "source_qid": "Q668",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2568774463"
+        }
+      }
+    },
+    "open_requests": [],
+    "proposed_at": "2026-11-13T23:27:25.795259+00:00",
+    "qid": "Q7245982",
+    "research": {
+      "model": "not_reported",
+      "prompt_sha256": "b78415a64a8447e43272bb02be7e45b47963fc73281b55ce2b7686dbab4bc975",
+      "reasoning_effort": "medium",
+      "schema_sha256": "92e942f4fbf2ae28964462ea9ffa8312c5ee16a077a1e08b40aaaf741512422e",
+      "session": "/root/research_q7245982"
+    },
+    "retrieval_failures": [],
+    "review_status": "unreviewed",
+    "seed": {
+      "channels": [
+        "reviewed_institution_type"
+      ],
+      "import_id": "seed-84c3beb45367905f",
+      "screening_status": "included"
+    },
+    "transport": {
+      "base_commit": "f536d8704fa31c156e2806afa610491ebc062f0f",
+      "protocol": "native-subagent-v1",
+      "repository": "ider-zh/university-seed-curation",
+      "review_policy": {
+        "id": "source-grounded-flexible-v2",
+        "sha256": "b8ed7d2897e4c31dbd81b1379aafdc1077a21d1a33949edbd2d896b0adf99db2"
+      },
+      "schema_sha256": "bfa496eafa9dffca56146214168db7f000b09161b8993129632e7202e1c88833",
+      "seed_catalog_sha256": "84c3beb45367905f513d650684283dd62a9c1b77962bdc34151a6ef05bfa03d4"
+    },
+    "type": "university-proposal-v1"
+  },
+  "review": {
+    "contexts_checked": 3,
+    "coverage_checks": [
+      {
+        "group": "identity",
+        "reason": "The bounded frozen Wikidata survey includes the entity label, P31 university class and its resolved Q3918 definition; it does not independently verify legal accreditation.",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "reason": "Root P17 identifies Q668 India, resolved in s3, and root P625 supplies an institution-scoped Earth coordinate; administrative names remain supplementary under v3.",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "reason": "Root P571 supplies a year-precision 2007 inception statement; no additional institutional history is claimed.",
+        "status": "checked"
+      },
+      {
+        "group": "population",
+        "reason": "The supplied frozen root claims contain no population or student/staff count; no zero count or absence in the real world is inferred.",
+        "status": "not_found"
+      },
+      {
+        "group": "finance",
+        "reason": "The supplied frozen root claims contain no budget, revenue or expenditure observation; no zero financial value is inferred.",
+        "status": "not_found"
+      },
+      {
+        "group": "profile",
+        "reason": "Frozen s1 P856 supplies a website observation. Profile data are supplementary and not independently fact-checked under core-review-v3.",
+        "status": "checked"
+      }
+    ],
+    "decision": "approve",
+    "facts_checked": 4,
+    "full_refresh": true,
+    "inferences": [
+      {
+        "id": "$.history.milestones[0].date:c1",
+        "reason": "The frozen s1 claim:P571:0 is an inception statement with time +2007-00-00T00:00:00Z and precision 9 (year). It supports a 2007 institution inception; representing it as institution_establishment is a bounded event mapping, not evidence of a separate legal charter or teaching-start date."
+      },
+      {
+        "id": "identity",
+        "reason": "The root entity is Q7245982, the captured P31 class is the tertiary-education university class Q3918, and seed screening is included under reviewed_institution_type. These support in_scope for the curation corpus as a reasonable classification inference. The English 'college in West Bengal' description and absence of official recognition records limit any stronger legal-institution claim."
+      },
+      {
+        "id": "milestone:inception",
+        "reason": "The milestone subject_ref is the institution itself and its kind institution_establishment reasonably maps the root P571 inception in 2007. It does not assert a formal university charter, predecessor founding or a more precise date."
+      }
+    ],
+    "model": "not_reported",
+    "proposal_sha256": "77353804343164cbd724ef565a554a508691dd81b04b3e22de625d96e3fc30a7",
+    "qid": "Q7245982",
+    "reasoning_effort": "medium",
+    "record_sha256": "f62e569f3260b195e33b5ff4c68cb063bad02b36d96334e161dc7f05fdd45e36",
+    "request_responses": [],
+    "requests": [],
+    "review_scope": {
+      "not_independently_reviewed_ids": [
+        "$.locations[0].name:c1",
+        "$.locations[1].name:c1",
+        "$.profile.website:c1",
+        "location:india",
+        "location:west_bengal"
+      ],
+      "reviewed_ids": [
+        "$.history.milestones[0].date:c1",
+        "$.identity.kind:c1",
+        "$.identity.names.en:c1",
+        "$.locations[2].coordinates:c1",
+        "identity",
+        "location:wikidata-item-location",
+        "milestone:inception"
+      ],
+      "version": "core-review-v3"
+    },
+    "review_session": "/root/review_q7245982",
+    "reviewed_at": "2026-11-13T23:29:32.649634+00:00",
+    "source_revisions_checked": 3,
+    "waived_requests": []
+  },
+  "review_result_sha256": "ab240450e463a6cba88af24a4eee370c37324609a2c4f0714729fdeb43934ad8",
+  "type": "university-unified-receipt-v1"
+}

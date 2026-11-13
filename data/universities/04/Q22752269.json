@@ -1,0 +1,189 @@
+{
+  "coverage": {
+    "finance": {
+      "checked_at": "2026-11-13T23:22:20.620138+00:00",
+      "status": "not_found"
+    },
+    "geography": {
+      "checked_at": "2026-11-13T23:22:20.620138+00:00",
+      "status": "checked"
+    },
+    "history": {
+      "checked_at": "2026-11-13T23:22:20.620138+00:00",
+      "status": "not_found"
+    },
+    "identity": {
+      "checked_at": "2026-11-13T23:22:20.620138+00:00",
+      "status": "checked"
+    },
+    "population": {
+      "checked_at": "2026-11-13T23:22:20.620138+00:00",
+      "status": "not_found"
+    },
+    "profile": {
+      "checked_at": "2026-11-13T23:22:20.620138+00:00",
+      "status": "checked"
+    }
+  },
+  "curation": {
+    "identity_status": "excluded",
+    "refresh_profile": "core-v1",
+    "reviewed_groups": [
+      "identity",
+      "geography",
+      "history",
+      "population",
+      "finance",
+      "profile"
+    ]
+  },
+  "identity": {
+    "kind": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P31:0",
+              "original_text": "\"id\": \"Q9842\"",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "metadata",
+              "original_text": "\"en\": \"primary school\"",
+              "source_ref": "s2"
+            },
+            {
+              "locator": "metadata",
+              "original_text": "\"en\": \"primary school\"",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "value": "other",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "locations": [
+    {
+      "id": "admin1",
+      "kind": "administrative_area",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P131:0",
+                "original_text": "\"id\": \"Q1473276\"",
+                "source_ref": "s1"
+              },
+              {
+                "locator": "metadata",
+                "original_text": "\"en\": \"Súdwest-Fryslân\"",
+                "source_ref": "s5"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Súdwest-Fryslân"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "qid": "Q1473276"
+    }
+  ],
+  "modified_datetime": "2026-11-13T23:26:53.734155+00:00",
+  "profile": {
+    "website": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P856:0",
+              "original_text": "\"http://www.rearderhiem.nl\"",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "value": "http://www.rearderhiem.nl",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "qid": "Q22752269",
+  "record_revision": 1,
+  "schema_version": "0.2.2",
+  "seed": {
+    "channels": [
+      "legacy_discovery"
+    ],
+    "import_id": "seed-84c3beb45367905f",
+    "screening_status": "needs_review"
+  },
+  "selection_policy": "preferred-v1",
+  "sources": {
+    "s1": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-13T23:22:03.134334+00:00",
+      "revision_id": 2557808080,
+      "source_qid": "Q22752269",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2557808080"
+    },
+    "s2": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-13T23:22:09.702799+00:00",
+      "revision_id": 2567830718,
+      "source_qid": "Q9842",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2567830718"
+    },
+    "s3": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-13T23:22:13.126146+00:00",
+      "revision_id": 2504953437,
+      "source_qid": "Q23002037",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2504953437"
+    },
+    "s4": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-13T23:22:16.888954+00:00",
+      "revision_id": 2568710488,
+      "source_qid": "Q55",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2568710488"
+    },
+    "s5": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-13T23:22:20.592593+00:00",
+      "revision_id": 2560598584,
+      "source_qid": "Q1473276",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2560598584"
+    }
+  },
+  "update_datetime": "2026-11-13T23:26:53.734155+00:00"
+}
