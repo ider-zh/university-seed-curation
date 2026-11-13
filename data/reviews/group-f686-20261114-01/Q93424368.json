@@ -1,0 +1,676 @@
+{
+  "attribution": "distinct_native_research_and_review_subagents;not_cryptographic_identity",
+  "research": {
+    "baseline_sha256": "absent",
+    "candidate": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-13T23:18:57.886682+00:00",
+          "status": "not_found"
+        },
+        "geography": {
+          "checked_at": "2026-11-13T23:18:57.886682+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-13T23:18:57.886682+00:00",
+          "status": "checked"
+        },
+        "identity": {
+          "checked_at": "2026-11-13T23:18:57.886682+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-13T23:18:57.886682+00:00",
+          "status": "not_found"
+        },
+        "profile": {
+          "checked_at": "2026-11-13T23:18:57.886682+00:00",
+          "status": "checked"
+        }
+      },
+      "curation": {
+        "identity_status": "in_scope"
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "claim:P571:0",
+                      "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q93424368$B170E6AA-9EE0-4DBB-A8FF-D13C2B19F64B\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+2004-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}, \"reference_count\": 1}",
+                      "source_ref": "s1"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 2004
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "establishment",
+            "kind": "institution_establishment",
+            "subject_ref": "institution"
+          }
+        ]
+      },
+      "identity": {
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "metadata",
+                  "original_text": "{\"id\": \"Q93424368\", \"labels\": {\"en\": \"Shri S.S. Memorial Degree College, Hathras\"}, \"descriptions\": {\"en\": \"college affiliated to the Dr. B. R. Ambedkar University\"}}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "claim:P31:0",
+                  "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q93424368$44DE6607-B496-4D31-952E-81B5476CE43D\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 189004, \"id\": \"Q189004\"}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "metadata",
+                  "original_text": "{\"id\": \"Q189004\", \"labels\": {\"en\": \"college\"}, \"descriptions\": {\"en\": \"educational institution, varying in level from country to country\"}}",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "higher_education_college",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q93424368\", \"labels\": {\"en\": \"Shri S.S. Memorial Degree College, Hathras\"}, \"descriptions\": {\"en\": \"college affiliated to the Dr. B. R. Ambedkar University\"}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "Shri S.S. Memorial Degree College, Hathras",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "locations": [
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q93424368$19A3B70E-2C19-4456-9611-EF22C403BF02\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 1814892, \"id\": \"Q1814892\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q93424368$2F41581E-843E-4ED2-8034-67FDD418D87E\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 668, \"id\": \"Q668\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q1814892\", \"labels\": {\"en\": \"Hathras district\"}, \"descriptions\": {\"en\": \"district of Uttar Pradesh, India\"}}",
+                    "source_ref": "s4"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q668\", \"labels\": {\"en\": \"India\"}, \"descriptions\": {\"en\": \"country in South Asia\"}}",
+                    "source_ref": "s3"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "country_name": "India",
+                  "country_qid": "Q668",
+                  "formatted": {
+                    "language": "en",
+                    "text": "Hathras district, India"
+                  },
+                  "region_name": "Hathras district",
+                  "region_qid": "Q1814892"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "hathras_district",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q93424368$19A3B70E-2C19-4456-9611-EF22C403BF02\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 1814892, \"id\": \"Q1814892\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q1814892\", \"labels\": {\"en\": \"Hathras district\"}, \"descriptions\": {\"en\": \"district of Uttar Pradesh, India\"}}",
+                    "source_ref": "s4"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Hathras district"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q1814892"
+        }
+      ],
+      "modified_datetime": "2026-11-13T23:21:26.241400+00:00",
+      "profile": {
+        "website": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P856:0",
+                  "original_text": "{\"property\": \"P856\", \"property_label\": \"official website\", \"statement_id\": \"Q93424368$720B90CD-5DE7-4FB1-92DB-1A11FF7F032E\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"http://www.ssmpgcm.com\", \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "http://www.ssmpgcm.com",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "qid": "Q93424368",
+      "record_revision": 1,
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "legacy_discovery"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "needs_review"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-13T23:18:54.862202+00:00",
+          "revision_id": 1192363002,
+          "source_qid": "Q93424368",
+          "url": "https://www.wikidata.org/w/index.php?oldid=1192363002"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-07T06:40:12.006521+00:00",
+          "revision_id": 2556557061,
+          "source_qid": "Q189004",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2556557061"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-07T06:40:10.456118+00:00",
+          "revision_id": 2563722390,
+          "source_qid": "Q668",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2563722390"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-13T23:18:57.874639+00:00",
+          "revision_id": 2563929137,
+          "source_qid": "Q1814892",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2563929137"
+        }
+      }
+    },
+    "coverage": [
+      {
+        "group": "identity",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "status": "checked"
+      },
+      {
+        "group": "population",
+        "status": "not_found"
+      },
+      {
+        "group": "finance",
+        "status": "not_found"
+      },
+      {
+        "group": "profile",
+        "status": "checked"
+      }
+    ],
+    "delta": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-13T23:18:57.886682+00:00",
+          "status": "not_found"
+        },
+        "geography": {
+          "checked_at": "2026-11-13T23:18:57.886682+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-13T23:18:57.886682+00:00",
+          "status": "checked"
+        },
+        "identity": {
+          "checked_at": "2026-11-13T23:18:57.886682+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-13T23:18:57.886682+00:00",
+          "status": "not_found"
+        },
+        "profile": {
+          "checked_at": "2026-11-13T23:18:57.886682+00:00",
+          "status": "checked"
+        }
+      },
+      "curation": {
+        "identity_status": "in_scope"
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "claim:P571:0",
+                      "original_text": "{\"property\": \"P571\", \"property_label\": \"inception\", \"statement_id\": \"Q93424368$B170E6AA-9EE0-4DBB-A8FF-D13C2B19F64B\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"time\": \"+2004-01-01T00:00:00Z\", \"timezone\": 0, \"before\": 0, \"after\": 0, \"precision\": 9, \"calendarmodel\": \"http://www.wikidata.org/entity/Q1985727\"}, \"reference_count\": 1}",
+                      "source_ref": "s1"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 2004
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "establishment",
+            "kind": "institution_establishment",
+            "subject_ref": "institution"
+          }
+        ]
+      },
+      "identity": {
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "metadata",
+                  "original_text": "{\"id\": \"Q93424368\", \"labels\": {\"en\": \"Shri S.S. Memorial Degree College, Hathras\"}, \"descriptions\": {\"en\": \"college affiliated to the Dr. B. R. Ambedkar University\"}}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "claim:P31:0",
+                  "original_text": "{\"property\": \"P31\", \"property_label\": \"instance of\", \"statement_id\": \"Q93424368$44DE6607-B496-4D31-952E-81B5476CE43D\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 189004, \"id\": \"Q189004\"}, \"reference_count\": 1}",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "metadata",
+                  "original_text": "{\"id\": \"Q189004\", \"labels\": {\"en\": \"college\"}, \"descriptions\": {\"en\": \"educational institution, varying in level from country to country\"}}",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "higher_education_college",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q93424368\", \"labels\": {\"en\": \"Shri S.S. Memorial Degree College, Hathras\"}, \"descriptions\": {\"en\": \"college affiliated to the Dr. B. R. Ambedkar University\"}}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "Shri S.S. Memorial Degree College, Hathras",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "locations": [
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q93424368$19A3B70E-2C19-4456-9611-EF22C403BF02\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 1814892, \"id\": \"Q1814892\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q93424368$2F41581E-843E-4ED2-8034-67FDD418D87E\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 668, \"id\": \"Q668\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q1814892\", \"labels\": {\"en\": \"Hathras district\"}, \"descriptions\": {\"en\": \"district of Uttar Pradesh, India\"}}",
+                    "source_ref": "s4"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q668\", \"labels\": {\"en\": \"India\"}, \"descriptions\": {\"en\": \"country in South Asia\"}}",
+                    "source_ref": "s3"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "country_name": "India",
+                  "country_qid": "Q668",
+                  "formatted": {
+                    "language": "en",
+                    "text": "Hathras district, India"
+                  },
+                  "region_name": "Hathras district",
+                  "region_qid": "Q1814892"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "hathras_district",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q93424368$19A3B70E-2C19-4456-9611-EF22C403BF02\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 1814892, \"id\": \"Q1814892\"}, \"reference_count\": 1}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q1814892\", \"labels\": {\"en\": \"Hathras district\"}, \"descriptions\": {\"en\": \"district of Uttar Pradesh, India\"}}",
+                    "source_ref": "s4"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Hathras district"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q1814892"
+        }
+      ],
+      "profile": {
+        "website": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "claim:P856:0",
+                  "original_text": "{\"property\": \"P856\", \"property_label\": \"official website\", \"statement_id\": \"Q93424368$720B90CD-5DE7-4FB1-92DB-1A11FF7F032E\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"http://www.ssmpgcm.com\", \"reference_count\": 1}",
+                  "source_ref": "s1"
+                }
+              ],
+              "id": "c1",
+              "value": "http://www.ssmpgcm.com",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        }
+      },
+      "qid": "Q93424368",
+      "record_revision": 1,
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "legacy_discovery"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "needs_review"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-13T23:18:54.862202+00:00",
+          "revision_id": 1192363002,
+          "source_qid": "Q93424368",
+          "url": "https://www.wikidata.org/w/index.php?oldid=1192363002"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-07T06:40:12.006521+00:00",
+          "revision_id": 2556557061,
+          "source_qid": "Q189004",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2556557061"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-07T06:40:10.456118+00:00",
+          "revision_id": 2563722390,
+          "source_qid": "Q668",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2563722390"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-13T23:18:57.874639+00:00",
+          "revision_id": 2563929137,
+          "source_qid": "Q1814892",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2563929137"
+        }
+      }
+    },
+    "open_requests": [],
+    "proposed_at": "2026-11-13T23:21:26.241400+00:00",
+    "qid": "Q93424368",
+    "research": {
+      "model": "not_reported",
+      "prompt_sha256": "97d11d9b72026ea8309fd967a6942915e59507fd123b4884501685bfeaa977f2",
+      "reasoning_effort": "not_reported",
+      "schema_sha256": "92e942f4fbf2ae28964462ea9ffa8312c5ee16a077a1e08b40aaaf741512422e",
+      "session": "/root/research_q93424368"
+    },
+    "retrieval_failures": [],
+    "review_status": "unreviewed",
+    "seed": {
+      "channels": [
+        "legacy_discovery"
+      ],
+      "import_id": "seed-84c3beb45367905f",
+      "screening_status": "needs_review"
+    },
+    "transport": {
+      "base_commit": "f536d8704fa31c156e2806afa610491ebc062f0f",
+      "protocol": "native-subagent-v1",
+      "repository": "ider-zh/university-seed-curation",
+      "review_policy": {
+        "id": "source-grounded-flexible-v2",
+        "sha256": "b8ed7d2897e4c31dbd81b1379aafdc1077a21d1a33949edbd2d896b0adf99db2"
+      },
+      "schema_sha256": "bfa496eafa9dffca56146214168db7f000b09161b8993129632e7202e1c88833",
+      "seed_catalog_sha256": "84c3beb45367905f513d650684283dd62a9c1b77962bdc34151a6ef05bfa03d4"
+    },
+    "type": "university-proposal-v1"
+  },
+  "review": {
+    "contexts_checked": 3,
+    "coverage_checks": [
+      {
+        "group": "identity",
+        "reason": "The supplied frozen survey contains institution name, type and description; identity survey is complete within the bounded scope.",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "reason": "The survey identifies country and administrative district. The frozen root has no P625 statements; this does not establish campus coordinates.",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "reason": "The survey found the institution inception year in P571; exhaustive milestones are outside this bounded review.",
+        "status": "checked"
+      },
+      {
+        "group": "population",
+        "reason": "No population measure is present in the supplied frozen source corpus; not_found is consistent with this survey and does not assert absence elsewhere.",
+        "status": "not_found"
+      },
+      {
+        "group": "finance",
+        "reason": "No financial measure is present in the supplied frozen source corpus; not_found is consistent with this survey and does not assert absence elsewhere.",
+        "status": "not_found"
+      },
+      {
+        "group": "profile",
+        "reason": "The supplied survey includes a website statement; profile survey completion is supported, with supplementary profile values outside mandatory factual review.",
+        "status": "checked"
+      }
+    ],
+    "decision": "approve",
+    "facts_checked": 3,
+    "full_refresh": true,
+    "inferences": [
+      {
+        "id": "$.identity.kind:c1",
+        "reason": "s1 claim:P31:0 identifies the item as Q189004, resolved by s2 metadata as college. The s1 degree-college name and description of affiliation to Dr. B. R. Ambedkar University anchor the higher_education_college normalization."
+      },
+      {
+        "id": "identity",
+        "reason": "The frozen root name, university-affiliated-college description and P31 college statement support inclusion as a higher education institution."
+      }
+    ],
+    "model": "not_reported",
+    "proposal_sha256": "3db3b355c42e60ba6f0c632a037a46826e82c0ed4f5d329db25d6437caebce54",
+    "qid": "Q93424368",
+    "reasoning_effort": "not_reported",
+    "record_sha256": "cbda38fcfa9139d68997d9a96ca6a6362b0685a0f155d18fd0b9a2f0f1158960",
+    "request_responses": [],
+    "requests": [],
+    "review_scope": {
+      "not_independently_reviewed_ids": [
+        "$.locations[0].address:c1",
+        "$.locations[0].name:c1",
+        "$.profile.website:c1",
+        "location:hathras_district"
+      ],
+      "reviewed_ids": [
+        "$.history.milestones[0].date:c1",
+        "$.identity.kind:c1",
+        "$.identity.names.en:c1",
+        "country:$.locations[0].address:c1",
+        "identity",
+        "milestone:establishment"
+      ],
+      "version": "core-review-v3"
+    },
+    "review_session": "/root/review_q93424368",
+    "reviewed_at": "2026-11-13T23:23:04.788185+00:00",
+    "source_revisions_checked": 4,
+    "waived_requests": []
+  },
+  "review_result_sha256": "089eac7b36c3a95013aa38140a23634d2e0ab046b2f42976e0f25294b656ff6f",
+  "type": "university-unified-receipt-v1"
+}

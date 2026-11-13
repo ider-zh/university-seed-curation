@@ -1,0 +1,185 @@
+{
+  "coverage": {
+    "finance": {
+      "checked_at": "2026-11-13T23:18:26.561153+00:00",
+      "status": "not_found"
+    },
+    "geography": {
+      "checked_at": "2026-11-13T23:18:26.561153+00:00",
+      "status": "checked"
+    },
+    "history": {
+      "checked_at": "2026-11-13T23:18:26.561153+00:00",
+      "status": "not_found"
+    },
+    "identity": {
+      "checked_at": "2026-11-13T23:18:26.561153+00:00",
+      "status": "disputed"
+    },
+    "population": {
+      "checked_at": "2026-11-13T23:18:26.561153+00:00",
+      "status": "not_found"
+    },
+    "profile": {
+      "checked_at": "2026-11-13T23:18:26.561153+00:00",
+      "status": "not_found"
+    }
+  },
+  "curation": {
+    "identity_status": "needs_review"
+  },
+  "identity": {
+    "identifiers": {
+      "P5242": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P5242:0",
+                "original_text": "{\"property\": \"P5242\", \"property_label\": \"ARWU university ID\", \"statement_id\": \"Q112677407$B138EED1-7EA5-4EDE-8E3E-498EE6664CBE\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"gansu-vocational-college-of-architecture\"}",
+                "source_ref": "s1"
+              }
+            ],
+            "id": "c1",
+            "value": "gansu-vocational-college-of-architecture",
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      }
+    }
+  },
+  "locations": [
+    {
+      "address": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P131:0",
+                "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q112677407$0B207608-2FA7-47F7-86B6-A5CC80F746BB\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 183584, \"id\": \"Q183584\"}}",
+                "source_ref": "s1"
+              },
+              {
+                "locator": "claim:P17:0",
+                "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q112677407$207080C6-CCEC-469B-8313-74288E7A378C\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 148, \"id\": \"Q148\"}}",
+                "source_ref": "s1"
+              },
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q183584\", \"labels\": {\"en\": \"Lanzhou\"}, \"descriptions\": {\"en\": \"prefecture-level city in Gansu, China\"}}",
+                "source_ref": "s4"
+              },
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q148\", \"labels\": {\"en\": \"People's Republic of China\"}, \"descriptions\": {\"en\": \"country in East Asia\"}}",
+                "source_ref": "s3"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "city_name": "Lanzhou",
+              "city_qid": "Q183584",
+              "country_name": "People's Republic of China",
+              "country_qid": "Q148",
+              "formatted": {
+                "language": "en",
+                "text": "Lanzhou, People's Republic of China"
+              }
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "id": "lanzhou",
+      "kind": "administrative_area",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P131:0",
+                "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q112677407$0B207608-2FA7-47F7-86B6-A5CC80F746BB\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 183584, \"id\": \"Q183584\"}}",
+                "source_ref": "s1"
+              },
+              {
+                "locator": "metadata",
+                "original_text": "{\"id\": \"Q183584\", \"labels\": {\"en\": \"Lanzhou\"}, \"descriptions\": {\"en\": \"prefecture-level city in Gansu, China\"}}",
+                "source_ref": "s4"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Lanzhou"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "qid": "Q183584"
+    }
+  ],
+  "modified_datetime": "2026-11-13T23:23:03.751540+00:00",
+  "qid": "Q112677407",
+  "record_revision": 1,
+  "schema_version": "0.2.2",
+  "seed": {
+    "channels": [
+      "ranking_identifier",
+      "reviewed_institution_type"
+    ],
+    "import_id": "seed-84c3beb45367905f",
+    "screening_status": "included"
+  },
+  "selection_policy": "preferred-v1",
+  "sources": {
+    "s1": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-13T23:18:14.766569+00:00",
+      "revision_id": 2548507797,
+      "source_qid": "Q112677407",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2548507797"
+    },
+    "s2": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-13T23:18:23.251598+00:00",
+      "revision_id": 2553501921,
+      "source_qid": "Q38723",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2553501921"
+    },
+    "s3": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-07T07:28:53.732156+00:00",
+      "revision_id": 2563722609,
+      "source_qid": "Q148",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2563722609"
+    },
+    "s4": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-13T23:18:26.546552+00:00",
+      "revision_id": 2532008329,
+      "source_qid": "Q183584",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2532008329"
+    }
+  }
+}
