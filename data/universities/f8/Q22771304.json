@@ -1,0 +1,209 @@
+{
+  "coverage": {
+    "finance": {
+      "checked_at": "2026-11-13T23:18:05.994925+00:00",
+      "status": "not_found"
+    },
+    "geography": {
+      "checked_at": "2026-11-13T23:18:05.994925+00:00",
+      "status": "checked"
+    },
+    "history": {
+      "checked_at": "2026-11-13T23:18:05.994925+00:00",
+      "status": "not_found"
+    },
+    "identity": {
+      "checked_at": "2026-11-13T23:18:05.994925+00:00",
+      "status": "checked"
+    },
+    "population": {
+      "checked_at": "2026-11-13T23:18:05.994925+00:00",
+      "status": "not_found"
+    },
+    "profile": {
+      "checked_at": "2026-11-13T23:18:05.994925+00:00",
+      "status": "checked"
+    }
+  },
+  "curation": {
+    "identity_status": "excluded",
+    "refresh_profile": "core-v1",
+    "reviewed_groups": [
+      "identity",
+      "geography",
+      "history",
+      "population",
+      "finance",
+      "profile"
+    ]
+  },
+  "identity": {
+    "kind": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P31:0",
+              "original_text": "\"id\": \"Q9842\"",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "metadata",
+              "original_text": "primary school",
+              "source_ref": "s2"
+            }
+          ],
+          "id": "c1",
+          "value": "other",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    },
+    "ownership": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P31:1",
+              "original_text": "\"id\": \"Q23002037\"",
+              "source_ref": "s1"
+            },
+            {
+              "locator": "metadata",
+              "original_text": "public educational institution",
+              "source_ref": "s3"
+            }
+          ],
+          "id": "c1",
+          "value": "public",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "locations": [
+    {
+      "id": "amstelveen",
+      "kind": "administrative_area",
+      "name": {
+        "candidates": [
+          {
+            "evidence": [
+              {
+                "locator": "claim:P131:0",
+                "original_text": "\"id\": \"Q9898\"",
+                "source_ref": "s1"
+              },
+              {
+                "locator": "metadata",
+                "original_text": "Amstelveen",
+                "source_ref": "s5"
+              }
+            ],
+            "id": "c1",
+            "value": {
+              "language": "en",
+              "text": "Amstelveen"
+            },
+            "verification": "supported"
+          }
+        ],
+        "preferred": {
+          "candidate_id": "c1",
+          "reason_code": "only_available"
+        }
+      },
+      "qid": "Q9898"
+    }
+  ],
+  "modified_datetime": "2026-11-13T23:24:03.371971+00:00",
+  "profile": {
+    "website": {
+      "candidates": [
+        {
+          "evidence": [
+            {
+              "locator": "claim:P856:0",
+              "original_text": "http://www.obs-piethein.nl",
+              "source_ref": "s1"
+            }
+          ],
+          "id": "c1",
+          "value": "http://www.obs-piethein.nl",
+          "verification": "supported"
+        }
+      ],
+      "preferred": {
+        "candidate_id": "c1",
+        "reason_code": "only_available"
+      }
+    }
+  },
+  "qid": "Q22771304",
+  "record_revision": 1,
+  "schema_version": "0.2.2",
+  "seed": {
+    "channels": [
+      "legacy_discovery"
+    ],
+    "import_id": "seed-84c3beb45367905f",
+    "screening_status": "needs_review"
+  },
+  "selection_policy": "preferred-v1",
+  "sources": {
+    "s1": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-13T23:17:59.258252+00:00",
+      "revision_id": 2557829340,
+      "source_qid": "Q22771304",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2557829340"
+    },
+    "s2": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-07T06:54:02.318411+00:00",
+      "revision_id": 2564315236,
+      "source_qid": "Q9842",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2564315236"
+    },
+    "s3": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-07T06:54:05.745756+00:00",
+      "revision_id": 2504953437,
+      "source_qid": "Q23002037",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2504953437"
+    },
+    "s4": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-07T06:54:10.146399+00:00",
+      "revision_id": 2565178043,
+      "source_qid": "Q55",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2565178043"
+    },
+    "s5": {
+      "family": "wikimedia",
+      "kind": "wikidata",
+      "publisher_role": "knowledge_base",
+      "retrieved_at": "2026-11-13T23:18:05.975178+00:00",
+      "revision_id": 2562618068,
+      "source_qid": "Q9898",
+      "url": "https://www.wikidata.org/w/index.php?oldid=2562618068"
+    }
+  },
+  "update_datetime": "2026-11-13T23:24:03.371971+00:00"
+}
