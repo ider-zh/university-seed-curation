@@ -1,0 +1,793 @@
+{
+  "attribution": "distinct_native_research_and_review_subagents;not_cryptographic_identity",
+  "research": {
+    "baseline_sha256": "absent",
+    "candidate": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-13T23:18:18.943249+00:00",
+          "status": "not_found"
+        },
+        "geography": {
+          "checked_at": "2026-11-13T23:18:18.943249+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-13T23:18:18.943249+00:00",
+          "status": "checked"
+        },
+        "identity": {
+          "checked_at": "2026-11-13T23:18:18.943249+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-13T23:18:18.943249+00:00",
+          "status": "not_found"
+        },
+        "profile": {
+          "checked_at": "2026-11-13T23:18:18.943249+00:00",
+          "status": "not_found"
+        }
+      },
+      "curation": {
+        "identity_status": "in_scope"
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "claim:P571:0",
+                      "original_text": "+1996-01-01T00:00:00Z",
+                      "source_ref": "s1"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 1996
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "claim:P571:0",
+                      "original_text": "+1996-01-01T00:00:00Z",
+                      "source_ref": "s1"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "Institutional inception recorded in 1996."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "establishment",
+            "kind": "institution_establishment",
+            "subject_ref": "institution"
+          }
+        ]
+      },
+      "identity": {
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "metadata",
+                  "original_text": "college affiliated to the Karnataka State Women's University",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "claim:P31:0",
+                  "original_text": "Q189004",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "metadata",
+                  "original_text": "college",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "higher_education_college",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "Sri. Bapugouda Darshnapur Memorial College For Women",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "Sri. Bapugouda Darshnapur Memorial College For Women",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "locations": [
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "Q2641873",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "Kalaburgi district",
+                    "source_ref": "s4"
+                  },
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "Q668",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "India",
+                    "source_ref": "s3"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "country_name": "India",
+                  "country_qid": "Q668",
+                  "formatted": {
+                    "language": "en",
+                    "text": "Kalaburgi district, India"
+                  },
+                  "region_name": "Kalaburgi district",
+                  "region_qid": "Q2641873"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "kalaburgi-district",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "Q2641873",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "Kalaburgi district",
+                    "source_ref": "s4"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Kalaburgi district"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q2641873"
+        }
+      ],
+      "modified_datetime": "2026-11-13T23:20:57.789348+00:00",
+      "qid": "Q83709838",
+      "record_revision": 1,
+      "related_entities": {
+        "affiliating-university": {
+          "kind": "institution",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "college affiliated to the Karnataka State Women's University",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Karnataka State Women's University"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "relationships": {
+        "member_of": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "college affiliated to the Karnataka State Women's University",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "target_ref": "related:affiliating-university"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ]
+      },
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "legacy_discovery"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "needs_review"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-13T23:18:15.537787+00:00",
+          "revision_id": 1190708754,
+          "source_qid": "Q83709838",
+          "url": "https://www.wikidata.org/w/index.php?oldid=1190708754"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-07T06:40:12.006521+00:00",
+          "revision_id": 2556557061,
+          "source_qid": "Q189004",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2556557061"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-07T06:40:10.456118+00:00",
+          "revision_id": 2563722390,
+          "source_qid": "Q668",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2563722390"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-13T23:18:18.926861+00:00",
+          "revision_id": 2546248341,
+          "source_qid": "Q2641873",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2546248341"
+        }
+      }
+    },
+    "coverage": [
+      {
+        "group": "identity",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "status": "checked"
+      },
+      {
+        "group": "population",
+        "status": "not_found"
+      },
+      {
+        "group": "finance",
+        "status": "not_found"
+      },
+      {
+        "group": "profile",
+        "status": "not_found"
+      }
+    ],
+    "delta": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-13T23:18:18.943249+00:00",
+          "status": "not_found"
+        },
+        "geography": {
+          "checked_at": "2026-11-13T23:18:18.943249+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-13T23:18:18.943249+00:00",
+          "status": "checked"
+        },
+        "identity": {
+          "checked_at": "2026-11-13T23:18:18.943249+00:00",
+          "status": "checked"
+        },
+        "population": {
+          "checked_at": "2026-11-13T23:18:18.943249+00:00",
+          "status": "not_found"
+        },
+        "profile": {
+          "checked_at": "2026-11-13T23:18:18.943249+00:00",
+          "status": "not_found"
+        }
+      },
+      "curation": {
+        "identity_status": "in_scope"
+      },
+      "history": {
+        "milestones": [
+          {
+            "date": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "claim:P571:0",
+                      "original_text": "+1996-01-01T00:00:00Z",
+                      "source_ref": "s1"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "precision": "year",
+                    "year": 1996
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "description": {
+              "candidates": [
+                {
+                  "evidence": [
+                    {
+                      "locator": "claim:P571:0",
+                      "original_text": "+1996-01-01T00:00:00Z",
+                      "source_ref": "s1"
+                    }
+                  ],
+                  "id": "c1",
+                  "value": {
+                    "language": "en",
+                    "text": "Institutional inception recorded in 1996."
+                  },
+                  "verification": "supported"
+                }
+              ],
+              "preferred": {
+                "candidate_id": "c1",
+                "reason_code": "only_available"
+              }
+            },
+            "id": "establishment",
+            "kind": "institution_establishment",
+            "subject_ref": "institution"
+          }
+        ]
+      },
+      "identity": {
+        "kind": {
+          "candidates": [
+            {
+              "evidence": [
+                {
+                  "locator": "metadata",
+                  "original_text": "college affiliated to the Karnataka State Women's University",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "claim:P31:0",
+                  "original_text": "Q189004",
+                  "source_ref": "s1"
+                },
+                {
+                  "locator": "metadata",
+                  "original_text": "college",
+                  "source_ref": "s2"
+                }
+              ],
+              "id": "c1",
+              "value": "higher_education_college",
+              "verification": "supported"
+            }
+          ],
+          "preferred": {
+            "candidate_id": "c1",
+            "reason_code": "only_available"
+          }
+        },
+        "names": {
+          "en": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "Sri. Bapugouda Darshnapur Memorial College For Women",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "Sri. Bapugouda Darshnapur Memorial College For Women",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "locations": [
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "Q2641873",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "Kalaburgi district",
+                    "source_ref": "s4"
+                  },
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "Q668",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "India",
+                    "source_ref": "s3"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "country_name": "India",
+                  "country_qid": "Q668",
+                  "formatted": {
+                    "language": "en",
+                    "text": "Kalaburgi district, India"
+                  },
+                  "region_name": "Kalaburgi district",
+                  "region_qid": "Q2641873"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "kalaburgi-district",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "Q2641873",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "Kalaburgi district",
+                    "source_ref": "s4"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Kalaburgi district"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q2641873"
+        }
+      ],
+      "qid": "Q83709838",
+      "record_revision": 1,
+      "related_entities": {
+        "affiliating-university": {
+          "kind": "institution",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "college affiliated to the Karnataka State Women's University",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Karnataka State Women's University"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "relationships": {
+        "member_of": [
+          {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "metadata",
+                    "original_text": "college affiliated to the Karnataka State Women's University",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "target_ref": "related:affiliating-university"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        ]
+      },
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "legacy_discovery"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "needs_review"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-13T23:18:15.537787+00:00",
+          "revision_id": 1190708754,
+          "source_qid": "Q83709838",
+          "url": "https://www.wikidata.org/w/index.php?oldid=1190708754"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-07T06:40:12.006521+00:00",
+          "revision_id": 2556557061,
+          "source_qid": "Q189004",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2556557061"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-07T06:40:10.456118+00:00",
+          "revision_id": 2563722390,
+          "source_qid": "Q668",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2563722390"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-13T23:18:18.926861+00:00",
+          "revision_id": 2546248341,
+          "source_qid": "Q2641873",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2546248341"
+        }
+      }
+    },
+    "open_requests": [],
+    "proposed_at": "2026-11-13T23:20:57.789348+00:00",
+    "qid": "Q83709838",
+    "research": {
+      "model": "not_reported",
+      "prompt_sha256": "5bc03fe09eef984b9db1bf594139741a790035f6f5822a37bee3bf8832032341",
+      "reasoning_effort": "not_reported",
+      "schema_sha256": "92e942f4fbf2ae28964462ea9ffa8312c5ee16a077a1e08b40aaaf741512422e",
+      "session": "/root/research_q83709838"
+    },
+    "retrieval_failures": [],
+    "review_status": "unreviewed",
+    "seed": {
+      "channels": [
+        "legacy_discovery"
+      ],
+      "import_id": "seed-84c3beb45367905f",
+      "screening_status": "needs_review"
+    },
+    "transport": {
+      "base_commit": "f536d8704fa31c156e2806afa610491ebc062f0f",
+      "protocol": "native-subagent-v1",
+      "repository": "ider-zh/university-seed-curation",
+      "review_policy": {
+        "id": "source-grounded-flexible-v2",
+        "sha256": "b8ed7d2897e4c31dbd81b1379aafdc1077a21d1a33949edbd2d896b0adf99db2"
+      },
+      "schema_sha256": "bfa496eafa9dffca56146214168db7f000b09161b8993129632e7202e1c88833",
+      "seed_catalog_sha256": "84c3beb45367905f513d650684283dd62a9c1b77962bdc34151a6ef05bfa03d4"
+    },
+    "type": "university-proposal-v1"
+  },
+  "review": {
+    "contexts_checked": 4,
+    "coverage_checks": [
+      {
+        "group": "identity",
+        "reason": "Frozen root and source corpus contain and support the surveyed name, college classification, and affiliation; survey completion is adequate for bounded core extraction.",
+        "status": "checked"
+      },
+      {
+        "group": "geography",
+        "reason": "The survey records district and country supported by the frozen corpus. No root P625 exists; related-entity coordinates do not establish a campus location.",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "reason": "The frozen institution inception statement was surveyed and represented at its source year precision.",
+        "status": "checked"
+      },
+      {
+        "group": "population",
+        "reason": "No institution population observation appears in the supplied frozen root or source corpus; not_found is consistent with the bounded survey.",
+        "status": "not_found"
+      },
+      {
+        "group": "finance",
+        "reason": "No institution financial observation appears in the supplied frozen root or source corpus; not_found is consistent with the bounded survey.",
+        "status": "not_found"
+      },
+      {
+        "group": "profile",
+        "reason": "No additional core profile observation appears in the supplied frozen corpus; the declared survey outcome is consistent with the available material.",
+        "status": "not_found"
+      }
+    ],
+    "decision": "approve",
+    "facts_checked": 4,
+    "full_refresh": true,
+    "inferences": [
+      {
+        "id": "$.identity.kind:c1",
+        "reason": "s1 claim:P31:0 identifies Q189004, whose s2 metadata label is college; s1 metadata specifies university affiliation. Together these support the controlled higher_education_college classification without asserting independent university status."
+      },
+      {
+        "id": "$.relationships.member_of[0]:c1",
+        "reason": "s1 metadata explicitly describes the college as affiliated to the Karnataka State Women's University. The broader member_of relationship is acceptable under the flexible policy because the cited affiliation wording and target name preserve its meaning; no affiliation dates or stronger legal status are asserted."
+      },
+      {
+        "id": "identity",
+        "reason": "The frozen root describes a college affiliated to a university and identifies it as Q189004. This supports inclusion as a higher education institution."
+      }
+    ],
+    "model": "not_reported",
+    "proposal_sha256": "8acdcab148e3c74701ac7efd2e98f822cdeaeb87392e8491536f7daa0cde8574",
+    "qid": "Q83709838",
+    "reasoning_effort": "not_reported",
+    "record_sha256": "026072a0601da967413116bc838fb127eb1269220a5686f6787d2d5bc322f2d0",
+    "request_responses": [],
+    "requests": [],
+    "review_scope": {
+      "not_independently_reviewed_ids": [
+        "$.history.milestones[0].description:c1",
+        "$.locations[0].address:c1",
+        "$.locations[0].name:c1",
+        "$.related_entities.affiliating-university.name:c1",
+        "location:kalaburgi-district"
+      ],
+      "reviewed_ids": [
+        "$.history.milestones[0].date:c1",
+        "$.identity.kind:c1",
+        "$.identity.names.en:c1",
+        "$.relationships.member_of[0]:c1",
+        "country:$.locations[0].address:c1",
+        "identity",
+        "milestone:establishment",
+        "related:affiliating-university"
+      ],
+      "version": "core-review-v3"
+    },
+    "review_session": "/root/review_q83709838",
+    "reviewed_at": "2026-11-13T23:22:51.349530+00:00",
+    "source_revisions_checked": 4,
+    "waived_requests": []
+  },
+  "review_result_sha256": "bc2f644f772910660d286e026d718777e84bdfeab4e86974df3a9e9f6430afd0",
+  "type": "university-unified-receipt-v1"
+}

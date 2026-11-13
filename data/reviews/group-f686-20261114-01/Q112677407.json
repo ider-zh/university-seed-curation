@@ -1,0 +1,503 @@
+{
+  "attribution": "distinct_native_research_and_review_subagents;not_cryptographic_identity",
+  "research": {
+    "baseline_sha256": "absent",
+    "candidate": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-13T23:18:26.561153+00:00",
+          "status": "not_found"
+        },
+        "geography": {
+          "checked_at": "2026-11-13T23:18:26.561153+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-13T23:18:26.561153+00:00",
+          "status": "not_found"
+        },
+        "identity": {
+          "checked_at": "2026-11-13T23:18:26.561153+00:00",
+          "status": "disputed"
+        },
+        "population": {
+          "checked_at": "2026-11-13T23:18:26.561153+00:00",
+          "status": "not_found"
+        },
+        "profile": {
+          "checked_at": "2026-11-13T23:18:26.561153+00:00",
+          "status": "not_found"
+        }
+      },
+      "curation": {
+        "identity_status": "needs_review"
+      },
+      "identity": {
+        "identifiers": {
+          "P5242": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P5242:0",
+                    "original_text": "{\"property\": \"P5242\", \"property_label\": \"ARWU university ID\", \"statement_id\": \"Q112677407$B138EED1-7EA5-4EDE-8E3E-498EE6664CBE\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"gansu-vocational-college-of-architecture\"}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "gansu-vocational-college-of-architecture",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "locations": [
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q112677407$0B207608-2FA7-47F7-86B6-A5CC80F746BB\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 183584, \"id\": \"Q183584\"}}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q112677407$207080C6-CCEC-469B-8313-74288E7A378C\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 148, \"id\": \"Q148\"}}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q183584\", \"labels\": {\"en\": \"Lanzhou\"}, \"descriptions\": {\"en\": \"prefecture-level city in Gansu, China\"}}",
+                    "source_ref": "s4"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q148\", \"labels\": {\"en\": \"People's Republic of China\"}, \"descriptions\": {\"en\": \"country in East Asia\"}}",
+                    "source_ref": "s3"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "city_name": "Lanzhou",
+                  "city_qid": "Q183584",
+                  "country_name": "People's Republic of China",
+                  "country_qid": "Q148",
+                  "formatted": {
+                    "language": "en",
+                    "text": "Lanzhou, People's Republic of China"
+                  }
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "lanzhou",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q112677407$0B207608-2FA7-47F7-86B6-A5CC80F746BB\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 183584, \"id\": \"Q183584\"}}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q183584\", \"labels\": {\"en\": \"Lanzhou\"}, \"descriptions\": {\"en\": \"prefecture-level city in Gansu, China\"}}",
+                    "source_ref": "s4"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Lanzhou"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q183584"
+        }
+      ],
+      "modified_datetime": "2026-11-13T23:21:47.311562+00:00",
+      "qid": "Q112677407",
+      "record_revision": 1,
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "ranking_identifier",
+          "reviewed_institution_type"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "included"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-13T23:18:14.766569+00:00",
+          "revision_id": 2548507797,
+          "source_qid": "Q112677407",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2548507797"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-13T23:18:23.251598+00:00",
+          "revision_id": 2553501921,
+          "source_qid": "Q38723",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2553501921"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-07T07:28:53.732156+00:00",
+          "revision_id": 2563722609,
+          "source_qid": "Q148",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2563722609"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-13T23:18:26.546552+00:00",
+          "revision_id": 2532008329,
+          "source_qid": "Q183584",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2532008329"
+        }
+      }
+    },
+    "coverage": [
+      {
+        "group": "identity",
+        "status": "disputed"
+      },
+      {
+        "group": "geography",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "status": "not_found"
+      },
+      {
+        "group": "population",
+        "status": "not_found"
+      },
+      {
+        "group": "finance",
+        "status": "not_found"
+      },
+      {
+        "group": "profile",
+        "status": "not_found"
+      }
+    ],
+    "delta": {
+      "coverage": {
+        "finance": {
+          "checked_at": "2026-11-13T23:18:26.561153+00:00",
+          "status": "not_found"
+        },
+        "geography": {
+          "checked_at": "2026-11-13T23:18:26.561153+00:00",
+          "status": "checked"
+        },
+        "history": {
+          "checked_at": "2026-11-13T23:18:26.561153+00:00",
+          "status": "not_found"
+        },
+        "identity": {
+          "checked_at": "2026-11-13T23:18:26.561153+00:00",
+          "status": "disputed"
+        },
+        "population": {
+          "checked_at": "2026-11-13T23:18:26.561153+00:00",
+          "status": "not_found"
+        },
+        "profile": {
+          "checked_at": "2026-11-13T23:18:26.561153+00:00",
+          "status": "not_found"
+        }
+      },
+      "curation": {
+        "identity_status": "needs_review"
+      },
+      "identity": {
+        "identifiers": {
+          "P5242": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P5242:0",
+                    "original_text": "{\"property\": \"P5242\", \"property_label\": \"ARWU university ID\", \"statement_id\": \"Q112677407$B138EED1-7EA5-4EDE-8E3E-498EE6664CBE\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": \"gansu-vocational-college-of-architecture\"}",
+                    "source_ref": "s1"
+                  }
+                ],
+                "id": "c1",
+                "value": "gansu-vocational-college-of-architecture",
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          }
+        }
+      },
+      "locations": [
+        {
+          "address": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q112677407$0B207608-2FA7-47F7-86B6-A5CC80F746BB\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 183584, \"id\": \"Q183584\"}}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "claim:P17:0",
+                    "original_text": "{\"property\": \"P17\", \"property_label\": \"country\", \"statement_id\": \"Q112677407$207080C6-CCEC-469B-8313-74288E7A378C\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 148, \"id\": \"Q148\"}}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q183584\", \"labels\": {\"en\": \"Lanzhou\"}, \"descriptions\": {\"en\": \"prefecture-level city in Gansu, China\"}}",
+                    "source_ref": "s4"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q148\", \"labels\": {\"en\": \"People's Republic of China\"}, \"descriptions\": {\"en\": \"country in East Asia\"}}",
+                    "source_ref": "s3"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "city_name": "Lanzhou",
+                  "city_qid": "Q183584",
+                  "country_name": "People's Republic of China",
+                  "country_qid": "Q148",
+                  "formatted": {
+                    "language": "en",
+                    "text": "Lanzhou, People's Republic of China"
+                  }
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "id": "lanzhou",
+          "kind": "administrative_area",
+          "name": {
+            "candidates": [
+              {
+                "evidence": [
+                  {
+                    "locator": "claim:P131:0",
+                    "original_text": "{\"property\": \"P131\", \"property_label\": \"located in the administrative territorial entity\", \"statement_id\": \"Q112677407$0B207608-2FA7-47F7-86B6-A5CC80F746BB\", \"rank\": \"normal\", \"snaktype\": \"value\", \"value\": {\"entity-type\": \"item\", \"numeric-id\": 183584, \"id\": \"Q183584\"}}",
+                    "source_ref": "s1"
+                  },
+                  {
+                    "locator": "metadata",
+                    "original_text": "{\"id\": \"Q183584\", \"labels\": {\"en\": \"Lanzhou\"}, \"descriptions\": {\"en\": \"prefecture-level city in Gansu, China\"}}",
+                    "source_ref": "s4"
+                  }
+                ],
+                "id": "c1",
+                "value": {
+                  "language": "en",
+                  "text": "Lanzhou"
+                },
+                "verification": "supported"
+              }
+            ],
+            "preferred": {
+              "candidate_id": "c1",
+              "reason_code": "only_available"
+            }
+          },
+          "qid": "Q183584"
+        }
+      ],
+      "qid": "Q112677407",
+      "record_revision": 1,
+      "schema_version": "0.2.2",
+      "seed": {
+        "channels": [
+          "ranking_identifier",
+          "reviewed_institution_type"
+        ],
+        "import_id": "seed-84c3beb45367905f",
+        "screening_status": "included"
+      },
+      "selection_policy": "preferred-v1",
+      "sources": {
+        "s1": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-13T23:18:14.766569+00:00",
+          "revision_id": 2548507797,
+          "source_qid": "Q112677407",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2548507797"
+        },
+        "s2": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-13T23:18:23.251598+00:00",
+          "revision_id": 2553501921,
+          "source_qid": "Q38723",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2553501921"
+        },
+        "s3": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-07T07:28:53.732156+00:00",
+          "revision_id": 2563722609,
+          "source_qid": "Q148",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2563722609"
+        },
+        "s4": {
+          "family": "wikimedia",
+          "kind": "wikidata",
+          "publisher_role": "knowledge_base",
+          "retrieved_at": "2026-11-13T23:18:26.546552+00:00",
+          "revision_id": 2532008329,
+          "source_qid": "Q183584",
+          "url": "https://www.wikidata.org/w/index.php?oldid=2532008329"
+        }
+      }
+    },
+    "open_requests": [],
+    "proposed_at": "2026-11-13T23:21:47.311562+00:00",
+    "qid": "Q112677407",
+    "research": {
+      "model": "not_reported",
+      "prompt_sha256": "f9987708c120c0988f148b07186bf2828b7809b2c6944691c4fee02d824b5020",
+      "reasoning_effort": "not_reported",
+      "schema_sha256": "92e942f4fbf2ae28964462ea9ffa8312c5ee16a077a1e08b40aaaf741512422e",
+      "session": "/root/research_q112677407"
+    },
+    "retrieval_failures": [],
+    "review_status": "unreviewed",
+    "seed": {
+      "channels": [
+        "ranking_identifier",
+        "reviewed_institution_type"
+      ],
+      "import_id": "seed-84c3beb45367905f",
+      "screening_status": "included"
+    },
+    "transport": {
+      "base_commit": "f536d8704fa31c156e2806afa610491ebc062f0f",
+      "protocol": "native-subagent-v1",
+      "repository": "ider-zh/university-seed-curation",
+      "review_policy": {
+        "id": "source-grounded-flexible-v2",
+        "sha256": "b8ed7d2897e4c31dbd81b1379aafdc1077a21d1a33949edbd2d896b0adf99db2"
+      },
+      "schema_sha256": "bfa496eafa9dffca56146214168db7f000b09161b8993129632e7202e1c88833",
+      "seed_catalog_sha256": "84c3beb45367905f513d650684283dd62a9c1b77962bdc34151a6ef05bfa03d4"
+    },
+    "type": "university-proposal-v1"
+  },
+  "review": {
+    "contexts_checked": 2,
+    "coverage_checks": [
+      {
+        "group": "identity",
+        "reason": "The supplied survey covers institutional type and identifier but retains the explicit identity qualification; disputed appropriately records this limited identity resolution.",
+        "status": "disputed"
+      },
+      {
+        "group": "geography",
+        "reason": "The supplied survey examined institution P131/P17 and related place metadata. Administrative-area geography is supported, and root coordinates are absent.",
+        "status": "checked"
+      },
+      {
+        "group": "history",
+        "reason": "No institution history dates or events occur in the frozen institution evidence. This is a bounded survey result, not a claim that such facts do not exist elsewhere.",
+        "status": "not_found"
+      },
+      {
+        "group": "population",
+        "reason": "No institutional student or staff counts occur in the supplied frozen evidence; not_found accurately records the bounded survey.",
+        "status": "not_found"
+      },
+      {
+        "group": "finance",
+        "reason": "No institution finance observations occur in the supplied frozen evidence; not_found accurately records the bounded survey.",
+        "status": "not_found"
+      },
+      {
+        "group": "profile",
+        "reason": "The supplied institutional evidence offers no additional surveyed profile facts. The classification and identifier supporting inclusion do not require inventing a profile value.",
+        "status": "not_found"
+      }
+    ],
+    "decision": "approve",
+    "facts_checked": 1,
+    "full_refresh": false,
+    "inferences": [
+      {
+        "id": "identity",
+        "reason": "The frozen root identifies a higher education institution through P31 Q38723, with Chinese label 甘肃建筑职业技术学院 and the architecture-college ARWU slug. Its lack of English label, description, sitelinks and independent identity corroboration reasonably warrants retaining needs_review. This does not resolve or invent an English institutional name."
+      }
+    ],
+    "model": "not_reported",
+    "proposal_sha256": "a72af9d7b49bbe88a7d84d016b6b7f85adb74277342d888f33c4421cd309d350",
+    "qid": "Q112677407",
+    "reasoning_effort": "not_reported",
+    "record_sha256": "a46814ffdedb751fcb5c3e73a6938ac08d67d7ca5a42fbf4b1ad7642e12dc123",
+    "request_responses": [],
+    "requests": [],
+    "review_scope": {
+      "not_independently_reviewed_ids": [
+        "$.locations[0].address:c1",
+        "$.locations[0].name:c1",
+        "location:lanzhou"
+      ],
+      "reviewed_ids": [
+        "$.identity.identifiers.P5242:c1",
+        "country:$.locations[0].address:c1",
+        "identity"
+      ],
+      "version": "core-review-v3"
+    },
+    "review_session": "/root/review_q112677407",
+    "reviewed_at": "2026-11-13T23:23:03.751540+00:00",
+    "source_revisions_checked": 4,
+    "waived_requests": []
+  },
+  "review_result_sha256": "d523bf02b4f8a584808dbb976131aa6e14f38fce910f6806cfca114a9ec8be00",
+  "type": "university-unified-receipt-v1"
+}
